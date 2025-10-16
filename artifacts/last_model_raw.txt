@@ -2,69 +2,83 @@
 {
   "files": [
     {
-      "path": "analysis/code/eda_weighted_summaries.py:46",
-      "description": "New seeded SRS workflow cleans negative codes, suppresses small cells, and exports reproducible wellbeing/socioeconomic summaries plus metadata."
+      "path": "analysis/code/mice_prototype.py:1",
+      "description": "Added seeded statsmodels MICE workflow that sanitizes columns, drops all-missing predictors, masks small-cell counts, and writes metadata plus regeneration notes."
     },
     {
-      "path": "tables/exploratory_selflove_by_abuse.md:5",
-      "description": "Exploratory table shows mean self-love spanning 1.32–1.49 across abuse codes with all cells ≥10 and 95% CIs reported."
+      "path": "analysis/imputation/mice_prototype_summary.md:1",
+      "description": "Documented exploratory imputation run (20 draws, seed 20251016) with suppressed missingness counts and regeneration command."
     },
     {
-      "path": "tables/exploratory_networth_by_classchild.md:5",
-      "description": "Aggregated childhood class groups reveal higher high-net-worth shares for upper-class respondents while respecting the k=10 rule."
+      "path": "analysis/imputation/mice_imputation_summary.csv:1",
+      "description": "Recorded masked missingness diagnostics and pooled post-imputation means/SDs for key variables."
     },
     {
-      "path": "tables/exploratory_missingness_key_vars.md:5",
-      "description": "Missingness profile documents 48% abuse and 28% self-love non-response via negative codes, guiding forthcoming imputation plans."
+      "path": "analysis/imputation/mice_prototype_metadata.json:1",
+      "description": "Logged reproducibility metadata for the prototype MICE run, including dropped columns and command."
     },
     {
-      "path": "qc/data_checks.md:40",
-      "description": "Data quality log now links regenerated missingness outputs and flags implications for PAP design under the SRS assumption."
+      "path": "analysis/imputation/mice_variable_map.json:1",
+      "description": "Stored original-to-sanitized column name mapping for imputation outputs."
     },
     {
-      "path": "reports/findings_v0.1.md:1",
-      "description": "Versioned exploratory report summarizes methods, descriptive findings, limitations, and queued robustness steps for wellbeing/economic outcomes."
+      "path": "data/derived/childhoodbalancedpublic_mi_prototype.csv.gz",
+      "description": "Stacked dataset of 20 deterministic imputations (with imputation_id) for downstream diagnostics."
     },
     {
-      "path": "artifacts/state.json:2",
-      "description": "State file increments loop counter, closes T-002, and adds T-004 to investigate missingness drivers alongside the weight-request task."
+      "path": "analysis/decision_log.csv:8",
+      "description": "Appended action log entry for the imputation prototype execution."
+    },
+    {
+      "path": "notebooks/research_notebook.md:49",
+      "description": "Updated notebook narrative with imputation prototype summary and refreshed next steps/open questions."
+    },
+    {
+      "path": "artifacts/state.json:1",
+      "description": "Incremented loop counter, closed T-005, queued T-006, and refreshed regeneration command."
+    },
+    {
+      "path": "artifacts/checksums.json:1",
+      "description": "Refreshed SHA-256 hashes for raw and derived datasets to satisfy reproducibility checkpoint."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T13:19:28Z",
-    "action": "exploratory_summary",
-    "inputs": "childhoodbalancedpublic_original.csv|docs/codebook.json|docs/survey_design.yaml",
-    "rationale_short": "Generated SRS-based exploratory tables for wellbeing and socioeconomic outcomes.",
-    "code_path": "analysis/code/eda_weighted_summaries.py",
-    "outputs": "tables/exploratory_selflove_by_abuse.csv|tables/exploratory_networth_by_classchild.csv|tables/exploratory_missingness_key_vars.csv",
+    "ts": "2025-10-16T13:50:41Z",
+    "action": "imputation_prototype",
+    "inputs": "childhoodbalancedpublic_original.csv|analysis/code/mice_prototype.py|config/agent_config.yaml",
+    "rationale_short": "Prototyped seeded MICE imputation for self-love and abuse items.",
+    "code_path": "analysis/code/mice_prototype.py",
+    "outputs": "data/derived/childhoodbalancedpublic_mi_prototype.csv.gz|analysis/imputation/mice_imputation_summary.csv|analysis/imputation/mice_prototype_summary.md|analysis/imputation/mice_prototype_metadata.json",
     "status": "success"
   },
   "next_actions": [
     {
       "id": "T-003",
       "priority": 3,
-      "description": "Request official survey design weights or documentation from data provider.",
+      "description": "Coordinate sending of survey weight request; track provider response.",
       "estimate_min": "10m"
     },
     {
-      "id": "T-004",
+      "id": "T-006",
       "priority": 2,
-      "description": "Analyze missingness drivers for self-love and abuse items; plan imputation strategy.",
+      "description": "Review imputed distributions and finalize robustness checks for PAP.",
       "estimate_min": "25m"
     }
   ],
   "state_update": {
-    "loop_counter": 2,
-    "last_updated": "2025-10-16T13:19:13.931258+00:00",
-    "notes": "Completed exploratory SRS summaries for wellbeing and net worth; high non-response for abuse/self-love items noted. Awaiting survey weights; next focus on missingness drivers."
+    "path": "artifacts/state.json",
+    "loop_counter": 4,
+    "last_updated": "2025-10-16T13:51:29.261430+00:00",
+    "notes": "Drafted survey weight request template and completed missingness diagnostics; logit models indicate age/education association with self-love non-response and higher missingness among higher childhood class / male-at-birth for abuse item. MICE plan documented, awaiting weight metadata before confirmatory work. Completed prototype MICE workflow (20 imputations, seed 20251016) with small-cell suppression; dropped-all-missing Religionchildhood and mentalillness for follow-up coding review.",
+    "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10"
   },
   "git": {
     "commit": true,
-    "message": "analysis(tables): add exploratory wellbeing & socioeconomic summaries",
-    "hash": "5b2b0c317df13e173ba63fd84fa80e70f6c54748"
+    "message": "analysis(imputation): add MICE prototype workflow",
+    "status": "ahead 1"
   },
   "stop_now": false,
-  "stop_reason": null,
+  "stop_reason": "",
   "signals": []
 }
 ```

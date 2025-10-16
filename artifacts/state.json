@@ -60,5 +60,6 @@
     }
   ],
   "notes": "Drafted survey weight request template and completed missingness diagnostics; logit models indicate age/education association with self-love non-response and higher missingness among higher childhood class / male-at-birth for abuse item. MICE plan documented, awaiting weight metadata before confirmatory work. Completed prototype MICE workflow (20 imputations, seed 20251016) with small-cell suppression; dropped-all-missing Religionchildhood and mentalillness for follow-up coding review.",
-  "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10"
+  "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10",
+  "path": "artifacts/state.json"
 }
