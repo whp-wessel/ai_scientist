@@ -1,0 +1,8 @@
+{
+  "generated": "2025-10-16T14:44:28.597853+00:00",
+  "seed": 20251016,
+  "command": "python analysis/code/eda_monogamy_by_religion.py",
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "rows_analyzed": 14436,
+  "small_cell_threshold": 10
+}
