@@ -6,3 +6,11 @@
 - Cross-tab indicates higher religious engagement corresponds to greater shares of full monogamy (e.g., 80% among "Yes, very seriously" vs 54% among non-practitioners) under the SRS assumption.
 - All cells cleared the k=10 disclosure threshold; suppression flag retained in outputs for downstream audit.
 - Outstanding: survey-weight metadata request (`T-003`) remains with data provider; PAP still marked draft pending design clarification.
+
+## 2025-10-16T14:52:28Z — Loop 11 (Planning)
+- Re-verified reproducibility artifacts (`artifacts/session_info.txt`, `artifacts/checksums.json`, `artifacts/seed.txt`) remain current; no regeneration required.
+- Updated `analysis/pre_analysis_plan.md` with ordered-logit specification for HYP-003, incorporating SRS assumption while weight metadata request (`T-003`) is pending.
+- Marked HYP-003 as `in_PAP` in `analysis/hypotheses.csv`, adding relationship-status control and reference to exploratory monogamy cross-tab.
+- Documented confirmatory command path (`analysis/code/run_pap_models.py`) and disclosure safeguards in PAP to pre-position confirmatory run once weights arrive.
+- Next: await survey-design response; once resolved, freeze PAP and script confirmatory analysis for HYP-003 alongside HYP-001/002.
+

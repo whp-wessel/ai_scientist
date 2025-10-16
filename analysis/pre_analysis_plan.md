@@ -2,6 +2,7 @@
 
 - Document status: Draft (not frozen)
 - Generated: 2025-10-16T12:44:10Z
+- Last updated: 2025-10-16T14:51:51Z
 - Seed: 20251016
 - Regeneration: `python analysis/code/bootstrap_setup.py --only pap`
 
@@ -14,6 +15,7 @@ This draft PAP covers preliminary confirmatory planning for three wellbeing, soc
 - Dataset: `childhoodbalancedpublic_original.csv` (n=14,443; p=718) as inspected on 2025-10-16.
 - Inclusion: respondents with non-missing variables required per hypothesis.
 - Survey design: TODO — pending confirmation of weight/strata/cluster variables. Analyses will assume SRS with weights=1 until metadata is verified.
+- 2025-10-16T14:51:51Z — Weight/strata search re-run; no validated design variables found. HYP-003 confirmatory model will proceed under simple random sampling with unit weights until task `T-003` resolves.
 
 ## Hypotheses
 
@@ -35,11 +37,14 @@ This draft PAP covers preliminary confirmatory planning for three wellbeing, soc
 - Controls: `selfage`, `gendermale`, `education`.
 - Estimand: Survey-weighted cumulative logit (proportional odds). Will assess proportional odds assumption.
 
-### HYP-003
-- Outcome: `monogamy` (categorical).
-- Predictor: `Do you *currently* actively practice a religion? (902tbll)`.
-- Controls: `selfage`, `gendermale`.
-- Estimand: Survey-weighted multinomial logit relative risk ratios for monogamy preference categories.
+### HYP-003 (updated 2025-10-16T14:51:51Z)
+- Outcome: `monogamy` recoded to ordered categories {full monogamy, leaning monogamy, leaning nonmonogamy, full nonmonogamy}; codes outside these options (e.g., 'Prefer not to answer') will be set to missing.
+- Predictor: `Do you *currently* actively practice a religion? (902tbll)` with four ordered responses (No, Yes/slightly, Yes/moderately, Yes/very seriously); modelled as categorical indicators with 'No' as reference.
+- Controls: `selfage`, `gendermale`, `Are you in a romantic relationship?` (binary indicator `Are you in a romantic relationship?`).
+- Estimand: Log-odds ratios from a simple-random-sample proportional-odds cumulative logit model quantifying how religious practice shifts the likelihood of preferring more monogamous relationship styles.
+- Planned model: Fit `statsmodels.miscmodels.ordinal_model.OrderedModel` (logit link, robust HC1 covariance) with seed 20251016 via `analysis/code/run_pap_models.py --hypotheses HYP-003 --model-type ordered-logit --seed 20251016`; report category probabilities and average marginal effects for `full monogamy`.
+- Sample exclusions: Drop observations with missing outcome/predictor/control values; enforce k=10 disclosure by collapsing the two non-monogamy categories if any post-exclusion cell count falls below threshold.
+- Exploratory motivation (2025-10-16T14:45Z cross-tab): Under the SRS assumption, full monogamy prevalence ranges from 54% (non-practitioners) to 80% (very serious practitioners) with n≥34 in every religion-practice stratum (see `tables/exploratory_monogamy_by_religion.*`).
 
 ## Missing Data Strategy
 
@@ -50,7 +55,7 @@ This draft PAP covers preliminary confirmatory planning for three wellbeing, soc
 
 - **HYP-001:** (1) Recode abuse predictor into binary (any vs none). (2) Estimate proportional-odds model for the Likert outcome. (3) Contrast MI-pooled estimates with complete-case regression. (4) Repeat models on reduced-auxiliary imputations (`run_label=reduced_aux`) to isolate dependence on auxiliary covariates.
 - **HYP-002:** (1) Collapse extreme net worth bins to ensure cell size ≥ 10. (2) Fit survey-weighted linear regression on net-worth midpoints. (3) Report MI-pooled vs complete-case proportional-odds estimates. (4) Repeat models on reduced-auxiliary imputations for stability assessment.
-- **HYP-003:** (1) Restrict sample to respondents currently in relationships. (2) Collapse non-monogamy categories into a single group for sensitivity.
+- **HYP-003:** (1) Restrict sample to respondents currently in relationships. (2) Collapse non-monogamy categories into a single group for sensitivity. (3) Re-estimate using multinomial logit to assess departures from proportional odds.
 
 ## Multiplicity
 
