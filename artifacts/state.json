@@ -78,14 +78,6 @@
   "path": "artifacts/state.json",
   "backlog_updates": [
     {
-      "id": "T-006",
-      "status": "completed"
-    },
-    {
-      "id": "T-007",
-      "status": "pending"
-    },
-    {
       "id": "T-007",
       "status": "completed"
     },

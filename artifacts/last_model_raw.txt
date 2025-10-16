@@ -2,37 +2,45 @@
 {
   "files": [
     {
-      "path": "analysis/code/review_imputed_vs_complete.py:1",
-      "description": "Added deterministic MI vs complete-case comparison script with masked counts and Markdown export."
+      "path": "analysis/code/mice_prototype.py:25",
+      "description": "Added sanitized --run-label support with label-aware outputs and shlex-quoted regeneration commands for reusable MICE sensitivity runs."
     },
     {
-      "path": "tables/imputed_vs_complete_summary.csv:1",
-      "description": "New exploratory table summarising complete-case and MI means/SDs with small-cell suppression."
+      "path": "analysis/imputation/mi_reduced_aux_plan.md:1",
+      "description": "New reduced-auxiliary MICE sensitivity plan documenting column set, execution template, diagnostics, and reproducibility notes."
     },
     {
-      "path": "analysis/imputation/imputed_vs_complete_summary.md:1",
-      "description": "Documented review findings, next steps, and regeneration command."
+      "path": "analysis/imputation_strategy.md:33",
+      "description": "Logged 2025-10-16T14:08Z update tying the reduced-aux plan to future robustness work."
     },
     {
-      "path": "analysis/pre_analysis_plan.md:44",
-      "description": "Expanded robustness checks to require MI-pooled vs complete-case contrasts for HYP-001/002."
+      "path": "analysis/pre_analysis_plan.md:48",
+      "description": "Extended HYP-001/002 robustness clauses to require reduced-auxiliary imputation reruns."
     },
     {
-      "path": "analysis/imputation_strategy.md:25",
-      "description": "Logged review outcome and queued reduced-auxiliary MI sensitivity plan."
+      "path": "notebooks/research_notebook.md:85",
+      "description": "Recorded run-label implementation and reduced-aux plan in the exploratory notebook."
     },
     {
       "path": "artifacts/state.json:1",
-      "description": "Advanced loop counter, closed T-006, added T-007, and updated regeneration pipeline."
+      "description": "Incremented loop counter, closed T-007, and queued new T-008 execution task with updated notes."
+    },
+    {
+      "path": "analysis/imputation/mice_prototype_summary.md:7",
+      "description": "Annotated prototype summary with explicit run-label metadata for clarity."
+    },
+    {
+      "path": "analysis/decision_log.csv:13",
+      "description": "Appended log entry for the reduced-auxiliary MICE planning action."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T13:59:58.324983Z",
-    "action": "imputation_review",
-    "inputs": "childhoodbalancedpublic_original.csv|data/derived/childhoodbalancedpublic_mi_prototype.csv.gz|analysis/imputation/mice_variable_map.json",
-    "rationale_short": "Compared MI vs complete-case outputs before PAP freeze.",
-    "code_path": "analysis/code/review_imputed_vs_complete.py",
-    "outputs": "tables/imputed_vs_complete_summary.csv|analysis/imputation/imputed_vs_complete_summary.md|analysis/pre_analysis_plan.md|analysis/imputation_strategy.md|notebooks/research_notebook.md|artifacts/state.json",
+    "ts": "2025-10-16T14:10:34.980941Z",
+    "action": "plan_reduced_aux_mi",
+    "inputs": "analysis/code/mice_prototype.py|analysis/imputation_strategy.md|analysis/pre_analysis_plan.md",
+    "rationale_short": "Documented reduced-auxiliary MICE plan and enabled run labeling.",
+    "code_path": "analysis/code/mice_prototype.py",
+    "outputs": "analysis/imputation/mi_reduced_aux_plan.md|analysis/imputation_strategy.md|analysis/pre_analysis_plan.md|notebooks/research_notebook.md|artifacts/state.json",
     "status": "success"
   },
   "next_actions": [
@@ -43,33 +51,40 @@
       "estimate_min": "10m"
     },
     {
-      "id": "T-007",
+      "id": "T-008",
       "priority": 2,
-      "description": "Plan reduced-auxiliary MI sensitivity run and specify diagnostics.",
-      "estimate_min": "30m"
+      "description": "Execute reduced-auxiliary MI sensitivity run and compare against prototype outputs.",
+      "estimate_min": "40m"
     }
   ],
   "state_update": {
-    "loop_counter": 5,
-    "notes": "Completed MI prototype review; MI and complete-case moments align within ±15%. PAP robustness now requires MI vs complete-case contrasts while we await external weight metadata.",
-    "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 && python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_prototype.csv.gz --mapping analysis/imputation/mice_variable_map.json --csv-out tables/imputed_vs_complete_summary.csv --md-out analysis/imputation/imputed_vs_complete_summary.md --seed 20251016",
+    "loop_counter": 6,
+    "notes": "Reduced-auxiliary MICE plan documented; code supports run labels. Waiting on weight metadata and queued execution of reduced-auxiliary sensitivity run.",
     "backlog_updates": [
       {
-        "id": "T-006",
+        "id": "T-007",
         "status": "completed"
       },
       {
-        "id": "T-007",
+        "id": "T-008",
         "status": "pending"
       }
     ]
   },
   "git": {
     "commit": true,
-    "message": "analysis(state): add MI vs complete-case review diagnostics"
+    "hash": "fac2f0d6895c063274f861ec2082b4cc4a3ea0b8",
+    "message": "analysis(imputation): add reduced-auxiliary MICE sensitivity plan",
+    "branch": "main",
+    "push": false
   },
   "stop_now": false,
   "stop_reason": "",
-  "signals": []
+  "signals": [
+    {
+      "type": "info",
+      "message": "analysis/code/__pycache__/ remains untracked from the syntax check; deletion commands are blocked under current policy."
+    }
+  ]
 }
 ```
