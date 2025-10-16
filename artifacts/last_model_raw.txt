@@ -2,45 +2,53 @@
 {
   "files": [
     {
-      "path": "analysis/code/mice_prototype.py:25",
-      "description": "Added sanitized --run-label support with label-aware outputs and shlex-quoted regeneration commands for reusable MICE sensitivity runs."
+      "path": "analysis/code/compare_imputation_runs.py:1",
+      "description": "New deterministic comparator script merging MICE summary tables and flagging >15% mean shifts with regeneration command logging."
     },
     {
-      "path": "analysis/imputation/mi_reduced_aux_plan.md:1",
-      "description": "New reduced-auxiliary MICE sensitivity plan documenting column set, execution template, diagnostics, and reproducibility notes."
+      "path": "data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz",
+      "description": "Stacked reduced-auxiliary MICE dataset (20 imputations, seed 20251016) for exploratory robustness checks."
     },
     {
-      "path": "analysis/imputation_strategy.md:33",
-      "description": "Logged 2025-10-16T14:08Z update tying the reduced-aux plan to future robustness work."
+      "path": "analysis/imputation/mice_prototype_summary__reduced_aux.md:1",
+      "description": "Recorded reduced-auxiliary run metadata, masked missingness diagnostics, and command trace."
     },
     {
-      "path": "analysis/pre_analysis_plan.md:48",
-      "description": "Extended HYP-001/002 robustness clauses to require reduced-auxiliary imputation reruns."
+      "path": "analysis/imputation/imputed_vs_complete_summary__reduced_aux.md:1",
+      "description": "Documented complete-case vs reduced-auxiliary imputation comparison with regeneration command."
     },
     {
-      "path": "notebooks/research_notebook.md:85",
-      "description": "Recorded run-label implementation and reduced-aux plan in the exploratory notebook."
+      "path": "analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md:1",
+      "description": "Summarized prototype vs reduced-auxiliary differences, noting dropped auxiliaries and absence of >15% mean shifts."
+    },
+    {
+      "path": "tables/imputed_vs_complete_summary__reduced_aux.csv",
+      "description": "Machine-readable complete-case vs reduced-auxiliary metrics with counts masked below 10."
+    },
+    {
+      "path": "tables/imputation_run_comparison__prototype_vs_reduced_aux.csv",
+      "description": "Merged summary quantifying reduced-auxiliary versus prototype mean and SD deltas."
+    },
+    {
+      "path": "notebooks/research_notebook.md:89",
+      "description": "Logged execution commands and findings for the reduced-auxiliary sensitivity run."
+    },
+    {
+      "path": "analysis/decision_log.csv:15",
+      "description": "Appended decision log entry for reduced-auxiliary imputation execution and diagnostics."
     },
     {
       "path": "artifacts/state.json:1",
-      "description": "Incremented loop counter, closed T-007, and queued new T-008 execution task with updated notes."
-    },
-    {
-      "path": "analysis/imputation/mice_prototype_summary.md:7",
-      "description": "Annotated prototype summary with explicit run-label metadata for clarity."
-    },
-    {
-      "path": "analysis/decision_log.csv:13",
-      "description": "Appended log entry for the reduced-auxiliary MICE planning action."
+      "description": "Incremented loop counter, closed T-008, queued T-009, and extended regeneration command with new steps."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T14:10:34.980941Z",
-    "action": "plan_reduced_aux_mi",
-    "inputs": "analysis/code/mice_prototype.py|analysis/imputation_strategy.md|analysis/pre_analysis_plan.md",
-    "rationale_short": "Documented reduced-auxiliary MICE plan and enabled run labeling.",
+    "ts": "2025-10-16T14:17:14Z",
+    "action": "run_reduced_aux_mi",
+    "inputs": "childhoodbalancedpublic_original.csv|analysis/code/mice_prototype.py|analysis/code/review_imputed_vs_complete.py|analysis/code/compare_imputation_runs.py",
+    "rationale_short": "Executed reduced-auxiliary MI run and diagnostics; confirmed stability vs prototype.",
     "code_path": "analysis/code/mice_prototype.py",
-    "outputs": "analysis/imputation/mi_reduced_aux_plan.md|analysis/imputation_strategy.md|analysis/pre_analysis_plan.md|notebooks/research_notebook.md|artifacts/state.json",
+    "outputs": "data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz|analysis/imputation/mice_imputation_summary__reduced_aux.csv|analysis/imputation/imputed_vs_complete_summary__reduced_aux.md|analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md",
     "status": "success"
   },
   "next_actions": [
@@ -51,30 +59,30 @@
       "estimate_min": "10m"
     },
     {
-      "id": "T-008",
+      "id": "T-009",
       "priority": 2,
-      "description": "Execute reduced-auxiliary MI sensitivity run and compare against prototype outputs.",
-      "estimate_min": "40m"
+      "description": "Synthesize reduced-auxiliary MI diagnostics into PAP robustness text and manifest notes.",
+      "estimate_min": "20m"
     }
   ],
   "state_update": {
-    "loop_counter": 6,
-    "notes": "Reduced-auxiliary MICE plan documented; code supports run labels. Waiting on weight metadata and queued execution of reduced-auxiliary sensitivity run.",
+    "loop_counter": 7,
+    "notes": "Reduced-auxiliary sensitivity run executed; exploratory diagnostics show stable means vs prototype. Need to fold findings into PAP robustness narrative while awaiting official weight metadata.",
     "backlog_updates": [
       {
-        "id": "T-007",
+        "id": "T-008",
         "status": "completed"
       },
       {
-        "id": "T-008",
+        "id": "T-009",
         "status": "pending"
       }
     ]
   },
   "git": {
     "commit": true,
-    "hash": "fac2f0d6895c063274f861ec2082b4cc4a3ea0b8",
-    "message": "analysis(imputation): add reduced-auxiliary MICE sensitivity plan",
+    "hash": "b0e939e366a1dfde918dda53d42c1af5dedf3f0b",
+    "message": "analysis(imputation): add reduced-aux MI sensitivity outputs",
     "branch": "main",
     "push": false
   },
@@ -83,7 +91,7 @@
   "signals": [
     {
       "type": "info",
-      "message": "analysis/code/__pycache__/ remains untracked from the syntax check; deletion commands are blocked under current policy."
+      "message": "All new tables retain small-cell suppression; no counts below 10 disclosed."
     }
   ]
 }
