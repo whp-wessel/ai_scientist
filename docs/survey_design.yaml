@@ -1,21 +1,41 @@
 dataset: childhoodbalancedpublic_original.csv
-generated: 2025-10-16T12:44:10Z
+generated: 2025-10-16 12:44:10+00:00
 seed: 20251016
 script: analysis/code/bootstrap_setup.py
 weights:
   weight_var: null
-  notes: "TODO: Confirm whether a weight variable is available in raw data."
+  notes: 'Validated 2025-10-16T13:08:09Z: No survey weight variable present in dataset;
+    analyses will assume equal weights until metadata is updated.'
+  validation:
+    status: missing
+    checked_on: '2025-10-16T13:08:09Z'
+    checked_with: analysis/code/validate_survey_design.py
+    candidates:
+    - 'Your weight is closest to: (n0iwzg0)'
+    - weight
 strata:
   strata_var: null
-  notes: "TODO: Identify strata if design information becomes available."
+  notes: 'Validated 2025-10-16T13:08:09Z: No strata variable documented or detected
+    in data.'
+  validation:
+    status: missing
+    checked_on: '2025-10-16T13:08:09Z'
+    checked_with: analysis/code/validate_survey_design.py
 clusters:
   cluster_var: null
-  notes: "TODO: Identify primary sampling units if applicable."
+  notes: 'Validated 2025-10-16T13:08:09Z: No cluster variable documented or detected
+    in data.'
+  validation:
+    status: missing
+    checked_on: '2025-10-16T13:08:09Z'
+    checked_with: analysis/code/validate_survey_design.py
 replicate_weights: []
 finite_population_correction: null
 assumptions:
-  - "Assuming simple random sampling until survey design metadata is verified."
+- Assuming simple random sampling until survey design metadata is verified (updated
+  2025-10-16T13:08:09Z).
 todo:
-  - "Review docs/codebook.json for weight metadata."
-  - "Inspect raw data for variables matching weight/strata conventions."
-regeneration_command: "python analysis/code/bootstrap_setup.py --only survey_design"
+- Review docs/codebook.json for weight metadata.
+- Inspect raw data for variables matching weight/strata conventions.
+regeneration_command: python analysis/code/bootstrap_setup.py --only survey_design
+validation_command: python analysis/code/validate_survey_design.py

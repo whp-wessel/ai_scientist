@@ -1,0 +1,68 @@
+{
+  "timestamp": "2025-10-16T13:08:09Z",
+  "seed": 20251016,
+  "dataset_path": "childhoodbalancedpublic_original.csv",
+  "row_count": 14443,
+  "column_count": 718,
+  "candidate_columns": [
+    "Your weight is closest to: (n0iwzg0)",
+    "weight"
+  ],
+  "candidate_details": [
+    {
+      "column": "Your weight is closest to: (n0iwzg0)",
+      "summary": {
+        "dtype": "object",
+        "non_null_n": 14437,
+        "unique_non_null": 14,
+        "sample_values": [
+          "170lbs (77kg)",
+          "310lbs (141kg)",
+          "130lbs (59kg)",
+          "110lbs (50kg)",
+          "150lbs (68kg)"
+        ],
+        "is_numeric": false
+      },
+      "sample_values": [
+        "170lbs (77kg)",
+        "310lbs (141kg)",
+        "130lbs (59kg)",
+        "110lbs (50kg)",
+        "150lbs (68kg)"
+      ],
+      "likely_weight": "No"
+    },
+    {
+      "column": "weight",
+      "summary": {
+        "dtype": "float64",
+        "non_null_n": 14443,
+        "unique_non_null": 14,
+        "sample_values": [
+          170.0,
+          310.0,
+          130.0,
+          110.0,
+          150.0
+        ],
+        "is_numeric": true
+      },
+      "sample_values": [
+        170.0,
+        310.0,
+        130.0,
+        110.0,
+        150.0
+      ],
+      "likely_weight": "No"
+    }
+  ],
+  "assessment": [
+    "No survey-design variables (weights/strata/clusters) are available in the provided dataset.",
+    "Proceeding analyses must assume equal-probability sampling (simple random sampling) until official design information is supplied.",
+    "Columns containing 'weight' were inspected; all appear to capture respondent body weight categories and are unsuitable as survey weights.",
+    "Columns reviewed: `Your weight is closest to: (n0iwzg0)`, `weight`."
+  ],
+  "command": "python analysis/code/validate_survey_design.py"
+}

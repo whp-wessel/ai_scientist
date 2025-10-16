@@ -16,6 +16,13 @@ Regenerate: `python analysis/code/bootstrap_setup.py --only notebook`
 - Authored preliminary pre-analysis plan covering priority hypotheses.
 - Logged tasks in `artifacts/state.json` and `analysis/decision_log.csv`.
 
+## 2025-10-16T13:08Z — Survey Design Validation
+
+- Ran `python analysis/code/validate_survey_design.py` to audit survey design metadata.
+- Confirmed no design-based weight, strata, or cluster variables exist in `childhoodbalancedpublic_original.csv`.
+- Updated `docs/survey_design.yaml` with validation notes and added `qc/data_checks.md` summary.
+- Recorded assumption to proceed with simple random sampling until official metadata is obtained.
+
 ## Candidate Hypotheses (Exploratory)
 
 - `HYP-001`: Childhood emotional abuse ↔ adult self-love score.
@@ -25,13 +32,13 @@ Regenerate: `python analysis/code/bootstrap_setup.py --only notebook`
 
 ## Immediate Next Steps
 
-1. Validate survey design elements (weights, strata, clusters).
-2. Generate weighted descriptive statistics for outcome and predictor variables.
-3. Assess missingness and coding for variables in the draft PAP.
+1. Produce exploratory (SRS-assumed) descriptive summaries for wellbeing and socioeconomic outcomes.
+2. Assess missingness and coding for variables in the draft PAP.
+3. Draft outreach request or documentation note for absent survey weights.
 
 ## Open Questions
 
-- Are official survey weights available, or must we model SRS?
+- When will official survey weight metadata be available, or is SRS acceptable?
 - How are Likert responses encoded (numeric vs string labels)?
 
 ## Reproducibility
