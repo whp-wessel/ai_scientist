@@ -19,3 +19,14 @@ Generated: 2025-10-16T13:30:45Z (seed 20251016)
 ## Next Steps
 - Await clarification/documentation on official survey weights (see Draft Request).
 - Expand the codebook to document coding for suppressed categories prior to implementing the imputation scripts.
+
+## 2025-10-16 Update — Imputed vs Complete-Case Review
+- Ran `analysis/code/review_imputed_vs_complete.py` using seed 20251016; summary in `tables/imputed_vs_complete_summary.csv`.
+- Mean shifts across key variables remained within ±15% relative to complete-case estimates, supporting MI as primary strategy.
+- `Religionchildhood` and `mentalillness` remain excluded due to zero observed values; retain placeholder for future coding review.
+
+## Updated Robustness Actions
+- Confirmatory analyses will report both MI-pooled and complete-case estimates for HYP-001 and HYP-002.
+- Add sensitivity re-running MI with the auxiliary predictor set reduced to demographic core variables to test stability.
+- Document any deviations (e.g., alternative convergence criteria) in `analysis/imputation_strategy.md` with timestamps.
+

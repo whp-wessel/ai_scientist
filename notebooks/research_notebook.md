@@ -72,3 +72,11 @@ Regenerate: `python analysis/code/bootstrap_setup.py --only notebook`
 
 - Notebook scaffold is text-only; regenerate via `python analysis/code/bootstrap_setup.py --only notebook`.
 - All future code executed in separate scripts / notebooks with seed `20251016`.
+
+## 2025-10-16T13:58Z — Imputed vs Complete-Case Review
+
+- Ran `python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_prototype.csv.gz --mapping analysis/imputation/mice_variable_map.json --csv-out tables/imputed_vs_complete_summary.csv --md-out analysis/imputation/imputed_vs_complete_summary.md --seed 20251016`.
+- Compared complete-case means/SDs against MI aggregates; all shifts within ±15%, supporting MI for confirmatory work.
+- Logged narrative in `analysis/imputation/imputed_vs_complete_summary.md` and updated PAP robustness checks to report MI vs complete-case contrasts.
+- Added new table `tables/imputed_vs_complete_summary.csv` (counts masked <10) for reproducible reference.
+

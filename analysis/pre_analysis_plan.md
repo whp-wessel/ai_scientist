@@ -48,9 +48,9 @@ This draft PAP covers preliminary confirmatory planning for three wellbeing, soc
 
 ## Robustness Checks (pre-specified)
 
-- **HYP-001:** (1) Recode abuse predictor into binary (any vs none). (2) Use ordinal logistic regression for Likert outcome categories.
-- **HYP-002:** (1) Collapse extreme net worth bins to ensure cell size ≥ 10. (2) Fit survey-weighted linear regression on mid-point dollars as sensitivity.
-- **HYP-003:** (1) Restrict sample to respondents currently in relationships. (2) Alternative coding that groups non-monogamous categories together.
+- **HYP-001:** (1) Recode abuse predictor into binary (any vs none). (2) Estimate proportional-odds model for the Likert outcome. (3) Contrast MI-pooled estimates with complete-case regression to document sensitivity.
+- **HYP-002:** (1) Collapse extreme net worth bins to ensure cell size ≥ 10. (2) Fit survey-weighted linear regression on net-worth midpoints. (3) Report MI-pooled vs complete-case proportional-odds estimates.
+- **HYP-003:** (1) Restrict sample to respondents currently in relationships. (2) Collapse non-monogamy categories into a single group for sensitivity.
 
 ## Multiplicity
 
