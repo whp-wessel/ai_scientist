@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "path": "childhoodbalancedpublic_original.csv",
+    "sha256": "811681051039f470268aac4e5a94bcf1a325a9d60d644e08b98ba97c74c3e222",
+    "size_bytes": 42502096
+  },
+  {
+    "path": "data/derived/childhoodbalancedpublic_mi_prototype.csv.gz",
+    "sha256": "4301aaf08a7de8c6de027c6e2b70ecedf9909ff14e25b42a53b506891d34d0e8",
+    "size_bytes": 2018107
+  },
+  {
+    "path": "data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz",
+    "sha256": "3a33dcb3dc09676a21e031a2f8073a76c0561f30b4c385ca0923b2ffbdbf3426",
+    "size_bytes": 1585820
+  }
+]

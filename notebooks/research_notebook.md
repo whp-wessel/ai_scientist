@@ -100,3 +100,11 @@ Regenerate: `python analysis/code/bootstrap_setup.py --only notebook`
 - Summarised diagnostics in `analysis/imputation_strategy.md`, confirming <15% shifts and compliance with small-cell masking.
 - Backlog item T-009 now complete; next actionable task remains the survey weight documentation request.
 
+
+## 2025-10-16T14:34:17.880983Z - Reproducibility Checkpoint & Weight Request Tracking
+
+- Reran `python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 --run-label reduced_aux --columns selfage biomale gendermale cis education classchild classteen classcurrent networth "I love myself (2l8994l)" "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)"` after discovering a zero-length reduced auxiliary artifact.
+- Updated `artifacts/checksums.json` with SHA-256 hashes and sizes for the source dataset and both MI outputs to support manifest regeneration.
+- Refreshed `artifacts/session_info.txt` and `artifacts/repro_report.md` via runner utilities to capture current environment metadata.
+- Logged provider outreach status in `docs/communications/contact_log.csv`; request remains pending human dispatch.
+
