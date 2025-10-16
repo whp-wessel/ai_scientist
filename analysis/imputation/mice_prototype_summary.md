@@ -7,6 +7,7 @@
 - Burn-in iterations: 10
 - Output (stacked imputations): `data/derived/childhoodbalancedpublic_mi_prototype.csv.gz`
 - Summary table: `analysis/imputation/mice_imputation_summary.csv`
+- Run label: `prototype`
 - All randomness seeded via NumPy global state.
 
 ## Missingness (Counts masked <10)

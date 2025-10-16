@@ -80,3 +80,8 @@ Regenerate: `python analysis/code/bootstrap_setup.py --only notebook`
 - Logged narrative in `analysis/imputation/imputed_vs_complete_summary.md` and updated PAP robustness checks to report MI vs complete-case contrasts.
 - Added new table `tables/imputed_vs_complete_summary.csv` (counts masked <10) for reproducible reference.
 
+## 2025-10-16T14:08Z — Reduced Auxiliary MICE Plan
+
+- Extended `analysis/code/mice_prototype.py` to accept `--run-label` and emit label-specific outputs, preserving the prototype configuration as default.
+- Authored `analysis/imputation/mi_reduced_aux_plan.md` outlining a trimmed column set for `run_label=reduced_aux`, execution template, and diagnostics comparing against prototype and complete-case estimates.
+- Updated `analysis/imputation_strategy.md` and the draft PAP robustness section to codify the reduced-auxiliary sensitivity prior to PAP freeze.

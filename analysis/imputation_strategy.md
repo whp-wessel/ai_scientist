@@ -30,3 +30,7 @@ Generated: 2025-10-16T13:30:45Z (seed 20251016)
 - Add sensitivity re-running MI with the auxiliary predictor set reduced to demographic core variables to test stability.
 - Document any deviations (e.g., alternative convergence criteria) in `analysis/imputation_strategy.md` with timestamps.
 
+## 2025-10-16T14:08Z — Reduced Auxiliary Sensitivity Plan
+- Documented `analysis/imputation/mi_reduced_aux_plan.md` detailing a trimmed MICE run (`run_label=reduced_aux`) limited to outcome/predictor/control variables for HYP-001/002.
+- Future diagnostics: compare reduced-auxiliary imputations against both complete-case and full-auxiliary (`prototype`) runs, highlighting shifts >15% in pooled estimates or SEs.
+- Results will feed into PAP robustness clauses before freeze and inform whether auxiliary covariates materially influence inference.

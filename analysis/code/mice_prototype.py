@@ -1,12 +1,13 @@
 """Prototype multiple imputation workflow for key wellbeing and abuse items.
 
 This script performs chained equations imputation using statsmodels' MICE implementation,
-writing deterministic outputs seeded from the agent configuration. It produces:
-- data/derived/childhoodbalancedpublic_mi_prototype.csv.gz: stacked imputed datasets
-- analysis/imputation/mice_variable_map.json: original -> sanitized column names
-- analysis/imputation/mice_imputation_summary.csv: aggregate diagnostics (small-cell safe)
-- analysis/imputation/mice_prototype_summary.md: narrative summary with regeneration details
-- analysis/imputation/mice_prototype_metadata.json: run metadata for reproducibility
+writing deterministic outputs seeded from the agent configuration. Outputs are labeled
+via `--run-label` (default `prototype`) to keep multiple sensitivity runs disjoint:
+- data/derived/<dataset>_mi_<label>.csv.gz: stacked imputed datasets
+- analysis/imputation/mice_variable_map[__<label>].json: original -> sanitized column names
+- analysis/imputation/mice_imputation_summary[__<label>].csv: aggregate diagnostics (small-cell safe)
+- analysis/imputation/mice_prototype_summary[__<label>].md: narrative summary with regeneration details
+- analysis/imputation/mice_prototype_metadata[__<label>].json: run metadata for reproducibility
 
 Usage
 -----
@@ -24,6 +25,7 @@ import argparse
 import json
 import math
 import re
+import shlex
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List
@@ -66,6 +68,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--n-imputations", type=int, default=20)
     parser.add_argument("--burn-in", type=int, default=10)
     parser.add_argument(
+        "--run-label",
+        type=str,
+        default="prototype",
+        help="Label appended to outputs to differentiate sensitivity runs",
+    )
+    parser.add_argument(
         "--columns",
         nargs="*",
         default=None,
@@ -99,6 +107,11 @@ def sanitize_columns(columns: List[str]) -> Dict[str, str]:
     return mapping
 
 
+def sanitize_label(label: str) -> str:
+    cleaned = re.sub(r"[^0-9A-Za-z]+", "_", label or "").strip("_").lower()
+    return cleaned or "prototype"
+
+
 def mask_small_cells(count: float) -> str:
     if math.isnan(count):
         return "NA"
@@ -117,6 +130,8 @@ def main() -> None:
 
     seed = load_seed(args.config, args.seed)
     np.random.seed(seed)
+
+    run_label = sanitize_label(args.run_label)
 
     columns = args.columns if args.columns else DEFAULT_COLUMNS
     df = pd.read_csv(dataset_path, usecols=columns)
@@ -145,7 +160,12 @@ def main() -> None:
         imputations.append(completed)
 
     stacked = pd.concat(imputations, ignore_index=True)
-    derived_output_path = derived_dir / "childhoodbalancedpublic_mi_prototype.csv.gz"
+    dataset_stem = dataset_path.stem
+    dataset_key = dataset_stem
+    if dataset_stem.endswith("_original"):
+        dataset_key = dataset_stem[: -len("_original")]
+    derived_filename = f"{dataset_key}_mi_{run_label}.csv.gz"
+    derived_output_path = derived_dir / derived_filename
     stacked.to_csv(derived_output_path, index=False)
 
     missing_counts = df.isna().sum()
@@ -169,12 +189,43 @@ def main() -> None:
         )
 
     summary_df = pd.DataFrame(summary_records)
-    summary_df.to_csv(output_dir / "mice_imputation_summary.csv", index=False)
+    summary_filename = (
+        "mice_imputation_summary.csv"
+        if run_label == "prototype"
+        else f"mice_imputation_summary__{run_label}.csv"
+    )
+    summary_path = output_dir / summary_filename
+    summary_df.to_csv(summary_path, index=False)
 
-    mapping_path = output_dir / "mice_variable_map.json"
+    mapping_filename = (
+        "mice_variable_map.json"
+        if run_label == "prototype"
+        else f"mice_variable_map__{run_label}.json"
+    )
+    mapping_path = output_dir / mapping_filename
     mapping_path.write_text(json.dumps(column_map, indent=2))
 
     run_completed = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+    command_parts: List[str] = [
+        "python",
+        "analysis/code/mice_prototype.py",
+        "--dataset",
+        str(dataset_path),
+        "--config",
+        str(args.config),
+        "--seed",
+        str(seed),
+        "--n-imputations",
+        str(args.n_imputations),
+        "--burn-in",
+        str(burn_in),
+    ]
+    if run_label != "prototype":
+        command_parts.extend(["--run-label", run_label])
+    if args.columns:
+        command_parts.append("--columns")
+        command_parts.extend(args.columns)
 
     metadata = {
         "run_completed": run_completed,
@@ -182,14 +233,21 @@ def main() -> None:
         "seed": seed,
         "n_imputations": args.n_imputations,
         "burn_in": burn_in,
+        "run_label_input": args.run_label,
+        "run_label": run_label,
         "columns": columns,
         "dropped_all_missing_columns": dropped_original,
         "derived_output": str(derived_output_path),
-        "summary_output": str(output_dir / "mice_imputation_summary.csv"),
+        "summary_output": str(summary_path),
         "variable_map": str(mapping_path),
-        "command": f"python analysis/code/mice_prototype.py --dataset {dataset_path} --config {args.config} --seed {seed} --n-imputations {args.n_imputations} --burn-in {burn_in}",
+        "command": shlex.join(command_parts),
     }
-    (output_dir / "mice_prototype_metadata.json").write_text(json.dumps(metadata, indent=2))
+    metadata_filename = (
+        "mice_prototype_metadata.json"
+        if run_label == "prototype"
+        else f"mice_prototype_metadata__{run_label}.json"
+    )
+    (output_dir / metadata_filename).write_text(json.dumps(metadata, indent=2))
 
     summary_lines = [
         "# Multiple Imputation Prototype (Exploratory)",
@@ -201,6 +259,7 @@ def main() -> None:
         f"- Burn-in iterations: {burn_in}",
         f"- Output (stacked imputations): `{metadata['derived_output']}`",
         f"- Summary table: `{metadata['summary_output']}`",
+        f"- Run label: `{run_label}`",
         "- All randomness seeded via NumPy global state.",
         "",
         "## Missingness (Counts masked <10)",
@@ -226,7 +285,12 @@ def main() -> None:
         ]
     )
 
-    (output_dir / "mice_prototype_summary.md").write_text("\n".join(summary_lines))
+    summary_md_filename = (
+        "mice_prototype_summary.md"
+        if run_label == "prototype"
+        else f"mice_prototype_summary__{run_label}.md"
+    )
+    (output_dir / summary_md_filename).write_text("\n".join(summary_lines))
 
 
 if __name__ == "__main__":
