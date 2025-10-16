@@ -2,53 +2,33 @@
 {
   "files": [
     {
-      "path": "analysis/code/compare_imputation_runs.py:1",
-      "description": "New deterministic comparator script merging MICE summary tables and flagging >15% mean shifts with regeneration command logging."
+      "path": "analysis/pre_analysis_plan.md:59",
+      "note": "Added exploratory reduced-aux MI diagnostics summary with regeneration commands, findings, and PAP implications."
     },
     {
-      "path": "data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz",
-      "description": "Stacked reduced-auxiliary MICE dataset (20 imputations, seed 20251016) for exploratory robustness checks."
+      "path": "analysis/imputation/mi_reduced_aux_plan.md:5",
+      "note": "Marked reduced-aux plan as executed and logged full run/diagnostic manifest with outputs and findings."
     },
     {
-      "path": "analysis/imputation/mice_prototype_summary__reduced_aux.md:1",
-      "description": "Recorded reduced-auxiliary run metadata, masked missingness diagnostics, and command trace."
+      "path": "analysis/imputation_strategy.md:38",
+      "note": "Summarized reduced-auxiliary diagnostics confirming <15% shifts and continued robustness coverage."
     },
     {
-      "path": "analysis/imputation/imputed_vs_complete_summary__reduced_aux.md:1",
-      "description": "Documented complete-case vs reduced-auxiliary imputation comparison with regeneration command."
+      "path": "notebooks/research_notebook.md:97",
+      "note": "Recorded synthesis narrative linking PAP, manifest updates, and remaining actions."
     },
     {
-      "path": "analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md:1",
-      "description": "Summarized prototype vs reduced-auxiliary differences, noting dropped auxiliaries and absence of >15% mean shifts."
-    },
-    {
-      "path": "tables/imputed_vs_complete_summary__reduced_aux.csv",
-      "description": "Machine-readable complete-case vs reduced-auxiliary metrics with counts masked below 10."
-    },
-    {
-      "path": "tables/imputation_run_comparison__prototype_vs_reduced_aux.csv",
-      "description": "Merged summary quantifying reduced-auxiliary versus prototype mean and SD deltas."
-    },
-    {
-      "path": "notebooks/research_notebook.md:89",
-      "description": "Logged execution commands and findings for the reduced-auxiliary sensitivity run."
-    },
-    {
-      "path": "analysis/decision_log.csv:15",
-      "description": "Appended decision log entry for reduced-auxiliary imputation execution and diagnostics."
-    },
-    {
-      "path": "artifacts/state.json:1",
-      "description": "Incremented loop counter, closed T-008, queued T-009, and extended regeneration command with new steps."
+      "path": "artifacts/state.json:2",
+      "note": "Incremented loop counter, closed T-009, refreshed notes, and pruned next actions."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T14:17:14Z",
-    "action": "run_reduced_aux_mi",
-    "inputs": "childhoodbalancedpublic_original.csv|analysis/code/mice_prototype.py|analysis/code/review_imputed_vs_complete.py|analysis/code/compare_imputation_runs.py",
-    "rationale_short": "Executed reduced-auxiliary MI run and diagnostics; confirmed stability vs prototype.",
-    "code_path": "analysis/code/mice_prototype.py",
-    "outputs": "data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz|analysis/imputation/mice_imputation_summary__reduced_aux.csv|analysis/imputation/imputed_vs_complete_summary__reduced_aux.md|analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md",
+    "ts": "2025-10-16T14:25:34.172779Z",
+    "action": "synthesize_reduced_aux_mi",
+    "inputs": "analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md|analysis/imputation/mice_prototype_summary__reduced_aux.md|analysis/imputation_strategy.md|analysis/pre_analysis_plan.md",
+    "rationale_short": "Documented reduced-auxiliary MI diagnostics in PAP and manifest notes.",
+    "code_path": "analysis/pre_analysis_plan.md",
+    "outputs": "analysis/pre_analysis_plan.md|analysis/imputation/mi_reduced_aux_plan.md|analysis/imputation_strategy.md|notebooks/research_notebook.md|artifacts/state.json",
     "status": "success"
   },
   "next_actions": [
@@ -57,42 +37,28 @@
       "priority": 3,
       "description": "Coordinate sending of survey weight request; track provider response.",
       "estimate_min": "10m"
-    },
-    {
-      "id": "T-009",
-      "priority": 2,
-      "description": "Synthesize reduced-auxiliary MI diagnostics into PAP robustness text and manifest notes.",
-      "estimate_min": "20m"
     }
   ],
   "state_update": {
-    "loop_counter": 7,
-    "notes": "Reduced-auxiliary sensitivity run executed; exploratory diagnostics show stable means vs prototype. Need to fold findings into PAP robustness narrative while awaiting official weight metadata.",
+    "path": "artifacts/state.json",
+    "loop_counter": 8,
+    "notes": "Reduced-auxiliary diagnostics documented in PAP and manifest notes; awaiting official survey weight metadata before PAP freeze.",
     "backlog_updates": [
       {
-        "id": "T-008",
-        "status": "completed"
-      },
-      {
         "id": "T-009",
-        "status": "pending"
+        "status": "completed"
       }
     ]
   },
   "git": {
     "commit": true,
-    "hash": "b0e939e366a1dfde918dda53d42c1af5dedf3f0b",
-    "message": "analysis(imputation): add reduced-aux MI sensitivity outputs",
+    "commit_id": "420e04fc3b360330648bcbb2c2a0f86d3d58df28",
+    "message": "analysis(pap): integrate reduced-aux MI diagnostics into robustness notes [refs T-009]",
     "branch": "main",
-    "push": false
+    "ahead": 1
   },
   "stop_now": false,
   "stop_reason": "",
-  "signals": [
-    {
-      "type": "info",
-      "message": "All new tables retain small-cell suppression; no counts below 10 disclosed."
-    }
-  ]
+  "signals": []
 }
 ```
