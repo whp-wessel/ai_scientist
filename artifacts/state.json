@@ -1,6 +1,6 @@
 {
-  "loop_counter": 2,
-  "last_updated": "2025-10-16T13:19:13.931258+00:00",
+  "loop_counter": 4,
+  "last_updated": "2025-10-16T13:51:29.261430+00:00",
   "backlog": [
     {
       "id": "T-001",
@@ -20,13 +20,27 @@
       "id": "T-003",
       "priority": 3,
       "description": "Request official survey design weights or documentation from data provider.",
-      "status": "pending",
+      "status": "waiting_external",
       "estimate_min": "10m"
     },
     {
       "id": "T-004",
       "priority": 2,
       "description": "Analyze missingness drivers for self-love and abuse items; plan imputation strategy.",
+      "status": "completed",
+      "estimate_min": "25m"
+    },
+    {
+      "id": "T-005",
+      "priority": 2,
+      "description": "Prototype multiple imputation workflow for self-love and abuse items (seed 20251016).",
+      "status": "completed",
+      "estimate_min": "30m"
+    },
+    {
+      "id": "T-006",
+      "priority": 2,
+      "description": "Review imputed vs complete-case summaries and design robustness checks.",
       "status": "pending",
       "estimate_min": "25m"
     }
@@ -35,16 +49,16 @@
     {
       "id": "T-003",
       "priority": 3,
-      "description": "Request official survey design weights or documentation from data provider.",
+      "description": "Coordinate sending of survey weight request; track provider response.",
       "estimate_min": "10m"
     },
     {
-      "id": "T-004",
+      "id": "T-006",
       "priority": 2,
-      "description": "Analyze missingness drivers for self-love and abuse items; plan imputation strategy.",
+      "description": "Review imputed distributions and finalize robustness checks for PAP.",
       "estimate_min": "25m"
     }
   ],
-  "notes": "Completed exploratory SRS summaries for wellbeing and net worth; high non-response for abuse/self-love items noted. Awaiting survey weights; next focus on missingness drivers.",
-  "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/bootstrap_setup.py --only state"
+  "notes": "Drafted survey weight request template and completed missingness diagnostics; logit models indicate age/education association with self-love non-response and higher missingness among higher childhood class / male-at-birth for abuse item. MICE plan documented, awaiting weight metadata before confirmatory work. Completed prototype MICE workflow (20 imputations, seed 20251016) with small-cell suppression; dropped-all-missing Religionchildhood and mentalillness for follow-up coding review.",
+  "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10"
 }

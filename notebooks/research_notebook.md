@@ -38,16 +38,35 @@ Regenerate: `python analysis/code/bootstrap_setup.py --only notebook`
 - `HYP-003`: Current religious practice ↔ monogamy preference.
 - `HYP-004`: Mental health diagnosis ↔ recent emotional difficulty.
 
+## 2025-10-16T13:30Z — Missingness Diagnostics & Imputation Plan
+
+- Ran `python analysis/code/missingness_analysis.py` (seed `20251016`) to profile missingness for wellness and abuse items; outputs saved to `qc/missingness_analysis.md`, `tables/missingness_summary.csv`, and `tables/missingness_logit_results.csv`.
+- Applied small-cell suppression (<10) in public-facing tables; logistic models highlight higher missingness among older respondents and those with lower education (self-love) and among higher childhood class / male-at-birth respondents (abuse item).
+- Authored `analysis/imputation_strategy.md` outlining a MICE approach (20 imputations, 10 burn-in iterations) and robustness checks aligned with PAP requirements.
+
+## 2025-10-16T13:31Z — Drafted Survey Weight Request
+
+- Created `docs/communications/request_survey_weights.md` with a reproducible outreach template requesting official weights, replicate design details, and documentation.
+- Awaiting human review and dispatch; once sent, archive correspondence in `docs/communications/sent/` per reproducibility SOP.
+
+## 2025-10-16T13:49Z — Multiple Imputation Prototype (Exploratory)
+
+- Executed `python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10`.
+- Generated stacked imputations (`data/derived/childhoodbalancedpublic_mi_prototype.csv.gz`) containing 20 seeded draws with auxiliary demographics.
+- Logged diagnostics in `analysis/imputation/mice_imputation_summary.csv` and narrative notes in `analysis/imputation/mice_prototype_summary.md`; all missingness counts <10 masked per disclosure rules.
+- Documented regeneration metadata (`analysis/imputation/mice_prototype_metadata.json`) and recorded dropped-all-missing columns (Religionchildhood, mentalillness) for follow-up coding review.
+
 ## Immediate Next Steps
 
-1. Produce exploratory (SRS-assumed) descriptive summaries for wellbeing and socioeconomic outcomes.
-2. Assess missingness and coding for variables in the draft PAP.
-3. Draft outreach request or documentation note for absent survey weights.
+1. Finalize and send the survey weight request; archive correspondence once acknowledged.
+2. Review imputed distributions against complete-case benchmarks and specify robustness checks for PAP integration.
+3. Expand the codebook with confirmed coding for key Likert scales and auxiliary variables.
 
 ## Open Questions
 
-- When will official survey weight metadata be available, or is SRS acceptable?
-- How are Likert responses encoded (numeric vs string labels)?
+- Timeline for receiving official survey weights and replicate design files.
+- Confirmed coding for Likert and abuse frequency responses to support imputation models.
+- How to incorporate dropped-all-missing variables (Religionchildhood, mentalillness) once official coding is verified.
 
 ## Reproducibility
 
