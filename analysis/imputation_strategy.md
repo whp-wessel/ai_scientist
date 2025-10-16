@@ -34,3 +34,10 @@ Generated: 2025-10-16T13:30:45Z (seed 20251016)
 - Documented `analysis/imputation/mi_reduced_aux_plan.md` detailing a trimmed MICE run (`run_label=reduced_aux`) limited to outcome/predictor/control variables for HYP-001/002.
 - Future diagnostics: compare reduced-auxiliary imputations against both complete-case and full-auxiliary (`prototype`) runs, highlighting shifts >15% in pooled estimates or SEs.
 - Results will feed into PAP robustness clauses before freeze and inform whether auxiliary covariates materially influence inference.
+
+## 2025-10-16T14:24Z — Reduced Auxiliary Diagnostics Summary
+- Ran `mice_prototype.py` with `--run-label reduced_aux` (seed 20251016) restricting predictors to PAP-required variables; outputs under `data/derived/` and `analysis/imputation/` suffixed `__reduced_aux`.
+- `review_imputed_vs_complete.py` and `compare_imputation_runs.py` confirmed all weighted means/SDs shifted <15% relative to the prototype MI; no convergence alarms recorded.
+- Removed auxiliaries (religion practice, liberal identity, monogamy preference) did not materially influence wellbeing or net-worth imputations; sensitivity will remain in PAP robustness clauses.
+- All generated tables suppress counts <10; no disclosure risk observed.
+

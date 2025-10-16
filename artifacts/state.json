@@ -1,6 +1,6 @@
 {
-  "loop_counter": 7,
-  "last_updated": "2025-10-16T14:18:12.255201+00:00",
+  "loop_counter": 8,
+  "last_updated": "2025-10-16T14:25:03.700112Z",
   "backlog": [
     {
       "id": "T-001",
@@ -62,7 +62,7 @@
       "id": "T-009",
       "priority": 2,
       "description": "Synthesize reduced-auxiliary MI diagnostics into PAP robustness text and manifest notes.",
-      "status": "pending",
+      "status": "completed",
       "estimate_min": "20m"
     }
   ],
@@ -72,25 +72,15 @@
       "priority": 3,
       "description": "Coordinate sending of survey weight request; track provider response.",
       "estimate_min": "10m"
-    },
-    {
-      "id": "T-009",
-      "priority": 2,
-      "description": "Synthesize reduced-auxiliary MI diagnostics into PAP robustness text and manifest notes.",
-      "estimate_min": "20m"
     }
   ],
-  "notes": "Reduced-auxiliary sensitivity run executed; exploratory diagnostics show stable means vs prototype. Need to fold findings into PAP robustness narrative while awaiting official weight metadata.",
+  "notes": "Reduced-auxiliary diagnostics documented in PAP and manifest notes; awaiting official survey weight metadata before PAP freeze.",
   "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 && python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_prototype.csv.gz --mapping analysis/imputation/mice_variable_map.json --csv-out tables/imputed_vs_complete_summary.csv --md-out analysis/imputation/imputed_vs_complete_summary.md --seed 20251016 && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 --run-label reduced_aux --columns selfage biomale gendermale cis education classchild classteen classcurrent networth 'I love myself (2l8994l)' 'during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)' && python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz --mapping analysis/imputation/mice_variable_map__reduced_aux.json --csv-out tables/imputed_vs_complete_summary__reduced_aux.csv --md-out analysis/imputation/imputed_vs_complete_summary__reduced_aux.md --seed 20251016 && python analysis/code/compare_imputation_runs.py --summary-a analysis/imputation/mice_imputation_summary.csv --summary-b analysis/imputation/mice_imputation_summary__reduced_aux.csv --label-a prototype --label-b reduced_aux --csv-out tables/imputation_run_comparison__prototype_vs_reduced_aux.csv --md-out analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md --seed 20251016",
   "path": "artifacts/state.json",
   "backlog_updates": [
     {
-      "id": "T-008",
-      "status": "completed"
-    },
-    {
       "id": "T-009",
-      "status": "pending"
+      "status": "completed"
     }
   ]
 }

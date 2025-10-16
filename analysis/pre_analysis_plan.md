@@ -56,6 +56,13 @@ This draft PAP covers preliminary confirmatory planning for three wellbeing, soc
 
 - Apply Benjamini–Hochberg FDR control at q=0.05 within the set {HYP-001, HYP-002, HYP-003} once confirmatory analyses commence.
 
+## 2025-10-16T14:24Z — Reduced Auxiliary MI Diagnostics (Exploratory)
+
+- Command: `python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 --run-label reduced_aux --columns selfage biomale gendermale cis education classchild classteen classcurrent networth "I love myself (2l8994l)" "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)"`
+- Comparative checks: `analysis/code/review_imputed_vs_complete.py` (reduced_aux vs complete-case) and `analysis/code/compare_imputation_runs.py` (reduced_aux vs prototype) with seed 20251016.
+- Findings: No variable showed >15% shift in weighted means or SDs relative to the prototype run; small-cell checks confirmed all public outputs mask counts <10. Variables absent from the reduced-aux run (religion, liberal identity, monogamy) drove no observable instability in wellbeing or net-worth summaries.
+- Implication for PAP: Maintain reduced-auxiliary MI as a pre-specified robustness check for HYP-001 and HYP-002; document any confirmatory deviations alongside pooled-vs-complete-case contrasts.
+
 ## Deviations & Updates
 
 - Any deviations from this draft must be documented in `analysis/pre_analysis_plan.md` with timestamped notes and reason. PAP will be frozen only after survey design validation.

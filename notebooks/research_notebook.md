@@ -93,3 +93,10 @@ Regenerate: `python analysis/code/bootstrap_setup.py --only notebook`
 - Compared reduced-aux run against complete-case benchmarks via `python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz --mapping analysis/imputation/mice_variable_map__reduced_aux.json --csv-out tables/imputed_vs_complete_summary__reduced_aux.csv --md-out analysis/imputation/imputed_vs_complete_summary__reduced_aux.md --seed 20251016`; all shifts remained within ±15%.
 - Authored `analysis/code/compare_imputation_runs.py` and ran `python analysis/code/compare_imputation_runs.py --summary-a analysis/imputation/mice_imputation_summary.csv --summary-b analysis/imputation/mice_imputation_summary__reduced_aux.csv --label-a prototype --label-b reduced_aux --csv-out tables/imputation_run_comparison__prototype_vs_reduced_aux.csv --md-out analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md --seed 20251016`, confirming trimmed auxiliaries do not materially alter means (no >15% shifts) and documenting variables dropped (liberal, monogamy, religion).
 - Flagged reduced-aux output as “Exploratory” pending PAP freeze; robustness clause updated to cite new comparison artifacts.
+
+## 2025-10-16T14:24Z — Reduced Auxiliary Synthesis
+- Integrated reduced-auxiliary MI findings into the draft PAP robustness section (`analysis/pre_analysis_plan.md:59`) and updated manifest notes in `analysis/imputation/mi_reduced_aux_plan.md`.
+- Logged command strings and outputs for the reduced-aux run, ensuring reproducibility with seed 20251016.
+- Summarised diagnostics in `analysis/imputation_strategy.md`, confirming <15% shifts and compliance with small-cell masking.
+- Backlog item T-009 now complete; next actionable task remains the survey weight documentation request.
+
