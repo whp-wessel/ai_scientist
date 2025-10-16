@@ -36,3 +36,21 @@ No survey-design variables (weights/strata/clusters) are available in the provid
 
 - [ ] Request official survey weight documentation from data provider.
 - [ ] Document SRS assumption in PAP and subsequent analyses until metadata is updated.
+
+## 2025-10-16T13:18Z — Key Variable Missingness (Exploratory)
+
+- Regenerate: `python analysis/code/eda_weighted_summaries.py`
+- Outputs: `tables/exploratory_missingness_key_vars.csv`, `tables/exploratory_missingness_key_vars.md`
+
+| Variable | Non-missing n | Missing % | Notes |
+| --- | --- | --- | --- |
+| `I love myself (2l8994l)` | 10,355 | 28.3% | 4,081 responses coded with negative values signifying non-response; treated as missing in analyses. |
+| `during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)` | 7,548 | 47.7% | High non-response/negative codes (6,878). Will monitor for bias before confirmatory work. |
+| `networth` | 13,063 | 9.6% | Negative codes (1,380) resolved as missing. |
+| `classchild` | 14,443 | 0.0% | Fully observed after cleaning negative codes. |
+| `selfage` | 14,443 | 0.0% | Fully observed. |
+
+**Implications**
+
+- Extensive item non-response on abuse and self-love items will require sensitivity analyses (e.g., multiple imputation) before confirmatory testing.
+- Documented SRS assumption remains in effect pending weight metadata.

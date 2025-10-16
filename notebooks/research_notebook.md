@@ -23,6 +23,14 @@ Regenerate: `python analysis/code/bootstrap_setup.py --only notebook`
 - Updated `docs/survey_design.yaml` with validation notes and added `qc/data_checks.md` summary.
 - Recorded assumption to proceed with simple random sampling until official metadata is obtained.
 
+## 2025-10-16T13:18Z — Exploratory SRS Summaries (Wellbeing & Socioeconomics)
+
+- Ran `python analysis/code/eda_weighted_summaries.py` (seed `20251016`) to derive exploratory summaries.
+- Generated `tables/exploratory_selflove_by_abuse.*` showing higher mean self-love scores among respondents reporting more frequent childhood emotional abuse; all counts ≥10, SRS assumption noted.
+- Aggregated `classchild` and `networth` into broader groups to avoid small cells; table (`tables/exploratory_networth_by_classchild.*`) indicates higher net worth proportions among respondents from middle/upper childhood classes.
+- Profiled missingness for key variables (`tables/exploratory_missingness_key_vars.*`); abuse and self-love items exhibit heavy non-response via negative codes (≥28% missing), requiring planned imputation sensitivity checks.
+- Updated `qc/data_checks.md` with missingness findings and highlighted implications for PAP development.
+
 ## Candidate Hypotheses (Exploratory)
 
 - `HYP-001`: Childhood emotional abuse ↔ adult self-love score.

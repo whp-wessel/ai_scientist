@@ -1,0 +1,11 @@
+{
+  "seed": 20251016,
+  "generated": "2025-10-16T13:18:00.524743+00:00",
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "outputs": [
+    "tables/exploratory_selflove_by_abuse.csv",
+    "tables/exploratory_networth_by_classchild.csv",
+    "tables/exploratory_missingness_key_vars.csv"
+  ],
+  "command": "python analysis/code/eda_weighted_summaries.py"
+}
