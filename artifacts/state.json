@@ -1,82 +1,8 @@
 {
+  "path": "artifacts/state.json",
   "loop_counter": 9,
   "last_updated": "2025-10-16T14:34:51.810175Z",
-  "backlog": [
-    {
-      "id": "T-001",
-      "priority": 1,
-      "description": "Validate survey weights and replicate design metadata against data files.",
-      "status": "completed",
-      "estimate_min": "15m"
-    },
-    {
-      "id": "T-002",
-      "priority": 2,
-      "description": "Produce exploratory weighted summaries for key wellbeing and socioeconomic outcomes.",
-      "status": "completed",
-      "estimate_min": "20m"
-    },
-    {
-      "id": "T-003",
-      "priority": 3,
-      "description": "Request official survey design weights or documentation from data provider.",
-      "status": "waiting_external",
-      "estimate_min": "10m"
-    },
-    {
-      "id": "T-004",
-      "priority": 2,
-      "description": "Analyze missingness drivers for self-love and abuse items; plan imputation strategy.",
-      "status": "completed",
-      "estimate_min": "25m"
-    },
-    {
-      "id": "T-005",
-      "priority": 2,
-      "description": "Prototype multiple imputation workflow for self-love and abuse items (seed 20251016).",
-      "status": "completed",
-      "estimate_min": "30m"
-    },
-    {
-      "id": "T-006",
-      "priority": 2,
-      "description": "Review imputed vs complete-case summaries and design robustness checks.",
-      "status": "completed",
-      "estimate_min": "25m"
-    },
-    {
-      "id": "T-007",
-      "priority": 2,
-      "description": "Design MI reduced-auxiliary sensitivity run and document command template.",
-      "status": "completed",
-      "estimate_min": "30m"
-    },
-    {
-      "id": "T-008",
-      "priority": 2,
-      "description": "Execute reduced-auxiliary MI sensitivity run and compare against prototype outputs.",
-      "status": "completed",
-      "estimate_min": "40m"
-    },
-    {
-      "id": "T-009",
-      "priority": 2,
-      "description": "Synthesize reduced-auxiliary MI diagnostics into PAP robustness text and manifest notes.",
-      "status": "completed",
-      "estimate_min": "20m"
-    }
-  ],
-  "next_actions": [
-    {
-      "id": "T-003",
-      "priority": 3,
-      "description": "Route survey weight request to human reviewer for dispatch and capture provider response.",
-      "estimate_min": "10m"
-    }
-  ],
   "notes": "Regenerated reduced-auxiliary MI stack after detecting empty artifact; refreshed reproducibility snapshots and logged provider outreach status pending dispatch.",
-  "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 && python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_prototype.csv.gz --mapping analysis/imputation/mice_variable_map.json --csv-out tables/imputed_vs_complete_summary.csv --md-out analysis/imputation/imputed_vs_complete_summary.md --seed 20251016 && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 --run-label reduced_aux --columns selfage biomale gendermale cis education classchild classteen classcurrent networth 'I love myself (2l8994l)' 'during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)' && python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz --mapping analysis/imputation/mice_variable_map__reduced_aux.json --csv-out tables/imputed_vs_complete_summary__reduced_aux.csv --md-out analysis/imputation/imputed_vs_complete_summary__reduced_aux.md --seed 20251016 && python analysis/code/compare_imputation_runs.py --summary-a analysis/imputation/mice_imputation_summary.csv --summary-b analysis/imputation/mice_imputation_summary__reduced_aux.csv --label-a prototype --label-b reduced_aux --csv-out tables/imputation_run_comparison__prototype_vs_reduced_aux.csv --md-out analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md --seed 20251016",
-  "path": "artifacts/state.json",
   "backlog_updates": [
     {
       "id": "T-003",

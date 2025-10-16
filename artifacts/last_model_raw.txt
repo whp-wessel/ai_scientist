@@ -2,58 +2,71 @@
 {
   "files": [
     {
-      "path": "analysis/pre_analysis_plan.md:59",
-      "note": "Added exploratory reduced-aux MI diagnostics summary with regeneration commands, findings, and PAP implications."
+      "path": "docs/communications/contact_log.csv",
+      "note": "Created provider outreach log capturing the survey-weight request status and pending next step."
     },
     {
-      "path": "analysis/imputation/mi_reduced_aux_plan.md:5",
-      "note": "Marked reduced-aux plan as executed and logged full run/diagnostic manifest with outputs and findings."
+      "path": "data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz",
+      "note": "Regenerated reduced-auxiliary MI stack (seed 20251016) to replace previous zero-length artifact."
     },
     {
-      "path": "analysis/imputation_strategy.md:38",
-      "note": "Summarized reduced-auxiliary diagnostics confirming <15% shifts and continued robustness coverage."
+      "path": "artifacts/checksums.json",
+      "note": "Recorded SHA-256 hashes and sizes for the source dataset and both MI outputs."
     },
     {
-      "path": "notebooks/research_notebook.md:97",
-      "note": "Recorded synthesis narrative linking PAP, manifest updates, and remaining actions."
+      "path": "artifacts/session_info.txt",
+      "note": "Refreshed environment snapshot after the reproducibility checkpoint."
     },
     {
-      "path": "artifacts/state.json:2",
-      "note": "Incremented loop counter, closed T-009, refreshed notes, and pruned next actions."
+      "path": "artifacts/repro_report.md",
+      "note": "Updated reproducibility report timestamp and references."
+    },
+    {
+      "path": "analysis/decision_log.csv",
+      "note": "Logged reproducibility checkpoint action covering MI rerun and outreach tracking."
+    },
+    {
+      "path": "notebooks/research_notebook.md",
+      "note": "Added narrative entry describing the MI regeneration, checksum refresh, and contact logging."
+    },
+    {
+      "path": "artifacts/state.json",
+      "note": "Incremented loop counter, refreshed notes, and updated next action for survey-weight request routing."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T14:25:34.172779Z",
-    "action": "synthesize_reduced_aux_mi",
-    "inputs": "analysis/imputation/imputation_run_comparison__prototype_vs_reduced_aux.md|analysis/imputation/mice_prototype_summary__reduced_aux.md|analysis/imputation_strategy.md|analysis/pre_analysis_plan.md",
-    "rationale_short": "Documented reduced-auxiliary MI diagnostics in PAP and manifest notes.",
-    "code_path": "analysis/pre_analysis_plan.md",
-    "outputs": "analysis/pre_analysis_plan.md|analysis/imputation/mi_reduced_aux_plan.md|analysis/imputation_strategy.md|notebooks/research_notebook.md|artifacts/state.json",
+    "ts": "2025-10-16T14:34:37.683143Z",
+    "action": "repro_checkpoint",
+    "inputs": "analysis/code/mice_prototype.py|childhoodbalancedpublic_original.csv|config/agent_config.yaml|data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz|docs/communications/request_survey_weights.md",
+    "rationale_short": "Regenerated reduced-aux MI and refreshed reproducibility artifacts; logged weight outreach status.",
+    "code_path": "analysis/code/mice_prototype.py",
+    "outputs": "data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz|artifacts/checksums.json|artifacts/session_info.txt|artifacts/repro_report.md|docs/communications/contact_log.csv|notebooks/research_notebook.md",
     "status": "success"
   },
   "next_actions": [
     {
       "id": "T-003",
       "priority": 3,
-      "description": "Coordinate sending of survey weight request; track provider response.",
+      "description": "Route survey weight request to human reviewer for dispatch and capture provider response.",
       "estimate_min": "10m"
     }
   ],
   "state_update": {
     "path": "artifacts/state.json",
-    "loop_counter": 8,
-    "notes": "Reduced-auxiliary diagnostics documented in PAP and manifest notes; awaiting official survey weight metadata before PAP freeze.",
+    "loop_counter": 9,
+    "last_updated": "2025-10-16T14:34:51.810175Z",
+    "notes": "Regenerated reduced-auxiliary MI stack after detecting empty artifact; refreshed reproducibility snapshots and logged provider outreach status pending dispatch.",
     "backlog_updates": [
       {
-        "id": "T-009",
-        "status": "completed"
+        "id": "T-003",
+        "status": "waiting_external"
       }
     ]
   },
   "git": {
     "commit": true,
-    "commit_id": "420e04fc3b360330648bcbb2c2a0f86d3d58df28",
-    "message": "analysis(pap): integrate reduced-aux MI diagnostics into robustness notes [refs T-009]",
+    "message": "analysis(repro): regenerate reduced-aux MI and refresh logs [refs T-003]",
+    "commit_id": "765af4a672e3f25f782946d8a970e7207d8a9eef",
     "branch": "main",
     "ahead": 1
   },
