@@ -165,22 +165,51 @@ def _combine_prompts(user_prompt: str, system_prompt: str | None) -> str:
     ])
 
 
-def _parse_codex_jsonl(stream: str) -> str:
-    last_message = None
-    for line in stream.splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        try:
-            event = json.loads(line)
-        except json.JSONDecodeError:
-            continue
-        if event.get("type") == "item.completed":
-            item = event.get("item", {})
-            if item.get("type") == "agent_message":
-                last_message = item.get("text", "")
-    if last_message is None:
-        raise ValueError("No agent_message found in codex output")
+def _print_codex_event(label: str, text: str | None = None):
+    snippet = ""
+    if text:
+        clean = text.strip()
+        if len(clean) > 280:
+            snippet = clean[:280] + " …"
+        else:
+            snippet = clean
+    msg = f"[codex][{label}]"
+    if snippet:
+        msg += f" {snippet}"
+    print(msg, flush=True)
+
+
+def _handle_codex_line(line: str, last_message: str | None) -> str | None:
+    try:
+        event = json.loads(line)
+    except json.JSONDecodeError:
+        _print_codex_event("raw", line)
+        return last_message
+
+    ev_type = event.get("type", "?")
+
+    if ev_type == "item.completed":
+        item = event.get("item", {})
+        item_type = item.get("type", "?")
+        text = item.get("text", "")
+        _print_codex_event(item_type, text)
+        if item_type == "agent_message":
+            return text
+        return last_message
+
+    if ev_type == "turn.started":
+        _print_codex_event("turn", "started")
+    elif ev_type == "turn.completed":
+        usage = event.get("usage", {})
+        summary = ", ".join(
+            f"{k}={v}" for k, v in usage.items()
+        ) if usage else "completed"
+        _print_codex_event("turn", summary)
+    elif ev_type == "thread.started":
+        _print_codex_event("thread", f"id={event.get('thread_id','?')}")
+    else:
+        _print_codex_event(ev_type, json.dumps(event, ensure_ascii=False))
+
     return last_message
 
 
@@ -194,14 +223,60 @@ def run_codex_cli(user_prompt: str, system_prompt: str = None, model: str = MODE
     cmd.append("-")
     last_err = ""
     for attempt in range(retries + 1):
-        rc, out, err = run_cmd(cmd, input_bytes=prompt.encode("utf-8"))
-        if rc == 0:
-            try:
-                return _parse_codex_jsonl(out)
-            except Exception as parse_exc:
-                last_err = f"parse failure: {parse_exc}"
-        else:
-            last_err = err.strip() or out.strip()
+        tmp_dir = REPO / "artifacts" / "codex_tmp"
+        tmp_dir.mkdir(parents=True, exist_ok=True)
+        env = os.environ.copy()
+        env.update({
+            "TMPDIR": str(tmp_dir),
+            "TEMP": str(tmp_dir),
+            "TMP": str(tmp_dir),
+            "TEMPDIR": str(tmp_dir)
+        })
+        try:
+            proc = subprocess.Popen(
+                cmd,
+                stdin=subprocess.PIPE,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                bufsize=1,
+                env=env
+            )
+        except FileNotFoundError as launch_err:
+            raise RuntimeError(f"codex executable not found: {launch_err}")
+
+        try:
+            if proc.stdin:
+                proc.stdin.write(prompt)
+                proc.stdin.close()
+        except BrokenPipeError:
+            pass
+
+        last_message = None
+        try:
+            if proc.stdout:
+                for line in proc.stdout:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    last_message = _handle_codex_line(line, last_message)
+        finally:
+            if proc.stdout:
+                proc.stdout.close()
+
+        stderr_text = ""
+        if proc.stderr:
+            stderr_text = proc.stderr.read().strip()
+            proc.stderr.close()
+
+        rc = proc.wait()
+        if stderr_text:
+            _print_codex_event("stderr", stderr_text)
+
+        if rc == 0 and last_message:
+            return last_message
+
+        last_err = stderr_text or f"exit={rc}, no agent message"
         time.sleep(0.7 * (attempt + 1))
     raise RuntimeError(f"codex CLI failed after {retries+1} attempts: {last_err}")
 
