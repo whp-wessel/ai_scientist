@@ -1,0 +1,27 @@
+{
+  "run_completed": "2025-10-16T14:15:06.055632Z",
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "seed": 20251016,
+  "n_imputations": 20,
+  "burn_in": 10,
+  "run_label_input": "reduced_aux",
+  "run_label": "reduced_aux",
+  "columns": [
+    "selfage",
+    "biomale",
+    "gendermale",
+    "cis",
+    "education",
+    "classchild",
+    "classteen",
+    "classcurrent",
+    "networth",
+    "I love myself (2l8994l)",
+    "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)"
+  ],
+  "dropped_all_missing_columns": [],
+  "derived_output": "data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz",
+  "summary_output": "analysis/imputation/mice_imputation_summary__reduced_aux.csv",
+  "variable_map": "analysis/imputation/mice_variable_map__reduced_aux.json",
+  "command": "python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 --run-label reduced_aux --columns selfage biomale gendermale cis education classchild classteen classcurrent networth 'I love myself (2l8994l)' 'during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)'"
+}
