@@ -5,13 +5,8 @@
   "notes": "Integrated monogamy exploratory insight into PAP and advanced HYP-003 ordered-logit specification under ongoing SRS assumption.",
   "backlog_updates": [
     {
-      "id": "T-003",
-      "status": "waiting_external"
-    },
-    {
       "id": "T-011",
-      "status": "done",
-      "description": "Confirmatory HYP-003 ordered-logit specification drafted; awaiting survey-design confirmation before freezing PAP."
+      "status": "done"
     }
   ]
 }

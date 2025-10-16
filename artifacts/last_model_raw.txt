@@ -2,69 +2,71 @@
 {
   "files": [
     {
-      "path": "analysis/code/eda_monogamy_by_religion.py:1",
-      "note": "New deterministic exploratory script (seed 20251016) generating monogamy-by-religion cross-tabs with k<10 suppression, Markdown/CSV outputs, and metadata regeneration notes."
+      "path": "analysis/pre_analysis_plan.md:18",
+      "description": "Logged the latest survey-design verification showing SRS assumptions remain necessary until T-003 completes."
     },
     {
-      "path": "tables/exploratory_monogamy_by_religion.csv:1",
-      "note": "SRS cross-tab (n=14,436) plus Markdown/metadata showing full monogamy share climbing from 54% (No practice) to 80% (Yes, very seriously); all cells >=10 and flagged."
+      "path": "analysis/pre_analysis_plan.md:40",
+      "description": "Expanded HYP-003 with ordered-logit confirmatory specification, recoding plan, command path, and disclosure safeguards."
     },
     {
       "path": "analysis/hypotheses.csv:5",
-      "note": "Updated HYP-003 notes to medium confidence citing new exploratory evidence while weights remain pending."
+      "description": "Marked HYP-003 as in_PAP, added the relationship-status control, and aligned the estimand with the ordered-logit plan."
     },
     {
-      "path": "analysis/decision_log.csv:2",
-      "note": "Rebuilt clean header and logged today’s EDA action with inputs/outputs for reproducibility trace."
+      "path": "notebooks/research_notebook.md:10",
+      "description": "Captured Loop 11 planning steps, including reproducibility checks and PAP updates, in the running notebook."
     },
     {
-      "path": "notebooks/research_notebook.md:1",
-      "note": "Documented Loop 10 narrative highlighting new cross-tab insights and compliance checks."
+      "path": "artifacts/state.json:3",
+      "description": "Incremented loop counter, refreshed notes, and closed backlog item T-011 after documenting the confirmatory plan."
     },
     {
-      "path": "artifacts/state.json:1",
-      "note": "Loop counter advanced to 10, recorded exploratory work, and added backlog item T-011 for PAP integration."
+      "path": "analysis/decision_log.csv:5",
+      "description": "Appended a decision-log entry for the PAP update with inputs, outputs, and rationale."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T14:45:49.337741Z",
-    "action": "eda_cross_tab",
-    "inputs": "analysis/code/eda_monogamy_by_religion.py|childhoodbalancedpublic_original.csv|config/agent_config.yaml",
-    "rationale_short": "Characterized monogamy preference by religion to firm up HYP-003 notes.",
-    "code_path": "analysis/code/eda_monogamy_by_religion.py",
-    "outputs": "tables/exploratory_monogamy_by_religion.csv|tables/exploratory_monogamy_by_religion.md|tables/exploratory_monogamy_by_religion_metadata.json|analysis/hypotheses.csv|notebooks/research_notebook.md",
+    "ts": "2025-10-16T14:52:54Z",
+    "action": "pap_update",
+    "inputs": "analysis/pre_analysis_plan.md|tables/exploratory_monogamy_by_religion.csv|docs/survey_design.yaml|analysis/hypotheses.csv",
+    "rationale_short": "Documented HYP-003 confirmatory ordered-logit spec while weights remain unavailable.",
+    "code_path": "analysis/pre_analysis_plan.md (manual edit)",
+    "outputs": "analysis/pre_analysis_plan.md|analysis/hypotheses.csv|notebooks/research_notebook.md|artifacts/state.json",
     "status": "success"
   },
   "next_actions": [
-    "T-003 (waiting_external): Await provider response with survey weight/strata metadata so analyses can leave the SRS assumption.",
-    "T-011 (todo): Integrate monogamy cross-tab insight into the PAP and specify confirmatory multinomial model plus robustness checks once design info is available."
+    {
+      "id": "T-003",
+      "description": "Await survey administrator response on weight/strata metadata so the PAP can be frozen with the validated design.",
+      "status": "waiting_external"
+    },
+    {
+      "description": "Prepare executable ordered-logit modeling script and dry-run once survey design variables are confirmed.",
+      "status": "todo"
+    }
   ],
   "state_update": {
-    "loop_counter": 10,
-    "last_updated": "2025-10-16T14:46:09.958898Z",
-    "notes": "Implemented monogamy-by-religion exploratory cross-tab (SRS) to support HYP-003 and updated hypothesis confidence; reproducibility assets already current.",
+    "loop_counter": 11,
+    "notes": "Integrated monogamy exploratory insight into PAP and advanced HYP-003 ordered-logit specification under ongoing SRS assumption.",
     "backlog_updates": [
       {
-        "id": "T-003",
-        "status": "waiting_external"
-      },
-      {
         "id": "T-011",
-        "status": "todo",
-        "description": "Integrate exploratory monogamy insights into PAP draft and specify confirmatory model once survey design is clarified."
+        "status": "done"
       }
     ]
   },
   "git": {
     "commit": true,
-    "message": "analysis(eda): add monogamy vs religion exploratory outputs"
+    "message": "analysis(pap): integrate HYP-003 ordered-logit spec under SRS assumption",
+    "sha": "943cc525c6317cae7ce02573bc6f84f27844a985"
   },
   "stop_now": false,
-  "stop_reason": null,
+  "stop_reason": "",
   "signals": [
     {
       "type": "info",
-      "message": "Unstaged workspace files (artifacts/checksums.json, artifacts/session_info.txt, artifacts/repro_report.md, artifacts/last_commit.txt) pre-date this loop and were left untouched."
+      "message": "Left prior modifications in artifacts/session_info.txt, artifacts/repro_report.md, and artifacts/last_commit.txt untouched; they predate this loop."
     }
   ]
 }
