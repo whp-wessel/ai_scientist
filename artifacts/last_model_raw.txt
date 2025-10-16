@@ -2,98 +2,69 @@
 {
   "files": [
     {
-      "path": "analysis/code/validate_survey_design.py:1",
-      "description": "Added deterministic validator that inspects dataset columns for weights/strata/clusters, writes qc/data_checks.md, updates docs/survey_design.yaml, and captures metadata in artifacts/last_validation.json using seed 20251016."
+      "path": "analysis/code/eda_weighted_summaries.py:46",
+      "description": "New seeded SRS workflow cleans negative codes, suppresses small cells, and exports reproducible wellbeing/socioeconomic summaries plus metadata."
     },
     {
-      "path": "qc/data_checks.md:1",
-      "description": "Replaced bootstrap checklist with survey-design audit output showing dataset dimensions, candidate weight columns, and documented SRS assumption."
+      "path": "tables/exploratory_selflove_by_abuse.md:5",
+      "description": "Exploratory table shows mean self-love spanning 1.32–1.49 across abuse codes with all cells ≥10 and 95% CIs reported."
     },
     {
-      "path": "docs/survey_design.yaml:1",
-      "description": "Logged validation timestamp, noted absence of survey design variables, and added regeneration command for the new validator."
+      "path": "tables/exploratory_networth_by_classchild.md:5",
+      "description": "Aggregated childhood class groups reveal higher high-net-worth shares for upper-class respondents while respecting the k=10 rule."
     },
     {
-      "path": "artifacts/last_validation.json:1",
-      "description": "Recorded machine-readable summary of the survey design validation (rows, columns, inspected candidates, assessment, regeneration command)."
+      "path": "tables/exploratory_missingness_key_vars.md:5",
+      "description": "Missingness profile documents 48% abuse and 28% self-love non-response via negative codes, guiding forthcoming imputation plans."
     },
     {
-      "path": "artifacts/state.json:1",
-      "description": "Incremented loop counter, marked T-001 completed, and queued next actions for exploratory summaries and weight documentation follow-up."
+      "path": "qc/data_checks.md:40",
+      "description": "Data quality log now links regenerated missingness outputs and flags implications for PAP design under the SRS assumption."
     },
     {
-      "path": "analysis/decision_log.csv:4",
-      "description": "Appended action log entry linking inputs, validator script, outputs, and success status."
+      "path": "reports/findings_v0.1.md:1",
+      "description": "Versioned exploratory report summarizes methods, descriptive findings, limitations, and queued robustness steps for wellbeing/economic outcomes."
     },
     {
-      "path": "notebooks/research_notebook.md:19",
-      "description": "Documented the survey design validation step, updated immediate next steps, and reiterated the SRS assumption."
+      "path": "artifacts/state.json:2",
+      "description": "State file increments loop counter, closes T-002, and adds T-004 to investigate missingness drivers alongside the weight-request task."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T13:08:43Z",
-    "action": "validate_survey_design",
-    "inputs": "childhoodbalancedpublic_original.csv|docs/survey_design.yaml|config/agent_config.yaml",
-    "rationale_short": "Verified absence of survey weights and noted SRS assumption.",
-    "code_path": "analysis/code/validate_survey_design.py",
-    "outputs": "qc/data_checks.md|docs/survey_design.yaml|artifacts/last_validation.json",
+    "ts": "2025-10-16T13:19:28Z",
+    "action": "exploratory_summary",
+    "inputs": "childhoodbalancedpublic_original.csv|docs/codebook.json|docs/survey_design.yaml",
+    "rationale_short": "Generated SRS-based exploratory tables for wellbeing and socioeconomic outcomes.",
+    "code_path": "analysis/code/eda_weighted_summaries.py",
+    "outputs": "tables/exploratory_selflove_by_abuse.csv|tables/exploratory_networth_by_classchild.csv|tables/exploratory_missingness_key_vars.csv",
     "status": "success"
   },
   "next_actions": [
-    {
-      "id": "T-002",
-      "priority": 2,
-      "description": "Produce exploratory weighted summaries for key wellbeing and socioeconomic outcomes (assume SRS until weights provided).",
-      "estimate_min": "20m"
-    },
     {
       "id": "T-003",
       "priority": 3,
       "description": "Request official survey design weights or documentation from data provider.",
       "estimate_min": "10m"
+    },
+    {
+      "id": "T-004",
+      "priority": 2,
+      "description": "Analyze missingness drivers for self-love and abuse items; plan imputation strategy.",
+      "estimate_min": "25m"
     }
   ],
   "state_update": {
-    "loop_counter": 1,
-    "last_updated": "2025-10-16T13:08:43Z",
-    "notes": "Validated absence of survey weights; assuming SRS pending provider confirmation.",
-    "backlog": [
-      {
-        "id": "T-001",
-        "priority": 1,
-        "description": "Validate survey weights and replicate design metadata against data files.",
-        "status": "completed",
-        "estimate_min": "15m"
-      },
-      {
-        "id": "T-002",
-        "priority": 2,
-        "description": "Produce exploratory weighted summaries for key wellbeing and socioeconomic outcomes.",
-        "status": "pending",
-        "estimate_min": "20m"
-      },
-      {
-        "id": "T-003",
-        "priority": 3,
-        "description": "Request official survey design weights or documentation from data provider.",
-        "status": "pending",
-        "estimate_min": "10m"
-      }
-    ]
+    "loop_counter": 2,
+    "last_updated": "2025-10-16T13:19:13.931258+00:00",
+    "notes": "Completed exploratory SRS summaries for wellbeing and net worth; high non-response for abuse/self-love items noted. Awaiting survey weights; next focus on missingness drivers."
   },
   "git": {
     "commit": true,
-    "message": "analysis(qc): validate survey design metadata and note SRS assumption",
-    "sha": "43cdf47422fcb6e3d6ae2a452578a1fd58a1c81b",
-    "uncommitted_changes": [
-      "artifacts/repro_report.md",
-      "artifacts/session_info.txt",
-      "artifacts/codex_tmp/",
-      "artifacts/last_commit.txt"
-    ]
+    "message": "analysis(tables): add exploratory wellbeing & socioeconomic summaries",
+    "hash": "5b2b0c317df13e173ba63fd84fa80e70f6c54748"
   },
   "stop_now": false,
-  "stop_reason": "",
+  "stop_reason": null,
   "signals": []
 }
 ```
