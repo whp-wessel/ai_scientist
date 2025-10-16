@@ -66,7 +66,17 @@
       "estimate_min": "30m"
     }
   ],
-  "notes": "Completed MI prototype review: imputed distributions closely match complete-case summaries; PAP robustness now mandates MI vs complete-case contrasts. Awaiting survey weight response before freezing PAP.",
+  "notes": "Completed MI prototype review; MI and complete-case moments align within \u00b115%. PAP robustness now requires MI vs complete-case contrasts while we await external weight metadata.",
   "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 && python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_prototype.csv.gz --mapping analysis/imputation/mice_variable_map.json --csv-out tables/imputed_vs_complete_summary.csv --md-out analysis/imputation/imputed_vs_complete_summary.md --seed 20251016",
-  "path": "artifacts/state.json"
+  "path": "artifacts/state.json",
+  "backlog_updates": [
+    {
+      "id": "T-006",
+      "status": "completed"
+    },
+    {
+      "id": "T-007",
+      "status": "pending"
+    }
+  ]
 }

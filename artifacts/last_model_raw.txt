@@ -2,53 +2,37 @@
 {
   "files": [
     {
-      "path": "analysis/code/mice_prototype.py:1",
-      "description": "Added seeded statsmodels MICE workflow that sanitizes columns, drops all-missing predictors, masks small-cell counts, and writes metadata plus regeneration notes."
+      "path": "analysis/code/review_imputed_vs_complete.py:1",
+      "description": "Added deterministic MI vs complete-case comparison script with masked counts and Markdown export."
     },
     {
-      "path": "analysis/imputation/mice_prototype_summary.md:1",
-      "description": "Documented exploratory imputation run (20 draws, seed 20251016) with suppressed missingness counts and regeneration command."
+      "path": "tables/imputed_vs_complete_summary.csv:1",
+      "description": "New exploratory table summarising complete-case and MI means/SDs with small-cell suppression."
     },
     {
-      "path": "analysis/imputation/mice_imputation_summary.csv:1",
-      "description": "Recorded masked missingness diagnostics and pooled post-imputation means/SDs for key variables."
+      "path": "analysis/imputation/imputed_vs_complete_summary.md:1",
+      "description": "Documented review findings, next steps, and regeneration command."
     },
     {
-      "path": "analysis/imputation/mice_prototype_metadata.json:1",
-      "description": "Logged reproducibility metadata for the prototype MICE run, including dropped columns and command."
+      "path": "analysis/pre_analysis_plan.md:44",
+      "description": "Expanded robustness checks to require MI-pooled vs complete-case contrasts for HYP-001/002."
     },
     {
-      "path": "analysis/imputation/mice_variable_map.json:1",
-      "description": "Stored original-to-sanitized column name mapping for imputation outputs."
-    },
-    {
-      "path": "data/derived/childhoodbalancedpublic_mi_prototype.csv.gz",
-      "description": "Stacked dataset of 20 deterministic imputations (with imputation_id) for downstream diagnostics."
-    },
-    {
-      "path": "analysis/decision_log.csv:8",
-      "description": "Appended action log entry for the imputation prototype execution."
-    },
-    {
-      "path": "notebooks/research_notebook.md:49",
-      "description": "Updated notebook narrative with imputation prototype summary and refreshed next steps/open questions."
+      "path": "analysis/imputation_strategy.md:25",
+      "description": "Logged review outcome and queued reduced-auxiliary MI sensitivity plan."
     },
     {
       "path": "artifacts/state.json:1",
-      "description": "Incremented loop counter, closed T-005, queued T-006, and refreshed regeneration command."
-    },
-    {
-      "path": "artifacts/checksums.json:1",
-      "description": "Refreshed SHA-256 hashes for raw and derived datasets to satisfy reproducibility checkpoint."
+      "description": "Advanced loop counter, closed T-006, added T-007, and updated regeneration pipeline."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T13:50:41Z",
-    "action": "imputation_prototype",
-    "inputs": "childhoodbalancedpublic_original.csv|analysis/code/mice_prototype.py|config/agent_config.yaml",
-    "rationale_short": "Prototyped seeded MICE imputation for self-love and abuse items.",
-    "code_path": "analysis/code/mice_prototype.py",
-    "outputs": "data/derived/childhoodbalancedpublic_mi_prototype.csv.gz|analysis/imputation/mice_imputation_summary.csv|analysis/imputation/mice_prototype_summary.md|analysis/imputation/mice_prototype_metadata.json",
+    "ts": "2025-10-16T13:59:58.324983Z",
+    "action": "imputation_review",
+    "inputs": "childhoodbalancedpublic_original.csv|data/derived/childhoodbalancedpublic_mi_prototype.csv.gz|analysis/imputation/mice_variable_map.json",
+    "rationale_short": "Compared MI vs complete-case outputs before PAP freeze.",
+    "code_path": "analysis/code/review_imputed_vs_complete.py",
+    "outputs": "tables/imputed_vs_complete_summary.csv|analysis/imputation/imputed_vs_complete_summary.md|analysis/pre_analysis_plan.md|analysis/imputation_strategy.md|notebooks/research_notebook.md|artifacts/state.json",
     "status": "success"
   },
   "next_actions": [
@@ -59,23 +43,30 @@
       "estimate_min": "10m"
     },
     {
-      "id": "T-006",
+      "id": "T-007",
       "priority": 2,
-      "description": "Review imputed distributions and finalize robustness checks for PAP.",
-      "estimate_min": "25m"
+      "description": "Plan reduced-auxiliary MI sensitivity run and specify diagnostics.",
+      "estimate_min": "30m"
     }
   ],
   "state_update": {
-    "path": "artifacts/state.json",
-    "loop_counter": 4,
-    "last_updated": "2025-10-16T13:51:29.261430+00:00",
-    "notes": "Drafted survey weight request template and completed missingness diagnostics; logit models indicate age/education association with self-love non-response and higher missingness among higher childhood class / male-at-birth for abuse item. MICE plan documented, awaiting weight metadata before confirmatory work. Completed prototype MICE workflow (20 imputations, seed 20251016) with small-cell suppression; dropped-all-missing Religionchildhood and mentalillness for follow-up coding review.",
-    "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10"
+    "loop_counter": 5,
+    "notes": "Completed MI prototype review; MI and complete-case moments align within ±15%. PAP robustness now requires MI vs complete-case contrasts while we await external weight metadata.",
+    "regeneration_command": "python analysis/code/eda_weighted_summaries.py && python analysis/code/missingness_analysis.py && python analysis/code/mice_prototype.py --dataset childhoodbalancedpublic_original.csv --config config/agent_config.yaml --seed 20251016 --n-imputations 20 --burn-in 10 && python analysis/code/review_imputed_vs_complete.py --dataset childhoodbalancedpublic_original.csv --imputed data/derived/childhoodbalancedpublic_mi_prototype.csv.gz --mapping analysis/imputation/mice_variable_map.json --csv-out tables/imputed_vs_complete_summary.csv --md-out analysis/imputation/imputed_vs_complete_summary.md --seed 20251016",
+    "backlog_updates": [
+      {
+        "id": "T-006",
+        "status": "completed"
+      },
+      {
+        "id": "T-007",
+        "status": "pending"
+      }
+    ]
   },
   "git": {
     "commit": true,
-    "message": "analysis(imputation): add MICE prototype workflow",
-    "status": "ahead 1"
+    "message": "analysis(state): add MI vs complete-case review diagnostics"
   },
   "stop_now": false,
   "stop_reason": "",
