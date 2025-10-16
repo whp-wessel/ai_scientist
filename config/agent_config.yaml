@@ -1,0 +1,27 @@
+time_budget_minutes_per_loop: 15
+fdr_q: 0.05
+small_cell_threshold_k: 10
+report_variables_of_interest:
+  - outcome1
+  - outcome2
+allowed_languages:
+  - python
+  - r
+python_packages:
+  - pandas
+  - numpy
+  - statsmodels
+  - linearmodels
+  - matplotlib
+  - scipy
+r_packages:
+  - survey
+  - srvyr
+  - mice
+  - ggplot2
+  - sandwich
+  - clubSandwich
+seed: 20251016
+regeneration_command: "python analysis/code/bootstrap_setup.py --only agent_config"
+notes: |
+  Bootstrap configuration seeded for reproducibility. Update thresholds and packages as project needs evolve.

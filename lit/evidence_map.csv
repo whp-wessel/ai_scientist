@@ -1,0 +1,2 @@
+concept,source_id,source_type,quality_rating,notes,status,regeneration_command
+childhood_context_and_wellbeing,TODO2025bootstrap,placeholder,unrated,"TODO: Replace with validated source linked to HYP-001--HYP-004.",pending,"python analysis/code/bootstrap_setup.py --only evidence_map"

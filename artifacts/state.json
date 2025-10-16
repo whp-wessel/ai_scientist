@@ -1,0 +1,36 @@
+{
+  "loop_counter": 0,
+  "last_updated": "2025-10-16T12:44:10Z",
+  "backlog": [
+    {
+      "id": "T-001",
+      "priority": 1,
+      "description": "Validate survey weights and replicate design metadata against data files.",
+      "status": "pending",
+      "estimate_min": "15m"
+    },
+    {
+      "id": "T-002",
+      "priority": 2,
+      "description": "Produce exploratory weighted summaries for key wellbeing and socioeconomic outcomes.",
+      "status": "pending",
+      "estimate_min": "20m"
+    }
+  ],
+  "next_actions": [
+    {
+      "id": "T-001",
+      "priority": 1,
+      "description": "Validate survey weights and replicate design metadata against data files.",
+      "estimate_min": "15m"
+    },
+    {
+      "id": "T-002",
+      "priority": 2,
+      "description": "Produce exploratory weighted summaries for key wellbeing and socioeconomic outcomes.",
+      "estimate_min": "20m"
+    }
+  ],
+  "notes": "Bootstrap state initialized; update after each research loop.",
+  "regeneration_command": "python analysis/code/bootstrap_setup.py --only state"
+}

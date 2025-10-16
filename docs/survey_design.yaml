@@ -1,0 +1,21 @@
+dataset: childhoodbalancedpublic_original.csv
+generated: 2025-10-16T12:44:10Z
+seed: 20251016
+script: analysis/code/bootstrap_setup.py
+weights:
+  weight_var: null
+  notes: "TODO: Confirm whether a weight variable is available in raw data."
+strata:
+  strata_var: null
+  notes: "TODO: Identify strata if design information becomes available."
+clusters:
+  cluster_var: null
+  notes: "TODO: Identify primary sampling units if applicable."
+replicate_weights: []
+finite_population_correction: null
+assumptions:
+  - "Assuming simple random sampling until survey design metadata is verified."
+todo:
+  - "Review docs/codebook.json for weight metadata."
+  - "Inspect raw data for variables matching weight/strata conventions."
+regeneration_command: "python analysis/code/bootstrap_setup.py --only survey_design"

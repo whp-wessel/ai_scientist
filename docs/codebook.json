@@ -1,0 +1,62 @@
+{
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "description": "Bootstrap codebook scaffold; expand with detailed metadata before analysis.",
+  "generated": "2025-10-16T12:44:10Z",
+  "seed": 20251016,
+  "variables": [
+    {
+      "name": "selfage",
+      "label": "Respondent self-reported age (years)",
+      "type": "numeric",
+      "allowed_values": ">= 0, integer",
+      "notes": "TODO: Verify value range, recode implausible ages"
+    },
+    {
+      "name": "I love myself (2l8994l)",
+      "label": "Self-love Likert agreement",
+      "type": "ordinal",
+      "allowed_values": "Likert scale 1-7 (TODO confirm codes)",
+      "notes": "Outcome candidate for wellbeing hypotheses"
+    },
+    {
+      "name": "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)",
+      "label": "Childhood emotional abuse indicator",
+      "type": "ordinal",
+      "allowed_values": "Likert frequency (TODO confirm mapping)",
+      "notes": "Primary predictor for HYP-001"
+    },
+    {
+      "name": "classchild",
+      "label": "Perceived family socioeconomic status ages 0-12",
+      "type": "categorical",
+      "allowed_values": "TODO: map text labels to ordered categories",
+      "notes": "Use as socioeconomic background indicator"
+    },
+    {
+      "name": "networth",
+      "label": "Current net worth category",
+      "type": "categorical",
+      "allowed_values": "Binned dollar ranges (TODO verify codes)",
+      "notes": "Outcome candidate for socioeconomic hypotheses"
+    },
+    {
+      "name": "monogamy",
+      "label": "Current monogamy preference",
+      "type": "categorical",
+      "allowed_values": "Monogamy vs non-monogamy categories (TODO reconcile labels)",
+      "notes": "Outcome candidate for relational hypotheses"
+    },
+    {
+      "name": "Do you *currently* actively practice a religion? (902tbll)",
+      "label": "Current religious practice indicator",
+      "type": "categorical",
+      "allowed_values": "Yes/No/Other (TODO confirm coding)",
+      "notes": "Predictor for HYP-003"
+    }
+  ],
+  "todo": [
+    "Audit all variables referenced in hypotheses for coding consistency.",
+    "Import official metadata if provided by survey administrators."
+  ],
+  "regeneration_command": "python analysis/code/bootstrap_setup.py --only codebook"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "TODO2025bootstrap",
+    "title": "Placeholder: Literature on Childhood Context and Adult Wellbeing",
+    "authors": [
+      "TODO: Author Name"
+    ],
+    "venue": "TODO",
+    "year": null,
+    "url": "TODO",
+    "accessed": "2025-10-16",
+    "notes": "TODO: Replace with peer-reviewed citation relevant to HYP-001--HYP-004.",
+    "regeneration_command": "python analysis/code/bootstrap_setup.py --only bibliography_json"
+  }
+]
