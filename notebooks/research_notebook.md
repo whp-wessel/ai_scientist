@@ -21,3 +21,8 @@
 - Ran the script in exploratory mode (seed 20251016), generating coefficient and probability tables under disclosure checks.
 - Logged that relationship-status control variables are unavailable at required counts; script records omission until data provider resolves.
 
+## 2025-10-17T16:18Z — Loop 13 (Exploratory)
+- Spot-checked reproducibility artifacts (`artifacts/session_info.txt`, `artifacts/checksums.json`, `artifacts/seed.txt`) — no refresh required this loop.
+- Extended `analysis/code/run_pap_models.py` to cover HYP-001 (MI-pooled HC1 linear model) and HYP-002 (MI-pooled ordered logit) with Rubin pooling seeded at 20251016.
+- Executed exploratory runs for HYP-001/002 producing `tables/exploratory_hyp001_*` and `tables/exploratory_hyp002_*` bundles plus metadata JSON for manifesting.
+- Updated `analysis/pre_analysis_plan.md` with the MI runner milestone while PAP remains in draft pending weight metadata (T-003).

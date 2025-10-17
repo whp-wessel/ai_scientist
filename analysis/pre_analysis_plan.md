@@ -72,6 +72,7 @@ This draft PAP covers preliminary confirmatory planning for three wellbeing, soc
 ## Deviations & Updates
 
 - Any deviations from this draft must be documented in `analysis/pre_analysis_plan.md` with timestamped notes and reason. PAP will be frozen only after survey design validation.
+- 2025-10-17T16:18Z — Extended `analysis/code/run_pap_models.py` to cover HYP-001 (MI-pooled HC1 linear model) and HYP-002 (MI-pooled ordered logit) under the SRS assumption; exploratory outputs saved to `tables/exploratory_hyp001_*` and `tables/exploratory_hyp002_*` pending weight metadata.
 
 ## Reproducibility Notes
 

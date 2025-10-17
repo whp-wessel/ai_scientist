@@ -1,0 +1,111 @@
+{
+  "hypothesis": "HYP-001",
+  "outcome_column": "I love myself (2l8994l)",
+  "predictor_column": "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)",
+  "control_columns": [
+    "selfage",
+    "gendermale",
+    "education"
+  ],
+  "prepared_outcome": "self_love",
+  "prepared_predictor": "abuse",
+  "n_per_imputation": [
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443,
+    14443
+  ],
+  "abuse_levels": [
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "control_means": {
+    "selfage": 30.424911721941424,
+    "gendermale": 0.5716956311015716,
+    "education": 4.378522467631379
+  },
+  "cell_threshold": 10,
+  "abuse_level_counts_first_imputation": {
+    "-3.0": 4719,
+    "-2.0": 1301,
+    "-1.0": 866,
+    "0.0": 917,
+    "1.0": 1946,
+    "2.0": 1646,
+    "3.0": 3048
+  },
+  "n_imputations": 20,
+  "pooled_params": {
+    "const": -0.6711946121165072,
+    "abuse": -0.142171720963454,
+    "selfage": 0.018218785468317383,
+    "gendermale": -0.04972045790712022,
+    "education": 0.16589781492626524
+  },
+  "pooled_variance": {
+    "const": 0.003307895805054121,
+    "abuse": 4.2530442644644186e-05,
+    "selfage": 2.2982625313688822e-06,
+    "gendermale": 0.0009931413952633278,
+    "education": 0.0001005160384982004
+  },
+  "within_variance_diag": {
+    "const": 0.0033054146885958093,
+    "abuse": 4.2403952949491914e-05,
+    "selfage": 2.2948080061911534e-06,
+    "gendermale": 0.000992531635217285,
+    "education": 0.00010028655455951033
+  },
+  "between_variance_diag": {
+    "const": 2.362968055535049e-06,
+    "abuse": 1.2046637633549824e-07,
+    "selfage": 3.2900239787894407e-09,
+    "gendermale": 5.807238533741452e-07,
+    "education": 2.1855613208577997e-07
+  },
+  "degrees_of_freedom": {
+    "const": 33772479.31589887,
+    "abuse": 2148043.7109134924,
+    "selfage": 8409615.698719658,
+    "gendermale": 50403168.780369535,
+    "education": 3645186.3775208485
+  },
+  "prediction_controls_at": {
+    "selfage": 30.424911721941424,
+    "gendermale": 0.5716956311015716,
+    "education": 4.378522467631379
+  },
+  "prediction_df_reference": 2148043.7109134924,
+  "alpha": 0.05,
+  "mi_dataset": "data/derived/childhoodbalancedpublic_mi_prototype.csv.gz",
+  "mi_mapping": "analysis/imputation/mice_variable_map.json",
+  "mode": "exploratory",
+  "generated": "2025-10-17T16:18:32.875643+00:00",
+  "outputs": [
+    "tables/exploratory_hyp001_mi_linear_coefficients.csv",
+    "tables/exploratory_hyp001_mi_linear_coefficients.md",
+    "tables/exploratory_hyp001_mi_linear_predicted_means.csv",
+    "tables/exploratory_hyp001_mi_linear_predicted_means.md"
+  ]
+}

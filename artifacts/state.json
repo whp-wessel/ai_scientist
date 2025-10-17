@@ -1,8 +1,8 @@
 {
   "path": "artifacts/state.json",
-  "loop_counter": 12,
-  "last_updated": "2025-10-17T15:59:28.162281+00:00",
-  "notes": "Scripted PAP ordered-logit runner for HYP-003, executed exploratory dry-run (seed 20251016), and logged missing relationship-status control pending data provider response.",
+  "loop_counter": 13,
+  "last_updated": "2025-10-17T16:18:33+00:00",
+  "notes": "Extended run_pap_models with MI-pooled analyses for HYP-001/002 and generated exploratory outputs (seed 20251016) while survey weights remain pending.",
   "backlog": [
     {
       "id": "T-003",
@@ -16,6 +16,19 @@
       "description": "Build executable PAP ordered-logit runner for HYP-003 and validate under SRS assumption.",
       "status": "done",
       "completed_at": "2025-10-17T15:59:28.162281+00:00"
+    },
+    {
+      "id": "T-014",
+      "priority": 2,
+      "description": "Extend run_pap_models workflow to HYP-001 and HYP-002 with MI handling prior to PAP freeze.",
+      "status": "done",
+      "completed_at": "2025-10-17T16:18:32+00:00"
+    },
+    {
+      "id": "T-016",
+      "priority": 3,
+      "description": "Draft MI robustness scripts for HYP-001/002 (reduced-aux MI vs complete-case) ahead of PAP freeze.",
+      "status": "todo"
     }
   ],
   "next_actions": [
@@ -25,15 +38,19 @@
       "status": "waiting_external"
     },
     {
-      "id": "T-014",
-      "description": "Extend run_pap_models workflow to HYP-001 and HYP-002 with MI handling prior to PAP freeze.",
+      "id": "T-016",
+      "description": "Draft MI robustness scripts for HYP-001/002 (reduced-aux and complete-case comparisons).",
       "status": "todo"
     }
   ],
   "backlog_updates": [
     {
-      "id": "T-012",
+      "id": "T-014",
       "status": "done"
+    },
+    {
+      "id": "T-016",
+      "status": "added"
     }
   ]
 }

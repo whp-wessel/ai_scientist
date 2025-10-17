@@ -2,21 +2,79 @@
   "dataset": "childhoodbalancedpublic_original.csv",
   "mode": "exploratory",
   "seed": 20251016,
-  "timestamp": "2025-10-17T15:59:28.162281+00:00",
+  "timestamp": "2025-10-17T16:18:32.273558+00:00",
   "hypotheses": [
-    "HYP-003"
+    "HYP-001",
+    "HYP-002"
   ],
   "executed": [
     {
-      "hypothesis": "HYP-003",
+      "hypothesis": "HYP-001",
       "outputs": [
-        "tables/exploratory_hyp003_ordered_logit_coefficients.csv",
-        "tables/exploratory_hyp003_ordered_logit_coefficients.md",
-        "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.csv",
-        "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.md",
-        "tables/exploratory_hyp003_ordered_logit_metadata.json"
+        "tables/exploratory_hyp001_mi_linear_coefficients.csv",
+        "tables/exploratory_hyp001_mi_linear_coefficients.md",
+        "tables/exploratory_hyp001_mi_linear_predicted_means.csv",
+        "tables/exploratory_hyp001_mi_linear_predicted_means.md",
+        "tables/exploratory_hyp001_mi_linear_metadata.json"
       ],
-      "n_obs": 14437
+      "n_obs": 14443,
+      "n_imputations": 20,
+      "n_per_imputation": [
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443
+      ]
+    },
+    {
+      "hypothesis": "HYP-002",
+      "outputs": [
+        "tables/exploratory_hyp002_mi_ordered_logit_coefficients.csv",
+        "tables/exploratory_hyp002_mi_ordered_logit_coefficients.md",
+        "tables/exploratory_hyp002_mi_ordered_logit_predicted_probabilities.csv",
+        "tables/exploratory_hyp002_mi_ordered_logit_predicted_probabilities.md",
+        "tables/exploratory_hyp002_mi_ordered_logit_metadata.json"
+      ],
+      "n_obs": 14443,
+      "n_imputations": 20,
+      "n_per_imputation": [
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443,
+        14443
+      ]
     }
   ]
 }

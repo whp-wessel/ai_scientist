@@ -3,107 +3,115 @@
   "files": [
     {
       "path": "analysis/code/run_pap_models.py:1",
-      "description": "Added seeded PAP runner for HYP-003 ordered logit with SRS defaults, disclosure guards, and manifest/metadata outputs."
+      "description": "Extended PAP runner to cover HYP-001/002 with MI-pooled HC1 OLS and ordered-logit workflows plus manifest updates."
     },
     {
-      "path": "tables/exploratory_hyp003_ordered_logit_coefficients.csv:1",
-      "description": "Exported exploratory coefficient estimates with HC1 SEs from the new runner."
+      "path": "tables/exploratory_hyp001_mi_linear_coefficients.csv:1",
+      "description": "Seeded (20251016) MI-pooled coefficient table for HYP-001 self-love ~ childhood abuse with HC1 SEs."
     },
     {
-      "path": "tables/exploratory_hyp003_ordered_logit_coefficients.md:1",
-      "description": "Documented exploratory coefficient table with generation timestamp and SRS caveat."
+      "path": "tables/exploratory_hyp001_mi_linear_predicted_means.csv:1",
+      "description": "Predicted self-love means by abuse level using pooled estimates and mean controls (disclosure k>=10 verified)."
     },
     {
-      "path": "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.csv:1",
-      "description": "Recorded predicted monogamy category probabilities by religion practice levels."
+      "path": "tables/exploratory_hyp001_mi_linear_metadata.json:1",
+      "description": "Stored Rubin pooling diagnostics, imputation IDs, control means, and reproducibility details for HYP-001 run."
     },
     {
-      "path": "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.md:1",
-      "description": "Human-readable summary of predicted probabilities evaluated at sample means."
+      "path": "tables/exploratory_hyp002_mi_ordered_logit_coefficients.csv:1",
+      "description": "MI-pooled ordered-logit coefficients for HYP-002 linking childhood class to net-worth categories."
     },
     {
-      "path": "tables/exploratory_hyp003_ordered_logit_metadata.json:1",
-      "description": "Stored run metadata, sample counts, and disclosure audit results for HYP-003."
+      "path": "tables/exploratory_hyp002_mi_ordered_logit_predicted_probabilities.csv:1",
+      "description": "Average net-worth probability profiles by childhood class (controls at MI means, SRS assumption)."
+    },
+    {
+      "path": "tables/exploratory_hyp002_mi_ordered_logit_metadata.json:1",
+      "description": "Recorded variance components, control means, and regeneration command for HYP-002 MI run."
     },
     {
       "path": "tables/exploratory_pap_run_summary.json:1",
-      "description": "Manifest capturing exploratory run command, seed, and produced outputs."
+      "description": "Updated manifest logging exploratory MI executions for HYP-001 and HYP-002 with seed 20251016."
     },
     {
-      "path": "analysis/pre_analysis_plan.md:44",
-      "description": "Logged 2025-10-17 update noting relationship-status control currently absent from data."
+      "path": "analysis/pre_analysis_plan.md:75",
+      "description": "Documented MI runner milestone for HYP-001/002 while PAP remains draft pending survey-weight confirmation."
     },
     {
-      "path": "analysis/hypotheses.csv:5",
-      "description": "Appended note to HYP-003 about missing relationship-status control pending provider guidance."
+      "path": "notebooks/research_notebook.md:24",
+      "description": "Captured Loop 13 narrative covering MI runner extension and resulting exploratory artifacts."
+    },
+    {
+      "path": "analysis/decision_log.csv:9",
+      "description": "Logged analysis_script_dev action for MI extension and exploratory outputs."
+    },
+    {
+      "path": "artifacts/state.json:3",
+      "description": "Advanced loop counter to 13, closed T-014, and added robustness scripting task T-016."
+    },
+    {
+      "path": "artifacts/repro_report.md:21",
+      "description": "Appended Loop 13 reproducibility notes with regeneration commands for MI runs."
     },
     {
       "path": "artifacts/checksums.json:1",
-      "description": "Updated SHA-256 hashes for raw dataset and derived imputation files."
-    },
-    {
-      "path": "artifacts/repro_report.md:16",
-      "description": "Added Loop 12 reproducibility notes and regeneration command for the new runner."
-    },
-    {
-      "path": "artifacts/state.json:1",
-      "description": "Incremented loop counter to 12, closed T-012, and queued next actions T-003/T-014."
-    },
-    {
-      "path": "analysis/decision_log.csv:7",
-      "description": "Logged analysis_script_dev action covering runner authoring, exploratory run, and artifact refresh."
-    },
-    {
-      "path": "notebooks/research_notebook.md:18",
-      "description": "Captured Loop 12 narrative including checksum refresh and exploratory ordered-logit execution."
+      "description": "Recomputed SHA-256 hashes for raw and imputed datasets after generating new MI artifacts."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-17T15:59:28.162281Z",
+    "ts": "2025-10-17T16:18:33Z",
     "action": "analysis_script_dev",
-    "inputs": "analysis/code/run_pap_models.py|childhoodbalancedpublic_original.csv|config/agent_config.yaml",
-    "rationale_short": "Implemented PAP ordered-logit runner and exploratory dry-run documenting missing relationship control.",
+    "inputs": "analysis/code/run_pap_models.py|data/derived/childhoodbalancedpublic_mi_prototype.csv.gz|config/agent_config.yaml",
+    "rationale_short": "Extended PAP runner to HYP-001/002 with MI pooling and logged exploratory outputs.",
     "code_path": "analysis/code/run_pap_models.py",
-    "outputs": "analysis/code/run_pap_models.py|tables/exploratory_hyp003_ordered_logit_coefficients.csv|tables/exploratory_hyp003_ordered_logit_coefficients.md|tables/exploratory_hyp003_ordered_logit_predicted_probabilities.csv|tables/exploratory_hyp003_ordered_logit_predicted_probabilities.md|tables/exploratory_hyp003_ordered_logit_metadata.json|tables/exploratory_pap_run_summary.json|artifacts/checksums.json|artifacts/repro_report.md|notebooks/research_notebook.md|analysis/pre_analysis_plan.md",
+    "outputs": "tables/exploratory_hyp001_mi_linear_coefficients.csv|tables/exploratory_hyp002_mi_ordered_logit_coefficients.csv|analysis/pre_analysis_plan.md|notebooks/research_notebook.md",
     "status": "success"
   },
   "next_actions": [
     {
       "id": "T-003",
-      "description": "Follow up with survey administrators regarding official weight and design metadata so the PAP can be frozen.",
+      "description": "Follow up with survey administrators regarding official weight and design metadata.",
       "status": "waiting_external"
     },
     {
-      "id": "T-014",
-      "description": "Extend run_pap_models to cover HYP-001 and HYP-002 with planned MI handling ahead of PAP freeze.",
+      "id": "T-016",
+      "description": "Draft MI robustness scripts for HYP-001/002 (reduced-aux and complete-case comparisons).",
       "status": "todo"
     }
   ],
   "state_update": {
-    "loop_counter": 12,
-    "last_updated": "2025-10-17T15:59:28.162281+00:00",
-    "notes": "Scripted PAP ordered-logit runner for HYP-003, executed exploratory dry-run (seed 20251016), and logged missing relationship-status control pending data provider response.",
+    "loop_counter": 13,
+    "last_updated": "2025-10-17T16:18:33+00:00",
+    "notes": "Extended run_pap_models with MI-pooled analyses for HYP-001/002 and generated exploratory outputs (seed 20251016) while survey weights remain pending.",
     "backlog_updates": [
       {
-        "id": "T-012",
+        "id": "T-014",
         "status": "done"
+      },
+      {
+        "id": "T-016",
+        "status": "added"
       }
     ]
   },
   "git": {
     "commit": true,
-    "message": "analysis(code): add HYP-003 PAP runner exploratory run"
+    "message": "analysis(code): extend PAP runner with MI for HYP-001/002"
   },
   "stop_now": false,
   "stop_reason": "",
   "signals": [
     {
       "type": "info",
-      "message": "Relationship-status control remains unavailable; flagged in PAP notes and metadata until survey team responds."
+      "message": "HYP-001 MI-pooled linear model: abuse coefficient = -0.142 (95% CI [-0.155, -0.129]); predicted self-love drops from 1.01 to 0.15 across the abuse scale at mean controls."
     },
     {
       "type": "info",
-      "message": "Pre-existing modifications in artifacts/session_info.txt and artifacts/last_commit.txt were left untouched."
+      "message": "HYP-002 MI ordered logit: childhood class coefficient = 0.316 (95% CI [0.291, 0.342]); probability of net worth ≥4 rises from 7% (classchild 0) to 34% (classchild 6)."
+    },
+    {
+      "type": "warning",
+      "message": "Outputs assume simple random sampling and rely on the prototype MI stack until survey weights (T-003) are validated."
     }
   ]
 }
