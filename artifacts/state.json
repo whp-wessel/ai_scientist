@@ -1,8 +1,8 @@
 {
   "path": "artifacts/state.json",
-  "loop_counter": 13,
-  "last_updated": "2025-10-17T16:18:33+00:00",
-  "notes": "Extended run_pap_models with MI-pooled analyses for HYP-001/002 and generated exploratory outputs (seed 20251016) while survey weights remain pending.",
+  "loop_counter": 14,
+  "last_updated": "2025-10-17T23:00:34.825159+00:00",
+  "notes": "Patched and reran MI robustness workflow (seed 20251016) so complete-case ordered logit now matches MI scenarios; refreshed session info and dataset checksums.",
   "backlog": [
     {
       "id": "T-003",
@@ -28,6 +28,13 @@
       "id": "T-016",
       "priority": 3,
       "description": "Draft MI robustness scripts for HYP-001/002 (reduced-aux MI vs complete-case) ahead of PAP freeze.",
+      "status": "done",
+      "completed_at": "2025-10-17T23:00:34.825159+00:00"
+    },
+    {
+      "id": "T-017",
+      "priority": 3,
+      "description": "Integrate MI robustness findings into PAP draft once survey design metadata is confirmed.",
       "status": "todo"
     }
   ],
@@ -38,18 +45,18 @@
       "status": "waiting_external"
     },
     {
-      "id": "T-016",
-      "description": "Draft MI robustness scripts for HYP-001/002 (reduced-aux and complete-case comparisons).",
+      "id": "T-017",
+      "description": "Incorporate MI robustness summary and plan confirmatory sensitivity checks in PAP draft pending weights.",
       "status": "todo"
     }
   ],
   "backlog_updates": [
     {
-      "id": "T-014",
+      "id": "T-016",
       "status": "done"
     },
     {
-      "id": "T-016",
+      "id": "T-017",
       "status": "added"
     }
   ]

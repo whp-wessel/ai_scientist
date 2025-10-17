@@ -26,3 +26,9 @@
 - Extended `analysis/code/run_pap_models.py` to cover HYP-001 (MI-pooled HC1 linear model) and HYP-002 (MI-pooled ordered logit) with Rubin pooling seeded at 20251016.
 - Executed exploratory runs for HYP-001/002 producing `tables/exploratory_hyp001_*` and `tables/exploratory_hyp002_*` bundles plus metadata JSON for manifesting.
 - Updated `analysis/pre_analysis_plan.md` with the MI runner milestone while PAP remains in draft pending weight metadata (T-003).
+
+## 2025-10-17T22:59Z — Loop 14 (Exploratory)
+- Refreshed reproducibility artifacts: captured current environment/package snapshot in `artifacts/session_info.txt` and recomputed dataset SHA-256 hashes in `artifacts/checksums.json`.
+- Patched `analysis/code/run_mi_robustness.py` to restore the HYP-002 complete-case ordered-logit path (Series casting + category labeling) and prevent numpy attribute errors.
+- Re-ran `python analysis/code/run_mi_robustness.py --seed 20251016` to generate robustness bundles for HYP-001/002 across complete-case, MI prototype, and reduced-auxiliary scenarios with disclosure checks.
+- Logged scenario narratives in `analysis/imputation/robustness_hyp001_mi_scenarios.md` / `_hyp002_...` and regenerated coefficient/probability tables under the global seed.
