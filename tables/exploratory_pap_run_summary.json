@@ -1,0 +1,22 @@
+{
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "mode": "exploratory",
+  "seed": 20251016,
+  "timestamp": "2025-10-17T15:59:28.162281+00:00",
+  "hypotheses": [
+    "HYP-003"
+  ],
+  "executed": [
+    {
+      "hypothesis": "HYP-003",
+      "outputs": [
+        "tables/exploratory_hyp003_ordered_logit_coefficients.csv",
+        "tables/exploratory_hyp003_ordered_logit_coefficients.md",
+        "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.csv",
+        "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.md",
+        "tables/exploratory_hyp003_ordered_logit_metadata.json"
+      ],
+      "n_obs": 14437
+    }
+  ]
+}

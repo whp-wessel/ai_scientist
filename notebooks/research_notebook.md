@@ -14,3 +14,10 @@
 - Documented confirmatory command path (`analysis/code/run_pap_models.py`) and disclosure safeguards in PAP to pre-position confirmatory run once weights arrive.
 - Next: await survey-design response; once resolved, freeze PAP and script confirmatory analysis for HYP-003 alongside HYP-001/002.
 
+
+## 2025-10-17T15:59:28+00:00 — Loop 12 (Exploratory)
+- Confirmed reproducibility artifacts remained current and refreshed `artifacts/checksums.json` for raw and derived datasets.
+- Authored `analysis/code/run_pap_models.py` implementing the PAP ordered-logit path for HYP-003 with SRS assumptions and HC1 SEs.
+- Ran the script in exploratory mode (seed 20251016), generating coefficient and probability tables under disclosure checks.
+- Logged that relationship-status control variables are unavailable at required counts; script records omission until data provider resolves.
+

@@ -1,0 +1,48 @@
+{
+  "hypothesis": "HYP-003",
+  "n_observations": 14437,
+  "cell_threshold": 10,
+  "collapse_applied": false,
+  "relationship_control": null,
+  "relationship_note": "No relationship status control available with \u2265 cell_threshold observations; model omits this control for now",
+  "outcome_counts": {
+    "full_monogamy": 8328,
+    "leaning_monogamy": 3425,
+    "leaning_nonmonogamy": 1780,
+    "full_nonmonogamy": 904
+  },
+  "crosstab": {
+    "No": {
+      "full_monogamy": 5365,
+      "full_nonmonogamy": 662,
+      "leaning_monogamy": 2583,
+      "leaning_nonmonogamy": 1343
+    },
+    "Yes, slightly": {
+      "full_monogamy": 1561,
+      "full_nonmonogamy": 136,
+      "leaning_monogamy": 572,
+      "leaning_nonmonogamy": 307
+    },
+    "Yes, moderately": {
+      "full_monogamy": 780,
+      "full_nonmonogamy": 59,
+      "leaning_monogamy": 199,
+      "leaning_nonmonogamy": 96
+    },
+    "Yes, very seriously": {
+      "full_monogamy": 622,
+      "full_nonmonogamy": 47,
+      "leaning_monogamy": 71,
+      "leaning_nonmonogamy": 34
+    }
+  },
+  "mode": "exploratory",
+  "generated": "2025-10-17T15:59:34.324132+00:00",
+  "outputs": [
+    "tables/exploratory_hyp003_ordered_logit_coefficients.csv",
+    "tables/exploratory_hyp003_ordered_logit_coefficients.md",
+    "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.csv",
+    "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.md"
+  ]
+}

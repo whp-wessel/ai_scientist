@@ -1,11 +1,38 @@
 {
   "path": "artifacts/state.json",
-  "loop_counter": 11,
-  "last_updated": "2025-10-16T14:52:39Z",
-  "notes": "Integrated monogamy exploratory insight into PAP and advanced HYP-003 ordered-logit specification under ongoing SRS assumption.",
+  "loop_counter": 12,
+  "last_updated": "2025-10-17T15:59:28.162281+00:00",
+  "notes": "Scripted PAP ordered-logit runner for HYP-003, executed exploratory dry-run (seed 20251016), and logged missing relationship-status control pending data provider response.",
+  "backlog": [
+    {
+      "id": "T-003",
+      "priority": 1,
+      "description": "Await survey administrator response on weight/strata metadata so the PAP can be frozen with the validated design.",
+      "status": "waiting_external"
+    },
+    {
+      "id": "T-012",
+      "priority": 2,
+      "description": "Build executable PAP ordered-logit runner for HYP-003 and validate under SRS assumption.",
+      "status": "done",
+      "completed_at": "2025-10-17T15:59:28.162281+00:00"
+    }
+  ],
+  "next_actions": [
+    {
+      "id": "T-003",
+      "description": "Follow up with survey administrators regarding official weight and design metadata.",
+      "status": "waiting_external"
+    },
+    {
+      "id": "T-014",
+      "description": "Extend run_pap_models workflow to HYP-001 and HYP-002 with MI handling prior to PAP freeze.",
+      "status": "todo"
+    }
+  ],
   "backlog_updates": [
     {
-      "id": "T-011",
+      "id": "T-012",
       "status": "done"
     }
   ]

@@ -2,71 +2,108 @@
 {
   "files": [
     {
-      "path": "analysis/pre_analysis_plan.md:18",
-      "description": "Logged the latest survey-design verification showing SRS assumptions remain necessary until T-003 completes."
+      "path": "analysis/code/run_pap_models.py:1",
+      "description": "Added seeded PAP runner for HYP-003 ordered logit with SRS defaults, disclosure guards, and manifest/metadata outputs."
     },
     {
-      "path": "analysis/pre_analysis_plan.md:40",
-      "description": "Expanded HYP-003 with ordered-logit confirmatory specification, recoding plan, command path, and disclosure safeguards."
+      "path": "tables/exploratory_hyp003_ordered_logit_coefficients.csv:1",
+      "description": "Exported exploratory coefficient estimates with HC1 SEs from the new runner."
+    },
+    {
+      "path": "tables/exploratory_hyp003_ordered_logit_coefficients.md:1",
+      "description": "Documented exploratory coefficient table with generation timestamp and SRS caveat."
+    },
+    {
+      "path": "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.csv:1",
+      "description": "Recorded predicted monogamy category probabilities by religion practice levels."
+    },
+    {
+      "path": "tables/exploratory_hyp003_ordered_logit_predicted_probabilities.md:1",
+      "description": "Human-readable summary of predicted probabilities evaluated at sample means."
+    },
+    {
+      "path": "tables/exploratory_hyp003_ordered_logit_metadata.json:1",
+      "description": "Stored run metadata, sample counts, and disclosure audit results for HYP-003."
+    },
+    {
+      "path": "tables/exploratory_pap_run_summary.json:1",
+      "description": "Manifest capturing exploratory run command, seed, and produced outputs."
+    },
+    {
+      "path": "analysis/pre_analysis_plan.md:44",
+      "description": "Logged 2025-10-17 update noting relationship-status control currently absent from data."
     },
     {
       "path": "analysis/hypotheses.csv:5",
-      "description": "Marked HYP-003 as in_PAP, added the relationship-status control, and aligned the estimand with the ordered-logit plan."
+      "description": "Appended note to HYP-003 about missing relationship-status control pending provider guidance."
     },
     {
-      "path": "notebooks/research_notebook.md:10",
-      "description": "Captured Loop 11 planning steps, including reproducibility checks and PAP updates, in the running notebook."
+      "path": "artifacts/checksums.json:1",
+      "description": "Updated SHA-256 hashes for raw dataset and derived imputation files."
     },
     {
-      "path": "artifacts/state.json:3",
-      "description": "Incremented loop counter, refreshed notes, and closed backlog item T-011 after documenting the confirmatory plan."
+      "path": "artifacts/repro_report.md:16",
+      "description": "Added Loop 12 reproducibility notes and regeneration command for the new runner."
     },
     {
-      "path": "analysis/decision_log.csv:5",
-      "description": "Appended a decision-log entry for the PAP update with inputs, outputs, and rationale."
+      "path": "artifacts/state.json:1",
+      "description": "Incremented loop counter to 12, closed T-012, and queued next actions T-003/T-014."
+    },
+    {
+      "path": "analysis/decision_log.csv:7",
+      "description": "Logged analysis_script_dev action covering runner authoring, exploratory run, and artifact refresh."
+    },
+    {
+      "path": "notebooks/research_notebook.md:18",
+      "description": "Captured Loop 12 narrative including checksum refresh and exploratory ordered-logit execution."
     }
   ],
   "decision_log_row": {
-    "ts": "2025-10-16T14:52:54Z",
-    "action": "pap_update",
-    "inputs": "analysis/pre_analysis_plan.md|tables/exploratory_monogamy_by_religion.csv|docs/survey_design.yaml|analysis/hypotheses.csv",
-    "rationale_short": "Documented HYP-003 confirmatory ordered-logit spec while weights remain unavailable.",
-    "code_path": "analysis/pre_analysis_plan.md (manual edit)",
-    "outputs": "analysis/pre_analysis_plan.md|analysis/hypotheses.csv|notebooks/research_notebook.md|artifacts/state.json",
+    "ts": "2025-10-17T15:59:28.162281Z",
+    "action": "analysis_script_dev",
+    "inputs": "analysis/code/run_pap_models.py|childhoodbalancedpublic_original.csv|config/agent_config.yaml",
+    "rationale_short": "Implemented PAP ordered-logit runner and exploratory dry-run documenting missing relationship control.",
+    "code_path": "analysis/code/run_pap_models.py",
+    "outputs": "analysis/code/run_pap_models.py|tables/exploratory_hyp003_ordered_logit_coefficients.csv|tables/exploratory_hyp003_ordered_logit_coefficients.md|tables/exploratory_hyp003_ordered_logit_predicted_probabilities.csv|tables/exploratory_hyp003_ordered_logit_predicted_probabilities.md|tables/exploratory_hyp003_ordered_logit_metadata.json|tables/exploratory_pap_run_summary.json|artifacts/checksums.json|artifacts/repro_report.md|notebooks/research_notebook.md|analysis/pre_analysis_plan.md",
     "status": "success"
   },
   "next_actions": [
     {
       "id": "T-003",
-      "description": "Await survey administrator response on weight/strata metadata so the PAP can be frozen with the validated design.",
+      "description": "Follow up with survey administrators regarding official weight and design metadata so the PAP can be frozen.",
       "status": "waiting_external"
     },
     {
-      "description": "Prepare executable ordered-logit modeling script and dry-run once survey design variables are confirmed.",
+      "id": "T-014",
+      "description": "Extend run_pap_models to cover HYP-001 and HYP-002 with planned MI handling ahead of PAP freeze.",
       "status": "todo"
     }
   ],
   "state_update": {
-    "loop_counter": 11,
-    "notes": "Integrated monogamy exploratory insight into PAP and advanced HYP-003 ordered-logit specification under ongoing SRS assumption.",
+    "loop_counter": 12,
+    "last_updated": "2025-10-17T15:59:28.162281+00:00",
+    "notes": "Scripted PAP ordered-logit runner for HYP-003, executed exploratory dry-run (seed 20251016), and logged missing relationship-status control pending data provider response.",
     "backlog_updates": [
       {
-        "id": "T-011",
+        "id": "T-012",
         "status": "done"
       }
     ]
   },
   "git": {
     "commit": true,
-    "message": "analysis(pap): integrate HYP-003 ordered-logit spec under SRS assumption",
-    "sha": "943cc525c6317cae7ce02573bc6f84f27844a985"
+    "message": "analysis(code): add HYP-003 PAP runner exploratory run"
   },
   "stop_now": false,
   "stop_reason": "",
   "signals": [
     {
       "type": "info",
-      "message": "Left prior modifications in artifacts/session_info.txt, artifacts/repro_report.md, and artifacts/last_commit.txt untouched; they predate this loop."
+      "message": "Relationship-status control remains unavailable; flagged in PAP notes and metadata until survey team responds."
+    },
+    {
+      "type": "info",
+      "message": "Pre-existing modifications in artifacts/session_info.txt and artifacts/last_commit.txt were left untouched."
     }
   ]
 }
