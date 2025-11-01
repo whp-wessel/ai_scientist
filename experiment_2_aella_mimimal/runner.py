@@ -15,6 +15,7 @@ This file is self-contained (stdlib only).
 from __future__ import annotations
 
 import argparse
+import contextlib
 import os, sys, json, csv, subprocess, re, time, hashlib, platform, random
 from typing import Any, Dict, Optional
 from datetime import datetime, timezone
@@ -22,7 +23,16 @@ from pathlib import Path
 
 # --- Repo & runtime configuration -------------------------------------------------
 
-REPO = Path(os.environ.get("REPO_ROOT", ".")).resolve()
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO = SCRIPT_DIR
+repo_root_override = os.environ.get("REPO_ROOT")
+if repo_root_override:
+    override_path = Path(repo_root_override)
+    if not override_path.is_absolute():
+        override_path = (SCRIPT_DIR / override_path).resolve()
+    else:
+        override_path = override_path.resolve()
+    REPO = override_path
 MAIN_BRANCH = os.environ.get("GIT_MAIN_BRANCH", "main")
 MODEL = os.environ.get("CODEX_MODEL", "gpt-5-codex")
 REASONING_EFFORT = os.environ.get("CODEX_REASONING_EFFORT", "high")
@@ -48,6 +58,14 @@ NETWORK_ACCESS = _normalize_network_setting(_network_raw) if _network_raw else "
 STATE_PATH = REPO / "artifacts" / "state.json"
 DECISION_LOG = REPO / "analysis" / "decision_log.csv"
 STOP_FLAG = REPO / "artifacts" / "stop.flag"
+LAST_ABORT_PATH = REPO / "artifacts" / "last_abort.json"
+
+
+class UserAbort(Exception):
+    """Raised when the runner is interrupted by the user (e.g., Ctrl+C)."""
+
+
+    pass
 
 # --- Prompt loading from agents.md ----------------------------------------------
 
@@ -107,6 +125,66 @@ def extract_json_block(text: str):
 def run_cmd(cmd, input_bytes=None, check=False):
     proc = subprocess.run(cmd, input=input_bytes, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return proc.returncode, proc.stdout.decode("utf-8", "ignore"), proc.stderr.decode("utf-8", "ignore")
+
+
+def _terminate_process(proc: subprocess.Popen) -> None:
+    """Best-effort termination helper that swallows common failures."""
+
+    with contextlib.suppress(Exception):
+        proc.terminate()
+    try:
+        proc.wait(timeout=2)
+        return
+    except subprocess.TimeoutExpired:
+        pass
+    with contextlib.suppress(Exception):
+        proc.kill()
+    with contextlib.suppress(Exception):
+        proc.wait(timeout=2)
+
+
+def mark_user_abort(phase: str, loop_idx: Optional[int] = None, note: str | None = None) -> None:
+    """Persist information about a user-triggered cancellation."""
+
+    record: Dict[str, Any] = {
+        "ts": datetime.now(timezone.utc).isoformat(),
+        "phase": phase,
+    }
+    if loop_idx is not None:
+        record["loop"] = loop_idx
+    if note:
+        record["note"] = note
+
+    state = read_state_json()
+    current = ensure_state_defaults(state)
+    current["last_abort"] = record
+    write_state_json(current)
+
+    LAST_ABORT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    LAST_ABORT_PATH.write_text(json.dumps(record, indent=2), encoding="utf-8")
+
+
+def clear_user_abort(phase: str | None = None, loop_idx: Optional[int] = None) -> None:
+    """Clear any stored user-abort metadata once safely recovered."""
+
+    state = read_state_json()
+    current = ensure_state_defaults(state)
+    last = current.get("last_abort")
+    if not isinstance(last, dict):
+        return
+    if phase is not None and last.get("phase") != phase:
+        return
+    if phase == "loop" and loop_idx is not None:
+        last_loop = last.get("loop")
+        if last_loop is not None and loop_idx < last_loop:
+            return
+
+    if "last_abort" in current:
+        current.pop("last_abort", None)
+        write_state_json(current)
+    if LAST_ABORT_PATH.exists():
+        with contextlib.suppress(Exception):
+            LAST_ABORT_PATH.unlink()
 
 def _combine_prompts(user_prompt: str, system_prompt: str | None) -> str:
     if not system_prompt:
@@ -203,31 +281,53 @@ def run_codex_cli(user_prompt: str, system_prompt: str = None, model: str = MODE
         except FileNotFoundError as launch_err:
             raise RuntimeError(f"codex executable not found: {launch_err}")
 
-        try:
-            if proc.stdin:
-                proc.stdin.write(prompt)
-                proc.stdin.close()
-        except BrokenPipeError:
-            pass
-
+        stderr_text = ""
+        rc: Optional[int] = None
         last_message = None
         try:
+            if proc.stdin:
+                try:
+                    proc.stdin.write(prompt)
+                except BrokenPipeError:
+                    pass
+                except KeyboardInterrupt as exc:
+                    _terminate_process(proc)
+                    raise UserAbort("user cancelled while sending prompt") from exc
+                finally:
+                    proc.stdin.close()
+
             if proc.stdout:
                 for line in proc.stdout:
                     line = line.strip()
                     if not line:
                         continue
                     last_message = _handle_codex_line(line, last_message)
+        except KeyboardInterrupt as exc:
+            _terminate_process(proc)
+            raise UserAbort("user cancelled during Codex streaming") from exc
         finally:
             if proc.stdout:
                 proc.stdout.close()
+            if proc.stderr:
+                try:
+                    stderr_text = proc.stderr.read().strip()
+                except Exception:
+                    stderr_text = ""
+                proc.stderr.close()
+            try:
+                rc = proc.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                _terminate_process(proc)
+                try:
+                    rc = proc.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    rc = proc.poll()
+            except KeyboardInterrupt as exc:
+                _terminate_process(proc)
+                raise UserAbort("user cancelled during Codex shutdown") from exc
+            if rc is None:
+                rc = proc.returncode
 
-        stderr_text = ""
-        if proc.stderr:
-            stderr_text = proc.stderr.read().strip()
-            proc.stderr.close()
-
-        rc = proc.wait()
         if stderr_text:
             _print_codex_event("stderr", stderr_text)
 
@@ -462,7 +562,12 @@ def do_bootstrap():
     print("== Bootstrap session ==")
     bootstrap_system = get_prompt("BOOTSTRAP_SYSTEM")
     bootstrap_user = get_prompt("BOOTSTRAP_USER")
-    raw = run_codex_cli(bootstrap_user, bootstrap_system)
+    try:
+        raw = run_codex_cli(bootstrap_user, bootstrap_system)
+    except UserAbort:
+        mark_user_abort("bootstrap", note="Interrupted during bootstrap")
+        print("[bootstrap] cancelled by user.")
+        return True
     (REPO/"artifacts"/"last_model_raw.txt").write_text(raw, encoding="utf-8")
     js = extract_json_block(raw)
     if not js:
@@ -480,6 +585,7 @@ def do_bootstrap():
     # Mark bootstrap completion if no early stop flag is requested later.
     new_state["bootstrap_complete"] = True
     write_state_json(new_state)
+    clear_user_abort("bootstrap")
     # Decision log
     if "decision_log_row" in data:
         append_decision_log(data["decision_log_row"])
@@ -517,7 +623,12 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
         progress_note += f" Network access={NETWORK_ACCESS}."
     user_prompt = user_prompt + progress_note
 
-    raw = run_codex_cli(user_prompt, loop_system)
+    try:
+        raw = run_codex_cli(user_prompt, loop_system)
+    except UserAbort:
+        mark_user_abort("loop", iter_ix, note="Interrupted during loop execution")
+        print(f"[loop {iter_ix}] cancelled by user.")
+        return True, consecutive_git_fails, consecutive_parse_fails
     (REPO/"artifacts"/"last_model_raw.txt").write_text(raw, encoding="utf-8")
     js = extract_json_block(raw)
     if not js:
@@ -537,6 +648,7 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
     new_state = merge_state(state, data.get("state_update",{}))
     new_state = ensure_state_defaults(new_state)
     write_state_json(new_state)
+    clear_user_abort("loop", iter_ix)
 
     # Decision log
     if "decision_log_row" in data:
@@ -574,15 +686,26 @@ def run_loop_batch(start_loop: int, loops_to_run: int, sleep_seconds: Optional[f
     final_loop = start_loop + loops_to_run - 1
     for loop_idx in range(start_loop, final_loop + 1):
         print(f"== Loop {loop_idx} / target {final_loop} ==")
-        should_stop, consecutive_git_fails, consecutive_parse_fails = do_loop(
-            loop_idx,
-            consecutive_git_fails,
-            consecutive_parse_fails,
-        )
+        try:
+            should_stop, consecutive_git_fails, consecutive_parse_fails = do_loop(
+                loop_idx,
+                consecutive_git_fails,
+                consecutive_parse_fails,
+            )
+        except KeyboardInterrupt:
+            mark_user_abort("loop", loop_idx, note="Interrupted mid-loop")
+            print(f"[loop {loop_idx}] cancelled by user.")
+            return True
         if should_stop:
             return True
         if sleep_seconds and sleep_seconds > 0 and loop_idx < final_loop:
-            time.sleep(sleep_seconds)
+            try:
+                time.sleep(sleep_seconds)
+            except KeyboardInterrupt:
+                next_loop = loop_idx + 1
+                mark_user_abort("loop", next_loop, note="Interrupted during inter-loop delay")
+                print(f"[loop {next_loop}] cancelled during sleep before start.")
+                return True
     return False
 
 
@@ -666,6 +789,13 @@ def main(argv: Optional[list[str]] = None) -> int:
     if state != raw_state_after:
         write_state_json(state)
 
+    last_abort = state.get("last_abort")
+    if isinstance(last_abort, dict):
+        phase = last_abort.get("phase", "unknown")
+        loop_note = f", loop={last_abort.get('loop')}" if last_abort.get("loop") is not None else ""
+        extra = f" ({last_abort.get('note')})" if last_abort.get("note") else ""
+        print(f"[runner] prior session ended early (phase={phase}{loop_note}){extra}.")
+
     total_loops = int(state.get("total_loops", DEFAULT_TOTAL_LOOPS))
     completed_loops = int(state.get("loop_counter", 0))
 
@@ -686,7 +816,15 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
 
     sleep_seconds = args.sleep_seconds if args.sleep_seconds is not None else SLEEP_SECONDS
-    stopped = run_loop_batch(start_loop, loops_to_run, sleep_seconds)
+    try:
+        stopped = run_loop_batch(start_loop, loops_to_run, sleep_seconds)
+    except KeyboardInterrupt:
+        # Avoid overwriting detailed loop-level aborts if already recorded.
+        state_after_interrupt = read_state_json()
+        if not isinstance(state_after_interrupt.get("last_abort"), dict):
+            mark_user_abort("runner", note="Interrupted outside loop batch")
+        print("[runner] interrupted by user.")
+        return 130
     if stopped:
         print("[runner] loop sequence halted early.")
     else:
@@ -697,6 +835,12 @@ def main(argv: Optional[list[str]] = None) -> int:
 if __name__ == "__main__":
     try:
         sys.exit(main())
+    except UserAbort as exc:
+        print(f"[runner] interrupted by user: {exc}", file=sys.stderr)
+        sys.exit(130)
+    except KeyboardInterrupt:
+        print("[runner] interrupted by user.", file=sys.stderr)
+        sys.exit(130)
     except Exception as e:
         print(f"[fatal] {e}", file=sys.stderr)
         sys.exit(1)
