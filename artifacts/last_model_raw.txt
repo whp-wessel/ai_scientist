@@ -1,72 +1,41 @@
 ```json
 {
+  "summary": "Aligned MI robustness workflow by fixing the HYP-002 complete-case ordered-logit path, rerunning the seeded scenarios, and refreshing reproducibility manifests; complete-case and MI estimates now match for both HYP-001 and HYP-002.",
   "files": [
     {
-      "path": "analysis/code/run_pap_models.py:1",
-      "description": "Extended PAP runner to cover HYP-001/002 with MI-pooled HC1 OLS and ordered-logit workflows plus manifest updates."
+      "path": "analysis/code/run_mi_robustness.py:282",
+      "description": "Restored complete-case ordered-logit branch by turning test statistics into Series and preserving categorical labels so probability tables emit correctly."
     },
     {
-      "path": "tables/exploratory_hyp001_mi_linear_coefficients.csv:1",
-      "description": "Seeded (20251016) MI-pooled coefficient table for HYP-001 self-love ~ childhood abuse with HC1 SEs."
+      "path": "tables/robustness_hyp001_mi_scenarios_coefficients.csv:2",
+      "description": "Seeded robustness output showing childhood abuse coefficient −0.142 (95% CI −0.155, −0.129) identically across complete-case and MI scenarios."
     },
     {
-      "path": "tables/exploratory_hyp001_mi_linear_predicted_means.csv:1",
-      "description": "Predicted self-love means by abuse level using pooled estimates and mean controls (disclosure k>=10 verified)."
+      "path": "tables/robustness_hyp002_mi_scenarios_coefficients.csv:2",
+      "description": "Seeded robustness output showing childhood class coefficient 0.316 (95% CI 0.291, 0.342) invariant across complete-case, prototype MI, and reduced-auxiliary MI."
     },
     {
-      "path": "tables/exploratory_hyp001_mi_linear_metadata.json:1",
-      "description": "Stored Rubin pooling diagnostics, imputation IDs, control means, and reproducibility details for HYP-001 run."
+      "path": "analysis/imputation/robustness_hyp002_mi_scenarios.md:1",
+      "description": "Narrative log for exploratory robustness rerun with regeneration command and scenario parity notes."
     },
     {
-      "path": "tables/exploratory_hyp002_mi_ordered_logit_coefficients.csv:1",
-      "description": "MI-pooled ordered-logit coefficients for HYP-002 linking childhood class to net-worth categories."
-    },
-    {
-      "path": "tables/exploratory_hyp002_mi_ordered_logit_predicted_probabilities.csv:1",
-      "description": "Average net-worth probability profiles by childhood class (controls at MI means, SRS assumption)."
-    },
-    {
-      "path": "tables/exploratory_hyp002_mi_ordered_logit_metadata.json:1",
-      "description": "Recorded variance components, control means, and regeneration command for HYP-002 MI run."
-    },
-    {
-      "path": "tables/exploratory_pap_run_summary.json:1",
-      "description": "Updated manifest logging exploratory MI executions for HYP-001 and HYP-002 with seed 20251016."
-    },
-    {
-      "path": "analysis/pre_analysis_plan.md:75",
-      "description": "Documented MI runner milestone for HYP-001/002 while PAP remains draft pending survey-weight confirmation."
-    },
-    {
-      "path": "notebooks/research_notebook.md:24",
-      "description": "Captured Loop 13 narrative covering MI runner extension and resulting exploratory artifacts."
-    },
-    {
-      "path": "analysis/decision_log.csv:9",
-      "description": "Logged analysis_script_dev action for MI extension and exploratory outputs."
-    },
-    {
-      "path": "artifacts/state.json:3",
-      "description": "Advanced loop counter to 13, closed T-014, and added robustness scripting task T-016."
-    },
-    {
-      "path": "artifacts/repro_report.md:21",
-      "description": "Appended Loop 13 reproducibility notes with regeneration commands for MI runs."
+      "path": "artifacts/session_info.txt:1",
+      "description": "Updated environment snapshot (UTC timestamp, git status, pip freeze) for reproducibility."
     },
     {
       "path": "artifacts/checksums.json:1",
-      "description": "Recomputed SHA-256 hashes for raw and imputed datasets after generating new MI artifacts."
+      "description": "SHA-256 hashes refreshed for the raw survey CSV and both MI-derived datasets."
+    },
+    {
+      "path": "notebooks/research_notebook.md:33",
+      "description": "Loop 14 entry summarising MI robustness fix, rerun, and artifact refresh."
+    },
+    {
+      "path": "artifacts/state.json:1",
+      "description": "Loop counter advanced to 14, T-016 closed, and new T-017 backlog item queued for PAP integration."
     }
   ],
-  "decision_log_row": {
-    "ts": "2025-10-17T16:18:33Z",
-    "action": "analysis_script_dev",
-    "inputs": "analysis/code/run_pap_models.py|data/derived/childhoodbalancedpublic_mi_prototype.csv.gz|config/agent_config.yaml",
-    "rationale_short": "Extended PAP runner to HYP-001/002 with MI pooling and logged exploratory outputs.",
-    "code_path": "analysis/code/run_pap_models.py",
-    "outputs": "tables/exploratory_hyp001_mi_linear_coefficients.csv|tables/exploratory_hyp002_mi_ordered_logit_coefficients.csv|analysis/pre_analysis_plan.md|notebooks/research_notebook.md",
-    "status": "success"
-  },
+  "decision_log_row": "2025-10-17T23:00:12.062464Z,analysis_robustness,analysis/code/run_mi_robustness.py|config/agent_config.yaml|childhoodbalancedpublic_original.csv|data/derived/childhoodbalancedpublic_mi_prototype.csv.gz|data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz,Patched MI robustness runner and regenerated HYP-001/002 scenario outputs under seed 20251016.,analysis/code/run_mi_robustness.py,analysis/imputation/robustness_hyp001_mi_scenarios.md|analysis/imputation/robustness_hyp002_mi_scenarios.md|tables/robustness_hyp001_mi_scenarios_coefficients.csv|tables/robustness_hyp002_mi_scenarios_coefficients.csv|artifacts/session_info.txt|artifacts/checksums.json|artifacts/repro_report.md|notebooks/research_notebook.md,success",
   "next_actions": [
     {
       "id": "T-003",
@@ -74,45 +43,38 @@
       "status": "waiting_external"
     },
     {
-      "id": "T-016",
-      "description": "Draft MI robustness scripts for HYP-001/002 (reduced-aux and complete-case comparisons).",
+      "id": "T-017",
+      "description": "Incorporate MI robustness summary and plan confirmatory sensitivity checks in PAP draft pending weights.",
       "status": "todo"
     }
   ],
   "state_update": {
-    "loop_counter": 13,
-    "last_updated": "2025-10-17T16:18:33+00:00",
-    "notes": "Extended run_pap_models with MI-pooled analyses for HYP-001/002 and generated exploratory outputs (seed 20251016) while survey weights remain pending.",
+    "path": "artifacts/state.json",
+    "loop_counter": 14,
+    "last_updated": "2025-10-17T23:00:34.825159+00:00",
+    "notes": "Patched and reran MI robustness workflow (seed 20251016) so complete-case ordered logit now matches MI scenarios; refreshed session info and dataset checksums.",
     "backlog_updates": [
       {
-        "id": "T-014",
+        "id": "T-016",
         "status": "done"
       },
       {
-        "id": "T-016",
+        "id": "T-017",
         "status": "added"
       }
     ]
   },
   "git": {
     "commit": true,
-    "message": "analysis(code): extend PAP runner with MI for HYP-001/002"
+    "branch": "main",
+    "commit_hash": "d66291954a212060e7654e57cc12a41c4300a0e2",
+    "message": "analysis(robustness): regenerate HYP-001/002 MI scenario bundles"
   },
   "stop_now": false,
   "stop_reason": "",
   "signals": [
-    {
-      "type": "info",
-      "message": "HYP-001 MI-pooled linear model: abuse coefficient = -0.142 (95% CI [-0.155, -0.129]); predicted self-love drops from 1.01 to 0.15 across the abuse scale at mean controls."
-    },
-    {
-      "type": "info",
-      "message": "HYP-002 MI ordered logit: childhood class coefficient = 0.316 (95% CI [0.291, 0.342]); probability of net worth ≥4 rises from 7% (classchild 0) to 34% (classchild 6)."
-    },
-    {
-      "type": "warning",
-      "message": "Outputs assume simple random sampling and rely on the prototype MI stack until survey weights (T-003) are validated."
-    }
+    "reproducibility_artifacts_refreshed",
+    "mi_robustness_regenerated"
   ]
 }
 ```

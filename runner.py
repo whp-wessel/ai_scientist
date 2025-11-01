@@ -12,7 +12,11 @@ Key principles:
 This file is self-contained (stdlib only).
 """
 
-import os, sys, json, csv, subprocess, re, time, shutil, hashlib, platform, random
+from __future__ import annotations
+
+import argparse
+import os, sys, json, csv, subprocess, re, time, hashlib, platform, random
+from typing import Any, Dict, Optional
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -26,103 +30,55 @@ SLEEP_SECONDS = int(os.environ.get("LOOP_SLEEP_SECONDS", "0"))  # set 3600 for h
 MAX_CONSEC_GIT_FAILS = 2
 MAX_CONSEC_PARSE_FAILS = 2
 
+
+def _normalize_network_setting(value: str) -> str:
+    val = value.strip().lower()
+    if val in {"on", "enable", "enabled", "true", "1", "yes"}:
+        return "enabled"
+    if val in {"off", "disable", "disabled", "false", "0", "no"}:
+        return "disabled"
+    return val
+
+
+_network_raw = os.environ.get("CODEX_NETWORK_ACCESS")
+if _network_raw is None:
+    _network_raw = os.environ.get("CODEX_ALLOW_NET")
+NETWORK_ACCESS = _normalize_network_setting(_network_raw) if _network_raw else ""
+
 STATE_PATH = REPO / "artifacts" / "state.json"
 DECISION_LOG = REPO / "analysis" / "decision_log.csv"
 STOP_FLAG = REPO / "artifacts" / "stop.flag"
 
-# --- System / user prompts sent to the model -------------------------------------
+# --- Prompt loading from agents.md ----------------------------------------------
 
-BOOTSTRAP_SYSTEM = """You are a research automation agent for survey data.
-Follow rigorous scientific and reproducible standards. Never reveal chain-of-thought.
-Instead, produce auditable artifacts and a concise Decision Log entry.
+DEFAULT_TOTAL_LOOPS = int(os.environ.get("DEFAULT_TOTAL_LOOPS", "30"))
 
-**Reproducibility requirement:** Everything — including experiments/analyses — MUST be
-fully reproducible given the recorded seed and environment. Every output must be
-regenerable from versioned code and documented commands. Always log seeds used.
+PROMPT_FILE = REPO / "agents.md"
+PROMPT_PATTERN = re.compile(r"<!--PROMPT:([A-Z0-9_]+)-->(.*?)<!--END PROMPT:\1-->", re.DOTALL)
+_PROMPT_CACHE: Optional[Dict[str, str]] = None
 
-Your entire reply MUST be a single ```json fenced block containing a top-level JSON
-object matching the schema below. No other text. If you cannot proceed safely, set
-"stop_now": true and include a "stop_reason"."""
-BOOTSTRAP_USER = """PROJECT CONTEXT
-- Repository root is the working directory.
-- Inputs we expect (create stubs if absent):
-  - docs/codebook.json             (variable names, labels, types, coded values)
-  - docs/survey_design.yaml        (weight, strata, cluster, replicate weights if any)
-  - config/agent_config.yaml       (use default thresholds if missing; seed=20251016)
-- Create the folder structure if missing: analysis/, artifacts/, docs/, figures/, lit/, notebooks/, qc/, reports/, tables/.
-- Adopt Decision Log (CSV) at analysis/decision_log.csv with headers:
-  ts,action,inputs,rationale_short,code_path,outputs,status
 
-YOUR TASKS (Bootstrap)
-1) Sanity checks: presence/validity of codebook, survey design, config. If missing, create well-formed placeholders with TODO notes.
-2) Initialize persistence:
-   - artifacts/state.json with backlog (prioritized), next_actions, loop_counter=0.
-   - analysis/hypotheses.csv (empty template row only).
-   - analysis/pre_analysis_plan.md (skeleton, not frozen).
-   - qc/data_checks.md (initial checklist).
-3) Write a short Research Notebook scaffold at notebooks/research_notebook.md.
-4) Propose 3–8 candidate, testable hypotheses grounded in available variables (descriptive or associational only).
-5) Produce a minimal Pre‑Analysis Plan draft for 1–3 priority hypotheses (not frozen yet).
-6) Add literature stubs in lit/bibliography.bib and lit/evidence_map.csv (placeholders with TODOs).
-7) Git checkpoint: request commit with a clear message (see "git" field below).
+def _load_prompts() -> Dict[str, str]:
+    if not PROMPT_FILE.exists():
+        raise FileNotFoundError(f"Prompt file not found: {PROMPT_FILE}")
+    text = PROMPT_FILE.read_text(encoding="utf-8")
+    prompts: Dict[str, str] = {}
+    for match in PROMPT_PATTERN.finditer(text):
+        name = match.group(1).strip()
+        body = match.group(2).strip()
+        prompts[name] = body
+    if not prompts:
+        raise RuntimeError("No prompt blocks found in agents.md")
+    return prompts
 
-dataset: childhoodbalancedpublic_original.csv (don't edit this file, you can duplicate and edit a copy)
 
-**Reproducibility requirement:** Provide explicit regeneration commands for each artifact you create
-and record any random seeds. Prefer deterministic operations.
-
-OUTPUT PROTOCOL — return ONLY this JSON object in a fenced block:
-{
-  "files": [  // files to CREATE or OVERWRITE
-    {"path": "<relative/path.ext>", "content": "<full file content>", "mode": "text"}
-  ],
-  "decision_log_row": {
-    "ts": "<ISO-8601Z>",
-    "action": "bootstrap",
-    "inputs": ["docs/codebook.json","docs/survey_design.yaml","config/agent_config.yaml"],
-    "rationale_short": "<≤40 words describing what you did>",
-    "code_path": "N/A",
-    "outputs": ["artifacts/state.json","analysis/hypotheses.csv","analysis/pre_analysis_plan.md"],
-    "status": "success"
-  },
-  "next_actions": [
-    {"id":"T-001","priority":1,"desc":"Validate survey weights and replicate design","estimate_min":"15m"},
-    {"id":"T-002","priority":2,"desc":"Exploratory weighted summaries for key outcomes","estimate_min":"20m"}
-  ],
-  "state_update": { "loop_counter": 0 },
-  "git": { "commit": true, "message": "feat(bootstrap): init repo structure, state, PAP draft, and hypothesis registry" },
-  "stop_now": false,
-  "stop_reason": ""
-}
-EARLY-STOP RULES YOU MUST APPLY
-- If PII risk, missing required survey design when codebook references weights, or repo is read-only => set stop_now=true with stop_reason.
-"""
-
-LOOP_SYSTEM = """You are a research automation agent continuing a survey-science workflow.
-Never reveal chain-of-thought; provide artifacts plus a concise Decision Log update.
-
-**Reproducibility requirement:** Everything — including experiments/analyses — MUST be
-fully reproducible with the recorded seed and environment. Any randomness must be seeded
-and logged. Include regeneration commands in MANIFEST-style notes where appropriate.
-
-Reply as a single ```json fenced block matching the schema. No extra text."""
-LOOP_USER_TEMPLATE = """Per-hour continuation.
-
-Context:
-- You may assume prior files exist. If missing, create them.
-- Here is a brief state snapshot (may be empty on first runs):
-STATE_JSON_START
-{state_json}
-STATE_JSON_END
-
-Instructions:
-- Execute the top backlog item(s) within a ~15m budget.
-- Respect privacy; suppress small cells (<10).
-- If you detect a fatal condition, set "stop_now": true and state "stop_reason".
-- Include a "git" object with commit=true and a good message.
-dataset: childhoodbalancedpublic_original.csv (don't edit this file, you can duplicate and edit a copy)
-
-Return ONLY the JSON block per schema (files, decision_log_row, next_actions, state_update, git, stop_now, stop_reason, signals)."""
+def get_prompt(name: str) -> str:
+    global _PROMPT_CACHE
+    if _PROMPT_CACHE is None:
+        _PROMPT_CACHE = _load_prompts()
+    if name not in _PROMPT_CACHE:
+        raise KeyError(f"Prompt '{name}' missing from agents.md")
+    return _PROMPT_CACHE[name]
 
 # --- Helpers ---------------------------------------------------------------------
 
@@ -220,6 +176,8 @@ def run_codex_cli(user_prompt: str, system_prompt: str = None, model: str = MODE
     cmd = [codex_bin, "exec", "--json", "-m", model]
     if REASONING_EFFORT:
         cmd += ["-c", f"model_reasoning_effort=\"{REASONING_EFFORT}\""]
+    if NETWORK_ACCESS:
+        cmd += ["-c", f"network_access=\"{NETWORK_ACCESS}\""]
     cmd.append("-")
     last_err = ""
     for attempt in range(retries + 1):
@@ -339,7 +297,12 @@ def read_state_json():
             return {}
     return {}
 
-def merge_state(current: dict, update: dict):
+def write_state_json(state: Dict[str, Any]) -> None:
+    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    STATE_PATH.write_text(json.dumps(state, indent=2, sort_keys=True), encoding="utf-8")
+
+
+def merge_state(current: Dict[str, Any], update: Dict[str, Any]):
     if not update:
         return current
     merged = dict(current)
@@ -349,6 +312,29 @@ def merge_state(current: dict, update: dict):
         else:
             merged[k] = v
     return merged
+
+
+def ensure_state_defaults(state: Dict[str, Any], total_loops: Optional[int] = None) -> Dict[str, Any]:
+    updated = dict(state)
+    if "loop_counter" not in updated or not isinstance(updated.get("loop_counter"), int):
+        try:
+            updated["loop_counter"] = int(updated.get("loop_counter", 0) or 0)
+        except Exception:
+            updated["loop_counter"] = 0
+    if total_loops is not None:
+        updated["total_loops"] = max(int(total_loops), 0)
+    elif "total_loops" not in updated:
+        updated["total_loops"] = DEFAULT_TOTAL_LOOPS
+    updated.setdefault("bootstrap_complete", False)
+    return updated
+
+
+def record_loop_counter(loop_idx: int) -> None:
+    state = read_state_json()
+    current = ensure_state_defaults(state)
+    if loop_idx > current.get("loop_counter", 0):
+        current["loop_counter"] = loop_idx
+        write_state_json(current)
 
 # --- Reproducibility utilities ----------------------------------------------------
 
@@ -402,6 +388,8 @@ def write_session_info(seed: int):
     lines.append(f"platform: {platform.platform()}")
     lines.append(f"cwd: {str(REPO)}")
     lines.append(f"model: {MODEL}")
+    if NETWORK_ACCESS:
+        lines.append(f"network_access: {NETWORK_ACCESS}")
     lines.append(f"seed: {seed}")
     # git head
     rc, out, _ = run_cmd(["git","rev-parse","HEAD"])
@@ -433,6 +421,7 @@ def write_repro_report():
         f"- Generated: {datetime.now(timezone.utc).isoformat()}",
         f"- Git HEAD: {head or '<unknown>'}",
         f"- Model: {MODEL}",
+        f"- Network access: {NETWORK_ACCESS or 'not specified'}",
         "",
         "Artifacts:",
         "- artifacts/session_info.txt  (env + packages + HEAD)",
@@ -471,7 +460,9 @@ def do_bootstrap():
     ensure_repo_structure()
     update_reproducibility()
     print("== Bootstrap session ==")
-    raw = run_codex_cli(BOOTSTRAP_USER, BOOTSTRAP_SYSTEM)
+    bootstrap_system = get_prompt("BOOTSTRAP_SYSTEM")
+    bootstrap_user = get_prompt("BOOTSTRAP_USER")
+    raw = run_codex_cli(bootstrap_user, bootstrap_system)
     (REPO/"artifacts"/"last_model_raw.txt").write_text(raw, encoding="utf-8")
     js = extract_json_block(raw)
     if not js:
@@ -485,8 +476,10 @@ def do_bootstrap():
     # Persist state_update if provided
     state = read_state_json()
     new_state = merge_state(state, data.get("state_update",{}))
-    if new_state:
-        (REPO/"artifacts"/"state.json").write_text(json.dumps(new_state, indent=2), encoding="utf-8")
+    new_state = ensure_state_defaults(new_state)
+    # Mark bootstrap completion if no early stop flag is requested later.
+    new_state["bootstrap_complete"] = True
+    write_state_json(new_state)
     # Decision log
     if "decision_log_row" in data:
         append_decision_log(data["decision_log_row"])
@@ -499,15 +492,32 @@ def do_bootstrap():
     # Early stop?
     if data.get("stop_now"):
         print(f"Bootstrap requested stop: {data.get('stop_reason')}")
+        # Preserve bootstrap_complete flag only if the agent wrote it explicitly.
+        state_with_flag = read_state_json()
+        if state_with_flag.get("bootstrap_complete", False) and data.get("stop_now"):
+            state_with_flag["bootstrap_complete"] = False
+            write_state_json(state_with_flag)
         return True
     return False
 
 def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: int):
     ensure_repo_structure()
     update_reproducibility()
-    state_json = read_state_json()
-    user_prompt = LOOP_USER_TEMPLATE.format(state_json=json.dumps(state_json, indent=2))
-    raw = run_codex_cli(user_prompt, LOOP_SYSTEM)
+    loop_system = get_prompt("LOOP_SYSTEM")
+    user_template = get_prompt("LOOP_USER_TEMPLATE")
+    state_snapshot = ensure_state_defaults(read_state_json())
+    state_prompt = json.dumps(state_snapshot, indent=2)
+    user_prompt = user_template.format(state_json=state_prompt)
+    loops_remaining = max(int(state_snapshot.get("total_loops", DEFAULT_TOTAL_LOOPS)) - int(state_snapshot.get("loop_counter", 0)), 0)
+    progress_note = (
+        f"\nLoop progress: completed={state_snapshot.get('loop_counter', 0)}, "
+        f"remaining={loops_remaining}, total={state_snapshot.get('total_loops', DEFAULT_TOTAL_LOOPS)}."
+    )
+    if NETWORK_ACCESS:
+        progress_note += f" Network access={NETWORK_ACCESS}."
+    user_prompt = user_prompt + progress_note
+
+    raw = run_codex_cli(user_prompt, loop_system)
     (REPO/"artifacts"/"last_model_raw.txt").write_text(raw, encoding="utf-8")
     js = extract_json_block(raw)
     if not js:
@@ -525,8 +535,8 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
     # Persist state updates (merge)
     state = read_state_json()
     new_state = merge_state(state, data.get("state_update",{}))
-    if new_state:
-        (REPO/"artifacts"/"state.json").write_text(json.dumps(new_state, indent=2), encoding="utf-8")
+    new_state = ensure_state_defaults(new_state)
+    write_state_json(new_state)
 
     # Decision log
     if "decision_log_row" in data:
@@ -553,37 +563,140 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
         print(f"[loop {iter_ix}] stop.flag detected; stopping.")
         return True, consecutive_git_fails, consecutive_parse_fails
 
+    record_loop_counter(iter_ix)
     return False, consecutive_git_fails, consecutive_parse_fails
 
-def main():
-    if "--dry-run" in sys.argv:
-        print("[dry-run] ensuring structure + reproducibility snapshots only")
-        ensure_repo_structure()
-        update_reproducibility()
-        sys.exit(0)
+def run_loop_batch(start_loop: int, loops_to_run: int, sleep_seconds: Optional[float]) -> bool:
+    """Run a contiguous batch of loops. Returns True if stopped early."""
 
-    os.chdir(REPO)
-    # Bootstrap once
-    early_stop = do_bootstrap()
-    if early_stop:
-        sys.exit(0)
-
-    # Run loop 23 times (or until early stop)
     consecutive_git_fails = 0
     consecutive_parse_fails = 0
-    for i in range(1, 24):  # 1..23
-        print(f"== Loop {i}/23 ==")
+    final_loop = start_loop + loops_to_run - 1
+    for loop_idx in range(start_loop, final_loop + 1):
+        print(f"== Loop {loop_idx} / target {final_loop} ==")
         should_stop, consecutive_git_fails, consecutive_parse_fails = do_loop(
-            i, consecutive_git_fails, consecutive_parse_fails
+            loop_idx,
+            consecutive_git_fails,
+            consecutive_parse_fails,
         )
         if should_stop:
-            break
-        if SLEEP_SECONDS > 0 and i < 23:
-            time.sleep(SLEEP_SECONDS)
+            return True
+        if sleep_seconds and sleep_seconds > 0 and loop_idx < final_loop:
+            time.sleep(sleep_seconds)
+    return False
+
+
+def parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run or resume the survey science agent.")
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Refresh reproducibility artifacts without invoking the agent.",
+    )
+    parser.add_argument(
+        "--loops",
+        type=int,
+        default=None,
+        help="Number of loops to execute this run (defaults to remaining loops).",
+    )
+    parser.add_argument(
+        "--total-loops",
+        type=int,
+        default=None,
+        help=f"Override total loop budget (default {DEFAULT_TOTAL_LOOPS}). Stored in state.",
+    )
+    parser.add_argument(
+        "--force-bootstrap",
+        action="store_true",
+        help="Run bootstrap even if already completed.",
+    )
+    parser.add_argument(
+        "--skip-bootstrap",
+        action="store_true",
+        help="Skip bootstrap even if not marked complete.",
+    )
+    parser.add_argument(
+        "--sleep-seconds",
+        type=float,
+        default=None,
+        help="Pause between loops (overrides LOOP_SLEEP_SECONDS).",
+    )
+    args = parser.parse_args(argv)
+
+    if args.loops is not None and args.loops <= 0:
+        parser.error("--loops must be a positive integer")
+    if args.total_loops is not None and args.total_loops <= 0:
+        parser.error("--total-loops must be a positive integer")
+    if args.force_bootstrap and args.skip_bootstrap:
+        parser.error("Use only one of --force-bootstrap or --skip-bootstrap")
+    return args
+
+
+def main(argv: Optional[list[str]] = None) -> int:
+    args = parse_args(argv)
+
+    ensure_repo_structure()
+    os.chdir(REPO)
+
+    if args.dry_run:
+        print("[dry-run] ensuring structure + reproducibility snapshots only")
+        update_reproducibility()
+        return 0
+
+    # Load and persist state defaults
+    state_before = read_state_json()
+    state = ensure_state_defaults(state_before, args.total_loops)
+    if state != state_before:
+        write_state_json(state)
+
+    bootstrap_complete = bool(state.get("bootstrap_complete"))
+    bootstrap_needed = args.force_bootstrap or (not bootstrap_complete and not args.skip_bootstrap)
+    if not bootstrap_complete and args.skip_bootstrap and not args.force_bootstrap:
+        print("[runner] WARNING: bootstrap not marked complete but skipping as requested.")
+
+    if bootstrap_needed:
+        early_stop = do_bootstrap()
+        if early_stop:
+            return 0
+        state = ensure_state_defaults(read_state_json(), args.total_loops)
+        write_state_json(state)
+
+    raw_state_after = read_state_json()
+    state = ensure_state_defaults(raw_state_after, args.total_loops)
+    if state != raw_state_after:
+        write_state_json(state)
+
+    total_loops = int(state.get("total_loops", DEFAULT_TOTAL_LOOPS))
+    completed_loops = int(state.get("loop_counter", 0))
+
+    if args.loops is not None:
+        loops_to_run = args.loops
+    else:
+        loops_to_run = max(total_loops - completed_loops, 0)
+
+    if loops_to_run <= 0:
+        print(f"[runner] No loops to run (completed={completed_loops}, total={total_loops}).")
+        return 0
+
+    start_loop = completed_loops + 1
+    final_loop = start_loop + loops_to_run - 1
+    print(
+        f"[runner] executing loops {start_loop}..{final_loop} "
+        f"(completed={completed_loops}, total={total_loops})."
+    )
+
+    sleep_seconds = args.sleep_seconds if args.sleep_seconds is not None else SLEEP_SECONDS
+    stopped = run_loop_batch(start_loop, loops_to_run, sleep_seconds)
+    if stopped:
+        print("[runner] loop sequence halted early.")
+    else:
+        print("[runner] loop sequence finished.")
+    return 0
+
 
 if __name__ == "__main__":
     try:
-        main()
+        sys.exit(main())
     except Exception as e:
         print(f"[fatal] {e}", file=sys.stderr)
         sys.exit(1)

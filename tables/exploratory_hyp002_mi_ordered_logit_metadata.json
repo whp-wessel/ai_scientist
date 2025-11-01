@@ -167,7 +167,7 @@
   "mi_dataset": "data/derived/childhoodbalancedpublic_mi_prototype.csv.gz",
   "mi_mapping": "analysis/imputation/mice_variable_map.json",
   "mode": "exploratory",
-  "generated": "2025-10-17T16:21:00.858499+00:00",
+  "generated": "2025-10-17T16:52:24.083671+00:00",
   "outputs": [
     "tables/exploratory_hyp002_mi_ordered_logit_coefficients.csv",
     "tables/exploratory_hyp002_mi_ordered_logit_coefficients.md",

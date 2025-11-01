@@ -1,6 +1,6 @@
 # Exploratory — HYP-002 Predicted Net-Worth Probabilities by Childhood Class
 
-Generated: 2025-10-17T16:21:00.858499+00:00
+Generated: 2025-10-17T16:52:24.083671+00:00
 
 | classchild_level | -3 | -2 | -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

@@ -1,41 +1,33 @@
-timestamp_utc: 2025-10-17T22:59:23.117984Z
+timestamp_utc: 2025-11-01T17:42:28.690034+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.0.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist
 model: gpt-5-codex
 seed: 20251016
-git_head: 339ce7b923eb728ac094bd53738fa8615f944d44
+git_head: d66291954a212060e7654e57cc12a41c4300a0e2
 git_status: |
-  ## main...origin/main
+  ## main...origin/main [ahead 1]
+   M __pycache__/resume.cpython-312.pyc
+   M __pycache__/runner.cpython-312.pyc
+   M agents.md
+   M analysis/code/__pycache__/mice_prototype.cpython-312.pyc
    M analysis/imputation/mice_prototype_metadata__reduced_aux.json
    M analysis/imputation/mice_prototype_summary__reduced_aux.md
-   M artifacts/checksums.json
-   M artifacts/last_commit.txt
-   M artifacts/repro_report.md
-   M artifacts/session_info.txt
+   M artifacts/last_model_raw.txt
+   M artifacts/state.json
    M data/derived/childhoodbalancedpublic_mi_reduced_aux.csv.gz
+   M resume.py
+   M runner.py
    M tables/exploratory_hyp002_mi_ordered_logit_coefficients.md
    M tables/exploratory_hyp002_mi_ordered_logit_metadata.json
    M tables/exploratory_hyp002_mi_ordered_logit_predicted_probabilities.md
    M tables/exploratory_pap_run_summary.json
-  ?? .DS_Store
-  ?? analysis/code/__pycache__/run_mi_robustness.cpython-312.pyc
-  ?? analysis/code/__pycache__/run_pap_models.cpython-312.pyc
-  ?? analysis/code/run_mi_robustness.py
-  ?? analysis/imputation/robustness_hyp001_mi_scenarios.md
-  ?? analysis/imputation/robustness_hyp002_mi_scenarios.md
-  ?? artifacts/codex_tmp/.tmp0MgFGB/
-  ?? artifacts/codex_tmp/.tmp67i9WX/
-  ?? tables/robustness_hyp001_mi_scenarios_coefficients.csv
-  ?? tables/robustness_hyp001_mi_scenarios_coefficients.md
-  ?? tables/robustness_hyp001_mi_scenarios_metadata.json
-  ?? tables/robustness_hyp001_mi_scenarios_secondary.csv
-  ?? tables/robustness_hyp001_mi_scenarios_secondary.md
-  ?? tables/robustness_hyp002_mi_scenarios_coefficients.csv
-  ?? tables/robustness_hyp002_mi_scenarios_coefficients.md
-  ?? tables/robustness_hyp002_mi_scenarios_metadata.json
-  ?? tables/robustness_hyp002_mi_scenarios_secondary.csv
-  ?? tables/robustness_hyp002_mi_scenarios_secondary.md
+  ?? analysis/code/run_mi_robustness.py:282
+  ?? analysis/imputation/robustness_hyp002_mi_scenarios.md:1
+  ?? artifacts/session_info.txt:1
+  ?? notebooks/research_notebook.md:33
+  ?? tables/robustness_hyp001_mi_scenarios_coefficients.csv:2
+  ?? tables/robustness_hyp002_mi_scenarios_coefficients.csv:2
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15
@@ -46,8 +38,11 @@ pip_freeze: |
   archspec @ file:///home/conda/feedstock_root/build_artifacts/archspec_1708969572489/work
   attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1741918516150/work
   beautifulsoup4==4.12.2
+  bitarray==3.7.2
   boltons @ file:///home/conda/feedstock_root/build_artifacts/boltons_1711936407380/work
   boolean.py==5.0
+  boto3==1.40.58
+  botocore==1.40.58
   Brotli @ file:///Users/runner/miniforge3/conda-bld/brotli-split_1725267563793/work
   CacheControl==0.14.3
   cairocffi==1.7.1
@@ -57,6 +52,7 @@ pip_freeze: |
   chardet==5.2.0
   charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1728479282467/work
   chromedriver-autoinstaller==0.6.4
+  ckzg==2.1.5
   click==8.1.8
   colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
   conda @ file:///Users/runner/miniforge3/conda-bld/conda_1736460303265/work
@@ -69,6 +65,7 @@ pip_freeze: |
   cssselect2==0.8.0
   cycler==0.12.1
   cyclonedx-python-lib==9.1.0
+  cytoolz==1.1.0
   defusedxml==0.7.1
   deprecation==2.1.0
   detect-secrets==1.5.0
@@ -77,6 +74,14 @@ pip_freeze: |
   dnspython @ file:///home/conda/feedstock_root/build_artifacts/dnspython_1733256735222/work
   email-validator @ file:///home/conda/feedstock_root/build_artifacts/email-validator-meta_1756221362582/work
   et_xmlfile==2.0.0
+  eth-account==0.13.7
+  eth-hash==0.7.1
+  eth-keyfile==0.8.1
+  eth-keys==0.7.0
+  eth-rlp==2.2.0
+  eth-typing==5.2.1
+  eth-utils==5.3.1
+  eth_abi==5.2.0
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1746947292760/work
   faiss==1.9.0
   fake-useragent==2.2.0
@@ -92,6 +97,7 @@ pip_freeze: |
   gTTS==2.5.4
   h11 @ file:///home/conda/feedstock_root/build_artifacts/h11_1745526374115/work
   h2==4.3.0
+  hexbytes==1.3.1
   hf-xet==1.1.9
   hpack==4.1.0
   html2text==2025.4.15
@@ -104,9 +110,11 @@ pip_freeze: |
   ImageHash==4.3.2
   Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1741263328855/work
   jiter==0.10.0
+  jmespath==1.0.1
   json_repair==0.47.8
   jsonpatch @ file:///home/conda/feedstock_root/build_artifacts/jsonpatch_1695536281965/work
   jsonpointer @ file:///Users/runner/miniforge3/conda-bld/jsonpointer_1725302931775/work
+  kalshi==0.2.0
   kiwisolver==1.4.9
   libmambapy @ file:///Users/runner/miniforge3/conda-bld/mamba-split_1727883562521/work/libmambapy
   license-expression==30.4.4
@@ -135,6 +143,7 @@ pip_freeze: |
   packageurl-python==0.17.5
   packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
   pandas==2.1.3
+  parsimonious==0.10.0
   patsy==1.0.1
   pillow==11.3.0
   pip-api==0.0.34
@@ -143,6 +152,7 @@ pip_freeze: |
   platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1726613481435/work
   pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1713667077545/work
   polars==1.32.3
+  polymarket==0.1.2
   postgrest==1.1.1
   prompt_toolkit==3.0.51
   propcache==0.2.1
@@ -153,6 +163,7 @@ pip_freeze: |
   py-serializable==2.1.0
   pycosat @ file:///Users/runner/miniforge3/conda-bld/pycosat_1696355905762/work
   pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1711811537435/work
+  pycryptodome==3.23.0
   pydantic @ file:///home/conda/feedstock_root/build_artifacts/pydantic_1749927112905/work
   pydantic-settings==2.11.0
   pydantic_core @ file:///Users/runner/miniforge3/conda-bld/bld/rattler-build_pydantic-core_1746625327/work
@@ -166,6 +177,7 @@ pip_freeze: |
   python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
   python-dotenv==1.1.1
   python-multipart @ file:///home/conda/feedstock_root/build_artifacts/python-multipart_1734420773152/work
+  pytube==15.0.0
   pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1742920838005/work
   PyWavelets==1.9.0
   PyYAML @ file:///Users/runner/miniforge3/conda-bld/pyyaml_1737454693669/work
@@ -177,9 +189,11 @@ pip_freeze: |
   requests==2.31.0
   rich @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_rich_1753436991/work/dist
   rich-toolkit @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_rich-toolkit_1756998936/work
+  rlp==4.1.0
   rq==2.6.0
   ruamel.yaml @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml_1728764996801/work
   ruamel.yaml.clib @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml.clib_1728724504988/work
+  s3transfer==0.14.0
   safetensors==0.6.2
   scipy==1.16.1
   selenium @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_selenium_1755019333/work
@@ -202,6 +216,7 @@ pip_freeze: |
   tinycss2==1.4.0
   tokenizers==0.22.0
   toml==0.10.2
+  toolz==1.1.0
   torch==2.8.0
   torchvision==0.23.0
   tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1722737464726/work

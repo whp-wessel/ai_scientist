@@ -1,6 +1,6 @@
 # Exploratory — HYP-002 MI Ordered-Logit Coefficients
 
-Generated: 2025-10-17T16:21:00.858499+00:00
+Generated: 2025-10-17T16:52:24.083671+00:00
 
 | term | model | estimate | std_error | df | stat | p_value | ci_low | ci_high |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |

@@ -2,46 +2,11 @@
   "dataset": "childhoodbalancedpublic_original.csv",
   "mode": "exploratory",
   "seed": 20251016,
-  "timestamp": "2025-10-17T16:18:32.273558+00:00",
+  "timestamp": "2025-10-17T16:48:29.819603+00:00",
   "hypotheses": [
-    "HYP-001",
     "HYP-002"
   ],
   "executed": [
-    {
-      "hypothesis": "HYP-001",
-      "outputs": [
-        "tables/exploratory_hyp001_mi_linear_coefficients.csv",
-        "tables/exploratory_hyp001_mi_linear_coefficients.md",
-        "tables/exploratory_hyp001_mi_linear_predicted_means.csv",
-        "tables/exploratory_hyp001_mi_linear_predicted_means.md",
-        "tables/exploratory_hyp001_mi_linear_metadata.json"
-      ],
-      "n_obs": 14443,
-      "n_imputations": 20,
-      "n_per_imputation": [
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443,
-        14443
-      ]
-    },
     {
       "hypothesis": "HYP-002",
       "outputs": [
