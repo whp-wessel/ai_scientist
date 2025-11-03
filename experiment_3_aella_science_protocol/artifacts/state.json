@@ -16,20 +16,37 @@
       "description": "Align codebook schema with dataset",
       "id": "T-003",
       "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Profile missingness patterns for key variables",
+      "id": "T-004",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "description": "Draft robustness checks for priority hypotheses",
+      "id": "T-005",
+      "priority": 3,
       "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-03T20:34:30Z",
-  "loop_counter": 2,
+  "last_updated": "2025-11-03T20:50:32Z",
+  "loop_counter": 3,
   "next_actions": [
     {
-      "description": "Align codebook schema with dataset",
-      "id": "T-003",
+      "description": "Profile missingness patterns for key variables",
+      "id": "T-004",
       "priority": 2
+    },
+    {
+      "description": "Draft robustness checks for priority hypotheses",
+      "id": "T-005",
+      "priority": 3
     }
   ],
-  "notes": "Simple random sampling assumption confirmed; exploratory outcome summaries (self-love, depression, anxiety) generated under SRS with command logged in notebook; next focus on schema alignment.",
+  "notes": "Schema alignment complete; codebook regenerated with suppressed small cells and summary-only metadata. Next focus on missingness profiling and robustness planning.",
   "pap_status": "draft",
   "priority_hypotheses": [
     "HYP-001",
