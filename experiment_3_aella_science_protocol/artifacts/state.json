@@ -10,7 +10,7 @@
       "description": "Exploratory weighted summaries for key outcomes",
       "id": "T-002",
       "priority": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "description": "Align codebook schema with dataset",
@@ -20,21 +20,16 @@
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-03T20:29:15Z",
-  "loop_counter": 1,
+  "last_updated": "2025-11-03T20:34:30Z",
+  "loop_counter": 2,
   "next_actions": [
-    {
-      "description": "Exploratory weighted summaries for key outcomes",
-      "id": "T-002",
-      "priority": 1
-    },
     {
       "description": "Align codebook schema with dataset",
       "id": "T-003",
       "priority": 2
     }
   ],
-  "notes": "Simple random sampling assumption confirmed; next focus on weighted summaries and schema alignment.",
+  "notes": "Simple random sampling assumption confirmed; exploratory outcome summaries (self-love, depression, anxiety) generated under SRS with command logged in notebook; next focus on schema alignment.",
   "pap_status": "draft",
   "priority_hypotheses": [
     "HYP-001",

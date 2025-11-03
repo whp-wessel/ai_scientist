@@ -1,0 +1,4 @@
+variable,label,n_unweighted,n_weighted,weighted_mean,weighted_sd,p10,p25,median,p75,p90,weight_source,seed,timestamp_utc
+I love myself (2l8994l),Self-love Likert,14436,14436.0,0.6131199778331948,1.8620749225509206,-2.0,-1.0,1.0,2.0,3.0,uniform (SRS assumption),20251016,2025-11-03T20:34:14+00:00
+I tend to suffer from depression (wz901dj),Depression tendency,14438,14438.0,-0.40739714641917163,2.0893215593886647,-3.0,-2.0,-1.0,2.0,3.0,uniform (SRS assumption),20251016,2025-11-03T20:34:14+00:00
+I tend to suffer from anxiety (npvfh98)-neg,Anxiety tendency (neg-coded),14437,14437.0,-0.8274572279559466,2.030917021745713,-3.0,-3.0,-1.0,1.0,3.0,uniform (SRS assumption),20251016,2025-11-03T20:34:14+00:00
