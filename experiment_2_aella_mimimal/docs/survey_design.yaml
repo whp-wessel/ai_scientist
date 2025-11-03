@@ -1,0 +1,11 @@
+dataset: childhoodbalancedpublic_original.csv
+seed: 20251016
+weight_variable: TODO  # TODO: confirm primary weight variable name if available
+strata_variable: null  # TODO: populate if stratification exists
+cluster_variable: null  # TODO: populate with PSU identifier if applicable
+replicate_weights: []  # TODO: add jackknife/BRR replicate weight variable names if provided
+finite_population_correction: null
+notes:
+  - "Verify whether the dataset includes calibrated survey weights."
+  - "Document variance estimation method (Taylor vs. replicate-based) once known."
+  - "Ensure design metadata aligns with docs/codebook.json before analysis."

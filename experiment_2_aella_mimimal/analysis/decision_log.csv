@@ -1,0 +1,3 @@
+ts,action,inputs,rationale_short,code_path,outputs,status
+2025-11-03T17:46:46Z,bootstrap,"[docs/codebook.json;docs/survey_design.yaml;config/agent_config.yaml]","Initialized bootstrap artifacts and backlog","scripts/bootstrap_artifacts.py","[artifacts/state.json;analysis/hypotheses.csv;analysis/pre_analysis_plan.md]","success"
+2025-11-03T17:46:46Z,bootstrap,docs/codebook.json;docs/survey_design.yaml;config/agent_config.yaml,"Seeded bootstrap artifacts, backlog, hypotheses, notebook scaffolds.",scripts/bootstrap_artifacts.py,artifacts/state.json;analysis/hypotheses.csv;analysis/pre_analysis_plan.md,success

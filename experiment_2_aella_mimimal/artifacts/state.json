@@ -1,0 +1,32 @@
+{
+  "artifacts": {
+    "hypotheses_registry": "analysis/hypotheses.csv",
+    "pre_analysis_plan": "analysis/pre_analysis_plan.md",
+    "research_notebook": "notebooks/research_notebook.md"
+  },
+  "backlog": [
+    {
+      "description": "Validate survey weights and replicate design metadata",
+      "id": "T-001",
+      "priority": 1,
+      "status": "todo"
+    },
+    {
+      "description": "Generate exploratory weighted summaries for key outcomes",
+      "id": "T-002",
+      "priority": 2,
+      "status": "todo"
+    }
+  ],
+  "bootstrap_complete": true,
+  "loop_counter": 0,
+  "next_actions": [
+    "T-001",
+    "T-002"
+  ],
+  "regeneration_commands": {
+    "bootstrap": "python scripts/bootstrap_artifacts.py"
+  },
+  "seed": 20251016,
+  "total_loops": 30
+}
