@@ -10,3 +10,4 @@ notes:
   - "2025-01-17: python scripts/design_scan.py (see qc/design_validation.md) found no survey weight or replicate columns."
   - "Variance estimation defaults to Taylor linearization with equal weights."
   - "Revisit once codebook metadata or sponsor indicates design weights/strata."
+  - "2025-11-03: Re-ran scripts/design_scan.py (qc/design_metadata_monitor.md); still no sponsor design metadata or calibrated weights."

@@ -2,7 +2,8 @@
   "artifacts": {
     "hypotheses_registry": "analysis/hypotheses.csv",
     "pre_analysis_plan": "analysis/pre_analysis_plan.md",
-    "research_notebook": "notebooks/research_notebook.md"
+    "research_notebook": "notebooks/research_notebook.md",
+    "design_metadata_brief": "reports/design_metadata_brief.md"
   },
   "backlog": [
     {
@@ -21,18 +22,38 @@
       "description": "Monitor for sponsor-provided survey design metadata updates",
       "id": "T-003",
       "priority": 3,
+      "status": "done"
+    },
+    {
+      "description": "Draft sponsor-ready brief summarizing design metadata gaps and needed files",
+      "id": "T-004",
+      "priority": 3,
+      "status": "done"
+    },
+    {
+      "description": "Follow up with sponsor on requested design deliverables",
+      "id": "T-005",
+      "priority": 1,
       "status": "todo"
+    },
+    {
+      "description": "Update design files upon receipt of sponsor metadata",
+      "id": "T-006",
+      "priority": 3,
+      "status": "blocked"
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 2,
+  "loop_counter": 4,
   "next_actions": [
-    "T-003"
+    "T-005"
   ],
   "regeneration_commands": {
     "bootstrap": "python scripts/bootstrap_artifacts.py",
     "design_validation": "python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv",
-    "exploratory_summaries": "python scripts/exploratory_summaries.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --out tables/summary_key_outcomes.csv"
+    "exploratory_summaries": "python scripts/exploratory_summaries.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --out tables/summary_key_outcomes.csv",
+    "design_monitoring": "python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv",
+    "design_brief": "python scripts/generate_design_brief.py --out reports/design_metadata_brief.md"
   },
   "seed": 20251016,
   "total_loops": 30

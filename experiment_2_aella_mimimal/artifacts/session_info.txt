@@ -1,31 +1,23 @@
-timestamp_utc: 2025-11-03T19:59:49.826582+00:00
+timestamp_utc: 2025-11-03T20:11:02.540876+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.0.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_2_aella_mimimal
 model: gpt-5-codex
 seed: 20251016
-git_head: e24302a4889ade5db0c403895a797acf56d53067
+git_head: f9bb2da6fb2e3ca714738344fbf28608a7985479
 git_status: |
   ## main...origin/main
    M analysis/decision_log.csv
+   M artifacts/last_commit.txt
    M artifacts/last_model_raw.txt
    M artifacts/repro_report.md
    M artifacts/session_info.txt
    M artifacts/state.json
-   M config/agent_config.yaml
    M docs/survey_design.yaml
    M notebooks/research_notebook.md
    M qc/data_checks.md
-   M runner.py
-   D ../experiment_3_aella_science_protocol/artifacts/codex_tmp/.tmpqXAliR/apply_patch
-   D ../experiment_3_aella_science_protocol/artifacts/codex_tmp/.tmpqXAliR/applypatch
-   M ../experiment_3_aella_science_protocol/artifacts/repro_report.md
-   M ../experiment_3_aella_science_protocol/artifacts/session_info.txt
-   M ../experiment_3_aella_science_protocol/runner.py
-  ?? artifacts/last_commit.txt
-  ?? qc/design_validation.md
-  ?? scripts/design_scan.py
-  ?? ../experiment_3_aella_science_protocol/artifacts/last_model_raw.txt
+  ?? qc/design_metadata_monitor.md
+  ?? ../experiment_3_aella_science_protocol/artifacts/codex_tmp/bootstrap_payload.json
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15

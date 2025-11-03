@@ -30,3 +30,10 @@
 - **Seed:** 20251016 (deterministic computation; no stochastic elements beyond fixed seed).
 - **Outputs:** `tables/summary_key_outcomes.csv`, `tables/summary_key_outcomes.json`
 - **Notes:** Generated unweighted descriptive statistics for priority outcomes because calibrated survey weights remain unavailable. All reported cells meet the minimum count threshold (>=10) enforced within the script.
+
+## Loop 3 - Sponsor Design Metadata Monitoring
+
+- **Commands:**  
+  - `python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv`
+- **Seed:** 20251016 (deterministic scan; no randomness invoked).
+- **Outcome:** Confirmed no new sponsor-provided design metadata files. Script matches only questionnaire columns containing "weight" or "jk" substrings; none correspond to calibrated weights or replicate designs. See `qc/design_metadata_monitor.md` for details.

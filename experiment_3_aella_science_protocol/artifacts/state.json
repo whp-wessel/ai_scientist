@@ -1,5 +1,39 @@
 {
-  "bootstrap_complete": false,
+  "backlog": [
+    {
+      "description": "Validate survey weights and replicate design",
+      "id": "T-001",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "description": "Exploratory weighted summaries for key outcomes",
+      "id": "T-002",
+      "priority": 2,
+      "status": "pending"
+    }
+  ],
+  "bootstrap_complete": true,
+  "last_updated": "2025-11-03T20:01:43Z",
   "loop_counter": 0,
+  "next_actions": [
+    {
+      "description": "Validate survey weights and replicate design",
+      "id": "T-001",
+      "priority": 1
+    },
+    {
+      "description": "Exploratory weighted summaries for key outcomes",
+      "id": "T-002",
+      "priority": 2
+    }
+  ],
+  "notes": "Bootstrap scaffolding ready; awaiting survey design confirmation.",
+  "pap_status": "draft",
+  "priority_hypotheses": [
+    "HYP-001",
+    "HYP-003"
+  ],
+  "seed": 20251016,
   "total_loops": 30
 }

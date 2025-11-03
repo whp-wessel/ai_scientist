@@ -1,0 +1,10 @@
+dataset: childhoodbalancedpublic_original.csv
+generated_at: 2025-11-03T20:01:43Z
+seed: 20251016
+weight_variable: null  # TODO confirm
+strata_variable: null  # TODO confirm
+cluster_variable: null  # TODO confirm
+replicate_weights: []
+fpc: null
+notes: placeholder simple random sampling assumption until documentation received.
+regeneration_command: python analysis/code/bootstrap_setup.py --artifact docs/survey_design.yaml

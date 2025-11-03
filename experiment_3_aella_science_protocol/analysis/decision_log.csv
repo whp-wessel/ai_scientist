@@ -1,1 +1,2 @@
 ts,action,inputs,rationale_short,code_path,outputs,status
+2025-11-03T20:01:43Z,bootstrap,docs/codebook.json;docs/survey_design.yaml;config/agent_config.yaml,"Initialized bootstrap scaffolding, hypotheses, PAP draft, and regen script.",N/A,artifacts/state.json;analysis/hypotheses.csv;analysis/pre_analysis_plan.md,success
