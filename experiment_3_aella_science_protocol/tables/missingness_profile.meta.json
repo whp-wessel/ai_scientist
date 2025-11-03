@@ -1,0 +1,22 @@
+{
+  "generated_at": "2025-11-03T20:56:40.917243+00:00",
+  "seed": 20251016,
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "variables_profiled": [
+    "I love myself (2l8994l)",
+    "classchild",
+    "selfage",
+    "gendermale",
+    "I tend to suffer from depression (wz901dj)",
+    "classcurrent",
+    "cis",
+    "I tend to suffer from anxiety (npvfh98)-neg",
+    "CSA_score_indicator",
+    "In general, people in my *current* social circles tend treat me really well (tmt46e6)"
+  ],
+  "outputs": {
+    "variable_summary": "tables/missingness_profile.csv",
+    "pattern_summary": "tables/missingness_patterns.csv"
+  },
+  "threshold": 10
+}

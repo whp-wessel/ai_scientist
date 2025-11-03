@@ -1,0 +1,11 @@
+variable,label,role,n_total,missing_count,missing_percent,nonmissing_count,status,notes
+I love myself (2l8994l),Self-love Likert,outcome,14443,<10,<0.07%,14436,suppressed,Empirical alignment 2025-11-03T20:50:32Z; confirm instrument labels.
+classchild,Childhood household class (hxyr6oa),predictor,14443,0,0.00%,14443,ok,0-6 scale; labels TBD | Empirical alignment 2025-11-03T20:50:32Z
+selfage,,,14443,0,0.00%,14443,ok,
+gendermale,,,14443,0,0.00%,14443,ok,
+I tend to suffer from depression (wz901dj),Depression tendency,outcome,14443,<10,<0.07%,14438,suppressed,Empirical alignment 2025-11-03T20:50:32Z; confirm instrument labels.
+classcurrent,Current household class (m5tjvul),predictor,14443,0,0.00%,14443,ok,0-6 scale; labels TBD | Empirical alignment 2025-11-03T20:50:32Z
+cis,,,14443,0,0.00%,14443,ok,
+I tend to suffer from anxiety (npvfh98)-neg,Anxiety tendency (neg-coded),outcome,14443,<10,<0.07%,14437,suppressed,Empirical alignment 2025-11-03T20:50:32Z; confirm instrument labels.
+CSA_score_indicator,,,14443,N/A,N/A,N/A,not_found,Variable referenced in hypotheses but not present in dataset.
+"In general, people in my *current* social circles tend treat me really well (tmt46e6)",,,14443,14060,97.35%,383,ok,
