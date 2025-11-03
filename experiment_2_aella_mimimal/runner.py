@@ -122,6 +122,17 @@ def extract_json_block(text: str):
         return candidate[l:r+1]
     return None
 
+
+def _record_invalid_json(tag: str, payload: str) -> Path:
+    """Persist invalid JSON fragments for post-mortem debugging."""
+
+    safe_tag = tag.replace("/", "_")
+    path = REPO / "artifacts" / f"invalid_json_{safe_tag}.txt"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(payload, encoding="utf-8")
+    return path
+
+
 def run_cmd(cmd, input_bytes=None, check=False):
     proc = subprocess.run(cmd, input=input_bytes, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return proc.returncode, proc.stdout.decode("utf-8", "ignore"), proc.stderr.decode("utf-8", "ignore")
@@ -562,17 +573,35 @@ def do_bootstrap():
     print("== Bootstrap session ==")
     bootstrap_system = get_prompt("BOOTSTRAP_SYSTEM")
     bootstrap_user = get_prompt("BOOTSTRAP_USER")
-    try:
-        raw = run_codex_cli(bootstrap_user, bootstrap_system)
-    except UserAbort:
-        mark_user_abort("bootstrap", note="Interrupted during bootstrap")
-        print("[bootstrap] cancelled by user.")
-        return True
-    (REPO/"artifacts"/"last_model_raw.txt").write_text(raw, encoding="utf-8")
-    js = extract_json_block(raw)
-    if not js:
-        raise RuntimeError("Bootstrap: could not find JSON block in model output.")
-    data = json.loads(js)
+    parse_failures = 0
+    while True:
+        try:
+            raw = run_codex_cli(bootstrap_user, bootstrap_system)
+        except UserAbort:
+            mark_user_abort("bootstrap", note="Interrupted during bootstrap")
+            print("[bootstrap] cancelled by user.")
+            return True
+        (REPO/"artifacts"/"last_model_raw.txt").write_text(raw, encoding="utf-8")
+        js = extract_json_block(raw)
+        if not js:
+            parse_failures += 1
+            print(f"[bootstrap] parse failure: missing JSON block (attempt {parse_failures}/{MAX_CONSEC_PARSE_FAILS}).")
+            if parse_failures >= MAX_CONSEC_PARSE_FAILS:
+                raise RuntimeError("Bootstrap: could not find JSON block in model output after retries.")
+            continue
+        try:
+            data = json.loads(js)
+            break
+        except json.JSONDecodeError as err:
+            parse_failures += 1
+            fragment_path = _record_invalid_json(f"bootstrap_{parse_failures:02d}", js)
+            try:
+                rel_fragment = fragment_path.relative_to(REPO)
+            except ValueError:
+                rel_fragment = fragment_path
+            print(f"[bootstrap] parse failure: invalid JSON ({err}) (attempt {parse_failures}/{MAX_CONSEC_PARSE_FAILS}). Saved fragment to {rel_fragment}.")
+            if parse_failures >= MAX_CONSEC_PARSE_FAILS:
+                raise RuntimeError(f"Bootstrap: invalid JSON after retries: {err}") from err
     # Minimal schema presence
     for k in ("files","decision_log_row","git","stop_now"):
         if k not in data:
@@ -638,8 +667,21 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
             print("Too many parse failures; stopping.")
             return True, consecutive_git_fails, consecutive_parse_fails
         return False, consecutive_git_fails, consecutive_parse_fails
+    try:
+        data = json.loads(js)
+    except json.JSONDecodeError as err:
+        consecutive_parse_fails += 1
+        fragment_path = _record_invalid_json(f"loop_{iter_ix:03d}", js)
+        try:
+            rel_fragment = fragment_path.relative_to(REPO)
+        except ValueError:
+            rel_fragment = fragment_path
+        print(f"[loop {iter_ix}] parse failure: invalid JSON ({err}). Saved fragment to {rel_fragment}.")
+        if consecutive_parse_fails >= MAX_CONSEC_PARSE_FAILS:
+            print("Too many parse failures; stopping.")
+            return True, consecutive_git_fails, consecutive_parse_fails
+        return False, consecutive_git_fails, consecutive_parse_fails
     consecutive_parse_fails = 0
-    data = json.loads(js)
 
     write_files(data.get("files",[]))
 

@@ -9,23 +9,30 @@
       "description": "Validate survey weights and replicate design metadata",
       "id": "T-001",
       "priority": 1,
-      "status": "todo"
+      "status": "done"
     },
     {
       "description": "Generate exploratory weighted summaries for key outcomes",
       "id": "T-002",
       "priority": 2,
+      "status": "done"
+    },
+    {
+      "description": "Monitor for sponsor-provided survey design metadata updates",
+      "id": "T-003",
+      "priority": 3,
       "status": "todo"
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 0,
+  "loop_counter": 2,
   "next_actions": [
-    "T-001",
-    "T-002"
+    "T-003"
   ],
   "regeneration_commands": {
-    "bootstrap": "python scripts/bootstrap_artifacts.py"
+    "bootstrap": "python scripts/bootstrap_artifacts.py",
+    "design_validation": "python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv",
+    "exploratory_summaries": "python scripts/exploratory_summaries.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --out tables/summary_key_outcomes.csv"
   },
   "seed": 20251016,
   "total_loops": 30

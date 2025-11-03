@@ -8,11 +8,11 @@ privacy:
   min_cell_size: 10
   suppress_small_cells: true
 analysis_defaults:
-  weight_variable: TODO  # TODO: update once survey weight is confirmed
+  weight_variable: null  # 2025-01-17 validation: no survey weights supplied; treat as unweighted
   strata_variable: null
   cluster_variable: null
   replicate_weights: []
-  variance_method: "taylor"  # TODO: revise if replicate weights supplied
+  variance_method: "taylor"  # Assumes equal weights under simple random sampling
 budgets:
   max_loops: 30
   runtime_minutes: 480
