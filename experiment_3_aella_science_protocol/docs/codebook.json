@@ -252,13 +252,50 @@
         "unique": 23
       },
       "notes": "0+; bins TBD | Empirical alignment 2025-11-03T20:50:32Z"
+    },
+    {
+      "name": "CSA_score_indicator",
+      "label": "Any childhood sexual abuse exposure (CSA_score>0)",
+      "question_text": null,
+      "analysis_role": "predictor",
+      "type": "binary",
+      "storage": "float64",
+      "allowed_values": [
+        0,
+        1
+      ],
+      "value_labels": {
+        "0": "No reported exposure",
+        "1": "Reported exposure"
+      },
+      "missing_codes": [],
+      "summary_stats": {
+        "count": 14443.0,
+        "mean": 0.2230838468462231,
+        "std": 0.4163285301939064,
+        "min": 0.0,
+        "q1": 0.0,
+        "median": 0.0,
+        "q3": 0.0,
+        "max": 1.0,
+        "n_missing": 0,
+        "unique": 2
+      },
+      "notes": "Binary indicator derived 2025-11-03T21:04:00.464315+00:00 | Seed 20251016 | Source analysis/code/derive_csa_indicator.py (CSA_score > 0)."
     }
   ],
   "weights_reference": "docs/survey_design.yaml",
   "regeneration": {
-    "command": "python analysis/code/align_codebook_schema.py --dataset childhoodbalancedpublic_original.csv --codebook-in docs/codebook.json --codebook-out docs/codebook.json",
+    "command": "python analysis/code/derive_csa_indicator.py --dataset data/raw/childhoodbalancedpublic_original.csv --out-dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-distribution tables/csa_indicator_distribution.csv --config config/agent_config.yaml --codebook-in docs/codebook.json --codebook-out docs/codebook.json",
     "seed": 20251016,
-    "created_by": "analysis/code/align_codebook_schema.py"
+    "created_by": "analysis/code/derive_csa_indicator.py"
   },
-  "notes": "Schema aligned with observed dataset on 2025-11-03T20:50:32Z; verify value labels with source instrument."
+  "notes": "Schema aligned with observed dataset on 2025-11-03T20:50:32Z; verify value labels with source instrument.",
+  "regeneration_history": [
+    {
+      "command": "python analysis/code/align_codebook_schema.py --dataset childhoodbalancedpublic_original.csv --codebook-in docs/codebook.json --codebook-out docs/codebook.json",
+      "seed": 20251016,
+      "created_by": "analysis/code/align_codebook_schema.py"
+    }
+  ]
 }

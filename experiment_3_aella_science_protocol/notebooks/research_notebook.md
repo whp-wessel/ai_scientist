@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-03T20:56:41Z | Seed: 20251016
+Updated: 2025-11-03T21:05:45Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -19,4 +19,8 @@ Validated storage types, allowed ranges, and missingness for six analysis variab
 
 2025-11-03T20:56Z (QC) — Profiled hypothesis-relevant missingness via \
 `python analysis/code/profile_missingness.py --dataset childhoodbalancedpublic_original.csv --codebook docs/codebook.json --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --out-csv tables/missingness_profile.csv --out-patterns tables/missingness_patterns.csv`.\
-Suppressed cell counts <10; see `tables/missingness_profile.csv` (+ `.meta.json`) and `tables/missingness_patterns.csv`. Social support predictor `In general, people in my *current* social circles tend treat me really well (tmt46e6)` exhibits 97.35% missingness—flagged for feasibility review. `CSA_score_indicator` absent in raw data; queued derivation task (T-006) before PAP freeze.
+ Suppressed cell counts <10; see `tables/missingness_profile.csv` (+ `.meta.json`) and `tables/missingness_patterns.csv`. Social support predictor `In general, people in my *current* social circles tend treat me really well (tmt46e6)` exhibits 97.35% missingness—flagged for feasibility review. At that point `CSA_score_indicator` was absent in raw data, motivating derivation task T-006 prior to PAP freeze.
+
+2025-11-03T21:05Z (Derived) — Established canonical data folders (`data/raw`, `data/clean`) and derived CSA exposure indicator via \
+`python analysis/code/derive_csa_indicator.py --dataset data/raw/childhoodbalancedpublic_original.csv --out-dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-distribution tables/csa_indicator_distribution.csv --config config/agent_config.yaml --codebook-in docs/codebook.json --codebook-out docs/codebook.json`.\
+Output dataset stored at `data/clean/childhoodbalancedpublic_with_csa_indicator.csv`; distribution table `tables/csa_indicator_distribution.csv` confirms 22.31% report any CSA (no cells <10). Updated `docs/codebook.json` with new binary predictor metadata and refreshed `artifacts/checksums.json`. PAP robustness section expanded for HYP-001/HYP-003 (see `analysis/pre_analysis_plan.md`).
