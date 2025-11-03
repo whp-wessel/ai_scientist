@@ -4,31 +4,37 @@
       "description": "Validate survey weights and replicate design",
       "id": "T-001",
       "priority": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "description": "Exploratory weighted summaries for key outcomes",
       "id": "T-002",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "description": "Align codebook schema with dataset",
+      "id": "T-003",
       "priority": 2,
       "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-03T20:01:43Z",
-  "loop_counter": 0,
+  "last_updated": "2025-11-03T20:29:15Z",
+  "loop_counter": 1,
   "next_actions": [
-    {
-      "description": "Validate survey weights and replicate design",
-      "id": "T-001",
-      "priority": 1
-    },
     {
       "description": "Exploratory weighted summaries for key outcomes",
       "id": "T-002",
+      "priority": 1
+    },
+    {
+      "description": "Align codebook schema with dataset",
+      "id": "T-003",
       "priority": 2
     }
   ],
-  "notes": "Bootstrap scaffolding ready; awaiting survey design confirmation.",
+  "notes": "Simple random sampling assumption confirmed; next focus on weighted summaries and schema alignment.",
   "pap_status": "draft",
   "priority_hypotheses": [
     "HYP-001",
