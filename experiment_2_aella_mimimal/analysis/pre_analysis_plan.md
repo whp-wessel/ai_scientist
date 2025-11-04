@@ -35,9 +35,11 @@ This document sketches the initial analytic roadmap for the childhood balance pu
 - **Estimand:** Survey-weighted difference in mean adult-vs-childhood happiness scores across terciles of `externalreligion`.
 - **Approach:**
   - Confirm scale direction for both variables using the codebook.
-  - Construct terciles (or survey quantiles) of `externalreligion` with deterministic breaks.
-  - Estimate survey-weighted means and pairwise differences with Bonferroni-adjusted confidence intervals.
+  - Construct deterministic terciles of `externalreligion` via ordinal breakpoints (0 | 1-2 | 3-4) under SRS assumptions.
+  - Estimate SRS means and Bonferroni-adjusted pairwise differences for `On average, I am happier as an adult than I was in childhood (h33e6gg)`.
   - Suppress cells where any tercile has <10 observations contributing to the estimate.
+  - Regeneration command (seed=20251016):  
+    `python scripts/analyze_h2_religion_strictness_vs_happiness.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h2_happiness_by_religion_strictness.csv --diff-out tables/h2_happiness_by_religion_strictness_diff.csv --manifest artifacts/h2_religion_strictness_vs_happiness_manifest.json`
 - **Diagnostics:** Explore missing data patterns and perform sensitivity checks with unweighted comparisons.
 
 ## Analysis Workflow Outline

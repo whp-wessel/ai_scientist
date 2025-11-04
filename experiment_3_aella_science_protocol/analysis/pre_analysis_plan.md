@@ -66,14 +66,17 @@ Portfolio status: HYP-001 (confirmatory), HYP-003 (confirmatory), HYP-002 (explo
 - **Next steps**: Complete literature review on social-support pathways and confirm no routing artifacts before promoting to confirmatory status.
 
 ## Confirmatory deliverables and reproducibility
-- **Results target**: Append confirmatory estimates for HYP-001 and HYP-003 to `analysis/results.csv` (overwrite disabled once populated); include HC3 standard errors, 95% CIs, raw p-values, BH-adjusted q-values, sample sizes.
-- **Robustness outputs**: Store model-specific diagnostics under `qc/` (e.g., `qc/hyp-001_helmert.md`, `qc/hyp-003_tail_trim.md`) with regeneration commands.
-- **Figures/Tables**: Confirmatory tables under `tables/confirmatory/` (CSV) plus Markdown summaries; any figures saved as PNG + JSON spec in `figures/confirmatory/`.
-- **MANIFEST**: `papers/main/MANIFEST.md` records this PAP freeze, commit/tag `pap-freeze-20251104`, and regeneration commands for notebook excerpts and manuscript parity.
-- **FDR control**: Apply Benjamini–Hochberg at q=0.05 within the confirmatory family `{HYP-001, HYP-003}` using seed 20251016; document calculations in `analysis/code/fdr_adjust.py` (to be implemented).
+ - **Results target**: Append confirmatory estimates for HYP-001 and HYP-003 to `analysis/results.csv` (overwrite disabled once populated); include HC3 standard errors, 95% CIs, raw p-values, BH-adjusted q-values, sample sizes.
+ - **Robustness outputs**: Store model-specific diagnostics under `qc/` (e.g., `qc/hyp-001_helmert.md`, `qc/hyp-003_tail_trim.md`) with regeneration commands produced by `analysis/code/run_robustness_checks.py`.
+ - **Figures/Tables**: Confirmatory tables under `tables/confirmatory/` (CSV) plus Markdown summaries; any figures saved as PNG + JSON spec in `figures/confirmatory/`.
+ - **MANIFEST**: `papers/main/MANIFEST.md` records this PAP freeze, commit/tag `pap-freeze-20251104`, and regeneration commands for notebook excerpts and manuscript parity.
+ - **FDR control**: Apply Benjamini–Hochberg at q=0.05 within the confirmatory family `{HYP-001, HYP-003}` using seed 20251016; execute via  
+   `python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --out analysis/results.csv --audit-table tables/fdr_adjustment_confirmatory.csv`.
+ - **Robustness automation**: Execute PAP-listed checks using  
+   `python analysis/code/run_robustness_checks.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --qc-dir qc --tables-dir tables/robustness --hypotheses HYP-001 HYP-003`.
 
 ## Next steps post-freeze
 1. Execute confirmatory models per the command above; refrain from altering model specifications without amendment.
 2. Implement pre-specified robustness checks and document outcomes.
 3. Draft confirmatory results in `reports/findings_v0.1.md` and mirror text in `papers/main/manuscript.tex` (ensure parity per `config/agent_config.yaml`).
-4. Plan FDR implementation script and robustness automation (task T-011).
+4. After confirmatory run, execute FDR adjustment and robustness scripts for audit trails.

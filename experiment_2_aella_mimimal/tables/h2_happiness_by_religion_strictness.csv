@@ -1,0 +1,4 @@
+tercile_index,tercile_label,n_total,seed,min_cell_size,weight_variable,variance_method,design_assumption,mean_happiness,std_happiness,se_happiness,ci_lower_95,ci_upper_95
+0,Tercile 1 (externalreligion = 0),5224,20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,0.778905,1.935967,0.026785,0.726406,0.831404
+1,"Tercile 2 (externalreligion in [1, 2])",5801,20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,0.675056,1.956002,0.025681,0.624721,0.725391
+2,"Tercile 3 (externalreligion in [3, 4])",3411,20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,0.818821,1.942731,0.033264,0.753624,0.884018

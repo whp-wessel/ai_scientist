@@ -1,78 +1,228 @@
-timestamp_utc: 2025-11-04T08:04:33.583329+00:00
+timestamp_utc: 2025-11-04T08:07:30.814399+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.0.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_3_aella_science_protocol
 model: gpt-5-codex
 seed: 20251016
-git_head: 69d17b44c48c47be238e9bd33b3bc2a437608da3
+git_head: 4910b7b12662bcf21d9bae23a6e746c7d02c9db7
 git_status: |
   ## main...origin/main
-   M ../experiment_2_aella_mimimal/analysis/decision_log.csv
-   M ../experiment_2_aella_mimimal/artifacts/state.json
-   M analysis/decision_log.csv
-   M analysis/hypotheses.csv
-   M analysis/pre_analysis_plan.md
-   M artifacts/checksums.json
    M artifacts/last_commit.txt
-   M artifacts/repro_report.md
-   M artifacts/session_info.txt
-   M artifacts/state.json
-   M notebooks/research_notebook.md
-  ?? papers/
-  ?? reports/
-pip_freeze_b64: |
-  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
-pip_freeze_decode: python - <<'PY' import base64,zlib,sys;sys.stdout.write(zlib.decompress(base64.b64decode('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')).decode()) PY
+pip_freeze: |
+  aiohappyeyeballs==2.6.1
+  aiohttp==3.12.15
+  aiosignal==1.4.0
+  annotated-types @ file:///home/conda/feedstock_root/build_artifacts/annotated-types_1733247046149/work
+  anyio==4.9.0
+  APScheduler @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_apscheduler_1732499160/work
+  archspec @ file:///home/conda/feedstock_root/build_artifacts/archspec_1708969572489/work
+  attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1741918516150/work
+  beautifulsoup4==4.12.2
+  bitarray==3.7.2
+  boltons @ file:///home/conda/feedstock_root/build_artifacts/boltons_1711936407380/work
+  boolean.py==5.0
+  boto3==1.40.58
+  botocore==1.40.58
+  Brotli @ file:///Users/runner/miniforge3/conda-bld/brotli-split_1725267563793/work
+  CacheControl==0.14.3
+  cairocffi==1.7.1
+  CairoSVG==2.8.2
+  certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1754231422783/work/certifi
+  cffi==2.0.0
+  chardet==5.2.0
+  charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1728479282467/work
+  chromedriver-autoinstaller==0.6.4
+  ckzg==2.1.5
+  click==8.1.8
+  colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
+  conda @ file:///Users/runner/miniforge3/conda-bld/conda_1736460303265/work
+  conda-libmamba-solver @ file:///home/conda/feedstock_root/build_artifacts/conda-libmamba-solver_1727359833193/work/src
+  conda-package-handling @ file:///home/conda/feedstock_root/build_artifacts/conda-package-handling_1729006966809/work
+  conda_package_streaming @ file:///home/conda/feedstock_root/build_artifacts/conda-package-streaming_1729004031731/work
+  contourpy==1.3.3
+  croniter==6.0.0
+  cryptography==46.0.1
+  cssselect2==0.8.0
+  cycler==0.12.1
+  cyclonedx-python-lib==9.1.0
+  cytoolz==1.1.0
+  defusedxml==0.7.1
+  deprecation==2.1.0
+  detect-secrets==1.5.0
+  discord.py==2.4.0
+  distro @ file:///home/conda/feedstock_root/build_artifacts/distro_1704321475663/work
+  dnspython @ file:///home/conda/feedstock_root/build_artifacts/dnspython_1733256735222/work
+  email-validator @ file:///home/conda/feedstock_root/build_artifacts/email-validator-meta_1756221362582/work
+  et_xmlfile==2.0.0
+  eth-account==0.13.7
+  eth-hash==0.7.1
+  eth-keyfile==0.8.1
+  eth-keys==0.7.0
+  eth-rlp==2.2.0
+  eth-typing==5.2.1
+  eth-utils==5.3.1
+  eth_abi==5.2.0
+  exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1746947292760/work
+  faiss==1.9.0
+  fake-useragent==2.2.0
+  fastapi @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_fastapi-core_1752617909/work
+  fastapi-cli @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_fastapi-cli_1757494948/work
+  filelock==3.19.1
+  fonttools==4.59.2
+  frozendict @ file:///Users/runner/miniforge3/conda-bld/frozendict_1728841362247/work
+  frozenlist==1.5.0
+  fsspec==2025.7.0
+  ftfy==6.3.1
+  gotrue==2.12.3
+  gTTS==2.5.4
+  h11 @ file:///home/conda/feedstock_root/build_artifacts/h11_1745526374115/work
+  h2==4.3.0
+  hexbytes==1.3.1
+  hf-xet==1.1.9
+  hpack==4.1.0
+  html2text==2025.4.15
+  httpcore @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_httpcore_1745602916/work
+  httptools @ file:///Users/runner/miniforge3/conda-bld/httptools_1756754398008/work
+  httpx @ file:///home/conda/feedstock_root/build_artifacts/httpx_1733663348460/work
+  huggingface-hub==0.34.4
+  hyperframe==6.1.0
+  idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1726459485162/work
+  ImageHash==4.3.2
+  Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1741263328855/work
+  jiter==0.10.0
+  jmespath==1.0.1
+  json_repair==0.47.8
+  jsonpatch @ file:///home/conda/feedstock_root/build_artifacts/jsonpatch_1695536281965/work
+  jsonpointer @ file:///Users/runner/miniforge3/conda-bld/jsonpointer_1725302931775/work
+  kalshi==0.2.0
+  kiwisolver==1.4.9
+  libmambapy @ file:///Users/runner/miniforge3/conda-bld/mamba-split_1727883562521/work/libmambapy
+  license-expression==30.4.4
+  llvmlite==0.44.0
+  loguru==0.7.3
+  lxml==4.9.3
+  mamba @ file:///Users/runner/miniforge3/conda-bld/mamba-split_1727883562521/work/mamba
+  markdown-it-py @ file:///home/conda/feedstock_root/build_artifacts/markdown-it-py_1754951200865/work
+  MarkupSafe @ file:///Users/runner/miniforge3/conda-bld/markupsafe_1733219728782/work
+  matplotlib==3.10.6
+  mdurl @ file:///home/conda/feedstock_root/build_artifacts/mdurl_1733255585584/work
+  menuinst @ file:///Users/runner/miniforge3/conda-bld/menuinst_1725359012839/work
+  more-itertools==10.8.0
+  mpmath==1.3.0
+  msgpack==1.1.1
+  multidict==6.1.0
+  networkx==3.5
+  numba==0.61.2
+  numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1707225421156/work/dist/numpy-1.26.4-cp312-cp312-macosx_11_0_arm64.whl#sha256=011d57633d659db8280a5811d62d0c5a615719a6d7cbd46a04f6ffce0c2a7db3
+  open_clip_torch==3.1.0
+  openai==1.97.0
+  openai-whisper==20250625
+  opencv-python==4.12.0.88
+  openpyxl==3.1.5
+  outcome @ file:///home/conda/feedstock_root/build_artifacts/outcome_1733406188332/work
+  packageurl-python==0.17.5
+  packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+  pandas==2.1.3
+  parsimonious==0.10.0
+  patsy==1.0.1
+  pillow==11.3.0
+  pip-api==0.0.34
+  pip-requirements-parser==32.0.1
+  pip_audit==2.9.0
+  platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1726613481435/work
+  pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1713667077545/work
+  polars==1.32.3
+  polymarket==0.1.2
+  postgrest==1.1.1
+  prompt_toolkit==3.0.51
+  propcache==0.2.1
+  psutil==7.0.0
+  psycopg2 @ file:///Users/runner/miniforge3/conda-bld/psycopg2-split_1756315584626/work
+  psycopg2-binary==2.9.10
+  py-cpuinfo==9.0.0
+  py-serializable==2.1.0
+  pycosat @ file:///Users/runner/miniforge3/conda-bld/pycosat_1696355905762/work
+  pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1711811537435/work
+  pycryptodome==3.23.0
+  pydantic @ file:///home/conda/feedstock_root/build_artifacts/pydantic_1749927112905/work
+  pydantic-settings==2.11.0
+  pydantic_core @ file:///Users/runner/miniforge3/conda-bld/bld/rattler-build_pydantic-core_1746625327/work
+  pyfiglet==1.0.2
+  Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1750615794071/work
+  PyJWT==2.10.1
+  pyparsing==3.2.3
+  pypdf @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pypdf_1754930873/work/dist
+  pyperclip==1.9.0
+  PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
+  python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
+  python-dotenv==1.1.1
+  python-multipart @ file:///home/conda/feedstock_root/build_artifacts/python-multipart_1734420773152/work
+  pytube==15.0.0
+  pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1742920838005/work
+  PyWavelets==1.9.0
+  PyYAML @ file:///Users/runner/miniforge3/conda-bld/pyyaml_1737454693669/work
+  qrcode==8.0
+  questionary==2.1.0
+  realtime==2.6.0
+  redis==6.4.0
+  regex==2024.11.6
+  requests==2.31.0
+  rich @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_rich_1753436991/work/dist
+  rich-toolkit @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_rich-toolkit_1756998936/work
+  rlp==4.1.0
+  rq==2.6.0
+  ruamel.yaml @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml_1728764996801/work
+  ruamel.yaml.clib @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml.clib_1728724504988/work
+  s3transfer==0.14.0
+  safetensors==0.6.2
+  scipy==1.16.1
+  selenium @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_selenium_1755019333/work
+  setuptools==80.9.0
+  shellingham @ file:///home/conda/feedstock_root/build_artifacts/shellingham_1733300899265/work
+  six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+  sniffio @ file:///home/conda/feedstock_root/build_artifacts/sniffio_1733244044561/work
+  sortedcontainers @ file:///home/conda/feedstock_root/build_artifacts/sortedcontainers_1738440353519/work
+  soupsieve @ file:///home/conda/feedstock_root/build_artifacts/soupsieve_1746563585861/work
+  starlette @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_starlette_1756076609/work
+  statsmodels==0.14.5
+  storage3==0.12.0
+  StrEnum==0.4.15
+  supabase==2.17.0
+  supafunc==0.10.1
+  sympy==1.14.0
+  tenacity==9.1.2
+  tiktoken==0.9.0
+  timm==1.0.19
+  tinycss2==1.4.0
+  tokenizers==0.22.0
+  toml==0.10.2
+  toolz==1.1.0
+  torch==2.8.0
+  torchvision==0.23.0
+  tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1722737464726/work
+  transformers==4.56.0
+  trio @ file:///Users/runner/miniforge3/conda-bld/trio_1745237175768/work
+  trio-websocket @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_trio-websocket_1740493956/work
+  truststore @ file:///home/conda/feedstock_root/build_artifacts/truststore_1724770958874/work
+  typer==0.17.4
+  typer-slim==0.17.4
+  typing-inspection @ file:///home/conda/feedstock_root/build_artifacts/typing-inspection_1747870647094/work
+  typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1751643513/work
+  tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1742745135198/work
+  tzlocal @ file:///Users/runner/miniforge3/conda-bld/tzlocal_1724952050324/work
+  ultralytics==8.3.191
+  ultralytics-thop==2.0.16
+  urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1750271362675/work
+  uvicorn @ file:///home/conda/feedstock_root/build_artifacts/uvicorn_1751201600733/work
+  uvloop @ file:///Users/runner/miniforge3/conda-bld/uvloop_1730214386743/work
+  watchfiles @ file:///Users/runner/miniforge3/conda-bld/watchfiles_1757403578914/work
+  wcwidth==0.2.13
+  webdriver-manager==4.0.1
+  webencodings==0.5.1
+  websocket-client @ file:///home/conda/feedstock_root/build_artifacts/websocket-client_1733157342724/work
+  websockets @ file:///Users/runner/miniforge3/conda-bld/bld/rattler-build_websockets_1756476404/work/dist
+  wheel==0.45.1
+  wsproto @ file:///home/conda/feedstock_root/build_artifacts/wsproto_1733060193308/work
+  yarl==1.18.3
+  yt-dlp==2025.9.5
+  zstandard==0.23.0

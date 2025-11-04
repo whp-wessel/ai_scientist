@@ -36,7 +36,7 @@
 - **Commands:**  
   - `python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv`
 - **Seed:** 20251016 (deterministic scan; no randomness invoked).
-- **Outcome:** Confirmed no new sponsor-provided design metadata files. Script matches only questionnaire columns containing "weight" or "jk" substrings; none correspond to calibrated weights or replicate designs. See `qc/design_metadata_monitor.md` for details.
+- **Outcome:** Confirmed no new sponsor-provided survey design metadata files. Script matches only questionnaire columns containing "weight" or "jk" substrings; none correspond to calibrated weights or replicate designs. See `qc/design_metadata_monitor.md` for details.
 
 ## Loop 6 - H1 Religion by Sex Estimates
 
@@ -45,3 +45,11 @@
 - **Seed:** 20251016 (set via config; analysis deterministic under SRS assumption).
 - **Outputs:** `tables/h1_religion_by_biomale.csv`, `tables/h1_religion_by_biomale_diff.csv`, `artifacts/h1_religion_by_biomale_manifest.json`.
 - **Notes:** Recast `religion` responses into an "any practice" indicator (`religion > 0`). The SRS-based estimate indicates non-male respondents practice religion at a higher rate than male respondents (difference ≈ -0.058, 95% CI [-0.074, -0.043]). All subgroup counts exceed the privacy threshold (>=10).
+
+## Loop 7 - H2 Religion Strictness vs Happiness
+
+- **Commands:**  
+  - `python scripts/analyze_h2_religion_strictness_vs_happiness.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h2_happiness_by_religion_strictness.csv --diff-out tables/h2_happiness_by_religion_strictness_diff.csv --manifest artifacts/h2_religion_strictness_vs_happiness_manifest.json`
+- **Seed:** 20251016 (deterministic SRS means; no additional randomness).
+- **Outputs:** `tables/h2_happiness_by_religion_strictness.csv`, `tables/h2_happiness_by_religion_strictness_diff.csv`, `artifacts/h2_religion_strictness_vs_happiness_manifest.json`.
+- **Notes:** Ordinal `externalreligion` values were partitioned into terciles (0 | 1-2 | 3-4) using deterministic cumulative counts. Mean adult-vs-childhood happiness scores rise from Tercile 2 to Tercile 3 (difference ≈ 0.144, Bonferroni-adjusted 95% CI [0.043, 0.244]) while Tercile 1 exceeds Tercile 2 by ≈0.104 in the negative direction. All reported cells satisfy the minimum n ≥ 10 privacy guardrail.

@@ -16,7 +16,10 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Command (frozen):  
   `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 HYP-003 --results-csv analysis/results.csv --overwrite`
 - Expected outputs: `analysis/results.csv`, QC diagnostics under `qc/`, confirmatory tables under `tables/confirmatory/`, plots under `figures/confirmatory/`.
-- BH-FDR adjustment script placeholder: `analysis/code/fdr_adjust.py` (to be implemented prior to reporting results).
+- FDR adjustment command:  
+  `python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --out analysis/results.csv --audit-table tables/fdr_adjustment_confirmatory.csv`
+- Robustness automation command:  
+  `python analysis/code/run_robustness_checks.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --qc-dir qc --tables-dir tables/robustness --hypotheses HYP-001 HYP-003`
 
 ## Manuscript parity
 - Markdown: `reports/findings_v0.1.md`
@@ -30,7 +33,7 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
 ## Outstanding tasks
-1. Implement FDR computation script and robustness automation (backlog T-011).
-2. Populate manuscript sections once confirmatory results are available.
+1. Execute confirmatory HC3 OLS per frozen PAP (backlog T-012) and populate `analysis/results.csv`.
+2. Draft confirmatory results in manuscript/markdown with newly generated estimates.
 
 > **Note:** Any deviation from the frozen PAP requires an amendment documented in both the decision log and this manifest, with updated tags.

@@ -1,6 +1,6 @@
 hypothesis_id,hypothesis_text,priority,variables,status,notes
 H-001,"Active religious practice rates differ by biological sex.",1,"['biomale','religion']",in_progress,"Religion recoded as any value >0 for active practice; SRS assumption."
-H-002,"Higher childhood religious strictness associates with greater adult happiness change.",2,"['externalreligion','On average, I am happier as an adult than I was in childhood (h33e6gg)']",draft,"Awaiting weighted tercile design once codebook finalized."
+H-002,"Higher childhood religious strictness associates with greater adult happiness change.",2,"['externalreligion','On average, I am happier as an adult than I was in childhood (h33e6gg)']",in_progress,"Deterministic script scripts/analyze_h2_religion_strictness_vs_happiness.py exports tables/h2_happiness_by_religion_strictness.csv and manifest artifacts/h2_religion_strictness_vs_happiness_manifest.json."
 H-003,"Net worth brackets correlate with work/career satisfaction.",3,"['networth','I am satisfied with my work/career life (z0mhd63)']",draft,"Will explore ordinal associations after weight confirmation."
 H-004,"Self-reported depression tendency aligns with stress sensitivity.",3,"['I tend to suffer from depression (wz901dj)','I'm quite sensitive to stress (qhyti2r)-neg']",draft,"Requires scale harmonization and privacy review."
 H-005,"Older respondents report higher counts of lifetime sexual partners.",3,"['selfage','How many people have you had sex with? (ewvvaz2)']",draft,"Assess monotonic trend with count models under SRS assumption."
