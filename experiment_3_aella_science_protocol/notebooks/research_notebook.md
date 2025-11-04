@@ -52,3 +52,9 @@ Only the two confirmatory hypotheses qualified; q-values matched raw p-values (b
 2025-11-04T09:25Z (Robustness) — Executed pre-specified sensitivity checks via\
 `python analysis/code/run_robustness_checks.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --qc-dir qc --tables-dir tables/robustness --hypotheses HYP-001 HYP-003`.\
 HYP-001 retained positive slope across helmert, ordinal-logit, and z-score codings (e.g., z-score beta=0.097, p=1.6e-51). HYP-003 consistently showed a negative CSA association (logit OR=0.57, 95% CI approx [0.51, 0.64]), contradicting the preregistered direction. Outputs recorded in `tables/robustness/robustness_checks_summary.{csv,json}` with QC notes under `qc/`.
+
+2025-11-04T10:35Z (Synthesis) — Drafted confirmatory narrative describing magnitudes, interpretability, and robustness for HYP-001/HYP-003. Updated `reports/findings_v0.2.md` (with changelog from v0.1), synchronized `papers/main/manuscript.tex`, and refreshed `papers/main/MANIFEST.md` parity notes. Regeneration remains manual editing; cite this entry when propagating future revisions.
+
+2025-11-04T10:45Z (Diagnostics) — Ran \
+`python analysis/code/diagnose_csa_anxiety_direction.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --out-table tables/diagnostics/csa_anxiety_direction.csv --out-md qc/csa_anxiety_direction.md`.\
+Group means show CSA-exposed respondents average −1.50 vs −0.64 for non-exposed (difference = −0.861, 95% CI [−0.932, −0.789]), confirming the sign reversal stems from lower reported anxiety among the exposed group rather than coding inversion. Documented details in `qc/csa_anxiety_direction.md`.
