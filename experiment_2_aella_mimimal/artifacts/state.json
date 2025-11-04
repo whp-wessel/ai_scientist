@@ -8,6 +8,7 @@
     "h2_group_stats": "tables/h2_happiness_by_religion_strictness.csv",
     "h2_manifest": "artifacts/h2_religion_strictness_vs_happiness_manifest.json",
     "findings_summary": "reports/findings_summary.md",
+    "sensitivity_plan": "analysis/sensitivity_plan.md",
     "manuscript_markdown": "reports/manuscript.md",
     "manuscript_tex": "manuscript.tex",
     "hypotheses_registry": "analysis/hypotheses.csv",
@@ -79,22 +80,40 @@
       "description": "Plan sensitivity strategy for missing survey weights and replicate designs",
       "id": "T-011",
       "priority": 1,
-      "status": "todo"
+      "status": "done"
     },
     {
       "description": "Prototype exploratory analysis for H-003 (net worth vs work satisfaction)",
       "id": "T-012",
       "priority": 2,
       "status": "todo"
+    },
+    {
+      "description": "Curate external calibration targets and develop deterministic pseudo-weight script",
+      "id": "T-013",
+      "priority": 1,
+      "status": "todo"
+    },
+    {
+      "description": "Generate design-effect multiplier grid and reporting template",
+      "id": "T-014",
+      "priority": 2,
+      "status": "todo"
+    },
+    {
+      "description": "Prototype pseudo-PSU clustering and replicate weight generation",
+      "id": "T-015",
+      "priority": 2,
+      "status": "todo"
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 8,
+  "loop_counter": 9,
   "next_actions": [
     {
-      "desc": "Plan sensitivity strategy for missing survey weights and replicate designs",
-      "estimate_min": "30m",
-      "id": "T-011",
+      "desc": "Curate external calibration targets and develop deterministic pseudo-weight script",
+      "estimate_min": "45m",
+      "id": "T-013",
       "priority": 1
     },
     {
@@ -112,6 +131,7 @@
     "exploratory_summaries": "python scripts/exploratory_summaries.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --out tables/summary_key_outcomes.csv",
     "h1_religion_analysis": "python scripts/analyze_h1_religion_by_biomale.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h1_religion_by_biomale.csv --diff-out tables/h1_religion_by_biomale_diff.csv --manifest artifacts/h1_religion_by_biomale_manifest.json",
     "h2_religion_analysis": "python scripts/analyze_h2_religion_strictness_vs_happiness.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h2_happiness_by_religion_strictness.csv --diff-out tables/h2_happiness_by_religion_strictness_diff.csv --manifest artifacts/h2_religion_strictness_vs_happiness_manifest.json",
+    "sensitivity_plan": "python scripts/generate_sensitivity_plan.py --out analysis/sensitivity_plan.md --timestamp 2025-11-04T08:24:44Z",
     "sponsor_follow_up": "python scripts/generate_sponsor_follow_up.py --brief reports/design_metadata_brief.md --out reports/sponsor_follow_up.md"
   },
   "seed": 20251016,

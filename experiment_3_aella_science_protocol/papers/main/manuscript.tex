@@ -18,7 +18,7 @@ This manuscript must remain textually aligned with the Markdown report
 commands in \texttt{papers/main/MANIFEST.md}.
 
 \section{Abstract}
-Placeholder. Populate after confirmatory analyses while mirroring the Markdown abstract.
+Confirmatory analyses (n = 14{,}436) indicate that each one-step increase in childhood class corresponds to a 0.18-point rise in adult self-love on the seven-point scale (95\% CI [0.16, 0.20], $q \approx 3.9\times 10^{-51}$). Contrary to the preregistered direction, respondents reporting any childhood sexual abuse agreement average 0.49 points lower on the anxiety agreement scale (95\% CI [$-0.56$, $-0.42$], $q \approx 6.9\times 10^{-41}$). All estimates rely on HC3 OLS under a simple random sampling assumption and are reproducible with seed 20251016.
 
 \section{Methods}
 \begin{itemize}
@@ -29,15 +29,23 @@ Placeholder. Populate after confirmatory analyses while mirroring the Markdown a
 \end{itemize}
 
 \section{Results}
-Pending confirmatory execution; no inferential claims prior to running the frozen analysis script.
+\begin{itemize}
+  \item \textbf{HYP-001 (Wellbeing family):} Childhood class exhibits a positive association with adult self-love ($\beta = 0.181$, $\mathrm{SE} = 0.012$; 95\% CI [0.158, 0.205]; $q = 3.9\times 10^{-51}$), implying roughly a fifth of a scale-point increase per class step when covarying age, gender, and cis identity.
+  \item \textbf{HYP-003 (MentalHealth family):} Any CSA exposure is linked to $-0.491$ points on the anxiety agreement scale ($\mathrm{SE} = 0.037$; 95\% CI [$-0.562$, $-0.419$]; $q = 6.9\times 10^{-41}$). The negative sign reflects lower agreement with the statement ``I tend to suffer from anxiety,'' running counter to the preregistered positive direction.
+\end{itemize}
+Benjamini--Hochberg adjustments at $q = 0.05$ do not alter inference because the extremely small p-values remain far below the threshold.
 
 \section{Robustness and Sensitivity}
-Populate following completion of pre-specified robustness checks.
+\begin{itemize}
+  \item \textbf{HYP-001:} Treating childhood class as categorical with Helmert contrasts yields an average class effect of 0.07 ($F = 89.7$). An ordinal logit specification reports a log-odds coefficient of 0.17 ($p \approx 7.3\times 10^{-48}$), and z-scoring the outcome produces $\beta = 0.097$ ($p \approx 1.6\times 10^{-51}$). All checks retain the positive direction and comparable magnitudes.
+  \item \textbf{HYP-003:} A logistic model contrasting high anxiety agreement (score $\geq 1$) produces an odds ratio of 0.57 (95\% CI $\approx$ [0.51, 0.64]). Binning CSA intensity into 0/1--3/4+ bins and trimming the CSA $>15$ tail both keep negative associations ($\beta_{\text{bins}} = -0.33$; trimmed $\beta = -0.48$), corroborating the observed direction despite diverging from the preregistered expectation.
+\end{itemize}
 
 \section{Limitations}
 \begin{itemize}
-  \item Sampling weights unavailable; analyses rely on the simple random sampling assumption.
-  \item CSA indicator derived from composite scores; measurement error sensitivity TBD.
+  \item Sampling weights remain unavailable; analyses rely on the simple random sampling assumption and may inherit bias from undisclosed complex design features.
+  \item Outcomes are ordinal but modeled as interval; effect magnitudes should be interpreted as approximate tendencies.
+  \item The CSA indicator is derived from a composite score, and its association with lower anxiety agreement suggests possible measurement or reporting artifacts that require qualitative follow-up.
 \end{itemize}
 
 \section{Ethics and Privacy}
@@ -46,7 +54,7 @@ Enforce small-cell suppression for counts below 10 and review IRB/licensing requ
 \section{Open Questions}
 \begin{itemize}
   \item Evaluate readiness of the social support hypothesis (HYP-004) for future PAP inclusion.
-  \item Assess potential mode effects influencing self-reported wellbeing outcomes.
+  \item Determine whether the negative CSA--anxiety association stems from coding (negative vs.\ positive framing) or differential nonresponse requiring weighting or qualitative context.
 \end{itemize}
 
 \end{document}

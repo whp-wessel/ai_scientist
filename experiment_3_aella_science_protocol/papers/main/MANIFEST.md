@@ -16,10 +16,12 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Command (frozen):  
   `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 HYP-003 --results-csv analysis/results.csv --overwrite`
 - Expected outputs: `analysis/results.csv`, QC diagnostics under `qc/`, confirmatory tables under `tables/confirmatory/`, plots under `figures/confirmatory/`.
-- FDR adjustment command:  
-  `python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --out analysis/results.csv --audit-table tables/fdr_adjustment_confirmatory.csv`
-- Robustness automation command:  
-  `python analysis/code/run_robustness_checks.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --qc-dir qc --tables-dir tables/robustness --hypotheses HYP-001 HYP-003`
+- FDR adjustment command (executed 2025-11-04T09:25Z):  
+  `python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --out analysis/results.csv --audit-table tables/fdr_adjustment_confirmatory.csv`  
+  Outputs: `analysis/results.csv` (q-values updated), `tables/fdr_adjustment_confirmatory.csv`.
+- Robustness automation command (executed 2025-11-04T09:25Z):  
+  `python analysis/code/run_robustness_checks.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --qc-dir qc --tables-dir tables/robustness --hypotheses HYP-001 HYP-003`  
+  Outputs: `tables/robustness/robustness_checks_summary.{csv,json}`, QC notes (`qc/hyp-001_*`, `qc/hyp-003_*`).
 
 ## Manuscript parity
 - Markdown: `reports/findings_v0.1.md`
@@ -33,8 +35,6 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
 ## Outstanding tasks
-1. Apply Benjamini–Hochberg FDR adjustment to confirmatory family (backlog T-013) and archive audit table.
-2. Execute pre-registered robustness checks for HYP-001 and HYP-003 (backlog T-014) with QC notes.
-3. Draft confirmatory narrative in `reports/findings_v0.1.md` and sync `papers/main/manuscript.tex` (backlog T-015).
+1. Draft confirmatory narrative in `reports/findings_v0.1.md` and sync `papers/main/manuscript.tex` (backlog T-015).
 
 > **Note:** Any deviation from the frozen PAP requires an amendment documented in both the decision log and this manifest, with updated tags.

@@ -63,7 +63,8 @@ Sponsor-delivered files currently lack calibrated weights, strata, and primary s
 
 ## Discussion and Next Steps
 - Results depend on the temporary SRS assumption; revisit once sponsor supplies calibrated weights and replicate design metadata.
-- Upcoming work: extend analyses to hypotheses H-003 through H-005, integrate robustness checks, and quantify potential weight-induced shifts using sensitivity simulations.
+- A deterministic sensitivity roadmap (`analysis/sensitivity_plan.md`, generated via `python scripts/generate_sensitivity_plan.py --out analysis/sensitivity_plan.md --timestamp 2025-11-04T08:24:44Z`) outlines Scenario 0 (SRS benchmark), Scenario 1 (proxy weight calibration), Scenario 2 (design-effect multiplier grid), and Scenario 3 (pseudo-replicate construction).
+- Near-term tasks T-013 through T-015 operationalize these scenarios while T-012 advances H-003 exploratory work.
 - Update `manuscript.tex` in lockstep with this Markdown file; both documents should reflect identical narrative content before submission.
 
 ## Reproducibility and Data Governance

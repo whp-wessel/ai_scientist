@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-04T08:20:04Z | Seed: 20251016
+Updated: 2025-11-04T09:25:35Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -44,3 +44,11 @@ Output dataset stored at `data/clean/childhoodbalancedpublic_with_csa_indicator.
 Listwise deletion removed ≤0.05% rows per model. Self-love rises ~0.18 points per childhood class step (95% CI [0.16, 0.20]); CSA exposure associates with −0.49 anxiety agreement shift (95% CI [−0.56, −0.42]). Results recorded in `analysis/results.csv`; q-values pending BH adjustment (T-013).
 
 2025-11-04T09:10Z (Planning) — Implemented Benjamini–Hochberg utility (`analysis/code/fdr_adjust.py`) and robustness automation driver (`analysis/code/run_robustness_checks.py`) per PAP commitments. Regeneration commands captured in PAP/manifest; outputs will populate `tables/fdr_adjustment_confirmatory.csv` and `tables/robustness/robustness_checks_summary.{csv,json}` with QC notes in `qc/`. Ready to proceed with confirmatory estimation (T-012).
+
+2025-11-04T09:25Z (Confirmatory) — Applied BH FDR via\
+`python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --audit-table tables/fdr_adjustment_confirmatory.csv`.\
+Only the two confirmatory hypotheses qualified; q-values matched raw p-values (both <1e-40). Audit log stored at `tables/fdr_adjustment_confirmatory.csv` with seed annotation 20251016.
+
+2025-11-04T09:25Z (Robustness) — Executed pre-specified sensitivity checks via\
+`python analysis/code/run_robustness_checks.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --qc-dir qc --tables-dir tables/robustness --hypotheses HYP-001 HYP-003`.\
+HYP-001 retained positive slope across helmert, ordinal-logit, and z-score codings (e.g., z-score beta=0.097, p=1.6e-51). HYP-003 consistently showed a negative CSA association (logit OR=0.57, 95% CI approx [0.51, 0.64]), contradicting the preregistered direction. Outputs recorded in `tables/robustness/robustness_checks_summary.{csv,json}` with QC notes under `qc/`.

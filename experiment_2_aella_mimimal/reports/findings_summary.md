@@ -35,3 +35,8 @@
   - `python scripts/analyze_h2_religion_strictness_vs_happiness.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h2_happiness_by_religion_strictness.csv --diff-out tables/h2_happiness_by_religion_strictness_diff.csv --manifest artifacts/h2_religion_strictness_vs_happiness_manifest.json`
 - All computations are deterministic under the shared seed (20251016); no additional randomness introduced during reporting.
 - When sponsor-provided design metadata arrive, rerun the scripts above with updated configuration to refresh the results under the final survey design.
+
+## Planned Sensitivity Work
+- A deterministic roadmap for addressing missing survey weights and replicate designs is now documented in `analysis/sensitivity_plan.md` (generated via `python scripts/generate_sensitivity_plan.py --out analysis/sensitivity_plan.md --timestamp 2025-11-04T08:24:44Z`).
+- Scenario coverage includes (i) maintaining the current SRS benchmark, (ii) proxy weight calibration against external margins, (iii) design-effect multiplier sweeps, and (iv) pseudo-replicate construction via deterministic clustering.
+- Associated backlog items T-013 through T-015 track implementation of these scenarios; updates will be logged in `analysis/decision_log.csv` and mirrored in `artifacts/state.json`.
