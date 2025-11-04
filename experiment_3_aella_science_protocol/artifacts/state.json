@@ -100,31 +100,43 @@
       "description": "Review anxiety item coding and routing documentation",
       "id": "T-017",
       "priority": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "description": "Contextualize CSA-anxiety findings with literature synthesis",
       "id": "T-018",
       "priority": 3,
+      "status": "completed"
+    },
+    {
+      "description": "Draft measurement diagnostic plan for CSA-anxiety anomaly",
+      "id": "T-019",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "description": "Identify subgroup heterogeneity tests for anxiety outcome",
+      "id": "T-020",
+      "priority": 3,
       "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-04T10:45:00+00:00",
-  "loop_counter": 13,
+  "last_updated": "2025-11-04T12:32:00+00:00",
+  "loop_counter": 15,
   "next_actions": [
     {
-      "description": "Review anxiety item coding and routing documentation",
-      "id": "T-017",
+      "description": "Draft measurement diagnostic plan for CSA-anxiety anomaly",
+      "id": "T-019",
       "priority": 2
     },
     {
-      "description": "Contextualize CSA-anxiety findings with literature synthesis",
-      "id": "T-018",
+      "description": "Identify subgroup heterogeneity tests for anxiety outcome",
+      "id": "T-020",
       "priority": 3
     }
   ],
-  "notes": "PAP frozen (HYP-001, HYP-003); BH q-values applied and robustness suite executed 2025-11-04T09:25Z. Confirmatory narrative advanced to findings v0.2 and manuscript parity maintained 2025-11-04T10:35Z. CSA-anxiety diagnostics (2025-11-04T10:45Z) show CSA=1 mean -1.50 vs CSA=0 mean -0.64 (diff=-0.861); next focus on instrument coding review (T-017) and literature synthesis (T-018).",
+  "notes": "PAP frozen (HYP-001, HYP-003); BH q-values applied and robustness suite executed 2025-11-04T09:25Z. Findings report v0.3 adds literature synthesis contextualizing CSA-anxiety sign reversal. Semantic Scholar queries stored under lit/queries. Next focus: measurement diagnostics (T-019) and subgroup heterogeneity planning (T-020).",
   "pap_status": "frozen",
   "priority_hypotheses": [
     "HYP-001",

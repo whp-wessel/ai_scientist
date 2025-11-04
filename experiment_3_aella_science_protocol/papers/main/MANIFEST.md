@@ -24,9 +24,9 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
   Outputs: `tables/robustness/robustness_checks_summary.{csv,json}`, QC notes (`qc/hyp-001_*`, `qc/hyp-003_*`).
 
 ## Manuscript parity
-- Markdown: `reports/findings_v0.2.md` (supersedes v0.1; retain v0.1 for archival comparison)
+- Markdown: `reports/findings_v0.3.md` (supersedes v0.2; retain prior versions for archival comparison)
 - LaTeX: `papers/main/manuscript.tex`
-- Guideline: Apply synchronized edits; record regeneration commands (e.g., `pandoc reports/findings_v0.2.md -o papers/main/manuscript.tex`) when automation is introduced. Update the changelog in Markdown when substantive revisions occur.
+- Guideline: Apply synchronized edits; record regeneration commands (e.g., `pandoc reports/findings_v0.3.md -o papers/main/manuscript.tex`) when automation is introduced. Update the changelog in Markdown when substantive revisions occur.
 
 ## Environment checkpoints
 - Session info: `artifacts/session_info.txt`
@@ -35,11 +35,12 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
 ## Outstanding tasks
-1. Review anxiety item coding and routing documentation (backlog T-017).
-2. Contextualize CSA–anxiety findings with literature synthesis (backlog T-018).
+1. Draft measurement diagnostic plan for the CSA-anxiety anomaly (backlog T-019, pending).
+2. Identify subgroup heterogeneity tests for anxiety outcome (backlog T-020, pending).
 
-### Notes (2025-11-04T10:45Z)
-- Findings report advanced to v0.2 with expanded confirmatory interpretation; manuscript updated in lockstep.
-- CSA–anxiety diagnostics (2025-11-04T10:45Z) logged via `analysis/code/diagnose_csa_anxiety_direction.py`; outputs stored under `tables/diagnostics/` and `qc/`.
+### Notes (2025-11-04T12:32Z)
+- Findings report advanced to v0.3 with literature synthesis; manuscript updated in lockstep.
+- Semantic Scholar queries stored under `lit/queries/` (see reproducibility notes) with bibliography/evidence map refreshed to cite Lindert et al. 2014, Hashim et al. 2024, and Li et al. 2023.
+- CSA-anxiety diagnostics remain documented in `qc/csa_anxiety_direction.md`; follow-up tasks T-019/T-020 will address measurement and subgroup exploration.
 
 > **Note:** Any deviation from the frozen PAP requires an amendment documented in both the decision log and this manifest, with updated tags.

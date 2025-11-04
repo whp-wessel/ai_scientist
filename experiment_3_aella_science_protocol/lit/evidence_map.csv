@@ -1,3 +1,4 @@
 concept,source_id,source_title,quality_rating,notes
-CSA and anxiety,placeholder2025,"TODO identify CSA-anxiety sources",unrated,"Update after Semantic Scholar search."
-SES and wellbeing,placeholder2025,"TODO map SES-wellbeing evidence",unrated,"Placeholder entry."
+CSA and anxiety,lindert2014,"Sexual and Physical Abuse in Childhood Is Associated with Depression and Anxiety over the Life Course: Systematic Review and Meta-Analysis",high,"Meta-analysis of population and clinical studies; finds higher odds of anxiety disorders among CSA survivors."
+CSA and anxiety,hashim2024,"Association of Childhood Sexual Abuse with Adolescent's Psychopathology: A Systematic Review and Meta-Analysis",high,"Synthesizes adolescent samples; reports pooled elevated anxiety symptoms following CSA."
+CSA and anxiety,li2023,"Anxiety and Depression Symptoms among Youth Survivors of Childhood Sexual Abuse: A Network Analysis",moderate,"Identifies worry-related symptoms as central nodes among CSA survivors; underscores expectation of higher self-reported anxiety."

@@ -1,13 +1,32 @@
-timestamp_utc: 2025-11-04T08:33:42.990603+00:00
+timestamp_utc: 2025-11-04T08:56:49.307699+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.0.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_3_aella_science_protocol
 model: gpt-5-codex
 seed: 20251016
-git_head: bd803afae2101706b2922c09367acc2ab5375a8a
+git_head: cdd68b1154eb760744cf63ea6902570d87ecf396
 git_status: |
   ## main...origin/main
+   M analysis/decision_log.csv
+   M artifacts/codex_tmp/final_message.json
    M artifacts/last_commit.txt
+   M artifacts/last_model_raw.txt
+   M artifacts/repro_report.md
+   M artifacts/session_info.txt
+   M artifacts/state.json
+   M notebooks/research_notebook.md
+   M papers/main/MANIFEST.md
+  ?? analysis/code/review_anxiety_instrument.py
+  ?? artifacts/codex_tmp/final_chunk_1.txt
+  ?? artifacts/codex_tmp/final_chunk_2.txt
+  ?? artifacts/codex_tmp/final_chunk_3.txt
+  ?? artifacts/codex_tmp/final_chunk_4.txt
+  ?? artifacts/codex_tmp/final_chunk_5.txt
+  ?? artifacts/codex_tmp/final_chunk_6.txt
+  ?? artifacts/codex_tmp/final_chunk_7.txt
+  ?? artifacts/invalid_json_loop_014.txt
+  ?? qc/anxiety_item_routing.md
+  ?? tables/diagnostics/anxiety_item_review.csv
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15

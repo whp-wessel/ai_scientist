@@ -14,11 +14,11 @@
 
 \section*{Parity Notice}
 This manuscript must remain textually aligned with the Markdown report
-\texttt{reports/findings_v0.2.md}. Apply edits in tandem and document regeneration
+\texttt{reports/findings_v0.3.md}. Apply edits in tandem and document regeneration
 commands in \texttt{papers/main/MANIFEST.md}.
 
 \section{Abstract}
-Confirmatory analyses (n = 14{,}436) indicate that each one-step increase in childhood class corresponds to a 0.18-point rise in adult self-love on the seven-point agreement scale (95\% CI [0.16, 0.20], $q \approx 3.9\times 10^{-51}$), roughly 0.10 standard deviations. Contrary to the preregistered direction, respondents reporting any childhood sexual abuse agreement average 0.49 points lower on the anxiety agreement scale (95\% CI [$-0.56$, $-0.42$], $q \approx 6.9\times 10^{-41}$), about a quarter of a standard deviation. All estimates rely on HC3 OLS under a simple random sampling assumption and are reproducible with seed 20251016.
+Confirmatory analyses (n = 14{,}436) indicate that each one-step increase in childhood class corresponds to a 0.18-point rise in adult self-love on the seven-point agreement scale (95\% CI [0.16, 0.20], $q \approx 3.9 \times 10^{-51}$), roughly 0.10 standard deviations. Contrary to the preregistered direction, respondents reporting any childhood sexual abuse agreement average 0.49 points lower on the anxiety agreement scale (95\% CI [$-0.56$, $-0.42$], $q \approx 6.9 \times 10^{-41}$), about a quarter of a standard deviation. All estimates rely on HC3 OLS under a simple random sampling assumption and are reproducible with seed 20251016.
 
 \section{Methods}
 \begin{itemize}
@@ -42,7 +42,7 @@ Benjamini--Hochberg adjustments at $q = 0.05$ do not alter inference because the
 \end{itemize}
 
 \section{Interpretation and Context}
-Childhood class effects appear modest in absolute scale units but align with roughly a tenth of the variability in the self-love measure. The CSA finding suggests either mitigation of self-reported anxiety among those disclosing CSA or a coding/measurement artifact; pending diagnostics (Task T-016) will clarify whether the neg-coded variable or sample composition drives the sign reversal.
+Childhood class effects appear modest in absolute scale units but align with roughly a tenth of the variability in the self-love measure. Meta-analytic syntheses report consistently higher anxiety prevalence among childhood sexual abuse survivors (e.g., Lindert et al., 2014; Hashim et al., 2024), and symptom network analysis highlights worry and restlessness as central among exposed youth (Li et al., 2023). The present negative coefficient therefore likely reflects measurement or reporting dynamics rather than a true protective effect. Potential explanations include (1) the agreement framing (``I tend to suffer from anxiety'') prompting stigma-driven disagreement among trauma survivors, (2) unmeasured treatment uptake reducing current anxiety despite historical CSA exposure, and (3) sample composition differences relative to the adolescent and clinical cohorts emphasized in published studies. Pending diagnostics (Task T-016) will probe scale direction and subgroup heterogeneity before drawing substantive conclusions.
 
 \section{Limitations}
 \begin{itemize}
@@ -58,6 +58,19 @@ Enforce small-cell suppression for counts below 10 and review IRB/licensing requ
 \begin{itemize}
   \item Evaluate readiness of the social support hypothesis (HYP-004) for future PAP inclusion.
   \item Determine whether the negative CSA--anxiety association stems from coding (negative vs.\ positive framing), sample composition, or differential nonresponse requiring weighting or qualitative context.
+\end{itemize}
+
+\section{Reproducibility Notes}
+\begin{itemize}
+  \item Environment snapshot: \texttt{artifacts/session_info.txt}; seed recorded in \texttt{artifacts/seed.txt} (20251016).
+  \item Confirmatory estimates: \texttt{python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 HYP-003 --results-csv analysis/results.csv --overwrite}
+  \item FDR adjustment: \texttt{python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --audit-table tables/fdr_adjustment_confirmatory.csv}
+  \item Robustness checks: \texttt{python analysis/code/run_robustness_checks.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --qc-dir qc --tables-dir tables/robustness --hypotheses HYP-001 HYP-003}
+  \item Literature queries (wait 120 seconds to avoid HTTP 429):
+  \begin{itemize}
+    \item \texttt{sleep 120 && curl -s 'https://api.semanticscholar.org/graph/v1/paper/search?query=childhood sexual abuse anxiety adult\&limit=3\&fields=title,authors,year,venue,url,journal,externalIds' > lit/queries/20251104_semanticscholar_csa_anxiety_adult.json}
+    \item \texttt{sleep 120 && curl -s 'https://api.semanticscholar.org/graph/v1/paper/search?query=childhood sexual abuse anxiety depression network analysis\&limit=1\&fields=title,authors,year,venue,url,journal,externalIds,abstract' > lit/queries/20251104_semanticscholar_csa_anxiety_network.json}
+  \end{itemize}
 \end{itemize}
 
 \end{document}
