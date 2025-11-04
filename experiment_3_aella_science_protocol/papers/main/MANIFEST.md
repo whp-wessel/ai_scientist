@@ -39,8 +39,9 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016 (refreshed 2025-11-04T10:06:22Z)
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
 ## Outstanding tasks
-1. Develop CSA×(cis, age, class) interaction scripts and archive QC outputs (backlog T-018; WP2 in `analysis/csa_anxiety_diagnostics_plan.md`).
-2. Interpret unexpected positive associations between anxiety and self-regulation items from convergent diagnostics; determine reporting implications (queue follow-on task).
+1. Synthesize CSA×(cis, age, class) diagnostics into reporting outputs (Task T-018 follow-on; update manuscript and findings report).
+2. Interpret unexpected positive associations between anxiety and self-regulation items from convergent diagnostics (Task T-019).
+3. Execute CSA anxiety scale transformation diagnostics (plan WP3) and archive outputs before revising main narrative.
 
 ## Measurement diagnostics plan
 - Command:  
@@ -55,6 +56,9 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016 (refreshed 2025-11-04T10:06:22Z)
 - Convergent validity (2025-11-04T20:35Z):  
   `python analysis/code/evaluate_anxiety_convergence.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --out-table tables/diagnostics/anxiety_convergence.csv --out-md qc/anxiety_convergence.md --seed 20251016`  
   Outputs: `tables/diagnostics/anxiety_convergence.csv`, `qc/anxiety_convergence.md`
+- Interaction diagnostics (2025-11-04T20:52Z):  
+  `python analysis/code/anxiety_interactions.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --interactions CSA_score_indicator:cis_identity CSA_score_indicator:age_cohort CSA_score_indicator:classchild_collapsed --out-table tables/diagnostics/anxiety_interactions.csv --out-md qc/anxiety_subgroup_extensions.md --seed 20251016`  
+  Outputs: `analysis/code/anxiety_interactions.py`, `tables/diagnostics/anxiety_interactions.csv`, `qc/anxiety_subgroup_extensions.md`
 - CSA–anxiety diagnostics scope (2025-11-04T14:05Z): `analysis/csa_anxiety_diagnostics_plan.md` — manual plan covering convergent validity (Task T-017) and interaction modelling (Task T-018); future scripts must log seed 20251016 and update this manifest.
 
 ### Notes (2025-11-04T13:36Z)

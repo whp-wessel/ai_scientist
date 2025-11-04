@@ -106,7 +106,7 @@
       "description": "Develop CSA-anxiety interaction scripts and QC templates",
       "id": "T-018",
       "priority": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "description": "Investigate unexpected positive self-regulation correlations and document implications",
@@ -116,21 +116,16 @@
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-04T20:35:47Z",
-  "loop_counter": 24,
+  "last_updated": "2025-11-04T20:52:05Z",
+  "loop_counter": 25,
   "next_actions": [
-    {
-      "description": "Develop CSA-anxiety interaction scripts and QC templates",
-      "id": "T-018",
-      "priority": 3
-    },
     {
       "description": "Investigate unexpected positive self-regulation correlations from convergence diagnostics",
       "id": "T-019",
       "priority": 2
     }
   ],
-  "notes": "PAP frozen 2025-11-04T10:06Z; confirmatory HC3 OLS executed 2025-11-04T10:17Z with seed 20251016. FDR adjustment archived to tables/fdr_adjustment_confirmatory.csv. Robustness memo `qc/robustness_summary.md` and CSA-anxiety diagnostics plan `analysis/csa_anxiety_diagnostics_plan.md` recorded 2025-11-04T14:05Z. Convergent validity diagnostics executed 2025-11-04T20:35Z; depression/stress align, while self-love/calm positive correlations require follow-up via T-018/T-019.",
+  "notes": "PAP frozen 2025-11-04T10:06Z; confirmatory HC3 OLS executed 2025-11-04T10:17Z with seed 20251016. FDR adjustment archived to tables/fdr_adjustment_confirmatory.csv. Robustness memo `qc/robustness_summary.md` and CSA-anxiety diagnostics plan `analysis/csa_anxiety_diagnostics_plan.md` recorded 2025-11-04T14:05Z. Convergent validity diagnostics executed 2025-11-04T20:35Z; depression/stress align, while self-love/calm positive correlations require follow-up via T-018/T-019. Interaction diagnostics executed 2025-11-04T20:52Z via analysis/code/anxiety_interactions.py; no material CSA\u00d7moderator shifts detected, informing T-019 follow-up.",
   "pap_status": "frozen",
   "priority_hypotheses": [
     "HYP-001",

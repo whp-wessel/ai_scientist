@@ -1,6 +1,6 @@
 # Findings Report v0.4
 Version: 0.4.0 (robustness integration)  
-Updated: 2025-11-04T10:38Z | Seed: 20251016
+Updated: 2025-11-04T20:52Z | Seed: 20251016
 
 > **Parity requirement:** Keep this Markdown report in sync with `papers/main/manuscript.tex`. Any change here must be mirrored in LaTeX during the same commit.
 
@@ -9,6 +9,7 @@ Updated: 2025-11-04T10:38Z | Seed: 20251016
 - Synced narrative updates across `reports/findings_v0.4.md` and `papers/main/manuscript.tex`.
 - Re-confirmed Benjamini–Hochberg interpretation using `tables/fdr_adjustment_confirmatory.csv`.
 - Logged notebook entry for confirmatory-reporting integration.
+- Documented exploratory CSA×moderator diagnostics (Task T-018) to contextualise anxiety findings.
 
 ## Abstract
 Confirmatory analyses (n = 14,436) indicate that each one-step increase in childhood class corresponds to a 0.18-point rise in adult self-love on the 7-point agreement scale (95% CI [0.16, 0.20], q ≈ 3.9e-51), roughly 0.10 standard deviations. Respondents reporting any childhood sexual abuse agreement average 0.49 points lower on the anxiety agreement scale (95% CI [-0.56, -0.42], q ≈ 6.9e-41), nearly a quarter of a standard deviation. All pre-registered robustness checks corroborate the directions and magnitudes, and the workflow remains reproducible with seed 20251016.
@@ -28,6 +29,7 @@ Confirmatory analyses (n = 14,436) indicate that each one-step increase in child
 ## Robustness and Sensitivity
 - **HYP-001 — Status: Pass**. Treating childhood class as categorical with Helmert contrasts yields an average class effect of 0.07 (F = 89.7). An ordinal logit specification reports a log-odds coefficient of 0.17 (p ≈ 7.3e-48), and z-scoring the outcome produces β = 0.097 (p ≈ 1.6e-51); all checks retain positive direction and comparable magnitude.
 - **HYP-003 — Status: Pass**. A logistic model contrasting high anxiety agreement (≥1) produces an odds ratio of 0.57 (95% CI ≈ [0.51, 0.64]). Binning CSA intensity into 0/1–3/4+ bins and trimming the CSA >15 tail both preserve negative associations (β_bins = -0.33; trimmed β = -0.48). An ordinal-logit DIF diagnostic including CSA×gender yields χ²(1) = 0.24 (p = 0.625), mitigating gender-linked measurement concerns.
+- **CSA–anxiety subgroup diagnostics (Exploratory)** — Interaction models (CSA×cis identity, CSA×age cohort, CSA×childhood class) fitted via `analysis/code/anxiety_interactions.py` show the CSA main effect stays negative across strata, with interaction terms small and imprecise (|β| < 0.22). Descriptive means confirm CSA-exposed respondents report lower anxiety agreement in every subgroup; the cis/non-cis gap is largest (Δ ≈ -0.80 among exposed). These findings support Task T-019's interpretation of unexpected positive correlations with self-regulation items.
 - **Limitations noted in results**: Analyses rely on the SRS assumption; ordinal outcomes are treated as interval measures; CSA indicator derives from a composite score and may embed measurement artefacts affecting sign interpretation.
 
 ## Interpretation and Context

@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-04T20:35:47Z | Seed: 20251016
+Updated: 2025-11-04T20:52:00Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -58,3 +58,7 @@ Documented combined execution command (FDR + robustness) and QC expectations; li
 2025-11-04T20:35Z (Diagnostics) — Executed convergent-validity module for the anxiety item via \
 `python analysis/code/evaluate_anxiety_convergence.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --out-table tables/diagnostics/anxiety_convergence.csv --out-md qc/anxiety_convergence.md --seed 20251016`. \
 Findings: strong positive correlations with depression (r=0.615) and stress (r=0.617) reinforce convergent validity; unexpectedly positive associations with self-love (r=0.368) and calm/peaceful (r=0.383) contradict hypothesised negative direction, flagged for qualitative review in T-018. Polychoric estimates mirror Pearson trends. Reliability: α=0.800 for the negative-affect triad; reversed self-regulation composite yields α=-0.682, indicating divergent constructs. Outputs archived in `tables/diagnostics/anxiety_convergence.csv` and `qc/anxiety_convergence.md`.
+
+2025-11-04T20:52Z (Diagnostics) — Implemented CSA×moderator interaction module via \
+`python analysis/code/anxiety_interactions.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --interactions CSA_score_indicator:cis_identity CSA_score_indicator:age_cohort CSA_score_indicator:classchild_collapsed --out-table tables/diagnostics/anxiety_interactions.csv --out-md qc/anxiety_subgroup_extensions.md --seed 20251016`. \
+Results: no meaningful interaction shifts—the CSA coefficient remains negative across cis identity, age, and childhood class strata; interaction terms hover near zero with wide CIs. Descriptive means show consistent ordering (CSA-exposed respondents report lower anxiety agreement everywhere, with the largest gap among cis respondents and lower childhood class). Ordinal logit results align with OLS magnitudes. QC summary recorded in `qc/anxiety_subgroup_extensions.md`; CSV diagnostics stored at `tables/diagnostics/anxiety_interactions.csv`. Task T-018 closed; follow-up T-019 to interpret positive self-regulation correlations using these subgroup patterns.
