@@ -1,23 +1,24 @@
-# PAP Draft
-Generated: 2025-11-03T22:05:00Z | Seed: 20251016
-Status: Draft (not frozen) | Regen: `python analysis/code/bootstrap_setup.py --artifact analysis/pre_analysis_plan.md`
+# Pre-Analysis Plan — Frozen
+Frozen: 2025-11-04T10:06:00Z | Seed: 20251016 | Git SHA: ffe91f833c9a26d866c37e605dc408249457fe1d
+Status: Frozen (do not edit without amendment) | Regen (archival diff only): `python analysis/code/bootstrap_setup.py --artifact analysis/pre_analysis_plan.md`
 
 Data inputs:
 - Raw: `data/raw/childhoodbalancedpublic_original.csv`
 - Clean (derived): `data/clean/childhoodbalancedpublic_with_csa_indicator.csv` via `python analysis/code/derive_csa_indicator.py --dataset data/raw/childhoodbalancedpublic_original.csv --out-dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-distribution tables/csa_indicator_distribution.csv --config config/agent_config.yaml --codebook-in docs/codebook.json --codebook-out docs/codebook.json`
 
-Portfolio: HYP-001 (High), HYP-002 (Medium), HYP-003 (High), HYP-004 (Medium)
+Portfolio (confirmatory scope): HYP-001 (High), HYP-003 (High)  
+Portfolio (exploratory/backlog): HYP-002 (Medium), HYP-004 (Medium)
 
 ## HYP-001 — Childhood class and adult self-love
 - **Outcome**: `I love myself (2l8994l)` (Likert −3 to +3)  
   **Predictor**: `classchild` (0–6 ordinal)  
   **Covariates**: `selfage`, `gendermale`, `cis`
 - **Estimand**: Average change in outcome per one-step increase in childhood class (design-based OLS with HC3).
-- **Primary model**: `survey`-adjusted linear regression under SRS assumption (weights=1). Robust HC3 standard errors with seed 20251016.
+- **Primary model**: `survey`-adjusted linear regression under SRS assumption (weights=1). Robust HC3 standard errors with seed 20251016 (set via `analysis/code/confirmatory_models.py`).
 - **Model equation** (confirmatory, SRS):  
   `y_i = β_0 + β_1 · classchild_i + β_2 · selfage_i + β_3 · gendermale_i + β_4 · cis_i + ε_i`, with HC3 variance.  
   `β_1` identifies the estimand.
-- **Analysis code**: `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 --results-csv analysis/results.csv --overwrite`
+- **Analysis code** (frozen command): `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 --results-csv analysis/results.csv --overwrite`
 - **Robustness checks**:  
   1. Treat `classchild` as categorical with Helmert contrasts (tests functional form).  
   2. Fit proportional-odds ordinal logit on the outcome; assess Brant test to flag violations.  
@@ -29,10 +30,10 @@ Portfolio: HYP-001 (High), HYP-002 (Medium), HYP-003 (High), HYP-004 (Medium)
 - **Predictor**: `CSA_score_indicator` (derived binary; 1 if CSA_score>0)
 - **Covariates**: `selfage`, `gendermale`, `classchild`
 - **Estimand**: Difference in mean anxiety agreement between any CSA exposure vs none.
-- **Primary model**: OLS with HC3 under SRS, plus design-based two-sample comparison (Welch t using survey variance) to confirm direction/scale.
+- **Primary model**: OLS with HC3 under SRS, plus design-based two-sample comparison (Welch t using survey variance) to confirm direction/scale (seed 20251016).
 - **Model equation** (confirmatory, SRS):  
   `y_i = β_0 + β_1 · CSA_i + β_2 · selfage_i + β_3 · gendermale_i + β_4 · classchild_i + ε_i`, HC3 variance; `β_1` captures the mean difference between exposed vs non-exposed.
-- **Analysis code**: `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-003 --results-csv analysis/results.csv --overwrite`
+- **Analysis code** (frozen command): `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-003 --results-csv analysis/results.csv --overwrite`
 - **Robustness checks**:  
   1. Logistic regression on `CSA_score_indicator` predicting high anxiety (>=1) to examine non-linear probability scale.  
   2. Replace binary predictor with ordinal bins `{0, 1-3, 4+}` and test linear trend.  
@@ -51,6 +52,6 @@ Portfolio: HYP-001 (High), HYP-002 (Medium), HYP-003 (High), HYP-004 (Medium)
   2. Indicator for top-two responses (2/3) vs others to check threshold effects.
 - **Next steps**: Finalise model equation language and confirm inclusion/exclusion criteria before PAP freeze; update manuscript and hypothesis registry accordingly.
 
-Roadmap: 1) Finalize survey design assumptions and document SRS rationale. 2) Label exploratory descriptives (clearly marked). 3) Freeze PAP after verifying confirmatory code paths and tag git. 4) Execute confirmatory models per `analysis/code/confirmatory_models.py`, log seeds to `analysis/results.csv`, and mirror updates in `papers/main/MANIFEST.md`.
+Roadmap (post-freeze): 1) Execute confirmatory models per `analysis/code/confirmatory_models.py`, log seeds to `analysis/results.csv`, and mirror outputs into `tables/` and `figures/`. 2) Apply FDR via `analysis/code/fdr_adjust.py` (frozen command recorded in `papers/main/MANIFEST.md`). 3) Run pre-specified robustness checks (`analysis/code/run_robustness_checks.py`) and append outcomes to `analysis/results.csv`. Any deviation requires an amendment entry in this file, the decision log, and `papers/main/MANIFEST.md`.
 
-Manuscript parity: update `reports/findings_v0.1.md` and `papers/main/manuscript.tex` in lockstep; record regeneration commands alongside outputs.
+Manuscript parity commitment: maintain `reports/findings_v0.3.md` ↔ `papers/main/manuscript.tex` synchronization via `pandoc reports/findings_v0.3.md -o papers/main/manuscript.tex` (recorded in `papers/main/MANIFEST.md`).

@@ -1,11 +1,11 @@
 # MANIFEST — Main Paper
-Created: 2025-11-04T07:58:50Z | Seed: 20251016
+Created: 2025-11-04T07:58:50Z | Seed: 20251016 (refreshed 2025-11-04T10:06:22Z)
 
 ## Frozen PAP reference
 - File: `analysis/pre_analysis_plan.md`
-- Status: Frozen (2025-11-04T07:58:50Z)
+- Status: Frozen (2025-11-04T10:06:00Z)
 - Planned tag: `pap-freeze-20251104` (create immediately after committing freeze artifacts).
-- Regeneration: `python analysis/code/bootstrap_setup.py --artifact analysis/pre_analysis_plan.md` (for archival comparison only; do **not** overwrite frozen content post-freeze).
+- Regeneration: `python analysis/code/bootstrap_setup.py --artifact analysis/pre_analysis_plan.md` (archival diff only; do **not** overwrite frozen content post-freeze).
 
 ## Data lineage
 1. Raw dataset (`data/raw/childhoodbalancedpublic_original.csv`) — checksum tracked in `artifacts/checksums.json`.
@@ -16,10 +16,10 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Command (frozen):  
   `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 HYP-003 --results-csv analysis/results.csv --overwrite`
 - Expected outputs: `analysis/results.csv`, QC diagnostics under `qc/`, confirmatory tables under `tables/confirmatory/`, plots under `figures/confirmatory/`.
-- FDR adjustment command (executed 2025-11-04T09:25Z):  
+- FDR adjustment command (to execute post-results, registered 2025-11-04T10:06Z):  
   `python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --out analysis/results.csv --audit-table tables/fdr_adjustment_confirmatory.csv`  
   Outputs: `analysis/results.csv` (q-values updated), `tables/fdr_adjustment_confirmatory.csv`.
-- Robustness automation command (executed 2025-11-04T09:25Z):  
+- Robustness automation command (to execute post-results, registered 2025-11-04T10:06Z):  
   `python analysis/code/run_robustness_checks.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --qc-dir qc --tables-dir tables/robustness --hypotheses HYP-001 HYP-003`  
   Outputs: `tables/robustness/robustness_checks_summary.{csv,json}`, QC notes (`qc/hyp-001_*`, `qc/hyp-003_*`).
 
@@ -29,8 +29,8 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Guideline: Apply synchronized edits; record regeneration commands (e.g., `pandoc reports/findings_v0.3.md -o papers/main/manuscript.tex`) when automation is introduced. Update the changelog in Markdown when substantive revisions occur.
 
 ## Environment checkpoints
-- Session info: `artifacts/session_info.txt`
-- Checksums: `artifacts/checksums.json`
+- Session info: `artifacts/session_info.txt` (updated 2025-11-04T10:06:22Z)
+- Checksums: `artifacts/checksums.json` (updated 2025-11-04T10:06:22Z)
 - Seed: `artifacts/seed.txt`
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
