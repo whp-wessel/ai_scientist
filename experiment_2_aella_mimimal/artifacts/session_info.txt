@@ -1,13 +1,33 @@
-timestamp_utc: 2025-11-04T08:16:02.106338+00:00
+timestamp_utc: 2025-11-04T08:22:42.842599+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.0.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_2_aella_mimimal
 model: gpt-5-codex
 seed: 20251016
-git_head: 64e6e787e7a2f36dcb130e96f0af965ab588cde4
+git_head: 3d293bcbb7b3aa6802d17113e90e79c1dac00e60
 git_status: |
   ## main...origin/main
-   M artifacts/last_commit.txt
+   M analysis/decision_log.csv
+   M analysis/hypotheses.csv
+   D artifacts/codex_tmp/.tmpCcyrLs/apply_patch
+   D artifacts/codex_tmp/.tmpCcyrLs/applypatch
+   M artifacts/last_model_raw.txt
+   M artifacts/state.json
+   M notebooks/research_notebook.md
+   M reports/findings_summary.md
+   M reports/manuscript.md
+   M ../experiment_3_aella_science_protocol/analysis/code/confirmatory_models.py
+   M ../experiment_3_aella_science_protocol/analysis/decision_log.csv
+   M ../experiment_3_aella_science_protocol/analysis/results.csv
+   M ../experiment_3_aella_science_protocol/artifacts/last_commit.txt
+   M ../experiment_3_aella_science_protocol/artifacts/repro_report.md
+   M ../experiment_3_aella_science_protocol/artifacts/session_info.txt
+   M ../experiment_3_aella_science_protocol/artifacts/state.json
+   M ../experiment_3_aella_science_protocol/notebooks/research_notebook.md
+   M ../experiment_3_aella_science_protocol/papers/main/MANIFEST.md
+  ?? artifacts/invalid_json_loop_008.txt
+  ?? manuscript.tex
+  ?? ../experiment_3_aella_science_protocol/artifacts/codex_tmp/.tmpUw1Pd7/
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15

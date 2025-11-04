@@ -7,6 +7,9 @@
     "h2_differences": "tables/h2_happiness_by_religion_strictness_diff.csv",
     "h2_group_stats": "tables/h2_happiness_by_religion_strictness.csv",
     "h2_manifest": "artifacts/h2_religion_strictness_vs_happiness_manifest.json",
+    "findings_summary": "reports/findings_summary.md",
+    "manuscript_markdown": "reports/manuscript.md",
+    "manuscript_tex": "manuscript.tex",
     "hypotheses_registry": "analysis/hypotheses.csv",
     "pre_analysis_plan": "analysis/pre_analysis_plan.md",
     "research_notebook": "notebooks/research_notebook.md"
@@ -64,28 +67,40 @@
       "description": "Update manuscript and reports with design context and H1 findings",
       "id": "T-009",
       "priority": 2,
-      "status": "todo"
+      "status": "done"
     },
     {
       "description": "Summarize H2 findings and integrate into manuscript drafts",
       "id": "T-010",
       "priority": 2,
+      "status": "done"
+    },
+    {
+      "description": "Plan sensitivity strategy for missing survey weights and replicate designs",
+      "id": "T-011",
+      "priority": 1,
+      "status": "todo"
+    },
+    {
+      "description": "Prototype exploratory analysis for H-003 (net worth vs work satisfaction)",
+      "id": "T-012",
+      "priority": 2,
       "status": "todo"
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 7,
+  "loop_counter": 8,
   "next_actions": [
     {
-      "desc": "Update manuscript and reports with design context, H1, and H2 findings",
-      "estimate_min": "40m",
-      "id": "T-009",
+      "desc": "Plan sensitivity strategy for missing survey weights and replicate designs",
+      "estimate_min": "30m",
+      "id": "T-011",
       "priority": 1
     },
     {
-      "desc": "Summarize H2 findings for manuscript integration",
-      "estimate_min": "35m",
-      "id": "T-010",
+      "desc": "Prototype exploratory analysis for H-003 (net worth vs work satisfaction)",
+      "estimate_min": "45m",
+      "id": "T-012",
       "priority": 2
     }
   ],

@@ -206,11 +206,20 @@ def run_model_for_spec(df: pd.DataFrame, spec: HypothesisSpec) -> Dict[str, obje
     fitted = model.fit()
     robust = fitted.get_robustcov_results(cov_type="HC3")
 
+    # statsmodels returns NumPy arrays for robust summaries; map onto term names for safe lookup
+    term_names = robust.model.exog_names
+    params = pd.Series(robust.params, index=term_names)
+    ses = pd.Series(robust.bse, index=term_names)
+    pvals = pd.Series(robust.pvalues, index=term_names)
+    ci_array = robust.conf_int(alpha=0.05)
+    ci = pd.DataFrame(ci_array, index=term_names, columns=["ci_low", "ci_high"])
+
     term = spec.predictor_term()
-    estimate = robust.params[term]
-    se = robust.bse[term]
-    ci_low, ci_high = robust.conf_int(alpha=0.05).loc[term]
-    p_value = robust.pvalues[term]
+    estimate = params[term]
+    se = ses[term]
+    ci_low = float(ci.loc[term, "ci_low"])
+    ci_high = float(ci.loc[term, "ci_high"])
+    p_value = pvals[term]
 
     n_unweighted = len(subset)
 

@@ -53,3 +53,9 @@
 - **Seed:** 20251016 (deterministic SRS means; no additional randomness).
 - **Outputs:** `tables/h2_happiness_by_religion_strictness.csv`, `tables/h2_happiness_by_religion_strictness_diff.csv`, `artifacts/h2_religion_strictness_vs_happiness_manifest.json`.
 - **Notes:** Ordinal `externalreligion` values were partitioned into terciles (0 | 1-2 | 3-4) using deterministic cumulative counts. Mean adult-vs-childhood happiness scores rise from Tercile 2 to Tercile 3 (difference ≈ 0.144, Bonferroni-adjusted 95% CI [0.043, 0.244]) while Tercile 1 exceeds Tercile 2 by ≈0.104 in the negative direction. All reported cells satisfy the minimum n ≥ 10 privacy guardrail.
+
+## Loop 8 - Manuscript and Reporting Updates
+
+- **Commands:** Documentation updates only; no analytical scripts executed. All referenced results derive from loops 6 and 7 (seed 20251016).
+- **Outputs:** `reports/findings_summary.md`, `reports/manuscript.md`, `manuscript.tex` (synchronized content).
+- **Notes:** Summarized design context (SRS assumption) and integrated H1/H2 findings into both Markdown and LaTeX manuscripts. Recorded regeneration commands alongside each result and checked privacy thresholds (all n ≥ 10). No data transformations or reruns required; relied on previously generated tables in `tables/` and manifests in `artifacts/`.

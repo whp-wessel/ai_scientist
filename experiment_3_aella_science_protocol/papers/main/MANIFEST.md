@@ -33,7 +33,8 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
 ## Outstanding tasks
-1. Execute confirmatory HC3 OLS per frozen PAP (backlog T-012) and populate `analysis/results.csv`.
-2. Draft confirmatory results in manuscript/markdown with newly generated estimates.
+1. Apply Benjamini–Hochberg FDR adjustment to confirmatory family (backlog T-013) and archive audit table.
+2. Execute pre-registered robustness checks for HYP-001 and HYP-003 (backlog T-014) with QC notes.
+3. Draft confirmatory narrative in `reports/findings_v0.1.md` and sync `papers/main/manuscript.tex` (backlog T-015).
 
 > **Note:** Any deviation from the frozen PAP requires an amendment documented in both the decision log and this manifest, with updated tags.

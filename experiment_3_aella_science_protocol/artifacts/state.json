@@ -70,16 +70,39 @@
       "description": "Execute confirmatory HC3 OLS per frozen PAP",
       "id": "T-012",
       "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Apply Benjamini-Hochberg FDR for confirmatory hypotheses",
+      "id": "T-013",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "description": "Execute pre-specified robustness checks for HYP-001 and HYP-003",
+      "id": "T-014",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "description": "Draft confirmatory findings and update manuscript parity",
+      "id": "T-015",
+      "priority": 3,
       "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-04T09:10:00+00:00",
-  "loop_counter": 10,
+  "last_updated": "2025-11-04T08:20:04.523133+00:00",
+  "loop_counter": 11,
   "next_actions": [
     {
-      "description": "Execute confirmatory HC3 OLS per frozen PAP",
-      "id": "T-012",
+      "description": "Apply Benjamini-Hochberg FDR for confirmatory hypotheses",
+      "id": "T-013",
+      "priority": 1
+    },
+    {
+      "description": "Execute pre-specified robustness checks for HYP-001 and HYP-003",
+      "id": "T-014",
       "priority": 2
     }
   ],
