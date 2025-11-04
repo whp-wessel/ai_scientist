@@ -58,98 +58,27 @@
       "description": "Freeze PAP and tag reproducibility checkpoint",
       "id": "T-010",
       "priority": 1,
-      "status": "completed"
+      "status": "pending"
     },
     {
       "description": "Plan FDR procedure and robustness execution scripts",
       "id": "T-011",
       "priority": 2,
-      "status": "completed"
-    },
-    {
-      "description": "Execute confirmatory HC3 OLS per frozen PAP",
-      "id": "T-012",
-      "priority": 2,
-      "status": "completed"
-    },
-    {
-      "description": "Apply Benjamini-Hochberg FDR for confirmatory hypotheses",
-      "id": "T-013",
-      "priority": 1,
-      "status": "completed"
-    },
-    {
-      "description": "Execute pre-specified robustness checks for HYP-001 and HYP-003",
-      "id": "T-014",
-      "priority": 2,
-      "status": "completed"
-    },
-    {
-      "description": "Draft confirmatory findings and update manuscript parity",
-      "id": "T-015",
-      "priority": 3,
-      "status": "completed"
-    },
-    {
-      "description": "Diagnose CSA-anxiety directionality and coding assumptions",
-      "id": "T-016",
-      "priority": 2,
-      "status": "completed"
-    },
-    {
-      "description": "Review anxiety item coding and routing documentation",
-      "id": "T-017",
-      "priority": 2,
-      "status": "completed"
-    },
-    {
-      "description": "Contextualize CSA-anxiety findings with literature synthesis",
-      "id": "T-018",
-      "priority": 3,
-      "status": "completed"
-    },
-    {
-      "description": "Draft measurement diagnostic plan for CSA-anxiety anomaly",
-      "id": "T-019",
-      "priority": 2,
-      "status": "completed"
-    },
-    {
-      "description": "Identify subgroup heterogeneity tests for anxiety outcome",
-      "id": "T-020",
-      "priority": 3,
-      "status": "pending"
-    },
-    {
-      "description": "Implement ordinal DIF analysis for anxiety item (CSA \u00d7 gender)",
-      "id": "T-021",
-      "priority": 1,
-      "status": "completed"
-    },
-    {
-      "description": "Assess convergent validity across anxiety, depression, self-love",
-      "id": "T-022",
-      "priority": 2,
       "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-04T09:39:05.889403+00:00",
-  "loop_counter": 17,
+  "last_updated": "2025-11-03T22:45:00+00:00",
+  "loop_counter": 8,
   "next_actions": [
     {
-      "description": "Identify subgroup heterogeneity tests for anxiety outcome",
-      "id": "T-020",
-      "priority": 3
-    },
-    {
-      "description": "Assess convergent validity across anxiety, depression, self-love",
-      "id": "T-022",
-      "priority": 2
+      "description": "Freeze PAP and tag reproducibility checkpoint",
+      "id": "T-010",
+      "priority": 1
     }
   ],
-  "notes": "PAP frozen (HYP-001, HYP-003); BH q-values applied and robustness suite executed 2025-11-04T09:25Z. Findings report v0.3 adds literature synthesis contextualizing CSA-anxiety sign reversal. Semantic Scholar queries stored under lit/queries. Measurement diagnostic plan (T-019) completed; upcoming work: subgroup heterogeneity (T-020) and convergence checks (T-022). DIF module (T-021) executed; CSA x gender interaction non-significant.",
-  "pap_status": "frozen",
+  "notes": "Confirmatory OLS skeleton implemented for HYP-001 and HYP-003; PAP now contains explicit model equations and command paths.",
+  "pap_status": "draft",
   "priority_hypotheses": [
     "HYP-001",
     "HYP-003"

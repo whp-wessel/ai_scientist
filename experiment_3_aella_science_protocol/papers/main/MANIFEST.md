@@ -35,8 +35,8 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
 ## Outstanding tasks
-1. Identify subgroup heterogeneity tests for anxiety outcome (backlog T-020, pending).
-2. Assess convergent validity of the anxiety item with companion affect measures (backlog T-022, pending).
+1. Assess convergent validity of the anxiety item with companion affect measures (backlog T-022, pending).
+2. Implement exploratory CSA×(cis, age, class) interaction analyses and archive QC outputs (new backlog items to be queued).
 
 ## Measurement diagnostics plan
 - Command:  
@@ -45,6 +45,9 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - DIF execution (2025-11-04T09:36Z):  
   `python analysis/code/test_anxiety_dif.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --outcome "I tend to suffer from anxiety (npvfh98)-neg" --csa CSA_score_indicator --group gender --group-value-column gendermale --out-table tables/diagnostics/anxiety_dif.csv --out-md qc/anxiety_dif.md`  
   Outputs: `tables/diagnostics/anxiety_dif.csv`, `qc/anxiety_dif.md`
+- Subgroup summary (2025-11-04T09:57Z):  
+  `python analysis/code/anxiety_subgroup_summary.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --out-table tables/diagnostics/anxiety_subgroup_summary.csv --out-md qc/anxiety_subgroup_summary.md`  
+  Outputs: `tables/diagnostics/anxiety_subgroup_summary.csv`, `qc/anxiety_subgroup_summary.md`
 
 ### Notes (2025-11-04T13:36Z)
 - Findings report advanced to v0.3 with literature synthesis; manuscript updated in lockstep.
