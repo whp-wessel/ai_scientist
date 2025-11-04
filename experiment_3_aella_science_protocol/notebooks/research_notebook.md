@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-04T09:25:35Z | Seed: 20251016
+Updated: 2025-11-04T13:15:00Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -64,3 +64,7 @@ Group means show CSA-exposed respondents average −1.50 vs −0.64 for non-expo
 Confirmed the instrument-coded column `npvfh98` aligns with a centred −3 to +3 agreement scale, with coverage ≈99.96% and no detected routing flags; alias column `I tend to suffer from anxiety -neg` is identical. Missingness remains below the disclosure threshold (<10) and mirrors other mental-health items. Findings recorded in `qc/anxiety_item_routing.md` and summary table `tables/diagnostics/anxiety_item_review.csv`.
 
 2025-11-04T12:28Z (Literature) — Contextualized the CSA-anxiety sign reversal by querying Semantic Scholar. To avoid rate limits, ran `sleep 120 && curl -s 'https://api.semanticscholar.org/graph/v1/paper/search?query=childhood%20sexual%20abuse%20anxiety%20adult&limit=3&fields=title,authors,year,venue,url,journal,externalIds'` (stored in `lit/queries/20251104_semanticscholar_csa_anxiety_adult.json`) and `sleep 120 && curl -s 'https://api.semanticscholar.org/graph/v1/paper/search?query=childhood%20sexual%20abuse%20anxiety%20depression%20network%20analysis&limit=1&fields=title,authors,year,venue,url,journal,externalIds,abstract'` (stored in `lit/queries/20251104_semanticscholar_csa_anxiety_network.json`); documented meta-query results manually in `lit/queries/20251104_semanticscholar_csa_anxiety_meta.json` due to intermittent 429 responses. Summarized high-quality syntheses (Lindert et al. 2014; Hashim et al. 2024) and a network study (Li et al. 2023) showing elevated anxiety burden among CSA survivors. Updated `lit/bibliography.bib`, `lit/bibliography.json`, and `lit/evidence_map.csv`; added interpretive narrative to `reports/findings_v0.3.md` and synchronized `papers/main/manuscript.tex`.
+
+2025-11-04T13:15Z (QC Plan) — Formalised the CSA–anxiety measurement diagnostic roadmap via\
+`python analysis/code/create_csa_anxiety_measurement_plan.py --config config/agent_config.yaml --out-md qc/csa_anxiety_measurement_plan.md --generated-at 2025-11-04T13:15:00Z`.\
+Plan structures modules for polarity verification, category audit, convergent validity, DIF, and sensitivity recodes; queued follow-up tasks T-021/T-022 to operationalise modules M3–M4. Artifact: `qc/csa_anxiety_measurement_plan.md`.

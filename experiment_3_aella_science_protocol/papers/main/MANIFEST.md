@@ -35,12 +35,18 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
 ## Outstanding tasks
-1. Draft measurement diagnostic plan for the CSA-anxiety anomaly (backlog T-019, pending).
-2. Identify subgroup heterogeneity tests for anxiety outcome (backlog T-020, pending).
+1. Identify subgroup heterogeneity tests for anxiety outcome (backlog T-020, pending).
+2. Implement ordinal DIF analysis for the anxiety item (backlog T-021, pending).
+3. Assess convergent validity of the anxiety item with companion affect measures (backlog T-022, pending).
 
-### Notes (2025-11-04T12:32Z)
+## Measurement diagnostics plan
+- Command:  
+  `python analysis/code/create_csa_anxiety_measurement_plan.py --config config/agent_config.yaml --out-md qc/csa_anxiety_measurement_plan.md --generated-at 2025-11-04T13:15:00Z`
+- Output: `qc/csa_anxiety_measurement_plan.md`
+
+### Notes (2025-11-04T13:15Z)
 - Findings report advanced to v0.3 with literature synthesis; manuscript updated in lockstep.
 - Semantic Scholar queries stored under `lit/queries/` (see reproducibility notes) with bibliography/evidence map refreshed to cite Lindert et al. 2014, Hashim et al. 2024, and Li et al. 2023.
-- CSA-anxiety diagnostics remain documented in `qc/csa_anxiety_direction.md`; follow-up tasks T-019/T-020 will address measurement and subgroup exploration.
+- CSA–anxiety measurement diagnostic plan recorded in `qc/csa_anxiety_measurement_plan.md`; backlog updated to prioritise DIF (T-021) and convergence (T-022) analyses alongside subgroup heterogeneity planning (T-020).
 
 > **Note:** Any deviation from the frozen PAP requires an amendment documented in both the decision log and this manifest, with updated tags.
