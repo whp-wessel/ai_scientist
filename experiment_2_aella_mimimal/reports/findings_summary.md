@@ -9,6 +9,7 @@
 - Survey-weight metadata remain unavailable; analyses treat the file as a simple random sample (SRS) with Taylor linearized standard errors.
 - Weighting placeholders in `docs/survey_design.yaml` and `config/agent_config.yaml` document this assumption and will be revised once calibrated weights, strata, and PSU identifiers arrive.
 - Design checks and sponsor communications are logged in `reports/design_metadata_brief.md` and `reports/sponsor_follow_up.md`.
+- Proxy calibration targets from the 2023 ACS (sex and age margins) now live in `docs/calibration_targets.yaml`. Deterministic pseudo-weights are generated via `python scripts/generate_pseudo_weights.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --targets docs/calibration_targets.yaml --out tables/pseudo_weights.csv --manifest artifacts/pseudo_weight_manifest.json`; convergence diagnostics are recorded in `artifacts/pseudo_weight_manifest.json`.
 
 ## H1: Active Religion Practice by Biological Sex
 - Source tables: `tables/h1_religion_by_biomale.csv`, `tables/h1_religion_by_biomale_diff.csv` (manifest in `artifacts/h1_religion_by_biomale_manifest.json`).

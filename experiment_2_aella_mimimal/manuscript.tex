@@ -21,6 +21,17 @@ We examine links between biological sex, active religious practice, and adult ha
 \section{Data and Design Context}
 Sponsor-delivered files currently lack calibrated weights, strata, and primary sampling unit identifiers as documented in \texttt{docs/survey_design.yaml}. All estimates therefore assume equal-probability sampling. Design metadata gaps and sponsor follow-up requests are summarized in \texttt{reports/design_metadata_brief.md} and \texttt{reports/sponsor_follow_up.md}.
 
+Scenario 1 (proxy weight calibration) now incorporates documented control totals in \texttt{docs/calibration_targets.yaml}, derived from the 2023 American Community Survey sex and age margins. Deterministic pseudo-weights are generated via:
+\begin{verbatim}
+python scripts/generate_pseudo_weights.py \
+  --csv childhoodbalancedpublic_original.csv \
+  --config config/agent_config.yaml \
+  --targets docs/calibration_targets.yaml \
+  --out tables/pseudo_weights.csv \
+  --manifest artifacts/pseudo_weight_manifest.json
+\end{verbatim}
+The manifest (\texttt{artifacts/pseudo_weight_manifest.json}) records convergence diagnostics and confirms that every calibration cell contains at least 10 respondents.
+
 \section{Methods}
 \subsection{H1: Active Religion Practice by Biological Sex}
 Outcome: indicator for actively practicing a religion (recode $\texttt{religion} > 0$).\\
@@ -77,7 +88,7 @@ Bonferroni-adjusted pairwise differences:
 Interpretation: Strict childhood religious environments correlate with higher adult happiness change, whereas moderate strictness lags the other terciles.
 
 \section{Discussion and Next Steps}
-Results depend on the temporary SRS assumption; revisit once sponsor supplies calibrated weights and replicate design metadata. A deterministic sensitivity roadmap (\texttt{analysis/sensitivity_plan.md}, generated via \texttt{python scripts/generate_sensitivity_plan.py --out analysis/sensitivity_plan.md --timestamp 2025-11-04T08:24:44Z}) covers Scenario 0 (SRS benchmark), Scenario 1 (proxy weight calibration), Scenario 2 (design-effect multiplier grid), and Scenario 3 (pseudo-replicate construction). Near-term tasks T-013 through T-015 operationalize these scenarios while T-012 advances H-003 exploratory work. Maintain feature parity between this LaTeX document and the Markdown manuscript in \texttt{reports/manuscript.md} before submission.
+Results depend on the temporary SRS assumption; revisit once sponsor supplies calibrated weights and replicate design metadata. A deterministic sensitivity roadmap (\texttt{analysis/sensitivity_plan.md}, generated via \texttt{python scripts/generate_sensitivity_plan.py --out analysis/sensitivity_plan.md --timestamp 2025-11-04T08:24:44Z}) covers Scenario 0 (SRS benchmark), Scenario 1 (proxy weight calibration), Scenario 2 (design-effect multiplier grid), and Scenario 3 (pseudo-replicate construction). Scenario 1 pseudo-weight calibration (T-013) is complete; Scenario 2 (T-014) and Scenario 3 (T-015) will leverage the new weights, while T-012 advances H-003 exploratory work. Maintain feature parity between this LaTeX document and the Markdown manuscript in \texttt{reports/manuscript.md} before submission.
 
 \section{Reproducibility and Data Governance}
 All commands above rely on deterministic scripts and the shared seed 20251016. Source tables reside in \texttt{tables/h1_religion_by_biomale*.csv} and \texttt{tables/h2_happiness_by_religion_strictness*.csv} with manifests in \texttt{artifacts/}. Privacy policy: suppress estimates derived from fewer than 10 respondents; current tables meet this criterion.

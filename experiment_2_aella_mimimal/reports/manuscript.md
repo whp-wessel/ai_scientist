@@ -10,6 +10,18 @@ We examine links between biological sex, active religious practice, and adult ha
 ## Data and Design Context
 Sponsor-delivered files currently lack calibrated weights, strata, and primary sampling unit identifiers (`docs/survey_design.yaml`). All estimates therefore assume equal-probability sampling. Design metadata gaps and sponsor follow-up requests are summarized in `reports/design_metadata_brief.md` and `reports/sponsor_follow_up.md`.
 
+Scenario 1 (proxy weight calibration) now includes documented control totals (`docs/calibration_targets.yaml`) derived from the 2023 American Community Survey (ACS) sex and age margins. We generate deterministic pseudo-weights with:
+
+```bash
+python scripts/generate_pseudo_weights.py \
+  --csv childhoodbalancedpublic_original.csv \
+  --config config/agent_config.yaml \
+  --targets docs/calibration_targets.yaml \
+  --out tables/pseudo_weights.csv \
+  --manifest artifacts/pseudo_weight_manifest.json
+```
+The manifest (`artifacts/pseudo_weight_manifest.json`) logs convergence diagnostics and verifies that all calibration cells contain at least 10 respondents.
+
 ## Methods
 ### H1: Active Religion Practice by Biological Sex
 - Outcome: indicator for actively practicing a religion (recode `religion > 0`).
@@ -64,7 +76,7 @@ Sponsor-delivered files currently lack calibrated weights, strata, and primary s
 ## Discussion and Next Steps
 - Results depend on the temporary SRS assumption; revisit once sponsor supplies calibrated weights and replicate design metadata.
 - A deterministic sensitivity roadmap (`analysis/sensitivity_plan.md`, generated via `python scripts/generate_sensitivity_plan.py --out analysis/sensitivity_plan.md --timestamp 2025-11-04T08:24:44Z`) outlines Scenario 0 (SRS benchmark), Scenario 1 (proxy weight calibration), Scenario 2 (design-effect multiplier grid), and Scenario 3 (pseudo-replicate construction).
-- Near-term tasks T-013 through T-015 operationalize these scenarios while T-012 advances H-003 exploratory work.
+- Scenario 1 pseudo-weight calibration (T-013) is complete; Scenario 2 (T-014) and Scenario 3 (T-015) will build on the new weights, while T-012 advances H-003 exploratory work.
 - Update `manuscript.tex` in lockstep with this Markdown file; both documents should reflect identical narrative content before submission.
 
 ## Reproducibility and Data Governance

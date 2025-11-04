@@ -5,6 +5,7 @@
 - **Literature:** Prefer the Semantic Scholar API (no authentication required for typical usage) and log queries; fall back to general web search only with rationale.
 - **Defaults:** Use `config/agent_config.yaml` as the single source for seeds, budgets, and thresholds.
 - **Version control:** Commit after major artifacts (PAP, results, reports, backlog) so the reproducibility record aligns with git.
+- **File updates:** Apply edits incrementally—whenever you change a file, include its complete new content in the same response via the `files` array. Never stage mega-payloads or use `artifacts/codex_tmp/` or `final_payload*.json`.
 
 ## Runner Prompt Templates
 The runner reads the following prompt blocks from this document at runtime. Keep markers intact.
@@ -87,6 +88,8 @@ EARLY-STOP RULES YOU MUST APPLY
 - If PII risk, missing required survey design when codebook references weights, or repo is read-only => set stop_now=true with stop_reason.
 <!--END PROMPT:BOOTSTRAP_USER-->
 
+Only include files that actually changed this turn. Do not emit auxiliary payload files (e.g., `artifacts/codex_tmp/*`, `final_payload*.json`); the runner writes updates from `files` immediately.
+
 ### Loop System Prompt
 <!--PROMPT:LOOP_SYSTEM-->
 You are a research automation agent continuing a survey-science workflow.
@@ -124,3 +127,5 @@ dataset: childhoodbalancedpublic_original.csv (don't edit this file, you can dup
 
 Return ONLY the JSON block per schema (files, decision_log_row, next_actions, state_update, git, stop_now, stop_reason, signals).
 <!--END PROMPT:LOOP_USER_TEMPLATE-->
+
+Remember: edit files in-place via the `files` list each turn; never defer work to a final aggregated payload.

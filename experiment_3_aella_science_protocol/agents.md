@@ -62,6 +62,11 @@ Within the provided survey dataset, conduct rigorous, reproducible social‑scie
 - Manuscripts must cite the git commit SHA and PAP commit/tag used to generate results.
 - When PAPs are frozen, record a commit/tag and include it in `MANIFEST.md`.
 
+## File Update Protocol
+- Apply edits incrementally. Whenever you change a file, include its complete updated content in the same response via the `files` list.
+- Only include files touched during the current turn; avoid aggregating the entire project into a single end-of-run payload.
+- Never write intermediate payloads such as `artifacts/codex_tmp/*` or `final_payload*.json`. The runner applies the `files` entries immediately.
+
 ## Multi‑paper Planning
 - Split into multiple papers when ≥2 non‑overlapping hypothesis families have distinct primary outcomes/audiences. Move relevant hypotheses to the new `<slug>`.
 - Guardrail: a hypothesis can appear in **one** confirmatory PAP at a time.
@@ -212,6 +217,8 @@ EARLY-STOP RULES YOU MUST APPLY
 - If PII risk, missing required survey design when codebook references weights, or repo is read-only => set stop_now=true with stop_reason.
 <!--END PROMPT:BOOTSTRAP_USER-->
 
+Only include files changed in the current turn. Do not emit auxiliary payloads like `artifacts/codex_tmp/*` or `final_payload*.json`; rely solely on the `files` list.
+
 ### Loop System Prompt
 <!--PROMPT:LOOP_SYSTEM-->
 You are a research automation agent continuing a survey-science workflow.
@@ -249,3 +256,5 @@ dataset: childhoodbalancedpublic_original.csv (don't edit this file, you can dup
 
 Return ONLY the JSON block per schema (files, decision_log_row, next_actions, state_update, git, stop_now, stop_reason, signals).
 <!--END PROMPT:LOOP_USER_TEMPLATE-->
+
+Reminder: make edits incrementally through the `files` list each turn; never defer changes to a final aggregated payload.

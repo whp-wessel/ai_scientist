@@ -64,26 +64,67 @@
       "description": "Plan FDR procedure and robustness execution scripts",
       "id": "T-011",
       "priority": 2,
-      "status": "in_progress"
+      "status": "completed"
     },
     {
       "description": "Run confirmatory models for HYP-001 and HYP-003 per frozen PAP",
       "id": "T-012",
       "priority": 1,
       "status": "completed"
+    },
+    {
+      "description": "Integrate robustness outputs into confirmatory reporting and update results flags",
+      "id": "T-013",
+      "priority": 1,
+      "status": "completed"
+    },
+    {
+      "description": "Update findings report and manuscript with FDR-adjusted estimates and robustness narrative",
+      "id": "T-014",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Synthesize robustness QC outputs and archive summary memo",
+      "id": "T-015",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Plan CSA-anxiety scale diagnostics and subgroup heterogeneity checks",
+      "id": "T-016",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Execute convergent validity diagnostics for anxiety item (Module M3)",
+      "id": "T-017",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "description": "Develop CSA-anxiety interaction scripts and QC templates",
+      "id": "T-018",
+      "priority": 3,
+      "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-04T10:20:30.098941+00:00",
-  "loop_counter": 20,
+  "last_updated": "2025-11-04T14:05:00Z",
+  "loop_counter": 23,
   "next_actions": [
     {
-      "description": "Plan FDR procedure and robustness execution scripts",
-      "id": "T-011",
+      "description": "Execute convergent validity diagnostics for anxiety item (Module M3)",
+      "id": "T-017",
       "priority": 2
+    },
+    {
+      "description": "Develop CSA-anxiety interaction scripts and QC templates",
+      "id": "T-018",
+      "priority": 3
     }
   ],
-  "notes": "PAP frozen 2025-11-04T10:06Z; confirmatory HC3 OLS executed 2025-11-04T10:17Z with seed 20251016. FDR adjustment archived to tables/fdr_adjustment_confirmatory.csv. Next: finalize robustness automation per PAP and document outputs.",
+  "notes": "PAP frozen 2025-11-04T10:06Z; confirmatory HC3 OLS executed 2025-11-04T10:17Z with seed 20251016. FDR adjustment archived to tables/fdr_adjustment_confirmatory.csv. Robustness memo `qc/robustness_summary.md` and CSA-anxiety diagnostics plan `analysis/csa_anxiety_diagnostics_plan.md` recorded 2025-11-04T14:05Z. Next: execute convergent validity diagnostics (T-017) and build CSA interaction scripts/QC templates (T-018).",
   "pap_status": "frozen",
   "priority_hypotheses": [
     "HYP-001",

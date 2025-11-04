@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-04T10:19:29Z | Seed: 20251016
+Updated: 2025-11-04T14:05:00Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -47,3 +47,10 @@ Outputs: `analysis/results.csv` (timestamp 2025-11-04T10:17:40Z) with HC3 OLS co
 2025-11-04T10:18Z (Adjustment) — Applied Benjamini–Hochberg corrections via \
 `python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --audit-table tables/fdr_adjustment_confirmatory.csv`. \
 `analysis/results.csv` now records q-values (equal to p due to two-test family), and `tables/fdr_adjustment_confirmatory.csv` archives the BH audit trace. Robustness automation remains queued (Task T-011 follow-up).
+
+2025-11-04T10:30Z (Planning) — Finalised Task T-011 by authoring `analysis/fdr_robustness_execution_plan.md`, detailing deterministic commands for BH adjustment and pre-registered robustness checks. \
+Documented combined execution command (FDR + robustness) and QC expectations; linked outputs (`tables/fdr_adjustment_confirmatory.csv`, `tables/robustness/robustness_checks_summary.csv`, `qc/hyp-*.md`) and seed 20251016. Notebook entry ensures reproducibility trace to the plan.
+
+2025-11-04T10:38Z (Confirmatory Reporting) — Reviewed `tables/robustness/robustness_checks_summary.csv` and updated `analysis/results.csv` (robustness_passed, limitations, confidence ratings) to reflect pre-registered checks. Refreshed `reports/findings_v0.4.md` + `papers/main/manuscript.tex` to incorporate robustness narrative and BH-adjusted interpretation while keeping commands listed in reproducibility notes unchanged.
+
+2025-11-04T14:05Z (QC) — Synthesised robustness outputs in `qc/robustness_summary.md`, drawing on `tables/robustness/robustness_checks_summary.csv` (seed 20251016) to document effect stability across Helmert, ordinal-logit, z-score, tail-trim, and logistic recodes. Authored `analysis/csa_anxiety_diagnostics_plan.md` to scope convergent-validity and subgroup-interaction diagnostics (new tasks T-017, T-018). Updated `papers/main/MANIFEST.md` notes and backlog to reflect upcoming modules.

@@ -1,13 +1,38 @@
-timestamp_utc: 2025-11-04T10:16:31.277053+00:00
+timestamp_utc: 2025-11-04T20:19:29.185403+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
-platform: macOS-26.0.1-arm64-arm-64bit
+platform: macOS-26.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_3_aella_science_protocol
 model: gpt-5-codex
 seed: 20251016
-git_head: 65ac47e14f5557dde8064813d015e7329faf0e47
+git_head: e529929fa1b964b80839486d3128b669d95207aa
 git_status: |
   ## main...origin/main
+   M ../experiment_1_aella_stopped_midway/agents.md
+   M ../experiment_1_aella_stopped_midway/runner.py
+   M ../experiment_2_aella_mimimal/agents.md
+   M ../experiment_2_aella_mimimal/artifacts/repro_report.md
+   M ../experiment_2_aella_mimimal/artifacts/session_info.txt
+   M ../experiment_2_aella_mimimal/runner.py
+   M agents.md
+   M analysis/decision_log.csv
+   M analysis/results.csv
    M artifacts/last_commit.txt
+   M artifacts/last_model_raw.txt
+   M artifacts/repro_report.md
+   M artifacts/session_info.txt
+   M artifacts/state.json
+   M notebooks/research_notebook.md
+   M papers/main/MANIFEST.md
+   M papers/main/manuscript.tex
+   M runner.py
+   M tmp_final_output.json
+  ?? ../experiment_1_aella_stopped_midway/resume.py
+  ?? ../experiment_2_aella_mimimal/__pycache__/
+  ?? __pycache__/
+  ?? analysis/fdr_robustness_execution_plan.md
+  ?? artifacts/invalid_json_loop_021.txt
+  ?? artifacts/invalid_json_loop_022.txt
+  ?? reports/findings_v0.4.md
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15
