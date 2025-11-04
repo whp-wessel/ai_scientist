@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-03T22:05:00Z | Seed: 20251016
+Updated: 2025-11-04T10:19:29Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -39,3 +39,11 @@ Output dataset stored at `data/clean/childhoodbalancedpublic_with_csa_indicator.
 
 2025-11-04T10:06Z (Checkpoint) — Froze PAP (`analysis/pre_analysis_plan.md`) for HYP-001 & HYP-003 after confirming code paths and SRS rationale; logged regeneration commands and seed usage. Refreshed reproducibility checkpoints with \
 `python analysis/code/update_repro_checkpoints.py --config config/agent_config.yaml --data data/raw/childhoodbalancedpublic_original.csv --data data/clean/childhoodbalancedpublic_with_csa_indicator.csv`, producing updated `artifacts/session_info.txt` and `artifacts/checksums.json`. `papers/main/MANIFEST.md` now references the frozen timestamp and queued commands for FDR and robustness scripts. Next actions: execute confirmatory models per frozen command, then apply FDR and robustness pipeline.
+
+2025-11-04T10:17Z (Confirmatory) — Patched `analysis/code/confirmatory_models.py` to align HC3 outputs with labeled exogenous names, then executed the frozen command: \
+`python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --results-csv analysis/results.csv --hypotheses HYP-001 HYP-003 --overwrite`. \
+Outputs: `analysis/results.csv` (timestamp 2025-11-04T10:17:40Z) with HC3 OLS coefficients for HYP-001 (β = 0.181, SE = 0.012) and HYP-003 (β = −0.491, SE = 0.037); seed 20251016 logged in-file. Pending robustness checks remain flagged `N`.
+
+2025-11-04T10:18Z (Adjustment) — Applied Benjamini–Hochberg corrections via \
+`python analysis/code/fdr_adjust.py --results analysis/results.csv --hypotheses analysis/hypotheses.csv --config config/agent_config.yaml --family-scope confirmatory --audit-table tables/fdr_adjustment_confirmatory.csv`. \
+`analysis/results.csv` now records q-values (equal to p due to two-test family), and `tables/fdr_adjustment_confirmatory.csv` archives the BH audit trace. Robustness automation remains queued (Task T-011 follow-up).

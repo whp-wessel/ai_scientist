@@ -1,6 +1,6 @@
 # Findings Report v0.3
 Version: 0.3.0 (literature contextualization)  
-Updated: 2025-11-04T12:32Z | Seed: 20251016
+Updated: 2025-11-04T11:19Z | Seed: 20251016
 
 > **Parity requirement:** Keep this Markdown report in sync with `papers/main/manuscript.tex`. Any change here must be mirrored in LaTeX during the same commit.
 
@@ -9,6 +9,7 @@ Updated: 2025-11-04T12:32Z | Seed: 20251016
 - Logged Semantic Scholar query outputs under `lit/queries/` for reproducibility.
 - Updated evidence map and bibliography to replace bootstrap placeholders.
 - Executed CSA × gender DIF diagnostic for the anxiety item and archived outputs.
+- Patched confirmatory HC3 extraction to preserve label indexing and re-ran PAP models with BH audit table archived.
 
 ## Abstract
 Confirmatory analyses (n = 14,436) indicate that each one-step increase in childhood class corresponds to a 0.18-point rise in adult self-love on the 7-point agreement scale (95% CI [0.16, 0.20], q approx 3.9e-51), roughly 0.10 standard deviations. Contrary to the preregistered direction, respondents reporting any childhood sexual abuse agreement average 0.49 points lower on the anxiety agreement scale (95% CI [-0.56, -0.42], q approx 6.9e-41), about a quarter of a standard deviation. All estimates rely on HC3 OLS under a simple random sampling assumption and are reproducible with seed 20251016.

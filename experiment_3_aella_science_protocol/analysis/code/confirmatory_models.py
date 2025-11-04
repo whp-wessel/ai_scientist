@@ -207,10 +207,21 @@ def run_model_for_spec(df: pd.DataFrame, spec: HypothesisSpec) -> Dict[str, obje
     robust = fitted.get_robustcov_results(cov_type="HC3")
 
     term = spec.predictor_term()
-    estimate = robust.params[term]
-    se = robust.bse[term]
-    ci_low, ci_high = robust.conf_int(alpha=0.05).loc[term]
-    p_value = robust.pvalues[term]
+    exog_names = list(robust.model.exog_names)
+    params = pd.Series(robust.params, index=exog_names)
+    bse = pd.Series(robust.bse, index=exog_names)
+    conf_int = pd.DataFrame(
+        robust.conf_int(alpha=0.05),
+        index=exog_names,
+        columns=["ci_low", "ci_high"],
+    )
+    pvalues = pd.Series(robust.pvalues, index=exog_names)
+
+    estimate = params[term]
+    se = bse[term]
+    ci_low = conf_int.loc[term, "ci_low"]
+    ci_high = conf_int.loc[term, "ci_high"]
+    p_value = pvalues[term]
 
     n_unweighted = len(subset)
 
