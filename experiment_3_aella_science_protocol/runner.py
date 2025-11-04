@@ -133,6 +133,72 @@ def _record_invalid_json(tag: str, payload: str) -> Path:
     return path
 
 
+def _load_tmp_payload(attempt_started_at: float, primary: Optional[str] = None) -> Optional[str]:
+    """Load JSON emitted via artifacts/codex_tmp for the current attempt."""
+
+    tmp_dir = REPO / "artifacts" / "codex_tmp"
+    sources: list[str] = []
+    if primary:
+        sources.append(primary)
+
+    def _read_file(path: Path) -> Optional[str]:
+        if not path.exists():
+            return None
+        try:
+            mtime = path.stat().st_mtime
+        except OSError:
+            return None
+        if mtime + 1e-6 < attempt_started_at:
+            return None
+        try:
+            return path.read_text(encoding="utf-8")
+        except Exception:
+            return None
+
+    for name in sources:
+        text = _read_file(tmp_dir / name)
+        if text is not None:
+            return text
+
+    def _read_chunks(pattern: str, extractor: re.Pattern[str]) -> Optional[str]:
+        chunks: list[tuple[int, Path]] = []
+        for path in tmp_dir.glob(pattern):
+            try:
+                mtime = path.stat().st_mtime
+            except OSError:
+                continue
+            if mtime + 1e-6 < attempt_started_at:
+                continue
+            match = extractor.match(path.name)
+            if not match:
+                continue
+            try:
+                idx = int(match.group(1))
+            except Exception:
+                continue
+            chunks.append((idx, path))
+        if not chunks:
+            return None
+        chunks.sort()
+        parts: list[str] = []
+        for _, path in chunks:
+            try:
+                parts.append(path.read_text(encoding="utf-8"))
+            except Exception:
+                return None
+        return "".join(parts)
+
+    chunk_patterns = [
+        ("payload_part*.txt", re.compile(r"payload_part_?(\d+)\.txt$", re.IGNORECASE)),
+        ("payload_chunk_*.txt", re.compile(r"payload_chunk_(\d+)\.txt$", re.IGNORECASE)),
+    ]
+    for pattern, extractor in chunk_patterns:
+        text = _read_chunks(pattern, extractor)
+        if text is not None:
+            return text
+    return None
+
+
 def run_cmd(cmd, input_bytes=None, check=False):
     proc = subprocess.run(cmd, input=input_bytes, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return proc.returncode, proc.stdout.decode("utf-8", "ignore"), proc.stderr.decode("utf-8", "ignore")
@@ -574,6 +640,7 @@ def do_bootstrap():
     bootstrap_user = get_prompt("BOOTSTRAP_USER")
     parse_failures = 0
     while True:
+        attempt_started = time.time()
         try:
             raw = run_codex_cli(bootstrap_user, bootstrap_system)
         except UserAbort:
@@ -583,15 +650,31 @@ def do_bootstrap():
         (REPO/"artifacts"/"last_model_raw.txt").write_text(raw, encoding="utf-8")
         js = extract_json_block(raw)
         if not js:
-            parse_failures += 1
-            print(f"[bootstrap] parse failure: missing JSON block (attempt {parse_failures}/{MAX_CONSEC_PARSE_FAILS}).")
-            if parse_failures >= MAX_CONSEC_PARSE_FAILS:
-                raise RuntimeError("Bootstrap: could not find JSON block in model output after retries.")
-            continue
+            tmp_js = _load_tmp_payload(attempt_started, "bootstrap_payload.json")
+            if tmp_js:
+                js = tmp_js
+            else:
+                parse_failures += 1
+                print(f"[bootstrap] parse failure: missing JSON block (attempt {parse_failures}/{MAX_CONSEC_PARSE_FAILS}).")
+                if parse_failures >= MAX_CONSEC_PARSE_FAILS:
+                    raise RuntimeError("Bootstrap: could not find JSON block in model output after retries.")
+                continue
+        else:
+            tmp_js = _load_tmp_payload(attempt_started, "bootstrap_payload.json")
+            if tmp_js:
+                js = tmp_js
         try:
             data = json.loads(js)
             break
         except json.JSONDecodeError as err:
+            tmp_js = _load_tmp_payload(attempt_started, "bootstrap_payload.json")
+            if tmp_js and tmp_js != js:
+                try:
+                    data = json.loads(tmp_js)
+                    js = tmp_js
+                    break
+                except json.JSONDecodeError:
+                    pass
             parse_failures += 1
             fragment_path = _record_invalid_json(f"bootstrap_{parse_failures:02d}", js)
             try:
@@ -651,6 +734,7 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
         progress_note += f" Network access={NETWORK_ACCESS}."
     user_prompt = user_prompt + progress_note
 
+    attempt_started = time.time()
     try:
         raw = run_codex_cli(user_prompt, loop_system)
     except UserAbort:
@@ -659,7 +743,10 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
         return True, consecutive_git_fails, consecutive_parse_fails
     (REPO/"artifacts"/"last_model_raw.txt").write_text(raw, encoding="utf-8")
     js = extract_json_block(raw)
-    if not js:
+    tmp_js = _load_tmp_payload(attempt_started, "final_payload.json")
+    if tmp_js:
+        js = tmp_js
+    elif not js:
         print(f"[loop {iter_ix}] parse failure: no JSON fenced block.")
         consecutive_parse_fails += 1
         if consecutive_parse_fails >= MAX_CONSEC_PARSE_FAILS:
@@ -669,6 +756,13 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
     try:
         data = json.loads(js)
     except json.JSONDecodeError as err:
+        tmp_js = _load_tmp_payload(attempt_started, "final_payload.json")
+        if tmp_js and tmp_js != js:
+            try:
+                data = json.loads(tmp_js)
+                js = tmp_js
+            except json.JSONDecodeError:
+                pass
         consecutive_parse_fails += 1
         fragment_path = _record_invalid_json(f"loop_{iter_ix:03d}", js)
         try:

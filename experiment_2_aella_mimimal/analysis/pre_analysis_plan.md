@@ -24,8 +24,10 @@ This document sketches the initial analytic roadmap for the childhood balance pu
 - **Estimand:** Difference in weighted proportions male vs. non-male.
 - **Approach:**
   - Confirm weight and design variables from `docs/survey_design.yaml`.
+  - Recode `religion` as an indicator for any active practice (`religion > 0`) to align with survey response gradations.
   - Use survey-weighted proportion estimates with 95% confidence intervals (Taylor linearization initially).
   - Apply privacy guardrails by suppressing any subgroup estimate with n < 10.
+  - Implement deterministic workflow via `python scripts/analyze_h1_religion_by_biomale.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h1_religion_by_biomale.csv --diff-out tables/h1_religion_by_biomale_diff.csv --manifest artifacts/h1_religion_by_biomale_manifest.json`.
 - **Diagnostics:** Assess missingness in `religion` and `biomale`; compare unweighted vs. weighted proportions.
 
 ### H2 (Priority: Medium)
@@ -41,8 +43,9 @@ This document sketches the initial analytic roadmap for the childhood balance pu
 ## Analysis Workflow Outline
 1. Validate design information (`T-001`).
 2. Produce weighted descriptive summaries for variables in H1 and H2 (`T-002`).
-3. Draft shell scripts for deterministic data processing once design metadata confirmed.
-4. Update manuscript (`manuscript.tex`) after each major analytic milestone to mirror Markdown findings.
+3. Generate deterministic H1 proportion estimates via `scripts/analyze_h1_religion_by_biomale.py` and archive manifests.
+4. Draft shell scripts for deterministic data processing once design metadata confirmed.
+5. Update manuscript (`manuscript.tex`) after each major analytic milestone to mirror Markdown findings.
 
 ## Privacy and Quality Control
 - Enforce minimum cell size of 10 in all tables and plots.

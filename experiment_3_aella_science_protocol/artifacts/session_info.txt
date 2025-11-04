@@ -1,13 +1,50 @@
-timestamp_utc: 2025-11-03T21:01:31.520474+00:00
+timestamp_utc: 2025-11-04T07:56:00.726942+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.0.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_3_aella_science_protocol
 model: gpt-5-codex
 seed: 20251016
-git_head: 8c0ef89540eeca55f33029583aa3e1b8c3f9ff73
+git_head: e3181ff053bfcb304f3e906936ec0ee9a7de046c
 git_status: |
   ## main...origin/main
+   M ../experiment_2_aella_mimimal/analysis/decision_log.csv
+   M ../experiment_2_aella_mimimal/artifacts/last_model_raw.txt
+   M ../experiment_2_aella_mimimal/artifacts/repro_report.md
+   M ../experiment_2_aella_mimimal/artifacts/session_info.txt
+   M ../experiment_2_aella_mimimal/artifacts/state.json
+   M ../experiment_2_aella_mimimal/runner.py
+   M analysis/decision_log.csv
+   M analysis/hypotheses.csv
+   M analysis/pre_analysis_plan.md
+   M artifacts/checksums.json
    M artifacts/last_commit.txt
+   M artifacts/last_model_raw.txt
+   M artifacts/repro_report.md
+   M artifacts/session_info.txt
+   M artifacts/state.json
+   M docs/codebook.json
+   M notebooks/research_notebook.md
+   M runner.py
+  ?? ../experiment_2_aella_mimimal/artifacts/codex_tmp/
+  ?? ../experiment_2_aella_mimimal/artifacts/invalid_json_loop_005.txt
+  ?? ../experiment_2_aella_mimimal/reports/sponsor_follow_up.md
+  ?? ../experiment_2_aella_mimimal/scripts/analyze_h1_religion_by_biomale.py
+  ?? ../experiment_2_aella_mimimal/scripts/generate_sponsor_follow_up.py
+  ?? __pycache__/
+  ?? analysis/code/confirmatory_models.py
+  ?? analysis/code/social_support_missingness.py
+  ?? analysis/code/verify_social_support_equivalence.py
+  ?? artifacts/codex_tmp/.tmpHtXvej/
+  ?? artifacts/codex_tmp/final_payload.json
+  ?? artifacts/invalid_json_loop_006.txt
+  ?? artifacts/invalid_json_loop_007.txt
+  ?? qc/social_support_equivalence.md
+  ?? qc/social_support_feasibility.md
+  ?? tables/social_support_equivalence_distributions.csv
+  ?? tables/social_support_equivalence_summary.csv
+  ?? tables/social_support_equivalence_summary.csv.meta.json
+  ?? tables/social_support_instrument_overlap.csv
+  ?? tables/social_support_missingness.csv
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15

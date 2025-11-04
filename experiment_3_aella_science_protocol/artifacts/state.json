@@ -40,31 +40,44 @@
       "description": "Assess feasibility of social support predictor given 97% missingness",
       "id": "T-007",
       "priority": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "description": "Draft confirmatory model equations/code skeleton for PAP freeze",
       "id": "T-008",
       "priority": 3,
+      "status": "completed"
+    },
+    {
+      "description": "Verify instrument equivalence for social support items (tmt46e6 vs 71mn55g)",
+      "id": "T-009",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Freeze PAP and tag reproducibility checkpoint",
+      "id": "T-010",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "description": "Plan FDR procedure and robustness execution scripts",
+      "id": "T-011",
+      "priority": 2,
       "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-03T21:06:06+00:00",
-  "loop_counter": 5,
+  "last_updated": "2025-11-03T22:45:00+00:00",
+  "loop_counter": 8,
   "next_actions": [
     {
-      "description": "Assess feasibility of social support predictor given 97% missingness",
-      "id": "T-007",
-      "priority": 2
-    },
-    {
-      "description": "Draft confirmatory model equations/code skeleton for PAP freeze",
-      "id": "T-008",
-      "priority": 3
+      "description": "Freeze PAP and tag reproducibility checkpoint",
+      "id": "T-010",
+      "priority": 1
     }
   ],
-  "notes": "CSA indicator derived and documented; next evaluate social support predictor feasibility and prepare confirmatory model skeleton before PAP freeze.",
+  "notes": "Confirmatory OLS skeleton implemented for HYP-001 and HYP-003; PAP now contains explicit model equations and command paths.",
   "pap_status": "draft",
   "priority_hypotheses": [
     "HYP-001",

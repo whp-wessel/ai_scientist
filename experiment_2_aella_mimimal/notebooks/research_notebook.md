@@ -37,3 +37,11 @@
   - `python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv`
 - **Seed:** 20251016 (deterministic scan; no randomness invoked).
 - **Outcome:** Confirmed no new sponsor-provided design metadata files. Script matches only questionnaire columns containing "weight" or "jk" substrings; none correspond to calibrated weights or replicate designs. See `qc/design_metadata_monitor.md` for details.
+
+## Loop 6 - H1 Religion by Sex Estimates
+
+- **Commands:**  
+  - `python scripts/analyze_h1_religion_by_biomale.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h1_religion_by_biomale.csv --diff-out tables/h1_religion_by_biomale_diff.csv --manifest artifacts/h1_religion_by_biomale_manifest.json`
+- **Seed:** 20251016 (set via config; analysis deterministic under SRS assumption).
+- **Outputs:** `tables/h1_religion_by_biomale.csv`, `tables/h1_religion_by_biomale_diff.csv`, `artifacts/h1_religion_by_biomale_manifest.json`.
+- **Notes:** Recast `religion` responses into an "any practice" indicator (`religion > 0`). The SRS-based estimate indicates non-male respondents practice religion at a higher rate than male respondents (difference ≈ -0.058, 95% CI [-0.074, -0.043]). All subgroup counts exceed the privacy threshold (>=10).

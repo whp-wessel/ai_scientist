@@ -282,6 +282,86 @@
         "unique": 2
       },
       "notes": "Binary indicator derived 2025-11-03T21:04:00.464315+00:00 | Seed 20251016 | Source analysis/code/derive_csa_indicator.py (CSA_score > 0)."
+    },
+    {
+      "name": "In general, people in my *current* social circles tend treat me really well (tmt46e6)",
+      "label": "Perceived social support (legacy form variant, tmt46e6)",
+      "question_text": "In general, people in my *current* social circles tend treat me really well.",
+      "analysis_role": "predictor",
+      "type": "ordinal_-3_to_3",
+      "storage": "float64",
+      "allowed_values": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "value_labels": {
+        "-3": "Strongly disagree",
+        "-2": "Disagree",
+        "-1": "Somewhat disagree",
+        "0": "Neutral",
+        "1": "Somewhat agree",
+        "2": "Agree",
+        "3": "Strongly agree"
+      },
+      "missing_codes": [],
+      "summary_stats": {
+        "count": 383.0,
+        "mean": 1.524804177545692,
+        "std": 1.4174624849032713,
+        "min": -3.0,
+        "q1": 1.0,
+        "median": 2.0,
+        "q3": 3.0,
+        "max": 3.0,
+        "n_missing": 14060,
+        "unique": 7
+      },
+      "notes": "Instrument code tmt46e6; routed form with 2.65% coverage. Equivalent wording to 71mn55g aside from missing \\\"to\\\". Equivalence review completed 2025-11-03T22:05:00Z; see qc/social_support_equivalence.md."
+    },
+    {
+      "name": "In general, people in my *current* social circles tend to treat me really well (71mn55g)",
+      "label": "Perceived social support (primary form, 71mn55g)",
+      "question_text": "In general, people in my *current* social circles tend to treat me really well.",
+      "analysis_role": "predictor",
+      "type": "ordinal_-3_to_3",
+      "storage": "float64",
+      "allowed_values": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "value_labels": {
+        "-3": "Strongly disagree",
+        "-2": "Disagree",
+        "-1": "Somewhat disagree",
+        "0": "Neutral",
+        "1": "Somewhat agree",
+        "2": "Agree",
+        "3": "Strongly agree"
+      },
+      "missing_codes": [],
+      "summary_stats": {
+        "count": 14054.0,
+        "mean": 1.6758929842037853,
+        "std": 1.3833517385405563,
+        "min": -3.0,
+        "q1": 1.0,
+        "median": 2.0,
+        "q3": 3.0,
+        "max": 3.0,
+        "n_missing": 389,
+        "unique": 7
+      },
+      "notes": "Instrument code 71mn55g; 97.3% coverage. Verified scale alignment with tmt46e6 on 2025-11-03T22:05:00Z via analysis/code/verify_social_support_equivalence.py; see qc/social_support_equivalence.md."
     }
   ],
   "weights_reference": "docs/survey_design.yaml",

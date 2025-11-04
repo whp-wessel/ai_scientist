@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-03T21:05:45Z | Seed: 20251016
+Updated: 2025-11-03T22:05:00Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -24,3 +24,15 @@ Validated storage types, allowed ranges, and missingness for six analysis variab
 2025-11-03T21:05Z (Derived) — Established canonical data folders (`data/raw`, `data/clean`) and derived CSA exposure indicator via \
 `python analysis/code/derive_csa_indicator.py --dataset data/raw/childhoodbalancedpublic_original.csv --out-dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-distribution tables/csa_indicator_distribution.csv --config config/agent_config.yaml --codebook-in docs/codebook.json --codebook-out docs/codebook.json`.\
 Output dataset stored at `data/clean/childhoodbalancedpublic_with_csa_indicator.csv`; distribution table `tables/csa_indicator_distribution.csv` confirms 22.31% report any CSA (no cells <10). Updated `docs/codebook.json` with new binary predictor metadata and refreshed `artifacts/checksums.json`. PAP robustness section expanded for HYP-001/HYP-003 (see `analysis/pre_analysis_plan.md`).
+
+2025-11-03T21:35Z (Exploratory) — Assessed feasibility of the social support predictor for HYP-004 via \
+`python analysis/code/social_support_missingness.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-csv tables/social_support_missingness.csv --config config/agent_config.yaml`.\
+ Key finding: original item (`...tend treat me really well (tmt46e6)`) covers only 383 respondents (97.35% missing), while an instrument twin (`...tend to treat me really well (71mn55g)`) covers 14,054 respondents. Responses do not overlap, suggesting form-version routing. Recommendation logged in `qc/social_support_feasibility.md` to pivot HYP-004 to the high-coverage item pending instrument confirmation.
+
+2025-11-03T22:05Z (QC) — Verified instrument equivalence across the tmt46e6 and 71mn55g social-support items via \
+`python analysis/code/verify_social_support_equivalence.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-summary tables/social_support_equivalence_summary.csv --out-distribution tables/social_support_equivalence_distributions.csv --out-overlap tables/social_support_instrument_overlap.csv --config config/agent_config.yaml --columns "In general, people in my *current* social circles tend treat me really well (tmt46e6)" "In general, people in my *current* social circles tend to treat me really well (71mn55g)"`.\
+ Findings: identical 7-point scales (−3 to +3), shared prompt wording apart from insertion of “to,” and mutually exclusive routing (no respondents with both non-missing). Distribution tables suppress cells <10 as required. Documented evidence in `qc/social_support_equivalence.md`; updated codebook and hypothesis registry to pivot HYP-004 to instrument 71mn55g.
+
+2025-11-03T22:45Z (Planning) — Drafted confirmatory model equations and executable skeleton via \
+`python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 HYP-003 --results-csv analysis/results.csv --overwrite`.\
+ Outcome: PAP now records explicit model statements for HYP-001 and HYP-003, and hypothesis registry flags them `in_PAP`. The script writes deterministic HC3 OLS outputs seeded at 20251016 and will feed `analysis/results.csv` post-freeze. Next step: freeze PAP and tag commit prior to confirmatory execution.
