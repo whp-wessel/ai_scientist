@@ -7,6 +7,9 @@
     "h2_differences": "tables/h2_happiness_by_religion_strictness_diff.csv",
     "h2_group_stats": "tables/h2_happiness_by_religion_strictness.csv",
     "h2_manifest": "artifacts/h2_religion_strictness_vs_happiness_manifest.json",
+    "h3_group_stats": "tables/h3_networth_work_satisfaction.csv",
+    "h3_differences": "tables/h3_networth_work_satisfaction_diff.csv",
+    "h3_manifest": "artifacts/h3_networth_vs_work_manifest.json",
     "calibration_targets": "docs/calibration_targets.yaml",
     "pseudo_weight_manifest": "artifacts/pseudo_weight_manifest.json",
     "findings_summary": "reports/findings_summary.md",
@@ -88,7 +91,7 @@
       "description": "Prototype exploratory analysis for H-003 (net worth vs work satisfaction)",
       "id": "T-012",
       "priority": 2,
-      "status": "todo"
+      "status": "done"
     },
     {
       "description": "Curate external calibration targets and develop deterministic pseudo-weight script",
@@ -110,18 +113,18 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 10,
+  "loop_counter": 11,
   "next_actions": [
-    {
-      "desc": "Prototype exploratory analysis for H-003 (net worth vs work satisfaction)",
-      "estimate_min": "45m",
-      "id": "T-012",
-      "priority": 2
-    },
     {
       "desc": "Generate design-effect multiplier grid and reporting template",
       "estimate_min": "40m",
       "id": "T-014",
+      "priority": 2
+    },
+    {
+      "desc": "Prototype pseudo-PSU clustering and replicate weight generation",
+      "estimate_min": "45m",
+      "id": "T-015",
       "priority": 2
     }
   ],
@@ -133,6 +136,7 @@
     "exploratory_summaries": "python scripts/exploratory_summaries.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --out tables/summary_key_outcomes.csv",
     "h1_religion_analysis": "python scripts/analyze_h1_religion_by_biomale.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h1_religion_by_biomale.csv --diff-out tables/h1_religion_by_biomale_diff.csv --manifest artifacts/h1_religion_by_biomale_manifest.json",
     "h2_religion_analysis": "python scripts/analyze_h2_religion_strictness_vs_happiness.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h2_happiness_by_religion_strictness.csv --diff-out tables/h2_happiness_by_religion_strictness_diff.csv --manifest artifacts/h2_religion_strictness_vs_happiness_manifest.json",
+    "h3_networth_analysis": "python scripts/analyze_h3_networth_vs_work_satisfaction.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h3_networth_work_satisfaction.csv --diff-out tables/h3_networth_work_satisfaction_diff.csv --manifest artifacts/h3_networth_vs_work_manifest.json",
     "sensitivity_plan": "python scripts/generate_sensitivity_plan.py --out analysis/sensitivity_plan.md --timestamp 2025-11-04T08:24:44Z",
     "sponsor_follow_up": "python scripts/generate_sponsor_follow_up.py --brief reports/design_metadata_brief.md --out reports/sponsor_follow_up.md",
     "pseudo_weight_calibration": "python scripts/generate_pseudo_weights.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --targets docs/calibration_targets.yaml --out tables/pseudo_weights.csv --manifest artifacts/pseudo_weight_manifest.json"

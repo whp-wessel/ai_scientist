@@ -1,0 +1,39 @@
+{
+  "analysis": "H3: Net worth vs. work satisfaction",
+  "command": "python scripts/analyze_h3_networth_vs_work_satisfaction.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h3_networth_work_satisfaction.csv --diff-out tables/h3_networth_work_satisfaction_diff.csv --manifest artifacts/h3_networth_vs_work_manifest.json",
+  "config": "config/agent_config.yaml",
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "design": "docs/survey_design.yaml",
+  "design_assumption": "Treat as simple random sample until sponsor provides design metadata.",
+  "min_cell_size": 10,
+  "outputs": {
+    "group_stats_csv": "tables/h3_networth_work_satisfaction.csv",
+    "difference_csv": "tables/h3_networth_work_satisfaction_diff.csv"
+  },
+  "seed": 20251016,
+  "timestamp_utc": "2025-11-04T20:35:03.302514+00:00",
+  "variance_method": "taylor",
+  "weight_variable": null,
+  "networth_labels": {
+    "-3": "$-100,000 (in debt)",
+    "-2": "$-10,000 (in debt)",
+    "-1": "$-1000 (in debt)",
+    "0": "$0",
+    "1": "$1,000",
+    "2": "$10,000",
+    "3": "$100,000",
+    "4": "$1,000,000",
+    "5": "$10,000,000",
+    "6": "$100,000,000 or more"
+  },
+  "row_counts": {
+    "total_rows": 14436,
+    "unique_networth_groups": 10
+  },
+  "correlations": {
+    "spearman_r": 0.322328,
+    "pearson_r": 0.280833
+  },
+  "baseline_code": -3,
+  "baseline_label": "$-100,000 (in debt)"
+}

@@ -1,6 +1,6 @@
-# Findings Summary: Religion Practice and Happiness (Loop 8)
+# Findings Summary: Religion Practice, Happiness, and Economic Standing (Loop 11)
 
-- Prepared: 2025-11-04T08:17:22Z
+- Prepared: 2025-11-04T20:35:05Z
 - Seed: 20251016 (from `config/agent_config.yaml`)
 - Dataset: `childhoodbalancedpublic_original.csv`
 - Privacy guardrail: suppress cells with n < 10 (all referenced results exceed this threshold).
@@ -30,10 +30,28 @@
   - Tercile 3 - Tercile 1: 0.040 (SE 0.043, 95% CI [-0.062, 0.142]).
 - Respondents with strict childhood religious environments (tercile 3) report the largest positive shift in adult happiness relative to childhood, while moderate strictness (tercile 2) trails both other groups.
 
+## H3: Net Worth vs. Work/Career Satisfaction
+- Source tables: `tables/h3_networth_work_satisfaction.csv`, `tables/h3_networth_work_satisfaction_diff.csv` (manifest in `artifacts/h3_networth_vs_work_manifest.json`).
+- Mean satisfaction (scale -3 to 3) rises with net worth:
+  - Heavy debt ($-100{,}000$ bracket, n = 348): -0.08 (SE 0.11).
+  - Moderate debt ($-10{,}000$, n = 795): -0.72 (SE 0.07).
+  - Net worth $0$ (n = 1,304): -0.84 (SE 0.05).
+  - $100{,}000$ bracket (n = 3,763): 0.60 (SE 0.03).
+  - $1{,}000{,}000$ bracket (n = 2,005): 1.01 (SE 0.04).
+  - $10{,}000{,}000$ bracket (n = 460): 1.30 (SE 0.08).
+  - $100{,}000{,}000$ or more (n = 360): 0.87 (SE 0.11).
+- Differences vs. the lowest bracket:
+  - $-10{,}000$ debt: -0.64 (SE 0.13, 95% CI [-0.89, -0.38]).
+  - $100{,}000$: 0.68 (SE 0.11, 95% CI [0.46, 0.90]).
+  - $1{,}000{,}000$: 1.09 (SE 0.11, 95% CI [0.87, 1.32]).
+  - $10{,}000{,}000$: 1.38 (SE 0.13, 95% CI [1.12, 1.64]).
+- Spearman correlation between net worth code and satisfaction: 0.32 (Pearson: 0.28); all brackets exceed the n ≥ 10 privacy threshold.
+
 ## Reproducibility Notes
 - Regeneration commands:
   - `python scripts/analyze_h1_religion_by_biomale.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h1_religion_by_biomale.csv --diff-out tables/h1_religion_by_biomale_diff.csv --manifest artifacts/h1_religion_by_biomale_manifest.json`
   - `python scripts/analyze_h2_religion_strictness_vs_happiness.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h2_happiness_by_religion_strictness.csv --diff-out tables/h2_happiness_by_religion_strictness_diff.csv --manifest artifacts/h2_religion_strictness_vs_happiness_manifest.json`
+  - `python scripts/analyze_h3_networth_vs_work_satisfaction.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h3_networth_work_satisfaction.csv --diff-out tables/h3_networth_work_satisfaction_diff.csv --manifest artifacts/h3_networth_vs_work_manifest.json`
 - All computations are deterministic under the shared seed (20251016); no additional randomness introduced during reporting.
 - When sponsor-provided design metadata arrive, rerun the scripts above with updated configuration to refresh the results under the final survey design.
 

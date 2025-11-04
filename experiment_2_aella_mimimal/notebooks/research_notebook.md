@@ -59,3 +59,11 @@
 - **Commands:** Documentation updates only; no analytical scripts executed. All referenced results derive from loops 6 and 7 (seed 20251016).
 - **Outputs:** `reports/findings_summary.md`, `reports/manuscript.md`, `manuscript.tex` (synchronized content).
 - **Notes:** Summarized design context (SRS assumption) and integrated H1/H2 findings into both Markdown and LaTeX manuscripts. Recorded regeneration commands alongside each result and checked privacy thresholds (all n ≥ 10). No data transformations or reruns required; relied on previously generated tables in `tables/` and manifests in `artifacts/`.
+
+## Loop 11 - H3 Net Worth vs. Work Satisfaction (T-012)
+
+- **Commands:**  
+  - `python scripts/analyze_h3_networth_vs_work_satisfaction.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h3_networth_work_satisfaction.csv --diff-out tables/h3_networth_work_satisfaction_diff.csv --manifest artifacts/h3_networth_vs_work_manifest.json`
+- **Seed:** 20251016 (deterministic SRS summaries; no stochastic procedures beyond fixed seed tracking).
+- **Outputs:** `tables/h3_networth_work_satisfaction.csv`, `tables/h3_networth_work_satisfaction_diff.csv`, `artifacts/h3_networth_vs_work_manifest.json`.
+- **Notes:** Mapped numeric `networth` codes to modal bracket labels, enforced n ≥ 10 per bracket (minimum n = 235). Work satisfaction rises monotonically with net worth (Spearman r = 0.32). Updated `analysis/hypotheses.csv`, `analysis/pre_analysis_plan.md`, `reports/findings_summary.md`, `reports/manuscript.md`, and `manuscript.tex` to document the new H3 findings.

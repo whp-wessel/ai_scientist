@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-04T14:05:00Z | Seed: 20251016
+Updated: 2025-11-04T20:35:47Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -54,3 +54,7 @@ Documented combined execution command (FDR + robustness) and QC expectations; li
 2025-11-04T10:38Z (Confirmatory Reporting) — Reviewed `tables/robustness/robustness_checks_summary.csv` and updated `analysis/results.csv` (robustness_passed, limitations, confidence ratings) to reflect pre-registered checks. Refreshed `reports/findings_v0.4.md` + `papers/main/manuscript.tex` to incorporate robustness narrative and BH-adjusted interpretation while keeping commands listed in reproducibility notes unchanged.
 
 2025-11-04T14:05Z (QC) — Synthesised robustness outputs in `qc/robustness_summary.md`, drawing on `tables/robustness/robustness_checks_summary.csv` (seed 20251016) to document effect stability across Helmert, ordinal-logit, z-score, tail-trim, and logistic recodes. Authored `analysis/csa_anxiety_diagnostics_plan.md` to scope convergent-validity and subgroup-interaction diagnostics (new tasks T-017, T-018). Updated `papers/main/MANIFEST.md` notes and backlog to reflect upcoming modules.
+
+2025-11-04T20:35Z (Diagnostics) — Executed convergent-validity module for the anxiety item via \
+`python analysis/code/evaluate_anxiety_convergence.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --out-table tables/diagnostics/anxiety_convergence.csv --out-md qc/anxiety_convergence.md --seed 20251016`. \
+Findings: strong positive correlations with depression (r=0.615) and stress (r=0.617) reinforce convergent validity; unexpectedly positive associations with self-love (r=0.368) and calm/peaceful (r=0.383) contradict hypothesised negative direction, flagged for qualitative review in T-018. Polychoric estimates mirror Pearson trends. Reliability: α=0.800 for the negative-affect triad; reversed self-regulation composite yields α=-0.682, indicating divergent constructs. Outputs archived in `tables/diagnostics/anxiety_convergence.csv` and `qc/anxiety_convergence.md`.

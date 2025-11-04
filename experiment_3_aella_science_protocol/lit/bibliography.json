@@ -28,5 +28,15 @@
     "url": "https://doi.org/10.1186/s40359-023-01275-3",
     "accessed": "2025-11-04",
     "note": "Network analysis identifying anxiety symptoms as central among CSA survivors in Chinese university sample."
+  },
+  {
+    "id": "sowislo2013",
+    "title": "Does Low Self-Esteem Predict Depression and Anxiety? A Meta-Analysis of Longitudinal Studies",
+    "authors": ["Julia Friederike Sowislo", "Ulrich Orth"],
+    "year": 2013,
+    "doi": "10.1037/a0028931",
+    "url": "https://doi.org/10.1037/a0028931",
+    "accessed": "2025-11-04",
+    "note": "Meta-analysis showing that lower self-esteem prospectively predicts higher anxiety, informing expectations for negative self-regulation correlations."
   }
 ]

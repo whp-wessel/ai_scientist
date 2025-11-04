@@ -39,8 +39,8 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016 (refreshed 2025-11-04T10:06:22Z)
 - Git reference: record commit SHA after freeze commit/tag; append here during next update.
 
 ## Outstanding tasks
-1. Execute convergent validity diagnostics for the anxiety item with companion affect measures (backlog T-017; maps to WP1 in `analysis/csa_anxiety_diagnostics_plan.md`).
-2. Develop CSA×(cis, age, class) interaction scripts and archive QC outputs (backlog T-018; WP2 in `analysis/csa_anxiety_diagnostics_plan.md`).
+1. Develop CSA×(cis, age, class) interaction scripts and archive QC outputs (backlog T-018; WP2 in `analysis/csa_anxiety_diagnostics_plan.md`).
+2. Interpret unexpected positive associations between anxiety and self-regulation items from convergent diagnostics; determine reporting implications (queue follow-on task).
 
 ## Measurement diagnostics plan
 - Command:  
@@ -52,6 +52,9 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016 (refreshed 2025-11-04T10:06:22Z)
 - Subgroup summary (2025-11-04T09:57Z):  
   `python analysis/code/anxiety_subgroup_summary.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --out-table tables/diagnostics/anxiety_subgroup_summary.csv --out-md qc/anxiety_subgroup_summary.md`  
   Outputs: `tables/diagnostics/anxiety_subgroup_summary.csv`, `qc/anxiety_subgroup_summary.md`
+- Convergent validity (2025-11-04T20:35Z):  
+  `python analysis/code/evaluate_anxiety_convergence.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --out-table tables/diagnostics/anxiety_convergence.csv --out-md qc/anxiety_convergence.md --seed 20251016`  
+  Outputs: `tables/diagnostics/anxiety_convergence.csv`, `qc/anxiety_convergence.md`
 - CSA–anxiety diagnostics scope (2025-11-04T14:05Z): `analysis/csa_anxiety_diagnostics_plan.md` — manual plan covering convergent validity (Task T-017) and interaction modelling (Task T-018); future scripts must log seed 20251016 and update this manifest.
 
 ### Notes (2025-11-04T13:36Z)
@@ -67,5 +70,9 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016 (refreshed 2025-11-04T10:06:22Z)
 - Archived `qc/robustness_summary.md` to centralise robustness evidence and reference regeneration commands.
 - Authored `analysis/csa_anxiety_diagnostics_plan.md`, elevating new backlog tasks T-017 (convergent validity) and T-018 (interaction scripting) for execution in subsequent loops.
 - Updated `artifacts/state.json` and `notebooks/research_notebook.md` to reflect the new QC focus areas.
+
+### Notes (2025-11-04T20:35:47Z)
+- Executed convergent validity diagnostics (`tables/diagnostics/anxiety_convergence.csv`, `qc/anxiety_convergence.md`). Depression and stress items show strong positive convergence; self-love and calmness unexpectedly correlate positively with anxiety, prompting interpretive follow-up.
+- Cronbach's α = 0.800 for negative affect triad; reversed self-regulation composite yields negative α, signalling divergent constructs to investigate during interaction scripting (Task T-018).
 
 > **Note:** Any deviation from the frozen PAP requires an amendment documented in both the decision log and this manifest, with updated tags.

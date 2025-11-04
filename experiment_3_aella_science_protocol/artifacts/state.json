@@ -100,31 +100,37 @@
       "description": "Execute convergent validity diagnostics for anxiety item (Module M3)",
       "id": "T-017",
       "priority": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "description": "Develop CSA-anxiety interaction scripts and QC templates",
       "id": "T-018",
       "priority": 3,
       "status": "pending"
+    },
+    {
+      "description": "Investigate unexpected positive self-regulation correlations and document implications",
+      "id": "T-019",
+      "priority": 2,
+      "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-04T14:05:00Z",
-  "loop_counter": 23,
+  "last_updated": "2025-11-04T20:35:47Z",
+  "loop_counter": 24,
   "next_actions": [
-    {
-      "description": "Execute convergent validity diagnostics for anxiety item (Module M3)",
-      "id": "T-017",
-      "priority": 2
-    },
     {
       "description": "Develop CSA-anxiety interaction scripts and QC templates",
       "id": "T-018",
       "priority": 3
+    },
+    {
+      "description": "Investigate unexpected positive self-regulation correlations from convergence diagnostics",
+      "id": "T-019",
+      "priority": 2
     }
   ],
-  "notes": "PAP frozen 2025-11-04T10:06Z; confirmatory HC3 OLS executed 2025-11-04T10:17Z with seed 20251016. FDR adjustment archived to tables/fdr_adjustment_confirmatory.csv. Robustness memo `qc/robustness_summary.md` and CSA-anxiety diagnostics plan `analysis/csa_anxiety_diagnostics_plan.md` recorded 2025-11-04T14:05Z. Next: execute convergent validity diagnostics (T-017) and build CSA interaction scripts/QC templates (T-018).",
+  "notes": "PAP frozen 2025-11-04T10:06Z; confirmatory HC3 OLS executed 2025-11-04T10:17Z with seed 20251016. FDR adjustment archived to tables/fdr_adjustment_confirmatory.csv. Robustness memo `qc/robustness_summary.md` and CSA-anxiety diagnostics plan `analysis/csa_anxiety_diagnostics_plan.md` recorded 2025-11-04T14:05Z. Convergent validity diagnostics executed 2025-11-04T20:35Z; depression/stress align, while self-love/calm positive correlations require follow-up via T-018/T-019.",
   "pap_status": "frozen",
   "priority_hypotheses": [
     "HYP-001",

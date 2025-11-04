@@ -69,7 +69,7 @@ class UserAbort(Exception):
 
 # --- Prompt loading from agents.md ----------------------------------------------
 
-DEFAULT_TOTAL_LOOPS = int(os.environ.get("DEFAULT_TOTAL_LOOPS", "30"))
+DEFAULT_TOTAL_LOOPS = int(os.environ.get("DEFAULT_TOTAL_LOOPS", "50"))
 
 PROMPT_FILE = REPO / "agents.md"
 PROMPT_PATTERN = re.compile(r"<!--PROMPT:([A-Z0-9_]+)-->(.*?)<!--END PROMPT:\1-->", re.DOTALL)

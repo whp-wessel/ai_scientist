@@ -42,12 +42,25 @@ This document sketches the initial analytic roadmap for the childhood balance pu
     `python scripts/analyze_h2_religion_strictness_vs_happiness.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h2_happiness_by_religion_strictness.csv --diff-out tables/h2_happiness_by_religion_strictness_diff.csv --manifest artifacts/h2_religion_strictness_vs_happiness_manifest.json`
 - **Diagnostics:** Explore missing data patterns and perform sensitivity checks with unweighted comparisons.
 
+### H3 (Priority: Medium)
+- **Statement:** Higher current net worth brackets (`networth`) are associated with higher work/career satisfaction (`I am satisfied with my work/career life (or lack thereof) (z0mhd63)`).
+- **Estimand:** Difference in SRS mean satisfaction scores relative to the lowest net worth bracket, plus monotonic trend diagnostics.
+- **Approach:**
+  - Map numeric net worth recodes to modal bracket labels using the original survey wording (`Your CURRENT net worth is closest to (nhoz8ia)`).
+  - Drop respondents missing `networth` or satisfaction values; enforce minimum cell size (n ≥ 10) for every bracket.
+  - Estimate SRS means, standard errors, and 95% CIs by net worth bracket; compute mean differences versus the lowest bracket and report Spearman/Pearson correlations.
+  - Deterministic workflow (seed = 20251016):  
+    `python scripts/analyze_h3_networth_vs_work_satisfaction.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h3_networth_work_satisfaction.csv --diff-out tables/h3_networth_work_satisfaction_diff.csv --manifest artifacts/h3_networth_vs_work_manifest.json`
+- **Diagnostics:** All net worth brackets exceed the privacy threshold (minimum n = 235). Correlation diagnostics retained in the manifest; revisit once calibrated weights become available.
+
 ## Analysis Workflow Outline
 1. Validate design information (`T-001`).
 2. Produce weighted descriptive summaries for variables in H1 and H2 (`T-002`).
 3. Generate deterministic H1 proportion estimates via `scripts/analyze_h1_religion_by_biomale.py` and archive manifests.
-4. Draft shell scripts for deterministic data processing once design metadata confirmed.
-5. Update manuscript (`manuscript.tex`) after each major analytic milestone to mirror Markdown findings.
+4. Develop deterministic H2 tercile comparisons via `scripts/analyze_h2_religion_strictness_vs_happiness.py`.
+5. Prototype H3 net worth vs. work satisfaction analysis via `scripts/analyze_h3_networth_vs_work_satisfaction.py` and review trend diagnostics.
+6. Draft shell scripts for deterministic data processing once design metadata confirmed.
+7. Update manuscript (`manuscript.tex`) after each major analytic milestone to mirror Markdown findings.
 
 ## Privacy and Quality Control
 - Enforce minimum cell size of 10 in all tables and plots.
