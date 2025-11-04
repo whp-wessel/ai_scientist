@@ -36,17 +36,19 @@ Created: 2025-11-04T07:58:50Z | Seed: 20251016
 
 ## Outstanding tasks
 1. Identify subgroup heterogeneity tests for anxiety outcome (backlog T-020, pending).
-2. Implement ordinal DIF analysis for the anxiety item (backlog T-021, pending).
-3. Assess convergent validity of the anxiety item with companion affect measures (backlog T-022, pending).
+2. Assess convergent validity of the anxiety item with companion affect measures (backlog T-022, pending).
 
 ## Measurement diagnostics plan
 - Command:  
   `python analysis/code/create_csa_anxiety_measurement_plan.py --config config/agent_config.yaml --out-md qc/csa_anxiety_measurement_plan.md --generated-at 2025-11-04T13:15:00Z`
 - Output: `qc/csa_anxiety_measurement_plan.md`
+- DIF execution (2025-11-04T09:36Z):  
+  `python analysis/code/test_anxiety_dif.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --outcome "I tend to suffer from anxiety (npvfh98)-neg" --csa CSA_score_indicator --group gender --group-value-column gendermale --out-table tables/diagnostics/anxiety_dif.csv --out-md qc/anxiety_dif.md`  
+  Outputs: `tables/diagnostics/anxiety_dif.csv`, `qc/anxiety_dif.md`
 
-### Notes (2025-11-04T13:15Z)
+### Notes (2025-11-04T13:36Z)
 - Findings report advanced to v0.3 with literature synthesis; manuscript updated in lockstep.
 - Semantic Scholar queries stored under `lit/queries/` (see reproducibility notes) with bibliography/evidence map refreshed to cite Lindert et al. 2014, Hashim et al. 2024, and Li et al. 2023.
-- CSA–anxiety measurement diagnostic plan recorded in `qc/csa_anxiety_measurement_plan.md`; backlog updated to prioritise DIF (T-021) and convergence (T-022) analyses alongside subgroup heterogeneity planning (T-020).
+- CSA–anxiety measurement diagnostic plan recorded in `qc/csa_anxiety_measurement_plan.md`. Ordinal DIF diagnostic (T-021) executed; outputs archived in `tables/diagnostics/anxiety_dif.csv` and `qc/anxiety_dif.md`.
 
 > **Note:** Any deviation from the frozen PAP requires an amendment documented in both the decision log and this manifest, with updated tags.
