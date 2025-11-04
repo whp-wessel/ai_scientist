@@ -1,12 +1,18 @@
-# PAP Draft
+# PAP (Frozen)
 Generated: 2025-11-03T22:05:00Z | Seed: 20251016
-Status: Draft (not frozen) | Regen: `python analysis/code/bootstrap_setup.py --artifact analysis/pre_analysis_plan.md`
+Frozen: 2025-11-04T07:58:50Z | Git tag (post-commit): `pap-freeze-20251104`
+Status: Frozen | Regen: `python analysis/code/bootstrap_setup.py --artifact analysis/pre_analysis_plan.md`
 
-Data inputs:
-- Raw: `data/raw/childhoodbalancedpublic_original.csv`
-- Clean (derived): `data/clean/childhoodbalancedpublic_with_csa_indicator.csv` via `python analysis/code/derive_csa_indicator.py --dataset data/raw/childhoodbalancedpublic_original.csv --out-dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-distribution tables/csa_indicator_distribution.csv --config config/agent_config.yaml --codebook-in docs/codebook.json --codebook-out docs/codebook.json`
+## Scope and data lineage
+- Raw source: `data/raw/childhoodbalancedpublic_original.csv` (see `artifacts/checksums.json` for SHA-256).
+- Clean analysis file: `data/clean/childhoodbalancedpublic_with_csa_indicator.csv`, regenerated via  
+  `python analysis/code/derive_csa_indicator.py --dataset data/raw/childhoodbalancedpublic_original.csv --out-dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-distribution tables/csa_indicator_distribution.csv --config config/agent_config.yaml --codebook-in docs/codebook.json --codebook-out docs/codebook.json`.
+- Survey design: `docs/survey_design.yaml` documents absence of weights/strata/clusters; analyses proceed under simple random sampling with HC3 variance.
+- Confirmatory execution command (frozen):  
+  `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 HYP-003 --results-csv analysis/results.csv --overwrite`.
+- Multiple-imputation plan: trigger MI (m=5, seed 20251016) using future `analysis/code/impute_mi.py` if any included variable exceeds 5% missingness; otherwise perform listwise deletion. All seeds must match `artifacts/seed.txt`.
 
-Portfolio: HYP-001 (High), HYP-002 (Medium), HYP-003 (High), HYP-004 (Medium)
+Portfolio status: HYP-001 (confirmatory), HYP-003 (confirmatory), HYP-002 (exploratory backlog), HYP-004 (exploratory backlog).
 
 ## HYP-001 — Childhood class and adult self-love
 - **Outcome**: `I love myself (2l8994l)` (Likert −3 to +3)  
@@ -23,6 +29,7 @@ Portfolio: HYP-001 (High), HYP-002 (Medium), HYP-003 (High), HYP-004 (Medium)
   2. Fit proportional-odds ordinal logit on the outcome; assess Brant test to flag violations.  
   3. Standardise outcome to z-score and refit OLS to confirm scale invariance.
 - **Missing-data plan**: If any covariate missingness >5%, execute multiple imputation (m=5, deterministic seed 20251016) before confirmatory analysis; otherwise listwise deletion.
+- **Classification**: Confirmatory (Frozen PAP)
 
 ## HYP-003 — CSA exposure and anxiety agreement
 - **Outcome**: `I tend to suffer from anxiety (npvfh98)-neg`
@@ -38,8 +45,15 @@ Portfolio: HYP-001 (High), HYP-002 (Medium), HYP-003 (High), HYP-004 (Medium)
   2. Replace binary predictor with ordinal bins `{0, 1-3, 4+}` and test linear trend.  
   3. Exclude extreme tail (`CSA_score` > 15) to assess leverage sensitivity.
 - **Missing-data plan**: Monitor derived indicator (currently 0% missing). If downstream models require additional variables with >5% missingness, extend MI plan above; record seeds.
+- **Classification**: Confirmatory (Frozen PAP)
 
-## HYP-004 — Social support and self-love (Proposed)
+## Out-of-PAP exploratory hypotheses (not frozen)
+
+### HYP-002 — Current class and depression (Exploratory backlog)
+- **Status**: Proposed; requires additional feasibility checks on classcurrent measurement error.
+- **Next**: Investigate depression outcome missingness and potential confounding controls before PAP inclusion.
+
+### HYP-004 — Social support and self-love (Exploratory backlog)
 - **Outcome**: `I love myself (2l8994l)`
 - **Predictor**: `In general, people in my *current* social circles tend to treat me really well (71mn55g)` (Likert −3 to +3; instrument equivalence verified against tmt46e6 via `analysis/code/verify_social_support_equivalence.py`).
 - **Covariates**: `selfage`, `gendermale`
@@ -49,8 +63,17 @@ Portfolio: HYP-001 (High), HYP-002 (Medium), HYP-003 (High), HYP-004 (Medium)
 - **Robustness checks (pre-registration pending)**:  
   1. Recode support predictor to three bins `{≤0, 1-2, 3}` to assess non-linearity.  
   2. Indicator for top-two responses (2/3) vs others to check threshold effects.
-- **Next steps**: Finalise model equation language and confirm inclusion/exclusion criteria before PAP freeze; update manuscript and hypothesis registry accordingly.
+- **Next steps**: Complete literature review on social-support pathways and confirm no routing artifacts before promoting to confirmatory status.
 
-Roadmap: 1) Finalize survey design assumptions and document SRS rationale. 2) Label exploratory descriptives (clearly marked). 3) Freeze PAP after verifying confirmatory code paths and tag git. 4) Execute confirmatory models per `analysis/code/confirmatory_models.py`, log seeds to `analysis/results.csv`, and mirror updates in `papers/main/MANIFEST.md`.
+## Confirmatory deliverables and reproducibility
+- **Results target**: Append confirmatory estimates for HYP-001 and HYP-003 to `analysis/results.csv` (overwrite disabled once populated); include HC3 standard errors, 95% CIs, raw p-values, BH-adjusted q-values, sample sizes.
+- **Robustness outputs**: Store model-specific diagnostics under `qc/` (e.g., `qc/hyp-001_helmert.md`, `qc/hyp-003_tail_trim.md`) with regeneration commands.
+- **Figures/Tables**: Confirmatory tables under `tables/confirmatory/` (CSV) plus Markdown summaries; any figures saved as PNG + JSON spec in `figures/confirmatory/`.
+- **MANIFEST**: `papers/main/MANIFEST.md` records this PAP freeze, commit/tag `pap-freeze-20251104`, and regeneration commands for notebook excerpts and manuscript parity.
+- **FDR control**: Apply Benjamini–Hochberg at q=0.05 within the confirmatory family `{HYP-001, HYP-003}` using seed 20251016; document calculations in `analysis/code/fdr_adjust.py` (to be implemented).
 
-Manuscript parity: update `reports/findings_v0.1.md` and `papers/main/manuscript.tex` in lockstep; record regeneration commands alongside outputs.
+## Next steps post-freeze
+1. Execute confirmatory models per the command above; refrain from altering model specifications without amendment.
+2. Implement pre-specified robustness checks and document outcomes.
+3. Draft confirmatory results in `reports/findings_v0.1.md` and mirror text in `papers/main/manuscript.tex` (ensure parity per `config/agent_config.yaml`).
+4. Plan FDR implementation script and robustness automation (task T-011).

@@ -58,27 +58,38 @@
       "description": "Freeze PAP and tag reproducibility checkpoint",
       "id": "T-010",
       "priority": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "description": "Plan FDR procedure and robustness execution scripts",
       "id": "T-011",
       "priority": 2,
       "status": "pending"
+    },
+    {
+      "description": "Execute confirmatory HC3 OLS per frozen PAP",
+      "id": "T-012",
+      "priority": 2,
+      "status": "pending"
     }
   ],
   "bootstrap_complete": true,
-  "last_updated": "2025-11-03T22:45:00+00:00",
-  "loop_counter": 8,
+  "last_updated": "2025-11-04T07:58:50+00:00",
+  "loop_counter": 9,
   "next_actions": [
     {
-      "description": "Freeze PAP and tag reproducibility checkpoint",
-      "id": "T-010",
-      "priority": 1
+      "description": "Plan FDR procedure and robustness execution scripts",
+      "id": "T-011",
+      "priority": 2
+    },
+    {
+      "description": "Execute confirmatory HC3 OLS per frozen PAP",
+      "id": "T-012",
+      "priority": 2
     }
   ],
-  "notes": "Confirmatory OLS skeleton implemented for HYP-001 and HYP-003; PAP now contains explicit model equations and command paths.",
-  "pap_status": "draft",
+  "notes": "PAP frozen (HYP-001, HYP-003) with reproducibility artifacts updated; manuscript parity scaffolds created.",
+  "pap_status": "frozen",
   "priority_hypotheses": [
     "HYP-001",
     "HYP-003"

@@ -1,5 +1,5 @@
 # Research Notebook
-Updated: 2025-11-03T22:05:00Z | Seed: 20251016
+Updated: 2025-11-04T07:58:50Z | Seed: 20251016
 
 Reproducibility: run `python analysis/code/bootstrap_setup.py`; env info in `artifacts/session_info.txt`; checksums in `artifacts/checksums.json`.
 
@@ -36,3 +36,5 @@ Output dataset stored at `data/clean/childhoodbalancedpublic_with_csa_indicator.
 2025-11-03T22:45Z (Planning) — Drafted confirmatory model equations and executable skeleton via \
 `python analysis/code/confirmatory_models.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --config config/agent_config.yaml --survey-design docs/survey_design.yaml --hypotheses HYP-001 HYP-003 --results-csv analysis/results.csv --overwrite`.\
  Outcome: PAP now records explicit model statements for HYP-001 and HYP-003, and hypothesis registry flags them `in_PAP`. The script writes deterministic HC3 OLS outputs seeded at 20251016 and will feed `analysis/results.csv` post-freeze. Next step: freeze PAP and tag commit prior to confirmatory execution.
+
+2025-11-04T07:58Z (Confirmatory prep) — Frozen the PAP (HYP-001, HYP-003) and established reproducibility checkpoint. Created `reports/findings_v0.1.md`, `papers/main/manuscript.tex`, and `papers/main/MANIFEST.md` to enforce manuscript parity. Updated PAP scope to classify HYP-002/HYP-004 as exploratory backlog. Next action: tag commit `pap-freeze-20251104` after confirming reproducibility artifacts (`artifacts/session_info.txt`, `artifacts/checksums.json`) and implement FDR scripting (T-011).

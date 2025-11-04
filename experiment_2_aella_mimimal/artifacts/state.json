@@ -1,9 +1,12 @@
 {
   "artifacts": {
+    "design_metadata_brief": "reports/design_metadata_brief.md",
+    "h1_difference": "tables/h1_religion_by_biomale_diff.csv",
+    "h1_group_stats": "tables/h1_religion_by_biomale.csv",
+    "h1_manifest": "artifacts/h1_religion_by_biomale_manifest.json",
     "hypotheses_registry": "analysis/hypotheses.csv",
     "pre_analysis_plan": "analysis/pre_analysis_plan.md",
-    "research_notebook": "notebooks/research_notebook.md",
-    "design_metadata_brief": "reports/design_metadata_brief.md"
+    "research_notebook": "notebooks/research_notebook.md"
   },
   "backlog": [
     {
@@ -41,17 +44,49 @@
       "id": "T-006",
       "priority": 3,
       "status": "blocked"
+    },
+    {
+      "description": "Estimate H1 active religion practice rates by biological sex",
+      "id": "T-007",
+      "priority": 2,
+      "status": "done"
+    },
+    {
+      "description": "Develop H2 analysis script for religion strictness vs adult happiness change",
+      "id": "T-008",
+      "priority": 1,
+      "status": "todo"
+    },
+    {
+      "description": "Update manuscript and reports with design context and H1 findings",
+      "id": "T-009",
+      "priority": 2,
+      "status": "todo"
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 5,
-  "next_actions": [],
+  "loop_counter": 6,
+  "next_actions": [
+    {
+      "desc": "Develop H2 analysis script for religion strictness vs adult happiness change",
+      "estimate_min": "35m",
+      "id": "T-008",
+      "priority": 1
+    },
+    {
+      "desc": "Draft manuscript update summarizing design assumptions and H1 findings",
+      "estimate_min": "30m",
+      "id": "T-009",
+      "priority": 2
+    }
+  ],
   "regeneration_commands": {
     "bootstrap": "python scripts/bootstrap_artifacts.py",
+    "design_brief": "python scripts/generate_design_brief.py --out reports/design_metadata_brief.md",
+    "design_monitoring": "python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv",
     "design_validation": "python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv",
     "exploratory_summaries": "python scripts/exploratory_summaries.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --out tables/summary_key_outcomes.csv",
-    "design_monitoring": "python scripts/design_scan.py --csv childhoodbalancedpublic_original.csv",
-    "design_brief": "python scripts/generate_design_brief.py --out reports/design_metadata_brief.md",
+    "h1_religion_analysis": "python scripts/analyze_h1_religion_by_biomale.py --csv childhoodbalancedpublic_original.csv --config config/agent_config.yaml --design docs/survey_design.yaml --out tables/h1_religion_by_biomale.csv --diff-out tables/h1_religion_by_biomale_diff.csv --manifest artifacts/h1_religion_by_biomale_manifest.json",
     "sponsor_follow_up": "python scripts/generate_sponsor_follow_up.py --brief reports/design_metadata_brief.md --out reports/sponsor_follow_up.md"
   },
   "seed": 20251016,

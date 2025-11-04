@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\title{Childhood Context and Adult Mental Wellbeing: Pre-Analysis Plan Freeze}
+\author{TODO: Author(s)}
+\date{Draft compiled on 2025-11-04}
+
+\begin{document}
+\maketitle
+\onehalfspacing
+
+\section*{Parity Notice}
+This manuscript must remain textually aligned with the Markdown report
+\texttt{reports/findings_v0.1.md}. Apply edits in tandem and document regeneration
+commands in \texttt{papers/main/MANIFEST.md}.
+
+\section{Abstract}
+Placeholder. Populate after confirmatory analyses while mirroring the Markdown abstract.
+
+\section{Methods}
+\begin{itemize}
+  \item Data: \texttt{data/raw/childhoodbalancedpublic_original.csv} (checksums recorded in \texttt{artifacts/checksums.json}).
+  \item Derived dataset: Generated via \texttt{analysis/code/derive_csa_indicator.py} using seed 20251016.
+  \item Confirmatory scope: Hypotheses HYP-001 and HYP-003 as defined in the frozen PAP (\texttt{analysis/pre_analysis_plan.md}).
+  \item Statistical plan: HC3 OLS under simple random sampling; Benjamini--Hochberg FDR at $q=0.05$ within the confirmatory family.
+\end{itemize}
+
+\section{Results}
+Pending confirmatory execution; no inferential claims prior to running the frozen analysis script.
+
+\section{Robustness and Sensitivity}
+Populate following completion of pre-specified robustness checks.
+
+\section{Limitations}
+\begin{itemize}
+  \item Sampling weights unavailable; analyses rely on the simple random sampling assumption.
+  \item CSA indicator derived from composite scores; measurement error sensitivity TBD.
+\end{itemize}
+
+\section{Ethics and Privacy}
+Enforce small-cell suppression for counts below 10 and review IRB/licensing requirements before dissemination.
+
+\section{Open Questions}
+\begin{itemize}
+  \item Evaluate readiness of the social support hypothesis (HYP-004) for future PAP inclusion.
+  \item Assess potential mode effects influencing self-reported wellbeing outcomes.
+\end{itemize}
+
+\end{document}
