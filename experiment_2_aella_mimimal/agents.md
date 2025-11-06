@@ -5,7 +5,7 @@
 - **Literature:** Prefer the Semantic Scholar API (no authentication required for typical usage) and log queries; fall back to general web search only with rationale.
 - **Defaults:** Use `config/agent_config.yaml` as the single source for seeds, budgets, and thresholds.
 - **Version control:** Commit after major artifacts (PAP, results, reports, backlog) so the reproducibility record aligns with git.
-- **File updates:** Apply edits incrementally—whenever you change a file, include its complete new content in the same response via the `files` array. Never stage mega-payloads or use `artifacts/codex_tmp/` or `final_payload*.json`.
+- **File updates:** Apply edits incrementally—whenever you change a file, include its complete new content in the same response via the `files` array. Never stage mega-payloads or use `artifacts/codex_tmp/`. If you must persist aggregated payloads (e.g., `final_output*.txt`, `final_payload.json`, `tmp_*`), place them under `outputs/` and clean them up as soon as they are no longer needed.
 
 ## Runner Prompt Templates
 The runner reads the following prompt blocks from this document at runtime. Keep markers intact.
@@ -37,7 +37,7 @@ PROJECT CONTEXT
   - docs/codebook.json             (variable names, labels, types, coded values)
   - docs/survey_design.yaml        (weight, strata, cluster, replicate weights if any)
   - config/agent_config.yaml       (use default thresholds if missing; seed=20251016)
-- Create the folder structure if missing: analysis/, artifacts/, docs/, figures/, lit/, notebooks/, qc/, reports/, tables/.
+- Create the folder structure if missing: analysis/, artifacts/, docs/, figures/, lit/, notebooks/, outputs/, qc/, reports/, tables/.
 - Adopt Decision Log (CSV) at analysis/decision_log.csv with headers:
   ts,action,inputs,rationale_short,code_path,outputs,status
 
@@ -88,7 +88,7 @@ EARLY-STOP RULES YOU MUST APPLY
 - If PII risk, missing required survey design when codebook references weights, or repo is read-only => set stop_now=true with stop_reason.
 <!--END PROMPT:BOOTSTRAP_USER-->
 
-Only include files that actually changed this turn. Do not emit auxiliary payload files (e.g., `artifacts/codex_tmp/*`, `final_payload*.json`); the runner writes updates from `files` immediately.
+Only include files that actually changed this turn. Do not emit auxiliary payload files (e.g., `artifacts/codex_tmp/*`); if a scratch payload is unavoidable, store it under `outputs/` and rely on the runner writing the `files` entries immediately.
 
 ### Loop System Prompt
 <!--PROMPT:LOOP_SYSTEM-->

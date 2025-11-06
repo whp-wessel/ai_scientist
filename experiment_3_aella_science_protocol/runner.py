@@ -339,7 +339,7 @@ def run_codex_cli(user_prompt: str, system_prompt: str = None, model: str = MODE
     raise RuntimeError(f"codex CLI failed after {retries+1} attempts: {last_err}")
 
 def ensure_repo_structure():
-    for p in ["analysis","artifacts","docs","figures","lit","notebooks","qc","reports","tables","papers"]:
+    for p in ["analysis","artifacts","docs","figures","lit","notebooks","outputs","qc","reports","tables","papers"]:
         (REPO / p).mkdir(parents=True, exist_ok=True)
     if not DECISION_LOG.exists():
         with DECISION_LOG.open("w", newline="", encoding="utf-8") as f:

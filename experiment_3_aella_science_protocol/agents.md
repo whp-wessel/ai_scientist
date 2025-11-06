@@ -30,6 +30,7 @@ Within the provided survey dataset, conduct rigorous, reproducible social‑scie
 - `lit/evidence_map.csv` — concept → sources → quality rating → notes
 - `artifacts/state.json` — persistence: backlog, checkpoints, and next actions
 - `reports/findings_v{X}.{Y}.md` — versioned report with changelog
+- `outputs/*` — scratch exports (e.g., `final_output*.txt`, `final_payload.json`, `tmp_*`) kept out of the repository root; remove stale files.
 - **Reproducibility artifacts (runner also maintains)**
   - `artifacts/session_info.txt` — Python/platform, packages (`pip freeze`), git HEAD
   - `artifacts/checksums.json` — SHA‑256 hashes of data files
@@ -65,7 +66,8 @@ Within the provided survey dataset, conduct rigorous, reproducible social‑scie
 ## File Update Protocol
 - Apply edits incrementally. Whenever you change a file, include its complete updated content in the same response via the `files` list.
 - Only include files touched during the current turn; avoid aggregating the entire project into a single end-of-run payload.
-- Never write intermediate payloads such as `artifacts/codex_tmp/*` or `final_payload*.json`. The runner applies the `files` entries immediately.
+- Keep scratch/export payloads (e.g., `final_output*.txt`, `final_payload.json`, `tmp_*`) under `outputs/` and clear them when no longer needed so the repository root stays clean.
+- Never write intermediate payloads such as `artifacts/codex_tmp/*`; rely on the runner applying the `files` entries immediately.
 
 ## Multi‑paper Planning
 - Split into multiple papers when ≥2 non‑overlapping hypothesis families have distinct primary outcomes/audiences. Move relevant hypotheses to the new `<slug>`.
@@ -166,7 +168,7 @@ PROJECT CONTEXT
   - docs/codebook.json             (variable names, labels, types, coded values)
   - docs/survey_design.yaml        (weight, strata, cluster, replicate weights if any)
   - config/agent_config.yaml       (use default thresholds if missing; seed=20251016)
-- Create the folder structure if missing: analysis/, artifacts/, docs/, figures/, lit/, notebooks/, qc/, reports/, tables/.
+- Create the folder structure if missing: analysis/, artifacts/, docs/, figures/, lit/, notebooks/, outputs/, qc/, reports/, tables/.
 - Adopt Decision Log (CSV) at analysis/decision_log.csv with headers:
   ts,action,inputs,rationale_short,code_path,outputs,status
 
@@ -217,7 +219,7 @@ EARLY-STOP RULES YOU MUST APPLY
 - If PII risk, missing required survey design when codebook references weights, or repo is read-only => set stop_now=true with stop_reason.
 <!--END PROMPT:BOOTSTRAP_USER-->
 
-Only include files changed in the current turn. Do not emit auxiliary payloads like `artifacts/codex_tmp/*` or `final_payload*.json`; rely solely on the `files` list.
+Only include files changed in the current turn. Do not emit auxiliary payloads like `artifacts/codex_tmp/*`; if a scratch export is unavoidable, put it under `outputs/` and rely solely on the `files` list.
 
 ### Loop System Prompt
 <!--PROMPT:LOOP_SYSTEM-->
