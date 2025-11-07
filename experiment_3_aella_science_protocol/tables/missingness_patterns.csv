@@ -1,3 +1,0 @@
-pattern,count,percent,status,notes
-Complete cases across key variables,383,2.65%,ok,
-Missing in ≥1 key variable,14060,97.35%,ok,Suppressed if below disclosure threshold.

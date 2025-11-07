@@ -1,0 +1,78 @@
+{
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "last_updated": "2025-11-07T10:59:57Z",
+  "seed": 20251016,
+  "notes": "Bootstrap placeholder; update once verified against official survey documentation.",
+  "variables": [
+    {
+      "name": "selfage",
+      "label": "Respondent age in years (self-reported)",
+      "type": "numeric",
+      "allowed_range": [18, 99],
+      "missing_codes": ["", "NA", "Prefer not"],
+      "notes": "Verify legal adult age filter and trim obvious outliers."
+    },
+    {
+      "name": "gendermale",
+      "label": "Binary indicator: 1=identifies as male",
+      "type": "binary",
+      "value_labels": {"0": "Not male", "1": "Male"},
+      "notes": "Derived from categorical gender item; confirm treatment of non-binary selections."
+    },
+    {
+      "name": "classchild",
+      "label": "Self-described childhood socioeconomic class",
+      "type": "ordered_categorical",
+      "value_labels": {
+        "1": "Lower",
+        "2": "Lower-middle",
+        "3": "Middle",
+        "4": "Upper-middle",
+        "5": "Upper"
+      },
+      "notes": "Treat as ordered factor for trend tests; document recodes for robustness."
+    },
+    {
+      "name": "h33e6gg",
+      "label": "Happier as adult than childhood (Likert)",
+      "type": "likert_5",
+      "value_labels": {
+        "1": "Strongly disagree",
+        "2": "Disagree",
+        "3": "Neutral",
+        "4": "Agree",
+        "5": "Strongly agree"
+      },
+      "notes": "Reverse-coded items suffixed with -neg; this item is positively oriented."
+    },
+    {
+      "name": "npvfh98",
+      "label": "Tends to suffer from anxiety (negative orientation)",
+      "type": "likert_5",
+      "notes": "Higher scores indicate higher anxiety; consider reverse-coding for wellbeing composites."
+    },
+    {
+      "name": "mds78zu",
+      "label": "Parents verbally/emotionally abused respondent ages 0-12",
+      "type": "binary",
+      "value_labels": {"0": "No", "1": "Yes"},
+      "notes": "Potential trauma exposure; apply disclosure controls when tabulating."
+    },
+    {
+      "name": "wz901dj",
+      "label": "Tends to suffer from depression",
+      "type": "likert_5",
+      "notes": "Combine with anxiety for mental health index after reliability checks."
+    },
+    {
+      "name": "networth",
+      "label": "Current net worth bracket",
+      "type": "ordered_categorical",
+      "notes": "Categories encoded as ordinal integers; align with original survey labels."
+    }
+  ],
+  "regeneration": {
+    "command": "python analysis/scripts/build_codebook.py --dataset childhoodbalancedpublic_original.csv --out docs/codebook.json",
+    "status": "manual-draft"
+  }
+}

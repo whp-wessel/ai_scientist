@@ -1,0 +1,29 @@
+dataset: childhoodbalancedpublic_original.csv
+generated_at: '2025-11-03T20:29:10.281414Z'
+seed: 20251016
+n_observations: 14443
+weight_variable: null
+strata_variable: null
+cluster_variable: null
+replicate_weights: []
+fpc: null
+assumed_design: simple_random_sampling
+detection_summary:
+  weight_candidates:
+  - name: weight
+    codebook_label: null
+    non_missing_fraction: 1.0
+    dtype: float64
+  strata_candidates: []
+  cluster_candidates: []
+  replicate_weight_candidates: []
+notes: No survey weights, strata, or clusters detected; proceed as SRS pending provider
+  confirmation.
+validation:
+  command: python analysis/code/validate_survey_design.py --dataset childhoodbalancedpublic_original.csv
+    --codebook docs/codebook.json --config config/agent_config.yaml --output docs/survey_design.yaml
+    --report qc/survey_design_validation.md
+  created_by: agent
+  outputs:
+  - docs/survey_design.yaml
+  - qc/survey_design_validation.md

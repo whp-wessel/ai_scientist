@@ -1,0 +1,11 @@
+networth_code,networth_label,baseline_code,baseline_label,seed,min_cell_size,weight_variable,variance_method,design_assumption,n_group,n_baseline,mean_diff,se_diff,ci_lower_95,ci_upper_95
+-3,"$-100,000 (in debt)",-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,348,348,0.0,0.0,0.0,0.0
+-2,"$-10,000 (in debt)",-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,795,348,-0.635264,0.129273,-0.888639,-0.381888
+-1,$-1000 (in debt),-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,235,348,-0.98337,0.178077,-1.332402,-0.634338
+0,$0,-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,1304,348,-0.761565,0.12011,-0.996981,-0.526149
+1,"$1,000",-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,1642,348,-0.556568,0.117717,-0.787294,-0.325843
+2,"$10,000",-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,3524,348,-0.068235,0.112328,-0.288397,0.151927
+3,"$100,000",-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,3763,348,0.678653,0.111662,0.459794,0.897511
+4,"$1,000,000",-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,2005,348,1.093926,0.114772,0.868974,1.318878
+5,"$10,000,000",-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,460,348,1.378286,0.13376,1.116117,1.640455
+6,"$100,000,000 or more",-3,"$-100,000 (in debt)",20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,360,348,0.952682,0.151737,0.655277,1.250087

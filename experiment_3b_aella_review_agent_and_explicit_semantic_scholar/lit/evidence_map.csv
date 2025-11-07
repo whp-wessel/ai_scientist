@@ -1,0 +1,2 @@
+concept,claim_id,source_title,doi_or_url,relevance,notes,query_path,status
+"Childhood nutrition & wellbeing context",C0,"Placeholder pending Semantic Scholar availability","https://api.semanticscholar.org/graph/v1/paper/search?query=childhood%20nutrition",0.1,"API returned HTTP 429; captured response for reproducibility and will retry with key if needed.","lit/queries/loop_000/query_001.json","pending"

@@ -1,0 +1,31 @@
+seed: 20251016
+loop_budget:
+  total_loops: 50
+  loop_counter: 0
+analysis_defaults:
+  fdr_q: 0.05
+  ci_level: 0.95
+  small_cell_min: 10
+  variance_method: "SRS"
+paths:
+  raw_dataset: "childhoodbalancedpublic_original.csv"
+  clean_data_dir: "data/clean"
+  raw_data_dir: "data/raw"
+  pap_path: "analysis/pre_analysis_plan.md"
+  hypotheses_path: "analysis/hypotheses.csv"
+  results_path: "analysis/results.csv"
+reproducibility:
+  record_seeds: true
+  session_info_path: "artifacts/session_info.txt"
+  checksums_path: "artifacts/checksums.json"
+  manifest_path: "papers/main/MANIFEST.md"
+journal_targets:
+  primary: "TBD (social science journal)"
+  style: "APA"
+  open_data_policy: "Aggregated release only; suppress small cells < 10"
+network:
+  semantic_scholar_endpoint: "https://api.semanticscholar.org/graph/v1"
+  use_api_key: false
+regeneration:
+  command: "python runner.py --task refresh-config"
+  status: manual-draft

@@ -1,7 +1,0 @@
-model,n,f_stat,pvalue_overall,beta_classchild_mean,hypothesis_id,check,seed,beta_classchild,pvalue_classchild,se_classchild,coef_csa_indicator,se_csa_indicator,odds_ratio,pvalue_csa_indicator,beta_bins,pvalue_bins,beta_csa_indicator
-ols_hc3_helmert,14436.0,89.65395392590622,3.0748679110803747e-163,0.0700815728921577,HYP-001,helmert,20251016,,,,,,,,,,
-ordinal_logit,14436.0,,,,HYP-001,ordinal_logit,20251016,0.17023839040045957,7.295968054340759e-48,,,,,,,,
-ols_hc3_zscore,14436.0,,,,HYP-001,zscore,20251016,0.09730322207075562,1.5756272467346756e-51,0.0064431521974407605,,,,,,,
-logit_high_anxiety,14436.0,,,,HYP-003,logit_high_anxiety,20251016,,,,-0.5576672187623916,0.056320468484444955,0.5725431250672213,4.0934285821062904e-23,,,
-ols_hc3_csa_bins,14436.0,,,,HYP-003,ordinal_bins,20251016,,,,,,,,-0.32537738762738777,2.0171537665756702e-47,
-ols_hc3_trimmed,14326.0,,,,HYP-003,tail_trim,20251016,,,,,0.036910827264353276,,3.6602657419043906e-39,,,-0.4832351675156762

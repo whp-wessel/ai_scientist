@@ -1,5 +1,0 @@
-{
-  "regeneration_command": "python analysis/code/verify_social_support_equivalence.py --dataset data/clean/childhoodbalancedpublic_with_csa_indicator.csv --out-summary tables/social_support_equivalence_summary.csv --out-distribution tables/social_support_equivalence_distributions.csv --out-overlap tables/social_support_instrument_overlap.csv --config config/agent_config.yaml --columns \"In general, people in my *current* social circles tend treat me really well (tmt46e6)\" --columns \"In general, people in my *current* social circles tend to treat me really well (71mn55g)\"",
-  "seed": 20251016,
-  "small_cell_threshold": 10
-}

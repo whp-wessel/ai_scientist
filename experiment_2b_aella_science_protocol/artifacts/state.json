@@ -1,0 +1,136 @@
+{
+  "backlog": [
+    {
+      "description": "Validate survey weights and replicate design",
+      "id": "T-001",
+      "priority": 1,
+      "status": "completed"
+    },
+    {
+      "description": "Exploratory weighted summaries for key outcomes",
+      "id": "T-002",
+      "priority": 1,
+      "status": "completed"
+    },
+    {
+      "description": "Align codebook schema with dataset",
+      "id": "T-003",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Profile missingness patterns for key variables",
+      "id": "T-004",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Draft robustness checks for priority hypotheses",
+      "id": "T-005",
+      "priority": 3,
+      "status": "completed"
+    },
+    {
+      "description": "Derive CSA_score_indicator and validate distribution",
+      "id": "T-006",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Assess feasibility of social support predictor given 97% missingness",
+      "id": "T-007",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Draft confirmatory model equations/code skeleton for PAP freeze",
+      "id": "T-008",
+      "priority": 3,
+      "status": "completed"
+    },
+    {
+      "description": "Verify instrument equivalence for social support items (tmt46e6 vs 71mn55g)",
+      "id": "T-009",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Freeze PAP and tag reproducibility checkpoint",
+      "id": "T-010",
+      "priority": 1,
+      "status": "completed"
+    },
+    {
+      "description": "Plan FDR procedure and robustness execution scripts",
+      "id": "T-011",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Run confirmatory models for HYP-001 and HYP-003 per frozen PAP",
+      "id": "T-012",
+      "priority": 1,
+      "status": "completed"
+    },
+    {
+      "description": "Integrate robustness outputs into confirmatory reporting and update results flags",
+      "id": "T-013",
+      "priority": 1,
+      "status": "completed"
+    },
+    {
+      "description": "Update findings report and manuscript with FDR-adjusted estimates and robustness narrative",
+      "id": "T-014",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Synthesize robustness QC outputs and archive summary memo",
+      "id": "T-015",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Plan CSA-anxiety scale diagnostics and subgroup heterogeneity checks",
+      "id": "T-016",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Execute convergent validity diagnostics for anxiety item (Module M3)",
+      "id": "T-017",
+      "priority": 2,
+      "status": "completed"
+    },
+    {
+      "description": "Develop CSA-anxiety interaction scripts and QC templates",
+      "id": "T-018",
+      "priority": 3,
+      "status": "completed"
+    },
+    {
+      "description": "Investigate unexpected positive self-regulation correlations and document implications",
+      "id": "T-019",
+      "priority": 2,
+      "status": "pending"
+    }
+  ],
+  "bootstrap_complete": true,
+  "last_updated": "2025-11-04T20:52:05Z",
+  "loop_counter": 25,
+  "next_actions": [
+    {
+      "description": "Investigate unexpected positive self-regulation correlations from convergence diagnostics",
+      "id": "T-019",
+      "priority": 2
+    }
+  ],
+  "notes": "PAP frozen 2025-11-04T10:06Z; confirmatory HC3 OLS executed 2025-11-04T10:17Z with seed 20251016. FDR adjustment archived to tables/fdr_adjustment_confirmatory.csv. Robustness memo `qc/robustness_summary.md` and CSA-anxiety diagnostics plan `analysis/csa_anxiety_diagnostics_plan.md` recorded 2025-11-04T14:05Z. Convergent validity diagnostics executed 2025-11-04T20:35Z; depression/stress align, while self-love/calm positive correlations require follow-up via T-018/T-019. Interaction diagnostics executed 2025-11-04T20:52Z via analysis/code/anxiety_interactions.py; no material CSA\u00d7moderator shifts detected, informing T-019 follow-up.",
+  "pap_status": "frozen",
+  "priority_hypotheses": [
+    "HYP-001",
+    "HYP-003"
+  ],
+  "seed": 20251016,
+  "total_loops": 30
+}

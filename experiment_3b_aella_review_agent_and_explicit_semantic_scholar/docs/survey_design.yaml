@@ -1,0 +1,18 @@
+status: placeholder
+last_updated: 2025-11-07T10:59:57Z
+dataset: childhoodbalancedpublic_original.csv
+weight_var: null
+strata_var: null
+cluster_var: null
+replicate_weights: []
+assumed_design: "SRS until survey sponsor provides design variables"
+small_cell_threshold: 10
+seed: 20251016
+notes: |
+  Original instrument does not yet ship with survey weights or replicate design.
+  Action item T-001 tracks the need to confirm whether sampling weights exist in
+  upstream metadata. If weights become available, update this file and re-run
+  all exploratory summaries before freezing the PAP.
+regeneration:
+  command: "python analysis/scripts/update_survey_design.py --source docs/survey_design.yaml"
+  status: manual-draft

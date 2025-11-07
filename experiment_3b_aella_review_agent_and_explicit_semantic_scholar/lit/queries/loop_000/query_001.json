@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-11-07T10:59:57Z",
+  "endpoint": "graph/v1/paper/search",
+  "params": {
+    "query": "childhood nutrition",
+    "limit": 5,
+    "fields": "title,year,venue,externalIds,url,authors"
+  },
+  "note": "Initial call returned HTTP 429 (rate-limited). Will request API key or retry with backoff before literature gate.",
+  "response": {
+    "status": 429,
+    "body": {
+      "message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form",
+      "code": "429"
+    }
+  }
+}

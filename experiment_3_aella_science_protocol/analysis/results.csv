@@ -1,3 +1,0 @@
-hypothesis_id,model,n_unweighted,n_weighted,estimate,se,ci_low,ci_high,p_value,q_value,effect_size_metric,robustness_passed,limitations,confidence_rating,analysis_timestamp,seed
-HYP-001,ols_hc3_srs,14436,14436.0,0.1811858897013576,0.0119976321290332,0.1576689904092998,0.2047027889934154,3.873525838182848e-51,3.873525838182848e-51,slope_per_unit,Y,SRS assumption; ordinal outcome treated as interval,High,2025-11-04T10:17:40.902935+00:00,20251016.0
-HYP-003,ols_hc3_srs,14437,14437.0,-0.4905027134735744,0.0365181179096809,-0.5620829125486829,-0.4189225143984658,6.933341034253467e-41,6.933341034253467e-41,difference_in_means,Y,Outcome framing may depress agreement; CSA composite measurement,Medium,2025-11-04T10:17:40.902935+00:00,20251016.0

@@ -1,0 +1,3 @@
+variable,prompt,instrument_code,available_obs,missing_obs,missing_pct,unique_values,scale_min,scale_max
+"In general, people in my *current* social circles tend treat me really well (tmt46e6)","In general, people in my *current* social circles tend treat me really well",tmt46e6,383,14060,0.973482,7,-3.0,3.0
+"In general, people in my *current* social circles tend to treat me really well (71mn55g)","In general, people in my *current* social circles tend to treat me really well",71mn55g,14054,389,0.026933,7,-3.0,3.0
