@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-07T14:23:55Z",
-  "loop_counter": 4,
+  "last_updated": "2025-11-07T14:39:24Z",
+  "loop_counter": 5,
   "next_actions": [
-    "Decide which H1 contrasts (main vs. moderation effects) will be confirmatory and update the PAP/hypotheses before freeze.",
-    "Freeze/tag the PAP once the ordered-logit and religiosity interaction specs are locked, then rerun `scripts/run_loop004_models.py` with recorded seed for confirmatory estimates.",
-    "Implement the Benjamini\u2013Hochberg plan and add multiplicity-aware manuscript language immediately after PAP freeze."
+    "Freeze and git-tag the PAP (status: frozen) now that H1 confirmatory contrasts are locked; capture the tag/hash in analysis/pre_analysis_plan.md.",
+    "Re-run scripts/loop004_h1_diagnostics.py and scripts/run_loop004_models.py with the recorded seed to produce confirmatory coefficients, populate analysis/results.csv with confirmatory=TRUE rows, and compute BH q-values.",
+    "Add multiplicity-aware language + tables to reports/paper.md and tables/ once confirmatory estimates land, ensuring privacy (n>=10)."
   ],
   "phase": "pap",
   "phase_ix": 1,

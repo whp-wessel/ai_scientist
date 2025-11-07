@@ -1,0 +1,17 @@
+**Bootstrap Outputs**
+- Input metadata and configuration define dataset scope, SRS assumptions, and required seed defaults so downstream scripts have a single source of truth (`docs/codebook.json:1`, `docs/survey_design.yaml:1`, `config/agent_config.yaml:1`).
+- Research notebook + QC scaffolds capture the raw-data copy, exploratory counts, regeneration commands, and LaTeX-sync plan while seeding the measurement dossier (`notebooks/research_notebook.md:4`, `qc/data_checks.md:1`, `qc/measures_validity.md:1`).
+- Hypotheses H1–H5 and the PAP draft enumerate estimands, controls, robustness, and freeze conditions with explicit command stubs (`analysis/hypotheses.csv:3`, `analysis/pre_analysis_plan.md:1`).
+- Literature plumbing now exists even though evidence is pending: bibliography stubs, evidence map, and the rate-limited CLI that reads `.env` (`lit/bibliography.bib:1`, `lit/bibliography.json:1`, `lit/evidence_map.csv:1`, `scripts/semantic_scholar_cli.py:1`).
+- Manuscript/outline/manifest/build-log/reviewer logs keep Markdown–LaTeX parity requirements visible from the start (`papers/main/manuscript.tex:1`, `papers/main/imrad_outline.md:1`, `papers/main/MANIFEST.md:1`, `papers/main/build_log.txt:1`, `review/research_findings.md:1`).
+- Governance artifacts—decision log, backlog/state (with blockers), failed query capture, and commit request message—are all up to date (`analysis/decision_log.csv:1`, `artifacts/state.json:1`, `lit/queries/loop_000/query_001.json:1`, `artifacts/git_message.txt:1`).
+
+**Open Issues**
+- Semantic Scholar calls fail with `403`, leaving next action N1 blocked until credentials or endpoints are fixed (`lit/queries/loop_000/query_001.json:1`, `artifacts/state.json:28`).
+- No DOI-backed references yet; bibliography and evidence map still contain bootstrap placeholders only (`lit/evidence_map.csv:2`, `lit/bibliography.bib:1`).
+- Measurement validity table and the scripted describe/missingness utilities remain TODO despite PAP requirements (`qc/measures_validity.md:1`, `qc/data_checks.md:11`).
+- Analysis/code scaffolding and LaTeX builds are still theoretical—no deterministic data prep scripts or successful compile have run (`analysis/pre_analysis_plan.md:49`, `papers/main/build_log.txt:1`).
+
+**Next Steps**
+1. Restore Semantic Scholar access (validate `S2_API_Key`, consider alternate base URL, or request a new key) and rerun the search workflow so real sources populate `lit/evidence_map.csv:3` and `lit/bibliography.json:1`.
+2. Implement the promised `analysis/code` scripts for data cleaning, missingness, and measurement validity, then refresh `qc/measures_validity.md:1` and execute at least one `latexmk` cycle per `papers/main/MANIFEST.md:3` / `papers/main/build_log.txt:1`.

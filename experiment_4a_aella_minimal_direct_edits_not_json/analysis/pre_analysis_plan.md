@@ -74,9 +74,9 @@ _All hypotheses currently exploratory; confirmatory status will be frozen after 
 
 ### Draft Confirmatory Families & FDR Plan
 1. **Family: childhood_emotional_support (H1)**  
-   - Candidate confirmatory contrasts: (a) childhood abuse main effect; (b) teen abuse main effect; (c) abuse × guidance; (d) abuse × male.  
-   - Plan: Two-sided OLS with aligned z-scores + controls (classteen, selfage, gendermale, education). Run BH at q=0.05 across whichever of contrasts (a)–(d) remain in the frozen PAP.  
-   - Diagnostics to justify: `tables/loop004_h1_diagnostics.csv`.
+   - **Confirmatory contrasts (locked)**: (a) abuse × childhood guidance interaction (`abuse_child_guidance_int`) from `loop004_h1_guidance_interaction`; (b) abuse × male interaction (`abuse_child_male_int`) from `loop004_h1_gender_interaction`. The main effects for childhood/teen abuse remain exploratory until we can reconcile the unexpected sign.  
+   - **Plan**: For each contrast, estimate a two-sided OLS with aligned z-scores, teen abuse, and the standard control set (classteen, selfage, gendermale, education). The confirmatory command sequence is `python scripts/loop004_h1_diagnostics.py` (fits the interaction models) followed by `python scripts/loop005_h1_simple_slopes.py` (records simple slopes that interpret the interactions). Apply Benjamini–Hochberg at q=0.05 across the two interaction tests.  
+   - **Diagnostics**: `tables/loop004_h1_diagnostics.csv` supplies the coefficients and `tables/loop005_h1_simple_slopes.csv` shows that the abuse slope is -0.13 SD at low guidance/among men versus ≈0 at high guidance, aligning with the buffering (Zhao et al., 2022) and gender heterogeneity (Assari et al., 2025) literature.
 
 2. **Family: parental_guidance_self_regard (H2)**  
    - Single confirmatory estimand: childhood guidance main effect in OLS on self-love with the same controls and teen guidance to soak shared variance.  
@@ -91,3 +91,8 @@ _All hypotheses currently exploratory; confirmatory status will be frozen after 
    - Plan: Use BH at q=0.05 across included contrasts. Report both the continuous (OLS) and binary high-anxiety specifications for robustness, but only the OLS family is slated as confirmatory unless reviewers request the logit.
 
 The PAP remains `status: draft` until we formally lock which subsets from each family will be confirmatory and git-tag the frozen commit.
+
+## Loop 005 Updates
+- **Simple-slope diagnostics**: `python scripts/loop005_h1_simple_slopes.py` consumes the aligned-interaction models and exports `tables/loop005_h1_simple_slopes.csv`, which quantifies the abuse slope at childhood guidance -1/0/+1 SD and by gender. Results confirm that guidance buffering (slope shifts from -0.13 SD at low support to +0.01 SD at +1 SD guidance) and male-specific vulnerability (slope = -0.13 SD for men vs. -0.02 SD for women) drive the paradoxical main effect.  
+- **Confirmatory choice recorded**: Based on those diagnostics plus Zhao et al. (2022) and Assari et al. (2025), the PAP now locks the H1 confirmatory family to the two moderation effects only. Childhood/teen abuse main effects remain exploratory, and this decision will be cited when the PAP is frozen/tagged.  
+- **Next**: Freeze/tag once the ordered-logit (H3) and religiosity (H4) specs stop changing, then rerun `scripts/run_loop004_models.py` and `scripts/loop004_h1_diagnostics.py` with a recorded seed to generate confirmatory estimates before applying BH corrections.

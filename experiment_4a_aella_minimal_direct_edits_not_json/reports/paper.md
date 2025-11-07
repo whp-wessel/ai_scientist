@@ -17,7 +17,7 @@ Childhood adversity remains a consistent predictor of adult depression and anxie
 
 ## 3. Preliminary Results (Exploratory)
 - The Likert orientation audit verified that all seven-point items share the *Strongly Agree = -3* convention. After sign-flipping + z-scoring, measurement is now monotonic with the literal statements (higher = more abuse/guidance/depression/self-love/anxiety).
-- Childhood abuse remains negatively associated with adult depression (β = -0.08 SD, p<1e-7) after alignment, and Loop 004 diagnostics show the inverse slope already appears bivariately (β = -0.34 SD). Moderation scans reveal a positive abuse × guidance interaction (β = +0.068, p<1e-15) and a negative abuse × male interaction (β = -0.103, p<1e-10), implying the paradoxical slope is concentrated among men and mitigated when guidance is high.
+- Childhood abuse remains negatively associated with adult depression (β = -0.08 SD, p<1e-7) after alignment, and Loop 004 diagnostics show the inverse slope already appears bivariately (β = -0.34 SD). Moderation scans reveal a positive abuse × guidance interaction (β = +0.068, p<1e-15) and a negative abuse × male interaction (β = -0.103, p<1e-10), implying the paradoxical slope is concentrated among men and mitigated when guidance is high; the dedicated simple-slope export (`tables/loop005_h1_simple_slopes.csv`) puts the slope at -0.13 SD under low guidance versus +0.01 SD at +1 SD guidance, and at -0.13 SD for men versus -0.02 SD for women.
 - Childhood parental guidance still shows a positive association with self-love (β = 0.09 SD, p<1e-11) using aligned scores, reinforcing the protective interpretation.
 - Childhood class retains a small, non-significant association in the full ordered logit once teen class is included (β = 0.025, p=0.24), while teen class dominates both the ordered and ≥$1M binary models.
 - Religiosity intensity was previously inverse to anxiety, but once class-based interactions enter (`tables/loop004_model_estimates.csv`) the main effect is null while the religiosity × childhood-class interaction is negative (β = -0.021 SD, p=0.0046), suggesting religion is most protective among respondents from higher childhood classes; the male interaction remains indistinguishable from zero.
@@ -25,9 +25,9 @@ Childhood adversity remains a consistent predictor of adult depression and anxie
 All estimates remain exploratory and subject to revision after the orientation review and PAP freeze.
 
 ## 4. Next Steps
-1. Decide whether the confirmatory H1 family will emphasize the moderation effects (guidance buffering, male concentration) or collapse abuse across age windows; document the chosen estimands in the PAP before freezing.
-2. Freeze/tag the PAP once the ordered-logit and religiosity interaction specs coded in `scripts/run_loop004_models.py` are accepted, then rerun the pipeline with a reproducible seed to obtain confirmatory coefficients.
-3. Implement the drafted Benjamini–Hochberg plan (per `analysis/pre_analysis_plan.md`) and carry that multiplicity language into the manuscript immediately after PAP freeze.
+1. Freeze/tag the PAP now that the H1 confirmatory contrasts are locked (guidance buffering and male vulnerability) and the ordered-logit/religiosity specs are stable; capture the git tag in `analysis/pre_analysis_plan.md`.
+2. Re-run `scripts/loop004_h1_diagnostics.py` and `scripts/run_loop004_models.py` with the recorded seed to generate confirmatory-ready coefficients, then populate `analysis/results.csv` with `confirmatory=TRUE` rows plus BH-adjusted q-values where families have >1 test.
+3. Update the manuscript to include multiplicity language and cite the confirmatory design once the PAP is frozen, then begin drafting the results narrative for H3/H4 alongside tables suitable for `tables/`.
 
 ## References
 - Hansen, M. N. (2014). *Self-Made Wealth or Family Wealth? Changes in Intergenerational Wealth Mobility.* *Social Forces, 93*(2), 457–481. https://doi.org/10.1093/SF/SOU078
