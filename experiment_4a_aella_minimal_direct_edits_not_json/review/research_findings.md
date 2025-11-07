@@ -18,3 +18,11 @@ R3 PASS – Literature pulls are logged (e.g., `lit/queries/loop_002/query_001.j
 R4 PASS – Public tables respect the n≥10 rule (see suppression logic in `scripts/make_loop002_descriptives.py:65-76`; outputs such as `tables/loop002_teen_covariate_categorical.csv` show minimum cell counts >10).
 R5 PASS – Required artifacts exist and are updated (PAP still “status: draft” at `analysis/pre_analysis_plan.md:1`, hypotheses register `analysis/hypotheses.csv:1-5`, results table `analysis/results.csv`, narrative log `notebooks/research_notebook.md:1-29`, manuscript scaffold `reports/paper.md:1-33`).
 
+## Loop 003 — 2025-11-07T14:21:28.704489+00:00
+DECISION: CONTINUE  
+R1 PASS – Commands, seeds, and environment are logged in `analysis/decision_log.csv:1` and `artifacts/session_info.txt:1`, with the notebook narrating each loop (`notebooks/research_notebook.md:1`), so another analyst can replay the work.  
+R2 PASS – Results capture estimates/SEs/CIs with explicit SRS justification per row (`analysis/results.csv:2`) and no confirmatory claims yet, keeping multiplicity on hold while PAP remains draft.  
+R3 PASS – Literature artifacts map every claim to peer-reviewed sources with DOIs (`lit/evidence_map.csv:1`) and the manuscript cites them when motivating hypotheses (`reports/paper.md:9`).  
+R4 PASS – Public tables aggregate large cells (smallest n=135 in `tables/loop001_categorical_counts.csv:1`) and modeling outputs expose only high-level coefficients, so the n<10 rule is respected.  
+R5 PASS – Required deliverables exist and are coherent (PAP marked `status: draft`, `analysis/pre_analysis_plan.md:1`, hypotheses/results registries filled, manuscript outline active), matching the PAP-phase status recorded in `artifacts/state.json:1`.
+
