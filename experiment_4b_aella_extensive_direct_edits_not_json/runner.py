@@ -487,7 +487,7 @@ def _resolve_and_validate_path(path_str: str) -> Path:
 
 
 def _list_changed_files() -> list[ChangeRecord]:
-    rc, out, err = run_cmd(["git", "status", "--porcelain=1"])
+    rc, out, err = run_cmd(["git", "status", "--porcelain=1", "--", "."])
     if rc != 0:
         raise RuntimeError(f"git status failed: {err.strip() or out.strip()}")
     changes: list[ChangeRecord] = []
@@ -1089,7 +1089,7 @@ def log_runner_decision(
 
 def git_checkpoint(message: str, push: bool = True):
     cmds = [
-        ["git","add","-A"],
+        ["git","add","-A","--","."],
         ["git","commit","-m",message],
     ]
     if push:
@@ -1261,7 +1261,7 @@ def write_session_info(seed: int):
     if rc == 0:
         lines.append(f"git_head: {out.strip()}")
     # git status (short)
-    rc, out, _ = run_cmd(["git","status","-sb"])
+    rc, out, _ = run_cmd(["git","status","-sb","--","."])
     if rc == 0:
         lines.append("git_status: |")
         for ln in out.splitlines():
