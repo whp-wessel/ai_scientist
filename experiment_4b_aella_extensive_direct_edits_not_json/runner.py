@@ -162,6 +162,28 @@ class UserAbort(Exception):
 
     pass
 
+
+class _FormatPlaceholder:
+    """Preserve unknown format keys (incl. format specs) in templates."""
+
+    def __init__(self, key: str):
+        self.key = key
+
+    def __format__(self, spec: str) -> str:
+        if spec:
+            return f"{{{self.key}:{spec}}}"
+        return f"{{{self.key}}}"
+
+    def __str__(self) -> str:  # pragma: no cover - fallback string usage
+        return f"{{{self.key}}}"
+
+
+class _SafeFormatDict(dict):
+    """dict subclass that leaves unknown placeholders untouched."""
+
+    def __missing__(self, key):  # type: ignore[override]
+        return _FormatPlaceholder(str(key))
+
 # --- Prompt loading from agents.md ----------------------------------------------
 
 DEFAULT_TOTAL_LOOPS = int(os.environ.get("DEFAULT_TOTAL_LOOPS", "50"))
@@ -1195,11 +1217,12 @@ def _build_phase_user_prompt(
             f"{phase_block}\n"
             "=== PHASE CONTEXT END ===\n\n"
         )
-    format_args = {"state_json": state_prompt}
+    format_args: _SafeFormatDict = _SafeFormatDict({"state_json": state_prompt})
     if loop_idx is not None:
         format_args["loop_idx"] = loop_idx
         format_args["loop_index"] = f"{loop_idx:03d}"
-    return base_template.format(**format_args) + prefix + f"\n(Current phase: {phase})\n"
+    formatted = base_template.format_map(format_args)
+    return formatted + prefix + f"\n(Current phase: {phase})\n"
 
 
 def record_loop_counter(loop_idx: int) -> None:
