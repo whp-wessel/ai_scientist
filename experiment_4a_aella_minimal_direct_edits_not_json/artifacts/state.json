@@ -1,13 +1,13 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-07T14:39:24Z",
-  "loop_counter": 5,
+  "last_updated": "2025-11-07T14:51:06Z",
+  "loop_counter": 6,
   "next_actions": [
-    "Freeze and git-tag the PAP (status: frozen) now that H1 confirmatory contrasts are locked; capture the tag/hash in analysis/pre_analysis_plan.md.",
-    "Re-run scripts/loop004_h1_diagnostics.py and scripts/run_loop004_models.py with the recorded seed to produce confirmatory coefficients, populate analysis/results.csv with confirmatory=TRUE rows, and compute BH q-values.",
-    "Add multiplicity-aware language + tables to reports/paper.md and tables/ once confirmatory estimates land, ensuring privacy (n>=10)."
+    "Prepare sensitivity analyses for the H1 confirmatory family (HC3 SEs, alternative covariate sets) and log results in analysis/sensitivity_notes.md.",
+    "Decide whether H2\u2013H4 estimands are ready for promotion by extending literature review + diagnostics per the frozen PAP requirements.",
+    "Develop manuscript-ready figures/tables summarizing the confirmatory contrasts while ensuring public exports obey the n>=10 rule."
   ],
-  "phase": "pap",
-  "phase_ix": 1,
+  "phase": "analysis",
+  "phase_ix": 2,
   "total_loops": 50
 }
