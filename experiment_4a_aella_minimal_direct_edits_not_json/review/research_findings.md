@@ -10,3 +10,11 @@ R5 FAIL – The mandated manuscript scaffold `reports/paper.md` has not been cre
 
 Notes: Add the missing `reports/paper.md` (and the expected commit message file) before the next loop so checkpoints can proceed cleanly.
 
+## Loop 002 — 2025-11-07T14:05:18.620416+00:00
+DECISION: CONTINUE
+R1 PASS – Repro artifacts outline commands, environment, and seeds (`analysis/decision_log.csv:2-7`, `artifacts/session_info.txt:1-96`), with deterministic scripts (`scripts/make_loop002_descriptives.py:1-88`, `scripts/run_loop002_models.py:1-185`) backing regenerated tables.
+R2 PASS – Exploratory coefficients include estimates/SEs/CI/p-values plus explicit SRS justification per row (`analysis/results.csv:2-4`), matching the PAP design note (`analysis/pre_analysis_plan.md:8-45`).
+R3 PASS – Literature pulls are logged (e.g., `lit/queries/loop_002/query_001.json`) and mapped into `lit/bibliography.md:5-16` and `lit/evidence_map.csv:2-8`, with corresponding citations in `reports/paper.md:10-33`.
+R4 PASS – Public tables respect the n≥10 rule (see suppression logic in `scripts/make_loop002_descriptives.py:65-76`; outputs such as `tables/loop002_teen_covariate_categorical.csv` show minimum cell counts >10).
+R5 PASS – Required artifacts exist and are updated (PAP still “status: draft” at `analysis/pre_analysis_plan.md:1`, hypotheses register `analysis/hypotheses.csv:1-5`, results table `analysis/results.csv`, narrative log `notebooks/research_notebook.md:1-29`, manuscript scaffold `reports/paper.md:1-33`).
+
