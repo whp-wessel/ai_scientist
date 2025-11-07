@@ -1,0 +1,47 @@
+{
+  "abstract": null,
+  "authors": [
+    {
+      "authorId": "3418081",
+      "name": "Yung\u2010Jong Shiah"
+    },
+    {
+      "authorId": "2064560123",
+      "name": "Frances Chang"
+    },
+    {
+      "authorId": "145162035",
+      "name": "Shih-Kuang Chiang"
+    },
+    {
+      "authorId": "46815539",
+      "name": "I. Lin"
+    },
+    {
+      "authorId": "145505456",
+      "name": "W. Tam"
+    }
+  ],
+  "externalIds": {
+    "CorpusId": 19804997,
+    "DOI": "10.1007/s10943-013-9781-3",
+    "MAG": "2083545923",
+    "PubMed": "24132457"
+  },
+  "openAccessPdf": {
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10943-013-9781-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10943-013-9781-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+    "license": null,
+    "status": "CLOSED",
+    "url": ""
+  },
+  "paperId": "cb03172b2a3e4d7bd2cc4c5dbe034731fa56f561",
+  "publicationDate": "2015-02-01",
+  "publicationTypes": [
+    "JournalArticle",
+    "Review"
+  ],
+  "title": "Religion and Health: Anxiety, Religiosity, Meaning of Life and Mental Health",
+  "url": "https://www.semanticscholar.org/paper/cb03172b2a3e4d7bd2cc4c5dbe034731fa56f561",
+  "venue": "Journal of religion and health",
+  "year": 2015
+}

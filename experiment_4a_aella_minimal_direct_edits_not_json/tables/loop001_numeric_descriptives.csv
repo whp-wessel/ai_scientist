@@ -1,0 +1,7 @@
+variable_id,column_label,non_missing_n,missing_pct,mean,std,min,max
+mds78zu,during ages *0-12*: your parents verbally or emotionally abused you (mds78zu),14426,0.12,-0.225,2.408,-3.0,3.0
+wz901dj,I tend to suffer from depression (wz901dj),14438,0.03,-0.407,2.089,-3.0,3.0
+pqo6jmj,during ages *0-12*: Your parents gave useful guidance (pqo6jmj),14431,0.08,0.625,2.001,-3.0,3.0
+2l8994l,I love myself (2l8994l),14436,0.05,0.613,1.862,-3.0,3.0
+classchild,classchild,14443,0.0,2.621,1.276,0.0,6.0
+npvfh98,I tend to suffer from anxiety (npvfh98)-neg,14437,0.04,-0.827,2.031,-3.0,3.0

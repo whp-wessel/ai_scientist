@@ -1,0 +1,38 @@
+{
+  "abstract": "The effect of adverse childhood experiences (ACEs) on depression in adulthood has been identified in many studies; however, the underlying mechanisms remain unclear. To understand the moderating effect of ACEs on depression, a moderation analysis using the interaction effect model was performed based on data obtained from the China Health and Retirement Longitudinal Study. This study found that people with ACEs had significantly lower depression scores than those without ACEs, particularly in categories such as physical abuse, emotional neglect, sibling death, parental illness/disability, parental depression, hunger, violence, and bullying. In addition, the results indicated that contact with children moderated the relationship between ACEs and depression in adulthood. Increased levels of contact with children reduced the adverse effects of parental drug abuse and the experience of starvation, but not physical abuse. This study highlights the role of family support in eliminating health disparities, which can reduce the effects of ACEs on depression in adulthood.",
+  "authors": [
+    {
+      "authorId": "2118476684",
+      "name": "Yufeng Zhao"
+    },
+    {
+      "authorId": "2003818261",
+      "name": "Dianxi Wang"
+    },
+    {
+      "authorId": "2178875179",
+      "name": "Feilun Du"
+    }
+  ],
+  "externalIds": {
+    "CorpusId": 251000166,
+    "DOI": "10.3390/ijerph19158901",
+    "PubMed": "35897272",
+    "PubMedCentral": "9331561"
+  },
+  "openAccessPdf": {
+    "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9331561, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+    "license": "CCBY",
+    "status": "GOLD",
+    "url": "https://www.mdpi.com/1660-4601/19/15/8901/pdf?version=1658479422"
+  },
+  "paperId": "a37c9ef2e9a27f31b8b864021645d7cfdc606631",
+  "publicationDate": "2022-07-22",
+  "publicationTypes": [
+    "JournalArticle"
+  ],
+  "title": "The Moderating Effect of Contact with Children on the Relationship between Adverse Childhood Experiences and Depression in Adulthood among a Chinese Adult Population",
+  "url": "https://www.semanticscholar.org/paper/a37c9ef2e9a27f31b8b864021645d7cfdc606631",
+  "venue": "International Journal of Environmental Research and Public Health",
+  "year": 2022
+}

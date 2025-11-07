@@ -1,2 +1,6 @@
 paper_key,doi,url,hypothesis_ids,notes
 FFCWS2024,10.1161/circ.149.suppl_1.67,https://www.semanticscholar.org/paper/1bac922de288db7703a0a5413a72931e0063c148,"H1;H3","Source describes longitudinal links between childhood adversity and later health; extracted from lit/queries/loop_000/query_001.json."
+Zhang2025,10.1016/j.chiabu.2025.107294,https://www.semanticscholar.org/paper/c831caa645bd54d9985d433471a37d9673f750c6,H1,"Loop001 search (`lit/queries/loop_001/query_001.json`); nationwide longitudinal evidence that emotional neglect predicts adult depression."
+Assari2025,10.3390/children12060754,https://www.semanticscholar.org/paper/5bc9ea1c2aa373f1c0945337ab2a33c3be3ec232,H1,"Loop001 search (`lit/queries/loop_001/query_001.json`); shows gender moderation in abuse→depression link."
+Zhao2022,10.3390/ijerph19158901,https://www.semanticscholar.org/paper/a37c9ef2e9a27f31b8b864021645d7cfdc606631,H1,"Loop001 paper pull (`lit/queries/loop_001/query_002.json`); family support moderates ACE impacts on depression."
+Shiah2015,10.1007/s10943-013-9781-3,https://www.semanticscholar.org/paper/cb03172b2a3e4d7bd2cc4c5dbe034731fa56f561,H4,"Loop001 paper pull (`lit/queries/loop_001/query_003.json`); religiosity inversely associated with anxiety via meaning pathways."

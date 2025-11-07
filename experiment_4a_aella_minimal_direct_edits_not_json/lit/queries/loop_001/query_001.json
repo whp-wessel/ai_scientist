@@ -1,0 +1,190 @@
+{
+  "data": [
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "2343487388",
+          "name": "Chen Zhang"
+        },
+        {
+          "authorId": "2342881979",
+          "name": "Jingsong Chen"
+        },
+        {
+          "authorId": "2343333599",
+          "name": "Yongzhang Lai"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 276204898,
+        "DOI": "10.1016/j.chiabu.2025.107294",
+        "PubMed": "39919624"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.chiabu.2025.107294?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.chiabu.2025.107294, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "c831caa645bd54d9985d433471a37d9673f750c6",
+      "publicationDate": "2025-02-06",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "The mediating role of childhood emotional neglect in the association between childhood neighborhood quality and adult depression outcomes: A nationwide longitudinal analysis.",
+      "url": "https://www.semanticscholar.org/paper/c831caa645bd54d9985d433471a37d9673f750c6",
+      "venue": "International Journal of Child Abuse & Neglect",
+      "year": 2025
+    },
+    {
+      "abstract": "Background: Adverse childhood experiences (ACEs) such as abuse (defined as emotional, physical, or sexual abuse without distinguishing type or severity) have long been linked to mental health challenges in adulthood. However, less is known about how these effects differ by sex/gender in global samples, particularly using large-scale, multi-country panel data. Objectives: To examine whether the long-term association between childhood abuse and changes in depressive symptoms during adulthood differ between men and women, after adjusting for demographic and socioeconomic factors. Methods: We conducted a secondary analysis of Waves 1 and 2 of the Global Flourishing Study (GFS), a longitudinal panel study covering 22 diverse countries. The sample included adult participants with complete data on childhood abuse (yes/no); depression at baseline and follow-up; sex/gender; and relevant covariates (age; education; marital status; immigration status; smoking status; and employment). Depression was measured using a two-item scale. Multi-group structural equation models were used to test the effect of ACE on changes in depression over time where groups were defined based on sex/gender. Results: Overall, childhood abuse was associated with a statistically significant increase in depression scores between Wave 1 and Wave 2. This association was significant among women but not among men. Conclusions: Our findings suggest that the mental health consequences of childhood abuse extend into adulthood and disproportionately affect women. These sex/gender differences may reflect variations in stress processing; coping; and social roles. Interventions addressing early adversity may need to be tailored to recognize and respond to such sex/gender-specific vulnerabilities.",
+      "authors": [
+        {
+          "authorId": "2244521456",
+          "name": "Shervin Assari"
+        },
+        {
+          "authorId": "7556335",
+          "name": "Babak Najand"
+        },
+        {
+          "authorId": "2279990764",
+          "name": "Alexandra Donovan"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 279324965,
+        "DOI": "10.3390/children12060754",
+        "PubMed": "40564712",
+        "PubMedCentral": "12190975"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12190975, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": null,
+        "url": ""
+      },
+      "paperId": "5bc9ea1c2aa373f1c0945337ab2a33c3be3ec232",
+      "publicationDate": "2025-06-01",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Sex/Gender Differences in the Effects of Childhood Abuse on Future Risk of Depression: Longitudinal Evidence from the Global Flourishing Study",
+      "url": "https://www.semanticscholar.org/paper/5bc9ea1c2aa373f1c0945337ab2a33c3be3ec232",
+      "venue": "Children",
+      "year": 2025
+    },
+    {
+      "abstract": "Abstract Although adverse childhood experiences (ACEs) are commonly associated with depressive symptoms in adulthood, studies frequently collapse ACEs into a single unitary index, making it difficult to identify specific targets for intervention and prevention. Furthermore, studies rarely explore sex differences in this area despite males and females often differing in the experiences of ACEs, depressive symptoms, and inflammatory activity. To address these issues, we used data from the National Longitudinal Study of Adolescent to Adult Health to model the effects of 10 different ACEs on C-reactive protein (CRP) and depressive symptoms in adulthood. Path modeling was used to measure the effects of ACEs on CRP and depressive symptoms conjointly while also assigning covariances among ACEs to assess their interrelations. Sex-by-ACE interaction terms and sex-disaggregated models were used to test for potential differences. Emotional abuse and parental incarceration were consistently related to both CRP and depressive symptoms for males and females. Childhood maltreatment was associated with depressive symptoms for females, whereas sexual abuse was associated with inflammation for males. Several covariances among ACEs were identified, indicating potential networks through which ACEs are indirectly associated with CRP and depressive symptoms. These data demonstrate that ACEs have differing direct effects on CRP and depressive symptoms \u2013 and that they differ with respect to how they cluster \u2013 for males versus females. These differences should be considered in theory and clinical workflows aiming to understand, treat, and prevent the long-term impacts of ACEs on depressive symptoms and inflammation-related health conditions in adulthood.",
+      "authors": [
+        {
+          "authorId": "1432924001",
+          "name": "Jay D. O'Shields"
+        },
+        {
+          "authorId": "5953612",
+          "name": "George M. Slavich"
+        },
+        {
+          "authorId": "2277101002",
+          "name": "Orion Mowbray"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 278528979,
+        "DOI": "10.1017/S0033291725001102",
+        "PubMed": "40357904",
+        "PubMedCentral": "12094661"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12094661, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": null,
+        "url": ""
+      },
+      "paperId": "a7a8fd82611aaa2bd8483a386cba72d475dc3221",
+      "publicationDate": "2025-05-13",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Adverse childhood experiences, inflammation, and depression: evidence of sex- and stressor specific effects in a nationally representative longitudinal sample of U.S. adolescents",
+      "url": "https://www.semanticscholar.org/paper/a7a8fd82611aaa2bd8483a386cba72d475dc3221",
+      "venue": "Psychological Medicine",
+      "year": 2025
+    },
+    {
+      "abstract": "The effect of adverse childhood experiences (ACEs) on depression in adulthood has been identified in many studies; however, the underlying mechanisms remain unclear. To understand the moderating effect of ACEs on depression, a moderation analysis using the interaction effect model was performed based on data obtained from the China Health and Retirement Longitudinal Study. This study found that people with ACEs had significantly lower depression scores than those without ACEs, particularly in categories such as physical abuse, emotional neglect, sibling death, parental illness/disability, parental depression, hunger, violence, and bullying. In addition, the results indicated that contact with children moderated the relationship between ACEs and depression in adulthood. Increased levels of contact with children reduced the adverse effects of parental drug abuse and the experience of starvation, but not physical abuse. This study highlights the role of family support in eliminating health disparities, which can reduce the effects of ACEs on depression in adulthood.",
+      "authors": [
+        {
+          "authorId": "2118476684",
+          "name": "Yufeng Zhao"
+        },
+        {
+          "authorId": "2003818261",
+          "name": "Dianxi Wang"
+        },
+        {
+          "authorId": "2178875179",
+          "name": "Feilun Du"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 251000166,
+        "DOI": "10.3390/ijerph19158901",
+        "PubMed": "35897272",
+        "PubMedCentral": "9331561"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9331561, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://www.mdpi.com/1660-4601/19/15/8901/pdf?version=1658479422"
+      },
+      "paperId": "a37c9ef2e9a27f31b8b864021645d7cfdc606631",
+      "publicationDate": "2022-07-22",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "The Moderating Effect of Contact with Children on the Relationship between Adverse Childhood Experiences and Depression in Adulthood among a Chinese Adult Population",
+      "url": "https://www.semanticscholar.org/paper/a37c9ef2e9a27f31b8b864021645d7cfdc606631",
+      "venue": "International Journal of Environmental Research and Public Health",
+      "year": 2022
+    },
+    {
+      "abstract": "This study examined the association of childhood adversity with depression or severity of depressive symptoms among Chinese older adults, using data from the China Health and Retirement Longitudinal Study (CHARLS). The data is from a nationally representative sample of Chinese residents aged 45 or older and surveys of the sample population were conducted in 2011 and 2013; and individuals aged at 60 years or older, and interviewed for depressive symptom were included in this study. Multiple logistic regression analyses showed that the likelihood of depression was significantly associated with poor parental mental status, physical abuse, and emotional abuse during childhood. Our study adds to research in the area of adverse childhood events and its effect on adult psychological and physical well-being.",
+      "authors": [
+        {
+          "authorId": "2144462135",
+          "name": "Yue Li"
+        },
+        {
+          "authorId": "5623489",
+          "name": "Jiehua Lu"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 241252104,
+        "DOI": "10.36316/gcatr.01.0007"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.36316/gcatr.01.0007?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.36316/gcatr.01.0007, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "BRONZE",
+        "url": "https://doi.org/10.36316/gcatr.01.0007"
+      },
+      "paperId": "580ba1b483bebb8b8c4dfd77166ee73f640c36a7",
+      "publicationDate": "2019-02-15",
+      "publicationTypes": [
+        "Review"
+      ],
+      "title": "Childhood Adversity and Depression among Older Adults: Results from a Longitudinal Survey in China",
+      "url": "https://www.semanticscholar.org/paper/580ba1b483bebb8b8c4dfd77166ee73f640c36a7",
+      "venue": "Global Clinical and Translational Research",
+      "year": 2019
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 8674
+}

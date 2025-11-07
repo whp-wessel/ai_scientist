@@ -34,6 +34,7 @@ _All hypotheses currently exploratory; confirmatory status will be frozen after 
 
 ## Survey Design & Weighting
 - TODO: Search for design documentation or contact data provider.  
+- Interim finding (Loop 001): automated scan of all 718 headers found no columns containing `weight`, `strata`, or `cluster` other than the literal anthropometric “weight” question, so we proceed under an SRS assumption while documenting diagnostics.  
 - Fallback: justify SRS via balanced sample description (balanced panel per filename) and replicate weights absent.
 
 ## Analysis Workflow
@@ -42,6 +43,11 @@ _All hypotheses currently exploratory; confirmatory status will be frozen after 
 3. Exploratory descriptives + correlation matrices for each hypothesis family.
 4. Model estimation as listed above, with heteroskedasticity-robust SEs.
 5. Multiplicity: Hypotheses grouped by thematic family for q-value control once confirmatory.
+
+## Data Audit Status (Loop 001)
+- Priority variable codebook drafted in `docs/codebook_priority.md`, referencing deterministic summaries under `tables/loop001_numeric_descriptives.csv` and `tables/loop001_categorical_counts.csv`.
+- Missingness across H1–H4 variables is ≤0.12%, so listwise deletion remains defensible for exploratory work.
+- Public table exports follow the n≥10 rule (smallest revealed cell = 135 respondents in the “Elite class” childhood category).
 
 ## Reproducibility Checklist
 - Track commands + seeds in `analysis/decision_log.csv`.

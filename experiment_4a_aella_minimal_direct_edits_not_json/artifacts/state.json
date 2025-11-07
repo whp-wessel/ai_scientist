@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-07T13:33:45Z",
-  "loop_counter": 0,
+  "last_updated": "2025-11-07T15:10:00Z",
+  "loop_counter": 1,
   "next_actions": [
-    "Assemble provisional codebook for priority variables (abuse, guidance, class, religiosity, outcomes).",
-    "Run descriptive + missingness diagnostics for H1-H4 measures; justify SRS with evidence.",
-    "Expand literature review with at least two more Semantic Scholar queries to prep PAP freeze."
+    "Extend the codebook/descriptives to teen-period exposures plus covariates needed for adjustments.",
+    "Prototype modeling scripts (OLS/logit) with reproducible commands and confirm reverse-coded items.",
+    "Add literature coverage for parental guidance/self-love and class mobility before PAP freeze."
   ],
   "phase": "literature",
   "phase_ix": 0,
