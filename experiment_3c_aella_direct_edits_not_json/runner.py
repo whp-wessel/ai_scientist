@@ -1097,9 +1097,10 @@ def git_checkpoint(message: str, push: bool = True):
         if rc != 0:
             return False, f"{' '.join(cmd)} -> {err.strip() or out.strip()}"
     # record HEAD after (attempted) push
-    rc, out, _ = run_cmd(["git","rev-parse","HEAD"])
-    head = out.strip() if rc == 0 else ""
-    (REPO/"artifacts"/"last_commit.txt").write_text(head + "\n", encoding="utf-8")
+    if push:
+        rc, out, _ = run_cmd(["git","rev-parse","HEAD"])
+        head = out.strip() if rc == 0 else ""
+        (REPO/"artifacts"/"last_commit.txt").write_text(head + "\n", encoding="utf-8")
     return True, ""
 
 
