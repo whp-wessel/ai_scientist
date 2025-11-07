@@ -423,6 +423,33 @@ def _check_small_cell_privacy() -> Tuple[bool, str]:
         msg_lines.append(f" - {p.relative_to(REPO)}: {', '.join(f'{c}={v}' for c,v in hits)}")
     return False, "\n".join(msg_lines)
 
+def _pap_status_alert_message() -> Optional[str]:
+    """Return a prompt-ready alert when confirmatory work lacks a literal frozen commit header."""
+    results_path = REPO/"analysis"/"results.csv"
+    if not results_path.exists(): return None
+    if not _confirmatory_rows(results_path): return None
+    pap_path = REPO/"analysis"/"pre_analysis_plan.md"
+    if not pap_path.exists():
+        return ("Confirmatory results exist but analysis/pre_analysis_plan.md is missing. "
+                "Create it and set the header to `status: frozen (commit <hash>)` referencing the frozen git commit.")
+    commit = _pap_frozen_commit()
+    if commit: return None
+    try:
+        text = pap_path.read_text(encoding="utf-8")
+    except Exception:
+        return None
+    status_details = ""
+    match = re.search(r"status:\s*frozen\s*\(([^)]*)\)", text, re.IGNORECASE)
+    if match:
+        status_details = match.group(1).strip()
+    if status_details:
+        return ("Confirmatory results exist but the PAP header currently reads "
+                f"`status: frozen ({status_details})`. Replace it with the literal "
+                "`status: frozen (commit <hash>)` form by inserting the git hash behind the freeze tag "
+                "(e.g., run `git rev-parse pap_freeze_loop006`).")
+    return ("Confirmatory results exist but the PAP header is missing the literal "
+            "`status: frozen (commit <hash>)`. Update the header with the frozen git commit hash before continuing.")
+
 def _check_survey_design_assertion(results_path: Path) -> Tuple[bool, str]:
     indicators = _detect_survey_design_features()
     requires_design = any(indicators.values())
@@ -696,6 +723,9 @@ def do_loop(iter_ix: int, consecutive_git_fails: int):
         except ValueError: rel_review = review_log_path
         progress_note += f" Review log: {rel_review}."
     user_prompt += progress_note
+    pap_alert = _pap_status_alert_message()
+    if pap_alert:
+        user_prompt += f"\nNon-negotiable alert: {pap_alert}"
 
     try:
         raw = run_codex_cli(user_prompt, loop_system)

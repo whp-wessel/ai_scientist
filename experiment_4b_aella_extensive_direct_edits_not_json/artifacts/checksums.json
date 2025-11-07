@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "path": "data/raw/childhoodbalancedpublic_original.csv",
+    "sha256": "811681051039f470268aac4e5a94bcf1a325a9d60d644e08b98ba97c74c3e222",
+    "size_bytes": 42502096,
+    "mtime": "2025-11-07T14:23:22.543653+00:00"
+  }
+]

@@ -36,7 +36,7 @@ Study the provided survey dataset (`childhoodbalancedpublic_original.csv`) and p
 
 ## Minimal Deliverables (you decide the rest)
 - `analysis/decision_log.csv` — append every action with enough detail for audit.
-- `analysis/pre_analysis_plan.md` — living document, clearly marked **`status: draft`** vs **`status: frozen (commit <hash>)`**.
+- `analysis/pre_analysis_plan.md` — living document, clearly marked **`status: draft`** vs **`status: frozen (commit <hash>)`**. Once any confirmatory result exists, proactively rewrite the header to that literal form and populate `<hash>` with the git commit behind the freeze tag (e.g., `git rev-parse pap_freeze_loop006`).
 - `analysis/hypotheses.csv` and `analysis/results.csv` — registries capturing at minimum:
   - `result_id`, `hypothesis_id`, `hypothesis_family`, `confirmatory` (bool), `estimate`, `se`, `ci_low`, `ci_high`, `p_value`, **`q_value`** (if confirmatory family size > 1), `design_used` (bool), `srs_justification` (text, if not using design), `notes`.
 - `notebooks/research_notebook.md` — narrative record of progress.
@@ -178,6 +178,7 @@ STATE_JSON_END
 
 Instructions:
 - Study the snapshot, backlog, and latest reviewer feedback. Decide the next scientific step.
+- If the prompt includes a "Non-negotiable alert", resolve it immediately (e.g., rewrite the PAP header to `status: frozen (commit <hash>)` using the tagged freeze commit).
 - Update/create artifacts as needed. Append an `analysis/decision_log.csv` row.
 - Explicitly mark results rows as `confirmatory` where applicable and assign `hypothesis_family`.
 - If a confirmatory family has >1 test, compute and record `q_value` and the FDR method used.
