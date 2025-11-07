@@ -1,0 +1,9 @@
+variable_id,column_label,non_missing_n,missing_pct,mean,std,min,max
+v1k988q,during ages *13-18*: your parents verbally or emotionally abused you (v1k988q),14426,0.118,-0.045,2.412,-3.0,3.0
+dcrx5ab,during ages *13-18*: Your parents gave useful guidance (dcrx5ab),14431,0.083,0.283,2.083,-3.0,3.0
+classteen,classteen,14443,0.0,2.76,1.249,0.0,6.0
+classcurrent,classcurrent,14443,0.0,3.022,1.259,0.0,6.0
+selfage,selfage,14443,0.0,30.425,10.169,18.0,75.0
+education,education,14443,0.0,4.379,1.611,0.0,7.0
+gendermale,gendermale,14443,0.0,0.572,0.495,0.0,1.0
+cis,cis,14443,0.0,0.917,0.276,0.0,1.0

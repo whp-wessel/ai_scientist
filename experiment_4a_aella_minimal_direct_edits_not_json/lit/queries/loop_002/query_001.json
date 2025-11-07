@@ -1,0 +1,33 @@
+{
+  "abstract": "This study examined social and individual predictors of internalizing symptoms in college students, and in particular explored the indirect effects of mother and father support through self-esteem. A total of 123 college students completed self-reported online surveys measuring mother and father support, self-esteem, and internalizing symptoms (depression and anxiety, withdrawal, and somatic symptoms). Students reported greater support from mothers compared to fathers, t (114) = 5.84, p < .001. On average, higher maternal (but not paternal) support (\u03b2 = -0.25, p = .006) and self-esteem (\u03b2 = -0.61, p < .001) were associated with lower internalizing symptoms. For women, self-esteem mediated the relationship between maternal support and internalizing symptoms, indicating that greater maternal support was associated with greater self-esteem, which in turn was associated with lower internalizing symptoms (F = 41.98, p < .001). However, this pathway was not significant for men. These results highlight the importance of exploring the influence of different sources of support separately, and suggest that improving self-esteem for both men and women, and improving maternal support for women may decrease risk for internalizing symptoms in emerging adulthood. https://doi.org/10.24839/2325-7342.JN22.2.131",
+  "authors": [
+    {
+      "authorId": "116145848",
+      "name": "L. Moore"
+    },
+    {
+      "authorId": "5557096",
+      "name": "Madelynn D. Shell"
+    }
+  ],
+  "externalIds": {
+    "CorpusId": 59503142,
+    "DOI": "10.24839/2325-7342.JN22.2.131",
+    "MAG": "2614763135"
+  },
+  "openAccessPdf": {
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.24839/2325-7342.JN22.2.131?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.24839/2325-7342.JN22.2.131, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+    "license": null,
+    "status": "GOLD",
+    "url": "https://www.psichi.org/resource/resmgr/journal_2017/SummerJN17.pdf"
+  },
+  "paperId": "21e2926605d783111d903930d430e4a473a76860",
+  "publicationDate": null,
+  "publicationTypes": [
+    "Review"
+  ],
+  "title": "The Effects of Parental Support and Self-Esteem on Internalizing Symptoms in Emerging Adulthood",
+  "url": "https://www.semanticscholar.org/paper/21e2926605d783111d903930d430e4a473a76860",
+  "venue": "",
+  "year": 2017
+}

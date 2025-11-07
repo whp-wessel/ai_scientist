@@ -1,9 +1,0 @@
-{
-  "query": "religious adherence adult wellbeing survey",
-  "endpoint": "https://api.semanticscholar.org/graph/v1/paper/search",
-  "attempted_at_utc": "2025-11-07T12:05:55Z",
-  "status": "error",
-  "http_status": 403,
-  "message": "Semantic Scholar API error 403: {\"message\":\"Forbidden\"}",
-  "notes": "Initial bootstrap attempt failed because the provided S2_API_Key was rejected. Will retry once credentials are confirmed or refreshed."
-}

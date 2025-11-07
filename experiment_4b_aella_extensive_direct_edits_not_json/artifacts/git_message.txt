@@ -1,1 +1,0 @@
-bootstrap: initialize governance scaffolding and literature stubs

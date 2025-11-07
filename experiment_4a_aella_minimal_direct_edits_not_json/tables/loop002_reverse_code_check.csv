@@ -1,0 +1,2 @@
+item_id,check,value,n_obs,interpretation
+npvfh98_neg,pearson_corr_with_depression,0.6145169065978434,14437,Positive correlation implies higher values reflect worse anxiety; no additional flip needed.

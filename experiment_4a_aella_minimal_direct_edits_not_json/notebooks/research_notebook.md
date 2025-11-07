@@ -19,3 +19,11 @@
 - Expanded the literature base: ran a Semantic Scholar search on “childhood emotional abuse adult depression longitudinal” (`lit/queries/loop_001/query_001.json`) and, after repeated 429 throttles, switched to DOI-based `paper` pulls (`query_002.json`, `query_003.json`) to cover ACE→depression moderation and religiosity→anxiety evidence. Logged all attempts plus the rate-limit workaround here for traceability.
 - Updated `lit/bibliography.md` and `lit/evidence_map.csv` with four new peer-reviewed sources tied to H1 and H4, noting which JSON file each entry came from.
 - Recorded the loop in `analysis/decision_log.csv` and refreshed `artifacts/state.json`(loop counter, next actions) to keep the experiment state machine aligned.
+
+## 2025-11-07 – Loop 002
+- Extended the codebook to cover teen-period exposures and adjustment covariates by writing `scripts/make_loop002_descriptives.py`, exporting `tables/loop002_teen_covariate_numeric.csv` and `tables/loop002_teen_covariate_categorical.csv`, and summarizing the additions inside `docs/codebook_priority.md`.
+- Prototyped regression models via `scripts/run_loop002_models.py`: OLS for H1/H2 and a binary logit for H3 (≥$1M net worth), logging coefficients to `tables/loop002_model_estimates.csv`, appending exploratory results to `analysis/results.csv`, and creating `tables/loop002_reverse_code_check.csv` to document that the anxiety “-neg” column is already aligned.
+- Noted that several Likert items (e.g., self-love, abuse) yield counter-intuitive signs, so the next loop will diagnose and standardize polarity before PAP freeze; this is reflected in the PAP “Loop 002 Updates” section.
+- Literature coverage: initial Semantic Scholar `search` call returned repeated 429s; switched to DOI-specific `paper` pulls for Moore & Shell (2017) and Hansen (2014), adding both entries to `lit/bibliography.md` and `lit/evidence_map.csv` under `lit/queries/loop_002/`.
+- Scaffolded `reports/paper.md` with an outline, preliminary narrative, and citations so future loops can iterate toward a submit-ready manuscript.
+- Updated state/logs (`analysis/decision_log.csv`, `artifacts/state.json`) with commands, seeds (deterministic), and follow-on tasks centered on scale orientation, richer models (ordered logits + H4), and PAP freezing.

@@ -53,3 +53,9 @@ _All hypotheses currently exploratory; confirmatory status will be frozen after 
 - Track commands + seeds in `analysis/decision_log.csv`.
 - All scripts/notebooks run via deterministic commands logged in `notebooks/research_notebook.md`.
 - Results + figures exported under `tables/` and `figures/` with n<10 suppression.
+
+## Loop 002 Updates
+- **Teen exposures + covariates**: `scripts/make_loop002_descriptives.py` exports `tables/loop002_teen_covariate_numeric.csv` and `tables/loop002_teen_covariate_categorical.csv`, documenting adolescent abuse/guidance plus the adjustment set (`classteen`, `selfage`, `education`, `gendermale`, `cis`, `classcurrent`).
+- **Model prototypes**: `scripts/run_loop002_models.py` runs two OLS models (H1, H2) and one logit (H3 high-net-worth) with controls listed above, writing estimates to `tables/loop002_model_estimates.csv` and populating `analysis/results.csv` with exploratory coefficients.
+- **Reverse-code audit**: `tables/loop002_reverse_code_check.csv` records that the provided anxiety item (`npvfh98)-neg`) is already aligned with worse outcomes (positive correlation with depression). Remaining Likert items show counter-intuitive signs, so the next loop will formally verify directionality before freezing the PAP.
+- **Next actions before PAP freeze**: (1) resolve Likert orientation so “higher” consistently means greater risk/protection; (2) expand ordered logit specs for net-worth deciles and anxiety outcome models (H4); (3) fold the new literature (Moore & Shell, 2017; Hansen, 2014) into hypothesis justifications.

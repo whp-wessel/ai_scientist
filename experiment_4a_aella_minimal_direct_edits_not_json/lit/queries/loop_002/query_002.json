@@ -1,0 +1,27 @@
+{
+  "abstract": null,
+  "authors": [
+    {
+      "authorId": "12015304",
+      "name": "Marianne Nordli Hansen"
+    }
+  ],
+  "externalIds": {
+    "CorpusId": 154279928,
+    "DOI": "10.1093/SF/SOU078",
+    "MAG": "2143283053"
+  },
+  "openAccessPdf": {
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1093/SF/SOU078?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/SF/SOU078, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+    "license": null,
+    "status": "CLOSED",
+    "url": "https://doi.org/10.1093/sf/sou078"
+  },
+  "paperId": "3b1f83550235c9f464f0ec3a61f725306a442058",
+  "publicationDate": "2014-11-13",
+  "publicationTypes": null,
+  "title": "Self-Made Wealth or Family Wealth?: Changes in Intergenerational Wealth Mobility",
+  "url": "https://www.semanticscholar.org/paper/3b1f83550235c9f464f0ec3a61f725306a442058",
+  "venue": "",
+  "year": 2014
+}

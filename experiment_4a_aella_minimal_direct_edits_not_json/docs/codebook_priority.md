@@ -58,3 +58,29 @@ Generated from `childhoodbalancedpublic_original.csv` on 2025-11-07 (seedless de
 - All Likert items share a symmetric seven-point coding already centered at zero with unit steps; no additional rescaling performed yet.
 - Missingness across priority variables is ≤0.12%, so listwise deletion is viable for exploratory work. Missingness diagnostics will be repeated if additional covariates introduce >5% loss.
 - No survey design variables (weights, strata, clusters) were detected when scanning column headers for the strings “weight”, “strata”, or “cluster”; see `analysis/pre_analysis_plan.md` for the SRS justification.
+
+## Teen Exposures & Adjustment Covariates — Loop 002 Extension
+
+Descriptive summaries are exported to `tables/loop002_teen_covariate_numeric.csv` (numeric Likert/ordinal variables) and `tables/loop002_teen_covariate_categorical.csv` (public-safe counts, n≥10 cells). These variables support teen-period contrasts and the adjustment set planned for OLS/logit prototypes.
+
+### Teen Emotional Abuse (Ages 13–18)
+- **Column**: `during ages *13-18*: your parents verbally or emotionally abused you (v1k988q)`.
+- **Coverage**: 14,426 valid responses (missing 0.12%).
+- **Distribution**: Mean = -0.045, SD = 2.41 on the -3→3 Likert scale; mirrors the childhood exposure but shifts slightly toward neutrality for the teen years.
+
+### Teen Parental Guidance
+- **Column**: `during ages *13-18*: Your parents gave useful guidance (dcrx5ab)`.
+- **Coverage**: 14,431 valid responses (missing 0.08%).
+- **Distribution**: Mean = 0.283, SD = 2.08; still skewed positive but less so than the 0–12 measure, suggesting greater heterogeneity in adolescence.
+
+### Teen Socioeconomic Class
+- **Ordinal scale**: `classteen` (0–6) has full coverage with mean 2.76 (SD 1.25), indicating a slight upward shift relative to childhood class (mean 2.62).
+- **Categorical prompt**: `When you were a teen (13-18 years old), your family was (uky2ksa)` remains balanced: Middle class (32%), Upper-middle (23%), Lower-middle (23%), Low (12%), Upper (5%), Underclass (4%), Elite (0.8%). All cells exceed the n≥10 disclosure threshold.
+
+### Current Class & Demographics (Adjustment Set)
+- **Current class**: `classcurrent` spans 0–6 with mean 3.02 (SD 1.26), reflecting slight upward mobility relative to teen status.
+- **Age**: `selfage` (18–75) averages 30.4 years (SD 10.2).
+- **Education**: Seven-point attainment scale (`education`) centers at 4.38 (SD 1.61), suggesting most respondents completed at least some college.
+- **Gender identity**: `gendermale` (binary) has mean 0.57 (57% identifying as male); `cis` averages 0.92, indicating 92% cis-identifying respondents. Both variables are fully observed.
+
+These additions complete the shared adjustment set for multivariate models and document the teen-period analogues of the primary exposures.
