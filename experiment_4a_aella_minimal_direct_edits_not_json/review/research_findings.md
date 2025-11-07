@@ -34,3 +34,11 @@ R3 PASS – Literature tracking maps Semantic Scholar pulls to hypotheses (`lit/
 R4 PASS – Public tables remain aggregate-only with smallest disclosed cell ≥135 respondents, satisfying the n≥10 requirement (`analysis/pre_analysis_plan.md:47-51`).  
 R5 PASS – Core artifacts (PAP, hypotheses, results, manuscript) exist and are marked exploratory (`analysis/pre_analysis_plan.md:1-93`; `analysis/hypotheses.csv:1-5`; `analysis/results.csv:1-19`; `reports/paper.md:1-36`), matching the still-in-PAP phase.
 
+## Loop 005 — 2025-11-07T14:44:34.421277+00:00
+DECISION: CONTINUE
+R1 WARN: analysis/decision_log.csv:1-14 stops after loop002 even though notebooks and artifacts show work through loop005, so the last three loops have no logged commands/seeds; please append those entries to restore the reproducibility trail.
+R2 PASS: analysis/results.csv:1-10 records each exploratory estimand with estimate/SE/CI/p and explicit SRS justifications, and no confirmatory rows run before the PAP is frozen, so statistical guardrails remain intact.
+R3 PASS: lit/bibliography.md:1-17 and lit/evidence_map.csv:1-9 catalog peer-reviewed sources with DOIs tied to saved Semantic Scholar JSON, and reports/paper.md:1-36 cites them when motivating hypotheses.
+R4 PASS: public exports such as tables/loop005_h1_simple_slopes.csv:1-6 report only n_obs≈14k cells, so no table exposes n<10 and privacy expectations are met.
+R5 PASS: Core artifacts exist and are current—analysis/pre_analysis_plan.md:1-98 remains status draft with loop updates, analysis/hypotheses.csv:1-5 lists the four families, and reports/paper.md:1-36 tracks manuscript progress; PAP freezing/tagging is pending but not yet required.
+
