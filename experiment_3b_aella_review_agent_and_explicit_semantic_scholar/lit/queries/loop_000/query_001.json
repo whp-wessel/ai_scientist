@@ -1,17 +1,121 @@
 {
-  "timestamp": "2025-11-07T10:59:57Z",
+  "timestamp": "2025-11-07T11:07:34Z",
   "endpoint": "graph/v1/paper/search",
   "params": {
-    "query": "childhood nutrition",
-    "limit": 5,
-    "fields": "title,year,venue,externalIds,url,authors"
+    "query": "childhood nutrition adult wellbeing survey",
+    "limit": "5",
+    "fields": "title,year,venue,externalIds,url,openAccessPdf,authors,citationCount,abstract"
   },
-  "note": "Initial call returned HTTP 429 (rate-limited). Will request API key or retry with backoff before literature gate.",
-  "response": {
-    "status": 429,
-    "body": {
-      "message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form",
-      "code": "429"
+  "result_count": 5,
+  "total_available": 1061,
+  "papers": [
+    {
+      "paperId": "8c6cbdfa038cdf24b9b90c29a04222111e2a19a6",
+      "title": "Abstract 4136977: Childhood Food Security and Cardiometabolic Health in Young Adulthood",
+      "year": 2024,
+      "venue": "Circulation",
+      "doi": "10.1161/circ.150.suppl_1.4136977",
+      "url": "https://www.semanticscholar.org/paper/8c6cbdfa038cdf24b9b90c29a04222111e2a19a6",
+      "citationCount": 0,
+      "authors": [
+        "Emily Lam",
+        "A. Gauen",
+        "N. Kandula",
+        "Daniel A. Notterman",
+        "Noreen Goldman",
+        "Donald Lloyd-Jones",
+        "Norrina Allen",
+        "Nilay Shah"
+      ],
+      "abstract_excerpt": "Background: Food insecurity is associated with adverse cardiometabolic health in adults. To understand the early, long-term impact of food insecurity, we examined the associations of food insecurity in childhood with young adult cardiovascular-kidney-metabolic (CKM) syndrome stage and suboptimal cardiovascular health (CVH), and the modifying effects of participation during childhood in the Supplemental Nutrition Assistance Program (SNAP). Methods: In the Future of Families and Child Wellbeing Study of individuals enrolled at birth (1998-2000) and followed through age 22 years (2020-24) across 20 US cities, the associations of household food insecurity during childhood (age 3-5 years; score \u2265\u2026"
+    },
+    {
+      "paperId": "1fcd546a1072178933b1d682e36eb57252d7a932",
+      "title": "Depression in Childhood Asthma vs. Adult-Onset Asthma: A Cross-Sectional Study from the National Health and Nutrition Examination Survey (NHANES)",
+      "year": 2022,
+      "venue": "Children",
+      "doi": "10.3390/children9121797",
+      "url": "https://www.semanticscholar.org/paper/1fcd546a1072178933b1d682e36eb57252d7a932",
+      "citationCount": 7,
+      "authors": [
+        "Zeeshan Faruqui",
+        "Zalak Thakker",
+        "Dilshad Parveen",
+        "Saloni H. Naik",
+        "Marzhan Urazbayeva",
+        "Vidisha Jain",
+        "Dhivya Kannan",
+        "Che Marie",
+        "Sona Xavier",
+        "Patali Mandava",
+        "Joshua Jogie",
+        "G. Yadav",
+        "Saral Desai",
+        "Ya-Ching Hsieh",
+        "U. Patel",
+        "Devraj Chavda",
+        "Jagdeep Kaur"
+      ],
+      "abstract_excerpt": "Background: asthma, a chronic respiratory disease caused by inflammation and narrowing of the small airways in the lungs, is the most common chronic childhood disease. Prevalence of childhood asthma in the United States is 5.8%. In boys, prevalence is 5.7% and it is 6% in girls. Asthma is associated with other comorbidities such as major depressive disorder and anxiety disorder. This study explores the association between asthma and depression. Methods: we conducted a retrospective cross-sectional study using NHANES data from 2013 to 2018. Asthma and childhood onset asthma were assessed using questionnaires MCQ010 and MCQ025, respectively. Sociodemographic variables were summarized, and univ\u2026"
+    },
+    {
+      "paperId": "91315f63a00289c5c8c5accd005d2ee2e23ddcfa",
+      "title": "Associations of seven measures of biological age acceleration with frailty and all-cause mortality among adult survivors of childhood cancer in the St. Jude Lifetime Cohort",
+      "year": 2024,
+      "venue": "Nature Cancer",
+      "doi": "10.1038/s43018-024-00745-w",
+      "url": "https://www.semanticscholar.org/paper/91315f63a00289c5c8c5accd005d2ee2e23ddcfa",
+      "citationCount": 24,
+      "authors": [
+        "Jennifer L Guida",
+        "Geehong Hyun",
+        "D. Belsky",
+        "G. Armstrong",
+        "M. Ehrhardt",
+        "M. Hudson",
+        "Paige A Green",
+        "L. Robison",
+        "B. Streck",
+        "E. Tonorezos",
+        "Yutaka Yasui",
+        "Carmen L. Wilson",
+        "Zhaoming Wang",
+        "Kirsten K. Ness"
+      ],
+      "abstract_excerpt": ""
+    },
+    {
+      "paperId": "99619a752d8fc1a1650ec327659c74f7c4777ef1",
+      "title": "From Childhood Residential Green space to Adult Mental Wellbeing: A Pathway Analysis among Chinese Adults",
+      "year": 2022,
+      "venue": "Behavioral Science",
+      "doi": "10.3390/bs12030084",
+      "url": "https://www.semanticscholar.org/paper/99619a752d8fc1a1650ec327659c74f7c4777ef1",
+      "citationCount": 12,
+      "authors": [
+        "Hansen Li",
+        "M. Browning",
+        "Yang Cao",
+        "Guodong Zhang"
+      ],
+      "abstract_excerpt": "Residential green spaces, arguably the most accessible type of urban green space, may have lasting impacts on children and even change their lives later in adulthood. However, the potential pathways from childhood residential green space to adulthood mental wellbeing are not well understood. Therefore, we conducted a questionnaire survey among Chinese adults (N = 770) in September 2021 to capture data on subjective measures of residential green space and nature contact during childhood, and nature connectedness, nature contact, and mental wellbeing during adulthood. Structural equation modeling (SEM) was employed to examine theoretical pathways between childhood residential green space and a\u2026"
+    },
+    {
+      "paperId": "dd10246c609ca8a7afa847abd00c269899f14fb9",
+      "title": "Childhood Socioeconomic Status and Adult Subjective Wellbeing: The Role of Hope and Sense of Control",
+      "year": 2022,
+      "venue": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2022.879132",
+      "url": "https://www.semanticscholar.org/paper/dd10246c609ca8a7afa847abd00c269899f14fb9",
+      "citationCount": 8,
+      "authors": [
+        "Li Wang",
+        "Fenglan Li",
+        "Keqiang Meng",
+        "K. Dunning"
+      ],
+      "abstract_excerpt": "The study investigates the unexplored link between childhood socioeconomic status and adult subjective wellbeing using data from a field survey of 568 rural residents from poor areas in China. This study focuses on exploring the relationship between childhood socioeconomic status, hope, sense of control, and adult subjective wellbeing using a structural equation model. Results indicated that hope and sense of control mediated the links between childhood socioeconomic status and adult subjective wellbeing, revealing that hope and sense of control may buffer the negative impacts of childhood poverty experiences on subjective wellbeing. The findings provide new insights into the impacts of chil\u2026"
     }
-  }
+  ],
+  "note": "Structured extract from Semantic Scholar response preserved for reproducibility."
 }

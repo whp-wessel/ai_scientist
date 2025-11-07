@@ -64,13 +64,17 @@ Within the provided survey dataset, conduct rigorous, reproducible social‑scie
 - For each claim, add ≥1 peer‑reviewed or authoritative source. Save DOI/URL + date accessed.
 - Maintain `lit/evidence_map.csv`: concept → sources → quality rating → notes.
 - Tag every main manuscript assertion as `[CLAIM:<ID>]` inside `papers/main/manuscript.tex` (IDs like `C1`, `C2`). Add a `claim_id` column to `lit/evidence_map.csv` and ensure each referenced ID has ≥1 DOI-backed row; document uncovered IDs explicitly as gaps.
-- Semantic Scholar REST API is the **default** literature source. No API key is required for the standard endpoints (1k rps shared pool); API keys raise the dedicated limit to 1 rps per key. Document every query (terms, endpoint, timestamp) and record response highlights in `lit/evidence_map.csv` and the Decision Log. Use general web search only as a fallback and record why Semantic Scholar could not satisfy the need.
+- Semantic Scholar REST API is the **default** literature source. All calls must use `python scripts/semantic_scholar_cli.py` (ships in this repo) so they authenticate with the `S2_API_Key` from `.env` and automatically throttle to the dedicated **1 request/second** limit. Do **not** issue unauthenticated `curl` requests or paste secrets into prompts. Document every query (terms, endpoint, timestamp) and record response highlights in `lit/evidence_map.csv` and the Decision Log. Use general web search only as a fallback and record why Semantic Scholar could not satisfy the need.
 - Summarize gaps and open questions at the end of each loop.
 
 ### Semantic Scholar Usage Notes
 - Services: Academic Graph (authors/papers/citations/venues/SPECTER2 embeddings), Recommendations, and Datasets. Use these to retrieve metadata (titles, DOIs, venues, citation counts), and link back to Semantic Scholar (`https://www.semanticscholar.org`) while capturing downloadable corpora.
 - Why this API: well-maintained, fast, rich metadata (PDF URLs, abstracts, summarizations) without scraping. Partners like Litmaps, Connected Papers, Stateoftheart AI, and Sourcely rely on it to accelerate their pipelines.
-- Rate limits: unauthenticated requests share a 1000 rps pool; authenticated keys start at 1 rps but unlock higher quotas and better support. Keys are optional for this project—do **not** embed secrets in the repo.
+- Rate limits: the dedicated key is capped at **1 request per second**. The helper script enforces this and records the last-call timestamp under `artifacts/.s2_rate_limit.json`.
+- Helper command (examples — always capture outputs under `lit/queries/loop_{idx}/query_{k}.json`):
+  - `python scripts/semantic_scholar_cli.py search --query "childhood resiliency wellbeing" --limit 5 --output lit/queries/loop_000/query_001.json`
+  - `python scripts/semantic_scholar_cli.py paper --paper-id 10.1001/jama.2024.12345 --output lit/queries/loop_000/query_002.json`
+- Keys are stored locally in `.env` as `S2_API_Key`; never commit or echo them. The script loads the value automatically—no manual header wiring needed.
 - Required practice each loop:
   - Issue ≥1 Semantic Scholar query during the literature phase (record endpoint + parameters).
   - Log the query string verbatim, response DOI/URL, and a 1–2 sentence rationale in `lit/evidence_map.csv`.

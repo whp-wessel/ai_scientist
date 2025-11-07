@@ -1,0 +1,77 @@
+```json
+{
+  "files": [
+    {
+      "path": "docs/codebook_status.md",
+      "content": "# Codebook & Survey Design Status\n\n- 2025-11-07: Searched repository for codebook/config files (json/yaml) and found none.\n- TODO: Request or locate the official codebook describing question text, variable types, and any recodes.\n- TODO: Obtain survey design documentation (weights/strata/clusters). Until then, analyses default to an SRS assumption that must be justified explicitly.\n- 2025-11-07: Profiled `childhoodbalancedpublic_original.csv` (14,443 rows x 718 columns). No variables matching survey weights/strata/cluster conventions were detected (only a body-weight question labeled `weight`), so design features remain unknown.\n",
+      "mode": "text"
+    },
+    {
+      "path": "lit/bibliography.bib",
+      "content": "@article{felitti1998ace,\n  title={Relationship of Childhood Abuse and Household Dysfunction to Many of the Leading Causes of Death in Adults: The Adverse Childhood Experiences (ACE) Study},\n  author={Felitti, Vincent J. and Anda, Robert F. and Nordenberg, Dale and Williamson, David F. and Spitz, Alison M. and Edwards, Valerie and Koss, Mary P. and Marks, James S.},\n  journal={American Journal of Preventive Medicine},\n  volume={14},\n  number={4},\n  pages={245--258},\n  year={1998},\n  doi={10.1016/S0749-3797(98)00017-8}\n}\n\n@article{calteronewilliams2011abstinence,\n  title={Battling a 'sex-saturated society': The abstinence movement and the politics of sex education},\n  author={Calterone Williams, Jean},\n  journal={Sexualities},\n  volume={14},\n  number={4},\n  pages={416--443},\n  year={2011},\n  doi={10.1177/1363460711406460}\n}\n\n@article{chetty2014mobility,\n  title={Where is the land of opportunity? The geography of intergenerational mobility in the United States},\n  author={Chetty, Raj and Hendren, Nathaniel and Kline, Patrick and Saez, Emmanuel},\n  journal={The Quarterly Journal of Economics},\n  volume={129},\n  number={4},\n  pages={1553--1623},\n  year={2014},\n  doi={10.1093/qje/qju022}\n}\n",
+      "mode": "text"
+    },
+    {
+      "path": "lit/evidence_map.csv",
+      "content": "source_id,citation,link,topic_relevance,usage_plan,notes\nfelitti1998ace,Felitti et al. (1998) American Journal of Preventive Medicine 14(4):245-258.,https://doi.org/10.1016/S0749-3797(98)00017-8,Landmark evidence linking adverse childhood experiences to adult mental/physical health.,Cite for theoretical framing of how childhood emotional abuse relates to adult anxiety/depression outcomes (H4). Expand map with sources on purity culture and socioeconomic mobility next loop.,Need additional sources on religion/monogamy and class mobility to contextualize H2/H3.\ncalteronewilliams2011,Calterone Williams (2011) Sexualities 14(4):416-443.,https://doi.org/10.1177/1363460711406460,Analyzes US abstinence movement rhetoric and purity-culture norms around sexuality and marriage.,Use for H2 background on how purity teachings emphasize lifelong monogamy and sexual restriction.,Extract qualitative insights on mechanisms linking early purity messaging to adult partnership choices.\nchetty2014mobility,Chetty et al. (2014) Quarterly Journal of Economics 129(4):1553-1623.,https://doi.org/10.1093/qje/qju022,Provides empirical benchmarks on intergenerational socioeconomic mobility in the United States.,Cite for H3 context when interpreting associations between perceived childhood class and adult net-worth brackets.,Note differences between national administrative data and current survey self-reports.\n",
+      "mode": "text"
+    },
+    {
+      "path": "notebooks/research_notebook.md",
+      "content": "# Research Notebook\n\n## 2025-11-07 -- Bootstrap setup\n- Loaded `childhoodbalancedpublic_original.csv` snapshot in pandas to confirm availability (size ~42.5 MB) and inspect key columns covering demographics, religion, socioeconomic markers, and psychosocial items.\n- Searched the repository for codebook/config metadata (json/yaml) and found none; recorded TODO in `docs/codebook_status.md` and flagged the need to confirm sampling design.\n- Created scaffolding artifacts per charter: `artifacts/state.json`, `analysis/hypotheses.csv`, `analysis/pre_analysis_plan.md`, `analysis/results.csv`, and this notebook.\n- Drafted four exploratory hypotheses spanning parenting, purity culture, socioeconomic mobility, and mental health; documented them alongside an initial PAP outline (status: draft).\n- Seeded literature tracking with an ACE-related reference to contextualize childhood adversity links; planned broader literature sweep in the next loop.\n- Logged bootstrap actions in `analysis/decision_log.csv` and captured next steps for literature review + data dictionary work.\n\n## 2025-11-07 -- Loop 001 (literature audit)\n- Profiled `childhoodbalancedpublic_original.csv` (14,443 x 718) to look for design indicators; only found a body-weight question labeled `weight`, so survey weights/strata remain missing and SRS justification stays provisional.\n- Captured the profile result and outstanding need for official documentation in `docs/codebook_status.md`.\n- Expanded the literature backbone: added Calterone Williams (2011) on the abstinence movement for purity-culture framing (H2) and Chetty et al. (2014) for intergenerational mobility benchmarks (H3); recorded both in `lit/bibliography.bib` and `lit/evidence_map.csv` with usage notes.\n- Next: keep searching for codebook/weights, begin a structured data dictionary for priority variables, and weave new literature context into the PAP before freezing it.\n",
+      "mode": "text"
+    },
+    {
+      "path": "analysis/decision_log.csv",
+      "content": "ts,action,inputs,rationale_short,code_path,outputs,status\n2025-11-07T10:58:30.893511+00:00,bootstrap_workspace,Repo scan + childhoodbalancedpublic_original.csv (structure only),\"Charter requires scaffolding of state, PAP, hypotheses, and literature tracking before analysis.\",analysis/hypotheses.csv; analysis/pre_analysis_plan.md; analysis/results.csv; notebooks/research_notebook.md; artifacts/state.json; docs/codebook_status.md; lit/*,\"Drafted hypotheses/PAP, seeded literature refs, logged TODOs for missing codebook and survey design.\",complete\n2025-11-07T10:58:30.893511+00:00,bootstrap_workspace,R;e;p;o; ;s;c;a;n; ;+; ;c;h;i;l;d;h;o;o;d;b;a;l;a;n;c;e;d;p;u;b;l;i;c;_;o;r;i;g;i;n;a;l;.;c;s;v; ;(;s;t;r;u;c;t;u;r;e; ;o;n;l;y;),\"Charter requires scaffolding of state, PAP, hypotheses, and literature tracking before analysis.\",analysis/hypotheses.csv; analysis/pre_analysis_plan.md; analysis/results.csv; notebooks/research_notebook.md; artifacts/state.json; docs/codebook_status.md; lit/*,\"D;r;a;f;t;e;d; ;h;y;p;o;t;h;e;s;e;s;/;P;A;P;,; ;s;e;e;d;e;d; ;l;i;t;e;r;a;t;u;r;e; ;r;e;f;s;,; ;l;o;g;g;e;d; ;T;O;D;O;s; ;f;o;r; ;m;i;s;s;i;n;g; ;c;o;d;e;b;o;o;k; ;a;n;d; ;s;u;r;v;e;y; ;d;e;s;i;g;n;.\",complete\n2025-11-07T11:22:00+00:00,loop001_literature_dataaudit,\"childhoodbalancedpublic_original.csv; lit/bibliography.bib; lit/evidence_map.csv\",\"Profiled dataset structure for design features and expanded literature to ground H2/H3 context.\",\"docs/codebook_status.md; lit/bibliography.bib; lit/evidence_map.csv\",\"Documented missing survey weights, added purity-culture and mobility references to bibliography/evidence map, queued follow-up actions.\",complete\n",
+      "mode": "text"
+    },
+    {
+      "path": "artifacts/state.json",
+      "content": "{\n  \"active_hypotheses\": [\n    \"H1\",\n    \"H2\",\n    \"H3\",\n    \"H4\"\n  ],\n  \"bootstrap_complete\": true,\n  \"current_seed\": 20251016,\n  \"last_updated\": \"2025-11-07T11:25:00+00:00\",\n  \"loop_counter\": 1,\n  \"next_actions\": [\n    {\n      \"id\": \"T-001\",\n      \"priority\": 1,\n      \"desc\": \"Document survey-design guidance + additional literature on purity culture and socioeconomic mobility gaps.\"\n    },\n    {\n      \"id\": \"T-002\",\n      \"priority\": 1,\n      \"desc\": \"Locate or request the official codebook and any survey weights/strata metadata.\"\n    },\n    {\n      \"id\": \"T-003\",\n      \"priority\": 2,\n      \"desc\": \"Prototype data dictionary + recode scripts for key variables in H1-H4.\"\n    }\n  ],\n  \"notes\": \"Dataset profiled (14,443x718), no survey weights yet; literature expanded for purity culture and mobility context.\",\n  \"phase\": \"literature\",\n  \"phase_ix\": 0,\n  \"total_loops\": 50\n}",
+      "mode": "text"
+    }
+  ],
+  "decision_log_row": {
+    "ts": "2025-11-07T11:22:00+00:00",
+    "action": "loop001_literature_dataaudit",
+    "inputs": "childhoodbalancedpublic_original.csv; lit/bibliography.bib; lit/evidence_map.csv",
+    "rationale_short": "Profiled dataset structure for design features and expanded literature to ground H2/H3 context.",
+    "code_path": "docs/codebook_status.md; lit/bibliography.bib; lit/evidence_map.csv",
+    "outputs": "Documented missing survey weights, added purity-culture and mobility references to bibliography/evidence map, queued follow-up actions.",
+    "status": "complete"
+  },
+  "next_actions": [
+    {
+      "id": "T-001",
+      "priority": 1,
+      "desc": "Document survey-design guidance + additional literature on purity culture and socioeconomic mobility gaps."
+    },
+    {
+      "id": "T-002",
+      "priority": 1,
+      "desc": "Locate or request the official codebook and any survey weights/strata metadata."
+    },
+    {
+      "id": "T-003",
+      "priority": 2,
+      "desc": "Prototype data dictionary + recode scripts for key variables in H1-H4."
+    }
+  ],
+  "state_update": {
+    "phase": "literature",
+    "loop_counter": 1,
+    "total_loops": 50
+  },
+  "git": {
+    "commit": false,
+    "message": ""
+  },
+  "signals": {
+    "phase": "literature",
+    "notes": "Profiled dataset; still missing codebook/weights; literature expanded for purity culture and mobility context."
+  },
+  "stop_now": false,
+  "stop_reason": null
+}
+```

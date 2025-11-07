@@ -5,7 +5,7 @@
   "phase_ix": 0,
   "total_loops": 50,
   "seed": 20251016,
-  "last_updated": "2025-11-07T10:59:57Z",
+  "last_updated": "2025-11-07T11:12:00Z",
   "backlog": [
     {
       "id": "T-001",
@@ -22,7 +22,7 @@
     {
       "id": "T-003",
       "priority": 3,
-      "desc": "Retry Semantic Scholar queries once API stabilizes and capture ≥3 DOI-backed sources",
+      "desc": "Expand Semantic Scholar coverage to mediators (parental support, hope) and populate measurement validity table",
       "status": "open"
     }
   ],
@@ -41,5 +41,5 @@
     }
   ],
   "pending_escalations": [],
-  "notes": "Bootstrap artifacts populated; remain in literature phase until evidence map has ≥3 DOI-backed entries and PAP is frozen."
+  "notes": "Remain in literature phase until evidence map has >=3 DOI-backed entries, PAP is frozen, and measurement validity dossier is populated."
 }

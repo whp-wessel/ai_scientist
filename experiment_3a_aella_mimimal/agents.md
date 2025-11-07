@@ -27,6 +27,13 @@ Study the provided survey dataset (`childhoodbalancedpublic_original.csv`) and p
 4. **Peer interaction:** The reviewer is an equal partner. Explain how prior critiques are handled each loop.
 5. **Quality bar:** Target clarity, transparency, and statistical rigor expected at leading venues.
 
+## Semantic Scholar API Access
+- Use `python scripts/semantic_scholar_cli.py` for every Semantic Scholar query. The helper authenticates with the `S2_API_Key` stored in `.env`, stores responses under `lit/queries/`, and enforces the dedicated **1 request per second** limit by tracking timestamps in `artifacts/.s2_rate_limit.json`.
+- Example commands (update loop/query indices as needed):
+  - `python scripts/semantic_scholar_cli.py search --query "childhood resiliency wellbeing" --limit 5 --output lit/queries/loop_000/query_001.json`
+  - `python scripts/semantic_scholar_cli.py paper --paper-id 10.1001/jama.2024.12345 --output lit/queries/loop_000/query_002.json`
+- Cite every saved JSON in `analysis/decision_log.csv`, extract DOIs into `lit/evidence_map.csv`, and never issue unauthenticated `curl` requests or expose the key in prompts—the script loads it automatically.
+
 ## Minimal Deliverables (you decide the rest)
 - `analysis/decision_log.csv` — append every action with enough detail for audit.
 - `analysis/pre_analysis_plan.md` — living document, clearly marked **`status: draft`** vs **`status: frozen (commit <hash>)`**.

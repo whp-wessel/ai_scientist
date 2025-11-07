@@ -429,7 +429,7 @@ def ensure_state_defaults(state: Dict[str, Any], total_loops: Optional[int] = No
     else: updated["phase_ix"] = PHASE_ORDER.index(updated["phase"])
     return updated
 
-def _build_phase_user_prompt(base_template: str, state_snapshot: Dict[str, Any]) -> str:
+def _build_phase_user_prompt(base_template: str, state_snapshot: Dict[str, Any], loop_idx: Optional[int] = None) -> str:
     phase = str(state_snapshot.get("phase", "literature"))
     state_prompt = json.dumps(state_snapshot, indent=2)
     phase_key = f"PHASE_{phase.upper()}"
@@ -438,7 +438,12 @@ def _build_phase_user_prompt(base_template: str, state_snapshot: Dict[str, Any])
     prefix = ""
     if phase_block:
         prefix = "\n\n=== PHASE CONTEXT START ===\n" + phase_block + "\n=== PHASE CONTEXT END ===\n\n"
-    return base_template.format(state_json=state_prompt) + prefix + f"\n(Current phase: {phase})\n"
+    prompt_body = base_template.replace("{state_json}", state_prompt)
+    if loop_idx is not None:
+        prompt_body = prompt_body.replace("{loop_index}", f"{loop_idx:03d}")
+    elif "{loop_index}" in prompt_body:
+        raise KeyError("Prompt template references {loop_index} but no loop index was provided.")
+    return prompt_body + prefix + f"\n(Current phase: {phase})\n"
 
 def record_loop_counter(loop_idx: int) -> None:
     state = read_state_json(); current = ensure_state_defaults(state)
@@ -808,7 +813,7 @@ def do_loop(iter_ix: int, consecutive_git_fails: int, consecutive_parse_fails: i
     loop_system = get_prompt("LOOP_SYSTEM")
     user_template = get_prompt("LOOP_USER_TEMPLATE")
     state_snapshot = ensure_state_defaults(read_state_json())
-    user_prompt = _build_phase_user_prompt(user_template, state_snapshot)
+    user_prompt = _build_phase_user_prompt(user_template, state_snapshot, iter_ix)
     loops_remaining = max(int(state_snapshot.get("total_loops", DEFAULT_TOTAL_LOOPS)) - int(state_snapshot.get("loop_counter", 0)), 0)
     progress_note = f"\nLoop progress: completed={state_snapshot.get('loop_counter', 0)}, remaining={loops_remaining}, total={state_snapshot.get('total_loops', DEFAULT_TOTAL_LOOPS)}."
     if NETWORK_ACCESS: progress_note += f" Network access={NETWORK_ACCESS}."

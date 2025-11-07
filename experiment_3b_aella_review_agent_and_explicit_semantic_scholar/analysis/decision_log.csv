@@ -1,2 +1,3 @@
 ts,action,inputs,rationale_short,code_path,outputs,status
 2025-11-07T10:59:57Z,bootstrap,"docs/codebook.json|docs/survey_design.yaml|config/agent_config.yaml","Initialized scaffolding, PAP draft, hypotheses, and logged Semantic Scholar query","N/A","artifacts/state.json|analysis/hypotheses.csv|analysis/pre_analysis_plan.md|lit/queries/loop_000/query_001.json","success"
+2025-11-07T11:12:00Z,bootstrap,"docs/codebook.json|docs/survey_design.yaml|config/agent_config.yaml","Refreshed bootstrap scaffolding, hypotheses, PAP, QC, and literature artifacts","N/A","analysis/hypotheses.csv|analysis/pre_analysis_plan.md|artifacts/state.json|lit/evidence_map.csv|lit/bibliography.bib|lit/queries/loop_000/query_001.json","success"

@@ -25,7 +25,7 @@ journal_targets:
   open_data_policy: "Aggregated release only; suppress small cells < 10"
 network:
   semantic_scholar_endpoint: "https://api.semanticscholar.org/graph/v1"
-  use_api_key: false
+  use_api_key: true
 regeneration:
   command: "python runner.py --task refresh-config"
   status: manual-draft

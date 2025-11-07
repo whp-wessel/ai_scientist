@@ -1,0 +1,1 @@
+New memo records the Loop 002 column scan for weight/strata/psu tokens, formalizes the provisional SRS assumption, and lists design-follow-up actions.
