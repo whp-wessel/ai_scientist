@@ -26,3 +26,11 @@ R3 PASS – Literature artifacts map every claim to peer-reviewed sources with D
 R4 PASS – Public tables aggregate large cells (smallest n=135 in `tables/loop001_categorical_counts.csv:1`) and modeling outputs expose only high-level coefficients, so the n<10 rule is respected.  
 R5 PASS – Required deliverables exist and are coherent (PAP marked `status: draft`, `analysis/pre_analysis_plan.md:1`, hypotheses/results registries filled, manuscript outline active), matching the PAP-phase status recorded in `artifacts/state.json:1`.
 
+## Loop 004 — 2025-11-07T14:31:45.909583+00:00
+DECISION: CONTINUE  
+R1 PASS – Decision log and notebook capture each command plus artifacts (`analysis/decision_log.csv:2-11`, `notebooks/research_notebook.md:3-42`), and the PAP records deterministic reruns such as `python scripts/loop004_h1_diagnostics.py`/`run_loop004_models.py` for reproducibility (`analysis/pre_analysis_plan.md:69-93`).  
+R2 PASS – Results table includes effect sizes, SEs, CIs, and p-values for every exploratory model (`analysis/results.csv:2-19`); SRS is justified after scanning all headers (`analysis/pre_analysis_plan.md:35-38`; `analysis/hypotheses.csv:2-5`), and the BH multiplicity plan is spelled out before any confirmatory tests (`analysis/pre_analysis_plan.md:75-93`).  
+R3 PASS – Literature tracking maps Semantic Scholar pulls to hypotheses (`lit/evidence_map.csv:2-9`), and the manuscript cites those peer-reviewed sources where claims appear (`reports/paper.md:9-35`).  
+R4 PASS – Public tables remain aggregate-only with smallest disclosed cell ≥135 respondents, satisfying the n≥10 requirement (`analysis/pre_analysis_plan.md:47-51`).  
+R5 PASS – Core artifacts (PAP, hypotheses, results, manuscript) exist and are marked exploratory (`analysis/pre_analysis_plan.md:1-93`; `analysis/hypotheses.csv:1-5`; `analysis/results.csv:1-19`; `reports/paper.md:1-36`), matching the still-in-PAP phase.
+

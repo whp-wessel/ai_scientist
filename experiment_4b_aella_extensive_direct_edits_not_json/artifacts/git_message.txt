@@ -1,0 +1,1 @@
+bootstrap: scaffold research artifacts and tooling
