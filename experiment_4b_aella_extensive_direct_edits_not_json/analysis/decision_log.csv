@@ -1,2 +1,12 @@
 ts,action,inputs,rationale_short,code_path,outputs,status
-2025-11-07T14:21:19Z,bootstrap_state_check,'artifacts/state.json; review/research_findings.md; docs/','No last abort; inputs missing so stubs needed per instructions','n/a','Noted required stub files and phase=literature context','success'
+2025-11-07T14:21:19Z,bootstrap_state_check,"artifacts/state.json; review/research_findings.md; docs/","No last abort; inputs missing so stubs needed per instructions","n/a","Noted required stub files and phase=literature context","success"
+2025-11-07T14:25:01Z,init_inputs,"docs/codebook.json; docs/survey_design.yaml; config/agent_config.yaml","Created required metadata placeholders to unblock bootstrap","manual edit","Files created with TODO notes and regeneration commands","success"
+2025-11-07T14:25:15Z,pap_notebook_setup,"analysis/hypotheses.csv; analysis/pre_analysis_plan.md; notebooks/research_notebook.md; qc/data_checks.md","Documented hypotheses, PAP draft, and data checks per bootstrap scope","manual edit","Scaffolded planning artifacts referencing commands + seed","success"
+2025-11-07T14:25:20Z,manuscript_scaffold,"papers/main/*","Created LaTeX/Markdown manuscripts, outline, manifest, and build log stubs","manual edit","papers/main/manuscript.tex + companion files initialized","success"
+2025-11-07T14:25:37Z,state_update,"artifacts/state.json","Added backlog + next actions for literature phase","manual edit","State JSON refreshed; stop flags false","success"
+2025-11-07T14:26:09Z,tooling_setup,"scripts/semantic_scholar_cli.py",".env provides API key; implemented CLI w/ rate limiting","python","Script created + made executable","success"
+2025-11-07T14:27:33Z,tooling_adjust,"scripts/semantic_scholar_cli.py","Added env-based base URL + Accept header after 403 response","python","Updated CLI to handle partner endpoint if needed","success"
+2025-11-07T14:27:50Z,semantic_scholar_query,"scripts/semantic_scholar_cli.py search --query childhood religious adherence depression adulthood","API responded 403 Forbidden; captured failure for reproducibility","scripts/semantic_scholar_cli.py","lit/queries/loop_000/query_001.json (error log)","fail"
+2025-11-07T14:28:11Z,state_update,"artifacts/state.json","Flagged literature action as blocked pending valid Semantic Scholar key","manual edit","Updated next_actions notes re: 403","success"
+2025-11-07T14:28:39Z,state_update,"artifacts/state.json","Marked bootstrap_complete=true after scaffolding finished","manual edit","State file now reflects bootstrap completion","success"
+2025-11-07T14:29:24Z,state_update,"artifacts/state.json","Annotated measurement validity action as blocked pending coding","manual edit","Added notes for N2 backlog entry","success"

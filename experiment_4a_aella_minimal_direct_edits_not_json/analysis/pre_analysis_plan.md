@@ -65,3 +65,29 @@ _All hypotheses currently exploratory; confirmatory status will be frozen after 
 - **Model refresh**: `scripts/run_loop003_models.py` refits H1/H2 with aligned variables, adds an ordered logit across all ten net-worth brackets (H3), and introduces both OLS and binary logit religiosity→anxiety models (H4). Estimates live in `tables/loop003_model_estimates.csv` and `analysis/results.csv` (result_ids prefixed `loop003_`).
 - **Measurement citation**: Literature query `lit/queries/loop_003/query_001.json` adds Sumin (2022) to ground the rescaling/standardization choice in psychometric practice.
 - **Next steps toward PAP freeze**: (1) Document any remaining scale transformations (e.g., create binary outcomes for interpretability) and lock estimands; (2) re-run ordered logit with interaction terms (e.g., gender × childhood class) expected for the confirmatory plan; (3) freeze the PAP and git-tag once estimands/commands cease changing, then mark confirmatory hypotheses.
+
+## Loop 004 Updates
+- **H1 diagnostics**: `scripts/loop004_h1_diagnostics.py` (outputs: `tables/loop004_h1_diagnostics.csv`, `tables/loop004_h1_correlations.csv`) shows the childhood-abuse coefficient stays negative even in a bivariate OLS (-0.34 SD) and in sequential models. Moderation scans reveal a positive abuse × guidance interaction and a negative abuse × male interaction, implying the unexpected sign is concentrated among men and attenuated when guidance is high.
+- **Ordered-logit & religiosity specs finalized**: `scripts/run_loop004_models.py` reuses the aligned-Likert pipeline but now (a) augments the H3 ordered-logit/net-worth models with a childhood-class × male interaction and (b) adds religiosity × classchild and religiosity × male interactions to the H4 anxiety models. Estimates are stored in `tables/loop004_model_estimates.csv` and propagated to `analysis/results.csv` (result_ids prefixed `loop004_`).
+- **Deterministic commands**: Reproduce the current modeling state by running `python scripts/loop004_h1_diagnostics.py` followed by `python scripts/run_loop004_models.py` from the repository root. Both scripts read the frozen dataset (`childhoodbalancedpublic_original.csv`) directly, perform in-script feature engineering, and write public tables only (n≥10 by design).
+- **Multiplicity plan drafted**: See below for explicit hypothesis families and Benjamini–Hochberg (BH) control at q=0.05 wherever a family has ≥2 confirmatory tests. Exploratory rows remain labeled `confirmatory=FALSE` until we freeze/tag.
+
+### Draft Confirmatory Families & FDR Plan
+1. **Family: childhood_emotional_support (H1)**  
+   - Candidate confirmatory contrasts: (a) childhood abuse main effect; (b) teen abuse main effect; (c) abuse × guidance; (d) abuse × male.  
+   - Plan: Two-sided OLS with aligned z-scores + controls (classteen, selfage, gendermale, education). Run BH at q=0.05 across whichever of contrasts (a)–(d) remain in the frozen PAP.  
+   - Diagnostics to justify: `tables/loop004_h1_diagnostics.csv`.
+
+2. **Family: parental_guidance_self_regard (H2)**  
+   - Single confirmatory estimand: childhood guidance main effect in OLS on self-love with the same controls and teen guidance to soak shared variance.  
+   - Plan: No FDR adjustment needed (family size = 1); still report two-sided p-value and 95% CI.
+
+3. **Family: childhood_class_networth (H3)**  
+   - Confirmatory estimands: (a) classchild main effect in the 10-level ordered logit; (b) classchild × gendermale interaction in the same model.  
+   - Plan: Apply BH at q=0.05 across the two tests if both are retained; otherwise treat as single-test family. Binary ≥$1M logit remains exploratory robustness. Command: `python scripts/run_loop004_models.py`.
+
+4. **Family: religiosity_and_anxiety (H4)**  
+   - Confirmatory estimands: (a) religiosity main effect on anxiety z-score; (b) religiosity × classchild interaction capturing differential returns; optional (c) religiosity × male if pre-registered.  
+   - Plan: Use BH at q=0.05 across included contrasts. Report both the continuous (OLS) and binary high-anxiety specifications for robustness, but only the OLS family is slated as confirmatory unless reviewers request the logit.
+
+The PAP remains `status: draft` until we formally lock which subsets from each family will be confirmatory and git-tag the frozen commit.

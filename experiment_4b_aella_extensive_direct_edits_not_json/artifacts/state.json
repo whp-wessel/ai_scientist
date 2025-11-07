@@ -1,7 +1,45 @@
 {
-  "bootstrap_complete": false,
+  "bootstrap_complete": true,
   "loop_counter": 0,
+  "total_loops": 50,
   "phase": "literature",
   "phase_ix": 0,
-  "total_loops": 50
+  "backlog": [
+    {
+      "id": "B1",
+      "description": "Automate codebook + survey design validation scripts",
+      "priority": 1,
+      "status": "open"
+    },
+    {
+      "id": "B2",
+      "description": "Implement analysis/code/run_models.py with survey-aware estimators",
+      "priority": 1,
+      "status": "open"
+    },
+    {
+      "id": "B3",
+      "description": "Populate literature evidence (≥3 DOI sources) and bibliography",
+      "priority": 2,
+      "status": "open"
+    }
+  ],
+  "next_actions": [
+    {
+      "id": "N1",
+      "description": "Run Semantic Scholar query + log outputs",
+      "owner": "agent",
+      "status": "blocked",
+      "notes": "Semantic Scholar API key rejected with 403 Forbidden; awaiting valid credentials"
+    },
+    {
+      "id": "N2",
+      "description": "Draft measurement validity table for H1-H3 variables",
+      "owner": "agent",
+      "status": "blocked",
+      "notes": "Need cleaned variable codings + reliability estimates before filling dossier"
+    }
+  ],
+  "stop_now": false,
+  "stop_reason": null
 }

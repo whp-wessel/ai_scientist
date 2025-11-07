@@ -1,0 +1,3 @@
+claim_id,concept,source_title,doi_or_url,access_date,quality_rating,relevance_note,query,notes
+C_TODO,placeholder,TODO -- replace after Semantic Scholar query,,2025-11-07,0,"Need ≥3 DOI-backed sources before PAP freeze","pending","Bootstrap stub; do not cite"
+C1,childhood religious adherence & depression,,,'2025-11-07',0,'Query pending; Semantic Scholar returned 403 Forbidden','paper/search?query=childhood+religious+adherence+depression+adulthood','Need replacement API key before sourcing DOI'

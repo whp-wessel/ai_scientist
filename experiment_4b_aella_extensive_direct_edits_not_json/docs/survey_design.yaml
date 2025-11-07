@@ -1,0 +1,17 @@
+dataset: childhoodbalancedpublic_original
+file: childhoodbalancedpublic_original.csv
+design:
+  weight_variable: null
+  strata_variable: null
+  cluster_variable: null
+  replicate_weights: []
+  finite_population_correction: null
+assumptions:
+  sampling: "Treat as approximate simple random sample until sponsor provides weights."
+  disclosure_threshold: 10
+  notes:
+    - "Codebook does not reference survey weights; confirmed columns do not obviously encode probability weights."
+    - "If later documentation introduces weights, pause analysis and update this file plus PAP."
+reproducibility:
+  regen_command: "python -m scripts.describe_design --input docs/survey_design.yaml"
+  status: "Placeholder; implement describe_design utility before confirmatory analyses."

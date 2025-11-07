@@ -1,0 +1,27 @@
+seed: 20251016
+fdr:
+  method: benjamini_hochberg
+  q: 0.05
+small_cells:
+  min_n: 10
+  suppression_strategy: "suppress or bin until threshold met"
+paths:
+  raw_data: childhoodbalancedpublic_original.csv
+  clean_data_dir: data/clean
+  codebook: docs/codebook.json
+  survey_design: docs/survey_design.yaml
+  notebook: notebooks/research_notebook.md
+analysis_defaults:
+  weight_variable: null
+  strata_variable: null
+  cluster_variable: null
+  imputation_method: none
+  missingness_reporting: true
+literature_defaults:
+  semantic_scholar_limit: 5
+  min_primary_sources: 3
+manuscript:
+  tex_path: papers/main/manuscript.tex
+  outline_path: papers/main/imrad_outline.md
+regeneration_notes:
+  command_stub: "python runner.py --model gpt-5-codex --reasoning-effort high"

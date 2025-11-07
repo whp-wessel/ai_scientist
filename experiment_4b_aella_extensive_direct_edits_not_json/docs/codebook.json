@@ -1,0 +1,82 @@
+{
+  "dataset_name": "childhoodbalancedpublic_original",
+  "description": "Balanced public childhood survey capturing demographics, upbringing experiences, and adult wellbeing self-assessments.",
+  "source_path": "childhoodbalancedpublic_original.csv",
+  "updated": "2025-11-07",
+  "notes": "Placeholder codebook derived from header review only; replace with programmatically generated metadata before confirmatory analysis.",
+  "variables": [
+    {
+      "name": "selfage",
+      "label": "Respondent age (self-reported)",
+      "type": "numeric",
+      "units": "years",
+      "allowed_range": [18, 99],
+      "missing_codes": ["", "NA"],
+      "comments": "Use for cohort adjustments; verify min/max and outliers."
+    },
+    {
+      "name": "religion",
+      "label": "Currently practices a religion",
+      "type": "categorical",
+      "levels": ["active", "inactive", "none"],
+      "original_question": "Do you *currently* actively practice a religion?",
+      "comments": "Binary collapse planned (1=active,0=not); retain raw text until recode script is written."
+    },
+    {
+      "name": "externalreligion",
+      "label": "Perceived childhood religious importance",
+      "type": "ordinal",
+      "scale": ["not_important", "somewhat", "important", "very_important"],
+      "original_question": "In childhood, how important was adherence to the religion?",
+      "comments": "Higher scores indicate stricter adherence environments."
+    },
+    {
+      "name": "wz901dj",
+      "label": "Depression tendency (self-assessed)",
+      "type": "Likert",
+      "scale": [1, 5],
+      "original_question": "I tend to suffer from depression",
+      "reverse_coded": false,
+      "comments": "Primary wellbeing outcome candidate."
+    },
+    {
+      "name": "pqo6jmj",
+      "label": "Parents gave useful guidance (0-12)",
+      "type": "Likert",
+      "scale": [1, 5],
+      "comments": "Higher indicates more guidance; hypothesized protective factor."
+    },
+    {
+      "name": "mds78zu",
+      "label": "Childhood emotional abuse (0-12)",
+      "type": "binary",
+      "coding": {"yes": 1, "no": 0},
+      "comments": "Screen for fair-use; treat as sensitive attribute in disclosure review."
+    },
+    {
+      "name": "okq5xh8",
+      "label": "Self-rated general health",
+      "type": "ordinal",
+      "scale": ["poor", "fair", "good", "very_good", "excellent"],
+      "comments": "Outcome for physical wellbeing hypotheses."
+    },
+    {
+      "name": "classteen",
+      "label": "Teen household socioeconomic class",
+      "type": "categorical",
+      "levels": ["lower", "lower_middle", "middle", "upper_middle", "upper"],
+      "comments": "Cross-check against current class and net worth variables."
+    },
+    {
+      "name": "networth",
+      "label": "Current net worth bracket",
+      "type": "ordinal",
+      "scale": ["<0", "0-25k", "25k-100k", "100k-250k", "250k-1M", ">1M"],
+      "comments": "Outcome for mobility hypotheses; treat as ordered categorical."
+    }
+  ],
+  "regeneration": {
+    "command": "python -m scripts.build_codebook --input childhoodbalancedpublic_original.csv --output docs/codebook.json",
+    "status": "TODO (manual placeholder)"
+  }
+}

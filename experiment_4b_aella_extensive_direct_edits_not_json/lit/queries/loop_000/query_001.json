@@ -1,0 +1,11 @@
+{
+  "endpoint": "paper/search",
+  "query": "childhood religious adherence depression adulthood",
+  "limit": 5,
+  "timestamp_utc": "2025-11-07T14:27:50Z",
+  "error": {
+    "http_status": 403,
+    "message": "Forbidden",
+    "notes": "Semantic Scholar API rejected key S2_API_Key; awaiting updated credentials"
+  }
+}

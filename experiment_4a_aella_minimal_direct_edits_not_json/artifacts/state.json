@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-07T16:15:00Z",
-  "loop_counter": 3,
+  "last_updated": "2025-11-07T14:23:55Z",
+  "loop_counter": 4,
   "next_actions": [
-    "Diagnose why the aligned H1 slope remains negative (e.g., inspect abuse correlations, add moderating interactions) before freezing confirmatory estimands.",
-    "Finalize ordered-logit + religiosity model specifications (including any interaction terms) and document deterministic commands, then freeze/tag the PAP.",
-    "Lay out the multiplicity/FDR plan and manuscript language so confirmatory claims can be slotted immediately after PAP freeze."
+    "Decide which H1 contrasts (main vs. moderation effects) will be confirmatory and update the PAP/hypotheses before freeze.",
+    "Freeze/tag the PAP once the ordered-logit and religiosity interaction specs are locked, then rerun `scripts/run_loop004_models.py` with recorded seed for confirmatory estimates.",
+    "Implement the Benjamini\u2013Hochberg plan and add multiplicity-aware manuscript language immediately after PAP freeze."
   ],
   "phase": "pap",
   "phase_ix": 1,

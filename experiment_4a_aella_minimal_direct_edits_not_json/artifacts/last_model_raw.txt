@@ -1,11 +1,14 @@
-**Updates**
-- Automated the Likert polarity workflow via a shared helper plus the new audit script (`scripts/likert_utils.py:1`, `scripts/loop003_scale_audit.py:1`), and published the flip/z-score diagnostics for every H1–H4 item (`tables/loop003_likert_alignment.csv:2`). The hypothesis register now states that these z-scores embody “higher = more intensity” for each construct (`analysis/hypotheses.csv:2`), and Sumin (2022) was added as the methodological citation to both the bibliography and evidence map (`lit/bibliography.md:12`, `lit/evidence_map.csv:9`).
-- Rebuilt the modeling pipeline to consume the aligned scales, adding the ordered-logit wealth spec plus paired OLS/logit religiosity→anxiety models (`scripts/run_loop003_models.py:1`). Full coefficient tables live under `tables/loop003_model_estimates.csv:1`, while the key effects (e.g., H1’s still-negative slope and H4’s protective religiosity signal) are captured in `analysis/results.csv:5`–`analysis/results.csv:9`.
-- Propagated the measurement/model changes through the governance artifacts so the confirmatory plan can be frozen next: PAP update (`analysis/pre_analysis_plan.md:63`), codebook note (`docs/codebook_priority.md:62`), manuscript methods/results/next-steps (`reports/paper.md:12`, `reports/paper.md:17`, `reports/paper.md:26`), notebook log (`notebooks/research_notebook.md:31`), and the decision log entry for this loop (`analysis/decision_log.csv:8`).
-- Advanced the run state to the PAP phase with a fresh action list centered on probing the anomalous H1 slope, finalizing estimands, and codifying the multiplicity plan (`artifacts/state.json:2-11`).
+**Work Summary**
+- Built the H1 diagnostics pipeline (`scripts/loop004_h1_diagnostics.py:1-162`) to stage bivariate → controlled OLS plus guidance/gender interactions, and exported shareable tables (`tables/loop004_h1_diagnostics.csv`, `tables/loop004_h1_correlations.csv`) that document the stubborn negative slope and moderating patterns.
+- Finalized the ordered-logit and religiosity model specs via `scripts/run_loop004_models.py:1-244`, adding the childhood-class × male contrast for H3 and religiosity × classchild/male interactions for H4; outputs live in `tables/loop004_model_estimates.csv` and feed new result rows (`analysis/results.csv:10-19`).
+- Extended the PAP with a Loop 004 section plus an explicit Benjamini–Hochberg plan for each hypothesis family (`analysis/pre_analysis_plan.md:69-93`), and updated the hypothesis register to note the moderation focus (`analysis/hypotheses.csv:2`).
+- Refreshed the manuscript narrative with the new diagnostics and interaction interpretations (`reports/paper.md:12-30`), logged the sprint in the research notebook (`notebooks/research_notebook.md:38-42`) and decision log (`analysis/decision_log.csv:10`), and recorded next actions in `artifacts/state.json`.
 
-- Tests: `python scripts/loop003_scale_audit.py`; `python scripts/run_loop003_models.py`
+**Testing**
+- `python scripts/loop004_h1_diagnostics.py`
+- `python scripts/run_loop004_models.py`
 
 **Next Steps**
-1. Diagnose why the aligned childhood-abuse coefficient remains negative (e.g., replicate the audit on related abuse items or add interaction terms) before elevating H1 to confirmatory status—`tables/loop003_model_estimates.csv:1` highlights the current sign.
-2. Finalize the ordered-logit and religiosity specifications (including any pre-registered interactions/multiplicity controls) so the PAP can be frozen/tagged per the plan in `analysis/pre_analysis_plan.md:63` and `artifacts/state.json:5-8`.
+1. Decide which H1 contrasts (main vs. moderation) will be marked confirmatory, then lock them in the PAP/hypothesis register before freezing.
+2. Freeze/tag the PAP and rerun `scripts/run_loop004_models.py` with recorded seeds to capture confirmatory estimates, then apply the BH plan outlined in `analysis/pre_analysis_plan.md`.
+3. Propagate the multiplicity language and confirmatory claims into `reports/paper.md` once the PAP is frozen.
