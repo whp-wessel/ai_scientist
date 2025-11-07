@@ -1,0 +1,254 @@
+{
+  "data": [
+    {
+      "abstract": "\n Introduction:\n Adversity during childhood, usually measured as retrospectively, is associated with long-term health. We examined associations of\n prospectively\n assessed childhood adversity with young-adult (YA) cardiovascular health (CVH).\n \n \n Methods:\n We included 1155 YAs with adversity measures from baseline Y0 (birth), Y1, Y3, Y5, Y9, and who completed a CVH exam at Y22 in the FFCWS. An adversity score (AS) (range: 0-7) represented the number of adverse childhood exposures experienced by age 9 out of 7 categories - emotional abuse and neglect; physical abuse and neglect; parental incarceration, parental substance use, and interpersonal violence. CVH was estimated using the Life\u2019s Essential 8 (LE8) score (range: 0-100 points) overall and for each component, excluding sleep due to data unavailability. Linear regression models were adjusted for age and sex.\n \n \n Results:\n By age 9, 38% of YAs had experiences from 0-2 categories, 30% experienced 3, 21% experienced 4, and 11% experienced 5-7. People with higher AS were more likely to self-identify as Black compared to White, Hispanic, or other. In addition, higher AS correlated with lower BMI and higher nicotine use. Compared to individuals with 0-2 AS, an AS of 4 was associated with a 3.6-point (CI: -6.5 to -0.7) lower (less favorable) LE8 score and an AS of 5-7 was associated with a 4.9-point (CI: -8.5 to -1.3) lower LE8 score. Among individual LE8 components, smoking and physical activity scores varied significantly by AS. Compared with an AS of 0-2, a score of 5-7 was associated with a 13.0-point (CI: -22.9 to -3.1) lower smoking score. For physical activity an AS of 4 and 5-7 were associated with a 12.1-point (CI: -21.8 to -2.3) and a 14.4-point (CI: -26.3 to -2.4) lower PA score, respectively.\n \n \n Conclusions:\n Higher level of childhood adversity was prospectively associated with lower LE8 scores and worse CVH in young adulthood. Understanding the prospective associations between childhood adversity and CVH can help identify higher risk populations and guide treatment recommendations.\n \n \n \n",
+      "authors": [
+        {
+          "authorId": "2051632859",
+          "name": "Havisha Pedamallu"
+        },
+        {
+          "authorId": "50421709",
+          "name": "Hongyan Ning"
+        },
+        {
+          "authorId": "145688762",
+          "name": "J. Wilkins"
+        },
+        {
+          "authorId": "2269383708",
+          "name": "Noreen Goldman"
+        },
+        {
+          "authorId": "2275486405",
+          "name": "Daniel A. Notterman"
+        },
+        {
+          "authorId": "2275145030",
+          "name": "Lifang Hou"
+        },
+        {
+          "authorId": "2112470",
+          "name": "Yinan Zheng"
+        },
+        {
+          "authorId": "2275483776",
+          "name": "Amanda M Marma"
+        },
+        {
+          "authorId": "2275257052",
+          "name": "Linda Van Horn"
+        },
+        {
+          "authorId": "2243939804",
+          "name": "James H Stein"
+        },
+        {
+          "authorId": "4203856",
+          "name": "C. Korcarz"
+        },
+        {
+          "authorId": "1443742546",
+          "name": "K. Hansen"
+        },
+        {
+          "authorId": "2275781261",
+          "name": "Colter Mitchell"
+        },
+        {
+          "authorId": "2302064371",
+          "name": "Nia Heard-Garris"
+        },
+        {
+          "authorId": "2229998700",
+          "name": "Donald M. Lloyd-Jones"
+        },
+        {
+          "authorId": "50281663",
+          "name": "N. Allen"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 269881682,
+        "DOI": "10.1161/circ.149.suppl_1.67"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1161/circ.149.suppl_1.67?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1161/circ.149.suppl_1.67, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "CLOSED",
+        "url": ""
+      },
+      "paperId": "1bac922de288db7703a0a5413a72931e0063c148",
+      "publicationDate": "2024-03-19",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Abstract 67: Childhood Adversity and Young Adult Cardiovascular Health: Future of Families and Child Wellbeing Study (FFCWS)",
+      "url": "https://www.semanticscholar.org/paper/1bac922de288db7703a0a5413a72931e0063c148",
+      "venue": "Circulation",
+      "year": 2024
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "101789277",
+          "name": "Carys Chainey"
+        },
+        {
+          "authorId": "5774635",
+          "name": "Kylie Burke"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 214226445,
+        "MAG": "2995481851"
+      },
+      "openAccessPdf": {
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "b3619ef94c45d51a040731ef6a10dfbcbfa5ad65",
+      "publicationDate": null,
+      "publicationTypes": null,
+      "title": "Emerging adult wellbeing after childhood adversity: The protective influence of parenting practices and the parent-adolescent relationship",
+      "url": "https://www.semanticscholar.org/paper/b3619ef94c45d51a040731ef6a10dfbcbfa5ad65",
+      "venue": "",
+      "year": 2019
+    },
+    {
+      "abstract": "ABSTRACT Objective: Parenting practices and the parent-offspring relationship may protect against the effects of childhood adversity; however, their influence past adolescence is unclear. This paper investigates the associations between adverse childhood experiences, parenting practices and the parent-adolescent relationship, and emerging adults\u2019 wellbeing (positive development, emotional difficulties). Method: A survey of 298 emerging adults aged 18-25, recruited from a university and the wider community was conducted and analysed using moderated multiple regression, controlling for demographic characteristics and recruitment method. Results: Emerging adults\u2019 wellbeing was associated with their past experiences of adversity, parenting practices and parent-adolescent relationship. Experiencing more types of adversity was associated with greater emotional difficulties. Independent of the level of adversity experienced, connectedness and supportive monitoring were associated with more positive development, and hostility was associated with more emotional difficulties. No parenting variables moderated the relationship between adversity and wellbeing. Conclusions: Although emerging adults who experienced childhood adversity may have more emotional difficulties, the parenting experienced during adolescence is also an important predictor of wellbeing during emerging adulthood. Regardless of their level of adversity, adolescents may benefit from supportive monitoring and a connected, non-hostile relationship with their parent; to help them develop positive skills and emotional wellbeing into emerging adulthood. KEY POINTS What is already known about this topic: Adverse childhood experiences are linked with poorer wellbeing across the life course. Parenting practices and the parent-adolescent relationship can protect adolescents from some of adversity\u2019s effects on wellbeing. The parent-adolescent relationship and parenting practices experienced during adolescence can influence young people\u2019s wellbeing. What this topic adds: Emerging adults\u2019 wellbeing is associated with their past experiences of adversity, parenting practices and the parent-adolescent relationship. The more types of adversity experienced by emerging adults, the higher their emotional difficulties are likely to be. Regardless of their level of past adversity, emerging adults are more likely to report better wellbeing if they had experienced a connected, non-hostile parent-adolescent relationship, and more supportive monitoring during adolescence.",
+      "authors": [
+        {
+          "authorId": "101789277",
+          "name": "Carys Chainey"
+        },
+        {
+          "authorId": "5774635",
+          "name": "Kylie Burke"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 233688443,
+        "DOI": "10.1080/00050067.2021.1893596",
+        "MAG": "3137987692"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/00050067.2021.1893596?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/00050067.2021.1893596, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "d2fff053c4922e1d3917edc82994d975b879cf16",
+      "publicationDate": "2021-03-21",
+      "publicationTypes": [
+        "Review"
+      ],
+      "title": "Emerging adult wellbeing: associations with adverse childhood experiences, parenting practices and the parent-adolescent relationship",
+      "url": "https://www.semanticscholar.org/paper/d2fff053c4922e1d3917edc82994d975b879cf16",
+      "venue": "",
+      "year": 2021
+    },
+    {
+      "abstract": "Childhood adversity is associated with higher adult weight, but few investigations prospectively test mechanisms accounting for this association. Using two socioeconomically high-risk prospective longitudinal investigations, the Minnesota Longitudinal Study of Risk and Adaptation (MLSRA; N = 267; 45.3% female) and the Fragile Families and Child Wellbeing Study (FFCWS; n = 2,587; 48.5% female), pathways between childhood adversity and later body mass index (BMI) were tested using impulsivity, emotion dysregulation, and overeating as mediators. Childhood adversity from 0 to 5 years included four types of adversities: greater unpredictability, threat/abuse, deprivation/neglect, and low socioeconomic status. Parents reported on child impulsivity, emotion dysregulation, and overeating. Height and weight were self-reported and measured at 32 and 37 years in MLSRA and at 15 years in FFCWS. FFCWS results indicated that threat, deprivation, and low socioeconomic status predicted greater impulsivity and emotion dysregulation at 5 years, which in turn predicted greater overeating at 9 years and higher BMI z-score at 15 years. Early unpredictability in FFCWS predicted higher BMI through greater impulsivity but not emotion dysregulation at age 5. MLSRA regression results replicated the threat/abuse \u2192 emotion dysregulation \u2192 overeating \u2192 higher BMI pathway. These findings suggest that different dimensions of early adversity may follow both similar and unique pathways to predict BMI.",
+      "authors": [
+        {
+          "authorId": "4138615",
+          "name": "J. Doom"
+        },
+        {
+          "authorId": "37870464",
+          "name": "Ethan Scott Young"
+        },
+        {
+          "authorId": "4879862",
+          "name": "Allison K. Farrell"
+        },
+        {
+          "authorId": "2663984",
+          "name": "Glenn I. Roisman"
+        },
+        {
+          "authorId": "144652931",
+          "name": "J. Simpson"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 248748967,
+        "DOI": "10.1017/S0954579421001887",
+        "PubMed": "35545317",
+        "PubMedCentral": "9652481"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9652481, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "HYBRID",
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D8DE632C33B2D52034D892E2A15ACDD1/S0954579421001887a.pdf/div-class-title-behavioral-cognitive-and-socioemotional-pathways-from-early-childhood-adversity-to-bmi-evidence-from-two-prospective-longitudinal-studies-div.pdf"
+      },
+      "paperId": "f0a89b36bf2bfadcc0c4a942648f362757d501ed",
+      "publicationDate": "2022-05-12",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Behavioral, cognitive, and socioemotional pathways from early childhood adversity to BMI: Evidence from two prospective, longitudinal studies",
+      "url": "https://www.semanticscholar.org/paper/f0a89b36bf2bfadcc0c4a942648f362757d501ed",
+      "venue": "Development and Psychopathology",
+      "year": 2022
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "5116795",
+          "name": "Sarah J. Beal"
+        },
+        {
+          "authorId": "72589728",
+          "name": "Twila Wingrove"
+        },
+        {
+          "authorId": "6141643",
+          "name": "C. Mara"
+        },
+        {
+          "authorId": "118159241",
+          "name": "Nathan Lutz"
+        },
+        {
+          "authorId": "5687271",
+          "name": "J. Noll"
+        },
+        {
+          "authorId": "34747884",
+          "name": "Mary V. Greiner"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 150217184,
+        "DOI": "10.1007/s10566-018-9479-5",
+        "MAG": "2898982786",
+        "PubMed": "31467469"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10566-018-9479-5?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10566-018-9479-5, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "GREEN",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6715307"
+      },
+      "paperId": "f0a5da768cb46cf93ff3e86e9fcfc5e3e9f53d38",
+      "publicationDate": "2018-10-31",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "Childhood Adversity and Associated Psychosocial Function in Adolescents with Complex Trauma",
+      "url": "https://www.semanticscholar.org/paper/f0a5da768cb46cf93ff3e86e9fcfc5e3e9f53d38",
+      "venue": "Child and Youth Care Forum",
+      "year": 2018
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 3775
+}

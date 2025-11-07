@@ -1,0 +1,15 @@
+**Bootstrap Work**
+- Documented dataset dimensions, missing codebook, and provisional SRS stance per instructions in `docs/baseline_inputs.md:1`.
+- Authored a draft PAP with study overview, estimands for H1–H4, covariates, workflow, and reproducibility checklist in `analysis/pre_analysis_plan.md:1`.
+- Registered four exploratory hypotheses plus empty results schema to anchor future outputs in `analysis/hypotheses.csv:1` and `analysis/results.csv:1`.
+- Captured the bootstrap narrative and immediate to-dos in `notebooks/research_notebook.md:1`; commit request saved via `artifacts/git_message.txt`.
+
+**Literature & Tooling**
+- Built the charter-compliant Semantic Scholar CLI (env-aware + 1 req/s limiter) in `scripts/semantic_scholar_cli.py:1` and logged the kickoff query output at `lit/queries/loop_000/query_001.json:1`.
+- Seeded bibliography + evidence map with DOI-linked reference and an expansion plan in `lit/bibliography.md:1` and `lit/evidence_map.csv:1`.
+- Recorded the bootstrap action in `analysis/decision_log.csv:1` and updated project state/next actions in `artifacts/state.json:1`. No automated tests were needed because changes were documentation + data-access scaffolding only.
+
+**Next Steps**
+- 1 Build a provisional codebook for the priority exposure/outcome variables to firm up coding decisions.
+- 2 Run descriptive and missingness diagnostics for H1–H4 variables to justify the SRS assumption before freezing the PAP.
+- 3 Execute at least two additional Semantic Scholar queries (via the new CLI) to broaden literature coverage ahead of confirmatory planning.

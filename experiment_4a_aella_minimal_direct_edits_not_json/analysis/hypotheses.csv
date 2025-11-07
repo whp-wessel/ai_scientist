@@ -1,0 +1,5 @@
+result_id,hypothesis_id,hypothesis_family,confirmatory,estimate,se,ci_low,ci_high,p_value,q_value,design_used,srs_justification,notes
+,H1,childhood_emotional_support,FALSE,,,,,,FALSE,"No survey design variables detected; defaulting to SRS pending further evidence.","Higher parental emotional abuse ages 0-12 (mds78zu) predicts higher adult self-reported depression (wz901dj)."
+,H2,parental_guidance_self_regard,FALSE,,,,,,FALSE,"No survey design variables detected; defaulting to SRS pending further evidence.","More parental guidance ages 0-12 (pqo6jmj) associates with higher adult self-love scores (2l8994l)."
+,H3,childhood_class_networth,FALSE,,,,,,FALSE,"No survey design variables detected; defaulting to SRS pending further evidence.","Respondents from higher childhood socioeconomic class (classchild) report higher current net worth (networth)."
+,H4,religiosity_and_anxiety,FALSE,,,,,,FALSE,"No survey design variables detected; defaulting to SRS pending further evidence.","Currently practicing a religion (religion) associates with lower anxiety frequency (npvfh98)."
