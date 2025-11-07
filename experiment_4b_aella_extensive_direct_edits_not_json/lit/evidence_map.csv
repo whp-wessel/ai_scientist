@@ -1,0 +1,2 @@
+concept,claim_id,source_title,authors,year,doi_or_url,access_date,query,quality_rating,notes
+religion_socialization,C1,"Religious Involvement and Subjective Well-Being","Christopher G. Ellison",1991,https://doi.org/10.2307/2136801,2025-11-07,lit/queries/loop_000/query_001.json,placeholder,"Citation identified from prior knowledge while Semantic Scholar access returned 403; verify and augment once API credentials are restored."

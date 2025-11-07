@@ -1,1 +1,0 @@
-Loop 002 entry documents the reviewer-response focus: survey-design probe, new literature, and the reproducible data-dictionary build.

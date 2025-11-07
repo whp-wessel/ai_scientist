@@ -1,0 +1,47 @@
+{
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "seed": 20251016,
+  "description": "Placeholder codebook. TODO: Replace with detailed variable metadata verified against raw instrument.",
+  "variables": {
+    "selfage": {
+      "label": "Respondent age in years",
+      "question": "Your age?",
+      "type": "numeric",
+      "allowed_values": null,
+      "notes": "TODO: Confirm units and imputation rules."
+    },
+    "biomale": {
+      "label": "Biological sex is male",
+      "question": "Which category fits you best?",
+      "type": "binary",
+      "allowed_values": [0, 1],
+      "notes": "TODO: Verify coding (1=male?)."
+    },
+    "liberal": {
+      "label": "Political orientation: liberal scale",
+      "question": "Politically speaking, you tend to be more:",
+      "type": "ordinal",
+      "allowed_values": "TODO",
+      "notes": "TODO: Map response options to codes."
+    },
+    "religion": {
+      "label": "Currently practices a religion",
+      "question": "Do you currently actively practice a religion?",
+      "type": "categorical",
+      "allowed_values": "TODO",
+      "notes": "TODO: Add response levels."
+    },
+    "networth": {
+      "label": "Current net worth bracket",
+      "question": "Your current net worth is closest to",
+      "type": "ordinal",
+      "allowed_values": "TODO",
+      "notes": "TODO: Confirm brackets and order."
+    }
+  },
+  "pending_tasks": [
+    "Validate variable list completeness",
+    "Document derived variables and missing value codes",
+    "Cross-reference survey instrument for canonical wording"
+  ]
+}

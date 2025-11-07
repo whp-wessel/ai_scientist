@@ -1,2 +1,0 @@
-comparison,seed,min_cell_size,weight_variable,variance_method,design_assumption,estimate,standard_error,ci_lower,ci_upper,n_biomale,n_not_biomale
-prop_any_practice_male_minus_non_male,20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,-0.05843,0.007881,-0.073877,-0.042983,8512,5931

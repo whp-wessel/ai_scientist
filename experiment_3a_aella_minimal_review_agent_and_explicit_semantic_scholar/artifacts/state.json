@@ -1,0 +1,26 @@
+{
+  "bootstrap_complete": false,
+  "last_updated": "2025-11-07T11:18:17.637373+00:00",
+  "loop_counter": 2,
+  "next_actions": [
+    {
+      "desc": "Escalate request for the official codebook plus any survey weights/strata metadata; log outreach attempts.",
+      "id": "T-002",
+      "priority": 1
+    },
+    {
+      "desc": "Extend the data dictionary to required covariates and start deterministic recode scripts for H1-H4 derived variables.",
+      "id": "T-003",
+      "priority": 2
+    },
+    {
+      "desc": "Synthesize additional literature on childhood emotional abuse and adult anxiety to strengthen H4 context/PAP.",
+      "id": "T-004",
+      "priority": 2
+    }
+  ],
+  "notes": "Documented SRS rationale + design memo, added purity-culture and wealth sources, and built the initial H1-H4 data dictionary.",
+  "phase": "literature",
+  "phase_ix": 0,
+  "total_loops": 50
+}

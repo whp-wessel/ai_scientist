@@ -1,1 +1,0 @@
-Design considerations now explicitly cite docs/survey_design_notes.md when justifying the temporary SRS assumption.

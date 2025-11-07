@@ -1,0 +1,14 @@
+Bootstrap scaffolding is now in place: governance files, hypotheses/PAP, QC log, notebook, and literature stubs are all wired to the decision log with seeds and regeneration hooks.
+
+- Governance + design placeholders documented in `config/agent_config.yaml:1-32`, `docs/codebook.json:1-120`, and `docs/survey_design.yaml:1-20`, giving every downstream script deterministic paths, seed 20251016, and SRS assumptions until weights arrive.
+- Hypothesis registry plus PAP draft captured in `analysis/hypotheses.csv:1-6` and `analysis/pre_analysis_plan.md:1-72`, covering four candidate hypotheses (H1–H4) with explicit estimands, BH plans, robustness bullets, and the workflow for freezing/registry tagging (also referencing future LaTeX sync).
+- Repository logging + QC: `qc/data_checks.md:1-15` records the raw-data audit commands (rows/cols, encoding), `notebooks/research_notebook.md:1-30` narrates loop 000 with reproducible snippets and LaTeX coordination notes, `analysis/decision_log.csv:1-4` logs all bootstrap actions, and `artifacts/state.json:1-43` now tracks backlog/next-actions with `bootstrap_complete: true`.
+- Literature artifacts created despite the temporary Semantic Scholar block: `lit/queries/loop_000/query_001.json:1-9` captures the 403 response, while `lit/bibliography.bib:1-13`, `lit/bibliography.json:1-15`, and `lit/evidence_map.csv:1-2` hold placeholder DOI-backed coverage for claim C1 pending API resolution.
+- Commit helper prepared via `artifacts/git_message.txt:1` (“bootstrap: initialize governance scaffolding and literature stubs”); rate-limit bookkeeping from the helper lives in `artifacts/.s2_rate_limit.json` and will update automatically on future API calls.
+
+Next steps:
+1. Restore Semantic Scholar access (rotate or validate `S2_API_Key`), rerun the loop_000 query, and add ≥2 more DOI-backed sources to `lit/evidence_map.csv`.
+2. Draft `qc/measures_validity.md` entries for `religion`, `liberal`, `networth`, and other PAP variables before freezing.
+3. Stand up deterministic scripts in `analysis/code/` for data prep/modeling so PAP commands can execute verbatim; add schema validation to close the QCTODOs.
+
+Let me know once the API key issue is resolved or if you’d like me to prioritize any follow-up tasks differently.

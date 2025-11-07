@@ -1,0 +1,41 @@
+variable_id,source_column,variable_type,statistic,value,unweighted_n,detail,note,total_records
+selfage,selfage,numeric,mean,30.4249,14443,,Respondent age in years.,14443
+selfage,selfage,numeric,std,10.1689,14443,,Respondent age in years.,14443
+selfage,selfage,numeric,min,18.0,14443,,Respondent age in years.,14443
+selfage,selfage,numeric,q1,23.0,14443,,Respondent age in years.,14443
+selfage,selfage,numeric,median,28.0,14443,,Respondent age in years.,14443
+selfage,selfage,numeric,q3,35.0,14443,,Respondent age in years.,14443
+selfage,selfage,numeric,max,75.0,14443,,Respondent age in years.,14443
+selfage,selfage,numeric,missing_fraction,0.0,14443,,Respondent age in years.,14443
+biomale,biomale,binary,prop_1,0.5894,14443,,1=Biologically male; 0=otherwise. Confirm coding in codebook.,14443
+biomale,biomale,binary,count_1,8512.0,14443,,1=Biologically male; 0=otherwise. Confirm coding in codebook.,14443
+biomale,biomale,binary,count_0,5931.0,14443,,1=Biologically male; 0=otherwise. Confirm coding in codebook.,14443
+biomale,biomale,binary,missing_fraction,0.0,14443,,1=Biologically male; 0=otherwise. Confirm coding in codebook.,14443
+religion_current,religion,binary,prop_1,0.4962,14443,,1=Currently practices a religion; 0=otherwise.,14443
+religion_current,religion,binary,count_1,2577.0,14443,,1=Currently practices a religion; 0=otherwise.,14443
+religion_current,religion,binary,count_0,9958.0,14443,,1=Currently practices a religion; 0=otherwise.,14443
+religion_current,religion,binary,missing_fraction,0.0,14443,,1=Currently practices a religion; 0=otherwise.,14443
+externalreligion_importance,externalreligion,ordinal,mean,1.3699,14443,,Importance of childhood religious adherence. Treated as ordered numeric scale.,14443
+externalreligion_importance,externalreligion,ordinal,std,1.3468,14443,,Importance of childhood religious adherence. Treated as ordered numeric scale.,14443
+externalreligion_importance,externalreligion,ordinal,min,0.0,14443,,Importance of childhood religious adherence. Treated as ordered numeric scale.,14443
+externalreligion_importance,externalreligion,ordinal,q1,0.0,14443,,Importance of childhood religious adherence. Treated as ordered numeric scale.,14443
+externalreligion_importance,externalreligion,ordinal,median,1.0,14443,,Importance of childhood religious adherence. Treated as ordered numeric scale.,14443
+externalreligion_importance,externalreligion,ordinal,q3,2.0,14443,,Importance of childhood religious adherence. Treated as ordered numeric scale.,14443
+externalreligion_importance,externalreligion,ordinal,max,4.0,14443,,Importance of childhood religious adherence. Treated as ordered numeric scale.,14443
+externalreligion_importance,externalreligion,ordinal,missing_fraction,0.0,14443,,Importance of childhood religious adherence. Treated as ordered numeric scale.,14443
+networth_bracket,networth,ordinal,mean,2.0499,14443,,Current net worth bracket codes (higher=greater net worth).,14443
+networth_bracket,networth,ordinal,std,1.8992,14443,,Current net worth bracket codes (higher=greater net worth).,14443
+networth_bracket,networth,ordinal,min,-3.0,14443,,Current net worth bracket codes (higher=greater net worth).,14443
+networth_bracket,networth,ordinal,q1,1.0,14443,,Current net worth bracket codes (higher=greater net worth).,14443
+networth_bracket,networth,ordinal,median,2.0,14443,,Current net worth bracket codes (higher=greater net worth).,14443
+networth_bracket,networth,ordinal,q3,3.0,14443,,Current net worth bracket codes (higher=greater net worth).,14443
+networth_bracket,networth,ordinal,max,6.0,14443,,Current net worth bracket codes (higher=greater net worth).,14443
+networth_bracket,networth,ordinal,missing_fraction,0.0,14443,,Current net worth bracket codes (higher=greater net worth).,14443
+h33e6gg_adult_vs_child_happiness,"On average, I am happier as an adult than I was in childhood (h33e6gg)",ordinal,mean,0.7466,14436,,Higher values indicate greater adult vs childhood happiness; verify scale direction.,14443
+h33e6gg_adult_vs_child_happiness,"On average, I am happier as an adult than I was in childhood (h33e6gg)",ordinal,std,1.9464,14436,,Higher values indicate greater adult vs childhood happiness; verify scale direction.,14443
+h33e6gg_adult_vs_child_happiness,"On average, I am happier as an adult than I was in childhood (h33e6gg)",ordinal,min,-3.0,14436,,Higher values indicate greater adult vs childhood happiness; verify scale direction.,14443
+h33e6gg_adult_vs_child_happiness,"On average, I am happier as an adult than I was in childhood (h33e6gg)",ordinal,q1,-1.0,14436,,Higher values indicate greater adult vs childhood happiness; verify scale direction.,14443
+h33e6gg_adult_vs_child_happiness,"On average, I am happier as an adult than I was in childhood (h33e6gg)",ordinal,median,1.0,14436,,Higher values indicate greater adult vs childhood happiness; verify scale direction.,14443
+h33e6gg_adult_vs_child_happiness,"On average, I am happier as an adult than I was in childhood (h33e6gg)",ordinal,q3,3.0,14436,,Higher values indicate greater adult vs childhood happiness; verify scale direction.,14443
+h33e6gg_adult_vs_child_happiness,"On average, I am happier as an adult than I was in childhood (h33e6gg)",ordinal,max,3.0,14436,,Higher values indicate greater adult vs childhood happiness; verify scale direction.,14443
+h33e6gg_adult_vs_child_happiness,"On average, I am happier as an adult than I was in childhood (h33e6gg)",ordinal,missing_fraction,0.0005,14443,,Higher values indicate greater adult vs childhood happiness; verify scale direction.,14443

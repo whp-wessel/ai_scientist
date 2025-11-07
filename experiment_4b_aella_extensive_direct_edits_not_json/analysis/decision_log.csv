@@ -1,0 +1,4 @@
+ts,action,inputs,rationale_short,code_path,outputs,status
+2025-11-07T12:06:45.240399+00:00,sanity_checks,"childhoodbalancedpublic_original.csv; docs/","Verified raw CSV shape and confirmed missing governance docs.",notebooks/research_notebook.md,qc/data_checks.md,success
+2025-11-07T12:06:45.240399+00:00,bootstrap_artifacts,"config/agent_config.yaml; docs/codebook.json; docs/survey_design.yaml","Created config, PAP draft, notebook, and hypotheses scaffolding.",analysis/pre_analysis_plan.md,analysis/hypotheses.csv; notebooks/research_notebook.md,success
+2025-11-07T12:06:45.240399+00:00,semantic_scholar_query_loop000,"scripts/semantic_scholar_cli.py search --query ""religious adherence adult wellbeing survey""","Attempted required literature query; API key rejected (403).",lit/queries/loop_000/query_001.json,lit/queries/loop_000/query_001.json (error record),blocked

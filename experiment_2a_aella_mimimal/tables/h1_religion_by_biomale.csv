@@ -1,3 +1,0 @@
-biomale_code,biomale_label,n_total,seed,min_cell_size,weight_variable,variance_method,design_assumption,n_any_practice,prop_any_practice,prop_any_practice_se,prop_any_practice_ci_lower,prop_any_practice_ci_upper,prop_religion_0,prop_religion_1,prop_religion_2,prop_religion_3
-0,Not biologically male,5931,20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,2046,0.344967,0.006172,0.332869,0.357065,0.655033,0.206205,0.085989,0.052774
-1,Biologically male,8512,20251016,10,,taylor,Treat as simple random sample until sponsor provides design metadata.,2439,0.286537,0.004901,0.276931,0.296142,0.713463,0.15907,0.073308,0.054159

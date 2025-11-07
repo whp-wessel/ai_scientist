@@ -1,6 +1,0 @@
-DECISION: CONTINUE  
-R1 PASS: Reproducibility scaffolding in place with detailed actions logged in `analysis/decision_log.csv` and narrated in `notebooks/research_notebook.md`.  
-R2 PASS: No statistical results yet; PAP notes SRS assumption pending weights and tracks design TODOs (`analysis/pre_analysis_plan.md`, `docs/codebook_status.md`).  
-R3 PASS: Literature seeded with DOI-backed entries in `lit/bibliography.bib` and mapped uses in `lit/evidence_map.csv`.  
-R4 PASS: No public tables/outputs generated, so privacy constraints remain satisfied.  
-R5 PASS: Core deliverables exist (`analysis/hypotheses.csv`, draft PAP, empty `analysis/results.csv` registry), meeting completeness expectations for literature phase.

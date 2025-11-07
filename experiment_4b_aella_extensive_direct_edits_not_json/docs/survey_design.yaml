@@ -1,0 +1,20 @@
+dataset: childhoodbalancedpublic_original.csv
+status: draft
+survey_design:
+  weight_variable: null  # TODO: confirm if probability weights were collected
+  strata_variable: null  # TODO: populate once sampling strata are known
+  cluster_variable: null  # TODO: populate if PSU/cluster IDs exist
+  replicate_weights: []  # TODO: add replicate weight columns if provided
+  finite_population_correction: false
+assumptions:
+  - "Until weights are confirmed, analyses will default to SRS with transparent caveats."
+  - "Small-cell threshold k=10; suppress or aggregate cells with n<10."
+  - "Design degrees of freedom will match the number of independent PSUs once clusters are documented."
+validation_plan:
+  - "Compare marginal distributions against external benchmarks (if available)."
+  - "Recompute totals using any provided replicate weights to validate variance estimation."
+  - "Record any changes to design inputs in qc/data_checks.md and analysis/decision_log.csv."
+notes: >
+  Placeholder file created during bootstrap. Update with authoritative survey documentation
+  before freezing the pre-analysis plan. If the official codebook references weights or
+  complex design elements that remain missing, stop work and escalate to a human reviewer.

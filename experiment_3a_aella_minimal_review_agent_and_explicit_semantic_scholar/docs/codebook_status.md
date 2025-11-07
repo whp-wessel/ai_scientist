@@ -1,0 +1,1 @@
+Added a Loop 002 entry referencing the targeted weight/strata search and directing readers to docs/survey_design_notes.md.
