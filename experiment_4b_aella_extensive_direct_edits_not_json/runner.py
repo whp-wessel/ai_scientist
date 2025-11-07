@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-Runner for the Survey Science Agent.
+Direct‑Edit Runner (Version 1 protocol; **no JSON handshake**)
 
 Key principles:
-- The agent edits files directly (via apply_patch). Runner inspects git diffs; no JSON payload handshake.
+- The agent edits files directly (e.g., via apply_patch). The runner inspects git diffs; no JSON payloads are exchanged.
 - All actions must be logged to analysis/decision_log.csv.
-- **Reproducibility-first:** Everything—including experiments/analyses—must be reproducible.
-  This runner snapshots environment info and dataset checksums on each run, records raw
+- **Reproducibility‑first:** Everything—including experiments/analyses—must be reproducible.
+  The runner snapshots environment info and dataset checksums on each run, records raw
   model output, and captures git HEAD after commits.
 
-This file is self-contained (stdlib only).
+This file is self‑contained (stdlib only).
 """
 
 from __future__ import annotations

@@ -27,3 +27,10 @@
 - Literature coverage: initial Semantic Scholar `search` call returned repeated 429s; switched to DOI-specific `paper` pulls for Moore & Shell (2017) and Hansen (2014), adding both entries to `lit/bibliography.md` and `lit/evidence_map.csv` under `lit/queries/loop_002/`.
 - Scaffolded `reports/paper.md` with an outline, preliminary narrative, and citations so future loops can iterate toward a submit-ready manuscript.
 - Updated state/logs (`analysis/decision_log.csv`, `artifacts/state.json`) with commands, seeds (deterministic), and follow-on tasks centered on scale orientation, richer models (ordered logits + H4), and PAP freezing.
+
+## 2025-11-07 – Loop 003
+- Ran Semantic Scholar query `lit/queries/loop_003/query_001.json` for “Likert reverse coding measurement reliability,” adding Sumin (2022) to cite the sign-flip + z-score strategy for aligned scales.
+- Built `scripts/likert_utils.py` + `scripts/loop003_scale_audit.py` to automate the polarity check; exported diagnostics to `tables/loop003_likert_alignment.csv` showing all H1–H4 Likerts require multiplying by -1 (Strongly Agree = -3).
+- Refit models through `scripts/run_loop003_models.py`, which now: (a) re-estimates H1/H2 with aligned z-scores; (b) fits an ordered logit spanning all ten wealth brackets plus the legacy ≥$1M binary logit; and (c) introduces OLS + logit religiosity→anxiety regressions with the same covariate set. Output stored in `tables/loop003_model_estimates.csv` and summarized in `analysis/results.csv`.
+- Updated PAP/codebook/manuscript to document the measurement correction and note that H1 remains unexpectedly negative after alignment, motivating further investigation before freezing confirmatory claims.
+- Refreshed `analysis/decision_log.csv`, `artifacts/state.json`, and `reports/paper.md` with the new findings and next-step checklist (interaction specs + PAP freeze).

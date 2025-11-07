@@ -1,0 +1,194 @@
+{
+  "data": [
+    {
+      "abstract": "The Likert scale is a psychometric scale commonly used for response measurement. This measurement scale includes techniques for designing and administering surveys as well as coding and analyzing data. However, Likert scaling has various limitations that can affect the resulting data. This study aims to reprove the number of dimensions of the SATS-36 instrument, prove the validity, and estimate the reliability of the statistical attitude instrument (SATS-36) on students at religious universities in Indonesia using Z-Score Transformation Scaling. The latent constructs of cognitive competence, value, difficulty, effect, and effort were constructed using a Likert scale according to the pattern of statements on each item. This study uses confirmatory research with a quantitative approach. For students at religious universities in Indonesia, 243 respondents were selected using a stratified one-stage cluster random sampling technique. Proof of validity and estimation of reliability was done using confirmatory factor analysis. The results of this study show that the rescaling method can improve the validity of the factors but cannot increase Cronbach's coefficient of internal consistency and cannot reduce the standard error of measurement for each item. This research implies that it is not enough to rescale or transform the data to improve the validity and reliability of a measuring instrument. However, it is necessary to calibrate the statement sentence or item question so that the item measures its construct. Further research also needs to test the effectiveness of rescaling in addition to the Z-Score in improving the validity and reliability of measuring instruments.",
+      "authors": [
+        {
+          "authorId": "2174609342",
+          "name": "Sumin Sumin"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 254034509,
+        "DOI": "10.15408/jp3i.v11i2.26591"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.15408/jp3i.v11i2.26591?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.15408/jp3i.v11i2.26591, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBYSA",
+        "status": "GOLD",
+        "url": "https://journal.uinjkt.ac.id/index.php/jp3i/article/download/26591/pdf_1"
+      },
+      "paperId": "236575d43aa2b9ba40b4de681ece84cbe5bff1a5",
+      "publicationDate": "2022-11-25",
+      "publicationTypes": [
+        "Review"
+      ],
+      "title": "The Impact of Z-Score Transformation Scaling on the Validity, Reliability, and Measurement Error of Instrument SATS-36",
+      "url": "https://www.semanticscholar.org/paper/236575d43aa2b9ba40b4de681ece84cbe5bff1a5",
+      "venue": "JP3I (Jurnal Pengukuran Psikologi dan Pendidikan Indonesia)",
+      "year": 2022
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "2253485107",
+          "name": "P. Tekta\u015f"
+        },
+        {
+          "authorId": "2256881776",
+          "name": "Seda \u015eahan"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 271898159,
+        "DOI": "10.1007/s10943-024-02109-1",
+        "PubMed": "39158651"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10943-024-02109-1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10943-024-02109-1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "CLOSED",
+        "url": ""
+      },
+      "paperId": "ff035e97da2add7b810b4b818f1fdb071dfa6632",
+      "publicationDate": "2024-08-19",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Nurse\u2019s Spiritual Sensitivity Scale (NSSS): A Validity and Reliability Study in Turkey",
+      "url": "https://www.semanticscholar.org/paper/ff035e97da2add7b810b4b818f1fdb071dfa6632",
+      "venue": "Journal of religion and health",
+      "year": 2024
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "1835696",
+          "name": "K. Paap"
+        },
+        {
+          "authorId": "1422514701",
+          "name": "Regina T. Anders-Jefferson"
+        },
+        {
+          "authorId": "2211123362",
+          "name": "Nithyasri Balakrishnan"
+        },
+        {
+          "authorId": "2211124667",
+          "name": "John Majoubi"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 257428816,
+        "DOI": "10.3758/s13428-023-02089-2",
+        "PubMed": "36894758"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.3758/s13428-023-02089-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3758/s13428-023-02089-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "other-oa",
+        "status": "HYBRID",
+        "url": "https://link.springer.com/content/pdf/10.3758/s13428-023-02089-2.pdf"
+      },
+      "paperId": "e890bfbb63de2d669cf3ca8a9868495f377b42a2",
+      "publicationDate": "2023-03-09",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "The many foibles of Likert scales challenge claims that self-report measures of self-control are better than performance-based measures",
+      "url": "https://www.semanticscholar.org/paper/e890bfbb63de2d669cf3ca8a9868495f377b42a2",
+      "venue": "Behavior Research Methods",
+      "year": 2023
+    },
+    {
+      "abstract": "Introduction This study investigates the confounding effects of reverse-coded items on the measurement of confidence in mathematics using data from the 2019 Trends in International Mathematics and Science Study (TIMSS). Methods The sample came from the Saudi Arabian cohort of 8th graders in 2019 involving 4,515 students. Through mixture modeling, two subgroups responding in similar ways to reverse-coded items were identified representing approximately 9% of the sample. Results Their response to positively valenced and negatively valenced items showed inconsistency and the observed unexpected response patterns were further verified using Lz*, U3, and the number of Guttman errors person fit indicators. Psychometric analyses on the full sample and the truncated sample after deleting the aberrant responders indicated significant improvements in both internal consistency reliability and factorial validity. Discussion It was concluded that reverse-coded items contribute to systematic measurement error that is associated with distorted item level parameters that compromised the scale\u2019s reliability and validity. The study underscores the need for reconsideration of reverse-coded items in survey design, particularly in contexts involving younger populations and low-achieving students.",
+      "authors": [
+        {
+          "authorId": "2281133930",
+          "name": "Faye Antoniou"
+        },
+        {
+          "authorId": "2281138115",
+          "name": "Mohammed H. Alghamdi"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 273607275,
+        "DOI": "10.3389/fpsyg.2024.1489054",
+        "PubMed": "39512574",
+        "PubMedCentral": "11540709"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11540709, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://doi.org/10.3389/fpsyg.2024.1489054"
+      },
+      "paperId": "65a1081a4256530b04a484bbeb03ce1a9cc69288",
+      "publicationDate": "2024-10-24",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "Confidence in mathematics is confounded by responses to reverse-coded items",
+      "url": "https://www.semanticscholar.org/paper/65a1081a4256530b04a484bbeb03ce1a9cc69288",
+      "venue": "Frontiers in Psychology",
+      "year": 2024
+    },
+    {
+      "abstract": "Abstract Background: The use of positively worded items and reversed forms aims to reduce response bias and is a commonly used practice nowadays. The main goal of this research is to analyze the psychometric implications of the use of positive and reversed items in measurement instruments. Method: A sample of 374 participants was tested aged between 18 and 73 (M=33.98; SD=14.12), 62.60% were women. A repeated measures design was used, evaluating the participants with positive, reversed, and combined forms of a self\u2010efficacy test. Results: When combinations of positive and reversed items are used in the same test the reliability of the test is flawed and the unidimensionality of the test is jeopardized by secondary sources of variance. In addition, the variance of the scores is reduced, and the means differ significantly from those in tests in which all items are either positive or reversed, but not combined. Conclusions: The results of this study present a trade\u2010off between a potential acquiescence bias when items are positively worded and a potential different understanding when combining regular and reversed items in the same test. The specialized literature recommends combining regular and reversed items for controlling for response style bias, but these results caution researchers in using them as well after accounting for the potential effect of linguistic skills and the findings presented in this study. Resumen El uso de \u00edtems inversos en las escalas tipo Likert: una pr\u00e1ctica cuestionable. Antecedentes: el uso de \u00edtems formulados positivamente junto con otros inversos es una pr\u00e1ctica habitual para tratar de evitar sesgos de respuesta. El objetivo del presente trabajo es analizar las implicaciones psicom\u00e9tricas de utilizar \u00edtems directos e inversos en la misma prueba. M\u00e9todo: se utiliz\u00f3 una muestra de 374 participantes con edades comprendidas entre 18 y 73 a\u00f1os (M=33.98; DT=14.12), con un 62,60% de mujeres. Mediante un dise\u00f1o de medidas repetidas se evalu\u00f3 a los participantes en una prueba de autoeficacia con tres condiciones: todos los \u00edtems positivos, todos negativos y un combinado de ambos. Resultados: cuando se utilizan en la misma prueba tanto \u00edtems positivos como negativos su fiabilidad se deteriora, y la unidimensionalidad de la prueba se ve comprometida por fuentes secundarias de varianza. La varianza de las puntuaciones disminuye, y las medias difieren significativamente respecto de las pruebas en las que todos los \u00edtems est\u00e1n formulados positiva o negativamente. Conclusiones: los resultados de este estudio presentan una disyuntiva entre un posible sesgo de aquiescencia cuando los \u00edtems tienen una redacci\u00f3n positiva y una comprensi\u00f3n potencialmente diferente cuando se combinan \u00edtems regulares e invertidos en la misma prueba. La literatura especializada recomienda combinar \u00edtems regulares e invertidos para poder controlar el sesgo del estilo de respuesta, pero estos resultados advierten a los investigadores que los usen tambi\u00e9n despu\u00e9s de tener en cuenta el potencial efecto de las habilidades ling\u00fc\u00edsticas y de los hallazgos presentados en este estudio. Palabras clave: \u00edtems invertidos, recodificaci\u00f3n, validez, sesgo de respuestas, teor\u00eda de respuesta al \u00edtem.",
+      "authors": [
+        {
+          "authorId": "1401569645",
+          "name": "J. Su\u00e1rez\u2010\u00c1lvarez"
+        },
+        {
+          "authorId": "1693609985",
+          "name": "Ignacio Pedrosa"
+        },
+        {
+          "authorId": "39757818",
+          "name": "Luis M. Lozano"
+        },
+        {
+          "authorId": "115997296",
+          "name": "E. Garc\u00eda-Cueto"
+        },
+        {
+          "authorId": "144080657",
+          "name": "Marcelino Cuesta"
+        },
+        {
+          "authorId": "2744307",
+          "name": "J. Mu\u00f1iz"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 13875869,
+        "DOI": "10.7334/psicothema2018.33",
+        "MAG": "2883808623",
+        "PubMed": "29694314"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.7334/psicothema2018.33?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.7334/psicothema2018.33, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "publisher-specific-oa",
+        "status": "GOLD",
+        "url": "https://doi.org/10.7334/psicothema2018.33"
+      },
+      "paperId": "f410e0df2ec54459ddd8727ea95553e6bb491443",
+      "publicationDate": "2018-01-13",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Using reversed items in Likert scales: A questionable practice",
+      "url": "https://www.semanticscholar.org/paper/f410e0df2ec54459ddd8727ea95553e6bb491443",
+      "venue": "Psicothema",
+      "year": 2018
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 118
+}

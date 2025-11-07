@@ -11,23 +11,25 @@ Childhood adversity remains a consistent predictor of adult depression and anxie
 
 ## 2. Data & Methods
 - **Data**: `childhoodbalancedpublic_original.csv` (14,443 × 718). No survey weights/strata were provided after header scans, so we maintain an SRS assumption (see `analysis/pre_analysis_plan.md`).
-- **Measurement**: Loop 002 extended the priority codebook to cover teen-period exposures plus adjustment covariates, with public tables under `tables/loop002_teen_covariate_numeric.csv` and `tables/loop002_teen_covariate_categorical.csv`. Reverse-coded items are tracked via `tables/loop002_reverse_code_check.csv`.
-- **Modeling**: The prototype pipeline (`scripts/run_loop002_models.py`) fits OLS for H1–H2 and a binary logit for H3 (≥$1M net worth), exporting coefficients to `tables/loop002_model_estimates.csv` and logging summary rows in `analysis/results.csv`. All models include adolescent class, age, gender, and education controls; further robustness (ordered logit for net-worth deciles, anxiety outcome models) is queued for the next loop.
+- **Measurement**: Loop 002 extended the priority codebook to cover teen-period exposures plus adjustment covariates, with public tables under `tables/loop002_teen_covariate_numeric.csv` and `tables/loop002_teen_covariate_categorical.csv`. Loop 003 added `scripts/likert_utils.py` + `scripts/loop003_scale_audit.py`, confirming that the survey encodes *Strongly Agree = -3* for all seven-point items; all H1–H4 Likerts are now sign-flipped and z-scored before modeling (diagnostics in `tables/loop003_likert_alignment.csv`) per Sumin (2022).
+- **Modeling**: The refreshed pipeline (`scripts/run_loop003_models.py`) refits OLS for H1–H2 with aligned z-scores, adds an ordered logit spanning all ten wealth brackets plus the legacy ≥$1M binary logit (H3), and introduces both OLS and binary logit religiosity→anxiety models (H4). Coefficients live in `tables/loop003_model_estimates.csv`, while key estimates propagate to `analysis/results.csv`. All models include adolescent class, age, gender, and education controls.
 
 ## 3. Preliminary Results (Exploratory)
-- Childhood and teen parental abuse responses remain highly correlated (r=0.86) yet yield counter-intuitive negative coefficients on adult depression (-0.07 and -0.20, respectively) when coded as provided; this flags the need to reconcile Likert polarity before confirmatory testing.
-- Childhood parental guidance shows a positive coefficient (0.085) on self-love, but raw scales appear inverted relative to theoretical expectations, reinforcing the measurement-audit priority.
-- Childhood class has near-zero association with the ≥$1M wealth indicator once controlling for teen class, age, gender, and education; teen class absorbs most predictive power (log-odds 0.43).
-- Anxiety reverse-code checks confirm that the `npvfh98` “-neg” column is aligned with worse mental health, so no additional flipping is required for H4.
+- The Likert orientation audit verified that all seven-point items share the *Strongly Agree = -3* convention. After sign-flipping + z-scoring, measurement is now monotonic with the literal statements (higher = more abuse/guidance/depression/self-love/anxiety).
+- Childhood abuse remains negatively associated with adult depression (β = -0.08 SD, p<1e-7) even after correcting polarity; the unexpected sign suggests either unobserved buffering or response artifacts that need probing before confirmatory claims.
+- Childhood parental guidance still shows a positive association with self-love (β = 0.09 SD, p<1e-11) using aligned scores, reinforcing the protective interpretation.
+- Childhood class retains a small, non-significant association in the full ordered logit once teen class is included (β = 0.025, p=0.24), while teen class dominates both the ordered and ≥$1M binary models.
+- Religiosity intensity is inversely related to both continuous anxiety (β = -0.062 SD, p<1e-10) and the probability of reporting “strong” anxiety (log-odds = -0.112, p<1e-7) after covariate adjustment, suggesting H4 has empirical support.
 
 All estimates remain exploratory and subject to revision after the orientation review and PAP freeze.
 
 ## 4. Next Steps
-1. Resolve Likert directionality so “higher” scores monotonically reflect greater exposure/outcome intensity; update tables/models accordingly.
-2. Expand the H3 specification to ordered logits across all ten wealth brackets and add H4 anxiety models (OLS/logit) leveraging the religious-practice exposure.
-3. Freeze the PAP (git-tag) once measurement conventions are settled, then proceed to confirmatory estimation.
+1. Probe why aligned childhood abuse still predicts *lower* depression (e.g., inspect moderators or response patterns) before promoting H1 to confirmatory status.
+2. Lock the final ordered-logit and religiosity specifications (including any interaction terms) and freeze/tag the PAP with deterministic commands.
+3. Detail the multiplicity/FDR plan and manuscript narrative so confirmatory claims can be slotted immediately after PAP freeze.
 
 ## References
 - Hansen, M. N. (2014). *Self-Made Wealth or Family Wealth? Changes in Intergenerational Wealth Mobility.* *Social Forces, 93*(2), 457–481. https://doi.org/10.1093/SF/SOU078
 - Moore, L., & Shell, M. D. (2017). *The Effects of Parental Support and Self-Esteem on Internalizing Symptoms in Emerging Adulthood.* *Psi Chi Journal of Psychological Research, 22*(2), 131–140. https://doi.org/10.24839/2325-7342.JN22.2.131
 - Zhang, C., Chen, J., & Lai, Y. (2025). *The mediating role of childhood emotional neglect...* *Child Abuse & Neglect.* https://doi.org/10.1016/j.chiabu.2025.107294
+- Sumin, S. (2022). *The Impact of Z-Score Transformation Scaling on the Validity, Reliability, and Measurement Error of Instrument SATS-36.* *JP3I, 11*(2). https://doi.org/10.15408/jp3i.v11i2.26591

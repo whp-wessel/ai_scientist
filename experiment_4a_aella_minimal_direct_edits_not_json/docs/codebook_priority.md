@@ -59,6 +59,11 @@ Generated from `childhoodbalancedpublic_original.csv` on 2025-11-07 (seedless de
 - Missingness across priority variables is ≤0.12%, so listwise deletion is viable for exploratory work. Missingness diagnostics will be repeated if additional covariates introduce >5% loss.
 - No survey design variables (weights, strata, clusters) were detected when scanning column headers for the strings “weight”, “strata”, or “cluster”; see `analysis/pre_analysis_plan.md` for the SRS justification.
 
+### Loop 003 · Likert Orientation Audit
+- Script `scripts/loop003_scale_audit.py` confirms the survey encodes **Strongly Agree = -3** and **Strongly Disagree = +3** for all seven-point items used in H1–H4. To restore an intuitive direction where higher scores indicate more of the literal statement, each variable was sign-flipped (raw × -1) and documented in `tables/loop003_likert_alignment.csv`.
+- The aligned columns now feed directly into the Loop 003 models via z-scores: childhood/teen abuse, childhood/teen guidance, adult depression, adult self-love, and adult anxiety. Future scripts should rely on the aligned/z-scored versions exposed by `scripts/likert_utils.py` instead of the raw columns.
+- Orientation findings will flow into the PAP freeze so that confirmatory estimands explicitly reference the aligned scale (e.g., “one SD increase in aligned childhood emotional abuse”).
+
 ## Teen Exposures & Adjustment Covariates — Loop 002 Extension
 
 Descriptive summaries are exported to `tables/loop002_teen_covariate_numeric.csv` (numeric Likert/ordinal variables) and `tables/loop002_teen_covariate_categorical.csv` (public-safe counts, n≥10 cells). These variables support teen-period contrasts and the adjustment set planned for OLS/logit prototypes.

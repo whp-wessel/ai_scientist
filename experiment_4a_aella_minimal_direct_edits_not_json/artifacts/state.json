@@ -1,13 +1,13 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-07T13:58:59Z",
-  "loop_counter": 2,
+  "last_updated": "2025-11-07T16:15:00Z",
+  "loop_counter": 3,
   "next_actions": [
-    "Diagnose Likert polarity for abuse, self-love, depression, and related covariates; standardize recodes so higher scores map to higher exposure/outcome intensity.",
-    "Expand models: ordered logit for all net-worth brackets plus religiosity→anxiety regressions (OLS/logit) with survey-design justification noted in outputs.",
-    "Freeze the PAP (git tag) once measurement is settled, then promote core hypotheses to confirmatory status and align manuscript narration."
+    "Diagnose why the aligned H1 slope remains negative (e.g., inspect abuse correlations, add moderating interactions) before freezing confirmatory estimands.",
+    "Finalize ordered-logit + religiosity model specifications (including any interaction terms) and document deterministic commands, then freeze/tag the PAP.",
+    "Lay out the multiplicity/FDR plan and manuscript language so confirmatory claims can be slotted immediately after PAP freeze."
   ],
-  "phase": "literature",
-  "phase_ix": 0,
+  "phase": "pap",
+  "phase_ix": 1,
   "total_loops": 50
 }
