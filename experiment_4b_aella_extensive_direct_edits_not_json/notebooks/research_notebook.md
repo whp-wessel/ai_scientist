@@ -36,8 +36,15 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Semantic Scholar queries will be executed via `python scripts/semantic_scholar_cli.py ...` with outputs stored in `lit/queries/loop_000/` and logged in `analysis/decision_log.csv`.
 - Evidence tracking: `lit/evidence_map.csv` (with DOI-backed entries) and `lit/bibliography.bib/.json` kept in sync. Each manuscript claim will map to at least one entry via `claim_id`.
 
+### Loop 1 Evidence Additions (2025-11-07)
+- Semantic Scholar CLI still returns `403 Forbidden` even with the refreshed `S2_API_Key`; logged the failed call under `lit/queries/loop_001/query_001.json` and pivoted to CrossRef (documented queries `query_002`–`query_004`) per governance instructions.
+- **C1 / H1:** Ezra et al. (2025, DOI `10.1007/s10826-024-02984-y`) show that early-childhood religiosity moderates the link between paternal involvement and depressive symptoms, highlighting the need to model potential interaction terms rather than a single linear effect.
+- **C2 / H2:** Thompson et al. (2015, DOI `10.1016/j.jadohealth.2015.05.005`) demonstrate that consistent parental monitoring dampens risky alcohol trajectories into adulthood, supporting our framing of parental guidance as protective for adult health.
+- **C3 / H3:** Islam et al. (2022, DOI `10.1016/j.chiabu.2022.105665`) identify self-esteem and social support as mediators between childhood maltreatment and adult autonomy, reinforcing the plan to document mediator adjustments and robustness checks.
+- Open questions: regain working Semantic Scholar credentials to satisfy default sourcing workflow; map survey scales (e.g., `pqo6jmj`, `2l8994l`) onto constructs discussed in these studies before freezing the PAP.
+
 ## Next Steps
 1. Implement reproducible data cleaning scripts (`analysis/code/`) to construct analysis-ready variables.
 2. Enrich codebook/code design docs with automated generation.
-3. Expand literature base to ≥3 DOI-backed sources before advancing phase.
+3. Restore Semantic Scholar access (or secure approval for a standing CrossRef fallback) before the PAP phase.
 4. Draft DAG + identification memo skeleton once key pathways confirmed.

@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-07T14:51:06Z",
-  "loop_counter": 6,
+  "last_updated": "2025-11-07T15:09:23Z",
+  "loop_counter": 7,
   "next_actions": [
-    "Prepare sensitivity analyses for the H1 confirmatory family (HC3 SEs, alternative covariate sets) and log results in analysis/sensitivity_notes.md.",
-    "Decide whether H2\u2013H4 estimands are ready for promotion by extending literature review + diagnostics per the frozen PAP requirements.",
-    "Develop manuscript-ready figures/tables summarizing the confirmatory contrasts while ensuring public exports obey the n>=10 rule."
+    "Run targeted Semantic Scholar pulls plus diagnostics for H2\u2013H4 (ordered-logit proportional-odds, self-love measurement) to decide on the next PAP promotion.",
+    "Develop manuscript-ready visuals/tables for the H1 confirmatory contrasts while keeping the n>=10 disclosure rule.",
+    "Plan the next robustness wave (e.g., bootstrap CIs or alternative outcome codings) to prepare for the sensitivity phase transition."
   ],
   "phase": "analysis",
   "phase_ix": 2,

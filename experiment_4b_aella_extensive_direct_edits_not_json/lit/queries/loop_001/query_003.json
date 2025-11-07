@@ -1,0 +1,2473 @@
+{
+  "source": "crossref",
+  "endpoint": "works",
+  "query": "parental guidance adolescent health outcomes",
+  "rows": 5,
+  "timestamp_utc": "2025-11-07T15:11:08.154746+00:00",
+  "response": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 5570619,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2022,
+                3,
+                31
+              ]
+            ],
+            "date-time": "2022-03-31T11:10:49Z",
+            "timestamp": 1648725049459
+          },
+          "reference-count": 0,
+          "publisher": "Elsevier BV",
+          "issue": "2",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    1997,
+                    2,
+                    1
+                  ]
+                ],
+                "date-time": "1997-02-01T00:00:00Z",
+                "timestamp": 854755200000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "Journal of Adolescent Health"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                1997,
+                2
+              ]
+            ]
+          },
+          "DOI": "10.1016/s1054-139x(97)87618-5",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2002,
+                7,
+                25
+              ]
+            ],
+            "date-time": "2002-07-25T18:41:26Z",
+            "timestamp": 1027622486000
+          },
+          "page": "162",
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Anticipatory guidance for the adolescent: Patient and parental concerns"
+          ],
+          "prefix": "10.1016",
+          "volume": "20",
+          "member": "78",
+          "container-title": [
+            "Journal of Adolescent Health"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1054139X97876185?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1054139X97876185?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2019,
+                4,
+                23
+              ]
+            ],
+            "date-time": "2019-04-23T13:21:08Z",
+            "timestamp": 1556025668000
+          },
+          "score": 32.94648,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1054139X97876185"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                1997,
+                2
+              ]
+            ]
+          },
+          "references-count": 0,
+          "journal-issue": {
+            "issue": "2",
+            "published-print": {
+              "date-parts": [
+                [
+                  1997,
+                  2
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "S1054139X97876185"
+          ],
+          "URL": "https://doi.org/10.1016/s1054-139x(97)87618-5",
+          "ISSN": [
+            "1054-139X"
+          ],
+          "issn-type": [
+            {
+              "value": "1054-139X",
+              "type": "print"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                1997,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T20:05:28Z",
+            "timestamp": 1649102728568
+          },
+          "reference-count": 0,
+          "publisher": "Elsevier BV",
+          "issue": "1",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    1992,
+                    1,
+                    1
+                  ]
+                ],
+                "date-time": "1992-01-01T00:00:00Z",
+                "timestamp": 694224000000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "Journal of Adolescent Health"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                1992,
+                1
+              ]
+            ]
+          },
+          "DOI": "10.1016/1054-139x(92)90309-y",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2005,
+                7,
+                13
+              ]
+            ],
+            "date-time": "2005-07-13T19:42:51Z",
+            "timestamp": 1121283771000
+          },
+          "page": "68",
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Anticipatory guidance for the adolecent: Parental concerns"
+          ],
+          "prefix": "10.1016",
+          "volume": "13",
+          "author": [
+            {
+              "suffix": "Jr.",
+              "given": "Robert M.",
+              "family": "Cavanaugh",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Marie",
+              "family": "Hastings-Tolsma",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Deirdre",
+              "family": "Keenan",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Bess",
+              "family": "Buser",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "container-title": [
+            "Journal of Adolescent Health"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:1054139X9290309Y?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:1054139X9290309Y?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2019,
+                1,
+                24
+              ]
+            ],
+            "date-time": "2019-01-24T15:26:50Z",
+            "timestamp": 1548343610000
+          },
+          "score": 29.452477,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/1054139X9290309Y"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                1992,
+                1
+              ]
+            ]
+          },
+          "references-count": 0,
+          "journal-issue": {
+            "issue": "1",
+            "published-print": {
+              "date-parts": [
+                [
+                  1992,
+                  1
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "1054139X9290309Y"
+          ],
+          "URL": "https://doi.org/10.1016/1054-139x(92)90309-y",
+          "ISSN": [
+            "1054-139X"
+          ],
+          "issn-type": [
+            {
+              "value": "1054-139X",
+              "type": "print"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                1992,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T20:35:23Z",
+            "timestamp": 1762461323469,
+            "version": "build-2065373602"
+          },
+          "reference-count": 73,
+          "publisher": "Elsevier BV",
+          "issue": "12",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    12,
+                    1
+                  ]
+                ],
+                "date-time": "2020-12-01T00:00:00Z",
+                "timestamp": 1606780800000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    12,
+                    1
+                  ]
+                ],
+                "date-time": "2020-12-01T00:00:00Z",
+                "timestamp": 1606780800000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/legal/tdmrep-license"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "thelancet.com",
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "The Lancet Child &amp; Adolescent Health"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2020,
+                12
+              ]
+            ]
+          },
+          "DOI": "10.1016/s2352-4642(20)30184-x",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2020-11-18T22:04:42Z",
+            "timestamp": 1605737082000
+          },
+          "page": "889-898",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 50,
+          "title": [
+            "Supporting children and adolescents following parental bereavement: guidance for health-care professionals"
+          ],
+          "prefix": "10.1016",
+          "volume": "4",
+          "author": [
+            {
+              "given": "Rachel A",
+              "family": "Kentor",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Julie B",
+              "family": "Kaplow",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib1",
+              "doi-asserted-by": "crossref",
+              "first-page": "S9",
+              "DOI": "10.1037/a0037767",
+              "article-title": "The trauma history profile of the National Child Traumatic Stress Network Core Data Set: modelling constellations of trauma exposure",
+              "volume": "6",
+              "author": "Pynoos",
+              "year": "2014",
+              "journal-title": "Psychol Trauma"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib2",
+              "doi-asserted-by": "crossref",
+              "first-page": "889",
+              "DOI": "10.1017/S0033291703001612",
+              "article-title": "Estimating post-traumatic stress disorder in the community: lifetime perspective and the impact of typical traumatic events",
+              "volume": "34",
+              "author": "Breslau",
+              "year": "2004",
+              "journal-title": "Psychol Med"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib3",
+              "first-page": "1145",
+              "article-title": "Psychiatric symptoms in bereaved versus nonbereaved youth and young adults: a longitudinal epidemiological study",
+              "volume": "49",
+              "author": "Kaplow",
+              "year": "2010",
+              "journal-title": "J Am Acad Child Adolesc Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib4",
+              "series-title": "Treatment of childhood disorders",
+              "first-page": "560",
+              "article-title": "Treatment of persistent complex bereavement disorder in childhood and adolescence",
+              "author": "Kaplow",
+              "year": "2019"
+            },
+            {
+              "year": "2010",
+              "series-title": "Grief in childhood: fundamentals of treatment in clinical practice",
+              "author": "Pearlman",
+              "key": "10.1016/S2352-4642(20)30184-X_bib5"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib6",
+              "doi-asserted-by": "crossref",
+              "first-page": "185",
+              "DOI": "10.1080/17450128.2011.587552",
+              "article-title": "The definition of true orphan prevalence: trends, contexts and implications for policies and programmes",
+              "volume": "6",
+              "author": "Belsey",
+              "year": "2011",
+              "journal-title": "Vulnerable Child Youth Stud"
+            },
+            {
+              "year": "2013",
+              "series-title": "Diagnostic and statistical manual of mental disorders: DSM-5",
+              "key": "10.1016/S2352-4642(20)30184-X_bib7"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib8",
+              "doi-asserted-by": "crossref",
+              "first-page": "807",
+              "DOI": "10.1176/appi.ajp.2014.14050676",
+              "article-title": "Sudden loss and psychiatric disorders across the life course: toward a developmental lifespan theory of bereavement-related risk and resilience",
+              "volume": "171",
+              "author": "Kaplow",
+              "year": "2014",
+              "journal-title": "Am J Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib9",
+              "doi-asserted-by": "crossref",
+              "first-page": "266",
+              "DOI": "10.2174/2210676608666180306162544",
+              "article-title": "The interplay between posttraumatic stress and grief reactions in traumatically bereaved adolescents: when trauma, bereavement, and adolescence converge",
+              "volume": "7",
+              "author": "Layne",
+              "year": "2018",
+              "journal-title": "Adolesc Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib10",
+              "doi-asserted-by": "crossref",
+              "first-page": "322",
+              "DOI": "10.1007/s10567-013-0143-1",
+              "article-title": "Using multidimensional grief theory to explore the effects of deployment, reintegration, and death on military youth and families",
+              "volume": "16",
+              "author": "Kaplow",
+              "year": "2013",
+              "journal-title": "Clin Child Fam Psychol Rev"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib12",
+              "doi-asserted-by": "crossref",
+              "first-page": "13",
+              "DOI": "10.1080/02682621.2019.1580854",
+              "article-title": "The price of loss\u2014a literature review of the psychosocial and health consequences of childhood bereavement",
+              "volume": "38",
+              "author": "Lytje",
+              "year": "2019",
+              "journal-title": "Bereavement Care"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib13",
+              "doi-asserted-by": "crossref",
+              "first-page": "1092",
+              "DOI": "10.1111/jcpp.12560",
+              "article-title": "Parental death during childhood and depression in young adults\u2014a national cohort study",
+              "volume": "57",
+              "author": "Berg",
+              "year": "2016",
+              "journal-title": "J Child Psychol Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib14",
+              "doi-asserted-by": "crossref",
+              "first-page": "133",
+              "DOI": "10.1080/07481187.2016.1226990",
+              "article-title": "Examining longer-term effects of parental death in adolescents and young adults: evidence from the national longitudinal survey of adolescent to adult health",
+              "volume": "41",
+              "author": "Feigelman",
+              "year": "2017",
+              "journal-title": "Death Stud"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib15",
+              "doi-asserted-by": "crossref",
+              "first-page": "578",
+              "DOI": "10.1097/EDE.0000000000000481",
+              "article-title": "Risk of use of antidepressants among children and young adults exposed to the death of a parent",
+              "volume": "27",
+              "author": "Appel",
+              "year": "2016",
+              "journal-title": "Epidemiology"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib16",
+              "doi-asserted-by": "crossref",
+              "first-page": "403",
+              "DOI": "10.1001/archpedi.162.5.403",
+              "article-title": "Antecedents and sequelae of sudden parental death in offspring and surviving caregivers",
+              "volume": "162",
+              "author": "Melham",
+              "year": "2008",
+              "journal-title": "Arch Pediatr Adolesc Med"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib17",
+              "doi-asserted-by": "crossref",
+              "first-page": "913",
+              "DOI": "10.1007/s10902-015-9624-x",
+              "article-title": "Temporary and long-term consequences of bereavement on happiness",
+              "volume": "17",
+              "author": "Moor",
+              "year": "2016",
+              "journal-title": "J Happiness Stud"
+            },
+            {
+              "author": "Parsons",
+              "key": "10.1016/S2352-4642(20)30184-X_bib18"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib19",
+              "doi-asserted-by": "crossref",
+              "first-page": "1851",
+              "DOI": "10.1177/1359105316638550",
+              "article-title": "Maladaptive coping in adults who have experienced early parental loss and grief counselling",
+              "volume": "22",
+              "author": "H\u00f8eg",
+              "year": "2017",
+              "journal-title": "J Health Psychol"
+            },
+            {
+              "author": "Nielsen",
+              "key": "10.1016/S2352-4642(20)30184-X_bib20"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib21",
+              "doi-asserted-by": "crossref",
+              "first-page": "1003",
+              "DOI": "10.1007/s00787-016-0833-6",
+              "article-title": "Parental death in childhood and self-inflicted injuries in young adults\u2014a national cohort study from Sweden",
+              "volume": "25",
+              "author": "Rostila",
+              "year": "2016",
+              "journal-title": "Eur Child Adolesc Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib22",
+              "doi-asserted-by": "crossref",
+              "first-page": "1227",
+              "DOI": "10.1001/jamapsychiatry.2015.2094",
+              "article-title": "Incidence of suicide among persons who had a parent who died during their childhood: a population-based cohort study",
+              "volume": "72",
+              "author": "Guldin",
+              "year": "2015",
+              "journal-title": "JAMA Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib23",
+              "doi-asserted-by": "crossref",
+              "first-page": "27",
+              "DOI": "10.1027/0227-5910/a000468",
+              "article-title": "Age at exposure to parental suicide and the subsequent risk of suicide in young people",
+              "volume": "39",
+              "author": "Lee",
+              "year": "2018",
+              "journal-title": "Crisis"
+            },
+            {
+              "year": "2001",
+              "series-title": "Understanding children's experiences of parental bereavement",
+              "author": "Holland",
+              "key": "10.1016/S2352-4642(20)30184-X_bib24"
+            },
+            {
+              "author": "Dyregrov",
+              "key": "10.1016/S2352-4642(20)30184-X_bib25"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib26",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1371/journal.pmed.1001679",
+              "article-title": "Mortality after parental death in childhood: a nationwide cohort study from three Nordic countries",
+              "volume": "11",
+              "author": "Li",
+              "year": "2014",
+              "journal-title": "PLoS Med"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib27",
+              "doi-asserted-by": "crossref",
+              "first-page": "236",
+              "DOI": "10.1111/j.1741-3737.2010.00801.x",
+              "article-title": "Time does not heal all wounds: mortality following the death of a parent",
+              "volume": "73",
+              "author": "Rostila",
+              "year": "2011",
+              "journal-title": "J Marriage Fam"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib28",
+              "doi-asserted-by": "crossref",
+              "first-page": "180",
+              "DOI": "10.1016/j.socscimed.2013.11.054",
+              "article-title": "Survival of offspring who experience early parental death: early life conditions and later-life mortality",
+              "volume": "119",
+              "author": "Smith",
+              "year": "2014",
+              "journal-title": "Soc Sci Med"
+            },
+            {
+              "year": "1996",
+              "series-title": "Children and grief: when a parent dies",
+              "author": "Worden",
+              "key": "10.1016/S2352-4642(20)30184-X_bib29"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib30",
+              "doi-asserted-by": "crossref",
+              "first-page": "296",
+              "DOI": "10.1080/07481187.2014.951497",
+              "article-title": "Individual and psychosocial mechanisms of adaptive functioning in parentally bereaved children",
+              "volume": "39",
+              "author": "Howell",
+              "year": "2015",
+              "journal-title": "Death Stud"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib31",
+              "doi-asserted-by": "crossref",
+              "first-page": "3490",
+              "DOI": "10.1007/s10826-017-0835-0",
+              "article-title": "Caregivers' positive emotional expression and children's psychological functioning after parental loss",
+              "volume": "26",
+              "author": "Wardecker",
+              "year": "2017",
+              "journal-title": "J Child Fam Stud"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib32",
+              "first-page": "197",
+              "article-title": "Current approached to helping children cope with a parent's terminal illness",
+              "volume": "56",
+              "author": "Christ",
+              "year": "2006",
+              "journal-title": "CA Cancer J Clin"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib33",
+              "doi-asserted-by": "crossref",
+              "first-page": "19",
+              "DOI": "10.1177/1049731508314276",
+              "article-title": "Efficacy of a camp-based intervention for childhood traumatic grief",
+              "volume": "19",
+              "author": "McClatchey",
+              "year": "2008",
+              "journal-title": "Res Soc Work Pract"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib34",
+              "doi-asserted-by": "crossref",
+              "first-page": "42",
+              "DOI": "10.1002/jts.21877",
+              "article-title": "Do circumstances of the death matter? Identifying socioenvironmental risks for grief-related psychopathology in bereaved youth",
+              "volume": "27",
+              "author": "Kaplow",
+              "year": "2014",
+              "journal-title": "J Traua Stress"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib35",
+              "doi-asserted-by": "crossref",
+              "first-page": "1164",
+              "DOI": "10.1016/S0140-6736(18)33202-1",
+              "article-title": "Communication with children and adolescents about the diagnosis of a life-threatening condition in their parent",
+              "volume": "393",
+              "author": "Dalton",
+              "year": "2019",
+              "journal-title": "Lancet"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib36",
+              "doi-asserted-by": "crossref",
+              "first-page": "786",
+              "DOI": "10.1176/appi.ajp.2009.08081244",
+              "article-title": "The incidence and course of depression in bereaved youth 21 months after the loss of a parent to suicide, accident, or sudden natural death",
+              "volume": "166",
+              "author": "Brent",
+              "year": "2009",
+              "journal-title": "Am J Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib37",
+              "doi-asserted-by": "crossref",
+              "first-page": "233",
+              "DOI": "10.1136/jech.2010.109595",
+              "article-title": "Exposure to parental mortality and markers of morbidity, and the risks of attempeted and completed suicide in offspring: an analysis of sensitive life periods",
+              "volume": "66",
+              "author": "Niederkrotenthaler",
+              "year": "2012",
+              "journal-title": "J Epidemiol Community Health"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib38",
+              "doi-asserted-by": "crossref",
+              "first-page": "49",
+              "DOI": "10.1016/j.jpsychires.2017.09.023",
+              "article-title": "Sudden parental death from external causes and risk of suicide in the bereaved offspring: a national study",
+              "volume": "96",
+              "author": "Burrell",
+              "year": "2018",
+              "journal-title": "J Psychiatr Res"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib39",
+              "doi-asserted-by": "crossref",
+              "first-page": "681",
+              "DOI": "10.1097/01.chi.0000215327.58799.05",
+              "article-title": "Childhood bereavement: psychopathology in the 2 years postparental death",
+              "volume": "45",
+              "author": "Cerel",
+              "year": "2006",
+              "journal-title": "J Am Acad Child Adolesc Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib40",
+              "doi-asserted-by": "crossref",
+              "first-page": "331",
+              "DOI": "10.1521/psyc.67.4.331.56562",
+              "article-title": "Meeting the needs of parentally bereaved children: a framework for child-centered parenting",
+              "volume": "67",
+              "author": "Saldinger",
+              "year": "2004",
+              "journal-title": "Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib41",
+              "doi-asserted-by": "crossref",
+              "first-page": "253",
+              "DOI": "10.1080/15374410701279669",
+              "article-title": "The effectiveness of bereavement interventions with children: a meta-analytic review of controlled outcome research",
+              "volume": "36",
+              "author": "Currier",
+              "year": "2007",
+              "journal-title": "J Clin Child Adolesc Psychol"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib42",
+              "doi-asserted-by": "crossref",
+              "first-page": "99",
+              "DOI": "10.1080/07481180903492422",
+              "article-title": "A meta-analysis of interventions for bereaved children and adolescents",
+              "volume": "34",
+              "author": "Rosner",
+              "year": "2010",
+              "journal-title": "Death Stud"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib43",
+              "doi-asserted-by": "crossref",
+              "first-page": "491",
+              "DOI": "10.1007/BF00937756",
+              "article-title": "Linking empirically based theory and evaluation: the family bereavement program",
+              "volume": "20",
+              "author": "Sandler",
+              "year": "1992",
+              "journal-title": "Am J Community Psychol"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib44",
+              "doi-asserted-by": "crossref",
+              "first-page": "169",
+              "DOI": "10.1016/j.brat.2012.01.001",
+              "article-title": "Grief and trauma intervention for children after disaster: exploring coping skills versus trauma narration",
+              "volume": "50",
+              "author": "Salloum",
+              "year": "2012",
+              "journal-title": "Behav Res Ther"
+            },
+            {
+              "year": "2017",
+              "series-title": "Trauma and grief component therapy for adolescents: a modular approach to treating traumatised and bereaved youth",
+              "author": "Saltzman",
+              "key": "10.1016/S2352-4642(20)30184-X_bib45"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib46",
+              "doi-asserted-by": "crossref",
+              "first-page": "185",
+              "DOI": "10.1002/cpp.1877",
+              "article-title": "An open trial of \u2018grief-help\u2019: a cognitive-behavioural treatment for prolonged grief in children and adolescents",
+              "volume": "22",
+              "author": "Spuij",
+              "year": "2015",
+              "journal-title": "Clin Psychol Psychother"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib47",
+              "doi-asserted-by": "crossref",
+              "first-page": "1465",
+              "DOI": "10.1097/01.chi.0000237705.43260.2c",
+              "article-title": "A pilot study of modified cognitive-behavioural therapy for childhood traumatic grief (CBT-CTG)",
+              "volume": "45",
+              "author": "Cohen",
+              "year": "2006",
+              "journal-title": "J Am Acad Child Adolesc Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib48",
+              "doi-asserted-by": "crossref",
+              "first-page": "906",
+              "DOI": "10.1001/archpediatrics.2010.173",
+              "article-title": "Six-year follow-up of a preventative intervention for parentally bereaved youth: a randomized controlled trial",
+              "volume": "164",
+              "author": "Sandler",
+              "year": "2010",
+              "journal-title": "Arch Pediatr Adolesc Med"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib49",
+              "doi-asserted-by": "crossref",
+              "first-page": "131",
+              "DOI": "10.1037/a0018393",
+              "article-title": "Long-term effects of the family bereavement program on multiple indicators of grief in parentally bereaved children and adolescents",
+              "volume": "78",
+              "author": "Sandler",
+              "year": "2010",
+              "journal-title": "J Consult Clin Psychol"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib50",
+              "doi-asserted-by": "crossref",
+              "first-page": "S32",
+              "DOI": "10.1111/sltb.12256",
+              "article-title": "The effects of the family bereavement program to reduce suicide ideation and/or attempts of parentally bereaved children six and fifteen years later",
+              "volume": "46",
+              "author": "Sandler",
+              "year": "2016",
+              "journal-title": "Suicide Life Threat Behav"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib51",
+              "doi-asserted-by": "crossref",
+              "first-page": "495",
+              "DOI": "10.1080/15374410802148194",
+              "article-title": "Evaluation of individual and group grief and trauma interventions for children post disaster",
+              "volume": "37",
+              "author": "Salloum",
+              "year": "2008",
+              "journal-title": "J Clin Child Adolesc Psychol"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib52",
+              "doi-asserted-by": "crossref",
+              "first-page": "277",
+              "DOI": "10.1037/1089-2699.5.4.277",
+              "article-title": "Trauma/grief-focused group psychotherapy: school-based postwar intervention with traumatised Bosnian adolescents",
+              "volume": "5",
+              "author": "Layne",
+              "year": "2001",
+              "journal-title": "Group Dyn Theory Res Pract"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib53",
+              "doi-asserted-by": "crossref",
+              "first-page": "933",
+              "DOI": "10.1080/15374416.2014.913249",
+              "article-title": "Narrative focus predicts symptom change trajectories in group treatment for traumatised and bereaved adolescents",
+              "volume": "44",
+              "author": "Grassetti",
+              "year": "2015",
+              "journal-title": "J Clin Child Adolesc Psychol"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib54",
+              "doi-asserted-by": "crossref",
+              "first-page": "43",
+              "DOI": "10.1023/A:1014789630162",
+              "article-title": "A developmental approach to school-based treatment of adolescents exposed to trauma and traumatic loss",
+              "volume": "11",
+              "author": "Saltzman",
+              "year": "2001",
+              "journal-title": "J Child Adolesc Group Ther"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib55",
+              "doi-asserted-by": "crossref",
+              "first-page": "319",
+              "DOI": "10.1521/ijgp.2007.57.3.319",
+              "article-title": "Effectiveness of a trauma/grief-focused group intervention: a qualitative study with war-exposed Bosnian adolescents",
+              "volume": "57",
+              "author": "Cox",
+              "year": "2007",
+              "journal-title": "Int J Group Psychother"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib56",
+              "doi-asserted-by": "crossref",
+              "first-page": "1048",
+              "DOI": "10.1097/CHI.0b013e31817eecae",
+              "article-title": "Effectiveness of a school-based group psychotherapy program for war-exposed adolescents: a randomised controlled trial",
+              "volume": "47",
+              "author": "Layne",
+              "year": "2008",
+              "journal-title": "J Am Acad Child Adolesc Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib57",
+              "doi-asserted-by": "crossref",
+              "first-page": "349",
+              "DOI": "10.1016/j.cbpra.2012.08.002",
+              "article-title": "Cognitive-behavioural therapy for prolonged grief in children: feasibility and multiple baseline study",
+              "volume": "20",
+              "author": "Spuij",
+              "year": "2013",
+              "journal-title": "Cogn Behav Pract"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib58",
+              "doi-asserted-by": "crossref",
+              "first-page": "65",
+              "DOI": "10.1016/0165-1781(95)02757-2",
+              "article-title": "Inventory of complicated grief: a scale to measure maladaptive symptoms of loss",
+              "volume": "59",
+              "author": "Prigerson",
+              "year": "1995",
+              "journal-title": "Psychiatry Res"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib59",
+              "doi-asserted-by": "crossref",
+              "first-page": "184",
+              "DOI": "10.1007/s12310-016-9204-1",
+              "article-title": "Internalising and externalising symptoms moderate treatment response to school-based trauma and grief component therapy for adolescents",
+              "volume": "9",
+              "author": "Herres",
+              "year": "2017",
+              "journal-title": "School Ment Health"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib60",
+              "series-title": "School violence: contributing factors, management, and prevention",
+              "first-page": "163",
+              "article-title": "Wounded adolescence: school-based group psychotherapy for adolescents who sustained or witnessed violent injury",
+              "author": "Layne",
+              "year": "2001"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib61",
+              "doi-asserted-by": "crossref",
+              "first-page": "291",
+              "DOI": "10.1037/1089-2699.5.4.291",
+              "article-title": "Trauma- and grief-focused intervention for adolescents exposed to community violence: results of a school-based screening and group treatment protocol",
+              "volume": "5",
+              "author": "Saltzman",
+              "year": "2001",
+              "journal-title": "Group Dyn-theory Res Pract"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib62",
+              "doi-asserted-by": "crossref",
+              "first-page": "819",
+              "DOI": "10.1207/s15374424jccp3304_17",
+              "article-title": "Treatment of childhood traumatic grief",
+              "volume": "33",
+              "author": "Cohen",
+              "year": "2004",
+              "journal-title": "J Clin Child Adolesc Psychol"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib63",
+              "doi-asserted-by": "crossref",
+              "first-page": "1225",
+              "DOI": "10.1097/01.chi.0000135620.15522.38",
+              "article-title": "Treating childhood traumatic grief: a pilot study",
+              "volume": "43",
+              "author": "Cohen",
+              "year": "2004",
+              "journal-title": "J Am Acad Child Adolesc Psychiatry"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib64",
+              "doi-asserted-by": "crossref",
+              "first-page": "664",
+              "DOI": "10.1002/jts.21970",
+              "article-title": "Treating maladaptive grief and posttraumatic stress symptoms in orphaned children in Tanzania: group-based trauma-focused cognitive-bahvioural therapy",
+              "volume": "27",
+              "author": "O'Donnell",
+              "year": "2014",
+              "journal-title": "J Trauma Stress"
+            },
+            {
+              "year": "2001",
+              "series-title": "UCLA/BYU expanded grief inventory. unpublished instrument",
+              "author": "Layne",
+              "key": "10.1016/S2352-4642(20)30184-X_bib65"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib66",
+              "doi-asserted-by": "crossref",
+              "first-page": "3062",
+              "DOI": "10.1007/s10826-019-01481-x",
+              "article-title": "Multidimensional grief therapy: pilot open trial of a novel intervention for bereaved children and adolescents",
+              "volume": "28",
+              "author": "Hill",
+              "year": "2019",
+              "journal-title": "J Child Fam Stud"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib67",
+              "doi-asserted-by": "crossref",
+              "first-page": "198",
+              "DOI": "10.1177/1049731507307808",
+              "article-title": "Group therapy for children after homicide and violence: a pilot study",
+              "volume": "18",
+              "author": "Salloum",
+              "year": "2007",
+              "journal-title": "Research on Social Work Practice"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib68",
+              "series-title": "Psychological effects of catastrophic disasters: group approaches to treatment",
+              "first-page": "235",
+              "article-title": "Contextual influences on posttraumatic adjustment: retraumatization and the roles of revictimization, posttraumatic adversities, and distressing reminders",
+              "author": "Layne",
+              "year": "2006"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib69",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1207/s15327965pli1501_01",
+              "article-title": "Posttraumatic growth: conceptual foundations and empirical evidence",
+              "volume": "15",
+              "author": "Tedeschi",
+              "year": "2004",
+              "journal-title": "Psychol Inq"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib70",
+              "doi-asserted-by": "crossref",
+              "first-page": "113",
+              "DOI": "10.1037/0735-7028.39.2.113",
+              "article-title": "Evidence-based practices for parentally bereaved children and their families",
+              "volume": "39",
+              "author": "Haine",
+              "year": "2008",
+              "journal-title": "Prof Psychol Res Pr"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib71",
+              "doi-asserted-by": "crossref",
+              "first-page": "152",
+              "DOI": "10.1007/s10826-015-0198-3",
+              "article-title": "Children facing parental cancer versus parental death: the buffering effects of positive parenting and emotional expression",
+              "volume": "25",
+              "author": "Howell",
+              "year": "2016",
+              "journal-title": "J Child Fam Stud"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib72",
+              "doi-asserted-by": "crossref",
+              "first-page": "172",
+              "DOI": "10.1080/07481187.2012.738771",
+              "article-title": "Associations among mother-child communication quality, childhood maladaptive grief, and depressive symptoms",
+              "volume": "38",
+              "author": "Shapiro",
+              "year": "2014",
+              "journal-title": "Death Stud"
+            },
+            {
+              "key": "10.1016/S2352-4642(20)30184-X_bib73",
+              "doi-asserted-by": "crossref",
+              "first-page": "201",
+              "DOI": "10.1111/j.1475-3588.2011.00601.x",
+              "article-title": "Peer-group support for bereaved children: a qualitative interview study",
+              "volume": "16",
+              "author": "Metel",
+              "year": "2011",
+              "journal-title": "Child Adolesc Ment Health"
+            },
+            {
+              "year": "2001",
+              "series-title": "The great psychotherapy debate: models, methods, and findings",
+              "author": "Wampold",
+              "key": "10.1016/S2352-4642(20)30184-X_bib74"
+            }
+          ],
+          "container-title": [
+            "The Lancet Child &amp; Adolescent Health"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S235246422030184X?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S235246422030184X?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T20:31:36Z",
+            "timestamp": 1762461096000
+          },
+          "score": 28.421825,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S235246422030184X"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                12
+              ]
+            ]
+          },
+          "references-count": 73,
+          "journal-issue": {
+            "issue": "12",
+            "published-print": {
+              "date-parts": [
+                [
+                  2020,
+                  12
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "S235246422030184X"
+          ],
+          "URL": "https://doi.org/10.1016/s2352-4642(20)30184-x",
+          "ISSN": [
+            "2352-4642"
+          ],
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "2352-4642"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                12
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "Elsevier",
+              "name": "publisher",
+              "label": "This article is maintained by"
+            },
+            {
+              "value": "Supporting children and adolescents following parental bereavement: guidance for health-care professionals",
+              "name": "articletitle",
+              "label": "Article Title"
+            },
+            {
+              "value": "The Lancet Child & Adolescent Health",
+              "name": "journaltitle",
+              "label": "Journal Title"
+            },
+            {
+              "value": "https://doi.org/10.1016/S2352-4642(20)30184-X",
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version"
+            },
+            {
+              "value": "article",
+              "name": "content_type",
+              "label": "Content Type"
+            },
+            {
+              "value": "\u00a9 2020 Elsevier Ltd. All rights reserved.",
+              "name": "copyright",
+              "label": "Copyright"
+            }
+          ]
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                29
+              ]
+            ],
+            "date-time": "2025-10-29T13:22:29Z",
+            "timestamp": 1761744149088
+          },
+          "reference-count": 40,
+          "publisher": "Elsevier BV",
+          "issue": "3",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2015,
+                    9,
+                    1
+                  ]
+                ],
+                "date-time": "2015-09-01T00:00:00Z",
+                "timestamp": 1441065600000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "jahonline.org",
+              "clinicalkey.jp",
+              "clinicalkey.com",
+              "clinicalkey.es",
+              "clinicalkey.com.au",
+              "clinicalkey.fr",
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Journal of Adolescent Health"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2015,
+                9
+              ]
+            ]
+          },
+          "DOI": "10.1016/j.jadohealth.2015.05.005",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2015,
+                7,
+                5
+              ]
+            ],
+            "date-time": "2015-07-05T08:24:39Z",
+            "timestamp": 1436084679000
+          },
+          "page": "320-326",
+          "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 31,
+          "title": [
+            "Impulsive Personality, Parental Monitoring, and Alcohol Outcomes From Adolescence Through Young Adulthood"
+          ],
+          "prefix": "10.1016",
+          "volume": "57",
+          "author": [
+            {
+              "given": "Kara",
+              "family": "Thompson",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Audra",
+              "family": "Roemer",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Bonnie",
+              "family": "Leadbeater",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib1",
+              "series-title": "Results from the 2006 National Survey on Drug Use and Health: National findings",
+              "year": "2007"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib2",
+              "doi-asserted-by": "crossref",
+              "first-page": "597",
+              "DOI": "10.1016/1054-139X(91)90007-K",
+              "article-title": "Risk behavior in adolescence: A psychosocial framework for understanding and action",
+              "volume": "12",
+              "author": "Jessor",
+              "year": "1991",
+              "journal-title": "J\u00a0Adolesc Health"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib3",
+              "doi-asserted-by": "crossref",
+              "first-page": "574",
+              "DOI": "10.1016/j.cpr.2013.03.003",
+              "article-title": "Impulsivity-related personality traits and adolescent alcohol use: A meta-analytic review",
+              "volume": "33",
+              "author": "Stautz",
+              "year": "2013",
+              "journal-title": "Clin Pyschol Rev"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib4",
+              "doi-asserted-by": "crossref",
+              "first-page": "33",
+              "DOI": "10.1007/s40429-013-0004-5",
+              "article-title": "Impulsivity and alcohol involvement: Multiple, distinct constructs and processes",
+              "volume": "1",
+              "author": "Littlefield",
+              "year": "2014",
+              "journal-title": "Curr Addict Rep"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib5",
+              "doi-asserted-by": "crossref",
+              "first-page": "242",
+              "DOI": "10.1016/j.addbeh.2009.10.020",
+              "article-title": "Disinhibited characteristics and binge drinking among university student drinkers",
+              "volume": "35",
+              "author": "Carlson",
+              "year": "2010",
+              "journal-title": "Addict Behav"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib6",
+              "doi-asserted-by": "crossref",
+              "first-page": "223",
+              "DOI": "10.1017/S0954579412000284",
+              "article-title": "Differential changes in impulsivity and sensation seeking and the escalation of substance use from adolescence to early adulthood",
+              "volume": "25",
+              "author": "Quinn",
+              "year": "2013",
+              "journal-title": "Dev Psychopathol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib7",
+              "doi-asserted-by": "crossref",
+              "first-page": "19",
+              "DOI": "10.1037/0893-164X.18.1.19",
+              "article-title": "Do parents still matter? Parent and peer influences on alcohol involvement among recent high schools graduates",
+              "volume": "18",
+              "author": "Wood",
+              "year": "2004",
+              "journal-title": "Psychol Addict Behav"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib8",
+              "doi-asserted-by": "crossref",
+              "first-page": "192",
+              "DOI": "10.1007/s10826-012-9568-2",
+              "article-title": "Buffering effect of parental monitoring knowledge and parent-adolescent relationships on consequences of adolescent substance use",
+              "volume": "22",
+              "author": "Branstetter",
+              "year": "2013",
+              "journal-title": "J\u00a0Child Fam Stud"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib9",
+              "doi-asserted-by": "crossref",
+              "first-page": "1457",
+              "DOI": "10.1016/j.addbeh.2012.08.003",
+              "article-title": "Relationships among parental monitoring and sensation seeking on the development of substance use disorder among college students",
+              "volume": "38",
+              "author": "Kaynak",
+              "year": "2013",
+              "journal-title": "Addict Behav"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib10",
+              "doi-asserted-by": "crossref",
+              "first-page": "3",
+              "DOI": "10.1037/0033-2909.132.1.1",
+              "article-title": "Patterns of mean-level change in personality traits across the life course: A meta-analysis of longitudinal studies",
+              "volume": "132",
+              "author": "Roberts",
+              "year": "2006",
+              "journal-title": "Psychol Bull"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib11",
+              "doi-asserted-by": "crossref",
+              "first-page": "78",
+              "DOI": "10.1016/j.dr.2007.08.002",
+              "article-title": "A\u00a0social neuroscience perspective on adolescent risk-taking",
+              "volume": "28",
+              "author": "Steinberg",
+              "year": "2008",
+              "journal-title": "Dev Rev"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib12",
+              "doi-asserted-by": "crossref",
+              "first-page": "1580",
+              "DOI": "10.1016/j.addbeh.2014.01.024",
+              "article-title": "Longitudinal trajectories of sensation seeking, risk taking propensity, and impulsivity across early to middle adolescence",
+              "volume": "39",
+              "author": "Collado",
+              "year": "2014",
+              "journal-title": "Addict Behav"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib13",
+              "doi-asserted-by": "crossref",
+              "first-page": "1303",
+              "DOI": "10.1016/j.paid.2007.03.021",
+              "article-title": "The Sensation Seeking Scale V (SSS-V): Still reliable and valid",
+              "volume": "43",
+              "author": "Zuckerman",
+              "year": "2007",
+              "journal-title": "Pers Individ Dif"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib14",
+              "doi-asserted-by": "crossref",
+              "first-page": "1084",
+              "DOI": "10.1111/j.1741-3737.2006.00315.x",
+              "article-title": "Effects of parental monitoring and peer deviance on substance use and delinquency",
+              "volume": "68",
+              "author": "Barnes",
+              "year": "2006",
+              "journal-title": "J\u00a0Marriage Fam"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib15",
+              "article-title": "Monitoring the Future national survey results on drug use, 1975-2011",
+              "volume": "Volume I",
+              "author": "Johnston",
+              "year": "2012"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib16",
+              "doi-asserted-by": "crossref",
+              "first-page": "893",
+              "DOI": "10.1111/add.12499",
+              "article-title": "Association among different measures of alcohol use across adolescence and emerging adulthood",
+              "volume": "109",
+              "author": "Thompson",
+              "year": "2014",
+              "journal-title": "Addiction"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib17",
+              "doi-asserted-by": "crossref",
+              "first-page": "127",
+              "DOI": "10.1093/ntr/ntt128",
+              "article-title": "Advanced understanding of craving during smoking cessation attempts: A demonstration of the time-varying effect model",
+              "volume": "16",
+              "author": "Lanza",
+              "year": "2013",
+              "journal-title": "Nicotine Tob Res"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib18",
+              "doi-asserted-by": "crossref",
+              "first-page": "491",
+              "DOI": "10.1016/j.jadohealth.2013.12.025",
+              "article-title": "Predictors of multiple sexual partners from adolescence through young adulthood",
+              "volume": "55",
+              "author": "Vasilenko",
+              "year": "2014",
+              "journal-title": "J\u00a0Adolesc Health"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib19",
+              "doi-asserted-by": "crossref",
+              "first-page": "669",
+              "DOI": "10.1016/S0191-8869(00)00064-7",
+              "article-title": "The five factor model and impulsivity: Using a structural model of personality to understand impulsivity",
+              "volume": "30",
+              "author": "Whiteside",
+              "year": "2001",
+              "journal-title": "Pers Individ Dif"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib20",
+              "doi-asserted-by": "crossref",
+              "first-page": "1441",
+              "DOI": "10.1111/acer.12131",
+              "article-title": "Multidimensionality in impulsivity and alcohol use: A meta-analysis using the UPPS model of impulsivity",
+              "volume": "37",
+              "author": "Coskunpinar",
+              "year": "2013",
+              "journal-title": "Alcohol Clin Exp Res"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib21",
+              "doi-asserted-by": "crossref",
+              "first-page": "1927",
+              "DOI": "10.1016/j.paid.2007.06.013",
+              "article-title": "The UPPS impulsive behavior scale: Factor structure and associations with college drinking",
+              "volume": "43",
+              "author": "Magid",
+              "year": "2007",
+              "journal-title": "Pers Individ Dif"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib22",
+              "doi-asserted-by": "crossref",
+              "first-page": "159",
+              "DOI": "10.1016/j.addbeh.2013.09.018",
+              "article-title": "Impulsivity and alcohol-related risk among college students: Examining urgency, sensation seeking and the moderating influence of beliefs about alcohol's role in the college experience",
+              "volume": "39",
+              "author": "LaBrie",
+              "year": "2014",
+              "journal-title": "Addict Behav"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib23",
+              "doi-asserted-by": "crossref",
+              "first-page": "296",
+              "DOI": "10.1037/a0022997",
+              "article-title": "Long-term effects of a personality-targeted intervention to reduce alcohol use in adolescents",
+              "volume": "79",
+              "author": "Conrod",
+              "year": "2011",
+              "journal-title": "J\u00a0Consult Clin Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib24",
+              "doi-asserted-by": "crossref",
+              "first-page": "1072",
+              "DOI": "10.1111/1467-8624.00210",
+              "article-title": "Parental monitoring: A reinterpretation",
+              "volume": "71",
+              "author": "Stattin",
+              "year": "2000",
+              "journal-title": "Child Dev"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib25",
+              "doi-asserted-by": "crossref",
+              "first-page": "847",
+              "DOI": "10.1007/s10964-007-9268-1",
+              "article-title": "The role of perceived parental knowledge on emerging adults' risk behaviors",
+              "volume": "37",
+              "author": "Padilla-Walker",
+              "year": "2008",
+              "journal-title": "J\u00a0Youth Adolesc"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib26",
+              "doi-asserted-by": "crossref",
+              "first-page": "272",
+              "DOI": "10.5993/AJHB.28.3.8",
+              "article-title": "Parental monitoring and adolescent drinking: Results of a 12-month follow-up",
+              "volume": "28",
+              "author": "Beck",
+              "year": "2004",
+              "journal-title": "Am J Health Behav"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib27",
+              "doi-asserted-by": "crossref",
+              "first-page": "719",
+              "DOI": "10.1080/15374416.2012.694608",
+              "article-title": "Co-occuring trajectories of symptoms of anxiety, depression, and oppositional defiance from adolescence to young adulthood",
+              "volume": "41",
+              "author": "Leadbeater",
+              "year": "2010",
+              "journal-title": "J\u00a0Clin Child Adolesc Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib28",
+              "doi-asserted-by": "crossref",
+              "first-page": "673",
+              "DOI": "10.1007/s10964-007-9191-5",
+              "article-title": "Adolescents' internalizing and aggressive behaviors and perceptions of parents' psychological control: A panel study examining direction of effects",
+              "volume": "26",
+              "author": "Albrecht",
+              "year": "2007",
+              "journal-title": "J\u00a0Youth Adolesc"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib29",
+              "doi-asserted-by": "crossref",
+              "first-page": "218",
+              "DOI": "10.1016/j.addbeh.2014.10.029",
+              "article-title": "Changes in gender and racial/ethnic disparities in rates of cigarette use, regular heavy episodic drinking, and marijuana use: Ages 14 to 32",
+              "volume": "41",
+              "author": "Evans-Polce",
+              "year": "2015",
+              "journal-title": "Addict Behav"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib30",
+              "doi-asserted-by": "crossref",
+              "first-page": "550",
+              "DOI": "10.1207/s15374424jccp3504_6",
+              "article-title": "Efficacy of cognitive behavioral interventions targeting personality risk factors for youth alcohol misuse",
+              "volume": "35",
+              "author": "Conrad",
+              "year": "2006",
+              "journal-title": "J\u00a0Clin Child Adolesc Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib31",
+              "series-title": "Big Five Assessment",
+              "article-title": "Zuckerman-Kuhlman Personality Questionnaire (ZKPQ): An alternative five-factorial model",
+              "author": "Zuckerman",
+              "year": "2002"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib32",
+              "doi-asserted-by": "crossref",
+              "first-page": "416",
+              "DOI": "10.1111/j.1469-7610.2008.01970.x",
+              "article-title": "The brief child and family phone interview (BCFPI): 1. Rationale, development, and description of a computerized children's mental health intake and outcome assessment tool",
+              "volume": "50",
+              "author": "Cunningham",
+              "year": "2009",
+              "journal-title": "J\u00a0Child Psychol Psychiatry"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib33",
+              "doi-asserted-by": "crossref",
+              "first-page": "1120",
+              "DOI": "10.2307/1131309",
+              "article-title": "Association between parental psychological control and youth internalized and externalized behaviors",
+              "volume": "65",
+              "author": "Barber",
+              "year": "1994",
+              "journal-title": "Child Dev"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib34",
+              "series-title": "TVEM (time-varying effect model) SAS macro suite user's guide (version 2.0)",
+              "author": "Yang",
+              "year": "2012"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib35",
+              "doi-asserted-by": "crossref",
+              "first-page": "543",
+              "DOI": "10.1037/a0023159",
+              "article-title": "Collegiate heavy drinking prospectively predicts change in sensation seeking and impulsivity",
+              "volume": "120",
+              "author": "Quinn",
+              "year": "2011",
+              "journal-title": "J\u00a0Abnorm Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib36",
+              "doi-asserted-by": "crossref",
+              "first-page": "60",
+              "DOI": "10.1016/S1054-139X(03)00100-9",
+              "article-title": "Parental monitoring, negotiated unsupervised time, and parental trust: The role of perceived parenting practices in adolescent health risk behaviors",
+              "volume": "33",
+              "author": "Borawski",
+              "year": "2003",
+              "journal-title": "J\u00a0Adolesc Health"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib37",
+              "series-title": "Emerging adults in America: Coming of age in the 21st century",
+              "article-title": "Family relationships and support systems in emerging adulthood",
+              "author": "Aquilino",
+              "year": "2006"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib38",
+              "doi-asserted-by": "crossref",
+              "first-page": "505",
+              "DOI": "10.1016/j.chc.2010.03.005",
+              "article-title": "Evidence-based interventions for preventing substance use disorders in adolescents",
+              "volume": "19",
+              "author": "Griffin",
+              "year": "2010",
+              "journal-title": "Child Adolesc Psychiatr Clin N Am"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib39",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1046/j.1359-6357.2003.00586.x",
+              "article-title": "The validity of self-reports of alcohol consumption: State of the science and challenges for research",
+              "volume": "98",
+              "author": "Del Boca",
+              "year": "2003",
+              "journal-title": "Addiction"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2015.05.005_bib40",
+              "doi-asserted-by": "crossref",
+              "first-page": "366",
+              "DOI": "10.1037/0893-164X.15.4.366",
+              "article-title": "Examination of the short-term efficacy of a parent intervention to reduce college student drinking tendencies",
+              "volume": "15",
+              "author": "Turrisi",
+              "year": "2001",
+              "journal-title": "Psychol Addict Behav"
+            }
+          ],
+          "container-title": [
+            "Journal of Adolescent Health"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1054139X15002219?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1054139X15002219?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2018,
+                9,
+                21
+              ]
+            ],
+            "date-time": "2018-09-21T04:23:46Z",
+            "timestamp": 1537503826000
+          },
+          "score": 27.11274,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1054139X15002219"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2015,
+                9
+              ]
+            ]
+          },
+          "references-count": 40,
+          "journal-issue": {
+            "issue": "3",
+            "published-print": {
+              "date-parts": [
+                [
+                  2015,
+                  9
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "S1054139X15002219"
+          ],
+          "URL": "https://doi.org/10.1016/j.jadohealth.2015.05.005",
+          "ISSN": [
+            "1054-139X"
+          ],
+          "issn-type": [
+            {
+              "value": "1054-139X",
+              "type": "print"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2015,
+                9
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "Elsevier",
+              "name": "publisher",
+              "label": "This article is maintained by"
+            },
+            {
+              "value": "Impulsive Personality, Parental Monitoring, and Alcohol Outcomes From Adolescence Through Young Adulthood",
+              "name": "articletitle",
+              "label": "Article Title"
+            },
+            {
+              "value": "Journal of Adolescent Health",
+              "name": "journaltitle",
+              "label": "Journal Title"
+            },
+            {
+              "value": "https://doi.org/10.1016/j.jadohealth.2015.05.005",
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version"
+            },
+            {
+              "value": "article",
+              "name": "content_type",
+              "label": "Content Type"
+            },
+            {
+              "value": "Copyright \u00a9 2015 Society for Adolescent Health and Medicine. Published by Elsevier Inc. All rights reserved.",
+              "name": "copyright",
+              "label": "Copyright"
+            }
+          ]
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2025-10-31T16:54:53Z",
+            "timestamp": 1761929693686
+          },
+          "reference-count": 32,
+          "publisher": "Elsevier BV",
+          "issue": "6",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2014,
+                    12,
+                    1
+                  ]
+                ],
+                "date-time": "2014-12-01T00:00:00Z",
+                "timestamp": 1417392000000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "jahonline.org",
+              "mdconsult.com",
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Journal of Adolescent Health"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2014,
+                12
+              ]
+            ]
+          },
+          "DOI": "10.1016/j.jadohealth.2014.05.001",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2014,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2014-06-21T00:01:11Z",
+            "timestamp": 1403308871000
+          },
+          "page": "730-735",
+          "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 17,
+          "title": [
+            "Parental\u2013Adolescent Drug Use Discussions: Physiological Responses and Associated Outcomes"
+          ],
+          "prefix": "10.1016",
+          "volume": "55",
+          "author": [
+            {
+              "given": "Tara M.",
+              "family": "Chaplin",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Amysue",
+              "family": "Hansen",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Jessica",
+              "family": "Simmons",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Linda C.",
+              "family": "Mayes",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Rebecca E.",
+              "family": "Hommer",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Michael J.",
+              "family": "Crowley",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib1",
+              "doi-asserted-by": "crossref",
+              "first-page": "1041",
+              "DOI": "10.1176/appi.ajp.160.6.1041",
+              "article-title": "Developmental neurocircuitry of motivation in adolescence: A critical period of addiction vulnerability",
+              "volume": "160",
+              "author": "Chambers",
+              "year": "2003",
+              "journal-title": "Am J Psychiatry"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib2",
+              "series-title": "Monitoring the future national results on adolescent drug use: Overview key findings",
+              "author": "Johnston",
+              "year": "2011"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib3",
+              "unstructured": "National Institute on Drug Abuse. Strategic plan. 2010; NIH Publication Number 10\u20136119."
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib4",
+              "doi-asserted-by": "crossref",
+              "first-page": "S273",
+              "DOI": "10.1542/peds.2007-2243C",
+              "article-title": "Transitions into underage drinking and problem drinking: Developmental processes and mechanisms between 10 and 15 years of age",
+              "volume": "121",
+              "author": "Windle",
+              "year": "2008",
+              "journal-title": "Pediatrics"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib5",
+              "doi-asserted-by": "crossref",
+              "first-page": "67",
+              "DOI": "10.1037/0022-006X.70.1.67",
+              "article-title": "Binge drinking trajectories from adolescence to emerging adulthood in a high-risk sample: Predictors and substance abuse outcomes",
+              "volume": "70",
+              "author": "Chassin",
+              "year": "2001",
+              "journal-title": "J\u00a0Consult Clin Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib6",
+              "doi-asserted-by": "crossref",
+              "first-page": "900",
+              "DOI": "10.1111/j.1467-8624.2004.00713.x",
+              "article-title": "The strong African American families program: Translating research into prevention programming",
+              "volume": "75",
+              "author": "Brody",
+              "year": "2004",
+              "journal-title": "Child Dev"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib7",
+              "unstructured": "Partnership for a Drug-Free America. Why it's important to talk with your teens. Available at: http://theparenttoolkit.org/article/why-its-important-to-talk-with-your-teens. Accessed May 15,\u00a02013."
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib8",
+              "doi-asserted-by": "crossref",
+              "first-page": "555",
+              "DOI": "10.15288/jsad.2009.70.555",
+              "article-title": "A\u00a0randomized clinical trial evaluating a combined alcohol intervention for high-risk college students",
+              "volume": "70",
+              "author": "Turrisi",
+              "year": "2009",
+              "journal-title": "J\u00a0Stud Alcohol Drugs"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib9",
+              "first-page": "209",
+              "article-title": "Children's development of alcohol use norms: Contributions of parent and sibling norms, children's temperaments, and parent\u2013child discussions",
+              "volume": "12",
+              "author": "Brody",
+              "year": "1999",
+              "journal-title": "J\u00a0Fam Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib10",
+              "doi-asserted-by": "crossref",
+              "first-page": "1189",
+              "DOI": "10.1037/0012-1649.34.6.1189",
+              "article-title": "Maternal socialization of adolescent smoking: The intergenerational transmission of parenting and smoking",
+              "volume": "34",
+              "author": "Chassin",
+              "year": "1998",
+              "journal-title": "Dev Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib11",
+              "first-page": "775",
+              "article-title": "Parent-child communication, perceived sanctions against drug use, and youth drug involvement",
+              "volume": "37",
+              "author": "Kelly",
+              "year": "2002",
+              "journal-title": "Adolescence"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib12",
+              "doi-asserted-by": "crossref",
+              "first-page": "293",
+              "DOI": "10.1080/10410231003698952",
+              "article-title": "More than just openness: Developing and validating a measure of targeted parent-child communication about alcohol",
+              "volume": "25",
+              "author": "Miller-Day",
+              "year": "2010",
+              "journal-title": "J\u00a0Health Commun"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib13",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1111/j.1741-3729.2007.00478.x",
+              "article-title": "Talking to youth about drugs: What do late adolescents say about parental strategies?",
+              "volume": "57",
+              "author": "Miller-Day",
+              "year": "2008",
+              "journal-title": "Fam Relat"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib14",
+              "doi-asserted-by": "crossref",
+              "first-page": "71",
+              "DOI": "10.3109/00952999108992811",
+              "article-title": "Effects of the family environment on adolescent substance use, delinquency, and coping styles",
+              "volume": "17",
+              "author": "Johnson",
+              "year": "1991",
+              "journal-title": "Am J Drug Alcohol Abuse"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib15",
+              "doi-asserted-by": "crossref",
+              "first-page": "1038",
+              "DOI": "10.1007/s10964-006-9138-2",
+              "article-title": "Mother-adolescent health communication: Are all conversations created equally?",
+              "volume": "36",
+              "author": "Boone",
+              "year": "2007",
+              "journal-title": "J\u00a0Youth Adolesc"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib16",
+              "doi-asserted-by": "crossref",
+              "first-page": "56",
+              "DOI": "10.1111/j.1467-9280.1992.tb00257.x",
+              "article-title": "Biochemical measurement in the study of emotion",
+              "volume": "3",
+              "author": "Baum",
+              "year": "1992",
+              "journal-title": "Psychol Sci"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib17",
+              "doi-asserted-by": "crossref",
+              "first-page": "239",
+              "DOI": "10.3109/00952999009001586",
+              "article-title": "Parent-adolescent problem-solving interactions and drug use",
+              "volume": "16",
+              "author": "Hops",
+              "year": "1990",
+              "journal-title": "Am J Drug Alcohol Abuse"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib18",
+              "doi-asserted-by": "crossref",
+              "first-page": "605",
+              "DOI": "10.1016/j.addbeh.2012.01.004",
+              "article-title": "Parent\u2013adolescent conflict interactions and adolescent alcohol use",
+              "volume": "37",
+              "author": "Chaplin",
+              "year": "2012",
+              "journal-title": "Addict Behav"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib19",
+              "doi-asserted-by": "crossref",
+              "first-page": "617",
+              "DOI": "10.1080/15374416.2012.738452",
+              "article-title": "Direct observations of parenting and real-time negative affect among adolescent smokers and nonsmokers",
+              "volume": "42",
+              "author": "Richmond",
+              "year": "2013",
+              "journal-title": "J\u00a0Clin Child Adolesc Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib20",
+              "doi-asserted-by": "crossref",
+              "first-page": "343",
+              "DOI": "10.1007/s002130100917",
+              "article-title": "How does stress increase risk of drug abuse and relapse",
+              "volume": "158",
+              "author": "Sinha",
+              "year": "2001",
+              "journal-title": "Psychopharmacology"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib21",
+              "doi-asserted-by": "crossref",
+              "first-page": "707",
+              "DOI": "10.1080/016502598384135",
+              "article-title": "Children's salivary cortisol, internalising behaviour problems, and family environment: Results from the concordia longitudinal risk project",
+              "volume": "22",
+              "author": "Granger",
+              "year": "1998",
+              "journal-title": "Int J Behav Dev"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib22",
+              "doi-asserted-by": "crossref",
+              "first-page": "222",
+              "DOI": "10.1046/j.0963-7214.2003.01266.x",
+              "article-title": "Family factors and adolescent substance use: Models and mechanisms",
+              "volume": "12",
+              "author": "Wills",
+              "year": "2003",
+              "journal-title": "Curr Dir Psychol Sci"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib23",
+              "series-title": "Meta-emotion: How families communicate emotionally",
+              "author": "Gottman",
+              "year": "1997"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib24",
+              "doi-asserted-by": "crossref",
+              "first-page": "80",
+              "DOI": "10.1037/1528-3542.5.1.80",
+              "article-title": "Parent socialization of emotion expression: Gender differences and relations to child adjustment",
+              "volume": "1",
+              "author": "Chaplin",
+              "year": "2005",
+              "journal-title": "Emotion"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib25",
+              "first-page": "336",
+              "article-title": "Reliability of the 1999 youth risk behavioral survey questionnaire",
+              "volume": "31",
+              "author": "Brener",
+              "year": "2002",
+              "journal-title": "J\u00a0Youth Adolesc"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib26",
+              "doi-asserted-by": "crossref",
+              "first-page": "843",
+              "DOI": "10.1007/s10802-010-9412-3",
+              "article-title": "Peer victimization and aggression: Moderation by individual differences in salivary cortisol and alpha-amylase",
+              "volume": "38",
+              "author": "Rudolph",
+              "year": "2010",
+              "journal-title": "J\u00a0Abnorm Child Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib27",
+              "doi-asserted-by": "crossref",
+              "first-page": "193",
+              "DOI": "10.1111/j.1467-8624.2004.00663.x",
+              "article-title": "Evening activities as a potential confound in research on the adrenocortical system in children",
+              "volume": "75",
+              "author": "Kertes",
+              "year": "2004",
+              "journal-title": "Child Dev"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib28",
+              "doi-asserted-by": "crossref",
+              "first-page": "811",
+              "DOI": "10.1037/0012-1649.43.4.811",
+              "article-title": "Morningness/eveningness morning-to-afternoon cortisol ratio and antisocial behavioral problems during puberty",
+              "volume": "43",
+              "author": "Susman",
+              "year": "2007",
+              "journal-title": "Dev Psychol"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib29",
+              "doi-asserted-by": "crossref",
+              "first-page": "235",
+              "DOI": "10.1080/10550490902786793",
+              "article-title": "Pathways from adolescent parent-child conflict to substance use disorders in the fourth decade of life",
+              "volume": "18",
+              "author": "Brook",
+              "year": "2009",
+              "journal-title": "Am J Addict"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib30",
+              "doi-asserted-by": "crossref",
+              "first-page": "1971",
+              "DOI": "10.1081/JA-200034769",
+              "article-title": "The motivation, skills and decision-making model of \u201cdrug abuse\u201d prevention",
+              "volume": "39",
+              "author": "Sussman",
+              "year": "2004",
+              "journal-title": "Subst Use Misuse"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib31",
+              "doi-asserted-by": "crossref",
+              "first-page": "28",
+              "DOI": "10.1111/j.1467-8624.2008.01244.x",
+              "article-title": "Age differences in future orientation and delay discounting",
+              "volume": "80",
+              "author": "Steinberg",
+              "year": "2009",
+              "journal-title": "Child Dev"
+            },
+            {
+              "key": "10.1016/j.jadohealth.2014.05.001_bib32",
+              "doi-asserted-by": "crossref",
+              "first-page": "769",
+              "DOI": "10.1016/S0306-4603(99)00058-1",
+              "article-title": "Stress-coping and temptation-coping as predictors of adolescent substance use",
+              "volume": "24",
+              "author": "Wagner",
+              "year": "1999",
+              "journal-title": "Addict Behav"
+            }
+          ],
+          "container-title": [
+            "Journal of Adolescent Health"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1054139X14002171?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1054139X14002171?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                3
+              ]
+            ],
+            "date-time": "2018-10-03T02:20:01Z",
+            "timestamp": 1538533201000
+          },
+          "score": 26.57817,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1054139X14002171"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2014,
+                12
+              ]
+            ]
+          },
+          "references-count": 32,
+          "journal-issue": {
+            "issue": "6",
+            "published-print": {
+              "date-parts": [
+                [
+                  2014,
+                  12
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "S1054139X14002171"
+          ],
+          "URL": "https://doi.org/10.1016/j.jadohealth.2014.05.001",
+          "ISSN": [
+            "1054-139X"
+          ],
+          "issn-type": [
+            {
+              "value": "1054-139X",
+              "type": "print"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2014,
+                12
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "Elsevier",
+              "name": "publisher",
+              "label": "This article is maintained by"
+            },
+            {
+              "value": "Parental\u2013Adolescent Drug Use Discussions: Physiological Responses and Associated Outcomes",
+              "name": "articletitle",
+              "label": "Article Title"
+            },
+            {
+              "value": "Journal of Adolescent Health",
+              "name": "journaltitle",
+              "label": "Journal Title"
+            },
+            {
+              "value": "https://doi.org/10.1016/j.jadohealth.2014.05.001",
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version"
+            },
+            {
+              "value": "https://doi.org/10.1016/j.jadohealth.2014.09.010",
+              "name": "associatedlink",
+              "label": "CrossRef DOI link to the associated document"
+            },
+            {
+              "value": "article",
+              "name": "content_type",
+              "label": "Content Type"
+            },
+            {
+              "value": "Copyright \u00a9 2014 Society for Adolescent Health and Medicine. Published by Elsevier Inc. All rights reserved.",
+              "name": "copyright",
+              "label": "Copyright"
+            }
+          ]
+        }
+      ],
+      "items-per-page": 5,
+      "query": {
+        "start-index": 0,
+        "search-terms": "parental guidance adolescent health outcomes"
+      }
+    }
+  }
+}

@@ -1,0 +1,2772 @@
+{
+  "source": "crossref",
+  "endpoint": "works",
+  "query": "childhood emotional abuse self-esteem adulthood",
+  "rows": 5,
+  "timestamp_utc": "2025-11-07T15:11:16.011952+00:00",
+  "response": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 1864106,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                3
+              ]
+            ],
+            "date-time": "2025-11-03T04:34:48Z",
+            "timestamp": 1762144488661
+          },
+          "reference-count": 59,
+          "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+          "issue": "8",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2006,
+                8
+              ]
+            ]
+          },
+          "DOI": "10.1097/01.nmd.0000230654.49933.23",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2006,
+                8,
+                8
+              ]
+            ],
+            "date-time": "2006-08-08T08:12:46Z",
+            "timestamp": 1155024766000
+          },
+          "page": "616-621",
+          "source": "Crossref",
+          "is-referenced-by-count": 121,
+          "title": [
+            "From Emotional Abuse in Childhood to Psychopathology in Adulthood"
+          ],
+          "prefix": "10.1097",
+          "volume": "194",
+          "author": [
+            {
+              "given": "Ricky",
+              "family": "Finzi-Dottan",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Toby",
+              "family": "Karu",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "276",
+          "reference": [
+            {
+              "key": "R1-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "147",
+              "DOI": "10.1080/713663671",
+              "article-title": "Self-image and perception of mother and father in psychotic and borderline patients.",
+              "volume": "10",
+              "author": "Armelius",
+              "year": "2000",
+              "journal-title": "Psychother Res"
+            },
+            {
+              "key": "R2-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "149",
+              "DOI": "10.1023/A:1022881726177",
+              "article-title": "Childhood vs. adolescence transitional object attachment and relation to mental health and parental bonding.",
+              "volume": "28",
+              "author": "Bachar",
+              "year": "1998",
+              "journal-title": "Child Psychiatry Hum Dev"
+            },
+            {
+              "key": "R3-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "340",
+              "DOI": "10.1097/00004583-199703000-00012",
+              "article-title": "Validity of Childhood Trauma Questionnaire in an adolescent psychiatric population.",
+              "volume": "36",
+              "author": "Bernstein",
+              "year": "1997",
+              "journal-title": "J Am Acad Child Adolesc Psychiatry"
+            },
+            {
+              "key": "R4-10-20210208",
+              "article-title": "Childhood Trauma Questionnaire: A Retrospective Self-Report.",
+              "author": "Bernstein",
+              "year": "1998"
+            },
+            {
+              "key": "R5-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "241",
+              "DOI": "10.1521/bumc.66.3.241.23366",
+              "article-title": "Exploring psychological abuse in childhood, II: Association with other abuse and adult clinical depression.",
+              "volume": "66",
+              "author": "Bifulco",
+              "year": "2002",
+              "journal-title": "Bull Menninger Clin"
+            },
+            {
+              "key": "R6-10-20210208",
+              "article-title": "Empirical Studies of Ego Mechanisms of Defense (pp 146\u2013152).",
+              "author": "Bond",
+              "year": "1986"
+            },
+            {
+              "key": "R7-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "333",
+              "DOI": "10.1001/archpsyc.1983.01790030103013",
+              "article-title": "Empirical study of self-rated defense styles.",
+              "volume": "40",
+              "author": "Bond",
+              "year": "1983",
+              "journal-title": "Arch Gen Psychiatry"
+            },
+            {
+              "key": "R8-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "28",
+              "DOI": "10.1521/pedi.1994.8.1.28",
+              "article-title": "The Defense Style Questionnaire in borderline personality disorder.",
+              "volume": "8",
+              "author": "Bond",
+              "year": "1994",
+              "journal-title": "J Pers Disord"
+            },
+            {
+              "key": "R9-10-20210208",
+              "first-page": "289",
+              "article-title": "Validating the self report defenses styles.",
+              "volume": "52",
+              "author": "Bond",
+              "year": "1989",
+              "journal-title": "J Pers Disord"
+            },
+            {
+              "key": "R10-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "285",
+              "DOI": "10.1001/archpsyc.1986.01800030103012",
+              "article-title": "An empirical study of the relationship between diagnosis and defense style.",
+              "volume": "43",
+              "author": "Bond",
+              "year": "1986",
+              "journal-title": "Arch Gen Psychiatry"
+            },
+            {
+              "key": "R11-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "731",
+              "DOI": "10.1016/S0193-953X(18)30083-2",
+              "article-title": "Splitting as a consequence of severe abuse in childhood.",
+              "volume": "17",
+              "author": "Burland",
+              "year": "1994",
+              "journal-title": "Psychiatr Clin North Am"
+            },
+            {
+              "key": "R12-10-20210208",
+              "first-page": "8",
+              "article-title": "Israeli adolescents' norms of the brief symptom inventory.",
+              "volume": "3",
+              "author": "Canetti",
+              "year": "1994",
+              "journal-title": "Isr J Psychiatry Relat Sci"
+            },
+            {
+              "key": "R13-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "360",
+              "DOI": "10.1053/comp.2000.9002",
+              "article-title": "The impact of parental death versus separation from parents on the mental health of Israeli adolescents.",
+              "volume": "41",
+              "author": "Canetti",
+              "year": "2000",
+              "journal-title": "Compr Psychiatry"
+            },
+            {
+              "key": "R14-10-20210208",
+              "article-title": "Measures for Clinical Practice.",
+              "author": "Corcoran",
+              "year": "1987"
+            },
+            {
+              "key": "R15-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "159",
+              "DOI": "10.1037/0022-3514.74.1.159",
+              "article-title": "Preschool antecedents of defenses mechanism use in young adults: A longitudinal study.",
+              "volume": "74",
+              "author": "Cramer",
+              "year": "1998",
+              "journal-title": "J Pers Soc Psychol"
+            },
+            {
+              "key": "R16-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "595",
+              "DOI": "10.1017/S0033291700048017",
+              "article-title": "The Brief Symptom Inventory: An introductory report.",
+              "volume": "13",
+              "author": "Derogatis",
+              "year": "1983",
+              "journal-title": "Psychol Med"
+            },
+            {
+              "key": "R17-10-20210208",
+              "article-title": "The Brief Symptom Inventory: Administration, Scoring and Procedures, Manual I.",
+              "author": "Derogatis",
+              "year": "1982"
+            },
+            {
+              "key": "R18-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "387",
+              "DOI": "10.1177/1359104501006003008",
+              "article-title": "Surviving and coping with emotional abuse in childhood.",
+              "volume": "6",
+              "author": "Doyle",
+              "year": "2001",
+              "journal-title": "Clin Child Psychol Psychiatry"
+            },
+            {
+              "key": "R19-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "941",
+              "DOI": "10.1016/S0145-2134(97)00055-0",
+              "article-title": "Anxiety, depression and dissociation in women health care providers reporting a history of childhood psychological abuse.",
+              "volume": "21",
+              "author": "Ferguson",
+              "year": "1997",
+              "journal-title": "Child Abuse Neglect"
+            },
+            {
+              "key": "R20-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "1329",
+              "DOI": "10.1176/ajp.152.9.1329",
+              "article-title": "Initial reliability and validity of the Childhood Trauma Interview: A new multidimensional measure of childhood interpersonal trauma.",
+              "volume": "152",
+              "author": "Fink",
+              "year": "1995",
+              "journal-title": "Am J Psychiatry"
+            },
+            {
+              "key": "R21-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "101",
+              "DOI": "10.1080/10481881209348657",
+              "article-title": "Exploring Ferenczi's concept of identification with the aggressor: Its role in trauma, everyday life and the therapeutic relationship.",
+              "volume": "12",
+              "author": "Frankel",
+              "year": "2002",
+              "journal-title": "Psychoanal Dialogues"
+            },
+            {
+              "key": "R22-10-20210208",
+              "article-title": "The Psychologically Battered Child.",
+              "author": "Garbarino",
+              "year": "1987"
+            },
+            {
+              "key": "R23-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "505",
+              "DOI": "10.1521/pedi.15.6.505.19194",
+              "article-title": "Emotional, physical and sexual maltreatment in childhood vs. adolescent and personality dysfunction in young adulthood.",
+              "volume": "15",
+              "author": "Gibb",
+              "year": "2001",
+              "journal-title": "J Pers Disord"
+            },
+            {
+              "key": "R24-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "1083",
+              "DOI": "10.1016/0145-2134(95)00070-O",
+              "article-title": "Visible but unreported: A case for the \u201cnot serious enough\u201d cases of child maltreatment.",
+              "volume": "19",
+              "author": "Gracia",
+              "year": "1995",
+              "journal-title": "Child Abuse Neglect"
+            },
+            {
+              "key": "R25-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "183",
+              "DOI": "10.1034/j.1600-0447.2002.02303.x",
+              "article-title": "Childhood maltreatment and personality disorders in adult patients with binge eating disorder.",
+              "volume": "106",
+              "author": "Grilo",
+              "year": "2002",
+              "journal-title": "Acta Psychiatr Scand"
+            },
+            {
+              "key": "R26-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "171",
+              "DOI": "10.1002/1098-2337(1992)18:3<171::AID-AB2480180302>3.0.CO;2-I",
+              "article-title": "Long-term consequences of childhood physical and psychological maltreatment.",
+              "volume": "18",
+              "author": "Gross",
+              "year": "1992",
+              "journal-title": "Aggress Behav"
+            },
+            {
+              "key": "R27-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "928",
+              "DOI": "10.1097/00004583-200007000-00023",
+              "article-title": "Evaluating and reporting emotional abuse in children.",
+              "volume": "39",
+              "author": "Hamarman",
+              "year": "2000",
+              "journal-title": "J Am Acad Child Adolesc Psychiatry"
+            },
+            {
+              "key": "R28-10-20210208",
+              "article-title": "The APSAC Handbook on Child Maltreatment. (pp 72\u201389).",
+              "author": "Hart",
+              "year": "1996"
+            },
+            {
+              "key": "R29-10-20210208",
+              "article-title": "Developmental Psychopathology (pp 555\u2013580).",
+              "author": "Hauser",
+              "year": "1995"
+            },
+            {
+              "key": "R30-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "539",
+              "DOI": "10.1176/appi.psychotherapy.2002.56.4.539",
+              "article-title": "Contribution of defensive functioning to the quality of working alliance and psychotherapy outcome.",
+              "volume": "56",
+              "author": "Hersoug",
+              "year": "2002",
+              "journal-title": "Am J Psychother"
+            },
+            {
+              "key": "R31-10-20210208",
+              "article-title": "The Emotionally Abused and Neglected Child.",
+              "author": "Iwaniec",
+              "year": "1996"
+            },
+            {
+              "key": "R32-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "340",
+              "DOI": "10.1177/088626097012003002",
+              "article-title": "Differential effects associated with self report histories of abuse and neglect in a college sample.",
+              "volume": "12",
+              "author": "Loos",
+              "year": "1997",
+              "journal-title": "J Interpers Violence"
+            },
+            {
+              "key": "R33-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "86",
+              "DOI": "10.1037/0022-0167.49.1.86",
+              "article-title": "Association between childhood physical and emotional abuse and disordered eating behaviors in female undergraduates: An investigation of the mediating role of alexithymia and depression.",
+              "volume": "49",
+              "author": "Mazzeo",
+              "year": "2002",
+              "journal-title": "J Couns Psychol"
+            },
+            {
+              "key": "R34-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "181",
+              "DOI": "10.1007/BF01250913",
+              "article-title": "Abusive families and character formation.",
+              "volume": "50",
+              "author": "McCarthy",
+              "year": "1990",
+              "journal-title": "Am J Psychoanal"
+            },
+            {
+              "key": "R35-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "123",
+              "DOI": "10.1016/0191-8869(95)00153-W",
+              "article-title": "The short version of the defense style questionnaire: factor structure and psychopathological symptoms.",
+              "volume": "20",
+              "author": "Muris",
+              "year": "1996",
+              "journal-title": "Pers Individ Diff"
+            },
+            {
+              "key": "R36-10-20210208",
+              "article-title": "Borderline Conditions and Pathological Narcissism.",
+              "author": "Kernberg",
+              "year": "1976"
+            },
+            {
+              "key": "R37-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "357",
+              "DOI": "10.1016/0145-2134(87)90009-3",
+              "article-title": "Resilience in child maltreatment victims: A conceptual exploration.",
+              "volume": "11",
+              "author": "Mrazek",
+              "year": "1987",
+              "journal-title": "Child Abuse Neglect"
+            },
+            {
+              "key": "R38-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "136",
+              "DOI": "10.1093/sw/46.2.136",
+              "article-title": "Survivors of childhood abuse: Their reported experiences with professional help.",
+              "volume": "46",
+              "author": "Palmer",
+              "year": "2001",
+              "journal-title": "Social Work"
+            },
+            {
+              "key": "R39-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "34",
+              "DOI": "10.1521/pedi.1997.11.1.34",
+              "article-title": "Childhood trauma as an etiological factor in personality disorder.",
+              "volume": "11",
+              "author": "Paris",
+              "year": "1997",
+              "journal-title": "J Pers Disord"
+            },
+            {
+              "key": "R40-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "153",
+              "DOI": "10.1097/00005053-199603000-00003",
+              "article-title": "Defense styles, hostility and psychological risk factors in male patients with personality disorders.",
+              "volume": "184",
+              "author": "Paris",
+              "year": "1996",
+              "journal-title": "J Nerv Ment Dis"
+            },
+            {
+              "key": "R41-10-20210208",
+              "first-page": "317",
+              "article-title": "The Parental Bonding Instrument: Psychometric properties reviewed.",
+              "volume": "4",
+              "author": "Parker",
+              "year": "1989",
+              "journal-title": "Psychiatr Dev"
+            },
+            {
+              "key": "R42-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "281",
+              "DOI": "10.1007/BF00782881",
+              "article-title": "The Parental Bonding Instrument: A decade of research.",
+              "volume": "25",
+              "author": "Parker",
+              "year": "1990",
+              "journal-title": "Soc Psychiatry Psychiatr Epidemiol"
+            },
+            {
+              "key": "R43-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "97",
+              "DOI": "10.1007/BF00801738",
+              "article-title": "Parental rearing style: Examining for links with personality factor for depression.",
+              "volume": "28",
+              "author": "Parker",
+              "year": "1993",
+              "journal-title": "Soc Psychiatry Psychiatr Epidemiol"
+            },
+            {
+              "key": "R44-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1111/j.2044-8341.1979.tb02487.x",
+              "article-title": "A parental bonding instrument.",
+              "volume": "52",
+              "author": "Parker",
+              "year": "1979",
+              "journal-title": "Br J Med Psychol"
+            },
+            {
+              "key": "R45-10-20210208",
+              "article-title": "Psychotherapy of Abused and Neglected Children.",
+              "author": "Pearce",
+              "year": "1997"
+            },
+            {
+              "key": "R46-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "56",
+              "DOI": "10.1177/1077559599004001006",
+              "article-title": "Coming to terms with a consensual definition of child maltreatment.",
+              "volume": "4",
+              "author": "Portwood",
+              "year": "1999",
+              "journal-title": "Child Maltreat"
+            },
+            {
+              "key": "R47-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "13",
+              "DOI": "10.1300/J035v11n03_04",
+              "article-title": "Childhood emotional abuse and associated psychopathology in students.",
+              "volume": "11",
+              "author": "Rich",
+              "year": "1997",
+              "journal-title": "J College Stud Psychother"
+            },
+            {
+              "key": "R48-10-20210208",
+              "article-title": "Conceiving the Self.",
+              "author": "Rosenberg",
+              "year": "1979"
+            },
+            {
+              "key": "R49-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "843",
+              "DOI": "10.1023/A:1013058625719",
+              "article-title": "The Childhood Trauma Questionnaire in a community sample: Psychometric properties and normative data.",
+              "volume": "14",
+              "author": "Scher",
+              "year": "2001",
+              "journal-title": "J Trauma Stress"
+            },
+            {
+              "key": "R50-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "1027",
+              "DOI": "10.1176/appi.ajp.158.7.1027",
+              "article-title": "The role of childhood interpersonal trauma in depersonalization disorder.",
+              "volume": "158",
+              "author": "Simeon",
+              "year": "2001",
+              "journal-title": "Am J Psychiatry"
+            },
+            {
+              "key": "R51-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "1247",
+              "DOI": "10.1016/j.chiabu.2003.05.001",
+              "article-title": "Childhood emotional abuse and neglect as predictors of psychological and physical symptoms in women presenting to a primary care practice.",
+              "volume": "27",
+              "author": "Spertus",
+              "year": "2003",
+              "journal-title": "Child Abuse Neglect"
+            },
+            {
+              "key": "R52-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "143",
+              "DOI": "10.1192/bjp.168.2.143",
+              "article-title": "Childhood emotional abuse.",
+              "volume": "168",
+              "author": "Thompson",
+              "year": "1996",
+              "journal-title": "Br J Psychiatry"
+            },
+            {
+              "key": "R53-10-20210208",
+              "article-title": "Ego Mechanisms of Defense: A Guide for Clinicians and Researchers.",
+              "author": "Vaillant",
+              "year": "1992"
+            },
+            {
+              "key": "R54-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "1041",
+              "DOI": "10.1016/S0145-2134(99)00083-6",
+              "article-title": "The minimizing style: Perceptions of psychological abuse and quality of past and current relationships.",
+              "volume": "23",
+              "author": "Varia",
+              "year": "1999",
+              "journal-title": "Child Abuse Neglect"
+            },
+            {
+              "key": "R55-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "511",
+              "DOI": "10.1016/0145-2134(96)00033-6",
+              "article-title": "Perceptions of abuse: Effects on adult psychological and social adjustment.",
+              "volume": "20",
+              "author": "Varia",
+              "year": "1996",
+              "journal-title": "Child Abuse Neglect"
+            },
+            {
+              "key": "R56-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "275",
+              "DOI": "10.1023/A:1019930332257",
+              "article-title": "Predicting psychiatric symptomatology with the Defense Style Questionnaire-40.",
+              "volume": "9",
+              "author": "Watson",
+              "year": "2002",
+              "journal-title": "Int J Stress Manag"
+            },
+            {
+              "key": "R57-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "199",
+              "DOI": "10.3109/00048679009077683",
+              "article-title": "Reliability of the Parental Bonding Instrument and Intimate Bond Measure scales.",
+              "volume": "24",
+              "author": "Wilhelm",
+              "year": "1990",
+              "journal-title": "Aust N Z J Psychiatry"
+            },
+            {
+              "key": "R58-10-20210208",
+              "doi-asserted-by": "crossref",
+              "first-page": "1101",
+              "DOI": "10.1176/ajp.154.8.1101",
+              "article-title": "Reported pathological childhood experiences associated with the development of borderline personality disorder.",
+              "volume": "154",
+              "author": "Zanarini",
+              "year": "1997",
+              "journal-title": "Am J Psychiatry"
+            },
+            {
+              "key": "R59-10-20210208",
+              "first-page": "648",
+              "article-title": "Parents' emotional neglect and overprotection according to recollections of patients with borderline personality disorder.",
+              "volume": "148",
+              "author": "Zweig-Frank",
+              "year": "1991",
+              "journal-title": "Am J Psychiatry"
+            }
+          ],
+          "container-title": [
+            "Journal of Nervous &amp; Mental Disease"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "http://journals.lww.com/00124743-200608001-00227",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2021,
+                4,
+                10
+              ]
+            ],
+            "date-time": "2021-04-10T04:57:43Z",
+            "timestamp": 1618030663000
+          },
+          "score": 40.979343,
+          "resource": {
+            "primary": {
+              "URL": "https://journals.lww.com/00005053-200608000-00010"
+            }
+          },
+          "subtitle": [
+            "A Path Mediated by Immature Defense Mechanisms and Self-Esteem"
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2006,
+                8
+              ]
+            ]
+          },
+          "references-count": 59,
+          "journal-issue": {
+            "issue": "8",
+            "published-print": {
+              "date-parts": [
+                [
+                  2006
+                ]
+              ]
+            }
+          },
+          "URL": "https://doi.org/10.1097/01.nmd.0000230654.49933.23",
+          "ISSN": [
+            "0022-3018"
+          ],
+          "issn-type": [
+            {
+              "value": "0022-3018",
+              "type": "print"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2006,
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                14
+              ]
+            ],
+            "date-time": "2025-05-14T01:07:28Z",
+            "timestamp": 1747184848136,
+            "version": "3.40.5"
+          },
+          "reference-count": 74,
+          "publisher": "Wiley",
+          "issue": "4",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    26
+                  ]
+                ],
+                "date-time": "2022-07-26T00:00:00Z",
+                "timestamp": 1658793600000
+              },
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "onlinelibrary.wiley.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Family Relations"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                10
+              ]
+            ]
+          },
+          "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Objective</jats:title><jats:p>This study examined the reciprocal relationship between childhood emotional insecurity, later adult self\u2010esteem, and marital conflict in South Korean couples.</jats:p></jats:sec><jats:sec><jats:title>Background</jats:title><jats:p>Current literature on intergenerational transmission of marital relationships lacks a dyadic perspective for understanding how spouses influence the relationship between childhood emotional insecurity and adulthood marital conflict.</jats:p></jats:sec><jats:sec><jats:title>Method</jats:title><jats:p>The actor\u2013partner interdependence model was employed to test spillover and crossover effects using data from 210 South Korean couples with children age 3\u20135\u2009years.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>Childhood emotional insecurity was associated with marital conflict in both women and men. Additionally, this relationship was mediated by lower levels of self\u2010esteem. However, the mediating effect was stronger for women than for men. Furthermore, women experiencing emotional insecurity during childhood positively affected their spouses' destructive marital conflict coping strategies through lower self\u2010esteem, whereas men's childhood emotional insecurity did not affect their spouses' destructive marital conflict through self\u2010esteem.</jats:p></jats:sec><jats:sec><jats:title>Conclusion</jats:title><jats:p>This study provides strong evidence to explain the mechanism of intergenerational transmission in marital conflicts.</jats:p></jats:sec><jats:sec><jats:title>Implications</jats:title><jats:p>Future research on intergenerational transmission of marital relationships should consider the influence of the family of origin and the interactions between couples by considering the family as an interdependent dynamic system.</jats:p></jats:sec>",
+          "DOI": "10.1111/fare.12743",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                26
+              ]
+            ],
+            "date-time": "2022-07-26T09:39:32Z",
+            "timestamp": 1658828372000
+          },
+          "page": "1926-1941",
+          "update-policy": "https://doi.org/10.1002/crossmark_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 1,
+          "title": [
+            "Relations between childhood emotional insecurity, self\u2010esteem, and adulthood marital conflict in South Korea"
+          ],
+          "prefix": "10.1111",
+          "volume": "72",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-7898-5397",
+              "authenticated-orcid": false,
+              "given": "Young\u2010Eun",
+              "family": "Lee",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Department of Early Childhood Education Gachon University  Seongnam\u2010si South Korea"
+                }
+              ]
+            }
+          ],
+          "member": "311",
+          "published-online": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                26
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "e_1_2_5_2_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1176/appi.psychotherapy.1999.53.2.225"
+            },
+            {
+              "key": "e_1_2_5_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2307/584368"
+            },
+            {
+              "key": "e_1_2_5_4_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.4159/9780674020191"
+            },
+            {
+              "key": "e_1_2_5_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0022-3514.81.4.627"
+            },
+            {
+              "key": "e_1_2_5_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/jmft.12266"
+            },
+            {
+              "volume-title": "Social learning theory",
+              "year": "1977",
+              "author": "Bandura A.",
+              "key": "e_1_2_5_7_1"
+            },
+            {
+              "key": "e_1_2_5_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/jmft.12354"
+            },
+            {
+              "key": "e_1_2_5_9_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-1-4684-8956-9_11"
+            },
+            {
+              "key": "e_1_2_5_10_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5964/ejop.v10i4.807"
+            },
+            {
+              "volume-title": "Family therapy in clinical practice",
+              "year": "1978",
+              "author": "Bowen M.",
+              "key": "e_1_2_5_11_1"
+            },
+            {
+              "key": "e_1_2_5_12_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/135910457000100301"
+            },
+            {
+              "issue": "1",
+              "key": "e_1_2_5_13_1",
+              "first-page": "136",
+              "article-title": "Interparental conflict and depression in high school students: Mediating effect of self\u2010esteem",
+              "volume": "21",
+              "author": "Chen W.",
+              "year": "2013",
+              "journal-title": "Chinese Journal of Clinical Psychology"
+            },
+            {
+              "key": "e_1_2_5_14_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0022-3514.79.2.224"
+            },
+            {
+              "key": "e_1_2_5_15_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/01650250444000405"
+            },
+            {
+              "key": "e_1_2_5_16_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0012-1649.31.3.425"
+            },
+            {
+              "key": "e_1_2_5_17_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0893-3200.8.2.141"
+            },
+            {
+              "key": "e_1_2_5_18_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1467-8624.2012.01807.x"
+            },
+            {
+              "volume-title": "Beyond self\u2010esteem: Developing a genuine sense of human value",
+              "year": "1990",
+              "author": "Curry N. E.",
+              "key": "e_1_2_5_19_1"
+            },
+            {
+              "key": "e_1_2_5_20_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0893-3200.13.2.194"
+            },
+            {
+              "key": "e_1_2_5_21_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0033-2909.116.3.387"
+            },
+            {
+              "key": "e_1_2_5_22_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/1467-8624.00423"
+            },
+            {
+              "key": "e_1_2_5_23_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1017/S0954579413000709"
+            },
+            {
+              "key": "e_1_2_5_24_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/B978-0-12-009735-7.50008-6"
+            },
+            {
+              "key": "e_1_2_5_25_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/cdev.12119"
+            },
+            {
+              "key": "e_1_2_5_26_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/a0016426"
+            },
+            {
+              "key": "e_1_2_5_27_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/cdev.13720"
+            },
+            {
+              "key": "e_1_2_5_28_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1467-9507.2007.00444.x"
+            },
+            {
+              "key": "e_1_2_5_29_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1300/J146v15n01_02"
+            },
+            {
+              "key": "e_1_2_5_30_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/0146167290161002"
+            },
+            {
+              "key": "e_1_2_5_31_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.0956-7976.2005.01535.x"
+            },
+            {
+              "key": "e_1_2_5_32_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.jrp.2012.11.003"
+            },
+            {
+              "key": "e_1_2_5_33_1",
+              "first-page": "269",
+              "volume-title": "Structural equation modeling: A second course",
+              "author": "Finney S. J.",
+              "year": "2006"
+            },
+            {
+              "key": "e_1_2_5_34_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/1467-6427.12303"
+            },
+            {
+              "key": "e_1_2_5_35_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1752-0606.2005.tb01552.x"
+            },
+            {
+              "key": "e_1_2_5_36_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0033-2909.108.2.267"
+            },
+            {
+              "key": "e_1_2_5_37_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.anr.2017.05.007"
+            },
+            {
+              "key": "e_1_2_5_38_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1038/466029a"
+            },
+            {
+              "key": "e_1_2_5_39_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/10705519909540118"
+            },
+            {
+              "key": "e_1_2_5_40_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1741-3737.2000.00723.x"
+            },
+            {
+              "key": "e_1_2_5_41_1",
+              "first-page": "49",
+              "volume-title": "Exploring family relationships with other social contexts",
+              "author": "Katz L. F.",
+              "year": "1994"
+            },
+            {
+              "key": "e_1_2_5_42_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1741-3729.2003.00352.x"
+            },
+            {
+              "volume-title": "Dyadic data analysis",
+              "year": "2006",
+              "author": "Kenny D. A.",
+              "key": "e_1_2_5_43_1"
+            },
+            {
+              "key": "e_1_2_5_44_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0893-3200.10.4.454"
+            },
+            {
+              "key": "e_1_2_5_45_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1022672201957"
+            },
+            {
+              "volume-title": "Principles and practice of structural equation modeling",
+              "year": "2015",
+              "author": "Kline R. B.",
+              "key": "e_1_2_5_46_1"
+            },
+            {
+              "key": "e_1_2_5_47_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/10538712.2016.1262931"
+            },
+            {
+              "key": "e_1_2_5_48_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S0065-2601(00)80003-9"
+            },
+            {
+              "key": "e_1_2_5_49_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.47676/KJEEC.13.02.01"
+            },
+            {
+              "key": "e_1_2_5_50_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.3389/fpsyg.2021.632052"
+            },
+            {
+              "key": "e_1_2_5_51_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1545-5300.1997.00297.x"
+            },
+            {
+              "key": "e_1_2_5_52_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.chiabu.2014.07.017"
+            },
+            {
+              "key": "e_1_2_5_53_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/1082-989X.7.1.64"
+            },
+            {
+              "key": "e_1_2_5_54_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1017/S0954579498001527"
+            },
+            {
+              "key": "e_1_2_5_55_1",
+              "unstructured": "Muth\u00e9n L. K. &Muthen B.(2017).Mplus user's guide: Statistical analysis with latent variables."
+            },
+            {
+              "key": "e_1_2_5_56_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10802-014-9953-y"
+            },
+            {
+              "issue": "9",
+              "key": "e_1_2_5_57_1",
+              "first-page": "1392",
+              "article-title": "Parental conflict and its effects on youth self esteem (A study at University of Punjab)",
+              "volume": "2",
+              "author": "Nazir S.",
+              "year": "2012",
+              "journal-title": "International Journal of Asian Social Science"
+            },
+            {
+              "key": "e_1_2_5_58_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/a0015977"
+            },
+            {
+              "key": "e_1_2_5_59_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2466/pr0.2003.92.2.419"
+            },
+            {
+              "key": "e_1_2_5_60_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1741-3729.2008.00537.x"
+            },
+            {
+              "key": "e_1_2_5_61_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/00221329709596670"
+            },
+            {
+              "key": "e_1_2_5_62_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.4135/9781452272054.n2"
+            },
+            {
+              "key": "e_1_2_5_63_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1741-3737.2007.00393.x"
+            },
+            {
+              "key": "e_1_2_5_64_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.appdev.2008.12.012"
+            },
+            {
+              "key": "e_1_2_5_65_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.jrp.2011.12.002"
+            },
+            {
+              "volume-title": "Society and the adolescent self\u2010image",
+              "year": "1989",
+              "author": "Rosenberg M.",
+              "key": "e_1_2_5_66_1"
+            },
+            {
+              "volume-title": "Conjoint family therapy",
+              "year": "1983",
+              "author": "Satir V.",
+              "key": "e_1_2_5_67_1"
+            },
+            {
+              "key": "e_1_2_5_68_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1002/dev.22192"
+            },
+            {
+              "key": "e_1_2_5_69_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/1467-9507.00242"
+            },
+            {
+              "key": "e_1_2_5_70_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1146/annurev.so.20.080194.001315"
+            },
+            {
+              "key": "e_1_2_5_71_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S0191-8869(00)00023-4"
+            },
+            {
+              "volume-title": "Systems theory in action: Applications to individual, couple, and family therapy",
+              "year": "2010",
+              "author": "Smith\u2010Acuna S.",
+              "key": "e_1_2_5_72_1"
+            },
+            {
+              "key": "e_1_2_5_73_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.addbeh.2020.106601"
+            },
+            {
+              "issue": "6",
+              "key": "e_1_2_5_74_1",
+              "first-page": "1091",
+              "article-title": "Inter\u2010parental conflict and parent\u2010adolescent communication and adolescents' self\u2010development",
+              "volume": "22",
+              "author": "Wu Y.",
+              "year": "2014",
+              "journal-title": "Chinese Journal of Clinical Psychology"
+            },
+            {
+              "key": "e_1_2_5_75_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/a0014225"
+            }
+          ],
+          "container-title": [
+            "Family Relations"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/fare.12743",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/fare.12743",
+              "content-type": "application/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/fare.12743",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2023-09-04T11:45:10Z",
+            "timestamp": 1693827910000
+          },
+          "score": 36.02297,
+          "resource": {
+            "primary": {
+              "URL": "https://onlinelibrary.wiley.com/doi/10.1111/fare.12743"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                26
+              ]
+            ]
+          },
+          "references-count": 74,
+          "journal-issue": {
+            "issue": "4",
+            "published-print": {
+              "date-parts": [
+                [
+                  2023,
+                  10
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "10.1111/fare.12743"
+          ],
+          "URL": "https://doi.org/10.1111/fare.12743",
+          "archive": [
+            "Portico"
+          ],
+          "ISSN": [
+            "0197-6664",
+            "1741-3729"
+          ],
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0197-6664"
+            },
+            {
+              "type": "electronic",
+              "value": "1741-3729"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                26
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "2021-09-24",
+              "order": 0,
+              "name": "received",
+              "label": "Received",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              }
+            },
+            {
+              "value": "2022-06-13",
+              "order": 1,
+              "name": "accepted",
+              "label": "Accepted",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              }
+            },
+            {
+              "value": "2022-07-26",
+              "order": 2,
+              "name": "published",
+              "label": "Published",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              }
+            }
+          ]
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                5
+              ]
+            ],
+            "date-time": "2025-11-05T14:33:17Z",
+            "timestamp": 1762353197266,
+            "version": "3.44.0"
+          },
+          "reference-count": 71,
+          "publisher": "Elsevier BV",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/legal/tdmrep-license"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-017"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-037"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-012"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-029"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-004"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "clinicalkey.com",
+              "clinicalkey.com.au",
+              "clinicalkey.es",
+              "clinicalkey.fr",
+              "clinicalkey.jp",
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Child Abuse &amp; Neglect"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                7
+              ]
+            ]
+          },
+          "DOI": "10.1016/j.chiabu.2022.105665",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2022-05-11T06:31:40Z",
+            "timestamp": 1652250700000
+          },
+          "page": "105665",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 13,
+          "special_numbering": "C",
+          "title": [
+            "Childhood maltreatment and decision-making autonomy in adulthood: The mediating roles of self-esteem and social support"
+          ],
+          "prefix": "10.1016",
+          "volume": "129",
+          "author": [
+            {
+              "given": "Md Jahirul",
+              "family": "Islam",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Lisa",
+              "family": "Broidy",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Li",
+              "family": "Eriksson",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Mosiur",
+              "family": "Rahman",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Nurunnahar",
+              "family": "Mazumder",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0005",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1186/1742-4755-7-15",
+              "article-title": "Women's autonomy in household decision-making: A demographic study in Nepal",
+              "volume": "7",
+              "author": "Acharya",
+              "year": "2010",
+              "journal-title": "Reproductive Health"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0010",
+              "first-page": "1",
+              "article-title": "Associations between early childhood parent-child attachment and internalizing/externalizing symptoms: A systematic review and narrative synthesis",
+              "author": "Badovinac",
+              "year": "2021",
+              "journal-title": "Marriage & Family Review"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105665_bb0015",
+              "doi-asserted-by": "crossref",
+              "first-page": "687",
+              "DOI": "10.1002/jcop.10026",
+              "article-title": "Exploring links between childhood maltreatment and empowerment",
+              "volume": "30",
+              "author": "Banyard",
+              "year": "2002",
+              "journal-title": "Journal of Community Psychology"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105665_bb0020",
+              "doi-asserted-by": "crossref",
+              "first-page": "1173",
+              "DOI": "10.1037/0022-3514.51.6.1173",
+              "article-title": "The moderator\u2013mediator variable distinction in social psychological research: Conceptual, strategic, and statistical considerations",
+              "volume": "51",
+              "author": "Baron",
+              "year": "1986",
+              "journal-title": "Journal of personality and social psychology"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105665_bb0025",
+              "doi-asserted-by": "crossref",
+              "first-page": "747",
+              "DOI": "10.1002/jclp.20486",
+              "article-title": "Predicting individual differences in autonomy-connectedness: The role of body awareness, alexithymia, and assertiveness",
+              "volume": "64",
+              "author": "Bekker",
+              "year": "2008",
+              "journal-title": "Journal of Clinical Psychology"
+            },
+            {
+              "year": "1988",
+              "series-title": "A secure base: Parent-child attachment and healthy human development",
+              "author": "Bowlby",
+              "key": "10.1016/j.chiabu.2022.105665_bb0030"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0035",
+              "doi-asserted-by": "crossref",
+              "first-page": "376",
+              "DOI": "10.1016/j.psychres.2015.01.023",
+              "article-title": "Childhood maltreatment and social functioning in adults with sub-clinical psychosis",
+              "volume": "226",
+              "author": "Boyda",
+              "year": "2015",
+              "journal-title": "Psychiatry Research"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0040",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.sleep.2021.02.053",
+              "article-title": "Abuse in childhood and risk for sleep disruption in adulthood in the black Women\u2019s health study",
+              "volume": "83",
+              "author": "Boynton-Jarrett",
+              "year": "2021",
+              "journal-title": "Sleep Medicine"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105665_bb0045",
+              "doi-asserted-by": "crossref",
+              "first-page": "684",
+              "DOI": "10.1177/0886260507300207",
+              "article-title": "The effect of childhood trauma on later psychological adjustment",
+              "volume": "22",
+              "author": "Browne",
+              "year": "2007",
+              "journal-title": "Journal of Interpersonal Violence"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105665_bb0050",
+              "first-page": "3",
+              "article-title": "Relations between autonomy and social adjustment of college students",
+              "volume": "17",
+              "author": "Caina",
+              "year": "2006",
+              "journal-title": "Chinese Journal of Clinical Psychology"
+            },
+            {
+              "issue": "7",
+              "key": "10.1016/j.chiabu.2022.105665_bb0055",
+              "doi-asserted-by": "crossref",
+              "first-page": "1478",
+              "DOI": "10.1177/0886260510369134",
+              "article-title": "Associating pregnancy with partner violence against Chinese women",
+              "volume": "26",
+              "author": "Chan",
+              "year": "2011",
+              "journal-title": "Journal of Interpersonal Violence"
+            },
+            {
+              "issue": "02",
+              "key": "10.1016/j.chiabu.2022.105665_bb0060",
+              "doi-asserted-by": "crossref",
+              "first-page": "84",
+              "DOI": "10.4236/aasoci.2021.112007",
+              "article-title": "Women\u2019s autonomy in household purchasing decision making in Sri Lanka: An application of multivariate baseline-category logit model",
+              "volume": "11",
+              "author": "Chandradasa",
+              "year": "2021",
+              "journal-title": "Advances in Applied Sociology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0065",
+              "doi-asserted-by": "crossref",
+              "first-page": "383",
+              "DOI": "10.1016/j.chiabu.2017.09.009",
+              "article-title": "Assessing the factor structure of the childhood trauma questionnaire, and cumulative effect of abuse and neglect on mental health among adolescents in conflict-affected Burundi",
+              "volume": "72",
+              "author": "Charak",
+              "year": "2017",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105665_bb0070",
+              "doi-asserted-by": "crossref",
+              "first-page": "48",
+              "DOI": "10.3390/h7020048",
+              "article-title": "The loss of autonomy in abused persons: Psychological, moral, and legal dimensions",
+              "volume": "7",
+              "author": "Ciurria",
+              "year": "2018",
+              "journal-title": "Humanities"
+            },
+            {
+              "issue": "10224",
+              "key": "10.1016/j.chiabu.2022.105665_bb0075",
+              "doi-asserted-by": "crossref",
+              "first-page": "605",
+              "DOI": "10.1016/S0140-6736(19)32540-1",
+              "article-title": "A future for the world's children? A WHO\u2013UNICEF\u2013Lancet Commission",
+              "volume": "395",
+              "author": "Clark",
+              "year": "2020",
+              "journal-title": "The Lancet"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105665_bb0080",
+              "doi-asserted-by": "crossref",
+              "first-page": "172",
+              "DOI": "10.1177/1077559506298248",
+              "article-title": "Unique and combined contributions of multiple child abuse types and abuse severity to adult trauma symptomatology",
+              "volume": "12",
+              "author": "Clemmons",
+              "year": "2007",
+              "journal-title": "Child Maltreatment"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0085",
+              "doi-asserted-by": "crossref",
+              "first-page": "110",
+              "DOI": "10.1016/j.childyouth.2016.02.021",
+              "article-title": "Childhood adversity, sense of belonging and psychosocial outcomes in emerging adulthood: A test of mediated pathways",
+              "volume": "63",
+              "author": "Corrales",
+              "year": "2016",
+              "journal-title": "Children and Youth Services Review"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105665_bb0090",
+              "doi-asserted-by": "crossref",
+              "first-page": "1051",
+              "DOI": "10.1257/jel.50.4.1051",
+              "article-title": "Women empowerment and economic development",
+              "volume": "50",
+              "author": "Duflo",
+              "year": "2012",
+              "journal-title": "Journal of Economic Literature"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0095",
+              "series-title": "The Blackwell encyclopedia of sociology",
+              "first-page": "88",
+              "article-title": "Aging and social support",
+              "author": "Dykstra",
+              "year": "2015"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105665_bb0100",
+              "doi-asserted-by": "crossref",
+              "first-page": "530",
+              "DOI": "10.1111/j.1939-0025.1985.tb02703.x",
+              "article-title": "The traumatic impact of child sexual abuse: A conceptualization",
+              "volume": "55",
+              "author": "Finkelhor",
+              "year": "1985",
+              "journal-title": "American Journal of Orthopsychiatry"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105665_bb0105",
+              "doi-asserted-by": "crossref",
+              "first-page": "544",
+              "DOI": "10.1016/j.chiabu.2013.07.018",
+              "article-title": "Early childhood maltreatment and trajectories of behavioral problems: Exploring gender and racial differences",
+              "volume": "38",
+              "author": "Godinet",
+              "year": "2014",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0110",
+              "doi-asserted-by": "crossref",
+              "first-page": "51",
+              "DOI": "10.1016/j.maturitas.2010.02.002",
+              "article-title": "Child abuse as a life-course social determinant of adult health",
+              "volume": "66",
+              "author": "Greenfield",
+              "year": "2010",
+              "journal-title": "Maturitas"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105665_bb0115",
+              "doi-asserted-by": "crossref",
+              "first-page": "425",
+              "DOI": "10.1080/16066350701261865",
+              "article-title": "Multiple stressors and adjustment among adult children of alcoholics",
+              "volume": "15",
+              "author": "Hall",
+              "year": "2007",
+              "journal-title": "Addiction Research & Theory"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105665_bb0120",
+              "doi-asserted-by": "crossref",
+              "first-page": "e171",
+              "DOI": "10.1016/j.whi.2011.08.004",
+              "article-title": "Reproductive health care utilization among young mothers in Bangladesh: Does autonomy Matter?",
+              "volume": "22",
+              "author": "Haque",
+              "year": "2012",
+              "journal-title": "Women's Health Issues"
+            },
+            {
+              "year": "2017",
+              "series-title": "Introduction to mediation, moderation, and conditional process analysis: A regression-based approach",
+              "author": "Hayes",
+              "key": "10.1016/j.chiabu.2022.105665_bb0125"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105665_bb0130",
+              "doi-asserted-by": "crossref",
+              "first-page": "393",
+              "DOI": "10.1080/13548506.2016.1153679",
+              "article-title": "The enduring impact of violence against children",
+              "volume": "22",
+              "author": "Hillis",
+              "year": "2017",
+              "journal-title": "Psychology, Health & Medicine"
+            },
+            {
+              "year": "2005",
+              "series-title": "Child abuse and neglect: Attachment, development and intervention",
+              "author": "Howe",
+              "key": "10.1016/j.chiabu.2022.105665_bb0135"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0140",
+              "doi-asserted-by": "crossref",
+              "first-page": "43",
+              "DOI": "10.1016/j.midw.2017.02.002",
+              "article-title": "Exploring the associations between intimate partner violence victimization during pregnancy and delayed entry into prenatal care: Evidence from a population-based study in Bangladesh",
+              "volume": "47",
+              "author": "Islam",
+              "year": "2017",
+              "journal-title": "Midwifery"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0145",
+              "doi-asserted-by": "crossref",
+              "first-page": "290",
+              "DOI": "10.1016/j.chiabu.2018.10.002",
+              "article-title": "Does the type of maltreatment matter? Assessing the individual and combined effects of multiple forms of childhood maltreatment on exclusive breastfeeding behavior",
+              "volume": "86",
+              "author": "Islam",
+              "year": "2018",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "7\u20138",
+              "key": "10.1016/j.chiabu.2022.105665_bb0150",
+              "doi-asserted-by": "crossref",
+              "first-page": "3584",
+              "DOI": "10.1177/0886260518775753",
+              "article-title": "Exploring intimate partner violence before, during, and after pregnancy in Bangladesh",
+              "volume": "36",
+              "author": "Islam",
+              "year": "2021",
+              "journal-title": "Journal of Interpersonal Violence"
+            },
+            {
+              "issue": "10",
+              "key": "10.1016/j.chiabu.2022.105665_bb0155",
+              "doi-asserted-by": "crossref",
+              "first-page": "e1423",
+              "DOI": "10.1016/S2214-109X(19)30316-X",
+              "article-title": "A social empowerment intervention to prevent intimate partner violence against women in a microfinance scheme in Tanzania: Findings from the MAISHA cluster randomised controlled trial",
+              "volume": "7",
+              "author": "Kapiga",
+              "year": "2019",
+              "journal-title": "The Lancet Global Health"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105665_bb0160",
+              "first-page": "753",
+              "article-title": "Relation between childhood abuse and self esteem in adolescence",
+              "volume": "9",
+              "author": "Karaku\u015f",
+              "year": "2012",
+              "journal-title": "Journal of Human Sciences"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0165",
+              "doi-asserted-by": "crossref",
+              "first-page": "53",
+              "DOI": "10.1002/jclp.10193",
+              "article-title": "The relationship of sociotropy and autonomy to posttraumatic cognitions and PTSD symptomatology in trauma survivors",
+              "volume": "60",
+              "author": "Kolts",
+              "year": "2004",
+              "journal-title": "Journal of Clinical Psychology"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105665_bb0170",
+              "doi-asserted-by": "crossref",
+              "first-page": "477",
+              "DOI": "10.1007/s10902-014-9519-2",
+              "article-title": "The relationships among gratitude, self-esteem, social support and life satisfaction among undergraduate students",
+              "volume": "16",
+              "author": "Kong",
+              "year": "2015",
+              "journal-title": "Journal of Happiness Studies"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105665_bb0175",
+              "doi-asserted-by": "crossref",
+              "first-page": "457",
+              "DOI": "10.1037/pspp0000263",
+              "article-title": "Family environment and self-esteem development: A longitudinal study from age 10 to 16",
+              "volume": "119",
+              "author": "Krauss",
+              "year": "2020",
+              "journal-title": "Journal of personality and social psychology"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105665_bb0180",
+              "doi-asserted-by": "crossref",
+              "first-page": "244",
+              "DOI": "10.1080/10615806.2019.1580697",
+              "article-title": "Autonomy deficits as vulnerability for anxiety: Evidence from two laboratory-based studies",
+              "volume": "32",
+              "author": "Kunst",
+              "year": "2019",
+              "journal-title": "Anxiety, Stress, & Coping"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105665_bb0185",
+              "doi-asserted-by": "crossref",
+              "first-page": "703",
+              "DOI": "10.1016/j.adolescence.2004.05.005",
+              "article-title": "Pathways to self-esteem in late adolescence: The role of parent and peer attachment, empathy, and social behaviours",
+              "volume": "27",
+              "author": "Laible",
+              "year": "2004",
+              "journal-title": "Journal of Adolescence"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105665_bb0190",
+              "doi-asserted-by": "crossref",
+              "first-page": "393",
+              "DOI": "10.1177/0165025409338440",
+              "article-title": "A four-part model of autonomy during emerging adulthood: Associations with adjustment",
+              "volume": "33",
+              "author": "Lamborn",
+              "year": "2009",
+              "journal-title": "International Journal of Behavioral Development"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0195",
+              "doi-asserted-by": "crossref",
+              "first-page": "42",
+              "DOI": "10.1177/0886260505281603",
+              "article-title": "Relational outcomes of childhood sexual trauma in female survivors: A longitudinal study",
+              "volume": "21",
+              "author": "Liang",
+              "year": "2006",
+              "journal-title": "Journal of Interpersonal Violence"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105665_bb0200",
+              "doi-asserted-by": "crossref",
+              "first-page": "345",
+              "DOI": "10.1037/tra0000412",
+              "article-title": "The role of autonomy\u2013connectedness in the relation between childhood stressful life events, current posttraumatic symptoms, and internalizing psychopathology in adulthood",
+              "volume": "11",
+              "author": "Maas",
+              "year": "2019",
+              "journal-title": "Psychological Trauma: Theory, Research, Practice, and Policy"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105665_bb0205",
+              "doi-asserted-by": "crossref",
+              "first-page": "1275",
+              "DOI": "10.1111/cdev.12176",
+              "article-title": "Is self-esteem a cause or consequence of social support? A 4-year longitudinal study",
+              "volume": "85",
+              "author": "Marshall",
+              "year": "2014",
+              "journal-title": "Child Development"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0210",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1371/journal.pone.0227884",
+              "article-title": "Improving measurement of child abuse and neglect: A systematic review and analysis of national prevalence studies",
+              "volume": "15",
+              "author": "Mathews",
+              "year": "2020",
+              "journal-title": "PLoS One"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105665_bb0215",
+              "doi-asserted-by": "crossref",
+              "first-page": "653",
+              "DOI": "10.1891/0886-6708.24.5.653",
+              "article-title": "Reliability of self-reported childhood physical abuse by adults and factors predictive of inconsistent reporting",
+              "volume": "24",
+              "author": "McKinney",
+              "year": "2009",
+              "journal-title": "Violence and Victims"
+            },
+            {
+              "year": "2009",
+              "series-title": "Bangladesh Demographic and Health Survey 2007. Dhaka, Bangladesh and Calverton, Maryland, USA: NIPORT, Mitra and Associates, and Macro International",
+              "key": "10.1016/j.chiabu.2022.105665_bb0220"
+            },
+            {
+              "issue": "11",
+              "key": "10.1016/j.chiabu.2022.105665_bb0225",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1371/journal.pmed.1001349",
+              "article-title": "The long-term health consequences of child physical abuse, emotional abuse, and neglect: A systematic review and meta-analysis",
+              "volume": "9",
+              "author": "Norman",
+              "year": "2012",
+              "journal-title": "PLoS Medicine"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0230",
+              "doi-asserted-by": "crossref",
+              "first-page": "191",
+              "DOI": "10.2147/IJWH.S105483",
+              "article-title": "Women's autonomy in health care decision-making in developing countries: A synthesis of the literature",
+              "volume": "8",
+              "author": "Osamor",
+              "year": "2016",
+              "journal-title": "International Journal of Women's Health"
+            },
+            {
+              "year": "2014",
+              "series-title": "The costs and economic impact of violence against children",
+              "author": "Pereznieto",
+              "key": "10.1016/j.chiabu.2022.105665_bb0240"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0245",
+              "doi-asserted-by": "crossref",
+              "first-page": "119",
+              "DOI": "10.1016/j.socscimed.2016.08.001",
+              "article-title": "Associations between quantitative measures of women's empowerment and access to care and health status for mothers and their children: A systematic review of evidence from the developing world",
+              "volume": "169",
+              "author": "Pratley",
+              "year": "2016",
+              "journal-title": "Social Science & Medicine"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0250",
+              "doi-asserted-by": "crossref",
+              "first-page": "9",
+              "DOI": "10.1016/j.srhc.2013.12.003",
+              "article-title": "Women's household decision-making autonomy and contraceptive behavior among Bangladeshi women",
+              "volume": "5",
+              "author": "Rahman",
+              "year": "2014",
+              "journal-title": "Sexual & Reproductive Healthcare"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105665_bb0255",
+              "doi-asserted-by": "crossref",
+              "first-page": "31",
+              "DOI": "10.1080/13545700903153989",
+              "article-title": "The determinants of married women's autonomy in Indonesia",
+              "volume": "15",
+              "author": "Rammohan",
+              "year": "2009",
+              "journal-title": "Feminist Economics"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0260",
+              "doi-asserted-by": "crossref",
+              "first-page": "126",
+              "DOI": "10.1037/a0021319",
+              "article-title": "Childhood emotional abuse and attachment processes in the dyadic adjustment of dating couples",
+              "volume": "58",
+              "author": "Riggs",
+              "year": "2011",
+              "journal-title": "Journal of Counseling Psychology"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0265",
+              "doi-asserted-by": "crossref",
+              "first-page": "129",
+              "DOI": "10.1348/026151001166001",
+              "article-title": "Retrospective reports of school bullying: Stability of recall and its implications for research",
+              "volume": "19",
+              "author": "Rivers",
+              "year": "2001",
+              "journal-title": "British Journal of Developmental Psychology"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105665_bb0270",
+              "doi-asserted-by": "crossref",
+              "first-page": "418",
+              "DOI": "10.1177/1524838014537908",
+              "article-title": "Childhood maltreatment and educational outcomes",
+              "volume": "16",
+              "author": "Romano",
+              "year": "2015",
+              "journal-title": "Trauma, Violence, & Abuse"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0275",
+              "doi-asserted-by": "crossref",
+              "first-page": "19",
+              "DOI": "10.1016/j.dcn.2017.07.007",
+              "article-title": "Beyond stereotypes of adolescent risk taking: Placing the adolescent brain in developmental context",
+              "volume": "27",
+              "author": "Romer",
+              "year": "2017",
+              "journal-title": "Developmental Cognitive Neuroscience"
+            },
+            {
+              "year": "1965",
+              "series-title": "Society and the adolescent self-image",
+              "author": "Rosenberg",
+              "key": "10.1016/j.chiabu.2022.105665_bb0280"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0285",
+              "first-page": "1",
+              "article-title": "The association between adverse childhood experiences and common mental disorders and suicidality: An umbrella review of systematic reviews and meta-analyses",
+              "author": "Sahle",
+              "year": "2021",
+              "journal-title": "European Child & Adolescent Psychiatry"
+            },
+            {
+              "year": "2013",
+              "series-title": "Developmental psychology: Childhood and adolescence",
+              "author": "Shaffer",
+              "key": "10.1016/j.chiabu.2022.105665_bb0290"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105665_bb0295",
+              "doi-asserted-by": "crossref",
+              "first-page": "403",
+              "DOI": "10.1080/10926771.2012.669822",
+              "article-title": "Parental alcoholism and gender as moderators of maladaptive schema endorsement following childhood emotional maltreatment",
+              "volume": "21",
+              "author": "Shainheit",
+              "year": "2012",
+              "journal-title": "Journal of Aggression, Maltreatment & Trauma"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105665_bb0300",
+              "doi-asserted-by": "crossref",
+              "first-page": "198",
+              "DOI": "10.1080/01926187.2012.677662",
+              "article-title": "Childhood abuse and neglect in an outpatient clinical sample: Prevalence and impact",
+              "volume": "41",
+              "author": "Shi",
+              "year": "2013",
+              "journal-title": "The American Journal of Family Therapy"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105665_bb0305",
+              "doi-asserted-by": "crossref",
+              "first-page": "415",
+              "DOI": "10.1016/j.chiabu.2013.02.006",
+              "article-title": "Child abuse and neglect, social support, and psychopathology in adulthood: A prospective investigation",
+              "volume": "37",
+              "author": "Sperry",
+              "year": "2013",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105665_bb0310",
+              "doi-asserted-by": "crossref",
+              "first-page": "693",
+              "DOI": "10.1007/s11205-020-02565-8",
+              "article-title": "The value of autonomy for the good life. An empirical investigation of autonomy and life satisfaction in Europe",
+              "volume": "154",
+              "author": "Steckermeier",
+              "year": "2021",
+              "journal-title": "Social Indicators Research"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105665_bb0315",
+              "doi-asserted-by": "crossref",
+              "first-page": "476",
+              "DOI": "10.1093/ije/dyu038",
+              "article-title": "The global prevalence of common mental disorders: A systematic review and meta-analysis 1980\u20132013",
+              "volume": "43",
+              "author": "Steel",
+              "year": "2014",
+              "journal-title": "International Journal of Epidemiology"
+            },
+            {
+              "issue": "10",
+              "key": "10.1016/j.chiabu.2022.105665_bb0320",
+              "doi-asserted-by": "crossref",
+              "first-page": "1295",
+              "DOI": "10.1177/1049732313503907",
+              "article-title": "The process leading to help seeking following childhood trauma",
+              "volume": "23",
+              "author": "Stige",
+              "year": "2013",
+              "journal-title": "Qualitative Health Research"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105665_bb0325",
+              "doi-asserted-by": "crossref",
+              "first-page": "412",
+              "DOI": "10.1037/0022-3514.94.3.412",
+              "article-title": "The cost of lower self-esteem: Testing a self-and social-bonds model of health",
+              "volume": "94",
+              "author": "Stinson",
+              "year": "2008",
+              "journal-title": "Journal of personality and social psychology"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105665_bb0330",
+              "doi-asserted-by": "crossref",
+              "first-page": "394",
+              "DOI": "10.1093/aje/kwz275",
+              "article-title": "Social support and positive coping skills as mediators buffering the impact of childhood maltreatment on psychological distress and positive mental health in adulthood: Analysis of a national population-based sample",
+              "volume": "189",
+              "author": "Su",
+              "year": "2020",
+              "journal-title": "American Journal of Epidemiology"
+            },
+            {
+              "year": "2020",
+              "series-title": "The sustainable development goals report 2020. New York",
+              "key": "10.1016/j.chiabu.2022.105665_bb0335"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105665_bb0340",
+              "doi-asserted-by": "crossref",
+              "first-page": "443",
+              "DOI": "10.1037/dev0001154",
+              "article-title": "Childhood attention problems mediate effects of child maltreatment on decision-making performance in emerging adulthood",
+              "volume": "57",
+              "author": "Warmingham",
+              "year": "2021",
+              "journal-title": "Developmental Psychology"
+            },
+            {
+              "year": "1999",
+              "series-title": "Student developmental task and lifestyle assessment",
+              "author": "Winston",
+              "key": "10.1016/j.chiabu.2022.105665_bb0345"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0350",
+              "doi-asserted-by": "crossref",
+              "first-page": "191",
+              "DOI": "10.1177/1524838019827894",
+              "article-title": "The relevance of cognitive behavioral models of post-traumatic stress following child maltreatment: A systematic review",
+              "volume": "22",
+              "author": "Wiseman",
+              "year": "2021",
+              "journal-title": "Trauma, Violence, & Abuse"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105665_bb0355",
+              "doi-asserted-by": "crossref",
+              "first-page": "59",
+              "DOI": "10.1016/j.chiabu.2008.12.007",
+              "article-title": "Childhood emotional maltreatment and later psychological distress among college students: The mediating role of maladaptive schemas",
+              "volume": "33",
+              "author": "Wright",
+              "year": "2009",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105665_bb0360",
+              "doi-asserted-by": "crossref",
+              "first-page": "1054",
+              "DOI": "10.3389/fpsyg.2018.01054",
+              "article-title": "The relationship between child maltreatment and dispositional envy and the mediating effect of self-esteem and social support in young adults",
+              "volume": "9",
+              "author": "Xiang",
+              "year": "2018",
+              "journal-title": "Frontiers in Psychology"
+            }
+          ],
+          "container-title": [
+            "Child Abuse &amp; Neglect"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0145213422001855?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0145213422001855?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                27
+              ]
+            ],
+            "date-time": "2025-09-27T01:23:32Z",
+            "timestamp": 1758936212000
+          },
+          "score": 35.33422,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0145213422001855"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                7
+              ]
+            ]
+          },
+          "references-count": 71,
+          "alternative-id": [
+            "S0145213422001855"
+          ],
+          "URL": "https://doi.org/10.1016/j.chiabu.2022.105665",
+          "ISSN": [
+            "0145-2134"
+          ],
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0145-2134"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                7
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "Elsevier",
+              "name": "publisher",
+              "label": "This article is maintained by"
+            },
+            {
+              "value": "Childhood maltreatment and decision-making autonomy in adulthood: The mediating roles of self-esteem and social support",
+              "name": "articletitle",
+              "label": "Article Title"
+            },
+            {
+              "value": "Child Abuse & Neglect",
+              "name": "journaltitle",
+              "label": "Journal Title"
+            },
+            {
+              "value": "https://doi.org/10.1016/j.chiabu.2022.105665",
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version"
+            },
+            {
+              "value": "article",
+              "name": "content_type",
+              "label": "Content Type"
+            },
+            {
+              "value": "\u00a9 2022 Elsevier Ltd. All rights reserved.",
+              "name": "copyright",
+              "label": "Copyright"
+            }
+          ],
+          "article-number": "105665"
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                14
+              ]
+            ],
+            "date-time": "2025-05-14T09:16:57Z",
+            "timestamp": 1747214217043,
+            "version": "3.40.5"
+          },
+          "posted": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                23
+              ]
+            ]
+          },
+          "group-title": "PsyArXiv",
+          "reference-count": 0,
+          "publisher": "Center for Open Science",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    3,
+                    23
+                  ]
+                ],
+                "date-time": "2023-03-23T00:00:00Z",
+                "timestamp": 1679529600000
+              },
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "abstract": "<p>BACKGROUND: History of childhood emotional abuse (CEA) is prevalent among adults with affective disorders; therefore, a comprehensive measure of it is vital. The Rating of Emotional Abuse in Childhood Questionnaire (REACH) was developed to assess history of CEA in relation to threat, ignoring, humiliation/denigration, scapegoating, antipathy, and overcontrol/conditionality in a single measure. This paper investigated the psychometric properties of REACH in a community sample and proposes values for identifying individuals with clinically significant history of CEA. METHOD: A convenient sample of N = 483 adults (Female, 78.3 %) was recruited to complete questionnaires that included the REACH alongside measures of mental health, insecure attachment, emotion regulation, and childhood abuse. A subset of participants (n = 198) completed the REACH 7 days later. RESULTS: Factor analysis indicated a 2-factor model provided a good fit, with factors consistent with direct threat and covert categorisation of CEA. A total scale score of CEA was also recommended. The direct threat, covert, and total scales demonstrated strong psychometric properties with high internal consistency, test-retest reliability, and convergent validity, while our cutoff value for identifying significant history of CEA demonstrated good discriminant validity. LIMITATIONS: Convenient community sampling was used whereby most participants were female, thus the results may not generalise to other populations. CONCLUSIONS: The results support REACH as a valid measure and suggest history of CEA should be measured in relation to direct threat and covert CEA as they represent unique dimensions of CEA even though they often co-occur.</p>",
+          "DOI": "10.31234/osf.io/6czef",
+          "type": "posted-content",
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                24
+              ]
+            ],
+            "date-time": "2023-03-24T05:02:31Z",
+            "timestamp": 1679634151000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "The Rating of Emotional Abuse in Childhood (REACH) Questionnaire: A new self-report measure assessing history of childhood emotional abuse"
+          ],
+          "prefix": "10.31234",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-7832-9098",
+              "authenticated-orcid": true,
+              "given": "Karen",
+              "family": "Goodall",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-8160-0232",
+              "authenticated-orcid": true,
+              "given": "Vilas",
+              "family": "Sawrikar",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "15934",
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T17:42:44Z",
+            "timestamp": 1680543764000
+          },
+          "score": 35.20904,
+          "resource": {
+            "primary": {
+              "URL": "https://osf.io/6czef"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                23
+              ]
+            ]
+          },
+          "references-count": 0,
+          "URL": "https://doi.org/10.31234/osf.io/6czef",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                23
+              ]
+            ]
+          },
+          "subtype": "preprint"
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                27
+              ]
+            ],
+            "date-time": "2025-08-27T00:07:37Z",
+            "timestamp": 1756253257066,
+            "version": "3.44.0"
+          },
+          "posted": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                12
+              ]
+            ]
+          },
+          "group-title": "Article",
+          "reference-count": 18,
+          "publisher": "The Conversation",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "DOI": "10.64628/aai.rc6gykw3y",
+          "type": "posted-content",
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                26
+              ]
+            ],
+            "date-time": "2025-08-26T08:12:43Z",
+            "timestamp": 1756195963000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Why emotional abuse in childhood may lead to migraines in adulthood"
+          ],
+          "prefix": "10.64628",
+          "author": [
+            {
+              "given": "Gretchen",
+              "family": "Tietjen",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "University of Toledo"
+                }
+              ]
+            },
+            {
+              "given": "Monita",
+              "family": "Karmakar",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "University of Toledo"
+                }
+              ]
+            }
+          ],
+          "member": "54080",
+          "reference": [
+            {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1001/jamapediatrics.2014.410"
+            },
+            {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1001/jamapediatrics.2014.410"
+            },
+            {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/head.12150"
+            },
+            {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/head.12074"
+            },
+            {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1212/WNL.0000000000001120"
+            },
+            {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11940-016-0415-4"
+            },
+            {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.3389/fnhum.2012.00052"
+            },
+            {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11940-016-0415-4"
+            },
+            {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1038/nn.4086"
+            },
+            {
+              "key": "ref10",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/acps.12217"
+            },
+            {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11940-016-0415-4"
+            },
+            {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S1474-4422(14)70220-0"
+            },
+            {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1186/s13148-015-0156-3"
+            },
+            {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s00702-016-1570-1"
+            },
+            {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/01612840500184012"
+            },
+            {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.0013-9580.2004.00104.x"
+            },
+            {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/0333102415618615"
+            },
+            {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1526-4610.2009.01557.x"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                26
+              ]
+            ],
+            "date-time": "2025-08-26T08:13:21Z",
+            "timestamp": 1756196001000
+          },
+          "score": 34.911846,
+          "resource": {
+            "primary": {
+              "URL": "https://theconversation.com/why-emotional-abuse-in-childhood-may-lead-to-migraines-in-adulthood-59226"
+            }
+          },
+          "editor": [
+            {
+              "given": "Jessie",
+              "family": "Schanzle",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                12
+              ]
+            ]
+          },
+          "references-count": 18,
+          "URL": "https://doi.org/10.64628/aai.rc6gykw3y",
+          "published": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                12
+              ]
+            ]
+          },
+          "subtype": "other"
+        }
+      ],
+      "items-per-page": 5,
+      "query": {
+        "start-index": 0,
+        "search-terms": "childhood emotional abuse self-esteem adulthood"
+      }
+    }
+  }
+}

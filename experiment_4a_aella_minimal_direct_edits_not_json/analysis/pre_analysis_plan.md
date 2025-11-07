@@ -1,10 +1,10 @@
-status: frozen (git tag pap_freeze_loop006 @ 932b5aa17df8ad9c80409fea83f4f03f3b9b97cd)
+status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 
 # Pre-Analysis Plan — Frozen 2025-11-07 (Loop 006)
 
 ## Versioning & Reproducibility
 - **Frozen scope**: H1 moderation contrasts (guidance buffering and male vulnerability) are now confirmatory; H2–H4 remain exploratory until future revisions.
-- **Repository state**: Git tag `pap_freeze_loop006` (commit `932b5aa17df8ad9c80409fea83f4f03f3b9b97cd`) freezes all scripts, tables, and documentation referenced in this PAP.
+- **Repository state**: Git tag `pap_freeze_loop006` (commit `90f349d080541060fd90ba5a6310a87eef925c47`) freezes all scripts, tables, and documentation referenced in this PAP.
 - **Seed policy**: Default random seed `20251016` (also set via `PYTHONHASHSEED=20251016`) for every Python invocation; deterministic pandas/statsmodels routines make additional seeding unnecessary, but the default is recorded for audit.
 - **Commands to regenerate confirmatory artifacts**:
   1. `PYTHONHASHSEED=20251016 python scripts/loop004_h1_diagnostics.py`

@@ -1,0 +1,12 @@
+{
+  "endpoint": "paper/search",
+  "query": "childhood religiosity adult depression",
+  "limit": 5,
+  "fields": "paperId,title,authors,venue,year,doi,url,tldr,abstract",
+  "timestamp_utc": "2025-11-07T15:10:52.396753Z",
+  "error": {
+    "http_status": 403,
+    "message": "Forbidden",
+    "notes": "Semantic Scholar API rejected provided S2_API_Key when hitting https://api.semanticscholar.org/graph/v1/paper/search"
+  }
+}

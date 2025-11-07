@@ -1,12 +1,68 @@
 [
   {
-    "id": "placeholder",
-    "title": "TODO",
-    "doi": null,
-    "url": null,
-    "authors": [],
-    "year": null,
+    "id": "ezra2025religiosity",
+    "title": "The Moderating Effects of Religiosity on Depression and Paternal Involvement During Early Childhood",
+    "authors": [
+      "Pond Ezra",
+      "Priscilla Goble",
+      "Mark H. Trahan",
+      "Jennifer Clegg"
+    ],
+    "year": 2025,
+    "venue": "Journal of Child and Family Studies",
+    "volume": "34",
+    "issue": "2",
+    "pages": "476-489",
+    "doi": "10.1007/s10826-024-02984-y",
+    "url": "https://doi.org/10.1007/s10826-024-02984-y",
     "access_date": "2025-11-07",
-    "notes": "Bootstrap stub entry to be replaced with Semantic Scholar metadata."
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "Longitudinal cohort links religiosity and depression via paternal involvement moderation."
+  },
+  {
+    "id": "thompson2015monitoring",
+    "title": "Impulsive Personality, Parental Monitoring, and Alcohol Outcomes From Adolescence Through Young Adulthood",
+    "authors": [
+      "Kara Thompson",
+      "Audra Roemer",
+      "Bonnie Leadbeater"
+    ],
+    "year": 2015,
+    "venue": "Journal of Adolescent Health",
+    "volume": "57",
+    "issue": "3",
+    "pages": "320-326",
+    "doi": "10.1016/j.jadohealth.2015.05.005",
+    "url": "https://doi.org/10.1016/j.jadohealth.2015.05.005",
+    "access_date": "2025-11-07",
+    "claim_ids": [
+      "C2"
+    ],
+    "notes": "Finds sustained parental monitoring predicts healthier alcohol trajectories."
+  },
+  {
+    "id": "islam2022maltreatment",
+    "title": "Childhood maltreatment and decision-making autonomy in adulthood: The mediating roles of self-esteem and social support",
+    "authors": [
+      "Md Jahirul Islam",
+      "Lisa Broidy",
+      "Li Eriksson",
+      "Mosiur Rahman",
+      "Nurunnahar Mazumder"
+    ],
+    "year": 2022,
+    "venue": "Child Abuse & Neglect",
+    "volume": "129",
+    "issue": null,
+    "pages": "105665",
+    "doi": "10.1016/j.chiabu.2022.105665",
+    "url": "https://doi.org/10.1016/j.chiabu.2022.105665",
+    "access_date": "2025-11-07",
+    "claim_ids": [
+      "C3"
+    ],
+    "notes": "Demonstrates self-esteem as mediator between maltreatment and autonomy, informing self-love outcome modeling."
   }
 ]
