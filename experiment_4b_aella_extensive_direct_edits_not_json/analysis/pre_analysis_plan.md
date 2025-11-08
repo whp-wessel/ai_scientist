@@ -42,6 +42,8 @@ Loop 025 note: Semantic Scholar query (“childhood parental nurturance adult me
 
 Loop 025 action items: map survey columns `parentwarm_mom`, `parentwarm_dad`, and the short-form Difficulties in Emotion Regulation Scale (see codebook fields `e3y0vab`–`e3y0vah`) into a composite that mirrors Liu & Yin’s maternal warmth and dysregulation constructs so the PAP can cite a concrete coding plan once S2 access or the waiver clears.
 
+Loop 026 note: The required Semantic Scholar query (“childhood parental warmth adult aggression regulation”) again returned HTTP 403 (`lit/queries/loop_026/query_001.json`). To keep the mediator plan moving we captured a CrossRef-backed chapter by Talmon (2023; DOI `10.1017/9781009304368.007`) showing how parents’ own maltreatment histories impair emotion regulation and warmth, reinforcing the need to script DERS-based composites plus maternal/paternal warmth interactions before PAP freeze. The waiver memo now covers loop 026 and cites this DOI, but the PAP remains draft until Semantic Scholar access is restored or the waiver is approved.
+
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
 - **Survey design:** No weights currently available; treat as SRS while monitoring for forthcoming design info (see `docs/survey_design.yaml`). Any newly provided weights will trigger a PAP revision before freeze.
