@@ -55,8 +55,16 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Automated the measurement dossier via `analysis/code/measure_validity_checks.py`, updating `qc/measures_validity.md` with DIF estimates (all reference Δ male–non-male; p<0.001). Artifact JSON stored at `artifacts/measurement_validity_loop003.json`.
 - Semantic Scholar query (`loop_003/query_001`) still returns 403 despite CLI compliance; logged under `lit/queries/loop_003/query_001.json` and kept next action N1 flagged as blocked.
 - Noted that the `mentalillness` column provided by the sponsor is entirely missing, so the H2 control set currently excludes it pending updated metadata.
+
+## Loop 4 Updates (2025-11-08)
+- Synced with the latest reviewer entry (Loop 002) and documented how this loop will maintain R1 (seed discipline), L1 (Semantic Scholar governance), P1 (n ≥ 10 disclosure guard), and N1 (push PAP toward freeze) in `analysis/decision_log.csv`.
+- Re-attempted the Semantic Scholar query (`childhood emotional abuse adult self-esteem`); failure logged with HTTP 403 metadata at `lit/queries/loop_004/query_001.json`, keeping N1 flagged as blocked until credentials recover.
+- Refreshed `analysis/pre_analysis_plan.md` to include privacy & disclosure guardrails, explicit sample sizes from the Loop 003 exploratory runs, and a deterministic execution order (QC → measurement dossier → modeling → BH → disclosure review).
+- Updated `analysis/hypotheses.csv` marking H1–H3 as `in_PAP`, tying each to the implemented script outputs and flagging the missing `mentalillness` control for H2.
+- Notebook + PAP now cross-reference `qc/measures_validity.md` and the forthcoming `qc/disclosure_check_loop_004.md` template so that PAP freeze gates (literature, measurement, disclosure) are explicit.
+
 ## Next Steps
-1. Implement reproducible data cleaning scripts (`analysis/code/`) to construct analysis-ready variables.
-2. Enrich codebook/code design docs with automated generation.
-3. Restore Semantic Scholar access (or secure approval for a standing CrossRef fallback) before the PAP phase.
-4. Draft DAG + identification memo skeleton once key pathways confirmed.
+1. Restore Semantic Scholar access or obtain a documented waiver so the PAP can freeze without violating literature-governance policy.
+2. Draft DAG + `reports/identification.md` clarifying the descriptive (non-causal) stance under current SRS assumptions.
+3. Create the disclosure-check template (`qc/disclosure_check_loop_004.md`) before producing any public tables/figures.
+4. Scaffold imputation + BH tooling (`analysis/code/impute_and_stack.py`, `analysis/code/calc_bh.py`) to operationalize the PAP execution order once frozen.

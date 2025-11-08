@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-11-08T13:06:18.472692Z",
+  "endpoint": "search",
+  "query": "childhood emotional abuse adult self-esteem",
+  "limit": 5,
+  "error": {
+    "status_code": 403,
+    "message": "Forbidden"
+  }
+}

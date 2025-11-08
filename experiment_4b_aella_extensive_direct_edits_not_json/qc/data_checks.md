@@ -1,5 +1,5 @@
-# Data Quality Checklist — Loop 000
-Date: 2025-11-07
+# Data Quality Checklist — Loop 004
+Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
 
@@ -45,7 +45,8 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
-2. Sensitive columns (abuse, assault) flagged for disclosure control; mark in `qc/disclosure_check_loop_000.md` before any public summary.
+2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_004.md` template will be created before any public summary to document n ≥ 10 enforcement.
+3. Semantic Scholar credential still failing (403); PAP freeze deferred until literature-governance policy is satisfied or a waiver is recorded.
 
 ## Regeneration Notes
 - Manual calculations performed interactively (documented command: see Research Notebook). Replace with deterministic scripts before PAP freeze.

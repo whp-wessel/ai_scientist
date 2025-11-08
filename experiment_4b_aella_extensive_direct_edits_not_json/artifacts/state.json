@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 3,
+  "loop_counter": 4,
   "total_loops": 50,
   "phase": "pap",
   "phase_ix": 1,
@@ -32,7 +32,7 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API still 403 as of loop 003 (see lit/queries/loop_003/query_001.json); logging failures and awaiting new key."
+      "notes": "Semantic Scholar API still 403 as of loop 004 (see lit/queries/loop_004/query_001.json); logging failures and awaiting new key."
     },
     {
       "id": "N2",
@@ -40,6 +40,20 @@
       "owner": "agent",
       "status": "done",
       "notes": "Loop 003 automated DIF checks via measure_validity_checks.py and refreshed qc/measures_validity.md."
+    },
+    {
+      "id": "N3",
+      "description": "Draft DAG figure + identification memo outlining descriptive stance",
+      "owner": "agent",
+      "status": "pending",
+      "notes": "Needed before PAP freeze; will reference figures/dag_design.png and reports/identification.md."
+    },
+    {
+      "id": "N4",
+      "description": "Scaffold imputation + BH automation scripts",
+      "owner": "agent",
+      "status": "pending",
+      "notes": "Implement analysis/code/impute_and_stack.py and calc_bh.py so PAP estimands can run deterministically."
     }
   ],
   "stop_now": false,
