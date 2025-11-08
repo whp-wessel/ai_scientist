@@ -247,5 +247,24 @@
       "C1"
     ],
     "notes": "State-level comparison shows regular church attendance corresponds with better adult mental health outcomes, reinforcing H1's religiosity-support mechanism while Semantic Scholar access is blocked."
+  },
+  {
+    "id": "eliassen2013religious",
+    "title": "Religious Coping and Depression in Young Adulthood: Effects of Global Stress Exposure and Pre-Teenage Religious Service Attendance",
+    "authors": [
+      "A. Henry Eliassen"
+    ],
+    "year": 2013,
+    "venue": "Review of Religious Research",
+    "volume": "55",
+    "issue": "3",
+    "pages": "413-433",
+    "doi": "10.1007/s13644-013-0110-9",
+    "url": "https://doi.org/10.1007/s13644-013-0110-9",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "Miami-Dade longitudinal study shows frequent pre-teen religious service attendance and high stress exposure condition the protective effect of religious coping on young-adult depression, informing H1 mechanisms."
   }
 ]

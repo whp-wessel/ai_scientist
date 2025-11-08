@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 018
+# Data Quality Checklist — Loop 019
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -44,13 +44,13 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 - Result: PAP variables documented with `source_column` mappings; `qc/metadata_validation.md` logs status (still assuming SRS).
 
 ## Reproducibility Checkpoint
-- [x] `artifacts/session_info.txt` last updated 2025-11-08T15:34:50Z with Python/pip details and git HEAD; no package changes since, so references remain valid.
+- [x] `artifacts/session_info.txt` last updated 2025-11-08T17:12:55Z with Python/pip details and git HEAD; no package changes since, so references remain valid for Loop 019.
 - [x] `artifacts/checksums.json` timestamp 2025-11-08T13:46:15Z covering raw + imputed files; raw dataset mtimes unchanged, so hashes remain current.
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 018 logged `lit/queries/loop_018/query_001.json`; the waiver memo now spans loops 008-018 and cites the latest CrossRef fallback (Merrill & Salazar 2002; DOI `10.1080/13674670110059569`) alongside the prior DOIs `10.1089/jayao.2022.0097`, `10.2139/ssrn.4703219`, `10.1016/j.chiabu.2024.107020`, `10.21275/SR23621004642`, and `10.1093/med:psych/9780195332711.003.0004`, so PAP freeze remains on hold until approval or credential restoration.
+3. Semantic Scholar credential still failing (403). Loop 019 logged `lit/queries/loop_019/query_001.json`; the waiver memo now spans loops 008-019 and cites the latest CrossRef fallback (Eliassen 2013; DOI `10.1007/s13644-013-0110-9`) alongside Merrill & Salazar (2002; DOI `10.1080/13674670110059569`) and the prior DOIs `10.1089/jayao.2022.0097`, `10.2139/ssrn.4703219`, `10.1016/j.chiabu.2024.107020`, `10.21275/SR23621004642`, `10.1093/med:psych/9780195332711.003.0004`, etc., so PAP freeze remains on hold until approval or credential restoration.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes

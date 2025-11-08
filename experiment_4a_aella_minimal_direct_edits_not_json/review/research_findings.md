@@ -141,3 +141,11 @@ R3 PASS – Literature coverage is current: the evidence map lists the religiosi
 R4 PASS – Privacy commitments are reiterated (no public cells below 135) and the promotion memo confirms all referenced tables aggregate ≥14k respondents (`analysis/pre_analysis_plan.md:19`, `docs/religiosity_class_gradients_promotion.md:41-42`).  
 R5 PASS – Required artifacts are present and marked (frozen PAP with draft working notes, synchronized manuscript, notebook next steps) so the project state is coherent (`analysis/pre_analysis_plan.md:1-129`, `reports/paper.md:6-39`, `notebooks/research_notebook.md:152-158`).
 
+## Loop 020 — 2025-11-08T17:21:19.268202+00:00
+DECISION: CONTINUE  
+R1 PASS – Loop 020 actions list explicit commands/seeds (`analysis/decision_log.csv:48-49`) and the notebook captures the same workflow plus next steps (`notebooks/research_notebook.md:162-170`), so reproduction paths remain transparent.  
+R2 PASS – Effect sizes, SEs, CIs, p/q values, and SRS justifications are logged for the new ridge/ordinal contrasts (`analysis/results.csv:46-50`), while the PAP addendum details the confirmatory scope, design-effect math, and BH plan before any freeze (`analysis/pre_analysis_plan.md:90-130`); the dedicated H3 acquisition memo further operationalizes the survey-design remedy (`docs/h3_design_effect_plan.md:3-55`).  
+R3 PASS – The promotion memo cites DOI-backed sources for every new claim (`docs/religiosity_class_gradients_promotion.md:34-38`), consistent with the maintained evidence map (`lit/evidence_map.csv:1-18`).  
+R4 PASS – Public tables remain purely aggregate with n≥820 (`tables/loop016_h3_confirmatory.csv:2`; `tables/loop016_h4_confirmatory.csv:2-5`), and privacy safeguards are reiterated in the memo (`docs/religiosity_class_gradients_promotion.md:45-47`).  
+R5 PASS – All required artifacts reflect this loop: PAP header still indicates the frozen commit while documenting new drafts (`analysis/pre_analysis_plan.md:1-130`), hypotheses/results registries capture the updated families (`analysis/hypotheses.csv:2-7`; `analysis/results.csv:46-50`), and project state lists fresh next actions (`artifacts/state.json:1-18`).
+

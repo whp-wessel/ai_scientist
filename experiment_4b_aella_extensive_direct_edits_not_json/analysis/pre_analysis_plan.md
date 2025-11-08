@@ -26,6 +26,8 @@ Loop 017 note: Mandatory Semantic Scholar query (`childhood religious participat
 
 Loop 018 note: Semantic Scholar remains blocked (`lit/queries/loop_018/query_001.json` logged another HTTP 403), so we captured CrossRef metadata for Merrill & Salazar (2002; DOI `10.1080/13674670110059569`) via `lit/queries/loop_018/crossref_query_001.json`. The study links regular church attendance to better adult mental health among Mormon and non-Mormon residents, strengthening H1's religiosity mechanism while the waiver request awaits approval. PAP status therefore stays draft.
 
+Loop 019 note: Semantic Scholar attempt (`lit/queries/loop_019/query_001.json`, query "childhood faith community adult resilience depression") resulted in the 12th consecutive 403. To keep H1 grounded we logged a CrossRef-backed longitudinal paper (Eliassen, 2013; DOI `10.1007/s13644-013-0110-9`, see `lit/queries/loop_019/crossref_query_004.json`) showing that weekly pre-teen service attendance plus high stress exposure conditions religious coping's association with young-adult depression. PAP remains draft until the waiver is approved or the API credential is restored, and we added this stress-interaction nuance to the planned robustness checks.
+
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
 - **Survey design:** No weights currently available; treat as SRS while monitoring for forthcoming design info (see `docs/survey_design.yaml`). Any newly provided weights will trigger a PAP revision before freeze.
