@@ -1,0 +1,7 @@
+DECISION: CONTINUE
+R1: PASS – Seed/command discipline stays explicit (analysis/pre_analysis_plan.md:1, analysis/pre_analysis_plan.md:22; qc/data_checks.md:1) with environment/checksum checkpoints confirmed (artifacts/session_info.txt:1; qc/data_checks.md:46) and loop actions fully logged (analysis/decision_log.csv:90).
+L1: PASS – The loop issued the mandated Semantic Scholar call and stored the 403 payload (analysis/decision_log.csv:91; lit/queries/loop_013/query_001.json:1) while the waiver memo consolidates loops 008–013 failures plus fallback DOIs (lit/semantic_scholar_waiver_loop013.md:1).
+P1: PASS – The n≥10 disclosure guard remains documented (analysis/pre_analysis_plan.md:23) and the latest disclosure audit still shows zero violations (qc/disclosure_check_loop_006.md:1), with QC noting no public tables this loop (qc/data_checks.md:52).
+N1: PASS – Phase appropriately stays PAP and the Semantic Scholar task is still marked blocked with waiver context (artifacts/state.json:3, artifacts/state.json:31) while the PAP records the same gating note (analysis/pre_analysis_plan.md:17).
+
+Notes: Prioritize restoring Semantic Scholar access or getting the waiver approved so the PAP can freeze and analysis can proceed.
