@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 4,
+  "loop_counter": 5,
   "total_loops": 50,
   "phase": "pap",
   "phase_ix": 1,
@@ -32,7 +32,7 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API still 403 as of loop 004 (see lit/queries/loop_004/query_001.json); logging failures and awaiting new key."
+      "notes": "Semantic Scholar API still 403 as of loop 005 (see lit/queries/loop_005/query_001.json); logging failures + awaiting new key/waiver."
     },
     {
       "id": "N2",
@@ -45,15 +45,22 @@
       "id": "N3",
       "description": "Draft DAG figure + identification memo outlining descriptive stance",
       "owner": "agent",
-      "status": "pending",
-      "notes": "Needed before PAP freeze; will reference figures/dag_design.png and reports/identification.md."
+      "status": "done",
+      "notes": "Loop 005 produced figures/dag_design.png via analysis/code/plot_dag.py and reports/identification.md."
     },
     {
       "id": "N4",
       "description": "Scaffold imputation + BH automation scripts",
       "owner": "agent",
+      "status": "done",
+      "notes": "Loop 005 added analysis/code/impute_and_stack.py (with stacked output + summary) and analysis/code/calc_bh.py."
+    },
+    {
+      "id": "N5",
+      "description": "Integrate disclosure-check template into execution pipeline",
+      "owner": "agent",
       "status": "pending",
-      "notes": "Implement analysis/code/impute_and_stack.py and calc_bh.py so PAP estimands can run deterministically."
+      "notes": "Need automation so each future table/figure logs min cell counts in qc/disclosure_check_loop_{loop:03d}.md before release."
     }
   ],
   "stop_now": false,

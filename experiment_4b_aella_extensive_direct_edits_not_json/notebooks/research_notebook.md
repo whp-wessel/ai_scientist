@@ -63,8 +63,15 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Updated `analysis/hypotheses.csv` marking H1–H3 as `in_PAP`, tying each to the implemented script outputs and flagging the missing `mentalillness` control for H2.
 - Notebook + PAP now cross-reference `qc/measures_validity.md` and the forthcoming `qc/disclosure_check_loop_004.md` template so that PAP freeze gates (literature, measurement, disclosure) are explicit.
 
+## Loop 5 Updates (2025-11-08)
+- Logged reviewer Loop 004 critiques (R1/L1/P1/N1) and restated how this hour maintains seed discipline, disclosure controls, and focus on DAG + automation in `analysis/decision_log.csv`.
+- Mandatory Semantic Scholar attempt (`childhood abuse adult self love`) still returns 403; stored the failure payload under `lit/queries/loop_005/query_001.json` and kept next action N1 blocked pending new credentials.
+- Created `analysis/code/plot_dag.py` → `figures/dag_design.png` + `.json` and wrote `reports/identification.md`, so the descriptive identification stance is now an auditable artifact referenced by `papers/main/MANIFEST.md`.
+- Implemented `analysis/code/impute_and_stack.py` (deterministic hot-deck MI). Ran `--m 5 --seed 20251016`, producing `data/clean/childhood_imputed_stack_loop005.csv` (CSV fallback noted in `artifacts/imputation_summary_loop005.json` because pyarrow is not installed).
+- Added `analysis/code/calc_bh.py` so confirmatory runs can append `q_value` + `bh_in_scope` per family once PAP is frozen; execution deferred until results exist to avoid premature confirmatory outputs.
+
 ## Next Steps
 1. Restore Semantic Scholar access or obtain a documented waiver so the PAP can freeze without violating literature-governance policy.
-2. Draft DAG + `reports/identification.md` clarifying the descriptive (non-causal) stance under current SRS assumptions.
-3. Create the disclosure-check template (`qc/disclosure_check_loop_004.md`) before producing any public tables/figures.
-4. Scaffold imputation + BH tooling (`analysis/code/impute_and_stack.py`, `analysis/code/calc_bh.py`) to operationalize the PAP execution order once frozen.
+2. Freeze the PAP (status + registry URL + commit tag) once literature, measurement, and disclosure gates are satisfied; this remains blocked on N1.
+3. Wire the disclosure-check template into the execution order so every future table/figure logs minimum cell counts prior to release.
+4. Coordinate with the data provider about the empty `mentalillness` column and decide whether MI outputs should be integrated into the H2 control set before confirmatory modeling.

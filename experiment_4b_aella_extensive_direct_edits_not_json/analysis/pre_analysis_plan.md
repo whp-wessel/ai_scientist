@@ -13,7 +13,7 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
 - **Survey design:** No weights currently available; treat as SRS while monitoring for forthcoming design info (see `docs/survey_design.yaml`). Any newly provided weights will trigger a PAP revision before freeze.
-- **Seed discipline:** `20251016` (per `config/agent_config.yaml`) is passed explicitly to every script (`analysis/code/run_models.py`, `analysis/code/missingness_profile.py`, `analysis/code/measure_validity_checks.py`) to maintain determinism.
+- **Seed discipline:** `20251016` (per `config/agent_config.yaml`) is passed explicitly to every script (`analysis/code/run_models.py`, `analysis/code/missingness_profile.py`, `analysis/code/measure_validity_checks.py`, `analysis/code/impute_and_stack.py`, `analysis/code/calc_bh.py`) to maintain determinism.
 - **Disclosure threshold:** n ≥ 10 per `config/agent_config.yaml`; exploratory summaries in Loops 002–003 remained comfortably above this threshold (minimum reported cell n = 187 in `qc/data_overview_loop002.md`).
 - **Outputs + manifests:** Every figure/table command will be recorded inside `papers/main/MANIFEST.md` and the relevant QC markdown before PAP freeze.
 
@@ -22,6 +22,7 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 - Sensitive predictors/outcomes (abuse, depression, self-love) are tagged in `analysis/hypotheses.csv` and `qc/measures_validity.md`; any subgroup slices yielding n < 10 will be suppressed or binned per `config/agent_config.yaml::small_cells`.
 - For manuscript-ready numbers, we will store both machine-readable CSVs (`tables/*.csv`) and markdown tables with clear suppression notes, referencing the exact command string that generated them.
 - `reports/identification.md` will also record the disclosure guardrails to ensure readers understand that all estimates exclude identifiable cells.
+- Loop 005 produced `figures/dag_design.png` (see `papers/main/MANIFEST.md`) so the identification stance is visually documented before PAP freeze.
 
 ## Hypotheses Under Consideration
 ### H1 — Childhood Religious Adherence & Adult Depression (Family: wellbeing)
@@ -67,6 +68,12 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
   python analysis/code/missingness_profile.py --input data/raw/childhoodbalancedpublic_original.csv --output-csv outputs/missingness_loop003.csv --output-md qc/missingness_loop003.md --seed 20251016
   python analysis/code/measure_validity_checks.py --config config/agent_config.yaml --output-md qc/measures_validity.md --output-json artifacts/measurement_validity_loop003.json
   ```
+- Loop 005 added deterministic hot-deck MI tooling plus multiplicity automation:
+  ```bash
+  python analysis/code/impute_and_stack.py --m 5 --stacked-output data/clean/childhood_imputed_stack_loop005.parquet --summary-output artifacts/imputation_summary_loop005.json --seed 20251016
+  # The script falls back to CSV if parquet engines are unavailable; see summary JSON for the actual path used.
+  python analysis/code/calc_bh.py --config config/agent_config.yaml --input-csv analysis/results_pre_bh.csv --output-csv analysis/results.csv --summary-json artifacts/bh_summary.json
+  ```
 
 ## Manuscript Linkage
 - Each hypothesis maps to claims `[CLAIM:C1]`–`[CLAIM:C3]` in `papers/main/manuscript.tex` (stubs added in initial draft). The PAP freeze commit hash will be cited in the manuscript Methods section.
@@ -75,15 +82,14 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 1. **Data hygiene:** `analysis/code/describe_dataset.py`, `validate_metadata.py`, and `missingness_profile.py` run with seed 20251016; outputs referenced in `qc/data_overview_loop002.md`, `qc/metadata_validation.md`, and `qc/missingness_loop003.md`.
 2. **Measurement dossier:** `analysis/code/measure_validity_checks.py` updates `qc/measures_validity.md` and `artifacts/measurement_validity_loop003.json`; all H1–H3 variables now have coding + DIF notes.
 3. **Model estimation:** `analysis/code/run_models.py --hypothesis {H1|H2|H3}` executes ordered-logit / linear models with deterministic draws=300 for marginal effects.
-4. **Imputation (if invoked):** `analysis/code/impute_and_stack.py` (placeholder) will implement multiple imputation using `miceforest` with `m=5`, `burn_in=50`, `iterations=50`, and seed 20251016 before confirmatory runs. PAP will be updated if MI is required due to MAR patterns.
-5. **BH correction:** After confirmatory estimates are produced, apply Benjamini–Hochberg at q=0.05 per family (wellbeing, psychosocial) and populate `analysis/results.csv` with `family`, `targeted`, and `bh_in_scope`.
+4. **Imputation (if invoked):** `analysis/code/impute_and_stack.py --m 5 --seed 20251016` now produces a stacked hot-deck MI file plus `artifacts/imputation_summary_loop005.json`. Until pyarrow is available the script writes CSV outputs (`data/clean/childhood_imputed_stack_loop005.csv`) and records the fallback reason for transparency.
+5. **BH correction:** Once confirmatory estimates exist, run `python analysis/code/calc_bh.py --config config/agent_config.yaml --input-csv analysis/results_pre_bh.csv --output-csv analysis/results.csv --summary-json artifacts/bh_summary.json` to append `q_value`, `family`, `targeted`, and `bh_in_scope` columns using Benjamini–Hochberg at q=0.05 per family (wellbeing, psychosocial).
 6. **Disclosure review:** Draft `qc/disclosure_check_loop_{loop}` with min cell sizes and suppression summary before any tables/figures leave the repo.
 
 ## Outstanding Tasks Before Freeze
-1. Restore Semantic Scholar access (or obtain formal waiver). Loop 004 query (`lit/queries/loop_004/query_001.json`) still returns 403; PAP freeze deferred until a working credential or written waiver exists.
+1. Restore Semantic Scholar access (or obtain formal waiver). Loop 005 query (`lit/queries/loop_005/query_001.json`) still returns 403; PAP freeze deferred until a working credential or written waiver exists.
 2. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist template is in place.
-3. Produce causal stance artifacts: `figures/dag_design.png` and `reports/identification.md`, clearly stating that current analyses are associational (descriptive) under SRS unless new design metadata arrive.
-4. Maintain `qc/disclosure_check_loop_004.md` (template created this loop) and populate it automatically once tables/figures exist.
-5. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.
+3. Maintain `qc/disclosure_check_loop_004.md` (template created) and wire it into the execution order so every public table references the min cell count review.
+4. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.
 
 _No confirmatory analysis will begin until the status is set to `frozen` with registry details and a recorded commit/tag._

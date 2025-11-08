@@ -4,6 +4,7 @@
 - `papers/main/manuscript.tex`: edit via deterministic text editor; compile using `latexmk -pdf papers/main/manuscript.tex` (once figures/tables exist).
 - `papers/main/manuscript.md`: keep in sync with TeX file; manual edit only.
 - `papers/main/imrad_outline.md`: update manually after each major analysis milestone.
+- `figures/dag_design.png` / `figures/dag_design.json`: regenerate via `python analysis/code/plot_dag.py --output-png figures/dag_design.png --output-json figures/dag_design.json`.
 - Build outputs (PDF/DOCX) will be stored under `papers/main/output/` (dir TBD) with commands logged here.
 
 ## Seeds and Versions

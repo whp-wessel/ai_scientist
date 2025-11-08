@@ -1,0 +1,5 @@
+# Reverted paths for loop_005
+
+- data/clean/: Top-level directory 'data' is not allowed for writes.
+- figures/: Writing 'figures/' at repo root is not allowed.
+- reports/: Writing 'reports/' at repo root is not allowed.
