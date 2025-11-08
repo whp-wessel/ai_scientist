@@ -168,3 +168,13 @@
 1. Draft the H3 data-acquisition plan that maps design-effect mitigation ideas (new countries, independent ≥$10M respondents) to concrete recruitment scenarios and cite it in the PAP/notebook.
 2. Validate whether additional shrinkage grids or Bayesian priors are needed for H4 before the PAP re-freeze, now that the binary + ordinal codings agree.
 3. Keep the reviewer packet synchronized once the H3 acquisition memo and updated PAP addendum are ready for sign-off.
+
+## 2025-11-08 – Loop 021
+- **H3 operationalization**: Expanded `docs/h3_design_effect_plan.md` with a Loop 021 tracker that assigns owners, evidence requirements, and near-term deliverables for (a) new-country partner LOIs, (b) the independent high-wealth refresh RFP, and (c) the replicate-weight transfer so we can demonstrate a concrete path toward shrinking the ≥$10M design effect.
+- **H4 promotion materials**: Rewrote the PAP addendum, reviewer packet, and promotion memo to foreground the four-row confirmatory shell (binary contrasts + ordinal backups), clarify that BH still operates over the two binary tests, and document the reserved `pap_freeze_h4_loop024` tag plus the exact rerun commands needed at freeze.
+- **Reviewer summary package**: Logged the ridge/ordinal stress-test takeaways inside `analysis/sensitivity_notes.md` so reviewers see the consolidated evidence/multiplicity plan without running code; cross-referenced the same narrative in the memo and reviewer packet.
+
+### Loop 021 Next Steps
+1. Collect documentary evidence (LOIs, RFP issuance, replicate manifest) promised in the H3 operational tracker and link them under `docs/`.
+2. Refresh `reports/paper.md` with the four-row H4 shell narrative so the manuscript matches the updated PAP/reviewer packet wording.
+3. Draft the PAP-freeze workplan for `childhood_class_networth_ge10m` once the design-effect mitigations start yielding concrete timelines.

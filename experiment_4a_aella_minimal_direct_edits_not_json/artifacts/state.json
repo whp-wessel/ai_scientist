@@ -6,12 +6,12 @@
     "phase": "loop",
     "ts": "2025-11-08T15:49:56.592983+00:00"
   },
-  "last_updated": "2025-11-08T23:20:00Z",
-  "loop_counter": 20,
+  "last_updated": "2025-11-09T00:30:00Z",
+  "loop_counter": 21,
   "next_actions": [
-    "Operationalize `docs/h3_design_effect_plan.md`: secure partner buy-in for the new-country roster, independent high-wealth refresh, and replicate-weight delivery so the ≥$10M contrast can move toward confirmatory power.",
-    "Rewrite the PAP addendum + reviewer packet to reflect the four-row H4 confirmatory shell (binary + ordinal) and outline the freeze/tag steps for the `religiosity_class_gradients` family.",
-    "Prepare the reviewer summary (sensitivity notes + memo) that packages the ridge/ordinal stress tests and confirms multiplicity handling before the next loop."
+    "Collect the partner LOIs, high-wealth RFP, and replicate-weight manifest promised in `docs/h3_design_effect_plan.md` so the ≥$10M promotion path has auditable evidence.",
+    "Sync `reports/paper.md` (plus figures/tables) with the four-row `religiosity_class_gradients` shell and BH narrative now captured in the PAP/reviewer packet.",
+    "Draft the PAP-freeze workplan for `childhood_class_networth_ge10m` once the design-effect mitigation milestones have concrete delivery dates."
   ],
   "phase": "analysis",
   "phase_ix": 2,

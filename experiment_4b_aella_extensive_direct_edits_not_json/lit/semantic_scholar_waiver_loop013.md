@@ -20,6 +20,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 017 | 2025-11-08T16:57:20Z | "childhood religious participation adult depression support" | 403 Forbidden | `lit/queries/loop_017/query_001.json` |
 | 018 | 2025-11-08T17:05:49Z | "childhood church attendance adult mental health support" | 403 Forbidden | `lit/queries/loop_018/query_001.json` |
 | 019 | 2025-11-08T17:14:50Z | "childhood faith community adult resilience depression" | 403 Forbidden | `lit/queries/loop_019/query_001.json` |
+| 020 | 2025-11-08T17:25:02Z | "childhood spiritual involvement adult depressive symptoms social support" | 403 Forbidden | `lit/queries/loop_020/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -34,6 +35,8 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Hulvershorn et al. (2009), DOI `10.1093/med:psych/9780195332711.003.0004`** — Captured via CrossRef (loop 016) synthesizing how childhood mental health issues propagate into young adult outcomes, reinforcing the PAP’s planned control strategy.
 - **Loecher et al. (2023), DOI `10.1089/jayao.2022.0097`** — Captured via CrossRef (loop 017) showing how ongoing parental engagement affects adolescent/young adult cancer survivors’ health-care transitions, strengthening H2’s evidence base while S2 access is blocked.
 - **Merrill & Salazar (2002), DOI `10.1080/13674670110059569`** — Captured via CrossRef (loop 018) documenting how regular church attendance correlates with better adult mental health among Mormon and non-Mormon Utah residents, reinforcing H1's religiosity-support mechanism during the outage.
+- **Eliassen (2013), DOI `10.1007/s13644-013-0110-9`** — Captured via CrossRef (loop 019) showing that weekly pre-teen religious attendance coupled with high stress exposure predicts lower young-adult depression through religious coping, strengthening H1's mechanism narrative while the S2 outage persists.
+- **Kasen et al. (2014), DOI `10.1002/da.22131`** — Captured via CrossRef (loop 020) documenting that greater religiosity predicts improved psychosocial functioning among high-risk young adults, bolstering H1’s stress-buffering argument until Semantic Scholar access is restored.
 - **Eliassen (2013), DOI `10.1007/s13644-013-0110-9`** — Captured via CrossRef (loop 019) showing that weekly pre-teen religious attendance coupled with high stress exposure predicts lower young-adult depression through religious coping, strengthening H1's mechanism narrative while the S2 outage persists.
 
 ## Request

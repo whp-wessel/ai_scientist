@@ -45,3 +45,8 @@
 ## 7. Privacy & Reproducibility
 - All referenced tables aggregate ≥14k respondents per row, meaning Principle 2 (no public cells with n < 10) is satisfied.
 - Commands, seeds, and outputs are logged in `analysis/decision_log.csv` and `notebooks/research_notebook.md`. The promotion memo itself is now part of the audit trail so reviewers can trace exactly how the family will be promoted once confirmatory criteria are met.
+
+## 8. Loop 021 Reviewer Summary Hook
+- **What changed this loop**: Rather than refitting the models, we packaged the Loop 020 ridge/ordinal stress tests for reviewers by updating `analysis/pre_analysis_plan.md`, `analysis/sensitivity_notes.md`, and `docs/loop016_reviewer_packet.md` so they highlight the four-row confirmatory shell (binary tests + ordinal backups) and the reserved freeze tag `pap_freeze_h4_loop024`.
+- **Multiplicity reminder**: Only the binary rows expand the BH denominator (`m=2`); the ordinal rows are preregistered outcome checks that must be regenerated in the freeze commit but leave the q-values (0.023; 0.194) unchanged.
+- **Next reviewer touchpoint**: Once the steering reviewer acknowledges this summary (notebook + memo + sensitivity notes), we will execute the freeze protocol: rerun `scripts/loop020_h4_stress_tests.py`, refresh `tables/loop016_h4_confirmatory.csv`, update the PAP header to point at the new tag, and archive the approval trail inside `docs/reviewer_approvals/`.

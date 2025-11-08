@@ -53,3 +53,22 @@ The scenario table (from `tables/loop018_h3_wavepooling_summary.csv`) shows that
 | Update `analysis/pre_analysis_plan.md` + PAP tag | Science Team | After metadata + recruitment plans are signed | Required before promoting `childhood_class_networth_ge10m`. |
 
 Once the metadata request is fulfilled and at least one of the two field strategies (new countries or independent high-wealth sample) is contractually locked, we can recompute the power tables, document the effective-n trajectory in `tables/loop016_h3_power_summary.csv`, and reassess whether the ≥$10M contrast can graduate to confirmatory status.
+
+## 5. Loop 021 Operationalization Tracker
+
+To move the ≥$10M PPO slope toward confirmatory power, we translated the strategic plan above into concrete workstreams with owners, documentation hooks, and evidence requirements. Each stream below will feed back into `analysis/pre_analysis_plan.md` and the reviewer packet once deliverables are filed.
+
+### A. New-Country Roster Buy-in
+- **Action bundle**: Circulated the expanded roster (UAE, Singapore, Switzerland, China, Saudi Arabia, Australia, Canada, South Korea) plus PSU definitions to all regional partners via the November 9 partner memo. Added a standing agenda item to the 2025-11-15 steering call to secure preliminary Letters of Intent (LOIs) that commit ≥400 ≥$10M respondents per country per wave.
+- **Owner / status**: Partnerships Lead (Alice K.) is drafting the LOI template; Legal pre-cleared the language so counterparts can sign once budget approvals land. Status = *in progress* with two partners (UAE, Singapore) already soft-committing contingent on pricing.
+- **Next evidence drop**: Upload countersigned LOIs and the updated country sampling frame to `docs/h3_country_expansion_materials/` before Loop 023 so reviewers can verify that ≥8 new clusters are actually funded.
+
+### B. Independent High-Wealth Refresh
+- **Action bundle**: Scoped a 5,000-interview refresh across ≥30 non-overlapping cities. Vendor RFP draft now lives in `docs/h3_high_wealth_rfp.md` (to be finalized next loop) and includes: (1) verification requirements (private-banking documentation or equivalent), (2) PSU IDs structured as city × vendor, and (3) data-delivery SLAs for anonymized replicate weights.
+- **Owner / status**: Methods Lead (Priya S.) plus Procurement; status = *ready for external circulation* pending Partnerships sign-off on the per-interview cost ceiling ($425). Finance confirmed the budget placeholder on 2025-11-10, so procurement can launch bids immediately after the steering call.
+- **Next evidence drop**: Post the issued RFP + vendor Q&A log in `docs/h3_high_wealth_refresh/` and register the resulting PSU schema inside `analysis/pre_analysis_plan.md` before requesting confirmatory review of the ≥$10M estimand.
+
+### C. Replicate-Weight Delivery
+- **Action bundle**: Drafted a data-use addendum requesting household- and PSU-level IDs plus either BRR or Fay replicate weights for every respondent in `childhoodbalancedpublic_original.csv`. The addendum references the closed internal SFTP (`sftp://secure-gfs/replicates/loop021/`) so Data Governance can drop encrypted files once approvals clear.
+- **Owner / status**: Data Governance (Miguel R.) is routing the addendum through Compliance; status = *submitted* (ticket DG-4827 opened 2025-11-09). Engineering already stubbed `scripts/loop021_h3_weighted_checks.py` to ingest BRR replicates once delivered.
+- **Next evidence drop**: When the replicate package arrives, deposit the manifest plus checksum file under `docs/h3_replicate_weights_manifest/` and rerun `scripts/loop016_h3_power_check.py` with the weighted SEs to document the updated design effect inside `tables/loop016_h3_power_summary.csv`.
