@@ -17,14 +17,14 @@
       "last_model_context": "loop_001",
       "last_model_policy": "agent",
       "last_model_reason": "Upcoming work is data-wrangling heavy (recode scripts, profiling, more API automation).",
-      "queued_model": null,
-      "queued_reason": "",
-      "queued_source": "",
+      "queued_model": "gpt-5-codex",
+      "queued_reason": "Upcoming recoding and modeling tasks remain code/data-heavy and benefit from Codex\u2019s tooling skills.",
+      "queued_source": "loop_001",
       "rr_index": -1
     }
   },
   "next_actions": [
-    "Translate the −3..3 Likert variables into centered/standardized scales and document the recode script for H1–H4.",
+    "Translate the \u22123..3 Likert variables into centered/standardized scales and document the recode script for H1\u2013H4.",
     "Finalize covariate sets + model specs in the PAP ahead of freezing for confirmatory testing.",
     "Prototype regression notebooks for H1/H2 to confirm effect magnitudes and diagnostics."
   ],

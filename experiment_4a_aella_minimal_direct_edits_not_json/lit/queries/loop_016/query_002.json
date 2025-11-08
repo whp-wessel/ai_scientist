@@ -1,0 +1,202 @@
+{
+  "data": [
+    {
+      "abstract": "In Hungary, where current fertility is below replacement, it is important to explore the fertility intentions of potential future parents. In our paper, we use a novel representative database to explore the future childbearing intentions of young adult Hungarians (18\u201329) and to estimate the potential effect of a wide range of demographic, socioeconomic and value-related independent variables. According to our results, fertility intentions are shaped by the individual\u2019s economic status, current domicile, parental education, religiosity, parental separation, relationship status and positivity towards Hungary. Additionally, interaction models show that fertility intentions vary by age and gender: a critical period of late young adulthood is highlighted when stronger intentions notably decline for women. Finally, using subsamples, we examine the effect of climate anxiety and green behaviour. Results suggest that those who plan to have more children are more likely to behave in an environmentally conscious way.",
+      "authors": [
+        {
+          "authorId": "2315540457",
+          "name": "D\u00e1vid Er\u00e1t"
+        },
+        {
+          "authorId": "2315535808",
+          "name": "Adrienn Bogn\u00e1r"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 271802318,
+        "DOI": "10.51624/szocszemle.12099"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.51624/szocszemle.12099?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.51624/szocszemle.12099, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "BRONZE",
+        "url": "https://ojs.mtak.hu/index.php/szocszemle/article/download/12099/13672"
+      },
+      "paperId": "b4c3739b8ee738f933d05e4daf381ae1e390ba89",
+      "publicationDate": "2024-08-02",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Tomorrow\u2019s parents? Exploring the fertility intentions of young adults in Hungary",
+      "url": "https://www.semanticscholar.org/paper/b4c3739b8ee738f933d05e4daf381ae1e390ba89",
+      "venue": "Szociol\u00f3giai szemle",
+      "year": 2024
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "2108715211",
+          "name": "Rujia Wang"
+        },
+        {
+          "authorId": "38686825",
+          "name": "C. Hartman"
+        },
+        {
+          "authorId": "27745062",
+          "name": "H. Snieder"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 252460320,
+        "DOI": "10.1016/j.euroneuro.2022.07.338"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.euroneuro.2022.07.338?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.euroneuro.2022.07.338, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "CLOSED",
+        "url": ""
+      },
+      "paperId": "50c69b2e43193a605587880097dd1f29a07b56a0",
+      "publicationDate": "2022-10-01",
+      "publicationTypes": null,
+      "title": "T36. SHARED GENETIC SUSCEPTIBILITY FOR DEPRESSION, ANXIETY, OBESITY AND SUBSTANCE USE AND ITS INTERACTION WITH SOCIOECONOMIC STATUS",
+      "url": "https://www.semanticscholar.org/paper/50c69b2e43193a605587880097dd1f29a07b56a0",
+      "venue": "European Neuropsychopharmacology",
+      "year": 2022
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "2293658242",
+          "name": "S. Johns"
+        },
+        {
+          "authorId": "2293655993",
+          "name": "C. Lea-Carnall"
+        },
+        {
+          "authorId": "2293658234",
+          "name": "N. Shryane"
+        },
+        {
+          "authorId": "2293658801",
+          "name": "A. Maharani"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 277817773,
+        "DOI": "10.1101/2025.04.14.25325776"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2025.04.14.25325776?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2025.04.14.25325776, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "192ebf22afe79f719a7cd74883127eb9259dbc76",
+      "publicationDate": "2025-04-16",
+      "publicationTypes": null,
+      "title": "Anxiety, brain structure and socioeconomic status in middle-aged and older adults",
+      "url": "https://www.semanticscholar.org/paper/192ebf22afe79f719a7cd74883127eb9259dbc76",
+      "venue": "medRxiv",
+      "year": 2025
+    },
+    {
+      "abstract": "Introduction: Neuropsychiatric symptoms are signs of cognitive decline and associated disorders. The effects of socioeconomic status and social interaction on cognitive decline have already been well documented. Accordingly, the present study aimed to build on the work investigating those factors and cognitive health by examining the relationships between socioeconomic status, sociability, and neuropsychiatric symptoms. Methods: Data from the UK Biobank (N\u2009=\u2009301,848) were subjected to logistic regressions to examine the relationship between socioeconomic status, sociability, and neuropsychiatric symptoms and sociability to identify any potential moderator in the socioeconomic status-neuropsychiatric symptoms relationship. Specifically, socioeconomic status was defined by the Townsend deprivation index, while sociability was constructed using a cumulative score of four aspects. Meanwhile, neuropsychiatric symptoms were represented by depression, anxiety, and irritability, each of which had a genetic risk score calculated. Results: Individuals who reported lower socioeconomic status also reported more depression and anxiety, while those with higher sociability reported fewer depression and anxiety. Further, it was found that sociability moderated the relationship between socioeconomic status and two symptoms: depression and anxiety. No significant moderating effects were found regarding irritability. Conclusion: The study results indicate the need for interventions aimed at neuropsychiatric symptoms to reduce possible cognitive disorders. They also demonstrate the need to eliminate economic and social disparities and the importance of improving sociability.",
+      "authors": [
+        {
+          "authorId": "2363145568",
+          "name": "Jiahui Xiao"
+        },
+        {
+          "authorId": "2280307518",
+          "name": "Bingqing Guo"
+        },
+        {
+          "authorId": "2188376242",
+          "name": "Yuxin Ma"
+        },
+        {
+          "authorId": "1932511656",
+          "name": "N. Huang"
+        },
+        {
+          "authorId": "2218919595",
+          "name": "Tao Huang"
+        },
+        {
+          "authorId": "2261023912",
+          "name": "Hailun Liang"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 278685258,
+        "DOI": "10.1155/da/1293449",
+        "PubMed": "40406186",
+        "PubMedCentral": "12097854"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12097854, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": null,
+        "url": ""
+      },
+      "paperId": "d16b1b5c5c2a9c5d4b7efdea0caf6fda0f648305",
+      "publicationDate": "2025-01-01",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Association Between Socioeconomic Status and Neuropsychiatric Symptoms in the UK Biobank: The Moderating Role of Sociability",
+      "url": "https://www.semanticscholar.org/paper/d16b1b5c5c2a9c5d4b7efdea0caf6fda0f648305",
+      "venue": "Depression and Anxiety",
+      "year": 2025
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "2269037109",
+          "name": "Priya B Thomas"
+        },
+        {
+          "authorId": "11698714",
+          "name": "Dale S. Mantey"
+        },
+        {
+          "authorId": "3831267",
+          "name": "S. Clendennen"
+        },
+        {
+          "authorId": "4094336",
+          "name": "M. Harrell"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 267633261,
+        "DOI": "10.1007/s40615-024-01923-3",
+        "PubMed": "38347309"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s40615-024-01923-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s40615-024-01923-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "CLOSED",
+        "url": ""
+      },
+      "paperId": "3f6bf48b2093fad25839bdf6263bbd342e546a2f",
+      "publicationDate": "2024-02-12",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Mental Health Status by Race, Ethnicity and Socioeconomic Status among Young Adults in Texas during COVID-19",
+      "url": "https://www.semanticscholar.org/paper/3f6bf48b2093fad25839bdf6263bbd342e546a2f",
+      "venue": "Journal of Racial and Ethnic Health Disparities",
+      "year": 2024
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 434
+}

@@ -1,0 +1,216 @@
+{
+  "data": [
+    {
+      "abstract": "The aim of this study was to examine the relationship between different screen time (ST)-related behaviors and mental health conditions such as depression, anxiety, and stress. In addition, this study aimed to determine the moderating role of socioeconomic status (SES). This was a cross-sectional study and included data from 620 adolescents, aged 12\u201317 years, from the Valle de Ricote, Region of Murcia, Spain. Mental health was assessed using the Depression, Anxiety, and Stress Scale (DASS-21). Overall ST, mobile phone use, social network use, and messaging application use were measured using validated questionnaires. SES was assessed using the Family Affluence Scale-III. The results indicated that overall ST was significantly associated with symptoms of depression at the mean SES (unstandardized beta coefficient [B] = 0.005, p = 0.023) and 1 standard deviation (SD) below the mean (B = 0.007, p = 0.011), and with stress only 1 SD below the mean (B = 0.006, p = 0.011). No significant associations were found for anxiety and stress across all socioeconomic levels. Mobile phone use exhibited a strong positive association with symptoms of depression (B = 0.891, p < 0.001), anxiety (B = 0.530, p = 0.014), and stress (B = 0.790, p < 0.001) at 1 SD below the mean SES. Similar patterns were observed for mean SES, albeit with slightly weaker associations. Conversely, social network use was positively associated with all three DASS-21 scales, particularly at 1 SD below the mean SES, with the strongest associations found for symptoms of depression (B = 0.327, p < 0.001), anxiety (B = 0.325, p < 0.001), and stress (B = 0.318, p < 0.001). Furthermore, messaging application use did not show significant associations with symptoms of depression, anxiety, or stress across any SES levels. In conclusion, social inequalities may influence the associations between various ST-related behavior and symptoms of depression, anxiety, and stress among adolescents. These findings may have implications for the design of effective interventions to improve symptoms of depression, anxiety, and stress in this population.",
+      "authors": [
+        {
+          "authorId": "1411911066",
+          "name": "M. Visier-Alfonso"
+        },
+        {
+          "authorId": "1404045737",
+          "name": "J. L\u00f3pez-Gil"
+        },
+        {
+          "authorId": "2835179",
+          "name": "A. Mesas"
+        },
+        {
+          "authorId": "1404046130",
+          "name": "E. Jim\u00e9nez-L\u00f3pez"
+        },
+        {
+          "authorId": "2323118434",
+          "name": "S. Cekrezi"
+        },
+        {
+          "authorId": "2289528600",
+          "name": "Vicente Mart\u00ednez-Vizca\u00edno"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 273658827,
+        "DBLP": "journals/cbsn/VisierAlfonsoLMJCM24",
+        "DOI": "10.1089/cyber.2024.0064",
+        "PubMed": "39469773"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1089/cyber.2024.0064?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1089/cyber.2024.0064, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "CLOSED",
+        "url": ""
+      },
+      "paperId": "3d72cd9809cd6d47a70ebc39fce5691511af6a3f",
+      "publicationDate": "2024-10-29",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Does Socioeconomic Status Moderate the Association Between Screen Time, Mobile Phone Use, Social Networks, Messaging Applications, and Mental Health Among Adolescents?",
+      "url": "https://www.semanticscholar.org/paper/3d72cd9809cd6d47a70ebc39fce5691511af6a3f",
+      "venue": "Cyberpsychology, Behavior, and Social Networking",
+      "year": 2024
+    },
+    {
+      "abstract": "This study examined the longitudinal relationship between family socioeconomic status (family SES) and students' academic achievement through learning anxiety-learning engagement profiles and the moderating role of negative parenting styles. Using longitudinal data from 425 Chinese primary students (200 boys, Mage\u2009=\u20099.73\u2009\u00b1\u20090.86\u2009years old) across three seasons (winter, spring and summer) with three-month intervals, latent profile analysis identified three learning anxiety-learning engagement profiles: \"High Anxiety-Low Engagement\", \"High Anxiety-Moderate Engagement\" and \"Low Anxiety-High Engagement\". Mediation analysis revealed that, compared to the \"Low Anxiety-High Engagement\" group, the \"High Anxiety-Moderate Engagement\" group significantly mediated the relationship between family SES and academic achievement. Additionally, negative parenting styles moderated the association between family SES and learning anxiety-learning engagement profiles. These findings support both the family stress and investment models, suggesting that interventions should be tailored to families with differing SES levels.",
+      "authors": [
+        {
+          "authorId": "2194891763",
+          "name": "Tianci Zhang"
+        },
+        {
+          "authorId": "2279102118",
+          "name": "Wei Shao"
+        },
+        {
+          "authorId": "2274561227",
+          "name": "Jingyi Zhang"
+        },
+        {
+          "authorId": "2378475930",
+          "name": "Qinglin Zhang"
+        },
+        {
+          "authorId": "2379550128",
+          "name": "Yuan Tao"
+        },
+        {
+          "authorId": "2267091985",
+          "name": "Xiao Yu"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 281020311,
+        "DOI": "10.1111/bjop.70020",
+        "PubMed": "40866327"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/bjop.70020?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/bjop.70020, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "0d03d264e94d3d8c01f29ebf7f5ec3d9cadabfc5",
+      "publicationDate": "2025-08-27",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "The longitudinal relationship between family socioeconomic status and students' academic achievement: The mediating roles of learning anxiety-learning engagement profiles and the moderating role of negative parenting styles.",
+      "url": "https://www.semanticscholar.org/paper/0d03d264e94d3d8c01f29ebf7f5ec3d9cadabfc5",
+      "venue": "British Journal of Psychology",
+      "year": 2025
+    },
+    {
+      "abstract": "Background Extant research has indicated that parenting practice, such as harsh parenting, rejection, and neglect increases the risk of mobile phone addiction. However, no research to date has examined the association between parenting by lying about money and adolescent mobile phone addiction. Objective The current study used a survey to test whether parenting by lying about money may be associated with adolescent mobile phone addiction. The mediation of anxiety and moderation of socioeconomic status were also examined. Materials and methods We recruited 971 adolescents from five secondary schools in a city in central China. Of the participants, 448 (46.14%) were boys and 523 (53.86%) were girls (Mage = 13.63, SDage = 1.01). Results The results of mediation analysis indicated that parenting by lying about money positively predicted mobile phone addiction (B = 0.144, p < 0.01); parenting by lying about money positively predicted anxiety (B = 0.126, p < 0.01) and mobile phone addiction (B = 0.107, p < 0.01). Anxiety positively predicted mobile phone addiction (B = 0.293, p < 0.01). Moreover, the bias-corrected bootstrapping mediation test indicated that the process by which parenting by lying about money predicted mobile phone addiction through anxiety was significant (indirect effect = 0.037, SE = 0.011, 95% CI = [0.017, 0.059]). Conclusion The current study suggests that parenting by lying about money may lead to mobile phone addiction through the mediation of anxiety. However, the effect was stronger for adolescents with higher level of socioeconomic status than their counterparts.",
+      "authors": [
+        {
+          "authorId": "2033410125",
+          "name": "Hua Wei"
+        },
+        {
+          "authorId": "2190183297",
+          "name": "Lijun Lu"
+        },
+        {
+          "authorId": "2033628147",
+          "name": "Meiting Liu"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 253399673,
+        "DOI": "10.3389/fpsyg.2022.1021355",
+        "PubMed": "36438316",
+        "PubMedCentral": "9683469"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9683469, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.1021355/pdf"
+      },
+      "paperId": "0bcca6b7674bd6cfcb5f6253f142a95a92168ad0",
+      "publicationDate": "2022-11-09",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "We can\u2019t afford the candy! The influence of parenting by lying about money on mobile phone addiction and the roles of anxiety and socioeconomic status among Chinese adolescents",
+      "url": "https://www.semanticscholar.org/paper/0bcca6b7674bd6cfcb5f6253f142a95a92168ad0",
+      "venue": "Frontiers in Psychology",
+      "year": 2022
+    },
+    {
+      "abstract": "Background There is an escalating concern about the rising levels of anxiety and depression among college students, especially during the post-pandemic era. A thorough examination of the various dimensions of social support and their impact on these negative emotions in college students is imperative. Aim This study aimed to determine if a perceived loss of control mediates the relationship between social support and levels of anxiety and depression among college students during the post-pandemic era. Additionally, it examined whether family socioeconomic status moderates this mediated relationship. Methods We administered an online cross-sectional survey in China, securing responses from 502 participants. The sample comprised home-isolated college students impacted by COVID-19. Established scales were employed to assess social support, anxiety, depression, perceived loss of control, and family socioeconomic status. Analytical techniques included descriptive statistics, correlation analysis, and a bootstrap method to investigate mediating and moderating effects. Results Social support was found to negatively affect anxiety and depression in college students, with perceived loss of control partially mediating this relationship. In addition, family socio-economic status was shown to moderate this moderating process. Furthermore, family socioeconomic status influenced this mediation, with higher socioeconomic families exhibiting a stronger moderating effect on perceived loss of control across different dimensions of social support. Conclusion This study may help to develop strategies to mitigate the impact of anxiety and depression in the lives and studies of university students during unexpected public health crises, and to promote better mental health among college students.",
+      "authors": [
+        {
+          "authorId": "2042871414",
+          "name": "Huiyao Shi"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 267606270,
+        "DOI": "10.3389/fpubh.2024.1288848",
+        "PubMed": "38406501",
+        "PubMedCentral": "10884108"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10884108, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2024.1288848/pdf"
+      },
+      "paperId": "72a3d59b3913fa206eb5ab83587f3ff70b020c62",
+      "publicationDate": "2024-02-09",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "The effect of social support on home isolation anxiety and depression among college students in the post-pandemic era: the mediating effect of perceived loss of control and the moderating role of family socioeconomic status",
+      "url": "https://www.semanticscholar.org/paper/72a3d59b3913fa206eb5ab83587f3ff70b020c62",
+      "venue": "Frontiers in Public Health",
+      "year": 2024
+    },
+    {
+      "abstract": "Family context has been found to influence achievement emotions, but the factors that might moderate this association remain relatively unexplored. To address this gap, this research examined the moderation of teacher\u2013student relationships (TSR) in the link between family socioeconomic status (SES) and emotions in foreign language (FL) learning drawing on control-value theory of achievement emotions and attachment theory. The research involved 4,155 eighth-grade students from China, who completed scales reporting their SES, FL enjoyment, FL anxiety, and FL burnout. The moderating effect model demonstrated that TSR played a moderating role in the relationship between SES and negative emotions in FL learning such as anxiety and burnout. However, no significant moderation was observed between SES and FL enjoyment. Specifically, a warm TSR was found to alleviate the negative impact of low SES on negative emotions in FL learning, such as anxiety and burnout. Conversely, TSR did not demonstrate the capacity to enhance the positive emotions associated with FL learning, such as enjoyment, among students from higher SES backgrounds. This research suggests the necessity to intervene with low SES students, with the aim of fostering supportive TSR and ultimately alleviating negative emotions in FL learning.",
+      "authors": [
+        {
+          "authorId": "47687328",
+          "name": "Lihong Ma"
+        },
+        {
+          "authorId": "31241660",
+          "name": "Leifeng Xiao"
+        },
+        {
+          "authorId": "2277661603",
+          "name": "Ning Liu"
+        },
+        {
+          "authorId": "2271534071",
+          "name": "Jian Liu"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 266703216,
+        "DOI": "10.1177/13621688231217026"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/13621688231217026?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/13621688231217026, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "CLOSED",
+        "url": ""
+      },
+      "paperId": "bbcd244111c3200ba96b91ed128b98eda127db5b",
+      "publicationDate": "2023-12-29",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Family socioeconomic status and foreign language emotions: Moderation of teacher\u2013student relationships",
+      "url": "https://www.semanticscholar.org/paper/bbcd244111c3200ba96b91ed128b98eda127db5b",
+      "venue": "Language Teaching Research",
+      "year": 2023
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 2861
+}
