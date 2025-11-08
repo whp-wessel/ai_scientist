@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T21:18Z
+last_updated: 2025-11-08T21:27Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -67,6 +67,8 @@ Loop 036 note: Semantic Scholar search `"childhood religious service adult depre
 Loop 037 note: The required Semantic Scholar query (`"childhood mentoring coping adult depression"`; `lit/queries/loop_037/query_001.json`) remained blocked by HTTP 403, so we logged CrossRef metadata (`lit/queries/loop_037/crossref_query_001.json`) and added Bellis et al. (2017; DOI `10.1186/s12888-017-1260-z`) to the evidence map/bibliography. Their Welsh adult retrospective study shows that continuous trusted adult support halves ACE-linked health-harming behaviours and improves mental well-being, directly reinforcing H2's mentorship/guidance mechanism. PAP status stays draft until either the waiver is approved or the Semantic Scholar credential is restored so confirmatory analyses can cite canonical S2 records.
 
 Loop 038 note: The mandatory Semantic Scholar attempt (`"childhood caregiver emotional support adult depression buffer"`; `lit/queries/loop_038/query_001.json`) still returned HTTP 403. To maintain H3 coverage we recorded CrossRef metadata (`lit/queries/loop_038/crossref_query_001.json`) and added Musliner & Singer (2014; DOI `10.1016/j.chiabu.2014.01.016`), which shows that strong emotional support mitigates adult depression among childhood sexual-abuse survivors. This evidence underscores the need to pre-specify moderator controls for perceived adult support in the H3 estimand. PAP status remains draft pending either a restored Semantic Scholar credential or an approved waiver documenting these accumulated 403 logs.
+
+Loop 039 note: Semantic Scholar remains blocked (`"childhood mentor buffer adult depression social support"`; `lit/queries/loop_039/query_001.json`). The CrossRef fallback (`lit/queries/loop_039/crossref_query_001.json`) provided Shlomi et al. (2022; DOI `10.37256/jspr.1120221162`), which finds that strong parental attachment or peer support offsets the depression risk of frequent childhood moves. This evidence reinforces the need to script guidance × mobility interactions plus peer-support moderators for H2 before PAP freeze.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
