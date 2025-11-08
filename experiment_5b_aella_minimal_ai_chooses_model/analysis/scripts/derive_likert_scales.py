@@ -82,6 +82,15 @@ def main() -> None:
         std = series.std(ddof=0)
         df[z_col] = centered / std if std != 0 else pd.NA
 
+    # Add harmonized variants for ordinal socioeconomic outcome used in H3.
+    # classcurrent is coded 0..6; provide both scaled [0,1] and z-standardized versions.
+    if "classcurrent" in df.columns:
+        cc = df["classcurrent"]
+        # Protect against division by zero (unlikely in practice).
+        df["classcurrent_scaled"] = cc / 6.0
+        cc_std = cc.std(ddof=0)
+        df["classcurrent_z"] = (cc - cc.mean()) / cc_std if cc_std != 0 else pd.NA
+
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(OUTPUT_PATH, index=False)
     print(f"Wrote {OUTPUT_PATH} (n={len(df)})")

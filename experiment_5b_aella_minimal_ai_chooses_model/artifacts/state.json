@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 2,
+  "loop_counter": 3,
   "model_state": {
     "review": {
       "last_model": "gpt-5-codex",
@@ -17,16 +17,17 @@
       "last_model_context": "loop_003",
       "last_model_policy": "agent",
       "last_model_reason": "Need higher-level reasoning to finish PAP drafting and confirmatory planning before the next analytical sprint.",
-      "queued_model": null,
-      "queued_reason": "",
-      "queued_source": "",
+      "queued_model": "gpt-5",
+      "queued_reason": "Finalize and freeze the PAP (confirmatory families, estimands) before the next coding-heavy sensitivity/modeling sprint.",
+      "queued_source": "loop_003",
       "rr_index": -1
     }
   },
   "next_actions": [
-    "Extend the harmonized scale workflow + regression diagnostics to H3/H4 (including classcurrent outcome handling).",
-    "Write the PAP freeze-ready sections (estimands, diagnostics plan) and decide on any confirmatory families before tagging.",
-    "Investigate survey design provenance or formalize the SRS justification for the eventual public release."
+    "Freeze and tag the PAP (pap_freeze_loop003) with final estimands and confirmatory families.",
+    "Pre-specify interactions (e.g., male \u00d7 adversity) and nonlinearity checks; add to PAP.",
+    "Run ordered logit sensitivity for H3 and compare with OLS (record both).",
+    "Investigate survey design provenance or finalize SRS justification text for public release."
   ],
   "phase": "pap",
   "phase_ix": 1,

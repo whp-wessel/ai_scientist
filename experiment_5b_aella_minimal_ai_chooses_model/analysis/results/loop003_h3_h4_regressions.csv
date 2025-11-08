@@ -1,0 +1,3 @@
+hypothesis_id,hypothesis_family,outcome,predictor,estimate,se,ci_low,ci_high,p_value,n_obs,r_squared,adj_r_squared,covariates,cov_type
+H3,digital_exposure,classcurrent_z,4tuoqly_scaled,0.042475558299589246,0.010189597411962913,0.022503947372141935,0.06244716922703655,3.065815278921658e-05,14428,0.32917717875104546,0.32889807626664813,"selfage,gendermale,education,classchild,classteen",HC3
+H4,mental_health_continuity,wz901dj_scaled,dfqbzi5_scaled,-0.323991495547589,0.007088512015752413,-0.3378849790984637,-0.3100980119967143,0.0,14428,0.241356308987282,0.240988035350868,"selfage,gendermale,education,classchild,classteen,classcurrent",HC3

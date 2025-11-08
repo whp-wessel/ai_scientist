@@ -28,10 +28,10 @@
 - Each hypothesis will estimate average differences between exposure categories controlling for the baseline covariate set: respondent age (`selfage`), binary male indicator (`gendermale`), educational attainment (`education`, ordinal 0–6), and socioeconomic ladder placements during childhood (`classchild`), teen years (`classteen`), and adulthood (`classcurrent` when not used as an outcome).
 - Missing data will be handled using listwise deletion initially; multiple imputation is noted for sensitivity analysis once variable missingness is profiled.
 
-### Scale Harmonization (Loop 2)
+### Scale Harmonization (Loop 2–3)
 - Script: `python analysis/scripts/derive_likert_scales.py` reads `childhoodbalancedpublic_original.csv`, creates respondent IDs, and generates centered and standardized variants for each −3..3 Likert item used in H1–H4.
-- Output artifact: `analysis/derived/loop002_likert_scales.csv` containing the original items plus `_scaled` (value÷3) and `_z` ((value−μ)/σ) columns for `mds78zu`, `ix5iyv3`, `pqo6jmj`, `z0mhd63`, `4tuoqly`, `dfqbzi5`, and `wz901dj`, alongside the shared covariate set.
-- Modeling default: predictors enter as `_scaled` (bounded −1..1 for interpretability). Outcomes also use `_scaled`, keeping coefficients interpretable as the expected change in outcome SDs per full-scale shift in the predictor. `_z` columns remain available for sensitivity checks.
+- Output artifact: `analysis/derived/loop002_likert_scales.csv` containing the original items plus `_scaled` (value÷3) and `_z` ((value−μ)/σ) columns for `mds78zu`, `ix5iyv3`, `pqo6jmj`, `z0mhd63`, `4tuoqly`, `dfqbzi5`, and `wz901dj`, alongside the shared covariate set. For the ordinal socioeconomic outcome `classcurrent` (0–6), we add `classcurrent_scaled` (÷6) and `classcurrent_z`.
+- Modeling default: predictors enter as `_scaled` (bounded −1..1 for interpretability). Likert outcomes use `_scaled`; for H3 the outcome is `classcurrent_z` so coefficients read as SD changes in socioeconomic status per unit change in the predictor. `_z` columns remain available for sensitivity checks.
 
 ### Data profiling status (Loop 1)
 - Script: `python analysis/scripts/profile_key_variables.py` produces `analysis/profiling/loop001_key_vars_summary.csv` and companion value-counts for mds78zu, ix5iyv3, pqo6jmj, z0mhd63, 4tuoqly, classcurrent, dfqbzi5, and wz901dj.
@@ -41,6 +41,14 @@
 ## Multiplicity
 - Confirmatory families align with the four thematic buckets above. If any family exceeds one confirmatory test, Benjamini-Hochberg FDR control at q ≤ 0.05 will apply.
 
+## Diagnostics Plan (Freeze-ready)
+- Linearity and functional form: inspect partial residual plots (lowess overlay) for each predictor; consider quadratic terms if strong curvature appears.
+- Heteroskedasticity: compute HC3 by default; report White test p-values as a diagnostic only.
+- Influence and leverage: flag observations with Cook’s distance > 4/n and re-estimate without them as a sensitivity.
+- Multicollinearity: compute VIFs for the covariate stack; if VIF>10, consider dropping or combining variables.
+- Model fit: report R²/adj. R² and distribution of residuals. For H3 treat `classcurrent` as ordinal; OLS is the baseline (HC3), with ordered logit as a pre-specified sensitivity.
+- Missingness: profile patterns; if any focal variable has >5% missingness, plan multiple imputation (m=20) as a sensitivity.
+
 ## Reproducibility & Logging
 - All analysis commands will be scripted (preferably via notebooks or `.py` modules) with seeds logged in `analysis/decision_log.csv`.
 - Generated public tables will live in `tables/` with mandatory n<10 suppression.
@@ -49,4 +57,4 @@
 1. Acquire codebook/survey design metadata.
 2. Inspect remaining variable distributions and missingness for potential covariates beyond the core set.
 3. Decide whether weighting or raking is defensible; document rationale.
-4. Finalize confirmatory model specifications (link functions, interaction terms) prior to PAP freeze/tagging.
+4. Finalize confirmatory model specifications (link functions, interaction terms) prior to PAP freeze/tagging; H3 sensitivity will include ordered logit.

@@ -1,0 +1,19 @@
+I extended scales, ran H3/H4 prototypes, and upgraded the PAP before freezing.
+
+**Changes**
+- Scale derivation: Added `classcurrent_scaled` and `classcurrent_z` to `analysis/scripts/derive_likert_scales.py`; regenerated `analysis/derived/loop002_likert_scales.csv`.
+- New analysis: Implemented `analysis/scripts/prototype_h3_h4_regressions.py` (OLS + HC3) with per-spec covariates.
+  - H3 (digital_exposure): `classcurrent_z ~ 4tuoqly_scaled + selfage + gendermale + education + classchild + classteen`; n=14428; β=0.0425, SE=0.0102, p=3.07e-05. Output: `analysis/results/loop003_h3_h4_regressions.csv`.
+  - H4 (mental_health_continuity): `wz901dj_scaled ~ dfqbzi5_scaled + selfage + gendermale + education + classchild + classteen + classcurrent`; n=14428; β=−0.3240, SE=0.0071, p<1e-300.
+- Results registry: Appended two exploratory rows to `analysis/results.csv` with CIs, SRS justification, and notes. No confirmatory tests yet.
+- PAP updates: Clarified scale harmonization for H3 (`classcurrent_z`) and added a diagnostics plan (linearity, HC3, influence, VIFs, missingness) plus an ordered-logit sensitivity for H3. File: `analysis/pre_analysis_plan.md`.
+- Notebook: Logged Loop 3 progress and figures in `notebooks/research_notebook.md`.
+- Manuscript: Added preliminary H3/H4 statements to `reports/paper.md`.
+- Hypotheses registry: Updated H3 notes to reference `classcurrent_z`. File: `analysis/hypotheses.csv`.
+- Decision log: Appended loop actions and commands in `analysis/decision_log.csv`.
+- State: Advanced `artifacts/state.json` to `loop_counter=3` and set next actions (PAP freeze, interactions, H3 ordered-logit sensitivity, survey design provenance).
+- Commit message written: `artifacts/git_message.txt`.
+
+No public tables were created; privacy guardrail (n<10) remains satisfied. Survey design remains SRS with explicit justification in all registries.
+
+Next science model: gpt-5 | reason: Finalize and freeze the PAP (confirmatory families, estimands) before the next coding-heavy sensitivity/modeling sprint.

@@ -21,3 +21,12 @@
 - Updated the PAP + hypotheses registry so future models explicitly reference the derived columns and the fixed covariate stack; SRS justification unchanged pending design metadata.
 - Prototyped H1/H2 using `python analysis/scripts/prototype_h1_h2_regressions.py` (OLS + HC3). Results: each one-unit increase in `mds78zu_scaled` associates with −0.18 SDs in adult unhappiness (`ix5iyv3_scaled`, n=14,426), while each unit increase in `pqo6jmj_scaled` predicts +0.11 SDs in work satisfaction (`z0mhd63_scaled`, n=14,429). Recorded effect sizes in `analysis/results.csv` (exploratory only) and stored full regression outputs under `analysis/results/loop002_h1_h2_regressions.csv`.
 - Next focus: extend harmonized scales to the H3/H4 outcomes, profile interaction terms (e.g., sex × adversity), and freeze the PAP before labeling any confirmatory tests.
+
+## 2025-11-08 — Loop 3
+- Extended scale derivation to include `classcurrent_scaled` and `classcurrent_z` in `analysis/scripts/derive_likert_scales.py`; regenerated `analysis/derived/loop002_likert_scales.csv` (n=14,443).
+- Implemented `analysis/scripts/prototype_h3_h4_regressions.py`:
+  - H3 (digital_exposure): OLS(HC3) of `classcurrent_z` on `4tuoqly_scaled` + covariates (age, male, education, classchild, classteen); n=14,428; β=0.0425 (SE=0.0102, p=3.07e-05).
+  - H4 (mental_health_continuity): OLS(HC3) of `wz901dj_scaled` on `dfqbzi5_scaled` + covariates (age, male, education, classchild, classteen, classcurrent); n=14,428; β=−0.3240 (SE=0.0071, p<1e-300).
+- Appended results to `analysis/results.csv` (exploratory) and saved detailed outputs to `analysis/results/loop003_h3_h4_regressions.csv`.
+- Updated the PAP with a freeze-ready diagnostics plan and clarified H3 outcome handling (ordinal status, ordered-logit sensitivity).
+- Next: decide confirmatory families and freeze/tag the PAP; add pre-specified interaction terms and run ordered logit sensitivity for H3.
