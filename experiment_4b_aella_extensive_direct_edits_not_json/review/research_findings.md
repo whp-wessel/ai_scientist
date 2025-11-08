@@ -269,3 +269,12 @@ N1: PASS – State stays in phase `pap` with N1 explicitly blocked by the contin
 
 Notes: Keep coordinating with ops on the waiver or API credential so the PAP freeze gate can finally clear.
 
+## Loop 035 — 2025-11-08T20:50:04.419768+00:00
+DECISION: CONTINUE
+R1: PASS – Session info/checksums were regenerated before edits and recorded with the run seed, keeping the workflow reproducible (analysis/decision_log.csv:341; artifacts/session_info.txt:1; qc/data_checks.md:46).
+L1: PASS – Required Semantic Scholar attempt was logged despite the 403 and the CrossRef fallback DOI was propagated to the evidence map/bibliography (analysis/decision_log.csv:343,345; lit/queries/loop_035/query_001.json:1; lit/evidence_map.csv:33; lit/bibliography.bib:371).
+P1: PASS – No disclosure-sensitive outputs were published this loop and the QC log reiterates the existing small-cell guard/violations=0 status (qc/data_checks.md:52).
+N1: PASS – Phase remains `pap`, N1 stays explicitly blocked, and the PAP is still marked draft with the Loop 35 blocker note, so gating is transparent (artifacts/state.json:25,28,70; analysis/pre_analysis_plan.md:1,63).
+
+Notes: Clearing the Semantic Scholar credential/waiver remains the critical path to freezing the PAP (analysis/pre_analysis_plan.md:63).
+
