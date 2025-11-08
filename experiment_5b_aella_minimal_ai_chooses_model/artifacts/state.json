@@ -13,9 +13,9 @@
       "rr_index": -1
     },
     "science": {
-      "last_model": null,
-      "last_model_context": "",
-      "last_model_policy": "",
+      "last_model": "gpt-5-codex",
+      "last_model_context": "bootstrap",
+      "last_model_policy": "agent",
       "last_model_reason": "",
       "queued_model": null,
       "queued_reason": "",

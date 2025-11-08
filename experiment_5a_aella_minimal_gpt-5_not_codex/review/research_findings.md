@@ -92,3 +92,18 @@ DECISION: CONTINUE
 
 Notes: Recommend adding artifacts/git_message.txt to request a checkpoint commit and pruning off-topic literature entries in lit/evidence_map.csv for focus.
 
+## Loop 009 — 2025-11-08T14:46:53.449933+00:00
+DECISION: CONTINUE
+
+R1 Reproducibility: PASS — Seed recorded (artifacts/seed.txt), environment captured (artifacts/session_info.txt), actions/commands logged (analysis/decision_log.csv), and literature query saved (lit/queries/loop_009/query_001.json). Minor gap: commit message file not found (artifacts/git_message.txt).
+
+R2 Statistical Rigor: PASS — Results are exploratory only (analysis/results.csv; confirmatory=false). SRS assumption is explicit (config/survey_design.yaml; srs_justification in results). Effect sizes, SEs, CIs, and p-values reported. No FDR required yet.
+
+R3 Literature/Evidence: PASS — Evidence map maintained with DOIs (lit/evidence_map.csv) extracted from saved queries; manuscript cites a peer‑reviewed DOI (reports/paper.md).
+
+R4 Privacy: PASS — Public tables under tables/ apply n<10 suppression (e.g., tables/key_vars_value_counts.csv shows “<10”; tables/religion_by_monogamy.csv has no <10 cells).
+
+R5 Completeness: PASS — PAP present and clearly status: draft (analysis/pre_analysis_plan.md); hypotheses/results registries exist (analysis/hypotheses.csv, analysis/results.csv); manuscript present (reports/paper.md). No confirmatory results; freeze/tag not yet required.
+
+Notes: Please add artifacts/git_message.txt to request a checkpoint. Continue expanding literature via scripts/semantic_scholar_cli.py and move toward PAP-freeze criteria.
+
