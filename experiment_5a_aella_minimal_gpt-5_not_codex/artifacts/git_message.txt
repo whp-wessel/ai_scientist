@@ -1,1 +1,0 @@
-loop011: expand literature via S2 CLI; append 5 DOIs; update notebook, decision log, and state (phase=literature)
