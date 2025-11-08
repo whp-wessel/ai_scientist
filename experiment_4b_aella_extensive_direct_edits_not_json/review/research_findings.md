@@ -154,3 +154,12 @@ N1: PASS – Phase stays PAP with the next action explicitly blocked until the S
 
 Notes: Unblock Semantic Scholar (new key or waiver) so the PAP can finally freeze (analysis/pre_analysis_plan.md:33).
 
+## Loop 022 — 2025-11-08T18:05:10.400396+00:00
+DECISION: CONTINUE
+R1: PASS – Loop 22 revalidated session info and checksums before any edits, and the QC log confirms those artifacts remain current, so determinism and git hygiene stay auditable (analysis/decision_log.csv:198; qc/data_checks.md:47).
+L1: PASS – The mandatory Semantic Scholar call, its 403 payload, and the CrossRef fallback were all logged, and the new Taskesen DOI was pushed into the evidence map/bibliography, preserving the literature trail during the outage (analysis/decision_log.csv:199; lit/queries/loop_022/query_001.json:1; lit/evidence_map.csv:20).
+P1: PASS – Disclosure guardrails (n ≥ 10 with automated checks) are reaffirmed and no public tables or figures were produced this loop, so privacy exposure did not change (analysis/pre_analysis_plan.md:45; qc/data_checks.md:52).
+N1: PASS – State remains in the PAP phase with next action N1 explicitly blocked until Semantic Scholar access or a waiver lands, and the PAP header still reads `status: draft` for that reason (artifacts/state.json:30; analysis/pre_analysis_plan.md:1).
+
+Notes: Priority is obtaining the Semantic Scholar credential or waiver so the PAP freeze gate can finally clear.
+
