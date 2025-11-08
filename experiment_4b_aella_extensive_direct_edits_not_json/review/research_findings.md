@@ -100,3 +100,12 @@ N1: PASS – Phase appropriately stays PAP and the Semantic Scholar task is stil
 
 Notes: Prioritize restoring Semantic Scholar access or getting the waiver approved so the PAP can freeze and analysis can proceed.
 
+## Loop 014 — 2025-11-08T15:09:47.448458+00:00
+DECISION: CONTINUE
+R1: PASS – qc/data_checks.md:1-56 logs the Loop 014 seed/session/checksum checkpoints and analysis/decision_log.csv:98-106 records every action, while analysis/pre_analysis_plan.md:21-33 restates the reproducible command set.
+L1: PASS – analysis/decision_log.csv:99-101 documents the required Semantic Scholar attempt, CrossRef fallback, and waiver update; lit/queries/loop_014/query_001.json:1-17 and lit/queries/loop_014/crossref_query_001.json:1-40 preserve the payloads, and lit/evidence_map.csv:6 adds the Pandya 2017 DOI for C1.
+P1: PASS – analysis/pre_analysis_plan.md:24-33 and qc/disclosure_check_loop_006.md:1-17 keep the n≥10 policy explicit, and qc/data_checks.md:50-54 confirms no public tables this loop, so small-cell risk stays zero.
+N1: PASS – artifacts/state.json:1-44 leaves phase=pip with only N1 blocked by the 403 credential, and analysis/pre_analysis_plan.md:13-20 reiterates that PAP freeze waits for a working Semantic Scholar key or approved waiver, so gating is justified.
+
+Notes: Resolving the Semantic Scholar credential (or getting the waiver approved) remains the critical path before PAP freeze.
+
