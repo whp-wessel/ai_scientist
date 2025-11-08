@@ -1,0 +1,6 @@
+DECISION: CONTINUE  
+R1 PASS: Loop 031 log records the exact seeded command plus outputs, and the notebook narrates the same steps with next actions, keeping the run reproducible (`analysis/decision_log.csv:71`, `notebooks/research_notebook.md:273`).  
+R2 PASS: No new estimators were added this loop; existing confirmatory rows continue to report effect size, HC3 SEs, and BH-adjusted q-values under the SRS justification (`analysis/results.csv:20`).  
+R3 PASS: Literature artifacts still ground the claims—DOI-backed references sit in the manuscript and every source is mapped to hypotheses in the evidence register (`reports/paper.md:45`, `lit/evidence_map.csv:2`).  
+R4 PASS: Public tables updated this loop contain only delivery-status metadata, so no cell counts approach the n<10 threshold (`tables/loop021_h3_weight_delivery_status.csv:2`).  
+R5 PASS: The PAP remains frozen at the recorded commit while state/next-action tracking is up to date, satisfying completeness requirements (`analysis/pre_analysis_plan.md:1`, `artifacts/state.json:1`).

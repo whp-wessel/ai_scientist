@@ -233,3 +233,11 @@ R3 PASS – Manuscript prose continues to cite peer-reviewed sources for every h
 R4 PASS – Public artifacts from this loop are limited to delivery-status metadata (`tables/loop021_h3_weight_delivery_status.csv:1-6`), while respondent counts ≥10 stay confined to internal compliance logs (`docs/h3_high_wealth_refresh/verification_register.csv:1-4`), protecting n<10 cells.
 R5 PASS – The PAP remains frozen for H1 only (`analysis/pre_analysis_plan.md:1-60`), and the notebook, decision log, and state file record the Loop 030 actions and next steps (`notebooks/research_notebook.md:250-270`; `analysis/decision_log.csv:69`; `artifacts/state.json:1-14`).
 
+## Loop 031 — 2025-11-08T19:45:56.592996+00:00
+DECISION: CONTINUE  
+R1 PASS: Loop 031 log records the exact seeded command plus outputs, and the notebook narrates the same steps with next actions, keeping the run reproducible (`analysis/decision_log.csv:71`, `notebooks/research_notebook.md:273`).  
+R2 PASS: No new estimators were added this loop; existing confirmatory rows continue to report effect size, HC3 SEs, and BH-adjusted q-values under the SRS justification (`analysis/results.csv:20`).  
+R3 PASS: Literature artifacts still ground the claims—DOI-backed references sit in the manuscript and every source is mapped to hypotheses in the evidence register (`reports/paper.md:45`, `lit/evidence_map.csv:2`).  
+R4 PASS: Public tables updated this loop contain only delivery-status metadata, so no cell counts approach the n<10 threshold (`tables/loop021_h3_weight_delivery_status.csv:2`).  
+R5 PASS: The PAP remains frozen at the recorded commit while state/next-action tracking is up to date, satisfying completeness requirements (`analysis/pre_analysis_plan.md:1`, `artifacts/state.json:1`).
+
