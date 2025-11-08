@@ -1,0 +1,3 @@
+# Reverted paths for loop_047
+
+- __pycache__/runner.cpython-312.pyc: Top-level directory '__pycache__' is not allowed for writes.

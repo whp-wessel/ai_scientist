@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T22:46Z
+last_updated: 2025-11-08T22:56Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -83,6 +83,8 @@ Loop 044 note: Mandatory Semantic Scholar query `"childhood mentorship adult res
 Loop 045 note: The required Semantic Scholar call (`"childhood trusted adult scaffold adult depression resilience"`) still returned HTTP 403 (`lit/queries/loop_045/query_001.json`), so we documented yet another failed attempt in the waiver ledger and captured a CrossRef fallback for Mandelli et al. (2015; DOI `10.1016/j.eurpsy.2015.04.007`). Their meta-analysis quantifies how specific childhood traumas (emotional abuse, sexual abuse, neglect) map to adult depression risk, giving us stronger effect-size priors and mediator requirements for H3. PAP status therefore stays `draft` until the 2025-11-09 ops memo is dispatched (15:00Z) and, if needed, the 2025-11-10 Semantic Scholar support ticket escalates the credential fix; both artifacts already exist and this loop reconfirmed the delivery schedule plus attachments list.
 
 Loop 046 note: Semantic Scholar again returned HTTP 403 for the mandated `"childhood mentorship adult depression resilience"` query (`lit/queries/loop_046/query_001.json`). We logged the failure in the waiver ledger and captured CrossRef metadata for Zhang (2025; DOI `10.1017/S0954579425100734`), a meta-analysis showing medium-to-large protective links between positive childhood experiences and adult depression/anxiety/PTSD. This reinforces H2’s requirement to document mentorship/guidance proxies (e.g., `pqo6jmj`, trusted adult indices) plus robustness checks around positive support exposure. PAP remains `draft` until ops executes the 2025-11-09 memo / 2025-11-10 S2 ticket and the measurement dossier explicitly catalogs those positive-experience indicators.
+
+Loop 047 note: The `"childhood trusted adult resilience adult mental health"` query (`lit/queries/loop_047/query_001.json`) also produced HTTP 403, so we archived the payload, logged it in the waiver memo, and captured CrossRef metadata for Berson & Baggerly (2009; DOI `10.1080/00094056.2009.10521404`). Their practice article shows how safe, predictable early-childhood classrooms led by trusted adults build resilience for trauma-exposed children, reinforcing H2’s guided-support estimands and the need to document which survey items proxy those supports (e.g., `pqo6jmj`, mentorship indicators) before PAP freeze. PAP status therefore remains `draft` until ops executes the scheduled 2025-11-09 memo / 2025-11-10 support escalation or Semantic Scholar access is restored.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
