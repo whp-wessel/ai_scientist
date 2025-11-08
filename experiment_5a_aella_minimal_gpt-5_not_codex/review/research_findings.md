@@ -107,3 +107,14 @@ R5 Completeness: PASS — PAP present and clearly status: draft (analysis/pre_an
 
 Notes: Please add artifacts/git_message.txt to request a checkpoint. Continue expanding literature via scripts/semantic_scholar_cli.py and move toward PAP-freeze criteria.
 
+## Loop 010 — 2025-11-08T14:51:59.398618+00:00
+DECISION: CONTINUE
+
+- R1 Reproducibility — PASS: Seeds recorded (`artifacts/seed.txt`), commands and paths logged (`analysis/decision_log.csv`, `notebooks/research_notebook.md`), saved query JSON (`lit/queries/loop_010/query_001.json`), and a repro report with HEAD noted (`artifacts/repro_report.md`). Rate limit tracked (`artifacts/.s2_rate_limit.json`).
+- R2 Statistical Rigor — PASS: All results are exploratory with `confirmatory=false` (`analysis/results.csv`), include effect sizes, SE, CIs, and p-values; SRS explicitly justified (no weights/strata/clusters) in both PAP and results (`analysis/pre_analysis_plan.md`, `analysis/results.csv`). No confirmatory families → no q-values required.
+- R3 Literature/Evidence — PASS: Evidence map maintained with DOIs and sources (`lit/evidence_map.csv`, e.g., E17–E21 from `lit/queries/loop_010/query_001.json`). Manuscript cites a peer‑reviewed source with DOI (`reports/paper.md`).
+- R4 Privacy — PASS: Public tables suppress n<10 (`tables/key_vars_value_counts.csv` uses “<10”); crosstab has no <10 cells (`tables/religion_by_monogamy.csv`).
+- R5 Completeness — PASS: PAP present and marked `status: draft` (`analysis/pre_analysis_plan.md`), hypotheses/results registries exist, manuscript present (`reports/paper.md`). No confirmatory testing performed → freeze/tag not yet required.
+
+Notes: Consider writing `artifacts/git_message.txt` to request a commit for this loop.
+

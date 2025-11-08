@@ -1,0 +1,203 @@
+{
+  "total": 15427,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "84d31648fda80949465bb633875c1d5dea89ee19",
+      "externalIds": {
+        "PubMedCentral": "11020770",
+        "DOI": "10.1371/journal.pone.0301620",
+        "CorpusId": 269184091,
+        "PubMed": "38626131"
+      },
+      "url": "https://www.semanticscholar.org/paper/84d31648fda80949465bb633875c1d5dea89ee19",
+      "title": "The Childhood Resilience Study: Resilience and emotional and behavioural wellbeing experienced by Australian Aboriginal and Torres Strait Islander boys and girls aged 5\u20139 years",
+      "venue": "PLoS ONE",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0301620&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11020770, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4933930",
+          "name": "Deirdre Gartland"
+        },
+        {
+          "authorId": "15673149",
+          "name": "Arwen Nikolof"
+        },
+        {
+          "authorId": "2282073432",
+          "name": "Fiona Mensah"
+        },
+        {
+          "authorId": "2254335329",
+          "name": "Graham Gee"
+        },
+        {
+          "authorId": "2282076679",
+          "name": "Karen Glover"
+        },
+        {
+          "authorId": "8252407",
+          "name": "Cathy Leane"
+        },
+        {
+          "authorId": "2296955370",
+          "name": "Heather Carter"
+        },
+        {
+          "authorId": "2256508598",
+          "name": "Stephanie J. Brown"
+        }
+      ],
+      "abstract": "Background Resilience is a process of drawing on internal or external strengths to regain, sustain or improve adaptive outcomes despite adversity. Using a child resilience measure co-designed with Aboriginal and Torres Strait Islander communities, we investigate: 1) children\u2019s personal, family, school and community strengths; 2) gender differences; and 3) associations between resilience and wellbeing. Methods 1132 parent/caregivers of children aged 5\u201312 years were recruited to the Childhood Resilience Study, including through the Aboriginal Families Study. The Aboriginal Families Study is a population-based cohort of 344 mothers of an Aboriginal and/or Torres Strait Islander child. This paper focuses on the wave 2 survey data on child resilience at age 5\u20139 years (n = 231). Resilience was assessed with the Child Resilience Questionnaire-parent/caregiver report (CRQ-P/C), categorised into tertiles of low, moderate and high scores. Child emotional/behavioural wellbeing and mental health competence was assessed with the parent-report Strengths and Difficulties Questionnaire. All Tobit regression models adjusted for child age. Outcomes Aboriginal and Torres Strait Islander girls had higher resilience scores compared to boys (Adj.\u03b2 = 0\u00b79, 95%CI 0\u00b79\u20131\u00b74), with higher School Engagement, Friends and Connectedness to language scale scores. Resilience scores were strongly associated with wellbeing and high mental health competence. A higher proportion of girls with low resilience scores had positive wellbeing than did boys (73.3% versus 49.0%). High resilience scores were associated with lower SDQ total difficulties score after adjusting for child age, gender, maternal age and education and family location (major city, regional, remote) (Adj.\u03b2 = -3.4, 95%CI -5.1, -1.7). Compared to the Childhood Resilience Study sample, Aboriginal Families Study children had higher mean CRQ-P/C scores in the personal and family domains. Interpretation High family strengths can support Aboriginal and Torres Strait Islander children at both an individual and cultural level. Boys may benefit from added scaffolding by schools, family and communities to support their social and academic connectedness."
+    },
+    {
+      "paperId": "99356d5fe4168e0db07d131d3f3be8f67c50210d",
+      "externalIds": {
+        "PubMedCentral": "11121680",
+        "DOI": "10.3390/ijerph21050627",
+        "CorpusId": 269882962,
+        "PubMed": "38791841"
+      },
+      "url": "https://www.semanticscholar.org/paper/99356d5fe4168e0db07d131d3f3be8f67c50210d",
+      "title": "Resilience and Positive Wellbeing Experienced by 5\u201312-Year-Old Children with Refugee Backgrounds in Australia: The Childhood Resilience Study",
+      "venue": "International Journal of Environmental Research and Public Health",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11121680, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2077023781",
+          "name": "E. Riggs"
+        },
+        {
+          "authorId": "4933930",
+          "name": "Deirdre Gartland"
+        },
+        {
+          "authorId": "5627269",
+          "name": "Josef Szwarc"
+        },
+        {
+          "authorId": "2092554454",
+          "name": "Mardi Stow"
+        },
+        {
+          "authorId": "2252977061",
+          "name": "Georgia Paxton"
+        },
+        {
+          "authorId": "2238115873",
+          "name": "Stephanie J. Brown"
+        }
+      ],
+      "abstract": "Refugee research tends to be deficit based and focused on the risks threatening positive adaptation and wellbeing. High rates of mental (and physical) health issues have been reported for refugee adults and children, including intergenerational trauma. This study uses the new Child Resilience Questionnaire (CRQ), co-designed with refugee background communities, to describe resilience and positive wellbeing experienced by children of refugee-background. The Childhood Resilience Study (CRS) recruited 1132 families with children aged 5\u201312 years in Victoria and South Australia, Australia. This included the recruitment of 109 families from 4 refugee background communities: Assyrian Chaldean (Iraq, Syria), Hazara (Afghanistan), Karen (Burma, Thailand) and Sierra Leonean families. CRQ-parent/caregiver report (CRQ-P/C) scores were categorised into \u2018low\u2019, \u2018moderate\u2019 and \u2018high\u2019. The child\u2019s emotional and behavioural wellbeing was assessed with the Strengths and Difficulties Questionnaire, with positive wellbeing defined as <17 on the total difficulties score. Tobit regression models adjusted for a child\u2019s age. The CRQ-P/C scores were not different for boys and girls of refugee background. Children of refugee-background (n = 109) had higher average CRQ-P/C scores than other CRS children (n = 1023) in the personal, school and community domains, but were lower in the family domain. Most children with \u2018high\u2019 resilience scores had positive wellbeing for both children of refugee-background (94.6%) and other CRS children (96.5%). Contrary to common stereotypes, children of refugee-background show specific individual, family, school and cultural strengths that can help them navigate cumulative and complex risks to sustain or develop their positive wellbeing. A better understanding as to how to build strengths at personal, family, peer, school and community levels where children are vulnerable is an important next step. Working in close collaboration with refugee communities, schools, policy makers and key service providers will ensure the optimal translation of these findings into sustainable practice and impactful public policy."
+    },
+    {
+      "paperId": "19902929af86ccfe970a73d9c06fbf91faa837dd",
+      "externalIds": {
+        "DOI": "10.61506/02.00278",
+        "CorpusId": 271823696
+      },
+      "url": "https://www.semanticscholar.org/paper/19902929af86ccfe970a73d9c06fbf91faa837dd",
+      "title": "Impact of Positive Childhood Experience on Wellbeing: The Serial Mediation through Psychological Resilience and Personal Control among Adults",
+      "venue": "Journal of policy research",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.61506/02.00278?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.61506/02.00278, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2315681568",
+          "name": "Iqra Riaz"
+        },
+        {
+          "authorId": "2279083079",
+          "name": "Sarwat Sultan"
+        },
+        {
+          "authorId": "2315680773",
+          "name": "Zainab Aslam"
+        }
+      ],
+      "abstract": "The present study examined the relationship between positive childhood experiences and wellbeing among adults with assessing the serial mediating effect of psychological resilience and personal control. A sample consisted of 300 adults; 170 male and 130 female aged between 18 to 30 years was approached at university. Participants provided data on a booklet comprising Positive Childhood Experience Scale (Bethell et al., 2019), Well-being Scale (Hermanns, 2007), Brief Resilience Scale (Smith et al., 2008) and Brief Self-Control Scale (Tangney et al., 2004) along with a demographic variables sheet. Findings revealed that positive childhood experience significantly predicted wellbeing, psychological resilience, and personal control. Psychological resilience also predicted personal control and wellbeing. Findings demonstrated the significant total and direct effect of positive childhood experiences on wellbeing; and significant indirect effects through psychological resilience and personal control."
+    },
+    {
+      "paperId": "0d8c292c63582fb48f2bd80bbb1fc3bdf7134ff9",
+      "externalIds": {
+        "DOI": "10.1136/archdischild-2023-rcpch.584",
+        "CorpusId": 259960680
+      },
+      "url": "https://www.semanticscholar.org/paper/0d8c292c63582fb48f2bd80bbb1fc3bdf7134ff9",
+      "title": "500\u2005Adverse childhood experiences of refugee and asylum-seeking children: Identifying risk and resilience factors for mental health and wellbeing",
+      "venue": "Paediatric Mental Health Association",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1136/archdischild-2023-rcpch.584?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1136/archdischild-2023-rcpch.584, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2223808530",
+          "name": "Francis Gainsborough"
+        },
+        {
+          "authorId": "2100591111",
+          "name": "Monica Arend-Trujillo"
+        },
+        {
+          "authorId": "2223835128",
+          "name": "Shaden Zuhairy"
+        },
+        {
+          "authorId": "2124264382",
+          "name": "S. Risbridger"
+        },
+        {
+          "authorId": "5995384",
+          "name": "C. Harkensee"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f6079f8c5dbed5e33248f00d9f9bfd1214867e01",
+      "externalIds": {
+        "DOI": "10.12968/chhe.2022.3.1.29",
+        "CorpusId": 247643462
+      },
+      "url": "https://www.semanticscholar.org/paper/f6079f8c5dbed5e33248f00d9f9bfd1214867e01",
+      "title": "Adverse childhood experiences, safeguarding and the role of the school nurse in promoting resilience and wellbeing",
+      "venue": "British Journal of Child Health",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.12968/chhe.2022.3.1.29?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.12968/chhe.2022.3.1.29, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2159773750",
+          "name": "Judith Anna Waterhouse"
+        }
+      ],
+      "abstract": "School nurses are key professionals in helping to safeguard, support and improve outcomes for children and young people. The aim of this article is to explore the subject of adverse childhood experiences (ACEs) in relation to safeguarding and the vital role the school nurse can play in supporting the building of resilience in children and young people (CYP) and their families. A critical review of the literature was undertaken, considering the role of the school nurse within the safeguarding arena, adverse childhood experiences, collaborative and multi-agency work. The legal, policy and professional frameworks underpinning safeguarding and public health practice are also critically examined. There is ample evidence demonstrating the potential effects of ACEs on the health and wellbeing of children and young people. There is also research proposing that ACEs should not be viewed in isolation and are not necessarily in themselves deterministic of negative outcomes. School nurses have an important role in early interventions with families to promote resilience and help keep children safe. The implication of this article is that with sound knowledge and understanding regarding ACEs, the school nurse can play a vital role as part of the wider team in building the resilience of the community, provide therapeutic interventions and early intervention, and thereby help to safeguard, support, and improve outcomes for CYP and their families."
+    }
+  ]
+}

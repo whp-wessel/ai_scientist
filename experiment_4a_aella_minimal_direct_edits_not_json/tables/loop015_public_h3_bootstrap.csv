@@ -1,0 +1,4 @@
+cut_label,cutpoint_text,mean_log_odds,sd_log_odds,ci_low,ci_high,two_sided_tail_prob,n_replicates,n_failures,notes
+networth_ge_100k,≥$100k,0.0063858108832597,0.0618632268558562,-0.1487755606505315,0.1226204356445006,0.74,300,0,"Cluster bootstrap of PPO childhood-class slope (300 reps, seed 20251016)"
+networth_ge_1m,≥$1M,0.0091181455256472,0.0895941877003892,-0.1287997163890595,0.2181322005017589,0.96,300,0,"Cluster bootstrap of PPO childhood-class slope (300 reps, seed 20251016)"
+networth_ge_10m,≥$10M,0.1339833634384318,0.1395833609427108,-0.084131106238694,0.4855314788462883,0.2066666666666666,300,0,"Cluster bootstrap of PPO childhood-class slope (300 reps, seed 20251016)"
