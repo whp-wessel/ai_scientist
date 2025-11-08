@@ -61,6 +61,13 @@
       "owner": "agent",
       "status": "done",
       "notes": "Loop 006 added analysis/code/disclosure_check.py and produced qc/disclosure_check_loop_006.md with DAG entry."
+    },
+    {
+      "id": "N6",
+      "description": "Draft Semantic Scholar waiver request summarizing loops 008-012 attempts + fallback evidence",
+      "owner": "agent",
+      "status": "in_progress",
+      "notes": "Needs consolidated log of recent 403 payloads plus the Ross et al. (2019) fallback reference; target delivery Loop 013 if key not restored."
     }
   ],
   "stop_now": false,

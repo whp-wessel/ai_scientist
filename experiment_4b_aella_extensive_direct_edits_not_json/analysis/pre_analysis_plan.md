@@ -96,5 +96,6 @@ Loop 012 note: Loop-mandated Semantic Scholar attempt again failed with 403 (see
 3. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist automation (DP8) is linked to every planned table/figure.
 4. Keep `analysis/data_processing.md` synchronized with any new derivations (e.g., sensitivity specifications) and cite the ledger whenever PAP text references transformation history.
 5. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.***
+6. Compile Loops 008–012 Semantic Scholar failure metadata plus the Ross et al. (2019) CrossRef fallback summary to support the waiver request tracked as next action N6; PAP freeze remains blocked until a working key or waiver is recorded.
 
 _No confirmatory analysis will begin until the status is set to `frozen` with registry details and a recorded commit/tag._

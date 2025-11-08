@@ -71,8 +71,8 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Added `analysis/code/calc_bh.py` so confirmatory runs can append `q_value` + `bh_in_scope` per family once PAP is frozen; execution deferred until results exist to avoid premature confirmatory outputs.
 
 ## Next Steps
-1. Restore Semantic Scholar access or secure a waiver — Loop 009 attempt (`lit/queries/loop_009/query_001.json`) still returns 403, so plan to escalate with ops by Loop 010 if a valid key is not issued.
-2. Keep the PAP in draft until the literature gate clears, then freeze with registry URL + commit/tag while linking disclosure automation (DP8) to every planned confirmatory artifact.
+1. **N6 (new):** Draft the Semantic Scholar waiver packet summarizing Loops 008–012 403 payloads plus the Ross et al. (2019) fallback reference; deliver to ops by Loop 013 if the key is still blocked.
+2. Keep the PAP in draft until the literature gate clears or the waiver is approved, then freeze with registry URL + commit/tag while wiring disclosure automation (DP8) to every confirmatory artifact.
 3. Continue syncing `analysis/data_processing.md`, `qc/data_checks.md`, and reproducibility files (`artifacts/session_info.txt`, `artifacts/checksums.json`) each loop so R1 remains auditable.
 4. Coordinate with the data provider about the empty `mentalillness` control for H2 before confirmatory modeling or document a justified exclusion in the PAP/results.
 
@@ -124,4 +124,4 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Executed the required Semantic Scholar query (`childhood resilience religious adherence depression`); HTTP 403 persists, so the payload is archived at `lit/queries/loop_012/query_001.json` while action N1 stays blocked pending a working key or waiver.
 - To avoid literature stagnation, fetched CrossRef metadata for Ross et al. (2019, DOI `10.1016/j.chiabu.2019.03.016`) and added it to `lit/evidence_map.csv`, `lit/bibliography.bib`, and `lit/bibliography.json`, strengthening the H3 evidence base despite the S2 outage.
 - Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 012 note describing the new reference and the continuing Semantic Scholar blocker, and updated `qc/data_checks.md` to Loop 012 with the current session/checksum timestamps and disclosure guard reminder.
-- Updated `artifacts/state.json` to loop_counter=12 (phase stays PAP) and reconfirmed that confirmatory analyses remain paused until Semantic Scholar access or a waiver is approved.
+- Updated `artifacts/state.json` to loop_counter=12 (phase stays PAP) and added next action **N6** to track the Semantic Scholar waiver packet so confirmatory work cannot resume until either access is restored or the waiver is approved.
