@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 4,
+  "loop_counter": 5,
   "model_state": {
     "review": {
       "last_model": "gpt-5-codex",
@@ -16,7 +16,7 @@
       "last_model": "gpt-5-codex",
       "last_model_context": "loop_005",
       "last_model_policy": "agent",
-      "last_model_reason": "Execute confirmatory OLS and ordered-logit sensitivity with precise, scripted outputs.",
+      "last_model_reason": "Executed confirmatory OLS plus ordered-logit sensitivity, updated PAP metadata, and published public tables.",
       "queued_model": null,
       "queued_reason": "",
       "queued_source": "",
@@ -24,11 +24,10 @@
     }
   },
   "next_actions": [
-    "Run confirmatory OLS for H1\u2013H4 and record results (confirmatory=true).",
-    "Run H3 ordered-logit sensitivity via analysis/scripts/ordered_logit_h3.py and compare with OLS.",
-    "Compute FDR only if families gain >1 confirmatory test (currently N/A).",
-    "Publish public tables under tables/ with n<10 suppression.",
-    "Investigate survey design provenance or finalize SRS justification language for release."
+    "Run pre-specified gender-interaction and quadratic sensitivity models for H1\u2013H4; log outputs and compare effect shifts.",
+    "Profile leverage/influence (Cook's D) and multicollinearity (VIF) per PAP; summarize in analysis/sensitivity_notes.md.",
+    "Draft sensitivity/public tables (with n<10 suppression if needed) and integrate confirmatory figures into reports/paper.md.",
+    "Extend literature context or evidence mapping as needed to interpret confirmatory findings."
   ],
   "phase": "analysis",
   "phase_ix": 2,

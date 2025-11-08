@@ -50,7 +50,7 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 016 logged `lit/queries/loop_016/query_001.json`; waiver memo now covers loops 008-016 and cites the new SSRN CrossRef fallback (DOI `10.2139/ssrn.4703219`), but PAP freeze remains on hold pending approval or credential fix.
+3. Semantic Scholar credential still failing (403). Loop 016 logged `lit/queries/loop_016/query_001.json`; waiver memo now covers loops 008-016 and cites the new CrossRef fallbacks (DOIs `10.2139/ssrn.4703219` and `10.1016/j.chiabu.2024.107020`), but PAP freeze remains on hold pending approval or credential fix.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes

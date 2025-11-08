@@ -1,0 +1,2 @@
+hypothesis_id,hypothesis_family,model,outcome,predictor,estimate,se,ci_low,ci_high,z_value,p_value,n_obs
+H3,digital_exposure,ordered_logit,classcurrent,4tuoqly_scaled,0.0906158186650701,0.0221859593059752,0.0471313384253586,0.1341002989047817,4.084376853637556,4.419525650177459e-05,14428

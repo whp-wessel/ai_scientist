@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-08T19:45:00Z",
-  "loop_counter": 17,
+  "last_updated": "2025-11-08T21:10:00Z",
+  "loop_counter": 18,
   "next_actions": [
-    "Prototype pooled-wave or reweighted PPO runs to see whether the H3 \u2265$10M contrast can achieve acceptable power (effective n>1k) before requesting a confirmatory freeze.",
-    "Draft the formal `religiosity_class_gradients` promotion memo (final PAP text, manuscript cites, BH justification) so the moderate/serious contrasts can be frozen once reviewers agree.",
-    "Stress-test the serious-practice interaction (e.g., shrinkage or alternative anxiety codings) to decide if it remains in the confirmatory family or drops to exploratory supporting status."
+    "Draft the formal `religiosity_class_gradients` promotion memo (PAP text + manuscript cites + BH plan) so the moderate/serious contrasts can freeze once reviewers agree.",
+    "Stress-test the serious-practice interaction (e.g., shrinkage priors or alternative anxiety codings) to decide if it should stay in the confirmatory family.",
+    "Map realistic options for reducing the H3 design effect (additional countries, pooled waves with new respondents, or alternative clustering metadata) now that naïve wave stacking still leaves power <0.3."
   ],
   "phase": "analysis",
   "phase_ix": 2,

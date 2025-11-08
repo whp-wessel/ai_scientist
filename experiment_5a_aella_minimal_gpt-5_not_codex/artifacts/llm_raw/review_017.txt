@@ -1,0 +1,9 @@
+DECISION: CONTINUE
+
+- R1 Reproducibility: PASS — Commands and outcomes logged in analysis/decision_log.csv; seed recorded (artifacts/seed.txt) and environment captured (artifacts/session_info.txt); reproducibility note/report present (artifacts/repro_report.md, artifacts/state.json). Minor: artifacts/git_message.txt is missing though referenced.
+- R2 Statistical Rigor: PASS — Exploratory results in analysis/results.csv include estimates, SE, CI, p-values; all confirmatory=false (no FDR needed). Survey design documented with SRS justification (design_used=false; srs_justification set; config/survey_design.yaml aligns). Effect sizes reported.
+- R3 Literature/Evidence: PASS — Evidence map maintained (lit/evidence_map.csv with DOIs/URLs). Saved query payloads exist (e.g., lit/queries/loop_017/query_001.json with 429 captured). Manuscript cites a peer-reviewed source with DOI (reports/paper.md).
+- R4 Privacy: PASS — Public tables under tables/ use suppression: key_vars_value_counts.csv masks n<10 as “<10”; cross-tab counts in religion_by_monogamy.csv are all ≥10.
+- R5 Completeness: PASS — PAP present and marked status: draft (analysis/pre_analysis_plan.md); hypotheses registry complete (analysis/hypotheses.csv); manuscript present (reports/paper.md). No confirmatory results before freeze/tag, so compliant.
+
+Notes: Add artifacts/git_message.txt to trigger a checkpoint. Provide S2_API_Key to avoid 429s and continue literature extraction.
