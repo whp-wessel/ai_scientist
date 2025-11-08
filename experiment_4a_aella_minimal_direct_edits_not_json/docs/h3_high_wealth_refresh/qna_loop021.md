@@ -17,3 +17,11 @@
 4. **2025-11-10 11:42 UTC — Lumina Field Partners (Canada/Australia)**  
    - *Question:* If we deliver hashed PSU identifiers for each city × recruiter combination, can we delay delivering the underlying lookup table until after award to protect vendor relationships?  
    - *Response (12:03 UTC):* No. The PSU lookup table (city, recruiter, sampling list) must arrive **with** the 64-column BRR matrix so the Methods team can validate non-overlap before award. We added a line to Appendix C referencing `docs/h3_country_expansion_materials/loi_register.csv` and clarified that hashed PSUs without a lookup table will be marked non-responsive.
+
+## Loop 026 Entries — 2025-11-10
+5. **2025-11-10 13:58 UTC — Meridian Luxe Panels (Monaco/France)**  
+   - *Question:* Can we shorten the required retention window for banker letters and verification recordings to 12 months if local privacy law limits video storage?  
+   - *Response (14:15 UTC):* No. Section 3.4 of `docs/h3_high_wealth_refresh/rfp_2025-11-09.md` now clarifies that all vendors must retain banker letters, encryption logs, and verification recordings for **36 months** regardless of jurisdiction, with optional vaulting via the GFS secure archive if domestic limits apply. The compliance appendix (`docs/h3_high_wealth_refresh/compliance_appendix_loop025.md`) was updated to include the cross-border storage waiver language vendors can attach to their submissions.
+6. **2025-11-10 15:02 UTC — TerraQuant Research (Brazil/Argentina)**  
+   - *Question:* Our internal infrastructure generates 32 BRR replicates per PSU. May we submit two independent 32-column matrices (even/odd replicates) instead of a single 64-column file?  
+   - *Response (15:27 UTC):* No. Section 4.2 of the RFP now states that the delivery must be a **single 64-column BRR matrix** with Fay factor ρ = 0.5, column names `brr_01`–`brr_64`, and the PSU lookup table co-delivered. Vendors may supplement with Fay replicates, but splitting the BRR matrix across files or deliveries will be marked non-compliant because the ingestion script (`scripts/loop021_h3_weighted_checks.py`) assumes one contiguous parquet.

@@ -24,4 +24,5 @@
 - *Global Flourishing Study:* ______________________ /s/ Alice Kim (Partnerships Lead)
 
 ---
-Valid through Wave 7; subject to master agreement finalization by 2025-12-20.
+Valid through Wave 7; subject to master agreement finalization by 2025-12-20.  
+**Countersignature log:** DocuSign envelope `8c21-77` completed 2025-11-10 14:05 UTC; GST clause redline accepted and archived under `docs/h3_country_expansion_materials/LOI_Australia_2025-11-09.md`.

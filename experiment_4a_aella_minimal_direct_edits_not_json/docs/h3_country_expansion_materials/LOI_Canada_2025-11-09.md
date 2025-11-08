@@ -24,4 +24,5 @@
 - *Global Flourishing Study:* ______________________ /s/ Alice Kim (Partnerships Lead)
 
 ---
-LOI sunsets after Wave 7 unless replaced by a master services agreement.
+LOI sunsets after Wave 7 unless replaced by a master services agreement.  
+**Countersignature log:** DocuSign envelope `9f81-42` finalized 2025-11-10 13:34 UTC; incentive script addendum appended to the signed PDF and stored alongside this memo.
