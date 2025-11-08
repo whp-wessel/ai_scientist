@@ -127,3 +127,12 @@ N1: PASS – State remains in the PAP phase with the literature task explicitly 
 
 Notes: Rapidly resolving the Semantic Scholar credential or approving the waiver is the only path to freezing the PAP.
 
+## Loop 019 — 2025-11-08T17:23:51.756549+00:00
+DECISION: CONTINUE
+R1: PASS – `analysis/decision_log.csv:148-157` records the loop-019 reproducibility checkpoint confirming `artifacts/session_info.txt` and `artifacts/checksums.json` stayed current and no stochastic outputs were introduced, so git hygiene holds.
+L1: PASS – `lit/queries/loop_019/query_001.json:1-17` captures the failed Semantic Scholar request with full parameters, while `lit/queries/loop_019/crossref_query_004.json:1` and the new entry in `lit/evidence_map.csv:14` document the CrossRef fallback DOI keeping the evidence trail intact.
+P1: PASS – Work this loop was limited to literature and planning updates (no tables or figures; see `analysis/decision_log.csv:148-157`), so prior disclosure controls remain sufficient and no small-cell risks arose.
+N1: PASS – `artifacts/state.json:24-74` keeps `phase="pap"`, increments the loop counter, and explicitly flags next action N1 as blocked pending S2 credentials, matching the gating rationale logged in `analysis/decision_log.csv:148-157`.
+
+Notes: Please continue pursuing the credential/waiver so the PAP freeze gate can clear (`artifacts/state.json:26-33`).
+
