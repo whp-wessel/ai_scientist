@@ -278,3 +278,12 @@ N1: PASS – Phase remains `pap`, N1 stays explicitly blocked, and the PAP is st
 
 Notes: Clearing the Semantic Scholar credential/waiver remains the critical path to freezing the PAP (analysis/pre_analysis_plan.md:63).
 
+## Loop 036 — 2025-11-08T21:03:04.688194+00:00
+DECISION: CONTINUE
+R1: PASS – Session snapshot captures env plus seed (artifacts/session_info.txt:1, artifacts/session_info.txt:6) and raw/imputed hashes were reverified (artifacts/checksums.json:1) with the QC log recording this checkpoint (qc/data_checks.md:46).
+L1: PASS – Loop 036 logged the failed Semantic Scholar call (analysis/decision_log.csv:353) with the payload archived (lit/queries/loop_036/query_001.json:1), a DOI fallback added to the evidence map (lit/evidence_map.csv:15), and the waiver memo extended through loop 036 (lit/semantic_scholar_waiver_loop013.md:6).
+P1: PASS – No public-facing outputs were generated and disclosure automation still shows violations = 0 for sensitive fields (qc/data_checks.md:52), so privacy safeguards remain intact.
+N1: PASS – Phase stays in PAP with the S2 query task explicitly blocked (artifacts/state.json:28, artifacts/state.json:32) and the PAP reiterates the Loop 036 blocker while remaining draft (analysis/pre_analysis_plan.md:1, analysis/pre_analysis_plan.md:65).
+
+Notes: Keep pressure on the ops ticket so the credential fix or waiver approval can unblock PAP freeze.
+
