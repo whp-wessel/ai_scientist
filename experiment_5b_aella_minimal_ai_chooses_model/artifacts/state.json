@@ -3,13 +3,13 @@
   "loop_counter": 4,
   "model_state": {
     "review": {
-      "last_model": "gpt-5",
-      "last_model_context": "review_003",
+      "last_model": "gpt-5-codex",
+      "last_model_context": "review_004",
       "last_model_policy": "agent",
-      "last_model_reason": "",
-      "queued_model": "gpt-5-codex",
-      "queued_reason": "Best at pinpointing file-level gaps (e.g., commit protocol) and PAP freeze readiness.",
-      "queued_source": "review_loop_003",
+      "last_model_reason": "Best at pinpointing file-level gaps (e.g., commit protocol) and PAP freeze readiness.",
+      "queued_model": null,
+      "queued_reason": "",
+      "queued_source": "",
       "rr_index": -1
     },
     "science": {
