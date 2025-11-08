@@ -1,11 +1,11 @@
-# Semantic Scholar Access Waiver Request — Loop 017
+# Semantic Scholar Access Waiver Request — Loop 018
 Date: 2025-11-08
 Status: draft (pending partner approval)
 
 ## Summary
-Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥10 consecutive failures paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
+Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥11 consecutive failures paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
 
-## Attempt Log (Loops 008–017)
+## Attempt Log (Loops 008–018)
 | Loop | Timestamp (UTC) | Query | Status | Artifact |
 | --- | --- | --- | --- | --- |
 | 008 | 2025-11-08T14:10:07Z | "childhood abuse self love adult wellbeing" | 403 Forbidden | `lit/queries/loop_008/query_001.json` |
@@ -18,6 +18,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 015 | 2025-11-08T15:11:56Z | "childhood parental guidance adult health" | 403 Forbidden | `lit/queries/loop_015/query_001.json` |
 | 016 | 2025-11-08T15:36:56Z | "childhood emotional neglect adult self compassion" | 403 Forbidden | `lit/queries/loop_016/query_001.json` |
 | 017 | 2025-11-08T16:57:20Z | "childhood religious participation adult depression support" | 403 Forbidden | `lit/queries/loop_017/query_001.json` |
+| 018 | 2025-11-08T17:05:49Z | "childhood church attendance adult mental health support" | 403 Forbidden | `lit/queries/loop_018/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -31,6 +32,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Renu (2023), DOI `10.21275/SR23621004642`** — Captured via CrossRef (loop 016) summarizing how childhood trauma severity predicts adult depressive/self-worth outcomes, providing theory support for H3 while peer-reviewed sources continue to accumulate.
 - **Hulvershorn et al. (2009), DOI `10.1093/med:psych/9780195332711.003.0004`** — Captured via CrossRef (loop 016) synthesizing how childhood mental health issues propagate into young adult outcomes, reinforcing the PAP’s planned control strategy.
 - **Loecher et al. (2023), DOI `10.1089/jayao.2022.0097`** — Captured via CrossRef (loop 017) showing how ongoing parental engagement affects adolescent/young adult cancer survivors’ health-care transitions, strengthening H2’s evidence base while S2 access is blocked.
+- **Merrill & Salazar (2002), DOI `10.1080/13674670110059569`** — Captured via CrossRef (loop 018) documenting how regular church attendance correlates with better adult mental health among Mormon and non-Mormon Utah residents, reinforcing H1’s religiosity-support mechanism during the outage.
 
 ## Request
 1. **Waiver:** Allow continuation through PAP freeze relying on the documented CrossRef DOIs while Semantic Scholar restores API access. The attempt log above, paired with decision-log entries, demonstrates due diligence.
