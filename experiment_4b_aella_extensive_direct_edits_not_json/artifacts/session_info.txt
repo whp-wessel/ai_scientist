@@ -1,14 +1,16 @@
-timestamp_utc: 2025-11-08T20:15:18Z
+timestamp_utc: 2025-11-08T20:25:29.969716+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json
 model: gpt-5-codex
 seed: 20251016
-git_head: 079ae01c8247bdb6536dbbdb1de9eadff2205590
+git_head: d507a5147ce0c5236d2a9fa85ee79e8c989ffe91
 git_status: |
-  ## main...origin/main [ahead 142]
+  ## main...origin/main [ahead 144]
    M ../experiment_4a_aella_minimal_direct_edits_not_json/artifacts/last_commit.txt
    M ../experiment_4a_aella_minimal_direct_edits_not_json/review/research_findings.md
+   M analysis/decision_log.csv
+   M artifacts/checksums.json
    M artifacts/repro_report.md
    M artifacts/session_info.txt
   ?? ../experiment_4a_aella_minimal_direct_edits_not_json/artifacts/llm_raw/review_032.txt

@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 033
+# Data Quality Checklist — Loop 034
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -44,13 +44,13 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 - Result: PAP variables documented with `source_column` mappings; `qc/metadata_validation.md` logs status (still assuming SRS).
 
 ## Reproducibility Checkpoint
-- [x] `artifacts/session_info.txt` regenerated 2025-11-08T20:15:18Z with current Python/pip details and git HEAD; referenced here to keep the reviewer’s R1 requirement satisfied.
-- [x] `artifacts/checksums.json` (raw + imputed files) re-verified against on-disk hashes on 2025-11-08T20:15Z; contents unchanged since Loop 021 so no file edits were required.
+- [x] `artifacts/session_info.txt` regenerated 2025-11-08T20:25:29Z with current Python/pip details and git HEAD; referenced here to keep the reviewer’s R1 requirement satisfied.
+- [x] `artifacts/checksums.json` (raw + imputed files) re-verified against on-disk hashes on 2025-11-08T20:25Z; contents unchanged since Loop 021 so no file edits were required.
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 033 logged `lit/queries/loop_033/query_001.json`; the waiver memo now spans loops 008–033 and incorporates Xu & Zheng 2025 (`10.31234/osf.io/82u5e_v1`), Moran et al. 2018 (`10.1037/fam0000401`), and Kennedy et al. 2017 (`10.1016/j.aogh.2017.03.265`) so PAP freeze remains on hold until approval or credential restoration.
+3. Semantic Scholar credential still failing (403). Loop 034 logged `lit/queries/loop_034/query_001.json`; the waiver memo now spans loops 008–034 and incorporates Gasper 2020 (`10.5040/9781350100763.ch-003`) alongside Xu & Zheng 2025 (`10.31234/osf.io/82u5e_v1`), Moran et al. 2018 (`10.1037/fam0000401`), and Kennedy et al. 2017 (`10.1016/j.aogh.2017.03.265`), so PAP freeze remains on hold until approval or credential restoration.
 4. Liu & Yin (2025), Talmon (2023), and Oh & Han (2019) jointly motivate explicit coding for maternal/paternal warmth and the short-form DERS items (`e3y0vab`–`e3y0vah`). Draft transformation script before PAP freeze so the mediator specification is reproducible once the waiver/API issue is resolved.
 5. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 6. Kennedy et al. (2017; `10.1016/j.aogh.2017.03.265`) adds a mentorship/support mechanism for H2; document which survey fields proxy mentorship or adult guidance before PAP freeze to keep the new literature aligned with modeling plans.

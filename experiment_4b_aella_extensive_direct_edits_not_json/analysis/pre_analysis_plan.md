@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T20:17Z
+last_updated: 2025-11-08T20:28Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -57,6 +57,8 @@ Loop 031 note: Semantic Scholar remains blocked (`lit/queries/loop_031/query_001
 Loop 032 note: The latest Semantic Scholar attempt (`childhood parental warmth adult inflammatory markers`; see `lit/queries/loop_032/query_001.json`) still returned HTTP 403. CrossRef fallback #2 for this loop surfaced Moran et al. (2018; DOI `10.1037/fam0000401`, recorded in `lit/queries/loop_032/crossref_query_002.json`), which shows that higher childhood parental warmth predicts better adult coping and well-being. We propagated this DOI to `lit/evidence_map.csv` / `lit/bibliography.*` to keep H2 mediator coverage moving, and refreshed `lit/semantic_scholar_waiver_loop013.md` so the header/attempt log now spans loops 008–032 as the reviewer requested. PAP remains `status: draft` until the waiver is approved or the API credential is restored.
 
 Loop 033 note: Mandatory Semantic Scholar query (`childhood mentorship adult coping resilience`; `lit/queries/loop_033/query_001.json`) again yielded HTTP 403, so we logged CrossRef fallback #1 for this loop (`lit/queries/loop_033/crossref_query_001.json`) and added Kennedy et al. (2017; DOI `10.1016/j.aogh.2017.03.265`) to the evidence map/bibliography as mentorship-based support evidence for H2. The waiver memo now covers loops 008–033 with the new attempt row plus mentorship summary, but PAP status remains draft until either the waiver is approved or Semantic Scholar access is restored so confirmatory analyses stay paused.
+
+Loop 034 note: Semantic Scholar remains down (`lit/queries/loop_034/query_001.json` logged another 403 for "childhood mentorship coping adult resilience"), so we captured CrossRef metadata (`lit/queries/loop_034/crossref_query_002.json`) and added Gasper (2020; DOI `10.5040/9781350100763.ch-003`) to document how structured childhood mentoring/coaching builds coping/self-regulation skills relevant to H2. Waiver memo now spans loops 008–034 with the new attempt row and fallback, and PAP status stays draft until the credential is restored or the waiver is approved.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
