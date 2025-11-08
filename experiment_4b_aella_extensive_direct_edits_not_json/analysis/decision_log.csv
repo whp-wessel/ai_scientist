@@ -132,3 +132,4 @@ ts,action,inputs,rationale_short,code_path,outputs,status
 2025-11-08T16:59:30Z,qc_update_loop017,qc/data_checks.md,"Rolled QC checklist to Loop 017 with the refreshed risk entry referencing the latest DOI and waiver coverage.",manual edit,qc/data_checks.md,success
 2025-11-08T16:59:50Z,notebook_update_loop017,notebooks/research_notebook.md,"Logged Loop 017 narrative (abort acknowledgment, S2 attempt, CrossRef fallback, PAP/QC refresh) for reproducibility.",manual edit,notebooks/research_notebook.md,success
 2025-11-08T17:00:10Z,state_update_loop017,artifacts/state.json,"Incremented loop counter to 17, refreshed N1 note with the new 403 evidence, and kept phase in pap while S2 access remains blocked.",manual edit,artifacts/state.json,success
+2025-11-08T17:01:56.131086+00:00,loop_017,phase:pap,runner auto-log,runner.py,artifacts/last_model_raw.txt;lit/semantic_scholar_waiver_loop013.md;artifacts/llm_raw/loop_017.txt,success

@@ -22,12 +22,6 @@
     }
   ],
   "bootstrap_complete": true,
-  "last_abort": {
-    "loop": 16,
-    "note": "Interrupted during loop execution",
-    "phase": "loop",
-    "ts": "2025-11-08T15:49:51.403775+00:00"
-  },
   "loop_counter": 17,
   "next_actions": [
     {
