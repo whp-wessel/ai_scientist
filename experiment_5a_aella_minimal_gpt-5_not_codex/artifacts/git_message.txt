@@ -1,1 +1,0 @@
-loop_012: expand literature via S2; append 5 DOIs; update PAP+notebook; prep PAP refinements

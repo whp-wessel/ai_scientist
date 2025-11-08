@@ -1,7 +1,7 @@
 # Reproducibility Report
 
-- Generated: 2025-11-08T14:46:15.750731+00:00
-- Git HEAD: 487414ba894fe055cc8cf3e73bf25ece61608164
+- Generated: 2025-11-08T15:00:11.855441+00:00
+- Git HEAD: c4469f3a6946a0de6ad7385b71ed98becbb9c232
 - Model defaults: science=gpt-5-codex, review=gpt-5 (policy=agent)
 - Network access: not specified
 
