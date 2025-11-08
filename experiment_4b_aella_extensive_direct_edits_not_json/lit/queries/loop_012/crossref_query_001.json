@@ -1,0 +1,898 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2025-11-06T12:20:57Z",
+      "timestamp": 1762431657424,
+      "version": "3.44.0"
+    },
+    "reference-count": 71,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2019-06-01T00:00:00Z",
+          "timestamp": 1559347200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2019-06-01T00:00:00Z",
+          "timestamp": 1559347200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "clinicalkey.com",
+        "clinicalkey.com.au",
+        "clinicalkey.es",
+        "clinicalkey.fr",
+        "clinicalkey.jp",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Child Abuse &amp; Neglect"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.chiabu.2019.03.016",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          3,
+          22
+        ]
+      ],
+      "date-time": "2019-03-22T13:12:08Z",
+      "timestamp": 1553260328000
+    },
+    "page": "32-42",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 76,
+    "special_numbering": "C",
+    "title": [
+      "From childhood emotional maltreatment to depressive symptoms in adulthood: The roles of self-compassion and shame"
+    ],
+    "prefix": "10.1016",
+    "volume": "92",
+    "author": [
+      {
+        "given": "Nicholas Dutra",
+        "family": "Ross",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Patricia L.",
+        "family": "Kaminski",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Richard",
+        "family": "Herrington",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "2",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "277",
+        "DOI": "10.1037/0021-843X.104.2.277",
+        "article-title": "Bodily shame as a mediator between abusive experiences and depression",
+        "volume": "104",
+        "author": "Andrews",
+        "year": "1995",
+        "journal-title": "Journal of Abnormal Psychology"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0010",
+        "series-title": "Shame: Interpersonal behavior, psychopathology, and culture",
+        "first-page": "3",
+        "article-title": "Shame and childhood abuse",
+        "author": "Andrews",
+        "year": "1998"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0015",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.1348/014466502163778",
+        "article-title": "Predicting depressive symptoms with a new measure of shame: The experience of shame scale",
+        "volume": "41",
+        "author": "Andrews",
+        "year": "2002",
+        "journal-title": "The British Journal of Clinical Psychology"
+      },
+      {
+        "year": "2003",
+        "series-title": "Interpersonal reconstructive therapy: Promoting change in nonresponders",
+        "author": "Benjamin",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0020"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "305",
+        "DOI": "10.1177/1077559510379634",
+        "article-title": "Neglected children, shame-proneness, and depressive symptoms",
+        "volume": "15",
+        "author": "Bennett",
+        "year": "2010",
+        "journal-title": "Child Maltreatment"
+      },
+      {
+        "year": "1998",
+        "series-title": "Childhood trauma questionnaire: A retrospective self-report manual",
+        "author": "Bernstein",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0030"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "250",
+        "DOI": "10.1177/1077559511428353",
+        "article-title": "Classes and consequences of multiple maltreatment: A person-centered analysis",
+        "volume": "16",
+        "author": "Berzenski",
+        "year": "2011",
+        "journal-title": "Child Maltreatment"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0040",
+        "article-title": "Attachment and loss",
+        "volume": "Vol. 2",
+        "author": "Bowlby",
+        "year": "1973"
+      },
+      {
+        "year": "1979",
+        "series-title": "The making and breaking of affectional bonds",
+        "author": "Bowlby",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0045"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.1037/0033-2909.113.1.82",
+        "article-title": "Psychopathology and early experience: A reappraisal of retrospective reports",
+        "volume": "113",
+        "author": "Brewin",
+        "year": "1993",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "year": "2009",
+        "series-title": "Treating traumatized children: Risk, resilience, and recovery",
+        "author": "Brom",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0055"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0060",
+        "series-title": "A practical information-theoretic approach",
+        "article-title": "Model selection and multimodel inference",
+        "author": "Burnham",
+        "year": "2002"
+      },
+      {
+        "year": "1999",
+        "series-title": "Scientific foundations of cognitive theory and therapy of depression",
+        "author": "Clark",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0065"
+      },
+      {
+        "year": "1994",
+        "series-title": "Internalized shame scale: Professional manual",
+        "author": "Cook",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0070"
+      },
+      {
+        "year": "2001",
+        "series-title": "Internalized shame scale: Technical manual",
+        "author": "Cook",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0075"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "477",
+        "DOI": "10.1016/j.paid.2008.11.019",
+        "article-title": "Individual differences in shame and depressive symptoms during early adolescence",
+        "volume": "46",
+        "author": "De Rubeis",
+        "year": "2009",
+        "journal-title": "Personality and Individual Differences"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.1016/j.paid.2005.10.026",
+        "article-title": "The internalized Shame Scale: Temporal stability, internal consistency, and principal components analysis",
+        "volume": "41",
+        "author": "del Rosario",
+        "year": "2006",
+        "journal-title": "Personality and Individual Differences"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0090",
+        "first-page": "363",
+        "article-title": "Center for epidemiological studies depression scale: Review and revision (CESD and CESD-R)",
+        "volume": "Vol. 3",
+        "author": "Eaton",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "337",
+        "DOI": "10.1177/1077559505276686",
+        "article-title": "The persistence of shame following sexual abuse: A longitudinal look at risk and recovery",
+        "volume": "10",
+        "author": "Feiring",
+        "year": "2005",
+        "journal-title": "Child Maltreatment"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "746",
+        "DOI": "10.1001/jamapediatrics.2015.0676",
+        "article-title": "Prevalence of childhood exposure to violence, crime, and abuse: Results from the national survey of children\u2019s exposure to violence",
+        "volume": "169",
+        "author": "Finkelhor",
+        "year": "2015",
+        "journal-title": "JAMA Pediatrics"
+      },
+      {
+        "year": "1986",
+        "series-title": "Facing shame: Families in recovery",
+        "author": "Fossum",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0105"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0110",
+        "first-page": "173",
+        "article-title": "The dissolution of the Oedipus complex",
+        "volume": "Vol. 19",
+        "author": "Freud",
+        "year": "1924"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0115",
+        "first-page": "797",
+        "article-title": "Not all bad treatment is psychological maltreatment",
+        "volume": "35",
+        "author": "Garbarino",
+        "year": "2011",
+        "journal-title": "Child Abuse & Neglect"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0120",
+        "doi-asserted-by": "crossref",
+        "first-page": "113",
+        "DOI": "10.1111/j.2044-8341.1997.tb01893.x",
+        "article-title": "The evolution of social attractiveness and its role in shame, humiliation, guilt and therapy",
+        "volume": "70",
+        "author": "Gilbert",
+        "year": "1997",
+        "journal-title": "The British Journal of Medical Psychology"
+      },
+      {
+        "year": "2005",
+        "series-title": "Compassion: Conceptualisations, research, and use in psychotherapy",
+        "author": "Gilbert",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0125"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0130",
+        "doi-asserted-by": "crossref",
+        "first-page": "353",
+        "DOI": "10.1002/cpp.507",
+        "article-title": "Compassionate mind training for people with high shame and self-criticism: Overview and pilot study of a group therapy approach",
+        "volume": "13",
+        "author": "Gilbert",
+        "year": "2006",
+        "journal-title": "Clinical Psychology & Psychotherapy"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "2483",
+        "DOI": "10.1016/j.brat.2007.04.002",
+        "article-title": "Child maltreatment, non-suicidal self-injury, and the mediating role of self-criticism",
+        "volume": "45",
+        "author": "Glassman",
+        "year": "2007",
+        "journal-title": "Behaviour Research and Therapy"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0140",
+        "series-title": "Upper Saddle River",
+        "article-title": "Multivariate data analysis",
+        "author": "Hair",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "260",
+        "DOI": "10.1111/j.1469-7610.2004.00218.x",
+        "article-title": "Validity of adult retrospective reports of adverse childhood experiences: Review of the evidence",
+        "volume": "45",
+        "author": "Hardt",
+        "year": "2004",
+        "journal-title": "Journal of Child Psychology and Psychiatry"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "768",
+        "DOI": "10.1037/0022-006X.58.6.768",
+        "article-title": "Patient and therapist introject, interpersonal process, and differential psychotherapy outcome",
+        "volume": "58",
+        "author": "Henry",
+        "year": "1990",
+        "journal-title": "Journal of Consulting and Clinical Psychology"
+      },
+      {
+        "year": "1997",
+        "series-title": "Trauma and recovery",
+        "author": "Herman",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0155"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0160",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.1007/BF02110597",
+        "article-title": "Shame, guilt, and anger in college students exposed to abusive family environments",
+        "volume": "10",
+        "author": "Hoglund",
+        "year": "1995",
+        "journal-title": "Journal of Family Violence"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0165",
+        "doi-asserted-by": "crossref",
+        "first-page": "184",
+        "DOI": "10.2307/3090177",
+        "article-title": "The impact of childhood abuse and neglect on adult mental health: Prospective study",
+        "volume": "42",
+        "author": "Horwitz",
+        "year": "2001",
+        "journal-title": "Journal of Health and Social Behaviour"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0170",
+        "doi-asserted-by": "crossref",
+        "first-page": "939",
+        "DOI": "10.1521/jscp.2013.32.9.939",
+        "article-title": "Self-compassion soothes the savage ego-threat system: Effects on negative affect, shame, rumination, and depressive symptoms",
+        "volume": "32",
+        "author": "Johnson",
+        "year": "2013",
+        "journal-title": "Journal of Social and Clinical Psychology"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0175",
+        "doi-asserted-by": "crossref",
+        "first-page": "148",
+        "DOI": "10.1111/bjc.12006",
+        "article-title": "Why self-critical patients present with more severe eating disorder pathology: The mediating role of shame",
+        "volume": "52",
+        "author": "Kelly",
+        "year": "2013",
+        "journal-title": "The British Journal of Clinical Psychology"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0180",
+        "first-page": "236",
+        "article-title": "Structural derivatives of object relationships",
+        "volume": "47",
+        "author": "Kernberg",
+        "year": "1966",
+        "journal-title": "The International Journal of Psycho-analysis"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0185",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1146/annurev.psych.48.1.191",
+        "article-title": "The effects of stressful life events on depression",
+        "volume": "48",
+        "author": "Kessler",
+        "year": "1997",
+        "journal-title": "Annual Review of Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "68",
+        "DOI": "10.1037/a0021466",
+        "article-title": "Shame, guilt, and depressive symptoms: A meta-analytic review",
+        "volume": "137",
+        "author": "Kim",
+        "year": "2011",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0195",
+        "doi-asserted-by": "crossref",
+        "first-page": "645",
+        "DOI": "10.1016/0145-2134(94)90014-0",
+        "article-title": "Methodological issues and practical problems in conducting research on maltreated children",
+        "volume": "18",
+        "author": "Kinard",
+        "year": "1994",
+        "journal-title": "Child Abuse & Neglect"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0200",
+        "first-page": "419",
+        "article-title": "Shame and guilt in neurosis",
+        "volume": "58",
+        "author": "Lewis",
+        "year": "1971",
+        "journal-title": "Psychoanalytic Review"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0205",
+        "doi-asserted-by": "crossref",
+        "first-page": "665",
+        "DOI": "10.1016/j.eurpsy.2015.04.007",
+        "article-title": "The role of specific early trauma in adult depression: A meta-analysis of published literature. Childhood trauma and adult depression",
+        "volume": "30",
+        "author": "Mandelli",
+        "year": "2015",
+        "journal-title": "European Psychiatry"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0210",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1080/10705519809540112",
+        "article-title": "Model specification searches in structural equation modeling using tabu search",
+        "volume": "5",
+        "author": "Marcoulides",
+        "year": "1998",
+        "journal-title": "Structural Equation Modeling A Multidisciplinary Journal"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0215",
+        "first-page": "484",
+        "article-title": "Model specification searches in structural equation modeling with R. Structural Equation Modeling",
+        "volume": "25",
+        "author": "Marcoulides",
+        "year": "2018",
+        "journal-title": "A Multidisciplinary Journal"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0220",
+        "doi-asserted-by": "crossref",
+        "first-page": "374",
+        "DOI": "10.2307/2012910",
+        "article-title": "The social self",
+        "volume": "10",
+        "author": "Mead",
+        "year": "1913",
+        "journal-title": "The Journal of Philosophy Psychology and Scientific Methods"
+      },
+      {
+        "year": "1988",
+        "series-title": "Connections, disconnections, and violations. Work in Progress, No. 33",
+        "author": "Miller",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0225"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0230",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.1176/appi.ajp.2011.11020335",
+        "article-title": "Childhood maltreatment predicts unfavorable course of illness and treatment outcome in depression: A meta-analysis",
+        "volume": "169",
+        "author": "Nanni",
+        "year": "2012",
+        "journal-title": "The American Journal of Psychiatry"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0235",
+        "series-title": "Psychological maltreatment of children and youth",
+        "first-page": "45",
+        "article-title": "Psychological maltreatment: The core component of child abuse",
+        "author": "Navarre",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0240",
+        "doi-asserted-by": "crossref",
+        "first-page": "223",
+        "DOI": "10.1080/15298860309027",
+        "article-title": "The development and validation of a scale to measure self-compassion",
+        "volume": "2",
+        "author": "Neff",
+        "year": "2003",
+        "journal-title": "Self and Identity: the Journal of the International Society for Self and Identity"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0245",
+        "doi-asserted-by": "crossref",
+        "first-page": "225",
+        "DOI": "10.1080/15298860902979307",
+        "article-title": "Self-compassion and psychological resilience among adolescents and young adults",
+        "volume": "9",
+        "author": "Neff",
+        "year": "2010",
+        "journal-title": "Self and Identity: the Journal of the International Society for Self and Identity"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0250",
+        "doi-asserted-by": "crossref",
+        "first-page": "908",
+        "DOI": "10.1016/j.jrp.2006.08.002",
+        "article-title": "An examination of self-compassion in relation to positive psychological functioning and personality traits",
+        "volume": "41",
+        "author": "Neff",
+        "year": "2007",
+        "journal-title": "Journal of Research in Personality"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0255",
+        "doi-asserted-by": "crossref",
+        "first-page": "371",
+        "DOI": "10.1177/070674378703200509",
+        "article-title": "Does verbal abuse leave deeper scars: A study of children and parents",
+        "volume": "32",
+        "author": "Ney",
+        "year": "1987",
+        "journal-title": "The Canadian Journal of Psychiatry"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0260",
+        "doi-asserted-by": "crossref",
+        "first-page": "518",
+        "DOI": "10.1080/10503307.2014.917217",
+        "article-title": "Trauma-related shame and guilt as time-varying predictors of posttraumatic stress disorder symptoms during imagery exposure and imagery rescripting: A randomized controlled trial",
+        "volume": "25",
+        "author": "\u00d8ktedalen",
+        "year": "2015",
+        "journal-title": "Psychotherapy Research"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0265",
+        "doi-asserted-by": "crossref",
+        "first-page": "398",
+        "DOI": "10.1037/tra0000022",
+        "article-title": "Betray my trust, shame on me: Shame, dissociation, fear, and betrayal trauma",
+        "volume": "7",
+        "author": "Platt",
+        "year": "2015",
+        "journal-title": "Psychological Trauma Theory Research Practice and Policy"
+      },
+      {
+        "year": "2006",
+        "series-title": "Computing power and minimum sample size for RMSEA",
+        "author": "Preacher",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0270"
+      },
+      {
+        "year": "2017",
+        "series-title": "R: A language and environment for statistical computing",
+        "author": "R Development Core Team",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0275"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0280",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.18637/jss.v048.i02",
+        "article-title": "Lavaan: An r package for structural equation modeling",
+        "volume": "48",
+        "author": "Rosseel",
+        "year": "2012",
+        "journal-title": "Journal of Statistical Software"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0285",
+        "doi-asserted-by": "crossref",
+        "first-page": "570",
+        "DOI": "10.1002/cpp.1918",
+        "article-title": "Childhood maltreatment, shame-proneness and self-criticism in social anxiety disorder: A sequential mediational model",
+        "volume": "22",
+        "author": "Shahar",
+        "year": "2014",
+        "journal-title": "Clinical Psychology & Psychotherapy"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0290",
+        "doi-asserted-by": "crossref",
+        "first-page": "377",
+        "DOI": "10.1080/17439760.2010.516763",
+        "article-title": "The benefits of self-compassion and optimism exercises for individuals vulnerable to depression",
+        "volume": "5",
+        "author": "Shapira",
+        "year": "2010",
+        "journal-title": "The Journal of Positive Psychology"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0295",
+        "doi-asserted-by": "crossref",
+        "first-page": "198",
+        "DOI": "10.1080/01926187.2012.677662",
+        "article-title": "Childhood abuse and neglect in an outpatient clinical sample: Prevalence and impact",
+        "volume": "41",
+        "author": "Shi",
+        "year": "2013",
+        "journal-title": "The American Journal of Family Therapy"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0300",
+        "doi-asserted-by": "crossref",
+        "first-page": "615",
+        "DOI": "10.1007/BF01670103",
+        "article-title": "Cognitive triad: Relationship to depressive symptoms, parents\u2019 cognitive triad, and perceived parental messages",
+        "volume": "24",
+        "author": "Stark",
+        "year": "1996",
+        "journal-title": "Journal of Abnormal Child Psychology"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0305",
+        "doi-asserted-by": "crossref",
+        "first-page": "324",
+        "DOI": "10.1177/1077559505279308",
+        "article-title": "The relation of child maltreatment to shame and guilt among adolescents: Psychological routes to depression and delinquency",
+        "volume": "10",
+        "author": "Stuewig",
+        "year": "2005",
+        "journal-title": "Child Maltreatment"
+      },
+      {
+        "year": "1953",
+        "series-title": "The interpersonal theory of psychiatry",
+        "author": "Sullivan",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0310"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0315",
+        "doi-asserted-by": "crossref",
+        "first-page": "572",
+        "DOI": "10.1016/j.chiabu.2012.05.005",
+        "article-title": "Child maltreatment, subsequent non-suicidal self-injury and the mediating roles of dissociation, alexithymia and self-blame",
+        "volume": "36",
+        "author": "Swannell",
+        "year": "2012",
+        "journal-title": "Child Abuse & Neglect"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0320",
+        "series-title": "Self-conscious emotions: The psychology of shame, guilt, embarrassment, and pride",
+        "first-page": "114",
+        "article-title": "Shame and guilt in interpersonal relationships",
+        "author": "Tangney",
+        "year": "1995"
+      },
+      {
+        "year": "2002",
+        "series-title": "Shame and guilt",
+        "author": "Tangney",
+        "key": "10.1016/j.chiabu.2019.03.016_bib0325"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0330",
+        "doi-asserted-by": "crossref",
+        "first-page": "128",
+        "DOI": "10.1016/j.psychres.2010.08.018",
+        "article-title": "Validation of the Center for Epidemiological Studies Depression Scale\u2014Revised (CESD-R): Pragmatic depression assessment in the general population",
+        "volume": "186",
+        "author": "Van Dam",
+        "year": "2011",
+        "journal-title": "Psychiatry Research"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0335",
+        "doi-asserted-by": "crossref",
+        "first-page": "137",
+        "DOI": "10.1348/147608308X389391",
+        "article-title": "The role of attributions in the process of overcoming shame: A qualitative analysis",
+        "volume": "82",
+        "author": "Van Vliet",
+        "year": "2009",
+        "journal-title": "Psychology and Psychotherapy Theory Research and Practice"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0340",
+        "doi-asserted-by": "crossref",
+        "first-page": "994",
+        "DOI": "10.1198/016214502388618780",
+        "article-title": "Nearest-neighbor variance estimation (NNVE)",
+        "volume": "97",
+        "author": "Wang",
+        "year": "2002",
+        "journal-title": "Journal of the American Statistical Association"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0345",
+        "doi-asserted-by": "crossref",
+        "first-page": "1143",
+        "DOI": "10.1016/j.chiabu.2007.09.003",
+        "article-title": "Shame, guilt, symptoms of depression, and reported history of psychological maltreatment",
+        "volume": "31",
+        "author": "Webb",
+        "year": "2007",
+        "journal-title": "Child Abuse & Neglect"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0350",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1111/0081-1750.00052",
+        "article-title": "Structural equation modeling with robust covariances",
+        "volume": "28",
+        "author": "Yuan",
+        "year": "1998",
+        "journal-title": "Sociological Methodology"
+      },
+      {
+        "key": "10.1016/j.chiabu.2019.03.016_bib0355",
+        "first-page": "1006",
+        "article-title": "Structural equation modeling as a statistical method: An overview",
+        "volume": "2",
+        "author": "Yuan",
+        "year": "2015",
+        "journal-title": "JSM Mathematics and Statistics"
+      }
+    ],
+    "container-title": [
+      "Child Abuse &amp; Neglect"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0145213419301024?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0145213419301024?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2025-09-27T01:09:21Z",
+      "timestamp": 1758935361000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0145213419301024"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    },
+    "references-count": 71,
+    "alternative-id": [
+      "S0145213419301024"
+    ],
+    "URL": "https://doi.org/10.1016/j.chiabu.2019.03.016",
+    "relation": {},
+    "ISSN": [
+      "0145-2134"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "0145-2134"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "From childhood emotional maltreatment to depressive symptoms in adulthood: The roles of self-compassion and shame",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Child Abuse & Neglect",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.chiabu.2019.03.016",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "\u00a9 2019 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

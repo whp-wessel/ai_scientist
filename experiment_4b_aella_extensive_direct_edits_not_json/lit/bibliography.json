@@ -64,5 +64,26 @@
       "C3"
     ],
     "notes": "Demonstrates self-esteem as mediator between maltreatment and autonomy, informing self-love outcome modeling."
+  },
+  {
+    "id": "ross2019maltreatment",
+    "title": "From childhood emotional maltreatment to depressive symptoms in adulthood: The roles of self-compassion and shame",
+    "authors": [
+      "Nicholas Dutra Ross",
+      "Patricia L. Kaminski",
+      "Richard Herrington"
+    ],
+    "year": 2019,
+    "venue": "Child Abuse & Neglect",
+    "volume": "92",
+    "issue": null,
+    "pages": "32-42",
+    "doi": "10.1016/j.chiabu.2019.03.016",
+    "url": "https://doi.org/10.1016/j.chiabu.2019.03.016",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C3"
+    ],
+    "notes": "Links emotional maltreatment to adult depressive/self-worth outcomes via self-compassion and shame pathways."
   }
 ]

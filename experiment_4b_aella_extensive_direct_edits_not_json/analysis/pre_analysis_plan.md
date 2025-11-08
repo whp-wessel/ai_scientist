@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T14:46Z
+last_updated: 2025-11-08T14:52Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -11,6 +11,8 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 3. Reproducible code lives under `analysis/code/` with command lines captured below.
 
 Loop 011 note: Semantic Scholar CLI attempts continue to return 403s (see `lit/queries/loop_011/query_001.json`); PAP remains draft while we prepare a formal waiver request citing the accumulated evidence (Loops 008–011) unless ops can restore access immediately.
+
+Loop 012 note: Loop-mandated Semantic Scholar attempt again failed with 403 (see `lit/queries/loop_012/query_001.json`). To avoid literature stagnation, we logged a CrossRef-backed article on emotional maltreatment → adult depression/self-compassion (`10.1016/j.chiabu.2019.03.016`) and updated `lit/evidence_map.csv` / `lit/bibliography.*`. PAP freeze remains blocked pending a working S2 key or documented waiver.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

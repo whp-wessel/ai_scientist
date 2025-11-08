@@ -1,0 +1,9 @@
+DECISION: CONTINUE
+
+- R1 Reproducibility: WARN — Seeds and environment recorded (artifacts/session_info.txt; seed 20251016), code paths and commands documented (notebooks/research_notebook.md; analysis/pre_analysis_plan.md), decision log maintained (analysis/decision_log.csv). However, no commit request present (artifacts/git_message.txt missing), which weakens checkpointing.
+- R2 Statistical Rigor: PASS — Survey design honored via explicit SRS justification (config/survey_design.yaml; analysis/pre_analysis_plan.md). Results include effect sizes, SEs, CIs, and p-values (analysis/results.csv). No confirmatory families yet; q_value appropriately blank.
+- R3 Literature/Evidence: PASS — Evidence map maintained with DOIs (lit/evidence_map.csv) and a canonical reference in bibliography (lit/bibliography.bib). Saved Semantic Scholar payloads, including an error capture (lit/queries/loop_008/query_001.json) and a successful search (lit/queries/loop_008/query_002.json). Manuscript cites Felitti 1998 (reports/paper.md).
+- R4 Privacy: PASS — Public outputs use n<10 suppression (tables/key_vars_value_counts.csv shows “<10”; scripts/analysis/eda.py and make_tables.py enforce thresholds). Public crosstab (tables/religion_by_monogamy.csv) contains no sub-threshold cells.
+- R5 Completeness: PASS — Required artifacts present: analysis/pre_analysis_plan.md (status: draft), analysis/hypotheses.csv, analysis/results.csv, notebooks/research_notebook.md, lit/evidence_map.csv, reports/paper.md, and tables/*.csv. No confirmatory results; PAP not yet frozen (appropriate).
+
+Notes: Recommend adding artifacts/git_message.txt to request a checkpoint commit and pruning off-topic literature entries in lit/evidence_map.csv for focus.
