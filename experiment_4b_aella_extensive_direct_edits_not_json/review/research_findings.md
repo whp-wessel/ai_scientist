@@ -296,3 +296,12 @@ N1: PASS – State remains in phase `pap` with the Semantic Scholar action expli
 
 Notes: Continue pressing for the Semantic Scholar credential or waiver so the PAP freeze gate can finally clear (analysis/pre_analysis_plan.md:67; artifacts/state.json:28).
 
+## Loop 038 — 2025-11-08T21:24:08.805596+00:00
+DECISION: CONTINUE
+R1: PASS – Loop 038 log plus QC record the review sync and repro checkpoint, and session_info captures seed/git HEAD for this loop (analysis/decision_log.csv:373-374; qc/data_checks.md:46-49; artifacts/session_info.txt:1-9).
+L1: PASS – Mandated S2 query + 403 payload and the CrossRef fallback were saved, and the Musliner DOI is reflected in the evidence map, bibliography, and waiver ledger (lit/queries/loop_038/query_001.json:1; lit/queries/loop_038/crossref_query_001.json:1; lit/evidence_map.csv:36; lit/bibliography.bib:408; lit/semantic_scholar_waiver_loop013.md:41-49).
+P1: PASS – No new public tables/figures were issued and the QC file reiterates sensitive-column safeguards and disclosure log coverage (qc/data_checks.md:50-56).
+N1: PASS – State remains in PAP with N1 explicitly blocked and stop_now=false, while the PAP stays status=draft with the Loop 038 blocker noted (artifacts/state.json:25-74; analysis/pre_analysis_plan.md:1-69).
+
+Notes: Continue pushing on the Semantic Scholar credential/waiver so the PAP gate can close.
+
