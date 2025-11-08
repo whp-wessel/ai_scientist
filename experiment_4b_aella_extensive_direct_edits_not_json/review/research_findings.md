@@ -251,3 +251,12 @@ N1: PASS – State stays in the PAP phase with N1 explicitly blocked, while the 
 
 Notes: Keep pressing on the Semantic Scholar credential/waiver so the PAP can progress toward freeze.
 
+## Loop 033 — 2025-11-08T20:23:51.242272+00:00
+DECISION: CONTINUE  
+R1: PASS – Review sync plus repro checkpoint are logged before any edits (`analysis/decision_log.csv:317-319`), while `artifacts/session_info.txt:1-7` and `artifacts/checksums.json:1-13` capture the refreshed environment/seed and dataset hashes cited in the Loop‑033 QC log (`qc/data_checks.md:1-55`).  
+L1: PASS – The mandated Semantic Scholar attempt, 403 payload, CrossRef fallback, and waiver update are all recorded (`analysis/decision_log.csv:320-323`; `lit/queries/loop_033/query_001.json:1-18`; `lit/queries/loop_033/crossref_query_001.json:1`; `lit/semantic_scholar_waiver_loop013.md:1-70`), and the Kennedy mentorship DOI now lives in both the evidence map and bibliography (`lit/evidence_map.csv:31`; `lit/bibliography.bib:347-357`).  
+P1: PASS – Work this loop stayed in governance artifacts (`analysis/decision_log.csv:324-326`), and disclosure controls remain unchanged with n≥10 guards reiterated in the QC checklist and last disclosure audit (`qc/data_checks.md:47-56`; `qc/disclosure_check_loop_006.md:1-17`).  
+N1: PASS – State is still PAP with next action N1 flagged blocked (`artifacts/state.json:25-74`), and the PAP header plus Loop‑033 note document status=draft pending the waiver/API fix (`analysis/pre_analysis_plan.md:1-60`).
+
+Notes: Keep pressing on the Semantic Scholar credential/waiver so the PAP freeze gate can clear (`analysis/pre_analysis_plan.md:53-60`).
+
