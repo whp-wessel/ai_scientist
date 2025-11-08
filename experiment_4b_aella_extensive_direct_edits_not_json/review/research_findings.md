@@ -28,3 +28,12 @@ N1: WARN – artifacts/state.json:45 and artifacts/state.json:52 mark the DAG/id
 
 Notes: Re-run the DAG, identification memo, and imputation stack scripts and commit the resulting artifacts before resuming progress.
 
+## Loop 006 — 2025-11-08T13:59:15.233303+00:00
+DECISION: CONTINUE
+R1: PASS – Missing reproducibility artifacts were re-rendered with explicit commands (analysis/decision_log.csv:44-46), the refreshed identification memo documents the DAG command/seed (reports/identification.md:1-20) and the MI summary logs the seeded fallback output path (artifacts/imputation_summary_loop005.json:4335-4336), aligning with the PAP’s seed/disclosure discipline (analysis/pre_analysis_plan.md:13-26).
+L1: PASS – Loop 006 still executed the mandated Semantic Scholar search despite the 403 (analysis/decision_log.csv:50) and saved the error payload for auditability (lit/queries/loop_006/query_001.json:1-14), with state tracking the action as blocked pending new credentials (artifacts/state.json:31-36).
+P1: PASS – The PAP reiterates the n≥10 disclosure guard and cites the new automation hook (analysis/pre_analysis_plan.md:17-25), and the latest disclosure memo shows only the structural DAG figure with violations=0 (qc/disclosure_check_loop_006.md:1-17).
+N1: PASS – Phase appropriately remains PAP with explicit freeze blockers listed (analysis/pre_analysis_plan.md:8-26,89-95) and state shows that only the literature credential task is open while others are closed (artifacts/state.json:31-65).
+
+Notes: Prioritize securing a working Semantic Scholar key so the PAP literature gate can clear and freezing can proceed.
+
