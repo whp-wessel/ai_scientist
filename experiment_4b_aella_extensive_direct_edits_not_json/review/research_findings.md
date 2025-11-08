@@ -338,3 +338,12 @@ P1: PASS – No public outputs released; QC log reiterates disclosure guard with
 N1: PASS – PAP remains clearly marked draft while next_actions document the blocked S2 issue together with dated ops memo/support-ticket plan (analysis/pre_analysis_plan.md:1, artifacts/state.json:24, lit/semantic_scholar_ops_memo_2025-11-09.md:1, lit/semantic_scholar_support_ticket_draft_2025-11-10.md:1).
 Notes: Ensure the ops memo/support ticket are actually dispatched on the stated deadlines so the PAP gate can unblock once responses arrive.
 
+## Loop 043 — 2025-11-08T22:21:56.800050+00:00
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint + logging are captured in `analysis/decision_log.csv:431`, the refreshed env/seed snapshot and dataset hashes live in `artifacts/session_info.txt:1` and `artifacts/checksums.json:1`, and the QC checklist explicitly cites that checkpoint at `qc/data_checks.md:46`, keeping determinism auditable.
+L1: PASS – The mandated Semantic Scholar attempt (HTTP 403) and CrossRef fallback were logged in `analysis/decision_log.csv:432-435`, with the payload under `lit/queries/loop_043/query_001.json:1`, metadata in `lit/queries/loop_043/crossref_query_001.json:1`, and the resulting DOI woven into `lit/evidence_map.csv:42`, `lit/bibliography.bib:470`, and the expanded waiver log `lit/semantic_scholar_waiver_loop013.md:1`.
+P1: PASS – QC notes reiterate that disclosure automation is still in force and no new public tables/figures shipped this loop (`qc/data_checks.md:52-53`), while the last disclosure audit shows threshold n≥10 with zero violations (`qc/disclosure_check_loop_006.md:6-17`).
+N1: PASS – Phase remains PAP with N1 explicitly blocked in `artifacts/state.json:25-33`, the PAP header stays draft with a Loop 043 blocker note and escalation timeline (`analysis/pre_analysis_plan.md:1` and `analysis/pre_analysis_plan.md:79`), and the dated ops memo/support-ticket drafts are ready in `lit/semantic_scholar_ops_memo_2025-11-09.md:1-25` and `lit/semantic_scholar_support_ticket_draft_2025-11-10.md:1-28`, justifying the current gate.
+
+Notes: Execute the 11‑09 ops memo on schedule so the waiver/credential path keeps momentum.
+
