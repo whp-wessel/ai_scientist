@@ -224,3 +224,12 @@ N1: PASS – artifacts/state.json:25-74 keeps the project in phase “pap” wit
 
 Notes: Keep pressing on the Semantic Scholar credential/waiver so PAP freeze can proceed.
 
+## Loop 030 — 2025-11-08T19:49:40.561323+00:00
+DECISION: CONTINUE
+R1: PASS – analysis/decision_log.csv:285 records the Loop 030 session-info/checksum refresh, with the shared seed/env captured at artifacts/session_info.txt:6 and dataset hashes current in artifacts/checksums.json:2, so reproducibility artifacts stay up to date. 
+L1: PASS – analysis/decision_log.csv:286 logged the required Semantic Scholar attempt (403 preserved at lit/queries/loop_030/query_001.json:1) and analysis/decision_log.csv:288 propagated the Oh & Han DOI now stored at lit/evidence_map.csv:28, keeping the literature trail auditable during the outage. 
+P1: PASS – qc/data_checks.md:52 reiterates the standing n≥10 disclosure guard plus automation reference, and qc/disclosure_check_loop_006.md:17 still shows violations=0 with no new public tables noted this loop. 
+N1: PASS – artifacts/state.json:25/70 keep the project in phase pap, artifacts/state.json:28 describes next action N1 while artifacts/state.json:32 marks it blocked by the ongoing API issue, and analysis/pre_analysis_plan.md:1,33 confirms the PAP remains draft until that gate clears.
+
+Notes: Progress still depends on restoring Semantic Scholar access or an approved waiver so the PAP can freeze (analysis/pre_analysis_plan.md:33).
+
