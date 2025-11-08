@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T19:53Z
+last_updated: 2025-11-08T20:05Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -53,6 +53,8 @@ Loop 029 note: Semantic Scholar query (`childhood parental warmth adult cortisol
 Loop 030 note: Semantic Scholar query (`childhood parental nurturance adult immune resilience`) continued to return HTTP 403 (`lit/queries/loop_030/query_001.json`). The CrossRef fallback produced Oh & Han (2019; DOI `10.37918/kce.2019.05.116.47`), which shows that secure childhood parental attachment reduces adult attachment anxiety and parenting stress. This evidence reinforces the need to script DERS-style emotion regulation composites plus maternal/paternal warmth indicators before PAP freeze, ensuring H2 robustness checks explicitly test attachment-anxiety mediators once the S2 credential or waiver clears.
 
 Loop 031 note: Semantic Scholar remains blocked (`lit/queries/loop_031/query_001.json` logs another HTTP 403 for the parental-warmth stress-buffering search). The CrossRef fallback yielded Xu & Zheng (2025; DOI `10.31234/osf.io/82u5e_v1`), a 30-day diary study showing that daily parental warmth interrupts the link between parent stress and adolescent adjustment. This reinforces the need to finalize reproducible transformations for the survey’s parental-warmth, stress, and positive-affect scales so H2 specifications can explicitly test stress-buffering mediators once the API credential or waiver clears.
+
+Loop 032 note: The latest Semantic Scholar attempt (`childhood parental warmth adult inflammatory markers`; see `lit/queries/loop_032/query_001.json`) still returned HTTP 403. CrossRef fallback #2 for this loop surfaced Moran et al. (2018; DOI `10.1037/fam0000401`, recorded in `lit/queries/loop_032/crossref_query_002.json`), which shows that higher childhood parental warmth predicts better adult coping and well-being. We propagated this DOI to `lit/evidence_map.csv` / `lit/bibliography.*` to keep H2 mediator coverage moving, and refreshed `lit/semantic_scholar_waiver_loop013.md` so the header/attempt log now spans loops 008–032 as the reviewer requested. PAP remains `status: draft` until the waiver is approved or the API credential is restored.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
