@@ -1,0 +1,7 @@
+DECISION: CONTINUE
+R1: PASS – analysis/decision_log.csv:243 logs the loop-026 reproducibility checkpoint (session_info + checksums), and qc/data_checks.md:47 re-verifies those artifacts so the deterministic seed/commands stay auditable.
+L1: PASS – analysis/decision_log.csv:244 documents the mandated Semantic Scholar attempt, lit/queries/loop_026/query_001.json:1 stores the 403 payload for the waiver trail, and lit/evidence_map.csv:24 records the Talmon DOI fallback with aligned bibliographic updates.
+P1: PASS – analysis/decision_log.csv:249 shows only QC/notebook/PAP edits this loop, and qc/data_checks.md:52 reiterates the standing n≥10 disclosure guard plus prior violations=0 memo, so no new privacy exposure occurred.
+N1: PASS – artifacts/state.json:25 keeps loop_counter=26 with phase still pap (artifacts/state.json:70) and next action N1 blocked (artifacts/state.json:32), matching the Loop 026 blocker note in analysis/pre_analysis_plan.md:45.
+
+Notes: Continue pressing for restored Semantic Scholar credentials or the documented waiver so the PAP freeze gate can clear.
