@@ -136,3 +136,12 @@ N1: PASS – `artifacts/state.json:24-74` keeps `phase="pap"`, increments the lo
 
 Notes: Please continue pursuing the credential/waiver so the PAP freeze gate can clear (`artifacts/state.json:26-33`).
 
+## Loop 020 — 2025-11-08T17:43:07.701563+00:00
+DECISION: CONTINUE
+R1: PASS – Loop 20 recorded the reproducibility checkpoint with explicit session/checksum references (`analysis/decision_log.csv:158-184`, `qc/data_checks.md:1-55`), and the environment snapshot/seed remain current (`artifacts/session_info.txt:1-9`).
+L1: PASS – The mandated Semantic Scholar attempt is archived with parameters (`lit/queries/loop_020/query_001.json:1`), CrossRef fallbacks captured (`lit/queries/loop_020/crossref_query_001.json:1`, `lit/queries/loop_020/crossref_query_002.json:1`), propagated into the evidence map (`lit/evidence_map.csv:15-17`), and documented in the waiver memo (`lit/semantic_scholar_waiver_loop013.md:5-41`).
+P1: PASS – No public tables/figures were released, and disclosure guardrails (n ≥ 10 plus prior QC memo) are reaffirmed in `qc/data_checks.md:50-53` and `analysis/pre_analysis_plan.md:40-45`.
+N1: PASS – Phase stays PAP with loop_counter=20 and N1 blocked pending API restoration (`artifacts/state.json:25-74`), while the PAP explicitly remains draft for that reason (`analysis/pre_analysis_plan.md:1-32`).
+
+Notes: Keep pushing on the Semantic Scholar credential/waiver so the PAP can freeze promptly once the literature gate is cleared.
+
