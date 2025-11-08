@@ -204,3 +204,4 @@ ts,action,inputs,rationale_short,code_path,outputs,status
 2025-11-08T18:00:26Z,qc_update_loop022,qc/data_checks.md,Rolled QC checklist to Loop022, reaffirming session/checksum verification and documenting the new Taskesen et al. DOI while S2 remains blocked.,manual edit,qc/data_checks.md,success
 2025-11-08T18:00:47Z,notebook_update_loop022,notebooks/research_notebook.md,Documented Loop022 narrative (review sync, reproducibility check, S2 failure, CrossRef fallback, planning updates) for traceability.,manual edit,notebooks/research_notebook.md,success
 2025-11-08T18:00:57Z,state_update_loop022,artifacts/state.json,Incremented loop_counter to 22, kept phase=p = pap, and refreshed N1 blocker notes with the Loop022 query + Taskesen DOI while stop_now stays false.,manual edit,artifacts/state.json,success
+2025-11-08T18:02:49.273405+00:00,loop_022,phase:pap,runner auto-log,runner.py,artifacts/last_model_raw.txt;artifacts/llm_raw/loop_022.txt,success
