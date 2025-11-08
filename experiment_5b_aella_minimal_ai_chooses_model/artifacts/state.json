@@ -7,9 +7,9 @@
       "last_model_context": "review_001",
       "last_model_policy": "agent",
       "last_model_reason": "",
-      "queued_model": null,
-      "queued_reason": "",
-      "queued_source": "",
+      "queued_model": "gpt-5-codex",
+      "queued_reason": "Best at pinpointing file-by-file diffs and process gaps.",
+      "queued_source": "review_loop_001",
       "rr_index": -1
     },
     "science": {

@@ -13,7 +13,8 @@ DATA_PATH = Path("childhoodbalancedpublic_original.csv")
 THRESHOLD_PATH = Path("tables/loop010_h3_threshold_effects.csv")
 BOOT_SUMMARY_PATH = Path("tables/loop014_h3_bootstrap_summary.csv")
 BOOT_DRAWS_PATH = Path("tables/loop014_h3_bootstrap_draws.csv")
-OUTPUT_PATH = Path("tables/loop016_h3_power_summary.csv")
+SUMMARY_PATH = Path("tables/loop016_h3_power_summary.csv")
+CONFIRM_PATH = Path("tables/loop016_h3_confirmatory.csv")
 
 COUNTRY_COL = "What country do you live in? (4bxk14u)"
 
@@ -231,8 +232,35 @@ def main() -> None:
         },
     ]
 
-    output = pd.DataFrame(rows)
-    output.to_csv(OUTPUT_PATH, index=False)
+    summary = pd.DataFrame(rows)
+    summary.to_csv(SUMMARY_PATH, index=False)
+
+    confirm_row = {
+        "contrast_id": "H3_ge10m_classchild",
+        "estimand": "Log-odds slope for childhood class predicting Pr(net worth ≥ $10M)",
+        "model": "Partial proportional-odds stacked logit",
+        "n_total": n_total,
+        "n_ge10m": n_ge10m,
+        "share_ge10m": share_ge10m,
+        "estimate_log_odds": analytic_effect,
+        "analytic_se": analytic_se,
+        "analytic_ci_low": analytic_ci_low,
+        "analytic_ci_high": analytic_ci_high,
+        "bootstrap_mean": boot_mean,
+        "bootstrap_sd": boot_sd,
+        "bootstrap_ci_low": boot_ci_low,
+        "bootstrap_ci_high": boot_ci_high,
+        "design_effect": design_effect,
+        "effective_n": effective_n,
+        "power_srs": analytic_power,
+        "power_cluster": boot_power,
+        "positive_draw_share": pos_share,
+        "wald_reject_share_srs": wald_reject_srs,
+        "wald_reject_share_boot": wald_reject_boot,
+        "script": "PYTHONHASHSEED=20251016 python scripts/loop014_h3_cluster_bootstrap.py --n-reps 300; python scripts/loop016_h3_power_check.py",
+        "notes": "Analytic stats from tables/loop010_h3_threshold_effects.csv; bootstrap stats from tables/loop014_h3_bootstrap_summary.csv/draws.csv.",
+    }
+    pd.DataFrame([confirm_row]).to_csv(CONFIRM_PATH, index=False)
 
 
 if __name__ == "__main__":
