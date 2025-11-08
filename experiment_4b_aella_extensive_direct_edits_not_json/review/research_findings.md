@@ -10,3 +10,12 @@ N1: PASS – State remains in PAP with explicit next actions for the blocked que
 
 Notes: Unblocking Semantic Scholar access and delivering `analysis/code/run_models.py` should stay top priorities before attempting PAP freeze.
 
+## Loop 004 — 2025-11-08T13:12:09.851252+00:00
+DECISION: CONTINUE
+R1: PASS – Seed 20251016 and the exact regeneration commands are reiterated in the PAP and notebook, so reproducibility remains auditable (analysis/pre_analysis_plan.md:16, analysis/pre_analysis_plan.md:64, notebooks/research_notebook.md:6).
+L1: PASS – The loop logged the mandated Semantic Scholar attempt with full parameters despite the continuing 403, and preserved the error payload for traceability (analysis/decision_log.csv:31, lit/queries/loop_004/query_001.json:1).
+P1: PASS – n≥10 protection is restated in the PAP and enforced via the new disclosure-check template documenting that no public artifacts were released (analysis/pre_analysis_plan.md:17, qc/disclosure_check_loop_004.md:1).
+N1: PASS – Phase stays in PAP with next actions clearly marked (blocked Semantic Scholar credential, pending DAG/imputation work) and the PAP lists the same freeze blockers (artifacts/state.json:31, analysis/pre_analysis_plan.md:82).
+
+Notes: Prioritize restoring Semantic Scholar access so the PAP can meet its literature gate before freeze.
+
