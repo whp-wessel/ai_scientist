@@ -51,6 +51,9 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Tung et al. (2023), DOI `10.1001/jamacardio.2023.2672`** — Captured via CrossRef (loop 024) linking childhood parental incarceration to adult-onset hypertension and cardiovascular risk, ensuring H2 incorporates family disruption covariates while Semantic Scholar access is still blocked.
 - **Liu & Yin (2025 preprint), DOI `10.21203/rs.3.rs-6195416/v1`** — Captured via CrossRef (loop 025) showing that maternal warmth mediates the effect of inter-parent conflict on emerging-adult aggression, reinforcing the H2 guidance mechanism until Semantic Scholar access resumes.
 
+### Ops Coordination Note
+The next support ticket will highlight the Liu & Yin (2025) constructs (maternal/paternal warmth plus short-form DERS items) so ops can see which PAP covariates remain blocked by the missing Semantic Scholar sources.
+
 ## Request
 1. **Waiver:** Allow continuation through PAP freeze relying on the documented CrossRef DOIs while Semantic Scholar restores API access. The attempt log above, paired with decision-log entries, demonstrates due diligence.
 2. **Remediation Plan:**

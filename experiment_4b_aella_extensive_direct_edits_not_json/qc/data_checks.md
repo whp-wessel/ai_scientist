@@ -51,6 +51,7 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
 3. Semantic Scholar credential still failing (403). Loop 025 logged `lit/queries/loop_025/query_001.json`; the waiver memo now spans loops 008-025 and includes the new Liu & Yin 2025 DOI (`10.21203/rs.3.rs-6195416/v1`) alongside earlier additions (Taskesen 2025, Van Alen 2020, Tung 2023, etc.), so PAP freeze remains on hold until approval or credential restoration.
+4. Liu & Yin (2025) motivates explicit coding for maternal/paternal warmth and the short-form DERS items (`e3y0vab`–`e3y0vah`). Draft transformation script before PAP freeze so the mediator specification is reproducible once the waiver/API issue is resolved.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes

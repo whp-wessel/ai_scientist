@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T18:36Z
+last_updated: 2025-11-08T18:45Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -39,6 +39,8 @@ Loop 023 note: Mandated Semantic Scholar query (“childhood parental warmth adu
 Loop 024 note: Semantic Scholar attempt (“childhood parental support adult cardiovascular resilience”) again failed with 403 (`lit/queries/loop_024/query_001.json`). To keep H2 literature current we logged the JAMA Cardiology article on childhood parental incarceration and adult-onset hypertension (`10.1001/jamacardio.2023.2672`), updated `lit/evidence_map.csv` / `lit/bibliography.*`, and extended the waiver memo through Loop 024. PAP status remains draft until the waiver is approved or the API credential is restored, and the plan now highlights family-disruption covariates (parental incarceration, loss) as mandatory controls for the guidance models.
 
 Loop 025 note: Semantic Scholar query (“childhood parental nurturance adult metabolic health”) produced yet another 403 (`lit/queries/loop_025/query_001.json`), so we captured CrossRef metadata for Liu & Yin (2025 preprint; DOI `10.21203/rs.3.rs-6195416/v1`). The study shows maternal warmth mediating the effect of inter-parent conflict on emerging-adult aggression, reinforcing H2’s need to pre-specify emotion-regulation covariates and maternal/paternal warmth interactions before PAP freeze. The waiver memo and literature registries now include this DOI while we wait for a working API credential or formal waiver approval.
+
+Loop 025 action items: map survey columns `parentwarm_mom`, `parentwarm_dad`, and the short-form Difficulties in Emotion Regulation Scale (see codebook fields `e3y0vab`–`e3y0vah`) into a composite that mirrors Liu & Yin’s maternal warmth and dysregulation constructs so the PAP can cite a concrete coding plan once S2 access or the waiver clears.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
