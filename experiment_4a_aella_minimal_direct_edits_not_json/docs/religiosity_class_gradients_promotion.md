@@ -50,3 +50,16 @@
 - **What changed this loop**: Rather than refitting the models, we packaged the Loop 020 ridge/ordinal stress tests for reviewers by updating `analysis/pre_analysis_plan.md`, `analysis/sensitivity_notes.md`, and `docs/loop016_reviewer_packet.md` so they highlight the four-row confirmatory shell (binary tests + ordinal backups) and the reserved freeze tag `pap_freeze_h4_loop024`.
 - **Multiplicity reminder**: Only the binary rows expand the BH denominator (`m=2`); the ordinal rows are preregistered outcome checks that must be regenerated in the freeze commit but leave the q-values (0.023; 0.194) unchanged.
 - **Next reviewer touchpoint**: Once the steering reviewer acknowledges this summary (notebook + memo + sensitivity notes), we will execute the freeze protocol: rerun `scripts/loop020_h4_stress_tests.py`, refresh `tables/loop016_h4_confirmatory.csv`, update the PAP header to point at the new tag, and archive the approval trail inside `docs/reviewer_approvals/`.
+
+## 9. Loop 024 Freeze Readiness Checklist
+
+| Task | Owner | Status | Notes |
+| --- | --- | --- | --- |
+| Reviewer go / approval memo | Steering reviewer (Dr. M. Mendez) | Pending | Awaiting written approval after distributing the Loop 020 ridge/ordinal packet + Loop 021 summary. Target 2025-11-11; approval email will be archived under `docs/reviewer_approvals/religiosity_class_gradients_loop024.md`. |
+| Regenerate confirmatory shell | Methods (Wessel) | Ready | Commands staged: `PYTHONHASHSEED=20251016 python scripts/loop020_h4_stress_tests.py` followed by `PYTHONHASHSEED=20251016 python scripts/loop016_h4_confirmatory_tables.py`. Outputs overwrite `tables/loop020_h4_*` and `tables/loop016_h4_confirmatory.csv`. |
+| Update registries | Methods | Ready | After rerunning scripts, set `confirmatory=TRUE` for both binary contrasts in `analysis/hypotheses.csv` and `analysis/results.csv`, preserving q-values (0.0232; 0.1942) and SRS justification. |
+| PAP/manuscript alignment | Methods | Ready | Rewrite the PAP header to `status: frozen (commit <hash>)` once the git tag is created, update Section 4 of `reports/paper.md` to cite the new tag + commands, and document the freeze in `analysis/pre_analysis_plan.md` + `docs/loop016_reviewer_packet.md`. |
+| Tag + reproducibility artifacts | Methods + Runner | Pending | Tag name reserved as `pap_freeze_h4_loop024`. After tagging, append the action to `analysis/decision_log.csv`, `notebooks/research_notebook.md`, `artifacts/repro_report.md`, and capture the commit hash in the PAP header. |
+| Privacy verification | Privacy lead (Anya T.) | Ready | Public tables remain aggregate; confirm that `tables/loop016_h4_confirmatory.csv` discloses coefficients/probabilities only and that no cell implies n<10 before green-lighting the tag. |
+
+**Action**: As soon as the reviewer signs off, execute the command block above, update the registries, and create the tag. This checklist keeps every pre-freeze dependency explicit so auditors can see what remains outstanding in Loop 024.

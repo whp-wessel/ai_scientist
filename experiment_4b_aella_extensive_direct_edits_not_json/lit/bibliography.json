@@ -415,5 +415,28 @@
       "C2"
     ],
     "notes": "MIDUS cohort evidence shows parental warmth improves HF-HRV and cardiovascular outcomes, informing H2's physiological mechanism while Semantic Scholar access is blocked."
+  },
+  {
+    "id": "tung2023parentalincarceration",
+    "title": "Childhood Parental Incarceration and Adult-Onset Hypertension and Cardiovascular Risk",
+    "authors": [
+      "Elizabeth L. Tung",
+      "Kristen E. Wroblewski",
+      "Jennifer A. Makelarski",
+      "Nathaniel J. Glasser",
+      "Stacy Tessler Lindau"
+    ],
+    "year": 2023,
+    "venue": "JAMA Cardiology",
+    "volume": "8",
+    "issue": "10",
+    "pages": "927",
+    "doi": "10.1001/jamacardio.2023.2672",
+    "url": "https://doi.org/10.1001/jamacardio.2023.2672",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C2"
+    ],
+    "notes": "JAMA Cardiology cohort links parental incarceration history with elevated adult hypertension and cardiovascular risk, reinforcing the need to model family disruption when testing H2."
   }
 ]

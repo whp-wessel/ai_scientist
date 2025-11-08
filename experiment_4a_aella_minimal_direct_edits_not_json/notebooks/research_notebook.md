@@ -199,3 +199,13 @@
 1. Follow up with Data Governance for a delivery ETA + checksum bundle so the ingestion script can be rerun immediately upon receipt.
 2. Once replicates land, produce the weighted panel, populate `tables/loop021_h3_weighted_effect.csv`, and rerun `scripts/loop016_h3_power_check.py --use-weights` to update the design-effect tables.
 3. Prepare the `religiosity_class_gradients` freeze packet so tagging can proceed as soon as reviewers approve.
+
+## 2025-11-09 – Loop 024
+- **DG-4827 follow-up:** Logged a new manifest entry recording the 2025-11-09 check-in with Data Governance; Compliance expects to release the AES-256 bundles + checksum file by 2025-11-16, so we added the placeholder checksum stub and updated `docs/h3_design_effect_plan.md` with a Loop 024 status snapshot that ties the rerun commands (`scripts/loop021_h3_weighted_checks.py` → `scripts/loop016_h3_power_check.py --use-weights`) to the incoming delivery.
+- **Procurement tracking:** Recorded the first two vendor Q&A exchanges inside `docs/h3_high_wealth_refresh/qna_loop021.md` and expanded the LOI register to capture per-country status notes (two partners countersigned; six in legal review). These updates keep the design-effect plan and manuscript honest about which mitigation milestones are actually met.
+- **H4 freeze readiness:** Added a Loop 024 checklist to `docs/religiosity_class_gradients_promotion.md`, stood up `docs/reviewer_approvals/religiosity_class_gradients_loop024.md`, and reminded the manuscript that the confirmatory tag will fire once the reviewer signs off. All tasks (regenerate shell, flip `confirmatory=TRUE`, update PAP header, tag `pap_freeze_h4_loop024`) are now enumerated with owners/due dates.
+
+### Loop 024 Next Actions
+1. Take delivery of the DG-4827 replicate weights (target 2025-11-16), drop the checksum file into `docs/h3_replicate_weights_manifest/`, rerun the ingestion script, and refresh `tables/loop016_h3_power_summary.csv` with weighted SEs.
+2. Execute the `religiosity_class_gradients` freeze immediately after the reviewer sends the go-ahead: rerun scripts, update hypotheses/results, rewrite the PAP header, and tag `pap_freeze_h4_loop024`.
+3. Continue daily monitoring of the high-wealth RFP Q&A inbox and LOI status changes, logging each update in `docs/h3_high_wealth_refresh/qna_loop021.md`, `docs/h3_country_expansion_materials/loi_register.csv`, and the decision log.

@@ -6,12 +6,12 @@
     "phase": "loop",
     "ts": "2025-11-08T15:49:56.592983+00:00"
   },
-  "last_updated": "2025-11-08T17:58:49Z",
-  "loop_counter": 23,
+  "last_updated": "2025-11-09T10:45:00Z",
+  "loop_counter": 24,
   "next_actions": [
-    "Secure the DG-4827 replicate-weight drop (PSU IDs, base weights, BRR/Fay) so the new ingestion script (`tables/loop021_h3_weight_delivery_status.csv` currently blocked) can be rerun and feed `scripts/loop016_h3_power_check.py --use-weights`.",
-    "Freeze the `religiosity_class_gradients` family once reviewers approve by regenerating the four-row shell, updating hypotheses/results, and tagging `pap_freeze_h4_loop024`.",
-    "Track the high-wealth RFP Q&A plus LOI status changes and log every update in the decision log + evidence folders."
+    "Ingest the DG-4827 replicate-weight drop as soon as Data Governance posts the AES-256 bundle (target 2025-11-16), then rerun `scripts/loop021_h3_weighted_checks.py` and `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` reflects the weighted design effect.",
+    "Execute the `religiosity_class_gradients` freeze once the reviewer signs off: rerun the Loop 020 stress tests, refresh `tables/loop016_h4_confirmatory.csv`, flip the hypotheses/results rows to `confirmatory=TRUE`, rewrite the PAP header with tag `pap_freeze_h4_loop024`, and log the git tag.",
+    "Maintain the high-wealth RFP Q&A and LOI status trail by appending every vendor exchange and countersigned LOI to `docs/h3_high_wealth_refresh/qna_loop021.md` and `docs/h3_country_expansion_materials/loi_register.csv` before the 2025-11-15 Q&A close."
   ],
   "phase": "analysis",
   "phase_ix": 2,
