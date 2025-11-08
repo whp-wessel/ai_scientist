@@ -62,3 +62,4 @@ ts,action,inputs,rationale_short,code_path,outputs,status
 2025-11-08T14:11:50Z,qc_data_checks_loop008,"qc/data_checks.md; artifacts/session_info.txt; artifacts/checksums.json","Documented Loop 008 QC header plus reproducibility checkpoint referencing current session/checksum timestamps.",manual edit,qc/data_checks.md,success
 2025-11-08T14:12:20Z,notebook_update_loop008,notebooks/research_notebook.md,"Captured Loop 008 narrative (review response, query failure, PAP/QC updates) for audit trail.",manual edit,notebooks/research_notebook.md,success
 2025-11-08T14:12:40Z,state_update_loop008,artifacts/state.json,"Incremented loop counter to 8 and refreshed N1 note with loop_008 query reference while keeping phase=pap.",manual edit,artifacts/state.json,success
+2025-11-08T14:15:30.084805+00:00,loop_008,phase:pap,runner auto-log,runner.py,artifacts/last_model_raw.txt;artifacts/llm_raw/loop_008.txt,success
