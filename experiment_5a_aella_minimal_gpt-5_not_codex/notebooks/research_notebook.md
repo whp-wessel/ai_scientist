@@ -99,3 +99,16 @@ Notes:
 Next:
 - Add `.env` with `S2_API_Key` and execute saved queries; extract `externalIds.DOI` into `lit/evidence_map.csv` and cite in `reports/paper.md`.
 - Begin drafting `analysis/sensitivity_notes.md` covering ordinal modeling and potential confounders.
+
+---
+## Loop 007 (literature)
+- Ran Semantic Scholar search via helper (unauthenticated):
+  - `python scripts/semantic_scholar_cli.py search --query "childhood religion religiosity adult wellbeing mental health" --limit 5 --output lit/queries/loop_007/query_001.json`
+- Query succeeded; saved JSON under `lit/queries/loop_007/query_001.json`.
+- Extracted DOIs from the saved JSON into `lit/evidence_map.csv` using:
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_007/query_001.json --output lit/evidence_map.csv --topic "childhood religiosity and wellbeing"`
+- Updated `analysis/decision_log.csv` with both actions. No confirmatory analyses added this loop.
+
+Next:
+- Add `.env` with `S2_API_Key` to broaden literature queries and follow-up on abstracts most relevant to religiosity, monogamy, and wellbeing.
+- Start drafting `analysis/sensitivity_notes.md` (ordinal models, nonlinearities, additional covariates) ahead of PAP freeze.

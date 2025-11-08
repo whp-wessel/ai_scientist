@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T14:28Z
+last_updated: 2025-11-08T14:46Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -10,7 +10,7 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 2. Measurement validity dossier (`qc/measures_validity.md`) is populated for every referenced construct.
 3. Reproducible code lives under `analysis/code/` with command lines captured below.
 
-Loop 010 note: Semantic Scholar CLI attempts continue to return 403s (see `lit/queries/loop_010/query_001.json`); PAP remains draft while we prepare a formal waiver request citing the accumulated evidence (Loops 008–010) unless ops can restore access immediately.
+Loop 011 note: Semantic Scholar CLI attempts continue to return 403s (see `lit/queries/loop_011/query_001.json`); PAP remains draft while we prepare a formal waiver request citing the accumulated evidence (Loops 008–011) unless ops can restore access immediately.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

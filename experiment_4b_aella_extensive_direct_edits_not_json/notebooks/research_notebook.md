@@ -112,3 +112,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 010 note plus explicit waiver-escalation language, keeping the freeze gate closed until either access is restored or ops approves the waiver.
 - Updated `qc/data_checks.md` to Loop 010, confirming the reproducibility checkpoint (session info timestamp 2025-11-08T14:24Z; checksums 2025-11-08T13:46Z) and re-stating the n ≥ 10 disclosure guard.
 - Next: coordinate with ops to secure a valid Semantic Scholar key or formal waiver before Loop 011 so the PAP can move toward freeze without violating literature governance.
+
+## Loop 11 Updates (2025-11-08)
+- Captured the Loop 010 reviewer summary (R1/L1/P1/N1 all PASS but urging continued S2 escalation) in `analysis/decision_log.csv`, reaffirming that PAP freeze is blocked on literature governance.
+- Executed the mandated Semantic Scholar query (`childhood abuse self love adult wellbeing`); HTTP 403 persists, so the payload now resides at `lit/queries/loop_011/query_001.json` and action N1 stays blocked pending a working key or waiver.
+- Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 011 note referencing the new query file, and extended `qc/data_checks.md` to document the reproducibility checkpoint plus the ongoing literature blocker.
+- Planned follow-up: keep `artifacts/state.json` in PAP phase with loop_counter=11, continue daily evidence attempts, and prepare waiver documentation if ops cannot restore API access before Loop 013.

@@ -1,12 +1,12 @@
-# Data Quality Checklist — Loop 010
+# Data Quality Checklist — Loop 011
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
 
 ## Structural Checks
 - [x] File exists and is readable (CSV, UTF-8).
-- [x] Row count = 14,443; column count = 718 (verified via pandas).
-- [ ] Schema: mixed dtypes detected (see warnings below) — requires recoding script.
+- [x] Row count = 14,443; column count = 718 (verified via pandas in DP1 scripts; no schema drift since Loop 002).
+- [ ] Schema: mixed dtypes persist on select columns (see warnings below) — recoding remains on the backlog for the modeling scripts.
 
 Command to reproduce counts:
 ```bash
@@ -16,10 +16,10 @@ python analysis/code/describe_dataset.py \
   --output-json artifacts/describe_dataset_loop002.json \
   --output-md qc/data_overview_loop002.md
 ```
-_Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_loop002.md` for table output.
+_Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_loop002.md` for the table output.
 
 ## Missingness Snapshot
-- Mean missingness across variables: 44.6% (variable-level profile generated Loop 003).
+- Mean missingness across variables: 44.6% (profile generated Loop 003; no new raw deliveries since).
 - Command:
   ```bash
   python analysis/code/missingness_profile.py \
@@ -44,15 +44,15 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 - Result: PAP variables documented with `source_column` mappings; `qc/metadata_validation.md` logs status (still assuming SRS).
 
 ## Reproducibility Checkpoint
-- [x] `artifacts/session_info.txt` last updated 2025-11-08T14:24:06Z with package versions; no environment changes since Loop 009, so rerun not required this loop.
-- [x] `artifacts/checksums.json` timestamp 2025-11-08T13:46:15Z, covering raw + imputed files; no new raw deliveries landed after that mtime, so hashes remain current.
+- [x] `artifacts/session_info.txt` last updated 2025-11-08T14:24:06Z with package versions and git HEAD; no environment changes occurred afterward, so rerun not required this loop.
+- [x] `artifacts/checksums.json` timestamp 2025-11-08T13:46:15Z covering raw + imputed files; raw dataset mtimes unchanged, so hashes remain current.
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403); PAP freeze deferred until literature-governance policy is satisfied or a waiver is recorded (latest attempt `lit/queries/loop_010/query_001.json`).
+3. Semantic Scholar credential still failing (403); latest attempt logged at `lit/queries/loop_011/query_001.json`, keeping PAP freeze blocked until ops restores access or a waiver is approved.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes
 - All deterministic QC steps (DP1–DP8) are listed in `analysis/data_processing.md` with copy/paste-ready commands.
-- Any interim manual calculation must be replaced by a scripted step and logged in the ledger before PAP freeze.***
+- Any interim manual calculation must be replaced by a scripted step and logged in the ledger before PAP freeze.
