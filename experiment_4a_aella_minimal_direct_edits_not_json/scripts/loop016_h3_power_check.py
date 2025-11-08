@@ -3,9 +3,11 @@
 
 from __future__ import annotations
 
+import argparse
 import math
+import sys
 from pathlib import Path
-from typing import List
+from typing import List, Tuple
 
 import pandas as pd
 
@@ -15,6 +17,7 @@ BOOT_SUMMARY_PATH = Path("tables/loop014_h3_bootstrap_summary.csv")
 BOOT_DRAWS_PATH = Path("tables/loop014_h3_bootstrap_draws.csv")
 SUMMARY_PATH = Path("tables/loop016_h3_power_summary.csv")
 CONFIRM_PATH = Path("tables/loop016_h3_confirmatory.csv")
+WEIGHTED_EFFECT_PATH = Path("tables/loop021_h3_weighted_effect.csv")
 
 COUNTRY_COL = "What country do you live in? (4bxk14u)"
 
@@ -36,7 +39,95 @@ def two_sided_power(z_true: float, alpha: float = 0.05) -> float:
     return lower + upper
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--use-weights",
+        action="store_true",
+        help=(
+            "If set, attempt to override the analytic SE/CI/design-effect "
+            "metrics with replicate-weight results stored in "
+            f"{WEIGHTED_EFFECT_PATH}."
+        ),
+    )
+    parser.add_argument(
+        "--weighted-effect-path",
+        type=Path,
+        default=WEIGHTED_EFFECT_PATH,
+        help=(
+            "CSV containing weighted effect overrides produced by "
+            "loop021_h3_weighted_checks.py (or follow-on scripts)."
+        ),
+    )
+    return parser.parse_args()
+
+
+def update_metric(
+    summary: pd.DataFrame, metric_name: str, new_value: float
+) -> None:
+    """Replace a summary-row value in-place."""
+
+    mask = summary["metric"] == metric_name
+    summary.loc[mask, "value"] = new_value
+
+
+def apply_weighted_overrides(
+    summary: pd.DataFrame,
+    confirm_row: dict[str, object],
+    weighted_path: Path,
+) -> Tuple[pd.DataFrame, dict[str, object]]:
+    """Override analytic metrics with replicate-weighted results if available."""
+
+    if not weighted_path.exists():
+        print(
+            f"[loop016] Weighted effect file {weighted_path} is missing; "
+            "keeping SRS + bootstrap diagnostics as-is.",
+            file=sys.stderr,
+        )
+        return summary, confirm_row
+    weighted = pd.read_csv(weighted_path)
+    required = {
+        "estimate_log_odds",
+        "analytic_se",
+        "analytic_ci_low",
+        "analytic_ci_high",
+        "design_effect",
+        "effective_n",
+    }
+    if weighted.empty or not required.issubset(set(weighted.columns)):
+        print(
+            f"[loop016] Weighted effect file {weighted_path} does not contain "
+            f"the required columns {sorted(required)}; leaving defaults intact.",
+            file=sys.stderr,
+        )
+        return summary, confirm_row
+
+    row = weighted.iloc[0]
+    for key in required:
+        confirm_row[key] = float(row[key])
+    if "power_srs" in row:
+        try:
+            power_val = float(row["power_srs"])
+        except (TypeError, ValueError):
+            power_val = float("nan")
+        if not math.isnan(power_val):
+            confirm_row["power_srs"] = power_val
+    if "notes" in row and isinstance(row["notes"], str) and row["notes"]:
+        confirm_row["notes"] = row["notes"]
+
+    update_metric(summary, "PPO effect (log-odds)", confirm_row["estimate_log_odds"])
+    update_metric(summary, "Analytic SE (SRS)", confirm_row["analytic_se"])
+    update_metric(summary, "Analytic 95% CI low", confirm_row["analytic_ci_low"])
+    update_metric(summary, "Analytic 95% CI high", confirm_row["analytic_ci_high"])
+    update_metric(summary, "Approximate power (α=0.05)", confirm_row["power_srs"])
+    update_metric(summary, "Design effect (cluster vs. SRS)", confirm_row["design_effect"])
+    update_metric(summary, "Effective sample size", confirm_row["effective_n"])
+    return summary, confirm_row
+
+
 def main() -> None:
+    args = parse_args()
+
     keep_cols = ["networth", "classchild", COUNTRY_COL]
     df = pd.read_csv(DATA_PATH, usecols=keep_cols, low_memory=False)
     df = df.dropna(subset=["networth", "classchild", COUNTRY_COL])
@@ -233,7 +324,6 @@ def main() -> None:
     ]
 
     summary = pd.DataFrame(rows)
-    summary.to_csv(SUMMARY_PATH, index=False)
 
     confirm_row = {
         "contrast_id": "H3_ge10m_classchild",
@@ -260,6 +350,15 @@ def main() -> None:
         "script": "PYTHONHASHSEED=20251016 python scripts/loop014_h3_cluster_bootstrap.py --n-reps 300; python scripts/loop016_h3_power_check.py",
         "notes": "Analytic stats from tables/loop010_h3_threshold_effects.csv; bootstrap stats from tables/loop014_h3_bootstrap_summary.csv/draws.csv.",
     }
+
+    if args.use_weights:
+        summary, confirm_row = apply_weighted_overrides(
+            summary=summary,
+            confirm_row=confirm_row,
+            weighted_path=args.weighted_effect_path,
+        )
+
+    summary.to_csv(SUMMARY_PATH, index=False)
     pd.DataFrame([confirm_row]).to_csv(CONFIRM_PATH, index=False)
 
 

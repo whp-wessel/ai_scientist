@@ -1,0 +1,2 @@
+metric,value,units,notes
+status,blocked,,"Cannot merge weighting inputs until files with roles brr, psu, weights are delivered under docs/h3_replicate_weights_manifest."

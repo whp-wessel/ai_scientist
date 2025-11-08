@@ -189,3 +189,13 @@
 1. Ingest the replicate-weight delivery (ticket DG-4827) and rerun the weighted power scripts for the ≥$10M PPO slope.
 2. Freeze the `religiosity_class_gradients` family once reviewers sign off by regenerating `tables/loop016_h4_confirmatory.csv`, updating `analysis/hypotheses.csv`/`analysis/results.csv`, and tagging the PAP (`pap_freeze_h4_loop024`).
 3. Track high-wealth RFP Q&A plus LOI progress and document changes in `analysis/decision_log.csv` + `docs/h3_country_expansion_materials/loi_register.csv`.
+
+## 2025-11-08 – Loop 023
+- Implemented `scripts/loop021_h3_weighted_checks.py`, a manifest-driven ingestion tool that verifies each DG-4827 deliverable (PSU IDs, base weights, BRR/Fay replicates, metadata) and writes reproducible audit tables (`tables/loop021_h3_weight_delivery_status.csv`, `tables/loop021_h3_weighted_summary.csv`). The script now blocks early when required roles are missing and will eventually emit a merged weighted panel for downstream PPO diagnostics.
+- Ran the ingestion script with the default manifest path; all files are still absent under `docs/h3_replicate_weights_manifest/`, so the summary table records `status=blocked` and no replicate-driven outputs were generated. Logged the attempt plus missing roles in `docs/h3_replicate_weights_manifest/manifest_loop021.md` and `docs/h3_design_effect_plan.md`.
+- Updated the PAP and manuscript Next Steps to reference the new script, documented the blocker in the design-effect plan, and reminded reviewers (via `reports/paper.md`) that confirmatory promotion remains contingent on Data Governance shipping the DG-4827 package.
+
+### Loop 023 Next Actions
+1. Follow up with Data Governance for a delivery ETA + checksum bundle so the ingestion script can be rerun immediately upon receipt.
+2. Once replicates land, produce the weighted panel, populate `tables/loop021_h3_weighted_effect.csv`, and rerun `scripts/loop016_h3_power_check.py --use-weights` to update the design-effect tables.
+3. Prepare the `religiosity_class_gradients` freeze packet so tagging can proceed as soon as reviewers approve.

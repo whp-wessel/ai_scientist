@@ -24,3 +24,8 @@
 - Ticket DG-4827 logged in ServiceNow with attachments (Data Use Addendum v3.2, Confidentiality rider).  
 - Compliance reviewer: Sara J. (target sign-off 2025-11-12).  
 - Any delays or scope changes must be recorded here and in `analysis/decision_log.csv` per the Invariant Principles.
+
+## Loop 023 Status Update — 2025-11-08
+- Executed the ingestion stub (`PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md`). The script now writes `tables/loop021_h3_weight_delivery_status.csv`, logging that none of the requested files (PSU IDs, base weights, BRR/Fay replicates, metadata JSON) exist under this manifest directory yet.
+- Summary table `tables/loop021_h3_weighted_summary.csv` currently reports `status=blocked` because roles **psu**, **weights**, and **brr** remain undelivered. No combined panel or replicate-driven estimates have been produced.
+- Next action for Data Governance: confirm the encrypted drop at `sftp://secure-gfs/replicates/loop021/`, share the checksum manifest, and notify Methods so the ingestion script can be rerun immediately after delivery.

@@ -22,6 +22,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 019 | 2025-11-08T17:14:50Z | "childhood faith community adult resilience depression" | 403 Forbidden | `lit/queries/loop_019/query_001.json` |
 | 020 | 2025-11-08T17:25:02Z | "childhood spiritual involvement adult depressive symptoms social support" | 403 Forbidden | `lit/queries/loop_020/query_001.json` |
 | 021 | 2025-11-08T17:45:08Z | "childhood parental guidance adult health resilience" | 403 Forbidden | `lit/queries/loop_021/query_001.json` |
+| 022 | 2025-11-08T17:58:12Z | "childhood parental warmth adult mental health resilience" | 403 Forbidden | `lit/queries/loop_022/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -42,6 +43,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Grummitt et al. (2024), DOI `10.1001/jamapsychiatry.2024.0804`** — Captured via CrossRef (loop 020) quantifying the global burden of mental disorders/suicide attributable to childhood maltreatment, providing effect-size context for H3 power planning while S2 remains unavailable.
 - **McLeod (1991), DOI `10.2307/2136804`** — Captured via CrossRef (loop 021) showing that childhood parental loss elevates adult depressive symptoms, reinforcing the need for family adversity controls in H1 while S2 access is down.
 - **Wheeler (2023), DOI `10.1136/archdischild-2023-326071`** — Captured via CrossRef (loop 021) summarizing evidence that parental influence persists into young adulthood, supporting H2’s guidance→health assumptions despite the ongoing outage.
+- **Taskesen et al. (2025), DOI `10.3389/fpsyg.2025.1629350`** — Captured via CrossRef (loop 022) demonstrating that parental warmth/autonomy support predicts young-adult resilience through emotion crafting, reinforcing the H2 parental guidance mechanism while the Semantic Scholar credential remains blocked.
 
 ## Request
 1. **Waiver:** Allow continuation through PAP freeze relying on the documented CrossRef DOIs while Semantic Scholar restores API access. The attempt log above, paired with decision-log entries, demonstrates due diligence.

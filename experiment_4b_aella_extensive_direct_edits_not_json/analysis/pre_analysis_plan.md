@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T17:47Z
+last_updated: 2025-11-08T18:05Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -31,6 +31,8 @@ Loop 019 note: Semantic Scholar attempt (`lit/queries/loop_019/query_001.json`, 
 Loop 020 note: Semantic Scholar query (`childhood spiritual involvement adult depressive symptoms social support`) produced yet another 403 (`lit/queries/loop_020/query_001.json`). To avoid stalling H1 evidence, we captured CrossRef metadata for Kasen et al. (2014; DOI `10.1002/da.22131`, see `lit/queries/loop_020/crossref_query_001.json`), which reports that higher religiosity predicts improved psychosocial functioning among high-risk young adults. The same query also surfaced Giri et al. (2025; DOI `10.2139/ssrn.5144651`) and Grummitt et al. (2024; DOI `10.1001/jamapsychiatry.2024.0804`), documenting intergenerational ACE transmission and maltreatment-attributable mental-disorder burdens, which inform H3’s parental-history controls and effect-size expectations. PAP status stays draft until the S2 key or waiver clears, and these papers add motivation for modeling stress-by-religiosity interactions plus trauma-informed controls.
 
 Loop 021 note: Mandatory Semantic Scholar search (`childhood parental guidance adult health resilience`) continued to fail with HTTP 403 (`lit/queries/loop_021/query_001.json`). As fallback we logged CrossRef metadata for McLeod (1991; DOI `10.2307/2136804`) showing that childhood parental loss predicts adult depression, and Wheeler (2023; DOI `10.1136/archdischild-2023-326071`) summarizing evidence that parental influence persists into young adulthood. Both citations now live in `lit/evidence_map.csv` / `lit/bibliography.*` and motivate adding family-loss indicators plus sustained guidance quartiles to the PAP robustness section once the waiver or new API credential clears.
+
+Loop 022 note: Semantic Scholar remains blocked (`lit/queries/loop_022/query_001.json` logged another 403 for the query “childhood parental warmth adult mental health resilience”), so we captured CrossRef metadata for Taskesen et al. (2025; DOI `10.3389/fpsyg.2025.1629350`). The study shows parental autonomy support and warmth boosting young-adult resilience via “emotion crafting,” reinforcing H2’s guidance mechanism and the need to pre-specify mediator adjustments (emotion awareness/action, savoring beliefs) once the waiver or new API credential enables PAP freeze.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

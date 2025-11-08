@@ -70,8 +70,9 @@ To move the ≥$10M PPO slope toward confirmatory power, we translated the strat
 
 ### C. Replicate-Weight Delivery
 - **Action bundle**: Drafted a data-use addendum requesting household- and PSU-level IDs plus either BRR or Fay replicate weights for every respondent in `childhoodbalancedpublic_original.csv`. The addendum references the closed internal SFTP (`sftp://secure-gfs/replicates/loop021/`) so Data Governance can drop encrypted files once approvals clear.
-- **Owner / status**: Data Governance (Miguel R.) is routing the addendum through Compliance; status = *submitted* (ticket DG-4827 opened 2025-11-09). Engineering already stubbed `scripts/loop021_h3_weighted_checks.py` to ingest BRR replicates once delivered.
-- **Next evidence drop**: When the replicate package arrives, deposit the manifest plus checksum file under `docs/h3_replicate_weights_manifest/` and rerun `scripts/loop016_h3_power_check.py` with the weighted SEs to document the updated design effect inside `tables/loop016_h3_power_summary.csv`.
+- **Owner / status**: Data Governance (Miguel R.) is routing the addendum through Compliance; status = *submitted* (ticket DG-4827 opened 2025-11-09). Loop 023 implemented `scripts/loop021_h3_weighted_checks.py`, which parses the manifest, logs per-file checksums (`tables/loop021_h3_weight_delivery_status.csv`), and stages merged analytic panels once the drop lands.
+- **Current blocker (Loop 023)**: Running the ingestion script on 2025-11-08 confirmed that none of the requested files (PSU IDs, base weights, BRR/Fay replicates, metadata JSON) exist under `docs/h3_replicate_weights_manifest/` yet; `tables/loop021_h3_weighted_summary.csv` therefore reports `status=blocked`.
+- **Next evidence drop**: When the replicate package arrives, deposit the manifest plus checksum file under `docs/h3_replicate_weights_manifest/`, rerun the ingestion script to build `outputs/loop021_h3_weighted_panel.parquet`, and execute `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` reflects the design-effect update.
 
 ## 6. Evidence Deposits — Loop 022
 
