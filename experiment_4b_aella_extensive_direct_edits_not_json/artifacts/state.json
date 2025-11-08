@@ -22,12 +22,12 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 44,
+  "loop_counter": 45,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 044 (see lit/queries/loop_044/query_001.json); waiver memo now covers loops 008-044 with CrossRef fallbacks including Bauldry 2006 (DOI 10.15868/socialsector.557) plus the previously logged Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, Kasen et al. 2014, Giri 2025, Grummitt et al. 2024, McLeod 1991, Wheeler 2023, Taskesen et al. 2025, Van Alen et al. 2020, Tung et al. 2023, Liu & Yin 2025, Talmon 2023, Lacey et al. 2013, Nelson 1982, Gerra et al. 2016, Oh & Han 2019, Xu & Zheng 2025, Moran et al. 2018, Kennedy et al. 2017, Gasper 2020, Renjilian et al. 2021, Hintikka et al. 1998, Bellis et al. 2017, Musliner & Singer 2014, Shlomi et al. 2022, Luecken 2000, Ashton et al. 2021, Kuhar et al. 2024, and the Nature Mental Health editorial (2024; 10.1038/s44220-024-00375-2). Ops memo still scheduled for 2025-11-09 15:00Z (lit/semantic_scholar_ops_memo_2025-11-09.md) and the 2025-11-10 support ticket template (lit/semantic_scholar_support_ticket_draft_2025-11-10.md) will be filed if the key is not restored.",
+      "notes": "Semantic Scholar API still 403 as of loop 045 (see lit/queries/loop_045/query_001.json); waiver memo now covers loops 008-045 with CrossRef fallbacks including Bauldry 2006, Kuhar 2024, Nature Mental Health 2024, Ashton 2021, Mandelli et al. 2015 (DOI 10.1016/j.eurpsy.2015.04.007), and the prior set. Ops memo still scheduled for 2025-11-09 15:00Z (lit/semantic_scholar_ops_memo_2025-11-09.md) with attachments, and the 2025-11-10 support ticket template (lit/semantic_scholar_support_ticket_draft_2025-11-10.md) will be filed if the key is not restored.",
       "owner": "agent",
       "status": "blocked"
     },
