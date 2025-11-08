@@ -1,0 +1,3 @@
+hypothesis_id,hypothesis_family,outcome,predictor,estimate,se,t_value,p_value,n_obs,r_squared,adj_r_squared,covariates,cov_type
+H1,childhood_adversity,ix5iyv3_scaled,mds78zu_scaled,-0.18147747223385274,0.006893843113903782,-26.324572409813275,1.0036524742352147e-152,14426,0.14678703516900782,0.14637279666478975,"selfage,gendermale,education,classchild,classteen,classcurrent",HC3
+H2,parental_support,z0mhd63_scaled,pqo6jmj_scaled,0.11394863773277279,0.00864345866199848,13.183222386861788,1.0960718191704157e-39,14429,0.1558696829645494,0.15545993938093894,"selfage,gendermale,education,classchild,classteen,classcurrent",HC3

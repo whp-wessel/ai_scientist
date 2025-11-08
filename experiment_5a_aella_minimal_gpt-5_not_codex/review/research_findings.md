@@ -159,3 +159,18 @@ R5 Completeness: WARN — PAP remains “status: draft” (analysis/pre_analysis
 
 Notes: Before any confirmatory tests, freeze/tag the PAP and control FDR with q-values for any confirmatory family >1 test.
 
+## Loop 014 — 2025-11-08T15:14:18.350187+00:00
+DECISION: CONTINUE
+
+R1 Reproducibility: PASS — Seed recorded (`artifacts/seed.txt`), actions/commands logged (`analysis/decision_log.csv` includes `run_models`), scripts present and runnable (`scripts/analysis/run_models.py`, `scripts/analysis/eda.py`), query artifacts saved (`lit/queries/loop_014/query_001.json`). Minor: no commit request found (`artifacts/git_message.txt` missing).
+
+R2 Statistical Rigor: PASS — Survey design justified as SRS (`config/survey_design.yaml`); results include effect sizes, SEs, CIs, p-values (`analysis/results.csv`), and `confirmatory=false` so FDR/q-values not required.
+
+R3 Literature/Evidence: PASS — Evidence map maintained with DOIs (`lit/evidence_map.csv`), saved queries exist (`lit/queries/*`), and manuscript cites peer‑reviewed source with DOI (`reports/paper.md`).
+
+R4 Privacy: PASS — Public tables suppress small cells (e.g., `<10` in `tables/key_vars_value_counts.csv`); cross‑tabs show counts >=10 (`tables/religion_by_monogamy.csv`).
+
+R5 Completeness: PASS — PAP present and marked draft (`analysis/pre_analysis_plan.md`), hypotheses/results registries exist (`analysis/hypotheses.csv`, `analysis/results.csv`), manuscript present (`reports/paper.md`). No confirmatory results, so freeze/tagging not yet required.
+
+Notes: Recommend adding a commit message to `artifacts/git_message.txt` to checkpoint this loop for full reproducibility alignment.
+

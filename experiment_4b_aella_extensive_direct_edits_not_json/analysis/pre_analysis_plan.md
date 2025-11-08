@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T15:25Z
+last_updated: 2025-11-08T15:40Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -17,6 +17,8 @@ Loop 012 note: Loop-mandated Semantic Scholar attempt again failed with 403 (see
 Loop 013 note: Added `lit/semantic_scholar_waiver_loop013.md`, consolidating loops 008–013 403 payloads and CrossRef fallbacks to request a temporary waiver while the Semantic Scholar key is repaired. PAP cannot freeze until that waiver is approved or a working key is restored.
 
 Loop 014 note: Semantic Scholar failure persisted (`lit/queries/loop_014/query_001.json`), so we logged a CrossRef-backed spirituality article (`Pandya 2017`, DOI `10.1080/15332985.2016.1222982`) that links faith-based support to lower childhood depression. The waiver memo now covers loops 008–014 and cites this new DOI, but PAP status stays draft until the waiver is approved or the API credential resumes service.
+
+Loop 015 note: Loop-mandated Semantic Scholar query (`childhood parental guidance adult health`) again returned 403 (`lit/queries/loop_015/query_001.json`). We captured a CrossRef fallback on parental monitoring vs. hazardous drinking (Turrisi et al., 2010; DOI `10.7312/guil14080-006`) and synchronized `lit/evidence_map.csv`, `lit/bibliography.*`, and the waiver memo. PAP remains draft until either the waiver is formally approved or the API key is reissued.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
@@ -95,11 +97,10 @@ Loop 014 note: Semantic Scholar failure persisted (`lit/queries/loop_014/query_0
 6. **Disclosure review:** Draft `qc/disclosure_check_loop_{loop}` with min cell sizes and suppression summary before any tables/figures leave the repo.
 
 ## Outstanding Tasks Before Freeze
-1. Restore Semantic Scholar access (or obtain formal waiver). Loop 010 query (`lit/queries/loop_010/query_001.json`) still returns 403; PAP freeze deferred until a working credential or waiver is recorded in `analysis/decision_log.csv`.
-2. Waiver escalation: Loop 010 still shows 403 (see `lit/queries/loop_010/query_001.json` and `analysis/decision_log.csv` entries for Loops 008–010); drafting the ops waiver request so PAP freeze can proceed if the key is not restored by Loop 011.
-3. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist automation (DP8) is linked to every planned table/figure.
+1. Restore Semantic Scholar access (or record a partner-approved waiver). Loops 008–015 remain 403-only (see `lit/queries/loop_{008-015}/query_001.json`), so PAP freeze is deferred until either the key is fixed or the waiver is approved and logged in `analysis/decision_log.csv`.
+2. Close the waiver action by capturing the approval decision (or credential fix) plus replaying the queued Semantic Scholar searches so the canonical evidence source is satisfied before PAP freeze.
+3. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once the literature gate clears and disclosure checklist automation (DP8) is linked to every planned table/figure.
 4. Keep `analysis/data_processing.md` synchronized with any new derivations (e.g., sensitivity specifications) and cite the ledger whenever PAP text references transformation history.
 5. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.***
-6. Compile Loops 008–012 Semantic Scholar failure metadata plus the Ross et al. (2019) CrossRef fallback summary to support the waiver request tracked as next action N6; PAP freeze remains blocked until a working key or waiver is recorded.
 
 _No confirmatory analysis will begin until the status is set to `frozen` with registry details and a recorded commit/tag._

@@ -138,3 +138,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Captured a CrossRef fallback (`lit/queries/loop_014/crossref_query_001.json`) yielding Pandya (2017, DOI `10.1080/15332985.2016.1222982`), then added the citation to `lit/evidence_map.csv` and `lit/bibliography.*` for Claim C1 (H1 religiosity).
 - Extended `lit/semantic_scholar_waiver_loop013.md` so the attempt log now covers loops 008–014 and cites the new DOI; PAP remains draft pending waiver approval or credential restoration but documents the addition in the loop note.
 - Refreshed `analysis/pre_analysis_plan.md`, `qc/data_checks.md`, and this notebook to capture the latest literature status and QC checkpoints; state stays in phase PAP with N1 marked blocked.
+
+## Loop 15 Updates (2025-11-08)
+- Reviewed the Loop 014 critique (R1 QC seeds, L1 S2 attempts, P1 disclosure guard, N1 PAP gating) and logged the response plus reproducibility confirmation in `analysis/decision_log.csv`.
+- Ran the mandated Semantic Scholar search (`childhood parental guidance adult health`); 403 persists, and the payload is archived at `lit/queries/loop_015/query_001.json` for the waiver trail.
+- Issued a CrossRef fallback query (`lit/queries/loop_015/crossref_query_001.json`) that surfaced Turrisi et al. (2010, DOI `10.7312/guil14080-006`); synchronized the new citation across `lit/evidence_map.csv`, `lit/bibliography.*`, and the waiver memo.
+- Updated the PAP (status still draft) with the Loop 015 note, refreshed `qc/data_checks.md`, and left state in phase PAP with N1 blocked pending credential restoration or waiver approval.

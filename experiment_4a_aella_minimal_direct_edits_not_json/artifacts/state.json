@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-08T18:05:00Z",
-  "loop_counter": 15,
+  "last_updated": "2025-11-08T18:45:00Z",
+  "loop_counter": 16,
   "next_actions": [
-    "Quantify effective sample size and power for the \u2265$10M H3 contrast (bootstrap precision + analytic SEs) before drafting confirmatory tables.",
-    "Finalize the H4 literature/PAP addendum around the moderate-practice \u00d7 classchild estimand and spell out the multiplicity plan.",
-    "Draft confirmatory-ready public tables for the H3 \u2265$10M contrast and the H4 class interaction so the reviewer can audit formatting next loop."
+    "Decide whether the \u2265$10M H3 confirmatory contrast moves forward despite 0.16 cluster-adjusted power or if we need additional sampling/pooled waves.",
+    "Wire the `religiosity_class_gradients` family into analysis/results.csv with BH scaffolding so the moderate/serious interactions can transition to confirmatory status.",
+    "Assemble the reviewer packet (PAP addendum, confirm tables, manuscript excerpts) showing that the new loop016 tables respect the n\u226510 disclosure rule."
   ],
   "phase": "analysis",
   "phase_ix": 2,

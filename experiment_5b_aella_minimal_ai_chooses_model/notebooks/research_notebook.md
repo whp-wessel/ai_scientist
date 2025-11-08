@@ -15,3 +15,9 @@
 - Logged that `classcurrent` is roughly centered near the mid-class (mean ≈3.0 on a 0–6 ladder), giving adequate variance for H3.
 - Expanded literature via `scripts/semantic_scholar_cli.py` searches (see `lit/queries/loop_001/query_001-006.json`). Added: So 2024 on parental career support→occupational engagement, Zhang 2025 on childhood emotional neglect mediating adult depression, Lin & Chiao 2024 on ACEs and problematic internet use, and Asmayawati 2023 on early digital literacy, all captured in `lit/bibliography.bib`/`lit/evidence_map.csv`.
 - Privacy note: missing-value counts are <10 but remain in `analysis/profiling/` only (non-public). Future public tables under `tables/` will suppress any <10 cells.
+
+## 2025-11-08 — Loop 2
+- Built `analysis/scripts/derive_likert_scales.py` to center/standardize the −3..3 variables feeding H1–H4. The script writes `analysis/derived/loop002_likert_scales.csv` containing both `_scaled` (÷3) and `_z` ((x−μ)/σ) variants plus the shared covariate set (selfage, gendermale, education, classchild, classteen, classcurrent).
+- Updated the PAP + hypotheses registry so future models explicitly reference the derived columns and the fixed covariate stack; SRS justification unchanged pending design metadata.
+- Prototyped H1/H2 using `python analysis/scripts/prototype_h1_h2_regressions.py` (OLS + HC3). Results: each one-unit increase in `mds78zu_scaled` associates with −0.18 SDs in adult unhappiness (`ix5iyv3_scaled`, n=14,426), while each unit increase in `pqo6jmj_scaled` predicts +0.11 SDs in work satisfaction (`z0mhd63_scaled`, n=14,429). Recorded effect sizes in `analysis/results.csv` (exploratory only) and stored full regression outputs under `analysis/results/loop002_h1_h2_regressions.csv`.
+- Next focus: extend harmonized scales to the H3/H4 outcomes, profile interaction terms (e.g., sex × adversity), and freeze the PAP before labeling any confirmatory tests.
