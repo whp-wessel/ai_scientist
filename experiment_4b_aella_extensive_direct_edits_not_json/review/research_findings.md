@@ -374,3 +374,12 @@ N1: PASS – Phase stays PAP with status=draft, Loop 046 blocker note, and state
 
 Notes: Unblock the literature gate by executing the 2025-11-09 ops memo and 2025-11-10 support ticket as scheduled.
 
+## Loop 047 — 2025-11-08T23:01:11.155405+00:00
+DECISION: CONTINUE
+R1: PASS – `artifacts/session_info.txt`, `artifacts/checksums.json`, and `artifacts/repro_report.md` were regenerated at 2025-11-08T22:53Z with the 20251016 seed and logged in `analysis/decision_log.csv`, so reproducibility checkpoints remain current while the PAP stays draft.
+L1: PASS – The mandated Semantic Scholar attempt was captured (`lit/queries/loop_047/query_001.json`) alongside CrossRef fallbacks (`lit/queries/loop_047/crossref_query_00{1,2}.json`) and propagated into `lit/evidence_map.csv`, `lit/bibliography.bib`, and `lit/semantic_scholar_waiver_loop013.md`.
+P1: PASS – No public outputs changed; `qc/data_checks.md` reiterates the disclosure guard referencing `qc/disclosure_check_loop_006.md`, so small-cell controls remain in force.
+N1: PASS – `artifacts/state.json` keeps the project in phase pap with N1 explicitly blocked, and `analysis/pre_analysis_plan.md` documents the Semantic Scholar gate plus the 2025-11-09/10 escalation plan before any phase advance.
+
+Notes: When the ops memo and support ticket are dispatched, log them in the decision log to maintain the waiver audit trail.
+
