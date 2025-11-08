@@ -75,6 +75,13 @@ def get_likert_specs() -> List[LikertSpec]:
             flip_sign=True,
         ),
         LikertSpec(
+            name="selfwar",
+            column="you felt as though you were 'at war' with yourself in trying to be a good person",
+            variable_id="selfwar",
+            concept="Adult intrapersonal conflict (current)",
+            flip_sign=True,
+        ),
+        LikertSpec(
             name="anxiety",
             column="I tend to suffer from anxiety (npvfh98)-neg",
             variable_id="npvfh98_neg",

@@ -1,0 +1,55 @@
+# Large CSV data files
+**/childhoodbalancedpublic_original.csv
+**/data/raw/*.csv
+**/data/clean/*.csv
+**/data/derived/*.csv
+**/data/derived/*.csv.gz
+
+# Cache and build artifacts
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Git directory (should be excluded by default, but explicit)
+.git/
+
+# Large binary files
+**/*.pdf
+**/*.zip
+**/*.tar.gz
+**/*.gz
+
+# Environment and secrets
+.env
+.env.local
+**/.env
+
+# IDE and editor files
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+**/*~
+
+# OS files
+**/.DS_Store
+**/Thumbs.db
+
+# Repomix output files
+**/repomix-output.md
+
+# Human notes (as per .gitignore)
+**/human_notes.md
+
+# Large JSON files - artifacts and outputs
+**/artifacts/describe_dataset_*.json
+**/outputs/tmp_*.json
+**/outputs/*_final_output.json
+
+# Large Semantic Scholar query response JSON files
+**/lit/queries/**/query_*.json
+

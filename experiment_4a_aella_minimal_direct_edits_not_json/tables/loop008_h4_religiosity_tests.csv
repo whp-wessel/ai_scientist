@@ -1,0 +1,3 @@
+test_id,model_type,statistic,df_diff,p_value,interpretation
+ols_cat_vs_ord,OLS,6.118294440513165,2.0,0.0022079265843759008,F-test for whether categorical religiosity improves fit over ordinal coding.
+logit_cat_vs_ord,LOGIT,3.626934273139341,2.0,0.16308770807052486,Likelihood-ratio test for categorical vs ordinal religiosity.

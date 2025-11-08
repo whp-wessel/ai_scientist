@@ -1,0 +1,6 @@
+metric,value,n_obs,interpretation
+cronbach_alpha_selflove_duo,0.42184282067835843,14432,Two-item scale (self-love + inverted self-war).
+pearson_selflove_vs_inverse_war,0.26730089172070676,14432,Internal consistency check (expect >0).
+pearson_selflove_vs_depression,0.48104205707647213,14436,Association between self-love and depression (expect negative if constructs diverge).
+pearson_selflove_vs_anxiety,0.3681905634391298,14436,Association between self-love and anxiety (expect negative if constructs diverge).
+pearson_selflove_vs_guidance,0.226147993958409,14429,Construct validity: higher parental guidance associates with higher self-love.

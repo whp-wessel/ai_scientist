@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-07T15:09:23Z",
-  "loop_counter": 7,
+  "last_updated": "2025-11-07T16:10:00Z",
+  "loop_counter": 8,
   "next_actions": [
-    "Run targeted Semantic Scholar pulls plus diagnostics for H2\u2013H4 (ordered-logit proportional-odds, self-love measurement) to decide on the next PAP promotion.",
-    "Develop manuscript-ready visuals/tables for the H1 confirmatory contrasts while keeping the n>=10 disclosure rule.",
-    "Plan the next robustness wave (e.g., bootstrap CIs or alternative outcome codings) to prepare for the sensitivity phase transition."
+    "Develop manuscript-ready visuals/figures for the H1 confirmatory contrasts (interaction plots + public tables) while keeping every disclosed cell at n>=10.",
+    "Prototype partial proportional-odds or multinomial net-worth models to address the H3 proportional-odds violations flagged in loop008.",
+    "Scope the next robustness wave (e.g., H1 bootstrap CIs or alternative anxiety codings) before transitioning into the sensitivity phase."
   ],
   "phase": "analysis",
   "phase_ix": 2,
