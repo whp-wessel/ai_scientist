@@ -158,3 +158,13 @@
 1. Run the planned serious-practice stress tests (ridge logit and alternative anxiety codings) to decide whether that interaction stays inside the confirmatory family.
 2. Extend the confirmatory shell to cover the ordinal anxiety outcome so the memo cites at least two coding checks before freeze.
 3. Translate the H3 design-effect mitigation options into a concrete data acquisition plan (additional countries/new respondents) now that naive wave stacking remains underpowered.
+
+## 2025-11-08 – Loop 020
+- **H4 ridge + ordinal stress tests**: Authored `scripts/loop020_h4_stress_tests.py`, which re-derives the aligned anxiety outcomes, fits the richer-control logit, an α=5 ridge logit, and the 3-bin ordered logit, and exports the coefficient grid (`tables/loop020_h4_stress_test_coeffs.csv`) plus binary/ordinal/ridge probability deltas (`tables/loop020_h4_highflag_prob_deltas.csv`, `tables/loop020_h4_ord3_prob_deltas.csv`, `tables/loop020_h4_ridge_prob_deltas.csv`). Serious practice × classchild now clocks in at β=-0.122 (SE 0.061, p=0.047) under ridge and β=-0.128 (SE 0.059, p=0.031) for the ordinal outcome, so the supporting contrast stays inside the candidate family.
+- **Confirmatory shell refresh**: Updated `scripts/loop016_h4_confirmatory_tables.py` to pull from the Loop 020 tables and write four rows (moderate/serious × binary/ordinal) into `tables/loop016_h4_confirmatory.csv`, ensuring predicted probability deltas for both codings are documented before reviewers audit the promotion memo.
+- **Documentation sweep**: Propagated the new evidence through `analysis/results.csv`, `analysis/hypotheses.csv`, `analysis/pre_analysis_plan.md`, `analysis/sensitivity_notes.md`, `docs/religiosity_class_gradients_promotion.md`, `docs/loop016_reviewer_packet.md`, and `reports/paper.md`, so every artifact now cites the ridge/ordinal stress tests and the refreshed confirmatory table.
+
+### Loop 020 Next Steps
+1. Draft the H3 data-acquisition plan that maps design-effect mitigation ideas (new countries, independent ≥$10M respondents) to concrete recruitment scenarios and cite it in the PAP/notebook.
+2. Validate whether additional shrinkage grids or Bayesian priors are needed for H4 before the PAP re-freeze, now that the binary + ordinal codings agree.
+3. Keep the reviewer packet synchronized once the H3 acquisition memo and updated PAP addendum are ready for sign-off.

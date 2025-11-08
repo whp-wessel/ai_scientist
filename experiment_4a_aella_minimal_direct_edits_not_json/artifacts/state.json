@@ -6,12 +6,12 @@
     "phase": "loop",
     "ts": "2025-11-08T15:49:56.592983+00:00"
   },
-  "last_updated": "2025-11-08T22:45:00Z",
-  "loop_counter": 19,
+  "last_updated": "2025-11-08T23:20:00Z",
+  "loop_counter": 20,
   "next_actions": [
-    "Run the serious-practice interaction stress tests (ridge/shrinkage fits plus alternative anxiety codings) to decide whether it stays inside the `religiosity_class_gradients` confirmatory family.",
-    "Extend the H4 confirmatory shell to include the ordinal anxiety outcome so reviewers can audit two outcome codings before the next PAP freeze.",
-    "Translate the H3 design-effect mitigation scenarios into a concrete data acquisition plan (new respondents/countries) since naive wave pooling remains <0.3 power."
+    "Operationalize `docs/h3_design_effect_plan.md`: secure partner buy-in for the new-country roster, independent high-wealth refresh, and replicate-weight delivery so the ≥$10M contrast can move toward confirmatory power.",
+    "Rewrite the PAP addendum + reviewer packet to reflect the four-row H4 confirmatory shell (binary + ordinal) and outline the freeze/tag steps for the `religiosity_class_gradients` family.",
+    "Prepare the reviewer summary (sensitivity notes + memo) that packages the ridge/ordinal stress tests and confirms multiplicity handling before the next loop."
   ],
   "phase": "analysis",
   "phase_ix": 2,

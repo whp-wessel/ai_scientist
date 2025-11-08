@@ -100,3 +100,10 @@ These plans keep the sensitivity queue ready so we can transition from “design
   - Pooling **three** waves (n=43,269; effective n=2,932) still caps cluster power at 0.27, well below the ≥0.80 threshold we require before freezing a confirmatory family.
   - A **single** wave with a **2× ≥$10M oversample** reaches effective n≈1,033 but leaves the cluster power stuck at 0.12 because the duplicated respondents sit inside the same countries.
 - **Implication**: Simply stacking identical waves or oversampling the existing ≥$10M respondents cannot rescue the H3 precision shortfall. We either need new countries (to shrink the design effect) or truly independent high-wealth interviewees before considering a PAP freeze for `childhood_class_networth_ge10m`.
+
+# Loop 020 — H4 Ridge + Ordinal Stress Tests
+
+- **Command**: `PYTHONHASHSEED=20251016 python scripts/loop020_h4_stress_tests.py`
+- **Artifacts**: Coefficient table `tables/loop020_h4_stress_test_coeffs.csv`, binary/ordinal probability deltas (`tables/loop020_h4_highflag_prob_deltas.csv`, `tables/loop020_h4_ord3_prob_deltas.csv`), ridge deltas (`tables/loop020_h4_ridge_prob_deltas.csv`), and the refreshed confirmatory shell `tables/loop016_h4_confirmatory.csv`.
+- **Findings**: The serious practice × classchild interaction remains negative once shrinkage or outcome changes enter: ridge logit (α=5) produces β=-0.122 (SE 0.061, p=0.047) with a -15.8 p.p. classchild slope (0→6), and the ordinal outcome yields β=-0.128 (SE 0.059, p=0.031) with a -16.3 p.p. drop in the probability of occupying the highest anxiety bin. Moderate practice retains the strongest binary gradient (β=-0.130, -18.9 p.p.), while its ordinal result (β=-0.069) remains directionally consistent though less precise.
+- **Implication**: With shrinkage and ordinal codings documented, the `religiosity_class_gradients` candidate family keeps both contrasts. The binary rows will anchor the confirmatory estimand, and the ordinal backups provide reviewers with a second coding check before the next PAP freeze.
