@@ -46,3 +46,12 @@ N1: PASS – State stays in the PAP phase with N1 explicitly marked blocked unti
 
 Notes: Resolving the Semantic Scholar credential remains the gating dependency before PAP freeze.
 
+## Loop 008 — 2025-11-08T14:17:39.953985+00:00
+DECISION: CONTINUE
+R1: PASS – Loop 008 QC log keeps seed 20251016, regeneration commands, and fresh session/checksum timestamps (qc/data_checks.md:3, qc/data_checks.md:11, qc/data_checks.md:47) with matching decision-log entries documenting each action (analysis/decision_log.csv:60-64).
+L1: PASS – The required Semantic Scholar search was executed despite 403s, with the failure payload preserved and cited for audit (analysis/decision_log.csv:60, lit/queries/loop_008/query_001.json:1).
+P1: PASS – Disclosure rules remain explicit in the PAP and QC risk list, and no public tables/figures were produced this loop (analysis/pre_analysis_plan.md:20-24, qc/data_checks.md:52, analysis/decision_log.csv:61-63).
+N1: PASS – State still in PAP phase with the only open next action flagged as blocked pending a working S2 key/waiver (artifacts/state.json:5, artifacts/state.json:31-35).
+
+Notes: Continue pressing for S2 access or documented waiver so the PAP can eventually freeze and analysis can proceed.
+
