@@ -1,0 +1,8 @@
+# TODO: Codebook placeholder
+# No codebook was provided with the dataset `childhoodbalancedpublic_original.csv`.
+# Action: During the literature phase, infer variable types/scales from headers and values,
+# and formalize a proper codebook here. Until then, analyses will treat Likert-like
+# items as ordinal numeric where applicable and document any coercions.
+
+dataset: childhoodbalancedpublic_original.csv
+variables: []

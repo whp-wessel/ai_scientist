@@ -63,3 +63,37 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 
 ## Future Updates
 - Promotion of H2–H4 to confirmatory status requires (a) literature synthesis per hypothesis, (b) additional diagnostics for proportional odds/logit fit, and (c) reviewer approval. Any change will necessitate a new PAP freeze + tag.
+
+---
+
+## Post-freeze Working Notes — Loop 013 H3 Promotion Draft *(status: draft)*
+
+> The frozen scope above remains unchanged (H1 only). The following notes track the draft plan for promoting H3 once reviewers agree that the estimand and evidence base are ready.
+
+### H3 Estimand (Partial Proportional-Odds)
+- **Outcome**: ordered ten-level net-worth ladder (`networth_ord`), integer-coded from 1 (“less than $10,000”) through 10 (“≥$10MM”).
+- **Exposure**: childhood socioeconomic class (`classchild`, 0–3) plus the preregistered interaction `classchild_male_int`.
+- **Estimator**: stacked logit that approximates a partial proportional-odds (PPO) model (`scripts/loop010_h3_partial_models.py`). For each cutpoint *c* ∈ {2,…,10}, we estimate `Pr(networth_ord ≥ c)` with:
+  ```
+  logit Pr(networth_ord ≥ c) = α_c + β_c classchild + γ_c classchild_male_int
+                               + δ classteen + θ selfage + κ gendermale + λ education
+  ```
+  Parallel-odds covariates (`classteen`, `selfage`, `gendermale`, `education`) share slopes across cutpoints, while `classchild` and `classchild_male_int` receive cutpoint-specific deviations to capture non-proportionality. Estimated contrasts are exported in `tables/loop010_h3_threshold_effects.csv` with 95% Wald intervals for each cutpoint.
+- **Reproducibility commands**:
+  1. `PYTHONHASHSEED=20251016 python scripts/loop010_h3_partial_models.py`
+  2. `PYTHONHASHSEED=20251016 python scripts/loop011_h3_multinomial_benchmark.py`
+  3. `PYTHONHASHSEED=20251016 python scripts/loop012_h3_visuals.py`
+  These scripts regenerate coefficient tables, threshold effects, multinomial comparison metrics, and the manuscript visuals (`tables/loop012_h3_classchild_effects.csv`, `tables/loop012_h3_model_summary.csv`, `figures/loop012_h3_classchild_comparison.png`) from the frozen dataset.
+
+### Multinomial Benchmark (Documentation)
+- Loop 011 introduced a multinomial logit with identical predictors to the PPO estimator. It improves per-person log-likelihood (−1.72 vs. −2.94) but requires 54 slope parameters. Marginal effects from `tables/loop011_h3_multinomial_marginals.csv` are effectively zero for the extreme wealth bins, indicating over-parameterization without substantive payoff.
+- Loop 012 summarized both estimators in `tables/loop012_h3_classchild_effects.csv` and `figures/loop012_h3_classchild_comparison.png`: PPO slopes concentrate around the ≥$100k and ≥$1MM thresholds, while multinomial effects oscillate near 0 with wide intervals. This comparison will accompany any request to freeze H3 so reviewers can see why the PPO remains preferred.
+
+### Literature Rationale
+- Multi-generational social-mobility evidence shows that grandparents’ class continues to influence adult destinations even after conditioning on parental class [Chan & Boliver, 2013](https://doi.org/10.1177/0003122413489130), arguing for cutpoint-specific contrasts instead of a single average slope.
+- Wealth carries distinct predictive power relative to other SES measures: disparities in mortality by wealth exceed those linked to education, occupation, or childhood SES [Glei et al., 2022](https://doi.org/10.1001/jamanetworkopen.2022.6547). Modeling net-worth cutpoints directly is therefore substantively meaningful, reinforcing the PPO estimand.
+
+### Outstanding Tasks Before Promotion
+1. Extend the PPO script with clustered (household) bootstrap SEs to ensure inference is robust to within-family dependence.
+2. Formalize the hypothesis family (e.g., `classchild` marginal effects at ≥$100k and ≥$1MM cutpoints) and add candidate result IDs to `analysis/hypotheses.csv`.
+3. Draft the confirmatory reporting template (`tables/loop013_h3_confirmatory.csv`) with BH control if multiple cutpoints enter the family.

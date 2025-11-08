@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 5,
+  "loop_counter": 6,
   "total_loops": 50,
   "phase": "pap",
   "phase_ix": 1,
@@ -46,21 +46,21 @@
       "description": "Draft DAG figure + identification memo outlining descriptive stance",
       "owner": "agent",
       "status": "done",
-      "notes": "Loop 005 produced figures/dag_design.png via analysis/code/plot_dag.py and reports/identification.md."
+      "notes": "Loop 006 re-rendered figures/dag_design.png/.json and rewrote reports/identification.md after reviewer STOP."
     },
     {
       "id": "N4",
       "description": "Scaffold imputation + BH automation scripts",
       "owner": "agent",
       "status": "done",
-      "notes": "Loop 005 added analysis/code/impute_and_stack.py (with stacked output + summary) and analysis/code/calc_bh.py."
+      "notes": "Loop 006 re-ran analysis/code/impute_and_stack.py so data/clean outputs + summary exist; BH script already implemented."
     },
     {
       "id": "N5",
       "description": "Integrate disclosure-check template into execution pipeline",
       "owner": "agent",
-      "status": "pending",
-      "notes": "Need automation so each future table/figure logs min cell counts in qc/disclosure_check_loop_{loop:03d}.md before release."
+      "status": "done",
+      "notes": "Loop 006 added analysis/code/disclosure_check.py and produced qc/disclosure_check_loop_006.md with DAG entry."
     }
   ],
   "stop_now": false,

@@ -60,6 +60,18 @@ REASONING_EFFORT = os.environ.get("CODEX_REASONING_EFFORT", "high")
 SLEEP_SECONDS = int(os.environ.get("LOOP_SLEEP_SECONDS", "0"))  # set 3600 for hourly
 MAX_CONSEC_GIT_FAILS = 2
 
+def _model_descriptor() -> str:
+    model = (MODEL or "").strip()
+    effort = (REASONING_EFFORT or "").strip()
+    if model and effort:
+        return f"{model}-{effort}"
+    return model or effort
+
+def _print_model_banner() -> None:
+    descriptor = _model_descriptor()
+    if descriptor:
+        print(f"[codex][model] {descriptor}")
+
 
 def _normalize_network_setting(value: str) -> str:
     val = value.strip().lower()
@@ -1480,6 +1492,7 @@ def do_bootstrap():
         return True
     update_reproducibility()
     print("== Bootstrap session ==")
+    _print_model_banner()
     bootstrap_system = get_prompt("BOOTSTRAP_SYSTEM")
     bootstrap_user = get_prompt("BOOTSTRAP_USER")
     small_cell_alert = _small_cell_alert_message()
@@ -1636,6 +1649,7 @@ def do_loop(iter_ix: int, consecutive_git_fails: int):
         print(f"[loop {iter_ix}] {exc}")
         return True, consecutive_git_fails
     update_reproducibility()
+    _print_model_banner()
     loop_system = get_prompt("LOOP_SYSTEM")
     user_template = get_prompt("LOOP_USER_TEMPLATE")
     state_snapshot = ensure_state_defaults(read_state_json())

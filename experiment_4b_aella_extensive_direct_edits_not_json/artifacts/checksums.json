@@ -4,5 +4,11 @@
     "sha256": "811681051039f470268aac4e5a94bcf1a325a9d60d644e08b98ba97c74c3e222",
     "size_bytes": 42502096,
     "mtime": "2025-11-07T14:23:22.543653+00:00"
+  },
+  {
+    "path": "data/clean/childhood_imputed_stack_loop005.csv",
+    "sha256": "3405aa410cd91c7d376b0531ff8b379fdd7a80ea482df66b60647e27c27cfdfd",
+    "size_bytes": 434008654,
+    "mtime": "2025-11-08T13:46:15.576640+00:00"
   }
 ]

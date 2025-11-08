@@ -1,0 +1,38 @@
+{
+  "abstract": "Recent findings suggest that beliefs about religious or spiritual importance or attending religious/spiritual services may protect high\u2010risk offspring against depression. This research has not extended to examining religiosity in relation to psychosocial functioning in high\u2010risk offspring.",
+  "authors": [
+    {
+      "authorId": "4232818",
+      "name": "Stephanie Kasen"
+    },
+    {
+      "authorId": "5772019",
+      "name": "P. Wickramaratne"
+    },
+    {
+      "authorId": "4138644",
+      "name": "M. Gameroff"
+    }
+  ],
+  "externalIds": {
+    "CorpusId": 205736028,
+    "DOI": "10.1002/da.22131",
+    "MAG": "1720057816",
+    "PubMed": "23720386"
+  },
+  "openAccessPdf": {
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/da.22131?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/da.22131, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+    "license": null,
+    "status": "GOLD",
+    "url": "https://doi.org/10.1002/da.22131"
+  },
+  "paperId": "9d146277f4c09502d5ada4eb5edb95997979efd1",
+  "publicationDate": "2014-01-01",
+  "publicationTypes": [
+    "JournalArticle"
+  ],
+  "title": "RELIGIOSITY AND LONGITUDINAL CHANGE IN PSYCHOSOCIAL FUNCTIONING IN ADULT OFFSPRING OF DEPRESSED PARENTS AT HIGH RISK FOR MAJOR DEPRESSION",
+  "url": "https://www.semanticscholar.org/paper/9d146277f4c09502d5ada4eb5edb95997979efd1",
+  "venue": "Depression and Anxiety",
+  "year": 2014
+}

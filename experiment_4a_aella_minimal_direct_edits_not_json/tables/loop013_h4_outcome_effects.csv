@@ -1,0 +1,6 @@
+model_label,estimate,std_err,ci_low,ci_high,p_value,n_obs,model_type,scale,source_table
+"3-bin anxiety (ordered logit, log-odds)",-0.1107549384844886,0.0185979667250423,-0.1472062834512459,-0.0743035935177314,2.5972604521382382e-09,14437,ORDERED_LOGIT,Log-odds change per religiosity step,tables/loop012_h4_alt_models.csv
+"Anxiety z-score (OLS, SD units)",-0.0618967274965075,0.0091648696638776,-0.0798598720377078,-0.0439335829553072,1.496395025240413e-11,14437,OLS,SD change in anxiety per religiosity step,tables/loop003_model_estimates.csv
+"High anxiety ≥2 (logit, log-odds)",-0.1118704287210692,0.0206838272353265,-0.1524107301023093,-0.071330127339829,6.352136227949474e-08,14443,LOGIT,Log-odds change per religiosity step,tables/loop003_model_estimates.csv
+"High anxiety ≥5 (LPM, percentage points)",-0.0252173744564561,0.0046610465663983,-0.0343536241893924,-0.0160811247235199,6.394464842576425e-08,14437,OLS,Percentage-point change per religiosity step,tables/loop012_h4_alt_models.csv
+"High anxiety ≥5 (logit, log-odds)",-0.1122107026917335,0.0206868398197078,-0.15275616369231,-0.071665241691157,5.81966200442166e-08,14437,LOGIT,Log-odds change per religiosity step,tables/loop012_h4_alt_models.csv

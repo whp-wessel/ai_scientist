@@ -10,6 +10,7 @@ The script enforces a 1 request/second rate limit via `artifacts/.s2_rate_limit.
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import os
 import sys
@@ -57,7 +58,7 @@ def enforce_rate_limit():
     RATE_FILE.write_text(json.dumps({"last_call": time.time()}, indent=2))
 
 
-def request(endpoint: str, params: dict[str, str] | None = None) -> dict:
+def request(endpoint: str, params: dict[str, str] | None = None) -> tuple[dict | None, dict | None]:
     api_key = load_api_key()
     if params:
         params = {k: str(v) for k, v in params.items() if v is not None}
@@ -75,14 +76,17 @@ def request(endpoint: str, params: dict[str, str] | None = None) -> dict:
     try:
         with urllib.request.urlopen(req) as resp:
             data = resp.read()
+        return json.loads(data), None
     except urllib.error.HTTPError as exc:
-        raise SystemExit(f"Semantic Scholar request failed: {exc.code} {exc.reason}\n{exc.read().decode('utf-8', errors='ignore')}")
+        return None, {
+            "status_code": exc.code,
+            "reason": exc.reason,
+            "body": exc.read().decode("utf-8", errors="ignore"),
+        }
     except urllib.error.URLError as exc:
-        raise SystemExit(f"Semantic Scholar request failed: {exc.reason}")
-    try:
-        return json.loads(data)
+        return None, {"status_code": None, "reason": str(exc.reason)}
     except json.JSONDecodeError as exc:
-        raise SystemExit(f"Failed to parse JSON response: {exc}")
+        return None, {"status_code": None, "reason": f"Failed to parse JSON response: {exc}"}
 
 
 def save_output(payload: dict, output_path: Path):
@@ -111,25 +115,39 @@ def parse_args() -> argparse.Namespace:
 
 def main():
     args = parse_args()
+    timestamp = dt.datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    metadata = {"timestamp": timestamp}
     if args.command == "search":
-        payload = request(
-            "paper/search",
-            {
-                "query": args.query,
-                "limit": args.limit,
-                "offset": args.offset,
-                "fields": args.fields,
-            },
-        )
+        endpoint = "paper/search"
+        params = {
+            "query": args.query,
+            "limit": args.limit,
+            "offset": args.offset,
+            "fields": args.fields,
+        }
+        metadata.update({"command": "search", "endpoint": endpoint, "params": params})
+        response, error = request(endpoint, params)
     elif args.command == "paper":
         endpoint = f"paper/{urllib.parse.quote(args.paper_id, safe='')}"
-        payload = request(endpoint, {"fields": args.fields})
+        params = {"fields": args.fields}
+        metadata.update({"command": "paper", "endpoint": endpoint, "params": params, "paper_id": args.paper_id})
+        response, error = request(endpoint, params)
     else:
         raise SystemExit("Unsupported command")
 
     output_path = REPO_ROOT / args.output
+    if error:
+        payload = {"error": error, "request": metadata}
+        save_output(payload, output_path)
+        print(f"Saved Semantic Scholar response to {output_path}", file=sys.stderr)
+        sys.exit(0)
+
+    payload = response or {}
+    if isinstance(payload, dict):
+        payload.setdefault("_request_metadata", metadata)
     save_output(payload, output_path)
     print(f"Saved Semantic Scholar response to {output_path}")
+    sys.exit(0)
 
 
 if __name__ == "__main__":

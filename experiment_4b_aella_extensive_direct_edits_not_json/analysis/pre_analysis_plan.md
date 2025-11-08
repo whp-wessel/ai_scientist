@@ -18,11 +18,11 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 - **Outputs + manifests:** Every figure/table command will be recorded inside `papers/main/MANIFEST.md` and the relevant QC markdown before PAP freeze.
 
 ## Privacy & Disclosure Controls
-- All confirmatory tables/figures will cite the n ≥ 10 rule and will be screened via loop-specific disclosure memos (`qc/disclosure_check_loop_{loop:03d}.md`). The template will be created during PAP freeze and populated before any release.
+- All confirmatory tables/figures will cite the n ≥ 10 rule and will be screened via loop-specific disclosure memos (`qc/disclosure_check_loop_{loop:03d}.md`). `analysis/code/disclosure_check.py` now automates this process (see `qc/disclosure_check_loop_006.md`).
 - Sensitive predictors/outcomes (abuse, depression, self-love) are tagged in `analysis/hypotheses.csv` and `qc/measures_validity.md`; any subgroup slices yielding n < 10 will be suppressed or binned per `config/agent_config.yaml::small_cells`.
 - For manuscript-ready numbers, we will store both machine-readable CSVs (`tables/*.csv`) and markdown tables with clear suppression notes, referencing the exact command string that generated them.
-- `reports/identification.md` will also record the disclosure guardrails to ensure readers understand that all estimates exclude identifiable cells.
-- Loop 005 produced `figures/dag_design.png` (see `papers/main/MANIFEST.md`) so the identification stance is visually documented before PAP freeze.
+- `reports/identification.md` records the disclosure guardrails to ensure readers understand that all estimates exclude identifiable cells.
+- Loop 006 regenerated `figures/dag_design.png` (see `papers/main/MANIFEST.md`) and refreshed the identification memo after the reviewer STOP.
 
 ## Hypotheses Under Consideration
 ### H1 — Childhood Religious Adherence & Adult Depression (Family: wellbeing)
@@ -59,7 +59,7 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 
 ## Data Management Plan
 - Raw data remain immutable under `data/raw/`.
-- Recode scripts will live under `analysis/code/` and write outputs to `data/clean/` with filenames containing the seed (e.g., `childhood_clean_seed20251016.parquet`).
+- Recode scripts will live under `analysis/code/` and write outputs to `data/clean/` with filenames containing the seed (e.g., `childhood_imputed_stack_loop005.csv`, created in Loop 006).
 - All transformations logged in `analysis/data_processing.md` (to be created) and referenced in `analysis/decision_log.csv`.
 - Loop 002 added `analysis/code/describe_dataset.py` and `analysis/code/validate_metadata.py` so QC summaries (`artifacts/describe_dataset_loop002.json`, `qc/metadata_validation.md`) regenerate from a single command.
 - Loop 003 implemented `analysis/code/run_models.py` (H1–H3 estimators), `analysis/code/missingness_profile.py`, and `analysis/code/measure_validity_checks.py`. Regeneration examples:
@@ -68,7 +68,7 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
   python analysis/code/missingness_profile.py --input data/raw/childhoodbalancedpublic_original.csv --output-csv outputs/missingness_loop003.csv --output-md qc/missingness_loop003.md --seed 20251016
   python analysis/code/measure_validity_checks.py --config config/agent_config.yaml --output-md qc/measures_validity.md --output-json artifacts/measurement_validity_loop003.json
   ```
-- Loop 005 added deterministic hot-deck MI tooling plus multiplicity automation:
+- Loop 005 added deterministic hot-deck MI tooling plus multiplicity automation, and Loop 006 reran the commands so the promised artifacts now exist in the repo:
   ```bash
   python analysis/code/impute_and_stack.py --m 5 --stacked-output data/clean/childhood_imputed_stack_loop005.parquet --summary-output artifacts/imputation_summary_loop005.json --seed 20251016
   # The script falls back to CSV if parquet engines are unavailable; see summary JSON for the actual path used.
@@ -87,7 +87,7 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 6. **Disclosure review:** Draft `qc/disclosure_check_loop_{loop}` with min cell sizes and suppression summary before any tables/figures leave the repo.
 
 ## Outstanding Tasks Before Freeze
-1. Restore Semantic Scholar access (or obtain formal waiver). Loop 005 query (`lit/queries/loop_005/query_001.json`) still returns 403; PAP freeze deferred until a working credential or written waiver exists.
+1. Restore Semantic Scholar access (or obtain formal waiver). Loop 006 query (`lit/queries/loop_006/query_001.json`) still returns 403; PAP freeze deferred until a working credential or written waiver exists.
 2. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist template is in place.
 3. Maintain `qc/disclosure_check_loop_004.md` (template created) and wire it into the execution order so every public table references the min cell count review.
 4. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.

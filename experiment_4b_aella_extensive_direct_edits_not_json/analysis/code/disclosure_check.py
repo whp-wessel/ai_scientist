@@ -70,7 +70,7 @@ def build_table_rows(args: argparse.Namespace) -> Tuple[List[str], int]:
         )
 
     if not rows:
-        rows.append("| _None_ | PAP drafting only | n/a | {args.min_n} | n/a | No tables/figures detected |")
+        rows.append(f"| _None_ | PAP drafting only | n/a | {args.min_n} | n/a | No tables/figures detected |")
 
     return rows, violations
 
