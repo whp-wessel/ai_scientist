@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 040
+# Data Quality Checklist — Loop 041
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -44,13 +44,13 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 - Result: PAP variables documented with `source_column` mappings; `qc/metadata_validation.md` logs status (still assuming SRS).
 
 ## Reproducibility Checkpoint
-- [x] `artifacts/session_info.txt` regenerated 2025-11-08T21:37:03Z with the latest Python/pip snapshot and git HEAD so reviewer R1 stays satisfied ahead of PAP edits.
-- [x] `artifacts/checksums.json` (raw + imputed files) re-hashed at 2025-11-08T21:37:05Z; contents remain unchanged, and the refreshed timestamp documents that deterministic inputs were revalidated this loop.
+- [x] `artifacts/session_info.txt` regenerated 2025-11-08T21:47:17Z with the latest Python/pip snapshot and git HEAD so reviewer R1 stays satisfied ahead of PAP edits.
+- [x] `artifacts/checksums.json` (raw + imputed files) re-hashed at 2025-11-08T21:47:17Z; contents remain unchanged, and the refreshed timestamp documents that deterministic inputs were revalidated this loop.
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 040 logged `lit/queries/loop_040/query_001.json`; the waiver memo now spans loops 008–040 and incorporates Luecken 2000 (`10.1016/S0022-3999(00)00151-3`) plus Musliner & Singer 2014, Shlomi et al. 2022, Bellis et al. 2017, Hintikka et al. 1998, Gasper 2020, Renjilian et al. 2021, Xu & Zheng 2025, Moran et al. 2018, and Kennedy et al. 2017. PAP freeze remains on hold until approval or credential restoration; ops escalation memo due 2025-11-09 15:00Z and S2 ticket escalation planned for 2025-11-10 15:00Z if the credential is still blocked.
+3. Semantic Scholar credential still failing (403). Loop 041 logged `lit/queries/loop_041/query_001.json`; the waiver memo now spans loops 008–041 and adds Ashton et al. 2021 (`10.1186/s40359-021-00601-x`) to the fallback list alongside Luecken 2000, Musliner & Singer 2014, Shlomi et al. 2022, Bellis et al. 2017, Hintikka et al. 1998, Gasper 2020, Renjilian et al. 2021, Xu & Zheng 2025, Moran et al. 2018, and Kennedy et al. 2017. PAP freeze remains on hold until approval or credential restoration; ops escalation memo due 2025-11-09 15:00Z and S2 ticket escalation planned for 2025-11-10 15:00Z if the credential is still blocked (draft notes prepared this loop).
 4. Liu & Yin (2025), Talmon (2023), and Oh & Han (2019) jointly motivate explicit coding for maternal/paternal warmth and the short-form DERS items (`e3y0vab`–`e3y0vah`). Draft transformation script before PAP freeze so the mediator specification is reproducible once the waiver/API issue is resolved.
 5. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 6. Kennedy et al. (2017; `10.1016/j.aogh.2017.03.265`) adds a mentorship/support mechanism for H2; document which survey fields proxy mentorship or adult guidance before PAP freeze to keep the new literature aligned with modeling plans.

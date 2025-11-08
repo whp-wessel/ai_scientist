@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T21:39Z
+last_updated: 2025-11-08T21:49Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -71,6 +71,8 @@ Loop 038 note: The mandatory Semantic Scholar attempt (`"childhood caregiver emo
 Loop 039 note: Semantic Scholar remains blocked (`"childhood mentor buffer adult depression social support"`; `lit/queries/loop_039/query_001.json`). The CrossRef fallback (`lit/queries/loop_039/crossref_query_001.json`) provided Shlomi et al. (2022; DOI `10.37256/jspr.1120221162`), which finds that strong parental attachment or peer support offsets the depression risk of frequent childhood moves. This evidence reinforces the need to script guidance × mobility interactions plus peer-support moderators for H2 before PAP freeze.
 
 Loop 040 note: Mandatory Semantic Scholar query (`"childhood attachment loss adult depression social support"`) again returned 403 (`lit/queries/loop_040/query_001.json`). CrossRef fallback (Luecken, 2000; DOI `10.1016/S0022-3999(00)00151-3`) shows that childhood attachment/loss experiences elevate adult depression/hostility primarily through diminished social support, so H2 covariates must explicitly model adult support buffers. **Escalation plan:** Agent will send an ops escalation memo summarizing loops 008–040 by **2025-11-09 15:00Z**, and, if no credential response is received, will open a Semantic Scholar support ticket by **2025-11-10 15:00Z**; backlog item N1 tracks this owner + timeline.
+
+Loop 041 note: Semantic Scholar query `"childhood family cohesion adult depression resilience support"` again returned 403 (`lit/queries/loop_041/query_001.json`). CrossRef fallback (Ashton et al., 2021; DOI `10.1186/s40359-021-00601-x`) documents that always-available trusted adult relationships multiply childhood resilience resources even among respondents with >=4 ACEs, reinforcing the need for explicit mentorship/support covariates and moderator checks in H2. Evidence map, bibliography, and the waiver memo now include this DOI, and draft materials for the 2025-11-09 ops memo + 2025-11-10 support ticket are being prepared so we can document the escalation when due.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
@@ -149,7 +151,7 @@ Loop 040 note: Mandatory Semantic Scholar query (`"childhood attachment loss adu
 6. **Disclosure review:** Draft `qc/disclosure_check_loop_{loop}` with min cell sizes and suppression summary before any tables/figures leave the repo.
 
 ## Outstanding Tasks Before Freeze
-1. Restore Semantic Scholar access (or record a partner-approved waiver). Loops 008–040 remain 403-only (see `lit/queries/loop_{008-040}/query_001.json`), so PAP freeze is deferred until either the key is fixed or the waiver is approved and logged in `analysis/decision_log.csv`. Action owner (agent) will (a) send the ops escalation memo by **2025-11-09 15:00Z** summarizing the failed attempts + DOI coverage, and (b) open a Semantic Scholar support ticket by **2025-11-10 15:00Z** if no response is received.
+1. Restore Semantic Scholar access (or record a partner-approved waiver). Loops 008–041 remain 403-only (see `lit/queries/loop_{008-041}/query_001.json`), so PAP freeze is deferred until either the key is fixed or the waiver is approved and logged in `analysis/decision_log.csv`. Action owner (agent) will (a) send the ops escalation memo by **2025-11-09 15:00Z** summarizing the failed attempts + DOI coverage, and (b) open a Semantic Scholar support ticket by **2025-11-10 15:00Z** if no response is received.
 2. Close the waiver action by capturing the approval decision (or credential fix) plus replaying the queued Semantic Scholar searches so the canonical evidence source is satisfied before PAP freeze.
 3. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once the literature gate clears and disclosure checklist automation (DP8) is linked to every planned table/figure.
 4. Keep `analysis/data_processing.md` synchronized with any new derivations (e.g., sensitivity specifications) and cite the ledger whenever PAP text references transformation history.
