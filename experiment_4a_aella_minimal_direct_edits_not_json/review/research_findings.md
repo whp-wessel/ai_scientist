@@ -67,3 +67,11 @@ R5 PASS – All required artifacts remain current: PAP and hypothesis register (
 
 Notes: Continue advancing the queued robustness work (H3 partial proportional-odds, H1 visuals) before shifting phases.
 
+## Loop 009 — 2025-11-08T12:40:41.541135+00:00
+DECISION: CONTINUE
+R1 PASS – Loop009 command, outputs, and narrative are logged (`analysis/decision_log.csv:27`; `notebooks/research_notebook.md:75-80`), and the visualization script/table needed for regeneration live in repo (`scripts/loop009_h1_visuals.py:1-206`; `tables/loop009_h1_interaction_grid.csv:1-5`).
+R2 PASS – The PAP remains frozen with explicit confirmatory scope/SRS rationale (`analysis/pre_analysis_plan.md:1-55`), and all confirmatory rows include BH-adjusted q-values plus design notes (`analysis/results.csv:20-25`).
+R3 PASS – Manuscript discussion of new visuals cites the peer-reviewed buffering/vulnerability sources and the reference list/evidence map stay current (`reports/paper.md:6-43`; `lit/evidence_map.csv:1-13`).
+R4 PASS – Public disclosures rely on aggregated prediction grids with n≈14k per cell and the manuscript documents the n≥10 safeguard for the figure/table pair (`tables/loop009_h1_interaction_grid.csv:1-5`; `reports/paper.md:26-33`).
+R5 PASS – Required artifacts (PAP, hypotheses, results, notebook, paper) all reflect Loop009 updates; confirmatory work still post-dates the freeze tag and next actions are tracked (`artifacts/state.json:1-10`).
+
