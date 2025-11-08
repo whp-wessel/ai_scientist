@@ -356,3 +356,12 @@ N1: PASS – `artifacts/state.json:25-69` keeps phase=pAP with N1 explicitly blo
 
 Notes: Execute the 2025-11-09 ops memo and 2025-11-10 support ticket on schedule so the literature gate can clear once responses arrive.
 
+## Loop 045 — 2025-11-08T22:40:53.798050+00:00
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint entry plus refreshed session snapshot/hash artifacts and the Loop045 QC log keep seed 20251016 + environment recorded ahead of edits (analysis/decision_log.csv:452-459; artifacts/session_info.txt:1-5; artifacts/checksums.json:1-13; qc/data_checks.md:1-58).
+L1: PASS – Mandated S2 query log with stored 403 payload, CrossRef fallback, evidence-map/bib updates, and waiver ledger entry keep the literature trail reproducible despite the outage (analysis/decision_log.csv:454-457; lit/queries/loop_045/query_001.json:1-17; lit/queries/loop_045/crossref_query_002.json:1; lit/evidence_map.csv:34-44; lit/bibliography.bib:492-502; lit/semantic_scholar_waiver_loop013.md:48-57).
+P1: PASS – Only governance artifacts changed, QC reiterates the sensitive-column guard plus disclosure automation, and the latest disclosure memo still shows violations = 0 (qc/data_checks.md:50-56; qc/disclosure_check_loop_006.md:1-17).
+N1: PASS – Phase remains PAP with N1 explicitly blocked, the PAP header stays draft, and the Loop045 note documents the 403 blocker plus the dated ops memo/support-ticket plan (artifacts/state.json:25-74; analysis/pre_analysis_plan.md:1-5; analysis/pre_analysis_plan.md:81-94).
+
+Notes: Consider bumping the PAP `last_updated` timestamp next loop so the header matches the newest edit (analysis/pre_analysis_plan.md:3).
+
