@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 020
+# Data Quality Checklist — Loop 021
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -50,7 +50,7 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 020 logged `lit/queries/loop_020/query_001.json`; the waiver memo now spans loops 008-020 and cites the new CrossRef fallbacks (Kasen et al. 2014; DOI `10.1002/da.22131`, Giri et al. 2025; DOI `10.2139/ssrn.5144651`, and Grummitt et al. 2024; DOI `10.1001/jamapsychiatry.2024.0804`) alongside Eliassen 2013 (`10.1007/s13644-013-0110-9`), Merrill & Salazar 2002 (`10.1080/13674670110059569`), and the prior DOIs `10.1089/jayao.2022.0097`, `10.2139/ssrn.4703219`, `10.1016/j.chiabu.2024.107020`, `10.21275/SR23621004642`, `10.1093/med:psych/9780195332711.003.0004`, etc., so PAP freeze remains on hold until approval or credential restoration.
+3. Semantic Scholar credential still failing (403). Loop 021 logged `lit/queries/loop_021/query_001.json`; the waiver memo now spans loops 008-021 and cites the new CrossRef fallbacks (Kasen et al. 2014; DOI `10.1002/da.22131`, Giri et al. 2025; DOI `10.2139/ssrn.5144651`, Grummitt et al. 2024; DOI `10.1001/jamapsychiatry.2024.0804`, McLeod 1991; DOI `10.2307/2136804`, and Wheeler 2023; DOI `10.1136/archdischild-2023-326071`) alongside Eliassen 2013 (`10.1007/s13644-013-0110-9`), Merrill & Salazar 2002 (`10.1080/13674670110059569`), and the prior DOIs `10.1089/jayao.2022.0097`, `10.2139/ssrn.4703219`, `10.1016/j.chiabu.2024.107020`, `10.21275/SR23621004642`, `10.1093/med:psych/9780195332711.003.0004`, etc., so PAP freeze remains on hold until approval or credential restoration.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes

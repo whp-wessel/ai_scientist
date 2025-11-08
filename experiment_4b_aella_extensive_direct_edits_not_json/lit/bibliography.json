@@ -333,5 +333,43 @@
       "C3"
     ],
     "notes": "GBD modeling quantifies maltreatment-attributable mental disorders, supporting H3 effect-size expectations and disclosure planning."
+  },
+  {
+    "id": "mcleod1991parentalloss",
+    "title": "Childhood Parental Loss and Adult Depression",
+    "authors": [
+      "Jane D. McLeod"
+    ],
+    "year": 1991,
+    "venue": "Journal of Health and Social Behavior",
+    "volume": "32",
+    "issue": "3",
+    "pages": "205",
+    "doi": "10.2307/2136804",
+    "url": "https://doi.org/10.2307/2136804",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "PSID-based evidence that early parental loss elevates adult depressive symptoms, reinforcing the need for family adversity controls in the H1 specification while S2 access is blocked."
+  },
+  {
+    "id": "wheeler2023parentalinfluence",
+    "title": "Does parental influence survive the 'Teenage to Young Adult' transition?",
+    "authors": [
+      "Robert Wheeler"
+    ],
+    "year": 2023,
+    "venue": "Archives of Disease in Childhood",
+    "volume": "109",
+    "issue": "1",
+    "pages": "3-4",
+    "doi": "10.1136/archdischild-2023-326071",
+    "url": "https://doi.org/10.1136/archdischild-2023-326071",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C2"
+    ],
+    "notes": "BMJ commentary summarizing evidence that parental guidance continues to shape complex medical decisions during transition to adulthood, supporting H2's assumption during the S2 outage."
   }
 ]

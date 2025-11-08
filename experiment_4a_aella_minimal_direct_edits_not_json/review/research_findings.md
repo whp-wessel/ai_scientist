@@ -157,3 +157,13 @@ R3 Literature/Evidence – PASS: The promotion memo cites peer-reviewed DOIs to 
 R4 Privacy – PASS: Public tables only expose aggregates with n≥820 (H3) or n≥14k (H4), and the sensitivity notes remind reviewers that no small cells are published (`tables/loop016_h3_power_summary.csv:2-4`, `tables/loop016_h4_confirmatory.csv:2-5`, `analysis/sensitivity_notes.md:111-118`).  
 R5 Completeness – PASS: PAP remains marked frozen with its tag, the freeze/tag roadmap for the forthcoming H4 family is spelled out, and results plus reviewer packet remain synchronized (`analysis/pre_analysis_plan.md:1-13` & `132-137`, `analysis/results.csv:20-50`, `docs/loop016_reviewer_packet.md:24-33`).
 
+## Loop 022 — 2025-11-08T17:48:07.833574+00:00
+DECISION: CONTINUE  
+R1 PASS – Loop 022 is fully logged with inputs/outputs (analysis/decision_log.csv:52), mirrored in the notebook narrative and next-action list (notebooks/research_notebook.md:182‑191; artifacts/state.json:1‑13), so the reproducibility trail covers every artifact created this sprint.  
+R2 PASS – No new models were run; the work focused on documentation/planning, and the statistical roadmap (docs/h3_design_effect_plan.md:60‑113) keeps the survey-design assumptions explicit, leaving the frozen H1 confirmatory scope untouched.  
+R3 PASS – Main claims in the manuscript continue to cite peer-reviewed sources (reports/paper.md:9‑20) and the evidence inventory remains synchronized (lit/evidence_map.csv:1‑19), so literature support is intact for the story told this loop.  
+R4 PASS – Newly published materials are administrative aggregates (e.g., partner-level LOI register at docs/h3_country_expansion_materials/loi_register.csv:1‑9 and the costing template tables/rfp_costing_template.csv:1‑7), so no n<10 disclosures were introduced.  
+R5 PASS – Core deliverables were updated: the PAP references the Loop 022 evidence deposit (analysis/pre_analysis_plan.md:1‑47), the design-effect plan now includes an evidence table and freeze workplan (docs/h3_design_effect_plan.md:60‑113), the RFP and replicate manifest are under version control (docs/h3_high_wealth_refresh/rfp_2025-11-09.md:1‑35; docs/h3_replicate_weights_manifest/manifest_loop021.md:1‑25), and the manuscript cites these additions (reports/paper.md:34).  
+
+Notes: The `artifacts/` directory currently lacks `git_message.txt`; add a commit message before asking the runner to checkpoint.
+
