@@ -1,0 +1,259 @@
+{
+  "total": 6551,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "5f7862e9b73b9b3b0df9920b96a29c5f6f058106",
+      "externalIds": {
+        "DOI": "10.1017/S0954579424000828",
+        "CorpusId": 269328482,
+        "PubMed": "38654407"
+      },
+      "url": "https://www.semanticscholar.org/paper/5f7862e9b73b9b3b0df9920b96a29c5f6f058106",
+      "title": "Impulsivity profiles across five harmonized longitudinal childhood preventive interventions and associations with adult outcomes.",
+      "venue": "Development and Psychopathology",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E1C27A0B78842A216C3E3CE12772834C/S0954579424000828a.pdf/div-class-title-impulsivity-profiles-across-five-harmonized-longitudinal-childhood-preventive-interventions-and-associations-with-adult-outcomes-div.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1017/S0954579424000828?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1017/S0954579424000828, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "4027920",
+          "name": "N. Goulter"
+        },
+        {
+          "authorId": "1390102574",
+          "name": "M. Amin-Esmaeili"
+        },
+        {
+          "authorId": "8407565",
+          "name": "Ryoko Susukida"
+        },
+        {
+          "authorId": "81363327",
+          "name": "Joseph M. Kush"
+        },
+        {
+          "authorId": "2257334771",
+          "name": "Jennifer Godwin"
+        },
+        {
+          "authorId": "2298030952",
+          "name": "Katherine Masyn"
+        },
+        {
+          "authorId": "2250264379",
+          "name": "Robert J. McMahon"
+        },
+        {
+          "authorId": "2319272077",
+          "name": "J. M. Eddy"
+        },
+        {
+          "authorId": "2271249349",
+          "name": "Nick Ialongo"
+        },
+        {
+          "authorId": "1885635",
+          "name": "P. Tolan"
+        },
+        {
+          "authorId": "2299794217",
+          "name": "Conduct Problems"
+        },
+        {
+          "authorId": "2298026935",
+          "name": "Holly C Wilcox"
+        },
+        {
+          "authorId": "3397988",
+          "name": "Rashelle J. Musci"
+        }
+      ],
+      "abstract": "This study aimed to parse between-person heterogeneity in growth of impulsivity across childhood and adolescence among participants enrolled in five childhood preventive intervention trials targeting conduct problems. In addition, we aimed to test profile membership in relation to adult psychopathologies. Measurement items representing impulsive behavior across grades 2, 4, 5, 7, 8, and 10, and aggression, substance use, suicidal ideation/attempts, and anxiety/depression in adulthood were integrated from the five trials (N = 4,975). We applied latent class growth analysis to this sample, as well as samples separated into nonintervention (n = 2,492) and intervention (n = 2,483) participants. Across all samples, profiles were characterized by high, moderate, low, and low-increasing impulsive levels. Regarding adult outcomes, in all samples, the high, moderate, and low profiles endorsed greater levels of aggression compared to the low-increasing profile. There were nuanced differences across samples and profiles on suicidal ideation/attempts and anxiety/depression. Across samples, there were no significant differences between profiles on substance use. Overall, our study helps to inform understanding of the developmental course and prognosis of impulsivity, as well as adding to collaborative efforts linking data across multiple studies to better inform understanding of developmental processes."
+    },
+    {
+      "paperId": "c831caa645bd54d9985d433471a37d9673f750c6",
+      "externalIds": {
+        "DOI": "10.1016/j.chiabu.2025.107294",
+        "CorpusId": 276204898,
+        "PubMed": "39919624"
+      },
+      "url": "https://www.semanticscholar.org/paper/c831caa645bd54d9985d433471a37d9673f750c6",
+      "title": "The mediating role of childhood emotional neglect in the association between childhood neighborhood quality and adult depression outcomes: A nationwide longitudinal analysis.",
+      "venue": "International Journal of Child Abuse & Neglect",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.chiabu.2025.107294?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.chiabu.2025.107294, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2343487388",
+          "name": "Chen Zhang"
+        },
+        {
+          "authorId": "2342881979",
+          "name": "Jingsong Chen"
+        },
+        {
+          "authorId": "2343333599",
+          "name": "Yongzhang Lai"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f9f5654f0598ab79f56bcd889ba44cd522f22683",
+      "externalIds": {
+        "PubMedCentral": "10541707",
+        "DOI": "10.1186/s13643-023-02330-1",
+        "CorpusId": 263232095,
+        "PubMed": "37777785"
+      },
+      "url": "https://www.semanticscholar.org/paper/f9f5654f0598ab79f56bcd889ba44cd522f22683",
+      "title": "Prospective longitudinal associations between adverse childhood experiences and adult mental health outcomes: a protocol for a systematic review and meta-analysis",
+      "venue": "Systematic Reviews",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02330-1",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10541707, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "authors": [
+        {
+          "authorId": "2209907820",
+          "name": "Christina Thurston"
+        },
+        {
+          "authorId": "2248066594",
+          "name": "Aja Murray"
+        },
+        {
+          "authorId": "1422545982",
+          "name": "Hannabeth Franchino-Olsen"
+        },
+        {
+          "authorId": "2378538729",
+          "name": "Franziska Meinck"
+        }
+      ],
+      "abstract": "Background Research cites a strong, dose\u2013response relationship between adverse childhood experiences (ACEs) and poor adult mental health outcomes including anxiety, depression, post-traumatic stress disorder (PTSD), self-harm, suicidality, and psychotic-like experiences. Aim To systematically investigate the existence and strength of association between ACEs and adult mental health outcomes in prospective longitudinal studies. The review will focus on the outcomes: anxiety, depression, PTSD, self-harm, suicidal ideation, and psychotic-like experiences. Methods Twelve electronic databases will be searched: Embase, PsycINFO, MEDLINE, and Global Health through the OVID interface. ProQuest will be used to search Public Affairs Information Service (PAIS), Dissertations and Theses, Sociology Database (including Sociological Abstracts and Social Services Abstracts), PTSDpubs (formerly The Published International Literature on Traumatic Stress (PILOTS) Database) and Applied Social Sciences Index and Abstracts (ASSIA). CINAHL, World Health Organisation (WHO) Global Index Medicus, and WHO Violence Info will also be searched. Eligible studies will be double screened, assessed, and their data will be extracted. Any disagreement throughout these processes will be settled by a third reviewer. If enough studies meet the criteria and the methodological quality of each study is sufficient, a meta-analysis will be conducted. Analysis A narrative synthesis of included studies and the associations between ACEs and adult mental health will be completed. If the number of studies included per mental health outcome is two or more, a multi-level meta-analysis will be completed using odds ratio effect sizes as outcomes. Discussion This review will contribute to the existing body of literature supporting the long-term effects of ACEs on adult mental health. This review adds to previous reviews that have either synthesised cross-sectional associations between ACEs and mental health outcomes, synthesised longitudinal studies exploring the effect of ACEs on different physical and mental health outcomes or synthesised longitudinal studies exploring the effect of ACEs on the same mental health outcomes using different methods. This review aims to identify methodological weaknesses and knowledge gaps in current literature that can be addressed in future primary studies. Systematic review registration This protocol has been registered in PROSPERO (CRD42021297882)."
+    },
+    {
+      "paperId": "58f276afea3ed038627f5f6169ddddb5e5a98c58",
+      "externalIds": {
+        "PubMedCentral": "9715405",
+        "DOI": "10.1007/s00127-022-02389-6",
+        "CorpusId": 254151377,
+        "PubMed": "36456781"
+      },
+      "url": "https://www.semanticscholar.org/paper/58f276afea3ed038627f5f6169ddddb5e5a98c58",
+      "title": "Are trajectories of social isolation from childhood to mid-adulthood associated with adult depression or suicide outcomes",
+      "venue": "Social Psychiatry and Psychiatric Epidemiology",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s00127-022-02389-6.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9715405, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "1401137268",
+          "name": "R. Lay-Yee"
+        },
+        {
+          "authorId": "143810498",
+          "name": "T. Matthews"
+        },
+        {
+          "authorId": "4758579",
+          "name": "T. Moffitt"
+        },
+        {
+          "authorId": "3716794",
+          "name": "R. Poulton"
+        },
+        {
+          "authorId": "5279665",
+          "name": "A. Caspi"
+        },
+        {
+          "authorId": "49492915",
+          "name": "B. Milne"
+        }
+      ],
+      "abstract": "Purpose Social isolation has been shown to have negative effects on mental health outcomes though little is known about trajectories across the life course. We examined the relationship between trajectory groups and selected mental health outcomes in mid-adulthood. Methods We previously created a typology of social isolation based on onset during the life course and persistence into adulthood, using group-based trajectory analysis of longitudinal data from a New Zealand birth cohort. The typology comprises four groups: \u2018never-isolated\u2019, \u2018adult-only\u2019, \u2018child-only\u2019, and \u2018persistent (child\u2013adult) isolation\u2019. We undertook logistic regression analyses of three mental health outcomes with trajectory group as the predictor, adjusting for sex and a range of familial and child-behavioural factors. Results Lifetime suicide attempt, and depression and suicide ideation in mid-adulthood were each associated with adult-only but not child-only social isolation. Depression in mid-adulthood was also associated with persistent child\u2013adult social isolation. Conclusion Although our findings are associational and not causal, they indicate that interrupting persistent social isolation may help to prevent adult depression whereas halting adult social isolation may ameliorate both depression and suicide outcomes."
+    },
+    {
+      "paperId": "1e6aaadb8d08f1682254a4137573f4dfd50c7687",
+      "externalIds": {
+        "DOI": "10.1177/15248380251358223",
+        "CorpusId": 280670654,
+        "PubMed": "40819337"
+      },
+      "url": "https://www.semanticscholar.org/paper/1e6aaadb8d08f1682254a4137573f4dfd50c7687",
+      "title": "Prospective Longitudinal Associations Between Adverse Childhood Experiences and Adult Mental Health Outcomes: Systematic Review and Meta-Analysis.",
+      "venue": "Trauma, Violence, & Abuse",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/15248380251358223?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/15248380251358223, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2209907820",
+          "name": "Christina Thurston"
+        },
+        {
+          "authorId": "2248066594",
+          "name": "Aja Murray"
+        },
+        {
+          "authorId": "1422545982",
+          "name": "Hannabeth Franchino-Olsen"
+        },
+        {
+          "authorId": "1962393460",
+          "name": "Mpho Silima"
+        },
+        {
+          "authorId": "2021964321",
+          "name": "C. Hemady"
+        },
+        {
+          "authorId": "2378538729",
+          "name": "Franziska Meinck"
+        }
+      ],
+      "abstract": "Research suggests a strong, dose-response relationship between adverse childhood experiences (ACEs) and poor adult mental health outcomes. This systematic review and meta-analysis aimed to systematically investigate the existence and strength of prospective associations between ACEs and adult mental health outcomes: anxiety, depression, psychotic-like experiences, post-traumatic stress disorder (PTSD), self-harm, and suicidality. We searched 12 electronic databases for publications after 1990. A narrative synthesis of included studies and random-effects meta-analyses with moderation were completed for all outcomes, excluding self-harm. In total, 62 studies from 15 countries were included. Most studies were from the United States; 95% of publications (N\u2009=\u200959) came from high-income countries (HICs) and 5% (N\u2009=\u20093) from upper-middle-income countries. Pooled associations between ACEs and adult mental illness were strongest for PTSD (OR\u2009=\u20092.26; 95% CI [1.75, 2.77]), followed by anxiety (OR\u2009=\u20091.78; 95% CI [1.45, 2.11]), depression (OR\u2009=\u20091.61; 95% CI [1.45, 1.76]), psychotic-like experiences (OR\u2009=\u20091.34; 95% CI [1.13, 1.54]), and suicidality (OR\u2009=\u20091.28; 95% CI [1.13, 1.43]). Moderation analyses suggested ACEs with a violence or maltreatment component were significant risk factors for adult depression compared to household ACEs, and that study location was a significant moderator in the depression, anxiety, and PTSD models. Further moderation effects will be discussed. Findings confirm ACEs are a significant risk factor for mental ill-health in adulthood. Our review highlights the urgent need for research exploring associations between ACEs measured in childhood and adult mental illness outside of HIC settings."
+    }
+  ]
+}

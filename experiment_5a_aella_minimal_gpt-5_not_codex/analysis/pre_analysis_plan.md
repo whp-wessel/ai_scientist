@@ -37,6 +37,7 @@ literature:
 - Queries conducted so far (examples):
   - loop_011: `lit/queries/loop_011/query_001.json` (youth religiosity and depression/anxiety; added E22–E26 to `lit/evidence_map.csv`).
   - loop_012: `lit/queries/loop_012/query_001.json` (religiosity, depression/anxiety, monogamy, relationship satisfaction; appended 5 DOIs to `lit/evidence_map.csv`).
+  - loop_013: `lit/queries/loop_013/query_002.json` (adolescent religiosity → adult wellbeing, longitudinal; appended 3 DOIs to `lit/evidence_map.csv`).
 - Evidence is curated into `lit/evidence_map.csv` and citable entries in `lit/bibliography.bib`; main claims will cite at least one peer-reviewed source (DOI/URL).
 
 reproducibility notes:

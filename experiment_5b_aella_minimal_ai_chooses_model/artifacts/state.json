@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 0,
+  "loop_counter": 1,
   "model_state": {
     "review": {
       "last_model": null,
@@ -24,8 +24,9 @@
     }
   },
   "next_actions": [
-    "Profile missingness & distributions for H1-H4 variables; finalize recodes.",
-    "Extend Semantic Scholar searches on parental guidance, childhood depression, and digital access."
+    "Translate the −3..3 Likert variables into centered/standardized scales and document the recode script for H1–H4.",
+    "Finalize covariate sets + model specs in the PAP ahead of freezing for confirmatory testing.",
+    "Prototype regression notebooks for H1/H2 to confirm effect magnitudes and diagnostics."
   ],
   "phase": "literature",
   "phase_ix": 0,

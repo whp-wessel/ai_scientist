@@ -1,0 +1,197 @@
+{
+  "total": 752,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "f69117ad366600f4161b2ab522cfd1d1ac1e40b0",
+      "externalIds": {
+        "MAG": "1814125718",
+        "CorpusId": 108811634
+      },
+      "url": "https://www.semanticscholar.org/paper/f69117ad366600f4161b2ab522cfd1d1ac1e40b0",
+      "title": "The Effects of Modern Information Technology on Learning Outcome of African American Students",
+      "venue": "",
+      "year": 2015,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "publicationTypes": [
+        "Review"
+      ],
+      "authors": [
+        {
+          "authorId": "98366274",
+          "name": "D. Malone"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "96c37f07c0e73bacb1ad48908b34258a1880e44a",
+      "externalIds": {
+        "DOI": "10.47191/ijmra/v6-i11-30",
+        "CorpusId": 265343523
+      },
+      "url": "https://www.semanticscholar.org/paper/96c37f07c0e73bacb1ad48908b34258a1880e44a",
+      "title": "Parental Involvement in Mattering Early Childhood Digital Literacy: The Role of Balanced Screen time and Access to Technology Evidence from Indonesia",
+      "venue": "International journal of multidisciplinary research and analysis",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://ijmra.in/v6i11/Doc/30.pdf",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.47191/ijmra/v6-i11-30?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.47191/ijmra/v6-i11-30, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "authors": [
+        {
+          "authorId": "2267676018",
+          "name": "Asmayawati"
+        }
+      ],
+      "abstract": "This study aimed to explore the dynamics of early childhood digital literacy in Indonesia and examine the roles of parental involvement, balanced screen time, and access to technology in shaping digital literacy outcomes. A quantitative research approach was employed, involving a sample of Indonesian parents and educators. Data were collected through surveys and analyzed using structural equation modeling. The study revealed that parental involvement positively influences early childhood digital literacy, highlighting the significance of active parental engagement in fostering digital skills. Additionally, balanced screen time was found to enhance digital literacy, emphasizing the importance of managing screen time for educational purposes. Access to technology acted as a moderator, amplifying the impact of parental involvement and balanced screen time on digital literacy. This research contributes to the understanding of early childhood digital literacy in the Indonesian context. The findings offer valuable insights for educational stakeholders, emphasizing the need for comprehensive curricula, parental engagement, equitable technology access, and tailored digital learning platforms. This knowledge can inform policies and practices aimed at enhancing digital literacy in early childhood education, promoting a balanced and inclusive digital education environment in Indonesia."
+    },
+    {
+      "paperId": "8e24d14eb23c26977a5f418df43f9a57e7491159",
+      "externalIds": {
+        "PubMedCentral": "10930545",
+        "DOI": "10.3390/healthcare12050516",
+        "CorpusId": 267961778,
+        "PubMed": "38470627"
+      },
+      "url": "https://www.semanticscholar.org/paper/8e24d14eb23c26977a5f418df43f9a57e7491159",
+      "title": "Associations between Parental Educational Attainment, Children\u2019s 24-h Behaviors and Children\u2019s Hyperactivity Behavior in the COVID-19 Pandemic",
+      "venue": "Healthcare",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2227-9032/12/5/516/pdf?version=1708507930",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10930545, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "authors": [
+        {
+          "authorId": "2184818633",
+          "name": "Meiyuan Chen"
+        },
+        {
+          "authorId": "30695713",
+          "name": "M. Chia"
+        },
+        {
+          "authorId": "153511661",
+          "name": "T. Chua"
+        },
+        {
+          "authorId": "2190855904",
+          "name": "Zhi Shen"
+        },
+        {
+          "authorId": "2284216666",
+          "name": "Mengke Kang"
+        },
+        {
+          "authorId": "2287768590",
+          "name": "Lu Chen"
+        },
+        {
+          "authorId": "2287181909",
+          "name": "Tiantian Tong"
+        },
+        {
+          "authorId": "2311075988",
+          "name": "Xiaozan Wang"
+        }
+      ],
+      "abstract": "Background: Parental Educational Attainment and children\u2019s 24-h behaviors significantly influenced children\u2019s hyperactivity symptoms. This study aimed to examine the mediating role of children\u2019s 24-h behavior changes due to the COVID-19 pandemic between Parental Educational Attainment and children\u2019s hyperactivity index. It also aimed to investigate the associations between Children\u2019s Physical Activity, digital media use, sleep, and hyperactivity index between two clusters of Parental Educational Attainments. The goal was to provide targeted behavioral optimization recommendations for caregivers to reduce the risk of children\u2019s hyperactivity. Methods: The study was a collaborative extension of the International iPreschooler Surveillance Study Among Asians and otheRs project and the Chinese Children and Adolescent Sports Health Promotion Action Project. The Parent-Surveillance of Digital Media in Childhood Questionnaire\u00ae and the Abbreviated Rating Scales from the Conners Parent Symptom Questionnaire were used to measure Parental Educational Attainment, children\u2019s behavior changes during the COVID-19 pandemic, and hyperactivity indexes. A total of 11,190 parents of 6-to-12-year-old children completed the online surveys in mainland China. A structural equation model was established by using Smart-PLS, and the linear regression model, and isotemporal substitution models were established by using a Compositional Data Analysis package with R program to achieve the research objectives. Results: Changes in children\u2019s 24-h behaviors due to the COVID-19 pandemic had a significant mediation effect on the negative associations between Parental Educational Attainment and children\u2019s hyperactivity index (\u03b2 = 0.018, T = 4.521, p < 0.001) with a total effect (\u03b2 = \u22120.046, T = 4.521, p < 0.001) and a direct effect (\u03b2 = \u22120.064, T = 6.330, p < 0.001). Children\u2019s Digital Media use was significantly and negatively associated with hyperactivity index among all children. Reallocated time from digital media use to both sleep and physical activity decreased the hyperactivity index, and vice-versa. For parents without tertiary education (R2 = 0.09, p < 0.001), sleep was significantly and negatively associated with the hyperactivity index (\u03b2ilr-CSL = \u22120.06, p < 0.001); for parents with tertiary education (R2 = 0.07, p < 0.001), physical activity was significantly and negatively associated with the hyperactivity index (\u03b2ilr-CPA = \u22120.05, p < 0.001), and sleep was significantly and positively associated with the hyperactivity index (\u03b2ilr-CSL = 0.03, p < 0.001). A significant increase in the hyperactivity index was detected when physical activity time was reallocated to sleep, with a significant decrease in the opposite direction. Conclusions: Parental Educational Attainment and children\u2019s 24-h behaviors directly influenced children\u2019s hyperactivity index. However, a purposeful and targeted optimization of children\u2019s 24-h behaviors\u2014namely, physical activity, digital media use, and sleep\u2014could assist parents with different educational attainments to reduce their children\u2019s hyperactivity index and mitigate the risk of hyperactivity."
+    },
+    {
+      "paperId": "dfec3a7a7ce3ef0507bd87d79b5bd27546cbcafc",
+      "externalIds": {
+        "MAG": "2979553466",
+        "DOI": "10.1136/archdischild-2019-317594",
+        "CorpusId": 204244405,
+        "PubMed": "31601570"
+      },
+      "url": "https://www.semanticscholar.org/paper/dfec3a7a7ce3ef0507bd87d79b5bd27546cbcafc",
+      "title": "Educational attainment in childhood cancer survivors: a meta-analysis",
+      "venue": "Archives of Disease in Childhood",
+      "year": 2019,
+      "openAccessPdf": {
+        "url": "https://discovery.ucl.ac.uk/10113242/1/archdischild%20accepted%20version-2019-317594.R1.pdf",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1136/archdischild-2019-317594?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1136/archdischild-2019-317594, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "authors": [
+        {
+          "authorId": "47614561",
+          "name": "D. Saatci"
+        },
+        {
+          "authorId": "2109406412",
+          "name": "Andrew Thomas"
+        },
+        {
+          "authorId": "6941131",
+          "name": "B. Botting"
+        },
+        {
+          "authorId": "7912981",
+          "name": "A. Sutcliffe"
+        }
+      ],
+      "abstract": "Objective To assess differences across educational outcomes in survivors of childhood cancer (CCS) compared with peers. Design Systematic review and meta-analysis of observational studies. Data sources and study selection Medline, EMBASE, ERIC, CINAHL and PsycInfo from inception to 1st August 2018. Any peer reviewed, comparative study with a population of any survivor of childhood cancer, from high-economy countries, reporting outcomes on educational attainment, were selected. Results 26 studies representing 28 434 CCS, 17\u2009814 matched controls, 6582 siblings and six population studies from 11 high-income countries, which have similar access to education and years of mandatory schooling as reported by the Organisation for Economic Cooperation and Development, were included. CCS were more likely to remain at compulsory level (OR 1.36, 95% CI 1.26 to 1.43) and less likely to complete secondary (OR 0.93, 95% CI 0.87 to 1.0) and tertiary level education (OR 0.87, 95% CI 0.78 to 0.98). They were more likely to require special educational needs (OR 2.47, 95% CI 1.91 to 3.20). Subgroup analyses revealed that survivors, irrespective of central nervous system (CNS) involvement, were less likely to progress onto secondary level compared with cancer-free peers (OR 1.77. 95%\u2009CI 1.46 to 2.15; OR 1.19, 95%\u2009CI 1.00 to 1.42, respectively). This, however, changed at tertiary level where those with CNS involvement continued to perform worse (OR 0.61, 95%\u2009CI 0.55 to 0.68) but those without appeared to perform similarly to their peers (OR 1.12, 95%\u2009CI 1.0 to 1.25). Conclusions Compared with controls, we have elucidated significant differences in educational attainment in survivors. This is sustained across different countries, making it an international issue. CNS involvement plays a key role in educational achievement. Clinicians, teachers and policymakers should be made aware of differences and consider advocating for early educational support for survivors."
+    },
+    {
+      "paperId": "5a6b00bbfb25c34b4c170cc52c6b41e830c43c00",
+      "externalIds": {
+        "DOI": "10.1111/1468-4446.13225",
+        "CorpusId": 278455670,
+        "PubMed": "40344422"
+      },
+      "url": "https://www.semanticscholar.org/paper/5a6b00bbfb25c34b4c170cc52c6b41e830c43c00",
+      "title": "The Role of Artificial Intelligence and Digital Solutions in Transforming Educational and Employment Access for Individuals With Disabilities.",
+      "venue": "British Journal of Sociology",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/1468-4446.13225?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/1468-4446.13225, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2293196623",
+          "name": "Anis Omri"
+        },
+        {
+          "authorId": "2123912146",
+          "name": "Sana Slimani"
+        },
+        {
+          "authorId": "122476899",
+          "name": "Hatem Afi"
+        }
+      ],
+      "abstract": "While education is essential for employability, people with disabilities often face barriers such as inadequate accommodations and limited access to adaptive technologies, hindering their equitable labor market participation. This research addresses these challenges by analyzing the roles of artificial intelligence (AI) and digitalization in the relationship between educational attainment and employability among people with disabilities in 33 high-income countries from 2010 to 2022. Using a moderated moderation model, the study evaluates how AI and digitalization jointly influence the relationship between education levels and employment outcomes. The analysis employs the Hayes PROCESS macro with bootstrapped confidence intervals to ensure robustness and accuracy in estimating interaction effects. The findings demonstrate that education significantly enhances employment prospects for individuals with disabilities, with stronger effects observed at intermediate and advanced education levels. AI serves as a critical moderator, amplifying the positive impact of education by creating adaptive learning environments and fostering essential technical and transversal skills. Digitalization complements this role by providing the infrastructure necessary to integrate AI into education systems, broadening access to resources, and enabling flexible learning opportunities. The study further identifies a moderated moderation effect, where the combined influence of AI and digitalization significantly strengthens the effect of education on employability for disabled people. These results highlight the transformative potential of AI and digitalization in improving education quality and fostering labor market inclusion for persons with disabilities in an increasingly digitalized world."
+    }
+  ]
+}

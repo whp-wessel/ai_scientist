@@ -1,0 +1,1334 @@
+{
+  "query": "childhood spirituality social support depression",
+  "response": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 4472190,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                12
+              ]
+            ],
+            "date-time": "2024-08-12T14:30:28Z",
+            "timestamp": 1723473028285
+          },
+          "reference-count": 0,
+          "publisher": "De Gruyter",
+          "isbn-type": [
+            {
+              "value": "9783110674217",
+              "type": "electronic"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                20
+              ]
+            ]
+          },
+          "DOI": "10.1515/9783110674217-004",
+          "type": "book-chapter",
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                7
+              ]
+            ],
+            "date-time": "2020-09-07T13:35:18Z",
+            "timestamp": 1599485718000
+          },
+          "page": "56-90",
+          "source": "Crossref",
+          "is-referenced-by-count": 1,
+          "title": [
+            "Depression and Spirituality/Religion"
+          ],
+          "prefix": "10.1515",
+          "author": [
+            {
+              "given": "Annette",
+              "family": "Hau\u00dfmann",
+              "sequence": "first",
+              "affiliation": []
+            }
+          ],
+          "member": "374",
+          "container-title": [
+            "Spirituality, Mental Health, and Social Support"
+          ],
+          "link": [
+            {
+              "URL": "https://www.degruyter.com/view/book/9783110674217/10.1515/9783110674217-004.xml",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.degruyter.com/document/doi/10.1515/9783110674217-004/xml",
+              "content-type": "application/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.degruyter.com/document/doi/10.1515/9783110674217-004/pdf",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                29
+              ]
+            ],
+            "date-time": "2024-03-29T16:58:32Z",
+            "timestamp": 1711731512000
+          },
+          "score": 30.590853,
+          "resource": {
+            "primary": {
+              "URL": "https://www.degruyter.com/document/doi/10.1515/9783110674217-004/html"
+            }
+          },
+          "subtitle": [
+            "An Ambivalent Relationship"
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                20
+              ]
+            ]
+          },
+          "ISBN": [
+            "9783110674217"
+          ],
+          "references-count": 0,
+          "alternative-id": [
+            "10.1515/9783110674217-004",
+            "10.1515/9783110674217"
+          ],
+          "URL": "https://doi.org/10.1515/9783110674217-004",
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                20
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2024-09-09T17:57:58Z",
+            "timestamp": 1725904678271
+          },
+          "edition-number": "0",
+          "reference-count": 0,
+          "publisher": "Routledge",
+          "isbn-type": [
+            {
+              "type": "electronic",
+              "value": "9781315260525"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2017,
+                3,
+                2
+              ]
+            ]
+          },
+          "DOI": "10.4324/9781315260525-12",
+          "type": "book-chapter",
+          "created": {
+            "date-parts": [
+              [
+                2021,
+                4,
+                11
+              ]
+            ],
+            "date-time": "2021-04-11T03:02:12Z",
+            "timestamp": 1618110132000
+          },
+          "page": "65-78",
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Experience of spirituality in childhood"
+          ],
+          "prefix": "10.4324",
+          "member": "301",
+          "container-title": [
+            "Children, Spirituality, Religion and Social Work"
+          ],
+          "language": "en",
+          "deposited": {
+            "date-parts": [
+              [
+                2021,
+                4,
+                11
+              ]
+            ],
+            "date-time": "2021-04-11T03:02:15Z",
+            "timestamp": 1618110135000
+          },
+          "score": 27.051428,
+          "resource": {
+            "primary": {
+              "URL": "https://www.taylorfrancis.com/books/9781351952316/chapters/10.4324/9781315260525-12"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2017,
+                3,
+                2
+              ]
+            ]
+          },
+          "ISBN": [
+            "9781315260525"
+          ],
+          "references-count": 0,
+          "URL": "https://doi.org/10.4324/9781315260525-12",
+          "published": {
+            "date-parts": [
+              [
+                2017,
+                3,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                18
+              ]
+            ],
+            "date-time": "2024-06-18T22:10:23Z",
+            "timestamp": 1718748623295
+          },
+          "reference-count": 59,
+          "publisher": "Informa UK Limited",
+          "issue": "4",
+          "content-domain": {
+            "domain": [
+              "www.tandfonline.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Social Work in Mental Health"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2017,
+                7,
+                4
+              ]
+            ]
+          },
+          "DOI": "10.1080/15332985.2016.1222982",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2016,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2016-08-15T18:32:36Z",
+            "timestamp": 1471285956000
+          },
+          "page": "373-396",
+          "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+          "source": "Crossref",
+          "is-referenced-by-count": 1,
+          "title": [
+            "Childhood depression and spirituality: Insights for spiritually sensitive child-centred social work interventions"
+          ],
+          "prefix": "10.1080",
+          "volume": "15",
+          "author": [
+            {
+              "given": "Samta P.",
+              "family": "Pandya",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Tata Institute of Social Sciences, Mumbai, India"
+                }
+              ]
+            }
+          ],
+          "member": "301",
+          "published-online": {
+            "date-parts": [
+              [
+                2016,
+                8,
+                15
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "CIT0001",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1097/NMD.0b013e31826b6e92"
+            },
+            {
+              "key": "CIT0002",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1017/S003329179700593X"
+            },
+            {
+              "key": "CIT0003",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.cbpra.2011.05.007"
+            },
+            {
+              "key": "CIT0004",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.4278/0890-1171-20.3.192"
+            },
+            {
+              "key": "CIT0005",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/13674676.2015.1056120"
+            },
+            {
+              "key": "CIT0006",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14318/hau2.1"
+            },
+            {
+              "key": "CIT0007",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/0011000014527001"
+            },
+            {
+              "key": "CIT0008",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.jadohealth.2004.07.017"
+            },
+            {
+              "key": "CIT0009",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0003-066X.52.1.25"
+            },
+            {
+              "key": "CIT0010",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/0022167806293000"
+            },
+            {
+              "key": "CIT0011",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/14046-012"
+            },
+            {
+              "key": "CIT0012",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1126/science.1546291"
+            },
+            {
+              "key": "CIT0013",
+              "volume-title": "Adolescent stress: Causes and consequences",
+              "author": "Dornbusch S.",
+              "year": "1991"
+            },
+            {
+              "key": "CIT0014",
+              "unstructured": "Eckshtain, D. & Gaynor, S. T. (2003).Caregiver-child relationship enhancement training (C-CRET). Unpublished manuscript, Western Michigan University at Kalamazoo."
+            },
+            {
+              "key": "CIT0015",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/07317100902910398"
+            },
+            {
+              "key": "CIT0016",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1097/00004650-200407000-00002"
+            },
+            {
+              "key": "CIT0017",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1005135217449"
+            },
+            {
+              "key": "CIT0018",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.2307/j.ctt4cgd52",
+              "volume-title": "Running randomized evaluations: A practical guide",
+              "author": "Glennerster, R., &amp; Takavarasha, K.",
+              "year": "2013"
+            },
+            {
+              "key": "CIT0019",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0033-2909.127.6.773"
+            },
+            {
+              "key": "CIT0020",
+              "volume-title": "Wong\u2019s nursing care of infants and children",
+              "author": "Hockenberry M. J.",
+              "year": "2011",
+              "edition": "9"
+            },
+            {
+              "key": "CIT0021",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/14046-005"
+            },
+            {
+              "key": "CIT0022",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1136/bmj.c723"
+            },
+            {
+              "key": "CIT0023",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/13811118.2013.833149"
+            },
+            {
+              "key": "CIT0024",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/1099-9809.12.3.578"
+            },
+            {
+              "key": "CIT0025",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1002/jclp.2014.70.issue-6"
+            },
+            {
+              "key": "CIT0026",
+              "doi-asserted-by": "crossref",
+              "first-page": "430",
+              "DOI": "10.1002/jclp.20663",
+              "volume": "66",
+              "author": "Koszycki D.",
+              "year": "2010",
+              "journal-title": "Journal of Clinical Psychology"
+            },
+            {
+              "key": "CIT0027",
+              "volume-title": "Children\u2019s Depression Inventory (CDI) manual",
+              "author": "Kovacs M.",
+              "year": "1992"
+            },
+            {
+              "key": "CIT0028",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2307/2095905"
+            },
+            {
+              "key": "CIT0029",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/B:AJCP.0000004747.99099.7e"
+            },
+            {
+              "key": "CIT0030",
+              "volume-title": "The children\u2019s happiness scale",
+              "author": "Morgan R.",
+              "year": "2014"
+            },
+            {
+              "key": "CIT0031",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/j.1467-9507.2007.00389.x"
+            },
+            {
+              "key": "CIT0032",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/1364436X.2015.1055458"
+            },
+            {
+              "key": "CIT0033",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0021-843X.100.4.569"
+            },
+            {
+              "key": "CIT0034",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.pedn.2009.07.009"
+            },
+            {
+              "key": "CIT0035",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/scp0000043"
+            },
+            {
+              "key": "CIT0036",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/0743558402171001"
+            },
+            {
+              "key": "CIT0037",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/BF01537611"
+            },
+            {
+              "key": "CIT0038",
+              "volume-title": "Children\u2019s Depression Rating Scale\u2014Revised (CDRS-R): Manual",
+              "author": "Poznanski E. O.",
+              "year": "1996"
+            },
+            {
+              "key": "CIT0039",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/scp0000035"
+            },
+            {
+              "key": "CIT0040",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/0143034308096434"
+            },
+            {
+              "key": "CIT0041",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10567-005-6666-3"
+            },
+            {
+              "key": "CIT0042",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2307/3090228"
+            },
+            {
+              "key": "CIT0043",
+              "volume-title": "Measures of personality and social psychological attitudes",
+              "author": "Shaver, P. R., &amp; Brennan, K. A.",
+              "year": "1991"
+            },
+            {
+              "key": "CIT0044",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1009524626436"
+            },
+            {
+              "key": "CIT0045",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/B978-008043362-2/50007-X"
+            },
+            {
+              "key": "CIT0046",
+              "volume-title": "Psychosocial treatments for child and adolescent disorders: Empirically based strategies for clinical practice",
+              "author": "Stark K. D.",
+              "year": "2005"
+            },
+            {
+              "key": "CIT0047",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1558/ijsnr.v2i2.859"
+            },
+            {
+              "key": "CIT0048",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5840/asrr2013426"
+            },
+            {
+              "key": "CIT0049",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1093/acprof:osobl/9780199315314.003.0011"
+            },
+            {
+              "key": "CIT0050",
+              "volume-title": "AoL East and West: A Study of the Art of Living Foundation",
+              "author": "T\u00f8llefsen I.",
+              "year": "2016"
+            },
+            {
+              "key": "CIT0051",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/1359104507078474"
+            },
+            {
+              "key": "CIT0052",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2307/2676332"
+            },
+            {
+              "key": "CIT0053",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0021-843X.111.4.578"
+            },
+            {
+              "key": "CIT0054",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1097/YCO.0000000000000080"
+            },
+            {
+              "key": "CIT0055",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1097/00005053-198012000-00005"
+            },
+            {
+              "key": "CIT0056",
+              "volume-title": "PASCET: Primary and secondary control enhancement training manual",
+              "author": "Weisz J. R.",
+              "year": "1999"
+            },
+            {
+              "key": "CIT0057",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1037/0022-006X.65.4.703"
+            },
+            {
+              "key": "CIT0058",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2105/AJPH.93.2.200"
+            },
+            {
+              "key": "CIT0059",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1002/jclp.v67.2"
+            }
+          ],
+          "container-title": [
+            "Social Work in Mental Health"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://www.tandfonline.com/doi/pdf/10.1080/15332985.2016.1222982",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                18
+              ]
+            ],
+            "date-time": "2024-06-18T21:47:59Z",
+            "timestamp": 1718747279000
+          },
+          "score": 26.789669,
+          "resource": {
+            "primary": {
+              "URL": "https://www.tandfonline.com/doi/full/10.1080/15332985.2016.1222982"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2016,
+                8,
+                15
+              ]
+            ]
+          },
+          "references-count": 59,
+          "journal-issue": {
+            "issue": "4",
+            "published-online": {
+              "date-parts": [
+                [
+                  2016,
+                  8,
+                  23
+                ]
+              ]
+            },
+            "published-print": {
+              "date-parts": [
+                [
+                  2017,
+                  7,
+                  4
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "10.1080/15332985.2016.1222982"
+          ],
+          "URL": "https://doi.org/10.1080/15332985.2016.1222982",
+          "ISSN": [
+            "1533-2985",
+            "1533-2993"
+          ],
+          "issn-type": [
+            {
+              "value": "1533-2985",
+              "type": "print"
+            },
+            {
+              "value": "1533-2993",
+              "type": "electronic"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2016,
+                8,
+                15
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+              "order": 1,
+              "name": "peerreview_statement",
+              "label": "Peer Review Statement"
+            },
+            {
+              "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=wsmh20",
+              "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=wsmh20",
+              "order": 2,
+              "name": "aims_and_scope_url",
+              "label": "Aim & Scope"
+            }
+          ]
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2025-10-17T13:39:54Z",
+            "timestamp": 1760708394111,
+            "version": "3.40.1"
+          },
+          "reference-count": 32,
+          "publisher": "Springer Science and Business Media LLC",
+          "issue": "3",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2012,
+                    2,
+                    10
+                  ]
+                ],
+                "date-time": "2012-02-10T00:00:00Z",
+                "timestamp": 1328832000000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "http://www.springer.com/tdm"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "J Relig Health"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2013,
+                9
+              ]
+            ]
+          },
+          "DOI": "10.1007/s10943-012-9577-x",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2012,
+                2,
+                9
+              ]
+            ],
+            "date-time": "2012-02-09T16:52:14Z",
+            "timestamp": 1328806334000
+          },
+          "page": "1014-1028",
+          "source": "Crossref",
+          "is-referenced-by-count": 48,
+          "title": [
+            "Spirituality and Support: A Descriptive Analysis of Online Social Support for Depression"
+          ],
+          "prefix": "10.1007",
+          "volume": "52",
+          "author": [
+            {
+              "given": "David M.",
+              "family": "Keating",
+              "sequence": "first",
+              "affiliation": []
+            }
+          ],
+          "member": "297",
+          "published-online": {
+            "date-parts": [
+              [
+                2012,
+                2,
+                10
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "9577_CR1",
+              "first-page": "263",
+              "volume-title": "Handbook of health communication",
+              "author": "TL Albrecht",
+              "year": "2003",
+              "unstructured": "Albrecht, T. L., & Goldsmith, D. J. (2003). Social support, social networks, and health. In A. Dorsey, K. I. Miller, R. Parrott, & T. Thompson (Eds.), Handbook of health communication (pp. 263\u2013284). Mahwah, NJ: Lawrence Erlbaum Associates."
+            },
+            {
+              "key": "9577_CR2",
+              "volume-title": "Psychology and religion: An introduction",
+              "author": "M Argyle",
+              "year": "2000",
+              "unstructured": "Argyle, M. (2000). Psychology and religion: An introduction. New York: Routledge."
+            },
+            {
+              "key": "9577_CR3",
+              "volume-title": "Online social support: The interplay of social networks and computer mediated communication",
+              "author": "A Bambina",
+              "year": "2007",
+              "unstructured": "Bambina, A. (2007). Online social support: The interplay of social networks and computer mediated communication. New York: Cambria Press."
+            },
+            {
+              "key": "9577_CR4",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.9783/9780812290882",
+              "volume-title": "Depression: Causes and treatment",
+              "author": "AT Beck",
+              "year": "2009",
+              "unstructured": "Beck, A. T., & Alford, B. A. (2009). Depression: Causes and treatment. Philadelphia: University of Pennsylvania Press."
+            },
+            {
+              "key": "9577_CR5",
+              "first-page": "29",
+              "volume": "164",
+              "author": "B Bower",
+              "year": "2003",
+              "unstructured": "Bower, B. (2003). US survey probes depression care. Science News, 164, 29.",
+              "journal-title": "Science News"
+            },
+            {
+              "key": "9577_CR6",
+              "doi-asserted-by": "crossref",
+              "first-page": "123",
+              "DOI": "10.1207/s15327027hc1102_2",
+              "volume": "11",
+              "author": "DO Braithwaite",
+              "year": "1999",
+              "unstructured": "Braithwaite, D. O., Waldron, V. R., & Finn, J. (1999). Communication of social support in computer-mediated groups for people with disabilities. Health Communication, 11, 123\u2013151.",
+              "journal-title": "Health Communication"
+            },
+            {
+              "volume-title": "Communication of social support: Messages, interactions, relationships, and community",
+              "year": "1994",
+              "key": "9577_CR8",
+              "unstructured": "Burleson, B. R., Albrecht, T. L., & Sarason, I. G. (Eds.). (1994). Communication of social support: Messages, interactions, relationships, and community. Thousand Oaks, CA: Sage Publications."
+            },
+            {
+              "key": "9577_CR9",
+              "doi-asserted-by": "crossref",
+              "first-page": "154",
+              "DOI": "10.1177/009365092019002002",
+              "volume": "19",
+              "author": "CE Cutrona",
+              "year": "1992",
+              "unstructured": "Cutrona, C. E., & Suhr, J. A. (1992). Controllability of stressful events and satisfaction with spouse support behaviors. Communication Research, 19, 154\u2013174.",
+              "journal-title": "Communication Research"
+            },
+            {
+              "key": "9577_CR10",
+              "doi-asserted-by": "crossref",
+              "first-page": "761",
+              "DOI": "10.1023/A:1020264718397",
+              "volume": "30",
+              "author": "WE Fiala",
+              "year": "2002",
+              "unstructured": "Fiala, W. E., Bjorck, J. P., & Gorsuch, R. (2002). The religious support scale: Construction, validation, and cross-validation. American Journal of Community Psychology, 30, 761\u2013786.",
+              "journal-title": "American Journal of Community Psychology"
+            },
+            {
+              "key": "9577_CR11",
+              "unstructured": "Fox, S., & Jones, S. (2009). The social life of health information. Pew Internet & American Life Project. Retrieved from http://www.pewinternet.org ."
+            },
+            {
+              "key": "9577_CR12",
+              "doi-asserted-by": "crossref",
+              "first-page": "265",
+              "DOI": "10.1080/10508610701572770",
+              "volume": "17",
+              "author": "JR Haber",
+              "year": "2007",
+              "unstructured": "Haber, J. R., Jacob, T., & Spangler, D. J. C. (2007). Dimensions of religion/spirituality and relevance to health research. The International Journal for the Psychology of Religion, 17, 265\u2013288.",
+              "journal-title": "The International Journal for the Psychology of Religion"
+            },
+            {
+              "key": "9577_CR13",
+              "doi-asserted-by": "crossref",
+              "first-page": "43",
+              "DOI": "10.1111/1468-5906.t01-1-00160",
+              "volume": "42",
+              "author": "CH Hackney",
+              "year": "2003",
+              "unstructured": "Hackney, C. H., & Sanders, G. S. (2003). Religiosity and mental health: A meta-analysis of recent studies. Journal for the Scientific Study of Religion, 42, 43\u201356.",
+              "journal-title": "Journal for the Scientific Study of Religion"
+            },
+            {
+              "key": "9577_CR14",
+              "doi-asserted-by": "crossref",
+              "first-page": "211",
+              "DOI": "10.1016/B978-012417645-4/50081-X",
+              "volume-title": "Handbook of religion and mental health",
+              "author": "NC Kehoe",
+              "year": "1998",
+              "unstructured": "Kehoe, N. C. (1998). Religion and mental health from the Catholic perspective. In H. G. Koenig (Ed.), Handbook of religion and mental health (pp. 211\u2013223). San Diego: Academic Press."
+            },
+            {
+              "key": "9577_CR15",
+              "doi-asserted-by": "crossref",
+              "first-page": "157",
+              "DOI": "10.5840/jcr20093217",
+              "volume": "32",
+              "author": "EE Kleman",
+              "year": "2009",
+              "unstructured": "Kleman, E. E., Everett, M. K., & Egbert, N. (2009). Social support strategies among women of faith. Journal of Communication and Religion, 32, 157\u2013193.",
+              "journal-title": "Journal of Communication and Religion"
+            },
+            {
+              "volume-title": "Handbook of religion and mental health",
+              "year": "1998",
+              "key": "9577_CR16",
+              "unstructured": "Koenig, H. G. (Ed.). (1998). Handbook of religion and mental health. San Diego: Academic Press."
+            },
+            {
+              "key": "9577_CR17",
+              "doi-asserted-by": "crossref",
+              "first-page": "67",
+              "DOI": "10.1080/09540260124661",
+              "volume": "13",
+              "author": "HG Koenig",
+              "year": "2001",
+              "unstructured": "Koenig, H. G., & Larson, D. B. (2001). Religion and mental health: Evidence for an association. International Review of Psychiatry, 13, 67\u201368.",
+              "journal-title": "International Review of Psychiatry"
+            },
+            {
+              "key": "9577_CR18",
+              "doi-asserted-by": "crossref",
+              "first-page": "323",
+              "DOI": "10.1016/B978-012417645-4/50089-4",
+              "volume-title": "Handbook of religion and mental health",
+              "author": "HG Koenig",
+              "year": "1998",
+              "unstructured": "Koenig, H. G., & Pritchett, J. (1998). Religion and psychotherapy. In H. G. Koenig (Ed.), Handbook of religion and mental health (pp. 323\u2013336). San Diego: Academic Press."
+            },
+            {
+              "key": "9577_CR19",
+              "first-page": "215",
+              "volume-title": "The Internet and health care: Theory, research, and practice",
+              "author": "G Kral",
+              "year": "2006",
+              "unstructured": "Kral, G. (2006). Online communities for mutual help: Fears, fiction, and facts. In M. Murero & R. E. Rice (Eds.), The Internet and health care: Theory, research, and practice (pp. 215\u2013232). Mahwah, NJ: Lawrence Erlbaum Associates."
+            },
+            {
+              "key": "9577_CR20",
+              "doi-asserted-by": "crossref",
+              "first-page": "647",
+              "DOI": "10.1111/0021-8294.00082",
+              "volume": "40",
+              "author": "N Krause",
+              "year": "2001",
+              "unstructured": "Krause, N., Ellison, C. G., Shaw, B. A., Marcum, J. P., & Boardman, J. D. (2001). Church-based social support and religious coping. Journal for the Scientific Study of Religion, 40, 647\u2013656.",
+              "journal-title": "Journal for the Scientific Study of Religion"
+            },
+            {
+              "key": "9577_CR21",
+              "doi-asserted-by": "crossref",
+              "first-page": "109",
+              "DOI": "10.1207/S15327582IJPR1202_03",
+              "volume": "12",
+              "author": "RM Laurencelle",
+              "year": "2002",
+              "unstructured": "Laurencelle, R. M., Abell, S. C., & Schwartz, D. J. (2002). The relation between intrinsic religious faith and psychological well-being. The International Journal for the Psychology of Religion, 12, 109\u2013123.",
+              "journal-title": "The International Journal for the Psychology of Religion"
+            },
+            {
+              "key": "9577_CR22",
+              "doi-asserted-by": "crossref",
+              "first-page": "33",
+              "DOI": "10.1016/B978-012417645-4/50070-5",
+              "volume-title": "Handbook of religion and mental health",
+              "author": "JS Levin",
+              "year": "1998",
+              "unstructured": "Levin, J. S., & Chatters, L. M. (1998). Research on religion and mental health: An overview of empirical findings and theoretical issues. In H. G. Koenig (Ed.), Handbook of religion and mental health (pp. 33\u201350). San Diego: Academic Press."
+            },
+            {
+              "key": "9577_CR23",
+              "doi-asserted-by": "crossref",
+              "first-page": "690",
+              "DOI": "10.1016/j.chb.2008.11.003",
+              "volume": "25",
+              "author": "MA Lieberman",
+              "year": "2009",
+              "unstructured": "Lieberman, M. A., & Winzelberg, A. (2009). The relationship between religious expression and outcomes in online support groups: A partial replication. Computers in Human Behavior, 25, 690\u2013694.",
+              "journal-title": "Computers in Human Behavior"
+            },
+            {
+              "key": "9577_CR24",
+              "doi-asserted-by": "crossref",
+              "first-page": "209",
+              "DOI": "10.1080/10810730590934235",
+              "volume": "10",
+              "author": "W Macias",
+              "year": "2005",
+              "unstructured": "Macias, W., Lewis, L. S., & Smith, T. L. (2005). Health-related message boards/chat rooms on the web: Discussion content and implications for pharmaceutical sponsorships. Journal of Health Communication, 10, 209\u2013223.",
+              "journal-title": "Journal of Health Communication"
+            },
+            {
+              "key": "9577_CR25",
+              "doi-asserted-by": "crossref",
+              "first-page": "203",
+              "DOI": "10.1016/B978-012417645-4/50080-8",
+              "volume-title": "Handbook of religion and mental health",
+              "author": "HN Malony",
+              "year": "1998",
+              "unstructured": "Malony, H. N. (1998). Religion and mental health from the Protestant perspective. In H. G. Koenig (Ed.), Handbook of religion and mental health (pp. 203\u2013210). San Diego: Academic Press."
+            },
+            {
+              "key": "9577_CR26",
+              "unstructured": "National Cancer Institute. (2007). HINTS: Health information national trends survey. Retrieved from http://hints.cancer.gov/hints/ ."
+            },
+            {
+              "key": "9577_CR27",
+              "doi-asserted-by": "crossref",
+              "first-page": "341",
+              "DOI": "10.2307/3512165",
+              "volume": "46",
+              "author": "JG Nooney",
+              "year": "2005",
+              "unstructured": "Nooney, J. G. (2005). Religion, stress, and mental health adolescence: Findings from Add Health. Review of Religious Research, 46, 341\u2013354.",
+              "journal-title": "Review of Religious Research"
+            },
+            {
+              "key": "9577_CR28",
+              "doi-asserted-by": "crossref",
+              "first-page": "111",
+              "DOI": "10.1016/B978-012417645-4/50075-4",
+              "volume-title": "Handbook of religion and mental health",
+              "author": "KI Pargament",
+              "year": "1998",
+              "unstructured": "Pargament, K. I., & Brant, C. R. (1998). Religion and coping. In H. G. Koenig (Ed.), Handbook of religion and mental health (pp. 111\u2013128). San Diego: Academic Press."
+            },
+            {
+              "key": "9577_CR29",
+              "doi-asserted-by": "crossref",
+              "first-page": "309",
+              "DOI": "10.1111/j.1468-2958.2009.01353.x",
+              "volume": "35",
+              "author": "SA Rains",
+              "year": "2009",
+              "unstructured": "Rains, S. A., & Young, V. (2009). A meta-analysis of research on formal computer-mediated support groups: Examining group characteristics and health outcomes. Human Communication Research, 35, 309\u2013336.",
+              "journal-title": "Human Communication Research"
+            },
+            {
+              "key": "9577_CR30",
+              "doi-asserted-by": "crossref",
+              "first-page": "676",
+              "DOI": "10.1002/pon.1129",
+              "volume": "16",
+              "author": "B Shaw",
+              "year": "2007",
+              "unstructured": "Shaw, B., Han, J. Y., Kim, E., Gustafson, D., Hawkins, R., Cleary, J., et al. (2007). Effects of prayer and religious expression within computer support groups on women with breast cancer. Psycho-Oncology, 16, 676\u2013687.",
+              "journal-title": "Psycho-Oncology"
+            },
+            {
+              "key": "9577_CR31",
+              "first-page": "139",
+              "volume-title": "The Oxford handbook of internet psychology",
+              "author": "M Tanis",
+              "year": "2007",
+              "unstructured": "Tanis, M. (2007). Online social support groups. In A. N. Joinson, K. Y. A. McKenna, T. Postmes, & U. Reips (Eds.), The Oxford handbook of internet psychology (pp. 139\u2013153). New York: Oxford University Press."
+            },
+            {
+              "key": "9577_CR32",
+              "doi-asserted-by": "crossref",
+              "first-page": "73",
+              "DOI": "10.1300/J017v21n04_05",
+              "volume": "21",
+              "author": "JG Tichon",
+              "year": "2003",
+              "unstructured": "Tichon, J. G., & Shapiro, M. (2003). With a little health from my friends: Children, the internet, and social support. Journal of Technology in Human Services, 21, 73\u201392.",
+              "journal-title": "Journal of Technology in Human Services"
+            },
+            {
+              "key": "9577_CR33",
+              "doi-asserted-by": "crossref",
+              "first-page": "39",
+              "DOI": "10.1177/1359105303008001429",
+              "volume": "8",
+              "author": "KB Wright",
+              "year": "2003",
+              "unstructured": "Wright, K. B., & Bell, S. B. (2003). Health-related support groups on the internet: Linking empirical findings to social support and computer-mediated communication theory. Journal of Health Psychology, 8, 39\u201354.",
+              "journal-title": "Journal of Health Psychology"
+            }
+          ],
+          "container-title": [
+            "Journal of Religion and Health"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "http://link.springer.com/content/pdf/10.1007/s10943-012-9577-x.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "http://link.springer.com/article/10.1007/s10943-012-9577-x/fulltext.html",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "http://link.springer.com/content/pdf/10.1007/s10943-012-9577-x",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                20
+              ]
+            ],
+            "date-time": "2025-03-20T04:50:07Z",
+            "timestamp": 1742446207000
+          },
+          "score": 26.737616,
+          "resource": {
+            "primary": {
+              "URL": "http://link.springer.com/10.1007/s10943-012-9577-x"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2012,
+                2,
+                10
+              ]
+            ]
+          },
+          "references-count": 32,
+          "journal-issue": {
+            "issue": "3",
+            "published-print": {
+              "date-parts": [
+                [
+                  2013,
+                  9
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "9577"
+          ],
+          "URL": "https://doi.org/10.1007/s10943-012-9577-x",
+          "ISSN": [
+            "0022-4197",
+            "1573-6571"
+          ],
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0022-4197"
+            },
+            {
+              "type": "electronic",
+              "value": "1573-6571"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2012,
+                2,
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                6
+              ]
+            ],
+            "date-time": "2024-05-06T19:42:12Z",
+            "timestamp": 1715024532046
+          },
+          "edition-number": "1",
+          "reference-count": 1,
+          "publisher": "Routledge",
+          "isbn-type": [
+            {
+              "value": "9781315610399",
+              "type": "electronic"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2016,
+                4,
+                1
+              ]
+            ]
+          },
+          "DOI": "10.4324/9781315610399-5",
+          "type": "book-chapter",
+          "created": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                15
+              ]
+            ],
+            "date-time": "2018-11-15T21:35:28Z",
+            "timestamp": 1542317728000
+          },
+          "page": "33-44",
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Childhood"
+          ],
+          "prefix": "10.4324",
+          "member": "301",
+          "reference": [
+            {
+              "key": "ref3",
+              "unstructured": "MISSING-VALUE"
+            }
+          ],
+          "container-title": [
+            "Spirituality and Social Work"
+          ],
+          "language": "en",
+          "deposited": {
+            "date-parts": [
+              [
+                2019,
+                1,
+                18
+              ]
+            ],
+            "date-time": "2019-01-18T04:49:45Z",
+            "timestamp": 1547786985000
+          },
+          "score": 26.728714,
+          "resource": {
+            "primary": {
+              "URL": "https://www.taylorfrancis.com/books/9781317051169/chapters/10.4324/9781315610399-5"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2016,
+                4,
+                1
+              ]
+            ]
+          },
+          "ISBN": [
+            "9781315610399"
+          ],
+          "references-count": 1,
+          "URL": "https://doi.org/10.4324/9781315610399-5",
+          "published": {
+            "date-parts": [
+              [
+                2016,
+                4,
+                1
+              ]
+            ]
+          }
+        }
+      ],
+      "items-per-page": 5,
+      "query": {
+        "start-index": 0,
+        "search-terms": "childhood spirituality social support depression"
+      }
+    }
+  }
+}

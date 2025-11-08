@@ -1,2 +1,6 @@
 source_id,doi,hypothesis_family,relevance_notes,json_path
 Gartland2024,10.1371/journal.pone.0301620,childhood_adversity,"Shows resilience mediates emotional/behavioural wellbeing among children exposed to adversity, motivating H1 + support-focused hypotheses.",lit/queries/loop_000/query_001.json
+So2024CareerSupport,10.15284/kjhd.2024.31.2.11,parental_support,"Parental career support boosts occupational engagement via major satisfaction/career adaptability, aligning with H2 on guidance and adult work satisfaction.",lit/queries/loop_001/query_001.json
+Zhang2025NeglectDepression,10.1016/j.chiabu.2025.107294,mental_health_continuity,"Nationwide longitudinal evidence that childhood neighborhood quality drives adult depression via emotional neglect, reinforcing H4's continuity premise.",lit/queries/loop_001/query_002.json
+Lin2024ACEInternet,10.1016/j.chiabu.2023.106624,childhood_adversity,"Finds adverse childhood experiences elevate problematic internet use in young adults through hostility/loneliness, underscoring digital sequelae of adversity for H1 framing.",lit/queries/loop_001/query_004.json
+Asmayawati2023DigitalLit,10.47191/ijmra/v6-i11-30,digital_exposure,"Indonesian study showing parental involvement + tech access shapes early digital literacy, supporting H3's focus on early computer use and later outcomes.",lit/queries/loop_001/query_006.json

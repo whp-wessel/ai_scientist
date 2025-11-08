@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T15:15Z
+last_updated: 2025-11-08T15:25Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -15,6 +15,8 @@ Loop 011 note: Semantic Scholar CLI attempts continue to return 403s (see `lit/q
 Loop 012 note: Loop-mandated Semantic Scholar attempt again failed with 403 (see `lit/queries/loop_012/query_001.json`). To avoid literature stagnation, we logged a CrossRef-backed article on emotional maltreatment → adult depression/self-compassion (`10.1016/j.chiabu.2019.03.016`) and updated `lit/evidence_map.csv` / `lit/bibliography.*`. PAP freeze remains blocked pending a working S2 key or documented waiver.
 
 Loop 013 note: Added `lit/semantic_scholar_waiver_loop013.md`, consolidating loops 008–013 403 payloads and CrossRef fallbacks to request a temporary waiver while the Semantic Scholar key is repaired. PAP cannot freeze until that waiver is approved or a working key is restored.
+
+Loop 014 note: Semantic Scholar failure persisted (`lit/queries/loop_014/query_001.json`), so we logged a CrossRef-backed spirituality article (`Pandya 2017`, DOI `10.1080/15332985.2016.1222982`) that links faith-based support to lower childhood depression. The waiver memo now covers loops 008–014 and cites this new DOI, but PAP status stays draft until the waiver is approved or the API credential resumes service.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

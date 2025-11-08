@@ -188,3 +188,19 @@ Notes:
 Next:
 - Draft PAP refinements (estimands and covariates) and propose freeze criteria for two primary families (Wellbeing; Relationships) while keeping MentalHealth exploratory.
 - If needed, implement ordinal models for key Likert outcomes before freeze; otherwise proceed with robust OLS and planned sensitivity checks.
+
+---
+## Loop 013 (literature)
+- Attempted targeted Semantic Scholar search for longitudinal links between childhood/adolescent religiosity and adult wellbeing/relationships:
+  - `python scripts/semantic_scholar_cli.py search --query "childhood religiosity adult wellbeing relationship satisfaction longitudinal" --limit 5 --output lit/queries/loop_013/query_001.json` → HTTP 429 captured (unauthenticated; 1 rps enforced).
+- Broadened query to adolescent→adult pathways:
+  - `python scripts/semantic_scholar_cli.py search --query "adolescent religiosity adult wellbeing longitudinal" --limit 5 --output lit/queries/loop_013/query_002.json` → success.
+- Extracted DOIs to the evidence map:
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_013/query_002.json --output lit/evidence_map.csv --topic "adolescent religiosity to adult wellbeing (longitudinal)"` → appended 3 DOIs.
+
+Notes:
+- The helper continues to function without an API key but may intermittently return 429s. A `.env` `S2_API_Key` would improve reliability and allow abstracts for synthesis.
+
+Next:
+- Expand literature with focused queries on religious homogamy/assortative mating and adult relationship quality.
+- Start drafting PAP refinements (estimands, covariates) toward freeze for two primary families (Wellbeing; Relationships).

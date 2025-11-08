@@ -1,0 +1,10 @@
+{
+  "error": true,
+  "reason": "HTTP Error 429: ",
+  "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=childhood+religiosity+adult+wellbeing+relationship+satisfaction+longitudinal&limit=5&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2Curl%2Cabstract",
+  "http_status": 429,
+  "body": {
+    "message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form",
+    "code": "429"
+  }
+}

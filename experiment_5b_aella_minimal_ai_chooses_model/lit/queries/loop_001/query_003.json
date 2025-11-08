@@ -1,0 +1,549 @@
+{
+  "total": 899,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "273929b67baefac3c310b23d522aec5cd7aa50c4",
+      "externalIds": {
+        "DOI": "10.1002/pbc.31472",
+        "CorpusId": 274444235,
+        "PubMed": "39616417"
+      },
+      "url": "https://www.semanticscholar.org/paper/273929b67baefac3c310b23d522aec5cd7aa50c4",
+      "title": "Association Between Socioeconomic Factors and Childhood Acute Lymphoblastic Leukemia Treatment\u2010 and Survival\u2010Related Outcomes in Canada",
+      "venue": "Pediatric Blood & Cancer",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/pbc.31472?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/pbc.31472, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2316024888",
+          "name": "Lindsay Jibb"
+        },
+        {
+          "authorId": "2294502927",
+          "name": "Meghan Laverty"
+        },
+        {
+          "authorId": "2323358857",
+          "name": "Donna L. Johnston"
+        },
+        {
+          "authorId": "2261547797",
+          "name": "Meera Rayar"
+        },
+        {
+          "authorId": "2269268525",
+          "name": "Tony H Truong"
+        },
+        {
+          "authorId": "2274989539",
+          "name": "Ketan Kulkarni"
+        },
+        {
+          "authorId": "2268739498",
+          "name": "Samuele Renzi"
+        },
+        {
+          "authorId": "8334023",
+          "name": "Saima Alvi"
+        },
+        {
+          "authorId": "2294442205",
+          "name": "Jaskiran Kaur"
+        },
+        {
+          "authorId": "2333393615",
+          "name": "Nicole Winch"
+        },
+        {
+          "authorId": "2157683980",
+          "name": "S. Gupta"
+        },
+        {
+          "authorId": "2294960776",
+          "name": "Stacey Marjerrison"
+        }
+      ],
+      "abstract": "Studies examing the impact of socioeconomic factors on outcomes in childhood acute lymphoblastic leukemia (ALL) have yielded inconsistent findings. We aimed to determine whether socioeconomic status (SES) or healthcare access are associated with the presence of potentially time\u2010sensitive high\u2010risk features at diagnosis, times to diagnosis or treatment, or survival among children with ALL in Canada."
+    },
+    {
+      "paperId": "88bb7effcf1dac4878a857fca0b9baae05c30541",
+      "externalIds": {
+        "CorpusId": 248980749
+      },
+      "url": "https://www.semanticscholar.org/paper/88bb7effcf1dac4878a857fca0b9baae05c30541",
+      "title": "Long run labor market outcomes of a childhood health shock: high socioeconomic status parents can mitigate the impact",
+      "venue": "",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "publicationTypes": null,
+      "authors": [
+        {
+          "authorId": "79803767",
+          "name": "Tine M. Eriksen"
+        },
+        {
+          "authorId": "80201235",
+          "name": "Amanda P. Gaulke"
+        },
+        {
+          "authorId": "36472642",
+          "name": "J. Svensson"
+        },
+        {
+          "authorId": "34682870",
+          "name": "Niels Skipper"
+        },
+        {
+          "authorId": "83909839",
+          "name": "Peter R. Thingholm"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "6b92cee135bab657088a4c94f113de84eaa6fbdc",
+      "externalIds": {
+        "DOI": "10.36713/epra16754",
+        "CorpusId": 269744761
+      },
+      "url": "https://www.semanticscholar.org/paper/6b92cee135bab657088a4c94f113de84eaa6fbdc",
+      "title": "DETERMINANTS OF CHILDHOOD OBESITY: A REGRESSION ANALYSIS OF SOCIOECONOMIC AND ENVIRONMENTAL FACTORS",
+      "venue": "EPRA International Journal of Research &amp; Development (IJRD)",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://eprajournals.com/IJSR/article/12975/download",
+        "status": "GOLD",
+        "license": "mit",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.36713/epra16754?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.36713/epra16754, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2301061058",
+          "name": "Dr. Abdul Vajid"
+        },
+        {
+          "authorId": "2301059538",
+          "name": "Dr. Sadakat Bashir"
+        }
+      ],
+      "abstract": "Childhood obesity is a complex public health issue with significant implications for long-term health outcomes and healthcare costs. This study investigates the determinants of childhood obesity, focusing on socioeconomic and environmental factors. Data were collected from 310 children and their families using a structured questionnaire from Jodhpur City. Socioeconomic variables included parental education level and household income, while environmental factors encompassed access to healthy food options and safe outdoor spaces for physical activity. Multiple regression analysis examined the relationship between these factors and childhood obesity, controlling for potential confounders. Results indicate that parental education level and household income were inversely associated with childhood obesity, suggesting that higher socioeconomic status may protect against obesity risk. Additionally, access to healthy food options in the neighborhood emerged as a significant predictor of childhood obesity, highlighting the importance of environmental factors in shaping dietary behaviors. These findings underscore the need for multifaceted interventions targeting socioeconomic disparities and ecological barriers to promote healthy weight among children. Effective strategies may include improving access to nutritious foods and creating supportive environments for community physical activity. Addressing the determinants of childhood obesity is crucial for mitigating its adverse health effects and reducing the burden on healthcare systems.\nKEYWORDS: Childhood Obesity, Public Health, Healthy Lifestyle, Socioeconomic Factors, Physical Activity"
+    },
+    {
+      "paperId": "236e135686356a0f86029bc616df3de70cf587e1",
+      "externalIds": {
+        "PubMedCentral": "11312924",
+        "DOI": "10.1186/s12969-024-01012-z",
+        "CorpusId": 271796233,
+        "PubMed": "39118107"
+      },
+      "url": "https://www.semanticscholar.org/paper/236e135686356a0f86029bc616df3de70cf587e1",
+      "title": "Uncovering the hidden socioeconomic impact of juvenile idiopathic arthritis and paving the way for other rare childhood diseases: an international, cross-disciplinary, patient-centered approach (PAVE Consortium)",
+      "venue": "Pediatric Rheumatology Online Journal",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11312924, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "LettersAndComments",
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2275569318",
+          "name": "Deborah A Marshall"
+        },
+        {
+          "authorId": "2315473135",
+          "name": "Brittany Gerber"
+        },
+        {
+          "authorId": "2289233788",
+          "name": "G. Currie"
+        },
+        {
+          "authorId": "2243966081",
+          "name": "Jordi Ant\u00f3n"
+        },
+        {
+          "authorId": "5802257",
+          "name": "L. De Somer"
+        },
+        {
+          "authorId": "2301544954",
+          "name": "M. Dey"
+        },
+        {
+          "authorId": "1403570110",
+          "name": "Tsipi Egert"
+        },
+        {
+          "authorId": "35693394",
+          "name": "Y. Egert"
+        },
+        {
+          "authorId": "2315475338",
+          "name": "Lia Henan"
+        },
+        {
+          "authorId": "2292355651",
+          "name": "Jens Klotsche"
+        },
+        {
+          "authorId": "2315473184",
+          "name": "Laura Martinez Mifsut"
+        },
+        {
+          "authorId": "2255291915",
+          "name": "K. Minden"
+        },
+        {
+          "authorId": "2315475451",
+          "name": "Christophe Normand"
+        },
+        {
+          "authorId": "2315475348",
+          "name": "David Porte"
+        },
+        {
+          "authorId": "4294689",
+          "name": "R. Saurenmann"
+        },
+        {
+          "authorId": "2298660917",
+          "name": "Joost F Swart"
+        },
+        {
+          "authorId": "6391898",
+          "name": "Y. Uziel"
+        },
+        {
+          "authorId": "2315630451",
+          "name": "Jennifer Wilson"
+        },
+        {
+          "authorId": "2250191766",
+          "name": "Carine Wouters"
+        },
+        {
+          "authorId": "2154779107",
+          "name": "A. Ziv"
+        },
+        {
+          "authorId": "2283755984",
+          "name": "Susanne M Benseler"
+        },
+        {
+          "authorId": null,
+          "name": "Tania Guillermo Sara A. Jennifer N. Elizabeth Stacey A.  Cellucci Fiebelkorn Kohut Stinson Stringer Page Wu"
+        },
+        {
+          "authorId": "6957066",
+          "name": "T. Cellucci"
+        },
+        {
+          "authorId": "2378728565",
+          "name": "Guillermo Fiebelkorn"
+        },
+        {
+          "authorId": "38343963",
+          "name": "S. Kohut"
+        },
+        {
+          "authorId": "2343861225",
+          "name": "Jennifer Stinson"
+        },
+        {
+          "authorId": "2311363948",
+          "name": "E. Stringer"
+        },
+        {
+          "authorId": "2389069737",
+          "name": "Stacey A. Page"
+        },
+        {
+          "authorId": "2369677473",
+          "name": "Nico Wulffraat"
+        },
+        {
+          "authorId": "2316038566",
+          "name": "R. Yeung"
+        },
+        {
+          "authorId": "2389077533",
+          "name": "Juliane Riess"
+        },
+        {
+          "authorId": "2277886273",
+          "name": "F. Milatz"
+        },
+        {
+          "authorId": "2228516915",
+          "name": "Martina Niewerth"
+        },
+        {
+          "authorId": "2255324392",
+          "name": "Claudia Sengler"
+        },
+        {
+          "authorId": "2268417776",
+          "name": "Nadine Groesch"
+        },
+        {
+          "authorId": "7363433",
+          "name": "I. Liedmann"
+        },
+        {
+          "authorId": "16304890",
+          "name": "S. Juvalta"
+        },
+        {
+          "authorId": "2389077680",
+          "name": "Pascale Kurt"
+        },
+        {
+          "authorId": "4289798",
+          "name": "J. Dratva"
+        },
+        {
+          "authorId": "2389081691",
+          "name": "David Shaw"
+        },
+        {
+          "authorId": "1620743028",
+          "name": "Eva Adank"
+        },
+        {
+          "authorId": "2196641674",
+          "name": "F. Aeschlimann"
+        },
+        {
+          "authorId": "48593290",
+          "name": "E. Cannizzaro"
+        },
+        {
+          "authorId": "2254238288",
+          "name": "Christian Huemer"
+        },
+        {
+          "authorId": "48183027",
+          "name": "D. Kaiser"
+        },
+        {
+          "authorId": "2389066217",
+          "name": "Felix Moerman"
+        },
+        {
+          "authorId": "2248854215",
+          "name": "K. Tenbrock"
+        },
+        {
+          "authorId": "6655472",
+          "name": "F. Vanoni"
+        },
+        {
+          "authorId": "2389075541",
+          "name": "Andreas W\u00f6rner"
+        },
+        {
+          "authorId": "2389069560",
+          "name": "Merc\u00e8 Jabalera"
+        },
+        {
+          "authorId": "2327077378",
+          "name": "Joan Vinyets"
+        },
+        {
+          "authorId": "2389080055",
+          "name": "Elisabet Puiggros Ruiz"
+        },
+        {
+          "authorId": "2382484562",
+          "name": "Sonia Carriqu\u00ed Arenas"
+        },
+        {
+          "authorId": "2389075580",
+          "name": "Nolvia Castillo Giron"
+        },
+        {
+          "authorId": "2390613190",
+          "name": "Joan Calzada Hernandez"
+        },
+        {
+          "authorId": "84592273",
+          "name": "Estibaliz Iglesias Jim\u00e9nez"
+        },
+        {
+          "authorId": "117072791",
+          "name": "J. M. Mosquera"
+        },
+        {
+          "authorId": "2389076985",
+          "name": "Andrea Montserrat Zacarias Crovato"
+        },
+        {
+          "authorId": "2389078264",
+          "name": "Carolina Estepa Guillen"
+        },
+        {
+          "authorId": "2390030874",
+          "name": "Patricia Ram\u00edrez Rodr\u00edguez"
+        },
+        {
+          "authorId": "2389071975",
+          "name": "Marina Barraso Rodrigo"
+        },
+        {
+          "authorId": "52545773",
+          "name": "J. D. Cascajosa"
+        },
+        {
+          "authorId": "2389069538",
+          "name": "Ana Isabel D\u00edaz Cort\u00e9s"
+        },
+        {
+          "authorId": "2389075548",
+          "name": "Marta Morales Ballus"
+        },
+        {
+          "authorId": "2389076028",
+          "name": "Marta Llorens Capdevila"
+        },
+        {
+          "authorId": "2389066145",
+          "name": "Maria Crespo Bosch"
+        },
+        {
+          "authorId": "2389066296",
+          "name": "Ariadna Riera Castello"
+        },
+        {
+          "authorId": "2389069563",
+          "name": "Montserrat Salvado Gavalda"
+        },
+        {
+          "authorId": "2390544962",
+          "name": "Marta Gonzalez Martinez"
+        },
+        {
+          "authorId": "2389077333",
+          "name": "Alexia Reyes Segura"
+        },
+        {
+          "authorId": "46784368",
+          "name": "R. Haviv"
+        },
+        {
+          "authorId": "2389075509",
+          "name": "Shirley Alon"
+        },
+        {
+          "authorId": "2023099490",
+          "name": "M. Heshin"
+        },
+        {
+          "authorId": "12297465",
+          "name": "I. Tirosh"
+        },
+        {
+          "authorId": "2389069263",
+          "name": "Yonathon Butbul Aviel"
+        },
+        {
+          "authorId": "2149350170",
+          "name": "Neta Aviran"
+        },
+        {
+          "authorId": "2389071439",
+          "name": "Rotem Semo"
+        },
+        {
+          "authorId": "2389071880",
+          "name": "Mohamad Hamad"
+        },
+        {
+          "authorId": "2149822771",
+          "name": "Gil Amarylio"
+        },
+        {
+          "authorId": "2389069268",
+          "name": "Chen Dagan"
+        },
+        {
+          "authorId": "2389069553",
+          "name": "Lien Lijnen"
+        },
+        {
+          "authorId": "2389076824",
+          "name": "Joanna Willen"
+        },
+        {
+          "authorId": "2378732142",
+          "name": "Kristien Hens"
+        },
+        {
+          "authorId": "1704219655",
+          "name": "Leni Van Goidsenhoven"
+        },
+        {
+          "authorId": "2389069555",
+          "name": "Hilde De Tollenaere"
+        }
+      ],
+      "abstract": "Juvenile idiopathic arthritis (JIA) refers to a heterogeneous group of rheumatic conditions in children. Novel drugs have greatly improved disease outcomes; however, outcomes are impacted by limited awareness of the importance of early diagnosis and adequate treatment, and by differences in access across health systems. As a result, patients with JIA continue to be at risk for short- and long-term morbidity, as well as impacts on virtually all aspects of life of the child and family. Literature on the socioeconomic burden of JIA is largely focused on healthcare costs, and the impact of JIA on patients, families, and communities is not well understood. High quality evidence on the impact of JIA is needed to ensure that patients are receiving necessary support, timely diagnostics, and adequate treatment, and to inform decision making and resource allocation. This commentary introduces the European Joint Programme on Rare Diseases: Producing an Arthritis Value Framework with Economic Evidence: Paving the Way for Rare Childhood Diseases (PAVE) project, which will co-develop a patient-informed value framework to measure the impact of JIA on individuals and on society. With a patient-centered approach, fundamental to PAVE is the involvement of three patient advocacy organizations from Canada, Israel, and Europe, as active research partners co-designing all project phases and ensuring robust patient and family engagement. The framework will build on the findings of projects from six countries: Canada, Germany, Switzerland, Spain, Israel, and Belgium, exploring costs, outcomes (health, well-being), and unmet needs (uveitis, mental health, equity). This unique international collaboration will combine evidence on costs (from family to societal), outcomes (clinical, patient and family outcomes), and unmet needs, to co-design and build a framework with patients and families to capture the full impact of JIA. The framework will support the development of high-quality evidence, encompassing economic and clinical considerations, unmet needs, and patient perspectives, to inform equitable resource allocation, health system planning, and quality of care better aligned with the needs of children with JIA, their families, and communities. Knowledge gained from this novel approach may pave the way forward to be applied more broadly to other rare childhood diseases."
+    },
+    {
+      "paperId": "7733eab94ef60e0567031a4078c1695e3e7e6eda",
+      "externalIds": {
+        "PubMedCentral": "11122600",
+        "DOI": "10.3390/jcdd11050155",
+        "CorpusId": 269943695,
+        "PubMed": "38786977"
+      },
+      "url": "https://www.semanticscholar.org/paper/7733eab94ef60e0567031a4078c1695e3e7e6eda",
+      "title": "Untangling the Complex Associations between Socioeconomic and Demographic Characteristics and Prenatal Detection and Outcomes in Congenital Heart Disease",
+      "venue": "Journal of Cardiovascular Development and Disease",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2308-3425/11/5/155/pdf?version=1716019375",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11122600, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2114065037",
+          "name": "Jennifer H. Klein"
+        },
+        {
+          "authorId": "143800657",
+          "name": "M. Donofrio"
+        }
+      ],
+      "abstract": "Recent literature has established a strong foundation examining the associations between socioeconomic/demographic characteristics and outcomes for congenital heart disease. These associations are found beginning in fetal life and influence rates of prenatal detection, access to timely and appropriate delivery room and neonatal interventions, and surgical and other early childhood outcomes. This review takes a broad look at the existing literature and identifies gaps in the current body of research, particularly as it pertains to disparities in the prenatal detection of congenital heart disease within the United States. It also proposes further research and interventions to address these health disparities."
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "total": 232,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "97f6df47cfa98271b927ecf1a9bc55d2d416434a",
+      "externalIds": {
+        "MAG": "2792310175",
+        "DOI": "10.1111/jssr.12367",
+        "CorpusId": 14023289,
+        "PubMed": "29706663"
+      },
+      "url": "https://www.semanticscholar.org/paper/97f6df47cfa98271b927ecf1a9bc55d2d416434a",
+      "title": "Religious Pathways from Adolescence to Adulthood.",
+      "venue": "Journal for the Scientific Study of Religion",
+      "year": 2017,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc5912683?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jssr.12367?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jssr.12367, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40997976",
+          "name": "B. Lee"
+        },
+        {
+          "authorId": "4040303",
+          "name": "Lisa D. Pearce"
+        },
+        {
+          "authorId": "33527353",
+          "name": "Kristen M. Schorpp"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3189ddfc5d2f6739f998efa368323186c9534b62",
+      "externalIds": {
+        "MAG": "2047217612",
+        "DOI": "10.1108/02683940310484044",
+        "CorpusId": 144673750
+      },
+      "url": "https://www.semanticscholar.org/paper/3189ddfc5d2f6739f998efa368323186c9534b62",
+      "title": "Antecedents of adult wellbeing: adolescent religiosity and health",
+      "venue": "",
+      "year": 2003,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1108/02683940310484044?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/02683940310484044, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144641493",
+          "name": "T. Martin"
+        },
+        {
+          "authorId": "48697427",
+          "name": "B. Kirkcaldy"
+        },
+        {
+          "authorId": "6097968",
+          "name": "G. Siefen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "27a9cfac6dbf40c440749120e984d5bb5b8fda8d",
+      "externalIds": {
+        "DOI": "10.1111/jora.12939",
+        "CorpusId": 268855647,
+        "PubMed": "38561961"
+      },
+      "url": "https://www.semanticscholar.org/paper/27a9cfac6dbf40c440749120e984d5bb5b8fda8d",
+      "title": "Measurement of adolescent psychological wellbeing: A test of factor structure and measurement invariance.",
+      "venue": "Journal of Research on Adolescence",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jora.12939?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jora.12939, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "39929243",
+          "name": "Hena Thakur"
+        },
+        {
+          "authorId": "14673122",
+          "name": "Jae Wan Choi"
+        },
+        {
+          "authorId": "2294533986",
+          "name": "Arthur R Andrews"
+        },
+        {
+          "authorId": "2301131798",
+          "name": "Jeff R. Temple"
+        },
+        {
+          "authorId": "2295911160",
+          "name": "Joseph R Cohen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "59113d145e283fe8a9c150f23713ed5a1640756c",
+      "externalIds": {
+        "PubMedCentral": "11136711",
+        "DOI": "10.1007/s10964-024-01940-9",
+        "CorpusId": 267309307,
+        "PubMed": "38282066"
+      },
+      "url": "https://www.semanticscholar.org/paper/59113d145e283fe8a9c150f23713ed5a1640756c",
+      "title": "Negative Emotional Reactivity and Somatic Symptoms during Adolescence Predict Adult Health and Wellbeing in Early and Middle Adulthood",
+      "venue": "Journal of Youth and Adolescence",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10964-024-01940-9.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11136711, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2252089281",
+          "name": "Mathias Allemand"
+        },
+        {
+          "authorId": "2990449",
+          "name": "H. Fend"
+        },
+        {
+          "authorId": "2281717375",
+          "name": "Patrick L. Hill"
+        }
+      ],
+      "abstract": "Longitudinal research is lacking with respect to how negative emotional reactivity and somatic symptoms during adolescence set the stage for later health. The aim of this longitudinal study was to examine within-person associations between negative emotional reactivity and somatic symptoms during adolescence and their effects on health and wellbeing in adulthood. Participants (N\u2009=\u20091527; 48.3% female) were assessed annually at the age of 12 to 16 years and at the age of 35 and 45 years. Adolescents with frequent somatic symptoms reported higher reactivity. Individual differences in levels and changes of somatic symptoms and reactivity were independently associated with adult health and wellbeing decades later. The findings underscore the importance of considering how individual differences change during adolescent development."
+    },
+    {
+      "paperId": "60420dd6f46ba7ec134abd9ec04dc1a629b767bb",
+      "externalIds": {
+        "PubMedCentral": "11928354",
+        "DOI": "10.1007/s10578-023-01568-z",
+        "CorpusId": 259353248,
+        "PubMed": "37418072"
+      },
+      "url": "https://www.semanticscholar.org/paper/60420dd6f46ba7ec134abd9ec04dc1a629b767bb",
+      "title": "Adolescent Anxiety, Depression and Flourishing before and During COVID-19 and the Predictive Role of Baseline Psychological Capital (PsyCap) on Student Mental Health and Subjective Wellbeing During the Pandemic",
+      "venue": "Child Psychiatry and Human Development",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10578-023-01568-z.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11928354, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1485884945",
+          "name": "Jules Finch"
+        },
+        {
+          "authorId": "26114065",
+          "name": "A. Waters"
+        },
+        {
+          "authorId": "1982152",
+          "name": "Lara J. Farrell"
+        }
+      ],
+      "abstract": "Studies indicate the COVID-19 pandemic has resulted in rises in adolescent mental health symptoms globally, although the impact of the pandemic on subjective wellbeing is under-researched in this population. Psychological capital (PsyCap), a cluster of four positive psychological constructs comprising hope, efficacy, resilience and optimism (HERO), has demonstrated preventative and promotive qualities on mental health symptoms and subjective wellbeing outcomes with adult populations (employees, university students). However, PsyCap\u2019s influence on these outcomes in young people is unclear. The present exploratory study investigated changes in self-reported anxiety and depressive symptoms (measured via the RCADS-SV) and subjective wellbeing (measured by the Flourishing Scale) from pre-pandemic levels to 3 months into the pandemic and explored gender differences at each time point in a sample of Australian Year 10 students (N\u2009=\u200956, Mage\u2009=\u200914.93 years, SD\u2009=\u20090.50, 51.8% male). The longitudinal predictive role of baseline PsyCap on follow-up assessments of anxiety symptoms, depressive symptoms and flourishing were also examined. There were no significant changes in levels of anxiety and depressive symptoms between the timepoints, but flourishing significantly declined from T1 to T2. Baseline PsyCap was not a significant predictor of T2 anxiety and depressive symptoms but was a significant predictor of T2 flourishing. Further, different baseline HERO constructs predicted T2 mental health symptoms and flourishing. Future larger studies building on the current preliminary findings investigating the roles of student PsyCap, mental health and subjective wellbeing are warranted to better understand these constructs in the COVID-19 era and beyond."
+    }
+  ]
+}

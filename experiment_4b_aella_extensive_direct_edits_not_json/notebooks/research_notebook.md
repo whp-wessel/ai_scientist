@@ -132,3 +132,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Drafted `lit/semantic_scholar_waiver_loop013.md`, which aggregates loops 008–013 failures plus the Ross et al. (2019) CrossRef DOI to request a temporary waiver until the API key is restored.
 - Refreshed `analysis/pre_analysis_plan.md` (status still draft) with the Loop 013 waiver note, and updated `qc/data_checks.md` to document the new risk entry referencing the waiver memo.
 - State/backlog remain in PAP with N1 blocked; N6 (waiver drafting) now has a concrete artifact pending approval.
+
+## Loop 14 Updates (2025-11-08)
+- Logged Loop 013 reviewer expectations (R1–N1) and re-ran the mandated Semantic Scholar CLI query (`childhood spirituality parental support adult depression`); 403 persisted and payload saved to `lit/queries/loop_014/query_001.json`.
+- Captured a CrossRef fallback (`lit/queries/loop_014/crossref_query_001.json`) yielding Pandya (2017, DOI `10.1080/15332985.2016.1222982`), then added the citation to `lit/evidence_map.csv` and `lit/bibliography.*` for Claim C1 (H1 religiosity).
+- Extended `lit/semantic_scholar_waiver_loop013.md` so the attempt log now covers loops 008–014 and cites the new DOI; PAP remains draft pending waiver approval or credential restoration but documents the addition in the loop note.
+- Refreshed `analysis/pre_analysis_plan.md`, `qc/data_checks.md`, and this notebook to capture the latest literature status and QC checkpoints; state stays in phase PAP with N1 marked blocked.

@@ -1,0 +1,21 @@
+section,metric,value,units,notes
+sample,Respondents with complete H3 data,14423.0,individuals,Rows with non-missing childhood class and ordered net-worth ladder.
+sample,Respondents in ≥$10M tier,820.0,individuals,Counts $10M and ≥$100M categories (networth_ord ≥ 5).
+sample,Share in ≥$10M tier,0.05685363655272828,share,n_ge10m / n_total
+sample,Countries represented,24.0,countries,"Minimum cluster size = 78, median = 193."
+analytic_precision,PPO effect (log-odds),0.1102915335018195,log-odds,Partial proportional-odds estimate at the ≥$10M cutpoint (tables/loop010_h3_threshold_effects.csv).
+analytic_precision,Analytic SE (SRS),0.0363376031977578,log-odds,Standard error from the stacked PPO model under the SRS assumption.
+analytic_precision,Analytic 95% CI low,0.0390698312342141,log-odds,effect ± 1.96 × SE.
+analytic_precision,Analytic 95% CI high,0.181513235769425,log-odds,effect ± 1.96 × SE.
+analytic_precision,Approximate power (α=0.05),0.8588635411056119,probability,Two-sided Wald test power using the analytic z-statistic.
+bootstrap_precision,Cluster-bootstrap mean,0.1339833634384318,log-odds,Average childhood-class slope from 300 country-cluster resamples.
+bootstrap_precision,Cluster-bootstrap SD,0.1395833609427108,log-odds,Standard deviation of the bootstrap draws.
+bootstrap_precision,Bootstrap percentile CI low,-0.084131106238694,log-odds,2.5th percentile of the bootstrap draws.
+bootstrap_precision,Bootstrap percentile CI high,0.4855314788462883,log-odds,97.5th percentile of the bootstrap draws.
+bootstrap_precision,Two-sided tail probability,0.2066666666666666,probability,"2 × min(P(draw > 0), P(draw < 0)) across replicates."
+bootstrap_precision,Share of positive draws,0.8966666666666666,share,Fraction of bootstrap replicates with estimate > 0.
+bootstrap_precision,Approximate power (α=0.05),0.16038611348804221,probability,Two-sided Wald power using bootstrap mean/SD.
+bootstrap_precision,Wald rejection share (analytic SE),0.7433333333333333,share,Fraction of bootstrap draws whose |β|/SE_analytic exceeds 1.96.
+bootstrap_precision,Wald rejection share (bootstrap SD),0.13333333333333333,share,Fraction of draws whose |β|/SD_boot exceeds 1.96.
+derived,Design effect (cluster vs. SRS),14.75552771350343,ratio,(bootstrap SD ÷ analytic SE)².
+derived,Effective sample size,977.4641937611544,individuals,n_total ÷ design effect.

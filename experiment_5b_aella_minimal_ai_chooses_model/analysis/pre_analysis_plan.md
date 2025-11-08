@@ -28,6 +28,11 @@
 - Each hypothesis will estimate average differences between exposure categories controlling for age, gender markers, and socioeconomic childhood baseline.
 - Missing data will be handled using listwise deletion initially; multiple imputation is noted for sensitivity analysis once variable missingness is profiled.
 
+### Data profiling status (Loop 1)
+- Script: `python analysis/scripts/profile_key_variables.py` produces `analysis/profiling/loop001_key_vars_summary.csv` and companion value-counts for mds78zu, ix5iyv3, pqo6jmj, z0mhd63, 4tuoqly, classcurrent, dfqbzi5, and wz901dj.
+- Each focal variable has ≥14,426 non-missing responses (≤0.12% missing). Likert responses are encoded on −3…+3 scales with roughly symmetric spread, so future models can safely center/rescale to ±1 without loss of information.
+- `classcurrent` spans 0–6 with mean ≈3.02 (sd ≈1.26), offering enough variance for socioeconomic outcome modeling.
+
 ## Multiplicity
 - Confirmatory families align with the four thematic buckets above. If any family exceeds one confirmatory test, Benjamini-Hochberg FDR control at q ≤ 0.05 will apply.
 

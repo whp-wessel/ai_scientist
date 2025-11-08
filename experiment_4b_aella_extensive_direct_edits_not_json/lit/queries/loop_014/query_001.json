@@ -1,0 +1,18 @@
+{
+  "error": {
+    "status_code": 403,
+    "reason": "Forbidden",
+    "body": "{\"message\":\"Forbidden\"}\n"
+  },
+  "request": {
+    "timestamp": "2025-11-08T15:02:53Z",
+    "command": "search",
+    "endpoint": "paper/search",
+    "params": {
+      "query": "childhood spirituality parental support adult depression",
+      "limit": 5,
+      "offset": 0,
+      "fields": "paperId,title,authors,venue,year,doi,url,tldr,abstract"
+    }
+  }
+}

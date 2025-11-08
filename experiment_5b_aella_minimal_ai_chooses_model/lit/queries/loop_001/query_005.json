@@ -1,0 +1,259 @@
+{
+  "total": 6818,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "f2e0cae2b6f5ede411741fa01f0077fa8164bba9",
+      "externalIds": {
+        "PubMedCentral": "10848464",
+        "DOI": "10.1186/s12877-024-04750-7",
+        "CorpusId": 267521519,
+        "PubMed": "38321378"
+      },
+      "url": "https://www.semanticscholar.org/paper/f2e0cae2b6f5ede411741fa01f0077fa8164bba9",
+      "title": "The relationship between childhood socioeconomic status and depression level in older adults: the mediating role of adult socioeconomic status and subjective well-being",
+      "venue": "BMC Geriatrics",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://bmcgeriatr.biomedcentral.com/counter/pdf/10.1186/s12877-024-04750-7",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10848464, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2274466436",
+          "name": "Yulin Chai"
+        },
+        {
+          "authorId": "2283118734",
+          "name": "Guowei Xian"
+        },
+        {
+          "authorId": "2283269261",
+          "name": "Lin Guo"
+        },
+        {
+          "authorId": "2283120780",
+          "name": "Guoqi Fu"
+        },
+        {
+          "authorId": "2283205321",
+          "name": "Yanxu Liu"
+        },
+        {
+          "authorId": "2283129626",
+          "name": "Mengxue Wang"
+        },
+        {
+          "authorId": "2274728541",
+          "name": "Sheng Luo"
+        }
+      ],
+      "abstract": "There is a causal link between childhood socioeconomic status and health status in adulthood and beyond. It's vital to comprehend the relationship between childhood socioeconomic status and mental health among older Chinese individuals from the current generation who have undergone significant social changes in China. This understanding is critical to foster healthy demographic and social development in China. Using data from the 2020 China Family Panel Studies, we investigate the relationship between childhood socioeconomic status and depression in older adults. Additionally, we examine the mediating role of adult socioeconomic status and subjective well-being. 1) Childhood socioeconomic status of Chinese older adults differences by region of residence, while depression levels differences by gender, region of residence, and marital status. 2) Adult socioeconomic status mediated the relationship between childhood socioeconomic status and depression in older adults. 3) Adult socioeconomic status and subjective well-being had a chain-mediated role in the relationship between childhood socioeconomic status and depression in older adults. In terms of childhood socioeconomic status, older adults in urban regions were significantly higher than those in rural regions. As for depression level, female older adults were more depressed than males; married older people have the lowest depression levels, while unmarried and widowed older people have higher depression levels; older adults in rural regions had higher depression levels than those in urban regions. Evidence from our study further suggests that childhood socioeconomic status can suppress the depression level in older adults through adult socioeconomic status; it can also further reduce the depression level in older adults through the chain mediation of adult economic status affecting subjective well-being. As depression is more prevalent among older individuals with a lower childhood socioeconomic status, it is vital to prioritize the extensive impact of childhood socioeconomic status as a distal factor and investigate \"upstream\" solutions to enhance childhood socioeconomic status and reduce the gap during the early years of life."
+    },
+    {
+      "paperId": "df3c31e2ae2a146e15e77c8e1d6840edac707b21",
+      "externalIds": {
+        "PubMedCentral": "11335154",
+        "DOI": "10.1371/journal.pone.0307406",
+        "CorpusId": 271912837,
+        "PubMed": "39163384"
+      },
+      "url": "https://www.semanticscholar.org/paper/df3c31e2ae2a146e15e77c8e1d6840edac707b21",
+      "title": "Childhood family socioeconomic status is linked to adult brain electrophysiology",
+      "venue": "PLoS ONE",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1371/journal.pone.0307406",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11335154, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2261165908",
+          "name": "Elif Isbell"
+        },
+        {
+          "authorId": "2316528959",
+          "name": "Nancy E Rodas De Le\u00f3n"
+        },
+        {
+          "authorId": "2316529899",
+          "name": "Dylan M Richardson"
+        }
+      ],
+      "abstract": "A large body of research has linked childhood family socioeconomic status (SES) to neurodevelopment in childhood and adolescence. However, it remains unclear to what extent childhood family SES relates to brain functioning in adulthood. To address this gap, the present study investigated the associations between retrospective accounts of objective and subjective childhood family SES and two well-established electrophysiological indices of brain functioning in adulthood\u2014the MMN and P3b event-related potentials (ERP) components, as neural correlates of automatic change detection and cognitive control respectively. Higher objective childhood family SES, as proxied by parent educational attainment in childhood, was associated with larger (more positive) P3b amplitudes in adulthood. In contrast, there was no association between childhood parent educational attainment and the magnitude of MMN. Adult reports of subjective family SES during childhood were not related to the magnitude of MMN or P3b. These findings suggest that the links between childhood parent educational attainment and brain functioning may extend into adulthood, especially for brain functions supporting cognitive control. These results also imply that, when using retrospective accounts of childhood family SES, objective and subjective reports likely proxy different childhood experiences that have distinct links with specific neurodevelopmental outcomes, and that some of these links may not persist into adulthood. Our findings lay the groundwork for future investigations on how and why childhood family SES relates to brain functioning in adulthood."
+    },
+    {
+      "paperId": "43742d13f5343409b0ad3b0796a226ff8c6f5f71",
+      "externalIds": {
+        "DOI": "10.1007/s00127-022-02241-x",
+        "CorpusId": 246432940,
+        "PubMed": "35103808"
+      },
+      "url": "https://www.semanticscholar.org/paper/43742d13f5343409b0ad3b0796a226ff8c6f5f71",
+      "title": "Early childhood adversity and late-life depressive symptoms: unpacking mediation and interaction by adult socioeconomic status",
+      "venue": "Social Psychiatry and Psychiatric Epidemiology",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s00127-022-02241-x?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s00127-022-02241-x, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "144770979",
+          "name": "A. Yazawa"
+        },
+        {
+          "authorId": "6515468",
+          "name": "K. Shiba"
+        },
+        {
+          "authorId": "134888678",
+          "name": "Y. Inoue"
+        },
+        {
+          "authorId": "47629826",
+          "name": "S. Okuzono"
+        },
+        {
+          "authorId": "2148436161",
+          "name": "K. Inoue"
+        },
+        {
+          "authorId": "144837702",
+          "name": "N. Kondo"
+        },
+        {
+          "authorId": "22751336",
+          "name": "K. Kondo"
+        },
+        {
+          "authorId": "143950311",
+          "name": "I. Kawachi"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7fe4da187102d26ebae3a0575384351628f37f4f",
+      "externalIds": {
+        "PubMedCentral": "9118918",
+        "DOI": "10.1016/j.ssmph.2022.101094",
+        "CorpusId": 248647874,
+        "PubMed": "35601218"
+      },
+      "url": "https://www.semanticscholar.org/paper/7fe4da187102d26ebae3a0575384351628f37f4f",
+      "title": "Child socioeconomic status, childhood adversity and adult socioeconomic status in a nationally representative sample of young adults",
+      "venue": "SSM - population health",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.ssmph.2022.101094",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9118918, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "4084364",
+          "name": "S. Suglia"
+        },
+        {
+          "authorId": "90170128",
+          "name": "Ryan Saelee"
+        },
+        {
+          "authorId": "2164671205",
+          "name": "Iridian Guzman"
+        },
+        {
+          "authorId": "6315829",
+          "name": "Leonie K. Elsenburg"
+        },
+        {
+          "authorId": "3526398",
+          "name": "C. Clark"
+        },
+        {
+          "authorId": "152779039",
+          "name": "B. Link"
+        },
+        {
+          "authorId": "144162180",
+          "name": "K. Koenen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "1149c73ad74e42d129a70b35db0adf06e1ae3593",
+      "externalIds": {
+        "PubMedCentral": "9948562",
+        "DOI": "10.1002/lio2.1010",
+        "CorpusId": 256134126,
+        "PubMed": "36846426"
+      },
+      "url": "https://www.semanticscholar.org/paper/1149c73ad74e42d129a70b35db0adf06e1ae3593",
+      "title": "Hearing health care access for adult cochlear implant candidates and recipients: Travel time and socioeconomic status",
+      "venue": "Laryngoscope Investigative Otolaryngology",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lio2.1010",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9948562, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "authors": [
+        {
+          "authorId": "2205055003",
+          "name": "Amanda G Davis"
+        },
+        {
+          "authorId": "36719014",
+          "name": "K. Hicks"
+        },
+        {
+          "authorId": "2175988910",
+          "name": "Margaret T. Dillon"
+        },
+        {
+          "authorId": "2179192942",
+          "name": "Andrea B. Overton"
+        },
+        {
+          "authorId": "2067031588",
+          "name": "Noelle Roth"
+        },
+        {
+          "authorId": "1885331520",
+          "name": "Margaret E Richter"
+        },
+        {
+          "authorId": "6538505",
+          "name": "Matthew M Dedmon"
+        }
+      ],
+      "abstract": "Access to cochlear implantation may be negatively influenced by extended travel time to a cochlear implant (CI) center or lower socioeconomic status (SES) for the individual. There is a critical need to understand the influence of these variables on patient appointment attendance for candidacy evaluations, and CI recipients' adherence to post\u2010activation follow\u2010up recommendations that support optimal outcomes."
+    }
+  ]
+}
