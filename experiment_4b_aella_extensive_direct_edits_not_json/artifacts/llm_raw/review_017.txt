@@ -1,0 +1,7 @@
+DECISION: CONTINUE
+R1: PASS – `qc/data_checks.md:1` logs Loop 017 seed 20251016 with regeneration commands, `artifacts/session_info.txt:1` captures the refreshed environment snapshot, and the loop actions are fully recorded (`analysis/decision_log.csv:125`, `analysis/decision_log.csv:133`), so reproducibility controls remain intact.
+L1: PASS – `analysis/decision_log.csv:127` documents the mandated Semantic Scholar call, `lit/queries/loop_017/query_001.json:1` stores the 403 payload, and the CrossRef fallback is preserved and propagated (`lit/queries/loop_017/crossref_query_003.json:1`, `lit/evidence_map.csv:12`), satisfying literature logging requirements despite the outage.
+P1: PASS – The n≥10 disclosure rule is reiterated in the PAP (`analysis/pre_analysis_plan.md:31`), the latest disclosure audit still reports zero violations (`qc/disclosure_check_loop_006.md:1`), and the Loop 017 QC note confirms no public tables were issued (`qc/data_checks.md:52`), so privacy safeguards hold.
+N1: PASS – State remains in the PAP phase with N1 explicitly blocked by the recorded 403 (`artifacts/state.json:25`, `artifacts/state.json:28`), and both the waiver memo (`lit/semantic_scholar_waiver_loop013.md:1`) and PAP loop note (`analysis/pre_analysis_plan.md:25`) clearly justify waiting for credential restoration before freezing.
+
+Notes: Priority stays on restoring the Semantic Scholar key or obtaining approval on the documented waiver so the PAP can freeze.
