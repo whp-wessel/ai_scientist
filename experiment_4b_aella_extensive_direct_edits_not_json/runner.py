@@ -570,7 +570,7 @@ def _auto_commit_dirty_worktree(context: str) -> None:
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     print(f"[runner] auto-committing {len(dirty)} pre-existing change(s) before {context}.")
     message = f"chore: pre-run snapshot before {context} ({stamp})"
-    ok, err = git_checkpoint(message, push=False)
+    ok, err = git_checkpoint(message, push=False, record_head=False)
     if not ok:
         raise RuntimeError(f"Auto-commit failed: {err}")
 
@@ -1145,7 +1145,7 @@ def log_runner_decision(
     })
 
 
-def git_checkpoint(message: str, push: bool = True):
+def git_checkpoint(message: str, push: bool = True, record_head: bool = True):
     repo_path = str(REPO.resolve())
 
     def _run_git(args: list[str]) -> tuple[int, str, str]:
@@ -1180,7 +1180,8 @@ def git_checkpoint(message: str, push: bool = True):
             reason = err.strip() or out.strip() or "push failed"
             print(f"[git] warning: {' '.join(['git', '-C', repo_path, *push_cmd])} -> {reason}")
 
-    _record_head()
+    if record_head:
+        _record_head()
     if push_failed:
         return True, ""
     return True, ""
