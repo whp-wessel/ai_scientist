@@ -125,3 +125,10 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - To avoid literature stagnation, fetched CrossRef metadata for Ross et al. (2019, DOI `10.1016/j.chiabu.2019.03.016`) and added it to `lit/evidence_map.csv`, `lit/bibliography.bib`, and `lit/bibliography.json`, strengthening the H3 evidence base despite the S2 outage.
 - Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 012 note describing the new reference and the continuing Semantic Scholar blocker, and updated `qc/data_checks.md` to Loop 012 with the current session/checksum timestamps and disclosure guard reminder.
 - Updated `artifacts/state.json` to loop_counter=12 (phase stays PAP) and added next action **N6** to track the Semantic Scholar waiver packet so confirmatory work cannot resume until either access is restored or the waiver is approved.
+
+## Loop 13 Updates (2025-11-08)
+- Reviewed Loop 012 critique (R1 seed commands, L1 Semantic Scholar attempts, P1 disclosure guard, N1 waiver priority) and planned actions accordingly.
+- Executed the mandated Semantic Scholar CLI search (`childhood resilience spiritual support adult depression`); 403 persisted and payload saved to `lit/queries/loop_013/query_001.json` for audit.
+- Drafted `lit/semantic_scholar_waiver_loop013.md`, which aggregates loops 008–013 failures plus the Ross et al. (2019) CrossRef DOI to request a temporary waiver until the API key is restored.
+- Refreshed `analysis/pre_analysis_plan.md` (status still draft) with the Loop 013 waiver note, and updated `qc/data_checks.md` to document the new risk entry referencing the waiver memo.
+- State/backlog remain in PAP with N1 blocked; N6 (waiver drafting) now has a concrete artifact pending approval.

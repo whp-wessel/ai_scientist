@@ -118,3 +118,14 @@ DECISION: CONTINUE
 
 Notes: Consider writing `artifacts/git_message.txt` to request a commit for this loop.
 
+## Loop 011 — 2025-11-08T14:57:30.000707+00:00
+DECISION: CONTINUE
+
+R1 Reproducibility: PASS — Seeds and commands recorded in analysis/decision_log.csv; seed in artifacts/seed.txt; state tracked in artifacts/state.json; scripts present to regenerate results (scripts/analysis/*.py). Minor gap: artifacts/git_message.txt not found this loop.
+R2 Statistical Rigor: PASS — Survey design explicitly justified as SRS in analysis/pre_analysis_plan.md and config/survey_design.yaml; results in analysis/results.csv include estimates, SEs, CIs, p-values; no confirmatory families yet, so no q-values required.
+R3 Literature/Evidence: PASS — Saved query at lit/queries/loop_011/query_001.json; DOIs appended to lit/evidence_map.csv; manuscript cites peer-reviewed source in reports/paper.md; bibliography in lit/bibliography.bib.
+R4 Privacy: PASS — Public tables under tables/ apply n<10 suppression (e.g., tables/key_vars_value_counts.csv and tables/religion_by_monogamy.csv).
+R5 Completeness: PASS — PAP exists and is clearly marked “status: draft” (analysis/pre_analysis_plan.md); results registry present (analysis/results.csv); manuscript scaffold present (reports/paper.md). No confirmatory results before PAP freeze.
+
+Notes: The notebook claims a commit message was written, but artifacts/git_message.txt is missing; add it next loop to keep reproducibility aligned. Phase remains literature; no invariant violations observed.
+

@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 12,
+  "loop_counter": 13,
   "total_loops": 50,
   "phase": "pap",
   "phase_ix": 1,
@@ -32,7 +32,7 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API still 403 as of loop 012 (see lit/queries/loop_012/query_001.json); logging failures, adding CrossRef fallbacks, and drafting waiver request while awaiting new key."
+      "notes": "Semantic Scholar API still 403 as of loop 013 (see lit/queries/loop_013/query_001.json); waiver memo drafted (`lit/semantic_scholar_waiver_loop013.md`) while logging failures + CrossRef fallbacks until new key arrives."
     },
     {
       "id": "N2",
@@ -66,8 +66,8 @@
       "id": "N6",
       "description": "Draft Semantic Scholar waiver request summarizing loops 008-012 attempts + fallback evidence",
       "owner": "agent",
-      "status": "in_progress",
-      "notes": "Needs consolidated log of recent 403 payloads plus the Ross et al. (2019) fallback reference; target delivery Loop 013 if key not restored."
+      "status": "done",
+      "notes": "Loop 013 delivered lit/semantic_scholar_waiver_loop013.md summarizing loops 008-013 403 payloads + CrossRef fallback (Ross et al. 2019)."
     }
   ],
   "stop_now": false,
