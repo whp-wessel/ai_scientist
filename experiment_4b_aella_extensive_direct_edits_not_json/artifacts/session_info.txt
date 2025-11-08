@@ -1,12 +1,12 @@
-timestamp_utc: 2025-11-08T19:10:10.582989+00:00
+timestamp_utc: 2025-11-08T19:22:09.870079+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json
 model: gpt-5-codex
 seed: 20251016
-git_head: 7ab4537e3584142708c438a208d891eceef3de71
+git_head: 6313c1b8533f9bec6aeb52d549a85a946b973b73
 git_status: |
-  ## main...origin/main [ahead 123]
+  ## main...origin/main [ahead 127]
    M ../experiment_4a_aella_minimal_direct_edits_not_json/analysis/decision_log.csv
    M ../experiment_4a_aella_minimal_direct_edits_not_json/artifacts/repro_report.md
    M ../experiment_4a_aella_minimal_direct_edits_not_json/artifacts/session_info.txt
@@ -15,14 +15,15 @@ git_status: |
    M ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_design_effect_plan.md
    M ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_high_wealth_refresh/qna_loop021.md
    M ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_high_wealth_refresh/rfp_2025-11-09.md
+   M ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_high_wealth_refresh/verification_register.csv
    M ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_replicate_weights_manifest/manifest_loop021.md
    M ../experiment_4a_aella_minimal_direct_edits_not_json/notebooks/research_notebook.md
-   M analysis/decision_log.csv
+   M ../experiment_4a_aella_minimal_direct_edits_not_json/reports/paper.md
    M artifacts/repro_report.md
    M artifacts/session_info.txt
   ?? ../experiment_4a_aella_minimal_direct_edits_not_json/artifacts/git_message.txt
-  ?? ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_country_expansion_materials/LOI_Italy_2025-11-12.md
-  ?? ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_high_wealth_refresh/verification_register.csv
+  ?? ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_country_expansion_materials/LOI_Norway_2025-11-12.md
+  ?? ../experiment_4a_aella_minimal_direct_edits_not_json/docs/h3_country_expansion_materials/LOI_Spain_2025-11-12.md
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15

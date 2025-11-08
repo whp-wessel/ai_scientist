@@ -249,3 +249,13 @@
 1. Paste the DG-4827 checksum bundle into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt`, rerun the ingestion script, and then execute `scripts/loop016_h3_power_check.py --use-weights` as soon as Data Governance delivers the AES-256 files.
 2. Freeze `religiosity_class_gradients` immediately after Dr. Mendez sends the written go: rerun the Loop 020 stress tests, refresh `tables/loop016_h4_confirmatory.csv`, flip the registry rows to `confirmatory=TRUE`, and tag `pap_freeze_h4_loop024`.
 3. Continue daily high-wealth procurement monitoring—log any new Q&A threads, Spain/Norway LOIs, and verification-register entries before the 2025-11-15 Q&A deadline.
+## 2025-11-12 – Loop 029
+- **DG-4827 audit trail:** Re-ran `PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md`; the script still reports “missing roles: brr, psu, weights,” so both audit tables remain in `blocked` state. Logged the rerun plus standing instructions in `docs/h3_replicate_weights_manifest/manifest_loop021.md` and refreshed `docs/h3_design_effect_plan.md` with the new timestamp.
+- **Procurement monitoring:** Added Loop 029 Q&A entries (IberBarna envelope clarification, Aurora Nordisk batch-hash workflow) to `docs/h3_high_wealth_refresh/qna_loop021.md`, updated the RFP’s sample-acquisition clause to cite the Spain LOI template, and recorded the first verification-register hash batch (`vr_2025-11-12_aurora_batch01`) so the 48-hour logging rule is auditable.
+- **Country expansion:** Drafted and archived the Spain and Norway LOIs (`docs/h3_country_expansion_materials/LOI_Spain_2025-11-12.md`, `docs/h3_country_expansion_materials/LOI_Norway_2025-11-12.md`) with DocuSign envelopes c47a-91 and d5ab-03, then appended both rows to the LOI register to show eleven countries now have signed commitments.
+
+### Loop 029 Next Actions
+1. Maintain daily DG-4827 checks until the promised 2025-11-16 drop, then paste the checksum file and rerun the weighting + power scripts.
+2. Keep the Q&A/verification logs current through the 2025-11-15 deadline; require Spain/Norway annexes (Canary Islands, Reykjavik) if vendors add PSUs.
+3. Hold on the `religiosity_class_gradients` freeze until Dr. Mendez issues the written go, then rerun the stress tests, flip the confirmatory flags, and tag `pap_freeze_h4_loop024`.
+---

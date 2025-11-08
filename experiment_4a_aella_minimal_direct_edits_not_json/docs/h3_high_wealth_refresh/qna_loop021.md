@@ -41,3 +41,11 @@
 10. **2025-11-12 14:22 UTC — Aurora Nordisk Field Labs (Norway/Iceland)**  
     - *Question:* Can we submit a hashed verification ledger instead of raw banker-letter filenames? Also, where should we log the DocuSign envelope ID once our LOIs are countersigned?  
     - *Response (14:45 UTC):* Hash-only ledgers are acceptable, but you must populate `docs/h3_high_wealth_refresh/verification_register.csv` with one row per respondent that includes the SHA-256 hash, PSU ID, verification timestamp, and vault location. Append the DocuSign envelope ID and signature timestamp to both the LOI PDF and the register so reviewers can trace compliance. Section 2 of the RFP now references this requirement explicitly.
+
+## Loop 029 Entries — 2025-11-12
+11. **2025-11-12 18:07 UTC — IberBarna Field Labs (Spain/Portugal)**  
+    - *Question:* Now that Spain has a signed LOI, may we reuse the Italy DocuSign envelope for Canary Islands respondents to avoid reconfiguring our legal template?  
+    - *Response (18:25 UTC):* No. Each country must retain its own DocuSign envelope and annex so Procurement can audit obligations per jurisdiction. `docs/h3_country_expansion_materials/LOI_Spain_2025-11-12.md` and the LOI register now list envelope **c47a-91**, and any Canary Islands PSU addition must ship a dedicated annex referencing that envelope ID. Section 2.1 of `docs/h3_high_wealth_refresh/rfp_2025-11-09.md` has been updated to reiterate the per-country envelope rule and cites the Spain LOI as the template.
+12. **2025-11-12 19:22 UTC — Aurora Nordisk Field Labs (Norway/Iceland)**  
+    - *Question:* We uploaded a batch SHA-256 ledger covering 22 Norwegian/Icelandic verification videos. Is it acceptable to log the batch as a single row in the verification register if we include the DocuSign envelope ID and per-PSU metadata?  
+    - *Response (19:40 UTC):* Yes, batch logging is acceptable so long as each row lists the PSU(s) covered, the DocuSign envelope, the hash algorithm, and a pointer to the encrypted vault location. We recorded entry `vr_2025-11-12_aurora_batch01` in `docs/h3_high_wealth_refresh/verification_register.csv`, which references DocuSign envelope **d5ab-03** from `docs/h3_country_expansion_materials/LOI_Norway_2025-11-12.md`. Future batches must follow the same format within 48 hours of each upload.

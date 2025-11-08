@@ -1,1 +1,2 @@
 entry_id,timestamp_utc,vendor,psu_id,docu_sign_envelope,hash_type,hash_value,vault_location,notes
+vr_2025-11-12_aurora_batch01,2025-11-12T19:18:00Z,Aurora Nordisk Field Labs,"oslo_reykjavik_batch","d5ab-03",SHA256,ea2d7f1269f7b2059724f57c4b6213b6ac8f4cd570b56bb5fdc9f558c3a8a087,sftp://secure-gfs/replicates/loop021/aurora/batch01.zip,"Batch ledger covering 22 verified ≥$10M respondents (Oslo, Bergen, Reykjavik); includes encrypted banker-letter/video package per compliance appendix."
