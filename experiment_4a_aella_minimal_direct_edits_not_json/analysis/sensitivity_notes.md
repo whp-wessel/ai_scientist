@@ -53,3 +53,9 @@ We will open the next sensitivity wave in Loop 012 with two reproducible add-ons
 - **Findings**: The ordered-logit religiosity slope is -0.111 (p=2.6e-9), while the binary logit yields -0.112 (p=5.8e-8); linear-probability estimates echo the same -2.5 p.p. per religiosity step. Roughly 46% of the sample meets the high-anxiety threshold, so the binary variant keeps ample power. The concordant estimates indicate the H4 association is not an artifact of treating anxiety as a z-scored continuous outcome.
 
 These plans keep the sensitivity queue ready so we can transition from “design” to “execution” immediately after the H3 benchmarking review is addressed.
+
+# Loop 013 Results — H4 Outcome Comparison Visuals
+
+- **Command**: `PYTHONHASHSEED=20251016 python scripts/loop013_h4_visuals.py`
+- **Artifacts**: Summary table `tables/loop013_h4_outcome_effects.csv` (religiosity coefficients + CIs across all anxiety codings) and figure `figures/loop013_h4_outcome_effects.png`. Both draw exclusively on previously published coefficients, so no new privacy risks arise.
+- **Takeaways**: Religiosity’s effect is stable across all codings: −0.062 SD on the continuous anxiety scale, −0.11 log-odds for the legacy ≥2 flag, −0.11 log-odds for the new ≥5 flag, −0.11 log-odds for the 3-bin ordinal outcome, and −2.5 p.p. in the linear-probability model. The visual highlights overlapping CIs, giving the manuscript a ready-made sensitivity reference once H4 advances toward PAP review.
