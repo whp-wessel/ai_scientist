@@ -17,17 +17,17 @@
       "last_model_context": "bootstrap",
       "last_model_policy": "agent",
       "last_model_reason": "",
-      "queued_model": null,
-      "queued_reason": "",
-      "queued_source": "",
+      "queued_model": "gpt-5-codex",
+      "queued_reason": "Upcoming work is data-wrangling heavy (recode scripts, profiling, more API automation).",
+      "queued_source": "bootstrap",
       "rr_index": -1
     }
   },
-  "phase": "literature",
-  "phase_ix": 0,
-  "total_loops": 50,
   "next_actions": [
     "Profile missingness & distributions for H1-H4 variables; finalize recodes.",
     "Extend Semantic Scholar searches on parental guidance, childhood depression, and digital access."
-  ]
+  ],
+  "phase": "literature",
+  "phase_ix": 0,
+  "total_loops": 50
 }

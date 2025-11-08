@@ -1,1 +1,0 @@
-bootstrap: initialize pap, hypotheses, and literature assets

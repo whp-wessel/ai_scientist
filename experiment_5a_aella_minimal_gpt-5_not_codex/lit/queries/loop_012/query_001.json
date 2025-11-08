@@ -1,0 +1,181 @@
+{
+  "total": 94,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "8408fe1566f63f5aff67e276e67f676e69b3956c",
+      "externalIds": {
+        "PubMedCentral": "10983850",
+        "DOI": "10.3389/fpubh.2024.1370359",
+        "CorpusId": 268562952,
+        "PubMed": "38562253"
+      },
+      "url": "https://www.semanticscholar.org/paper/8408fe1566f63f5aff67e276e67f676e69b3956c",
+      "title": "Network analysis of depression and anxiety symptoms and their associations with life satisfaction among Chinese hypertensive older adults: a cross-sectional study",
+      "venue": "Frontiers in Public Health",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2024.1370359/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10983850, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292451409",
+          "name": "Hongfei Ma"
+        },
+        {
+          "authorId": "2292445140",
+          "name": "Meng Zhao"
+        },
+        {
+          "authorId": "2108314628",
+          "name": "Yangyang Liu"
+        },
+        {
+          "authorId": "2292438670",
+          "name": "Pingmin Wei"
+        }
+      ],
+      "abstract": "Background Hypertension is one of the most prevalent chronic diseases among the older adult population in China and older adults with hypertension are more susceptible to mental health problems. This study aimed to explore the network structure of depression and anxiety, and their association with life satisfaction (LS) in older adults with hypertension. Methods A total of 4,993 hypertensive individuals aged 60 and above were selected from the Chinese Longitudinal Healthy Longevity Survey (CLHLS 2017\u20132018). The design of the CLHLS study was approved by the Campus Institutional Review Board of Duke University (Pro00062871) and the Biomedical Ethics Committee of Peking University (IRB00001052-13,074). The Center for Epidemiologic Studies Depression Scale-10 (CESD-10) and the Generalized Anxiety Disorder Scale-7 (GAD-7) were used to assess depressive and anxiety symptoms. Central and bridge symptoms were identified via \u201cExpected Influence\u201d and \u201cBridge Expected Influence\u201d, respectively. Network stability was assessed using the case-dropping bootstrap technique. Results Network analysis identified CESD3 (Feeling blue/depressed), GAD4 (Trouble relaxing), and GAD2 (Uncontrollable worry) as the most influential central symptoms in the network of depression and anxiety. Concurrently, GAD1 (Nervousness or anxiety), CESD10 (Sleep disturbances), and CESD1 (Feeling bothered) stand as critical bridge symptoms between depression and anxiety disorders. Moreover, CESD7 (Lack of happiness) exhibited the strongest negative correlation with LS in Chinese hypertensive older adults. Conclusion This exploratory study represents the first investigation to examine the mutual relationship between depressive and anxiety symptoms among Chinese hypertensive older adults. Interventions addressing targeting bridge symptoms have the potential to alleviate depressive and anxiety symptoms. Furthermore, improving happiness, hope, and sleep quality in this population may mitigate the adverse effects of depression and anxiety on LS."
+    },
+    {
+      "paperId": "4190815a7c03f5dfc2df37dec40284bd9e92a051",
+      "externalIds": {
+        "DOI": "10.55905/rcssv13n4-003",
+        "CorpusId": 269232142
+      },
+      "url": "https://www.semanticscholar.org/paper/4190815a7c03f5dfc2df37dec40284bd9e92a051",
+      "title": "Social support, spirituality, and religiosity in epilepsy among adults",
+      "venue": "Revista Caribe\u00f1a de Ciencias Sociales",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://ojs.southfloridapublishing.com/ojs/index.php/rccs/article/download/3819/2792",
+        "status": "HYBRID",
+        "license": "other-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.55905/rcssv13n4-003?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.55905/rcssv13n4-003, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2057823246",
+          "name": "G. Tedrus"
+        },
+        {
+          "authorId": "35094089",
+          "name": "C. R. Crepaldi"
+        }
+      ],
+      "abstract": "There is no consensus on whether religiosity/spirituality (RS) acts as a form of social support in individuals with chronic diseases. Objective: To assess the relationship between the perception of social support and aspects of RS among adult people with epilepsy (PWEs). Methodology: Data from the Social Support Satisfaction Scale (SSSS) and the Brief Multidimensional Measure of Religiousness/Spirituality (BMMRS-P) were correlated with clinical variables and scores on the Hospital Anxiety and Depression Scale (HADS) in 44 PWEs, using statistical tests with p<0.05. Results: The study included 28F/16M, with a mean age and epilepsy duration of 44.3 and 28.1 years respectively. Lower scores on the SSSS (dimension and total score) were associated with alterations in the neurological examination and anxiety and depression on the HADS. There was a correlation between their perception regarding satisfaction with friends in the SSSS and the dimensions of private religious practices (Pearson correlation; -0.316; p=0.037) and religious support (-0.350; p=0.020) from the BMMRS-P. Clinical aspects were related to the BMMRS-P but not to the SSSS. Conclusion: There was a perception of compromised social support in epilepsy. RS measures are associated with a perception of greater social support, suggesting that RS may positively contribute to coping with psychosocial aspects in epilepsy."
+    },
+    {
+      "paperId": "61ce32c8b5863928a413539ee80ab87c416dabd8",
+      "externalIds": {
+        "PubMedCentral": "12449437",
+        "DOI": "10.1007/s10943-025-02279-6",
+        "CorpusId": 276672150,
+        "PubMed": "40016613"
+      },
+      "url": "https://www.semanticscholar.org/paper/61ce32c8b5863928a413539ee80ab87c416dabd8",
+      "title": "Uncertainty and Well-Being in Turkish Adults: Exploring the Role of Religiosity and Psychological Symptoms",
+      "venue": "Journal of religion and health",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12449437, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2134391760",
+          "name": "Nuri T\u00fcrk"
+        },
+        {
+          "authorId": "115415691",
+          "name": "G\u00f6kmen Arslan"
+        },
+        {
+          "authorId": "2078975806",
+          "name": "A. Kaya"
+        },
+        {
+          "authorId": "2117684113",
+          "name": "O\u011fuzhan Y\u0131ld\u0131r\u0131m"
+        }
+      ],
+      "abstract": "Religiosity offers individuals a sense of purpose and connection, which can lead to greater life satisfaction and improved psychological well-being and happiness. On the other hand, psychological challenges such as depression, anxiety, stress, and difficulty dealing with uncertainty can negatively affect life satisfaction. This study examined these dynamics using a hypothetical model, incorporating mediation and moderation analyses to explore the connections between intolerance of uncertainty, life satisfaction, religiosity, and psychological symptoms in a group of 565 participants (286 of whom were female). The findings revealed notable positive and negative relationships among these variables. Specifically, the study found that (i) religiosity and psychological symptoms both play a mediating role in the link between intolerance of uncertainty and life satisfaction, and (ii) religiosity serves as a moderator in this relationship. The moderation analysis showed that when religiosity levels are low, the negative effect of intolerance of uncertainty on life satisfaction is significantly stronger. In contrast, high levels of religiosity significantly weaken this negative relationship, indicating that religiosity acts as a buffer against the adverse impact of uncertainty on life satisfaction. These results underscore the potential value of religiosity in helping individuals cope with the harmful effects of uncertainty on their sense of life satisfaction. Additionally, lower levels of psychological symptoms and reduced intolerance of uncertainty were associated with higher life satisfaction, suggesting that religiosity may play a protective role in promoting overall well-being."
+    },
+    {
+      "paperId": "34d379eb6c7d3be48a1af827883272f4fec0a1c2",
+      "externalIds": {
+        "DOI": "10.1017/S1041610223004519",
+        "CorpusId": 267319780,
+        "PubMed": "39894639"
+      },
+      "url": "https://www.semanticscholar.org/paper/34d379eb6c7d3be48a1af827883272f4fec0a1c2",
+      "title": "The relationship between social media use and psychosocial outcomes in older adults: A systematic review",
+      "venue": "International Psychogeriatrics",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/489FE4D4C9D8E0A482D58B5EA0F48BFA/S1041610223004519a.pdf/div-class-title-the-relationship-between-social-media-use-and-psychosocial-outcomes-in-older-adults-a-systematic-review-div.pdf",
+        "status": "HYBRID",
+        "license": "CCBYND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1017/S1041610223004519?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1017/S1041610223004519, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2281815068",
+          "name": "Xiaojing Lei"
+        },
+        {
+          "authorId": "115759627",
+          "name": "D. Matovic"
+        },
+        {
+          "authorId": "2051522956",
+          "name": "Wing-Yin Leung"
+        },
+        {
+          "authorId": "2281819425",
+          "name": "Abhirami Viju"
+        },
+        {
+          "authorId": "4898093",
+          "name": "V. Wuthrich"
+        }
+      ],
+      "abstract": "ABSTRACT Objectives: Social isolation and loneliness are prevalent in older adults and are detrimental to physical and mental health. Social media use has been shown to be effective in maintaining social connections and improving older adults\u2019 psychosocial outcomes. This study aimed to systematically review and synthesize current research on this topic. Design: Searches were conducted in November 2021 (and updated in October 2023) in PsycINFO, PubMed, and CINAHL. Inclusion criteria: (1) participants \u2265 65 years (mean, median, or minimum age) and (2) reported impact of social media use on psychosocial outcomes (including loneliness, depression, anxiety, social connectedness, wellbeing, life satisfaction, and quality of life). Quality appraisal tools were utilized, and results were synthesized using narrative synthesis. Results: Sixty-four papers met inclusion criteria, including cross-sectional (n = 38), observational longitudinal (n = 6), interventional (n = 9), mixed-methods (n = 4), and qualitative (n = 7) studies. Participant numbers ranged from 6 to 16,925. While associations between social media use and positive psychosocial outcomes were generally reported in cross-sectional studies, the impact of social media use over time from longitudinal studies was mixed and inconclusive. Conclusions: While social media use is associated with positive psychosocial outcomes, casual conclusions cannot be drawn. Few longitudinal and randomized controlled trial studies existed, and these reported mixed findings. Large variations in study methodology including participants, measurement of social media use, and outcome measures contributed to the inconsistencies of findings. Addressing this heterogeneity through standardized approaches and more rigorous research may enhance understanding."
+    },
+    {
+      "paperId": "723834918ce7958e51e60e1a15014c3dca456d69",
+      "externalIds": {
+        "PubMedCentral": "9471180",
+        "DOI": "10.1192/j.eurpsy.2021.882",
+        "CorpusId": 237002198
+      },
+      "url": "https://www.semanticscholar.org/paper/723834918ce7958e51e60e1a15014c3dca456d69",
+      "title": "The impact of religiousness on life satisfaction and anxiety level of the patients with depression disorders treated at the neuro-psychiatric center in riem, munich",
+      "venue": "European psychiatry",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1192/j.eurpsy.2021.882",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9471180, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2123097045",
+          "name": "E.D. Cindik Herbr\u00fcggen"
+        },
+        {
+          "authorId": "2079827850",
+          "name": "B. Akda\u011f"
+        }
+      ],
+      "abstract": "Introduction Religious people suffer less from depression disorder than less or non-religious people. According to a longitudinal study investigating religiousness and negative life events, religious participants demonstrated fewer depressive symptoms than non-religious. Furthermore, depressed patients with higher religiosity scores show lower values of depression symptoms. Objectives The purpose of the study was to investigate the relationship between religiosity and patients with depression symptoms in the Neuro-Psychiatric Center in Riem (NPZR). The correlation between religiousness and life satisfaction as well as anxiety level was analyzed. Additionally, possible gender differences are also assesed. Methods The patients of the NPZR were selected as sample of the study (N =106, F=61, M=45). The participants were provided with three surveys including the life satisfaction questionnaire, state trait anxiety inventory and the Centrality Scale. A Pearson Correlation was conducted to investigate the association between life satisfaction, level of anxiety and religiousness. T-Test was carried out to find out the differences between female and male patients. Results There was a positive relationship between religiousness and life satisfaction of the depressed patients (r = .608, p= .001). There was also a significant relationship between religiosity and anxiety level (r = - .548, p < .001). However there was no significant difference between male and female patients with regard to their religiousness (t= .149, p= .882). Conclusions The findings indicate that while there is a significant relationship between life satisfaction, level of anxiety and religiousness of the patients, the gender of the patients has no impact on the religiosity of participants."
+    }
+  ]
+}

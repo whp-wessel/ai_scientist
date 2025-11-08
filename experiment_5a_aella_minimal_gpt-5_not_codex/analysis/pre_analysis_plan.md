@@ -33,9 +33,11 @@ multiple testing:
 - All hypotheses are exploratory at this stage (confirmatory=false). If any family is later promoted to confirmatory with >1 test, we will control FDR at q ≤ 0.05 and compute q_values.
 
 literature:
-- Use Semantic Scholar via `scripts/semantic_scholar_cli.py` (requires `.env` with `S2_API_Key`).
-- First query planned: "childhood religion religiosity adult wellbeing mental health" → save to `lit/queries/loop_000/query_001.json`.
-- Evidence will be curated into `lit/evidence_map.csv` and `lit/bibliography.bib`.
+- Use Semantic Scholar via `scripts/semantic_scholar_cli.py` (loads `S2_API_Key` from `.env` or environment; unauthenticated mode may rate-limit but still saves JSON).
+- Queries conducted so far (examples):
+  - loop_011: `lit/queries/loop_011/query_001.json` (youth religiosity and depression/anxiety; added E22–E26 to `lit/evidence_map.csv`).
+  - loop_012: `lit/queries/loop_012/query_001.json` (religiosity, depression/anxiety, monogamy, relationship satisfaction; appended 5 DOIs to `lit/evidence_map.csv`).
+- Evidence is curated into `lit/evidence_map.csv` and citable entries in `lit/bibliography.bib`; main claims will cite at least one peer-reviewed source (DOI/URL).
 
 reproducibility notes:
 - Record all seeds, commands, and repo state in `analysis/decision_log.csv`. Snapshot major artifacts each loop and request a commit via `artifacts/git_message.txt`.

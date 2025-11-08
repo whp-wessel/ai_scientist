@@ -1,0 +1,14 @@
+**Bootstrap Updates**
+- Locked in a draft PAP plus the hypotheses/results registries so every estimand family is spelled out before analysis begins (`analysis/pre_analysis_plan.md:1-42`, `analysis/hypotheses.csv:1-5`, `analysis/results.csv:1`).
+- Logged the bootstrap action, refreshed repository state, and captured the missing-input TODOs, keeping SRS justifications explicit until a design file surfaces (`analysis/decision_log.csv:1-3`, `artifacts/state.json:1-33`, `docs/TODO.md:1-5`).
+- Started the narrative scaffolding so progress is auditable from notebook to manuscript (`notebooks/research_notebook.md:1-9`, `reports/paper.md:1-22`).
+- Built the mandated Semantic Scholar CLI and stored the first query output plus bibliography/evidence mapping for the resilience literature (`scripts/semantic_scholar_cli.py:1-129`, `lit/queries/loop_000/query_001.json:1`, `lit/bibliography.bib:1-9`, `lit/bibliography.md:1-9`, `lit/evidence_map.csv:1-2`).
+- Dropped the git checkpoint request so the runner can stage/push this experiment’s updates (`artifacts/git_message.txt:1`).
+
+**Next Steps**
+- Profile distributions and missingness for all exposure/outcome fields in H1–H4 to finalize recodes and scaling choices.
+- Continue hunting for an official codebook or other survey design documentation; otherwise document a defensible SRS rationale inside the PAP.
+- Run additional Semantic Scholar searches (parental guidance, childhood depression continuity, digital access & SES) and log them under the next loop’s `lit/queries/`.
+- Start a reproducible wrangling script/notebook that engineers the exposure/outcome variables and prepares suppression-ready descriptive tables.
+
+Next science model: gpt-5-codex | reason: Upcoming work is data-wrangling heavy (recode scripts, profiling, more API automation).

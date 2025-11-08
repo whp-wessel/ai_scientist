@@ -173,3 +173,18 @@ Notes:
 Next:
 - Add `.env` with `S2_API_Key` to sustain broader literature and fetch abstracts/metadata for highly relevant items for citation in `reports/paper.md` and `lit/bibliography.bib`.
 - Start drafting a literature synthesis section (theory + measurement alignment) and refine PAP estimands toward freeze.
+
+---
+## Loop 012 (literature)
+- Ran targeted Semantic Scholar search to tighten coverage on H2 and mental health links:
+  - `python scripts/semantic_scholar_cli.py search --query "religiosity depression anxiety monogamy relationship satisfaction adults longitudinal" --limit 5 --output lit/queries/loop_012/query_001.json`
+- Extracted DOIs into the evidence map with topic tag "religiosity, monogamy, wellbeing":
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_012/query_001.json --output lit/evidence_map.csv --topic "religiosity, monogamy, wellbeing"`
+- Updated PAP literature section to reference the new query artifacts; phase remains literature; PAP `status: draft`.
+
+Notes:
+- Five additional DOIs appended; evidence now includes recent systematic reviews and observational links relevant to religiosity and adult wellbeing/relationships.
+
+Next:
+- Draft PAP refinements (estimands and covariates) and propose freeze criteria for two primary families (Wellbeing; Relationships) while keeping MentalHealth exploratory.
+- If needed, implement ordinal models for key Likert outcomes before freeze; otherwise proceed with robust OLS and planned sensitivity checks.
