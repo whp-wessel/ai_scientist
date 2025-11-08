@@ -1,0 +1,7 @@
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint revalidated session_info and checksums before any edits (`analysis/decision_log.csv:254`), and the QC log reiterates seed 20251016 plus current environment artifacts (`qc/data_checks.md:1`, `qc/data_checks.md:46`, `artifacts/session_info.txt:1`) so determinism stays auditable.
+L1: PASS – The mandated Semantic Scholar call, CrossRef fallback, and waiver update are recorded (`analysis/decision_log.csv:255`, `analysis/decision_log.csv:256`, `analysis/decision_log.csv:258`), the 403 payload is archived (`lit/queries/loop_027/query_001.json:1`), and the Lacey DOI is propagated through the evidence map and bibliography (`lit/evidence_map.csv:25`, `lit/bibliography.bib:285`).
+P1: PASS – Only governance artifacts were edited after the literature updates (`analysis/decision_log.csv:259`, `analysis/decision_log.csv:260`, `analysis/decision_log.csv:261`, `analysis/decision_log.csv:262`), while disclosure guardrails remain explicit and last audit shows violations=0 (`analysis/pre_analysis_plan.md:53`, `qc/disclosure_check_loop_006.md:6`, `qc/disclosure_check_loop_006.md:17`).
+N1: PASS – State stays in the PAP phase with N1 marked blocked by the ongoing 403 issue (`artifacts/state.json:25-33`), and the PAP header plus Loop‑027 note explain why status remains draft (`analysis/pre_analysis_plan.md:1-5`, `analysis/pre_analysis_plan.md:47`), so holding the gate is justified.
+
+Notes: Keep escalating the Semantic Scholar credential/waiver so the PAP can freeze.
