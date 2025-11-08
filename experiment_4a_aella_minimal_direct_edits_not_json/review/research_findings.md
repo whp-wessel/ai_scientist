@@ -117,3 +117,11 @@ R4 PASS – Public tables either contain parameter estimates or suppress any cel
 R5 PASS – The PAP remains frozen for H1 with the tagged commit while the H3 promotion draft and all deliverables (results, hypotheses, sensitivity notes, manuscript) are current (analysis/pre_analysis_plan.md:1-99; analysis/results.csv; analysis/sensitivity_notes.md; reports/paper.md).
 Notes: None.
 
+## Loop 015 — 2025-11-08T15:01:16.729761+00:00
+DECISION: CONTINUE  
+R1 PASS – Loop 014–015 commands, seeds, and outputs are logged in detail and mirrored in the notebook, so the new analyses are reproducible (analysis/decision_log.csv:32-38; notebooks/research_notebook.md:118-133).  
+R2 PASS – Effect sizes, SEs, CIs, and p/q-values (with SRS justifications) are captured for the new H3/H4 work while confirmatory scope stays limited to the BH-controlled H1 family (analysis/results.csv:20-40; analysis/hypotheses.csv:2-5; analysis/pre_analysis_plan.md:1-35).  
+R3 PASS – Manuscript claims cite peer-reviewed sources with DOIs, and the evidence map adds the latest Davis et al. (2021) entry, keeping literature coverage traceable (reports/paper.md:20-51; lit/evidence_map.csv:1-19).  
+R4 PASS – Public tables/figures expose only aggregate coefficients, bootstrap summaries, or prediction grids with n_obs ≥14k, so no cells fall below the n<10 threshold (tables/loop015_public_h3_bootstrap.csv:1-4; tables/loop015_public_h4_interactions.csv:1-10).  
+R5 PASS – Required artifacts remain current: PAP header frozen with commands, hypotheses/results registries updated, manuscript expanded with exploratory findings, and state.json lists next actions (analysis/pre_analysis_plan.md:1-40; analysis/results.csv:1-44; reports/paper.md:23-38; artifacts/state.json:1-11).
+
