@@ -22,6 +22,7 @@ NON_PROP_TERMS = ["classchild", "classchild_male_int"]
 TARGET_CUTPOINTS = {
     3: "networth_ge_100k",
     4: "networth_ge_1m",
+    5: "networth_ge_10m",
 }
 
 DRAWS_PATH = TABLES_DIR / "loop014_h3_bootstrap_draws.csv"

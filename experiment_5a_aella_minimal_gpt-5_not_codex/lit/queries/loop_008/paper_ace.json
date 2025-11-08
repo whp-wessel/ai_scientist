@@ -1,0 +1,54 @@
+{
+  "paperId": "0e76b85b04222003324f322217078d1c411b9a7d",
+  "externalIds": {
+    "MAG": "2911867425",
+    "DOI": "10.1016/S0749-3797(98)00017-8",
+    "CorpusId": 26055600,
+    "PubMed": "31104722"
+  },
+  "url": "https://www.semanticscholar.org/paper/0e76b85b04222003324f322217078d1c411b9a7d",
+  "title": "Relationship of Childhood Abuse and Household Dysfunction to Many of the Leading Causes of Death in Adults: The Adverse Childhood Experiences (ACE) Study.",
+  "venue": "American Journal of Preventive Medicine",
+  "year": 1998,
+  "openAccessPdf": {
+    "url": "http://www.ajpmonline.org/article/S0749379798000178/pdf",
+    "status": "BRONZE",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/S0749-3797(98)00017-8?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S0749-3797(98)00017-8, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "5631442",
+      "name": "V. Felitti"
+    },
+    {
+      "authorId": "3540027",
+      "name": "R. Anda"
+    },
+    {
+      "authorId": "1994975",
+      "name": "D. Nordenberg"
+    },
+    {
+      "authorId": "32362749",
+      "name": "D. Williamson"
+    },
+    {
+      "authorId": "5081107",
+      "name": "A. Spitz"
+    },
+    {
+      "authorId": "144351233",
+      "name": "V. Edwards"
+    },
+    {
+      "authorId": "40056602",
+      "name": "M. Koss"
+    },
+    {
+      "authorId": "3647457",
+      "name": "J. Marks"
+    }
+  ],
+  "abstract": null
+}

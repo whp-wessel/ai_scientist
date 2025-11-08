@@ -1,0 +1,162 @@
+{
+  "total": 156,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "bec6cada5e5c5c3c950424ddcf3c46c4b32e8e9a",
+      "externalIds": {
+        "MAG": "3039787302",
+        "DOI": "10.14745/ccdr.v46i78a06",
+        "CorpusId": 225582491
+      },
+      "url": "https://www.semanticscholar.org/paper/bec6cada5e5c5c3c950424ddcf3c46c4b32e8e9a",
+      "title": "Considerations for mandatory childhood immunization programs",
+      "venue": "",
+      "year": 2020,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.14745/ccdr.v46i78a06",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.14745/ccdr.v46i78a06?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.14745/ccdr.v46i78a06, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2033748",
+          "name": "N. MacDonald"
+        },
+        {
+          "authorId": "145248127",
+          "name": "\u00c8. Dub\u00e9"
+        },
+        {
+          "authorId": "2882648",
+          "name": "D. Grandt"
+        }
+      ],
+      "abstract": "Outbreaks of vaccine preventable diseases occur even in countries that have unrestricted and relatively equitable accesses to immunizations because vaccine uptake rates are lower than necessary for effective disease control. Vaccine hesitancy is seen in many countries, including Canada, and has led to enacting or strengthening legislation requiring mandatory childhood immunization in some provinces. Although mandatory immunization may seem to be the simplest solution to this issue, it is not always as effective as anticipated. Different countries/states/provinces/territories have used different strategies to encourage parents to fully immunize their children. Definition, scope, flexibility (such as exemptions for medical, religious and philosophical reasons) and framework factors (such as strictness of application and levels of enforcement of the mandate) vary widely between jurisdictions. Surprisingly, no marked differences were seen in vaccination rates between countries that recommended versus mandated them. Unintended consequences of mandatory immunization programs\u2014both good (increased availability of data) and bad (\u201cgaming\u201d of the system and disproportionate impacts on families of lower socioeconomic status) have been reported. Addressing lower vaccine uptake rates is a complex problem that needs a multipronged, more nuanced and tailored approach. Affiliations 1 Department of Pediatrics, Dalhousie University, IWK Health Centre, Halifax, NS 2 Quebec National Institute of Public Health, Department of Anthropology, Laval University, Qu\u00e9bec, QC 3 Department of Internal Medicine, Klinikum Saarbruecken, Germany"
+    },
+    {
+      "paperId": "54349faa4365d03e402b30ed93e3fa0d2c3ae24e",
+      "externalIds": {
+        "MAG": "3043577815",
+        "DOI": "10.1111/jssr.12667",
+        "CorpusId": 225287379
+      },
+      "url": "https://www.semanticscholar.org/paper/54349faa4365d03e402b30ed93e3fa0d2c3ae24e",
+      "title": "Religious Heterogamy and the Intergenerational Transmission of Religion in China",
+      "venue": "Journal for the Scientific Study of Religion",
+      "year": 2020,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jssr.12667?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jssr.12667, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "119252456",
+          "name": "Brian L. McPhail"
+        },
+        {
+          "authorId": "8510502",
+          "name": "Fenggang Yang"
+        }
+      ],
+      "abstract": "Research has long established that parents who do not share the same religious tradition produce less religious children than parents who do. Therefore, religious heterogamy and its negative effects on religious socialization have been associated with the generational decline of religion in Western societies. How about China, where religion has been resurging in the last few decades? Existing studies suggest two opposing possibilities: the restrictive national context may diminish parental impact on religious socialization, or the family influence withstands contextual pressures. Using the 2007 Spiritual Life Survey of Chinese Residents and logistic regression models, we examine patterns of association between having one or two religious parents during childhood and current religious affiliation, beliefs, behavior, and salience of respondents in China. Analyses reveal that despite China\u2019s atheist education system and strict religion policies, having at least one religiously affiliated parent is associated with increased religiosity compared to having two nonreligious parents. As the number of interreligious marriages rises in Chinese society, religious heterogamy contributes to the growth of religion among younger generations. Whereas religious heterogamy in the West has a secularizing effect on the next generation and contributes to religion\u2019s decline, religious heterogamy in secular nations such as China has a religionizing effect and contributes to religion\u2019s rise."
+    },
+    {
+      "paperId": "c8c333142449382a7b0323979c444e4b31818375",
+      "externalIds": {
+        "MAG": "1508361051",
+        "DOI": "10.4324/9781315256962-9",
+        "CorpusId": 141825493
+      },
+      "url": "https://www.semanticscholar.org/paper/c8c333142449382a7b0323979c444e4b31818375",
+      "title": "Marketing Religious Identity: Female Educators, Methodist Culture, and Eighteenth-Century Childhood",
+      "venue": "",
+      "year": 2009,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.4324/9781315256962-9?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.4324/9781315256962-9, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": null,
+          "name": "Mary Clare Martin"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "af9aa0c63a3e5a00244dadec1e23d6683ca5cf34",
+      "externalIds": {
+        "DOI": "10.55732/ner.v2i1.1260",
+        "CorpusId": 270322816
+      },
+      "url": "https://www.semanticscholar.org/paper/af9aa0c63a3e5a00244dadec1e23d6683ca5cf34",
+      "title": "Korelasi antara Pembelajaran Nilai Moral dan Agama dengan Perkembangan Kognitif pada Anak Usia Dini: Sebuah Review Sistematis",
+      "venue": "Nusantara Educational Review",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://journal.unusida.ac.id/index.php/ner/article/download/1260/816",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.55732/ner.v2i1.1260?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.55732/ner.v2i1.1260, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "104536316",
+          "name": "Ali Masykuri"
+        },
+        {
+          "authorId": "2294469393",
+          "name": "Tantri Risda Zubaidah"
+        },
+        {
+          "authorId": "2269360940",
+          "name": "Milla Ahmadia Apologia"
+        },
+        {
+          "authorId": "2042271961",
+          "name": "Ikhwan Abdillah"
+        }
+      ],
+      "abstract": "Korelasi antara pembelajaran nilai moral dan agama dengan perkembangan kognitif pada pendidikan Islam anak usia dini. Tujuannya adalah untuk memahami bagaimana integrasi nilai moral dan agama dalam pendidikan dapat mempengaruhi aspek kognitif anak usia dini. Menggunakan metode review sistematis, penelitian ini menganalisis data dari berbagai studi yang telah diterbitkan, yang dipilih berdasarkan kriteria inklusi dan eksklusi yang ketat. Hasilnya menunjukkan adanya hubungan positif antara pengajaran nilai moral dan agama dengan peningkatan kemampuan kognitif seperti pemecahan masalah, kreativitas, dan berpikir kritis pada anak usia dini. Penelitian ini memberikan kontribusi penting dengan mengidentifikasi dan mensintesis bukti yang ada mengenai pengaruh pendidikan nilai moral dan agama terhadap perkembangan kognitif, serta menyarankan pentingnya pendekatan holistik dalam pendidikan Islam anak usia dini. \nCorrelation between learning moral and religious values and cognitive development in early childhood Islamic education. The aim is to understand how the integration of moral and religious values in education can affect the cognitive aspects of early childhood. Using a systematic review method, this study analyzed data from various published studies, which were selected based on strict inclusion and exclusion criteria. The results show a positive relationship between teaching moral and religious values and improving cognitive abilities such as problem-solving, creativity and critical thinking in early childhood. This study makes an important contribution by identifying and synthesizing existing evidence on the effect of moral and religious values education on cognitive development and suggests the importance of a holistic approach in early childhood Islamic education."
+    },
+    {
+      "paperId": "8000fd8e16084ca94f6715edd56f6823431f3f2f",
+      "externalIds": {
+        "DOI": "10.33506/jole.v1i2.3404",
+        "CorpusId": 277948352
+      },
+      "url": "https://www.semanticscholar.org/paper/8000fd8e16084ca94f6715edd56f6823431f3f2f",
+      "title": "The Analysis of Intrinsic Elements of Sally Rooney\u2019s Novel Beautiful World, Where Are You",
+      "venue": "JOLIES : Journal of Linguistic and English Studies",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.33506/jole.v1i2.3404?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.33506/jole.v1i2.3404, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2356457293",
+          "name": "Meici Sauli"
+        },
+        {
+          "authorId": "118969818",
+          "name": "H. M. Ohorella"
+        },
+        {
+          "authorId": "2356439379",
+          "name": "Ibrahim Ibrahim"
+        }
+      ],
+      "abstract": "This research aims to find out the intrinsic elements of Sally Rooney\u2019s novel \u201cBeautiful World, Where Are You\u201d. This research used a qualitative descriptive method. The result is finding: 1) Theme of novel are find a way to happiness, romance and friendship and religious. 2) Plot in the story is start when the main characters, Alice and Eileen become adult whose has been unhappy since childhood. Thereafter, recounting the reason why they are not happy and later try to find out either way to find a beautiful world, the resolution when Eileen is pregnant. 3) Setting of places of the novel is Dublin, Village, and Rome, setting of time of the novel is last March, early May, early June, the setting of society is a social background of differences in belief. 4) The characters are Alice, Eileen, Lola, Simon, Felix, Pat, Mary, Paula, Peter, Roisin, Lola and Aidan. 5) Point of view of novel is mixed point of view."
+    }
+  ]
+}

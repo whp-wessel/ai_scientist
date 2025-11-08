@@ -112,3 +112,17 @@ Next:
 Next:
 - Add `.env` with `S2_API_Key` to broaden literature queries and follow-up on abstracts most relevant to religiosity, monogamy, and wellbeing.
 - Start drafting `analysis/sensitivity_notes.md` (ordinal models, nonlinearities, additional covariates) ahead of PAP freeze.
+
+---
+## Loop 008 (literature)
+- Ran two Semantic Scholar queries via helper:
+  - search: "religiosity monogamy relationship satisfaction" → `lit/queries/loop_008/query_001.json` (HTTP 429 unauthenticated; recorded)
+  - paper: DOI 10.1016/S0749-3797(98)00017-8 → `lit/queries/loop_008/paper_ace.json` (metadata saved)
+  - search: "childhood religious strictness unhappiness" → `lit/queries/loop_008/query_002.json` (success)
+- Extracted DOIs from successful search into `lit/evidence_map.csv` (added E7–E11) using `scripts/lit/extract_dois.py`.
+- Added `analysis/sensitivity_notes.md` (draft) outlining ordinal models, nonlinear terms, added covariates, and design-based re-runs if metadata surface.
+- Updated decision log and `artifacts/state.json` (loop_counter=8). Added one-line commit request in `artifacts/git_message.txt`.
+
+Next:
+- Provide `.env` with `S2_API_Key`; expand literature (1 req/sec) and map additional DOIs into `lit/evidence_map.csv`.
+- Begin implementing ordered logit refits for H1–H4 (exploratory) and evaluate nonlinearity.
