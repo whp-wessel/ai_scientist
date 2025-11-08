@@ -1,11 +1,11 @@
-# Semantic Scholar Access Waiver Request — Loop 035
+# Semantic Scholar Access Waiver Request — Loop 036
 Date: 2025-11-08
 Status: draft (pending partner approval)
 
 ## Summary
-Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥28 consecutive failures (loops 008–035) paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002; Eliassen, 2013; Kasen et al., 2014; Giri et al., 2025; Grummitt et al., 2024; McLeod, 1991; Wheeler, 2023; Taskesen et al., 2025; Van Alen et al., 2020; Tung et al., 2023; Liu & Yin, 2025 preprint; Talmon, 2023; Lacey et al., 2013; Nelson, 1982; Gerra et al., 2016; Oh & Han, 2019; Xu & Zheng, 2025 preprint; Moran et al., 2018; Kennedy et al., 2017; Gasper, 2020; Renjilian et al., 2021) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
+Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥29 consecutive failures (loops 008–036) paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002; Eliassen, 2013; Kasen et al., 2014; Giri et al., 2025; Grummitt et al., 2024; McLeod, 1991; Wheeler, 2023; Taskesen et al., 2025; Van Alen et al., 2020; Tung et al., 2023; Liu & Yin, 2025 preprint; Talmon, 2023; Lacey et al., 2013; Nelson, 1982; Gerra et al., 2016; Oh & Han, 2019; Xu & Zheng, 2025 preprint; Moran et al., 2018; Kennedy et al., 2017; Gasper, 2020; Renjilian et al., 2021; Hintikka et al., 1998) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
 
-## Attempt Log (Loops 008–035)
+## Attempt Log (Loops 008–036)
 | Loop | Timestamp (UTC) | Query | Status | Artifact |
 | --- | --- | --- | --- | --- |
 | 008 | 2025-11-08T14:10:07Z | "childhood abuse self love adult wellbeing" | 403 Forbidden | `lit/queries/loop_008/query_001.json` |
@@ -36,6 +36,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 033 | 2025-11-08T20:16:01Z | "childhood mentorship adult coping resilience" | 403 Forbidden | `lit/queries/loop_033/query_001.json` |
 | 034 | 2025-11-08T20:25:49Z | "childhood mentorship coping adult resilience" | 403 Forbidden | `lit/queries/loop_034/query_001.json` |
 | 035 | 2025-11-08T20:39:53Z | "childhood parental mentorship adult stress resilience" | 403 Forbidden | `lit/queries/loop_035/query_001.json` |
+| 036 | 2025-11-08T20:52:14Z | "childhood religious service adult depression social support" | 403 Forbidden | `lit/queries/loop_036/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -43,6 +44,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Ross et al. (2019), DOI `10.1016/j.chiabu.2019.03.016`** — CrossRef metadata captured in `lit/queries/loop_012/crossref_query_001.json` and propagated to `lit/evidence_map.csv` / `lit/bibliography.bib`. Supports H3 by documenting self-compassion as a mediator between childhood maltreatment and adult depressive symptoms/self-worth.
 - **Oh & Han (2019), DOI `10.37918/kce.2019.05.116.47`** — CrossRef metadata captured in `lit/queries/loop_030/crossref_query_001.json`; links secure childhood parental attachment to lower adult attachment anxiety and parenting stress, reinforcing H2’s warmth/regulation mediators while S2 access is unavailable.
 - Existing DOI-backed sources for H1–H2 (Ezra et al., 2025; Thompson et al., 2015) and H3 (Islam et al., 2022) remain current and are cited with claim IDs `C1–C3`.
+- **Hintikka et al. (1998), DOI `10.1177/009164719802600405`** — CrossRef metadata captured in `lit/queries/loop_036/crossref_query_004.json`; shows regular religious attendance associates with milder depression among community mental health patients even after accounting for social support, reinforcing H1’s direct religiosity buffer while Semantic Scholar access is down.
 - **Pandya (2017), DOI `10.1080/15332985.2016.1222982`** — Captured via CrossRef (loop 014) to document spirituality/social-support interventions linked to childhood depression, reinforcing the H1 religiosity mechanism narrative.
 - **Nelson (1982), DOI `10.1007/bf00583891`** — Logged in Loop 028 to document that childhood parental death predicts adult depression even after SES controls; reinforces the need for adversity covariates in H1 until Semantic Scholar access is restored.
 - **Turrisi et al. (2010), DOI `10.7312/guil14080-006`** — Captured via CrossRef (loop 015) showing parental monitoring suppresses high-risk drinking among young adults; strengthens the H2 guidance→health justification while the S2 credential remains down.

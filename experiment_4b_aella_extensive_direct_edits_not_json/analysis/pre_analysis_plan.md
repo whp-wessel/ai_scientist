@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T20:43Z
+last_updated: 2025-11-08T20:57Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -61,6 +61,8 @@ Loop 033 note: Mandatory Semantic Scholar query (`childhood mentorship adult cop
 Loop 034 note: Semantic Scholar remains down (`lit/queries/loop_034/query_001.json` logged another 403 for "childhood mentorship coping adult resilience"), so we captured CrossRef metadata (`lit/queries/loop_034/crossref_query_002.json`) and added Gasper (2020; DOI `10.5040/9781350100763.ch-003`) to document how structured childhood mentoring/coaching builds coping/self-regulation skills relevant to H2. Waiver memo now spans loops 008–034 with the new attempt row and fallback, and PAP status stays draft until the credential is restored or the waiver is approved.
 
 Loop 035 note: The mandated Semantic Scholar query ("childhood parental mentorship adult stress resilience") again returned 403 (`lit/queries/loop_035/query_001.json`), so we logged CrossRef metadata (`lit/queries/loop_035/crossref_query_001.json`) for Renjilian et al. (2021; DOI `10.1016/j.jadohealth.2020.12.041`). The Journal of Adolescent Health study shows that after-school running plus mentorship programs reduce toxic-stress biomarkers among high-ACE youth, reinforcing H2's mentorship-resilience mechanism and requiring explicit mentorship/support proxies plus biomarker-informed robustness checks in the PAP before freeze. Waiver memo coverage now extends through loop 035, so PAP status remains draft until the credential is restored or the waiver is approved.
+
+Loop 036 note: Semantic Scholar search `"childhood religious service adult depression social support"` (`lit/queries/loop_036/query_001.json`) also failed with HTTP 403, so we captured Hintikka et al. (1998; DOI `10.1177/009164719802600405`, CrossRef payload `lit/queries/loop_036/crossref_query_004.json`). The community mental-health sample documents that regular religious attendance is associated with milder depression even after accounting for social support, reinforcing H1's direct religiosity pathway. PAP status therefore remains draft until ops restores the Semantic Scholar credential or approves the waiver so canonical S2 sources can be synced before freeze.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
