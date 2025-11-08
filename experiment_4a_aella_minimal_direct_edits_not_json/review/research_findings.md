@@ -75,3 +75,13 @@ R3 PASS – Manuscript discussion of new visuals cites the peer-reviewed bufferi
 R4 PASS – Public disclosures rely on aggregated prediction grids with n≈14k per cell and the manuscript documents the n≥10 safeguard for the figure/table pair (`tables/loop009_h1_interaction_grid.csv:1-5`; `reports/paper.md:26-33`).
 R5 PASS – Required artifacts (PAP, hypotheses, results, notebook, paper) all reflect Loop009 updates; confirmatory work still post-dates the freeze tag and next actions are tracked (`artifacts/state.json:1-10`).
 
+## Loop 010 — 2025-11-08T12:51:48.870543+00:00
+DECISION: CONTINUE
+R1 PASS – Loop 010 work is fully logged with commands, seed, and outputs, and the narrative notebook mirrors those steps, so another analyst can reconstruct the run directly (`analysis/decision_log.csv:29-30`, `notebooks/research_notebook.md:82-90`).
+R2 PASS – New H3 partial proportional-odds estimates honor the documented SRS assumption, extend the results registry with clear uncertainty, and keep confirmatory q-values intact while providing the underlying code path (`analysis/results.csv:20-29`, `scripts/loop010_h3_partial_models.py:21-198`, `tables/loop010_h3_threshold_effects.csv:2-10`).
+R3 PASS – Manuscript sections and the evidence map still tie every main claim to peer-reviewed sources with DOI coverage, satisfying the citation mandate (`reports/paper.md:9-22`, `lit/evidence_map.csv:1-13`).
+R4 PASS – Public tables remain fully aggregated (n≈14k per row or purely model summaries), so the n<10 disclosure rule is respected (`tables/loop009_h1_interaction_grid.csv:1-4`, `tables/loop010_h3_partial_fit.csv:2-7`).
+R5 PASS – The frozen PAP remains referenced, H3 exploratory outputs were registered, and the manuscript plus state file reflect the current backlog and phase (`analysis/pre_analysis_plan.md:1-64`, `analysis/results.csv:28-29`, `reports/paper.md:1-22`).
+
+Notes: Next-loop backlog still calls for additional H2/H3 literature and robustness design work (`artifacts/state.json:1-11`).
+
