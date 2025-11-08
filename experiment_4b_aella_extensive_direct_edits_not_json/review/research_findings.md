@@ -64,3 +64,12 @@ N1: PASS – State remains in the PAP phase with only the Semantic Scholar actio
 
 Notes: Secure a working Semantic Scholar key or documented waiver so the PAP can eventually freeze.
 
+## Loop 010 — 2025-11-08T14:31:11.326459+00:00
+DECISION: CONTINUE
+R1: PASS – QC log keeps seed 20251016, regen commands, and current session/checksum timestamps, so determinism remains traceable this loop (`qc/data_checks.md:1`, `qc/data_checks.md:46`); the PAP reiterates the seeded script inventory (`analysis/pre_analysis_plan.md:15`).
+L1: PASS – Decision log captures the required Semantic Scholar call and the 403 payload with full parameters is preserved for audit (`analysis/decision_log.csv:74`, `lit/queries/loop_010/query_001.json:1`).
+P1: PASS – PAP restates the n≥10 disclosure rule and cites the automated check, and the QC risk list confirms no public outputs were released this loop (`analysis/pre_analysis_plan.md:19`, `qc/data_checks.md:50`).
+N1: PASS – Phase stays PAP with the literature task explicitly marked blocked and tied to the Loop 010 query, so advancement is appropriately deferred (`artifacts/state.json:5`, `artifacts/state.json:31`, `analysis/pre_analysis_plan.md:13`).
+
+Notes: Continue escalating for a working S2 key or waiver so the PAP can freeze.
+
