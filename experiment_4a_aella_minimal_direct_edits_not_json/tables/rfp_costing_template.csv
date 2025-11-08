@@ -1,0 +1,7 @@
+component,quantity,unit_price_usd,extended_price_usd,notes
+High-net-worth interviews,5000,,,"Unit price capped at $425 inclusive of incentives"
+Verification stipend pool,5000,,,"List expected documentation bonus per verified respondent"
+Panel/partner management fee,1,,,"Flat fee covering compliance, translations, and auditing"
+Travel & training,1,,,"Optional; specify if on-site visits are required"
+Technology & security setup,1,,,"Secure data room, SFTP automation, encryption services"
+TOTAL,,,

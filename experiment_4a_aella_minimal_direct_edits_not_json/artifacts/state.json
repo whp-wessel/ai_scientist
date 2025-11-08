@@ -6,12 +6,12 @@
     "phase": "loop",
     "ts": "2025-11-08T15:49:56.592983+00:00"
   },
-  "last_updated": "2025-11-09T00:30:00Z",
-  "loop_counter": 21,
+  "last_updated": "2025-11-09T01:05:00Z",
+  "loop_counter": 22,
   "next_actions": [
-    "Collect the partner LOIs, high-wealth RFP, and replicate-weight manifest promised in `docs/h3_design_effect_plan.md` so the ≥$10M promotion path has auditable evidence.",
-    "Sync `reports/paper.md` (plus figures/tables) with the four-row `religiosity_class_gradients` shell and BH narrative now captured in the PAP/reviewer packet.",
-    "Draft the PAP-freeze workplan for `childhood_class_networth_ge10m` once the design-effect mitigation milestones have concrete delivery dates."
+    "Ingest the replicate-weight delivery (DG-4827) and rerun `scripts/loop021_h3_weighted_checks.py` + `scripts/loop016_h3_power_check.py --use-weights` to update the \u2265$10M design-effect tables.",
+    "Freeze the `religiosity_class_gradients` family once reviewers approve by regenerating the four-row shell, updating hypotheses/results, and tagging `pap_freeze_h4_loop024`.",
+    "Track the high-wealth RFP Q&A plus LOI status changes and log every update in the decision log + evidence folders."
   ],
   "phase": "analysis",
   "phase_ix": 2,

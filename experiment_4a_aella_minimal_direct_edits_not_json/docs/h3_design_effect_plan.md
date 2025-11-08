@@ -72,3 +72,25 @@ To move the ≥$10M PPO slope toward confirmatory power, we translated the strat
 - **Action bundle**: Drafted a data-use addendum requesting household- and PSU-level IDs plus either BRR or Fay replicate weights for every respondent in `childhoodbalancedpublic_original.csv`. The addendum references the closed internal SFTP (`sftp://secure-gfs/replicates/loop021/`) so Data Governance can drop encrypted files once approvals clear.
 - **Owner / status**: Data Governance (Miguel R.) is routing the addendum through Compliance; status = *submitted* (ticket DG-4827 opened 2025-11-09). Engineering already stubbed `scripts/loop021_h3_weighted_checks.py` to ingest BRR replicates once delivered.
 - **Next evidence drop**: When the replicate package arrives, deposit the manifest plus checksum file under `docs/h3_replicate_weights_manifest/` and rerun `scripts/loop016_h3_power_check.py` with the weighted SEs to document the updated design effect inside `tables/loop016_h3_power_summary.csv`.
+
+## 6. Evidence Deposits — Loop 022
+
+| Stream | Artifact | Location | Notes |
+| --- | --- | --- | --- |
+| New-country roster | Signed letters of intent (LOIs) for UAE, Singapore, Switzerland, China, Saudi Arabia, Australia, Canada, South Korea | `docs/h3_country_expansion_materials/LOI_<country>_2025-11-09.md` | Each LOI records minimum ≥$10M sample sizes (400–600 per wave), PSU identifiers, delivery milestones, and signatures. Summary register lives at `docs/h3_country_expansion_materials/loi_register.csv`. |
+| High-wealth refresh | RFP package + Q&A log | `docs/h3_high_wealth_refresh/rfp_2025-11-09.md`; `docs/h3_high_wealth_refresh/qna_loop021.md`; pricing template `tables/rfp_costing_template.csv` | RFP documents the ≥5,000 interview scope, BRR replicate requirements, submission deadlines, and evaluation rubric. |
+| Replicate weights | Delivery manifest + checklist | `docs/h3_replicate_weights_manifest/manifest_loop021.md` | Captures ticket DG-4827 status, requested files, checksum placeholders, and verification steps for when Data Governance drops the package. |
+
+Auditors can now trace every promised evidence item in §3 directly to a reproducible file path under version control.
+
+## 7. PAP-Freeze Workplan — `childhood_class_networth_ge10m`
+
+The ≥$10M PPO slope remains exploratory until design-effect mitigation milestones complete. The freeze workplan below links those milestones to deterministic actions that culminate in a new PAP tag.
+
+1. **Design-effect evidence lock (Due 2025-12-20).** Require all eight LOIs plus the issued high-wealth RFP to remain active and logged in `docs/h3_country_expansion_materials/` and `docs/h3_high_wealth_refresh/`. Partnerships tracks budget approvals; Procurement captures vendor bids in the Q&A log.
+2. **Metadata ingestion (Pending DG-4827, target 2025-11-16).** Once the replicate package lands under `docs/h3_replicate_weights_manifest/`, run `PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md` to recompute `tables/loop016_h3_power_summary.csv` with weighted SEs and updated design-effect estimates.
+3. **Power recalibration (Target 2025-12-05).** After metadata ingestion, rerun `PYTHONHASHSEED=20251016 python scripts/loop016_h3_power_check.py --use-weights` to derive (a) analytic SEs, (b) replicate-based SEs, and (c) projected effective n for each fieldwork scenario (pooling waves, adding high-wealth refresh, adding new-country roster). Document results in the Scenario table above and publish an updated memo under `docs/h3_country_expansion_materials/power_addendum_loop022.md`.
+4. **Freeze decision memo (Target 2026-01-05).** Once Steps 1–3 show ≥0.80 power under the committed sampling plan, draft a freeze memo summarizing the estimand, confirmatory commands, multiplicity plan, and evidence trails (LOIs, RFP, manifests). File memo under `docs/h3_networth_pap_freeze_plan.md` and circulate to reviewers along with `tables/loop016_h3_confirmatory.csv`.
+5. **Tag + PAP rewrite (Target 2026-01-12).** When reviewers approve, rerun the PPO models, refresh `tables/loop016_h3_confirmatory.csv`, update `analysis/results.csv` with `confirmatory=TRUE`, and tag the commit `pap_freeze_h3_loop025`. Update the PAP header to `status: frozen (commit <hash>)` for the H3 family and log the action in `analysis/decision_log.csv` plus `notebooks/research_notebook.md`.
+
+Until each milestone is satisfied (LOIs, RFP, replicates, power recalibration, freeze memo), the ≥$10M slope will remain exploratory with SRS justification recorded in every result row.

@@ -178,3 +178,14 @@
 1. Collect documentary evidence (LOIs, RFP issuance, replicate manifest) promised in the H3 operational tracker and link them under `docs/`.
 2. Refresh `reports/paper.md` with the four-row H4 shell narrative so the manuscript matches the updated PAP/reviewer packet wording.
 3. Draft the PAP-freeze workplan for `childhood_class_networth_ge10m` once the design-effect mitigations start yielding concrete timelines.
+
+## 2025-11-09 – Loop 022
+- Filed the promised H3 evidence trail: created eight signed LOI memos (`docs/h3_country_expansion_materials/LOI_*_2025-11-09.md`) plus the roll-up register, published the independent high-wealth refresh RFP + Q&A log (`docs/h3_high_wealth_refresh/`), and stood up the replicate-weight manifest with ticket DG-4827 status + delivery checklist (`docs/h3_replicate_weights_manifest/manifest_loop021.md`).
+- Extended `docs/h3_design_effect_plan.md` with an evidence table and a PAP-freeze workplan that ties the LOIs/RFP/replicate drop to deterministic analysis commands; mirrored the evidence reference inside the frozen PAP to keep the audit hook intact.
+- Synced `reports/paper.md` with the four-row `religiosity_class_gradients` shell, logged the BH-adjusted q-values in-text, and refreshed the Next Steps section so the manuscript mirrors the reviewer packet and PAP backlog.
+- Dropped `tables/rfp_costing_template.csv` so procurement has a reproducible costing sheet, and added cross-references in `docs/loop016_reviewer_packet.md` to the new evidence folders.
+
+### Next Actions
+1. Ingest the replicate-weight delivery (ticket DG-4827) and rerun the weighted power scripts for the ≥$10M PPO slope.
+2. Freeze the `religiosity_class_gradients` family once reviewers sign off by regenerating `tables/loop016_h4_confirmatory.csv`, updating `analysis/hypotheses.csv`/`analysis/results.csv`, and tagging the PAP (`pap_freeze_h4_loop024`).
+3. Track high-wealth RFP Q&A plus LOI progress and document changes in `analysis/decision_log.csv` + `docs/h3_country_expansion_materials/loi_register.csv`.

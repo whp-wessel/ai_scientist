@@ -28,6 +28,6 @@ This note bundles the artifacts reviewers requested when assessing the new H3/H4
 4. Archive the approval email or meeting notes in `docs/reviewer_approvals/` and log the freeze in `analysis/decision_log.csv` plus `notebooks/research_notebook.md` for audit.
 
 ## Next Reviewer Touchpoints
-1. Decide whether the ≥$10M contrast can move forward once pooled waves or design metadata boost the effective sample size (see `tables/loop016_h3_power_summary.csv` and `docs/h3_design_effect_plan.md`).
+1. Decide whether the ≥$10M contrast can move forward once pooled waves or design metadata boost the effective sample size (see `tables/loop016_h3_power_summary.csv`, `docs/h3_design_effect_plan.md`, and the new evidence bundle under `docs/h3_country_expansion_materials/`, `docs/h3_high_wealth_refresh/`, and `docs/h3_replicate_weights_manifest/`).
 2. Verify that the `religiosity_class_gradients` family meets the confirmatory bar once reviewers endorse the PAP addendum; Benjamini–Hochberg q-values (0.023 and 0.194) already live in `analysis/results.csv`, and the ordinal backup rows will accompany the binary contrasts at freeze.
 3. Confirm that any future public figure/table referencing these estimands links back to the privacy-checked artifacts above.
