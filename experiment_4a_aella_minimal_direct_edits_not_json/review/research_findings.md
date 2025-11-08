@@ -57,3 +57,13 @@ R5 WARN – Key artifacts exist (frozen PAP, manuscript updates), but the missin
 
 Notes: Please backfill decision_log/notebook entries for loops 3–7 (with commands/seeds) before continuing.
 
+## Loop 008 — 2025-11-08T12:31:16.015533+00:00
+DECISION: CONTINUE  
+R1 PASS – Loop entries log commands, seeds, and outputs (`analysis/decision_log.csv:24`), and the frozen PAP specifies the governing commit plus deterministic repro commands and seed policy (`analysis/pre_analysis_plan.md:1`, `analysis/pre_analysis_plan.md:8`, `analysis/pre_analysis_plan.md:10`).  
+R2 PASS – Confirmatory H1 rows include full estimates, CIs, BH q-values, and SRS rationale (`analysis/results.csv:20`, `analysis/results.csv:21`); the PAP documents the survey-design assumption and multiplicity plan (`analysis/pre_analysis_plan.md:15`, `analysis/pre_analysis_plan.md:47`); loop008 adds proportional-odds metrics and religiosity model comparisons (`tables/loop008_h3_po_summary.csv:2`, `tables/loop008_h4_religiosity_models.csv:5`).  
+R3 PASS – Evidence map records DOI-linked sources mapped to hypotheses (`lit/evidence_map.csv:12`, `lit/evidence_map.csv:13`), and the manuscript cites these studies when motivating methods and interpreting results (`reports/paper.md:9`, `reports/paper.md:21`, `reports/paper.md:37`).  
+R4 PASS – Privacy policy reiterates n≥10 disclosure plus dataset scope (`analysis/pre_analysis_plan.md:15`, `analysis/pre_analysis_plan.md:19`), and released tables show only high-count aggregates (`tables/loop006_h1_confirmatory.csv:2`, `tables/loop008_h2_measurement.csv:1`).  
+R5 PASS – All required artifacts remain current: PAP and hypothesis register (`analysis/pre_analysis_plan.md:3`, `analysis/hypotheses.csv:2`), results registry (`analysis/results.csv:20`), notebook (`notebooks/research_notebook.md:1`), manuscript (`reports/paper.md:6`), and experiment state tracker (`artifacts/state.json:1`).  
+
+Notes: Continue advancing the queued robustness work (H3 partial proportional-odds, H1 visuals) before shifting phases.
+

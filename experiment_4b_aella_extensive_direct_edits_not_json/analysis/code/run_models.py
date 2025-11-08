@@ -176,6 +176,15 @@ def encode_ordered_text(series: pd.Series, order: Sequence[str]) -> pd.Series:
     return result
 
 
+def ordinal_numeric_or_text(series: pd.Series, order: Sequence[str]) -> pd.Series:
+    numeric = pd.to_numeric(series, errors="coerce")
+    total = int(series.notna().sum())
+    numeric_valid = int(numeric.notna().sum())
+    if total > 0 and numeric_valid / total >= 0.9:
+        return numeric
+    return encode_ordered_text(series, order)
+
+
 def encode_health(series: pd.Series) -> pd.Series:
     mapping = {label: idx for idx, label in enumerate(HEALTH_ORDER)}
     result = pd.Series(np.nan, index=series.index, dtype=float)
@@ -188,6 +197,22 @@ def encode_health(series: pd.Series) -> pd.Series:
 
 def numeric_series(series: pd.Series) -> pd.Series:
     return pd.to_numeric(series, errors="coerce")
+
+
+def select_controls(
+    df: pd.DataFrame, candidates: Sequence[str]
+) -> tuple[list[str], list[str]]:
+    available: list[str] = []
+    dropped: list[str] = []
+    for col in candidates:
+        if col not in df.columns:
+            dropped.append(col)
+            continue
+        if df[col].notna().any():
+            available.append(col)
+        else:
+            dropped.append(col)
+    return available, dropped
 
 
 def likert_binary(series: pd.Series) -> pd.Series:
@@ -206,7 +231,7 @@ def prepare_variables(df: pd.DataFrame) -> pd.DataFrame:
     prepared["gendermale"] = numeric_series(prepared["gendermale"])
     prepared["cis"] = numeric_series(prepared["cis"])
     prepared["wz901dj_score"] = numeric_series(prepared["wz901dj"])
-    prepared["externalreligion_ord"] = encode_ordered_text(
+    prepared["externalreligion_ord"] = ordinal_numeric_or_text(
         prepared["externalreligion"], RELIGION_ORDER
     )
     prepared["pqo6jmj_score"] = numeric_series(prepared["pqo6jmj"])
@@ -254,8 +279,8 @@ def expected_score_difference(
     exog_high: np.ndarray,
     levels: list[float],
 ) -> float:
-    probs_low = result.predict(params=params, exog=exog_low, which="prob")
-    probs_high = result.predict(params=params, exog=exog_high, which="prob")
+    probs_low = result.model.predict(params, exog_low, which="prob")
+    probs_high = result.model.predict(params, exog_high, which="prob")
     level_values = np.asarray(levels, dtype=float)
     expected_low = np.dot(probs_low, level_values)
     expected_high = np.dot(probs_high, level_values)
@@ -269,8 +294,8 @@ def probability_difference(
     exog_high: np.ndarray,
     target_codes: Sequence[int],
 ) -> float:
-    probs_low = result.predict(params=params, exog=exog_low, which="prob")
-    probs_high = result.predict(params=params, exog=exog_high, which="prob")
+    probs_low = result.model.predict(params, exog_low, which="prob")
+    probs_high = result.model.predict(params, exog_high, which="prob")
     low_total = probs_low[:, target_codes].sum(axis=1)
     high_total = probs_high[:, target_codes].sum(axis=1)
     return float(np.mean(high_total - low_total))
@@ -293,29 +318,22 @@ def summarize_effect(samples: list[float], point_estimate: float) -> dict[str, f
 
 
 def run_h1(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
-    cols = [
-        "wz901dj_score",
-        "externalreligion_ord",
+    base_cols = ["wz901dj_score", "externalreligion_ord"]
+    control_candidates = [
         "selfage",
         "biomale",
         "gendermale",
         "cis",
         "classchild_score",
     ]
+    available_controls, dropped_controls = select_controls(df, control_candidates)
+    cols = base_cols + available_controls
     data = df[cols].dropna()
+    if data.empty:
+        raise ValueError("H1 data frame is empty after dropping missing values.")
     y_codes, levels = encode_ordered_outcome(data["wz901dj_score"])
-    exog = add_constant(
-        data[
-            [
-                "externalreligion_ord",
-                "selfage",
-                "biomale",
-                "gendermale",
-                "cis",
-                "classchild_score",
-            ]
-        ]
-    )
+    design_cols = ["externalreligion_ord"] + available_controls
+    exog = data[design_cols].copy()
     model = OrderedModel(y_codes, exog, distr="logit")
     result = model.fit(method="bfgs", disp=False, maxiter=1000)
     exog_low = exog.copy()
@@ -349,7 +367,8 @@ def run_h1(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
         "model": "ordered_logit",
         "outcome": "wz901dj_score",
         "predictor": "externalreligion_ord",
-        "controls": ["selfage", "biomale", "gendermale", "cis", "classchild_score"],
+        "controls": available_controls,
+        "dropped_controls": dropped_controls,
         "n_analytic": diagnostics["nobs"],
         "effect_metric": "ΔE[depression score | religion very important vs not important]",
         "effect": effect_summary,
@@ -366,9 +385,8 @@ def run_h1(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
 
 
 def run_h2(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
-    cols = [
-        "okq5xh8_ord",
-        "pqo6jmj_score",
+    base_cols = ["okq5xh8_ord", "pqo6jmj_score"]
+    control_candidates = [
         "selfage",
         "biomale",
         "gendermale",
@@ -376,21 +394,14 @@ def run_h2(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
         "classteen_score",
         "mentalillness",
     ]
+    available_controls, dropped_controls = select_controls(df, control_candidates)
+    cols = base_cols + available_controls
     data = df[cols].dropna()
+    if data.empty:
+        raise ValueError("H2 data frame is empty after dropping missing values.")
     y_codes, levels = encode_ordered_outcome(data["okq5xh8_ord"])
-    exog = add_constant(
-        data[
-            [
-                "pqo6jmj_score",
-                "selfage",
-                "biomale",
-                "gendermale",
-                "classcurrent_score",
-                "classteen_score",
-                "mentalillness",
-            ]
-        ]
-    )
+    design_cols = ["pqo6jmj_score"] + available_controls
+    exog = data[design_cols].copy()
     model = OrderedModel(y_codes, exog, distr="logit")
     result = model.fit(method="bfgs", disp=False, maxiter=1000)
     observed_vals = sorted(set(data["pqo6jmj_score"].dropna().unique()))
@@ -429,14 +440,8 @@ def run_h2(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
         "model": "ordered_logit",
         "outcome": "okq5xh8_ord",
         "predictor": "pqo6jmj_score",
-        "controls": [
-            "selfage",
-            "biomale",
-            "gendermale",
-            "classcurrent_score",
-            "classteen_score",
-            "mentalillness",
-        ],
+        "controls": available_controls,
+        "dropped_controls": dropped_controls,
         "n_analytic": diagnostics["nobs"],
         "effect_metric": "ΔPr(health ∈ {very good, excellent}) | guidance Q3 vs Q1",
         "effect": effect_summary,

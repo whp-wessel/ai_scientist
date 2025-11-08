@@ -1,0 +1,719 @@
+variable,dtype,n_missing,n_obs,pct_missing
+Unnamed: 0,int64,0,14443,0.0
+Your age? (hcdfzjj),float64,7,14436,0.0004846638510004847
+selfage,float64,0,14443,0.0
+Which category fits you best? (4790ydl),object,15,14428,0.0010385653950010386
+biomale,float64,0,14443,0.0
+gendermale,float64,0,14443,0.0
+cis,float64,0,14443,0.0
+gendered,float64,0,14443,0.0
+Your ethnicity (m5fn9m8),object,15,14428,0.0010385653950010386
+You got to this survey from: (9526n7w),object,5694,8749,0.39423942394239425
+"Politically speaking, you tend to be more: (zfl7xsu)",object,12,14431,0.0008308523160008308
+liberal,float64,0,14443,0.0
+What country do you live in? (4bxk14u),object,20,14423,0.0013847538600013848
+education,float64,0,14443,0.0
+How many people have you had sex with? (ewvvaz2),float64,106,14337,0.007339195458007339
+Do you *currently* actively practice a religion? (902tbll),object,6,14437,0.0004154261580004154
+religion,float64,0,14443,0.0
+What religion did you grow up in? (5sb109c),object,3554,10889,0.24607076092224608
+Religionchildhood,float64,14443,0,1.0
+"In your childhood, how important was adherence to the religion? For example: tithing, praying, attending church, having a righteous heart, etc. (xvlgpp5)",object,6,14437,0.0004154261580004154
+externalreligion,float64,0,14443,0.0
+Your current monogamy/nonmonogamy preference? (27iua3o),object,7,14436,0.0004846638510004847
+monogamy,float64,0,14443,0.0
+You are currently: (m5tjvul),object,7,14436,0.0004846638510004847
+classcurrent,float64,0,14443,0.0
+Your CURRENT net worth is closest to (nhoz8ia),object,7,14436,0.0004846638510004847
+networth,float64,0,14443,0.0
+Have you been diagnosed with any of the following (njjh37w),object,14221,222,0.9846292321539847
+mentalillness,float64,14443,0,1.0
+What's your height? (ifvg2z6),object,6,14437,0.0004154261580004154
+height,float64,0,14443,0.0
+Your weight is closest to: (n0iwzg0),object,6,14437,0.0004154261580004154
+weight,float64,0,14443,0.0
+How many siblings did you grow up with? (vnz8rpg),object,6,14437,0.0004154261580004154
+siblingnumber,float64,0,14443,0.0
+You were the ___ child among your siblings (bzwk2ab),object,2571,11872,0.17801010870317802
+birthorder,float64,2567,11876,0.17773315793117772
+Your siblings are mostly (h27qwus),object,2570,11873,0.17794087101017794
+siblingsmostlymale,float64,2567,11876,0.17773315793117772
+"In general, you'd say your health is (okq5xh8)",object,6,14437,0.0004154261580004154
+"In the past *4 weeks*, you've had difficulty accomplishing things in work or social activities due to *emotional issues* (such as depression, anxiety, etc) (kd4qc3z)",float64,6,14437,0.0004154261580004154
+"In the past *4 weeks*, you've had difficulty accomplishing things in work or social activities due to *physical pain* (gl33rp)",float64,6,14437,0.0004154261580004154
+Randomize (h0e00cq),object,14060,383,0.9734819635809735
+I tend to suffer from anxiety (npvfh98)-neg,float64,6,14437,0.0004154261580004154
+If I could take all of the possibility of pain out of suicide I would commit suicide immediately (f1jx1k6)-neg,float64,7,14436,0.0004846638510004847
+"On average, I am happier as an adult than I was in childhood (h33e6gg)",float64,7,14436,0.0004846638510004847
+I tend to be calm/peaceful (6e6zhy3),float64,7,14436,0.0004846638510004847
+"In general, people in my *current* social circles tend treat me really well (tmt46e6)",float64,14060,383,0.9734819635809735
+Have you ever had a sexual experience with someone else who did not want the experience? (2zafc2j),object,6,14437,0.0004154261580004154
+rapist,float64,0,14443,0.0
+I love myself (2l8994l),float64,7,14436,0.0004846638510004847
+I am satisfied with my romantic relationships (hp9qz6f),float64,6,14437,0.0004154261580004154
+I am not happy (ix5iyv3)-neg,float64,5,14438,0.0003461884650003462
+I tend to suffer from depression (wz901dj),float64,5,14438,0.0003461884650003462
+I am satisfied with my work/career life (or lack thereof) (z0mhd63),float64,7,14436,0.0004846638510004847
+I'm quite sensitive to stress (qhyti2r)-neg,float64,6,14437,0.0004154261580004154
+"When you were a teen (13-18 years old), your family was (uky2ksa)",object,7,14436,0.0004846638510004847
+classteen,float64,0,14443,0.0
+I'm happy with my appearance (39kxhhw),float64,6,14437,0.0004154261580004154
+I tend to worry about things (t3iepz)-neg,float64,5,14438,0.0003461884650003462
+The people I'm attracted to tend to be bad for me (b0cqh8o)-neg,float64,6,14437,0.0004154261580004154
+"If life is a game, I'm losing (vghiiks)-neg",float64,6,14437,0.0004154261580004154
+You can't get very rich without exploitation (yefqivu)-neg,float64,5,14438,0.0003461884650003462
+My friendships often end due to fights or disagreements (etzc5r8),float64,7,14436,0.0004846638510004847
+"When you were a child (0-12 years old), your family was (hxyr6oa)",object,7,14436,0.0004846638510004847
+classchild,float64,0,14443,0.0
+I tend to have a lot of energy (gczsvvo),float64,6,14437,0.0004154261580004154
+I tend to be unlucky (aw0j47x)-neg,float64,5,14438,0.0003461884650003462
+Randomize (huuzv1n),object,14386,57,0.996053451498996
+during ages *0-12*:  women's ideal role viewed as housewives (hb8a7oz),float64,22,14421,0.0015232292460015233
+during ages *13-18*:  women's ideal role viewed as housewives (7r6pi33),float64,22,14421,0.0015232292460015233
+during ages *0-12*: you felt as though you were 'at war' with yourself in trying to be a good person (wtolilk),float64,9,14434,0.0006231392370006231
+during ages *13-18*: you felt as though you were 'at war' with yourself in trying to be a good person (gitjzck),float64,9,14434,0.0006231392370006231
+"during ages *0-12*:  family/culture had hilarious joking, goofing around, pranks, tomfoolery (qnzuq5n)",float64,24,14419,0.0016617046320016617
+"during ages *13-18*:  family/culture had hilarious joking, goofing around, pranks, tomfoolery (i1g8u4j)",float64,24,14419,0.0016617046320016617
+during ages *0-12*: your parents verbally or emotionally abused you (mds78zu),float64,17,14426,0.001177040781001177
+during ages *13-18*: your parents verbally or emotionally abused you (v1k988q),float64,17,14426,0.001177040781001177
+during ages *0-12*: your mother (or other household member) was verbally or emotionally abusive towards your father (cwezk1r),float64,7,14436,0.0004846638510004847
+during ages *13-18*: your mother (or other household member) was verbally or emotionally abusive towards your father (aae6xmc),float64,7,14436,0.0004846638510004847
+during ages *0-12*: intellectual or academic parents/culture (i1hm770),float64,12,14431,0.0008308523160008308
+during ages *13-18*: intellectual or academic parents/culture (ufd3nkh),float64,12,14431,0.0008308523160008308
+during ages *0-12*:  you spent time on the internet or computers (4tuoqly),float64,15,14428,0.0010385653950010386
+during ages *13-18*:  you spent time on the internet or computers (hc92nmp),float64,15,14428,0.0010385653950010386
+during ages *0-12*: Your parents gave useful guidance (pqo6jmj),float64,12,14431,0.0008308523160008308
+during ages *13-18*: Your parents gave useful guidance (dcrx5ab),float64,12,14431,0.0008308523160008308
+during ages *0-12*:  taught a purity culture that encouraged abstinance/waiting until marriage (wgbq7hv),float64,13,14430,0.0009000900090009
+during ages *13-18*:  taught a purity culture that encouraged abstinance/waiting until marriage (wxgm38d),float64,13,14430,0.0009000900090009
+during ages *0-12*: you were taught to shoot a gun (zwyt3an),float64,15,14428,0.0010385653950010386
+during ages *13-18*: you were taught to shoot a gun (27ykfsa),float64,15,14428,0.0010385653950010386
+during ages *0-12*:  you were depressed (dfqbzi5),float64,15,14428,0.0010385653950010386
+during ages *13-18*:  you were depressed (n4jefor),float64,15,14428,0.0010385653950010386
+during ages *0-12*:  Parents divorcing/separating (jib24si),float64,26,14417,0.0018001800180018
+during ages *13-18*:  Parents divorcing/separating (o47i7yr),float64,26,14417,0.0018001800180018
+during ages *0-12*: parents monitored/restricted your media intake to wholesome stuff; nothing disturbing or obscene (vdounnv),float64,12,14431,0.0008308523160008308
+during ages *13-18*: parents monitored/restricted your media intake to wholesome stuff; nothing disturbing or obscene (3jmhhnr),float64,12,14431,0.0008308523160008308
+during ages *0-12*:  you struggled with learning in school in the ways people tried to teach you (64toj15),float64,16,14427,0.0011078030880011078
+during ages *13-18*:  you struggled with learning in school in the ways people tried to teach you (wlavhx2),float64,16,14427,0.0011078030880011078
+during ages *0-12*: Your parents were college/university educated (bldnfrx),float64,23,14420,0.0015924669390015925
+during ages *13-18*: Your parents were college/university educated (xtih0u0),float64,17,14426,0.001177040781001177
+during ages *0-12*:  your father was present to raise you (njm8uo),float64,18,14425,0.0012462784740012462
+during ages *13-18*:  your father was present to raise you (5bjhazr),float64,18,14425,0.0012462784740012462
+during ages *0-12*: you had more than two parents (c2i84u1),float64,7,14436,0.0004846638510004847
+during ages *13-18*: you had more than two parents (6jumdsv),float64,11,14432,0.0007616146230007616
+during ages *0-12*:  obedience was a virtue (3rg3bfh),float64,23,14420,0.0015924669390015925
+during ages *13-18*:  obedience was a virtue (q6j0vlb),float64,22,14421,0.0015232292460015233
+during ages *0-12*:  you were neglected/abandoned by those responsible for caring for you (as6jptn),float64,22,14421,0.0015232292460015233
+during ages *13-18*:  you were neglected/abandoned by those responsible for caring for you (yfewkqw),float64,22,14421,0.0015232292460015233
+during ages *0-12*: adults yelled at you (jprgrjs),float64,21,14422,0.001453991553001454
+during ages *13-18*: adults yelled at you (mijy9y6),float64,21,14422,0.001453991553001454
+"during ages *0-12*: parents were well connected, socialites, friends with successful, popular, or famous people (9gwrelx)",float64,10,14433,0.0006923769300006924
+"during ages *13-18*: parents were well connected, socialites, friends with successful, popular, or famous people (7jcu4s2)",float64,10,14433,0.0006923769300006924
+during ages *0-12*:  you went to therapy (fttrznb),float64,14,14429,0.0009693277020009694
+during ages *13-18*:  you went to therapy (zvgrlm6),float64,16,14427,0.0011078030880011078
+during ages *0-12*: people expected gendered norms of you that you hated (poanjy1),float64,10,14433,0.0006923769300006924
+during ages *13-18*: people expected gendered norms of you that you hated (56d7ur3),float64,10,14433,0.0006923769300006924
+during ages *0-12*:  you played outside (fdbgui7),float64,21,14422,0.001453991553001454
+during ages *13-18*:  you played outside (hiqs5dg),float64,21,14422,0.001453991553001454
+during ages *0-12*:  a parent abandoned the family (xl1ltr4),float64,18,14425,0.0012462784740012462
+during ages *13-18*:  a parent abandoned the family (e70vzvx),float64,18,14425,0.0012462784740012462
+during ages *0-12*:  people in your social circles believed false rumors about you (oms8g9c),float64,12,14431,0.0008308523160008308
+during ages *13-18*:  people in your social circles believed false rumors about you (zyjlttl),float64,12,14431,0.0008308523160008308
+during ages *0-12*: your parents were predictable (htdvkhf)-neg,float64,15,14428,0.0010385653950010386
+during ages *13-18*: your parents were predictable (nakf0pj)-neg,float64,13,14430,0.0009000900090009
+during ages *0-12*: your father (or other household member) was verbally or emotionally abusive towards your mother (kforx7i),float64,13,14430,0.0009000900090009
+during ages *0-12*:  taught evolution was a lie (1j6zu1x),float64,13,14430,0.0009000900090009
+during ages *13-18*:  taught evolution was a lie (7rtalpn),float64,13,14430,0.0009000900090009
+"during ages *0-12*:  your family was physically affectionate (hugging, snuggling) (sgfjz8v)",float64,18,14425,0.0012462784740012462
+during ages *13-18*: your father (or other household member) was verbally or emotionally abusive towards your mother (hioeijg),float64,13,14430,0.0009000900090009
+"during ages *13-18*: your family was physically affectionate (hugging, snuggling) (siags64)",float64,18,14425,0.0012462784740012462
+"during ages *0-12*: you were required to participate in religious customs (e.g., church attendance) (shlon3y)",float64,18,14425,0.0012462784740012462
+"during ages *13-18*: you were required to participate in religious customs (e.g., church attendance) (nzimvfd)",float64,18,14425,0.0012462784740012462
+during ages *0-12*: food scarcity; difficulty affording food; food stamps (zchx4kc)-neg,float64,17,14426,0.001177040781001177
+during ages *13-18*: food scarcity; difficulty affording food; food stamps (ku6vyr0)-neg,float64,17,14426,0.001177040781001177
+during ages *0-12*: your time was wasted (1nijzjy),float64,24,14419,0.0016617046320016617
+during ages *13-18*: your time was wasted (4ysi5zp),float64,24,14419,0.0016617046320016617
+"during ages *0-12*:  allowed exposure to risk; e.g. climbing on tall things, walking around alone (niqjvh1)",float64,13,14430,0.0009000900090009
+"during ages *13-18*:  allowed exposure to risk; e.g. climbing on tall things, walking around alone (xn85zt8)",float64,13,14430,0.0009000900090009
+during ages *0-12*: men's ideal role viewed as family providers (aoo2vx3),float64,21,14422,0.001453991553001454
+during ages *0-12*:  you got drunk (mbxkg7j),float64,13,14430,0.0009000900090009
+during ages *13-18*:  you got drunk (b6vyqlk),float64,11,14432,0.0007616146230007616
+during ages *0-12*:  raised in a pretty classic nuclear family structure (g6m31do),float64,8,14435,0.0005539015440005539
+during ages *13-18*:  raised in a pretty classic nuclear family structure (61d54bt),float64,8,14435,0.0005539015440005539
+during ages *13-18*: men's ideal role viewed as family providers (r6q2qwi),float64,21,14422,0.001453991553001454
+"during ages *0-12*:  you were romantically successful; crushes reciprocated, you were in demand (qhb6v2v)",float64,17,14426,0.001177040781001177
+during ages *0-12*:  parents had a bad relationship (sb86zy),float64,20,14423,0.0013847538600013848
+"during ages *13-18*:  you were romantically successful; crushes reciprocated, you were in demand (4aovncq)",float64,17,14426,0.001177040781001177
+during ages *13-18*:  parents had a bad relationship (e6ai05u),float64,20,14423,0.0013847538600013848
+during ages *0-12*:  you had (consensual) sex (7784x69),float64,29,14414,0.0020078930970020077
+"during ages *0-12*: your parents physically disciplined you in an irregular, emotionally expressive way (lbpper6)",float64,13,14430,0.0009000900090009
+during ages *13-18*:  you had (consensual) sex (rtud9y2),float64,24,14419,0.0016617046320016617
+"during ages *13-18*: your parents physically disciplined you in an irregular, emotionally expressive way (xh5z34y)",float64,10,14433,0.0006923769300006924
+during ages *0-12*:  you had adventures (3msolzo),float64,12,14431,0.0008308523160008308
+during ages *13-18*:  you had adventures (cvceprh),float64,12,14431,0.0008308523160008308
+during ages *0-12*:  at least one parent had short-term romantic partners (chr5szn),float64,20,14423,0.0013847538600013848
+during ages *13-18*:  at least one parent had short-term romantic partners (7y40480),float64,20,14423,0.0013847538600013848
+during ages *0-12*:  you did party drugs (6ohar7k),float64,20,14423,0.0013847538600013848
+during ages *13-18*:  you did party drugs (7i90dp3),float64,20,14423,0.0013847538600013848
+during ages *0-12*:  your parents attempted to prevent you accessing porn or erotica (vmtc8pa),float64,20,14423,0.0013847538600013848
+during ages *13-18*:  your parents attempted to prevent you accessing porn or erotica (mxqi756),float64,21,14422,0.001453991553001454
+"during ages *0-12*: you attended camps (e.g., summer camp) (du72lg3)",float64,14,14429,0.0009693277020009694
+"during ages *13-18*: you attended camps (e.g., summer camp) (tx741yw)",float64,14,14429,0.0009693277020009694
+during ages *0-12*: Your family culture was loud and confrontational (2ihuvq9),float64,18,14425,0.0012462784740012462
+during ages *13-18*: Your family culture was loud and confrontational (jvkx3f8),float64,18,14425,0.0012462784740012462
+during ages *0-12*: at least one parent respected you (q9imtj7),float64,14,14429,0.0009693277020009694
+during ages *0-12*: your family was poorer/lower class than other people in your social groups (2evd0jx)-neg,float64,21,14422,0.001453991553001454
+during ages *13-18*: your family was poorer/lower class than other people in your social groups (vcwnzdr)-neg,float64,22,14421,0.0015232292460015233
+during ages *13-18*: at least one parent respected you (gpyx1z0),float64,14,14429,0.0009693277020009694
+during ages *0-12*: Taking regular family vacations (cs8xu8s),float64,14,14429,0.0009693277020009694
+during ages *13-18*: Taking regular family vacations (dg51ao4),float64,14,14429,0.0009693277020009694
+during ages *0-12*: you felt unconditionally loved (xtrwcp7),float64,12,14431,0.0008308523160008308
+during ages *13-18*: you felt unconditionally loved (wa9yb85),float64,12,14431,0.0008308523160008308
+during ages *0-12*: your parents were honest with you (g7cvke8),float64,11,14432,0.0007616146230007616
+during ages *13-18*: your parents were honest with you (h5w84b8),float64,11,14432,0.0007616146230007616
+during ages *0-12*: adults apologized to you if they wronged you (1k0qepc),float64,19,14424,0.0013155161670013154
+during ages *13-18*: adults apologized to you if they wronged you (fnrdtek),float64,19,14424,0.0013155161670013154
+Did you experience any sexual abuse during your childhood? (rwp3xhm),object,8777,5666,0.6076992314616076
+during ages *0-12*: a household member sexually abused you in a way *included* genital penetration or envelopment (949atsn),float64,10476,3967,0.7253340718687253
+during ages *13-18*: a household member sexually abused you in a way *included* genital penetration or envelopment (9gt6rwm),float64,10511,3932,0.7277573911237277
+"during ages *0-12*: someone who *wasn't* a member of your household, sexually abused you in a way *included* genital penetration or envelopment (hip3dig)",float64,10532,3911,0.7292113826767292
+"during ages *13-18*: someone who *wasn't* a member of your household, sexually abused you in a way *included* genital penetration or envelopment (sufe6jl)",float64,10539,3904,0.7296960465277297
+Was this your first time taking this survey? (14f8hir),object,17,14426,0.001177040781001177
+mentalillnesssize,float64,0,14443,0.0
+during ages *0-12*: household member sexually abused you in a way that *didn't* include genital penetration or envelopment (8e543i4),float64,10566,3877,0.7315654642387316
+during ages *13-18*: household member sexually abused you in a way that *didn't* include genital penetration or envelopment (om03lcb),float64,10567,3876,0.7316347019317316
+"during ages *0-12*: someone who *wasn't* a member of your household, sexually abused you in a way that *didn't* include genital penetration or envelopment (al7busg)",float64,10578,3865,0.7323963165547324
+"during ages *13-18*: someone who *wasn't* a member of your household, sexually abused you in a way that *didn't* include genital penetration or envelopment (80b4z2h)",float64,10580,3863,0.7325347919407326
+"during ages *0-12*, did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened? (73eocvf)",object,10594,3849,0.7335041196427335
+"during ages *0-12*: did the sexual abuse result in fear or pain *later in life*, some time after it happened? (xdc9lkf)",object,10596,3847,0.7336425950287336
+"during ages *13-18*: did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened? (ol4fu6j)",object,10605,3838,0.7342657342657343
+"during ages *13-18*: did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened?",float64,12422,2021,0.8600706224468601
+"during ages *13-18*: did the sexual abuse result in fear or pain *later in life*, some time after it happened? (xri3uj6)",object,10605,3838,0.7342657342657343
+"during ages *13-18*: did the sexual abuse result in fear or pain *later in life*, some time after it happened?",float64,11244,3199,0.7785086200927785
+"during ages *0-12*, did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened?",float64,11725,2718,0.8118119504258118
+Randomize (3ar9oda),object,13267,1176,0.9185764730319186
+during ages *0-12*: you were homeschooled (sv52lgb),float64,78,14365,0.0054005400540054005
+during ages *13-18*: you were homeschooled (u1v5jkk),float64,78,14365,0.0054005400540054005
+Have you been diagnosed with any of the following (aqulw9j),object,5685,8758,0.3936162847053936
+Randomize (x50ecxr),object,7628,6815,0.5281451222045281
+"In general, people in my *current* social circles tend to treat me really well (71mn55g)",float64,389,14054,0.026933462577026935
+Randomize (6s7u9a5),object,11703,2740,0.8102887211798103
+during ages *0-12*: your parents physically disciplined you (641c8ag),float64,1249,13194,0.08647787855708648
+during ages *13-18*: your parents physically disciplined you (nn63mmh),float64,1249,13194,0.08647787855708648
+Do you have memories of being potty trained? (yn03pcu),object,2970,11473,0.20563594821020564
+potty,float64,2968,11475,0.2054974728242055
+At what age did you learn to read? (mjd6xk9),object,2970,11473,0.20563594821020564
+read,float64,2968,11475,0.2054974728242055
+Do you remember learning how to read? (5xolor7),object,2971,11472,0.20570518590320572
+readmemory,float64,2968,11475,0.2054974728242055
+What religion do you currently practice? (v2eoigz),object,10857,3586,0.7517136329017517
+Religioncurrent,float64,14443,0,1.0
+What's your attachment style? (99u3asf),object,10607,3836,0.7344042096517344
+Randomize (b97iigm),object,10323,4120,0.7147407048397147
+during ages *0-12*: you were bullied by other children (bn5lz62),float64,3980,10463,0.2755660181402756
+during ages *13-18*: you were bullied by other children (4dutkba),float64,3984,10459,0.27584296891227583
+Relationships_RelationshipStatus_Binary,float64,14443,0,1.0
+t,float64,14443,0,1.0
+How honest were you in this survey? (dtttq5i),object,5016,9427,0.3472962680883473
+honest,float64,5008,9435,0.34674236654434676
+"during ages *0-12*: did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate (e.g., physical force, blackmailing, threats) (wg9z1ax)",object,12571,1872,0.8703870387038704
+"during ages *0-12*: did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate (e.g., physical force, blackmailing, threats)",float64,12569,1874,0.8702485633178703
+"during ages *0-12*: did the sexual assault involve rewards? This means the use of positive outcomes if you did participate (e.g., candy, gifts, compliments) (9wze15a)",object,12571,1872,0.8703870387038704
+"during ages *0-12*: did the sexual assault involve rewards? This means the use of positive outcomes if you did participate (e.g., candy, gifts, compliments)",float64,12569,1874,0.8702485633178703
+"during ages *13-18*: did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate (e.g., physical force, blackmailing, threats) (vmfp2re)",object,13006,1437,0.9005054351589005
+"during ages *13-18*: did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate (e.g., physical force, blackmailing, threats)",float64,13006,1437,0.9005054351589005
+"during ages *13-18*: did the sexual assault involve rewards? This means the use of positive outcomes if you did participate (e.g., candy, gifts, compliments) (3ifzuv6)",object,13006,1437,0.9005054351589005
+"during ages *13-18*: did the sexual assault involve rewards? This means the use of positive outcomes if you did participate (e.g., candy, gifts, compliments)",float64,13006,1437,0.9005054351589005
+Did you experience any sexual abuse during your childhood? (touu2yy),object,12773,1670,0.8843730526898844
+"*Ages 0-18*: In general, how much did your *household culture* take sexual assault seriously, whether they knew about your experience or not? (7f841i6)",object,11929,2514,0.8259364397978259
+"*Ages 0-18*: In general, how much did your *household culture* take sexual assault seriously, whether they knew about your experience or not? ",float64,11927,2516,0.8257979644118258
+"*Ages 19+* In general, how much did your *adult culture after leaving home* take sexual assault seriously, whether they knew about your experience or not? (f7ncrem)",object,11929,2514,0.8259364397978259
+"*Ages 19+* In general, how much did your *adult culture after leaving home* take sexual assault seriously, whether they knew about your experience or not? ",float64,11927,2516,0.8257979644118258
+What's your attachment style? (pavnqzq),object,7204,7239,0.4987883403724988
+Randomize (zg7jry3),object,7204,7239,0.4987883403724988
+"In general, the quality of my childhood has had a big impact on my quality of life today (kowcwaq)",float64,7203,7240,0.4987191026794987
+Did you experience any sexual abuse during your childhood? (vd1t28a),object,7350,7093,0.5088970435505089
+"*At the time* of your sexual assault, what was your impression of the attitudes of people around you about the incident? (hdc5kb6)",object,12426,2017,0.8603475732188604
+"*At the time* of your sexual assault, what was your impression of the attitudes of people around you about the incident?",float64,12425,2018,0.8602783355258603
+"*Later in life*, some time after your sexual assault (e.g., telling others your history after you became an adult), what were the attitudes of people around you about the incident? (5ssbuqn)",object,12431,2012,0.8606937616838607
+"*Later in life*, some time after your sexual assault (e.g., telling others your history after you became an adult), what were the attitudes of people around you about the incident?",float64,12430,2013,0.8606245239908606
+frequency,float64,14443,0,1.0
+Randomize (dgu0bfj),object,13583,860,0.9404555840199404
+during ages *0-12*: Your parents used calm/controlled/predictable spankings as a form of discipline (6c6ckue),float64,8100,6343,0.5608253133005608
+calmspank,float64,8099,6344,0.5607560756075608
+during ages *13-18*: Your parents used calm/controlled/predictable  spankings as a form of discipline (tfvn9b5),float64,8100,6343,0.5608253133005608
+calmspankb,float64,8099,6344,0.5607560756075608
+during ages *0-12*: Your parents used angry/uncontrolled/unpredictable spankings as a form of discipline (zw8ffk9),float64,8100,6343,0.5608253133005608
+angryspank,float64,8099,6344,0.5607560756075608
+during ages *13-18*: Your parents used angry/uncontrolled/unpredictable spankings as a form of discipline (br1z95g),float64,8100,6343,0.5608253133005608
+angryspankb,float64,8099,6344,0.5607560756075608
+Health_Alcohol_Binary,float64,14443,0,1.0
+finalpointsb,float64,14443,0,1.0
+You got to this survey from: (6vvub3w),object,8760,5683,0.6065221906806065
+How familiar are you with Aella? (hd32ija),object,8761,5682,0.6065914283736066
+aella,float64,8757,5686,0.6063144776016063
+Are you sexually aroused by BDSM? (feaxr10),object,8959,5484,0.6203004915876204
+vdsm,float64,13135,1308,0.9094370975559094
+bdsm,float64,10253,4190,0.7098940663297099
+Randomize (bikf6k7),object,8959,5484,0.6203004915876204
+during ages *0-12*: at least one of your parents was ethically nonmonogamous (cheating does NOT count) (t12p530),float64,8960,5483,0.6203697292806204
+etc8,float64,8959,5484,0.6203004915876204
+during ages *13-18*: at least one of your parents was ethically nonmonogamous (cheating does NOT count) (qxwh947),float64,8960,5483,0.6203697292806204
+etc8b,float64,8959,5484,0.6203004915876204
+Experiment (Threat Experiment),float64,14443,0,1.0
+start_time,float64,14443,0,1.0
+program_name,float64,14443,0,1.0
+program_tag,float64,14443,0,1.0
+program_version,float64,14443,0,1.0
+country,float64,14443,0,1.0
+selection_warning,float64,14443,0,1.0
+rut_warning,float64,14443,0,1.0
+server_warning,float64,14443,0,1.0
+accept_terms,float64,14443,0,1.0
+pre_RUT,float64,14443,0,1.0
+clean_RUT,float64,14443,0,1.0
+name,float64,14443,0,1.0
+surname,float64,14443,0,1.0
+email,float64,14443,0,1.0
+jobtitle,float64,14443,0,1.0
+razon_social,float64,14443,0,1.0
+company,float64,14443,0,1.0
+website,float64,14443,0,1.0
+region_short,float64,14443,0,1.0
+region_long,float64,14443,0,1.0
+ecommerce_short,float64,14443,0,1.0
+size_long,float64,14443,0,1.0
+size_short,float64,14443,0,1.0
+sector,float64,14443,0,1.0
+subsector,float64,14443,0,1.0
+export,float64,14443,0,1.0
+certif_need_YN,float64,14443,0,1.0
+certif_need_which,float64,14443,0,1.0
+certif_need_other,float64,14443,0,1.0
+certif_has_YN,float64,14443,0,1.0
+certif_has_which,float64,14443,0,1.0
+certif_has_other,float64,14443,0,1.0
+innovation_long,float64,14443,0,1.0
+innovation_short,float64,14443,0,1.0
+gobernanza_which,float64,14443,0,1.0
+gobernanza_other,float64,14443,0,1.0
+mujeres,float64,14443,0,1.0
+pueb_orig_YN,float64,14443,0,1.0
+pueb_orig_which,float64,14443,0,1.0
+cumplimiento_long,float64,14443,0,1.0
+cumplimiento_short,float64,14443,0,1.0
+cumplimiento_flag,float64,14443,0,1.0
+conflicto_YN,float64,14443,0,1.0
+conflicto_flag,float64,14443,0,1.0
+plan_have_long,float64,14443,0,1.0
+plan_have_short,float64,14443,0,1.0
+pts_mgt,float64,14443,0,1.0
+plan_public_flag,float64,14443,0,1.0
+plan_unknown_flag,float64,14443,0,1.0
+plan_link,float64,14443,0,1.0
+themes_in_plan,float64,14443,0,1.0
+themes_in_plan_other,float64,14443,0,1.0
+indicators_in_plan_YN,float64,14443,0,1.0
+indicators_in_plan_list,float64,14443,0,1.0
+indicators_out_plan_YN,float64,14443,0,1.0
+pts_ind,float64,14443,0,1.0
+indicators_out_plan_list,float64,14443,0,1.0
+indicators_out_plan_other,float64,14443,0,1.0
+indicators_next_goal,float64,14443,0,1.0
+indicators_last_measured,float64,14443,0,1.0
+indicators_measured,float64,14443,0,1.0
+indicators_scope,float64,14443,0,1.0
+indicators_scope_size,float64,14443,0,1.0
+indicators_next_goal_long,float64,14443,0,1.0
+indicators_last_measured_long,float64,14443,0,1.0
+scope_reach,float64,14443,0,1.0
+pts_prov,float64,14443,0,1.0
+proveedores_desarrollo_YN,float64,14443,0,1.0
+proveedores_desarrollo_text,float64,14443,0,1.0
+proveedores_criterio_YN,float64,14443,0,1.0
+proveedores_criterio_type,float64,14443,0,1.0
+proveedores_criterios_link,float64,14443,0,1.0
+prov_themes,float64,14443,0,1.0
+prov_themes_other,float64,14443,0,1.0
+certif_ask_YN,float64,14443,0,1.0
+certif_ask_which,float64,14443,0,1.0
+certif_ask_other,float64,14443,0,1.0
+eol_answer_long,float64,14443,0,1.0
+eol_answer_short,float64,14443,0,1.0
+pts_fdv,float64,14443,0,1.0
+eol_proof_answer,float64,14443,0,1.0
+eol_themes,float64,14443,0,1.0
+eol_themes_other,float64,14443,0,1.0
+total,float64,14443,0,1.0
+no_sabe_cnt,float64,14443,0,1.0
+metrica_loop_indexes,float64,14443,0,1.0
+prev_label,float64,14443,0,1.0
+gt,float64,14443,0,1.0
+lt,float64,14443,0,1.0
+sqbo,float64,14443,0,1.0
+sqbc,float64,14443,0,1.0
+cbo,float64,14443,0,1.0
+cbc,float64,14443,0,1.0
+star,float64,14443,0,1.0
+lifescore,float64,14443,0,1.0
+hotscore,float64,14443,0,1.0
+sexscore,float64,14443,0,1.0
+matchscore,float64,14443,0,1.0
+charscore,float64,14443,0,1.0
+in_GCF_benefits,float64,14443,0,1.0
+in_GCF_procedures,float64,14443,0,1.0
+in_GCF_duration,float64,14443,0,1.0
+in_GCF_additional,float64,14443,0,1.0
+in_GCF_customized_confidentiality,float64,14443,0,1.0
+in_GCF_customized_withdrawal,float64,14443,0,1.0
+in_GCF_contactInfo,float64,14443,0,1.0
+in_GCF_organization,float64,14443,0,1.0
+in_GCF_ethicsEmail,float64,14443,0,1.0
+bonus_prominent_pre_consent_statement,float64,14443,0,1.0
+in_GCF_approvalNumber,float64,14443,0,1.0
+Culture_EthnicityAsian_Binary,float64,14443,0,1.0
+Culture_EthnicityBlack_Binary,float64,14443,0,1.0
+Culture_EthnicityLatino_Binary,float64,14443,0,1.0
+Culture_EthnicityMiddleEastern_Binary,float64,14443,0,1.0
+Culture_EthnicityMixed_Binary,float64,14443,0,1.0
+Culture_EthnicityNative_Binary,float64,14443,0,1.0
+Culture_EthnicityPacific_Binary,float64,14443,0,1.0
+Culture_EthnicityWhite_Binary,float64,14443,0,1.0
+Culture_EthnicityOther_Binary,float64,14443,0,1.0
+client_name,float64,14443,0,1.0
+client_intro,float64,14443,0,1.0
+share_link,float64,14443,0,1.0
+image_link,float64,14443,0,1.0
+airtable_link,float64,14443,0,1.0
+Name,float64,14443,0,1.0
+Skills,float64,14443,0,1.0
+Motivation,float64,14443,0,1.0
+Email,float64,14443,0,1.0
+LinkedIn,float64,14443,0,1.0
+generated_questions,float64,14443,0,1.0
+AI_Done,float64,14443,0,1.0
+click_email,float64,14443,0,1.0
+email_sent,float64,14443,0,1.0
+page_number,float64,14443,0,1.0
+increment,float64,14443,0,1.0
+progress,float64,14443,0,1.0
+name_question,float64,14443,0,1.0
+position_question,float64,14443,0,1.0
+skills_question,float64,14443,0,1.0
+motivation_question,float64,14443,0,1.0
+quality1,float64,14443,0,1.0
+age1,float64,14443,0,1.0
+quality2,float64,14443,0,1.0
+artist3,float64,14443,0,1.0
+artist2,float64,14443,0,1.0
+age2,float64,14443,0,1.0
+quality3,float64,14443,0,1.0
+quality4,float64,14443,0,1.0
+motive1,float64,14443,0,1.0
+artist1,float64,14443,0,1.0
+culture1,float64,14443,0,1.0
+sucfactor1,float64,14443,0,1.0
+unduser1,float64,14443,0,1.0
+operations2,float64,14443,0,1.0
+motive2,float64,14443,0,1.0
+marketing1,float64,14443,0,1.0
+dayjob1,float64,14443,0,1.0
+isCEOmightChange,float64,14443,0,1.0
+dayjob2,float64,14443,0,1.0
+dayjob4,float64,14443,0,1.0
+dayjob3,float64,14443,0,1.0
+addboth,float64,14443,0,1.0
+addpitch,float64,14443,0,1.0
+addstartup,float64,14443,0,1.0
+addnone,float64,14443,0,1.0
+angels1,float64,14443,0,1.0
+elevator1,float64,14443,0,1.0
+nda1,float64,14443,0,1.0
+when1,float64,14443,0,1.0
+selling1,float64,14443,0,1.0
+askfor1,float64,14443,0,1.0
+angels2,float64,14443,0,1.0
+board3,float64,14443,0,1.0
+definition1,float64,14443,0,1.0
+board1,float64,14443,0,1.0
+board2,float64,14443,0,1.0
+pitchco1,float64,14443,0,1.0
+operations1,float64,14443,0,1.0
+equity3,float64,14443,0,1.0
+legal1,float64,14443,0,1.0
+location1,float64,14443,0,1.0
+marketing2,float64,14443,0,1.0
+legal2,float64,14443,0,1.0
+operations3,float64,14443,0,1.0
+growth1,float64,14443,0,1.0
+pitchco2,float64,14443,0,1.0
+location2,float64,14443,0,1.0
+gatesCEO,float64,14443,0,1.0
+zuckerbergCEO,float64,14443,0,1.0
+muskCEO,float64,14443,0,1.0
+jobsCEO,float64,14443,0,1.0
+averagewithboth,float64,14443,0,1.0
+averagewithpitch,float64,14443,0,1.0
+averagewithstartup,float64,14443,0,1.0
+averagewithnone,float64,14443,0,1.0
+averagepersonalityscore,float64,14443,0,1.0
+averagebusinessscore,float64,14443,0,1.0
+averagepitchscore,float64,14443,0,1.0
+averagestartupscore,float64,14443,0,1.0
+skills1,float64,14443,0,1.0
+skills2,float64,14443,0,1.0
+skills3,float64,14443,0,1.0
+skills4,float64,14443,0,1.0
+skills5,float64,14443,0,1.0
+skills6,float64,14443,0,1.0
+skills7,float64,14443,0,1.0
+skills8,float64,14443,0,1.0
+riskseeking,float64,14443,0,1.0
+ceopersonality,float64,14443,0,1.0
+ceobusiness,float64,14443,0,1.0
+pitch,float64,14443,0,1.0
+startup,float64,14443,0,1.0
+jobs,float64,14443,0,1.0
+gates,float64,14443,0,1.0
+zuckerberg,float64,14443,0,1.0
+musk,float64,14443,0,1.0
+qol2size,float64,14443,0,1.0
+None_religioncurrent,float64,0,14443,0.0
+Christianity (protestant)_religioncurrent,int64,0,14443,0.0
+Christianity (catholic)_religioncurrent,int64,0,14443,0.0
+Christianity (other)_religioncurrent,int64,0,14443,0.0
+Judaism_religioncurrent,float64,0,14443,0.0
+Islam_religioncurrent,float64,0,14443,0.0
+Hinduism_religioncurrent,float64,0,14443,0.0
+Buddhism_religioncurrent,float64,0,14443,0.0
+Chinese traditional religion_religioncurrent,float64,0,14443,0.0
+Sikhism_religioncurrent,float64,0,14443,0.0
+Bahai_religioncurrent,float64,0,14443,0.0
+Jainism_religioncurrent,float64,0,14443,0.0
+Shinto_religioncurrent,float64,0,14443,0.0
+Paganism_religioncurrent,float64,0,14443,0.0
+Other_religioncurrent,float64,0,14443,0.0
+None_religionpast,float64,0,14443,0.0
+Christianity (protestant)_religionpast,int64,0,14443,0.0
+Christianity (catholic)_religionpast,int64,0,14443,0.0
+Christianity (other)_religionpast,int64,0,14443,0.0
+Judaism_religionpast,float64,0,14443,0.0
+Islam_religionpast,float64,0,14443,0.0
+Hinduism_religionpast,float64,0,14443,0.0
+Buddhism_religionpast,float64,0,14443,0.0
+Chinese traditional religion_religionpast,float64,0,14443,0.0
+Sikhism_religionpast,float64,0,14443,0.0
+Bahai_religionpast,float64,0,14443,0.0
+Jainism_religionpast,float64,0,14443,0.0
+Shinto_religionpast,float64,0,14443,0.0
+Paganism_religionpast,float64,0,14443,0.0
+Other_religionpast,float64,0,14443,0.0
+ADHD_mentalillness,float64,0,14443,0.0
+Anorexia_mentalillness,float64,0,14443,0.0
+Anxiety_mentalillness,float64,0,14443,0.0
+Autism_mentalillness,float64,0,14443,0.0
+Bipolar I_mentalillness,float64,0,14443,0.0
+Bipolar II_mentalillness,float64,0,14443,0.0
+Body Dysmorphia_mentalillness,float64,0,14443,0.0
+Borderline_mentalillness,float64,0,14443,0.0
+Bulimia_mentalillness,float64,0,14443,0.0
+C-PTSD_mentalillness,float64,0,14443,0.0
+Depersonalization/derealization_mentalillness,float64,0,14443,0.0
+Depression_mentalillness,float64,0,14443,0.0
+Disassociative Identity Disorder_mentalillness,float64,0,14443,0.0
+OCD_mentalillness,float64,0,14443,0.0
+PTSD_mentalillness,float64,0,14443,0.0
+Schizophrenia_mentalillness,float64,0,14443,0.0
+Social anxiety_mentalillness,float64,0,14443,0.0
+Sociopathy_mentalillness,float64,0,14443,0.0
+Substance Abuse Disorder_mentalillness,float64,0,14443,0.0
+Don't know/not sure_attachmentstyle,float64,0,14443,0.0
+Avoidant (avoidant/distant/commitment fears)_attachmentstyle,int64,0,14443,0.0
+Anxious (codependent/clingy/abandonment fears)_attachmentstyle,int64,0,14443,0.0
+Disorganized (mix of Avoidant and Anxious)_attachmentstyle,int64,0,14443,0.0
+Secure (comfortable with intimacy)_attachmentstyle,int64,0,14443,0.0
+Caucasian/white_ethnicityf,float64,0,14443,0.0
+Black (African American)_ethnicityf,int64,0,14443,0.0
+Black (not African American)_ethnicityf,int64,0,14443,0.0
+Asian (south)_ethnicityf,int64,0,14443,0.0
+Asian (east)_ethnicityf,int64,0,14443,0.0
+Asian (other)_ethnicityf,int64,0,14443,0.0
+Pacific islander_ethnicityf,float64,0,14443,0.0
+Arabic/middle eastern_ethnicityf,float64,0,14443,0.0
+Native American_ethnicityf,float64,0,14443,0.0
+Hispanic/latino_ethnicityf,float64,0,14443,0.0
+Other_ethnicityf,float64,0,14443,0.0
+reddit_source,float64,0,14443,0.0
+fetlife_source,float64,0,14443,0.0
+twitter_source,float64,0,14443,0.0
+facebook_source,float64,0,14443,0.0
+amazon turk_source,float64,0,14443,0.0
+discord_source,float64,0,14443,0.0
+telegram_source,float64,0,14443,0.0
+tumblr_source,float64,0,14443,0.0
+email_source,float64,0,14443,0.0
+other_source,float64,0,14443,0.0
+United States_countryfinal,float64,0,14443,0.0
+United Kingdom_countryfinal,float64,0,14443,0.0
+Canada_countryfinal,float64,0,14443,0.0
+Germany_countryfinal,float64,0,14443,0.0
+Australia_countryfinal,float64,0,14443,0.0
+India_countryfinal,float64,0,14443,0.0
+France_countryfinal,float64,0,14443,0.0
+Brazil_countryfinal,float64,0,14443,0.0
+Netherlands_countryfinal,float64,0,14443,0.0
+Russia_countryfinal,float64,0,14443,0.0
+Sweden_countryfinal,float64,0,14443,0.0
+Italy_countryfinal,float64,0,14443,0.0
+Spain_countryfinal,float64,0,14443,0.0
+Poland_countryfinal,float64,0,14443,0.0
+Mexico_countryfinal,float64,0,14443,0.0
+Other Europe (west)_countryfinal,int64,0,14443,0.0
+Other Europe (east)_countryfinal,int64,0,14443,0.0
+Other Europe (other)_countryfinal,int64,0,14443,0.0
+Asia (east)_countryfinal,int64,0,14443,0.0
+Asia (south)_countryfinal,int64,0,14443,0.0
+Asia (other)_countryfinal,int64,0,14443,0.0
+Africa_countryfinal,float64,0,14443,0.0
+South America_countryfinal,float64,0,14443,0.0
+Other_countryfinal,float64,0,14443,0.0
+bmi,float64,0,14443,0.0
+calmspankdifference,float64,8099,6344,0.5607560756075608
+angryspankdifference,float64,8099,6344,0.5607560756075608
+etc8difference,float64,8959,5484,0.6203004915876204
+Your age?,float64,7,14436,0.0004846638510004847
+Which category fits you best?,float64,14443,0,1.0
+Unnamed: 585,float64,14443,0,1.0
+What country do you live in?,float64,14443,0,1.0
+What level of formal education have you done?,float64,14443,0,1.0
+Are you in a romantic relationship?,float64,14443,0,1.0
+How many people have you had sex with?,float64,106,14337,0.007339195458007339
+How many kids do you have?,float64,25,14418,0.001730942325001731
+Do you *currently* actively practice a religion?,float64,14443,0,1.0
+What religion did you grow up in?,float64,14443,0,1.0
+Have you been diagnosed with any of the following,float64,14443,0,1.0
+What's your height?,float64,14443,0,1.0
+How many siblings did you grow up with?,float64,138,14305,0.009554801634009555
+You were the ___ child among your siblings,float64,14443,0,1.0
+Your siblings are mostly,float64,14443,0,1.0
+"In general, you'd say your health is",float64,14443,0,1.0
+"In the past *4 weeks*, you've had difficulty accomplishing things in work or social activities due to *emotional issues*",float64,6,14437,0.0004154261580004154
+"In the past *4 weeks*, you've had difficulty accomplishing things in work or social activities due to *physical pain*",float64,6,14437,0.0004154261580004154
+I tend to suffer from anxiety -neg,float64,6,14437,0.0004154261580004154
+If I could take all of the possibility of pain out of suicide I would commit suicide immediately -neg,float64,7,14436,0.0004846638510004847
+"On average, I am happier as an adult than I was in childhood",float64,7,14436,0.0004846638510004847
+I tend to be calm/peaceful,float64,7,14436,0.0004846638510004847
+"In general, people in my *current* social circles tend treat me really well",float64,14060,383,0.9734819635809735
+Have you ever had a sexual experience with someone else who did not want the experience?,float64,14443,0,1.0
+I love myself,float64,7,14436,0.0004846638510004847
+I am satisfied with my romantic relationships,float64,6,14437,0.0004154261580004154
+I am not happy -neg,float64,5,14438,0.0003461884650003462
+I tend to suffer from depression,float64,5,14438,0.0003461884650003462
+I am satisfied with my work/career life,float64,7,14436,0.0004846638510004847
+I'm quite sensitive to stress -neg,float64,6,14437,0.0004154261580004154
+When you were a teen,float64,14443,0,1.0
+I'm happy with my appearance,float64,6,14437,0.0004154261580004154
+I tend to worry about things -neg,float64,5,14438,0.0003461884650003462
+The people I'm attracted to tend to be bad for me -neg,float64,6,14437,0.0004154261580004154
+"If life is a game, I'm losing -neg",float64,6,14437,0.0004154261580004154
+You can't get very rich without exploitation -neg,float64,5,14438,0.0003461884650003462
+My friendships often end due to fights or disagreements,float64,7,14436,0.0004846638510004847
+When you were a child,float64,14443,0,1.0
+I tend to have a lot of energy,float64,6,14437,0.0004154261580004154
+I tend to be unlucky -neg,float64,5,14438,0.0003461884650003462
+women's ideal role viewed as housewives,float64,22,14421,0.0015232292460015233
+you felt as though you were 'at war' with yourself in trying to be a good person,float64,9,14434,0.0006231392370006231
+"family/culture had hilarious joking, goofing around, pranks, tomfoolery",float64,24,14419,0.0016617046320016617
+your parents verbally or emotionally abused you,float64,17,14426,0.001177040781001177
+your mother,float64,7,14436,0.0004846638510004847
+intellectual or academic parents/culture,float64,12,14431,0.0008308523160008308
+you spent time on the internet or computers,float64,15,14428,0.0010385653950010386
+Your parents gave useful guidance,float64,12,14431,0.0008308523160008308
+taught a purity culture that encouraged abstinance/waiting until marriage,float64,13,14430,0.0009000900090009
+you were taught to shoot a gun,float64,15,14428,0.0010385653950010386
+you were depressed,float64,15,14428,0.0010385653950010386
+Parents divorcing/separating,float64,26,14417,0.0018001800180018
+parents monitored/restricted your media intake to wholesome stuff; nothing disturbing or obscene,float64,12,14431,0.0008308523160008308
+you struggled with learning in school in the ways people tried to teach you,float64,16,14427,0.0011078030880011078
+Your parents were college/university educated,float64,16,14427,0.0011078030880011078
+your father was present to raise you,float64,18,14425,0.0012462784740012462
+you had more than two parents,float64,7,14436,0.0004846638510004847
+obedience was a virtue,float64,22,14421,0.0015232292460015233
+you were neglected/abandoned by those responsible for caring for you,float64,22,14421,0.0015232292460015233
+adults yelled at you,float64,21,14422,0.001453991553001454
+"parents were well connected, socialites, friends with successful, popular, or famous people",float64,10,14433,0.0006923769300006924
+you went to therapy,float64,14,14429,0.0009693277020009694
+people expected gendered norms of you that you hated,float64,10,14433,0.0006923769300006924
+you played outside,float64,21,14422,0.001453991553001454
+a parent abandoned the family,float64,18,14425,0.0012462784740012462
+people in your social circles believed false rumors about you,float64,12,14431,0.0008308523160008308
+your parents were predictable -neg,float64,13,14430,0.0009000900090009
+your father,float64,13,14430,0.0009000900090009
+taught evolution was a lie,float64,13,14430,0.0009000900090009
+your family was physically affectionate,float64,18,14425,0.0012462784740012462
+you were required to participate in religious customs,float64,18,14425,0.0012462784740012462
+food scarcity; difficulty affording food; food stamps -neg,float64,17,14426,0.001177040781001177
+your time was wasted,float64,24,14419,0.0016617046320016617
+"allowed exposure to risk; e.g. climbing on tall things, walking around alone",float64,13,14430,0.0009000900090009
+men's ideal role viewed as family providers,float64,21,14422,0.001453991553001454
+you got drunk,float64,11,14432,0.0007616146230007616
+raised in a pretty classic nuclear family structure,float64,8,14435,0.0005539015440005539
+"you were romantically successful; crushes reciprocated, you were in demand",float64,17,14426,0.001177040781001177
+parents had a bad relationship,float64,20,14423,0.0013847538600013848
+you had,float64,24,14419,0.0016617046320016617
+"your parents physically disciplined you in an irregular, emotionally expressive way",float64,10,14433,0.0006923769300006924
+you had adventures,float64,12,14431,0.0008308523160008308
+at least one parent had short-term romantic partners,float64,20,14423,0.0013847538600013848
+you did party drugs,float64,20,14423,0.0013847538600013848
+your parents attempted to prevent you accessing porn or erotica,float64,19,14424,0.0013155161670013154
+you attended camps,float64,14,14429,0.0009693277020009694
+Your family culture was loud and confrontational,float64,18,14425,0.0012462784740012462
+at least one parent respected you,float64,14,14429,0.0009693277020009694
+your family was poorer/lower class than other people in your social groups -neg,float64,21,14422,0.001453991553001454
+Taking regular family vacations,float64,14,14429,0.0009693277020009694
+you felt unconditionally loved,float64,12,14431,0.0008308523160008308
+your parents were honest with you,float64,11,14432,0.0007616146230007616
+adults apologized to you if they wronged you,float64,19,14424,0.0013155161670013154
+Did you experience any sexual abuse during your childhood?,float64,14443,0,1.0
+a household member sexually abused you in a way *included* genital penetration or envelopment,float64,10476,3967,0.7253340718687253
+"someone who *wasn't* a member of your household, sexually abused you in a way *included* genital penetration or envelopment",float64,10532,3911,0.7292113826767292
+household member sexually abused you in a way that *didn't* include genital penetration or envelopment,float64,10566,3877,0.7315654642387316
+"someone who *wasn't* a member of your household, sexually abused you in a way that *didn't* include genital penetration or envelopment",float64,10578,3865,0.7323963165547324
+"did the sexual abuse result in fear or pain *later in life*, some time after it happened?",float64,11244,3199,0.7785086200927785
+"did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened?",float64,12422,2021,0.8600706224468601
+you were homeschooled,float64,78,14365,0.0054005400540054005
+"In general, people in my *current* social circles tend to treat me really well",float64,389,14054,0.026933462577026935
+your parents physically disciplined you,float64,1249,13194,0.08647787855708648
+Do you have memories of being potty trained?,float64,14443,0,1.0
+At what age did you learn to read?,float64,3156,11287,0.2185141591082185
+Do you remember learning how to read?,float64,14443,0,1.0
+What religion do you currently practice?,float64,14443,0,1.0
+What's your attachment style?,float64,14443,0,1.0
+you were bullied by other children,float64,3980,10463,0.2755660181402756
+How honest were you in this survey?,float64,14443,0,1.0
+did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate,float64,12247,2196,0.847954026171848
+did the sexual assault involve rewards? This means the use of positive outcomes if you did participate,float64,12247,2196,0.847954026171848
+"In general, how much did your *household culture* take sexual assault seriously, whether they knew about your experience or not?",float64,11927,2516,0.8257979644118258
+"*Ages 19+* In general, how much did your *adult culture after leaving home* take sexual assault seriously, whether they knew about your experience or not?",float64,11927,2516,0.8257979644118258
+"In general, the quality of my childhood has had a big impact on my quality of life today",float64,7203,7240,0.4987191026794987
+"*Later in life*, some time after your sexual assault",float64,14443,0,1.0
+"*Later in life*, some time after your sexual assault , what were the attitudes of people around you about the incident?",float64,12430,2013,0.8606245239908606
+Your parents used calm/controlled/predictable spankings as a form of discipline,float64,8100,6343,0.5608253133005608
+Your parents used calm/controlled/predictable  spankings as a form of discipline,float64,8100,6343,0.5608253133005608
+Your parents used angry/uncontrolled/unpredictable spankings as a form of discipline,float64,8100,6343,0.5608253133005608
+How familiar are you with Aella?,float64,14443,0,1.0
+Are you sexually aroused by BDSM?,float64,14443,0,1.0
+at least one of your parents was ethically nonmonogamous,float64,8960,5483,0.6203697292806204
+Experiment,float64,14443,0,1.0
+Christianity _religioncurrent,float64,0,14443,0.0
+Christianity _religionpast,float64,0,14443,0.0
+Avoidant _attachmentstyle,float64,0,14443,0.0
+Anxious _attachmentstyle,float64,0,14443,0.0
+Disorganized _attachmentstyle,float64,0,14443,0.0
+Secure _attachmentstyle,float64,0,14443,0.0
+Black _ethnicityf,float64,0,14443,0.0
+Asian _ethnicityf,float64,0,14443,0.0
+Other Europe _countryfinal,float64,0,14443,0.0
+Asia _countryfinal,float64,0,14443,0.0
+CSA_score,float64,0,14443,0.0

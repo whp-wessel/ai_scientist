@@ -1,0 +1,60 @@
+{
+  "hypothesis_id": "H2",
+  "family": "wellbeing",
+  "model": "ordered_logit",
+  "outcome": "okq5xh8_ord",
+  "predictor": "pqo6jmj_score",
+  "controls": [
+    "selfage",
+    "biomale",
+    "gendermale",
+    "classcurrent_score",
+    "classteen_score"
+  ],
+  "dropped_controls": [
+    "mentalillness"
+  ],
+  "n_analytic": 14430,
+  "effect_metric": "\u0394Pr(health \u2208 {very good, excellent}) | guidance Q3 vs Q1",
+  "effect": {
+    "estimate": 0.09976985803577215,
+    "se": 0.005780580142814899,
+    "ci_lower": 0.0890225480707535,
+    "ci_upper": 0.11114832176108842
+  },
+  "contrast_values": {
+    "low": -1.0,
+    "high": 2.0
+  },
+  "ordered_levels": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0
+  ],
+  "parameters": {
+    "pqo6jmj_score": 0.14705160275723184,
+    "selfage": 0.004061600277157614,
+    "biomale": 0.04216340399551095,
+    "gendermale": 0.3093286228614537,
+    "classcurrent_score": 0.41431211451526195,
+    "classteen_score": 0.06894287986277378,
+    "0/1": -1.2907427341320303,
+    "1/2": 0.5493632029513474,
+    "2/3": 0.4858565861654718,
+    "3/4": 0.622067324279895
+  },
+  "diagnostics": {
+    "nobs": 14430,
+    "llf": -19784.980065820826,
+    "aic": 39589.96013164165,
+    "bic": 39665.73077815933,
+    "converged": true
+  },
+  "seed": 20251016,
+  "draws": 300,
+  "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+  "command": "python analysis/code/run_models.py --hypothesis all --config config/agent_config.yaml --seed 20251016 --draws 300 --output-prefix outputs/run_models_loop003",
+  "phase": "pap_draft_exploratory"
+}
