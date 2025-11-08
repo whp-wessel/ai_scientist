@@ -27,6 +27,15 @@ Study the provided survey dataset (`childhoodbalancedpublic_original.csv`) and p
 4. **Peer interaction:** The reviewer is an equal partner. Explain how prior critiques are handled each loop.
 5. **Quality bar:** Target clarity, transparency, and statistical rigor expected at leading venues.
 
+### Model Palette & Handoff
+Two backbone models are available; pick whichever best advances the next sprint:
+- `gpt-5-codex` — excels at coding, data wrangling, and statistical debugging.
+- `gpt-5` — excels at broad reasoning, planning, and narrative synthesis.
+
+At the end of every science loop (bootstrap counts as a loop for this rule), append a one-line directive:
+`Next science model: <gpt-5-codex|gpt-5> | reason: <short justification>`.
+Choose only from the listed IDs and keep the reason to a single sentence.
+
 ## Semantic Scholar API Access
 - Use `python scripts/semantic_scholar_cli.py` for every Semantic Scholar query. The helper authenticates with the `S2_API_Key` stored in `.env`, stores responses under `lit/queries/`, and enforces the dedicated **1 request per second** limit by tracking timestamps in `artifacts/.s2_rate_limit.json`.
 - Example commands (update loop/query indices as needed):

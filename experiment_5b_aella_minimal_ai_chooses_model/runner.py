@@ -776,6 +776,103 @@ def log_runner_decision(action: str, changes: Sequence[ChangeRecord], status: st
         "status": status,
     })
 
+def _record_model_selection(role: str, model: str, policy: str, context: str, reason: str) -> None:
+    note = f"{context}: {role} -> {model} (policy={policy})"
+    if reason:
+        note += f" reason={reason}"
+    log_runner_decision(
+        f"model_select_{role}",
+        (),
+        "success",
+        note,
+        inputs=[f"role:{role}", f"model:{model}", f"policy:{policy}"],
+    )
+
+def _select_model_for_role(role: str, context: str) -> str:
+    if role not in MODEL_ROLES:
+        raise ValueError(f"Unknown role '{role}'")
+    state = ensure_state_defaults(read_state_json())
+    model_state = _ensure_model_state_block(state)
+    entry = model_state[role]
+    policy = MODEL_POLICY
+    chosen = ""
+    reason = ""
+    if policy == "agent":
+        candidate = _normalize_model_name(entry.get("queued_model"))
+        if candidate:
+            chosen = candidate
+            reason = (entry.get("queued_reason") or "").strip()
+        else:
+            queued_raw = entry.get("queued_model")
+            if queued_raw:
+                print(f"[model] ignoring invalid queued {role} model '{queued_raw}'")
+            chosen = _default_model_for_role(role)
+        entry["queued_model"] = None
+        entry["queued_reason"] = ""
+        entry["queued_source"] = ""
+    elif policy == "round_robin":
+        rotation = _rotation_for_role(role)
+        rr_index = int(entry.get("rr_index", -1)) + 1
+        rotation_mod = rr_index % len(rotation)
+        entry["rr_index"] = rr_index
+        chosen = rotation[rotation_mod]
+    else:  # fixed
+        chosen = _default_model_for_role(role)
+    entry["last_model"] = chosen
+    entry["last_model_policy"] = policy
+    entry["last_model_reason"] = reason
+    entry["last_model_context"] = context
+    write_state_json(state)
+    print(f"[model] {context}: using {chosen} for {role} agent (policy={policy})")
+    _record_model_selection(role, chosen, policy, context, reason)
+    return chosen
+
+def _log_model_request(role: str, model: str, reason: str, source: str, status: str) -> None:
+    note = f"{source}: request {role} -> {model}"
+    if reason:
+        note += f" ({reason})"
+    log_runner_decision(
+        f"model_request_{role}",
+        (),
+        status,
+        note,
+        inputs=[f"role:{role}", f"model:{model}", f"source:{source}"],
+    )
+
+def _queue_model_request(role: str, model: str, reason: str, source: str) -> None:
+    normalized = _normalize_model_name(model)
+    if normalized is None:
+        print(f"[model] ignoring request for unknown model '{model}' from {source}")
+        _log_model_request(role, model, reason, source, "error")
+        return
+    state = ensure_state_defaults(read_state_json())
+    model_state = _ensure_model_state_block(state)
+    entry = model_state[role]
+    entry["queued_model"] = normalized
+    entry["queued_reason"] = (reason or "").strip() or f"requested via {source}"
+    entry["queued_source"] = source
+    write_state_json(state)
+    _log_model_request(role, normalized, reason, source, "success")
+
+def _parse_model_requests(raw_text: Optional[str]) -> dict[str, tuple[str, str]]:
+    requests: dict[str, tuple[str, str]] = {}
+    if not raw_text:
+        return requests
+    for match in MODEL_REQUEST_RE.finditer(raw_text):
+        role = (match.group(1) or "").strip().lower()
+        if role not in MODEL_ROLES:
+            continue
+        model = (match.group(2) or "").strip()
+        if not model:
+            continue
+        reason = (match.group(3) or "").strip()
+        requests[role] = (model, reason)
+    return requests
+
+def process_model_requests(source: str, raw_text: Optional[str]) -> None:
+    for role, (model, reason) in _parse_model_requests(raw_text).items():
+        _queue_model_request(role, model, reason, source)
+
 def _write_raw_output(tag: str, content: str, *, update_latest: bool = True) -> None:
     if not isinstance(content, str): content = str(content)
     raw_dir = REPO / "artifacts" / "llm_raw"; raw_dir.mkdir(parents=True, exist_ok=True)
@@ -806,15 +903,19 @@ def run_loop_review(loop_idx: int, changes: Sequence[ChangeRecord]) -> tuple[boo
     except KeyError:
         print(f"[review {loop_idx:03d}] prompts missing; skipping automated review.")
         return False, ""
+    review_context = f"review_{loop_idx:03d}"
+    review_model = _select_model_for_role("review", review_context)
+    _print_model_banner("review", review_model)
     state_snapshot = ensure_state_defaults(read_state_json())
     state_json = json.dumps(state_snapshot, indent=2, sort_keys=True)
     file_lines = "\n".join(f"- {str(rec)}" for rec in changes) if changes else "(none)"
     user_prompt = review_user_template.format(loop_index=f"{loop_idx:03d}", state_json=state_json, files_written=file_lines)
     try:
-        raw_review = run_codex_cli(user_prompt, review_system)
+        raw_review = run_codex_cli(user_prompt, review_system, model=review_model)
     except Exception as exc:
         print(f"[review {loop_idx:03d}] error invoking reviewer: {exc}"); return False, ""
     _write_raw_output(f"review_{loop_idx:03d}", raw_review, update_latest=False)
+    process_model_requests(f"review_loop_{loop_idx:03d}", raw_review)
     review_text = raw_review.strip()
     review_dir = REPO / "review"; review_dir.mkdir(parents=True, exist_ok=True)
     review_file = review_dir / "research_findings.md"
@@ -852,7 +953,8 @@ def do_bootstrap():
         print(f"[bootstrap] {exc}"); return True
     update_reproducibility()
     print("== Bootstrap session ==")
-    _print_model_banner()
+    science_model = _select_model_for_role("science", "bootstrap")
+    _print_model_banner("science", science_model)
     bootstrap_system = get_prompt("BOOTSTRAP_SYSTEM")
     bootstrap_user = get_prompt("BOOTSTRAP_USER")
     small_cell_alert = _small_cell_alert_message()
@@ -863,12 +965,13 @@ def do_bootstrap():
         print(f"[guardrail] Reproducibility alert (non-blocking): {decision_log_alert}")
         bootstrap_user = f"{bootstrap_user}\nNon-negotiable alert: {decision_log_alert}"
     try:
-        raw = run_codex_cli(bootstrap_user, bootstrap_system)
+        raw = run_codex_cli(bootstrap_user, bootstrap_system, model=science_model)
     except Exception as exc:
         state = ensure_state_defaults(read_state_json()); state["last_abort"] = {"ts": datetime.now(timezone.utc).isoformat(), "phase":"bootstrap", "note": str(exc)}
         write_state_json(state)
         print("[bootstrap] cancelled or failed."); return True
     _write_raw_output("bootstrap", raw, update_latest=True)
+    process_model_requests("bootstrap", raw)
 
     # V1 fail-fast checks
     ok, msg = perform_nonnegotiable_checks()
@@ -902,7 +1005,9 @@ def do_loop(iter_ix: int, consecutive_git_fails: int):
         print(f"[loop {iter_ix}] {exc}")
         return True, consecutive_git_fails
     update_reproducibility()
-    _print_model_banner()
+    loop_tag = f"loop_{iter_ix:03d}"
+    science_model = _select_model_for_role("science", loop_tag)
+    _print_model_banner("science", science_model)
     loop_system = get_prompt("LOOP_SYSTEM")
     user_template = get_prompt("LOOP_USER_TEMPLATE")
     state_snapshot = ensure_state_defaults(read_state_json())
@@ -934,7 +1039,7 @@ def do_loop(iter_ix: int, consecutive_git_fails: int):
         user_prompt += f"\nNon-negotiable alert: {decision_log_alert}"
 
     try:
-        raw = run_codex_cli(user_prompt, loop_system)
+        raw = run_codex_cli(user_prompt, loop_system, model=science_model)
     except Exception as exc:
         state = ensure_state_defaults(read_state_json()); state["last_abort"] = {"ts": datetime.now(timezone.utc).isoformat(), "phase":"loop", "loop": iter_ix, "note": str(exc)}
         write_state_json(state)
@@ -942,6 +1047,7 @@ def do_loop(iter_ix: int, consecutive_git_fails: int):
         return True, consecutive_git_fails
 
     _write_raw_output(f"loop_{iter_ix:03d}", raw, update_latest=True)
+    process_model_requests(loop_tag, raw)
 
     # Guardrails
     ok, msg = perform_nonnegotiable_checks()
@@ -1013,19 +1119,42 @@ def parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:
     parser.add_argument("--force-bootstrap", action="store_true", help="Run bootstrap even if already completed.")
     parser.add_argument("--skip-bootstrap", action="store_true", help="Skip bootstrap even if not marked complete.")
     parser.add_argument("--sleep-seconds", type=float, default=None, help="Pause between loops (overrides LOOP_SLEEP_SECONDS).")
-    parser.add_argument("--model", type=str, default=None, help="Override the Codex model for this run.")
+    parser.add_argument("--model", type=str, default=None, help="Legacy shortcut to override the science agent model for this run.")
+    parser.add_argument("--science-model", type=str, default=None, help="Preferred science-agent model (default gpt-5-codex).")
+    parser.add_argument("--review-model", type=str, default=None, help="Preferred review-agent model (default gpt-5).")
+    parser.add_argument(
+        "--model-policy",
+        type=str,
+        choices=sorted(MODEL_POLICY_CHOICES),
+        default=None,
+        help="Model selection policy: agent = agent requests, round_robin = alternate, fixed = always defaults.",
+    )
     parser.add_argument("--reasoning-effort", type=str, default=None, help="Override model_reasoning_effort.")
     parser.add_argument("--network-access", type=str, default=None, help="Override network_access setting ('enabled' or 'disabled').")
     args = parser.parse_args(argv)
     if args.loops is not None and args.loops <= 0: parser.error("--loops must be a positive integer")
     if args.total_loops is not None and args.total_loops <= 0: parser.error("--total-loops must be a positive integer")
     if args.force_bootstrap and args.skip_bootstrap: parser.error("Use only one of --force-bootstrap or --skip-bootstrap")
+    def _validate_model_arg(arg_name: str) -> None:
+        value = getattr(args, arg_name)
+        if value is None:
+            return
+        normalized = _normalize_model_name(value)
+        if not normalized:
+            parser.error(f"--{arg_name.replace('_', '-')} must be one of: {', '.join(sorted(MODEL_REGISTRY.keys()))}")
+        setattr(args, arg_name, normalized)
+    _validate_model_arg("model")
+    _validate_model_arg("science_model")
+    _validate_model_arg("review_model")
     return args
 
 def main(argv: Optional[list[str]] = None) -> int:
     args = parse_args(argv)
-    global MODEL, REASONING_EFFORT, NETWORK_ACCESS
-    if args.model: MODEL = args.model
+    global DEFAULT_SCIENCE_MODEL, DEFAULT_REVIEW_MODEL, MODEL_POLICY, REASONING_EFFORT, NETWORK_ACCESS
+    if args.model: DEFAULT_SCIENCE_MODEL = args.model
+    if args.science_model: DEFAULT_SCIENCE_MODEL = args.science_model
+    if args.review_model: DEFAULT_REVIEW_MODEL = args.review_model
+    if args.model_policy: MODEL_POLICY = args.model_policy
     if args.reasoning_effort: REASONING_EFFORT = args.reasoning_effort
     if args.network_access:
         override = _normalize_network_setting(args.network_access)
