@@ -31,6 +31,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 028 | 2025-11-08T19:10:42Z | "childhood parental support adult inflammation resilience" | 403 Forbidden | `lit/queries/loop_028/query_001.json` |
 | 029 | 2025-11-08T19:22:46Z | "childhood parental warmth adult cortisol regulation" | 403 Forbidden | `lit/queries/loop_029/query_001.json` |
 | 030 | 2025-11-08T19:35:12Z | "childhood parental nurturance adult immune resilience" | 403 Forbidden | `lit/queries/loop_030/query_001.json` |
+| 031 | 2025-11-08T19:52:28Z | "childhood parental warmth adult stress buffering" | 403 Forbidden | `lit/queries/loop_031/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
