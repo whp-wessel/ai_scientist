@@ -82,3 +82,12 @@ N1: PASS – `artifacts/state.json:1-67` keeps the phase at PAP with N1 explicit
 
 Notes: Priority remains resolving the Semantic Scholar credential so the PAP literature gate can clear.
 
+## Loop 012 — 2025-11-08T14:53:36.745381+00:00
+DECISION: CONTINUE
+R1: PASS – Seed discipline and regeneration commands stay explicit in `analysis/pre_analysis_plan.md:20` and `analysis/pre_analysis_plan.md:68`, and the QC log ties those plans to the latest session/checksum artifacts so reproducibility remains auditable (`qc/data_checks.md:1`, `qc/data_checks.md:47`, `artifacts/session_info.txt:1`, `artifacts/checksums.json:1`).
+L1: PASS – The loop’s Semantic Scholar attempt is logged with full parameters plus its 403 payload, and the CrossRef fallback DOI was immediately propagated to the evidence map/bibliography (`analysis/decision_log.csv:85`, `lit/queries/loop_012/query_001.json:1`, `analysis/decision_log.csv:86`, `lit/evidence_map.csv:5`).
+P1: PASS – The PAP reiterates the n≥10 disclosure guard and automated checks, and the QC risk log confirms no public tables/figures were issued this loop (`analysis/pre_analysis_plan.md:21`, `analysis/pre_analysis_plan.md:24`, `qc/data_checks.md:52`).
+N1: PASS – State remains in the PAP phase with N1 explicitly blocked, the new waiver drafting task captured as N6, and the PAP loop note tying phase advancement to restoring S2 access or securing that waiver (`artifacts/state.json:31`, `artifacts/state.json:66`, `analysis/pre_analysis_plan.md:13`, `analysis/decision_log.csv:88`).
+
+Notes: Finish the waiver package or restore the Semantic Scholar key so the literature gate can clear next loop.
+
