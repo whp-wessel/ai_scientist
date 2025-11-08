@@ -792,5 +792,25 @@
       "C2"
     ],
     "notes": "Welsh ACE survey shows always-available trusted adult support greatly increases childhood resilience resources even among high ACE counts, informing H2 guidance/support covariates while S2 access is blocked."
+  },
+  {
+    "id": "kuhar2024pces",
+    "title": "The Effect of Adverse and Positive Childhood Experiences, Attachment, and Emotional Support on Adult Mental Health",
+    "authors": [
+      "Metka Kuhar",
+      "Elizabeth Dorrance-Hall",
+      "Simona Prosen"
+    ],
+    "year": 2024,
+    "venue": "European Journal of Mental Health",
+    "volume": "19",
+    "pages": "1-19",
+    "doi": "10.5708/ejmh.19.2024.0031",
+    "url": "https://doi.org/10.5708/ejmh.19.2024.0031",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C2"
+    ],
+    "notes": "Slovenian adult survey (n=4,940) shows positive childhood experiences and attachment-mediated emotional support dampen ACE impacts on adult mental health, reinforcing H2 guidance/support covariates while S2 access is blocked."
   }
 ]
