@@ -239,3 +239,13 @@
 1. Paste the DG-4827 checksum bundle into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt` the moment Data Governance delivers, rerun the ingestion script, and then execute `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` reflects the weighted design effect.
 2. Once Dr. Mendez authorizes the `religiosity_class_gradients` promotion, rerun `scripts/loop020_h4_stress_tests.py` → `scripts/loop016_h4_confirmatory_tables.py`, flip the registries to `confirmatory=TRUE`, rewrite the PAP header with tag `pap_freeze_h4_loop024`, and capture the git tag.
 3. Keep appending every high-wealth RFP Q&A exchange and LOI update through the 2025-11-15 Q&A deadline so procurement reviewers can audit the complete trail.
+
+## 2025-11-11 – Loop 028
+- **DG-4827 monitoring:** Ran `PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md`; stderr still reports “missing roles: brr, psu, weights.” Logged the rerun inside the manifest and `docs/h3_design_effect_plan.md` so the blocked status has a 2025-11-11 16:45 UTC timestamp while we wait for the 2025-11-16 drop.
+- **Procurement/Q&A trail:** Added Loop 028 entries to `docs/h3_high_wealth_refresh/qna_loop021.md` covering Empiria’s multi-country DocuSign request and Aurora Nordisk’s hash-only ledger proposal. Spun up `docs/h3_high_wealth_refresh/verification_register.csv` and edited the RFP so every vendor now sees the 48-hour hash logging requirement.
+- **LOI expansion:** Captured the Empiria Luxe (Italy) countersignature by drafting `docs/h3_country_expansion_materials/LOI_Italy_2025-11-12.md` plus a new register row with DocuSign envelope b19f-7c and the Monaco PSU carve-out promised in the Q&A response.
+
+### Loop 028 Next Actions
+1. Paste the DG-4827 checksum bundle into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt`, rerun the ingestion script, and then execute `scripts/loop016_h3_power_check.py --use-weights` as soon as Data Governance delivers the AES-256 files.
+2. Freeze `religiosity_class_gradients` immediately after Dr. Mendez sends the written go: rerun the Loop 020 stress tests, refresh `tables/loop016_h4_confirmatory.csv`, flip the registry rows to `confirmatory=TRUE`, and tag `pap_freeze_h4_loop024`.
+3. Continue daily high-wealth procurement monitoring—log any new Q&A threads, Spain/Norway LOIs, and verification-register entries before the 2025-11-15 Q&A deadline.
