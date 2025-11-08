@@ -30,3 +30,10 @@
 - Appended results to `analysis/results.csv` (exploratory) and saved detailed outputs to `analysis/results/loop003_h3_h4_regressions.csv`.
 - Updated the PAP with a freeze-ready diagnostics plan and clarified H3 outcome handling (ordinal status, ordered-logit sensitivity).
 - Next: decide confirmatory families and freeze/tag the PAP; add pre-specified interaction terms and run ordered logit sensitivity for H3.
+
+## 2025-11-08 — Loop 4
+- Froze the PAP: set `analysis/pre_analysis_plan.md` to `status: frozen (commit <hash>)`, defined four confirmatory families (H1–H4) with precise estimands and OLS(HC3) models; H3 adds a pre-specified ordered-logit sensitivity.
+- Pre-specified sensitivities: gender interaction (`gendermale × predictor`) and quadratic terms for H1/H2; these are sensitivity-only, not confirmatory.
+- Marked primary hypotheses as confirmatory in `analysis/hypotheses.csv` (one primary test per family), preserving SRS justification.
+- Added `analysis/scripts/ordered_logit_h3.py` to operationalize H3’s ordered-logit sensitivity for the next loop.
+- Logged actions in `analysis/decision_log.csv` and prepared a commit request in `artifacts/git_message.txt` with tag plan `pap_freeze_loop004`.

@@ -1,6 +1,8 @@
 # Pre-Analysis Plan
 
-**status: draft**
+**status: frozen (commit <hash>)**
+
+Freeze tag: pap_freeze_loop004 (to be created on commit)
 
 ## Project Summary
 - **Research focus:** Link specific childhood environments captured in `childhoodbalancedpublic_original.csv` to adult wellbeing, mental health, and socioeconomic positioning.
@@ -41,7 +43,45 @@
 ## Multiplicity
 - Confirmatory families align with the four thematic buckets above. If any family exceeds one confirmatory test, Benjamini-Hochberg FDR control at q ≤ 0.05 will apply.
 
-## Diagnostics Plan (Freeze-ready)
+## Confirmatory Families and Primary Estimands (Frozen)
+- Family: childhood_adversity (H1 primary)
+  - Estimand: Linear association between childhood parental emotional abuse and adult unhappiness, adjusted for pre-specified covariates.
+  - Model: OLS with HC3 SEs.
+  - Formula: `ix5iyv3_scaled ~ mds78zu_scaled + selfage + gendermale + education + classchild + classteen + classcurrent`.
+  - Unit/scale: Coefficient is change in adult unhappiness (−1..1 scale) per unit change in adversity (−1..1 scale).
+
+- Family: parental_support (H2 primary)
+  - Estimand: Linear association between parental guidance (ages 0–12) and adult career satisfaction, adjusted as above.
+  - Model: OLS with HC3 SEs.
+  - Formula: `z0mhd63_scaled ~ pqo6jmj_scaled + selfage + gendermale + education + classchild + classteen + classcurrent`.
+
+- Family: digital_exposure (H3 primary)
+  - Estimand: Association between regular childhood computer use and adult socioeconomic status.
+  - Primary model: OLS(HC3), treating outcome as standardized continuous for interpretability.
+  - Formula (primary): `classcurrent_z ~ 4tuoqly_scaled + selfage + gendermale + education + classchild + classteen`.
+  - Sensitivity (pre-specified): Ordered logit with `classcurrent` as 0–6 ordinal outcome and the same covariates; report the coefficient for `4tuoqly_scaled` with standard errors and z-tests.
+
+- Family: mental_health_continuity (H4 primary)
+  - Estimand: Association between childhood depression self-report and adult depression, adjusted as above.
+  - Model: OLS with HC3 SEs.
+  - Formula: `wz901dj_scaled ~ dfqbzi5_scaled + selfage + gendermale + education + classchild + classteen + classcurrent`.
+
+Notes on families: Each family has exactly one primary confirmatory test as specified above. Interaction and nonlinearity checks listed below are pre-specified sensitivity analyses and do not expand the confirmatory family size.
+
+## Interactions and Nonlinearity (Pre-specified Sensitivities)
+- Interactions: For each H1–H4 model, estimate an additional specification with `gendermale × (primary predictor)` included. Interpret interaction cautiously; treat as sensitivity (not confirmatory) and do not adjust FDR for these checks.
+- Nonlinearity: For H1 and H2, estimate an additional specification adding a quadratic term for the primary predictor (e.g., `mds78zu_scaled^2`, `pqo6jmj_scaled^2`). Report the quadratic term and compare AIC with the linear baseline. Baseline linear model remains the confirmatory specification.
+
+## Deterministic Commands (Reproducibility)
+All commands run from the repository root unless stated.
+- Data derivation (scales): `python analysis/scripts/derive_likert_scales.py`
+- Confirmatory OLS models (primary):
+  - H1/H2: `python analysis/scripts/prototype_h1_h2_regressions.py`
+  - H3/H4: `python analysis/scripts/prototype_h3_h4_regressions.py`
+- H3 sensitivity (ordered logit): `python analysis/scripts/ordered_logit_h3.py`
+Outputs are written under `analysis/results/` and summarized in `analysis/results.csv`. Seeds are fixed at `20251016` where applicable (no randomness in these models beyond numerical optimization).
+
+## Diagnostics Plan (Frozen)
 - Linearity and functional form: inspect partial residual plots (lowess overlay) for each predictor; consider quadratic terms if strong curvature appears.
 - Heteroskedasticity: compute HC3 by default; report White test p-values as a diagnostic only.
 - Influence and leverage: flag observations with Cook’s distance > 4/n and re-estimate without them as a sensitivity.

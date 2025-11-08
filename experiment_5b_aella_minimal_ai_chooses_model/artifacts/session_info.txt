@@ -1,4 +1,4 @@
-timestamp_utc: 2025-11-08T15:21:23.996328+00:00
+timestamp_utc: 2025-11-08T15:28:46.189561+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_5b_aella_minimal_ai_chooses_model
@@ -6,9 +6,10 @@ science_model_default: gpt-5-codex
 review_model_default: gpt-5
 model_policy: agent
 seed: 20251016
-git_head: fd7a7135620a8293c005913be6d8692f1056014f
+git_head: 818aa04ce925deac4d1f8b3cb6eaab58e5188993
 git_status: |
-  ## main...origin/main [ahead 66]
+  ## main...origin/main [ahead 69]
+   M ../experiment_4a_aella_minimal_direct_edits_not_json/analysis/results.csv
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15

@@ -122,5 +122,6 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 
 ### Multiplicity & Promotion Plan
 - Proposed confirmatory family name: `religiosity_class_gradients` with up to two contrasts (moderate × classchild [primary], serious × classchild [supporting]). If only the moderate contrast is preregistered, BH at q=0.05 collapses to the raw p-value; if the serious contrast is retained, apply Benjamini–Hochberg across the two Wald p-values and report q-values in `analysis/results.csv`.
+- Loop 017 pre-computed the BH-adjusted q-values (moderate q=0.023, serious q=0.194) and recorded both rows in `analysis/results.csv` so the promotion to confirmatory status is audit-ready once reviewers sign off.
 - Survey design handling remains SRS unless weights/strata metadata emerge; each result row will continue to document the SRS justification.
 - Before freezing, we will (a) document the estimand and family in `analysis/hypotheses.csv`, (b) add the confirmatory shell `tables/loop016_h4_confirmatory.csv` to the manuscript workflow, and (c) expand `reports/paper.md` to cite Bruce et al. (2024) alongside Kasen/Davis when motivating the interaction.

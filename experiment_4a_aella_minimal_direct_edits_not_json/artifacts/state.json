@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-08T18:45:00Z",
-  "loop_counter": 16,
+  "last_updated": "2025-11-08T19:45:00Z",
+  "loop_counter": 17,
   "next_actions": [
-    "Decide whether the \u2265$10M H3 confirmatory contrast moves forward despite 0.16 cluster-adjusted power or if we need additional sampling/pooled waves.",
-    "Wire the `religiosity_class_gradients` family into analysis/results.csv with BH scaffolding so the moderate/serious interactions can transition to confirmatory status.",
-    "Assemble the reviewer packet (PAP addendum, confirm tables, manuscript excerpts) showing that the new loop016 tables respect the n\u226510 disclosure rule."
+    "Prototype pooled-wave or reweighted PPO runs to see whether the H3 \u2265$10M contrast can achieve acceptable power (effective n>1k) before requesting a confirmatory freeze.",
+    "Draft the formal `religiosity_class_gradients` promotion memo (final PAP text, manuscript cites, BH justification) so the moderate/serious contrasts can be frozen once reviewers agree.",
+    "Stress-test the serious-practice interaction (e.g., shrinkage or alternative anxiety codings) to decide if it remains in the confirmatory family or drops to exploratory supporting status."
   ],
   "phase": "analysis",
   "phase_ix": 2,
