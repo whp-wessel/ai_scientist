@@ -1,0 +1,176 @@
+{
+  "total": 202,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "68b3898e4e1c701b09877d2af27e1b4cda64219f",
+      "externalIds": {
+        "DOI": "10.1037/hea0001336",
+        "CorpusId": 266055574,
+        "PubMed": "38059930"
+      },
+      "url": "https://www.semanticscholar.org/paper/68b3898e4e1c701b09877d2af27e1b4cda64219f",
+      "title": "Longitudinal associations between adolescent skin color satisfaction and adult health outcomes in Black women.",
+      "venue": "Health Psychology",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1037/hea0001336?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1037/hea0001336, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2114806910",
+          "name": "Jordan E. Parker"
+        },
+        {
+          "authorId": "2266453455",
+          "name": "Craig K. Enders"
+        },
+        {
+          "authorId": "2242564462",
+          "name": "Stephanie L. Fitzpatrick"
+        },
+        {
+          "authorId": "2237280349",
+          "name": "Mahasin S. Mujahid"
+        },
+        {
+          "authorId": "2263445641",
+          "name": "Barbara A. Laraia"
+        },
+        {
+          "authorId": "2214054837",
+          "name": "Elissa S. Epel"
+        },
+        {
+          "authorId": "2271383408",
+          "name": "A. J. Tomiyama"
+        }
+      ],
+      "abstract": "OBJECTIVE\nAlthough emerging studies examine the inverse relationship between body satisfaction and disordered eating for Black women, it has not been established how racially salient aspects of body satisfaction may have implications for eating behaviors and longitudinal health outcomes.\n\n\nMETHOD\nIn a longitudinal sample of 455 Black women, we examined whether skin color satisfaction across ages 10-15 was directly related to adult health outcomes at age 40 (e.g., disordered eating, self-esteem, self-reported health, depressive symptoms, and cardiovascular risk). We also investigated the indirect impact of skin color satisfaction on adult health, mediated by body satisfaction, and binge eating.\n\n\nRESULTS\nNo significant direct or indirect effects of adolescent skin color satisfaction were observed for depressive symptoms or cardiovascular health outcomes. At ages 10 and 12, skin color satisfaction had negative and positive direct effects, respectively, on self-esteem. At age 15, greater skin color satisfaction was directly associated with greater self-reported health. Post hoc analyses revealed that when additionally accounting for adolescent body satisfaction, greater skin color satisfaction was indirectly associated with greater self-esteem and self-reported health, alongside lower cardiovascular risk.\n\n\nCONCLUSIONS\nAlthough previous research suggests that in adolescence, Black girls' skin color satisfaction affects both body satisfaction and disordered eating behaviors, this association does not hold into midlife. Rather, post hoc analyses suggest that the lasting effects of adolescent skin color satisfaction are mediated by the longitudinal stability of body satisfaction, which in turn, is associated with adult health outcomes. (PsycInfo Database Record (c) 2023 APA, all rights reserved)."
+    },
+    {
+      "paperId": "307a04621fa378917312d1d795ab27fa74474b6a",
+      "externalIds": {
+        "PubMedCentral": "11399306",
+        "DOI": "10.1007/s40519-024-01683-3",
+        "CorpusId": 272646561,
+        "PubMed": "39269521"
+      },
+      "url": "https://www.semanticscholar.org/paper/307a04621fa378917312d1d795ab27fa74474b6a",
+      "title": "Religiosity in adolescence and body satisfaction and disordered eating in adolescence and young adulthood: cross-sectional and longitudinal findings from project EAT",
+      "venue": "Eating and Weight Disorders",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1007/s40519-024-01683-3",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11399306, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "19304522",
+          "name": "Aysegul Baltaci"
+        },
+        {
+          "authorId": "31410312",
+          "name": "C. Burnette"
+        },
+        {
+          "authorId": "2251679256",
+          "name": "M. Laska"
+        },
+        {
+          "authorId": "2248175396",
+          "name": "D. Neumark-Sztainer"
+        }
+      ],
+      "abstract": "This research identified whether adolescent religiosity was associated with body satisfaction and disordered eating in adolescence and early adulthood and explored gender/sex differences in these associations. Project EAT (Eating and Activity in Teens and Young Adults) is a longitudinal cohort study following participants from adolescence into young adulthood. For this analysis (N\u2009=\u20091620), religiosity (importance of religion and frequency of religious service participation) during adolescence was examined as a correlate of body satisfaction and disordered eating (binge eating, maladaptive behaviors intended to lose or maintain weight, eating to cope, and dieting) at the same life stage (EAT-II, 2003\u20132004, Mage\u2009=\u200919.4 years) and during young adulthood (EAT-IV, 2015\u20132016, Mage\u2009=\u200931.5 years). Analyses used linear and logistic regression models adjusted for demographics and adolescent body mass index. During adolescence, females who placed greater importance on religion had higher body satisfaction, 22% higher odds of binge eating, and 19% greater odds of dieting in the past year, while more frequent attendance of religious services was associated with higher body satisfaction and 37% greater odds of dieting past year. Among males, only frequent attendance of religious services was associated with higher adolescent body satisfaction. Longitudinally, among females, only frequent attendance of religious services in adolescence predicted higher levels of body satisfaction in young adulthood. No significant longitudinal associations were observed among males. Our findings contribute to understanding the complex interplay between religiosity, gender, and body satisfaction. Further research should explore cultural factors influencing these associations and qualitative aspects of religious experiences to inform nuanced interventions. Level of evidence: Level III, cohort study."
+    },
+    {
+      "paperId": "9665454e43577fa6fef49b4611975d6f3ad1060b",
+      "externalIds": {
+        "MAG": "744568816",
+        "CorpusId": 152948563
+      },
+      "url": "https://www.semanticscholar.org/paper/9665454e43577fa6fef49b4611975d6f3ad1060b",
+      "title": "The Intergenerational Transmission of Marriage Relationship Satisfaction: Findings from the National Longitudinal Study of Adolescent and Adult Health 1994-2008",
+      "venue": "",
+      "year": 2015,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "119036462",
+          "name": "Timothy Hagen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "30cf5fcf8647e23de1cf496e39fb4fe0822a4f36",
+      "externalIds": {
+        "DOI": "10.1111/jomf.12943",
+        "CorpusId": 262181705
+      },
+      "url": "https://www.semanticscholar.org/paper/30cf5fcf8647e23de1cf496e39fb4fe0822a4f36",
+      "title": "Family and religion in flux: Relationship complexity, type of religiosity, and race/ethnicity",
+      "venue": "Journal of Marriage and Family",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jomf.12943",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jomf.12943?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jomf.12943, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2244583079",
+          "name": "Jesse Smith"
+        }
+      ],
+      "abstract": "This study examines the links between family formation, relationship history, and multiple types of religiosity in early\u2013middle adulthood, as well as racial/ethnic heterogeneity of these associations.Family and religion have long been recognized as linked institutions. However, rapid changes in both institutions in recent decades necessitate a reexamination of this link. We know little about how this association varies by past versus present relationship experience, institutional versus private types of religiosity, or racial/ethnic group.Logistic regression models predicting religious attendance, importance of faith, and prayer frequency were estimated using data from the National Longitudinal Study of Adolescent to Adult Health. Models included measures of both contemporaneous union and parenthood status and past relationship experiences. Additional analyses tested these associations separately for White, Black, and Hispanic respondents.Parenthood is consistently linked to higher, and cohabitation lower, religiosity. Respondents with more sexual partners tend to be less religious, while those with past marriages/divorces are more religious. Associations are stronger for attendance than faith or prayer, and more pronounced among White than Black or Hispanic respondents.The link between religion and family remains in evidence, but may have become more tenuous due to the delay and complexification of family formation. This link is strongest for White Americans and with respect to institutional rather than private religiosity."
+    },
+    {
+      "paperId": "2ac0ea5996a4936c3ebbfcdd2cd7eaf675df1e93",
+      "externalIds": {
+        "PubMedCentral": "5398377",
+        "MAG": "2592080238",
+        "DOI": "10.1177/1178221816686060",
+        "CorpusId": 30115772,
+        "PubMed": "28469423"
+      },
+      "url": "https://www.semanticscholar.org/paper/2ac0ea5996a4936c3ebbfcdd2cd7eaf675df1e93",
+      "title": "Prior Delinquency and Depression Differentially Predict Conditional Associations Between Discrete Patterns of Adolescent Religiosity and Adult Alcohol Use Patterns",
+      "venue": "Substance abuse : research and treatment",
+      "year": 2016,
+      "openAccessPdf": {
+        "url": "https://journals.sagepub.com/doi/pdf/10.1177/1178221816686060",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5398377, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50123537",
+          "name": "Meredith A Hoyland"
+        },
+        {
+          "authorId": "8557070",
+          "name": "W. Rowatt"
+        },
+        {
+          "authorId": "3736938",
+          "name": "Shawn J Latendresse"
+        }
+      ],
+      "abstract": "Prior research has demonstrated that adolescent delinquency and depression are prospectively related to adult alcohol use and that adolescent religiosity may influence these relationships. However, such associations have not been investigated using person-centered approaches that provide nuanced explorations of these constructs. Using data from the National Longitudinal Study of Adolescent to Adult Health, we examined whether adolescent delinquency and depression differentiated typologies of adult alcohol users and whether these relationships varied across religiosity profiles. Three typologies of self-identified Christian adolescents and 4 types of adult alcohol users were identified via latent profile analysis. Delinquency and depression were related to increased likelihood of membership in heavy drinking or problematic alcohol use profiles, but this relationship was most evident among those likely to be involved in religious practices. These results demonstrate the importance of person-centered approaches in characterizing the influences of internalizing and externalizing behaviors on subsequent patterns of alcohol use."
+    }
+  ]
+}

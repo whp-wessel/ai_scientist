@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 1,
+  "loop_counter": 2,
   "model_state": {
     "review": {
       "last_model": "gpt-5",
@@ -24,11 +24,11 @@
     }
   },
   "next_actions": [
-    "Translate the \u22123..3 Likert variables into centered/standardized scales and document the recode script for H1\u2013H4.",
-    "Finalize covariate sets + model specs in the PAP ahead of freezing for confirmatory testing.",
-    "Prototype regression notebooks for H1/H2 to confirm effect magnitudes and diagnostics."
+    "Extend the harmonized scale workflow + regression diagnostics to H3/H4 (including classcurrent outcome handling).",
+    "Write the PAP freeze-ready sections (estimands, diagnostics plan) and decide on any confirmatory families before tagging.",
+    "Investigate survey design provenance or formalize the SRS justification for the eventual public release."
   ],
-  "phase": "literature",
-  "phase_ix": 0,
+  "phase": "pap",
+  "phase_ix": 1,
   "total_loops": 50
 }

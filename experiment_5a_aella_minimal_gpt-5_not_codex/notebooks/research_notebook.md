@@ -218,3 +218,18 @@ Notes:
 
 Next:
 - If key is available, re-run loop_014 query and follow with extraction; otherwise, pivot to refining PAP estimands and defining freeze criteria for two primary families (Wellbeing; Relationships), keeping MentalHealth exploratory for now.
+
+---
+## Loop 015 (literature)
+- Ran a focused Semantic Scholar search to support H2 (religion ↔ relationship outcomes) with longitudinal emphasis:
+  - `python scripts/semantic_scholar_cli.py search --query "adolescent religiosity adult relationship satisfaction monogamy longitudinal" --limit 5 --output lit/queries/loop_015/query_001.json` (unauthenticated; 1 rps enforced).
+- Extracted DOIs from the saved JSON and appended to the evidence map:
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_015/query_001.json --output lit/evidence_map.csv --topic "adolescent religiosity to adult relationship satisfaction (longitudinal)"` → appended 4 DOIs (E35–E38).
+- Logged actions in `analysis/decision_log.csv` and updated `artifacts/state.json` (loop_counter=15; phase=literature).
+
+Observations (literature):
+- Returned items include longitudinal and cross-sectional links touching religiosity and later psychosocial/relationship outcomes; scope appears adequate to draft a more specific PAP for the Relationships family (H2).
+
+Next:
+- Tighten PAP estimands for H2 (clarify model choice for ordinal outcomes; predefine covariates), and set freeze criteria for confirmatory testing (q ≤ 0.05 if >1 test in family).
+- Add one more targeted query on “religious homogamy/assortative mating AND relationship satisfaction” to strengthen external context before PAP freeze.
