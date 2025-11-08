@@ -206,3 +206,12 @@ N1: PASS – State stays in the PAP phase with N1 marked blocked by the ongoing 
 
 Notes: Keep escalating the Semantic Scholar credential/waiver so the PAP can freeze.
 
+## Loop 028 — 2025-11-08T19:20:12.900809+00:00
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint logged and session/checksum artifacts refreshed before edits, keeping deterministic context verifiable (analysis/decision_log.csv:265; artifacts/session_info.txt:1; artifacts/checksums.json:3; qc/data_checks.md:47).
+L1: PASS – Loop 028 recorded the mandatory Semantic Scholar call plus stored the 403 payload, and logged the Nelson 1982 DOI fallback in the evidence map/bibliography (analysis/decision_log.csv:267; lit/queries/loop_028/query_001.json:1; analysis/decision_log.csv:268; lit/evidence_map.csv:26).
+P1: PASS – No tables/figures released this loop and disclosure guardrails remain enforced with n≥10 reminders in the QC checklist (analysis/decision_log.csv:269; qc/data_checks.md:52).
+N1: PASS – State stays in PAP with N1 explicitly blocked pending the S2 credential/waiver, and the PAP header still reads status:draft, so phase advancement is correctly gated (artifacts/state.json:25; artifacts/state.json:28; artifacts/state.json:70; analysis/pre_analysis_plan.md:1).
+
+Notes: Continue pursuing the Semantic Scholar credential or waiver so the PAP freeze gate can clear (analysis/pre_analysis_plan.md:13).
+
