@@ -225,3 +225,11 @@ R5 PASS – Required artifacts (PAP, hypotheses, results, manuscript, state) are
 
 Notes: Continue monitoring DG‑4827 delivery and execute the planned H4 freeze once approvals arrive.
 
+## Loop 030 — 2025-11-08T19:38:33.243690+00:00
+DECISION: CONTINUE
+R1 WARN – `artifacts/session_info.txt:1-20` and `artifacts/repro_report.md:1-6` still report the 2025-11-08 snapshot even though Loop 030 concluded on 2025-11-13, so the latest environment provenance is missing despite seeds/commands being logged elsewhere.
+R2 PASS – No new estimands were run; the SRS justification remains recorded on every confirm row (`analysis/results.csv:20-32`) and the Loop 030 weighting rehearsal plus follow-up plan are documented in `docs/h3_design_effect_plan.md:130-132`.
+R3 PASS – Manuscript prose continues to cite peer-reviewed sources for every hypothesis (`reports/paper.md:8-34`) and DOI coverage is maintained in `lit/evidence_map.csv:1-20`.
+R4 PASS – Public artifacts from this loop are limited to delivery-status metadata (`tables/loop021_h3_weight_delivery_status.csv:1-6`), while respondent counts ≥10 stay confined to internal compliance logs (`docs/h3_high_wealth_refresh/verification_register.csv:1-4`), protecting n<10 cells.
+R5 PASS – The PAP remains frozen for H1 only (`analysis/pre_analysis_plan.md:1-60`), and the notebook, decision log, and state file record the Loop 030 actions and next steps (`notebooks/research_notebook.md:250-270`; `analysis/decision_log.csv:69`; `artifacts/state.json:1-14`).
+
