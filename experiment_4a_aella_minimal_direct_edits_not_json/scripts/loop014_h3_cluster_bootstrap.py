@@ -175,10 +175,12 @@ def sample_by_cluster(cluster_frames: Dict[str, pd.DataFrame], rng: np.random.Ge
 
 
 def summarize_draws(draws: pd.DataFrame) -> pd.DataFrame:
-    """Compute percentile summaries and tail probabilities."""
+    """Compute percentile summaries and tail probabilities ordered by cutpoint."""
 
     summaries: list[dict[str, object]] = []
-    for cut, group in draws.groupby("cut_label"):
+    grouped = list(draws.groupby("cut_label"))
+    grouped.sort(key=lambda item: int(item[1]["cutpoint"].iloc[0]))
+    for cut, group in grouped:
         estimates = group["estimate"].dropna()
         if estimates.empty:
             summaries.append(

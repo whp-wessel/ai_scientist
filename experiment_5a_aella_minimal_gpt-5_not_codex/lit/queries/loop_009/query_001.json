@@ -1,0 +1,231 @@
+{
+  "total": 4036,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "faa58e1287fceb5dbc78ddc337cf78f907f7faf7",
+      "externalIds": {
+        "DOI": "10.1101/2023.06.28.23292009",
+        "CorpusId": 259282857
+      },
+      "url": "https://www.semanticscholar.org/paper/faa58e1287fceb5dbc78ddc337cf78f907f7faf7",
+      "title": "Does physical activity in childhood or adolescence predict future anxiety, depression, or wellbeing? A systematic review of 98 prospective cohort studies.",
+      "venue": "medRxiv",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://www.medrxiv.org/content/medrxiv/early/2023/06/29/2023.06.28.23292009.full.pdf",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2023.06.28.23292009?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2023.06.28.23292009, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "101385373",
+          "name": "C. Knowles"
+        },
+        {
+          "authorId": "47788664",
+          "name": "Kyle F. Paradis"
+        },
+        {
+          "authorId": "144697204",
+          "name": "S. Shannon"
+        },
+        {
+          "authorId": "2099835",
+          "name": "G. Breslin"
+        },
+        {
+          "authorId": "34672888",
+          "name": "A. Carlin"
+        }
+      ],
+      "abstract": "Physical activity (PA) is a modifiable health behaviour that can support and improve mental health. The tendency for activity levels to track over time suggests that through continued participation, those most active in youth may experience better long-term mental health than less active peers. Exploring the extent to which mental health benefits of child/adolescent PA persevere over time helps advocates and policy-makers determine whether PA promotion in youth constitutes effective allocation of public health resources and a viable means of reducing the global burden of common mental disorders and suboptimal wellbeing across the lifespan. This systematic review synthesised evidence for childhood/adolescent PA as a predictor of future anxiety, depression and wellbeing indicators (PROSPERO: CRD42021242555). Systematic searches of CINAHL, Medline, PsycInfo, and Scopus (conducted 27th October 2022) returned 12,703 articles with 98 retained. Included: prospective, quantitative, longitudinal designs; PA measured ages 5-17 years; anxiety, depression, and/or wellbeing indicators measured at least 12 months later; generally healthy populations. Excluded: severe mental illnesses. Risk of bias and quality of evidence were assessed following the GRADE framework. Effect sizes from moderate- and high-quality studies are discussed narratively. Studies are grouped by mental health outcome, PA type, domain, and whether participants adhered to current World Health Organisation PA guidelines. PA was negatively associated with depression in 41/67 studies (61.2%); anxiety in 20/35 studies (57.1%); and positively associated with wellbeing in 25/39 studies (64.1%). Effect sizes for all outcomes were small and evidence quality low across all timeframes. Team sports were the most consistently predictive type of PA. Whether domain-specific activities or guideline (non)adherence have differential effects remains unclear. Heterogeneity was attributed to the vastness of associations tested and psychometric measures used. Current literature offers low-quality partial evidence that childhood/adolescent PA has small beneficial effects for prospective anxiety, depression and wellbeing at least 12 months later."
+    },
+    {
+      "paperId": "8bb08a6af4aa7b8239d1a312c9d3c9d3c8cd240c",
+      "externalIds": {
+        "PubMedCentral": "10954170",
+        "DOI": "10.1371/journal.pone.0299057",
+        "CorpusId": 268549341,
+        "PubMed": "38507345"
+      },
+      "url": "https://www.semanticscholar.org/paper/8bb08a6af4aa7b8239d1a312c9d3c9d3c8cd240c",
+      "title": "Childhood experiences and sleep problems: A cross-sectional study on the indirect relationship mediated by stress, resilience and anxiety",
+      "venue": "PLoS ONE",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0299057&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10954170, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292351868",
+          "name": "Rola Ashour"
+        },
+        {
+          "authorId": "31304741",
+          "name": "E. Halstead"
+        },
+        {
+          "authorId": "2267172660",
+          "name": "Stephen A Mangar"
+        },
+        {
+          "authorId": "2292351893",
+          "name": "Vanessa Khoo Qi Lin"
+        },
+        {
+          "authorId": "35567777",
+          "name": "A. Azhari"
+        },
+        {
+          "authorId": "2060107175",
+          "name": "A. Carollo"
+        },
+        {
+          "authorId": "2241301234",
+          "name": "Gianluca Esposito"
+        },
+        {
+          "authorId": "2165014868",
+          "name": "Laura Threadgold"
+        },
+        {
+          "authorId": "34408770",
+          "name": "D. Dimitriou"
+        }
+      ],
+      "abstract": "Background Childhood experiences either adverse (ACE) or benevolent (BCE) can indirectly impact sleep quality in adult life, which in turn are modulated by the interplay of a variety of factors such as depression, anxiety, resilience and mental health problems. Methods A cross-sectional observational study was conducted across the UK and the Middle Eastern countries during the COVID-pandemic on 405 participants. An online survey used a combination of questionnaires to assess ACE and BCEs. The following tools were then used to assess the contribution of resilience, stress, depression and anxiety respectively: Brief Resilience Scale (BRS), Perceived Stress Scale (PSS-10), Patient Health Questionnaire-2 (PHQ-2) and General Anxiety Disorder-2 (GAD-2) scale on childhood experiences. The extent of sleep disturbances experienced over a period of seven days was assessed using the PROMIS Sleep Disturbance Short-Form Tool. A serial-parallel mediation model was used to evaluate the impact of the mediators on childhood experiences and sleep quality. Results Over 50% of the cohort were from Middle Eastern countries. Four or more BCEs were experienced by 94.3% of the cohort. In contrast, 67.9% of participants experienced at least one ACE before the age of 18 years, with moderate levels of stress, mild depression and anxiety were reported in 3.7%, 13% and 20% of participants respectively. Whilst 25.4% of participants reported having had four or more ACEs, with higher reports in the middle easter countries (32%). ACEs were found to correlate with sleep disturbance whilst BCEs showed an inverse correlation. The relationship between ACE and sleep disturbances was shown to be mediated by stress, and anxiety, but not by resilience or depression. Resilience and stress, and resilience and anxiety serially mediated the interaction between ACE and sleep disturbance. With regards to BCE, an inverse association with sleep disturbance was recorded with similar mediators of stress and anxiety observed. Conclusion This study confirms the negative effects of ACEs, and the positive effects of BCEs on sleep in adulthood which are both mediated predominantly by psychological resilience, anxiety and stress. Strategies aimed at improving psychological resilience as well as addressing stress and anxiety may help improve sleep quality."
+    },
+    {
+      "paperId": "60420dd6f46ba7ec134abd9ec04dc1a629b767bb",
+      "externalIds": {
+        "PubMedCentral": "11928354",
+        "DOI": "10.1007/s10578-023-01568-z",
+        "CorpusId": 259353248,
+        "PubMed": "37418072"
+      },
+      "url": "https://www.semanticscholar.org/paper/60420dd6f46ba7ec134abd9ec04dc1a629b767bb",
+      "title": "Adolescent Anxiety, Depression and Flourishing before and During COVID-19 and the Predictive Role of Baseline Psychological Capital (PsyCap) on Student Mental Health and Subjective Wellbeing During the Pandemic",
+      "venue": "Child Psychiatry and Human Development",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10578-023-01568-z.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11928354, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1485884945",
+          "name": "Jules Finch"
+        },
+        {
+          "authorId": "26114065",
+          "name": "A. Waters"
+        },
+        {
+          "authorId": "1982152",
+          "name": "Lara J. Farrell"
+        }
+      ],
+      "abstract": "Studies indicate the COVID-19 pandemic has resulted in rises in adolescent mental health symptoms globally, although the impact of the pandemic on subjective wellbeing is under-researched in this population. Psychological capital (PsyCap), a cluster of four positive psychological constructs comprising hope, efficacy, resilience and optimism (HERO), has demonstrated preventative and promotive qualities on mental health symptoms and subjective wellbeing outcomes with adult populations (employees, university students). However, PsyCap\u2019s influence on these outcomes in young people is unclear. The present exploratory study investigated changes in self-reported anxiety and depressive symptoms (measured via the RCADS-SV) and subjective wellbeing (measured by the Flourishing Scale) from pre-pandemic levels to 3 months into the pandemic and explored gender differences at each time point in a sample of Australian Year 10 students (N\u2009=\u200956, Mage\u2009=\u200914.93 years, SD\u2009=\u20090.50, 51.8% male). The longitudinal predictive role of baseline PsyCap on follow-up assessments of anxiety symptoms, depressive symptoms and flourishing were also examined. There were no significant changes in levels of anxiety and depressive symptoms between the timepoints, but flourishing significantly declined from T1 to T2. Baseline PsyCap was not a significant predictor of T2 anxiety and depressive symptoms but was a significant predictor of T2 flourishing. Further, different baseline HERO constructs predicted T2 mental health symptoms and flourishing. Future larger studies building on the current preliminary findings investigating the roles of student PsyCap, mental health and subjective wellbeing are warranted to better understand these constructs in the COVID-19 era and beyond."
+    },
+    {
+      "paperId": "8d2993ebf5df18e43769a578f9a34fda52db98c6",
+      "externalIds": {
+        "PubMedCentral": "8627303",
+        "DOI": "10.2147/NDT.S332603",
+        "CorpusId": 244523239,
+        "PubMed": "34848964"
+      },
+      "url": "https://www.semanticscholar.org/paper/8d2993ebf5df18e43769a578f9a34fda52db98c6",
+      "title": "Rumination Mediates the Effects of Childhood Maltreatment and Trait Anxiety on Depression in Non-Clinical Adult Volunteers",
+      "venue": "Neuropsychiatric Disease and Treatment",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "https://www.dovepress.com/getfile.php?fileID=76042",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8627303, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47933414",
+          "name": "Ayaka Deguchi"
+        },
+        {
+          "authorId": "49220290",
+          "name": "J. Masuya"
+        },
+        {
+          "authorId": "4170689",
+          "name": "Mayu Naruse"
+        },
+        {
+          "authorId": "1713624856",
+          "name": "C. Morishita"
+        },
+        {
+          "authorId": "113673182",
+          "name": "Motoki Higashiyama"
+        },
+        {
+          "authorId": "35378375",
+          "name": "Hajime Tanabe"
+        },
+        {
+          "authorId": "143748888",
+          "name": "Takeshi Inoue"
+        },
+        {
+          "authorId": "34744984",
+          "name": "M. Ichiki"
+        }
+      ],
+      "abstract": "Background Several psychological studies have shown that depressive rumination is associated with the onset and severity of depression. However, it is unclear how rumination interacts with other predisposing factors to cause depression. In this study, we hypothesized that rumination mediates the association between depression and two predisposing factors of depression, ie, childhood maltreatment and trait anxiety. Subjects and Methods Between 2017 and 2018, 473 adult volunteers were surveyed using self-report questionnaires regarding the following: demographic information, rumination (Ruminative Responses Scale), trait anxiety (State-Trait Anxiety Inventory-Y), and the experience of childhood maltreatment (Child Abuse and Trauma Scale). The effects of these factors on depression (Patient Health Questionnaire-9) were analyzed by multiple regression and path analysis to analyze the mediating effects of rumination. This study was conducted with approval from the relevant ethics committee. Results Multiple regression analysis using depression as a dependent variable demonstrated that trait anxiety, rumination, childhood maltreatment, and living alone were significantly associated with depression. Path analysis showed that childhood maltreatment had a positive effect on trait anxiety, rumination, and depression; trait anxiety had a positive effect on rumination and depression; and rumination had a positive effect on depression. Regarding indirect effects, the experience of childhood maltreatment increased rumination and depression indirectly via trait anxiety. Furthermore, the experience of childhood maltreatment increased depression indirectly via rumination, and trait anxiety significantly increased depression via rumination. In other words, rumination mediated the indirect effects of abusive experiences and trait anxiety on depression. This model accounted for 50% of the variance in depression in adult volunteers. Conclusion Our results suggest that rumination mediates the association between childhood maltreatment, trait anxiety, and depression in adulthood."
+    },
+    {
+      "paperId": "7d2f618093ab3a867057a4308d858e12163fdc15",
+      "externalIds": {
+        "PubMedCentral": "8278608",
+        "DOI": "10.1186/s12888-021-03354-4",
+        "CorpusId": 235815218,
+        "PubMed": "34261482"
+      },
+      "url": "https://www.semanticscholar.org/paper/7d2f618093ab3a867057a4308d858e12163fdc15",
+      "title": "Contributions of childhood peer victimization and/or maltreatment to young adult anxiety, depression, and suicidality: a cross-sectional study",
+      "venue": "BMC Psychiatry",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "https://bmcpsychiatry.biomedcentral.com/track/pdf/10.1186/s12888-021-03354-4",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8278608, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1397619623",
+          "name": "M\u00e9lissa Macalli"
+        },
+        {
+          "authorId": "4667613",
+          "name": "M. Orri"
+        },
+        {
+          "authorId": "3002134",
+          "name": "C. Tzourio"
+        },
+        {
+          "authorId": "3238668",
+          "name": "S. C\u00f4t\u00e9"
+        }
+      ],
+      "abstract": "Background Childhood maltreatment and peer victimization are major risk factors for depression and suicidal behavior. Furthermore, childhood maltreatment increases the risk of peer victimization. Our objective was to distinguish between the contributions of parental maltreatment and peer victimization to the development of mental health problems in young adulthood. Specifically, we tested whether peer victimization alone or in combination with parental maltreatment before 18\u2009years old was associated with anxiety, depression, and suicidal thoughts and behaviors at age 21\u2009years. Methods We analyzed data collected from questionnaires administered in the i-Share (Internet-based Students\u2019 Health ResearchEnterprise) study in France from February 2013 to September 2019 ( N \u00a0=\u20092271 participants). We performed multinomial and binary logistic regression analyses to assess the single and combined contributions of childhood peer victimization and parental maltreatment to anxiety, depression, and suicidality in adulthood. Results Nearly one third of students (28.8%) reported at least one mental health problem; 29.8% reported peer victimization alone; 7.5% reported parental maltreatment alone; and 10.3% reported both parental maltreatment and victimization. In multivariate models, compared to participants that did not experience maltreatment or peer victimization, those that experienced peer victimization alone were more likely to report anxiety (adjusted odds ratio [aOR]: 1.90; 95% CI: 1.50\u20132.40), depression (aOR: 1.95; 95% CI: 1.46\u20132.60), or suicidal ideation, without (aOR: 1.62; 95% CI: 1.26\u20132.09) or with a suicide attempt (aOR: 2.70; 95% CI: 1.51\u20134.85). Similar associations were observed for participants that experienced maltreatment alone. Participants that experienced both maltreatment and peer victimization were at increased risk of depression (aOR: 2.63; 95% CI: 1.79\u20133.86) and suicidal ideation, with (aOR: 9.19; 95% CI: 4.98\u201316.92) and without a suicide attempt (aOR: 2.64; 95% CI: 1.86\u20133.76). Conclusions Separate and combined exposures to parental maltreatment and peer victimization in childhood or adolescence were associated with increased risks of anxiety, depression, and suicidal behaviors. Peer victimization appeared to play a specific role in mental health disorders that were not otherwise explained by polyvictimization. Currently, peer victimization is a frequent, but avoidable type of child abuse; therefore, these findings have implications for policies for preventing and dealing with peer victimization."
+    }
+  ]
+}

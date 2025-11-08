@@ -118,3 +118,10 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Executed the mandated Semantic Scholar query (`childhood abuse self love adult wellbeing`); HTTP 403 persists, so the payload now resides at `lit/queries/loop_011/query_001.json` and action N1 stays blocked pending a working key or waiver.
 - Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 011 note referencing the new query file, and extended `qc/data_checks.md` to document the reproducibility checkpoint plus the ongoing literature blocker.
 - Planned follow-up: keep `artifacts/state.json` in PAP phase with loop_counter=11, continue daily evidence attempts, and prepare waiver documentation if ops cannot restore API access before Loop 013.
+
+## Loop 12 Updates (2025-11-08)
+- Logged the Loop 011 reviewer summary (R1 reproducibility, L1 literature attempts, P1 disclosure guard, N1 blocked PAP) in `analysis/decision_log.csv` before planning, keeping the audit trail aligned with review expectations.
+- Executed the required Semantic Scholar query (`childhood resilience religious adherence depression`); HTTP 403 persists, so the payload is archived at `lit/queries/loop_012/query_001.json` while action N1 stays blocked pending a working key or waiver.
+- To avoid literature stagnation, fetched CrossRef metadata for Ross et al. (2019, DOI `10.1016/j.chiabu.2019.03.016`) and added it to `lit/evidence_map.csv`, `lit/bibliography.bib`, and `lit/bibliography.json`, strengthening the H3 evidence base despite the S2 outage.
+- Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 012 note describing the new reference and the continuing Semantic Scholar blocker, and updated `qc/data_checks.md` to Loop 012 with the current session/checksum timestamps and disclosure guard reminder.
+- Updated `artifacts/state.json` to loop_counter=12 (phase stays PAP) and reconfirmed that confirmatory analyses remain paused until Semantic Scholar access or a waiver is approved.

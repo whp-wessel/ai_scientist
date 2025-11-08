@@ -126,3 +126,19 @@ Next:
 Next:
 - Provide `.env` with `S2_API_Key`; expand literature (1 req/sec) and map additional DOIs into `lit/evidence_map.csv`.
 - Begin implementing ordered logit refits for H1–H4 (exploratory) and evaluate nonlinearity.
+
+---
+## Loop 009 (literature)
+- Ran Semantic Scholar search via helper (unauthenticated, 1 req/sec enforced):
+  - `python scripts/semantic_scholar_cli.py search --query "childhood religiosity adult wellbeing depression anxiety" --limit 5 --output lit/queries/loop_009/query_001.json`
+- Extracted DOIs from the saved JSON into `lit/evidence_map.csv` using:
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_009/query_001.json --output lit/evidence_map.csv --topic "childhood religiosity and mental health"`
+- Updated decision log and state; prepared commit message.
+
+Notes:
+- Literature coverage expanded with five additional DOIs relevant to childhood experiences and mental health/wellbeing links.
+- No confirmatory analyses added; phase remains literature; PAP remains `status: draft`.
+
+Next:
+- If `.env` `S2_API_Key` becomes available, broaden searches and pull abstracts for the most relevant items to inform PAP finalization.
+- Begin implementing ordered/ordinal models for key Likert outcomes (exploratory) and outline criteria for PAP freeze.
