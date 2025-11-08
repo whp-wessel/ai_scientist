@@ -145,3 +145,12 @@ N1: PASS – Phase stays PAP with loop_counter=20 and N1 blocked pending API res
 
 Notes: Keep pushing on the Semantic Scholar credential/waiver so the PAP can freeze promptly once the literature gate is cleared.
 
+## Loop 021 — 2025-11-08T17:56:05.654458+00:00
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint entry plus QC ledger (analysis/decision_log.csv:186, qc/data_checks.md:3, qc/data_checks.md:47) keep the canonical seed and current session/checksum timestamps, so determinism stayed auditable.
+L1: PASS – Loop logged the required Semantic Scholar call and stored its 403 payload alongside the CrossRef fallback (analysis/decision_log.csv:187, analysis/decision_log.csv:188, lit/queries/loop_021/query_001.json:1, lit/queries/loop_021/crossref_query_001.json:1).
+P1: PASS – n≥10 disclosure guard plus automated check references remain in force and no release occurred (analysis/pre_analysis_plan.md:43, qc/data_checks.md:52).
+N1: PASS – Phase stays PAP with the next action explicitly blocked until the S2 gate clears (artifacts/state.json:25, artifacts/state.json:28, analysis/pre_analysis_plan.md:33).
+
+Notes: Unblock Semantic Scholar (new key or waiver) so the PAP can finally freeze (analysis/pre_analysis_plan.md:33).
+
