@@ -1,8 +1,8 @@
 # Pre-Analysis Plan
 
-**status: frozen (commit <hash>)**
+**status: frozen (commit 565989e)**
 
-Freeze tag: pap_freeze_loop004 (to be created on commit)
+Freeze tag: pap_freeze_loop004 (git tag `pap_freeze_loop004` -> commit `565989e`)
 
 ## Project Summary
 - **Research focus:** Link specific childhood environments captured in `childhoodbalancedpublic_original.csv` to adult wellbeing, mental health, and socioeconomic positioning.
@@ -12,6 +12,7 @@ Freeze tag: pap_freeze_loop004 (to be created on commit)
 ## Survey Design Assumptions
 - No published weights, strata, or clusters accompany the dataset. Until provenance information is recovered, analyses will report simple random sampling (SRS) results and include explicit caveats in the `design_used`/`srs_justification` fields.
 - TODO: confirm whether recruitment relied on quota balancing or platform weighting (blocked until codebook is located).
+- Loop 5 due diligence: re-checked the Balanced Data public release (see `docs/TODO.md`) and confirmed no weighting/stratification metadata accompanies `childhoodbalancedpublic_original.csv`; therefore SRS remains the only defensible assumption for confirmatory work, with explicit logging in `analysis/hypotheses.csv` and `analysis/results.csv`.
 
 ## Research Questions
 1. How do adverse childhood experiences relate to adult affect and self-perception?

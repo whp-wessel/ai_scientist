@@ -89,3 +89,14 @@ These plans keep the sensitivity queue ready so we can transition from “design
 - **Findings**: The moderate practice × classchild interaction equals −0.130 (SE 0.052, p=0.012). High-anxiety prevalence rises by +2.0 p.p. when classchild jumps from 0→6 among non-practitioners but *falls* by 16.9 p.p. among moderate practitioners (−18.9 p.p. relative shift). The serious interaction is negative but imprecise (−0.086 ±0.066). Bruce et al. (2024) adds that private prayer protects cognitive status predominantly for lower-income Black men, bolstering the case for class-conditional religiosity effects.
 - **Next steps**: The PAP addendum now sketches a two-test family (`religiosity_class_gradients`) so we can BH-adjust the moderate/serious contrasts once the reviewer clears the promotion request.
 - **Loop 017 wiring**: Logged both interaction rows (with BH-adjusted q-values 0.023 and 0.194) under the new `religiosity_class_gradients` family in `analysis/results.csv` and `analysis/hypotheses.csv`, ensuring the confirmatory paperwork is turnkey once the PAP freezes the family.
+
+# Loop 018 — H3 ≥$10M Power Under Pooled/Oversampled Waves
+
+- **Command**: `PYTHONHASHSEED=20251016 python scripts/loop018_h3_wavepooling.py`
+- **Artifacts**: Scenario summary table `tables/loop018_h3_wavepooling_summary.csv`.
+- **Design**: Mirrors the PPO prep from Loop 010 but enforces non-missing country labels so the 24-country cluster structure matches the Loop 014 bootstrap. Each scenario either (a) pools identical survey waves (naïvely assuming independence across releases) or (b) upsamples the ≥$10M tier to mimic recruiter-level oversamples. Design effect stays fixed at 14.76, the Loop 016 bootstrap estimate.
+- **Results**:
+  - Pooling **two** waves doubles raw n to 28,846 (n≥$10M = 1,640) and lifts the effective n to 1,955, yet cluster-adjusted power only rises from 0.12 to 0.20.
+  - Pooling **three** waves (n=43,269; effective n=2,932) still caps cluster power at 0.27, well below the ≥0.80 threshold we require before freezing a confirmatory family.
+  - A **single** wave with a **2× ≥$10M oversample** reaches effective n≈1,033 but leaves the cluster power stuck at 0.12 because the duplicated respondents sit inside the same countries.
+- **Implication**: Simply stacking identical waves or oversampling the existing ≥$10M respondents cannot rescue the H3 precision shortfall. We either need new countries (to shrink the design effect) or truly independent high-wealth interviewees before considering a PAP freeze for `childhood_class_networth_ge10m`.

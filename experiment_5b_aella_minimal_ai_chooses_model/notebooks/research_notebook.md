@@ -37,3 +37,10 @@
 - Marked primary hypotheses as confirmatory in `analysis/hypotheses.csv` (one primary test per family), preserving SRS justification.
 - Added `analysis/scripts/ordered_logit_h3.py` to operationalize H3’s ordered-logit sensitivity for the next loop.
 - Logged actions in `analysis/decision_log.csv` and prepared a commit request in `artifacts/git_message.txt` with tag plan `pap_freeze_loop004`.
+
+## 2025-11-08 — Loop 5
+- Created `analysis/scripts/run_confirmatory_ols.py` to execute the frozen specifications for H1–H4 with HC3 SEs and the standardized covariate stack; output stored at `analysis/results/loop005_confirmatory_ols.csv`.
+- Ran `python analysis/scripts/run_confirmatory_ols.py` (seedless, deterministic) and copied estimates into both registries: H1 β=−0.181 (SE=0.0069, n=14,426), H2 β=0.114 (SE=0.0086, n=14,429), H3 β=0.042 (SE=0.010, n=14,428), H4 β=−0.324 (SE=0.0071, n=14,428); all marked confirmatory in `analysis/results.csv`/`analysis/hypotheses.csv`.
+- Updated the pre-specified sensitivity by running `python analysis/scripts/ordered_logit_h3.py`, producing `analysis/results/loop005_h3_ordered_logit.csv` (β=0.091, SE=0.022, z=4.08, p=4.4e-05) for the ordinal `classcurrent` outcome.
+- Published public tables (`tables/loop005_confirmatory_ols.csv`, `tables/loop005_h3_ordered_logit.csv`) containing only aggregate statistics (minimum cell n=14,426) so no n<10 suppression was required.
+- Brought `analysis/pre_analysis_plan.md` up to compliance by recording the actual freeze commit (`565989e`) and tagging `pap_freeze_loop004`; reiterated the SRS justification after re-checking dataset documentation.

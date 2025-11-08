@@ -1,11 +1,11 @@
 """
-Run ordered logit sensitivity for H3 using statsmodels OrderedModel.
+Run the pre-specified ordered logit sensitivity for H3 using statsmodels.
 
 Usage:
     python analysis/scripts/ordered_logit_h3.py
 
 Outputs:
-    - analysis/results/loop004_h3_ordered_logit.csv
+    - analysis/results/loop005_h3_ordered_logit.csv
 """
 
 from __future__ import annotations
@@ -20,7 +20,7 @@ from statsmodels.miscmodels.ordinal_model import OrderedModel
 
 
 DERIVED_PATH = Path("analysis/derived/loop002_likert_scales.csv")
-RESULTS_PATH = Path("analysis/results/loop004_h3_ordered_logit.csv")
+RESULTS_PATH = Path("analysis/results/loop005_h3_ordered_logit.csv")
 
 
 BASE_COVARIATES: List[str] = [
@@ -53,7 +53,9 @@ def main() -> None:
     est = float(res.params[param])
     se = float(res.bse[param])
     z = float(est / se) if se != 0 else np.nan
-    p = float(2 * (1 - 0.5 * (1 + np.math.erf(abs(z) / np.sqrt(2))))) if np.isfinite(z) else np.nan
+    p = float(res.pvalues[param])
+    ci_low = est - 1.96 * se
+    ci_high = est + 1.96 * se
 
     RESULTS_PATH.parent.mkdir(parents=True, exist_ok=True)
     out = pd.DataFrame(
@@ -68,9 +70,12 @@ def main() -> None:
                 "se": se,
                 "z_value": z,
                 "p_value": p,
+                "ci_low": ci_low,
+                "ci_high": ci_high,
                 "n_obs": int(len(subset)),
                 "covariates": ",".join(BASE_COVARIATES),
                 "link": "logit",
+                "method": "bfgs",
             }
         ]
     )
@@ -80,4 +85,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

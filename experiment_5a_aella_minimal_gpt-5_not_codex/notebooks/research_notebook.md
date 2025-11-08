@@ -76,6 +76,24 @@ Next:
 ---
 ## Loop 005 (literature)
 - Attempted focused Semantic Scholar search on relational outcomes:
+[... truncated in earlier loops ...]
+
+---
+## Loop 017 (literature)
+- Ran one Semantic Scholar search via helper (unauthenticated):
+  - Command: `python scripts/semantic_scholar_cli.py search --query "childhood religiosity adult wellbeing relationship satisfaction longitudinal cohort" --limit 5 --output lit/queries/loop_017/query_001.json`
+  - Result: HTTP 429 (rate limited without API key); saved structured JSON to `lit/queries/loop_017/query_001.json`.
+- Attempted DOI extraction:
+  - Command: `python scripts/lit/extract_dois.py --input lit/queries/loop_017/query_001.json --output lit/evidence_map.csv --topic "childhood religiosity and adult wellbeing/relationships"`
+  - Outcome: 0 DOIs appended (expected given 429 payload).
+
+Notes:
+- Literature expansion continues; unauthenticated calls sometimes succeed, but reliability is variable. Providing `.env` with `S2_API_Key` will stabilize queries and increase throughput.
+
+Next:
+- Add `.env` with `S2_API_Key` and re-run loop_017 query to populate `lit/evidence_map.csv`.
+- Begin pruning off-topic items from `lit/evidence_map.csv` and tighten inclusion criteria around longitudinal evidence and adult outcomes most aligned with H1–H3.
+
   - `python scripts/semantic_scholar_cli.py search --query "religiosity monogamy relationship satisfaction" --limit 5 --output lit/queries/loop_005/query_001.json`
   - Result: HTTP 429 (unauthenticated); structured error saved to `lit/queries/loop_005/query_001.json` per protocol.
 - Updated decision log and state; preparing to checkpoint this loop.

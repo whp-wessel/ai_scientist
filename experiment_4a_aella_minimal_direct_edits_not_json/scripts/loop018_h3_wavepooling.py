@@ -24,7 +24,6 @@ from loop010_h3_partial_models import (
     add_cutpoint_dummies,
     build_long_format,
     fit_partial_model,
-    prepare_base_dataframe,
 )
 
 TABLES_DIR = Path("tables")
@@ -34,6 +33,7 @@ SUMMARY_PATH = TABLES_DIR / "loop018_h3_wavepooling_summary.csv"
 POWER_PATH = Path("tables/loop016_h3_power_summary.csv")
 
 CUTPOINT_TARGET = 5
+COUNTRY_COL = "What country do you live in? (4bxk14u)"
 
 
 def norm_cdf(value: float) -> float:
@@ -63,6 +63,31 @@ def load_design_effect(default_de: float = 14.75552771350343) -> float:
     if row.empty:
         return default_de
     return float(row.iloc[0]["value"])
+
+
+def prepare_dataframe(raw: pd.DataFrame) -> pd.DataFrame:
+    """Mirror the PPO prep while retaining the country label."""
+
+    keep_cols = [
+        "networth",
+        "classchild",
+        "classteen",
+        "selfage",
+        "gendermale",
+        "education",
+    ]
+    use_cols = [*keep_cols]
+    if COUNTRY_COL in raw.columns:
+        use_cols.append(COUNTRY_COL)
+    df = raw[use_cols].copy()
+    df = df.dropna()
+    df["networth_ord"] = df["networth"].astype(int)
+    df["classchild_male_int"] = df["classchild"] * df["gendermale"]
+    if COUNTRY_COL in df.columns:
+        df = df.rename(columns={COUNTRY_COL: "country_label"})
+    else:
+        df["country_label"] = "missing"
+    return df.reset_index(drop=True)
 
 
 def replicate_waves(df: pd.DataFrame, multiplier: int) -> pd.DataFrame:
@@ -187,7 +212,7 @@ SCENARIOS: List[Scenario] = [
 def main() -> None:
     design_effect = load_design_effect()
     raw = pd.read_csv("childhoodbalancedpublic_original.csv", low_memory=False)
-    base_df = prepare_base_dataframe(raw)
+    base_df = prepare_dataframe(raw)
 
     rows: list[dict[str, object]] = []
     for scenario in SCENARIOS:

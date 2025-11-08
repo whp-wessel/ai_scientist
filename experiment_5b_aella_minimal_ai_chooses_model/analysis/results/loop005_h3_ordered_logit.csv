@@ -1,0 +1,2 @@
+hypothesis_id,hypothesis_family,model,outcome,predictor,estimate,se,z_value,p_value,ci_low,ci_high,n_obs,covariates,link,method
+H3,digital_exposure,ordered_logit,classcurrent,4tuoqly_scaled,0.09061581866507018,0.02218595930597528,4.084376853637556,4.419525650177459e-05,0.04713133842535863,0.13410029890478173,14428,"selfage,gendermale,education,classchild,classteen",logit,bfgs
