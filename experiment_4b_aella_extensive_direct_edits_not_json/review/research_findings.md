@@ -330,3 +330,11 @@ N1: PASS – Phase stays in PAP with next action N1 blocked and a dated ops memo
 
 Notes: Execute the 2025-11-09 ops memo and 2025-11-10 S2 ticket on schedule so the literature gate can finally clear (artifacts/state.json:30; analysis/pre_analysis_plan.md:75).
 
+## Loop 042 — 2025-11-08T22:10:35.887735+00:00
+DECISION: CONTINUE
+R1: PASS – Session snapshot + dataset hashes regenerated before edits, and decision log captures every action for repeatability (artifacts/session_info.txt:1, artifacts/checksums.json:1, analysis/decision_log.csv:419).
+L1: PASS – Semantic Scholar attempt logged with stored payload plus CrossRef fallback, and Kuhar et al. DOI propagated to evidence map + bibliography (lit/queries/loop_042/query_001.json:1, lit/evidence_map.csv:41, lit/bibliography.bib:457).
+P1: PASS – No public outputs released; QC log reiterates disclosure guard with latest small-cell check reference (qc/data_checks.md:52).
+N1: PASS – PAP remains clearly marked draft while next_actions document the blocked S2 issue together with dated ops memo/support-ticket plan (analysis/pre_analysis_plan.md:1, artifacts/state.json:24, lit/semantic_scholar_ops_memo_2025-11-09.md:1, lit/semantic_scholar_support_ticket_draft_2025-11-10.md:1).
+Notes: Ensure the ops memo/support ticket are actually dispatched on the stated deadlines so the PAP gate can unblock once responses arrive.
+
