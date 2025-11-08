@@ -1,0 +1,13 @@
+DECISION: CONTINUE
+
+R1 Reproducibility: WARN — Loop is logged with commands and seeds (`analysis/decision_log.csv`, `artifacts/state.json`, `seed.txt`; commands echoed in `notebooks/research_notebook.md` and `artifacts/llm_raw/loop_012.txt`). However, no `artifacts/git_message.txt` exists despite the loop narrative claiming it (needed to request a checkpoint commit).
+
+R2 Statistical Rigor: PASS — No confirmatory tests; SRS explicitly justified in `analysis/results.csv` (`design_used=false`, `srs_justification` filled). FDR plan deferred until confirmatory work. Effect sizes and uncertainty recorded.
+
+R3 Literature/Evidence: PASS — Literature query saved at `lit/queries/loop_012/query_001.json`; DOIs appended to `lit/evidence_map.csv` (E27–E31). Manuscript cites peer‑reviewed source (Felitti 1998 DOI) in `reports/paper.md`.
+
+R4 Privacy: PASS — Public tables respect n<10 suppression (`tables/key_vars_value_counts.csv` masks “<10”). `tables/religion_by_monogamy.csv` has no cells <10.
+
+R5 Completeness: PASS — Required artifacts present and coherent: `analysis/pre_analysis_plan.md` (status: draft), `analysis/hypotheses.csv`, `analysis/results.csv`, `notebooks/research_notebook.md`, `reports/paper.md`, `lit/evidence_map.csv`. No PAP freeze yet (appropriate for literature phase).
+
+Notes: Create `artifacts/git_message.txt` to request the commit for loop_012 changes. Keep citing saved JSON paths in the PAP/manuscript.
