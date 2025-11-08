@@ -215,3 +215,12 @@ N1: PASS – State stays in PAP with N1 explicitly blocked pending the S2 creden
 
 Notes: Continue pursuing the Semantic Scholar credential or waiver so the PAP freeze gate can clear (analysis/pre_analysis_plan.md:13).
 
+## Loop 029 — 2025-11-08T19:33:09.144577+00:00
+DECISION: CONTINUE
+R1: PASS – analysis/decision_log.csv:273-281 records the loop-29 review sync plus session/checksum refresh, and qc/data_checks.md:1-55 captures the current seed, dataset counts, and regeneration commands.
+L1: PASS – analysis/decision_log.csv:275-278 logs the mandated Semantic Scholar query with CrossRef fallback, lit/queries/loop_029/query_001.json:1-16 stores the 403 payload, and lit/evidence_map.csv:27 documents the Gerra cortisol DOI.
+P1: PASS – qc/data_checks.md:50-54 reiterates disclosure automation with violations=0 and no new public tables were generated, so no small-cell exposures occurred this loop.
+N1: PASS – artifacts/state.json:25-74 keeps the project in phase “pap” with N1 explicitly blocked by the Semantic Scholar outage, and analysis/pre_analysis_plan.md:1-27 reaffirms status=draft plus gating requirements, making the stall well justified.
+
+Notes: Keep pressing on the Semantic Scholar credential/waiver so PAP freeze can proceed.
+
