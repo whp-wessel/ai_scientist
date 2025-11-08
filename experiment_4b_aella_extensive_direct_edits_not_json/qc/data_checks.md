@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 022
+# Data Quality Checklist — Loop 023
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -44,13 +44,13 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 - Result: PAP variables documented with `source_column` mappings; `qc/metadata_validation.md` logs status (still assuming SRS).
 
 ## Reproducibility Checkpoint
-- [x] `artifacts/session_info.txt` last updated 2025-11-08T17:23:51Z with Python/pip details and git HEAD; verified during Loop 022 and still reflects the active environment.
-- [x] `artifacts/checksums.json` timestamp 2025-11-08T13:46:15Z covering raw + imputed files; raw dataset mtimes unchanged since Loop 021, so hashes remain current.
+- [x] `artifacts/session_info.txt` last updated 2025-11-08T17:23:51Z with Python/pip details and git HEAD; re-verified at the start of Loop 023 (no env drift detected).
+- [x] `artifacts/checksums.json` timestamp 2025-11-08T13:46:15Z covering raw + imputed files; raw dataset mtimes remain unchanged since Loop 021, so hashes stay current.
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 022 logged `lit/queries/loop_022/query_001.json`; the waiver memo now spans loops 008-022 and includes the new Taskesen et al. 2025 DOI (`10.3389/fpsyg.2025.1629350`) alongside previously logged fallbacks (Kasen 2014, Giri 2025, Grummitt 2024, McLeod 1991, Wheeler 2023, Eliassen 2013, Merrill & Salazar 2002, Loecher 2023, etc.), so PAP freeze remains on hold until approval or credential restoration.
+3. Semantic Scholar credential still failing (403). Loop 023 logged `lit/queries/loop_023/query_001.json`; the waiver memo now spans loops 008-023 and includes the new Van Alen et al. 2020 DOI (`10.31234/osf.io/gjt94`) plus Taskesen 2025, Kasen 2014, Giri 2025, Grummitt 2024, McLeod 1991, Wheeler 2023, Eliassen 2013, Merrill & Salazar 2002, Loecher 2023, etc., so PAP freeze remains on hold until approval or credential restoration.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes

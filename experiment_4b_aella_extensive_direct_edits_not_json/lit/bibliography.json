@@ -393,5 +393,27 @@
       "C2"
     ],
     "notes": "Cross-national sample links parental warmth/autonomy support to resilience via emotion crafting, reinforcing H2 guidance-health mechanism."
+  },
+  {
+    "id": "vanalen2020parentalwarmth",
+    "title": "Childhood Parental Warmth and Heart Rate Variability in Midlife: Implications for Health",
+    "authors": [
+      "Nicholas Van Alen",
+      "Richard P. Sloan",
+      "Teresa E. Seeman",
+      "Camelia Hostinar"
+    ],
+    "year": 2020,
+    "venue": "PsyArXiv",
+    "volume": null,
+    "issue": null,
+    "pages": null,
+    "doi": "10.31234/osf.io/gjt94",
+    "url": "https://doi.org/10.31234/osf.io/gjt94",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C2"
+    ],
+    "notes": "MIDUS cohort evidence shows parental warmth improves HF-HRV and cardiovascular outcomes, informing H2's physiological mechanism while Semantic Scholar access is blocked."
   }
 ]

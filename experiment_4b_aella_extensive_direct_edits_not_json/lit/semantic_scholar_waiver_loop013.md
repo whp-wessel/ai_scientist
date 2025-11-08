@@ -1,9 +1,9 @@
-# Semantic Scholar Access Waiver Request — Loop 021
+# Semantic Scholar Access Waiver Request — Loop 023
 Date: 2025-11-08
 Status: draft (pending partner approval)
 
 ## Summary
-Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥14 consecutive failures paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002; Eliassen, 2013; Kasen et al., 2014; Giri et al., 2025; Grummitt et al., 2024; McLeod, 1991; Wheeler, 2023) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
+Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥15 consecutive failures (loops 008–023) paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002; Eliassen, 2013; Kasen et al., 2014; Giri et al., 2025; Grummitt et al., 2024; McLeod, 1991; Wheeler, 2023; Taskesen et al., 2025; Van Alen et al., 2020) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
 
 ## Attempt Log (Loops 008–021)
 | Loop | Timestamp (UTC) | Query | Status | Artifact |
@@ -23,6 +23,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 020 | 2025-11-08T17:25:02Z | "childhood spiritual involvement adult depressive symptoms social support" | 403 Forbidden | `lit/queries/loop_020/query_001.json` |
 | 021 | 2025-11-08T17:45:08Z | "childhood parental guidance adult health resilience" | 403 Forbidden | `lit/queries/loop_021/query_001.json` |
 | 022 | 2025-11-08T17:58:12Z | "childhood parental warmth adult mental health resilience" | 403 Forbidden | `lit/queries/loop_022/query_001.json` |
+| 023 | 2025-11-08T18:06:18Z | "childhood parental warmth adult emotional health" | 403 Forbidden | `lit/queries/loop_023/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -44,6 +45,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **McLeod (1991), DOI `10.2307/2136804`** — Captured via CrossRef (loop 021) showing that childhood parental loss elevates adult depressive symptoms, reinforcing the need for family adversity controls in H1 while S2 access is down.
 - **Wheeler (2023), DOI `10.1136/archdischild-2023-326071`** — Captured via CrossRef (loop 021) summarizing evidence that parental influence persists into young adulthood, supporting H2’s guidance→health assumptions despite the ongoing outage.
 - **Taskesen et al. (2025), DOI `10.3389/fpsyg.2025.1629350`** — Captured via CrossRef (loop 022) demonstrating that parental warmth/autonomy support predicts young-adult resilience through emotion crafting, reinforcing the H2 parental guidance mechanism while the Semantic Scholar credential remains blocked.
+- **Van Alen et al. (2020), DOI `10.31234/osf.io/gjt94`** — Captured via CrossRef (loop 023) showing that higher childhood parental warmth predicts better midlife heart-rate variability and lower cardiovascular risk, reinforcing H2’s physiological mechanism during the ongoing outage.
 
 ## Request
 1. **Waiver:** Allow continuation through PAP freeze relying on the documented CrossRef DOIs while Semantic Scholar restores API access. The attempt log above, paired with decision-log entries, demonstrates due diligence.
