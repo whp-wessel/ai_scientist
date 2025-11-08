@@ -32,7 +32,7 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API still 403 as of loop 005 (see lit/queries/loop_005/query_001.json); logging failures + awaiting new key/waiver."
+      "notes": "Semantic Scholar API still 403 as of loop 006 (see lit/queries/loop_006/query_001.json); logging failures + awaiting new key/waiver."
     },
     {
       "id": "N2",
