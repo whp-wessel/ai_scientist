@@ -1,0 +1,7 @@
+DECISION: CONTINUE
+R1: PASS – QC log reiterates seed 20251016, regeneration commands, and fresh session/checksum timestamps while the session report logs the exact environment/HEAD, keeping reproducibility artifacts current (qc/data_checks.md:1-49; artifacts/session_info.txt:1-20).
+L1: PASS – Loop 009 decision log records the mandated Semantic Scholar call and the 403 payload with full parameters is preserved under lit/queries for audit (analysis/decision_log.csv:67; lit/queries/loop_009/query_001.json:1-17).
+P1: PASS – The PAP still enforces the n≥10 disclosure guard and cites the automated check, and the QC risk list confirms no public artifacts breached that threshold (analysis/pre_analysis_plan.md:19-27; qc/data_checks.md:50-54).
+N1: PASS – State remains in the PAP phase with only the Semantic Scholar action flagged blocked, and the PAP note ties the freeze gate to that credential issue, so next steps and gating are aligned (artifacts/state.json:1-67; analysis/pre_analysis_plan.md:7-20).
+
+Notes: Secure a working Semantic Scholar key or documented waiver so the PAP can eventually freeze.
