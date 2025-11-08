@@ -383,3 +383,10 @@ N1: PASS – `artifacts/state.json` keeps the project in phase pap with N1 expli
 
 Notes: When the ops memo and support ticket are dispatched, log them in the decision log to maintain the waiver audit trail.
 
+## Loop 048 — 2025-11-08T23:13:38.677710+00:00
+DECISION: CONTINUE
+R1: PASS – `repro_checkpoint_loop048` refreshed session info, checksums, and seed before any edits, and the updated env snapshot plus repro report capture timestamp/head/seed for deterministic reruns (`analysis/decision_log.csv:487`, `artifacts/session_info.txt:1`, `artifacts/session_info.txt:6`, `artifacts/repro_report.md:1`).
+L1: WARN – The Loop 048 Semantic Scholar call and CrossRef fallback are logged and the DOI is in the evidence map (`analysis/decision_log.csv:488`, `analysis/decision_log.csv:489`, `lit/queries/loop_048/query_001.json:1`, `lit/evidence_map.csv:47`), yet the waiver attempt table still stops at row 047 so auditors cannot see the latest 403 at a glance (`lit/semantic_scholar_waiver_loop013.md:50`) even though the prose mentions Glenn 2014 (`lit/semantic_scholar_waiver_loop013.md:97`); please add the missing row.
+P1: PASS – No public tables/figures shipped and the QC log reiterates sensitive-column handling plus cites the last disclosure run with violations=0 (`qc/data_checks.md:50`, `qc/disclosure_check_loop_006.md:17`).
+N1: PASS – State remains in phase PAP with loop_counter=48 and next action N1 explicitly blocked pending the 9 Nov ops memo/10 Nov S2 ticket, while the PAP header stays “status: draft” with a Loop 048 blocker note (`artifacts/state.json:24`, `artifacts/state.json:30`, `analysis/pre_analysis_plan.md:1`, `analysis/pre_analysis_plan.md:89`).
+
