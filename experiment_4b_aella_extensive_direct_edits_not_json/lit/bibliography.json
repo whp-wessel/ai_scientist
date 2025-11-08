@@ -125,5 +125,27 @@
       "C2"
     ],
     "notes": "Book chapter finds sustained parental monitoring lowers hazardous drinking risk in young adults, reinforcing H2 specification."
+  },
+  {
+    "id": "larkin2024nexus",
+    "title": "Exploring the Nexus of Potentially Morally Injurious Events, Childhood Emotional Abuse and Neglect, and Self-Compassion in a Civilian Population",
+    "authors": [
+      "Kaitlyn Larkin",
+      "Travis A. Cole",
+      "Peter Tappenden",
+      "Holly Orcutt"
+    ],
+    "year": 2024,
+    "venue": "SSRN",
+    "volume": null,
+    "issue": null,
+    "pages": null,
+    "doi": "10.2139/ssrn.4703219",
+    "url": "https://doi.org/10.2139/ssrn.4703219",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C3"
+    ],
+    "notes": "Civilian-sample preprint linking morally injurious events, childhood emotional abuse/neglect, and diminished self-compassion; informs H3 mediator controls while S2 key is blocked."
   }
 ]

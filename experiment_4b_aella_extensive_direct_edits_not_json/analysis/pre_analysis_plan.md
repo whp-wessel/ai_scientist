@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T15:40Z
+last_updated: 2025-11-08T15:45Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -19,6 +19,8 @@ Loop 013 note: Added `lit/semantic_scholar_waiver_loop013.md`, consolidating loo
 Loop 014 note: Semantic Scholar failure persisted (`lit/queries/loop_014/query_001.json`), so we logged a CrossRef-backed spirituality article (`Pandya 2017`, DOI `10.1080/15332985.2016.1222982`) that links faith-based support to lower childhood depression. The waiver memo now covers loops 008–014 and cites this new DOI, but PAP status stays draft until the waiver is approved or the API credential resumes service.
 
 Loop 015 note: Loop-mandated Semantic Scholar query (`childhood parental guidance adult health`) again returned 403 (`lit/queries/loop_015/query_001.json`). We captured a CrossRef fallback on parental monitoring vs. hazardous drinking (Turrisi et al., 2010; DOI `10.7312/guil14080-006`) and synchronized `lit/evidence_map.csv`, `lit/bibliography.*`, and the waiver memo. PAP remains draft until either the waiver is formally approved or the API key is reissued.
+
+Loop 016 note: Another Semantic Scholar attempt (`childhood emotional neglect adult self compassion`) failed with 403 (`lit/queries/loop_016/query_001.json`). To keep H3 literature current, we captured an SSRN preprint (Larkin et al., 2024; DOI `10.2139/ssrn.4703219`) via CrossRef (`lit/queries/loop_016/crossref_query_001.json`) and propagated it to the evidence map/bibliography. The waiver memo now documents loops 008–016; PAP status stays draft until either the waiver is approved or Semantic Scholar access is restored.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

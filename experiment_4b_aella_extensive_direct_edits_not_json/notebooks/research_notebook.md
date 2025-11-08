@@ -144,3 +144,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Ran the mandated Semantic Scholar search (`childhood parental guidance adult health`); 403 persists, and the payload is archived at `lit/queries/loop_015/query_001.json` for the waiver trail.
 - Issued a CrossRef fallback query (`lit/queries/loop_015/crossref_query_001.json`) that surfaced Turrisi et al. (2010, DOI `10.7312/guil14080-006`); synchronized the new citation across `lit/evidence_map.csv`, `lit/bibliography.*`, and the waiver memo.
 - Updated the PAP (status still draft) with the Loop 015 note, refreshed `qc/data_checks.md`, and left state in phase PAP with N1 blocked pending credential restoration or waiver approval.
+
+## Loop 16 Updates (2025-11-08)
+- Logged the Loop 014 reviewer expectations (maintain seed/QC checkpoints, keep mandatory Semantic Scholar attempts + payload archives, enforce n ≥ 10 disclosure guard, resolve the blocked credential before PAP freeze) in `analysis/decision_log.csv`.
+- Executed the required Semantic Scholar search (`childhood emotional neglect adult self compassion`); HTTP 403 persists, so the payload is archived at `lit/queries/loop_016/query_001.json` for the waiver trail.
+- Ran a CrossRef fallback (`lit/queries/loop_016/crossref_query_001.json`) that surfaced the Larkin et al. (2024) SSRN preprint (DOI `10.2139/ssrn.4703219`) linking morally injurious events, childhood emotional abuse/neglect, and self-compassion in civilian adults; added the citation to `lit/evidence_map.csv`, `lit/bibliography.*`, and referenced it in the waiver memo.
+- Updated `analysis/pre_analysis_plan.md` (status still draft), `qc/data_checks.md`, and this notebook with the Loop 016 notes; `lit/semantic_scholar_waiver_loop013.md` now covers loops 008–016, and `artifacts/state.json` keeps the phase in PAP with N1 blocked until the waiver or credential fix arrives.

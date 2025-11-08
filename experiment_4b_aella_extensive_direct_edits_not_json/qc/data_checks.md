@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 015
+# Data Quality Checklist — Loop 016
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -44,13 +44,13 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 - Result: PAP variables documented with `source_column` mappings; `qc/metadata_validation.md` logs status (still assuming SRS).
 
 ## Reproducibility Checkpoint
-- [x] `artifacts/session_info.txt` last updated 2025-11-08T15:09:47Z with package versions and git HEAD; no environment changes occurred afterward, so rerun not required this loop.
+- [x] `artifacts/session_info.txt` last updated 2025-11-08T15:34:50Z with Python/pip details and git HEAD; no package changes since, so references remain valid.
 - [x] `artifacts/checksums.json` timestamp 2025-11-08T13:46:15Z covering raw + imputed files; raw dataset mtimes unchanged, so hashes remain current.
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 015 logged `lit/queries/loop_015/query_001.json`; the waiver memo now covers loops 008–015 and cites the new CrossRef DOI (Turrisi et al., 2010) captured in `lit/evidence_map.csv`, but PAP freeze remains on hold pending approval or credential fix.
+3. Semantic Scholar credential still failing (403). Loop 016 logged `lit/queries/loop_016/query_001.json`; waiver memo now covers loops 008-016 and cites the new SSRN CrossRef fallback (DOI `10.2139/ssrn.4703219`), but PAP freeze remains on hold pending approval or credential fix.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes
