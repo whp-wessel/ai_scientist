@@ -118,3 +118,12 @@ N1: PASS – State remains in the PAP phase with N1 explicitly blocked by the re
 
 Notes: Priority stays on restoring the Semantic Scholar key or obtaining approval on the documented waiver so the PAP can freeze.
 
+## Loop 018 — 2025-11-08T17:12:55.085226+00:00
+DECISION: CONTINUE
+R1: PASS – The PAP reiterates the global seed and scripted regeneration plan (analysis/pre_analysis_plan.md:32 and analysis/pre_analysis_plan.md:34), the QC log shows the session/checksum artifacts are current (qc/data_checks.md:47), and the loop recorded the reproducibility checkpoint in the decision log (analysis/decision_log.csv:137), so determinism is still auditable.
+L1: PASS – The mandatory Semantic Scholar query is logged with parameters (analysis/decision_log.csv:138) and its 403 payload saved for audit (lit/queries/loop_018/query_001.json:1), while the CrossRef fallback DOI is captured in the evidence map and bibliography (lit/evidence_map.csv:13 and lit/bibliography.bib:136), satisfying literature logging despite the outage.
+P1: PASS – Privacy controls keep the n≥10 disclosure guard and automated screening steps front and center (analysis/pre_analysis_plan.md:33 and analysis/pre_analysis_plan.md:37), and the QC risk list reiterates the disclosure audit trail with no new public releases (qc/data_checks.md:52), so no small-cell exposure occurred.
+N1: PASS – State remains in the PAP phase with the literature task explicitly blocked pending a fixed key or waiver (artifacts/state.json:26 and artifacts/state.json:30), and the PAP loop note documents that this outage is the active gate (analysis/pre_analysis_plan.md:27).
+
+Notes: Rapidly resolving the Semantic Scholar credential or approving the waiver is the only path to freezing the PAP.
+
