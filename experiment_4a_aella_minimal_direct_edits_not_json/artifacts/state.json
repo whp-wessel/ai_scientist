@@ -1,11 +1,17 @@
 {
   "bootstrap_complete": true,
+  "last_abort": {
+    "loop": 18,
+    "note": "Interrupted mid-loop",
+    "phase": "loop",
+    "ts": "2025-11-08T15:49:56.592983+00:00"
+  },
   "last_updated": "2025-11-08T21:10:00Z",
   "loop_counter": 18,
   "next_actions": [
     "Draft the formal `religiosity_class_gradients` promotion memo (PAP text + manuscript cites + BH plan) so the moderate/serious contrasts can freeze once reviewers agree.",
     "Stress-test the serious-practice interaction (e.g., shrinkage priors or alternative anxiety codings) to decide if it should stay in the confirmatory family.",
-    "Map realistic options for reducing the H3 design effect (additional countries, pooled waves with new respondents, or alternative clustering metadata) now that naïve wave stacking still leaves power <0.3."
+    "Map realistic options for reducing the H3 design effect (additional countries, pooled waves with new respondents, or alternative clustering metadata) now that na\u00efve wave stacking still leaves power <0.3."
   ],
   "phase": "analysis",
   "phase_ix": 2,

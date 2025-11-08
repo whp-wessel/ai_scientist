@@ -1,75 +1,81 @@
 {
-  "bootstrap_complete": true,
-  "loop_counter": 16,
-  "total_loops": 50,
-  "phase": "pap",
-  "phase_ix": 1,
   "backlog": [
     {
-      "id": "B1",
       "description": "Automate codebook + survey design validation scripts",
+      "id": "B1",
+      "notes": "Loop 002 delivered describe_dataset + validate_metadata scripts with reproducible QC outputs.",
       "priority": 1,
-      "status": "done",
-      "notes": "Loop 002 delivered describe_dataset + validate_metadata scripts with reproducible QC outputs."
+      "status": "done"
     },
     {
-      "id": "B2",
       "description": "Implement analysis/code/run_models.py with survey-aware estimators",
+      "id": "B2",
+      "notes": "Loop 003 delivered run_models.py with H1-H3 specs and exploratory JSON outputs.",
       "priority": 1,
-      "status": "done",
-      "notes": "Loop 003 delivered run_models.py with H1-H3 specs and exploratory JSON outputs."
+      "status": "done"
     },
     {
-      "id": "B3",
       "description": "Populate literature evidence (\u22653 DOI sources) and bibliography",
+      "id": "B3",
       "priority": 2,
       "status": "done"
     }
   ],
+  "bootstrap_complete": true,
+  "last_abort": {
+    "loop": 16,
+    "note": "Interrupted during loop execution",
+    "phase": "loop",
+    "ts": "2025-11-08T15:49:51.403775+00:00"
+  },
+  "loop_counter": 16,
   "next_actions": [
     {
-      "id": "N1",
       "description": "Run Semantic Scholar query + log outputs",
+      "id": "N1",
+      "notes": "Semantic Scholar API still 403 as of loop 016 (see lit/queries/loop_016/query_001.json); waiver memo now covers loops 008-016 with CrossRef fallbacks Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024 (Child Abuse & Neglect), Renu 2023 (IJSR), and Hulvershorn et al. 2009 (Oxford chapter) while we await new key approval.",
       "owner": "agent",
-      "status": "blocked",
-      "notes": "Semantic Scholar API still 403 as of loop 016 (see lit/queries/loop_016/query_001.json); waiver memo now covers loops 008-016 with CrossRef fallbacks Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024 (Child Abuse & Neglect), Renu 2023 (IJSR), and Hulvershorn et al. 2009 (Oxford chapter) while we await new key approval."
+      "status": "blocked"
     },
     {
-      "id": "N2",
       "description": "Draft measurement validity table for H1-H3 variables",
+      "id": "N2",
+      "notes": "Loop 003 automated DIF checks via measure_validity_checks.py and refreshed qc/measures_validity.md.",
       "owner": "agent",
-      "status": "done",
-      "notes": "Loop 003 automated DIF checks via measure_validity_checks.py and refreshed qc/measures_validity.md."
+      "status": "done"
     },
     {
-      "id": "N3",
       "description": "Draft DAG figure + identification memo outlining descriptive stance",
+      "id": "N3",
+      "notes": "Loop 006 re-rendered figures/dag_design.png/.json and rewrote reports/identification.md after reviewer STOP.",
       "owner": "agent",
-      "status": "done",
-      "notes": "Loop 006 re-rendered figures/dag_design.png/.json and rewrote reports/identification.md after reviewer STOP."
+      "status": "done"
     },
     {
-      "id": "N4",
       "description": "Scaffold imputation + BH automation scripts",
+      "id": "N4",
+      "notes": "Loop 006 re-ran analysis/code/impute_and_stack.py so data/clean outputs + summary exist; BH script already implemented.",
       "owner": "agent",
-      "status": "done",
-      "notes": "Loop 006 re-ran analysis/code/impute_and_stack.py so data/clean outputs + summary exist; BH script already implemented."
+      "status": "done"
     },
     {
-      "id": "N5",
       "description": "Integrate disclosure-check template into execution pipeline",
+      "id": "N5",
+      "notes": "Loop 006 added analysis/code/disclosure_check.py and produced qc/disclosure_check_loop_006.md with DAG entry.",
       "owner": "agent",
-      "status": "done",
-      "notes": "Loop 006 added analysis/code/disclosure_check.py and produced qc/disclosure_check_loop_006.md with DAG entry."
+      "status": "done"
     },
     {
-      "id": "N6",
       "description": "Draft Semantic Scholar waiver request summarizing loops 008-012 attempts + fallback evidence",
+      "id": "N6",
+      "notes": "Loop 013 delivered lit/semantic_scholar_waiver_loop013.md summarizing loops 008-013 403 payloads + CrossRef fallback (Ross et al. 2019).",
       "owner": "agent",
-      "status": "done",
-      "notes": "Loop 013 delivered lit/semantic_scholar_waiver_loop013.md summarizing loops 008-013 403 payloads + CrossRef fallback (Ross et al. 2019)."
+      "status": "done"
     }
   ],
+  "phase": "pap",
+  "phase_ix": 1,
   "stop_now": false,
-  "stop_reason": null
+  "stop_reason": null,
+  "total_loops": 50
 }
