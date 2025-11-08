@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 3,
+  "loop_counter": 4,
   "model_state": {
     "review": {
       "last_model": "gpt-5",
@@ -16,20 +16,21 @@
       "last_model": "gpt-5",
       "last_model_context": "loop_004",
       "last_model_policy": "agent",
-      "last_model_reason": "Finalize and freeze the PAP (confirmatory families, estimands) before the next coding-heavy sensitivity/modeling sprint.",
-      "queued_model": null,
-      "queued_reason": "",
-      "queued_source": "",
+      "last_model_reason": "Finalized and froze the PAP (confirmatory families, estimands).",
+      "queued_model": "gpt-5-codex",
+      "queued_reason": "Execute confirmatory OLS and ordered-logit sensitivity with precise, scripted outputs.",
+      "queued_source": "loop_004",
       "rr_index": -1
     }
   },
   "next_actions": [
-    "Freeze and tag the PAP (pap_freeze_loop003) with final estimands and confirmatory families.",
-    "Pre-specify interactions (e.g., male \u00d7 adversity) and nonlinearity checks; add to PAP.",
-    "Run ordered logit sensitivity for H3 and compare with OLS (record both).",
-    "Investigate survey design provenance or finalize SRS justification text for public release."
+    "Run confirmatory OLS for H1\u2013H4 and record results (confirmatory=true).",
+    "Run H3 ordered-logit sensitivity via analysis/scripts/ordered_logit_h3.py and compare with OLS.",
+    "Compute FDR only if families gain >1 confirmatory test (currently N/A).",
+    "Publish public tables under tables/ with n<10 suppression.",
+    "Investigate survey design provenance or finalize SRS justification language for release."
   ],
-  "phase": "pap",
-  "phase_ix": 1,
+  "phase": "analysis",
+  "phase_ix": 2,
   "total_loops": 50
 }

@@ -93,8 +93,8 @@ Outputs are written under `analysis/results/` and summarized in `analysis/result
 - All analysis commands will be scripted (preferably via notebooks or `.py` modules) with seeds logged in `analysis/decision_log.csv`.
 - Generated public tables will live in `tables/` with mandatory n<10 suppression.
 
-## Outstanding Items Before Freezing
-1. Acquire codebook/survey design metadata.
-2. Inspect remaining variable distributions and missingness for potential covariates beyond the core set.
-3. Decide whether weighting or raking is defensible; document rationale.
-4. Finalize confirmatory model specifications (link functions, interaction terms) prior to PAP freeze/tagging; H3 sensitivity will include ordered logit.
+## Post-Freeze Backlog
+1. Acquire codebook/survey design metadata (update SRS justification if new information emerges).
+2. Inspect remaining variable distributions and missingness for potential covariates beyond the core set (document any justified additions as sensitivity-only).
+3. Revisit whether weighting or raking is defensible if design metadata becomes available; otherwise maintain SRS with HC3.
+4. Execute confirmatory models and H3’s ordered-logit sensitivity; prepare public tables with n<10 suppression.

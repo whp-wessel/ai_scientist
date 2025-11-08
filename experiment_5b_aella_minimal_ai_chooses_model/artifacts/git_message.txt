@@ -1,1 +1,0 @@
-Freeze PAP (loop 004): finalize confirmatory families (H1–H4), add interactions/nonlinearity plan, and prepare H3 ordered-logit; please tag pap_freeze_loop004 after commit.
