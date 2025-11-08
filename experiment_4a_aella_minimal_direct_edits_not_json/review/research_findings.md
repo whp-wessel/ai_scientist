@@ -133,3 +133,11 @@ R3 PASS – `lit/evidence_map.csv:20` (and adjacent DOI entries) ties Semantic S
 R4 PASS – `docs/loop016_reviewer_packet.md:9` confirms the smallest published cell is 820 respondents, so the n≥10 suppression rule is respected.  
 R5 PASS – `analysis/pre_analysis_plan.md:1` shows the PAP frozen at commit 90f349d… with scope limited to H1, and `reports/paper.md:1` demonstrates the manuscript is synchronized with the current phase.
 
+## Loop 019 — 2025-11-08T17:03:10.027277+00:00
+DECISION: CONTINUE  
+R1 PASS – Reproducibility remains tight: the PAP still points to the frozen git tag and enumerates commands/seeds for confirmatory work (`analysis/pre_analysis_plan.md:1-13`), Loop 019’s activity is logged with inputs/outputs in the decision log (`analysis/decision_log.csv:45`), and the new promotion memo records dataset, SRS assumption, and explicit regeneration commands (`docs/religiosity_class_gradients_promotion.md:5-16`).  
+R2 PASS – Confirmatory H1 rows retain effect sizes, CIs, and BH-adjusted q-values with documented SRS handling (`analysis/results.csv:22`), and the proposed H4 religiosity-class family likewise logs estimates plus q-values and survey-design notes while the memo spells out the BH procedure for the two-test family (`analysis/results.csv:46`, `docs/religiosity_class_gradients_promotion.md:24`).  
+R3 PASS – Literature coverage is current: the evidence map lists the religiosity/class DOIs and hypothesis links (`lit/evidence_map.csv:18` and `lit/evidence_map.csv:20`), and the promotion memo/paper cite those peer-reviewed sources (`docs/religiosity_class_gradients_promotion.md:30-34`, `reports/paper.md:23-39`).  
+R4 PASS – Privacy commitments are reiterated (no public cells below 135) and the promotion memo confirms all referenced tables aggregate ≥14k respondents (`analysis/pre_analysis_plan.md:19`, `docs/religiosity_class_gradients_promotion.md:41-42`).  
+R5 PASS – Required artifacts are present and marked (frozen PAP with draft working notes, synchronized manuscript, notebook next steps) so the project state is coherent (`analysis/pre_analysis_plan.md:1-129`, `reports/paper.md:6-39`, `notebooks/research_notebook.md:152-158`).
+
