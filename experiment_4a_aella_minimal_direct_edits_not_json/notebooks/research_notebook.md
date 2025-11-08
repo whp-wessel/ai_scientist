@@ -258,4 +258,14 @@
 1. Maintain daily DG-4827 checks until the promised 2025-11-16 drop, then paste the checksum file and rerun the weighting + power scripts.
 2. Keep the Q&A/verification logs current through the 2025-11-15 deadline; require Spain/Norway annexes (Canary Islands, Reykjavik) if vendors add PSUs.
 3. Hold on the `religiosity_class_gradients` freeze until Dr. Mendez issues the written go, then rerun the stress tests, flip the confirmatory flags, and tag `pap_freeze_h4_loop024`.
+
+## 2025-11-13 – Loop 030
+- **DG-4827 ingestion rehearsal:** Re-ran `PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md`; output remains “missing roles: brr, psu, weights.” Refreshed `tables/loop021_h3_weight_delivery_status.csv`, `tables/loop021_h3_weighted_summary.csv`, and appended a Loop 030 entry in the manifest + `docs/h3_design_effect_plan.md` so auditors can see the 2025-11-13 timestamp and the standby plan to execute `scripts/loop016_h3_power_check.py --use-weights` once the AES-256 drop lands.
+- **Procurement + compliance updates:** Logged two new Q&A entries (BarnaLux Canary Islands annex, Nordic Trust Reykjavik batch logging) in `docs/h3_high_wealth_refresh/qna_loop021.md`, added Annex D + Reykjavik addenda to the Spain/Norway LOIs, and updated `docs/h3_country_expansion_materials/loi_register.csv` with the new PSU notes. Captured the corresponding verification hashes (`vr_2025-11-13_barna_canary01`, `vr_2025-11-13_nordic_batch02`) in `docs/h3_high_wealth_refresh/verification_register.csv` so the 48-hour ledger rule is auditable.
+- **Manuscript + design plan synchronization:** Extended `docs/h3_design_effect_plan.md` and `reports/paper.md` to reference the ongoing daily ingestion rehearsal plus the Spain/Norway annex evidence, keeping the Methods narrative aligned with the procurement artifacts while the H3 promotion remains exploratory.
+
+### Loop 030 Next Actions
+1. Continue daily DG-4827 polling until the 2025-11-16 drop arrives, then paste the checksum file and rerun the weighting + power scripts inside 24 hours.
+2. Hold on the `religiosity_class_gradients` freeze until Dr. Mendez issues the written go, then regenerate `tables/loop016_h4_confirmatory.csv`, flip the registries to `confirmatory=TRUE`, and tag `pap_freeze_h4_loop024`.
+3. Keep appending every high-wealth Q&A response, LOI annex, and verification ledger (especially Spain Canary Islands + Norway Reykjavik PSUs) before the 2025-11-15 Q&A deadline so procurement reviewers can audit the trail.
 ---

@@ -31,3 +31,8 @@ LOI remains in effect for Waves 5–7 unless superseded by the forthcoming maste
 ## Loop 029 Addendum — 2025-11-12
 - DocuSign envelope **d5ab-03** finalized at 16:18 UTC on 2025-11-12. The signed PDF and PSU annex (including the Reykjavik PSU) were archived here and recorded in `docs/h3_country_expansion_materials/loi_register.csv`.
 - Annex C references the first batch of verification hashes (logged in `docs/h3_high_wealth_refresh/verification_register.csv`) covering ≥20 Norwegian/Icelandic verification uploads and reiterates the 48-hour ledger requirement.
+
+## Loop 030 Addendum — 2025-11-13
+- Updated Annex C to clarify the Reykjavik batch logging workflow: every 10-respondent drip must produce a SHA-256 ledger row citing envelope **d5ab-03**, the Reykjavik PSU IDs, and the encrypted vault location.
+- Logged the second Reykjavik batch (`vr_2025-11-13_nordic_batch02`) in `docs/h3_high_wealth_refresh/verification_register.csv` after Nordic Trust uploaded `nordic/reykjavik_batch02.zip` to the secure SFTP at 12:36 UTC.
+- Reiterated that Reykjavik operates as an independent PSU despite sharing the Norway vendor; all BRR/Fay files must include dedicated Reykjavik columns once DG-4827 delivers the replicate weights.
