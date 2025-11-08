@@ -97,7 +97,12 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 ### Loop 016 Power Diagnostics
 - Country-cluster bootstraps combined with the analytic PPO fit now yield a reproducibility-ready power table (`tables/loop016_h3_power_summary.csv`) and confirmatory shell (`tables/loop016_h3_confirmatory.csv`). Only 820 respondents (5.7%) report ≥$10MM net worth, and clustering inflates the standard error from 0.036 to 0.140 log-odds, implying a design effect of 14.8 and an effective sample size of ≈978 (vs. 14,423 rows under SRS). The analytic Wald test would have 0.86 power at α=0.05, but the cluster-adjusted analogue drops to 0.16, so any future confirmatory family must acknowledge that power loss explicitly.
 
-### Outstanding Tasks Before Promotion (updated Loop 016)
+### Loop 017 Decision — Hold ≥$10M Promotion
+- Even though the analytic PPO slope at the ≥$10MM cutpoint is 0.11 log-odds (z = 3.04, p = 0.0024), the cluster bootstrap SD of 0.140 implies a 14.8× design effect and only 0.16 power at α=0.05 (`tables/loop014_h3_bootstrap_summary.csv`, `tables/loop016_h3_power_summary.csv`).
+- We will keep the proposed `childhood_class_networth_ge10m` family exploratory until we can (a) pool additional GFS waves or (b) secure multi-wave sampling weights/cluster identifiers that allow a higher-effective-n estimator (e.g., inverse-probability weighting or country-stratified reweighting).
+- Next steps focus on documenting the power shortfall inside `analysis/results.csv`, `analysis/hypotheses.csv`, and the manuscript so reviewers understand why the ≥$10M contrast is not yet entering the confirmatory queue.
+
+### Outstanding Tasks Before Promotion (updated Loop 017)
 1. Encode the ≥$10M PPO estimand and single-test multiplicity plan inside `analysis/hypotheses.csv` so reviewers can see the proposed confirmatory family (`childhood_class_networth_ge10m`).
 2. Keep the confirmatory reporting template (`tables/loop016_h3_confirmatory.csv`) synchronized with manuscript text/figures and document how bootstrap power shifts will be handled at freeze time.
 3. Finalize the reviewer checklist (PAP addendum + `reports/paper.md`) that explains why lower cutpoints remain descriptive while ≥$10M becomes the sole confirmatory contrast.
