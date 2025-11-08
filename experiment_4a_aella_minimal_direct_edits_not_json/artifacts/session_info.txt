@@ -1,12 +1,42 @@
-timestamp_utc: 2025-11-08T12:51:48.974196+00:00
+timestamp_utc: 2025-11-08T13:39:08.331775+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_4a_aella_minimal_direct_edits_not_json
 model: gpt-5-codex
 seed: 20251016
-git_head: 1a4670133c89518354bd2e9391815100ec28a483
+git_head: 43aec489cd3da2f41e948c64b67b08d6f2a98c52
 git_status: |
-  ## main...origin/main [ahead 1]
+  ## main...origin/main
+   M agents.md
+   M analysis/decision_log.csv
+   M analysis/results.csv
+   M analysis/sensitivity_notes.md
+   M artifacts/last_model_raw.txt
+   M artifacts/repro_report.md
+   M artifacts/session_info.txt
+   M artifacts/state.json
+   M notebooks/research_notebook.md
+   M reports/paper.md
+   M runner.py
+   M ../experiment_4b_aella_extensive_direct_edits_not_json/agents.md
+   M ../experiment_4b_aella_extensive_direct_edits_not_json/artifacts/last_commit.txt
+   M ../experiment_4b_aella_extensive_direct_edits_not_json/review/research_findings.md
+   M ../experiment_4b_aella_extensive_direct_edits_not_json/runner.py
+  ?? artifacts/git_message.txt
+  ?? artifacts/llm_raw/loop_012.txt
+  ?? figures/loop012_h3_classchild_comparison.png
+  ?? scripts/loop012_h1_bootstrap.py
+  ?? scripts/loop012_h3_visuals.py
+  ?? scripts/loop012_h4_alt_outcomes.py
+  ?? tables/loop012_h1_bootstrap_draws.csv
+  ?? tables/loop012_h1_bootstrap_slopes.csv
+  ?? tables/loop012_h1_bootstrap_slopes_summary.csv
+  ?? tables/loop012_h1_bootstrap_summary.csv
+  ?? tables/loop012_h3_classchild_effects.csv
+  ?? tables/loop012_h3_model_summary.csv
+  ?? tables/loop012_h4_alt_models.csv
+  ?? tables/loop012_h4_alt_outcome_distribution.csv
+  ?? ../experiment_4b_aella_extensive_direct_edits_not_json/artifacts/llm_raw/review_005.txt
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15

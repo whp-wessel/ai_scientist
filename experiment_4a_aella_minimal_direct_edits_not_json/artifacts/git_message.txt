@@ -1,0 +1,1 @@
+loop012: add H1 bootstrap, H4 alt outcomes, and H3 comparison artifacts

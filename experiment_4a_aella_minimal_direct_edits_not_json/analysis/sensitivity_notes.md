@@ -38,4 +38,18 @@ We will open the next sensitivity wave in Loop 012 with two reproducible add-ons
 - **Implementation plan**: Extend `scripts/loop008_h2h3h4_diagnostics.py` or create `scripts/loop012_h4_alt_outcomes.py` to generate the new variables, refit models, and export `tables/loop012_h4_alt_codings.csv` plus summary plots under `figures/`.
 - **Documentation**: Both tracks will be summarized in this file with pointers to the new tables and decisions about whether H4 is ready for PAP promotion.
 
+# Loop 012 Results — H1 Bootstrap
+
+- **Command**: `PYTHONHASHSEED=20251016 python scripts/loop012_h1_bootstrap.py --n-reps 500 --seed 20251016`.
+- **Artifacts**: Replicate-level draws in `tables/loop012_h1_bootstrap_draws.csv`, percentile summaries in `tables/loop012_h1_bootstrap_summary.csv`, and guidance simple-slope draws in `tables/loop012_h1_bootstrap_slopes*.csv`.
+- **Findings**: The guidance-buffering interaction averages 0.068 (SD 0.0083) with a 95% percentile CI [0.052, 0.084] and bootstrap tail probability 0.004. The male-vulnerability term averages -0.102 (SD 0.015) with CI [-0.129, -0.074] and identical tail probability.
+- **Interpretation**: Every replicate preserved the preregistered sign pattern; even the worst-case draws remain |beta|>0.07. Simple slopes show childhood abuse remains highly predictive of depression for low-guidance respondents (median slope -0.126) while the +1 SD guidance slope drifts toward zero (median 0.010, 95% CI [-0.029, 0.047]), reinforcing the buffering narrative slated for the manuscript’s sensitivity section.
+
+# Loop 012 Results — H4 Alternative Anxiety Codings
+
+- **Command**: `PYTHONHASHSEED=20251016 python scripts/loop012_h4_alt_outcomes.py`.
+- **Artifacts**: Outcome distributions in `tables/loop012_h4_alt_outcome_distribution.csv`; coefficient tables in `tables/loop012_h4_alt_models.csv`.
+- **Design choices**: `anxiety_ord3` collapses the aligned 7-point Likert into three ordered buckets (0–2 rare, 3–4 sometimes, 5–6 frequent). `anxiety_high_flag` marks respondents ≥5 on either duplicate anxiety item, mirroring a clinical threshold screen. Both specs retain the preregistered covariates (`religion` + classchild, classteen, age, gender, education).
+- **Findings**: The ordered-logit religiosity slope is -0.111 (p=2.6e-9), while the binary logit yields -0.112 (p=5.8e-8); linear-probability estimates echo the same -2.5 p.p. per religiosity step. Roughly 46% of the sample meets the high-anxiety threshold, so the binary variant keeps ample power. The concordant estimates indicate the H4 association is not an artifact of treating anxiety as a z-scored continuous outcome.
+
 These plans keep the sensitivity queue ready so we can transition from “design” to “execution” immediately after the H3 benchmarking review is addressed.

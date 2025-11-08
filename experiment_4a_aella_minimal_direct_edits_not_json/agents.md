@@ -180,7 +180,7 @@ STATE_JSON_END
 
 Instructions:
 - Study the snapshot, backlog, and latest reviewer feedback. Decide the next scientific step.
-- If the prompt includes a "Non-negotiable alert", resolve it immediately (e.g., rewrite the PAP header to `status: frozen (commit <hash>)` using the tagged freeze commit).
+- If the prompt includes a "Non-negotiable alert", treat it as an auto-intervention (e.g., revert/suppress any n<10 public tables or rewrite the PAP header to `status: frozen (commit <hash>)`) and fix it before proceeding.
 - Update/create artifacts as needed. Append an `analysis/decision_log.csv` row.
 - Explicitly mark results rows as `confirmatory` where applicable and assign `hypothesis_family`.
 - If a confirmatory family has >1 test, compute and record `q_value` and the FDR method used.

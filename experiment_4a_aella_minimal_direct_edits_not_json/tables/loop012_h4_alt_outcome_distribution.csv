@@ -1,0 +1,8 @@
+outcome,level,label,n,share
+anxiety_ord3,0,rare (0-2),3824,0.2648749740250745
+anxiety_ord3,1,sometimes (3-4),3914,0.2711089561543257
+anxiety_ord3,2,frequent (5-6),6699,0.46401606982059984
+anxiety_ord3,NA,missing,6,
+anxiety_high_flag,0,not high anxiety,7738,0.5359839301794002
+anxiety_high_flag,1,high anxiety,6699,0.46401606982059984
+anxiety_high_flag,NA,missing,6,

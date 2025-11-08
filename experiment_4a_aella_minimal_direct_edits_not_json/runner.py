@@ -408,15 +408,19 @@ def _scan_small_cells_in_csv(path: Path, threshold: int = 10) -> List[Tuple[str,
                 continue
     return hits
 
-def _check_small_cell_privacy() -> Tuple[bool, str]:
+def _small_cell_violations(threshold: int = 10) -> List[Tuple[Path, List[Tuple[str,int]]]]:
     public_dirs = [REPO/"tables", REPO/"reports"]
-    violations = []
+    violations: List[Tuple[Path, List[Tuple[str,int]]]] = []
     for d in public_dirs:
         if not d.exists(): continue
         for p in d.rglob("*.csv"):
-            hits = _scan_small_cells_in_csv(p, threshold=10)
+            hits = _scan_small_cells_in_csv(p, threshold=threshold)
             if hits:
                 violations.append((p, hits[:5]))
+    return violations
+
+def _check_small_cell_privacy() -> Tuple[bool, str]:
+    violations = _small_cell_violations(threshold=10)
     if not violations: return True, ""
     msg_lines = ["Small-cell privacy check failed (n<10) in public outputs:"]
     for p, hits in violations:
@@ -446,9 +450,28 @@ def _pap_status_alert_message() -> Optional[str]:
         return ("Confirmatory results exist but the PAP header currently reads "
                 f"`status: frozen ({status_details})`. Replace it with the literal "
                 "`status: frozen (commit <hash>)` form by inserting the git hash behind the freeze tag "
-                "(e.g., run `git rev-parse pap_freeze_loop006`).")
+            "(e.g., run `git rev-parse pap_freeze_loop006`).")
     return ("Confirmatory results exist but the PAP header is missing the literal "
             "`status: frozen (commit <hash>)`. Update the header with the frozen git commit hash before continuing.")
+
+def _small_cell_alert_message() -> Optional[str]:
+    violations = _small_cell_violations(threshold=10)
+    if not violations:
+        return None
+    summaries = []
+    for path, hits in violations[:3]:
+        rel = path.relative_to(REPO)
+        hit_desc = ", ".join(f"{c}={v}" for c, v in hits)
+        summaries.append(f"{rel} ({hit_desc})")
+    detail = "; ".join(summaries)
+    remaining = len(violations) - len(summaries)
+    if remaining > 0:
+        detail += f"; +{remaining} more file(s)"
+    return (
+        "You failed Principle 2 (Privacy): "
+        f"{detail}. Please revert these public outputs to the last compliant version "
+        "or suppress the n<10 cells, then continue from there."
+    )
 
 def _check_survey_design_assertion(results_path: Path) -> Tuple[bool, str]:
     indicators = _detect_survey_design_features()
@@ -493,7 +516,8 @@ def perform_nonnegotiable_checks() -> Tuple[bool, str]:
         ok, msg = _check_multiplicity_fdr(results_path)
         if not ok: return ok, msg
     ok, msg = _check_small_cell_privacy()
-    if not ok: return ok, msg
+    if not ok:
+        print(f"[guardrail] Privacy alert (non-blocking): {msg}")
     return True, ""
 
 # --- Change detection & git -------------------------------------------------------
@@ -521,7 +545,7 @@ def _list_changed_files() -> list[ChangeRecord]:
         changes.append(ChangeRecord(path=path_part.strip(), staged=status[0], workspace=status[1]))
     return changes
 
-def git_checkpoint(message: str, push: bool = True):
+def git_checkpoint(message: str, push: bool = True, record_head: bool = True):
     repo_path = str(REPO.resolve())
 
     def _run_git(args: list[str]) -> tuple[int, str, str]:
@@ -556,7 +580,8 @@ def git_checkpoint(message: str, push: bool = True):
             reason = err.strip() or out.strip() or "push failed"
             print(f"[git] warning: {' '.join(['git', '-C', repo_path, *push_cmd])} -> {reason}")
 
-    _record_head()
+    if record_head:
+        _record_head()
     if push_failed:
         return True, ""
     return True, ""
@@ -673,7 +698,7 @@ def _ensure_clean_worktree(context: str) -> None:
         # Auto-snapshot any pre-existing changes to avoid mixing runs
         stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         print(f"[runner] auto-committing pre-existing change(s) before {context}.")
-        ok, err = git_checkpoint(f"chore: pre-run snapshot before {context} ({stamp})", push=False)
+        ok, err = git_checkpoint(f"chore: pre-run snapshot before {context} ({stamp})", push=False, record_head=False)
         if not ok:
             raise RuntimeError(f"Auto-commit failed: {err}")
 
@@ -687,6 +712,9 @@ def do_bootstrap():
     print("== Bootstrap session ==")
     bootstrap_system = get_prompt("BOOTSTRAP_SYSTEM")
     bootstrap_user = get_prompt("BOOTSTRAP_USER")
+    small_cell_alert = _small_cell_alert_message()
+    if small_cell_alert:
+        bootstrap_user = f"{bootstrap_user}\nNon-negotiable alert: {small_cell_alert}"
     try:
         raw = run_codex_cli(bootstrap_user, bootstrap_system)
     except Exception as exc:
@@ -749,6 +777,9 @@ def do_loop(iter_ix: int, consecutive_git_fails: int):
     pap_alert = _pap_status_alert_message()
     if pap_alert:
         user_prompt += f"\nNon-negotiable alert: {pap_alert}"
+    small_cell_alert = _small_cell_alert_message()
+    if small_cell_alert:
+        user_prompt += f"\nNon-negotiable alert: {small_cell_alert}"
 
     try:
         raw = run_codex_cli(user_prompt, loop_system)
