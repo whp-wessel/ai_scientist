@@ -179,3 +179,12 @@ L1: PASS – analysis/decision_log.csv:221 shows the mandated Semantic Scholar c
 P1: PASS – The n≥10 disclosure guard is reiterated in analysis/pre_analysis_plan.md:45 and qc/disclosure_check_loop_006.md:6, while qc/data_checks.md:53 confirms no public tables this loop, so privacy controls remain satisfied.
 N1: PASS – artifacts/state.json:25 and artifacts/state.json:70 keep loop_counter=24 with phase=pap, artifacts/state.json:30 and artifacts/state.json:32 show N1 still blocked by the 403 issue, analysis/pre_analysis_plan.md:39 echoes the blocker, and lit/semantic_scholar_waiver_loop013.md:1 documents the loop 008–024 waiver log, justifying holding the phase.
 
+## Loop 025 — 2025-11-08T18:47:37.573812+00:00
+DECISION: CONTINUE
+R1: PASS – `qc/data_checks.md:3` restates seed 20251016, `qc/data_checks.md:47` reconfirms the current session/checksum artifacts, and `analysis/decision_log.csv:231` logs the loop-025 reproducibility checkpoint, so determinism remains auditable.
+L1: PASS – `analysis/decision_log.csv:232` documents the mandated Semantic Scholar query, `lit/queries/loop_025/query_001.json:1` and `lit/queries/loop_025/crossref_query_001.json:1` preserve the 403 payload and CrossRef fallback, and the Liu & Yin DOI is propagated in `lit/evidence_map.csv:23` and `lit/bibliography.json:443`, meeting literature logging rules.
+P1: PASS – `analysis/pre_analysis_plan.md:45` reiterates the n ≥ 10 disclosure guard, `qc/disclosure_check_loop_006.md:6` and `qc/disclosure_check_loop_006.md:17` show the automated screen with zero violations, and `qc/data_checks.md:50` confirms no public tables/figures this loop, so privacy safeguards hold.
+N1: PASS – `artifacts/state.json:25` keeps the project in phase pap with loop_counter 25, `artifacts/state.json:28`/`artifacts/state.json:30` note N1 is still blocked by the Semantic Scholar 403 despite the new DOI, and `analysis/pre_analysis_plan.md:41` mirrors that blocker, so holding the gate is justified.
+
+Notes: Progress still hinges on restoring the Semantic Scholar credential or securing the documented waiver so the PAP can freeze.
+
