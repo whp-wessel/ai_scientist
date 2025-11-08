@@ -1,4 +1,44 @@
 variable,value,count
+I am not happy (ix5iyv3)-neg,2.0,2595
+I am not happy (ix5iyv3)-neg,-1.0,2473
+I am not happy (ix5iyv3)-neg,3.0,2207
+I am not happy (ix5iyv3)-neg,-2.0,2179
+I am not happy (ix5iyv3)-neg,1.0,1793
+I am not happy (ix5iyv3)-neg,0.0,1651
+I am not happy (ix5iyv3)-neg,-3.0,1540
+I am not happy (ix5iyv3)-neg,<NA>,<10
+I am satisfied with my romantic relationships (hp9qz6f),-3.0,2957
+I am satisfied with my romantic relationships (hp9qz6f),3.0,2852
+I am satisfied with my romantic relationships (hp9qz6f),2.0,2494
+I am satisfied with my romantic relationships (hp9qz6f),-2.0,1737
+I am satisfied with my romantic relationships (hp9qz6f),0.0,1699
+I am satisfied with my romantic relationships (hp9qz6f),-1.0,1455
+I am satisfied with my romantic relationships (hp9qz6f),1.0,1243
+I am satisfied with my romantic relationships (hp9qz6f),<NA>,<10
+I tend to suffer from anxiety (npvfh98)-neg,-3.0,3780
+I tend to suffer from anxiety (npvfh98)-neg,-1.0,3150
+I tend to suffer from anxiety (npvfh98)-neg,-2.0,2919
+I tend to suffer from anxiety (npvfh98)-neg,3.0,1544
+I tend to suffer from anxiety (npvfh98)-neg,2.0,1470
+I tend to suffer from anxiety (npvfh98)-neg,1.0,810
+I tend to suffer from anxiety (npvfh98)-neg,0.0,764
+I tend to suffer from anxiety (npvfh98)-neg,<NA>,<10
+I tend to suffer from depression (wz901dj),-1.0,3133
+I tend to suffer from depression (wz901dj),-3.0,2786
+I tend to suffer from depression (wz901dj),-2.0,2596
+I tend to suffer from depression (wz901dj),3.0,2098
+I tend to suffer from depression (wz901dj),2.0,1721
+I tend to suffer from depression (wz901dj),1.0,1065
+I tend to suffer from depression (wz901dj),0.0,1039
+I tend to suffer from depression (wz901dj),<NA>,<10
+I'm quite sensitive to stress (qhyti2r)-neg,-3.0,3359
+I'm quite sensitive to stress (qhyti2r)-neg,-2.0,3208
+I'm quite sensitive to stress (qhyti2r)-neg,-1.0,2924
+I'm quite sensitive to stress (qhyti2r)-neg,2.0,1598
+I'm quite sensitive to stress (qhyti2r)-neg,1.0,1390
+I'm quite sensitive to stress (qhyti2r)-neg,0.0,1010
+I'm quite sensitive to stress (qhyti2r)-neg,3.0,948
+I'm quite sensitive to stress (qhyti2r)-neg,<NA>,<10
 classteen,3.0,4568
 classteen,4.0,3324
 classteen,2.0,3290

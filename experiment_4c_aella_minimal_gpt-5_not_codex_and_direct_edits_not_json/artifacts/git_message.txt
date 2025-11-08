@@ -1,1 +1,0 @@
-Loop 003: add minimal OLS modeling, populate exploratory results, and persist Semantic Scholar query attempt; update PAP/notebook; checkpoint.

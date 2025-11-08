@@ -9,6 +9,11 @@
     "weight"
   ],
   "key_vars": [
+    "I am not happy (ix5iyv3)-neg",
+    "I am satisfied with my romantic relationships (hp9qz6f)",
+    "I tend to suffer from anxiety (npvfh98)-neg",
+    "I tend to suffer from depression (wz901dj)",
+    "I'm quite sensitive to stress (qhyti2r)-neg",
     "classteen",
     "externalreligion",
     "gendermale",
@@ -16,14 +21,38 @@
     "religion",
     "selfage"
   ],
-  "missing_key_vars": [
-    "hp9qz6f",
-    "ix5iyv3",
-    "npvfh98",
-    "qhyti2r",
-    "wz901dj"
-  ],
+  "missing_key_vars": [],
   "key_info": {
+    "I am not happy (ix5iyv3)-neg": {
+      "non_missing": 14438,
+      "missing": 5,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "I am satisfied with my romantic relationships (hp9qz6f)": {
+      "non_missing": 14437,
+      "missing": 6,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "I tend to suffer from anxiety (npvfh98)-neg": {
+      "non_missing": 14437,
+      "missing": 6,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "I tend to suffer from depression (wz901dj)": {
+      "non_missing": 14438,
+      "missing": 5,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "I'm quite sensitive to stress (qhyti2r)-neg": {
+      "non_missing": 14437,
+      "missing": 6,
+      "unique": 7,
+      "dtype": "float64"
+    },
     "classteen": {
       "non_missing": 14443,
       "missing": 0,
