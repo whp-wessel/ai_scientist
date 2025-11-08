@@ -1,0 +1,1 @@
+loop016: add S2 literature query (relationships), update evidence_map; log loop and bump state

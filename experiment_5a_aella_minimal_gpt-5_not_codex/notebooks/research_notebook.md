@@ -233,3 +233,18 @@ Observations (literature):
 Next:
 - Tighten PAP estimands for H2 (clarify model choice for ordinal outcomes; predefine covariates), and set freeze criteria for confirmatory testing (q ≤ 0.05 if >1 test in family).
 - Add one more targeted query on “religious homogamy/assortative mating AND relationship satisfaction” to strengthen external context before PAP freeze.
+
+---
+## Loop 016 (literature)
+- Ran Semantic Scholar search with helper (unauthenticated; 1 req/sec enforced):
+  - `python scripts/semantic_scholar_cli.py search --query "childhood religiosity adult monogamy relationship satisfaction longitudinal" --limit 5 --output lit/queries/loop_016/query_001.json`
+- Extracted DOIs into `lit/evidence_map.csv`:
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_016/query_001.json --output lit/evidence_map.csv --topic "childhood religiosity and adult relationships"`
+- Updated decision log and state to reflect Loop 016.
+
+Notes:
+- Evidence base for relationship-focused hypotheses (H2) strengthened with longitudinal/cohort literature. Once `.env` supplies `S2_API_Key`, rerun queries authenticated to reduce 429 risk and broaden coverage.
+
+Next:
+- Add `.env` with `S2_API_Key`; expand relationship/wellbeing searches (separate queries per family) and pull metadata into `lit/bibliography.bib`.
+- Prepare PAP advancement criteria (what remains before freezing) and outline sensitivity checks for ordinal outcomes.

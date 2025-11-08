@@ -1,0 +1,3660 @@
+{
+  "query": "childhood emotional neglect self compassion adulthood",
+  "response": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 1718749,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T12:20:57Z",
+            "timestamp": 1762431657424,
+            "version": "3.44.0"
+          },
+          "reference-count": 71,
+          "publisher": "Elsevier BV",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2019,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2019-06-01T00:00:00Z",
+                "timestamp": 1559347200000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2019,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2019-06-01T00:00:00Z",
+                "timestamp": 1559347200000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/legal/tdmrep-license"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "clinicalkey.com",
+              "clinicalkey.com.au",
+              "clinicalkey.es",
+              "clinicalkey.fr",
+              "clinicalkey.jp",
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Child Abuse &amp; Neglect"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2019,
+                6
+              ]
+            ]
+          },
+          "DOI": "10.1016/j.chiabu.2019.03.016",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                22
+              ]
+            ],
+            "date-time": "2019-03-22T13:12:08Z",
+            "timestamp": 1553260328000
+          },
+          "page": "32-42",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 76,
+          "special_numbering": "C",
+          "title": [
+            "From childhood emotional maltreatment to depressive symptoms in adulthood: The roles of self-compassion and shame"
+          ],
+          "prefix": "10.1016",
+          "volume": "92",
+          "author": [
+            {
+              "given": "Nicholas Dutra",
+              "family": "Ross",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Patricia L.",
+              "family": "Kaminski",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Richard",
+              "family": "Herrington",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0005",
+              "doi-asserted-by": "crossref",
+              "first-page": "277",
+              "DOI": "10.1037/0021-843X.104.2.277",
+              "article-title": "Bodily shame as a mediator between abusive experiences and depression",
+              "volume": "104",
+              "author": "Andrews",
+              "year": "1995",
+              "journal-title": "Journal of Abnormal Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0010",
+              "series-title": "Shame: Interpersonal behavior, psychopathology, and culture",
+              "first-page": "3",
+              "article-title": "Shame and childhood abuse",
+              "author": "Andrews",
+              "year": "1998"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0015",
+              "doi-asserted-by": "crossref",
+              "first-page": "29",
+              "DOI": "10.1348/014466502163778",
+              "article-title": "Predicting depressive symptoms with a new measure of shame: The experience of shame scale",
+              "volume": "41",
+              "author": "Andrews",
+              "year": "2002",
+              "journal-title": "The British Journal of Clinical Psychology"
+            },
+            {
+              "year": "2003",
+              "series-title": "Interpersonal reconstructive therapy: Promoting change in nonresponders",
+              "author": "Benjamin",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0020"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0025",
+              "doi-asserted-by": "crossref",
+              "first-page": "305",
+              "DOI": "10.1177/1077559510379634",
+              "article-title": "Neglected children, shame-proneness, and depressive symptoms",
+              "volume": "15",
+              "author": "Bennett",
+              "year": "2010",
+              "journal-title": "Child Maltreatment"
+            },
+            {
+              "year": "1998",
+              "series-title": "Childhood trauma questionnaire: A retrospective self-report manual",
+              "author": "Bernstein",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0030"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0035",
+              "doi-asserted-by": "crossref",
+              "first-page": "250",
+              "DOI": "10.1177/1077559511428353",
+              "article-title": "Classes and consequences of multiple maltreatment: A person-centered analysis",
+              "volume": "16",
+              "author": "Berzenski",
+              "year": "2011",
+              "journal-title": "Child Maltreatment"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0040",
+              "article-title": "Attachment and loss",
+              "volume": "Vol. 2",
+              "author": "Bowlby",
+              "year": "1973"
+            },
+            {
+              "year": "1979",
+              "series-title": "The making and breaking of affectional bonds",
+              "author": "Bowlby",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0045"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0050",
+              "doi-asserted-by": "crossref",
+              "first-page": "82",
+              "DOI": "10.1037/0033-2909.113.1.82",
+              "article-title": "Psychopathology and early experience: A reappraisal of retrospective reports",
+              "volume": "113",
+              "author": "Brewin",
+              "year": "1993",
+              "journal-title": "Psychological Bulletin"
+            },
+            {
+              "year": "2009",
+              "series-title": "Treating traumatized children: Risk, resilience, and recovery",
+              "author": "Brom",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0055"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0060",
+              "series-title": "A practical information-theoretic approach",
+              "article-title": "Model selection and multimodel inference",
+              "author": "Burnham",
+              "year": "2002"
+            },
+            {
+              "year": "1999",
+              "series-title": "Scientific foundations of cognitive theory and therapy of depression",
+              "author": "Clark",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0065"
+            },
+            {
+              "year": "1994",
+              "series-title": "Internalized shame scale: Professional manual",
+              "author": "Cook",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0070"
+            },
+            {
+              "year": "2001",
+              "series-title": "Internalized shame scale: Technical manual",
+              "author": "Cook",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0075"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0080",
+              "doi-asserted-by": "crossref",
+              "first-page": "477",
+              "DOI": "10.1016/j.paid.2008.11.019",
+              "article-title": "Individual differences in shame and depressive symptoms during early adolescence",
+              "volume": "46",
+              "author": "De Rubeis",
+              "year": "2009",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0085",
+              "doi-asserted-by": "crossref",
+              "first-page": "95",
+              "DOI": "10.1016/j.paid.2005.10.026",
+              "article-title": "The internalized Shame Scale: Temporal stability, internal consistency, and principal components analysis",
+              "volume": "41",
+              "author": "del Rosario",
+              "year": "2006",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0090",
+              "first-page": "363",
+              "article-title": "Center for epidemiological studies depression scale: Review and revision (CESD and CESD-R)",
+              "volume": "Vol. 3",
+              "author": "Eaton",
+              "year": "2004"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0095",
+              "doi-asserted-by": "crossref",
+              "first-page": "337",
+              "DOI": "10.1177/1077559505276686",
+              "article-title": "The persistence of shame following sexual abuse: A longitudinal look at risk and recovery",
+              "volume": "10",
+              "author": "Feiring",
+              "year": "2005",
+              "journal-title": "Child Maltreatment"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0100",
+              "doi-asserted-by": "crossref",
+              "first-page": "746",
+              "DOI": "10.1001/jamapediatrics.2015.0676",
+              "article-title": "Prevalence of childhood exposure to violence, crime, and abuse: Results from the national survey of children\u2019s exposure to violence",
+              "volume": "169",
+              "author": "Finkelhor",
+              "year": "2015",
+              "journal-title": "JAMA Pediatrics"
+            },
+            {
+              "year": "1986",
+              "series-title": "Facing shame: Families in recovery",
+              "author": "Fossum",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0105"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0110",
+              "first-page": "173",
+              "article-title": "The dissolution of the Oedipus complex",
+              "volume": "Vol. 19",
+              "author": "Freud",
+              "year": "1924"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0115",
+              "first-page": "797",
+              "article-title": "Not all bad treatment is psychological maltreatment",
+              "volume": "35",
+              "author": "Garbarino",
+              "year": "2011",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0120",
+              "doi-asserted-by": "crossref",
+              "first-page": "113",
+              "DOI": "10.1111/j.2044-8341.1997.tb01893.x",
+              "article-title": "The evolution of social attractiveness and its role in shame, humiliation, guilt and therapy",
+              "volume": "70",
+              "author": "Gilbert",
+              "year": "1997",
+              "journal-title": "The British Journal of Medical Psychology"
+            },
+            {
+              "year": "2005",
+              "series-title": "Compassion: Conceptualisations, research, and use in psychotherapy",
+              "author": "Gilbert",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0125"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0130",
+              "doi-asserted-by": "crossref",
+              "first-page": "353",
+              "DOI": "10.1002/cpp.507",
+              "article-title": "Compassionate mind training for people with high shame and self-criticism: Overview and pilot study of a group therapy approach",
+              "volume": "13",
+              "author": "Gilbert",
+              "year": "2006",
+              "journal-title": "Clinical Psychology & Psychotherapy"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0135",
+              "doi-asserted-by": "crossref",
+              "first-page": "2483",
+              "DOI": "10.1016/j.brat.2007.04.002",
+              "article-title": "Child maltreatment, non-suicidal self-injury, and the mediating role of self-criticism",
+              "volume": "45",
+              "author": "Glassman",
+              "year": "2007",
+              "journal-title": "Behaviour Research and Therapy"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0140",
+              "series-title": "Upper Saddle River",
+              "article-title": "Multivariate data analysis",
+              "author": "Hair",
+              "year": "2010"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0145",
+              "doi-asserted-by": "crossref",
+              "first-page": "260",
+              "DOI": "10.1111/j.1469-7610.2004.00218.x",
+              "article-title": "Validity of adult retrospective reports of adverse childhood experiences: Review of the evidence",
+              "volume": "45",
+              "author": "Hardt",
+              "year": "2004",
+              "journal-title": "Journal of Child Psychology and Psychiatry"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0150",
+              "doi-asserted-by": "crossref",
+              "first-page": "768",
+              "DOI": "10.1037/0022-006X.58.6.768",
+              "article-title": "Patient and therapist introject, interpersonal process, and differential psychotherapy outcome",
+              "volume": "58",
+              "author": "Henry",
+              "year": "1990",
+              "journal-title": "Journal of Consulting and Clinical Psychology"
+            },
+            {
+              "year": "1997",
+              "series-title": "Trauma and recovery",
+              "author": "Herman",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0155"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0160",
+              "doi-asserted-by": "crossref",
+              "first-page": "141",
+              "DOI": "10.1007/BF02110597",
+              "article-title": "Shame, guilt, and anger in college students exposed to abusive family environments",
+              "volume": "10",
+              "author": "Hoglund",
+              "year": "1995",
+              "journal-title": "Journal of Family Violence"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0165",
+              "doi-asserted-by": "crossref",
+              "first-page": "184",
+              "DOI": "10.2307/3090177",
+              "article-title": "The impact of childhood abuse and neglect on adult mental health: Prospective study",
+              "volume": "42",
+              "author": "Horwitz",
+              "year": "2001",
+              "journal-title": "Journal of Health and Social Behaviour"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0170",
+              "doi-asserted-by": "crossref",
+              "first-page": "939",
+              "DOI": "10.1521/jscp.2013.32.9.939",
+              "article-title": "Self-compassion soothes the savage ego-threat system: Effects on negative affect, shame, rumination, and depressive symptoms",
+              "volume": "32",
+              "author": "Johnson",
+              "year": "2013",
+              "journal-title": "Journal of Social and Clinical Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0175",
+              "doi-asserted-by": "crossref",
+              "first-page": "148",
+              "DOI": "10.1111/bjc.12006",
+              "article-title": "Why self-critical patients present with more severe eating disorder pathology: The mediating role of shame",
+              "volume": "52",
+              "author": "Kelly",
+              "year": "2013",
+              "journal-title": "The British Journal of Clinical Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0180",
+              "first-page": "236",
+              "article-title": "Structural derivatives of object relationships",
+              "volume": "47",
+              "author": "Kernberg",
+              "year": "1966",
+              "journal-title": "The International Journal of Psycho-analysis"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0185",
+              "doi-asserted-by": "crossref",
+              "first-page": "191",
+              "DOI": "10.1146/annurev.psych.48.1.191",
+              "article-title": "The effects of stressful life events on depression",
+              "volume": "48",
+              "author": "Kessler",
+              "year": "1997",
+              "journal-title": "Annual Review of Psychology"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0190",
+              "doi-asserted-by": "crossref",
+              "first-page": "68",
+              "DOI": "10.1037/a0021466",
+              "article-title": "Shame, guilt, and depressive symptoms: A meta-analytic review",
+              "volume": "137",
+              "author": "Kim",
+              "year": "2011",
+              "journal-title": "Psychological Bulletin"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0195",
+              "doi-asserted-by": "crossref",
+              "first-page": "645",
+              "DOI": "10.1016/0145-2134(94)90014-0",
+              "article-title": "Methodological issues and practical problems in conducting research on maltreated children",
+              "volume": "18",
+              "author": "Kinard",
+              "year": "1994",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0200",
+              "first-page": "419",
+              "article-title": "Shame and guilt in neurosis",
+              "volume": "58",
+              "author": "Lewis",
+              "year": "1971",
+              "journal-title": "Psychoanalytic Review"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0205",
+              "doi-asserted-by": "crossref",
+              "first-page": "665",
+              "DOI": "10.1016/j.eurpsy.2015.04.007",
+              "article-title": "The role of specific early trauma in adult depression: A meta-analysis of published literature. Childhood trauma and adult depression",
+              "volume": "30",
+              "author": "Mandelli",
+              "year": "2015",
+              "journal-title": "European Psychiatry"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0210",
+              "doi-asserted-by": "crossref",
+              "first-page": "365",
+              "DOI": "10.1080/10705519809540112",
+              "article-title": "Model specification searches in structural equation modeling using tabu search",
+              "volume": "5",
+              "author": "Marcoulides",
+              "year": "1998",
+              "journal-title": "Structural Equation Modeling A Multidisciplinary Journal"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0215",
+              "first-page": "484",
+              "article-title": "Model specification searches in structural equation modeling with R. Structural Equation Modeling",
+              "volume": "25",
+              "author": "Marcoulides",
+              "year": "2018",
+              "journal-title": "A Multidisciplinary Journal"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0220",
+              "doi-asserted-by": "crossref",
+              "first-page": "374",
+              "DOI": "10.2307/2012910",
+              "article-title": "The social self",
+              "volume": "10",
+              "author": "Mead",
+              "year": "1913",
+              "journal-title": "The Journal of Philosophy Psychology and Scientific Methods"
+            },
+            {
+              "year": "1988",
+              "series-title": "Connections, disconnections, and violations. Work in Progress, No. 33",
+              "author": "Miller",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0225"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0230",
+              "doi-asserted-by": "crossref",
+              "first-page": "141",
+              "DOI": "10.1176/appi.ajp.2011.11020335",
+              "article-title": "Childhood maltreatment predicts unfavorable course of illness and treatment outcome in depression: A meta-analysis",
+              "volume": "169",
+              "author": "Nanni",
+              "year": "2012",
+              "journal-title": "The American Journal of Psychiatry"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0235",
+              "series-title": "Psychological maltreatment of children and youth",
+              "first-page": "45",
+              "article-title": "Psychological maltreatment: The core component of child abuse",
+              "author": "Navarre",
+              "year": "1987"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0240",
+              "doi-asserted-by": "crossref",
+              "first-page": "223",
+              "DOI": "10.1080/15298860309027",
+              "article-title": "The development and validation of a scale to measure self-compassion",
+              "volume": "2",
+              "author": "Neff",
+              "year": "2003",
+              "journal-title": "Self and Identity: the Journal of the International Society for Self and Identity"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0245",
+              "doi-asserted-by": "crossref",
+              "first-page": "225",
+              "DOI": "10.1080/15298860902979307",
+              "article-title": "Self-compassion and psychological resilience among adolescents and young adults",
+              "volume": "9",
+              "author": "Neff",
+              "year": "2010",
+              "journal-title": "Self and Identity: the Journal of the International Society for Self and Identity"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0250",
+              "doi-asserted-by": "crossref",
+              "first-page": "908",
+              "DOI": "10.1016/j.jrp.2006.08.002",
+              "article-title": "An examination of self-compassion in relation to positive psychological functioning and personality traits",
+              "volume": "41",
+              "author": "Neff",
+              "year": "2007",
+              "journal-title": "Journal of Research in Personality"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0255",
+              "doi-asserted-by": "crossref",
+              "first-page": "371",
+              "DOI": "10.1177/070674378703200509",
+              "article-title": "Does verbal abuse leave deeper scars: A study of children and parents",
+              "volume": "32",
+              "author": "Ney",
+              "year": "1987",
+              "journal-title": "The Canadian Journal of Psychiatry"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0260",
+              "doi-asserted-by": "crossref",
+              "first-page": "518",
+              "DOI": "10.1080/10503307.2014.917217",
+              "article-title": "Trauma-related shame and guilt as time-varying predictors of posttraumatic stress disorder symptoms during imagery exposure and imagery rescripting: A randomized controlled trial",
+              "volume": "25",
+              "author": "\u00d8ktedalen",
+              "year": "2015",
+              "journal-title": "Psychotherapy Research"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0265",
+              "doi-asserted-by": "crossref",
+              "first-page": "398",
+              "DOI": "10.1037/tra0000022",
+              "article-title": "Betray my trust, shame on me: Shame, dissociation, fear, and betrayal trauma",
+              "volume": "7",
+              "author": "Platt",
+              "year": "2015",
+              "journal-title": "Psychological Trauma Theory Research Practice and Policy"
+            },
+            {
+              "year": "2006",
+              "series-title": "Computing power and minimum sample size for RMSEA",
+              "author": "Preacher",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0270"
+            },
+            {
+              "year": "2017",
+              "series-title": "R: A language and environment for statistical computing",
+              "author": "R Development Core Team",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0275"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0280",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.18637/jss.v048.i02",
+              "article-title": "Lavaan: An r package for structural equation modeling",
+              "volume": "48",
+              "author": "Rosseel",
+              "year": "2012",
+              "journal-title": "Journal of Statistical Software"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0285",
+              "doi-asserted-by": "crossref",
+              "first-page": "570",
+              "DOI": "10.1002/cpp.1918",
+              "article-title": "Childhood maltreatment, shame-proneness and self-criticism in social anxiety disorder: A sequential mediational model",
+              "volume": "22",
+              "author": "Shahar",
+              "year": "2014",
+              "journal-title": "Clinical Psychology & Psychotherapy"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0290",
+              "doi-asserted-by": "crossref",
+              "first-page": "377",
+              "DOI": "10.1080/17439760.2010.516763",
+              "article-title": "The benefits of self-compassion and optimism exercises for individuals vulnerable to depression",
+              "volume": "5",
+              "author": "Shapira",
+              "year": "2010",
+              "journal-title": "The Journal of Positive Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0295",
+              "doi-asserted-by": "crossref",
+              "first-page": "198",
+              "DOI": "10.1080/01926187.2012.677662",
+              "article-title": "Childhood abuse and neglect in an outpatient clinical sample: Prevalence and impact",
+              "volume": "41",
+              "author": "Shi",
+              "year": "2013",
+              "journal-title": "The American Journal of Family Therapy"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0300",
+              "doi-asserted-by": "crossref",
+              "first-page": "615",
+              "DOI": "10.1007/BF01670103",
+              "article-title": "Cognitive triad: Relationship to depressive symptoms, parents\u2019 cognitive triad, and perceived parental messages",
+              "volume": "24",
+              "author": "Stark",
+              "year": "1996",
+              "journal-title": "Journal of Abnormal Child Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0305",
+              "doi-asserted-by": "crossref",
+              "first-page": "324",
+              "DOI": "10.1177/1077559505279308",
+              "article-title": "The relation of child maltreatment to shame and guilt among adolescents: Psychological routes to depression and delinquency",
+              "volume": "10",
+              "author": "Stuewig",
+              "year": "2005",
+              "journal-title": "Child Maltreatment"
+            },
+            {
+              "year": "1953",
+              "series-title": "The interpersonal theory of psychiatry",
+              "author": "Sullivan",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0310"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0315",
+              "doi-asserted-by": "crossref",
+              "first-page": "572",
+              "DOI": "10.1016/j.chiabu.2012.05.005",
+              "article-title": "Child maltreatment, subsequent non-suicidal self-injury and the mediating roles of dissociation, alexithymia and self-blame",
+              "volume": "36",
+              "author": "Swannell",
+              "year": "2012",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0320",
+              "series-title": "Self-conscious emotions: The psychology of shame, guilt, embarrassment, and pride",
+              "first-page": "114",
+              "article-title": "Shame and guilt in interpersonal relationships",
+              "author": "Tangney",
+              "year": "1995"
+            },
+            {
+              "year": "2002",
+              "series-title": "Shame and guilt",
+              "author": "Tangney",
+              "key": "10.1016/j.chiabu.2019.03.016_bib0325"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0330",
+              "doi-asserted-by": "crossref",
+              "first-page": "128",
+              "DOI": "10.1016/j.psychres.2010.08.018",
+              "article-title": "Validation of the Center for Epidemiological Studies Depression Scale\u2014Revised (CESD-R): Pragmatic depression assessment in the general population",
+              "volume": "186",
+              "author": "Van Dam",
+              "year": "2011",
+              "journal-title": "Psychiatry Research"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0335",
+              "doi-asserted-by": "crossref",
+              "first-page": "137",
+              "DOI": "10.1348/147608308X389391",
+              "article-title": "The role of attributions in the process of overcoming shame: A qualitative analysis",
+              "volume": "82",
+              "author": "Van Vliet",
+              "year": "2009",
+              "journal-title": "Psychology and Psychotherapy Theory Research and Practice"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0340",
+              "doi-asserted-by": "crossref",
+              "first-page": "994",
+              "DOI": "10.1198/016214502388618780",
+              "article-title": "Nearest-neighbor variance estimation (NNVE)",
+              "volume": "97",
+              "author": "Wang",
+              "year": "2002",
+              "journal-title": "Journal of the American Statistical Association"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0345",
+              "doi-asserted-by": "crossref",
+              "first-page": "1143",
+              "DOI": "10.1016/j.chiabu.2007.09.003",
+              "article-title": "Shame, guilt, symptoms of depression, and reported history of psychological maltreatment",
+              "volume": "31",
+              "author": "Webb",
+              "year": "2007",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0350",
+              "doi-asserted-by": "crossref",
+              "first-page": "363",
+              "DOI": "10.1111/0081-1750.00052",
+              "article-title": "Structural equation modeling with robust covariances",
+              "volume": "28",
+              "author": "Yuan",
+              "year": "1998",
+              "journal-title": "Sociological Methodology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2019.03.016_bib0355",
+              "first-page": "1006",
+              "article-title": "Structural equation modeling as a statistical method: An overview",
+              "volume": "2",
+              "author": "Yuan",
+              "year": "2015",
+              "journal-title": "JSM Mathematics and Statistics"
+            }
+          ],
+          "container-title": [
+            "Child Abuse &amp; Neglect"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0145213419301024?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0145213419301024?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                27
+              ]
+            ],
+            "date-time": "2025-09-27T01:09:21Z",
+            "timestamp": 1758935361000
+          },
+          "score": 45.694656,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0145213419301024"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2019,
+                6
+              ]
+            ]
+          },
+          "references-count": 71,
+          "alternative-id": [
+            "S0145213419301024"
+          ],
+          "URL": "https://doi.org/10.1016/j.chiabu.2019.03.016",
+          "ISSN": [
+            "0145-2134"
+          ],
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0145-2134"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2019,
+                6
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "Elsevier",
+              "name": "publisher",
+              "label": "This article is maintained by"
+            },
+            {
+              "value": "From childhood emotional maltreatment to depressive symptoms in adulthood: The roles of self-compassion and shame",
+              "name": "articletitle",
+              "label": "Article Title"
+            },
+            {
+              "value": "Child Abuse & Neglect",
+              "name": "journaltitle",
+              "label": "Journal Title"
+            },
+            {
+              "value": "https://doi.org/10.1016/j.chiabu.2019.03.016",
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version"
+            },
+            {
+              "value": "article",
+              "name": "content_type",
+              "label": "Content Type"
+            },
+            {
+              "value": "\u00a9 2019 Elsevier Ltd. All rights reserved.",
+              "name": "copyright",
+              "label": "Copyright"
+            }
+          ]
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                4
+              ]
+            ],
+            "date-time": "2025-11-04T11:16:22Z",
+            "timestamp": 1762254982396,
+            "version": "3.40.5"
+          },
+          "reference-count": 80,
+          "publisher": "Elsevier BV",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2024-10-01T00:00:00Z",
+                "timestamp": 1727740800000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2024-10-01T00:00:00Z",
+                "timestamp": 1727740800000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/legal/tdmrep-license"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2024-10-01T00:00:00Z",
+                "timestamp": 1727740800000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-017"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2024-10-01T00:00:00Z",
+                "timestamp": 1727740800000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-037"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2024-10-01T00:00:00Z",
+                "timestamp": 1727740800000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-012"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2024-10-01T00:00:00Z",
+                "timestamp": 1727740800000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-029"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2024-10-01T00:00:00Z",
+                "timestamp": 1727740800000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-004"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "clinicalkey.fr",
+              "clinicalkey.jp",
+              "clinicalkey.com.au",
+              "clinicalkey.es",
+              "clinicalkey.com",
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Child Abuse &amp; Neglect"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                10
+              ]
+            ]
+          },
+          "DOI": "10.1016/j.chiabu.2024.107020",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T14:30:03Z",
+            "timestamp": 1725460203000
+          },
+          "page": "107020",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 4,
+          "special_numbering": "C",
+          "title": [
+            "From childhood emotional abuse to adolescent loneliness: The roles of self-compassion and rejection sensitivity"
+          ],
+          "prefix": "10.1016",
+          "volume": "156",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-3237-0180",
+              "authenticated-orcid": false,
+              "given": "Yangwenjie",
+              "family": "Qu",
+              "sequence": "first",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0005",
+              "doi-asserted-by": "crossref",
+              "first-page": "19",
+              "DOI": "10.1016/j.paid.2017.01.048",
+              "article-title": "A model proposal on the relationships between loneliness, insecure attachment, and inferiority feelings",
+              "volume": "111",
+              "author": "Akdo\u011fan",
+              "year": "2017",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2024.107020_bb0010",
+              "doi-asserted-by": "crossref",
+              "first-page": "853",
+              "DOI": "10.1037/a0021884",
+              "article-title": "Self-compassion and relationship maintenance: The moderating roles of conscientiousness and gender",
+              "volume": "100",
+              "author": "Baker",
+              "year": "2011",
+              "journal-title": "Journal of Personality and Social Psychology"
+            },
+            {
+              "issue": "S1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0015",
+              "doi-asserted-by": "crossref",
+              "first-page": "S82",
+              "DOI": "10.1016/j.eurpsy.2017.01.259",
+              "article-title": "Family environment as predictor of adolescents\u2019 loneliness",
+              "volume": "41",
+              "author": "Bal\u00e1\u017eov\u00e1",
+              "year": "2017",
+              "journal-title": "European Psychiatry"
+            },
+            {
+              "article-title": "Childhood Trauma Questionnaire: A retrospective self-report manual",
+              "year": "1998",
+              "author": "Bernstein",
+              "key": "10.1016/j.chiabu.2024.107020_bb0020"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0025",
+              "doi-asserted-by": "crossref",
+              "first-page": "169",
+              "DOI": "10.1016/S0145-2134(02)00541-0",
+              "article-title": "Development and validation of a brief screening version of the Childhood Trauma Questionnaire",
+              "volume": "27",
+              "author": "Bernstein",
+              "year": "2003",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0030",
+              "article-title": "Depression and sleep quality among Chinese college students: The roles of rumination and self-compassion",
+              "author": "Bian",
+              "year": "2020",
+              "journal-title": "Current Psychology."
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2024.107020_bb0035",
+              "doi-asserted-by": "crossref",
+              "first-page": "621",
+              "DOI": "10.1002/ijop.12850",
+              "article-title": "As long as you are self-compassionate, you will never walk alone. The interplay between self-compassion and rejection sensitivity in predicting loneliness",
+              "volume": "57",
+              "author": "Borawski",
+              "year": "2022",
+              "journal-title": "International Journal of Psychology"
+            },
+            {
+              "year": "1969",
+              "series-title": "Attachment and loss. Vol. 1. Attachment",
+              "author": "Bowlby",
+              "key": "10.1016/j.chiabu.2024.107020_bb0040"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0045",
+              "doi-asserted-by": "crossref",
+              "first-page": "216",
+              "DOI": "10.1016/j.chiabu.2017.11.003",
+              "article-title": "Barriers to self-compassion for female survivors of childhood maltreatment: The roles of fear of self-compassion and psychological inflexibility",
+              "volume": "76",
+              "author": "Boykin",
+              "year": "2018",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2024.107020_bb0050",
+              "doi-asserted-by": "crossref",
+              "first-page": "346",
+              "DOI": "10.1037/cou0000257",
+              "article-title": "Do self-compassion and self-coldness distinctly relate to distress and well-being? A theoretical model of self-relating",
+              "volume": "65",
+              "author": "Brenner",
+              "year": "2018",
+              "journal-title": "Journal of Counseling Psychology"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0055",
+              "doi-asserted-by": "crossref",
+              "first-page": "130",
+              "DOI": "10.1017/S1478951519000737",
+              "article-title": "A feasibility and acceptability study of an adaptation of the Mindful Self-Compassion program for adult cancer patients",
+              "volume": "18",
+              "author": "Brooker",
+              "year": "2020",
+              "journal-title": "Palliative and Supportive Care"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0060",
+              "doi-asserted-by": "crossref",
+              "first-page": "4",
+              "DOI": "10.1186/s40479-015-0025-x",
+              "article-title": "Rejection sensitivity and symptom severity in patients with borderline personality disorder: Effects of childhood maltreatment and self-esteem",
+              "volume": "2",
+              "author": "Bungert",
+              "year": "2015",
+              "journal-title": "Borderline Personality Disorder and Emotion Dysregulation"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2024.107020_bb0065",
+              "doi-asserted-by": "crossref",
+              "first-page": "497",
+              "DOI": "10.1007/s10896-019-00099-3",
+              "article-title": "Emotional abuse and adolescents\u2019 social anxiety: The roles of self-esteem and loneliness",
+              "volume": "35",
+              "author": "Chen",
+              "year": "2020",
+              "journal-title": "Journal of Family Violence"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2024.107020_bb0070",
+              "doi-asserted-by": "crossref",
+              "first-page": "619",
+              "DOI": "10.1037/cdp0000013",
+              "article-title": "Chinese American immigrant parents\u2019 emotional expression in the family: Relations with parents\u2019 cultural orientations and children\u2019s emotion-related regulation",
+              "volume": "21",
+              "author": "Chen",
+              "year": "2015",
+              "journal-title": "Cultural Diversity and Ethnic Minority Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0075",
+              "doi-asserted-by": "crossref",
+              "first-page": "4",
+              "DOI": "10.1016/j.jesp.2015.07.006",
+              "article-title": "Methods for the detection of carelessly invalid responses in survey data",
+              "volume": "66",
+              "author": "Curran",
+              "year": "2016",
+              "journal-title": "Journal of Experimental Social Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0080",
+              "first-page": "512",
+              "article-title": "Reliability and validity of the children\u2019s rejection sensitivity questionnaire in Chinese pupils",
+              "volume": "26",
+              "author": "Ding",
+              "year": "2018",
+              "journal-title": "Chinese Journal of Clinical Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0085",
+              "article-title": "Adult rejection sensitivity questionnaire",
+              "author": "Downey",
+              "year": "2006",
+              "journal-title": "APA PsycTests"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2024.107020_bb0090",
+              "doi-asserted-by": "crossref",
+              "first-page": "1327",
+              "DOI": "10.1037/0022-3514.70.6.1327",
+              "article-title": "Implications of rejection sensitivity for intimate relationships",
+              "volume": "70",
+              "author": "Downey",
+              "year": "1996",
+              "journal-title": "Journal of Personality and Social Psychology"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2024.107020_bb0095",
+              "doi-asserted-by": "crossref",
+              "first-page": "1074",
+              "DOI": "10.1111/j.1467-8624.1998.tb06161.x",
+              "article-title": "Rejection sensitivity and children\u2019s interpersonal difficulties",
+              "volume": "69",
+              "author": "Downey",
+              "year": "1998",
+              "journal-title": "Child Development"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0100",
+              "article-title": "Rejection sensitivity and reactive aggression in early adults: The mediating role of loneliness and maladaptive coping",
+              "author": "Du",
+              "year": "2022",
+              "journal-title": "Psychological Reports."
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0105",
+              "doi-asserted-by": "crossref",
+              "first-page": "413",
+              "DOI": "10.1080/09720073.2015.11891675",
+              "article-title": "The childhood trauma and late adolescent rejection sensitivity",
+              "volume": "19",
+              "author": "Erozkan",
+              "year": "2015",
+              "journal-title": "The Anthropologist"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0110",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.chiabu.2023.106358",
+              "article-title": "Correlation between childhood trauma experience and depressive symptoms among young adults: The potential mediating role of loneliness",
+              "volume": "144",
+              "author": "Fan",
+              "year": "2023",
+              "journal-title": "Child Abuse and Neglect"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0115",
+              "first-page": "1",
+              "article-title": "The effectiveness of self-compassion training on self-discrepancy, loneliness, and post-divorce adjustment among women",
+              "volume": "7",
+              "author": "Farzanfar",
+              "year": "2020",
+              "journal-title": "International Journal of Body, Mind and Culture"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0120",
+              "doi-asserted-by": "crossref",
+              "first-page": "1118",
+              "DOI": "10.1186/s12889-020-09208-0",
+              "article-title": "Age differences in demographic, social and health-related factors associated with loneliness across the adult life span (19\u201365years): A cross-sectional study in the Netherlands",
+              "volume": "20",
+              "author": "Franssen",
+              "year": "2020",
+              "journal-title": "BMC Public Health"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0125",
+              "doi-asserted-by": "crossref",
+              "first-page": "59",
+              "DOI": "10.1016/j.cpr.2017.08.007",
+              "article-title": "Associations between rejection sensitivity and mental health outcomes: A meta-analytic review",
+              "volume": "57",
+              "author": "Gao",
+              "year": "2017",
+              "journal-title": "Clinical Psychology Review"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0130",
+              "doi-asserted-by": "crossref",
+              "first-page": "212",
+              "DOI": "10.32598/sija.13.10.630",
+              "article-title": "The role of self-compassion in predicting loneliness and self-efficacy in the elderly",
+              "volume": "15",
+              "author": "Ghezelseflo",
+              "year": "2020",
+              "journal-title": "Salmand"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0135",
+              "article-title": "Exploring the mediating role of self-blame and coping in the relationships between self-compassion and distress in females following the sexual assault",
+              "author": "Hamrick",
+              "year": "2018",
+              "journal-title": "Journal of Clinical Psychology"
+            },
+            {
+              "year": "2017",
+              "series-title": "Introduction to mediation, moderation, and conditional process analysis: A regression-based approach",
+              "author": "Hayes",
+              "key": "10.1016/j.chiabu.2024.107020_bb0140"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2024.107020_bb0145",
+              "doi-asserted-by": "crossref",
+              "first-page": "695",
+              "DOI": "10.1016/j.cpr.2006.04.002",
+              "article-title": "The clinical significance of loneliness: A literature review",
+              "volume": "26",
+              "author": "Heinrich",
+              "year": "2006",
+              "journal-title": "Clinical Psychology Review"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0150",
+              "doi-asserted-by": "crossref",
+              "first-page": "362",
+              "DOI": "10.1080/02673843.2022.2109422",
+              "article-title": "Loneliness as experienced by adolescents and young adults: An explorative qualitative study",
+              "volume": "27",
+              "author": "Hemberg",
+              "year": "2022",
+              "journal-title": "International Journal of Adolescence and Youth"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0155",
+              "doi-asserted-by": "crossref",
+              "first-page": "48",
+              "DOI": "10.1177/0022146509361194",
+              "article-title": "Victimization in early life and mental health in adulthood",
+              "volume": "51",
+              "author": "Hill",
+              "year": "2010",
+              "journal-title": "Journal of Health and Social Behavior"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0160",
+              "doi-asserted-by": "crossref",
+              "first-page": "227",
+              "DOI": "10.1177/1745691614568352",
+              "article-title": "Loneliness and social isolation as risk factors for mortality",
+              "volume": "10",
+              "author": "Holt-Lunstad",
+              "year": "2015",
+              "journal-title": "Perspectives on Psychological Science"
+            },
+            {
+              "issue": "S2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0165",
+              "doi-asserted-by": "crossref",
+              "first-page": "481",
+              "DOI": "10.1111/papt.12293",
+              "article-title": "Rejection sensitivity and adolescent non-suicidal self-injury: Mediation through depressive symptoms and moderation by fear of self-compassion",
+              "volume": "94",
+              "author": "Jiang",
+              "year": "2021",
+              "journal-title": "Psychology and Psychotherapy: Theory, Research and Practice"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0170",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1007/s10826-022-02413-y",
+              "article-title": "The effect of friendship conflict on depression, anxiety and stress in Chinese adolescents: The protective role of self-compassion",
+              "author": "Kong",
+              "year": "2022",
+              "journal-title": "Journal of Child and Family Studies"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0175",
+              "doi-asserted-by": "crossref",
+              "first-page": "167",
+              "DOI": "10.1177/10443894221124565",
+              "article-title": "The consequences of childhood emotional abuse: A systematic review and content analysis",
+              "volume": "104",
+              "author": "Korolevskaia",
+              "year": "2023",
+              "journal-title": "Families in Society"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2024.107020_bb0180",
+              "doi-asserted-by": "crossref",
+              "first-page": "432",
+              "DOI": "10.1080/17405629.2019.1662290",
+              "article-title": "Does self-compassion protect adolescents who are victimized or suffer from academic difficulties from depression?",
+              "volume": "17",
+              "author": "Lahtinen",
+              "year": "2020",
+              "journal-title": "European Journal of Developmental Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0185",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.3389/fpsyg.2022.968383",
+              "article-title": "Early life adverse experiences and loneliness among young adults: The mediating role of social processes",
+              "volume": "13",
+              "author": "Landry",
+              "year": "2022",
+              "journal-title": "Frontiers in Psychology"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0190",
+              "doi-asserted-by": "crossref",
+              "first-page": "40",
+              "DOI": "10.1111/jomf.12160",
+              "article-title": "Minority stress and stress proliferation among same-sex and other marginalized couples",
+              "volume": "77",
+              "author": "LeBlanc",
+              "year": "2015",
+              "journal-title": "Journal of Marriage and Family"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0195",
+              "doi-asserted-by": "crossref",
+              "first-page": "130",
+              "DOI": "10.1016/j.chiabu.2015.03.016",
+              "article-title": "Emotional abuse in childhood and suicidality: The mediating roles of re-victimization and depressive symptoms in adulthood",
+              "volume": "44",
+              "author": "Lee",
+              "year": "2015",
+              "journal-title": "Child Abuse and Neglect"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2024.107020_bb0200",
+              "doi-asserted-by": "crossref",
+              "first-page": "634",
+              "DOI": "10.1080/09638237.2023.2182411",
+              "article-title": "The reciprocal relations among self-compassion, posttraumatic stress disorder, and posttraumatic growth among adolescents after the Jiuzhaigou earthquake: A three-wave cross-lagged study",
+              "volume": "32",
+              "author": "Liu",
+              "year": "2023",
+              "journal-title": "Journal of Mental Health"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2024.107020_bb0205",
+              "doi-asserted-by": "crossref",
+              "first-page": "793",
+              "DOI": "10.2224/sbp.6655",
+              "article-title": "Relationship between childhood emotional abuse and self-esteem: A dual mediation model of attachment",
+              "volume": "46",
+              "author": "Liu",
+              "year": "2018",
+              "journal-title": "Social Behavior and Personality: An International Journal"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2024.107020_bb0210",
+              "doi-asserted-by": "crossref",
+              "first-page": "481",
+              "DOI": "10.1111/j.1532-7795.2007.00531.x",
+              "article-title": "Social causes and consequences of rejection sensitivity",
+              "volume": "17",
+              "author": "London",
+              "year": "2007",
+              "journal-title": "Journal of Research on Adolescence"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0215",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.childyouth.2019.104573",
+              "article-title": "Psychological maltreatment and loneliness in Chinese children: The role of perceived social support and self-esteem",
+              "volume": "108",
+              "author": "Luo",
+              "year": "2020",
+              "journal-title": "Children and Youth Services Review"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0220",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.paid.2022.111589",
+              "article-title": "Long-term orientation and demographics predict the willingness to quarantine: A cross-national survey in the first round of COVID-19 lockdown",
+              "volume": "192",
+              "author": "Ma",
+              "year": "2022",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0225",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.3389/fpsyg.2020.00813",
+              "article-title": "Childhood maltreatment and mobile phone addiction among Chinese adolescents: Loneliness as a mediator and self-control as a moderator",
+              "volume": "11",
+              "author": "Ma",
+              "year": "2020",
+              "journal-title": "Frontiers in Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0230",
+              "series-title": "Encyclopedia of adolescence",
+              "first-page": "178",
+              "article-title": "Loneliness",
+              "volume": "Vol. 2",
+              "author": "MacEvoy",
+              "year": "2011"
+            },
+            {
+              "issue": "8",
+              "key": "10.1016/j.chiabu.2024.107020_bb0235",
+              "doi-asserted-by": "crossref",
+              "first-page": "674",
+              "DOI": "10.1037/pas0001247",
+              "article-title": "The bifactor structure of the Self-Compassion Scale: Bayesian approaches to overcome exploratory structural equation modeling (ESEM) limitations",
+              "volume": "35",
+              "author": "Marsh",
+              "year": "2023",
+              "journal-title": "Psychological Assessment"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2024.107020_bb0240",
+              "doi-asserted-by": "crossref",
+              "first-page": "1446",
+              "DOI": "10.1007/s12671-020-01361-2",
+              "article-title": "Self-compassion and fear of self-compassion: Mechanisms underlying the link between child maltreatment severity and psychological distress in college women",
+              "volume": "11",
+              "author": "Messman-Moore",
+              "year": "2020",
+              "journal-title": "Mindfulness"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2024.107020_bb0245",
+              "doi-asserted-by": "crossref",
+              "first-page": "1469",
+              "DOI": "10.1007/s12671-020-01363-0",
+              "article-title": "The process of science: A critical evaluation of more than 15 years of research on self-compassion with the self-compassion scale",
+              "volume": "11",
+              "author": "Muris",
+              "year": "2020",
+              "journal-title": "Mindfulness"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0250",
+              "doi-asserted-by": "crossref",
+              "first-page": "240",
+              "DOI": "10.1007/s12671-020-01514-3",
+              "article-title": "The (non)protective role of self-compassion in internalizing symptoms: Two empirical studies in adolescents demonstrating unwanted effects of using the self-compassion scale total score",
+              "volume": "12",
+              "author": "Muris",
+              "year": "2021",
+              "journal-title": "Mindfulness"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0255",
+              "doi-asserted-by": "crossref",
+              "first-page": "373",
+              "DOI": "10.1002/cpp.2005",
+              "article-title": "Protection or vulnerability? A meta-analysis of the relations between the positive and negative components of self-compassion and psychopathology",
+              "volume": "24",
+              "author": "Muris",
+              "year": "2017",
+              "journal-title": "Clinical Psychology and Psychotherapy"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0260",
+              "doi-asserted-by": "crossref",
+              "first-page": "85",
+              "DOI": "10.1080/15298860309032",
+              "article-title": "Self-compassion: An alternative conceptualization of a healthy attitude toward oneself",
+              "volume": "2",
+              "author": "Neff",
+              "year": "2003",
+              "journal-title": "Self and Identity"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2024.107020_bb0265",
+              "doi-asserted-by": "crossref",
+              "first-page": "572",
+              "DOI": "10.1007/s12671-022-01832-8",
+              "article-title": "The differential effects fallacy in the study of self-compassion: Misunderstanding the nature of bipolar continuums",
+              "volume": "13",
+              "author": "Neff",
+              "year": "2022",
+              "journal-title": "Mindfulness"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0270",
+              "doi-asserted-by": "crossref",
+              "first-page": "193",
+              "DOI": "10.1146/annurev-psych-032420-031047",
+              "article-title": "Self-compassion: Theory, method, research, and intervention",
+              "volume": "74",
+              "author": "Neff",
+              "year": "2023",
+              "journal-title": "Annual Review of Psychology"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0275",
+              "doi-asserted-by": "crossref",
+              "first-page": "28",
+              "DOI": "10.1002/jclp.21923",
+              "article-title": "A pilot study and randomized controlled trial of the mindful self-compassion program",
+              "volume": "69",
+              "author": "Neff",
+              "year": "2013",
+              "journal-title": "Journal of Clinical Psychology"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2024.107020_bb0280",
+              "doi-asserted-by": "crossref",
+              "first-page": "241",
+              "DOI": "10.2307/2136956",
+              "article-title": "The sociological study of stress",
+              "volume": "30",
+              "author": "Pearlin",
+              "year": "1989",
+              "journal-title": "Journal of Health and Social Behavior"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0285",
+              "series-title": "Encyclopaedia of mental health",
+              "first-page": "571",
+              "article-title": "Loneliness",
+              "volume": "2",
+              "author": "Perlman",
+              "year": "1998"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0290",
+              "series-title": "Personality and individual differences",
+              "first-page": "125",
+              "article-title": "Dispositional mindfulness and rejection sensitivity: The critical role of nonjudgment",
+              "volume": "Vol. 93",
+              "author": "Peters",
+              "year": "2016"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0295",
+              "doi-asserted-by": "crossref",
+              "first-page": "36",
+              "DOI": "10.1007/s10804-018-09324-7",
+              "article-title": "The role of self-concepts in emerging adult depression: A systematic research synthesis",
+              "volume": "27",
+              "author": "Reed-Fitzke",
+              "year": "2020",
+              "journal-title": "Journal of Adult Development"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2024.107020_bb0300",
+              "doi-asserted-by": "crossref",
+              "first-page": "421",
+              "DOI": "10.24869/psyd.2019.421",
+              "article-title": "Correlation between perceived social support and loneliness among Chinese adolescents: Mediating effects of psychological capital",
+              "volume": "31",
+              "author": "Ren",
+              "year": "2019",
+              "journal-title": "Psychiatria Danubina"
+            },
+            {
+              "issue": "12",
+              "key": "10.1016/j.chiabu.2024.107020_bb0305",
+              "article-title": "Social anxiety and internet addiction among rural left-behind children: The mediating effect of loneliness",
+              "volume": "46",
+              "author": "Ren",
+              "year": "2017",
+              "journal-title": "Iranian Journal of Public Health"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0310",
+              "doi-asserted-by": "crossref",
+              "first-page": "5",
+              "DOI": "10.1080/10926770903475968",
+              "article-title": "Childhood emotional abuse and the attachment system across the life cycle: What theory and research tell us",
+              "volume": "19",
+              "author": "Riggs",
+              "year": "2010",
+              "journal-title": "Journal of Aggression, Maltreatment & Trauma"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0315",
+              "doi-asserted-by": "crossref",
+              "first-page": "32",
+              "DOI": "10.1016/j.chiabu.2019.03.016",
+              "article-title": "From childhood emotional maltreatment to depressive symptoms in adulthood: The roles of self-compassion and shame",
+              "volume": "92",
+              "author": "Ross",
+              "year": "2019",
+              "journal-title": "Child Abuse and Neglect"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2024.107020_bb0320",
+              "doi-asserted-by": "crossref",
+              "first-page": "290",
+              "DOI": "10.1207/s15327752jpa4203_11",
+              "article-title": "Developing a measure of loneliness",
+              "volume": "42",
+              "author": "Russell",
+              "year": "1978",
+              "journal-title": "Journal of Personality Assessment"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2024.107020_bb0325",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.19148/ijhbs.58217",
+              "article-title": "Self-compassion and forgiveness: The protective approach against rejection sensitivity",
+              "volume": "1",
+              "author": "Sakiz",
+              "year": "2015",
+              "journal-title": "International Journal of Human and Behavioral Science"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0330",
+              "doi-asserted-by": "crossref",
+              "first-page": "97",
+              "DOI": "10.1016/j.cpr.2017.10.003",
+              "article-title": "It is all in their mind: A review on information processing bias in lonely individuals",
+              "volume": "58",
+              "author": "Spithoven",
+              "year": "2017",
+              "journal-title": "Clinical Psychology Review"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2024.107020_bb0335",
+              "doi-asserted-by": "crossref",
+              "first-page": "275",
+              "DOI": "10.1002/cpp.705",
+              "article-title": "Rejection sensitivity and borderline personality disorder",
+              "volume": "18",
+              "author": "Staebler",
+              "year": "2011",
+              "journal-title": "Clinical Psychology & Psychotherapy"
+            },
+            {
+              "year": "2013",
+              "series-title": "The interpersonal theory of psychiatry",
+              "author": "Sullivan",
+              "key": "10.1016/j.chiabu.2024.107020_bb0340"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0345",
+              "doi-asserted-by": "crossref",
+              "first-page": "74",
+              "DOI": "10.1016/j.chb.2018.08.032",
+              "article-title": "Child neglect, psychological abuse and smartphone addiction among Chinese adolescents: The roles of emotional intelligence and coping style",
+              "volume": "90",
+              "author": "Sun",
+              "year": "2019",
+              "journal-title": "Computers in Human Behavior"
+            },
+            {
+              "issue": "10",
+              "key": "10.1016/j.chiabu.2024.107020_bb0350",
+              "doi-asserted-by": "crossref",
+              "first-page": "887",
+              "DOI": "10.1016/j.chiabu.2011.07.003",
+              "article-title": "The linkages among childhood maltreatment, adolescent mental health, and self-compassion in child welfare adolescents",
+              "volume": "35",
+              "author": "Tanaka",
+              "year": "2011",
+              "journal-title": "Child Abuse and Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0355",
+              "doi-asserted-by": "crossref",
+              "first-page": "288",
+              "DOI": "10.1016/j.jad.2021.05.019",
+              "article-title": "The mediating effect of self-compassion on the relationship between childhood maltreatment and depression",
+              "volume": "291",
+              "author": "Tao",
+              "year": "2021",
+              "journal-title": "Journal of Affective Disorders"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2024.107020_bb0360",
+              "doi-asserted-by": "crossref",
+              "first-page": "658",
+              "DOI": "10.1080/02699931.2017.1310716",
+              "article-title": "Processes of change in a school-based mindfulness programme: Cognitive reactivity and self-coldness as mediators",
+              "volume": "32",
+              "author": "Van der Gucht",
+              "year": "2018",
+              "journal-title": "Cognition and Emotion"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2024.107020_bb0365",
+              "first-page": "23",
+              "article-title": "A study on the reliability and validity of the Russel loneliness scale",
+              "volume": "3",
+              "author": "Wang",
+              "year": "1995",
+              "journal-title": "Chinese Journal of Clinical Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0370",
+              "article-title": "Emotional maltreatment and left-behind adolescents\u2019 loneliness in rural China: The moderating role of peer acceptance",
+              "author": "Wang",
+              "year": "2022",
+              "journal-title": "Current Psychology."
+            },
+            {
+              "issue": "8",
+              "key": "10.1016/j.chiabu.2024.107020_bb0375",
+              "doi-asserted-by": "crossref",
+              "first-page": "1984",
+              "DOI": "10.1111/j.1559-1816.2012.00927.x",
+              "article-title": "Rejection sensitivity, social withdrawal, and loneliness in young adults",
+              "volume": "42",
+              "author": "Watson",
+              "year": "2012",
+              "journal-title": "Journal of Applied Social Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0380",
+              "series-title": "Loneliness in childhood",
+              "first-page": "1",
+              "author": "Weeks",
+              "year": "2012"
+            },
+            {
+              "issue": "15\u201316",
+              "key": "10.1016/j.chiabu.2024.107020_bb0385",
+              "doi-asserted-by": "crossref",
+              "first-page": "NP13685",
+              "DOI": "10.1177/0886260521993924",
+              "article-title": "Child maltreatment and subjective well-being in Chinese emerging adults: A process model involving self-esteem and self-compassion",
+              "volume": "37",
+              "author": "Wu",
+              "year": "2022",
+              "journal-title": "Journal of Interpersonal Violence"
+            },
+            {
+              "issue": "27",
+              "key": "10.1016/j.chiabu.2024.107020_bb0390",
+              "doi-asserted-by": "crossref",
+              "first-page": "23712",
+              "DOI": "10.1007/s12144-022-03549-2",
+              "article-title": "How do dispositional mindfulness and self-compassion alleviate loneliness? The mediating role of rejection sensitivity",
+              "volume": "42",
+              "author": "Xie",
+              "year": "2023",
+              "journal-title": "Current Psychology"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2024.107020_bb0395",
+              "doi-asserted-by": "crossref",
+              "first-page": "841",
+              "DOI": "10.1037/fam0000446",
+              "article-title": "Longitudinal associations between parent-child relationships in middle childhood and child-perceived loneliness",
+              "volume": "32",
+              "author": "Yan",
+              "year": "2018",
+              "journal-title": "Journal of Family Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2024.107020_bb0400",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.chiabu.2022.105641",
+              "article-title": "How do physical and emotional abuse affect depression and problematic behaviors in adolescents? The roles of emotional regulation and anger",
+              "volume": "129",
+              "author": "Zhou",
+              "year": "2022",
+              "journal-title": "Child Abuse and Neglect"
+            }
+          ],
+          "container-title": [
+            "Child Abuse &amp; Neglect"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0145213424004101?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0145213424004101?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                4
+              ]
+            ],
+            "date-time": "2024-10-04T02:34:38Z",
+            "timestamp": 1728009278000
+          },
+          "score": 41.070194,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0145213424004101"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                10
+              ]
+            ]
+          },
+          "references-count": 80,
+          "alternative-id": [
+            "S0145213424004101"
+          ],
+          "URL": "https://doi.org/10.1016/j.chiabu.2024.107020",
+          "ISSN": [
+            "0145-2134"
+          ],
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0145-2134"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                10
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "Elsevier",
+              "name": "publisher",
+              "label": "This article is maintained by"
+            },
+            {
+              "value": "From childhood emotional abuse to adolescent loneliness: The roles of self-compassion and rejection sensitivity",
+              "name": "articletitle",
+              "label": "Article Title"
+            },
+            {
+              "value": "Child Abuse & Neglect",
+              "name": "journaltitle",
+              "label": "Journal Title"
+            },
+            {
+              "value": "https://doi.org/10.1016/j.chiabu.2024.107020",
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version"
+            },
+            {
+              "value": "article",
+              "name": "content_type",
+              "label": "Content Type"
+            },
+            {
+              "value": "\u00a9 2024 Published by Elsevier Ltd.",
+              "name": "copyright",
+              "label": "Copyright"
+            }
+          ],
+          "article-number": "107020"
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                27
+              ]
+            ],
+            "date-time": "2025-10-27T05:07:13Z",
+            "timestamp": 1761541633481,
+            "version": "3.44.0"
+          },
+          "reference-count": 99,
+          "publisher": "Elsevier BV",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/legal/tdmrep-license"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-017"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-037"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-012"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-029"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2022-07-01T00:00:00Z",
+                "timestamp": 1656633600000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-004"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "clinicalkey.com",
+              "clinicalkey.com.au",
+              "clinicalkey.es",
+              "clinicalkey.fr",
+              "clinicalkey.jp",
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Child Abuse &amp; Neglect"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                7
+              ]
+            ]
+          },
+          "DOI": "10.1016/j.chiabu.2022.105629",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2022-04-16T04:55:33Z",
+            "timestamp": 1650084933000
+          },
+          "page": "105629",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 15,
+          "special_numbering": "C",
+          "title": [
+            "Childhood emotional abuse and adolescent flourishing: A moderated mediation model of self-compassion and curiosity"
+          ],
+          "prefix": "10.1016",
+          "volume": "129",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-4452-6819",
+              "authenticated-orcid": false,
+              "given": "Sylvia Y.C.L.",
+              "family": "Kwok",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2917-4982",
+              "authenticated-orcid": false,
+              "given": "Minmin",
+              "family": "Gu",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Kim",
+              "family": "Kwok",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "issue": "12",
+              "key": "10.1016/j.chiabu.2022.105629_bb0005",
+              "doi-asserted-by": "crossref",
+              "first-page": "776",
+              "DOI": "10.1177/0706743716651832",
+              "article-title": "Individual-and relationship-level factors related to better mental health outcomes following child abuse: Results from a nationally representative Canadian sample",
+              "volume": "61",
+              "author": "Afifi",
+              "year": "2016",
+              "journal-title": "The Canadian Journal of Psychiatry"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105629_bb0010",
+              "doi-asserted-by": "crossref",
+              "first-page": "e333",
+              "DOI": "10.1542/peds.2012-4021",
+              "article-title": "Harsh physical punishment in childhood and adult physical health",
+              "volume": "132",
+              "author": "Afifi",
+              "year": "2013",
+              "journal-title": "Pediatrics"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0015",
+              "doi-asserted-by": "crossref",
+              "first-page": "789",
+              "DOI": "10.1007/s10648-019-09495-z",
+              "article-title": "Curiosity and interest: Emergence and divergence",
+              "volume": "31",
+              "author": "Ainley",
+              "year": "2019",
+              "journal-title": "Educational Psychology Review"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0020",
+              "doi-asserted-by": "crossref",
+              "first-page": "802",
+              "DOI": "10.6018/analesps.31.3.192041",
+              "article-title": "Examining the predictive role of self-compassion on flourishing in Turkish university students",
+              "volume": "31",
+              "author": "Akin",
+              "year": "2015",
+              "journal-title": "Anales De Psicolog\u00eda/Annals of Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0025",
+              "first-page": "1",
+              "article-title": "Psychological maltreatment predicts decreases in social wellbeing through resilience in college students: A conditional process approach of positive emotions",
+              "author": "Arslan",
+              "year": "2021",
+              "journal-title": "Current Psychology"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0030",
+              "doi-asserted-by": "crossref",
+              "first-page": "105",
+              "DOI": "10.1080/15298868.2018.1543728",
+              "article-title": "Self-curiosity: Definition and measurement",
+              "volume": "19",
+              "author": "Aschieri",
+              "year": "2020",
+              "journal-title": "Self and Identity"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0035",
+              "first-page": "102",
+              "article-title": "Psychometric properties of curiosity and exploration inventory-II (CEI-II) in the case of a sample of Romanian students",
+              "volume": "64",
+              "author": "Balgiu",
+              "year": "2018",
+              "journal-title": "Revista de Psihologie"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0040",
+              "doi-asserted-by": "crossref",
+              "first-page": "37",
+              "DOI": "10.1016/j.chiabu.2017.01.006",
+              "article-title": "Trauma appraisals, emotion regulation difficulties, and self-compassion predict posttraumatic stress symptoms following childhood abuse",
+              "volume": "65",
+              "author": "Barlow",
+              "year": "2017",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0045",
+              "doi-asserted-by": "crossref",
+              "first-page": "289",
+              "DOI": "10.1037/a0025754",
+              "article-title": "Self-compassion: Conceptualizations, correlates, & interventions",
+              "volume": "15",
+              "author": "Barnard",
+              "year": "2011",
+              "journal-title": "Review of General Psychology"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105629_bb0050",
+              "doi-asserted-by": "crossref",
+              "first-page": "729",
+              "DOI": "10.1377/hlthaff.2018.05425",
+              "article-title": "Family resilience and connection promote flourishing among US children, even amid adversity",
+              "volume": "38",
+              "author": "Bethell",
+              "year": "2019",
+              "journal-title": "Health Affairs"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0055",
+              "doi-asserted-by": "crossref",
+              "first-page": "108",
+              "DOI": "10.1016/j.adolescence.2017.04.001",
+              "article-title": "Response to a mindful self-compassion intervention in teens: A within-person association of mindfulness, self-compassion, and emotional well-being outcomes",
+              "volume": "57",
+              "author": "Bluth",
+              "year": "2017",
+              "journal-title": "Journal of Adolescence"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105629_bb0060",
+              "doi-asserted-by": "crossref",
+              "first-page": "479",
+              "DOI": "10.1007/s12671-015-0476-6",
+              "article-title": "Making friends with yourself: A mixed methods pilot study of a mindful self-compassion program for adolescents",
+              "volume": "7",
+              "author": "Bluth",
+              "year": "2016",
+              "journal-title": "Mindfulness"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0065",
+              "doi-asserted-by": "crossref",
+              "first-page": "346",
+              "DOI": "10.1037/cou0000257",
+              "article-title": "Do self-compassion and self-coldness distinctly relate to distress and well-being? A theoretical model of self-relating",
+              "volume": "65",
+              "author": "Brenner",
+              "year": "2018",
+              "journal-title": "Journal of Counseling Psychology"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0070",
+              "doi-asserted-by": "crossref",
+              "first-page": "735",
+              "DOI": "10.1016/j.chiabu.2013.10.014",
+              "article-title": "Emotional abuse as a predictor of early maladaptive schemas in adolescents: Contributions to the development of depressive and social anxiety symptoms",
+              "volume": "38",
+              "author": "Calvete",
+              "year": "2014",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0075",
+              "doi-asserted-by": "crossref",
+              "first-page": "1694",
+              "DOI": "10.32674/jis.v8i4.225",
+              "article-title": "Curiosity and autonomy as factors that promote personal growth in the cross-cultural transition process of international students",
+              "volume": "8",
+              "author": "Cankaya",
+              "year": "2018",
+              "journal-title": "Journal of International Students"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0080",
+              "doi-asserted-by": "crossref",
+              "first-page": "402",
+              "DOI": "10.1111/j.1469-7610.2012.02608.x",
+              "article-title": "Annual research review: Resilient functioning in maltreated children\u2013past, present, and future perspectives",
+              "volume": "54",
+              "author": "Cicchetti",
+              "year": "2013",
+              "journal-title": "Journal of Child Psychology and Psychiatry"
+            },
+            {
+              "issue": "1\u20132",
+              "key": "10.1016/j.chiabu.2022.105629_bb0085",
+              "doi-asserted-by": "crossref",
+              "first-page": "16",
+              "DOI": "10.1111/j.1469-7610.2008.01979.x",
+              "article-title": "The past achievements and future promises of developmental psychopathology: The coming of age of a discipline",
+              "volume": "50",
+              "author": "Cicchetti",
+              "year": "2009",
+              "journal-title": "Journal of Child Psychology and Psychiatry"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0090",
+              "doi-asserted-by": "crossref",
+              "first-page": "98",
+              "DOI": "10.1016/j.adolescence.2019.07.007",
+              "article-title": "Fostering adolescent curiosity through a question brainstorming intervention",
+              "volume": "75",
+              "author": "Clark",
+              "year": "2019",
+              "journal-title": "Journal of Adolescence"
+            },
+            {
+              "year": "2006",
+              "series-title": "Treating the trauma of childhood abuse: Therapy for the interrupted life",
+              "author": "Cloitre",
+              "key": "10.1016/j.chiabu.2022.105629_bb0095"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0100",
+              "doi-asserted-by": "crossref",
+              "first-page": "125",
+              "DOI": "10.1016/j.psychres.2017.01.018",
+              "article-title": "Curiosity improves coping efficacy and reduces suicidal ideation severity among military veterans at risk for suicide",
+              "volume": "249",
+              "author": "Denneson",
+              "year": "2017",
+              "journal-title": "Psychiatry Research"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105629_bb0105",
+              "doi-asserted-by": "crossref",
+              "first-page": "143",
+              "DOI": "10.1007/s11205-009-9493-y",
+              "article-title": "New well-being measures: Short scales to assess flourishing and positive and negative feelings",
+              "volume": "97",
+              "author": "Diener",
+              "year": "2010",
+              "journal-title": "Social Indicators Research"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105629_bb0110",
+              "doi-asserted-by": "crossref",
+              "first-page": "431",
+              "DOI": "10.1111/ap.12185",
+              "article-title": "The mediating role of self-compassion in student psychological health",
+              "volume": "51",
+              "author": "Fong",
+              "year": "2016",
+              "journal-title": "Australian Psychologist"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105629_bb0115",
+              "doi-asserted-by": "crossref",
+              "first-page": "725",
+              "DOI": "10.1111/cch.12351",
+              "article-title": "The association between adverse childhood experiences (ACEs) and suicide attempts in a population-based study",
+              "volume": "42",
+              "author": "Fuller-Thomson",
+              "year": "2016",
+              "journal-title": "Child: Care, Health and Development"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0120",
+              "doi-asserted-by": "crossref",
+              "first-page": "236",
+              "DOI": "10.1080/17439760701552345",
+              "article-title": "Curiosity and well-being",
+              "volume": "2",
+              "author": "Gallagher",
+              "year": "2007",
+              "journal-title": "The Journal of Positive Psychology"
+            },
+            {
+              "issue": "10",
+              "key": "10.1016/j.chiabu.2022.105629_bb0125",
+              "first-page": "797",
+              "article-title": "Not all bad treatment is psychological maltreatment",
+              "volume": "35",
+              "author": "Garbarino",
+              "year": "2011",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0130",
+              "doi-asserted-by": "crossref",
+              "first-page": "394",
+              "DOI": "10.1016/j.paid.2015.06.052",
+              "article-title": "Self-compassion and forms of concern for others",
+              "volume": "86",
+              "author": "Gerber",
+              "year": "2015",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0135",
+              "doi-asserted-by": "crossref",
+              "first-page": "353",
+              "DOI": "10.1002/cpp.507",
+              "article-title": "Compassionate mind training for people with high shame and self-criticism: Overview and pilot study of a group therapy approach",
+              "volume": "13",
+              "author": "Gilbert",
+              "year": "2006",
+              "journal-title": "Clinical Psychology and Psychotherapy"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0140",
+              "series-title": "The Oxford handbook of compassion science",
+              "first-page": "235",
+              "article-title": "The compassion cultivation training (CCT) program",
+              "author": "Goldin",
+              "year": "2017"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105629_bb0145",
+              "doi-asserted-by": "crossref",
+              "first-page": "260",
+              "DOI": "10.1111/j.1469-7610.2004.00218.x",
+              "article-title": "Validity of adult retrospective reports of adverse childhood experiences: Review of the evidence",
+              "volume": "45",
+              "author": "Hardt",
+              "year": "2004",
+              "journal-title": "Journal of Child Psychology and Psychiatry"
+            },
+            {
+              "year": "2013",
+              "series-title": "Introduction to mediation, moderation, and conditional process analysis. A regression-based approach",
+              "author": "Hayes",
+              "key": "10.1016/j.chiabu.2022.105629_bb0150"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0155",
+              "first-page": "40",
+              "article-title": "The relation between childhood experiences of abuse and trauma and social anxiety",
+              "volume": "16",
+              "author": "He",
+              "year": "2008",
+              "journal-title": "Chinese Journal of Clinical Psychology"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0160",
+              "doi-asserted-by": "crossref",
+              "first-page": "903",
+              "DOI": "10.1007/s11205-014-0663-1",
+              "article-title": "Measuring and predicting student well-being: Further evidence in support of the flourishing scale and the scale of positive and negative experiences",
+              "volume": "121",
+              "author": "Howell",
+              "year": "2015",
+              "journal-title": "Social Indicators Research"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0165",
+              "doi-asserted-by": "crossref",
+              "first-page": "837",
+              "DOI": "10.1007/s11205-011-9966-7",
+              "article-title": "Flourishing across Europe: Application of a new conceptual framework for defining well-being",
+              "volume": "110",
+              "author": "Huppert",
+              "year": "2013",
+              "journal-title": "Social Indicators Research"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0170",
+              "doi-asserted-by": "crossref",
+              "first-page": "73",
+              "DOI": "10.1111/j.1365-2206.2006.00398.x",
+              "article-title": "Research review: Risk and resilience in cases of emotional abuse",
+              "volume": "11",
+              "author": "Iwaniec",
+              "year": "2006",
+              "journal-title": "Child & Family Social Work"
+            },
+            {
+              "issue": "7",
+              "key": "10.1016/j.chiabu.2022.105629_bb0175",
+              "doi-asserted-by": "crossref",
+              "first-page": "1180",
+              "DOI": "10.1016/j.chiabu.2014.04.005",
+              "article-title": "The mediating role of self-compassion in the relationship between victimization and psychological maladjustment in a sample of adolescents",
+              "volume": "38",
+              "author": "J\u00e1tiva",
+              "year": "2014",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "9",
+              "key": "10.1016/j.chiabu.2022.105629_bb0180",
+              "doi-asserted-by": "crossref",
+              "first-page": "939",
+              "DOI": "10.1521/jscp.2013.32.9.939",
+              "article-title": "Self-compassion soothes the savage EGO-threat system: Effects on negative affect, shame, rumination, and depressive symptoms",
+              "volume": "32",
+              "author": "Johnson",
+              "year": "2013",
+              "journal-title": "Journal of Social and Clinical Psychology"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0185",
+              "doi-asserted-by": "crossref",
+              "first-page": "380",
+              "DOI": "10.1016/j.paid.2011.10.043",
+              "article-title": "Did curiosity kill the cat? Evidence from subjective well-being in adolescents",
+              "volume": "52",
+              "author": "Jovanovic",
+              "year": "2012",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0190",
+              "doi-asserted-by": "crossref",
+              "first-page": "38",
+              "DOI": "10.1111/sjop.12084",
+              "article-title": "The good, the bad (and the ugly): The role of curiosity in subjective well-being and risky behaviors among adolescents",
+              "volume": "55",
+              "author": "Jovanovi\u0107",
+              "year": "2014",
+              "journal-title": "Scandinavian Journal of Psychology"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0195",
+              "first-page": "103",
+              "article-title": "Is curiosity good for students' well-Being? The case of the Faculty of Teacher Education and the Faculty of Kinesiology",
+              "volume": "18",
+              "author": "Jur\u010dec",
+              "year": "2016",
+              "journal-title": "Croatian Journal of Education"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105629_bb0200",
+              "doi-asserted-by": "crossref",
+              "first-page": "987",
+              "DOI": "10.1016/j.jrp.2009.04.011",
+              "article-title": "The curiosity and exploration inventory-II: Development, factor structure, and psychometrics",
+              "volume": "43",
+              "author": "Kashdan",
+              "year": "2009",
+              "journal-title": "Journal of Research in Personality"
+            },
+            {
+              "issue": "6",
+              "key": "10.1016/j.chiabu.2022.105629_bb0205",
+              "doi-asserted-by": "crossref",
+              "first-page": "792",
+              "DOI": "10.1521/jscp.23.6.792.54800",
+              "article-title": "Trait and state curiosity in the genesis of intimacy: Differentiation from related constructs",
+              "volume": "23",
+              "author": "Kashdan",
+              "year": "2004",
+              "journal-title": "Journal of Social and Clinical Psychology"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0210",
+              "doi-asserted-by": "crossref",
+              "first-page": "291",
+              "DOI": "10.1207/s15327752jpa8203_05",
+              "article-title": "Curiosity and exploration: Facilitating positive subjective experiences and personal growth opportunities",
+              "volume": "82",
+              "author": "Kashdan",
+              "year": "2004",
+              "journal-title": "Journal of Personality Assessment"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0215",
+              "series-title": "Oxford handbook of positive psychology",
+              "first-page": "367",
+              "article-title": "Curiosity and interest: The benefits of thriving on novelty and challenge",
+              "volume": "2",
+              "author": "Kashdan",
+              "year": "2009"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0220",
+              "doi-asserted-by": "crossref",
+              "first-page": "159",
+              "DOI": "10.1007/s11031-007-9068-7",
+              "article-title": "Curiosity and pathways to well-being and meaning in life: Traits, states, and everyday behaviors",
+              "volume": "31",
+              "author": "Kashdan",
+              "year": "2007",
+              "journal-title": "Motivation and Emotion"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0225",
+              "doi-asserted-by": "crossref",
+              "first-page": "264",
+              "DOI": "10.1016/j.paid.2016.10.006",
+              "article-title": "Curious people are less affected by social rejection",
+              "volume": "105",
+              "author": "Kawamoto",
+              "year": "2017",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0230",
+              "doi-asserted-by": "crossref",
+              "first-page": "539",
+              "DOI": "10.1037/0022-006X.73.3.539",
+              "article-title": "Mental illness and/or mental health? Investigating axioms of the complete state model of health",
+              "volume": "73",
+              "author": "Keyes",
+              "year": "2005",
+              "journal-title": "Journal of Consulting and Clinical Psychology"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105629_bb0235",
+              "doi-asserted-by": "crossref",
+              "first-page": "271",
+              "DOI": "10.1016/j.chc.2006.11.003",
+              "article-title": "Resilience and developmental psychopathology",
+              "volume": "16",
+              "author": "Kim-Cohen",
+              "year": "2007",
+              "journal-title": "Child and Adolescent Psychiatric Clinics of North America"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105629_bb0240",
+              "doi-asserted-by": "crossref",
+              "first-page": "e39",
+              "DOI": "10.1093/geronb/gbx039",
+              "article-title": "Childhood maltreatment and psychological well-being in later life: The mediating effect of contemporary relationships with the abusive parent",
+              "volume": "73",
+              "author": "Kong",
+              "year": "2018",
+              "journal-title": "The Journals of Gerontology: Series B"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0245",
+              "first-page": "1",
+              "article-title": "The impact of childhood emotional abuse on adolescents' subjective happiness: The mediating role of emotional intelligence",
+              "author": "Kwan",
+              "year": "2021",
+              "journal-title": "Applied Research in Quality of Life"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0250",
+              "doi-asserted-by": "crossref",
+              "first-page": "236",
+              "DOI": "10.1016/j.chiabu.2017.02.004",
+              "article-title": "A longitudinal study of the role of children's altruism and forgiveness in the relation between parental aggressive discipline and anxiety of preschoolers in China",
+              "volume": "65",
+              "author": "Kwok",
+              "year": "2017",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0255",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.chiabu.2019.104031",
+              "article-title": "A longitudinal study on the relationship among childhood emotional abuse, gratitude, and suicidal ideation of Chinese adolescents",
+              "volume": "94",
+              "author": "Kwok",
+              "year": "2019",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0260",
+              "doi-asserted-by": "crossref",
+              "first-page": "49",
+              "DOI": "10.2174/1874922400801010049",
+              "article-title": "Hopelessness, family functioning and suicidal ideation among chinese adolescents in Hong Kong",
+              "volume": "1",
+              "author": "Kwok",
+              "year": "2008",
+              "journal-title": "The Open Family Studies Journal"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0265",
+              "doi-asserted-by": "crossref",
+              "first-page": "366",
+              "DOI": "10.1100/tsw.2010.42",
+              "article-title": "Cognitive, emotive, and cognitive-behavioral correlates of suicidal ideation among chinese adolescents in Hong Kong",
+              "volume": "10",
+              "author": "Kwok",
+              "year": "2010",
+              "journal-title": "The Scientific World Journal"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0270",
+              "doi-asserted-by": "crossref",
+              "first-page": "27",
+              "DOI": "10.1100/tsw.2011.1",
+              "article-title": "Family processes and suicidal ideation among Chinese adolescents in Hong Kong",
+              "volume": "11",
+              "author": "Kwok",
+              "year": "2011",
+              "journal-title": "TheScientificWorldJournal"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0275",
+              "doi-asserted-by": "crossref",
+              "first-page": "240",
+              "DOI": "10.1016/j.chiabu.2017.06.016",
+              "article-title": "Adverse family experiences and flourishing amongst children ages 6\u201317 years: 2011/12 National Survey of Children's Health",
+              "volume": "70",
+              "author": "Kwong",
+              "year": "2017",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0280",
+              "doi-asserted-by": "crossref",
+              "first-page": "1090",
+              "DOI": "10.3389/fpsyg.2018.01090",
+              "article-title": "A multidimensional PERMA-H positive education model, general satisfaction of school life, and character strengths use in Hong Kong senior primary school students: Confirmatory factor analysis and path analysis using the APASO-II",
+              "volume": "9",
+              "author": "Lai",
+              "year": "2018",
+              "journal-title": "Frontiers in Psychology"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0285",
+              "first-page": "463",
+              "article-title": "Socio-demographic correlates of suicidal ideation among chinese adolescents in Hong Kong",
+              "volume": "20",
+              "author": "Lai",
+              "year": "2011",
+              "journal-title": "International Journal of Adolescent Medicine and Health"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0290",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.childyouth.2020.105303",
+              "article-title": "Perceived social support and self-esteem mediate the relationship between childhood maltreatment and psychosocial flourishing in Chinese undergraduate students",
+              "volume": "117",
+              "author": "Li",
+              "year": "2020",
+              "journal-title": "Children and Youth Services Review"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105629_bb0295",
+              "doi-asserted-by": "crossref",
+              "first-page": "641",
+              "DOI": "10.1111/cch.12227",
+              "article-title": "A systematic review of the emotional, behavioural and cognitive features exhibited by school-aged children experiencing neglect or emotional abuse",
+              "volume": "41",
+              "author": "Maguire",
+              "year": "2015",
+              "journal-title": "Child: Care, Health and Development"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0300",
+              "article-title": "Peer reviewed: Evolving definitions of mental illness and wellness",
+              "volume": "7",
+              "author": "Manderscheid",
+              "year": "2010",
+              "journal-title": "Preventing Chronic Disease"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0305",
+              "doi-asserted-by": "crossref",
+              "first-page": "472",
+              "DOI": "10.1111/jora.12492",
+              "article-title": "Is self-compassion selfish? The development of self-compassion, empathy, and prosocial behavior in adolescence",
+              "volume": "30",
+              "author": "Marshall",
+              "year": "2020",
+              "journal-title": "Journal of Research on Adolescence"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0310",
+              "doi-asserted-by": "crossref",
+              "first-page": "793",
+              "DOI": "10.2147/PRBM.S216411",
+              "article-title": "Examining psychometric properties and measurement invariance of a Chinese version of the self-compassion \u2013 short form (SCS-SF) in nursing students and medical workers",
+              "volume": "12",
+              "author": "Meng",
+              "year": "2019",
+              "journal-title": "Psychology Research and Behavior Management"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0315",
+              "doi-asserted-by": "crossref",
+              "first-page": "364",
+              "DOI": "10.1080/15298868.2013.836131",
+              "article-title": "Childhood abuse and problematic alcohol use in college females: The role of self-compassion",
+              "volume": "13",
+              "author": "Miron",
+              "year": "2014",
+              "journal-title": "Self and Identity"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0320",
+              "doi-asserted-by": "crossref",
+              "first-page": "596",
+              "DOI": "10.1007/s12671-016-0493-0",
+              "article-title": "The potential indirect effect of childhood abuse on posttrauma pathology through self-compassion and fear of self-compassion",
+              "volume": "7",
+              "author": "Miron",
+              "year": "2016",
+              "journal-title": "Mindfulness"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0325",
+              "doi-asserted-by": "crossref",
+              "first-page": "223",
+              "DOI": "10.1080/15298860309027",
+              "article-title": "The development and validation of a scale to measure self-compassion",
+              "volume": "2",
+              "author": "Neff",
+              "year": "2003",
+              "journal-title": "Self and Identity"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0330",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1111/j.1751-9004.2010.00330.x",
+              "article-title": "Self-compassion, self-esteem, and well-being",
+              "volume": "5",
+              "author": "Neff",
+              "year": "2011",
+              "journal-title": "Social and Personality Psychology Compass"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0335",
+              "doi-asserted-by": "crossref",
+              "first-page": "28",
+              "DOI": "10.1002/jclp.21923",
+              "article-title": "A pilot study and randomized controlled trial of the mindful self-compassion program",
+              "volume": "69",
+              "author": "Neff",
+              "year": "2013",
+              "journal-title": "Journal of Social and Clinical Psychology"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0340",
+              "doi-asserted-by": "crossref",
+              "first-page": "263",
+              "DOI": "10.1080/13576500444000317",
+              "article-title": "Self-compassion, achievement goals, and coping with academic failure",
+              "volume": "4",
+              "author": "Neff",
+              "year": "2005",
+              "journal-title": "Self and Identity"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0345",
+              "doi-asserted-by": "crossref",
+              "first-page": "23",
+              "DOI": "10.1111/j.1467-6494.2008.00537.x",
+              "article-title": "Self-compassion versus global self-esteem: Two different ways of relating to oneself",
+              "volume": "77",
+              "author": "Neff",
+              "year": "2009",
+              "journal-title": "Journal of Personality"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0350",
+              "doi-asserted-by": "crossref",
+              "first-page": "177",
+              "DOI": "10.1007/s10902-016-9723-3",
+              "article-title": "Does positive mental health in adolescence longitudinally predict healthy transitions in young adulthood?",
+              "volume": "18",
+              "author": "O\u2019Connor",
+              "year": "2017",
+              "journal-title": "Journal of Happiness Studies"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0355",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.childyouth.2020.105916",
+              "article-title": "The association between adverse childhood experiences and young adult outcomes: A scoping study",
+              "volume": "123",
+              "author": "Park",
+              "year": "2021",
+              "journal-title": "Children and Youth Services Review"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0360",
+              "doi-asserted-by": "crossref",
+              "first-page": "275",
+              "DOI": "10.1007/s10902-012-9331-9",
+              "article-title": "Testing strengths-based interventions: A preliminary study on the effectiveness of a program targeting curiosity, gratitude, hope, humor, and zest for enhancing life satisfaction",
+              "volume": "14",
+              "author": "Proyer",
+              "year": "2013",
+              "journal-title": "Journal of Happiness Studies"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0365",
+              "doi-asserted-by": "crossref",
+              "first-page": "250",
+              "DOI": "10.1002/cpp.702",
+              "article-title": "Construction and factorial validation of a short form of the self-compassion scale",
+              "volume": "18",
+              "author": "Raes",
+              "year": "2011",
+              "journal-title": "Clinical Psychology & Psychotherapy"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0370",
+              "doi-asserted-by": "crossref",
+              "first-page": "32",
+              "DOI": "10.1016/j.chiabu.2019.03.016",
+              "article-title": "From childhood emotional maltreatment to depressive symptoms in adulthood: The roles of self-compassion and shame",
+              "volume": "92",
+              "author": "Ross",
+              "year": "2019",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0375",
+              "doi-asserted-by": "crossref",
+              "first-page": "141",
+              "DOI": "10.1146/annurev.psych.52.1.141",
+              "article-title": "On happiness and human potentials: A review of research on hedonic and eudaimonic well-being",
+              "volume": "52",
+              "author": "Ryan",
+              "year": "2001",
+              "journal-title": "Annual Review of Psychology"
+            },
+            {
+              "issue": "9",
+              "key": "10.1016/j.chiabu.2022.105629_bb0380",
+              "doi-asserted-by": "crossref",
+              "first-page": "1174",
+              "DOI": "10.1016/j.jpsychires.2013.05.008",
+              "article-title": "Sex differences in resilience to childhood maltreatment: Effects of trauma history on hippocampal volume, general cognition and subclinical psychosis in healthy adults",
+              "volume": "47",
+              "author": "Samplin",
+              "year": "2013",
+              "journal-title": "Journal of Psychiatric Research"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0385",
+              "doi-asserted-by": "crossref",
+              "first-page": "315",
+              "DOI": "10.1016/S0145-2134(94)00131-6",
+              "article-title": "The measurement of psychological maltreatment: Early data on the child abuse and trauma scale",
+              "volume": "19",
+              "author": "Sanders",
+              "year": "1995",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0390",
+              "first-page": "306",
+              "article-title": "The\" how\" of goal pursuit: Interest and self-regulation",
+              "volume": "11",
+              "author": "Sansone",
+              "year": "2000",
+              "journal-title": "Psychological Inquiry"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0395",
+              "doi-asserted-by": "crossref",
+              "first-page": "1351",
+              "DOI": "10.1007/s10902-015-9647-3",
+              "article-title": "What factors are associated with flourishing? Results from a large representative national sample",
+              "volume": "17",
+              "author": "Schotanus-Dijkstra",
+              "year": "2016",
+              "journal-title": "Journal of Happiness Studies"
+            },
+            {
+              "year": "2011",
+              "series-title": "Flourish: A visionary new understanding of happiness and well-being",
+              "author": "Seligman",
+              "key": "10.1016/j.chiabu.2022.105629_bb0400"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0405",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.4081/jphr.2020.1745",
+              "article-title": "Psychometric of the curiosity and exploration inventory-ii in Indonesia",
+              "volume": "9",
+              "author": "Setyowati",
+              "year": "2020",
+              "journal-title": "Journal of Public Health Research"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0410",
+              "doi-asserted-by": "crossref",
+              "first-page": "82",
+              "DOI": "10.1016/j.paid.2014.11.047",
+              "article-title": "Correlates and predictors of positive mental health for school going children",
+              "volume": "76",
+              "author": "Singh",
+              "year": "2015",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0415",
+              "doi-asserted-by": "crossref",
+              "first-page": "45",
+              "DOI": "10.1177/0272431603260879",
+              "article-title": "The scientific study of adolescence: A brief history",
+              "volume": "24",
+              "author": "Steinberg",
+              "year": "2004",
+              "journal-title": "The Journal of Early Adolescence"
+            },
+            {
+              "issue": "8",
+              "key": "10.1016/j.chiabu.2022.105629_bb0420",
+              "doi-asserted-by": "crossref",
+              "first-page": "870",
+              "DOI": "10.1080/10926771.2012.708014",
+              "article-title": "The universality of childhood emotional abuse: A meta-analysis of worldwide prevalence",
+              "volume": "21",
+              "author": "Stoltenborgh",
+              "year": "2012",
+              "journal-title": "Journal of Aggression, Maltreatment & Trauma"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105629_bb0425",
+              "doi-asserted-by": "crossref",
+              "first-page": "394",
+              "DOI": "10.1093/aje/kwz275",
+              "article-title": "Social support and positive coping skills as mediators buffering the impact of childhood maltreatment on psychological distress and positive mental health in adulthood: Analysis of a national population-based sample",
+              "volume": "189",
+              "author": "Su",
+              "year": "2020",
+              "journal-title": "American Journal of Epidemiology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0430",
+              "doi-asserted-by": "crossref",
+              "first-page": "288",
+              "DOI": "10.1016/j.paid.2016.06.011",
+              "article-title": "Self-compassion and psychological well-being among adolescents in Hong Kong: Exploring gender differences",
+              "volume": "101",
+              "author": "Sun",
+              "year": "2016",
+              "journal-title": "Personality and Individual Differences"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0435",
+              "doi-asserted-by": "crossref",
+              "first-page": "1217",
+              "DOI": "10.1007/s12187-017-9470-y",
+              "article-title": "Evaluating the reliability and validity of the self-compassion scale short form adapted for children ages 8\u201312",
+              "volume": "11",
+              "author": "Sutton",
+              "year": "2017",
+              "journal-title": "Child Indicators Research"
+            },
+            {
+              "issue": "10",
+              "key": "10.1016/j.chiabu.2022.105629_bb0440",
+              "doi-asserted-by": "crossref",
+              "first-page": "887",
+              "DOI": "10.1016/j.chiabu.2011.07.003",
+              "article-title": "The linkages among childhood maltreatment, adolescent mental health (depression, anxiety, problem alcohol use, suicide attempt), and self-compassion in child welfare adolescents",
+              "volume": "35",
+              "author": "Tanaka",
+              "year": "2011",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.chiabu.2022.105629_bb0445",
+              "doi-asserted-by": "crossref",
+              "first-page": "591",
+              "DOI": "10.1177/1049731514557832",
+              "article-title": "Psychometric evaluation of the simplified Chinese version of flourishing scale",
+              "volume": "26",
+              "author": "Tang",
+              "year": "2016",
+              "journal-title": "Research on Social Work Practice"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105629_bb0450",
+              "first-page": "28",
+              "article-title": "Curiosity, self-regulation and academic achievement among undergraduate students",
+              "volume": "11",
+              "author": "Tariq",
+              "year": "2013",
+              "journal-title": "Pakistan Journal of Social and Clinical Psychology"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.chiabu.2022.105629_bb0455",
+              "doi-asserted-by": "crossref",
+              "first-page": "142",
+              "DOI": "10.20547/jms.2014.1704202",
+              "article-title": "Testing and controlling for common method variance: A review of available methods",
+              "volume": "4",
+              "author": "Tehseen",
+              "year": "2017",
+              "journal-title": "Journal of Management Sciences"
+            },
+            {
+              "issue": "8",
+              "key": "10.1016/j.chiabu.2022.105629_bb0460",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1371/journal.pone.0181616",
+              "article-title": "Validation of the flourishing scale and scale of positive and negative experience in a chinese community sample",
+              "volume": "12",
+              "author": "Tong",
+              "year": "2017",
+              "journal-title": "PLoS ONE"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0465",
+              "doi-asserted-by": "crossref",
+              "first-page": "317",
+              "DOI": "10.1080/10640260701454337",
+              "article-title": "The role of emotional abuse in the eating disorders: Implications for treatment",
+              "volume": "15",
+              "author": "Waller",
+              "year": "2007",
+              "journal-title": "Eating Disorders"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0470",
+              "doi-asserted-by": "crossref",
+              "first-page": "11",
+              "DOI": "10.1016/S0145-2134(01)00308-8",
+              "article-title": "The relationship between parental psychiatric disorder and child physical and sexual abuse: Findings from the Ontario Health Supplement",
+              "volume": "26",
+              "author": "Walsh",
+              "year": "2002",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0475",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1016/j.ypmed.2021.106523",
+              "article-title": "Gender differences in the relationships between different types of childhood trauma and resilience on depressive symptoms among chinese adolescents",
+              "volume": "148",
+              "author": "Wei",
+              "year": "2021",
+              "journal-title": "Preventive Medicine"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.chiabu.2022.105629_bb0480",
+              "doi-asserted-by": "crossref",
+              "first-page": "1640341",
+              "DOI": "10.1080/23311908.2019.1640341",
+              "article-title": "Adolescent flourishing: A systematic review",
+              "volume": "6",
+              "author": "Witten",
+              "year": "2019",
+              "journal-title": "Cogent Psychology"
+            },
+            {
+              "key": "10.1016/j.chiabu.2022.105629_bb0485",
+              "doi-asserted-by": "crossref",
+              "first-page": "62",
+              "DOI": "10.1016/j.chiabu.2018.03.013",
+              "article-title": "Child maltreatment and adult depressive symptoms: Roles of self-compassion and gratitude",
+              "volume": "80",
+              "author": "Wu",
+              "year": "2018",
+              "journal-title": "Child Abuse & Neglect"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.chiabu.2022.105629_bb0490",
+              "doi-asserted-by": "crossref",
+              "first-page": "403",
+              "DOI": "10.1080/00223891.2015.1013546",
+              "article-title": "Validation of the Curiosity and Exploration Inventory\u2013II (CEI\u2013II) among Chinese university students in Hong Kong",
+              "volume": "97",
+              "author": "Ye",
+              "year": "2015",
+              "journal-title": "Journal of Personality Assessment"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.chiabu.2022.105629_bb0495",
+              "first-page": "340",
+              "article-title": "The relationship between self-compassion and well-being: A meta-analysis",
+              "volume": "7",
+              "author": "Zessin",
+              "year": "2015",
+              "journal-title": "Applied Psychology: Health and Well-Being"
+            }
+          ],
+          "container-title": [
+            "Child Abuse &amp; Neglect"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0145213422001491?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0145213422001491?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                27
+              ]
+            ],
+            "date-time": "2025-09-27T01:21:12Z",
+            "timestamp": 1758936072000
+          },
+          "score": 39.046494,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0145213422001491"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                7
+              ]
+            ]
+          },
+          "references-count": 99,
+          "alternative-id": [
+            "S0145213422001491"
+          ],
+          "URL": "https://doi.org/10.1016/j.chiabu.2022.105629",
+          "ISSN": [
+            "0145-2134"
+          ],
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0145-2134"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                7
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "Elsevier",
+              "name": "publisher",
+              "label": "This article is maintained by"
+            },
+            {
+              "value": "Childhood emotional abuse and adolescent flourishing: A moderated mediation model of self-compassion and curiosity",
+              "name": "articletitle",
+              "label": "Article Title"
+            },
+            {
+              "value": "Child Abuse & Neglect",
+              "name": "journaltitle",
+              "label": "Journal Title"
+            },
+            {
+              "value": "https://doi.org/10.1016/j.chiabu.2022.105629",
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version"
+            },
+            {
+              "value": "article",
+              "name": "content_type",
+              "label": "Content Type"
+            },
+            {
+              "value": "\u00a9 2022 Elsevier Ltd. All rights reserved.",
+              "name": "copyright",
+              "label": "Copyright"
+            }
+          ],
+          "article-number": "105629"
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                5
+              ]
+            ],
+            "date-time": "2022-04-05T03:39:35Z",
+            "timestamp": 1649129975854
+          },
+          "posted": {
+            "date-parts": [
+              [
+                2018,
+                2,
+                6
+              ]
+            ]
+          },
+          "reference-count": 0,
+          "publisher": "Morressier",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "DOI": "10.26226/morressier.5a6ef3edd462b80290b57afe",
+          "type": "posted-content",
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                2,
+                19
+              ]
+            ],
+            "date-time": "2020-02-19T12:12:24Z",
+            "timestamp": 1582114344000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Emotional Neglect in Childhood Predicts Perceived Negative Attitude of Others in Adulthood"
+          ],
+          "prefix": "10.26226",
+          "author": [
+            {
+              "given": "Raimo",
+              "family": "K. R. Salokangas",
+              "sequence": "first",
+              "affiliation": []
+            }
+          ],
+          "member": "22980",
+          "deposited": {
+            "date-parts": [
+              [
+                2020,
+                2,
+                19
+              ]
+            ],
+            "date-time": "2020-02-19T12:16:39Z",
+            "timestamp": 1582114599000
+          },
+          "score": 38.597023,
+          "resource": {
+            "primary": {
+              "URL": "https://www.morressier.com/article/5a6ef3edd462b80290b57afe"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2018,
+                2,
+                6
+              ]
+            ]
+          },
+          "references-count": 0,
+          "URL": "https://doi.org/10.26226/morressier.5a6ef3edd462b80290b57afe",
+          "published": {
+            "date-parts": [
+              [
+                2018,
+                2,
+                6
+              ]
+            ]
+          },
+          "subtype": "other"
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                31
+              ]
+            ],
+            "date-time": "2024-01-31T00:45:17Z",
+            "timestamp": 1706661917496
+          },
+          "posted": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "group-title": "SSRN",
+          "reference-count": 0,
+          "publisher": "Elsevier BV",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "DOI": "10.2139/ssrn.4703219",
+          "type": "posted-content",
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2024-01-30T04:15:05Z",
+            "timestamp": 1706588105000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Exploring the Nexus of Potentially Morally Injurious Events, Childhood Emotional Abuse and Neglect, and Self-Compassion in a Civilian Population"
+          ],
+          "prefix": "10.2139",
+          "author": [
+            {
+              "given": "Kaitlyn",
+              "family": "Larkin",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Travis  A.",
+              "family": "Cole",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Peter",
+              "family": "Tappenden",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Holly",
+              "family": "Orcutt",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "member": "78",
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2024-01-30T04:15:05Z",
+            "timestamp": 1706588105000
+          },
+          "score": 38.19972,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=4703219"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "references-count": 0,
+          "URL": "https://doi.org/10.2139/ssrn.4703219",
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "subtype": "preprint"
+        }
+      ],
+      "items-per-page": 5,
+      "query": {
+        "start-index": 0,
+        "search-terms": "childhood emotional neglect self compassion adulthood"
+      }
+    }
+  }
+}

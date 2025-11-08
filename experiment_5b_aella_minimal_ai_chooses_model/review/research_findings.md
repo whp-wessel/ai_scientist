@@ -30,3 +30,18 @@ Notes: Write `artifacts/git_message.txt` to request a checkpoint commit. Next lo
 
 Next review model: gpt-5-codex | reason: Best at pinpointing file-level gaps (e.g., commit protocol) and PAP freeze readiness.
 
+## Loop 004 — 2025-11-08T15:35:53.012207+00:00
+DECISION: STOP – PAP freeze is marked complete but still lacks the required commit hash/tag, so the invariant “Git-tag the PAP when freezing” is not satisfied.
+
+R1 PASS – Decision log and notebook capture commands, seeds, and artifacts for every loop (analysis/decision_log.csv:2-27; notebooks/research_notebook.md:3-39), and new code is scripted/deterministic (analysis/scripts/ordered_logit_h3.py:1-63).
+
+R2 PASS – The frozen PAP specifies covariates, estimands, SRS justification, and FDR policy for each confirmatory family (analysis/pre_analysis_plan.md:12-61) with matching entries in the hypotheses registry (analysis/hypotheses.csv:2-5).
+
+R3 PASS – Literature tracking lists DOI-linked sources tied to specific hypotheses (lit/evidence_map.csv:1-6) and the draft manuscript cites them explicitly (reports/paper.md:23-26).
+
+R4 PASS – No public tables exist (`tables/`), and privacy handling is noted in the research notebook (notebooks/research_notebook.md:11-18), so no n<10 disclosures occurred.
+
+R5 FAIL – The PAP header still shows `status: frozen (commit <hash>)` and states that tag `pap_freeze_loop004` is “to be created on commit” (analysis/pre_analysis_plan.md:3-5), meaning there is neither a recorded commit hash nor the mandated git tag, so the freeze is non-compliant.
+
+Next review model: gpt-5-codex | reason: Need a file-level pass to insert the actual PAP-freeze tag/hash and verify versioning artifacts.
+

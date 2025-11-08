@@ -1,4 +1,8 @@
 ts,action,inputs,rationale_short,code_path,outputs,status
+2025-11-08T15:36:28Z,semantic_scholar_query,"search: childhood religiosity adult monogamy relationship satisfaction longitudinal",Advance literature for H2 relationships; save JSON,scripts/semantic_scholar_cli.py,lit/queries/loop_016/query_001.json,success
+2025-11-08T15:36:28Z,extract_dois,lit/queries/loop_016/query_001.json,Append DOIs to evidence map for citation,scripts/lit/extract_dois.py,lit/evidence_map.csv (appended 5),success
+2025-11-08T15:36:28Z,update_notebook,notebooks/research_notebook.md,Record Loop 016 actions and next steps,,Added loop narrative with literature additions,success
+2025-11-08T15:36:28Z,update_state,artifacts/state.json,Bump loop counter and timestamp for reproducibility,,phase=literature; loop_counter=16; last_updated set,success
 2025-11-08T15:16:15Z,semantic_scholar_query,"search: adolescent religiosity adult relationship satisfaction monogamy longitudinal",Target H2 longitudinal evidence; save JSON,scripts/semantic_scholar_cli.py,lit/queries/loop_015/query_001.json,success
 2025-11-08T15:16:15Z,extract_dois,lit/queries/loop_015/query_001.json,Append DOIs to evidence map for citation,scripts/lit/extract_dois.py,lit/evidence_map.csv (appended 4),success
 2025-11-08T15:16:15Z,update_notebook,notebooks/research_notebook.md,Record Loop 015 actions and next steps,,Updated loop narrative with literature additions,success

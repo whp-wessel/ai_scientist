@@ -1,0 +1,185 @@
+{
+  "total": 93,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "5e642e433c816139aa6cf91cfa9132e8091ca32a",
+      "externalIds": {
+        "DOI": "10.1111/ajad.13535",
+        "CorpusId": 268534555,
+        "PubMed": "38504581"
+      },
+      "url": "https://www.semanticscholar.org/paper/5e642e433c816139aa6cf91cfa9132e8091ca32a",
+      "title": "Adult self-reported childhood maltreatment types are associated with treatment satisfaction and alcohol relapse in patients with comorbid substance use and mental health disorders.",
+      "venue": "American Journal on Addictions",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/ajad.13535?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/ajad.13535, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1581660583",
+          "name": "Karling R Luciani"
+        },
+        {
+          "authorId": "2292237063",
+          "name": "Priya K Johal"
+        },
+        {
+          "authorId": "2257341582",
+          "name": "Thomas Chao"
+        },
+        {
+          "authorId": "2275576772",
+          "name": "Karina A. Thiessen"
+        },
+        {
+          "authorId": "2275576776",
+          "name": "Christian G. Sch\u00fctz"
+        }
+      ],
+      "abstract": "BACKGROUND AND OBJECTIVES\nIndividuals with comorbid substance use and mental health disorders (concurrent disorders; CD) report poor treatment outcomes, high prevalence of childhood maltreatment, and mostly negative experiences with treatment. No studies to date have examined childhood maltreatment and treatment outcomes in CD. This study investigated self-reported childhood maltreatment as it relates to treatment satisfaction and substance use relapse among CD patients.\n\n\nMETHODS\nThe 258 CD inpatients completed a self-report questionnaire package, comprising the Childhood Trauma Questionnaire and the Inpatient Consumer Survey (ICS). Childhood maltreatment was assessed according to five subtypes and self-perceived treatment satisfaction was rated across six ICS domains. Psychiatric diagnoses, substance use status and relapse data were retrieved via patient medical charts.\n\n\nRESULTS\nEmotional neglect was associated with lower ratings across all ICS domains and physical neglect was associated with a lower rating for 'outcome of care'. Childhood sexual abuse was associated with a greater likelihood of alcohol relapse. No other relationships were statistically significant.\n\n\nDISCUSSION AND CONCLUSIONS\nThe presence of childhood neglect (but not abuse) was more associated with overall treatment dissatisfaction, and sexual abuse alone increased the likelihood of alcohol relapse. These findings suggest some early adverse experiences in CD patients may increase negative experiences in treatment while others contribute to the risk of substance use. Broader longitudinal research is needed to examine the trajectory leading to negative outcomes.\n\n\nSCIENTIFIC SIGNIFICANCE\nThis is the first study to report differential patterns of association by type of childhood maltreatment on negative outcomes in treatment among CD patients."
+    },
+    {
+      "paperId": "95e51d091f34211424251e61b58231e51e9064ae",
+      "externalIds": {
+        "MAG": "2900878903",
+        "DOI": "10.1007/s11136-018-2054-6",
+        "CorpusId": 53715773,
+        "PubMed": "30467779"
+      },
+      "url": "https://www.semanticscholar.org/paper/95e51d091f34211424251e61b58231e51e9064ae",
+      "title": "Assessing the relationship between adverse childhood experiences and life satisfaction, psychological well-being, and social well-being: United States Longitudinal Cohort 1995\u20132014",
+      "venue": "Quality of Life Research",
+      "year": 2018,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6459973",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11136-018-2054-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11136-018-2054-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1435244937",
+          "name": "E. Mosley-Johnson"
+        },
+        {
+          "authorId": "51180971",
+          "name": "Emma Garacci"
+        },
+        {
+          "authorId": "2062674185",
+          "name": "N. Wagner"
+        },
+        {
+          "authorId": "145551315",
+          "name": "C. Mendez"
+        },
+        {
+          "authorId": "2166443004",
+          "name": "Joni S. Williams"
+        },
+        {
+          "authorId": "144647014",
+          "name": "L. Egede"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "d73858b2dc1dd16cae9a885c18e1138bebc2d554",
+      "externalIds": {
+        "DOI": "10.1111/cfs.13292",
+        "CorpusId": 277688297
+      },
+      "url": "https://www.semanticscholar.org/paper/d73858b2dc1dd16cae9a885c18e1138bebc2d554",
+      "title": "Mother\u2013Child Relationship During Childhood in Adoptive Families and Psychological Well\u2010Being in Early Adulthood",
+      "venue": "Child &amp; Family Social Work",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/cfs.13292?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/cfs.13292, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "114314274",
+          "name": "Sandra Melero"
+        },
+        {
+          "authorId": "2354779407",
+          "name": "Yolanda S\u00e1nchez-Sandoval"
+        }
+      ],
+      "abstract": "Research on adoption traditionally focused on identifying difficulties in adopted children and adolescents. However, there is growing interest in adult adoptees. This study moves beyond the search for difficulties to analyse psychological well\u2010being in adult adoptees, conceptualized as more than just the satisfaction of needs or the absence of problems. Previous research has highlighted preadoptive and postadoptive factors that might influence well\u2010being, emphasizing the importance of family context during development for future adjustment. This work also aims to identify variables that promote psychological well\u2010being, including both previous difficulties and positive influences from the family environment. The study included 73 adult adoptees (50.7% female) from a longitudinal study on domestic adoption in Spain, with a mean age of 7.18 in Wave 1, 13.18 in W2 and 29.58\u2009years in W3. Their mean age at adoption was 1.85\u2009years. Findings show that psychological well\u2010being is influenced by previous difficulties and family factors during development. Moreover, there is an indirect effect that leads to considering all the variables included in the model. To conclude, despite the presence of difficulties that might influence adult psychological well\u2010being, there are some variables related to the adoptive family that might buffer those effects."
+    },
+    {
+      "paperId": "b7fa6f15b5cad55b9758816aceab201c603d9311",
+      "externalIds": {
+        "MAG": "2077442018",
+        "DOI": "10.1080/01494929.2011.629078",
+        "CorpusId": 145150146
+      },
+      "url": "https://www.semanticscholar.org/paper/b7fa6f15b5cad55b9758816aceab201c603d9311",
+      "title": "Parenting During Childhood Predicts Relationship Satisfaction in Young Adulthood: A Prospective Longitudinal Perspective",
+      "venue": "",
+      "year": 2012,
+      "openAccessPdf": {
+        "url": "http://libres.uncg.edu/ir/uncg/f/A_Supple_Parenting_2012.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1080/01494929.2011.629078?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/01494929.2011.629078, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5628650",
+          "name": "S. Parade"
+        },
+        {
+          "authorId": "119440827",
+          "name": "A. Supple"
+        },
+        {
+          "authorId": "7649000",
+          "name": "Heather M. Helms"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "dabbe805ede94bcf6d18f852987fa770f1da88b9",
+      "externalIds": {
+        "PubMedCentral": "10506168",
+        "DOI": "10.1093/geroni/igad079",
+        "CorpusId": 260269825,
+        "PubMed": "37727598"
+      },
+      "url": "https://www.semanticscholar.org/paper/dabbe805ede94bcf6d18f852987fa770f1da88b9",
+      "title": "Investigating Heterogeneity in the Relationship Between Marital Satisfaction and Cognitive Health by Gender and Across the Cognitive Function Distribution",
+      "venue": "Innovation in aging",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/innovateage/advance-article-pdf/doi/10.1093/geroni/igad079/50967259/igad079.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10506168, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1738212",
+          "name": "Jae Hyun Kim"
+        },
+        {
+          "authorId": "2225616579",
+          "name": "Keun Young Kwon"
+        }
+      ],
+      "abstract": "Abstract Background and Objectives Marital satisfaction has been established as an essential factor for promoting health and well-being in older adults. However, it is unclear whether marital satisfaction is also associated with cognitive health in this population. This study aimed to investigate the longitudinal association between marital satisfaction and cognitive function, while also exploring variations in this relationship by gender and across the cognitive function distribution. Research Design and Methods This study used 6 waves of the Korean Longitudinal Study of Ageing (KLoSA) and employed gender-stratified unconditional quantile regression (UQR) models with fixed effects (FE) to estimate the association between marital satisfaction and cognitive function across different quantiles of the cognitive function distribution. FE models controlled for unobserved individual-level confounders such as genetics, cognitive and noncognitive skills, and early childhood social and cultural background. Results The results of this study revealed that marital satisfaction was positively associated with cognitive function (b\u2005=\u20050.305), and this association was stronger in older men than in older women (b\u2005=\u20050.392 for older men vs b\u2005=\u20050.181 for older women). The UQR-FE models suggested that stronger association between marital satisfaction and cognitive function was observed among older men with lower cognitive function (b\u2005=\u20050.817 for 10th percentile vs b\u2005=\u20050.118 for 90th percentile). Among older women, no clear patterns of heterogeneity were found across the cognitive function distribution. Discussion and Implications The findings of this study highlight a significant degree of heterogeneity in the relationship between marital satisfaction and cognitive function among older men, with stronger associations observed in the lower percentiles of the cognitive function distribution. Interventions aimed at improving marital quality could be an effective strategy for promoting cognitive health in older adults, with an approach tailored to the individual\u2019s characteristics."
+    }
+  ]
+}
