@@ -313,3 +313,11 @@ P1: PASS – No disclosure outputs were produced and `qc/data_checks.md` reitera
 N1: WARN – `artifacts/state.json` again lists only blocker N1 without a concrete waiver/ops escalation schedule, leaving the PAP gate indefinite; document specific next steps/timelines before Loop 040 so reviewers can track resolution.
 Notes: Please spell out the planned escalation path (owner + date) for restoring Semantic Scholar access or formalizing the waiver.
 
+## Loop 040 — 2025-11-08T21:45:01.717541+00:00
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint entry plus refreshed session/checksum artifacts capture seed 20251016 before any edits (analysis/decision_log.csv:395-398; artifacts/session_info.txt:1-20; artifacts/checksums.json:1-6).
+L1: PASS – Loop 040 saved the 403 payload and CrossRef fallback, and propagated Luecken (2000) into the evidence map, bibliographies, and waiver log (lit/queries/loop_040/query_001.json:1; lit/queries/loop_040/crossref_query_001.json:1; lit/evidence_map.csv:40; lit/bibliography.bib:433; lit/semantic_scholar_waiver_loop013.md:70-90).
+P1: PASS – No public outputs shipped; QC doc reiterates disclosure automation with violations=0 and sensitive-column guards (qc/data_checks.md:44-67; qc/disclosure_check_loop_006.md:1-18).
+N1: PASS – State remains phase `pap`, N1 is explicitly blocked with dated escalation milestones, and the PAP header stays status=draft, keeping the gate transparent (artifacts/state.json:1-57; analysis/pre_analysis_plan.md:1-38).
+Notes: Execute the documented ops memo (2025-11-09) and S2 ticket (2025-11-10) so the literature gate can finally clear.
+
