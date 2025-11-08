@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 1,
+  "loop_counter": 2,
   "total_loops": 50,
   "phase": "pap",
   "phase_ix": 1,
@@ -9,13 +9,15 @@
       "id": "B1",
       "description": "Automate codebook + survey design validation scripts",
       "priority": 1,
-      "status": "open"
+      "status": "done",
+      "notes": "Loop 002 delivered describe_dataset + validate_metadata scripts with reproducible QC outputs."
     },
     {
       "id": "B2",
       "description": "Implement analysis/code/run_models.py with survey-aware estimators",
       "priority": 1,
-      "status": "open"
+      "status": "open",
+      "notes": "PAP run_models stub pending implementation."
     },
     {
       "id": "B3",
@@ -30,14 +32,14 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API still 403 despite new key; using CrossRef fallback this loop and awaiting valid credentials."
+      "notes": "Semantic Scholar API still 403 as of loop 002 despite CLI compliance; logging failures and awaiting new key."
     },
     {
       "id": "N2",
       "description": "Draft measurement validity table for H1-H3 variables",
       "owner": "agent",
-      "status": "blocked",
-      "notes": "Need cleaned variable codings + reliability estimates before filling dossier"
+      "status": "in_progress",
+      "notes": "Measurement validity table populated for H1\u2013H3; DIF tests pending before marking complete."
     }
   ],
   "stop_now": false,
