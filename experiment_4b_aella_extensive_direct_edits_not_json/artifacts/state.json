@@ -22,12 +22,12 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 47,
+  "loop_counter": 48,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 047 (see lit/queries/loop_047/query_001.json); waiver memo updated through loops 008-047 with the Berson & Baggerly 2009 safe-classroom resilience article + Zhang 2025 meta-analysis fallbacks. Ops memo dispatch remains scheduled for 2025-11-09 15:00Z and the 2025-11-10 support-ticket escalation stays queued if the credential is still down.",
+      "notes": "Semantic Scholar API still 403 as of loop 048 (see lit/queries/loop_048/query_001.json); waiver memo updated through loops 008-048 with Glenn 2014 spiritual-mentorship evidence plus earlier trusted-adult and PCE sources. Ops memo dispatch remains scheduled for 2025-11-09 15:00Z and the 2025-11-10 support-ticket escalation stays queued if the credential is still down.",
       "owner": "agent",
       "status": "blocked"
     },
