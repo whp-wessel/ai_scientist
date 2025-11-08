@@ -1,0 +1,169 @@
+{
+  "total": 589,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "9da978100603a7ef7074a88a45bd6ec475b4225b",
+      "externalIds": {
+        "DOI": "10.47772/ijriss.2024.8100031",
+        "CorpusId": 273668991
+      },
+      "url": "https://www.semanticscholar.org/paper/9da978100603a7ef7074a88a45bd6ec475b4225b",
+      "title": "Stolen Childhoods: Adverse Childhood Experiences and Mental Wellbeing among Adult Survivors of Child Labor",
+      "venue": "International journal of research and innovation in social science",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.47772/ijriss.2024.8100031?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.47772/ijriss.2024.8100031, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2328151320",
+          "name": "Agordzo Edoh- Torgah, Nyuiemedi"
+        }
+      ],
+      "abstract": "Child labor is a global issue that robs children off their childhood and exposes them to harmful and exploitative conditions. This qualitative hermeneutic phenomenological study aims to explore the difficult childhood experiences of 17 adults subjected to child labor at very young ages of 6 and 7 years and the long-term effects their exposure had on their mental health. Through in-depth interviews, this study sheds light on the nature of the experiences of child labor; provides a deeper understanding of the challenges they faced. The study found that adult survivors of child labor experienced adverse childhoods in areas of poor relationship with parents and caregivers; toxic family/living environments; peer violence; and witnessing community violence. We conclude that adults who had experienced child labor often endured losses, separation, maltreatment, neglect and starvation during their formative years; that adult survivors of child labor exhibit symptoms of hyperarousal and grapple with intrusive memories related to their past traumas which impact their relationships and overall well-being. That these challenges pose significant mental health issues such as low self-esteem, vulnerabilities, psychological distress, among others. We court the attention of helping professionals to assist clients from trauma-informed perspectives to unearth deep-seated traumatic challenges of people who seek help."
+    },
+    {
+      "paperId": "49ca24198fed27c0c507cedf35b4386d140b02e9",
+      "externalIds": {
+        "DOI": "10.1089/jayao.2021.0029",
+        "CorpusId": 236159389,
+        "PubMed": "34283659"
+      },
+      "url": "https://www.semanticscholar.org/paper/49ca24198fed27c0c507cedf35b4386d140b02e9",
+      "title": "Acculturation, Mental Health, and Wellbeing Among Hispanic/Latinx Young Adult Survivors of Childhood Cancer.",
+      "venue": "Journal of Adolescent and Young Adult Oncology",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9057906",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1089/jayao.2021.0029?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1089/jayao.2021.0029, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "17370310",
+          "name": "Jessica Tobin"
+        },
+        {
+          "authorId": "40318539",
+          "name": "M. Cockburn"
+        },
+        {
+          "authorId": "2064767",
+          "name": "J. Unger"
+        },
+        {
+          "authorId": "3620002",
+          "name": "B. Finch"
+        },
+        {
+          "authorId": "144549856",
+          "name": "A. Hamilton"
+        },
+        {
+          "authorId": "1401321883",
+          "name": "Anamara Ritt-Olson"
+        },
+        {
+          "authorId": "39417354",
+          "name": "J. Milam"
+        }
+      ],
+      "abstract": "Purpose: Ethnic disparities in childhood cancer survivor (CCS) mental health have been identified, although prior survivorship research has focused predominantly on non-Hispanic/Latinx (H/L) white survivors. Methods: This study examined the association of acculturation with depressive symptoms and wellbeing among 582 young adult H/L CCS recruited to a population-based study of CCS in Southern California. Results: In multivariable regression models adjusted for covariates, greater identification with both the Hispanic and Anglo cultures was positively associated with wellbeing (p\u2009=\u20090.007 and p\u2009<\u20090.0001, respectively), and Hispanic cultural identification was associated with fewer depressive symptoms (p\u2009=\u20090.04). Conclusions: Greater understanding of unique protective factors among minority CCS may inform tailored interventions promoting mental health."
+    },
+    {
+      "paperId": "de004ab81b28debca24395fa3f6545c7a20bf518",
+      "externalIds": {
+        "PubMedCentral": "10478955",
+        "DOI": "10.1192/j.eurpsy.2023.2107",
+        "CorpusId": 260747300
+      },
+      "url": "https://www.semanticscholar.org/paper/de004ab81b28debca24395fa3f6545c7a20bf518",
+      "title": "Street play, wellbeing and mental health from childhood into adulthood",
+      "venue": "European psychiatry",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6441ACC3CE24185C92909ED13CA68E2C/S0924933823021077a.pdf/div-class-title-street-play-wellbeing-and-mental-health-from-childhood-into-adulthood-div.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10478955, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "80798912",
+          "name": "R. Nesbit"
+        },
+        {
+          "authorId": "35094614",
+          "name": "L. Fitzgibbon"
+        },
+        {
+          "authorId": "144846800",
+          "name": "H. Dodd"
+        }
+      ],
+      "abstract": "Introduction There is growing interest in the role of children\u2019s play in supporting children\u2019s mental health. Children\u2019s opportunitities for play vary according to the space available to them for play, with more adventurous play happening outdoors (Dodd et al., 2021). The area close to children\u2019s home, such as the street outside their home, can provide an important play space but, with increasing traffic, there has been a decrease in the use of local streets for play over the past generation or two. At the same time we have seen significant increases in children\u2019s mental health problems. Objectives Our objectives were: 1) to examine how trends in street play have changed over time; 2) to examine how children\u2019s self-reported wellbeing is associated with their use of streets for play; 3) to examine how adult mental health is associated with their childhood street play experiences. Methods Working in collaboration with Save the Children and Play England, we surveyed a nationally representative sample of 1000 children and young people aged 6-16 years, 1000 adults aged 18+ and 1000 parents of children aged 6-16 years about children\u2019s play in their local area and their memories of play during their own childhood. All participants also completed measures of wellbeing (children) or mental health (adults). Participants were recruited from Great Britian. Results We found striking differences in the use of streets and local areas for play. For example, across all adults, 62% told us that they regularly played out in their street or area close to home as a child. In contrast 27% of children told us that they regularly play out now. By breaking down the proportion of participants who said they regularly played in their street or local area by their age group, their is a clear decline in outdoor street play over the past 70 years. We asked children about their wellbeing using the Stirling Children\u2019s Wellbeing Scale. Children who said that they regularly played out in their street had higher levels of positive emotion but this was only true for children under 13 years. Adults who told us that they regularly played out in their street or area close to their home as a child had better mental health as adults (lower scores on the K6). Similarly, adults who told us that there was freedom for children to go and explore in the neighbourhood they lived in as a child had better mental health as adults. Conclusions Taken together these findings suggest that being able to play in the street or area close to home is linked to wellbeing during childhood and early adolescence and further, that having these expriences during childhood may be beneficial for mental health into adulthood. This indicates that when considering how to support the development of good mental health we should keep in mind the importance of children\u2019s opportunities for play and the role that access to their local enviornment plays in supporting play. Disclosure of Interest None Declared"
+    },
+    {
+      "paperId": "369a919c08b92054291bd0e8353973568913175e",
+      "externalIds": {
+        "DOI": "10.1080/10508619.2025.2521573",
+        "CorpusId": 280193852
+      },
+      "url": "https://www.semanticscholar.org/paper/369a919c08b92054291bd0e8353973568913175e",
+      "title": "Who Does Report Past-Life Memories? Claimers\u2019 Profile, Religiosity/Spirituality and Impact on Happiness and Mental Health",
+      "venue": "The international journal for the psychology of religion",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/10508619.2025.2521573?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/10508619.2025.2521573, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2372833136",
+          "name": "Sandra Maciel de Carvalho"
+        },
+        {
+          "authorId": "2322240382",
+          "name": "Jim B. Tucker"
+        },
+        {
+          "authorId": "2322236177",
+          "name": "Alexander Moreira-Almeida"
+        }
+      ],
+      "abstract": "ABSTRACT Religious/spiritual beliefs such as reincarnation are prevalent in many cultures. Although there have been studies of claims of past-life memories (PLM) in children, we know little about cases of adults and the impact of PLM on claimers. To fill these gaps, we investigated the profile of PLM adult claimers, features of PLM and associations with mental health, happiness, and religiosity/spirituality. We performed an online Brazilian national survey assessing sociodemographic data, PLM features, mental health, happiness, and religiosity/spirituality (R/S). We also performed adjusted regression models. Most of the sample (n\u2009=\u2009402) was middle age 41.6 (SD 12.4) years, female (79%), with higher education (68%), Spiritists (54.5%) and very/moderately spiritual (91%). PLM started spontaneously in 82%, on average at 19.9 (SD 13.8) years old. Birthmark/defect (54%), unusual philia (30%) and phobia in childhood (71%), and persistent phobia (71%) were common associated features. Common mental disorders were frequent (46%), associated with an unusual philia OR3.99 (2.34, 6.99) and phobia in childhood OR2.60 (1.51, 4.57). Post-traumatic stress disorder (36%) was associated with phobia OR1.79 (1.07, 3.05). R/S was associated with higher happiness and lower mental disorders outcomes. PLM in adults and in children have similarities. The high prevalence of mental disorders symptoms needs to be better investigated, and R/S was a protective factor. The study highlights the importance of the investigation of PLM in adults, a neglected mental health issue."
+    },
+    {
+      "paperId": "869817e40a3286cbf4e3bba40967320baac955e6",
+      "externalIds": {
+        "DOI": "10.29234/2308-9113-2024-12-1-118-125",
+        "CorpusId": 269133328
+      },
+      "url": "https://www.semanticscholar.org/paper/869817e40a3286cbf4e3bba40967320baac955e6",
+      "title": "Assessment of the Impact of Religiosity on Mental Health",
+      "venue": "Medicina",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://fsmj.ru/54515-",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.29234/2308-9113-2024-12-1-118-125?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.29234/2308-9113-2024-12-1-118-125, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2222195392",
+          "name": "O. A. Bobyk"
+        }
+      ],
+      "abstract": "Due to the fact that modern scientific publications describe the different impact of religiosity on mental health, it seems relevant to conduct a scientific study on the comparative analysis of the impact of religion on mentally healthy people and persons with mental and behavioral disorders. Materials and methods: A questionnaire and a survey of 1,038 adult residents (510 patients with mental and behavioral disorders and 528 healthy individuals) permanently residing in Lugansk city was carried out on a voluntary basis. The questionnaire included a total of 67 questions and consisted of several sections, one of which (section VI) was questions concerning religiosity (faith in God, visiting religious temples, observing religious holidays, following Christian commandments). After the questionnaire, a separate clinical interview was conducted with patients suffering from mental and behavioral disorders who believe in God. Calculation of the specific weight of individuals according to the respective options for answering the questions was carried out. Results: it was found that in the group of patients with mental and behavioral disorders, there were significantly more persons who convincingly believe in God and frequently use prayer compared to mentally healthy people. Moreover, it was proved that religiosity has a positive effect on the mental state of patients. Preventive measures are recommended."
+    }
+  ]
+}

@@ -108,3 +108,12 @@ R4 PASS – Public tables report only aggregate counts and explicitly suppress a
 
 R5 FAIL – The required results registry still stops at the early exploratory prototypes (`analysis/results.csv:2`/`analysis/results.csv:4`), so neither the confirmatory H1 outputs nor any Loop 005–013 analyses appear there even though they exist elsewhere (`tables/loop006_h1_confirmatory.csv:1`). This leaves the deliverables incomplete for audit.
 
+## Loop 014 — 2025-11-08T14:32:12.984786+00:00
+DECISION: CONTINUE
+R1 PASS – Loop 14 actions, commands, and seed references are logged (analysis/decision_log.csv:36) with matching notebook narrative and state snapshot (notebooks/research_notebook.md:112-118; artifacts/state.json:1-11), keeping the investigation reproducible.
+R2 PASS – Confirmatory H1 rows carry estimates/SEs/CIs plus BH q-values and explicit SRS rationale (analysis/results.csv:20-32; analysis/hypotheses.csv:2-5), satisfying the design and multiplicity requirements.
+R3 PASS – The manuscript cites peer-reviewed sources for each substantive claim, and the evidence map links every DOI to its Semantic Scholar query (reports/paper.md:10-44; lit/evidence_map.csv:1-19).
+R4 PASS – Public tables either contain parameter estimates or suppress any cell with n<10 (tables/loop012_h4_alt_outcome_distribution.csv:5-8), meeting the privacy rule.
+R5 PASS – The PAP remains frozen for H1 with the tagged commit while the H3 promotion draft and all deliverables (results, hypotheses, sensitivity notes, manuscript) are current (analysis/pre_analysis_plan.md:1-99; analysis/results.csv; analysis/sensitivity_notes.md; reports/paper.md).
+Notes: None.
+
