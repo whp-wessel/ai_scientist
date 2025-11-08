@@ -13,13 +13,13 @@
       "rr_index": -1
     },
     "science": {
-      "last_model": "gpt-5",
-      "last_model_context": "loop_004",
+      "last_model": "gpt-5-codex",
+      "last_model_context": "loop_005",
       "last_model_policy": "agent",
-      "last_model_reason": "Finalized and froze the PAP (confirmatory families, estimands).",
-      "queued_model": "gpt-5-codex",
-      "queued_reason": "Execute confirmatory OLS and ordered-logit sensitivity with precise, scripted outputs.",
-      "queued_source": "loop_004",
+      "last_model_reason": "Execute confirmatory OLS and ordered-logit sensitivity with precise, scripted outputs.",
+      "queued_model": null,
+      "queued_reason": "",
+      "queued_source": "",
       "rr_index": -1
     }
   },
