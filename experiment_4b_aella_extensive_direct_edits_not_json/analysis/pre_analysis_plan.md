@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T20:05Z
+last_updated: 2025-11-08T20:17Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -55,6 +55,8 @@ Loop 030 note: Semantic Scholar query (`childhood parental nurturance adult immu
 Loop 031 note: Semantic Scholar remains blocked (`lit/queries/loop_031/query_001.json` logs another HTTP 403 for the parental-warmth stress-buffering search). The CrossRef fallback yielded Xu & Zheng (2025; DOI `10.31234/osf.io/82u5e_v1`), a 30-day diary study showing that daily parental warmth interrupts the link between parent stress and adolescent adjustment. This reinforces the need to finalize reproducible transformations for the survey’s parental-warmth, stress, and positive-affect scales so H2 specifications can explicitly test stress-buffering mediators once the API credential or waiver clears.
 
 Loop 032 note: The latest Semantic Scholar attempt (`childhood parental warmth adult inflammatory markers`; see `lit/queries/loop_032/query_001.json`) still returned HTTP 403. CrossRef fallback #2 for this loop surfaced Moran et al. (2018; DOI `10.1037/fam0000401`, recorded in `lit/queries/loop_032/crossref_query_002.json`), which shows that higher childhood parental warmth predicts better adult coping and well-being. We propagated this DOI to `lit/evidence_map.csv` / `lit/bibliography.*` to keep H2 mediator coverage moving, and refreshed `lit/semantic_scholar_waiver_loop013.md` so the header/attempt log now spans loops 008–032 as the reviewer requested. PAP remains `status: draft` until the waiver is approved or the API credential is restored.
+
+Loop 033 note: Mandatory Semantic Scholar query (`childhood mentorship adult coping resilience`; `lit/queries/loop_033/query_001.json`) again yielded HTTP 403, so we logged CrossRef fallback #1 for this loop (`lit/queries/loop_033/crossref_query_001.json`) and added Kennedy et al. (2017; DOI `10.1016/j.aogh.2017.03.265`) to the evidence map/bibliography as mentorship-based support evidence for H2. The waiver memo now covers loops 008–033 with the new attempt row plus mentorship summary, but PAP status remains draft until either the waiver is approved or Semantic Scholar access is restored so confirmatory analyses stay paused.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

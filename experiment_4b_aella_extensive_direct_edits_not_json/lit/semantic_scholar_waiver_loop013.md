@@ -1,11 +1,11 @@
-# Semantic Scholar Access Waiver Request — Loop 032
+# Semantic Scholar Access Waiver Request — Loop 033
 Date: 2025-11-08
 Status: draft (pending partner approval)
 
 ## Summary
-Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥25 consecutive failures (loops 008–032) paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002; Eliassen, 2013; Kasen et al., 2014; Giri et al., 2025; Grummitt et al., 2024; McLeod, 1991; Wheeler, 2023; Taskesen et al., 2025; Van Alen et al., 2020; Tung et al., 2023; Liu & Yin, 2025 preprint; Talmon, 2023; Lacey et al., 2013; Nelson, 1982; Gerra et al., 2016; Oh & Han, 2019; Xu & Zheng, 2025 preprint; Moran et al., 2018) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
+Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥26 consecutive failures (loops 008–033) paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002; Eliassen, 2013; Kasen et al., 2014; Giri et al., 2025; Grummitt et al., 2024; McLeod, 1991; Wheeler, 2023; Taskesen et al., 2025; Van Alen et al., 2020; Tung et al., 2023; Liu & Yin, 2025 preprint; Talmon, 2023; Lacey et al., 2013; Nelson, 1982; Gerra et al., 2016; Oh & Han, 2019; Xu & Zheng, 2025 preprint; Moran et al., 2018; Kennedy et al., 2017) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
 
-## Attempt Log (Loops 008–032)
+## Attempt Log (Loops 008–033)
 | Loop | Timestamp (UTC) | Query | Status | Artifact |
 | --- | --- | --- | --- | --- |
 | 008 | 2025-11-08T14:10:07Z | "childhood abuse self love adult wellbeing" | 403 Forbidden | `lit/queries/loop_008/query_001.json` |
@@ -33,6 +33,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 030 | 2025-11-08T19:35:12Z | "childhood parental nurturance adult immune resilience" | 403 Forbidden | `lit/queries/loop_030/query_001.json` |
 | 031 | 2025-11-08T19:52:28Z | "childhood parental warmth adult stress buffering" | 403 Forbidden | `lit/queries/loop_031/query_001.json` |
 | 032 | 2025-11-08T20:03:30Z | "childhood parental warmth adult inflammatory markers" | 403 Forbidden | `lit/queries/loop_032/query_001.json` |
+| 033 | 2025-11-08T20:16:01Z | "childhood mentorship adult coping resilience" | 403 Forbidden | `lit/queries/loop_033/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -64,6 +65,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Lacey et al. (2013), DOI `10.1016/j.psyneuen.2013.05.007`** — Captured via CrossRef (loop 027) showing that childhood parental separation predicts elevated adult C-reactive protein through material/psychosocial pathways, reinforcing H2’s need to model family disruption and stress mechanisms while Semantic Scholar access remains blocked.
 - **Gerra et al. (2016), DOI `10.1016/j.psychres.2016.09.001`** — Captured via CrossRef (loop 029) linking low childhood parental care to dysregulated ACTH/cortisol and higher nicotine dependence, ensuring H2’s stress-physiology mechanisms stay documented during the Semantic Scholar outage.
 - **Moran et al. (2018), DOI `10.1037/fam0000401`** — Captured via CrossRef (loop 032) showing that higher childhood parental warmth predicts better coping and well-being in adulthood, reinforcing the H2 stress-buffering specification while the API credentials remain blocked.
+- **Kennedy et al. (2017), DOI `10.1016/j.aogh.2017.03.265`** — Captured via CrossRef (loop 033) documenting a mentorship model that boosts coping/resilience in young adults, supplying the mentorship/support mechanism evidence needed for H2 while the Semantic Scholar outage persists.
 
 ### Ops Coordination Note
 The next support ticket will highlight the Liu & Yin (2025) constructs (maternal/paternal warmth plus short-form DERS items) and the Talmon (2023) parent-emotion-regulation requirements so ops can see which PAP covariates remain blocked by the missing Semantic Scholar sources.
