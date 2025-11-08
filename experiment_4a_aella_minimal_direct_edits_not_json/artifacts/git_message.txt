@@ -1,1 +1,0 @@
-loop016: add H3 power summary and H4 confirm tables
