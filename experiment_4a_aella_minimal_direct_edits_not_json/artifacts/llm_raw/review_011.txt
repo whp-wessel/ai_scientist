@@ -1,0 +1,8 @@
+DECISION: CONTINUE
+R1 WARN – The loop‑011 decision log only cites `lit/queries/loop_011/query_001.json` and `query_004.json`, yet two additional Semantic Scholar responses (`query_002.json`, `query_003.json`) were saved without being referenced, so the provenance of those inputs is missing from `analysis/decision_log.csv` despite the charter’s requirement to log every JSON artifact (`analysis/decision_log.csv:31`, `lit/queries/loop_011/query_002.json:1`, `lit/queries/loop_011/query_003.json:1`).
+R2 PASS – The PAP remains frozen with explicit confirmatory scope, seeds, and SRS rationale, and the recorded H1 contrasts carry BH-adjusted q-values plus script/command metadata, satisfying the statistical guardrails (`analysis/pre_analysis_plan.md:1`, `analysis/results.csv:20`).
+R3 PASS – Literature tracking is up to date, with the new Jiang (2024) and Zimmer (2016) sources captured in both the bibliography and evidence map along with DOI links for citation (`lit/bibliography.md:17`, `lit/evidence_map.csv:14`).
+R4 PASS – Public tables continue to report aggregate estimates only; for example, the H1 interaction grid discloses coefficients with ≥14k respondents per cell, keeping well above the n<10 suppression threshold (`tables/loop009_h1_interaction_grid.csv:2`).
+R5 PASS – Core artifacts were extended this loop: the manuscript now documents the PPO vs. multinomial benchmark and robustness queue, and the sensitivity notes spell out the next bootstrap/anxiety-coding tasks (`reports/paper.md:6`, `analysis/sensitivity_notes.md:1`).
+
+Notes: Please document the outstanding loop‑011 query files in the decision log (or remove them if they were aborted) so every saved API response has a matching provenance entry.
