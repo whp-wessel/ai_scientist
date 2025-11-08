@@ -94,7 +94,28 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 - Multi-generational social-mobility evidence shows that grandparents’ class continues to influence adult destinations even after conditioning on parental class [Chan & Boliver, 2013](https://doi.org/10.1177/0003122413489130), arguing for cutpoint-specific contrasts instead of a single average slope.
 - Wealth carries distinct predictive power relative to other SES measures: disparities in mortality by wealth exceed those linked to education, occupation, or childhood SES [Glei et al., 2022](https://doi.org/10.1001/jamanetworkopen.2022.6547). Modeling net-worth cutpoints directly is therefore substantively meaningful, reinforcing the PPO estimand.
 
-### Outstanding Tasks Before Promotion (updated Loop 015)
-1. Quantify effective sample size and statistical power for the ≥$10M contrast (include bootstrap precision plus analytic SEs) before freezing a single-test confirmatory family.
-2. Document the ≥$10M estimand in `analysis/hypotheses.csv` (new result IDs + multiplicity plan if we later reintroduce additional cutpoints).
-3. Draft the confirmatory reporting template (`tables/loop013_h3_confirmatory.csv`) focused on ≥$10M, keeping ≥$100k/≥$1M in the appendix for descriptive continuity.
+### Loop 016 Power Diagnostics
+- Country-cluster bootstraps combined with the analytic PPO fit now yield a reproducibility-ready power table (`tables/loop016_h3_power_summary.csv`) and confirmatory shell (`tables/loop016_h3_confirmatory.csv`). Only 820 respondents (5.7%) report ≥$10MM net worth, and clustering inflates the standard error from 0.036 to 0.140 log-odds, implying a design effect of 14.8 and an effective sample size of ≈978 (vs. 14,423 rows under SRS). The analytic Wald test would have 0.86 power at α=0.05, but the cluster-adjusted analogue drops to 0.16, so any future confirmatory family must acknowledge that power loss explicitly.
+
+### Outstanding Tasks Before Promotion (updated Loop 016)
+1. Encode the ≥$10M PPO estimand and single-test multiplicity plan inside `analysis/hypotheses.csv` so reviewers can see the proposed confirmatory family (`childhood_class_networth_ge10m`).
+2. Keep the confirmatory reporting template (`tables/loop016_h3_confirmatory.csv`) synchronized with manuscript text/figures and document how bootstrap power shifts will be handled at freeze time.
+3. Finalize the reviewer checklist (PAP addendum + `reports/paper.md`) that explains why lower cutpoints remain descriptive while ≥$10M becomes the sole confirmatory contrast.
+
+## Post-freeze Working Notes — Loop 016 H4 Class-Conditioned Religiosity Draft *(status: draft)*
+
+### H4 Estimand (Moderate Practice × Childhood Class)
+- **Outcome**: binary `anxiety_high_flag` that equals 1 when respondents endorse ≥5 on either anxiety item (npvfh98 or its aligned companion), mirroring the threshold used in `scripts/loop012_h4_alt_outcomes.py`.
+- **Exposure**: ordinal religiosity indicator recoded into dummies for slight/moderate/serious practice plus their interactions with childhood class (`classchild`). The PAP candidate focuses on the **moderate practice × classchild** interaction because Loop 015 showed the steepest class gradient shift there.
+- **Estimator**: logit with covariates `[classchild, classcurrent, classteen, selfage, gendermale, education]`, religiosity main effects, and the interaction terms (`scripts/loop015_h4_rich_interactions.py`). This richer control set absorbs contemporaneous class differences so the interaction isolates whether religious practice differentially buffers anxiety across childhood class strata. Coefficients live in `tables/loop015_h4_interactions_rich.csv` and predicted probabilities in `tables/loop015_h4_predicted_grid.csv`.
+- **Key estimate**: Moderate practice × classchild = −0.130 (SE 0.052, p=0.012) on the log-odds scale, implying that moving from classchild 0→6 lowers the high-anxiety probability by 16.9 p.p. among moderate practitioners versus a +2.0 p.p. increase among non-practitioners (`tables/loop016_h4_confirmatory.csv`). The serious-practice interaction (−0.086, p=0.19) remains a supporting contrast should the confirmatory family include two tests.
+- **Reproducibility command**: `PYTHONHASHSEED=20251016 python scripts/loop015_h4_rich_interactions.py` regenerates the coefficients, prediction grids, and figure `figures/loop015_h4_classinteraction.png`.
+
+### Literature Rationale
+- Religiosity predicts lower anxiety/depression trajectories in longitudinal high-risk cohorts (Kasen et al., 2014) and among chronically ill adults enduring acute stress (Davis et al., 2021).
+- Socioeconomic context conditions the benefits of religious practice: private prayer and religious beliefs reduce cognitive impairment primarily for modest-income Black men [Bruce et al., 2024](https://doi.org/10.1093/geroni/igae098.1596), reinforcing the decision to focus on class-sensitive religiosity estimands.
+
+### Multiplicity & Promotion Plan
+- Proposed confirmatory family name: `religiosity_class_gradients` with up to two contrasts (moderate × classchild [primary], serious × classchild [supporting]). If only the moderate contrast is preregistered, BH at q=0.05 collapses to the raw p-value; if the serious contrast is retained, apply Benjamini–Hochberg across the two Wald p-values and report q-values in `analysis/results.csv`.
+- Survey design handling remains SRS unless weights/strata metadata emerge; each result row will continue to document the SRS justification.
+- Before freezing, we will (a) document the estimand and family in `analysis/hypotheses.csv`, (b) add the confirmatory shell `tables/loop016_h4_confirmatory.csv` to the manuscript workflow, and (c) expand `reports/paper.md` to cite Bruce et al. (2024) alongside Kasen/Davis when motivating the interaction.

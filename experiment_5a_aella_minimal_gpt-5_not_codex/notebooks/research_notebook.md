@@ -204,3 +204,17 @@ Notes:
 Next:
 - Expand literature with focused queries on religious homogamy/assortative mating and adult relationship quality.
 - Start drafting PAP refinements (estimands, covariates) toward freeze for two primary families (Wellbeing; Relationships).
+
+---
+## Loop 014 (literature)
+- Ran a targeted Semantic Scholar search to deepen coverage on longitudinal links between childhood/adolescent religiosity and adult wellbeing/relationships:
+  - `python scripts/semantic_scholar_cli.py search --query "childhood religiosity adult wellbeing relationship satisfaction longitudinal" --limit 5 --output lit/queries/loop_014/query_001.json` → HTTP 429 captured (unauthenticated; 1 rps enforced by helper).
+- Attempted DOI extraction from the saved JSON:
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_014/query_001.json --output lit/evidence_map.csv --topic "childhood religiosity and adult wellbeing"` → appended 0 DOIs (rate-limited response).
+- Updated `analysis/decision_log.csv` with the literature attempt and bumped `artifacts/state.json` (loop_counter=14; phase=literature).
+
+Notes:
+- Without an API key, rate limits are intermittent. Providing `.env` with `S2_API_Key` would enable sustained searches and retrieval of abstracts/metadata for synthesis.
+
+Next:
+- If key is available, re-run loop_014 query and follow with extraction; otherwise, pivot to refining PAP estimands and defining freeze criteria for two primary families (Wellbeing; Relationships), keeping MentalHealth exploratory for now.

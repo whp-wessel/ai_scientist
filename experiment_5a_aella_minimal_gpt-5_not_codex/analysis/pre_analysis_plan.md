@@ -38,6 +38,7 @@ literature:
   - loop_011: `lit/queries/loop_011/query_001.json` (youth religiosity and depression/anxiety; added E22–E26 to `lit/evidence_map.csv`).
   - loop_012: `lit/queries/loop_012/query_001.json` (religiosity, depression/anxiety, monogamy, relationship satisfaction; appended 5 DOIs to `lit/evidence_map.csv`).
   - loop_013: `lit/queries/loop_013/query_002.json` (adolescent religiosity → adult wellbeing, longitudinal; appended 3 DOIs to `lit/evidence_map.csv`).
+  - loop_014: `lit/queries/loop_014/query_001.json` (childhood religiosity → adult wellbeing/relationships, longitudinal framing; HTTP 429 captured unauthenticated; 0 DOIs appended this loop).
 - Evidence is curated into `lit/evidence_map.csv` and citable entries in `lit/bibliography.bib`; main claims will cite at least one peer-reviewed source (DOI/URL).
 
 reproducibility notes:

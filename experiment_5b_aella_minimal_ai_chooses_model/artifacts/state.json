@@ -14,12 +14,12 @@
     },
     "science": {
       "last_model": "gpt-5-codex",
-      "last_model_context": "loop_001",
+      "last_model_context": "loop_002",
       "last_model_policy": "agent",
-      "last_model_reason": "Upcoming work is data-wrangling heavy (recode scripts, profiling, more API automation).",
-      "queued_model": "gpt-5-codex",
-      "queued_reason": "Upcoming recoding and modeling tasks remain code/data-heavy and benefit from Codex\u2019s tooling skills.",
-      "queued_source": "loop_001",
+      "last_model_reason": "Upcoming recoding and modeling tasks remain code/data-heavy and benefit from Codex\u2019s tooling skills.",
+      "queued_model": null,
+      "queued_reason": "",
+      "queued_source": "",
       "rr_index": -1
     }
   },
