@@ -215,3 +215,13 @@ R3 PASS – No manuscript claims changed this loop, and the existing evidence ma
 R4 PASS – Public artifacts added this loop (weight status tables, Q&A log, LOI docs) contain only operational metadata with no microdata or n<10 cells (`tables/loop021_h3_weight_delivery_status.csv:1-5`, `docs/h3_high_wealth_refresh/qna_loop021.md:37-58`), and privacy safeguards stay codified in the PAP (`analysis/pre_analysis_plan.md:26-33`).
 R5 PASS – Required artifacts continue to exist and align: PAP remains frozen for H1 (`analysis/pre_analysis_plan.md:1-45`), hypothesis registry unchanged (`analysis/hypotheses.csv:1-7`), the Italy LOI plus register entry capture the new partner (`docs/h3_country_expansion_materials/LOI_Italy_2025-11-12.md:1-32`, `loi_register.csv:10`), and the verification register scaffold is in place (`docs/h3_high_wealth_refresh/verification_register.csv:1`).
 
+## Loop 029 — 2025-11-08T19:26:20.607035+00:00
+DECISION: CONTINUE  
+R1 PASS – `analysis/decision_log.csv:67` and `notebooks/research_notebook.md:252` log the Loop 029 commands with `PYTHONHASHSEED=20251016`, while `artifacts/state.json` reflects the updated loop counter and next actions.  
+R2 PASS – The PAP remains frozen for H1 (`analysis/pre_analysis_plan.md:1-54`), confirmatory rows carry BH-adjusted q-values and SRS justification (`analysis/results.csv:20-21`), and the design-effect tracker documents the ongoing weight-replication audit (`docs/h3_design_effect_plan.md:60-150`).  
+R3 PASS – Literature assets enumerate DOI-linked sources (`lit/evidence_map.csv`), and the manuscript cites those works with DOIs when making substantive claims (`reports/paper.md:1-54`).  
+R4 PASS – Public registries such as `tables/loop021_h3_weight_delivery_status.csv` and `docs/h3_high_wealth_refresh/verification_register.csv:2` report only aggregate counts (≥22) and avoid any n<10 disclosures.  
+R5 PASS – Required artifacts (PAP, hypotheses, results, manuscript, state) are present and updated, and new LOIs (`docs/h3_country_expansion_materials/LOI_Spain_2025-11-12.md`, `LOI_Norway_2025-11-12.md`) plus the LOI register keep the H3 mitigation storyline current.
+
+Notes: Continue monitoring DG‑4827 delivery and execute the planned H4 freeze once approvals arrive.
+

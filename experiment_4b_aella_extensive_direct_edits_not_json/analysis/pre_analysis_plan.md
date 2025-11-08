@@ -48,6 +48,8 @@ Loop 027 note: Semantic Scholar is still blocked (`lit/queries/loop_027/query_00
 
 Loop 028 note: The mandated Semantic Scholar search (`childhood parental support adult inflammation resilience`) again returned HTTP 403 (`lit/queries/loop_028/query_001.json`). To keep the evidence base expanding we logged the CrossRef record for Nelson (1982; DOI `10.1007/bf00583891`), which provides additional Canadian data showing childhood parental death continues to predict adult depression even after socioeconomic controls. H1/H2 robustness sections now flag explicit adversity-loss covariates plus stress-buffer interactions, yet the PAP remains draft until the waiver is approved or the Semantic Scholar credential is restored so canonical S2 sourcing is satisfied.
 
+Loop 029 note: Semantic Scholar query (`childhood parental warmth adult cortisol regulation`) is still blocked (see `lit/queries/loop_029/query_001.json`), so we logged CrossRef metadata for Gerra et al. (2016; DOI `10.1016/j.psychres.2016.09.001`). The study links low childhood parental care to dysregulated ACTH/cortisol and elevated nicotine dependence in adults, so the PAP now highlights cortisol/stress proxies plus nicotine-use controls within the H2 specification. Status remains `draft` until either the waiver is approved or the Semantic Scholar credential is restored and the queued S2 searches can be replayed.
+
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
 - **Survey design:** No weights currently available; treat as SRS while monitoring for forthcoming design info (see `docs/survey_design.yaml`). Any newly provided weights will trigger a PAP revision before freeze.
