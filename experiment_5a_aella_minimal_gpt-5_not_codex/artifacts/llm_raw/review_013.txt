@@ -1,0 +1,13 @@
+DECISION: CONTINUE
+
+R1 Reproducibility: PASS — Seeds recorded (artifacts/session_info.txt), deterministic commands specified (analysis/pre_analysis_plan.md; scripts/analysis/{eda.py,run_models.py}), decision log maintained (analysis/decision_log.csv), and repro artifacts present (artifacts/repro_report.md).
+
+R2 Statistical Rigor: PASS — Survey design handled via explicit SRS justification in results (analysis/results.csv: design_used=false, srs_justification set). Effect sizes, SEs, CIs, and p-values reported. All tests marked confirmatory=false; no q-values required yet.
+
+R3 Literature/Evidence: PASS — Saved Semantic Scholar queries (lit/queries/loop_013/query_002.json), DOIs extracted to lit/evidence_map.csv, and manuscript cites a peer-reviewed source with DOI (reports/paper.md; lit/bibliography.bib).
+
+R4 Privacy: PASS — Public tables suppress small cells (tables/key_vars_value_counts.csv masks counts as “<10”; tables/religion_by_monogamy.csv has no <10 cells).
+
+R5 Completeness: WARN — PAP remains “status: draft” (analysis/pre_analysis_plan.md), appropriate for literature phase; core artifacts exist (analysis/hypotheses.csv, analysis/results.csv, notebooks/research_notebook.md, reports/paper.md, lit/evidence_map.csv). artifacts/git_message.txt not found to request a checkpoint commit.
+
+Notes: Before any confirmatory tests, freeze/tag the PAP and control FDR with q-values for any confirmatory family >1 test.

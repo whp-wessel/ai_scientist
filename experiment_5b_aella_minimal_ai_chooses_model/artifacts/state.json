@@ -3,9 +3,9 @@
   "loop_counter": 1,
   "model_state": {
     "review": {
-      "last_model": null,
-      "last_model_context": "",
-      "last_model_policy": "",
+      "last_model": "gpt-5",
+      "last_model_context": "review_001",
+      "last_model_policy": "agent",
       "last_model_reason": "",
       "queued_model": null,
       "queued_reason": "",
