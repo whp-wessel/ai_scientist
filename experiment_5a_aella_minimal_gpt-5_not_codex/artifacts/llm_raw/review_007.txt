@@ -1,0 +1,13 @@
+DECISION: CONTINUE
+
+R1 Reproducibility: WARN – Seeds and environment recorded (artifacts/seed.txt, artifacts/session_info.txt), commands logged in analysis/decision_log.csv and analysis/pre_analysis_plan.md; scripts produce all artifacts deterministically. However, the commit request file referenced this loop is missing (artifacts/git_message.txt), so no checkpoint message is present.
+
+R2 Statistical Rigor: PASS – Survey design handled with explicit SRS justification (config/survey_design.yaml; analysis/results.csv: design_used=false with srs_justification). All results are exploratory (confirmatory=false); effect sizes, SEs, CIs, and p-values reported; no q-values required yet.
+
+R3 Literature/Evidence: PASS – Semantic Scholar query saved (lit/queries/loop_007/query_001.json); DOIs extracted into lit/evidence_map.csv; manuscript cites a peer‑reviewed source (reports/paper.md; lit/bibliography.bib).
+
+R4 Privacy: PASS – Public tables suppress small cells (tables/key_vars_value_counts.csv shows “<10”; tables/religion_by_monogamy.csv contains no cells <10).
+
+R5 Completeness: PASS – Minimal deliverables present: analysis/pre_analysis_plan.md (status: draft), analysis/hypotheses.csv, analysis/results.csv, notebooks/research_notebook.md, reports/paper.md, lit/bibliography.bib, lit/evidence_map.csv, tables/*.csv. No confirmatory results, so PAP freeze/tag not yet required.
+
+Notes: Please add artifacts/git_message.txt with a one‑line message to request the checkpoint for Loop 007.
