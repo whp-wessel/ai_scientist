@@ -78,3 +78,14 @@
 - Updated the manuscript’s H1 section to cite the new figure/table, clarify that the visuals stem directly from the frozen confirmatory models, and restructure the “Next Steps” bullets around the remaining backlog (H3 partial proportional-odds, H1 bootstrap robustness, literature for PAP expansion).
 - Logged the workflow in `analysis/decision_log.csv`, refreshed `artifacts/state.json` (loop counter, next-action list), and summarized the deliverables + remaining sensitivity tasks here for reproducibility.
 - Tests: `PYTHONHASHSEED=20251016 python scripts/loop009_h1_visuals.py`.
+
+## 2025-11-08 – Loop 010
+- Reproduced the H3 proportional-odds violation by stacking all nine cumulative logits and fit a partial proportional-odds model via `python scripts/loop010_h3_partial_models.py`, which exports coefficients (`tables/loop010_h3_partial_params.csv`), threshold-specific effects (`tables/loop010_h3_threshold_effects.csv`), and fit stats (`tables/loop010_h3_partial_fit.csv`).
+- Childhood class effects are positive for escaping deep debt (cutpoints -2 to 0) but collapse around the ≥$100k bracket (cutpoint 3 effect = 0.014, p = 0.50) before reappearing for the ≥$10M tail (cutpoint 5 effect = 0.11, p = 0.002), confirming the non-parallel slopes surfaced in Loop 008.
+- The classchild × male interaction flips sign across thresholds: men gain an advantage at moderate wealth cutpoints yet fall behind again at the $10M+ and $100M+ tiers, implying the H3 storyline needs to differentiate by both wealth regime and gender.
+- Logged two representative rows in `analysis/results.csv` to anchor the PPO findings and prepped talking points for integrating the new evidence into the PAP/manuscript.
+
+### Loop 010 Next Steps
+1. Benchmark the PPO fit against an unordered multinomial model to decide which specification should anchor the H3 estimand before PAP adjustments.
+2. Scope the H1 robustness wave (bootstrap CIs vs. alternative anxiety codings) so the sensitivity phase can open without retooling.
+3. Add at least two H2/H3-specific peer-reviewed sources via the Semantic Scholar CLI to back any forthcoming PAP expansion.

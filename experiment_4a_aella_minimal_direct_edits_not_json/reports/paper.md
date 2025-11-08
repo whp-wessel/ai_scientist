@@ -28,12 +28,13 @@ Childhood adversity remains a consistent predictor of adult depression and anxie
 ## 4. Exploratory Context (H2–H4)
 - Measurement updates and exploratory coefficients remain as previously reported: positive childhood guidance → self-love association (β ≈ 0.09 SD, p<1e-11), muted childhood-class effects on adult net worth once teen class is included (β ≈ 0.026, p=0.24), and religiosity × childhood-class interaction negative (β ≈ -0.021, p=0.0046) with null main effect when interactions enter. These findings remain labeled `confirmatory=FALSE` pending literature + diagnostics specified in the PAP.
 - Loop 008 diagnostics surface two promotion blockers: (a) proportional-odds tests for H3 show the education and gender coefficients vary by ≥0.65 log-odds across cumulative thresholds, suggesting a partial proportional-odds or multinomial alternative before locking in ordered logits (`tables/loop008_h3_po_summary.csv`); (b) modeling religiosity categorically improves the anxiety_z fit relative to a linear ordinal trend (F=6.12, p=0.002), and the “very serious practice” dummy yields -0.41 log-odds for high anxiety (p=3.5e-7) even though the logistic LR test for ordinal vs categorical coding is non-significant at α=0.05 (`tables/loop008_h4_religiosity_models.csv` / `tables/loop008_h4_religiosity_tests.csv`).
+- Loop 010 addresses blocker (a) by stacking the nine cumulative logits and fitting a partial proportional-odds model that frees the childhood-class slopes (script `scripts/loop010_h3_partial_models.py`). The resulting threshold effects (`tables/loop010_h3_threshold_effects.csv`) show that childhood class helps respondents escape deep debt (cutpoints -2 to 0, β≈0.13) yet the slope collapses around the ≥$100k bracket (cutpoint 3, β=0.014, p=0.50) before reappearing for the ≥$10M tier (cutpoint 5, β=0.11, p=0.002). Male interaction effects flip sign across these regimes, reinforcing the need for a richer H3 estimand before PAP promotion.
 - Weighted design remains unavailable, so all exploratory disclosures reiterate the SRS justification and restrict public tables to n≥10 cells.
 
 ## 5. Next Steps
-1. Prototype partial proportional-odds or multinomial specifications for H3 to address the proportional-odds violations logged in Loop 008 before any PAP promotion.
-2. Scope the next H1 robustness wave (bootstrap CIs and/or alternative anxiety codings) and document the plan in `analysis/sensitivity_notes.md` ahead of the sensitivity phase.
-3. Extend the literature review for H2–H3 so any prospective PAP expansion has peer-reviewed support plus updated measurement diagnostics.
+1. Benchmark the partial proportional-odds model against an unordered multinomial alternative and decide which specification should anchor H3 in the PAP/manuscript.
+2. Design the next robustness wave (H1 bootstrap CIs and/or alternative anxiety codings) so the sensitivity phase can open without toolchain churn.
+3. Expand the H2–H3 literature/measurement dossier with ≥2 new Semantic Scholar sources to support any PAP expansion.
 
 ## References
 - Assari, S., Najand, B., & Donovan, A. (2025). *Sex/Gender Differences in the Effects of Childhood Abuse on Future Risk of Depression: Longitudinal Evidence from the Global Flourishing Study.* *Children, 12*(6), 754. https://doi.org/10.3390/children12060754

@@ -1,0 +1,7 @@
+metric,value
+n_long_rows,129987.0
+n_individuals,14443.0
+log_likelihood,-42478.78277300721
+aic,85019.56554601442
+bic,85322.59642747197
+pseudo_r2_mcfadden,0.5233908540364793

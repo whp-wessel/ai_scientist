@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-08T13:34:30Z",
-  "loop_counter": 9,
+  "last_updated": "2025-11-08T12:45:30Z",
+  "loop_counter": 10,
   "next_actions": [
-    "Prototype partial proportional-odds or multinomial net-worth models to address the H3 proportional-odds violations flagged in loop008.",
-    "Scope the next robustness wave (e.g., H1 bootstrap CIs or alternative anxiety codings) before transitioning into the sensitivity phase.",
-    "Extend the H2–H3 literature/measurement dossier so any future PAP expansion has peer-reviewed support."
+    "Benchmark the H3 partial proportional-odds model against a multinomial alternative and update the PAP/manuscript with the preferred spec.",
+    "Design the next robustness wave (H1 bootstrap CIs and/or alternative anxiety codings) before entering the sensitivity phase.",
+    "Expand the H2\u2013H3 literature/measurement dossier with at least two new Semantic Scholar sources to support any PAP expansion."
   ],
   "phase": "analysis",
   "phase_ix": 2,
