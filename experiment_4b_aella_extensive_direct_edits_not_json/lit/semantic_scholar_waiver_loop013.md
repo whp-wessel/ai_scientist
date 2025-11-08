@@ -1,9 +1,9 @@
-# Semantic Scholar Access Waiver Request — Loop 016
+# Semantic Scholar Access Waiver Request — Loop 017
 Date: 2025-11-08
 Status: draft (pending partner approval)
 
 ## Summary
-Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥9 consecutive failures paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
+Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥10 consecutive failures paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
 
 ## Attempt Log (Loops 008–016)
 | Loop | Timestamp (UTC) | Query | Status | Artifact |
@@ -17,6 +17,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 014 | 2025-11-08T15:02:53Z | "childhood spirituality parental support adult depression" | 403 Forbidden | `lit/queries/loop_014/query_001.json` |
 | 015 | 2025-11-08T15:11:56Z | "childhood parental guidance adult health" | 403 Forbidden | `lit/queries/loop_015/query_001.json` |
 | 016 | 2025-11-08T15:36:56Z | "childhood emotional neglect adult self compassion" | 403 Forbidden | `lit/queries/loop_016/query_001.json` |
+| 017 | 2025-11-08T16:57:20Z | "childhood religious participation adult depression support" | 403 Forbidden | `lit/queries/loop_017/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -29,6 +30,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Qu (2024), DOI `10.1016/j.chiabu.2024.107020`** — Captured via CrossRef (loop 016) detailing how self-compassion and rejection sensitivity mediate emotional-abuse effects on loneliness; reinforces the planned mediator controls for H3 even though the sample is adolescent-focused.
 - **Renu (2023), DOI `10.21275/SR23621004642`** — Captured via CrossRef (loop 016) summarizing how childhood trauma severity predicts adult depressive/self-worth outcomes, providing theory support for H3 while peer-reviewed sources continue to accumulate.
 - **Hulvershorn et al. (2009), DOI `10.1093/med:psych/9780195332711.003.0004`** — Captured via CrossRef (loop 016) synthesizing how childhood mental health issues propagate into young adult outcomes, reinforcing the PAP’s planned control strategy.
+- **Loecher et al. (2023), DOI `10.1089/jayao.2022.0097`** — Captured via CrossRef (loop 017) showing how ongoing parental engagement affects adolescent/young adult cancer survivors’ health-care transitions, strengthening H2’s evidence base while S2 access is blocked.
 
 ## Request
 1. **Waiver:** Allow continuation through PAP freeze relying on the documented CrossRef DOIs while Semantic Scholar restores API access. The attempt log above, paired with decision-log entries, demonstrates due diligence.

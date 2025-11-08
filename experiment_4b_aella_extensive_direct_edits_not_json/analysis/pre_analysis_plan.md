@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T15:45Z
+last_updated: 2025-11-08T17:00Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -21,6 +21,8 @@ Loop 014 note: Semantic Scholar failure persisted (`lit/queries/loop_014/query_0
 Loop 015 note: Loop-mandated Semantic Scholar query (`childhood parental guidance adult health`) again returned 403 (`lit/queries/loop_015/query_001.json`). We captured a CrossRef fallback on parental monitoring vs. hazardous drinking (Turrisi et al., 2010; DOI `10.7312/guil14080-006`) and synchronized `lit/evidence_map.csv`, `lit/bibliography.*`, and the waiver memo. PAP remains draft until either the waiver is formally approved or the API key is reissued.
 
 Loop 016 note: Another Semantic Scholar attempt (`childhood emotional neglect adult self compassion`) failed with 403 (`lit/queries/loop_016/query_001.json`). To keep H3 literature current, we captured an SSRN preprint (Larkin et al., 2024; DOI `10.2139/ssrn.4703219`), a new Child Abuse & Neglect article (Qu, 2024; DOI `10.1016/j.chiabu.2024.107020`), an IJSR trauma review (Renu, 2023; DOI `10.21275/SR23621004642`), and an Oxford chapter on young-adult mental health (Hulvershorn et al., 2009; DOI `10.1093/med:psych/9780195332711.003.0004`) via CrossRef (see `lit/queries/loop_016/crossref_query_001.json` and `lit/queries/loop_016/crossref_query_002.json`) and propagated them to the evidence map/bibliography. The waiver memo now documents loops 008–016; PAP status stays draft until either the waiver is approved or Semantic Scholar access is restored.
+
+Loop 017 note: Mandatory Semantic Scholar query (`childhood religious participation adult depression support`) still returned 403 (`lit/queries/loop_017/query_001.json`). To maintain H2 coverage we captured a CrossRef DOI linking parental involvement to health-care transitions among adolescent/young adult cancer survivors (Loecher et al., 2023; DOI `10.1089/jayao.2022.0097`; see `lit/queries/loop_017/crossref_query_003.json`) and synced the evidence map/bibliography plus the waiver memo, which now covers loops 008–017. PAP remains draft until ops approves the waiver or restores the API key.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

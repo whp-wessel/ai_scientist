@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 016
+# Data Quality Checklist — Loop 017
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -50,7 +50,7 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 016 logged `lit/queries/loop_016/query_001.json`; waiver memo now covers loops 008-016 and cites the new CrossRef fallbacks (DOIs `10.2139/ssrn.4703219`, `10.1016/j.chiabu.2024.107020`, `10.21275/SR23621004642`, and `10.1093/med:psych/9780195332711.003.0004`), but PAP freeze remains on hold pending approval or credential fix.
+3. Semantic Scholar credential still failing (403). Loop 017 logged `lit/queries/loop_017/query_001.json`; the waiver memo now spans loops 008-017 and cites the latest CrossRef fallback (DOI `10.1089/jayao.2022.0097`) alongside prior DOIs `10.2139/ssrn.4703219`, `10.1016/j.chiabu.2024.107020`, `10.21275/SR23621004642`, and `10.1093/med:psych/9780195332711.003.0004`, so PAP freeze remains on hold until approval or credential restoration.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes

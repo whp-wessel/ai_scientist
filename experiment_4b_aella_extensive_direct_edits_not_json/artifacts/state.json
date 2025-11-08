@@ -28,12 +28,12 @@
     "phase": "loop",
     "ts": "2025-11-08T15:49:51.403775+00:00"
   },
-  "loop_counter": 16,
+  "loop_counter": 17,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 016 (see lit/queries/loop_016/query_001.json); waiver memo now covers loops 008-016 with CrossRef fallbacks Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024 (Child Abuse & Neglect), Renu 2023 (IJSR), and Hulvershorn et al. 2009 (Oxford chapter) while we await new key approval.",
+      "notes": "Semantic Scholar API still 403 as of loop 017 (see lit/queries/loop_017/query_001.json); waiver memo now covers loops 008-017 with CrossRef fallbacks Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024 (Child Abuse & Neglect), Renu 2023 (IJSR), Hulvershorn et al. 2009 (Oxford), and Loecher et al. 2023 (JAYAO) while we await new key approval.",
       "owner": "agent",
       "status": "blocked"
     },

@@ -148,3 +148,13 @@
 1. Draft the formal `religiosity_class_gradients` promotion memo (PAP text + manuscript citation map) so the moderate/serious contrasts can freeze once reviewers sign off.
 2. Stress-test the serious-practice interaction (shrinkage or alternative anxiety codings) to decide whether it belongs in the confirmatory family or should drop to exploratory support.
 3. Explore whether additional metadata (e.g., pooled country waves) could shrink the H3 design effect, since naïvely stacking waves still leaves cluster power below the 0.8 confirmatory bar.
+
+## 2025-11-08 – Loop 019
+- **H4 promotion memo**: Authored `docs/religiosity_class_gradients_promotion.md` to consolidate the candidate confirmatory family—estimand, modeling commands, predicted probability shifts, literature support, and Benjamini–Hochberg (m=2) plan—so reviewers can audit everything needed to freeze the moderate/serious practice × classchild contrasts.
+- **PAP alignment**: Updated the post-freeze working notes in `analysis/pre_analysis_plan.md` to reference the new memo, record the q-values (0.023/0.194), and reiterate the remaining stress tests required before promoting the family.
+- **Manuscript crosswalk**: Added the promotion memo link and BH details to `reports/paper.md`, keeping the H4 narrative synchronized with public tables, q-values, and literature citations (Kasen et al., 2014; Davis et al., 2021; Bruce et al., 2024).
+
+### Loop 019 Next Steps
+1. Run the planned serious-practice stress tests (ridge logit and alternative anxiety codings) to decide whether that interaction stays inside the confirmatory family.
+2. Extend the confirmatory shell to cover the ordinal anxiety outcome so the memo cites at least two coding checks before freeze.
+3. Translate the H3 design-effect mitigation options into a concrete data acquisition plan (additional countries/new respondents) now that naive wave stacking remains underpowered.

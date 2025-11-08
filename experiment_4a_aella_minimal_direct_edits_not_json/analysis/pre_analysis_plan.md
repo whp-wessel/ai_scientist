@@ -107,13 +107,15 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 2. Keep the confirmatory reporting template (`tables/loop016_h3_confirmatory.csv`) synchronized with manuscript text/figures and document how bootstrap power shifts will be handled at freeze time.
 3. Finalize the reviewer checklist (PAP addendum + `reports/paper.md`) that explains why lower cutpoints remain descriptive while ≥$10M becomes the sole confirmatory contrast.
 
-## Post-freeze Working Notes — Loop 016 H4 Class-Conditioned Religiosity Draft *(status: draft)*
+## Post-freeze Working Notes — Loop 019 `religiosity_class_gradients` Promotion Memo *(status: draft)*
+
+- The full promotion memo (Loop 019) now lives at `docs/religiosity_class_gradients_promotion.md`. It consolidates the estimand, diagnostics, reproducibility commands, literature citations, and the Benjamini–Hochberg plan so reviewers can green-light the family before the next PAP freeze.
 
 ### H4 Estimand (Moderate Practice × Childhood Class)
 - **Outcome**: binary `anxiety_high_flag` that equals 1 when respondents endorse ≥5 on either anxiety item (npvfh98 or its aligned companion), mirroring the threshold used in `scripts/loop012_h4_alt_outcomes.py`.
 - **Exposure**: ordinal religiosity indicator recoded into dummies for slight/moderate/serious practice plus their interactions with childhood class (`classchild`). The PAP candidate focuses on the **moderate practice × classchild** interaction because Loop 015 showed the steepest class gradient shift there.
 - **Estimator**: logit with covariates `[classchild, classcurrent, classteen, selfage, gendermale, education]`, religiosity main effects, and the interaction terms (`scripts/loop015_h4_rich_interactions.py`). This richer control set absorbs contemporaneous class differences so the interaction isolates whether religious practice differentially buffers anxiety across childhood class strata. Coefficients live in `tables/loop015_h4_interactions_rich.csv` and predicted probabilities in `tables/loop015_h4_predicted_grid.csv`.
-- **Key estimate**: Moderate practice × classchild = −0.130 (SE 0.052, p=0.012) on the log-odds scale, implying that moving from classchild 0→6 lowers the high-anxiety probability by 16.9 p.p. among moderate practitioners versus a +2.0 p.p. increase among non-practitioners (`tables/loop016_h4_confirmatory.csv`). The serious-practice interaction (−0.086, p=0.19) remains a supporting contrast should the confirmatory family include two tests.
+- **Key estimate**: Moderate practice × classchild = −0.130 (SE 0.052, p=0.012, q=0.023) on the log-odds scale, implying that moving from classchild 0→6 lowers the high-anxiety probability by 16.9 p.p. among moderate practitioners versus a +2.0 p.p. increase among non-practitioners (`tables/loop016_h4_confirmatory.csv`). The serious-practice interaction (−0.086, p=0.19, q=0.19) remains a supporting contrast should the confirmatory family include two tests.
 - **Reproducibility command**: `PYTHONHASHSEED=20251016 python scripts/loop015_h4_rich_interactions.py` regenerates the coefficients, prediction grids, and figure `figures/loop015_h4_classinteraction.png`.
 
 ### Literature Rationale
@@ -124,4 +126,4 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 - Proposed confirmatory family name: `religiosity_class_gradients` with up to two contrasts (moderate × classchild [primary], serious × classchild [supporting]). If only the moderate contrast is preregistered, BH at q=0.05 collapses to the raw p-value; if the serious contrast is retained, apply Benjamini–Hochberg across the two Wald p-values and report q-values in `analysis/results.csv`.
 - Loop 017 pre-computed the BH-adjusted q-values (moderate q=0.023, serious q=0.194) and recorded both rows in `analysis/results.csv` so the promotion to confirmatory status is audit-ready once reviewers sign off.
 - Survey design handling remains SRS unless weights/strata metadata emerge; each result row will continue to document the SRS justification.
-- Before freezing, we will (a) document the estimand and family in `analysis/hypotheses.csv`, (b) add the confirmatory shell `tables/loop016_h4_confirmatory.csv` to the manuscript workflow, and (c) expand `reports/paper.md` to cite Bruce et al. (2024) alongside Kasen/Davis when motivating the interaction.
+- Before freezing, we will (a) document the estimand and family in `analysis/hypotheses.csv`, (b) keep `tables/loop016_h4_confirmatory.csv` synchronized with manuscript text, and (c) finish the remaining stress tests (ridged serious-practice interaction + alternative anxiety codings) described in the promotion memo so reviewers can approve the BH family without open methodological questions.
