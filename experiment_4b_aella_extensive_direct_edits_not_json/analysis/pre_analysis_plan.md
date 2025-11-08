@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T19:07Z
+last_updated: 2025-11-08T19:13Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -45,6 +45,8 @@ Loop 025 action items: map survey columns `parentwarm_mom`, `parentwarm_dad`, an
 Loop 026 note: The required Semantic Scholar query (“childhood parental warmth adult aggression regulation”) again returned HTTP 403 (`lit/queries/loop_026/query_001.json`). To keep the mediator plan moving we captured a CrossRef-backed chapter by Talmon (2023; DOI `10.1017/9781009304368.007`) showing how parents’ own maltreatment histories impair emotion regulation and warmth, reinforcing the need to script DERS-based composites plus maternal/paternal warmth interactions before PAP freeze. The waiver memo now covers loop 026 and cites this DOI, but the PAP remains draft until Semantic Scholar access is restored or the waiver is approved.
 
 Loop 027 note: Semantic Scholar is still blocked (`lit/queries/loop_027/query_001.json` captured another HTTP 403 for the “childhood parental warmth adult psychosocial resilience” query). We logged a CrossRef fallback for Lacey et al. (2013; DOI `10.1016/j.psyneuen.2013.05.007`), which shows that childhood parental separation predicts elevated adult C-reactive protein through material and psychosocial stressors. This addition means the PAP must now pre-specify family disruption covariates and inflammation proxies (where available) within the H2 health models, but the plan remains draft until the API credential is restored or the documented waiver is approved.
+
+Loop 028 note: The mandated Semantic Scholar search (`childhood parental support adult inflammation resilience`) again returned HTTP 403 (`lit/queries/loop_028/query_001.json`). To keep the evidence base expanding we logged the CrossRef record for Nelson (1982; DOI `10.1007/bf00583891`), which provides additional Canadian data showing childhood parental death continues to predict adult depression even after socioeconomic controls. H1/H2 robustness sections now flag explicit adversity-loss covariates plus stress-buffer interactions, yet the PAP remains draft until the waiver is approved or the Semantic Scholar credential is restored so canonical S2 sourcing is satisfied.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

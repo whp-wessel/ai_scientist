@@ -498,5 +498,23 @@
       "C2"
     ],
     "notes": "British cohort links childhood parental separation to elevated adult inflammation through material and psychosocial stress pathways."
+  },
+  {
+    "title": "Parental death during childhood and adult depression: Some additional data",
+    "authors": [
+      "Geoffrey Nelson"
+    ],
+    "year": 1982,
+    "venue": "Social Psychiatry",
+    "volume": "17",
+    "issue": "1",
+    "pages": "37-42",
+    "doi": "10.1007/bf00583891",
+    "url": "https://doi.org/10.1007/bf00583891",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "Canadian sample shows early parental death predicts adult depression after SES controls, reinforcing adversity covariates for H1."
   }
 ]
