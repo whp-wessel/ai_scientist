@@ -365,3 +365,12 @@ N1: PASS – Phase remains PAP with N1 explicitly blocked, the PAP header stays 
 
 Notes: Consider bumping the PAP `last_updated` timestamp next loop so the header matches the newest edit (analysis/pre_analysis_plan.md:3).
 
+## Loop 046 — 2025-11-08T22:52:50.088228+00:00
+DECISION: CONTINUE
+R1: PASS – Runner logged the pre-edit reproducibility sweep and seed 20251016 before any edits, with env/git snapshot and QC checklist pointing reviewers to the refreshed artifacts (analysis/decision_log.csv:463-473; artifacts/session_info.txt:1-13; qc/data_checks.md:1-55).
+L1: PASS – The required Semantic Scholar call is archived (403) with command parameters, paired CrossRef fallback, and downstream propagation to the evidence map, bibliographies, and waiver ledger so literature remains auditable (analysis/decision_log.csv:465-468; lit/queries/loop_046/query_001.json:1-17; lit/queries/loop_046/crossref_query_002.json:1; lit/evidence_map.csv:45; lit/bibliography.bib:510-511; lit/semantic_scholar_waiver_loop013.md:1-25).
+P1: PASS – No public tables/figures shipped; QC reiterates the disclosure automation and last audit (violations=0) so small-cell safeguards remain intact (qc/data_checks.md:1-55; qc/disclosure_check_loop_006.md:1-17).
+N1: PASS – Phase stays PAP with status=draft, Loop 046 blocker note, and state file explicitly documenting the blocked Semantic Scholar action plus dated ops/support escalations, keeping the gate transparent (analysis/pre_analysis_plan.md:1-10,85; artifacts/state.json:25-74).
+
+Notes: Unblock the literature gate by executing the 2025-11-09 ops memo and 2025-11-10 support ticket as scheduled.
+
