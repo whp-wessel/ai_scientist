@@ -19,7 +19,8 @@ Methods:
 - Multiplicity controls (FDR) will apply if/when confirmatory families are registered with >1 test.
 
 Results:
-- To be reported in `analysis/results.csv` and public tables under `tables/` with n<10 suppression.
+- EDA summary generated (see `outputs/eda_summary.json`); public counts for key variables provided in `tables/key_vars_value_counts.csv` (cells with n<10 masked as "<10").
+- Inferential results will be added to `analysis/results.csv` in later phases; current work remains exploratory.
 
 References:
 - See `lit/bibliography.bib` and `lit/evidence_map.csv`.

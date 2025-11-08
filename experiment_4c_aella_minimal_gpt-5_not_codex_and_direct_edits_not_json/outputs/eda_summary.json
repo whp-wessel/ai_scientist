@@ -1,0 +1,65 @@
+{
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "rows": 14443,
+  "cols": 718,
+  "design_hints": [
+    "Your weight is closest to: (n0iwzg0)",
+    "during ages *0-12*: you felt as though you were 'at war' with yourself in trying to be a good person (wtolilk)",
+    "growth1",
+    "weight"
+  ],
+  "key_vars": [
+    "classteen",
+    "externalreligion",
+    "gendermale",
+    "monogamy",
+    "religion",
+    "selfage"
+  ],
+  "missing_key_vars": [
+    "hp9qz6f",
+    "ix5iyv3",
+    "npvfh98",
+    "qhyti2r",
+    "wz901dj"
+  ],
+  "key_info": {
+    "classteen": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "externalreligion": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 5,
+      "dtype": "float64"
+    },
+    "gendermale": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 2,
+      "dtype": "float64"
+    },
+    "monogamy": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 4,
+      "dtype": "float64"
+    },
+    "religion": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 4,
+      "dtype": "float64"
+    },
+    "selfage": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 58,
+      "dtype": "float64"
+    }
+  },
+  "note": "Counts below threshold are suppressed in public tables."
+}

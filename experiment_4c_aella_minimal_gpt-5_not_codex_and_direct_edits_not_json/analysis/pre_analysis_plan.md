@@ -12,10 +12,10 @@ data:
 - survey_design: config/survey_design.yaml (no weights/strata/clusters; SRS justified for now)
 
 estimands (exploratory; directions not pre-specified):
-- H1 (Wellbeing): Association between childhood religious strictness (`externalreligion`) and adult unhappiness (`ix5iyv3`). Estimand: slope from linear regression of standardized outcome on standardized predictor; covariates `selfage`, `gendermale`.
-- H2 (Relationships): Association of current religious practice (`religion`) with monogamy preference (`monogamy`) and relationship satisfaction (`hp9qz6f`). Estimand: difference in means (or marginal effect in ordinal/logit), adjusting for `selfage`, `gendermale`.
-- H3 (MentalHealth): Association between teen family SES (`classteen`) and adult depression (`wz901dj`) and stress sensitivity (`qhyti2r`). Estimand: regression slope(s) with covariates.
-- H4 (Demographics): Difference in anxiety (`npvfh98`) by `gendermale`, adjusting for `selfage`.
+- H1 (Wellbeing): Association between childhood religious strictness (`externalreligion`) and adult unhappiness (dataset column label: `I am not happy (ix5iyv3)-neg`). Estimand: slope from linear regression of standardized outcome on standardized predictor; covariates `selfage`, `gendermale`.
+- H2 (Relationships): Association of current religious practice (`religion`) with monogamy preference (`monogamy`) and relationship satisfaction (label: `I am satisfied with my romantic relationships (hp9qz6f)`). Estimand: difference in means (or marginal effect in ordinal/logit), adjusting for `selfage`, `gendermale`.
+- H3 (MentalHealth): Association between teen family SES (`classteen`) and adult depression (label: `I tend to suffer from depression (wz901dj)`) and stress sensitivity (label: `I'm quite sensitive to stress (qhyti2r)-neg`). Estimand: regression slope(s) with covariates.
+- H4 (Demographics): Difference in anxiety (label: `I tend to suffer from anxiety (npvfh98)-neg`) by `gendermale`, adjusting for `selfage`.
 
 design assumptions:
 - No survey weights/strata/clusters detected; analyses will assume SRS with explicit justification noted in `analysis/results.csv`.
@@ -23,7 +23,7 @@ design assumptions:
 
 analysis plan (deterministic commands; to be expanded):
 1) Inspect columns and value ranges
-   - Command: python scripts/analysis/eda.py --input childhoodbalancedpublic_original.csv --summary outputs/eda_summary.json
+   - Command: python scripts/analysis/eda.py --input childhoodbalancedpublic_original.csv --summary outputs/eda_summary.json --public-counts tables/key_vars_value_counts.csv
    - Seed: 20251016
 2) Fit minimal models (exploratory)
    - Command: python scripts/analysis/run_models.py --config configs/models_v0.yaml --results analysis/results.csv
