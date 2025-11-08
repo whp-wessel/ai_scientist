@@ -1,1 +1,1 @@
-loop012: add H1 bootstrap, H4 alt outcomes, and H3 comparison artifacts
+loop013: privacy fix plus H3 PPO addendum and H4 comparison assets

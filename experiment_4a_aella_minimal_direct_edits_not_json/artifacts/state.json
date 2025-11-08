@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-08T14:45:00Z",
-  "loop_counter": 12,
+  "last_updated": "2025-11-08T15:55:00Z",
+  "loop_counter": 13,
   "next_actions": [
-    "Draft the H3 PAP promotion package: formalize the PPO estimand, document the multinomial comparison, and update analysis/pre_analysis_plan.md accordingly.",
-    "Run a targeted Semantic Scholar sweep for H3/H4 to strengthen the literature/evidence map ahead of PAP decisions.",
-    "Design manuscript visuals/tables for the new H4 ordinal vs binary anxiety codings so the sensitivity section can cite them directly."
+    "Run clustered bootstraps for the PPO estimator and finalize the \u2265$100k/\u2265$1MM H3 contrasts before the next PAP freeze.",
+    "Expand the H4 literature (post-2018) and test class/gender interactions on the ordinal and \u22655 binary anxiety outcomes prior to promotion.",
+    "Weave the new H3/H4 tables/figures into the manuscript sensitivity section and prepare confirmatory-ready public tables."
   ],
   "phase": "analysis",
   "phase_ix": 2,
