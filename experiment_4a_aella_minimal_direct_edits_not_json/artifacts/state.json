@@ -1,11 +1,11 @@
 {
   "bootstrap_complete": true,
-  "last_updated": "2025-11-08T16:30:00Z",
-  "loop_counter": 14,
+  "last_updated": "2025-11-08T18:05:00Z",
+  "loop_counter": 15,
   "next_actions": [
-    "Decide whether to redefine the H3 confirmatory contrasts (e.g., shift to \u2265$10M) now that the country-cluster bootstrap shows near-zero slopes at \u2265$100k/\u2265$1MM, and update the PAP addendum accordingly.",
-    "Build manuscript-ready visuals/tables for the H4 religiosity \u00d7 class interaction and test robustness to richer covariates (current class, religiosity dummies) before proposing a confirmatory estimand.",
-    "Stage privacy-safe public tables that bundle the H3 bootstrap summaries and H4 interaction coefficients ahead of the next reviewer sync."
+    "Quantify effective sample size and power for the \u2265$10M H3 contrast (bootstrap precision + analytic SEs) before drafting confirmatory tables.",
+    "Finalize the H4 literature/PAP addendum around the moderate-practice \u00d7 classchild estimand and spell out the multiplicity plan.",
+    "Draft confirmatory-ready public tables for the H3 \u2265$10M contrast and the H4 class interaction so the reviewer can audit formatting next loop."
   ],
   "phase": "analysis",
   "phase_ix": 2,

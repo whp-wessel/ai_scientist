@@ -1,2 +1,3 @@
 ts,action,inputs,rationale_short,code_path,outputs,status
 2025-11-08T14:46:15.751362+00:00,model_select_science,role:science;model:gpt-5-codex;policy:agent,bootstrap: science -> gpt-5-codex (policy=agent),runner.py,,success
+2025-11-08T14:53:13.337298Z,bootstrap_setup,seed:20251016;dataset:childhoodbalancedpublic_original.csv;lit_query:lit/queries/loop_000/query_001.json,"Initialized persistence, drafted hypotheses/PAP, and ran required literature query.",analysis/pre_analysis_plan.md;analysis/hypotheses.csv;scripts/semantic_scholar_cli.py,notebooks/research_notebook.md;lit/bibliography.bib;lit/evidence_map.csv;reports/paper.md,success

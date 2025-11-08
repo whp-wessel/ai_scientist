@@ -157,3 +157,19 @@ Notes:
 Next:
 - Provide `.env` with `S2_API_Key` and broaden literature (e.g., infidelity, religious homogamy, and wellbeing).
 - Move toward PAP-freeze criteria: finalize estimands and covariates, then freeze/tag before any confirmatory testing.
+
+---
+## Loop 011 (literature)
+- Ran focused Semantic Scholar search to broaden coverage across H1–H4 (wellbeing, relationships, mental health):
+  - `python scripts/semantic_scholar_cli.py search --query "childhood religiosity adult wellbeing depression anxiety monogamy" --limit 5 --output lit/queries/loop_011/query_001.json`
+- Extracted DOIs into the evidence map with topic tag "childhood religiosity and adult outcomes":
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_011/query_001.json --output lit/evidence_map.csv --topic "childhood religiosity and adult outcomes"`
+- Updated `analysis/decision_log.csv` and bumped `artifacts/state.json` (loop_counter=11; phase=literature). Wrote a commit message to `artifacts/git_message.txt`.
+
+Notes:
+- Five new DOIs appended (E22–E26), including a 2023 systematic review on religiosity/spirituality and depression/anxiety in youth (BMC Psychiatry; DOI: 10.1186/s12888-023-05091-2) and an older piece linking adolescent religiosity to adult wellbeing (DOI: 10.1108/02683940310484044).
+- No confirmatory analyses; PAP remains `status: draft`. All public artifacts maintain n<10 suppression.
+
+Next:
+- Add `.env` with `S2_API_Key` to sustain broader literature and fetch abstracts/metadata for highly relevant items for citation in `reports/paper.md` and `lit/bibliography.bib`.
+- Start drafting a literature synthesis section (theory + measurement alignment) and refine PAP estimands toward freeze.

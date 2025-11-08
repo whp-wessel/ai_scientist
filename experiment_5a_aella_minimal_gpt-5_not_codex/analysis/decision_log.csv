@@ -1,4 +1,8 @@
 ts,action,inputs,rationale_short,code_path,outputs,status
+2025-11-08T14:54:30Z,semantic_scholar_query,search: childhood religiosity adult wellbeing depression anxiety monogamy,Expand literature for hypotheses H1–H4 via focused search,scripts/semantic_scholar_cli.py,lit/queries/loop_011/query_001.json,success
+2025-11-08T14:54:30Z,extract_dois,lit/queries/loop_011/query_001.json,Append DOIs to evidence map for citation,scripts/lit/extract_dois.py,lit/evidence_map.csv (appended 5),success
+2025-11-08T14:54:30Z,update_notebook,notebooks/research_notebook.md,Record Loop 011 actions and next steps,,Updated loop narrative with literature additions,success
+2025-11-08T14:54:30Z,update_state,artifacts/state.json,Bump loop counter and timestamp for reproducibility,,phase=literature; loop_counter=11; last_updated set,success
 2025-11-08T14:43:40Z,semantic_scholar_query,search: childhood religiosity adult wellbeing depression anxiety,Expand literature coverage for hypotheses,scripts/semantic_scholar_cli.py,lit/queries/loop_009/query_001.json,success
 2025-11-08T14:43:40Z,extract_dois,lit/queries/loop_009/query_001.json,Map DOIs into evidence map for citation,scripts/lit/extract_dois.py,lit/evidence_map.csv (appended 5),success
 2025-11-08T13:50:31Z,inspect_dataset,childhoodbalancedpublic_original.csv,Preview columns to ground hypotheses,,Found 718 columns; key vars: externalreligion; religion; monogamy; classteen; ix5iyv3; wz901dj; npvfh98; hp9qz6f,success

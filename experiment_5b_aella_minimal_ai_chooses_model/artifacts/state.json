@@ -1,5 +1,5 @@
 {
-  "bootstrap_complete": false,
+  "bootstrap_complete": true,
   "loop_counter": 0,
   "model_state": {
     "review": {
@@ -25,5 +25,9 @@
   },
   "phase": "literature",
   "phase_ix": 0,
-  "total_loops": 50
+  "total_loops": 50,
+  "next_actions": [
+    "Profile missingness & distributions for H1-H4 variables; finalize recodes.",
+    "Extend Semantic Scholar searches on parental guidance, childhood depression, and digital access."
+  ]
 }

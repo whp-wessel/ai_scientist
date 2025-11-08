@@ -1,0 +1,216 @@
+{
+  "total": 93,
+  "offset": 0,
+  "next": 5,
+  "data": [
+    {
+      "paperId": "78b89ee4a41412b82b4e23394997a6d25549a98d",
+      "externalIds": {
+        "PubMedCentral": "10563335",
+        "DOI": "10.1186/s12888-023-05091-2",
+        "CorpusId": 263777210,
+        "PubMed": "37817143"
+      },
+      "url": "https://www.semanticscholar.org/paper/78b89ee4a41412b82b4e23394997a6d25549a98d",
+      "title": "Religiosity and spirituality in the prevention and management of depression and anxiety in young people: a systematic review and meta-analysis",
+      "venue": "BMC Psychiatry",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/s12888-023-05091-2",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10563335, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48731274",
+          "name": "S. Aggarwal"
+        },
+        {
+          "authorId": "2256943124",
+          "name": "Judith Wright"
+        },
+        {
+          "authorId": "2256524420",
+          "name": "Amy J Morgan"
+        },
+        {
+          "authorId": "2256524220",
+          "name": "George Patton"
+        },
+        {
+          "authorId": "6747902",
+          "name": "N. Reavley"
+        }
+      ],
+      "abstract": "Historically, religion has had a central role in shaping the psychosocial and moral development of young people. While religiosity and spirituality have been linked to positive mental health outcomes in adults, their role during the developmental context of adolescence, and the mechanisms through which such beliefs might operate, is\u00a0less well understood. Moreover, there is some evidence that negative aspects of religiosity are associated with poor mental health outcomes. Guided by lived experience consultants, we undertook a systematic review and quality appraisal of 45 longitudinal studies and 29 intervention studies identified from three electronic databases (Medline, PsycINFO and Scopus) exploring the role of religiosity and spiritual involvement (formal and informal) in prevention and management of depression and anxiety in young people aged 10 to 24\u00a0years. Most studies were from high-income countries and of low to moderate quality. Meta-analysis of high-quality longitudinal studies (assessed using Joanna Briggs Institute critical appraisal tools, n \u2009=\u200925) showed a trend towards association of negative religious coping (i.e., feeling abandoned by or blaming God) with greater depressive symptoms over time (Pearson\u2019s r \u2009=\u20090.09, 95% confidence interval (CI) -0.009, 0.188) whereas spiritual wellbeing was protective against depression (Pearson\u2019s r \u2009=\u2009-0.153, CI -0.187, -0.118). Personal importance of religion was not associated with depressive symptoms overall (Pearson\u2019s r \u2009=\u2009-0.024, CI-0.053, 0.004).\u00a0Interventions that involved religious and spiritual practices for depression and anxiety in young people were mostly effective, although the study quality was typically low and the heterogeneity in study designs did not allow for a meta-analysis. The lived experience consultants described spirituality and religious involvement as central to their way of life and greatly valued feeling watched over during difficult times. While we require more evidence from low- and middle-income countries, in younger adolescents and for anxiety disorders, the review provides insight into how spirituality and religious involvement could be harnessed to design novel psychological interventions for depression and anxiety in young people. Review Registration The systematic review was funded by Wellcome Trust Mental Health Priority Area 'Active Ingredients' 2021 commission and registered with PROSPERO 2021 (CRD42021281912)."
+    },
+    {
+      "paperId": "2ea2f098467677aabb4f22b44f81d5acc507ae62",
+      "externalIds": {
+        "PubMedCentral": "11928355",
+        "DOI": "10.1007/s10578-023-01569-y",
+        "CorpusId": 260245208,
+        "PubMed": "37501042"
+      },
+      "url": "https://www.semanticscholar.org/paper/2ea2f098467677aabb4f22b44f81d5acc507ae62",
+      "title": "Mental Health Difficulties in Children who Develop Misophonia: An Examination of ADHD, Depression & Anxiety",
+      "venue": "Child Psychiatry and Human Development",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10578-023-01569-y.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11928355, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1390431640",
+          "name": "L. J. Rinaldi"
+        },
+        {
+          "authorId": "1736959",
+          "name": "J. Simner"
+        }
+      ],
+      "abstract": "Misophonia is a sound sensitivity disorder characterized by unusually strong aversions to a specific class of sounds (e.g., eating sounds). Here we demonstrate the mental health profile in children who develop misophonia, examining depression, anxiety and ADHD. Our participants were members of the birth cohort ALSPAC (Avon Longitudinal Study of Parents and Children). We screened them for misophonia as adults, then analysed their retrospective mental health data from ages 7 to 16 years inclusive, reported from both children and parents. Data from their Development and Wellbeing Assessments (7\u201315 years) and their Short Mood and Feelings Questionnaires (9\u201316 years) show that our misophonia group had a greater likelihood of childhood anxiety disorder and depression in childhood (but not ADHD). Our data provide the first evidence from a large general population sample of the types of mental health co-morbidities found in children who develop misophonia."
+    },
+    {
+      "paperId": "55f420d655cb77664085d2171de631a2897d7341",
+      "externalIds": {
+        "PubMedCentral": "10122541",
+        "DOI": "10.1186/s12888-023-04798-6",
+        "CorpusId": 258276867,
+        "PubMed": "37087412"
+      },
+      "url": "https://www.semanticscholar.org/paper/55f420d655cb77664085d2171de631a2897d7341",
+      "title": "Anxiety, depression and post-traumatic stress disorder in patients on hemodialysis in the setting of the pandemic, inflation, and the Beirut blast: a cross-sectional study",
+      "venue": "BMC Psychiatry",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/s12888-023-04798-6",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10122541, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "11238885",
+          "name": "R. Khoury"
+        },
+        {
+          "authorId": "2140698261",
+          "name": "Ziad Ghantous"
+        },
+        {
+          "authorId": "2142496715",
+          "name": "Roy Ibrahim"
+        },
+        {
+          "authorId": "10438317",
+          "name": "E. Ghossoub"
+        },
+        {
+          "authorId": "2155213358",
+          "name": "P. Madaghjian"
+        },
+        {
+          "authorId": "2071487150",
+          "name": "E. Karam"
+        },
+        {
+          "authorId": "2857426",
+          "name": "G. Karam"
+        },
+        {
+          "authorId": "2051710041",
+          "name": "N. Fares"
+        },
+        {
+          "authorId": "143764161",
+          "name": "Sabine Karam"
+        }
+      ],
+      "abstract": "Background In 2020, Lebanon has witnessed its worst economic crisis, exacerbated by the COVID-19 pandemic and a massive explosion of its capital. Amidst these stressors, this study aims at assessing the prevalence of depression, anxiety, suicidality, post-traumatic stress disorder (PTSD) and cognitive impairment in patients undergoing hemodialysis in an academic hospital destroyed by the explosion. Methods This cross-sectional study conducted 6 months after the blast included adults on hemodialysis, with no previous diagnoses of dementia or intellectual disability. It explores prevalence rates of psychiatric disorders, in addition to other medical and psychosocial variables such as frailty, malnutrition, sarcopenia, quality of life and religiosity. Results Forty two patients (mean age 66.1; SD: 11.2 years) undergoing hemodialysis for 6.12 years (SD:7.22 years) were included. Anxiety and depression rates reached 54.8% and 57.1% using cut-offs of 6 and 7 respectively on the Hospital Anxiety and Depression rating Scale. 9.5% of the patients reported being in the hospital at the time of the blast and 7.1% reported being injured. 33.3% screened positively for PTSD using a cut-off of 23 on the PCL-5. 26.2% had passive death wishes and 7.1% had suicide plans, however no one had attempted it. 23.8% were found cognitively impaired as shown by the Mini-Cog (<3). Around two-third of participants were moderately to severely malnourished per the GLIM criteria. One third suffered from frailty, according to the FRAIL screening tool. Around 60% suffered from sarcopenia, based on handgrip strength measures. These findings contrast with \u201cacceptable to good\u201d quality of life subjectively reported by participants on the Short Form 36 (SF-36) Health Survey. While one-third of participants participated in organizational religious activities, 88% reported significant subjective meaning of religion in their heart. Conclusions Rates of depression, anxiety, PTSD, suicidality, and cognitive impairment were found to be alarming in the setting of an urban dialysis unit following a major explosion. Psychiatric disorders were found to be compounded with increased prevalence of malnutrition, frailty, and sarcopenia. These findings urge healthcare providers to implement early diagnostic and intervention strategies to improve both mental and physical wellbeing of this vulnerable population, in similar settings."
+    },
+    {
+      "paperId": "3189ddfc5d2f6739f998efa368323186c9534b62",
+      "externalIds": {
+        "MAG": "2047217612",
+        "DOI": "10.1108/02683940310484044",
+        "CorpusId": 144673750
+      },
+      "url": "https://www.semanticscholar.org/paper/3189ddfc5d2f6739f998efa368323186c9534b62",
+      "title": "Antecedents of adult wellbeing: adolescent religiosity and health",
+      "venue": "",
+      "year": 2003,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1108/02683940310484044?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/02683940310484044, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144641493",
+          "name": "T. Martin"
+        },
+        {
+          "authorId": "48697427",
+          "name": "B. Kirkcaldy"
+        },
+        {
+          "authorId": "6097968",
+          "name": "G. Siefen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "6649e352cbbd2eec726a519fe9e928e9bb428bee",
+      "externalIds": {
+        "PubMedCentral": "11702219",
+        "DOI": "10.1186/s12887-024-05358-x",
+        "CorpusId": 275341608,
+        "PubMed": "39762775"
+      },
+      "url": "https://www.semanticscholar.org/paper/6649e352cbbd2eec726a519fe9e928e9bb428bee",
+      "title": "Parental wellbeing, parenting, and child mental health in families with young children in Arghakhanchi, Nepal",
+      "venue": "BMC Pediatrics",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1186/s12887-024-05358-x",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11702219, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "82855414",
+          "name": "S. Adhikari"
+        },
+        {
+          "authorId": "2389092422",
+          "name": "Hari Rana\u00b3"
+        },
+        {
+          "authorId": "2338875122",
+          "name": "Mahesh Prasad Joshi"
+        },
+        {
+          "authorId": "152434469",
+          "name": "Sabrina Cheng"
+        },
+        {
+          "authorId": "2136795079",
+          "name": "Theresa Castillo"
+        },
+        {
+          "authorId": "2350770290",
+          "name": "Keng-Yen Huang"
+        }
+      ],
+      "abstract": "Children\u2019s social-emotional development and mental well-being are critical to adult mental health. However, little is known about the mechanisms or factors that contribute to poor child mental health in low- and middle-income countries. Given the lack of child mental health research to guide interventions or social-emotional learning programs and policy planning, the present study aimed to address these knowledge gaps by examining the psychopathology mechanism involved in the development of childhood mental health problems. This cross-sectional study recruited parents (N\u2009=\u2009393) whose children attended preschool to primary classes in the Arghakhanchi district of Nepal. Data were gathered through parent interviews. Structural Equation Modeling was used to examine the pathways of the mediational mechanism that examined the influence of parental well-being on parenting and children\u2019s mental health outcomes. Approximately 22% of the parents were at risk for moderate to severe mental health problems (anxiety: 24%, depression:19%). Parental mental health problems were higher in families who reported food insecurity, among female parents, less educated parents, and those who perceived themselves on a lower social ladder. Parental mental health, social support, and perceived class were associated with parent-child conflict. Greater parent-child conflict was associated with decreased social competence and increased anger, anxiety, and depression in children. The results partially support the mediational model that Nepali parents\u2019 well-being (especially in mental health symptoms, social support, and perception of family\u2019s social class domains) is associated with less optimal parenting and, in turn, greater child mental health problems and lower social competence. This study provides new evidence of cross-cultural consistency in child psychopathology and guides the development of evidence-based programs to prevent and promote mental health among Nepali children and families."
+    }
+  ]
+}
