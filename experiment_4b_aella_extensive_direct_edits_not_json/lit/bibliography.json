@@ -166,5 +166,45 @@
       "C3"
     ],
     "notes": "Highlights self-compassion and rejection sensitivity as mechanisms linking emotional abuse to socio-emotional outcomes, motivating mediator controls for adult self-love models."
+  },
+  {
+    "id": "renu2023trauma",
+    "title": "The Impact of Childhood Trauma on Adult Mental Health",
+    "authors": [
+      "Akshara Avinash Sarode Renu"
+    ],
+    "year": 2023,
+    "venue": "International Journal of Science and Research (IJSR)",
+    "volume": "12",
+    "issue": "6",
+    "pages": "2163-2169",
+    "doi": "10.21275/SR23621004642",
+    "url": "https://doi.org/10.21275/SR23621004642",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C3"
+    ],
+    "notes": "Reviews how severity/timing of childhood trauma predicts adult depressive symptoms and impaired self-worth, reinforcing H3 expectations."
+  },
+  {
+    "id": "hulvershorn2009impact",
+    "title": "Impact of Childhood Mental Health Problems",
+    "authors": [
+      "Leslie A. Hulvershorn",
+      "Craig A. Erickson",
+      "R. Andrew Chambers"
+    ],
+    "year": 2009,
+    "venue": "Young Adult Mental Health",
+    "volume": null,
+    "issue": null,
+    "pages": "64-79",
+    "doi": "10.1093/med:psych/9780195332711.003.0004",
+    "url": "https://doi.org/10.1093/med:psych/9780195332711.003.0004",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C3"
+    ],
+    "notes": "Synthesizes how untreated childhood mental health conditions drive poorer young adult outcomes, informing PAP control strategy."
   }
 ]

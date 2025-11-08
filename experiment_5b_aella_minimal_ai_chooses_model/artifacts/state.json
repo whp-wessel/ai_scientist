@@ -17,9 +17,9 @@
       "last_model_context": "loop_005",
       "last_model_policy": "agent",
       "last_model_reason": "Executed confirmatory OLS plus ordered-logit sensitivity, updated PAP metadata, and published public tables.",
-      "queued_model": null,
-      "queued_reason": "",
-      "queued_source": "",
+      "queued_model": "gpt-5-codex",
+      "queued_reason": "Upcoming sensitivity scripts/diagnostics are code-heavy and benefit from Codex\u2019s tooling precision.",
+      "queued_source": "loop_005",
       "rr_index": -1
     }
   },

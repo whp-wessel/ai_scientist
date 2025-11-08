@@ -266,3 +266,21 @@ Notes:
 Next:
 - Add `.env` with `S2_API_Key`; expand relationship/wellbeing searches (separate queries per family) and pull metadata into `lit/bibliography.bib`.
 - Prepare PAP advancement criteria (what remains before freezing) and outline sensitivity checks for ordinal outcomes.
+
+---
+## Loop 018 (literature)
+- Ran Semantic Scholar search via helper (unauthenticated; 1 req/sec enforced):
+  - `python scripts/semantic_scholar_cli.py search --query "religiosity relationship satisfaction meta-analysis" --limit 5 --output lit/queries/loop_018/query_001.json`
+- Result: HTTP 429 recorded to `lit/queries/loop_018/query_001.json` (expected without API key).
+- Attempted DOI extraction:
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_018/query_001.json --output lit/evidence_map.csv --topic "religiosity and relationship satisfaction"`
+  - Appended 0 DOIs (rate-limited response).
+- Updated decision log and state; staying in literature phase pending API key or slower scheduling.
+
+Notes:
+- Literature base for H2 remains adequate but would benefit from meta-analyses on religiosity and relationship satisfaction; acquiring an API key will stabilize queries and broaden coverage.
+- If the key cannot be provided soon, consider time-staggered queries and prioritizing PAP tightening using already captured sources in `lit/evidence_map.csv`.
+
+Next:
+- Obtain `.env` `S2_API_Key` and rerun the above query authenticated; then expand with a focused search on "religious homogamy assortative mating relationship quality".
+- Tighten PAP estimands and pre-specify ordinal model choices for H2; define freeze criteria and plan q-value control if multiple confirmatory tests are registered in the family.

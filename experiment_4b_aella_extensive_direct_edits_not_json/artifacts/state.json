@@ -32,7 +32,7 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API still 403 as of loop 016 (see lit/queries/loop_016/query_001.json); waiver memo now covers loops 008-016 with CrossRef fallback Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), and Qu 2024 (Child Abuse & Neglect) while we await new key approval."
+      "notes": "Semantic Scholar API still 403 as of loop 016 (see lit/queries/loop_016/query_001.json); waiver memo now covers loops 008-016 with CrossRef fallbacks Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024 (Child Abuse & Neglect), Renu 2023 (IJSR), and Hulvershorn et al. 2009 (Oxford chapter) while we await new key approval."
     },
     {
       "id": "N2",

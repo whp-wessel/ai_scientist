@@ -1,0 +1,1 @@
+loop 018: literature query (H2 meta-analysis) saved (429), decision log/notebook/state updated; awaiting S2 API key for fuller evidence extraction

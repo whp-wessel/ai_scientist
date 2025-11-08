@@ -27,6 +27,8 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Turrisi et al. (2010), DOI `10.7312/guil14080-006`** — Captured via CrossRef (loop 015) showing parental monitoring suppresses high-risk drinking among young adults; strengthens the H2 guidance→health justification while the S2 credential remains down.
 - **Larkin et al. (2024 preprint), DOI `10.2139/ssrn.4703219`** — Captured via CrossRef (loop 016) linking morally injurious events and childhood emotional abuse/neglect to self-compassion deficits in civilian adults, bolstering H3’s mediator plan despite the S2 outage.
 - **Qu (2024), DOI `10.1016/j.chiabu.2024.107020`** — Captured via CrossRef (loop 016) detailing how self-compassion and rejection sensitivity mediate emotional-abuse effects on loneliness; reinforces the planned mediator controls for H3 even though the sample is adolescent-focused.
+- **Renu (2023), DOI `10.21275/SR23621004642`** — Captured via CrossRef (loop 016) summarizing how childhood trauma severity predicts adult depressive/self-worth outcomes, providing theory support for H3 while peer-reviewed sources continue to accumulate.
+- **Hulvershorn et al. (2009), DOI `10.1093/med:psych/9780195332711.003.0004`** — Captured via CrossRef (loop 016) synthesizing how childhood mental health issues propagate into young adult outcomes, reinforcing the PAP’s planned control strategy.
 
 ## Request
 1. **Waiver:** Allow continuation through PAP freeze relying on the documented CrossRef DOIs while Semantic Scholar restores API access. The attempt log above, paired with decision-log entries, demonstrates due diligence.
