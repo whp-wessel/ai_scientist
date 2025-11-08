@@ -22,12 +22,12 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 29,
+  "loop_counter": 30,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 029 (see lit/queries/loop_029/query_001.json); waiver memo now covers loops 008-029 with CrossRef fallbacks including Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, Kasen et al. 2014, Giri 2025, Grummitt et al. 2024, McLeod 1991, Wheeler 2023, Taskesen et al. 2025, Van Alen et al. 2020, Tung et al. 2023, Liu & Yin 2025, Talmon 2023, Lacey et al. 2013, Nelson 1982, and the new Gerra et al. 2016 cortisol/nicotine study (10.1016/j.psychres.2016.09.001) while we await key approval. Preparing escalation note for ops summarizing the Liu & Yin + Talmon mediator requirements plus the Lacey inflammation + Gerra cortisol/stress controls once the API team responds.",
+      "notes": "Semantic Scholar API still 403 as of loop 030 (see lit/queries/loop_030/query_001.json); waiver memo now covers loops 008-030 with CrossRef fallbacks including Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, Kasen et al. 2014, Giri 2025, Grummitt et al. 2024, McLeod 1991, Wheeler 2023, Taskesen et al. 2025, Van Alen et al. 2020, Tung et al. 2023, Liu & Yin 2025, Talmon 2023, Lacey et al. 2013, Nelson 1982, Gerra et al. 2016 (10.1016/j.psychres.2016.09.001), and the new Oh & Han 2019 attachment-anxiety study (10.37918/kce.2019.05.116.47) while we await key approval. Preparing escalation note for ops summarizing the Liu & Yin + Talmon mediator requirements plus the Lacey inflammation + Gerra cortisol/stress + Oh & Han attachment controls once the API team responds.",
       "owner": "agent",
       "status": "blocked"
     },

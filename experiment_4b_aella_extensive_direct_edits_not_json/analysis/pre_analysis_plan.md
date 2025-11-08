@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T19:13Z
+last_updated: 2025-11-08T19:38Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -29,6 +29,8 @@ Loop 018 note: Semantic Scholar remains blocked (`lit/queries/loop_018/query_001
 Loop 019 note: Semantic Scholar attempt (`lit/queries/loop_019/query_001.json`, query "childhood faith community adult resilience depression") resulted in the 12th consecutive 403. To keep H1 grounded we logged a CrossRef-backed longitudinal paper (Eliassen, 2013; DOI `10.1007/s13644-013-0110-9`, see `lit/queries/loop_019/crossref_query_004.json`) showing that weekly pre-teen service attendance plus high stress exposure conditions religious coping's association with young-adult depression. PAP remains draft until the waiver is approved or the API credential is restored, and we added this stress-interaction nuance to the planned robustness checks.
 
 Loop 020 note: Semantic Scholar query (`childhood spiritual involvement adult depressive symptoms social support`) produced yet another 403 (`lit/queries/loop_020/query_001.json`). To avoid stalling H1 evidence, we captured CrossRef metadata for Kasen et al. (2014; DOI `10.1002/da.22131`, see `lit/queries/loop_020/crossref_query_001.json`), which reports that higher religiosity predicts improved psychosocial functioning among high-risk young adults. The same query also surfaced Giri et al. (2025; DOI `10.2139/ssrn.5144651`) and Grummitt et al. (2024; DOI `10.1001/jamapsychiatry.2024.0804`), documenting intergenerational ACE transmission and maltreatment-attributable mental-disorder burdens, which inform H3’s parental-history controls and effect-size expectations. PAP status stays draft until the S2 key or waiver clears, and these papers add motivation for modeling stress-by-religiosity interactions plus trauma-informed controls.
+
+Loop 030 note: Semantic Scholar query (`childhood parental nurturance adult immune resilience`) continued to return HTTP 403 (`lit/queries/loop_030/query_001.json`). The CrossRef fallback produced Oh & Han (2019; DOI `10.37918/kce.2019.05.116.47`), which shows that secure childhood parental attachment reduces adult attachment anxiety and parenting stress. This evidence reinforces the need to script DERS-style emotion regulation composites plus maternal/paternal warmth indicators before PAP freeze, ensuring H2 robustness checks explicitly test attachment-anxiety mediators once the S2 credential or waiver clears.
 
 Loop 021 note: Mandatory Semantic Scholar search (`childhood parental guidance adult health resilience`) continued to fail with HTTP 403 (`lit/queries/loop_021/query_001.json`). As fallback we logged CrossRef metadata for McLeod (1991; DOI `10.2307/2136804`) showing that childhood parental loss predicts adult depression, and Wheeler (2023; DOI `10.1136/archdischild-2023-326071`) summarizing evidence that parental influence persists into young adulthood. Both citations now live in `lit/evidence_map.csv` / `lit/bibliography.*` and motivate adding family-loss indicators plus sustained guidance quartiles to the PAP robustness section once the waiver or new API credential clears.
 

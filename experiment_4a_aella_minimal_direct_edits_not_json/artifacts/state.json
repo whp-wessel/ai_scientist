@@ -6,12 +6,12 @@
     "phase": "loop",
     "ts": "2025-11-08T15:49:56.592983+00:00"
   },
-  "last_updated": "2025-11-13T09:40:00Z",
-  "loop_counter": 30,
+  "last_updated": "2025-11-13T19:40:00Z",
+  "loop_counter": 31,
   "next_actions": [
-    "Keep running the DG-4827 ingestion rehearsal daily until the 2025-11-16 AES-256 drop; once the checksum email arrives, paste it into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt`, rerun `scripts/loop021_h3_weighted_checks.py`, then immediately execute `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` captures the weighted SEs.",
+    "Keep running the DG-4827 ingestion rehearsal daily (Loop 031 reran 2025-11-13 09:20 UTC) until the 2025-11-16 AES-256 drop; once the checksum email arrives, paste it into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt`, rerun `scripts/loop021_h3_weighted_checks.py`, then immediately execute `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` captures the weighted SEs.",
     "Freeze the `religiosity_class_gradients` family as soon as Dr. M. Mendez sends the written go by rerunning the Loop 020 stress tests, regenerating `tables/loop016_h4_confirmatory.csv`, flipping the hypotheses/results rows to `confirmatory=TRUE`, rewriting the PAP header with tag `pap_freeze_h4_loop024`, and tagging the commit.",
-    "Continue daily high-wealth procurement monitoring through the 2025-11-15 Q&A deadline—append every Q&A response, Spain Canary Islands annex, and Norway Reykjavik ledger/annex to the appropriate logs (`docs/h3_high_wealth_refresh/qna_loop021.md`, `docs/h3_country_expansion_materials/loi_register.csv`, `docs/h3_high_wealth_refresh/verification_register.csv`) within 48 hours."
+    "Continue daily high-wealth procurement monitoring through the 2025-11-15 Q&A deadline—today’s 19:30 UTC sweep logged no new vendor questions, so keep appending every new Q&A response plus Spain Canary Islands / Norway Reykjavik annex + ledger entries to (`docs/h3_high_wealth_refresh/qna_loop021.md`, `docs/h3_country_expansion_materials/loi_register.csv`, `docs/h3_high_wealth_refresh/verification_register.csv`) within 48 hours."
   ],
   "phase": "analysis",
   "phase_ix": 2,

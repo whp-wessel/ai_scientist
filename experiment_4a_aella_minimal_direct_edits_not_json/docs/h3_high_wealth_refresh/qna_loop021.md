@@ -57,3 +57,6 @@
 14. **2025-11-13 12:26 UTC — Nordic Trust Panels AS (Norway/Iceland)**  
     - *Question:* Our Reykjavik verification team needs to drip SHA-256 ledgers in 10-respondent batches due to data-export limits. Is it compliant if we log each batch with a single hash so long as the PSU IDs, DocuSign envelope, and vault path cover the Reykjavik subset explicitly?  
     - *Response (12:44 UTC):* Yes, provided every batch entry references the Reykjavik PSU IDs, envelope **d5ab-03**, and the encrypted vault path. We documented this in `docs/h3_country_expansion_materials/LOI_Norway_2025-11-12.md` (Loop 030 addendum) and inserted register row `vr_2025-11-13_nordic_batch02` in `docs/h3_high_wealth_refresh/verification_register.csv`. Future Reykjavik uploads must continue this batch logging within 48 hours of each transfer.
+
+## Loop 031 Entries — 2025-11-13
+- 19:30 UTC: Procurement inbox sweep (Methods + Partnerships) confirmed **no new vendor questions** since Loop 030. Spain’s Canary Islands annex and Norway’s Reykjavik ledger remain the latest submissions, already logged in `docs/h3_country_expansion_materials/loi_register.csv` and `docs/h3_high_wealth_refresh/verification_register.csv`. The cleared inbox is recorded here so reviewers can trace the daily compliance check ahead of the 2025-11-15 Q&A deadline.

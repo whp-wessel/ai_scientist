@@ -269,3 +269,14 @@
 2. Hold on the `religiosity_class_gradients` freeze until Dr. Mendez issues the written go, then regenerate `tables/loop016_h4_confirmatory.csv`, flip the registries to `confirmatory=TRUE`, and tag `pap_freeze_h4_loop024`.
 3. Keep appending every high-wealth Q&A response, LOI annex, and verification ledger (especially Spain Canary Islands + Norway Reykjavik PSUs) before the 2025-11-15 Q&A deadline so procurement reviewers can audit the trail.
 ---
+
+## 2025-11-13 – Loop 031
+- **DG-4827 rehearsal:** Executed `PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md`; console output still reads “Replicate ingestion blocked; missing roles: brr, psu, weights.” Refreshed `tables/loop021_h3_weight_delivery_status.csv`, `tables/loop021_h3_weighted_summary.csv`, and documented the rerun in `docs/h3_replicate_weights_manifest/manifest_loop021.md` (Loop 031 section) so auditors see the 2025-11-13 timestamp while we wait for the promised 2025-11-16 AES-256 drop.
+- **Procurement watch:** Swept the high-wealth procurement inboxes with Partnerships—no new vendor Q&A threads, annexes, or verification hashes arrived after the Spain/Norway submissions logged in Loop 030. Added a “no new questions” note to `docs/h3_high_wealth_refresh/qna_loop021.md` so the daily compliance check is observable ahead of the 2025-11-15 Q&A deadline.
+- **Coordination + logging:** Updated `analysis/decision_log.csv`, `artifacts/state.json`, and this notebook with the commands executed (seed locked to 20251016) plus the standing instructions to paste the checksum email into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt` and fire `scripts/loop016_h3_power_check.py --use-weights` immediately after delivery.
+
+### Loop 031 Next Actions
+1. Maintain the daily DG-4827 rehearsal until the AES-256 drop lands; upon receipt, paste the checksum email into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt`, rerun `loop021_h3_weighted_checks.py`, and then execute `PYTHONHASHSEED=20251016 python scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` captures the weighted SEs.
+2. Freeze `religiosity_class_gradients` as soon as Dr. M. Mendez sends the go: rerun the Loop 020 stress tests, regenerate `tables/loop016_h4_confirmatory.csv`, flip the PAP/hypothesis/results rows to `confirmatory=TRUE`, and tag the commit (`pap_freeze_h4_loop024`).
+3. Keep high-wealth procurement monitoring daily through the 2025-11-15 Q&A deadline—log any new vendor questions, Spain Canary Islands annexes, and Norway Reykjavik ledger uploads in both the Q&A log and verification/LOI registers within 48 hours.
+---
