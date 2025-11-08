@@ -233,3 +233,12 @@ N1: PASS – artifacts/state.json:25/70 keep the project in phase pap, artifacts
 
 Notes: Progress still depends on restoring Semantic Scholar access or an approved waiver so the PAP can freeze (analysis/pre_analysis_plan.md:33).
 
+## Loop 031 — 2025-11-08T20:01:10.727029+00:00
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint logged (analysis/decision_log.csv:295-304) and qc/data_checks.md confirms 2025‑11‑08 session_info/checksums refresh plus seed discipline; no stray artifacts observed.
+L1: WARN – Required S2 query + payload archived (lit/queries/loop_031/query_001.json) with CrossRef fallback propagated to lit/evidence_map.csv and lit/bibliography.*, but lit/semantic_scholar_waiver_loop013.md still titled “Loop 030” and its summary cites loops 008‑030 even though loop 031 is now in the attempt log—please update for consistency.
+P1: PASS – No new public tables/figures; qc/data_checks.md reiterates disclosure guard status (min‑cell ≥10) and confirms no releases this loop.
+N1: PASS – artifacts/state.json keeps phase=PAP with N1 marked blocked, and analysis/pre_analysis_plan.md stays `status: draft` with the loop‑031 blocker note, so gating remains justified.
+
+Notes: Once the API waiver/key is resolved, align the waiver memo header/summary with the logged loops before attempting PAP freeze.
+
