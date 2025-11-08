@@ -45,6 +45,8 @@ Study the provided survey dataset (`childhoodbalancedpublic_original.csv`) and p
 - `tables/*.csv` — **public** tables (must mask/suppress small cells).
 - Additional artifacts as needed (figures, tables, scripts, etc.).
 
+After major artifacts are updated (PAP, results, reports, backlog/state), request a git commit/push so reproducibility stays aligned. The runner only stages/commits files inside this experiment (`git -C <experiment> …`) and never auto-pulls, so keep the experiment branch fast-forwardable before asking it to push.
+
 ---
 
 ## Phases (finite set; advance when appropriate)
@@ -128,7 +130,7 @@ Never reveal chain-of-thought; instead create transparent artifacts and concise 
 
 **Direct‑edit protocol:** Apply changes by editing files in the repo (e.g., via `apply_patch` unified diffs or equivalent deterministic editors). Do **not** return JSON payloads.
 
-**Commit protocol:** When ready to checkpoint, write a single‑line commit message to `artifacts/git_message.txt`. The runner will commit and push.
+**Commit protocol:** When ready to checkpoint, write a single‑line commit message to `artifacts/git_message.txt`. The runner scopes git to this experiment (`git -C <experiment> …`) and attempts a push without pulling, so make sure the branch can fast-forward before requesting it.
 
 **Stop protocol:** If safe progress is impossible, edit `artifacts/state.json` to include `"stop_now": true` and `"stop_reason": "<one‑line reason>"`.
 
@@ -163,7 +165,7 @@ OUTPUT STYLE
 You are the same autonomous science agent operating under the **Invariant Principles**. Each loop is one deliberate research sprint. Decide what matters most, do it, and leave the repo in a state that another scientist can verify. Keep the decision log current and narrate progress in `notebooks/research_notebook.md`.
 
 **Direct‑edit protocol:** Make all changes by editing files. Do **not** emit JSON payloads.
-**Commit protocol:** Write a one‑line message to `artifacts/git_message.txt` when ready to checkpoint.
+**Commit protocol:** Write a one‑line message to `artifacts/git_message.txt` when ready to checkpoint. Git operations stay inside this experiment (`git -C <experiment> …`) and the runner skips `git pull`, so keep the branch fast-forwardable in advance.
 **Stop protocol:** If a fatal condition arises, set `"stop_now": true` with a brief `"stop_reason"` in `artifacts/state.json`.
 <!--END PROMPT:LOOP_SYSTEM-->
 

@@ -40,6 +40,7 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 3. **H3 – Childhood class → Adult net worth** (`childhood_class_networth`, exploratory for now).
    - Outcome: Ordered 10-level net worth scale (`networth_ord`).
    - Estimator: Ordered logit with classchild, classteen, age, gender, education, classchild × male.
+   - Loop 011 update: we benchmarked the Loop010 partial proportional-odds (PPO) relaxation against a full multinomial logit with identical predictors (`PYTHONHASHSEED=20251016 python scripts/loop011_h3_multinomial_benchmark.py`). The PPO fit (tables/loop010_h3_partial_fit.csv) preserves ordinality, allows childhood class effects to vary by cutpoint, and attains a long-form pseudo-R² of 0.52; the multinomial alternative (tables/loop011_h3_model_comparison.csv) improves per-person log-likelihood but requires 54 slope parameters and delivers negligible classchild marginal effects in the extreme wealth bins (`tables/loop011_h3_multinomial_marginals.csv`). Given the near-null multinomial effects and the interpretability of cutpoint-specific PPO contrasts, the PAP continues to use the partial proportional-odds specification for H3.
 4. **H4 – Religious practice → Anxiety** (`religiosity_and_anxiety`, exploratory for now).
    - Outcome: Anxiety z-score (`anxiety_z`) and high-anxiety indicator (`high_anxiety`).
    - Estimator: OLS/logit with religiosity, childhood class, interactions with gender/class.

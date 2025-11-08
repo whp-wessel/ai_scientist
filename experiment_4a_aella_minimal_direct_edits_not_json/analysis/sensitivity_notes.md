@@ -16,3 +16,26 @@ The script regenerates the confirmatory models with two perturbations and stores
 ## Takeaways
 - The confirmatory H1 contrasts are resilient to both heteroskedasticity adjustments and richer socioeconomic/religious controls.
 - No evidence suggests that PAP conclusions hinge on homoskedastic SEs or the baseline covariate set; we can cite `tables/loop007_h1_sensitivity.csv` in the manuscript’s robustness section and proceed to broader sensitivity work (e.g., bootstraps or alternative outcome codings) in later loops if needed.
+
+# Loop 011 Planning — Next Robustness Wave
+
+We will open the next sensitivity wave in Loop 012 with two reproducible add-ons. Specifications are scoped below so the code can be implemented without re-litigating design choices.
+
+## A. Block Bootstrap for Confirmatory Interactions
+- **Goal**: Quantify sampling uncertainty for the H1a/H1b interactions beyond asymptotic HC3 SEs.
+- **Design**: 500 bootstrap replicates drawing respondents with replacement (listwise, n=14,4k) using `numpy.random.default_rng(20251016)` and storing full distributions of the interaction coefficients.
+- **Implementation plan**: New script `scripts/loop012_h1_bootstrap.py` will:
+  1. Reuse the aligned-Likert pipeline (`likert_utils.py`) and confirmatory formula.
+  2. For each replicate, fit the full interaction model and record coefficients, BH-adjusted q-values, and simple slopes at ±1 SD guidance.
+  3. Write `tables/loop012_h1_bootstrap_draws.csv` (one row per replicate × interaction) plus `tables/loop012_h1_bootstrap_summary.csv` (percentiles, BCa CIs).
+- **Reporting**: Summaries will be appended to `analysis/results.csv` (new rows with percentile CIs) and cited in `reports/paper.md` under the robustness discussion.
+
+## B. Alternative Anxiety Codings for H4
+- **Goal**: Stress-test the religiosity → anxiety findings by toggling the anxiety outcome definition, pre-empting reviewer concerns before the sensitivity phase.
+- **Design**: Two variants
+  1. **Ordinal collapsing**: Re-bin the anxiety Likert into three ordered buckets (0–2 “rare”, 3–4 “sometimes”, 5–6 “frequent”) and fit ordered logits with the existing covariate set.
+  2. **Binary “clinical threshold”**: Define a high-anxiety flag when respondents choose ≥5 on either anxiety item (npvfh98 or aligned counterpart) and estimate logit/linear probability models.
+- **Implementation plan**: Extend `scripts/loop008_h2h3h4_diagnostics.py` or create `scripts/loop012_h4_alt_outcomes.py` to generate the new variables, refit models, and export `tables/loop012_h4_alt_codings.csv` plus summary plots under `figures/`.
+- **Documentation**: Both tracks will be summarized in this file with pointers to the new tables and decisions about whether H4 is ready for PAP promotion.
+
+These plans keep the sensitivity queue ready so we can transition from “design” to “execution” immediately after the H3 benchmarking review is addressed.

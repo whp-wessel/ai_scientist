@@ -522,20 +522,43 @@ def _list_changed_files() -> list[ChangeRecord]:
     return changes
 
 def git_checkpoint(message: str, push: bool = True):
-    cmds = [
-        ["git","add","-A"],
-        ["git","commit","-m",message],
-    ]
-    if push:
-        cmds += [["git","pull","--rebase","origin",MAIN_BRANCH], ["git","push","origin",MAIN_BRANCH]]
-    for cmd in cmds:
-        rc, out, err = run_cmd(cmd)
-        if "nothing to commit" in out.lower() or "nothing to commit" in err.lower(): continue
-        if rc != 0: return False, f"{' '.join(cmd)} -> {err.strip() or out.strip()}"
-    if push:
-        rc, out, _ = run_cmd(["git","rev-parse","HEAD"])
+    repo_path = str(REPO.resolve())
+
+    def _run_git(args: list[str]) -> tuple[int, str, str]:
+        cmd = ["git", "-C", repo_path] + args
+        return run_cmd(cmd)
+
+    def _record_head() -> None:
+        rc, out, _ = _run_git(["rev-parse", "HEAD"])
         head = out.strip() if rc == 0 else ""
-        (REPO/"artifacts"/"last_commit.txt").write_text(head + "\n", encoding="utf-8")
+        (REPO / "artifacts").mkdir(parents=True, exist_ok=True)
+        (REPO / "artifacts" / "last_commit.txt").write_text(head + "\n", encoding="utf-8")
+
+    base_cmds = [
+        ["add", "-A"],
+        ["commit", "-m", message],
+    ]
+    for args in base_cmds:
+        rc, out, err = _run_git(args)
+        text_lower = f"{out}\n{err}".lower()
+        if "nothing to commit" in text_lower:
+            continue
+        if rc != 0:
+            cmd_display = " ".join(["git", "-C", repo_path, *args])
+            return False, f"{cmd_display} -> {err.strip() or out.strip()}"
+
+    push_failed = False
+    if push:
+        push_cmd = ["push", "origin", MAIN_BRANCH]
+        rc, out, err = _run_git(push_cmd)
+        if rc != 0:
+            push_failed = True
+            reason = err.strip() or out.strip() or "push failed"
+            print(f"[git] warning: {' '.join(['git', '-C', repo_path, *push_cmd])} -> {reason}")
+
+    _record_head()
+    if push_failed:
+        return True, ""
     return True, ""
 
 def _read_git_message() -> Optional[str]:

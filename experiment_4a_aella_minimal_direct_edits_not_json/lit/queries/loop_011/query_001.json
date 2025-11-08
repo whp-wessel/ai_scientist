@@ -1,0 +1,187 @@
+{
+  "data": [
+    {
+      "abstract": "This study applied the time-varying effect model (TVEM) to data from the National Longitudinal Study of Adolescent to Adult Health to explore how self-esteem mediated age-varying associations of closeness to mother and father and their child's sexual behavior through adolescence and emerging adulthood. Paternal closeness is associated with lesser odds of sexual behaviors for both female and male adolescents until age 20, whereas maternal closeness only predicts for female adolescents between ages 13 and 15. Self-esteem mediated the association between mother closeness and multiple partners in male adolescents between ages 14.5 and 16.5. Fathers have an impact on adolescent sexual behavior across adolescence and emerging adulthood, while mothers' roles are more important for female adolescents in early adolescence.",
+      "authors": [
+        {
+          "authorId": "2282279177",
+          "name": "Linghua Jiang"
+        },
+        {
+          "authorId": "2238201157",
+          "name": "Xiafei Wang"
+        },
+        {
+          "authorId": "2281805743",
+          "name": "Shuangyue Cui"
+        },
+        {
+          "authorId": "2238199606",
+          "name": "Sara A. Vasilenko"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 267318083,
+        "DOI": "10.1111/jora.12913",
+        "PubMed": "38287685"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jora.12913?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jora.12913, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBYNCND",
+        "status": "HYBRID",
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jora.12913"
+      },
+      "paperId": "d876d3c5a2267e250d60395d99a0cfc217e6b994",
+      "publicationDate": "2024-01-29",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Time-varying associations between parental closeness, self-esteem, and sexual behavior across adolescence and emerging adulthood.",
+      "url": "https://www.semanticscholar.org/paper/d876d3c5a2267e250d60395d99a0cfc217e6b994",
+      "venue": "Journal of Research on Adolescence",
+      "year": 2024
+    },
+    {
+      "abstract": "Abstract Emerging adults can experience conflicts with their dating partner, leading to intimate partner violence (IPV). In order to understand the vulnerability factors involved in IPV victimization, the current study explored a serial multiple mediation model to determine the links between parental attachment (to the father and mother), self-esteem, and social problem solving (SPS) on the three forms of IPV (psychological, physical and sexual). Based on an online survey, 756 emerging adults (84.8% women, mean age = 23.52) completed self-report questionnaires related to parental attachment, self-esteem, SPS (avoidance and impulsive/carelessness style), and IPV during the past year. The study design was cross-sectional and data were analyzed through partial least structural equation modeling (PLS-SEM) technique. The findings did not support serial multiple mediation model, as the indirect effects of the two specific mediation models were not significant. However, the total indirect effects were significant, indicating a cascade effect chain of events between the variables; insecure parental attachment was related to lower self-esteem, which was associated with poor SPS skills (especially impulsive/carelessness style), which in turn was associated with both psychological and physical violence victimization. The implications of the findings for promoting the life skills of emerging adults, such as problem solving or self-esteem, to enable them to handle their relationship conflicts are discussed. Statement of Relevance IPV in emerging adults shows specific dynamics, different from those of adults. Understanding the interactions of vulnerability factors of these IPV, particularly among victims, is important for developing prevention programs based on evidence. Using a new multiple mediation approach, this study explores the interactions between parental attachment, self-esteem, problem solving and IPV victimization. It highlights the need to act on life skills such as problem solving or self-esteem to prevent IPV victimization.",
+      "authors": [
+        {
+          "authorId": "1726528032",
+          "name": "Chlo\u00e9 Cherrier"
+        },
+        {
+          "authorId": "2136748077",
+          "name": "R. Courtois"
+        },
+        {
+          "authorId": "24811419",
+          "name": "E. Rusch"
+        },
+        {
+          "authorId": "3167194",
+          "name": "C. Potard"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 260680365,
+        "DOI": "10.1080/00223980.2023.2242561",
+        "PubMed": "37548989"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/00223980.2023.2242561?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/00223980.2023.2242561, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "CLOSED",
+        "url": ""
+      },
+      "paperId": "c3402cd102cf01760766a399c74f39624b641012",
+      "publicationDate": "2023-08-07",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "Parental Attachment, Self-Esteem, Social Problem-Solving, Intimate Partner Violence Victimization in Emerging Adulthood",
+      "url": "https://www.semanticscholar.org/paper/c3402cd102cf01760766a399c74f39624b641012",
+      "venue": "The Journal of psychology",
+      "year": 2023
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "2341250639",
+          "name": "Sami Mahajna"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 275743912,
+        "DOI": "10.1007/s12144-025-07341-w"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s12144-025-07341-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s12144-025-07341-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "430ccd952d80cb355b2d24afb5044da837680098",
+      "publicationDate": "2025-01-15",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Future orientation, perceived parenting and self-esteem stability from adolescence to emerging adulthood: a longitudinal study",
+      "url": "https://www.semanticscholar.org/paper/430ccd952d80cb355b2d24afb5044da837680098",
+      "venue": "Current Psychology",
+      "year": 2025
+    },
+    {
+      "abstract": "Instagram users entering emerging adulthood are vulnerable to self-assessment, which can increase self-acceptance, while negative comments can cause feelings of rejection. This condition is related to self-esteem, which is influenced by parenting patterns, among other factors. This study aims to determine the effect of parenting patterns on self-esteem in emerging adulthood among Instagram users in Bekasi.\u00a0 This study uses a quantitative method with a causality design and purposive sampling technique. Since the population size is unknown, the sample size was determined using Cochran's formula, resulting in 204 respondents aged 18\u201325 years. The research instruments included the Rosenberg Self-Esteem Scale (RSES) and the Parental Authority Questionnaire (PAQ) versions for fathers and mothers. The results showed that, partially, authoritarian fathering and authoritative mothering significantly influenced self-esteem, while permissive fathering, permissive mothering, authoritarian mothering, and authoritative fathering did not. Simultaneously, authoritarian fathering and authoritative mothering influenced self-esteem with an effect size of 10.3%.",
+      "authors": [
+        {
+          "authorId": "2387573903",
+          "name": "Nadya Kamila"
+        },
+        {
+          "authorId": "2125550491",
+          "name": "Puspa Rahayu Utami Rahman"
+        },
+        {
+          "authorId": "2230341951",
+          "name": "Dinda Aisha"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 282358079,
+        "DOI": "10.47467/edu.v5i3.9763"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.47467/edu.v5i3.9763?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.47467/edu.v5i3.9763, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "64aeaaa6bd491788c3ccf48668d97b324b0b323c",
+      "publicationDate": "2025-10-23",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Self-Esteem pada Emerging Adulthood Pengguna Instagram: Ditinjau Dari Pola Asuh Orang Tua",
+      "url": "https://www.semanticscholar.org/paper/64aeaaa6bd491788c3ccf48668d97b324b0b323c",
+      "venue": "EduInovasi Journal of Basic Educational Studies",
+      "year": 2025
+    },
+    {
+      "abstract": "This study examined social and individual predictors of internalizing symptoms in college students, and in particular explored the indirect effects of mother and father support through self-esteem. A total of 123 college students completed self-reported online surveys measuring mother and father support, self-esteem, and internalizing symptoms (depression and anxiety, withdrawal, and somatic symptoms). Students reported greater support from mothers compared to fathers, t (114) = 5.84, p < .001. On average, higher maternal (but not paternal) support (\u03b2 = -0.25, p = .006) and self-esteem (\u03b2 = -0.61, p < .001) were associated with lower internalizing symptoms. For women, self-esteem mediated the relationship between maternal support and internalizing symptoms, indicating that greater maternal support was associated with greater self-esteem, which in turn was associated with lower internalizing symptoms (F = 41.98, p < .001). However, this pathway was not significant for men. These results highlight the importance of exploring the influence of different sources of support separately, and suggest that improving self-esteem for both men and women, and improving maternal support for women may decrease risk for internalizing symptoms in emerging adulthood. https://doi.org/10.24839/2325-7342.JN22.2.131",
+      "authors": [
+        {
+          "authorId": "116145848",
+          "name": "L. Moore"
+        },
+        {
+          "authorId": "5557096",
+          "name": "Madelynn D. Shell"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 59503142,
+        "DOI": "10.24839/2325-7342.JN22.2.131",
+        "MAG": "2614763135"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.24839/2325-7342.JN22.2.131?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.24839/2325-7342.JN22.2.131, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": "GOLD",
+        "url": "https://www.psichi.org/resource/resmgr/journal_2017/SummerJN17.pdf"
+      },
+      "paperId": "21e2926605d783111d903930d430e4a473a76860",
+      "publicationDate": null,
+      "publicationTypes": [
+        "Review"
+      ],
+      "title": "The Effects of Parental Support and Self-Esteem on Internalizing Symptoms in Emerging Adulthood",
+      "url": "https://www.semanticscholar.org/paper/21e2926605d783111d903930d430e4a473a76860",
+      "venue": "",
+      "year": 2017
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 271
+}
