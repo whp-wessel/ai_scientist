@@ -22,6 +22,7 @@ Childhood adversity remains a consistent predictor of adult depression and anxie
 - **Guidance buffering (H1a)**: Table `tables/loop006_h1_confirmatory.csv` reports β = 0.0678 (SE = 0.0083, 95% CI [0.052, 0.084], p = 2.3e-16, q = 4.6e-16). The positive interaction indicates that each SD increase in childhood guidance attenuates the abuse→depression slope by 0.068 SD, aligning with buffering evidence from Zhao et al. (2022). Simple slopes (`tables/loop005_h1_simple_slopes.csv`) confirm that respondents at -1 SD guidance experience a -0.13 SD abuse slope versus ≈0 slope at +1 SD guidance.
 - **Male vulnerability (H1b)**: β = -0.103 (SE = 0.0157, 95% CI [-0.133, -0.072], p = 5.8e-11, q = 5.8e-11). Abuse predicts worse depression among men even after accounting for teen abuse and controls, paralleling sex-differentiated ACE effects documented by Assari et al. (2025). Simple slopes show a -0.13 SD effect for men versus -0.02 SD for women.
 - Both contrasts survive BH at q=0.05 and retain the preregistered sign expectations. These estimates feed `analysis/results.csv` under `result_id` `loop006_h1_*_confirm` with `confirmatory=TRUE` and document the commands/seed used for reproducibility.
+- **Visualization**: Figure `figures/loop009_h1_confirmatory_interactions.png` overlays the preregistered models’ predicted depression_z trajectories across the abuse distribution. The left panel shows guidance buffering (lines at ±1 SD and the mean), and the right panel shows the male-vulnerability slope split by gender. Underlying point estimates plus 95% CIs live in `tables/loop009_h1_interaction_grid.csv` with each grid cell referencing ≥14k respondents, satisfying the n≥10 disclosure rule.
 - **Robustness checks**: Loop 007 reran the confirmatory models with HC3 SEs and, separately, an expanded covariate set that adds childhood/current class, religious intensity, and teen guidance (`tables/loop007_h1_sensitivity.csv`; narrative in `analysis/sensitivity_notes.md`). Interaction signs/magnitudes are stable (guidance buffering ≈0.064–0.068; male vulnerability ≈-0.095 to -0.103) and remain significant after BH correction, reinforcing the confirmatory conclusions.
 
 ## 4. Exploratory Context (H2–H4)
@@ -30,9 +31,9 @@ Childhood adversity remains a consistent predictor of adult depression and anxie
 - Weighted design remains unavailable, so all exploratory disclosures reiterate the SRS justification and restrict public tables to n≥10 cells.
 
 ## 5. Next Steps
-1. Extend literature review + diagnostics for H2–H4 to determine which estimands, if any, qualify for the next PAP freeze (per `analysis/pre_analysis_plan.md`).
-2. Produce sensitivity checks for the H1 confirmatory family (e.g., alternate covariate sets, heteroskedasticity-robust HC3) and summarize in `analysis/sensitivity_notes.md` before entering the sensitivity phase.
-3. Translate confirmatory coefficients into manuscript-ready prose and visualizations (interaction plots) while ensuring tables under `tables/` continue to mask small cells.
+1. Prototype partial proportional-odds or multinomial specifications for H3 to address the proportional-odds violations logged in Loop 008 before any PAP promotion.
+2. Scope the next H1 robustness wave (bootstrap CIs and/or alternative anxiety codings) and document the plan in `analysis/sensitivity_notes.md` ahead of the sensitivity phase.
+3. Extend the literature review for H2–H3 so any prospective PAP expansion has peer-reviewed support plus updated measurement diagnostics.
 
 ## References
 - Assari, S., Najand, B., & Donovan, A. (2025). *Sex/Gender Differences in the Effects of Childhood Abuse on Future Risk of Depression: Longitudinal Evidence from the Global Flourishing Study.* *Children, 12*(6), 754. https://doi.org/10.3390/children12060754

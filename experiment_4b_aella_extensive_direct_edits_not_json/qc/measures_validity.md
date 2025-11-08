@@ -1,9 +1,12 @@
-# Measurement Validity Dossier (Draft)
+# Measurement Validity Dossier (Loop 003)
+
+_Command_: `python analysis/code/measure_validity_checks.py --config config/agent_config.yaml --output-md qc/measures_validity.md --output-json artifacts/measurement_validity_loop003.json`
+
 measure_id | item_wording | coding | reliability_alpha | dif_check | notes
 --- | --- | --- | --- | --- | ---
-wz901dj | "I tend to suffer from depression (wz901dj)" 5-point agreement scale | Raw 1-5 Likert (higher = more depression); no reverse coding | NA (single item) | Planned: ordinal logit DIF by gender (`biomale`, `gendermale`, `cis`) prior to PAP freeze | Outcome for H1; match confirmed in `docs/codebook.json` and validation script.
-externalreligion | "In childhood, how important was adherence to the religion?" | Ordered categories: not_important < somewhat < important < very_important | NA (single item) | Planned: score distribution compared across age cohorts + gender for DIF | Predictor for H1; needs harmonized recode script to enforce ordering.
-pqo6jmj | "During ages 0-12, your parents gave useful guidance (pqo6jmj)" | Likert 1-5 (higher = more guidance) | NA (single item) | Planned: ordinal DIF by gender + teen class before confirmatory run | Predictor for H2; will also be binned into quartiles for estimand.
-okq5xh8 | "In general, you'd say your health is (okq5xh8)" | Ordered labels: poor, fair, good, very_good, excellent | NA (single item) | Planned: Andersen-Gill style cumulative logit DIF by age group | Outcome for H2; coding verified against codebook.
-mds78zu | "During ages 0-12, your parents verbally or emotionally abused you" | Binary: yes=1, no=0 (per codebook coding map) | NA (single item) | Planned: logistic DIF by gender and sibling count to check reporting bias | Predictor for H3; flagged as sensitive for disclosure review.
-2l8994l | "I love myself (2l8994l)" | Raw 1-5 Likert (higher = more self-love) | NA (single item) | Planned: ordinal DIF by gender + age; will compare to `I love myself` duplicate column | Outcome for H3; ensure duplicates consolidated in cleaning script.
+wz901dj | Depression tendency (self-assessed) | Likert -3..3 (higher = more depression) | single_item | Δ(biomale=1 minus 0) = 0.916 (p = 0.000, n = 14438) | Outcome for H1.
+externalreligion | Perceived childhood religious importance | Ordinal 0-4 (higher = stricter adherence) | single_item | Δ(biomale=1 minus 0) = -0.142 (p = 0.000, n = 14443) | Predictor for H1; coded from numeric/text scale.
+pqo6jmj | Parents gave useful guidance (0-12) | Likert -3..3 (higher = more guidance) | single_item | Δ(biomale=1 minus 0) = 0.589 (p = 0.000, n = 14431) | Predictor for H2.
+okq5xh8 | Self-rated general health | Ordinal 0-4 (poor→excellent) | single_item | Δ(biomale=1 minus 0) = 0.343 (p = 0.000, n = 14437) | Outcome for H2.
+mds78zu | Childhood emotional abuse (0-12) | Binary indicator (1 = any reported abuse > neutral) | single_item | Δ(biomale=1 minus 0) = -0.239 (p = 0.000, n = 13509) | Predictor for H3 (derived from Likert).
+2l8994l | Self-love statement | Likert -3..3 (higher = more self-love) | single_item | Δ(biomale=1 minus 0) = 0.203 (p = 0.000, n = 14436) | Outcome for H3.

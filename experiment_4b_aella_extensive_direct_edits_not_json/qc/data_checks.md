@@ -19,8 +19,16 @@ python analysis/code/describe_dataset.py \
 _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_loop002.md` for table output.
 
 ## Missingness Snapshot
-- Mean missingness across variables: 44.6% (needs variable-level table).
-- Action: build `analysis/code/missingness_profile.py` to export `tables/missingness_summary_loop000.csv`.
+- Mean missingness across variables: 44.6% (variable-level profile generated Loop 003).
+- Command:
+  ```bash
+  python analysis/code/missingness_profile.py \
+    --input data/raw/childhoodbalancedpublic_original.csv \
+    --output-csv outputs/missingness_loop003.csv \
+    --output-md qc/missingness_loop003.md \
+    --seed 20251016
+  ```
+- Outputs: `outputs/missingness_loop003.csv` (full table) and `qc/missingness_loop003.md` (Exploratory top-k summary).
 
 ## Survey Design Metadata
 - No explicit weight/strata variables found. Confirm with data provider; if supplied later, update `docs/survey_design.yaml` and re-run all EDA.

@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 2,
+  "loop_counter": 3,
   "total_loops": 50,
   "phase": "pap",
   "phase_ix": 1,
@@ -16,8 +16,8 @@
       "id": "B2",
       "description": "Implement analysis/code/run_models.py with survey-aware estimators",
       "priority": 1,
-      "status": "open",
-      "notes": "PAP run_models stub pending implementation."
+      "status": "done",
+      "notes": "Loop 003 delivered run_models.py with H1-H3 specs and exploratory JSON outputs."
     },
     {
       "id": "B3",
@@ -32,14 +32,14 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API still 403 as of loop 002 despite CLI compliance; logging failures and awaiting new key."
+      "notes": "Semantic Scholar API still 403 as of loop 003 (see lit/queries/loop_003/query_001.json); logging failures and awaiting new key."
     },
     {
       "id": "N2",
       "description": "Draft measurement validity table for H1-H3 variables",
       "owner": "agent",
-      "status": "in_progress",
-      "notes": "Measurement validity table populated for H1\u2013H3; DIF tests pending before marking complete."
+      "status": "done",
+      "notes": "Loop 003 automated DIF checks via measure_validity_checks.py and refreshed qc/measures_validity.md."
     }
   ],
   "stop_now": false,

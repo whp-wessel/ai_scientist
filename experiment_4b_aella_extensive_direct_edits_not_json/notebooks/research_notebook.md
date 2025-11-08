@@ -49,6 +49,12 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Extended `docs/codebook.json` with `source_column` mappings (e.g., `"I tend to suffer from depression (wz901dj)"`) so aliases used in hypotheses align with raw headers; validation report now shows all PAP variables present.
 - Filled `qc/measures_validity.md` for H1–H3 outcomes/predictors, including planned DIF checks to be run before PAP freeze.
 
+## Loop 3 Updates (2025-11-08)
+- Implemented `analysis/code/run_models.py` covering H1–H3 with ordered-logit / OLS estimators (SRS assumption). Exploratory outputs live under `outputs/run_models_loop003_*.json` showing, for example, that moving from “not important” to “very important” religion is associated with a −0.12 shift in depression score (95% CI −0.19, −0.05).
+- Added `analysis/code/missingness_profile.py` and generated `qc/missingness_loop003.md` for the exploratory missingness digest plus `outputs/missingness_loop003.csv` for full column coverage.
+- Automated the measurement dossier via `analysis/code/measure_validity_checks.py`, updating `qc/measures_validity.md` with DIF estimates (all reference Δ male–non-male; p<0.001). Artifact JSON stored at `artifacts/measurement_validity_loop003.json`.
+- Semantic Scholar query (`loop_003/query_001`) still returns 403 despite CLI compliance; logged under `lit/queries/loop_003/query_001.json` and kept next action N1 flagged as blocked.
+- Noted that the `mentalillness` column provided by the sponsor is entirely missing, so the H2 control set currently excludes it pending updated metadata.
 ## Next Steps
 1. Implement reproducible data cleaning scripts (`analysis/code/`) to construct analysis-ready variables.
 2. Enrich codebook/code design docs with automated generation.
