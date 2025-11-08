@@ -1,0 +1,94 @@
+{
+  "dataset": "childhoodbalancedpublic_original.csv",
+  "rows": 14443,
+  "cols": 718,
+  "design_hints": [
+    "Your weight is closest to: (n0iwzg0)",
+    "during ages *0-12*: you felt as though you were 'at war' with yourself in trying to be a good person (wtolilk)",
+    "growth1",
+    "weight"
+  ],
+  "key_vars": [
+    "I am not happy (ix5iyv3)-neg",
+    "I am satisfied with my romantic relationships (hp9qz6f)",
+    "I tend to suffer from anxiety (npvfh98)-neg",
+    "I tend to suffer from depression (wz901dj)",
+    "I'm quite sensitive to stress (qhyti2r)-neg",
+    "classteen",
+    "externalreligion",
+    "gendermale",
+    "monogamy",
+    "religion",
+    "selfage"
+  ],
+  "missing_key_vars": [],
+  "key_info": {
+    "I am not happy (ix5iyv3)-neg": {
+      "non_missing": 14438,
+      "missing": 5,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "I am satisfied with my romantic relationships (hp9qz6f)": {
+      "non_missing": 14437,
+      "missing": 6,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "I tend to suffer from anxiety (npvfh98)-neg": {
+      "non_missing": 14437,
+      "missing": 6,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "I tend to suffer from depression (wz901dj)": {
+      "non_missing": 14438,
+      "missing": 5,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "I'm quite sensitive to stress (qhyti2r)-neg": {
+      "non_missing": 14437,
+      "missing": 6,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "classteen": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 7,
+      "dtype": "float64"
+    },
+    "externalreligion": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 5,
+      "dtype": "float64"
+    },
+    "gendermale": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 2,
+      "dtype": "float64"
+    },
+    "monogamy": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 4,
+      "dtype": "float64"
+    },
+    "religion": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 4,
+      "dtype": "float64"
+    },
+    "selfage": {
+      "non_missing": 14443,
+      "missing": 0,
+      "unique": 58,
+      "dtype": "float64"
+    }
+  },
+  "note": "Counts below threshold are suppressed in public tables."
+}

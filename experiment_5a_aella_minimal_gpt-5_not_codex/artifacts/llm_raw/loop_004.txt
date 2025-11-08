@@ -1,0 +1,33 @@
+**Loop Summary**
+- Stayed in literature phase; advanced reproducibility and public outputs.
+- Attempted Semantic Scholar search (captured 429 without API key).
+- Added a privacy-safe public cross-tab table (religion x monogamy).
+- Updated logs, notebook, state, and requested a commit.
+
+**Artifacts Updated**
+- Decision log appended: analysis/decision_log.csv:18
+- Notebook updated with Loop 004: notebooks/research_notebook.md:61
+- Paper mentions new public table: reports/paper.md:25
+- New public table: tables/religion_by_monogamy.csv:1
+- S2 query artifact (rate-limited): lit/queries/loop_004/query_001.json:1
+- State updated: artifacts/state.json:3
+- Commit request: artifacts/git_message.txt:1
+- New helper for safe tables: scripts/analysis/make_tables.py:1
+
+**Commands Run**
+- S2 search (unauthenticated; 1 rps enforced):
+  - `python scripts/semantic_scholar_cli.py search --query "childhood religion religiosity adult wellbeing mental health" --limit 5 --output lit/queries/loop_004/query_001.json`
+- Public cross-tab (n<10 suppression):
+  - `python scripts/analysis/make_tables.py --input childhoodbalancedpublic_original.csv --var1 religion --var2 monogamy --output tables/religion_by_monogamy.csv --threshold 10`
+
+**Rigor & Invariants**
+- Reproducibility: Commands and seed recorded in decision log; state advanced to loop 4.
+- Privacy: All public cells with n<10 are masked (“<10”).
+- Design: No weights/strata/clusters; SRS justification maintained in analysis/results.csv and PAP.
+- Multiplicity: No confirmatory families yet; q-values not applicable.
+
+**Next Steps**
+- Add `.env` with `S2_API_Key` so the S2 helper can return results; on success, extract DOIs (from `externalIds.DOI`) into `lit/evidence_map.csv`.
+- Consider ordinal/robust models and sensitivity notes draft.
+
+If you want, I can proceed to implement a tiny extractor to pull DOIs from successful S2 JSON into `lit/evidence_map.csv` once the key is added.

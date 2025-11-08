@@ -59,3 +59,17 @@ These plans keep the sensitivity queue ready so we can transition from “design
 - **Command**: `PYTHONHASHSEED=20251016 python scripts/loop013_h4_visuals.py`
 - **Artifacts**: Summary table `tables/loop013_h4_outcome_effects.csv` (religiosity coefficients + CIs across all anxiety codings) and figure `figures/loop013_h4_outcome_effects.png`. Both draw exclusively on previously published coefficients, so no new privacy risks arise.
 - **Takeaways**: Religiosity’s effect is stable across all codings: −0.062 SD on the continuous anxiety scale, −0.11 log-odds for the legacy ≥2 flag, −0.11 log-odds for the new ≥5 flag, −0.11 log-odds for the 3-bin ordinal outcome, and −2.5 p.p. in the linear-probability model. The visual highlights overlapping CIs, giving the manuscript a ready-made sensitivity reference once H4 advances toward PAP review.
+
+# Loop 014 Results — H3 Cluster Bootstrap
+
+- **Command**: `PYTHONHASHSEED=20251016 python scripts/loop014_h3_cluster_bootstrap.py --n-reps 300`.
+- **Design**: Refit the PPO stacked logit 300 times after sampling respondents by country cluster (24 strata, minimum cluster size = 78) so that between-country heterogeneity feeds directly into the ≥$100k and ≥$1MM contrasts that are candidates for the next PAP freeze.
+- **Artifacts**: Replicate-level draws live in `tables/loop014_h3_bootstrap_draws.csv`; percentile summaries reside in `tables/loop014_h3_bootstrap_summary.csv`.
+- **Findings**: The ≥$100k slope centers at 0.006 (SD 0.062) with a 95% percentile interval [-0.149, 0.123]; the ≥$1MM slope centers at 0.009 (SD 0.090) with interval [-0.129, 0.218]. Two-sided tail probabilities (0.74 and 0.96) indicate that once countries are re-sampled, the PPO estimator yields contrasts statistically indistinguishable from zero at these thresholds. This makes clear that the confirmatory plan either needs a different cutpoint or richer structure (e.g., class interactions or wider bins) before PAP promotion.
+
+# Loop 014 Results — H4 Class/Gender Interactions
+
+- **Command**: `PYTHONHASHSEED=20251016 python scripts/loop014_h4_interactions.py`.
+- **Design**: Extend the alternative anxiety codings by estimating religiosity × childhood-class and religiosity × gender interactions using (a) the 3-bin ordered-logit outcome and (b) the ≥5 binary high-anxiety flag. Controls match the PAP draft (`classchild`, `classteen`, `selfage`, `gendermale`, `education`).
+- **Artifacts**: Coefficients plus CIs in `tables/loop014_h4_interactions.csv`.
+- **Findings**: The religiosity × childhood-class interaction is negative (ordered logit −0.035, p=0.019; binary logit −0.042, p=0.012), implying that religiosity’s anxiety buffer strengthens among respondents who grew up in higher classes. The religiosity × gender term stays near zero (p>0.63) in both specifications, suggesting no gender differentiation beyond what is already captured in the main effect. Combined with the new Davis et al. (2021) longitudinal evidence (religious coping buffered anxiety during COVID-19), these diagnostics lay the groundwork for H4 promotion: the estimand would focus on class-conditional slopes rather than gender.

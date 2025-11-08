@@ -1,0 +1,12 @@
+# TODO: Survey design placeholder
+# No survey design metadata (weights/strata/clusters) found.
+# Defaulting to SRS (simple random sample) assumptions for exploratory work.
+# If design features are later provided, set design_used=true in results and update this file.
+
+design:
+  weights: null
+  strata: null
+  clusters: null
+assumption_note: |
+  No weights/strata/clusters were detected in repo (see runner _detect_survey_design_features).
+  Until provided, we justify SRS as a working assumption and will include sensitivity checks.

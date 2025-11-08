@@ -1,0 +1,23 @@
+Loop 001 focused on literature groundwork and logging. I attempted the Semantic Scholar kickoff search via the provided helper; the unauthenticated request was rate-limited (HTTP 429). I saved a placeholder response and updated logs and state accordingly.
+
+What I changed
+- Semantic Scholar query placeholder
+  - Added `lit/queries/loop_000/query_002.json` capturing the HTTP 429 error and attempted query details.
+- Decision log
+  - Appended a row referencing the saved query JSON and the 429 outcome: `analysis/decision_log.csv:7`.
+- Notebook
+  - Documented Loop 001 progress and next steps: `notebooks/research_notebook.md:13`.
+- State + commit message
+  - Updated `artifacts/state.json:1` (loop_counter=1; phase=literature; last_updated set).
+  - Wrote checkpoint message: `artifacts/git_message.txt:1`.
+
+Notes
+- Evidence stays at `lit/evidence_map.csv` unchanged pending successful S2 query; once `.env` contains `S2_API_Key`, I’ll rerun and extract DOIs from the saved JSON into the evidence map.
+- No public tables were created; privacy constraints (n<10 suppression) remain satisfied.
+- PAP remains draft; all hypotheses are exploratory (confirmatory=false), so no FDR/q-values yet.
+
+Next suggested actions
+- Add `.env` with `S2_API_Key`, rerun `scripts/semantic_scholar_cli.py search ...` (1 req/sec enforced), and extract DOIs to `lit/evidence_map.csv`.
+- Begin minimal EDA profiling (types, ranges) and draft `tables/` outputs with small-cell suppression to support PAP refinement.
+
+Ready to commit: see `artifacts/git_message.txt`.

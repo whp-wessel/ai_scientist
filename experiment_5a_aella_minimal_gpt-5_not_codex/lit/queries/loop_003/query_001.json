@@ -1,0 +1,9 @@
+{
+  "error": true,
+  "reason": "HTTP Error 400: Bad Request",
+  "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=childhood+religion+religiosity+adult+wellbeing+mental+health&limit=5&fields=title%2Cauthors%2Cyear%2Cvenue%2Cdoi%2Curl%2Cabstract",
+  "http_status": 400,
+  "body": {
+    "error": "Unrecognized or unsupported fields: [doi]"
+  }
+}

@@ -1,8 +1,0 @@
-DECISION: CONTINUE
-R1 Reproducibility: PASS — Seeds and commands documented (analysis/pre_analysis_plan.md; seed 20251016) with environment snapshot (artifacts/session_info.txt) and reproducibility report (artifacts/repro_report.md). Decision log includes loop_004 entries (analysis/decision_log.csv:18,20). Scripts under scripts/analysis/ reproduce artifacts.
-R2 Statistical Rigor: PASS — SRS explicitly justified (config/survey_design.yaml) and echoed per-row in analysis/results.csv; effect sizes, SE, CIs, and p-values recorded. No confirmatory families yet; FDR not applicable.
-R3 Literature/Evidence: PASS — Peer-reviewed source captured (lit/evidence_map.csv with DOI 10.1016/S0749-3797(98)00017-8; lit/bibliography.bib). Semantic Scholar query saved with error payload (lit/queries/loop_004/query_001.json) per protocol.
-R4 Privacy: PASS — Public outputs apply n<10 suppression (scripts/analysis/make_tables.py). tables/key_vars_value_counts.csv masks sparse cells (“<10”); tables/religion_by_monogamy.csv has no n<10 cells.
-R5 Completeness: PASS — PAP present and labeled draft (analysis/pre_analysis_plan.md); results captured (analysis/results.csv); manuscript maintained (reports/paper.md). No confirmatory results, so freeze/tag not yet required.
-
-Notes: Consider adding artifacts/git_message.txt for the next checkpoint. Literature expansion awaits `.env` S2_API_Key.
