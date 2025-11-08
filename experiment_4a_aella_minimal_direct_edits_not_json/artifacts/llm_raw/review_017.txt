@@ -1,0 +1,6 @@
+DECISION: CONTINUE  
+R1 PASS – `analysis/decision_log.csv:40` and `analysis/decision_log.csv:42` record the Loop 016–017 commands, inputs, and outputs, while `analysis/pre_analysis_plan.md:6` reiterates the frozen seed/command policy for reproducibility.  
+R2 PASS – `analysis/results.csv:20` documents the PAP-frozen H1 contrasts with SE/CI/p/q and SRS justification, and `analysis/results.csv:46` already carries effect-size and BH-adjusted q-values for the prospective religiosity family, covering multiplicity and design fields.  
+R3 PASS – `lit/evidence_map.csv:20` (and adjacent DOI entries) ties Semantic Scholar outputs to hypotheses, and `reports/paper.md:9` cites those sources in the manuscript narrative.  
+R4 PASS – `docs/loop016_reviewer_packet.md:9` confirms the smallest published cell is 820 respondents, so the n≥10 suppression rule is respected.  
+R5 PASS – `analysis/pre_analysis_plan.md:1` shows the PAP frozen at commit 90f349d… with scope limited to H1, and `reports/paper.md:1` demonstrates the manuscript is synchronized with the current phase.

@@ -125,3 +125,11 @@ R3 PASS – Manuscript claims cite peer-reviewed sources with DOIs, and the evid
 R4 PASS – Public tables/figures expose only aggregate coefficients, bootstrap summaries, or prediction grids with n_obs ≥14k, so no cells fall below the n<10 threshold (tables/loop015_public_h3_bootstrap.csv:1-4; tables/loop015_public_h4_interactions.csv:1-10).  
 R5 PASS – Required artifacts remain current: PAP header frozen with commands, hypotheses/results registries updated, manuscript expanded with exploratory findings, and state.json lists next actions (analysis/pre_analysis_plan.md:1-40; analysis/results.csv:1-44; reports/paper.md:23-38; artifacts/state.json:1-11).
 
+## Loop 017 — 2025-11-08T15:35:23.904323+00:00
+DECISION: CONTINUE  
+R1 PASS – `analysis/decision_log.csv:40` and `analysis/decision_log.csv:42` record the Loop 016–017 commands, inputs, and outputs, while `analysis/pre_analysis_plan.md:6` reiterates the frozen seed/command policy for reproducibility.  
+R2 PASS – `analysis/results.csv:20` documents the PAP-frozen H1 contrasts with SE/CI/p/q and SRS justification, and `analysis/results.csv:46` already carries effect-size and BH-adjusted q-values for the prospective religiosity family, covering multiplicity and design fields.  
+R3 PASS – `lit/evidence_map.csv:20` (and adjacent DOI entries) ties Semantic Scholar outputs to hypotheses, and `reports/paper.md:9` cites those sources in the manuscript narrative.  
+R4 PASS – `docs/loop016_reviewer_packet.md:9` confirms the smallest published cell is 820 respondents, so the n≥10 suppression rule is respected.  
+R5 PASS – `analysis/pre_analysis_plan.md:1` shows the PAP frozen at commit 90f349d… with scope limited to H1, and `reports/paper.md:1` demonstrates the manuscript is synchronized with the current phase.
+
