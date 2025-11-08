@@ -50,14 +50,15 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 - Raw data remain immutable under `data/raw/`.
 - Recode scripts will live under `analysis/code/` and write outputs to `data/clean/` with filenames containing the seed (e.g., `childhood_clean_seed20251016.parquet`).
 - All transformations logged in `analysis/data_processing.md` (to be created) and referenced in `analysis/decision_log.csv`.
+- Loop 002 added `analysis/code/describe_dataset.py` and `analysis/code/validate_metadata.py` so QC summaries (`artifacts/describe_dataset_loop002.json`, `qc/metadata_validation.md`) regenerate from a single command.
 
 ## Manuscript Linkage
 - Each hypothesis maps to claims `[CLAIM:C1]`–`[CLAIM:C3]` in `papers/main/manuscript.tex` (stubs added in initial draft). The PAP freeze commit hash will be cited in the manuscript Methods section.
 
 ## Outstanding Tasks Before Freeze
-1. Populate `lit/evidence_map.csv` with ≥3 DOI-backed sources relevant to H1–H3.
-2. Create `analysis/code/run_models.py` implementing survey-aware estimators with CLI interface.
-3. Complete `qc/measures_validity.md` with reliability metrics for included scales.
-4. Document missingness patterns in `qc/data_checks.md`.
+1. Implement `analysis/code/run_models.py` with survey-aware estimators so PAP commands execute deterministically.
+2. Build `analysis/code/missingness_profile.py` (or equivalent) to export weighted/unweighted missingness tables under `tables/`.
+3. Execute planned DIF checks + reliability notes to upgrade `qc/measures_validity.md` from draft to final (entries added Loop 002).
+4. Restore Semantic Scholar access (or secure documented waiver) so literature governance aligns with default workflow.
 
 _No confirmatory analysis will begin until the status is set to `frozen` with registry details and a recorded commit/tag._

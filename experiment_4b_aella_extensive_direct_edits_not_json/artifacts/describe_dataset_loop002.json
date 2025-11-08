@@ -1,0 +1,5070 @@
+{
+  "rows": 14443,
+  "columns": 718,
+  "missing_fraction": 0.44580250825596807,
+  "memory_mb": 124.925646,
+  "dtype_counts": {
+    "float64": 639,
+    "object": 57,
+    "int64": 22
+  },
+  "top_missing": [
+    {
+      "name": "Religionchildhood",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Relationships_RelationshipStatus_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "t",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "frequency",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Health_Alcohol_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "finalpointsb",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Experiment (Threat Experiment)",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "start_time",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "program_name",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "program_tag",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "program_version",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "country",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "selection_warning",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "rut_warning",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "server_warning",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "accept_terms",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pre_RUT",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "clean_RUT",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    }
+  ],
+  "column_details": [
+    {
+      "name": "Unnamed: 0",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 14442.0
+    },
+    {
+      "name": "Your age? (hcdfzjj)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": 18.0,
+      "max": 75.0
+    },
+    {
+      "name": "selfage",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 18.0,
+      "max": 75.0
+    },
+    {
+      "name": "Which category fits you best? (4790ydl)",
+      "dtype": "object",
+      "missing_fraction": 0.0010385653950010386
+    },
+    {
+      "name": "biomale",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "gendermale",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "cis",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "gendered",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Your ethnicity (m5fn9m8)",
+      "dtype": "object",
+      "missing_fraction": 0.0010385653950010386
+    },
+    {
+      "name": "You got to this survey from: (9526n7w)",
+      "dtype": "object",
+      "missing_fraction": 0.39423942394239425
+    },
+    {
+      "name": "Politically speaking, you tend to be more: (zfl7xsu)",
+      "dtype": "object",
+      "missing_fraction": 0.0008308523160008308
+    },
+    {
+      "name": "liberal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "What country do you live in? (4bxk14u)",
+      "dtype": "object",
+      "missing_fraction": 0.0013847538600013848
+    },
+    {
+      "name": "education",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 7.0
+    },
+    {
+      "name": "How many people have you had sex with? (ewvvaz2)",
+      "dtype": "float64",
+      "missing_fraction": 0.007339195458007339,
+      "min": -0.0,
+      "max": 320.0
+    },
+    {
+      "name": "Do you *currently* actively practice a religion? (902tbll)",
+      "dtype": "object",
+      "missing_fraction": 0.0004154261580004154
+    },
+    {
+      "name": "religion",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "What religion did you grow up in? (5sb109c)",
+      "dtype": "object",
+      "missing_fraction": 0.24607076092224608
+    },
+    {
+      "name": "Religionchildhood",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "In your childhood, how important was adherence to the religion? For example: tithing, praying, attending church, having a righteous heart, etc. (xvlgpp5)",
+      "dtype": "object",
+      "missing_fraction": 0.0004154261580004154
+    },
+    {
+      "name": "externalreligion",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "Your current monogamy/nonmonogamy preference? (27iua3o)",
+      "dtype": "object",
+      "missing_fraction": 0.0004846638510004847
+    },
+    {
+      "name": "monogamy",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": -2.0,
+      "max": 2.0
+    },
+    {
+      "name": "You are currently: (m5tjvul)",
+      "dtype": "object",
+      "missing_fraction": 0.0004846638510004847
+    },
+    {
+      "name": "classcurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "Your CURRENT net worth is closest to (nhoz8ia)",
+      "dtype": "object",
+      "missing_fraction": 0.0004846638510004847
+    },
+    {
+      "name": "networth",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": -3.0,
+      "max": 6.0
+    },
+    {
+      "name": "Have you been diagnosed with any of the following (njjh37w)",
+      "dtype": "object",
+      "missing_fraction": 0.9846292321539847
+    },
+    {
+      "name": "mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "What's your height? (ifvg2z6)",
+      "dtype": "object",
+      "missing_fraction": 0.0004154261580004154
+    },
+    {
+      "name": "height",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 60.0,
+      "max": 78.0
+    },
+    {
+      "name": "Your weight is closest to: (n0iwzg0)",
+      "dtype": "object",
+      "missing_fraction": 0.0004154261580004154
+    },
+    {
+      "name": "weight",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 90.0,
+      "max": 370.0
+    },
+    {
+      "name": "How many siblings did you grow up with? (vnz8rpg)",
+      "dtype": "object",
+      "missing_fraction": 0.0004154261580004154
+    },
+    {
+      "name": "siblingnumber",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 7.0
+    },
+    {
+      "name": "You were the ___ child among your siblings (bzwk2ab)",
+      "dtype": "object",
+      "missing_fraction": 0.17801010870317802
+    },
+    {
+      "name": "birthorder",
+      "dtype": "float64",
+      "missing_fraction": 0.17773315793117772,
+      "min": 1.0,
+      "max": 7.0
+    },
+    {
+      "name": "Your siblings are mostly (h27qwus)",
+      "dtype": "object",
+      "missing_fraction": 0.17794087101017794
+    },
+    {
+      "name": "siblingsmostlymale",
+      "dtype": "float64",
+      "missing_fraction": 0.17773315793117772,
+      "min": -1.0,
+      "max": 1.0
+    },
+    {
+      "name": "In general, you'd say your health is (okq5xh8)",
+      "dtype": "object",
+      "missing_fraction": 0.0004154261580004154
+    },
+    {
+      "name": "In the past *4 weeks*, you've had difficulty accomplishing things in work or social activities due to *emotional issues* (such as depression, anxiety, etc) (kd4qc3z)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -2.0,
+      "max": 2.0
+    },
+    {
+      "name": "In the past *4 weeks*, you've had difficulty accomplishing things in work or social activities due to *physical pain* (gl33rp)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -2.0,
+      "max": 2.0
+    },
+    {
+      "name": "Randomize (h0e00cq)",
+      "dtype": "object",
+      "missing_fraction": 0.9734819635809735
+    },
+    {
+      "name": "I tend to suffer from anxiety (npvfh98)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "If I could take all of the possibility of pain out of suicide I would commit suicide immediately (f1jx1k6)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "On average, I am happier as an adult than I was in childhood (h33e6gg)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I tend to be calm/peaceful (6e6zhy3)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "In general, people in my *current* social circles tend treat me really well (tmt46e6)",
+      "dtype": "float64",
+      "missing_fraction": 0.9734819635809735,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Have you ever had a sexual experience with someone else who did not want the experience? (2zafc2j)",
+      "dtype": "object",
+      "missing_fraction": 0.0004154261580004154
+    },
+    {
+      "name": "rapist",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "I love myself (2l8994l)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I am satisfied with my romantic relationships (hp9qz6f)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I am not happy (ix5iyv3)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I tend to suffer from depression (wz901dj)",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I am satisfied with my work/career life (or lack thereof) (z0mhd63)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I'm quite sensitive to stress (qhyti2r)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "When you were a teen (13-18 years old), your family was (uky2ksa)",
+      "dtype": "object",
+      "missing_fraction": 0.0004846638510004847
+    },
+    {
+      "name": "classteen",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "I'm happy with my appearance (39kxhhw)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I tend to worry about things (t3iepz)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "The people I'm attracted to tend to be bad for me (b0cqh8o)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "If life is a game, I'm losing (vghiiks)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "You can't get very rich without exploitation (yefqivu)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "My friendships often end due to fights or disagreements (etzc5r8)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "When you were a child (0-12 years old), your family was (hxyr6oa)",
+      "dtype": "object",
+      "missing_fraction": 0.0004846638510004847
+    },
+    {
+      "name": "classchild",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "I tend to have a lot of energy (gczsvvo)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I tend to be unlucky (aw0j47x)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Randomize (huuzv1n)",
+      "dtype": "object",
+      "missing_fraction": 0.996053451498996
+    },
+    {
+      "name": "during ages *0-12*:  women's ideal role viewed as housewives (hb8a7oz)",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  women's ideal role viewed as housewives (7r6pi33)",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: you felt as though you were 'at war' with yourself in trying to be a good person (wtolilk)",
+      "dtype": "float64",
+      "missing_fraction": 0.0006231392370006231,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: you felt as though you were 'at war' with yourself in trying to be a good person (gitjzck)",
+      "dtype": "float64",
+      "missing_fraction": 0.0006231392370006231,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  family/culture had hilarious joking, goofing around, pranks, tomfoolery (qnzuq5n)",
+      "dtype": "float64",
+      "missing_fraction": 0.0016617046320016617,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  family/culture had hilarious joking, goofing around, pranks, tomfoolery (i1g8u4j)",
+      "dtype": "float64",
+      "missing_fraction": 0.0016617046320016617,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your parents verbally or emotionally abused you (v1k988q)",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: your mother (or other household member) was verbally or emotionally abusive towards your father (cwezk1r)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your mother (or other household member) was verbally or emotionally abusive towards your father (aae6xmc)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: intellectual or academic parents/culture (i1hm770)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: intellectual or academic parents/culture (ufd3nkh)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you spent time on the internet or computers (4tuoqly)",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you spent time on the internet or computers (hc92nmp)",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: Your parents gave useful guidance (pqo6jmj)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: Your parents gave useful guidance (dcrx5ab)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  taught a purity culture that encouraged abstinance/waiting until marriage (wgbq7hv)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  taught a purity culture that encouraged abstinance/waiting until marriage (wxgm38d)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: you were taught to shoot a gun (zwyt3an)",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: you were taught to shoot a gun (27ykfsa)",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you were depressed (dfqbzi5)",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you were depressed (n4jefor)",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  Parents divorcing/separating (jib24si)",
+      "dtype": "float64",
+      "missing_fraction": 0.0018001800180018,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  Parents divorcing/separating (o47i7yr)",
+      "dtype": "float64",
+      "missing_fraction": 0.0018001800180018,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: parents monitored/restricted your media intake to wholesome stuff; nothing disturbing or obscene (vdounnv)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: parents monitored/restricted your media intake to wholesome stuff; nothing disturbing or obscene (3jmhhnr)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you struggled with learning in school in the ways people tried to teach you (64toj15)",
+      "dtype": "float64",
+      "missing_fraction": 0.0011078030880011078,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you struggled with learning in school in the ways people tried to teach you (wlavhx2)",
+      "dtype": "float64",
+      "missing_fraction": 0.0011078030880011078,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: Your parents were college/university educated (bldnfrx)",
+      "dtype": "float64",
+      "missing_fraction": 0.0015924669390015925,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: Your parents were college/university educated (xtih0u0)",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  your father was present to raise you (njm8uo)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  your father was present to raise you (5bjhazr)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: you had more than two parents (c2i84u1)",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: you had more than two parents (6jumdsv)",
+      "dtype": "float64",
+      "missing_fraction": 0.0007616146230007616,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  obedience was a virtue (3rg3bfh)",
+      "dtype": "float64",
+      "missing_fraction": 0.0015924669390015925,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  obedience was a virtue (q6j0vlb)",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you were neglected/abandoned by those responsible for caring for you (as6jptn)",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you were neglected/abandoned by those responsible for caring for you (yfewkqw)",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: adults yelled at you (jprgrjs)",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: adults yelled at you (mijy9y6)",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: parents were well connected, socialites, friends with successful, popular, or famous people (9gwrelx)",
+      "dtype": "float64",
+      "missing_fraction": 0.0006923769300006924,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: parents were well connected, socialites, friends with successful, popular, or famous people (7jcu4s2)",
+      "dtype": "float64",
+      "missing_fraction": 0.0006923769300006924,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you went to therapy (fttrznb)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you went to therapy (zvgrlm6)",
+      "dtype": "float64",
+      "missing_fraction": 0.0011078030880011078,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: people expected gendered norms of you that you hated (poanjy1)",
+      "dtype": "float64",
+      "missing_fraction": 0.0006923769300006924,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: people expected gendered norms of you that you hated (56d7ur3)",
+      "dtype": "float64",
+      "missing_fraction": 0.0006923769300006924,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you played outside (fdbgui7)",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you played outside (hiqs5dg)",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  a parent abandoned the family (xl1ltr4)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  a parent abandoned the family (e70vzvx)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  people in your social circles believed false rumors about you (oms8g9c)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  people in your social circles believed false rumors about you (zyjlttl)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: your parents were predictable (htdvkhf)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your parents were predictable (nakf0pj)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: your father (or other household member) was verbally or emotionally abusive towards your mother (kforx7i)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  taught evolution was a lie (1j6zu1x)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  taught evolution was a lie (7rtalpn)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  your family was physically affectionate (hugging, snuggling) (sgfjz8v)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your father (or other household member) was verbally or emotionally abusive towards your mother (hioeijg)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your family was physically affectionate (hugging, snuggling) (siags64)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: you were required to participate in religious customs (e.g., church attendance) (shlon3y)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: you were required to participate in religious customs (e.g., church attendance) (nzimvfd)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: food scarcity; difficulty affording food; food stamps (zchx4kc)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: food scarcity; difficulty affording food; food stamps (ku6vyr0)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: your time was wasted (1nijzjy)",
+      "dtype": "float64",
+      "missing_fraction": 0.0016617046320016617,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your time was wasted (4ysi5zp)",
+      "dtype": "float64",
+      "missing_fraction": 0.0016617046320016617,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  allowed exposure to risk; e.g. climbing on tall things, walking around alone (niqjvh1)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  allowed exposure to risk; e.g. climbing on tall things, walking around alone (xn85zt8)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: men's ideal role viewed as family providers (aoo2vx3)",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you got drunk (mbxkg7j)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you got drunk (b6vyqlk)",
+      "dtype": "float64",
+      "missing_fraction": 0.0007616146230007616,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  raised in a pretty classic nuclear family structure (g6m31do)",
+      "dtype": "float64",
+      "missing_fraction": 0.0005539015440005539,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  raised in a pretty classic nuclear family structure (61d54bt)",
+      "dtype": "float64",
+      "missing_fraction": 0.0005539015440005539,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: men's ideal role viewed as family providers (r6q2qwi)",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you were romantically successful; crushes reciprocated, you were in demand (qhb6v2v)",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  parents had a bad relationship (sb86zy)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you were romantically successful; crushes reciprocated, you were in demand (4aovncq)",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  parents had a bad relationship (e6ai05u)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you had (consensual) sex (7784x69)",
+      "dtype": "float64",
+      "missing_fraction": 0.0020078930970020077,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: your parents physically disciplined you in an irregular, emotionally expressive way (lbpper6)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you had (consensual) sex (rtud9y2)",
+      "dtype": "float64",
+      "missing_fraction": 0.0016617046320016617,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your parents physically disciplined you in an irregular, emotionally expressive way (xh5z34y)",
+      "dtype": "float64",
+      "missing_fraction": 0.0006923769300006924,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you had adventures (3msolzo)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you had adventures (cvceprh)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  at least one parent had short-term romantic partners (chr5szn)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  at least one parent had short-term romantic partners (7y40480)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  you did party drugs (6ohar7k)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  you did party drugs (7i90dp3)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*:  your parents attempted to prevent you accessing porn or erotica (vmtc8pa)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*:  your parents attempted to prevent you accessing porn or erotica (mxqi756)",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: you attended camps (e.g., summer camp) (du72lg3)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: you attended camps (e.g., summer camp) (tx741yw)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: Your family culture was loud and confrontational (2ihuvq9)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: Your family culture was loud and confrontational (jvkx3f8)",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: at least one parent respected you (q9imtj7)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: your family was poorer/lower class than other people in your social groups (2evd0jx)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your family was poorer/lower class than other people in your social groups (vcwnzdr)-neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: at least one parent respected you (gpyx1z0)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: Taking regular family vacations (cs8xu8s)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: Taking regular family vacations (dg51ao4)",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: you felt unconditionally loved (xtrwcp7)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: you felt unconditionally loved (wa9yb85)",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: your parents were honest with you (g7cvke8)",
+      "dtype": "float64",
+      "missing_fraction": 0.0007616146230007616,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your parents were honest with you (h5w84b8)",
+      "dtype": "float64",
+      "missing_fraction": 0.0007616146230007616,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: adults apologized to you if they wronged you (1k0qepc)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013155161670013154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: adults apologized to you if they wronged you (fnrdtek)",
+      "dtype": "float64",
+      "missing_fraction": 0.0013155161670013154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Did you experience any sexual abuse during your childhood? (rwp3xhm)",
+      "dtype": "object",
+      "missing_fraction": 0.6076992314616076
+    },
+    {
+      "name": "during ages *0-12*: a household member sexually abused you in a way *included* genital penetration or envelopment (949atsn)",
+      "dtype": "float64",
+      "missing_fraction": 0.7253340718687253,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: a household member sexually abused you in a way *included* genital penetration or envelopment (9gt6rwm)",
+      "dtype": "float64",
+      "missing_fraction": 0.7277573911237277,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: someone who *wasn't* a member of your household, sexually abused you in a way *included* genital penetration or envelopment (hip3dig)",
+      "dtype": "float64",
+      "missing_fraction": 0.7292113826767292,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: someone who *wasn't* a member of your household, sexually abused you in a way *included* genital penetration or envelopment (sufe6jl)",
+      "dtype": "float64",
+      "missing_fraction": 0.7296960465277297,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "Was this your first time taking this survey? (14f8hir)",
+      "dtype": "object",
+      "missing_fraction": 0.001177040781001177
+    },
+    {
+      "name": "mentalillnesssize",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 19.0
+    },
+    {
+      "name": "during ages *0-12*: household member sexually abused you in a way that *didn't* include genital penetration or envelopment (8e543i4)",
+      "dtype": "float64",
+      "missing_fraction": 0.7315654642387316,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: household member sexually abused you in a way that *didn't* include genital penetration or envelopment (om03lcb)",
+      "dtype": "float64",
+      "missing_fraction": 0.7316347019317316,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: someone who *wasn't* a member of your household, sexually abused you in a way that *didn't* include genital penetration or envelopment (al7busg)",
+      "dtype": "float64",
+      "missing_fraction": 0.7323963165547324,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: someone who *wasn't* a member of your household, sexually abused you in a way that *didn't* include genital penetration or envelopment (80b4z2h)",
+      "dtype": "float64",
+      "missing_fraction": 0.7325347919407326,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*, did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened? (73eocvf)",
+      "dtype": "object",
+      "missing_fraction": 0.7335041196427335
+    },
+    {
+      "name": "during ages *0-12*: did the sexual abuse result in fear or pain *later in life*, some time after it happened? (xdc9lkf)",
+      "dtype": "object",
+      "missing_fraction": 0.7336425950287336
+    },
+    {
+      "name": "during ages *13-18*: did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened? (ol4fu6j)",
+      "dtype": "object",
+      "missing_fraction": 0.7342657342657343
+    },
+    {
+      "name": "during ages *13-18*: did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened?",
+      "dtype": "float64",
+      "missing_fraction": 0.8600706224468601,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "during ages *13-18*: did the sexual abuse result in fear or pain *later in life*, some time after it happened? (xri3uj6)",
+      "dtype": "object",
+      "missing_fraction": 0.7342657342657343
+    },
+    {
+      "name": "during ages *13-18*: did the sexual abuse result in fear or pain *later in life*, some time after it happened?",
+      "dtype": "float64",
+      "missing_fraction": 0.7785086200927785,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "during ages *0-12*, did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened?",
+      "dtype": "float64",
+      "missing_fraction": 0.8118119504258118,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "Randomize (3ar9oda)",
+      "dtype": "object",
+      "missing_fraction": 0.9185764730319186
+    },
+    {
+      "name": "during ages *0-12*: you were homeschooled (sv52lgb)",
+      "dtype": "float64",
+      "missing_fraction": 0.0054005400540054005,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: you were homeschooled (u1v5jkk)",
+      "dtype": "float64",
+      "missing_fraction": 0.0054005400540054005,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Have you been diagnosed with any of the following (aqulw9j)",
+      "dtype": "object",
+      "missing_fraction": 0.3936162847053936
+    },
+    {
+      "name": "Randomize (x50ecxr)",
+      "dtype": "object",
+      "missing_fraction": 0.5281451222045281
+    },
+    {
+      "name": "In general, people in my *current* social circles tend to treat me really well (71mn55g)",
+      "dtype": "float64",
+      "missing_fraction": 0.026933462577026935,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Randomize (6s7u9a5)",
+      "dtype": "object",
+      "missing_fraction": 0.8102887211798103
+    },
+    {
+      "name": "during ages *0-12*: your parents physically disciplined you (641c8ag)",
+      "dtype": "float64",
+      "missing_fraction": 0.08647787855708648,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: your parents physically disciplined you (nn63mmh)",
+      "dtype": "float64",
+      "missing_fraction": 0.08647787855708648,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Do you have memories of being potty trained? (yn03pcu)",
+      "dtype": "object",
+      "missing_fraction": 0.20563594821020564
+    },
+    {
+      "name": "potty",
+      "dtype": "float64",
+      "missing_fraction": 0.2054974728242055,
+      "min": 0.0,
+      "max": 2.0
+    },
+    {
+      "name": "At what age did you learn to read? (mjd6xk9)",
+      "dtype": "object",
+      "missing_fraction": 0.20563594821020564
+    },
+    {
+      "name": "read",
+      "dtype": "float64",
+      "missing_fraction": 0.2054974728242055,
+      "min": 1.0,
+      "max": 12.0
+    },
+    {
+      "name": "Do you remember learning how to read? (5xolor7)",
+      "dtype": "object",
+      "missing_fraction": 0.20570518590320572
+    },
+    {
+      "name": "readmemory",
+      "dtype": "float64",
+      "missing_fraction": 0.2054974728242055,
+      "min": 0.0,
+      "max": 2.0
+    },
+    {
+      "name": "What religion do you currently practice? (v2eoigz)",
+      "dtype": "object",
+      "missing_fraction": 0.7517136329017517
+    },
+    {
+      "name": "Religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "What's your attachment style? (99u3asf)",
+      "dtype": "object",
+      "missing_fraction": 0.7344042096517344
+    },
+    {
+      "name": "Randomize (b97iigm)",
+      "dtype": "object",
+      "missing_fraction": 0.7147407048397147
+    },
+    {
+      "name": "during ages *0-12*: you were bullied by other children (bn5lz62)",
+      "dtype": "float64",
+      "missing_fraction": 0.2755660181402756,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: you were bullied by other children (4dutkba)",
+      "dtype": "float64",
+      "missing_fraction": 0.27584296891227583,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Relationships_RelationshipStatus_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "t",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "How honest were you in this survey? (dtttq5i)",
+      "dtype": "object",
+      "missing_fraction": 0.3472962680883473
+    },
+    {
+      "name": "honest",
+      "dtype": "float64",
+      "missing_fraction": 0.34674236654434676,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate (e.g., physical force, blackmailing, threats) (wg9z1ax)",
+      "dtype": "object",
+      "missing_fraction": 0.8703870387038704
+    },
+    {
+      "name": "during ages *0-12*: did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate (e.g., physical force, blackmailing, threats)",
+      "dtype": "float64",
+      "missing_fraction": 0.8702485633178703,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "during ages *0-12*: did the sexual assault involve rewards? This means the use of positive outcomes if you did participate (e.g., candy, gifts, compliments) (9wze15a)",
+      "dtype": "object",
+      "missing_fraction": 0.8703870387038704
+    },
+    {
+      "name": "during ages *0-12*: did the sexual assault involve rewards? This means the use of positive outcomes if you did participate (e.g., candy, gifts, compliments)",
+      "dtype": "float64",
+      "missing_fraction": 0.8702485633178703,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "during ages *13-18*: did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate (e.g., physical force, blackmailing, threats) (vmfp2re)",
+      "dtype": "object",
+      "missing_fraction": 0.9005054351589005
+    },
+    {
+      "name": "during ages *13-18*: did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate (e.g., physical force, blackmailing, threats)",
+      "dtype": "float64",
+      "missing_fraction": 0.9005054351589005,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "during ages *13-18*: did the sexual assault involve rewards? This means the use of positive outcomes if you did participate (e.g., candy, gifts, compliments) (3ifzuv6)",
+      "dtype": "object",
+      "missing_fraction": 0.9005054351589005
+    },
+    {
+      "name": "during ages *13-18*: did the sexual assault involve rewards? This means the use of positive outcomes if you did participate (e.g., candy, gifts, compliments)",
+      "dtype": "float64",
+      "missing_fraction": 0.9005054351589005,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "Did you experience any sexual abuse during your childhood? (touu2yy)",
+      "dtype": "object",
+      "missing_fraction": 0.8843730526898844
+    },
+    {
+      "name": "*Ages 0-18*: In general, how much did your *household culture* take sexual assault seriously, whether they knew about your experience or not? (7f841i6)",
+      "dtype": "object",
+      "missing_fraction": 0.8259364397978259
+    },
+    {
+      "name": "*Ages 0-18*: In general, how much did your *household culture* take sexual assault seriously, whether they knew about your experience or not? ",
+      "dtype": "float64",
+      "missing_fraction": 0.8257979644118258,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "*Ages 19+* In general, how much did your *adult culture after leaving home* take sexual assault seriously, whether they knew about your experience or not? (f7ncrem)",
+      "dtype": "object",
+      "missing_fraction": 0.8259364397978259
+    },
+    {
+      "name": "*Ages 19+* In general, how much did your *adult culture after leaving home* take sexual assault seriously, whether they knew about your experience or not? ",
+      "dtype": "float64",
+      "missing_fraction": 0.8257979644118258,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "What's your attachment style? (pavnqzq)",
+      "dtype": "object",
+      "missing_fraction": 0.4987883403724988
+    },
+    {
+      "name": "Randomize (zg7jry3)",
+      "dtype": "object",
+      "missing_fraction": 0.4987883403724988
+    },
+    {
+      "name": "In general, the quality of my childhood has had a big impact on my quality of life today (kowcwaq)",
+      "dtype": "float64",
+      "missing_fraction": 0.4987191026794987,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Did you experience any sexual abuse during your childhood? (vd1t28a)",
+      "dtype": "object",
+      "missing_fraction": 0.5088970435505089
+    },
+    {
+      "name": "*At the time* of your sexual assault, what was your impression of the attitudes of people around you about the incident? (hdc5kb6)",
+      "dtype": "object",
+      "missing_fraction": 0.8603475732188604
+    },
+    {
+      "name": "*At the time* of your sexual assault, what was your impression of the attitudes of people around you about the incident?",
+      "dtype": "float64",
+      "missing_fraction": 0.8602783355258603,
+      "min": -5.0,
+      "max": 4.0
+    },
+    {
+      "name": "*Later in life*, some time after your sexual assault (e.g., telling others your history after you became an adult), what were the attitudes of people around you about the incident? (5ssbuqn)",
+      "dtype": "object",
+      "missing_fraction": 0.8606937616838607
+    },
+    {
+      "name": "*Later in life*, some time after your sexual assault (e.g., telling others your history after you became an adult), what were the attitudes of people around you about the incident?",
+      "dtype": "float64",
+      "missing_fraction": 0.8606245239908606,
+      "min": -5.0,
+      "max": 4.0
+    },
+    {
+      "name": "frequency",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Randomize (dgu0bfj)",
+      "dtype": "object",
+      "missing_fraction": 0.9404555840199404
+    },
+    {
+      "name": "during ages *0-12*: Your parents used calm/controlled/predictable spankings as a form of discipline (6c6ckue)",
+      "dtype": "float64",
+      "missing_fraction": 0.5608253133005608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "calmspank",
+      "dtype": "float64",
+      "missing_fraction": 0.5607560756075608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: Your parents used calm/controlled/predictable  spankings as a form of discipline (tfvn9b5)",
+      "dtype": "float64",
+      "missing_fraction": 0.5608253133005608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "calmspankb",
+      "dtype": "float64",
+      "missing_fraction": 0.5607560756075608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *0-12*: Your parents used angry/uncontrolled/unpredictable spankings as a form of discipline (zw8ffk9)",
+      "dtype": "float64",
+      "missing_fraction": 0.5608253133005608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "angryspank",
+      "dtype": "float64",
+      "missing_fraction": 0.5607560756075608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: Your parents used angry/uncontrolled/unpredictable spankings as a form of discipline (br1z95g)",
+      "dtype": "float64",
+      "missing_fraction": 0.5608253133005608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "angryspankb",
+      "dtype": "float64",
+      "missing_fraction": 0.5607560756075608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Health_Alcohol_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "finalpointsb",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "You got to this survey from: (6vvub3w)",
+      "dtype": "object",
+      "missing_fraction": 0.6065221906806065
+    },
+    {
+      "name": "How familiar are you with Aella? (hd32ija)",
+      "dtype": "object",
+      "missing_fraction": 0.6065914283736066
+    },
+    {
+      "name": "aella",
+      "dtype": "float64",
+      "missing_fraction": 0.6063144776016063,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "Are you sexually aroused by BDSM? (feaxr10)",
+      "dtype": "object",
+      "missing_fraction": 0.6203004915876204
+    },
+    {
+      "name": "vdsm",
+      "dtype": "float64",
+      "missing_fraction": 0.9094370975559094,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "name": "bdsm",
+      "dtype": "float64",
+      "missing_fraction": 0.7098940663297099,
+      "min": 0.0,
+      "max": 2.0
+    },
+    {
+      "name": "Randomize (bikf6k7)",
+      "dtype": "object",
+      "missing_fraction": 0.6203004915876204
+    },
+    {
+      "name": "during ages *0-12*: at least one of your parents was ethically nonmonogamous (cheating does NOT count) (t12p530)",
+      "dtype": "float64",
+      "missing_fraction": 0.6203697292806204,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "etc8",
+      "dtype": "float64",
+      "missing_fraction": 0.6203004915876204,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "during ages *13-18*: at least one of your parents was ethically nonmonogamous (cheating does NOT count) (qxwh947)",
+      "dtype": "float64",
+      "missing_fraction": 0.6203697292806204,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "etc8b",
+      "dtype": "float64",
+      "missing_fraction": 0.6203004915876204,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Experiment (Threat Experiment)",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "start_time",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "program_name",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "program_tag",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "program_version",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "country",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "selection_warning",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "rut_warning",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "server_warning",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "accept_terms",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pre_RUT",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "clean_RUT",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "name",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "surname",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "email",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "jobtitle",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "razon_social",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "company",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "website",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "region_short",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "region_long",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "ecommerce_short",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "size_long",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "size_short",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "sector",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "subsector",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "export",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_need_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_need_which",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_need_other",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_has_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_has_which",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_has_other",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "innovation_long",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "innovation_short",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "gobernanza_which",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "gobernanza_other",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "mujeres",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pueb_orig_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pueb_orig_which",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "cumplimiento_long",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "cumplimiento_short",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "cumplimiento_flag",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "conflicto_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "conflicto_flag",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "plan_have_long",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "plan_have_short",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pts_mgt",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "plan_public_flag",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "plan_unknown_flag",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "plan_link",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "themes_in_plan",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "themes_in_plan_other",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_in_plan_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_in_plan_list",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_out_plan_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pts_ind",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_out_plan_list",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_out_plan_other",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_next_goal",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_last_measured",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_measured",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_scope",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_scope_size",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_next_goal_long",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "indicators_last_measured_long",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "scope_reach",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pts_prov",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "proveedores_desarrollo_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "proveedores_desarrollo_text",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "proveedores_criterio_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "proveedores_criterio_type",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "proveedores_criterios_link",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "prov_themes",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "prov_themes_other",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_ask_YN",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_ask_which",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "certif_ask_other",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "eol_answer_long",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "eol_answer_short",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pts_fdv",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "eol_proof_answer",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "eol_themes",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "eol_themes_other",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "total",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "no_sabe_cnt",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "metrica_loop_indexes",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "prev_label",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "gt",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "lt",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "sqbo",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "sqbc",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "cbo",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "cbc",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "star",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "lifescore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "hotscore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "sexscore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "matchscore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "charscore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_benefits",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_procedures",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_duration",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_additional",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_customized_confidentiality",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_customized_withdrawal",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_contactInfo",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_organization",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_ethicsEmail",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "bonus_prominent_pre_consent_statement",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "in_GCF_approvalNumber",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityAsian_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityBlack_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityLatino_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityMiddleEastern_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityMixed_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityNative_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityPacific_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityWhite_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Culture_EthnicityOther_Binary",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "client_name",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "client_intro",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "share_link",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "image_link",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "airtable_link",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Name",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Skills",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Motivation",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Email",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "LinkedIn",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "generated_questions",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "AI_Done",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "click_email",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "email_sent",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "page_number",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "increment",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "progress",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "name_question",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "position_question",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills_question",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "motivation_question",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "quality1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "age1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "quality2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "artist3",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "artist2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "age2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "quality3",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "quality4",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "motive1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "artist1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "culture1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "sucfactor1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "unduser1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "operations2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "motive2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "marketing1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "dayjob1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "isCEOmightChange",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "dayjob2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "dayjob4",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "dayjob3",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "addboth",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "addpitch",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "addstartup",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "addnone",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "angels1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "elevator1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "nda1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "when1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "selling1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "askfor1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "angels2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "board3",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "definition1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "board1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "board2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pitchco1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "operations1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "equity3",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "legal1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "location1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "marketing2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "legal2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "operations3",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "growth1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pitchco2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "location2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "gatesCEO",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "zuckerbergCEO",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "muskCEO",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "jobsCEO",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "averagewithboth",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "averagewithpitch",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "averagewithstartup",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "averagewithnone",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "averagepersonalityscore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "averagebusinessscore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "averagepitchscore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "averagestartupscore",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills1",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills2",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills3",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills4",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills5",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills6",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills7",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "skills8",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "riskseeking",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "ceopersonality",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "ceobusiness",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "pitch",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "startup",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "jobs",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "gates",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "zuckerberg",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "musk",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "qol2size",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "None_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "name": "Christianity (protestant)_religioncurrent",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Christianity (catholic)_religioncurrent",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Christianity (other)_religioncurrent",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Judaism_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Islam_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Hinduism_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Buddhism_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Chinese traditional religion_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Sikhism_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Bahai_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Jainism_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Shinto_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Paganism_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Other_religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "None_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "name": "Christianity (protestant)_religionpast",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Christianity (catholic)_religionpast",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Christianity (other)_religionpast",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Judaism_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Islam_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Hinduism_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Buddhism_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Chinese traditional religion_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Sikhism_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Bahai_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Jainism_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Shinto_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Paganism_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Other_religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "ADHD_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Anorexia_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Anxiety_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Autism_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Bipolar I_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Bipolar II_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Body Dysmorphia_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Borderline_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Bulimia_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "C-PTSD_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Depersonalization/derealization_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Depression_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Disassociative Identity Disorder_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "OCD_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "PTSD_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Schizophrenia_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Social anxiety_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Sociopathy_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Substance Abuse Disorder_mentalillness",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Don't know/not sure_attachmentstyle",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Avoidant (avoidant/distant/commitment fears)_attachmentstyle",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Anxious (codependent/clingy/abandonment fears)_attachmentstyle",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Disorganized (mix of Avoidant and Anxious)_attachmentstyle",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Secure (comfortable with intimacy)_attachmentstyle",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Caucasian/white_ethnicityf",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Black (African American)_ethnicityf",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Black (not African American)_ethnicityf",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Asian (south)_ethnicityf",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Asian (east)_ethnicityf",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Asian (other)_ethnicityf",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Pacific islander_ethnicityf",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Arabic/middle eastern_ethnicityf",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Native American_ethnicityf",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Hispanic/latino_ethnicityf",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Other_ethnicityf",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "reddit_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "fetlife_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "twitter_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "facebook_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "amazon turk_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "name": "discord_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "telegram_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "tumblr_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "email_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "other_source",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "United States_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "United Kingdom_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Canada_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Germany_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Australia_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "India_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "France_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Brazil_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Netherlands_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Russia_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Sweden_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Italy_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Spain_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Poland_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Mexico_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Other Europe (west)_countryfinal",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Other Europe (east)_countryfinal",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Other Europe (other)_countryfinal",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Asia (east)_countryfinal",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Asia (south)_countryfinal",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Asia (other)_countryfinal",
+      "dtype": "int64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Africa_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "South America_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Other_countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "bmi",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 15.781632653061225,
+      "max": 59.71303948576676
+    },
+    {
+      "name": "calmspankdifference",
+      "dtype": "float64",
+      "missing_fraction": 0.5607560756075608,
+      "min": -6.0,
+      "max": 6.0
+    },
+    {
+      "name": "angryspankdifference",
+      "dtype": "float64",
+      "missing_fraction": 0.5607560756075608,
+      "min": -6.0,
+      "max": 6.0
+    },
+    {
+      "name": "etc8difference",
+      "dtype": "float64",
+      "missing_fraction": 0.6203004915876204,
+      "min": -6.0,
+      "max": 6.0
+    },
+    {
+      "name": "Your age?",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": 18.0,
+      "max": 75.0
+    },
+    {
+      "name": "Which category fits you best?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Unnamed: 585",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "What country do you live in?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "What level of formal education have you done?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Are you in a romantic relationship?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "How many people have you had sex with?",
+      "dtype": "float64",
+      "missing_fraction": 0.007339195458007339,
+      "min": 0.0,
+      "max": 320.0
+    },
+    {
+      "name": "How many kids do you have?",
+      "dtype": "float64",
+      "missing_fraction": 0.001730942325001731,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "Do you *currently* actively practice a religion?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "What religion did you grow up in?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Have you been diagnosed with any of the following",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "What's your height?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "How many siblings did you grow up with?",
+      "dtype": "float64",
+      "missing_fraction": 0.009554801634009555,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "You were the ___ child among your siblings",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Your siblings are mostly",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "In general, you'd say your health is",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "In the past *4 weeks*, you've had difficulty accomplishing things in work or social activities due to *emotional issues*",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -2.0,
+      "max": 2.0
+    },
+    {
+      "name": "In the past *4 weeks*, you've had difficulty accomplishing things in work or social activities due to *physical pain*",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -2.0,
+      "max": 2.0
+    },
+    {
+      "name": "I tend to suffer from anxiety -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "If I could take all of the possibility of pain out of suicide I would commit suicide immediately -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "On average, I am happier as an adult than I was in childhood",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I tend to be calm/peaceful",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "In general, people in my *current* social circles tend treat me really well",
+      "dtype": "float64",
+      "missing_fraction": 0.9734819635809735,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Have you ever had a sexual experience with someone else who did not want the experience?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "I love myself",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I am satisfied with my romantic relationships",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I am not happy -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I tend to suffer from depression",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I am satisfied with my work/career life",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I'm quite sensitive to stress -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "When you were a teen",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "I'm happy with my appearance",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I tend to worry about things -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "The people I'm attracted to tend to be bad for me -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "If life is a game, I'm losing -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "You can't get very rich without exploitation -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "My friendships often end due to fights or disagreements",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "When you were a child",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "I tend to have a lot of energy",
+      "dtype": "float64",
+      "missing_fraction": 0.0004154261580004154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "I tend to be unlucky -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0003461884650003462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "women's ideal role viewed as housewives",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you felt as though you were 'at war' with yourself in trying to be a good person",
+      "dtype": "float64",
+      "missing_fraction": 0.0006231392370006231,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "family/culture had hilarious joking, goofing around, pranks, tomfoolery",
+      "dtype": "float64",
+      "missing_fraction": 0.0016617046320016617,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your parents verbally or emotionally abused you",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your mother",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "intellectual or academic parents/culture",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you spent time on the internet or computers",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Your parents gave useful guidance",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "taught a purity culture that encouraged abstinance/waiting until marriage",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you were taught to shoot a gun",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you were depressed",
+      "dtype": "float64",
+      "missing_fraction": 0.0010385653950010386,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Parents divorcing/separating",
+      "dtype": "float64",
+      "missing_fraction": 0.0018001800180018,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "parents monitored/restricted your media intake to wholesome stuff; nothing disturbing or obscene",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you struggled with learning in school in the ways people tried to teach you",
+      "dtype": "float64",
+      "missing_fraction": 0.0011078030880011078,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Your parents were college/university educated",
+      "dtype": "float64",
+      "missing_fraction": 0.0011078030880011078,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your father was present to raise you",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you had more than two parents",
+      "dtype": "float64",
+      "missing_fraction": 0.0004846638510004847,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "obedience was a virtue",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you were neglected/abandoned by those responsible for caring for you",
+      "dtype": "float64",
+      "missing_fraction": 0.0015232292460015233,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "adults yelled at you",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "parents were well connected, socialites, friends with successful, popular, or famous people",
+      "dtype": "float64",
+      "missing_fraction": 0.0006923769300006924,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you went to therapy",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "people expected gendered norms of you that you hated",
+      "dtype": "float64",
+      "missing_fraction": 0.0006923769300006924,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you played outside",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "a parent abandoned the family",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "people in your social circles believed false rumors about you",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your parents were predictable -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your father",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "taught evolution was a lie",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your family was physically affectionate",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you were required to participate in religious customs",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "food scarcity; difficulty affording food; food stamps -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your time was wasted",
+      "dtype": "float64",
+      "missing_fraction": 0.0016617046320016617,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "allowed exposure to risk; e.g. climbing on tall things, walking around alone",
+      "dtype": "float64",
+      "missing_fraction": 0.0009000900090009,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "men's ideal role viewed as family providers",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you got drunk",
+      "dtype": "float64",
+      "missing_fraction": 0.0007616146230007616,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "raised in a pretty classic nuclear family structure",
+      "dtype": "float64",
+      "missing_fraction": 0.0005539015440005539,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you were romantically successful; crushes reciprocated, you were in demand",
+      "dtype": "float64",
+      "missing_fraction": 0.001177040781001177,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "parents had a bad relationship",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you had",
+      "dtype": "float64",
+      "missing_fraction": 0.0016617046320016617,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your parents physically disciplined you in an irregular, emotionally expressive way",
+      "dtype": "float64",
+      "missing_fraction": 0.0006923769300006924,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you had adventures",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "at least one parent had short-term romantic partners",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you did party drugs",
+      "dtype": "float64",
+      "missing_fraction": 0.0013847538600013848,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your parents attempted to prevent you accessing porn or erotica",
+      "dtype": "float64",
+      "missing_fraction": 0.0013155161670013154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you attended camps",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Your family culture was loud and confrontational",
+      "dtype": "float64",
+      "missing_fraction": 0.0012462784740012462,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "at least one parent respected you",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your family was poorer/lower class than other people in your social groups -neg",
+      "dtype": "float64",
+      "missing_fraction": 0.001453991553001454,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Taking regular family vacations",
+      "dtype": "float64",
+      "missing_fraction": 0.0009693277020009694,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "you felt unconditionally loved",
+      "dtype": "float64",
+      "missing_fraction": 0.0008308523160008308,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your parents were honest with you",
+      "dtype": "float64",
+      "missing_fraction": 0.0007616146230007616,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "adults apologized to you if they wronged you",
+      "dtype": "float64",
+      "missing_fraction": 0.0013155161670013154,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Did you experience any sexual abuse during your childhood?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "a household member sexually abused you in a way *included* genital penetration or envelopment",
+      "dtype": "float64",
+      "missing_fraction": 0.7253340718687253,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "someone who *wasn't* a member of your household, sexually abused you in a way *included* genital penetration or envelopment",
+      "dtype": "float64",
+      "missing_fraction": 0.7292113826767292,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "household member sexually abused you in a way that *didn't* include genital penetration or envelopment",
+      "dtype": "float64",
+      "missing_fraction": 0.7315654642387316,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "someone who *wasn't* a member of your household, sexually abused you in a way that *didn't* include genital penetration or envelopment",
+      "dtype": "float64",
+      "missing_fraction": 0.7323963165547324,
+      "min": 0.0,
+      "max": 3.0
+    },
+    {
+      "name": "did the sexual abuse result in fear or pain *later in life*, some time after it happened?",
+      "dtype": "float64",
+      "missing_fraction": 0.7785086200927785,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "did you experience acute fear or pain *while the sexual abuse was happening*, at the time that it happened?",
+      "dtype": "float64",
+      "missing_fraction": 0.8600706224468601,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "you were homeschooled",
+      "dtype": "float64",
+      "missing_fraction": 0.0054005400540054005,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "In general, people in my *current* social circles tend to treat me really well",
+      "dtype": "float64",
+      "missing_fraction": 0.026933462577026935,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "your parents physically disciplined you",
+      "dtype": "float64",
+      "missing_fraction": 0.08647787855708648,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Do you have memories of being potty trained?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "At what age did you learn to read?",
+      "dtype": "float64",
+      "missing_fraction": 0.2185141591082185,
+      "min": 2.0,
+      "max": 11.0
+    },
+    {
+      "name": "Do you remember learning how to read?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "What religion do you currently practice?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "What's your attachment style?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "you were bullied by other children",
+      "dtype": "float64",
+      "missing_fraction": 0.2755660181402756,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "How honest were you in this survey?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "did the sexual assault involve coercion? This means the use of bad outcomes if you didn't participate",
+      "dtype": "float64",
+      "missing_fraction": 0.847954026171848,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "did the sexual assault involve rewards? This means the use of positive outcomes if you did participate",
+      "dtype": "float64",
+      "missing_fraction": 0.847954026171848,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "In general, how much did your *household culture* take sexual assault seriously, whether they knew about your experience or not?",
+      "dtype": "float64",
+      "missing_fraction": 0.8257979644118258,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "*Ages 19+* In general, how much did your *adult culture after leaving home* take sexual assault seriously, whether they knew about your experience or not?",
+      "dtype": "float64",
+      "missing_fraction": 0.8257979644118258,
+      "min": 0.0,
+      "max": 4.0
+    },
+    {
+      "name": "In general, the quality of my childhood has had a big impact on my quality of life today",
+      "dtype": "float64",
+      "missing_fraction": 0.4987191026794987,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "*Later in life*, some time after your sexual assault",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "*Later in life*, some time after your sexual assault , what were the attitudes of people around you about the incident?",
+      "dtype": "float64",
+      "missing_fraction": 0.8606245239908606,
+      "min": -5.0,
+      "max": 4.0
+    },
+    {
+      "name": "Your parents used calm/controlled/predictable spankings as a form of discipline",
+      "dtype": "float64",
+      "missing_fraction": 0.5608253133005608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Your parents used calm/controlled/predictable  spankings as a form of discipline",
+      "dtype": "float64",
+      "missing_fraction": 0.5608253133005608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Your parents used angry/uncontrolled/unpredictable spankings as a form of discipline",
+      "dtype": "float64",
+      "missing_fraction": 0.5608253133005608,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "How familiar are you with Aella?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Are you sexually aroused by BDSM?",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "at least one of your parents was ethically nonmonogamous",
+      "dtype": "float64",
+      "missing_fraction": 0.6203697292806204,
+      "min": -3.0,
+      "max": 3.0
+    },
+    {
+      "name": "Experiment",
+      "dtype": "float64",
+      "missing_fraction": 1.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "Christianity _religioncurrent",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.3333333333333333
+    },
+    {
+      "name": "Christianity _religionpast",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.3333333333333333
+    },
+    {
+      "name": "Avoidant _attachmentstyle",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Anxious _attachmentstyle",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Disorganized _attachmentstyle",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Secure _attachmentstyle",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "Black _ethnicityf",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.5
+    },
+    {
+      "name": "Asian _ethnicityf",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.3333333333333333
+    },
+    {
+      "name": "Other Europe _countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.3333333333333333
+    },
+    {
+      "name": "Asia _countryfinal",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 0.3333333333333333
+    },
+    {
+      "name": "CSA_score",
+      "dtype": "float64",
+      "missing_fraction": 0.0,
+      "min": 0.0,
+      "max": 22.0
+    }
+  ],
+  "input_path": "data/raw/childhoodbalancedpublic_original.csv",
+  "seed": 20251016,
+  "top_missing_limit": 20
+}

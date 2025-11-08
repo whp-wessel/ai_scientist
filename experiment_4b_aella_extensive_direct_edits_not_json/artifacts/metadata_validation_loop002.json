@@ -1,0 +1,65 @@
+{
+  "dataset_path": "data/raw/childhoodbalancedpublic_original.csv",
+  "codebook_summary": {
+    "documented_variables": 10,
+    "missing_in_data": [],
+    "undocumented_columns_count": 708,
+    "documented_entries": [
+      {
+        "alias": "selfage",
+        "source_column": "selfage",
+        "exists_in_data": true
+      },
+      {
+        "alias": "religion",
+        "source_column": "religion",
+        "exists_in_data": true
+      },
+      {
+        "alias": "externalreligion",
+        "source_column": "externalreligion",
+        "exists_in_data": true
+      },
+      {
+        "alias": "wz901dj",
+        "source_column": "I tend to suffer from depression (wz901dj)",
+        "exists_in_data": true
+      },
+      {
+        "alias": "pqo6jmj",
+        "source_column": "during ages *0-12*: Your parents gave useful guidance (pqo6jmj)",
+        "exists_in_data": true
+      },
+      {
+        "alias": "mds78zu",
+        "source_column": "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)",
+        "exists_in_data": true
+      },
+      {
+        "alias": "okq5xh8",
+        "source_column": "In general, you'd say your health is (okq5xh8)",
+        "exists_in_data": true
+      },
+      {
+        "alias": "classteen",
+        "source_column": "classteen",
+        "exists_in_data": true
+      },
+      {
+        "alias": "networth",
+        "source_column": "networth",
+        "exists_in_data": true
+      },
+      {
+        "alias": "2l8994l",
+        "source_column": "I love myself (2l8994l)",
+        "exists_in_data": true
+      }
+    ],
+    "codebook_path": "docs/codebook.json"
+  },
+  "survey_summary": {
+    "survey_design_path": "docs/survey_design.yaml",
+    "checks": []
+  }
+}

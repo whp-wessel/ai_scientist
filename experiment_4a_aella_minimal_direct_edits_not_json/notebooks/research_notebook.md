@@ -40,11 +40,13 @@
 - Cloned the modeling pipeline into `scripts/run_loop004_models.py`, added the childhood-class × male interaction to the ordered-logit + ≥$1M logit, and introduced religiosity × classchild / religiosity × male terms in the anxiety models. Reran the script (`python scripts/run_loop004_models.py`) to produce `tables/loop004_model_estimates.csv` and appended the relevant rows to `analysis/results.csv`.
 - Updated `analysis/pre_analysis_plan.md` with a Loop 004 section documenting the diagnostics, deterministic commands, and the draft Benjamini–Hochberg plan that maps confirmatory families (H1–H4) to their target contrasts. Also revised `reports/paper.md` to narrate the moderation findings and interaction specs.
 - Logged the loop in `analysis/decision_log.csv`, captured next actions in `artifacts/state.json`, and noted that PAP freeze hinges on deciding whether the confirmatory H1 family centers on the moderation contrasts or collapses abuse exposures.
+- Tests: `python scripts/loop004_h1_diagnostics.py`; `python scripts/run_loop004_models.py`.
 
 ## 2025-11-07 – Loop 005
 - Authored `scripts/loop005_h1_simple_slopes.py` and ran it to generate `tables/loop005_h1_simple_slopes.csv`, which computes the childhood-abuse slope at ±1 SD guidance and by gender (using the same aligned z-score models as the diagnostics). The table shows slopes of -0.13 SD under low guidance versus +0.01 SD at +1 SD guidance and -0.13 SD for men vs. -0.02 SD for women.
 - Used those slopes plus the earlier interaction coefficients to lock the H1 confirmatory family onto the two moderation contrasts (guidance buffering > 0; male vulnerability < 0), citing Zhao et al. (2022) and Assari et al. (2025) as the theoretical basis.
 - Updated `analysis/pre_analysis_plan.md`, `analysis/hypotheses.csv`, and `reports/paper.md` to reflect the decision, document the deterministic command sequence (`loop004_h1_diagnostics.py` + `loop005_h1_simple_slopes.py`), and outline the remaining steps before freezing/tagging the PAP.
+- Tests: `python scripts/loop005_h1_simple_slopes.py`.
 
 ## 2025-11-07 – Loop 006
 - Froze the PAP (`analysis/pre_analysis_plan.md`) with status `frozen` and documented the confirmatory scope, commands, BH plan, and privacy guarantees; tagged the intended snapshot as `pap_freeze_loop006` (tag creation + hash recorded after committing).
@@ -52,6 +54,7 @@
 - Appended the confirmatory coefficients to `analysis/results.csv` with `confirmatory=TRUE`, BH-adjusted q-values, and full SRS notes; also updated `analysis/hypotheses.csv` to mark H1 as confirmatory.
 - Revised `reports/paper.md` to narrate the frozen PAP, cite the literature motivating the moderators (Zhao et al., 2022; Assari et al., 2025), and describe the BH adjustment + results. Added multiplicity/privacy language per reviewer request.
 - Logged all commands + seeds for reproducibility (decision log + state updates pending) and noted follow-on tasks: extend confirmatory scope to H2–H4 after added diagnostics, and prepare sensitivity analyses for the H1 family.
+- Tests: `PYTHONHASHSEED=20251016 python scripts/loop004_h1_diagnostics.py`; `PYTHONHASHSEED=20251016 python scripts/loop005_h1_simple_slopes.py`; `PYTHONHASHSEED=20251016 python scripts/run_loop004_models.py`.
 
 ## 2025-11-07 – Loop 007
 - Addressed the non-negotiable PAP warning by replacing the freeze header with the literal `status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)` format in `analysis/pre_analysis_plan.md`, ensuring the document matches the `pap_freeze_loop006` tag hash.
@@ -59,3 +62,4 @@
 - Logged outputs in `tables/loop007_h1_sensitivity.csv`, summarized implications in the brand-new `analysis/sensitivity_notes.md`, and appended four sensitivity rows (two per perturbation) to `analysis/results.csv` with confirmatory labels + BH q-values. Both interactions remain significant with expected signs under every perturbation.
 - Ran a targeted Semantic Scholar search (`python scripts/semantic_scholar_cli.py search --query "parental guidance self love adulthood"`) after one 429 throttle, archived the JSON under `lit/queries/loop_007/query_001.json`, and extracted two H2-relevant citations (Fermani 2019; Walęcka-Matyja 2019) into `lit/bibliography.md`/`lit/evidence_map.csv` to start the promotion review for guidance→self-love.
 - Reviewed the PAP requirements for promoting H2–H4 and concluded that we still need (i) additional literature—for example, a focused Semantic Scholar pull on parental guidance → self-love mediators—and (ii) diagnostics for the ordered-logit proportional-odds assumption. Documented this gap here and will prioritize literature/diagnostics next loop before considering another PAP freeze.
+- Tests: `PYTHONHASHSEED=20251016 python scripts/loop007_h1_sensitivity.py`; `python scripts/semantic_scholar_cli.py search --query "parental guidance self love adulthood" --limit 5 --output lit/queries/loop_007/query_001.json`.

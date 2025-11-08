@@ -43,6 +43,12 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - **C3 / H3:** Islam et al. (2022, DOI `10.1016/j.chiabu.2022.105665`) identify self-esteem and social support as mediators between childhood maltreatment and adult autonomy, reinforcing the plan to document mediator adjustments and robustness checks.
 - Open questions: regain working Semantic Scholar credentials to satisfy default sourcing workflow; map survey scales (e.g., `pqo6jmj`, `2l8994l`) onto constructs discussed in these studies before freezing the PAP.
 
+## Loop 2 Updates (2025-11-07)
+- Re-attempted Semantic Scholar search (`childhood resilience parental guidance health`) → 403 persists. Logged failure to `lit/queries/loop_002/query_001.json` for audit, keeping decision log + evidence map notes in sync.
+- Built `analysis/code/describe_dataset.py` and `analysis/code/validate_metadata.py` to automate QC. Outputs stored at `artifacts/describe_dataset_loop002.json`, `qc/data_overview_loop002.md`, and `qc/metadata_validation.md`; `qc/data_checks.md` now references the regeneration commands.
+- Extended `docs/codebook.json` with `source_column` mappings (e.g., `"I tend to suffer from depression (wz901dj)"`) so aliases used in hypotheses align with raw headers; validation report now shows all PAP variables present.
+- Filled `qc/measures_validity.md` for H1–H3 outcomes/predictors, including planned DIF checks to be run before PAP freeze.
+
 ## Next Steps
 1. Implement reproducible data cleaning scripts (`analysis/code/`) to construct analysis-ready variables.
 2. Enrich codebook/code design docs with automated generation.

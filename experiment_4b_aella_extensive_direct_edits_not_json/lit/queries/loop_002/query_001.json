@@ -1,0 +1,12 @@
+{
+  "endpoint": "paper/search",
+  "query": "childhood resilience parental guidance health",
+  "limit": 5,
+  "fields": "paperId,title,authors,venue,year,doi,url,tldr,abstract",
+  "timestamp_utc": "2025-11-08T12:06:31Z",
+  "error": {
+    "http_status": 403,
+    "message": "Forbidden",
+    "notes": "Semantic Scholar API rejected the stored S2_API_Key when calling https://api.semanticscholar.org/graph/v1/paper/search"
+  }
+}

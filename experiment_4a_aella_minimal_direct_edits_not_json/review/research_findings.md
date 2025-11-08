@@ -42,3 +42,18 @@ R3 PASS: lit/bibliography.md:1-17 and lit/evidence_map.csv:1-9 catalog peer-revi
 R4 PASS: public exports such as tables/loop005_h1_simple_slopes.csv:1-6 report only n_obs≈14k cells, so no table exposes n<10 and privacy expectations are met.
 R5 PASS: Core artifacts exist and are current—analysis/pre_analysis_plan.md:1-98 remains status draft with loop updates, analysis/hypotheses.csv:1-5 lists the four families, and reports/paper.md:1-36 tracks manuscript progress; PAP freezing/tagging is pending but not yet required.
 
+## Loop 007 — 2025-11-07T15:17:05.996922+00:00
+DECISION: STOP – loops 4–7 have no decision-log or notebook entries, breaking the reproducibility invariant.
+
+R1 FAIL – analysis/decision_log.csv:7 stops at loop_002 while artifacts/state.json:4 records loop_counter=7, and notebooks/research_notebook.md:31 ends at loop003, so the confirmatory freeze and sensitivity work lack any logged commands/seeds.
+
+R2 PASS – analysis/pre_analysis_plan.md:1 locks the PAP with BH/FDR rules, and analysis/results.csv:20 & 22 plus scripts/loop007_h1_sensitivity.py:1 and analysis/sensitivity_notes.md:1 document the confirmatory estimates, q-values, and robustness specs with explicit commands and SRS justifications.
+
+R3 PASS – lit/evidence_map.csv:2 and lit/bibliography.md:1 list DOI-tracked sources tied to stored Semantic Scholar queries (e.g., lit/queries/loop_007/query_001.json), giving each claim verifiable citations.
+
+R4 PASS – tables/loop006_h1_confirmatory.csv:1 and tables/loop007_h1_sensitivity.csv:1 publish only aggregate coefficients with n≈14k, so the n<10 privacy rule is respected.
+
+R5 WARN – Key artifacts exist (frozen PAP, manuscript updates), but the missing loop-by-loop entries in notebooks/research_notebook.md:31 leave the deliverable set incomplete.
+
+Notes: Please backfill decision_log/notebook entries for loops 3–7 (with commands/seeds) before continuing.
+

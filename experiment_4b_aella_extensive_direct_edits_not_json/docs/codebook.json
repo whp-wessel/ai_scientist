@@ -10,69 +10,137 @@
       "label": "Respondent age (self-reported)",
       "type": "numeric",
       "units": "years",
-      "allowed_range": [18, 99],
-      "missing_codes": ["", "NA"],
-      "comments": "Use for cohort adjustments; verify min/max and outliers."
+      "allowed_range": [
+        18,
+        99
+      ],
+      "missing_codes": [
+        "",
+        "NA"
+      ],
+      "comments": "Use for cohort adjustments; verify min/max and outliers.",
+      "source_column": "selfage"
     },
     {
       "name": "religion",
       "label": "Currently practices a religion",
       "type": "categorical",
-      "levels": ["active", "inactive", "none"],
+      "levels": [
+        "active",
+        "inactive",
+        "none"
+      ],
       "original_question": "Do you *currently* actively practice a religion?",
-      "comments": "Binary collapse planned (1=active,0=not); retain raw text until recode script is written."
+      "comments": "Binary collapse planned (1=active,0=not); retain raw text until recode script is written.",
+      "source_column": "religion"
     },
     {
       "name": "externalreligion",
       "label": "Perceived childhood religious importance",
       "type": "ordinal",
-      "scale": ["not_important", "somewhat", "important", "very_important"],
+      "scale": [
+        "not_important",
+        "somewhat",
+        "important",
+        "very_important"
+      ],
       "original_question": "In childhood, how important was adherence to the religion?",
-      "comments": "Higher scores indicate stricter adherence environments."
+      "comments": "Higher scores indicate stricter adherence environments.",
+      "source_column": "externalreligion"
     },
     {
       "name": "wz901dj",
       "label": "Depression tendency (self-assessed)",
       "type": "Likert",
-      "scale": [1, 5],
+      "scale": [
+        1,
+        5
+      ],
       "original_question": "I tend to suffer from depression",
       "reverse_coded": false,
-      "comments": "Primary wellbeing outcome candidate."
+      "comments": "Primary wellbeing outcome candidate.",
+      "source_column": "I tend to suffer from depression (wz901dj)"
     },
     {
       "name": "pqo6jmj",
       "label": "Parents gave useful guidance (0-12)",
       "type": "Likert",
-      "scale": [1, 5],
-      "comments": "Higher indicates more guidance; hypothesized protective factor."
+      "scale": [
+        1,
+        5
+      ],
+      "comments": "Higher indicates more guidance; hypothesized protective factor.",
+      "source_column": "during ages *0-12*: Your parents gave useful guidance (pqo6jmj)",
+      "original_question": "During ages 0-12, your parents gave useful guidance?"
     },
     {
       "name": "mds78zu",
       "label": "Childhood emotional abuse (0-12)",
       "type": "binary",
-      "coding": {"yes": 1, "no": 0},
-      "comments": "Screen for fair-use; treat as sensitive attribute in disclosure review."
+      "coding": {
+        "yes": 1,
+        "no": 0
+      },
+      "comments": "Screen for fair-use; treat as sensitive attribute in disclosure review.",
+      "source_column": "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)",
+      "original_question": "During ages 0-12, your parents verbally or emotionally abused you?"
     },
     {
       "name": "okq5xh8",
       "label": "Self-rated general health",
       "type": "ordinal",
-      "scale": ["poor", "fair", "good", "very_good", "excellent"],
-      "comments": "Outcome for physical wellbeing hypotheses."
+      "scale": [
+        "poor",
+        "fair",
+        "good",
+        "very_good",
+        "excellent"
+      ],
+      "comments": "Outcome for physical wellbeing hypotheses.",
+      "source_column": "In general, you'd say your health is (okq5xh8)",
+      "original_question": "In general, you'd say your health is ..."
     },
     {
       "name": "classteen",
       "label": "Teen household socioeconomic class",
       "type": "categorical",
-      "levels": ["lower", "lower_middle", "middle", "upper_middle", "upper"],
-      "comments": "Cross-check against current class and net worth variables."
+      "levels": [
+        "lower",
+        "lower_middle",
+        "middle",
+        "upper_middle",
+        "upper"
+      ],
+      "comments": "Cross-check against current class and net worth variables.",
+      "source_column": "classteen"
     },
     {
       "name": "networth",
       "label": "Current net worth bracket",
       "type": "ordinal",
-      "scale": ["<0", "0-25k", "25k-100k", "100k-250k", "250k-1M", ">1M"],
-      "comments": "Outcome for mobility hypotheses; treat as ordered categorical."
+      "scale": [
+        "<0",
+        "0-25k",
+        "25k-100k",
+        "100k-250k",
+        "250k-1M",
+        ">1M"
+      ],
+      "comments": "Outcome for mobility hypotheses; treat as ordered categorical.",
+      "source_column": "networth"
+    },
+    {
+      "name": "2l8994l",
+      "label": "Self-love statement",
+      "type": "Likert",
+      "scale": [
+        1,
+        5
+      ],
+      "original_question": "I love myself",
+      "reverse_coded": false,
+      "comments": "Primary psychosocial wellbeing indicator for H3.",
+      "source_column": "I love myself (2l8994l)"
     }
   ],
   "regeneration": {
