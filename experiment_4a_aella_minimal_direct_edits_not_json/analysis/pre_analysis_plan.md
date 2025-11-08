@@ -41,6 +41,7 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
    - Outcome: Ordered 10-level net worth scale (`networth_ord`).
    - Estimator: Ordered logit with classchild, classteen, age, gender, education, classchild × male.
    - Loop 011 update: we benchmarked the Loop010 partial proportional-odds (PPO) relaxation against a full multinomial logit with identical predictors (`PYTHONHASHSEED=20251016 python scripts/loop011_h3_multinomial_benchmark.py`). The PPO fit (tables/loop010_h3_partial_fit.csv) preserves ordinality, allows childhood class effects to vary by cutpoint, and attains a long-form pseudo-R² of 0.52; the multinomial alternative (tables/loop011_h3_model_comparison.csv) improves per-person log-likelihood but requires 54 slope parameters and delivers negligible classchild marginal effects in the extreme wealth bins (`tables/loop011_h3_multinomial_marginals.csv`). Given the near-null multinomial effects and the interpretability of cutpoint-specific PPO contrasts, the PAP continues to use the partial proportional-odds specification for H3.
+   - Loop 015 addendum: Extending the country-cluster bootstrap (`PYTHONHASHSEED=20251016 python scripts/loop014_h3_cluster_bootstrap.py --n-reps 300`) to include the ≥$10M cutpoint yields mean childhood-class slopes of 0.134 (SD 0.140, percentile CI [-0.084, 0.486], tail probability 0.21; see `tables/loop014_h3_bootstrap_summary.csv`). The ≥$100k and ≥$1M cutpoints both center near zero with wide symmetric intervals, so any future confirmatory family will pivot to the ≥$10M contrast (single-test family unless we revive lower thresholds for descriptive context). The PAP therefore treats ≥$100k/≥$1M contrasts as exploratory diagnostics only until counterevidence accumulates.
 4. **H4 – Religious practice → Anxiety** (`religiosity_and_anxiety`, exploratory for now).
    - Outcome: Anxiety z-score (`anxiety_z`) and high-anxiety indicator (`high_anxiety`).
    - Estimator: OLS/logit with religiosity, childhood class, interactions with gender/class.
@@ -93,7 +94,7 @@ status: frozen (commit 90f349d080541060fd90ba5a6310a87eef925c47)
 - Multi-generational social-mobility evidence shows that grandparents’ class continues to influence adult destinations even after conditioning on parental class [Chan & Boliver, 2013](https://doi.org/10.1177/0003122413489130), arguing for cutpoint-specific contrasts instead of a single average slope.
 - Wealth carries distinct predictive power relative to other SES measures: disparities in mortality by wealth exceed those linked to education, occupation, or childhood SES [Glei et al., 2022](https://doi.org/10.1001/jamanetworkopen.2022.6547). Modeling net-worth cutpoints directly is therefore substantively meaningful, reinforcing the PPO estimand.
 
-### Outstanding Tasks Before Promotion
-1. Extend the PPO script with clustered (household) bootstrap SEs to ensure inference is robust to within-family dependence.
-2. Formalize the hypothesis family (e.g., `classchild` marginal effects at ≥$100k and ≥$1MM cutpoints) and add candidate result IDs to `analysis/hypotheses.csv`.
-3. Draft the confirmatory reporting template (`tables/loop013_h3_confirmatory.csv`) with BH control if multiple cutpoints enter the family.
+### Outstanding Tasks Before Promotion (updated Loop 015)
+1. Quantify effective sample size and statistical power for the ≥$10M contrast (include bootstrap precision plus analytic SEs) before freezing a single-test confirmatory family.
+2. Document the ≥$10M estimand in `analysis/hypotheses.csv` (new result IDs + multiplicity plan if we later reintroduce additional cutpoints).
+3. Draft the confirmatory reporting template (`tables/loop013_h3_confirmatory.csv`) focused on ≥$10M, keeping ≥$100k/≥$1M in the appendix for descriptive continuity.

@@ -142,3 +142,18 @@ Notes:
 Next:
 - If `.env` `S2_API_Key` becomes available, broaden searches and pull abstracts for the most relevant items to inform PAP finalization.
 - Begin implementing ordered/ordinal models for key Likert outcomes (exploratory) and outline criteria for PAP freeze.
+
+---
+## Loop 010 (literature)
+- Ran targeted Semantic Scholar search to support H2 (religion ↔ monogamy/satisfaction):
+  - `python scripts/semantic_scholar_cli.py search --query "religiosity monogamy relationship satisfaction adult" --limit 5 --output lit/queries/loop_010/query_001.json`
+- Extracted DOIs from the saved JSON into the evidence map:
+  - `python scripts/lit/extract_dois.py --input lit/queries/loop_010/query_001.json --output lit/evidence_map.csv --topic "religiosity, monogamy, relationship satisfaction"`
+- Updated `analysis/decision_log.csv`; no confirmatory analyses this loop; PAP remains `status: draft`.
+
+Notes:
+- Unauthenticated use succeeded (key still absent). Helper continues enforcing 1 req/sec.
+
+Next:
+- Provide `.env` with `S2_API_Key` and broaden literature (e.g., infidelity, religious homogamy, and wellbeing).
+- Move toward PAP-freeze criteria: finalize estimands and covariates, then freeze/tag before any confirmatory testing.

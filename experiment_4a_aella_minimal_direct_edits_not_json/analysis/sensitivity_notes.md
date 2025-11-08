@@ -60,12 +60,12 @@ These plans keep the sensitivity queue ready so we can transition from “design
 - **Artifacts**: Summary table `tables/loop013_h4_outcome_effects.csv` (religiosity coefficients + CIs across all anxiety codings) and figure `figures/loop013_h4_outcome_effects.png`. Both draw exclusively on previously published coefficients, so no new privacy risks arise.
 - **Takeaways**: Religiosity’s effect is stable across all codings: −0.062 SD on the continuous anxiety scale, −0.11 log-odds for the legacy ≥2 flag, −0.11 log-odds for the new ≥5 flag, −0.11 log-odds for the 3-bin ordinal outcome, and −2.5 p.p. in the linear-probability model. The visual highlights overlapping CIs, giving the manuscript a ready-made sensitivity reference once H4 advances toward PAP review.
 
-# Loop 014 Results — H3 Cluster Bootstrap
+# Loop 014/015 Results — H3 Cluster Bootstrap
 
 - **Command**: `PYTHONHASHSEED=20251016 python scripts/loop014_h3_cluster_bootstrap.py --n-reps 300`.
-- **Design**: Refit the PPO stacked logit 300 times after sampling respondents by country cluster (24 strata, minimum cluster size = 78) so that between-country heterogeneity feeds directly into the ≥$100k and ≥$1MM contrasts that are candidates for the next PAP freeze.
+- **Design**: Refit the PPO stacked logit 300 times after sampling respondents by country cluster (24 strata, minimum cluster size = 78) so that between-country heterogeneity feeds directly into the ≥$100k, ≥$1MM, and ≥$10MM contrasts that are candidates for the next PAP freeze.
 - **Artifacts**: Replicate-level draws live in `tables/loop014_h3_bootstrap_draws.csv`; percentile summaries reside in `tables/loop014_h3_bootstrap_summary.csv`.
-- **Findings**: The ≥$100k slope centers at 0.006 (SD 0.062) with a 95% percentile interval [-0.149, 0.123]; the ≥$1MM slope centers at 0.009 (SD 0.090) with interval [-0.129, 0.218]. Two-sided tail probabilities (0.74 and 0.96) indicate that once countries are re-sampled, the PPO estimator yields contrasts statistically indistinguishable from zero at these thresholds. This makes clear that the confirmatory plan either needs a different cutpoint or richer structure (e.g., class interactions or wider bins) before PAP promotion.
+- **Findings**: The ≥$100k slope centers at 0.006 (SD 0.062) with a 95% percentile interval [-0.149, 0.123]; the ≥$1MM slope centers at 0.009 (SD 0.090) with interval [-0.129, 0.218]. Both show two-sided tail probabilities ≥0.74, signaling near-zero contrasts once countries are resampled. The new ≥$10MM cutpoint averages 0.134 (SD 0.140) with percentile CI [-0.084, 0.486] and tail probability 0.21: still noisy, but the distribution is skewed positive and matches the large-sample PPO estimate (0.110, p=0.002) from `tables/loop010_h3_threshold_effects.csv`. Taken together, these diagnostics motivate redefining the candidate confirmatory estimand around the ≥$10MM contrast while relegating the lower cutpoints to descriptive appendices.
 
 # Loop 014 Results — H4 Class/Gender Interactions
 
