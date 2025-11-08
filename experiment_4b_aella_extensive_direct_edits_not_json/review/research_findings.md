@@ -305,3 +305,11 @@ N1: PASS – State remains in PAP with N1 explicitly blocked and stop_now=false,
 
 Notes: Continue pushing on the Semantic Scholar credential/waiver so the PAP gate can close.
 
+## Loop 039 — 2025-11-08T21:34:17.505525+00:00
+DECISION: CONTINUE
+R1: PASS – `artifacts/session_info.txt` (21:25Z, seed 20251016) plus the `repro_checkpoint_loop039` entry in `analysis/decision_log.csv:385` and the note in `qc/data_checks.md` confirm the required env + checksum refresh with no stray artifacts.
+L1: PASS – `lit/queries/loop_039/query_001.json` logs the 403 attempt, `lit/queries/loop_039/crossref_query_001.json` holds the CrossRef fallback, and the new Shlomi DOI is reflected in both `lit/evidence_map.csv:37` and `lit/bibliography.bib`.
+P1: PASS – No disclosure outputs were produced and `qc/data_checks.md` reiterates the standing small-cell guard (violations=0), so privacy controls remain intact.
+N1: WARN – `artifacts/state.json` again lists only blocker N1 without a concrete waiver/ops escalation schedule, leaving the PAP gate indefinite; document specific next steps/timelines before Loop 040 so reviewers can track resolution.
+Notes: Please spell out the planned escalation path (owner + date) for restoring Semantic Scholar access or formalizing the waiver.
+
