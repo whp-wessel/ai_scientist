@@ -1,1 +1,0 @@
-Loop 005: Literature expansion attempt via S2 helper (429 unauth), updated notebook/decision log/state; ready to checkpoint.

@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 009
+# Data Quality Checklist — Loop 010
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -44,13 +44,13 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 - Result: PAP variables documented with `source_column` mappings; `qc/metadata_validation.md` logs status (still assuming SRS).
 
 ## Reproducibility Checkpoint
-- [x] `artifacts/session_info.txt` last updated 2025-11-08T14:17:40Z with package versions; rerun not required this loop.
-- [x] `artifacts/checksums.json` timestamp 2025-11-08T14:17:41Z, which post-dates the raw data mtime (2025-11-07T15:23). No new raw files were introduced, so hashes remain current.
+- [x] `artifacts/session_info.txt` last updated 2025-11-08T14:24:06Z with package versions; no environment changes since Loop 009, so rerun not required this loop.
+- [x] `artifacts/checksums.json` timestamp 2025-11-08T13:46:15Z, covering raw + imputed files; no new raw deliveries landed after that mtime, so hashes remain current.
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403); PAP freeze deferred until literature-governance policy is satisfied or a waiver is recorded (`lit/queries/loop_009/query_001.json`).
+3. Semantic Scholar credential still failing (403); PAP freeze deferred until literature-governance policy is satisfied or a waiver is recorded (latest attempt `lit/queries/loop_010/query_001.json`).
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes

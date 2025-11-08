@@ -45,23 +45,53 @@ if repo_root_override:
     REPO = override_path
 
 MAIN_BRANCH = os.environ.get("GIT_MAIN_BRANCH", "main")
-MODEL = os.environ.get("CODEX_MODEL", "gpt-5-codex")
 REASONING_EFFORT = os.environ.get("CODEX_REASONING_EFFORT", "high")
 SLEEP_SECONDS = int(os.environ.get("LOOP_SLEEP_SECONDS", "0"))
 MAX_CONSEC_GIT_FAILS = 2
 DEFAULT_TOTAL_LOOPS = int(os.environ.get("DEFAULT_TOTAL_LOOPS", "50"))
 
-def _model_descriptor() -> str:
-    model = (MODEL or "").strip()
+MODEL_REGISTRY: dict[str, dict[str, str]] = {
+    "gpt-5-codex": {"strengths": "coding, data analysis, statistics"},
+    "gpt-5": {"strengths": "general reasoning, writing, synthesis"},
+}
+
+MODEL_ROTATION = {
+    "science": ["gpt-5-codex", "gpt-5"],
+    "review": ["gpt-5", "gpt-5-codex"],
+}
+
+MODEL_POLICY_CHOICES = {"agent", "fixed", "round_robin"}
+
+def _resolve_model_name(env_value: Optional[str], fallback: str) -> str:
+    name = (env_value or "").strip()
+    if name in MODEL_REGISTRY:
+        return name
+    return fallback
+
+DEFAULT_SCIENCE_MODEL = _resolve_model_name(
+    os.environ.get("CODEX_SCIENCE_MODEL") or os.environ.get("CODEX_MODEL"),
+    "gpt-5-codex",
+)
+DEFAULT_REVIEW_MODEL = _resolve_model_name(
+    os.environ.get("CODEX_REVIEW_MODEL"),
+    "gpt-5",
+)
+
+MODEL_POLICY = (os.environ.get("CODEX_MODEL_POLICY") or "agent").strip().lower()
+if MODEL_POLICY not in MODEL_POLICY_CHOICES:
+    MODEL_POLICY = "agent"
+
+def _format_model_descriptor(model: str) -> str:
+    model = (model or "").strip()
     effort = (REASONING_EFFORT or "").strip()
     if model and effort:
         return f"{model}-{effort}"
     return model or effort
 
-def _print_model_banner() -> None:
-    descriptor = _model_descriptor()
+def _print_model_banner(role: str, model: str) -> None:
+    descriptor = _format_model_descriptor(model)
     if descriptor:
-        print(f"[codex][model] {descriptor}")
+        print(f"[codex][model][{role}] {descriptor}")
 
 def _normalize_network_setting(value: str) -> str:
     val = value.strip().lower()
@@ -83,6 +113,10 @@ PROMPT_FILE = REPO / "agents.md"
 PROMPT_PATTERN = re.compile(r"<!--PROMPT:([A-Z0-9_]+)-->(.*?)<!--END PROMPT:\1-->", re.DOTALL)
 _PROMPT_CACHE: Optional[Dict[str, str]] = None
 LOOP_ACTION_RE = re.compile(r"loop[\s_:-]*(\d{3})", re.IGNORECASE)
+MODEL_ROLES = ("science", "review")
+MODEL_REQUEST_RE = re.compile(
+    r"(?im)^\s*Next\s+(science|review)\s+model\s*:\s*([A-Za-z0-9_.-]+)(?:\s*\|\s*(?:reason|why)\s*:\s*(.+))?\s*$"
+)
 
 PHASE_ORDER: list[str] = [
     "literature",
@@ -109,6 +143,39 @@ MAX_BINARY_FILE_BYTES = int(os.environ.get("RUNNER_MAX_BINARY_BYTES", 25 * 1024 
 CONTROL_PLANE_PATHS = {
     "artifacts/git_message.txt",
 }
+
+def _normalize_model_name(name: Optional[str]) -> Optional[str]:
+    if not name:
+        return None
+    trimmed = name.strip()
+    if trimmed in MODEL_REGISTRY:
+        return trimmed
+    return None
+
+def _default_model_for_role(role: str) -> str:
+    if role == "review":
+        return DEFAULT_REVIEW_MODEL
+    return DEFAULT_SCIENCE_MODEL
+
+def _rotation_for_role(role: str) -> list[str]:
+    rotation = MODEL_ROTATION.get(role)
+    if rotation:
+        return rotation
+    return list(MODEL_REGISTRY.keys())
+
+def _ensure_model_state_block(state: Dict[str, Any]) -> Dict[str, Any]:
+    model_state = state.setdefault("model_state", {})
+    for role in MODEL_ROLES:
+        entry = model_state.setdefault(role, {})
+        entry.setdefault("queued_model", None)
+        entry.setdefault("queued_reason", "")
+        entry.setdefault("queued_source", "")
+        entry.setdefault("rr_index", -1)
+        entry.setdefault("last_model", None)
+        entry.setdefault("last_model_policy", "")
+        entry.setdefault("last_model_reason", "")
+        entry.setdefault("last_model_context", "")
+    return model_state
 
 # --- Utilities: prompts, commands, reproducibility --------------------------------
 
@@ -181,10 +248,11 @@ def _handle_codex_line(line: str, last_message: str | None) -> str | None:
         _print_codex_event(ev_type, json.dumps(event, ensure_ascii=False))
     return last_message
 
-def run_codex_cli(user_prompt: str, system_prompt: str = None, model: str = MODEL, retries: int = 2) -> str:
+def run_codex_cli(user_prompt: str, system_prompt: str = None, model: Optional[str] = None, retries: int = 2) -> str:
     codex_bin = os.environ.get("CODEX_BIN", "codex")
     prompt = _combine_prompts(user_prompt, system_prompt)
-    cmd = [codex_bin, "exec", "--json", "-m", model]
+    model_name = (model or DEFAULT_SCIENCE_MODEL)
+    cmd = [codex_bin, "exec", "--json", "-m", model_name]
     if REASONING_EFFORT: cmd += ["-c", f"model_reasoning_effort=\"{REASONING_EFFORT}\""]
     if NETWORK_ACCESS:   cmd += ["-c", f"network_access=\"{NETWORK_ACCESS}\""]
     cmd.append("-")
@@ -251,6 +319,7 @@ def ensure_state_defaults(state: Dict[str, Any], total_loops: Optional[int] = No
     phase = updated.get("phase")
     if phase not in PHASE_ORDER: updated["phase"] = "literature"; updated["phase_ix"] = 0
     else: updated["phase_ix"] = PHASE_ORDER.index(updated["phase"])
+    _ensure_model_state_block(updated)
     return updated
 
 def read_seed_from_config(default_seed: int = 20251016) -> int:
@@ -292,7 +361,9 @@ def write_session_info(seed: int):
     lines.append(f"python: {sys.version.splitlines()[0]}")
     lines.append(f"platform: {platform.platform()}")
     lines.append(f"cwd: {str(REPO)}")
-    lines.append(f"model: {MODEL}")
+    lines.append(f"science_model_default: {DEFAULT_SCIENCE_MODEL}")
+    lines.append(f"review_model_default: {DEFAULT_REVIEW_MODEL}")
+    lines.append(f"model_policy: {MODEL_POLICY}")
     if NETWORK_ACCESS: lines.append(f"network_access: {NETWORK_ACCESS}")
     lines.append(f"seed: {seed}")
     rc, out, _ = run_cmd(["git","rev-parse","HEAD"])
@@ -311,7 +382,9 @@ def write_repro_report():
     rc, out, _ = run_cmd(["git","rev-parse","HEAD"]); head = out.strip() if rc == 0 else ""
     report = [
         "# Reproducibility Report","","- Generated: " + datetime.now(timezone.utc).isoformat(),
-        f"- Git HEAD: {head or '<unknown>'}", f"- Model: {MODEL}", f"- Network access: {NETWORK_ACCESS or 'not specified'}","",
+        f"- Git HEAD: {head or '<unknown>'}",
+        f"- Model defaults: science={DEFAULT_SCIENCE_MODEL}, review={DEFAULT_REVIEW_MODEL} (policy={MODEL_POLICY})",
+        f"- Network access: {NETWORK_ACCESS or 'not specified'}","",
         "Artifacts:","- artifacts/session_info.txt","- artifacts/checksums.json","- artifacts/llm_raw/loop_XXX.txt","- analysis/decision_log.csv","",
         "Principle: Any figure/table/result must be regenerable from code committed at the cited HEAD, with the recorded seed and environment."
     ]

@@ -105,3 +105,10 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Executed `python scripts/semantic_scholar_cli.py search --query "childhood emotional abuse adult self love wellbeing" --limit 5 --output lit/queries/loop_009/query_001.json`; the API still returned HTTP 403, so the failure payload is archived and next action N1 remains blocked pending a key or waiver.
 - Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 009 status note referencing `lit/queries/loop_009/query_001.json`, reinforcing that PAP freeze is contingent on Semantic Scholar compliance.
 - Updated `qc/data_checks.md` to Loop 009, documenting the latest session/checksum timestamps (2025-11-08T14:17Z) and reiterating that no confirmatory tables/figures were produced while the PAP remains draft.
+
+## Loop 10 Updates (2025-11-08)
+- Logged the Loop 009 reviewer guidance (R1 seed/QC discipline, L1 literature governance, P1 disclosure guard, N1 keep PAP in draft) in `analysis/decision_log.csv` before planning this loop.
+- Ran the required Semantic Scholar query (`python scripts/semantic_scholar_cli.py search --query "childhood abuse adult self love resilience wellbeing" --limit 5 --output lit/queries/loop_010/query_001.json`); the API still returns HTTP 403, and the failure payload is archived for governance.
+- Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 010 note plus explicit waiver-escalation language, keeping the freeze gate closed until either access is restored or ops approves the waiver.
+- Updated `qc/data_checks.md` to Loop 010, confirming the reproducibility checkpoint (session info timestamp 2025-11-08T14:24Z; checksums 2025-11-08T13:46Z) and re-stating the n ≥ 10 disclosure guard.
+- Next: coordinate with ops to secure a valid Semantic Scholar key or formal waiver before Loop 011 so the PAP can move toward freeze without violating literature governance.

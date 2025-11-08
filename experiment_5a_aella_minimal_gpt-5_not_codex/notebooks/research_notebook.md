@@ -86,3 +86,16 @@ Notes:
 Next:
 - Provide `.env` with `S2_API_Key` and rerun the literature searches; map DOIs to `lit/evidence_map.csv`.
 - If literature remains blocked, proceed to draft sensitivity plan (nonlinearity for Likert, potential confounders) while staying exploratory.
+
+---
+## Loop 006 (literature — reproducibility fix)
+- Addressed Non-negotiable alert by verifying and ensuring `analysis/decision_log.csv` includes loop_005 entries (search attempt, notebook/state updates, commit request).
+- Hardened literature artifacts by adding DOI URL to `lit/evidence_map.csv` (E1 → https://doi.org/10.1016/S0749-3797(98)00017-8).
+- Updated `artifacts/state.json` to reflect loop_counter=6 and refreshed `artifacts/git_message.txt` to request a checkpoint.
+
+Notes:
+- Semantic Scholar expansion remains blocked by missing `.env` `S2_API_Key`. Saved queries are in `lit/queries/` and will be re-run once the key is available.
+
+Next:
+- Add `.env` with `S2_API_Key` and execute saved queries; extract `externalIds.DOI` into `lit/evidence_map.csv` and cite in `reports/paper.md`.
+- Begin drafting `analysis/sensitivity_notes.md` covering ordinal modeling and potential confounders.

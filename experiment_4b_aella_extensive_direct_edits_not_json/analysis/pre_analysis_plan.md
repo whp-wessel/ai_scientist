@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T14:19Z
+last_updated: 2025-11-08T14:28Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -10,7 +10,7 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 2. Measurement validity dossier (`qc/measures_validity.md`) is populated for every referenced construct.
 3. Reproducible code lives under `analysis/code/` with command lines captured below.
 
-Loop 009 note: Semantic Scholar CLI attempts continue to return 403s despite compliance (see `lit/queries/loop_009/query_001.json`); PAP remains draft until either access is restored or a documented waiver is approved.
+Loop 010 note: Semantic Scholar CLI attempts continue to return 403s (see `lit/queries/loop_010/query_001.json`); PAP remains draft while we prepare a formal waiver request citing the accumulated evidence (Loops 008–010) unless ops can restore access immediately.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
@@ -89,8 +89,8 @@ Loop 009 note: Semantic Scholar CLI attempts continue to return 403s despite com
 6. **Disclosure review:** Draft `qc/disclosure_check_loop_{loop}` with min cell sizes and suppression summary before any tables/figures leave the repo.
 
 ## Outstanding Tasks Before Freeze
-1. Restore Semantic Scholar access (or obtain formal waiver). Loop 008 query (`lit/queries/loop_008/query_001.json`) still returns 403; PAP freeze deferred until a working credential or waiver is recorded in `analysis/decision_log.csv`.
-2. Document contingency with ops: if Loop 010 still shows 403, escalate for a documented waiver referencing `lit/queries/loop_008/query_001.json` + `analysis/decision_log.csv` (Loop 008 entries) before attempting PAP freeze.
+1. Restore Semantic Scholar access (or obtain formal waiver). Loop 010 query (`lit/queries/loop_010/query_001.json`) still returns 403; PAP freeze deferred until a working credential or waiver is recorded in `analysis/decision_log.csv`.
+2. Waiver escalation: Loop 010 still shows 403 (see `lit/queries/loop_010/query_001.json` and `analysis/decision_log.csv` entries for Loops 008–010); drafting the ops waiver request so PAP freeze can proceed if the key is not restored by Loop 011.
 3. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist automation (DP8) is linked to every planned table/figure.
 4. Keep `analysis/data_processing.md` synchronized with any new derivations (e.g., sensitivity specifications) and cite the ledger whenever PAP text references transformation history.
 5. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.***
