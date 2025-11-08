@@ -22,12 +22,12 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 42,
+  "loop_counter": 43,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 042 (see lit/queries/loop_042/query_001.json); waiver memo now covers loops 008-042 with CrossRef fallbacks including Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, Kasen et al. 2014, Giri 2025, Grummitt et al. 2024, McLeod 1991, Wheeler 2023, Taskesen et al. 2025, Van Alen et al. 2020, Tung et al. 2023, Liu & Yin 2025, Talmon 2023, Lacey et al. 2013, Nelson 1982, Gerra et al. 2016, Oh & Han 2019, Xu & Zheng 2025, Moran et al. 2018, Kennedy et al. 2017, Gasper 2020, Renjilian et al. 2021, Hintikka et al. 1998, Bellis et al. 2017, Musliner & Singer 2014, Shlomi et al. 2022, Luecken 2000, Ashton et al. 2021, and Kuhar et al. 2024. Ops memo drafted at lit/semantic_scholar_ops_memo_2025-11-09.md for the 2025-11-09 15:00Z deadline; support ticket template lives at lit/semantic_scholar_support_ticket_draft_2025-11-10.md for escalation by 2025-11-10 15:00Z; document responses before PAP freeze.",
+      "notes": "Semantic Scholar API still 403 as of loop 043 (see lit/queries/loop_043/query_001.json); waiver memo now covers loops 008-043 with CrossRef fallbacks including Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, Kasen et al. 2014, Giri 2025, Grummitt et al. 2024, McLeod 1991, Wheeler 2023, Taskesen et al. 2025, Van Alen et al. 2020, Tung et al. 2023, Liu & Yin 2025, Talmon 2023, Lacey et al. 2013, Nelson 1982, Gerra et al. 2016, Oh & Han 2019, Xu & Zheng 2025, Moran et al. 2018, Kennedy et al. 2017, Gasper 2020, Renjilian et al. 2021, Hintikka et al. 1998, Bellis et al. 2017, Musliner & Singer 2014, Shlomi et al. 2022, Luecken 2000, Ashton et al. 2021, Kuhar et al. 2024, and the Nature Mental Health editorial (2024; 10.1038/s44220-024-00375-2). Ops memo drafted at lit/semantic_scholar_ops_memo_2025-11-09.md for the 2025-11-09 15:00Z deadline; support ticket template lives at lit/semantic_scholar_support_ticket_draft_2025-11-10.md for escalation by 2025-11-10 15:00Z; document responses before PAP freeze.",
       "owner": "agent",
       "status": "blocked"
     },
