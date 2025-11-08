@@ -1,0 +1,242 @@
+{
+  "data": [
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "6562960",
+          "name": "A. Braam"
+        },
+        {
+          "authorId": "4888905",
+          "name": "M. Klinkenberg"
+        },
+        {
+          "authorId": "4737042",
+          "name": "D. Deeg"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 41928343,
+        "PubMed": "17214422"
+      },
+      "openAccessPdf": {
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "3c0426990b6a7bc4cd8e06959823988d297def6a",
+      "publicationDate": null,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "[Religiosity and mood in the last week of life: an explorative approach based on after-death proxy-interviews].",
+      "url": "https://www.semanticscholar.org/paper/3c0426990b6a7bc4cd8e06959823988d297def6a",
+      "venue": "Tijdschrift voor Gerontologie en Geriatrie",
+      "year": 2006
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "2337377135",
+          "name": "Claudio Santiago Dias"
+        },
+        {
+          "authorId": "9788382",
+          "name": "Ant\u00f4nio Ign\u00e1cio de Loyola Filho"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 275066324,
+        "DOI": "10.1007/s10943-024-02225-y",
+        "PubMed": "39729209"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10943-024-02225-y?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10943-024-02225-y, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "aec49a243a418c5633fc8bd32a3a1042cf621ff6",
+      "publicationDate": "2024-12-27",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Religion, Religiosity, and Smoking Among Older Adults: Results from the Brazilian Longitudinal Study of Aging (ELSI-Brazil), 2019-2021.",
+      "url": "https://www.semanticscholar.org/paper/aec49a243a418c5633fc8bd32a3a1042cf621ff6",
+      "venue": "Journal of religion and health",
+      "year": 2024
+    },
+    {
+      "abstract": "Abstract This study examined changes of test anxiety under the reform of the examination system in Taiwan. We sampled 46,361 Grade 9 students in Taiwan for 9 consecutive years starting from 2011 to collect data on their test anxiety, cram school attendance frequency, and academic achievement. Students\u2019 test anxiety level was compared between three periods: Basic Competence Test (2011\u20132013), Comprehensive Assessment Program (CAP 1; 2014\u20132016), and CAP 2(2017\u20132019). The results indicated that first, during CAP 1, students\u2019 test anxiety increased, but decreased in CAP 2. Second, the test anxiety level of students those with an upper-intermediate level of academic achievement, increased. Finally, the cram school attendance frequency didn\u2019t differ among the three periods. We provide suggestions for countries with a similar social climate. For potentially controversial social issues, such as test anxiety, policy makers should develop corresponding measures in advance on the basis of empirical evidence.",
+      "authors": [
+        {
+          "authorId": "114037988",
+          "name": "T. Chao"
+        },
+        {
+          "authorId": "2171651032",
+          "name": "Yao-Ting Sung"
+        },
+        {
+          "authorId": "71940632",
+          "name": "F. Tseng"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 268185648,
+        "DOI": "10.1080/2331186X.2024.2321019"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/2331186X.2024.2321019?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/2331186X.2024.2321019, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2321019?needAccess=true"
+      },
+      "paperId": "de4825ed0f7e22bc0a03706bee51892324446b77",
+      "publicationDate": "2024-02-27",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "High-stakes test anxiety among Taiwanese adolescents: a longitudinal study",
+      "url": "https://www.semanticscholar.org/paper/de4825ed0f7e22bc0a03706bee51892324446b77",
+      "venue": "Cogent Education",
+      "year": 2024
+    },
+    {
+      "abstract": "Background Qualitative data show negative impacts of menstruation on health and education in many settings, but there are few longitudinal quantitative studies of the impact of menstruation. We analyse associations with menstrual anxiety and school attendance in a study of Ugandan secondary school students. Methods Data were from a longitudinal pilot study of a menstrual health intervention (MENISCUS), conducted in two secondary schools in Entebbe sub-district, Uganda. Self-completed menstrual-related data, including menstrual anxiety, were collected from 232 participants pre- and post-intervention. A sub-cohort of 100 randomly-selected post-menarcheal girls were asked to self-complete daily diaries during 10\u00a0months of follow-up, with data on menstrual flow, pain, and school attendance. We used multivariable logistic regression to estimate associations with menstrual anxiety among all girls at baseline, and random-effects logistic regression to estimate associations of menstrual characteristics with school non-attendance for 3\u00a0months pre-intervention in the sub-cohort, adjusting for within-girl clustering. Results Overall, 130/222 (58.6%) of menstruating girls reported being anxious about their next period. Menstrual anxiety was higher in those not living with their mother (adjusted odds ratio (OR)\u2009=\u20091.91; 95% confidence interval (CI) 1.01\u20133.60), believing menstrual myths (aOR\u2009=\u20091.83; 0.95\u20133.50 for not agreeing that it is healthy for a girl to run, dance or cycle during her period; aOR\u2009=\u20091.97; 1.04\u20133.73 for agreeing that when a girl has her period she is unclean), lower menstrual confidence (aOR\u2009=\u20092.49; 1.33\u20134.65 for avoiding physical activity during her period; aOR\u2009=\u20091.68; 0.89\u20133.17 for not feeling comfortable to talk to other girls about her period; aOR\u2009=\u20092.89; 1.28\u20136.54 for agreeing that boys/girls tease them about their periods; and aOR\u2009=\u20092.27; 1.21\u20134.27 for worrying about being teased during her period). Those with lower knowledge about menstruation were less likely to report anxiety (aOR\u2009=\u20090.44; 0.23\u20130.84). During the pre-intervention period of the sub-cohort, school non-attendance was associated with menstrual pain, with 21.7% of girls missing school on days when they reported pain vs. 8.3% on days when no pain was reported (aOR\u2009=\u20093.82; 1.66\u20138.77). Conclusions Menstruation causes substantial anxiety in Ugandan schoolgirls, and menstrual pain is associated with missing school on period-days. Menstrual health interventions should address socio-cultural aspects of menstruation to reduce anxiety, and provide education on pain management strategies to support school attendance.",
+      "authors": [
+        {
+          "authorId": "2664640",
+          "name": "C. Tanton"
+        },
+        {
+          "authorId": "32753146",
+          "name": "Kevin Nakuya"
+        },
+        {
+          "authorId": "6237003",
+          "name": "Catherine Kansiime"
+        },
+        {
+          "authorId": "51193920",
+          "name": "Laura Hytti"
+        },
+        {
+          "authorId": "4645813",
+          "name": "B. Torondel"
+        },
+        {
+          "authorId": "38035935",
+          "name": "Suzanna C. Francis"
+        },
+        {
+          "authorId": "1491574312",
+          "name": "Prossy Namirembe"
+        },
+        {
+          "authorId": "1491574732",
+          "name": "Shamirah Nakalema"
+        },
+        {
+          "authorId": "152469623",
+          "name": "R. Nalugya"
+        },
+        {
+          "authorId": "9952010",
+          "name": "S. Musoke"
+        },
+        {
+          "authorId": "13412360",
+          "name": "S. Neema"
+        },
+        {
+          "authorId": "144711967",
+          "name": "D. Ross"
+        },
+        {
+          "authorId": "31612633",
+          "name": "C. Bonell"
+        },
+        {
+          "authorId": "117056899",
+          "name": "J. Seeley"
+        },
+        {
+          "authorId": "2020049770",
+          "name": "H. Weiss"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 245014785,
+        "DOI": "10.1186/s12905-021-01544-6",
+        "PubMed": "34895210",
+        "PubMedCentral": "8665501"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8665501, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://bmcwomenshealth.biomedcentral.com/counter/pdf/10.1186/s12905-021-01544-6"
+      },
+      "paperId": "292ad20d228462752fa7cc094a8cbf83df1fe127",
+      "publicationDate": "2021-12-01",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Menstrual characteristics, menstrual anxiety and school attendance among adolescents in Uganda: a longitudinal study",
+      "url": "https://www.semanticscholar.org/paper/292ad20d228462752fa7cc094a8cbf83df1fe127",
+      "venue": "BMC Women's Health",
+      "year": 2021
+    },
+    {
+      "abstract": "Longitudinal data are critical for examining associations of religiosity with sexual behaviors and motivations during college. We use hierarchical linear modeling on five semesters of data from a diverse sample of college students (N\u2009=\u2009735) to examine within- and between-person associations between religious service attendance and importance of religion and sexual behaviors and motivations for and against sex and consider gender as a moderator. Between-person religiosity was associated with sexual behaviors and motivations whereas within-person religiosity was not. Students' sexual motivations co-varied across semesters with their religious service attendance and importance of religion. Our results indicated more restrictive associations between religiosity and sexual motivations for women than for men.",
+      "authors": [
+        {
+          "authorId": "1471413366",
+          "name": "V. Hanna-Walker"
+        },
+        {
+          "authorId": "108758501",
+          "name": "T. Walters"
+        },
+        {
+          "authorId": "40611632",
+          "name": "Rose Wesche"
+        },
+        {
+          "authorId": "8587144",
+          "name": "Chelom E. Leavitt"
+        },
+        {
+          "authorId": "32110815",
+          "name": "E. S. Lefkowitz"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 257856982,
+        "DOI": "10.1111/jora.12849",
+        "PubMed": "36999207"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jora.12849?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jora.12849, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "4f02aab579a33e19dd11335a943ae48b20e5bc78",
+      "publicationDate": "2023-03-30",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Religiosity, sexual behaviors, sexual motivations, and gender: A three-year longitudinal study.",
+      "url": "https://www.semanticscholar.org/paper/4f02aab579a33e19dd11335a943ae48b20e5bc78",
+      "venue": "Journal of Research on Adolescence",
+      "year": 2023
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 363
+}

@@ -1,0 +1,183 @@
+{
+  "data": [
+    {
+      "abstract": "Introduction Childhood vaccinations are crucial in safeguarding children from infectious diseases and are recognized as one of the most cost-effective public health interventions. However, children in East African countries face more than a fifteen-fold increased risk of death from vaccine-preventable diseases compared to those in high-income nations. This study aimed to identify the factors influencing childhood immunization status in East Africa. Methods A sample of 22,734 children aged 12 to 23\u202fmonths was included to assess immunization status, utilizing recent data from the Demographic and Health Survey conducted between 2015 and 2022 across ten East African countries. A Level-3 multilevel generalized odds model with a logit link function was employed for the analysis. Results Among the 22,734 children in the sample, only 67.4% were fully immunized, 27.7% were partially immunized, and the remaining were not immunized at all. The null hypothesis of proportionality was rejected based on the Brant test. Consequently, various partial and non-proportional odds models were fitted, with the generalized odds model demonstrating the best fit compared to other ordinal regression models. The findings indicated that 43.14% of the variation in children\u2019s immunization status was attributable to differences between countries, while 18.18% was due to variations between regions. Specific factors associated with immunization status revealed that mothers who attended antenatal care were 1.23 times more likely to fully immunize their children compared to those who did not, and those who received postnatal care were 1.13 times more likely to do so. Additionally, mothers who had antenatal and postnatal services were 1.07 and 1.08 times more likely, respectively, to fully or partially immunize their children compared to those who did not. Conclusion The fitted generalized odds model indicated that several factors significantly associated with childhood immunization status included maternal age, number of antenatal and postnatal care visits, tetanus injections received by mothers, vitamin A intake, presence of health documentation, place of delivery, birth order, mother\u2019s occupation, sex of the household head, distance to health facilities, maternal education, community maternal education, community wealth index, and community media exposure. Therefore, it is recommended that interventions focus on enhancing household wealth, educating mothers, and improving health systems.",
+      "authors": [
+        {
+          "authorId": "2338953624",
+          "name": "Aster Addisu Dires"
+        },
+        {
+          "authorId": "7268440",
+          "name": "Demeke Lakew Workie"
+        },
+        {
+          "authorId": "2338953613",
+          "name": "Abay Kassa Teklie"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 275354000,
+        "DOI": "10.3389/fpubh.2024.1508303",
+        "PubMed": "39835310",
+        "PubMedCentral": "11743163"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11743163, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://doi.org/10.3389/fpubh.2024.1508303"
+      },
+      "paperId": "182fb0543023fd5bfc1591804b13254a75d48f82",
+      "publicationDate": "2025-01-06",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "Exploring factors influencing childhood immunization status in East Africa using multilevel ordinal logistic regression analysis",
+      "url": "https://www.semanticscholar.org/paper/182fb0543023fd5bfc1591804b13254a75d48f82",
+      "venue": "Frontiers in Public Health",
+      "year": 2025
+    },
+    {
+      "abstract": null,
+      "authors": [
+        {
+          "authorId": "2263613290",
+          "name": "Tak Wing Chana"
+        },
+        {
+          "authorId": "2263628031",
+          "name": "Vikki Boliverb"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 2596133
+      },
+      "openAccessPdf": {
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "ef17c982f83d73a0c593979c2a97fad57ebd4e15",
+      "publicationDate": null,
+      "publicationTypes": null,
+      "title": "The Grandparents Effect in Social Mobility : Evidence from British Birth Cohort",
+      "url": "https://www.semanticscholar.org/paper/ef17c982f83d73a0c593979c2a97fad57ebd4e15",
+      "venue": "",
+      "year": 2013
+    },
+    {
+      "abstract": "Using data from three British birth cohort studies, we examine patterns of social mobility over three generations of family members. For both men and women, absolute mobility rates (i.e., total, upward, downward, and outflow mobility rates) in the partial parents-children mobility tables vary substantially by grandparents\u2019 social class. In terms of relative mobility patterns, we find a statistically significant association between grandparents\u2019 and grandchildren\u2019s class positions, after parents\u2019 social class is taken into account. The net grandparents-grandchildren association can be summarized by a single uniform association parameter. Net of parents\u2019 social class, the odds of grandchildren entering the professional-managerial class rather than the unskilled manual class are at least two and a half times better if the grandparents were themselves in professional-managerial rather than unskilled manual-class positions. This grandparents effect in social mobility persists even when parents\u2019 education, income, and wealth are taken into account.",
+      "authors": [
+        {
+          "authorId": "2263209118",
+          "name": "T. W. Chan"
+        },
+        {
+          "authorId": "3617409",
+          "name": "V. Boliver"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 264744867,
+        "DOI": "10.1177/0003122413489130",
+        "MAG": "2887855637"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/0003122413489130?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/0003122413489130, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GREEN",
+        "url": "https://durham-repository.worktribe.com/preview/1499228/13122.pdf"
+      },
+      "paperId": "75d329cb11377eb8a38b6f92201980b32f8770dd",
+      "publicationDate": "2013-08-01",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "The Grandparents Effect in Social Mobility",
+      "url": "https://www.semanticscholar.org/paper/75d329cb11377eb8a38b6f92201980b32f8770dd",
+      "venue": "",
+      "year": 2013
+    },
+    {
+      "abstract": "Complete childhood vaccination remains poor in Sub-Saharan Africa, despite major improvement in childhood vaccination coverage worldwide. Globally, an estimated 2.5 million children die annually from vaccine-preventable diseases. While studies are being conducted in different East African countries, there is limited evidence of complete basic childhood vaccinations and associated factors in East Africa among children aged 12\u201323\u2009months. Therefore, this study aimed to investigate complete basic childhood vaccinations and associated factors among children aged 12\u201323\u2009months in East Africa. Based on the Demographic and Health Surveys (DHSs) of 12 East African countries (Burundi, Ethiopia, Comoros, Uganda, Rwanda, Tanzania, Mozambique, Madagascar, Zimbabwe, Kenya, Zambia, and Malawi), secondary data analysis was performed. The study included a total weighted sample of 18,811 children aged 12\u201323\u2009months. The basic childhood vaccination coverage was presented using a bar graph. Multilevel binary logistic regression analysis was fitted for identifying significantly associated factors because the DHS has a hierarchical nature. The Intra-class Correlation Coefficient (ICC), Median Odds Ratio (MOR), Proportional Change in Variance (PCV), and deviance (\u22122LLR) were used for checking model fitness, and for model comparison. Variable with p-value \u22640.2 in the bi-variable multilevel analysis were considered for the multivariable analysis. In the multivariable multilevel analysis, the Adjusted Odds Ratio (AOR) with 95% Confidence Interval (CI) were reported to declare the significance and strength of association with full vaccination. Complete basic childhood vaccination in East Africa was 69.21% (95% CI, 69.20, 69.21%). In the multivariable multilevel analysis; Mothers aged 25\u201334\u2009years (AOR\u2009=\u20091.21, 95% CI: 1.10, 1.32), mothers aged 35\u2009years and above (AOR\u2009=\u20091.50, 95% CI: 1.31, 1.71), maternal primary education (AOR\u2009=\u20091.26, 95% CI: 1.15, 1.38), maternal secondary education and above (AOR\u2009=\u20091.54, 95% CI: 1.36, 1.75), husband primary education (AOR\u2009=\u20091.25, 95% CI: 1.13, 1.39), husband secondary education and above (AOR\u2009=\u20091.24, 95% CI: 1.11, 1.40), media exposure (AOR\u2009=\u20091.23, 95% CI: 1.13, 1.33), birth interval of 24\u201348\u2009months (AOR\u2009=\u20091.28, 95% CI: 1.15, 1.42), birth interval greater than 48\u2009months (AOR\u2009=\u20091.35, 95% CI: 1.21, 1.50), having 1\u20133 ANC visit (AOR\u2009=\u20093.24, 95% CI: 2.78, 3.77), four and above ANC visit (AOR\u2009=\u20093.68, 95% CI: 3.17, 4.28), PNC visit (AOR\u2009=\u20091.34, 95% CI: 1.23, 1.47), health facility delivery (AOR\u2009=\u20091.48, 95% CI: 1.35, 1.62), large size at birth 1.09 (AOR\u2009=\u20091.09, 95% CI: 1.01, 1.19), being 4\u20136 births (AOR\u2009=\u20090.83, 95% CI: 0.75, 0.91), being above the sixth birth (AOR\u2009=\u20090.60, 95% CI: 0.52, 0.70), middle wealth index (AOR\u2009=\u20091.16, 95% CI: 1.06, 1.28), rich wealth index (AOR\u2009=\u20091.20, 95% CI: 1.09, 1.33), community poverty (AOR\u2009=\u20091.21, 95% CI: 1.11, 1.32) and country were significantly associated with complete childhood vaccination. In East Africa, full basic childhood vaccine coverage remains a major public health concern with substantial differences across countries. Complete basic childhood vaccination was significantly associated with maternal age, maternal education, husband education, media exposure, preceding birth interval, number of ANC visits, PNC visits, place of delivery, child-size at birth, parity, wealth index, country, and community poverty. Public health interventions should therefore target children born to uneducated mothers and fathers, poor families, and those who have not used maternal health services to enhance full childhood vaccination to reduce the incidence of child mortality from vaccine-preventable diseases.",
+      "authors": [
+        {
+          "authorId": "1561158741",
+          "name": "G. Tesema"
+        },
+        {
+          "authorId": "1405306308",
+          "name": "Z. Tessema"
+        },
+        {
+          "authorId": "134271268",
+          "name": "K. Tamirat"
+        },
+        {
+          "authorId": "1490802709",
+          "name": "Achamyeleh Birhanu Teshale"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 227236267,
+        "DOI": "10.1186/s12889-020-09965-y",
+        "MAG": "3109535449",
+        "PubMed": "33256701",
+        "PubMedCentral": "7708214"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7708214, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/s12889-020-09965-y"
+      },
+      "paperId": "51af40314edb9bb39636d093ebe4187cd073616b",
+      "publicationDate": "2020-12-01",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "Complete basic childhood vaccination and associated factors among children aged 12\u201323\u2009months in East Africa: a multilevel analysis of recent demographic and health surveys",
+      "url": "https://www.semanticscholar.org/paper/51af40314edb9bb39636d093ebe4187cd073616b",
+      "venue": "BMC Public Health",
+      "year": 2020
+    },
+    {
+      "abstract": "Introduction: Anemia is a major public health problem, affecting more than 56 million women worldwide. During pregnancy, hemoglobin concentrations in venous blood below 11 grams per deciliter have significant adverse effects on the health of pregnant women. The main purpose of this study was to investigate the anemia status of the participants and the factors that lead to anemia. \nMethods: Data for this study were obtained from the 2016 Ethiopian Demographic Health Survey (January 18, 2016, to June 27, 2016). A total of 1053 pregnant women were included in the analysis. The risk factors for anemia status were analyzed using a partial-proportional odds model. \nResults: The study included 1053 pregnant women, with 32, 214, and 395 suffering from severe, moderate, and mild anemia, respectively. Somalia had the highest proportion of severely anemic people, while Tigray had the lowest. The effect changing in different regions of the sample had various effects on the outcome variable. For example, in the Somali region, the probability of subjects with severe anemia increased by 0.027 (AMPE= 0.027, P = 0.015) percentage points when compared to their counterparts. The effect of changing iron-taking status by one percent on average across the sample decreased by 1.6% (AMPE = -0.016, P= 0.001), 3.7% (AMPE = -0.037, P = 0.001), and 3% (AMPE = -0.030, P = 0.003) points, respectively, for participants in the severe, moderate, and mild classes. The effect of changing place of residence and parity decreased for those in the non-anemic group, but it increased for the wealth index (richest household). Anemia decreased with higher education level [primary: (AMPE = 0.032, P = 0.002), secondary: (AMPE = 0.069, P = 0.025), higher: (AMPE = 0.176, P = 0.000)]. \nConclusion: Finally, the authors concluded that iron intake, educational status, wealth index (richest households), place of residence, parity, and selected regions have been identified as prognostic factors for anemia status in pregnant women aged 15 to 49 years. Therefore, action on these predictors is needed to improve anemia among pregnant women in Ethiopia. Furthermore, AMPE should be used with greater motivation to interpret the logistic regression results.",
+      "authors": [
+        {
+          "authorId": "116481955",
+          "name": "Alemayehu Legesse"
+        },
+        {
+          "authorId": "51914774",
+          "name": "Meskerem Abebe"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 257627738,
+        "DOI": "10.18502/jbe.v8i3.12308"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18502/jbe.v8i3.12308?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18502/jbe.v8i3.12308, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBYNC",
+        "status": "GOLD",
+        "url": "https://doi.org/10.18502/jbe.v8i3.12308"
+      },
+      "paperId": "89842b967295c14a60164cf1626557a7bb7ffd93",
+      "publicationDate": "2023-03-17",
+      "publicationTypes": [
+        "Review"
+      ],
+      "title": "Determinants of Anemia Status Among Reproductive Age Women During Pregnancy In Ethiopia: Cross-Sectional Study Design",
+      "url": "https://www.semanticscholar.org/paper/89842b967295c14a60164cf1626557a7bb7ffd93",
+      "venue": "Journal of biostatistics and epidemiology",
+      "year": 2023
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 8
+}

@@ -5,6 +5,7 @@
 - `papers/main/manuscript.md`: keep in sync with TeX file; manual edit only.
 - `papers/main/imrad_outline.md`: update manually after each major analysis milestone.
 - `figures/dag_design.png` / `figures/dag_design.json`: regenerate via `python analysis/code/plot_dag.py --output-png figures/dag_design.png --output-json figures/dag_design.json`.
+- `reports/identification.md`: manual edit; reference DAG command above and cite disclosure guardrails + descriptive stance.
 - Build outputs (PDF/DOCX) will be stored under `papers/main/output/` (dir TBD) with commands logged here.
 
 ## Seeds and Versions

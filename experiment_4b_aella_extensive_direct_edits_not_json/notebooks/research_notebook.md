@@ -75,3 +75,8 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 2. Freeze the PAP (status + registry URL + commit tag) once literature, measurement, and disclosure gates are satisfied; this remains blocked on N1.
 3. Wire the disclosure-check template into the execution order so every future table/figure logs minimum cell counts prior to release.
 4. Coordinate with the data provider about the empty `mentalillness` column and decide whether MI outputs should be integrated into the H2 control set before confirmatory modeling.
+
+## Loop 6 Remediation Plan (2025-11-08)
+- **Reviewer STOP recap:** Loop 005 received `DECISION: STOP` because `figures/dag_design.*`, `reports/identification.md`, and `data/clean/childhood_imputed_stack_loop005.csv` were referenced but missing. As a result, R1 (reproducibility) failed while L1 (literature) and P1 (privacy) passed; the DAG/imputation backlog statuses were therefore misreported (N1=WARN).
+- **Commitments this hour:** Re-run `analysis/code/plot_dag.py` and rebuild `reports/identification.md`; regenerate the deterministic imputation stack via `analysis/code/impute_and_stack.py` so `data/clean/` exists; implement the disclosure automation promised in Loop 004; and continue logging Semantic Scholar attempts for compliance even though the key still yields 403.
+- **Planned artifacts:** `figures/dag_design.png/.json`, `reports/identification.md`, `data/clean/childhood_imputed_stack_loop005.csv`, `artifacts/imputation_summary_loop005.json` (updated), new `analysis/code/disclosure_check.py`, and `qc/disclosure_check_loop_006.md` documenting the automation run plus linkages for DAG/figures. Update PAP + state once artifacts are in place so the STOP condition is cleared.

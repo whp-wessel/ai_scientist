@@ -1,0 +1,206 @@
+{
+  "data": [
+    {
+      "abstract": "This study investigates the socioeconomic determinants of early childhood development (ECD) in Pakistan by utilizing the data of sixth wave of the Multiple Indicator Cluster Survey (MICS) conducted in the four provinces of the country. The findings of the study reveal that mother\u2019s education, father\u2019s education, economic status of the household as measured by household\u2019s wealth index quintile, region of residence (province), child\u2019s gender, disability, nutrition and the practices used by the adult members of the household to discipline child are important determinants of ECD. The study highlights the crucial role of family background and importance of addressing the issue of malnutrition to foster child development.",
+      "authors": [
+        {
+          "authorId": "120203878",
+          "name": "Shahla Akram"
+        },
+        {
+          "authorId": "2302318797",
+          "name": "Feroz Zahid"
+        },
+        {
+          "authorId": "47653329",
+          "name": "Zahid Pervaiz"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 269921011,
+        "DOI": "10.1186/s41043-024-00569-5",
+        "PubMed": "38769581",
+        "PubMedCentral": "11107027"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11107027, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://jhpn.biomedcentral.com/counter/pdf/10.1186/s41043-024-00569-5"
+      },
+      "paperId": "4e8329342c4a19902e292f7c3aaf19bbe64828c1",
+      "publicationDate": "2024-05-20",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "Socioeconomic determinants of early childhood development: evidence from Pakistan",
+      "url": "https://www.semanticscholar.org/paper/4e8329342c4a19902e292f7c3aaf19bbe64828c1",
+      "venue": "Journal of Health, Population and Nutrition",
+      "year": 2024
+    },
+    {
+      "abstract": "Objectives While childhood circumstances predict mental health outcomes in high-income countries, evidence from low-income and middle-income countries (LMICs) like Indonesia remains scarce. This study examines the long-term association between childhood socioeconomic status (SES), health and depressive symptoms in adulthood, testing the hypothesis that early-life disadvantages increase the odds of depressive symptoms later in life. Design Cross-sectional analysis using latent class analysis to cluster childhood SES/health and logistic regression to assess associations with depressive symptoms. Setting A nationally representative household survey was conducted across 13 provinces in urban and rural areas of Indonesia. Participants 32\u2009085 adults aged 18 years and older from the 2014\u20132015 Indonesia Family Life Survey. Participants with missing data on childhood circumstances or depressive symptoms were excluded, resulting in a final analytic sample of 29\u2009140 individuals. Outcome measures The primary outcome was depressive symptoms measured using the 10-item Centre for Epidemiologic Studies Depression Scale, with scores \u226510 indicating clinically significant symptoms. Secondary exposures included latent classes of childhood SES and health (high, moderate and low disadvantage). Analyses adjusted for adult SES, health behaviours, social capital and demographic characteristics. Results Three latent classes emerged: low (64.85%), moderate (5.73%) and high (29.42%) early-life disadvantage. Adjusted logistic regression showed higher odds of depressive symptoms for high (OR 1.39, 95% CI 1.28 to 1.50) and moderate disadvantage (OR 1.66, 95% CI 1.48 to 1.87) versus low. Significant covariates included age, education, wealth and social capital (all p<0.05). Conclusions Early-life disadvantages predict depressive symptoms in adulthood in Indonesia, underscoring the need for child-focused interventions (health, education and poverty reduction) to mitigate long-term mental health risks in LMICs. Further research should explore longitudinal mechanisms.",
+      "authors": [
+        {
+          "authorId": "2374917138",
+          "name": "Ronny Isnuwardana"
+        },
+        {
+          "authorId": "2374920957",
+          "name": "Jonathan Gibson"
+        },
+        {
+          "authorId": "2315604665",
+          "name": "Asri Maharani"
+        },
+        {
+          "authorId": "2304826996",
+          "name": "Herni Susanti"
+        },
+        {
+          "authorId": "2265988698",
+          "name": "Helen Brooks"
+        },
+        {
+          "authorId": "2347714354",
+          "name": "Penny Bee"
+        },
+        {
+          "authorId": "2374929399",
+          "name": "Laura Anselmi"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 280525479,
+        "DOI": "10.1136/bmjopen-2024-095197",
+        "PubMed": "40759526",
+        "PubMedCentral": "12323512"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12323512, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": null,
+        "url": ""
+      },
+      "paperId": "424c4d7ed9d6991a394440b9b2cb4d2ea69a4da0",
+      "publicationDate": "2025-08-01",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "Association of childhood socioeconomic status and health with depressive symptoms in later life: a cross-sectional latent class analysis of the 2014/2015 Indonesia Family Life Survey",
+      "url": "https://www.semanticscholar.org/paper/424c4d7ed9d6991a394440b9b2cb4d2ea69a4da0",
+      "venue": "BMJ Open",
+      "year": 2025
+    },
+    {
+      "abstract": "Introduction: Good health is considered the most important wealth a human can have. But nowadays, due to the transitional changes in the economy, changing job roles, and food habits, the majority of the world's population is leaning towards an idle, sedentary lifestyle. Obesity is a health condition characterized by excessive accumulation of fat, especially in the lower abdomen area, with respect to the specific age and gender of an individual. Objective: The current study aims to find socioeconomic correlates of childhood obesity in India. Data: This study uses data from the 5th cycle National Family Health Survey (2019-2021) conducted by the Ministry of Health and Family Welfare (MoHFW). For analysis, \u2018Children Recode File\u2019 (IAKR7EFL) is utilized in STATA format. After omitting the missing entries from every variable used in the model, a total of 582 children are considered for obesity analysis. Methods: Ordered Logit Regression is run, accounting for three categories of obesity: non-obese, mildly obese, and severely obese. Odds ratios are estimated to check the probability of the occurrence of childhood obesity. Marginal effects are then calculated to get the incidence of category-specific obesity. Result and Discussion: Haemoglobin level of mothers has a slightly unfavourable effect on obesity, the marginal effect of that variable is positive in the non-obese category but is negative in mild obesity and severe obesity. Both Hindu and Muslim households have unfavourable but significant effects on obesity. Receiving PNC turns out to be an unfavorable variable in occurring obesity. Moving from medium birth order to low birth order decreases the possibility of obesity. Both very low and medium birth intervals cause the incidence of childhood obesity. Proper and sufficient breastfeeding can cut down the probability of obesity in children. Lastly, low antenatal care accounts for a lower possibility of children being obese. Thus, the reasonable and permissible effort from the public authority for such controllable causes can be the way forward towards the reduction of obesity in the future generation of the country.",
+      "authors": [
+        {
+          "authorId": "2373207100",
+          "name": "Sayantan Marik"
+        },
+        {
+          "authorId": "84260505",
+          "name": "Debaprasad Sarkar"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 280208316,
+        "DOI": "10.36948/ijfmr.2025.v07i04.50674"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.36948/ijfmr.2025.v07i04.50674?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.36948/ijfmr.2025.v07i04.50674, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": null,
+        "status": null,
+        "url": ""
+      },
+      "paperId": "88164a991ae7fd241977416a0ad5a936ad6df4d7",
+      "publicationDate": "2025-07-09",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "title": "Socioeconomic Determinants of Childhood Obesity in India: An Empirical Study Using NFHS-5",
+      "url": "https://www.semanticscholar.org/paper/88164a991ae7fd241977416a0ad5a936ad6df4d7",
+      "venue": "International Journal For Multidisciplinary Research",
+      "year": 2025
+    },
+    {
+      "abstract": "Key Points Question How does the disparity in mortality by wealth compare with disparities by other socioeconomic status (SES) measures and by smoking history? Findings In this US cohort study involving 6320 participants, disparities in mortality associated with wealth were statistically significant and larger than the disparities associated with education, occupation, income, or childhood SES; at high levels, additional wealth was not associated with lower mortality. However, the wealth disparity was much smaller than the smoking differential, which was evident across all ages 25 years and older. Meaning These findings suggest that mortality disparities by wealth are larger than those associated with other indicators of SES but that the smoking differential is far greater.",
+      "authors": [
+        {
+          "authorId": "5404110",
+          "name": "D. Glei"
+        },
+        {
+          "authorId": "1410209246",
+          "name": "Chioun Lee"
+        },
+        {
+          "authorId": "78776500",
+          "name": "M. Weinstein"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 248025504,
+        "DOI": "10.1001/jamanetworkopen.2022.6547",
+        "PubMed": "35394513",
+        "PubMedCentral": "8994125"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8994125, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2790904/glei_2022_oi_220206_1648733770.55716.pdf"
+      },
+      "paperId": "adccf105d5a62567cb10cf9dafbd8582985679da",
+      "publicationDate": "2022-04-01",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Assessment of Mortality Disparities by Wealth Relative to Other Measures of Socioeconomic Status Among US Adults",
+      "url": "https://www.semanticscholar.org/paper/adccf105d5a62567cb10cf9dafbd8582985679da",
+      "venue": "JAMA Network Open",
+      "year": 2022
+    },
+    {
+      "abstract": "Background Cognitive functioning is an important measure of intrinsic capacity. In this study, we examine the association of life course socioeconomic status (SES) and height with cognitive functioning among older adults (50+) in India and China. The age pattern of cognitive functioning with measures of life course socioeconomic status has also been examined. Methods Cross-sectional comparative analysis was conducted using the WHO\u2019s Study on global AGEing and adult health (SAGE) data for India and China. Multilevel mixed-effect linear regression analysis was used to examine the association of life course socioeconomic status and adult height with cognitive functioning. Results In both India and China, parental education as a measure of childhood socioeconomic status was positively associated with cognitive functioning. The association between adult socioeconomic status and cognitive functioning was positive and significant. Height was significantly and positively associated with improved cognitive functioning of older adults in India and China. Furthermore, the age-related decline in cognitive functioning score was higher among older adults whose parents had no schooling, particularly in China. The cognitive functioning score with age was much lower among less-educated older adults than those with higher levels of education in China. Wealthier older adults in India had higher cognitive functioning in middle ages, however, wealth differences narrowed with age. Conclusions The results of this study suggest a significant association of lifetime socioeconomic status and cumulative net nutrition on later-life cognitive functioning in middle-income settings.",
+      "authors": [
+        {
+          "authorId": "35664763",
+          "name": "Y. Selvamani"
+        },
+        {
+          "authorId": "15750987",
+          "name": "P. Arokiasamy"
+        }
+      ],
+      "externalIds": {
+        "CorpusId": 235384916,
+        "DOI": "10.1186/s12877-021-02303-w",
+        "PubMed": "34107877",
+        "PubMedCentral": "8191062"
+      },
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8191062, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://bmcgeriatr.biomedcentral.com/track/pdf/10.1186/s12877-021-02303-w"
+      },
+      "paperId": "e630b5f7a9d2ec98cd289b11296189a754cb635c",
+      "publicationDate": "2021-06-09",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "title": "Association of life course socioeconomic status and adult height with cognitive functioning of older adults in India and China",
+      "url": "https://www.semanticscholar.org/paper/e630b5f7a9d2ec98cd289b11296189a754cb635c",
+      "venue": "BMC Geriatrics",
+      "year": 2021
+    }
+  ],
+  "next": 5,
+  "offset": 0,
+  "total": 123
+}
