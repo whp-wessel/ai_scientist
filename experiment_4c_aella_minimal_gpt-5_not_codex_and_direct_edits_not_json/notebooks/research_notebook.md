@@ -56,3 +56,19 @@ Highlights (exploratory; not confirmatory):
 Next:
 - Provide `.env` with `S2_API_Key` to run literature queries and extract DOIs into `lit/evidence_map.csv`.
 - Consider robustness (e.g., nonlinearity, ordinal models) and potential confounders; plan sensitivity checks.
+
+---
+## Loop 004 (literature)
+- Ran Semantic Scholar search via helper (unauthenticated; awaiting `.env` `S2_API_Key`):
+  - `python scripts/semantic_scholar_cli.py search --query "childhood religion religiosity adult wellbeing mental health" --limit 5 --output lit/queries/loop_004/query_001.json`
+  - Result: HTTP 429 captured to `lit/queries/loop_004/query_001.json` (rate-limited without key).
+- Added safe public cross-tabulation table with small-cell suppression (n<10 → "<10"):
+  - `python scripts/analysis/make_tables.py --input childhoodbalancedpublic_original.csv --var1 religion --var2 monogamy --output tables/religion_by_monogamy.csv --threshold 10`
+  - Output: `tables/religion_by_monogamy.csv`.
+
+Notes:
+- Literature expansion remains blocked by missing API key. Once provided, I will re-run the saved search(es) and extract DOIs to `lit/evidence_map.csv`.
+
+Next:
+- Provide `.env` with `S2_API_Key`; then parse `externalIds.DOI` from successful search results into `lit/evidence_map.csv`.
+- Consider ordinal models for Likert items and robustness checks; prepare sensitivity plan draft.

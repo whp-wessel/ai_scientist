@@ -22,6 +22,9 @@ Results:
 - EDA summary generated (see `outputs/eda_summary.json`); public counts for key variables provided in `tables/key_vars_value_counts.csv` (cells with n<10 masked as "<10").
 - Inferential results will be added to `analysis/results.csv` in later phases; current work remains exploratory.
 
+Public Tables (Privacy-Aware):
+- `tables/religion_by_monogamy.csv`: cross-tabulation of current religious practice by monogamy preference with n<10 cell suppression.
+
 Exploratory estimates (Loop 003; standardized OLS; SRS assumption):
 - See `analysis/results.csv` for full details. Briefly: teen SES positively associated with depression and stress items; male indicator positively associated with anxiety item; religion positively associated with monogamy preference; religion ~ relationship satisfaction effect is small; childhood religious strictness ~ unhappiness is near zero. All non-confirmatory.
 

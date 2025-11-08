@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T14:05Z
+last_updated: 2025-11-08T14:11Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -87,9 +87,10 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 6. **Disclosure review:** Draft `qc/disclosure_check_loop_{loop}` with min cell sizes and suppression summary before any tables/figures leave the repo.
 
 ## Outstanding Tasks Before Freeze
-1. Restore Semantic Scholar access (or obtain formal waiver). Loop 007 query (`lit/queries/loop_007/query_001.json`) still returns 403; PAP freeze deferred until a working credential or waiver is recorded in `analysis/decision_log.csv`.
-2. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist automation (DP8) is linked to every planned table/figure.
-3. Keep `analysis/data_processing.md` synchronized with any new derivations (e.g., sensitivity specifications) and cite the ledger whenever PAP text references transformation history.
-4. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.***
+1. Restore Semantic Scholar access (or obtain formal waiver). Loop 008 query (`lit/queries/loop_008/query_001.json`) still returns 403; PAP freeze deferred until a working credential or waiver is recorded in `analysis/decision_log.csv`.
+2. Document contingency with ops: if Loop 010 still shows 403, escalate for a documented waiver referencing `lit/queries/loop_008/query_001.json` + `analysis/decision_log.csv` (Loop 008 entries) before attempting PAP freeze.
+3. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist automation (DP8) is linked to every planned table/figure.
+4. Keep `analysis/data_processing.md` synchronized with any new derivations (e.g., sensitivity specifications) and cite the ledger whenever PAP text references transformation history.
+5. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.***
 
 _No confirmatory analysis will begin until the status is set to `frozen` with registry details and a recorded commit/tag._

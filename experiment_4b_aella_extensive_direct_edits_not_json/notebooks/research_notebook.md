@@ -71,9 +71,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Added `analysis/code/calc_bh.py` so confirmatory runs can append `q_value` + `bh_in_scope` per family once PAP is frozen; execution deferred until results exist to avoid premature confirmatory outputs.
 
 ## Next Steps
-1. Restore Semantic Scholar access or secure a documented waiver; Loop 007 query (`lit/queries/loop_007/query_001.json`) still returns 403 so the PAP cannot freeze yet.
-2. Freeze the PAP (status + registry URL + commit/tag) once literature and measurement gates are satisfied and disclosure automation (DP8) is tied to every planned table/figure.
-3. Keep `analysis/data_processing.md` synchronized with new derivations so reproducibility (R1) remains auditable alongside `qc/data_checks.md`.
+1. Restore Semantic Scholar access or secure a waiver — Loop 008 attempt (`lit/queries/loop_008/query_001.json`) still returns 403, so plan to escalate with ops by Loop 010 if a valid key is not issued.
+2. Keep the PAP in draft until the literature gate clears, then freeze with registry URL + commit/tag while linking disclosure automation (DP8) to every planned confirmatory artifact.
+3. Continue syncing `analysis/data_processing.md`, `qc/data_checks.md`, and reproducibility files (`artifacts/session_info.txt`, `artifacts/checksums.json`) each loop so R1 remains auditable.
 4. Coordinate with the data provider about the empty `mentalillness` control for H2 before confirmatory modeling or document a justified exclusion in the PAP/results.
 
 ## Loop 6 Remediation Plan (2025-11-08)
@@ -93,3 +93,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Created `analysis/data_processing.md` to catalogue DP1–DP8 transformations (QC, measurement dossier, imputation, DAG, disclosure automation) with explicit commands and seeds, closing the reviewer’s reproducibility concern.
 - Refreshed `analysis/pre_analysis_plan.md` (status: draft) and `qc/data_checks.md` to reference the new ledger and clarify that PAP freeze is still gated on Semantic Scholar access plus disclosure automation wiring.
 - Documented these steps in `analysis/decision_log.csv` so R1 remains auditable and emphasized that no confirmatory outputs will run until the PAP is frozen and literature policy is satisfied.
+
+## Loop 8 Updates (2025-11-08)
+- Recorded the Loop 007 reviewer critiques (R1, L1, P1, N1) in `analysis/decision_log.csv` and planned this loop around maintaining seed discipline, literature governance, disclosure controls, and the PAP freeze gate.
+- Ran the required Semantic Scholar query (`childhood abuse self love adult wellbeing`); the key still returns 403, so the payload lives at `lit/queries/loop_008/query_001.json` and next action N1 stays blocked pending new credentials or a waiver.
+- Refreshed `analysis/pre_analysis_plan.md` with a Loop 008 timestamp plus an explicit contingency to escalate for a waiver by Loop 010 if the API remains forbidden, ensuring the PAP cannot freeze prematurely.
+- Updated `qc/data_checks.md` to Loop 008 with a reproducibility checkpoint confirming `artifacts/session_info.txt` and `artifacts/checksums.json` (both updated 2025-11-08T15:09 UTC) so R1 traceability remains documented alongside the disclosure guard.
