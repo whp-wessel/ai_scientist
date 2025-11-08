@@ -175,3 +175,11 @@ R3 PASS - Manuscript claims cite peer-reviewed sources (e.g., Zhang/Moore/Zhao/A
 R4 PASS - Privacy policy is reiterated (public outputs keep n≥135 per `reports/paper.md:19`), and the new weight-delivery table only logs file presence with no respondent counts (`tables/loop021_h3_weight_delivery_status.csv:2`).  
 R5 PASS - Required artifacts remain current: the PAP header stays frozen/hashed (`analysis/pre_analysis_plan.md:1`), the research notebook narrates the Loop‑23 DG‑4827 blocker and follow-ups (`notebooks/research_notebook.md:193`), and the state file lists the actionable backlog (`artifacts/state.json:11`).
 
+## Loop 024 — 2025-11-08T18:22:50.955831+00:00
+DECISION: CONTINUE  
+R1 PASS – The loop’s documentation-only work is logged in both `analysis/decision_log.csv:56` and `notebooks/research_notebook.md:203-221`, keeping inputs/outputs, seed policy, and next actions reproducible without new code executions.  
+R2 PASS – No new estimands were run, but existing confirmatory rows retain explicit q-values and SRS notes in `analysis/results.csv:20-33`, and the freeze checklist in `docs/religiosity_class_gradients_promotion.md:1-90` keeps the survey-design plan (weights rerun before promotion) explicit, so statistical rigor is preserved.  
+R3 PASS – Manuscript updates cite peer-reviewed sources for every claim (e.g., `reports/paper.md:20-33` references Chan & Boliver 2013; Glei et al. 2022), and the curated evidence inventory remains current (`lit/evidence_map.csv:1-20`).  
+R4 PASS – Public artifacts stay at n≈14k (see `tables/loop016_h4_confirmatory.csv:1-4`) and the privacy policy is reiterated in both the PAP and design-effect plan (`analysis/pre_analysis_plan.md:24-34`, `docs/h3_design_effect_plan.md:12-35`), so no small-cell disclosures occurred.  
+R5 PASS – All required registries remain in place (PAP still frozen at `analysis/pre_analysis_plan.md:1-70`), governance artifacts were expanded (`docs/h3_replicate_weights_manifest/manifest_loop021.md:1-70`, `docs/reviewer_approvals/religiosity_class_gradients_loop024.md:1-9`), and state tracking is synced (`artifacts/state.json:1-18`).
+

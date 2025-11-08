@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T18:07Z
+last_updated: 2025-11-08T18:19Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -35,6 +35,8 @@ Loop 021 note: Mandatory Semantic Scholar search (`childhood parental guidance a
 Loop 022 note: Semantic Scholar remains blocked (`lit/queries/loop_022/query_001.json` logged another 403 for the query “childhood parental warmth adult mental health resilience”), so we captured CrossRef metadata for Taskesen et al. (2025; DOI `10.3389/fpsyg.2025.1629350`). The study shows parental autonomy support and warmth boosting young-adult resilience via “emotion crafting,” reinforcing H2’s guidance mechanism and the need to pre-specify mediator adjustments (emotion awareness/action, savoring beliefs) once the waiver or new API credential enables PAP freeze.
 
 Loop 023 note: Mandated Semantic Scholar query (“childhood parental warmth adult emotional health”) still returned 403 (`lit/queries/loop_023/query_001.json`), so we logged a CrossRef fallback for Van Alen et al. (2020; DOI `10.31234/osf.io/gjt94`). The MIDUS cohort evidence ties higher childhood parental warmth to better midlife HF-HRV and lower cardiovascular risk, so the PAP draft now flags vagal-tone mechanisms and records this blocker until the waiver or a restored API key lets us freeze the plan.
+
+Loop 024 note: Semantic Scholar attempt (“childhood parental support adult cardiovascular resilience”) again failed with 403 (`lit/queries/loop_024/query_001.json`). To keep H2 literature current we logged the JAMA Cardiology article on childhood parental incarceration and adult-onset hypertension (`10.1001/jamacardio.2023.2672`), updated `lit/evidence_map.csv` / `lit/bibliography.*`, and extended the waiver memo through Loop 024. PAP status remains draft until the waiver is approved or the API credential is restored, and the plan now highlights family-disruption covariates (parental incarceration, loss) as mandatory controls for the guidance models.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
