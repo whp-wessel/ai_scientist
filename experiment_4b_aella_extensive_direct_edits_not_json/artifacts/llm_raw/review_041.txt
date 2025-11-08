@@ -1,0 +1,7 @@
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint logged before edits and the refreshed session info/checksums capture seed 20251016 plus git head for deterministic reruns (analysis/decision_log.csv:407; artifacts/session_info.txt:1; artifacts/session_info.txt:6; artifacts/checksums.json:2; qc/data_checks.md:46).
+L1: PASS – Loop 041’s mandated Semantic Scholar call (still 403) is archived with endpoint params, the CrossRef fallback fed the evidence map/bibliography, and the waiver memo now explicitly covers loops 008–041 (analysis/decision_log.csv:408; lit/queries/loop_041/query_001.json:1; lit/queries/loop_041/crossref_query_001.json:1; lit/evidence_map.csv:40; lit/bibliography.bib:444; lit/semantic_scholar_waiver_loop013.md:1; lit/semantic_scholar_waiver_loop013.md:5).
+P1: PASS – Only governance artifacts changed this loop and privacy tooling still shows “violations: 0” with sensitive columns called out in the QC log (analysis/decision_log.csv:410; qc/data_checks.md:52; qc/disclosure_check_loop_006.md:17).
+N1: PASS – Phase stays in PAP with next action N1 blocked and a dated ops memo/support-ticket plan, while the PAP header and Loop 041 note reiterate status=draft pending that escalation (artifacts/state.json:25; artifacts/state.json:30; analysis/pre_analysis_plan.md:1; analysis/pre_analysis_plan.md:75).
+
+Notes: Execute the 2025-11-09 ops memo and 2025-11-10 S2 ticket on schedule so the literature gate can finally clear (artifacts/state.json:30; analysis/pre_analysis_plan.md:75).
