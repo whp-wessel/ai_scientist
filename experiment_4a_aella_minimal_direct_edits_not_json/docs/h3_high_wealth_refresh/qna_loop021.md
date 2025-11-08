@@ -25,3 +25,11 @@
 6. **2025-11-10 15:02 UTC — TerraQuant Research (Brazil/Argentina)**  
    - *Question:* Our internal infrastructure generates 32 BRR replicates per PSU. May we submit two independent 32-column matrices (even/odd replicates) instead of a single 64-column file?  
    - *Response (15:27 UTC):* No. Section 4.2 of the RFP now states that the delivery must be a **single 64-column BRR matrix** with Fay factor ρ = 0.5, column names `brr_01`–`brr_64`, and the PSU lookup table co-delivered. Vendors may supplement with Fay replicates, but splitting the BRR matrix across files or deliveries will be marked non-compliant because the ingestion script (`scripts/loop021_h3_weighted_checks.py`) assumes one contiguous parquet.
+
+## Loop 027 Entries — 2025-11-11
+7. **2025-11-11 09:32 UTC — Empiria Luxe Sampling (Italy/Spain)**  
+   - *Question:* To keep Monaco fieldwork feasible, may we treat Monaco respondents as part of the Paris PSU and simply flag them in the sample log instead of counting Monaco as an additional PSU toward the ≥30-city requirement?  
+   - *Response (09:54 UTC):* No. Section 2.1 of `docs/h3_high_wealth_refresh/rfp_2025-11-09.md` requires **non-overlapping PSU IDs defined as city × vendor**. Monaco must appear as its own PSU in both the PSU lookup table and the 64-column BRR file. We updated Appendix C to reference `docs/h3_country_expansion_materials/loi_register.csv`, which shows how newly countersigned LOIs (e.g., Switzerland, Singapore, China) enumerate each PSU so vendors can mirror the format.
+8. **2025-11-11 12:47 UTC — JadeVista Social Metrics (China)**  
+   - *Question:* After we countersign the China LOI, can we store the banker-letter/video archives on our Shanghai data center through 2026 and transfer them to GFS only if regulators block the retention window?  
+   - *Response (13:05 UTC):* Yes, provided you execute the cross-border storage waiver in `docs/h3_high_wealth_refresh/compliance_appendix_loop025.md` and deliver the encrypted vault to `sftp://secure-gfs/replicates/loop021/` within 30 days of any domestic retention limit. The waiver text has been appended to `docs/h3_country_expansion_materials/LOI_China_2025-11-09.md` so your legal team can reference the clause directly. Remember that verification hashes must also be logged in `docs/h3_high_wealth_refresh/verification_register.csv` at the time of transfer.

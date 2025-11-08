@@ -230,3 +230,12 @@
 1. Paste the DG-4827 checksum bundle into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt` the moment Data Governance delivers, rerun the ingestion script, and follow with `scripts/loop016_h3_power_check.py --use-weights`.
 2. Keep the reviewer warm on `religiosity_class_gradients`: once Dr. Mendez approves, rerun `scripts/loop020_h4_stress_tests.py` → `scripts/loop016_h4_confirmatory_tables.py`, flip the PAP/hypotheses/results rows to `confirmatory=TRUE`, and tag `pap_freeze_h4_loop024`.
 3. Continue daily procurement monitoring by appending any new Q&A threads and LOI signatures before the 2025-11-15 Q&A deadline so the design-effect mitigation audit trail stays current.
+
+## 2025-11-11 – Loop 027
+- **DG-4827 ingestion rehearsal:** Re-ran `PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md`; output still reports “missing roles: brr, psu, weights.” Updated `docs/h3_replicate_weights_manifest/manifest_loop021.md` and `docs/h3_design_effect_plan.md` with a Loop 027 status note so auditors can see the fresh timestamp while we wait for the 2025-11-16 AES-256 drop.
+- **Procurement evidence:** Logged two new vendor exchanges (Empiria Luxe PSU boundaries, JadeVista storage waiver) in `docs/h3_high_wealth_refresh/qna_loop021.md` and tied the RFP to the LOI roster by editing `docs/h3_high_wealth_refresh/rfp_2025-11-09.md`. Captured the China and South Korea countersignatures in `docs/h3_country_expansion_materials/loi_register.csv` plus the underlying LOIs, including DocuSign IDs and the cross-border storage clause JadeVista requested.
+
+### Loop 027 Next Actions
+1. Paste the DG-4827 checksum bundle into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt` the moment Data Governance delivers, rerun the ingestion script, and then execute `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` reflects the weighted design effect.
+2. Once Dr. Mendez authorizes the `religiosity_class_gradients` promotion, rerun `scripts/loop020_h4_stress_tests.py` → `scripts/loop016_h4_confirmatory_tables.py`, flip the registries to `confirmatory=TRUE`, rewrite the PAP header with tag `pap_freeze_h4_loop024`, and capture the git tag.
+3. Keep appending every high-wealth RFP Q&A exchange and LOI update through the 2025-11-15 Q&A deadline so procurement reviewers can audit the complete trail.

@@ -6,12 +6,12 @@
     "phase": "loop",
     "ts": "2025-11-08T15:49:56.592983+00:00"
   },
-  "last_updated": "2025-11-10T15:30:00Z",
-  "loop_counter": 26,
+  "last_updated": "2025-11-11T10:20:00Z",
+  "loop_counter": 27,
   "next_actions": [
-    "Ingest the DG-4827 replicate-weight drop as soon as Data Governance posts the AES-256 bundle (target 2025-11-16), then rerun `scripts/loop021_h3_weighted_checks.py` and `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` reflects the weighted design effect.",
-    "Execute the `religiosity_class_gradients` freeze once the reviewer signs off: rerun the Loop 020 stress tests, refresh `tables/loop016_h4_confirmatory.csv`, flip the hypotheses/results rows to `confirmatory=TRUE`, rewrite the PAP header with tag `pap_freeze_h4_loop024`, and log the git tag.",
-    "Maintain the high-wealth RFP Q&A and LOI status trail by appending every vendor exchange and countersigned LOI (plus DocuSign IDs) to `docs/h3_high_wealth_refresh/qna_loop021.md` and `docs/h3_country_expansion_materials/loi_register.csv` before the 2025-11-15 Q&A close."
+    "Paste the DG-4827 checksum bundle into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt` as soon as Data Governance drops the AES-256 files (still targeted for 2025-11-16), rerun `scripts/loop021_h3_weighted_checks.py`, then execute `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` reflects the weighted design effect.",
+    "Execute the `religiosity_class_gradients` freeze immediately after Dr. M. Mendez provides the written go: rerun the Loop 020 stress tests, refresh `tables/loop016_h4_confirmatory.csv`, flip the hypotheses/results rows to `confirmatory=TRUE`, rewrite the PAP header with tag `pap_freeze_h4_loop024`, and record the git tag.",
+    "Continue daily high-wealth procurement monitoring—log every new Q&A response plus LOI signature (with DocuSign IDs) inside `docs/h3_high_wealth_refresh/qna_loop021.md` and `docs/h3_country_expansion_materials/loi_register.csv` through the 2025-11-15 Q&A deadline."
   ],
   "phase": "analysis",
   "phase_ix": 2,
