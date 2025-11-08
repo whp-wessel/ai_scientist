@@ -1,11 +1,11 @@
-# Semantic Scholar Access Waiver Request — Loop 034
+# Semantic Scholar Access Waiver Request — Loop 035
 Date: 2025-11-08
 Status: draft (pending partner approval)
 
 ## Summary
-Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥27 consecutive failures (loops 008–034) paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002; Eliassen, 2013; Kasen et al., 2014; Giri et al., 2025; Grummitt et al., 2024; McLeod, 1991; Wheeler, 2023; Taskesen et al., 2025; Van Alen et al., 2020; Tung et al., 2023; Liu & Yin, 2025 preprint; Talmon, 2023; Lacey et al., 2013; Nelson, 1982; Gerra et al., 2016; Oh & Han, 2019; Xu & Zheng, 2025 preprint; Moran et al., 2018; Kennedy et al., 2017; Gasper, 2020) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
+Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected every authenticated `paper/search` request with HTTP 403. Each attempt complied with the 1 req/sec policy via `scripts/semantic_scholar_cli.py`, logged inputs/outputs under `lit/queries/loop_{loop}/`, and was referenced in `analysis/decision_log.csv`. We now have ≥28 consecutive failures (loops 008–035) paired with fallback DOI-backed evidence from CrossRef (Ross et al., 2019; Pandya, 2017; Turrisi et al., 2010; Larkin et al., 2024 preprint; Qu, 2024; Renu, 2023; Hulvershorn et al., 2009; Loecher et al., 2023; Merrill & Salazar, 2002; Eliassen, 2013; Kasen et al., 2014; Giri et al., 2025; Grummitt et al., 2024; McLeod, 1991; Wheeler, 2023; Taskesen et al., 2025; Van Alen et al., 2020; Tung et al., 2023; Liu & Yin, 2025 preprint; Talmon, 2023; Lacey et al., 2013; Nelson, 1982; Gerra et al., 2016; Oh & Han, 2019; Xu & Zheng, 2025 preprint; Moran et al., 2018; Kennedy et al., 2017; Gasper, 2020; Renjilian et al., 2021) to keep the literature plan moving. To unblock PAP freeze we request a temporary waiver acknowledging these logged failures while ops works with Semantic Scholar support to restore the key.
 
-## Attempt Log (Loops 008–034)
+## Attempt Log (Loops 008–035)
 | Loop | Timestamp (UTC) | Query | Status | Artifact |
 | --- | --- | --- | --- | --- |
 | 008 | 2025-11-08T14:10:07Z | "childhood abuse self love adult wellbeing" | 403 Forbidden | `lit/queries/loop_008/query_001.json` |
@@ -35,6 +35,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 032 | 2025-11-08T20:03:30Z | "childhood parental warmth adult inflammatory markers" | 403 Forbidden | `lit/queries/loop_032/query_001.json` |
 | 033 | 2025-11-08T20:16:01Z | "childhood mentorship adult coping resilience" | 403 Forbidden | `lit/queries/loop_033/query_001.json` |
 | 034 | 2025-11-08T20:25:49Z | "childhood mentorship coping adult resilience" | 403 Forbidden | `lit/queries/loop_034/query_001.json` |
+| 035 | 2025-11-08T20:39:53Z | "childhood parental mentorship adult stress resilience" | 403 Forbidden | `lit/queries/loop_035/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -68,6 +69,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Moran et al. (2018), DOI `10.1037/fam0000401`** — Captured via CrossRef (loop 032) showing that higher childhood parental warmth predicts better coping and well-being in adulthood, reinforcing the H2 stress-buffering specification while the API credentials remain blocked.
 - **Kennedy et al. (2017), DOI `10.1016/j.aogh.2017.03.265`** — Captured via CrossRef (loop 033) documenting a mentorship model that boosts coping/resilience in young adults, supplying the mentorship/support mechanism evidence needed for H2 while the Semantic Scholar outage persists.
 - **Gasper (2020), DOI `10.5040/9781350100763.ch-003`** — Captured via CrossRef (loop 034) detailing how structured early-childhood mentoring/coaching embeds coping and self-regulation skills, reinforcing H2’s guided-support pathways while the Semantic Scholar credential remains offline.
+- **Renjilian et al. (2021), DOI `10.1016/j.jadohealth.2020.12.041`** — Captured via CrossRef (loop 035) showing that after-school running plus mentorship programs reduce toxic-stress biomarkers for high-ACE youth, reinforcing H2’s mentorship-resilience mechanism while the API outage persists.
 
 ### Ops Coordination Note
 The next support ticket will highlight the Liu & Yin (2025) constructs (maternal/paternal warmth plus short-form DERS items) and the Talmon (2023) parent-emotion-regulation requirements so ops can see which PAP covariates remain blocked by the missing Semantic Scholar sources.
