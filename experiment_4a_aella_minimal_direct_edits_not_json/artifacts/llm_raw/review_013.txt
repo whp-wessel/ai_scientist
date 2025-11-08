@@ -1,0 +1,11 @@
+DECISION: STOP – Reproducibility log stops at Loop 002 even though state shows Loop 013.
+
+R1 FAIL – `analysis/decision_log.csv:2` and `analysis/decision_log.csv:6` contain the newest timestamps (bootstrap and Loop 002 on 2025‑11‑07); there are no rows for loops 003–013 despite the notebook detailing work through Loop 013 (`notebooks/research_notebook.md:75`). Without per-loop commands in the mandated log, later analyses cannot be regenerated, violating the reproducibility invariant.
+
+R2 PASS – The frozen PAP (`analysis/pre_analysis_plan.md:1`) specifies confirmatory scope, SRS justification, and BH control, and the confirmatory table carries estimates/SEs/q-values (`tables/loop006_h1_confirmatory.csv:1`).
+
+R3 PASS – Literature tracking is current with DOI-linked evidence tied to hypotheses (`lit/evidence_map.csv:1`).
+
+R4 PASS – Public tables report only aggregate counts and explicitly suppress any n<10 cells (e.g., `tables/loop012_h4_alt_outcome_distribution.csv:1`).
+
+R5 FAIL – The required results registry still stops at the early exploratory prototypes (`analysis/results.csv:2`/`analysis/results.csv:4`), so neither the confirmatory H1 outputs nor any Loop 005–013 analyses appear there even though they exist elsewhere (`tables/loop006_h1_confirmatory.csv:1`). This leaves the deliverables incomplete for audit.
