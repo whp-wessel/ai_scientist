@@ -629,7 +629,7 @@
     "title": "Associations between Religious Attendance, Social Support, and Depression in Psychiatric Patients",
     "authors": [
       "Jukka Hintikka",
-      "Heimo Viinamäki",
+      "Heimo Viinam\u00e4ki",
       "Heli Koivumaa-Honkanen",
       "Antti Tanskanen",
       "Johannes Lehtonen"
@@ -815,7 +815,7 @@
   },
   {
     "id": "nature2024rewritingadversity",
-    "title": "Risks and resilience — rewriting childhood adversity",
+    "title": "Risks and resilience \u2014 rewriting childhood adversity",
     "authors": [
       "Nature Mental Health Editorial Board"
     ],
@@ -830,7 +830,7 @@
     "claim_ids": [
       "C2"
     ],
-    "notes": "Editorial synthesizes evidence that multi-system supports and trusted adult relationships can rewrite adversity trajectories, reinforcing the PAP’s guidance-linked resilience framing while Semantic Scholar access remains blocked."
+    "notes": "Editorial synthesizes evidence that multi-system supports and trusted adult relationships can rewrite adversity trajectories, reinforcing the PAP\u2019s guidance-linked resilience framing while Semantic Scholar access remains blocked."
   },
   {
     "id": "bauldry2006positivesupport",
@@ -868,5 +868,24 @@
       "C3"
     ],
     "notes": "Meta-analysis of published studies quantifies how specific childhood traumas elevate adult depression odds, informing H3 effect-size priors and mediator documentation while the Semantic Scholar key is offline."
+  },
+  {
+    "id": "zhang2025pce",
+    "title": "Positive childhood experiences and adult mental health symptoms: A meta-analysis",
+    "authors": [
+      "Yijing Zhang"
+    ],
+    "year": 2025,
+    "venue": "Development and Psychopathology",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.1017/S0954579425100734",
+    "url": "https://doi.org/10.1017/S0954579425100734",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C2"
+    ],
+    "notes": "Meta-analysis across 41 studies finds higher positive childhood experience scores associated with lower adult depression/anxiety/PTSD, reinforcing the guided-support mechanisms in H2."
   }
 ]

@@ -22,12 +22,12 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 45,
+  "loop_counter": 46,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 045 (see lit/queries/loop_045/query_001.json); waiver memo now covers loops 008-045 with CrossRef fallbacks including Bauldry 2006, Kuhar 2024, Nature Mental Health 2024, Ashton 2021, Mandelli et al. 2015 (DOI 10.1016/j.eurpsy.2015.04.007), and the prior set. Ops memo still scheduled for 2025-11-09 15:00Z (lit/semantic_scholar_ops_memo_2025-11-09.md) with attachments, and the 2025-11-10 support ticket template (lit/semantic_scholar_support_ticket_draft_2025-11-10.md) will be filed if the key is not restored.",
+      "notes": "Semantic Scholar API still 403 as of loop 046 (see lit/queries/loop_046/query_001.json); waiver memo updated through loops 008-046 with the Zhang 2025 positive-childhood-experience meta-analysis fallback. Ops memo dispatch remains scheduled for 2025-11-09 15:00Z and the 2025-11-10 support-ticket escalation stays queued if the credential is still down.",
       "owner": "agent",
       "status": "blocked"
     },
