@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T20:57Z
+last_updated: 2025-11-08T21:06Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -63,6 +63,8 @@ Loop 034 note: Semantic Scholar remains down (`lit/queries/loop_034/query_001.js
 Loop 035 note: The mandated Semantic Scholar query ("childhood parental mentorship adult stress resilience") again returned 403 (`lit/queries/loop_035/query_001.json`), so we logged CrossRef metadata (`lit/queries/loop_035/crossref_query_001.json`) for Renjilian et al. (2021; DOI `10.1016/j.jadohealth.2020.12.041`). The Journal of Adolescent Health study shows that after-school running plus mentorship programs reduce toxic-stress biomarkers among high-ACE youth, reinforcing H2's mentorship-resilience mechanism and requiring explicit mentorship/support proxies plus biomarker-informed robustness checks in the PAP before freeze. Waiver memo coverage now extends through loop 035, so PAP status remains draft until the credential is restored or the waiver is approved.
 
 Loop 036 note: Semantic Scholar search `"childhood religious service adult depression social support"` (`lit/queries/loop_036/query_001.json`) also failed with HTTP 403, so we captured Hintikka et al. (1998; DOI `10.1177/009164719802600405`, CrossRef payload `lit/queries/loop_036/crossref_query_004.json`). The community mental-health sample documents that regular religious attendance is associated with milder depression even after accounting for social support, reinforcing H1's direct religiosity pathway. PAP status therefore remains draft until ops restores the Semantic Scholar credential or approves the waiver so canonical S2 sources can be synced before freeze.
+
+Loop 037 note: The required Semantic Scholar query (`"childhood mentoring coping adult depression"`; `lit/queries/loop_037/query_001.json`) remained blocked by HTTP 403, so we logged CrossRef metadata (`lit/queries/loop_037/crossref_query_001.json`) and added Bellis et al. (2017; DOI `10.1186/s12888-017-1260-z`) to the evidence map/bibliography. Their Welsh adult retrospective study shows that continuous trusted adult support halves ACE-linked health-harming behaviours and improves mental well-being, directly reinforcing H2's mentorship/guidance mechanism. PAP status stays draft until either the waiver is approved or the Semantic Scholar credential is restored so confirmatory analyses can cite canonical S2 records.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

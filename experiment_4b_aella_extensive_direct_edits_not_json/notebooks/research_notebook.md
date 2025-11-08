@@ -276,3 +276,10 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Captured CrossRef metadata (`lit/queries/loop_036/crossref_query_004.json`) and added Hintikka et al. 1998 (DOI `10.1177/009164719802600405`) to `lit/evidence_map.csv`, `lit/bibliography.bib`, and `lit/bibliography.json`, strengthening H1’s direct religiosity buffer while S2 access is down.
 - Extended the waiver memo (`lit/semantic_scholar_waiver_loop013.md`) through Loop 036, refreshed `analysis/pre_analysis_plan.md` (status: draft, new Loop 036 note), and rolled `qc/data_checks.md` so the blocker narrative stays current.
 - Updated `artifacts/state.json` (loop_counter=36, phase PAP, N1 blocked) and this notebook so governance artifacts stay aligned until a working Semantic Scholar credential or waiver clears the PAP freeze gate.
+
+## Loop 37 Updates (2025-11-08)
+- Logged the Loop 036 reviewer guidance (R1 reproducibility refresh, L1 mandated S2 queries, P1 disclosure guardrails, N1 PAP gate) in `analysis/decision_log.csv` before editing artifacts.
+- Refreshed `artifacts/session_info.txt` (21:04:44Z snapshot) and `artifacts/checksums.json` (raw + imputed hashes) so deterministic context is documented ahead of literature work; `qc/data_checks.md` now reflects Loop 037.
+- Executed the required Semantic Scholar CLI search (`childhood mentoring coping adult depression`); it still returned HTTP 403, so the payload lives at `lit/queries/loop_037/query_001.json` while N1 stays blocked.
+- Captured CrossRef metadata for the same topic (`lit/queries/loop_037/crossref_query_001.json`) and added Bellis et al. (2017; DOI `10.1186/s12888-017-1260-z`) across `lit/evidence_map.csv`, `lit/bibliography.*`, and the waiver memo, strengthening H2's trusted-adult mechanism coverage during the outage.
+- Updated `analysis/pre_analysis_plan.md` (status: draft) with the Loop 037 blocker note, refreshed `lit/semantic_scholar_waiver_loop013.md` to span loops 008–037, and kept `artifacts/state.json` in phase `pap` with loop_counter=37 / `stop_now=false` until the credential or waiver clears the literature gate.
