@@ -242,3 +242,12 @@ N1: PASS – artifacts/state.json keeps phase=PAP with N1 marked blocked, and an
 
 Notes: Once the API waiver/key is resolved, align the waiver memo header/summary with the logged loops before attempting PAP freeze.
 
+## Loop 032 — 2025-11-08T20:13:38.429154+00:00
+DECISION: CONTINUE
+R1: PASS – Loop 32 logged the repro checkpoint and refreshed session/checksum artifacts, keeping the deterministic seed/env auditable (`analysis/decision_log.csv:307`, `artifacts/session_info.txt:1`, `qc/data_checks.md:46`).
+L1: PASS – The mandatory Semantic Scholar attempt plus 403 payload, CrossRef-backed Moran DOI, and waiver memo now spanning loops 008–032 are all captured (`analysis/decision_log.csv:308`, `lit/queries/loop_032/query_001.json:1`, `lit/evidence_map.csv:30`, `lit/semantic_scholar_waiver_loop013.md:1`).
+P1: PASS – No new public tables were produced and disclosure safeguards (n≥10, sensitive-column reminders) remain active in the QC checklist and PAP narrative (`qc/data_checks.md:52`, `analysis/pre_analysis_plan.md:66`).
+N1: PASS – State stays in the PAP phase with N1 explicitly blocked, while the PAP header and loop-32 note keep status=draft and explain the gate (`artifacts/state.json:26`, `artifacts/state.json:70`, `analysis/pre_analysis_plan.md:1`, `analysis/pre_analysis_plan.md:57`).
+
+Notes: Keep pressing on the Semantic Scholar credential/waiver so the PAP can progress toward freeze.
+
