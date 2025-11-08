@@ -1,0 +1,7 @@
+DECISION: STOP – Missing DAG/imputation outputs break reproducibility
+R1: FAIL – analysis/decision_log.csv:38 claims figures/dag_design.* plus reports/identification.md were generated and analysis/decision_log.csv:39 claims data/clean/childhood_imputed_stack_loop005.csv exists, yet there is no figures/ or data/clean/ directory in the repo and artifacts/imputation_summary_loop005.json:1 still points to those absent paths, so loop 005 work cannot be reproduced.
+L1: PASS – analysis/decision_log.csv:37 records the required Semantic Scholar query and lit/queries/loop_005/query_001.json:1 preserves the 403 payload, keeping literature attempts traceable despite the credential block.
+P1: PASS – qc/disclosure_check_loop_004.md:1 confirms no public tables/figures were released and the n≥10 guard remains in effect, so no small-cell risk surfaced this loop.
+N1: WARN – artifacts/state.json:45 and artifacts/state.json:52 mark the DAG/identification and imputation backlog items as “done,” but the associated outputs are missing, so gating for PAP freeze is currently misreported.
+
+Notes: Re-run the DAG, identification memo, and imputation stack scripts and commit the resulting artifacts before resuming progress.

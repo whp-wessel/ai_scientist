@@ -18,7 +18,7 @@ import argparse
 import contextlib
 import os, sys, json, csv, subprocess, re, time, hashlib, platform, random, shutil
 from dataclasses import dataclass
-from typing import Any, Dict, Optional, Sequence
+from typing import Any, Dict, Optional, Sequence, List, Tuple
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -802,6 +802,10 @@ def apply_post_edit_guards(loop_idx: Optional[int], before_state: Dict[str, Any]
         current_state = dict(before_state)
         reverts.append(("artifacts/state.json", f"phase change reverted: {gate_reason}"))
 
+    alert = _small_cell_alert_message()
+    if alert:
+        print(f"[guardrail] Privacy alert (non-blocking): {alert}")
+
     revert_log = _write_revert_log(loop_idx, reverts)
     return PostRunResult(state=current_state, changes=final_changes, reverted_paths_log=revert_log)
 
@@ -978,6 +982,68 @@ def _check_disclosure_audit() -> tuple[bool, str]:
     if "table" not in text.lower() and "|" not in text:
         return False, f"{latest.relative_to(REPO)} must list each public table/figure audited."
     return True, ""
+
+
+def _scan_small_cells_in_csv(path: Path, threshold: int = 10) -> List[Tuple[str, int]]:
+    try:
+        with path.open("r", encoding="utf-8", newline="") as fh:
+            reader = csv.DictReader(fh)
+            rows = list(reader)
+    except Exception:
+        return []
+    if not rows:
+        return []
+    count_cols = {"n", "count", "freq", "frequency"}
+    hits: List[Tuple[str, int]] = []
+    present = [c for c in rows[0].keys() if c and c.strip().lower() in count_cols]
+    for column in present:
+        for row in rows:
+            val = row.get(column)
+            if val is None:
+                continue
+            try:
+                v = int(float(str(val).strip()))
+            except Exception:
+                continue
+            if v < threshold:
+                hits.append((column, v))
+    return hits
+
+
+def _small_cell_violations(threshold: int = 10) -> List[Tuple[Path, List[Tuple[str, int]]]]:
+    targets = [REPO / "tables", REPO / "reports"]
+    violations: List[Tuple[Path, List[Tuple[str, int]]]] = []
+    for directory in targets:
+        if not directory.exists():
+            continue
+        for csv_path in directory.rglob("*.csv"):
+            hits = _scan_small_cells_in_csv(csv_path, threshold=threshold)
+            if hits:
+                violations.append((csv_path, hits[:5]))
+    return violations
+
+
+def _small_cell_alert_message(max_files: int = 3) -> Optional[str]:
+    violations = _small_cell_violations(threshold=10)
+    if not violations:
+        return None
+    summaries = []
+    for path, hits in violations[:max_files]:
+        try:
+            rel = path.relative_to(REPO)
+        except ValueError:
+            rel = path
+        hit_desc = ", ".join(f"{c}={v}" for c, v in hits)
+        summaries.append(f"{rel} ({hit_desc})")
+    detail = "; ".join(summaries)
+    remaining = len(violations) - len(summaries)
+    if remaining > 0:
+        detail += f"; +{remaining} more file(s)"
+    return (
+        "You failed Principle 2 (Privacy): "
+        f"{detail}. Please revert these public outputs to the last compliant version "
+        "or suppress the n<10 cells, then continue from there."
+    )
 
 
 def _check_claim_coverage() -> tuple[bool, str]:
@@ -1416,6 +1482,9 @@ def do_bootstrap():
     print("== Bootstrap session ==")
     bootstrap_system = get_prompt("BOOTSTRAP_SYSTEM")
     bootstrap_user = get_prompt("BOOTSTRAP_USER")
+    small_cell_alert = _small_cell_alert_message()
+    if small_cell_alert:
+        bootstrap_user = f"{bootstrap_user}\nNon-negotiable alert: {small_cell_alert}"
     try:
         raw = run_codex_cli(bootstrap_user, bootstrap_system)
     except UserAbort:
@@ -1592,6 +1661,10 @@ def do_loop(iter_ix: int, consecutive_git_fails: int):
                 "Document in your decision_log how you handled each item."
             )
     user_prompt = user_prompt + progress_note
+
+    small_cell_alert = _small_cell_alert_message()
+    if small_cell_alert:
+        user_prompt += f"\nNon-negotiable alert: {small_cell_alert}"
 
     try:
         raw = run_codex_cli(user_prompt, loop_system)

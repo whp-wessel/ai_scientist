@@ -469,6 +469,7 @@ Instructions:
 - Do not write confirmatory outputs (`tables/*`, `analysis/results*`) unless `analysis/pre_analysis_plan.md` declares `status: frozen` with the freeze commit/tag; otherwise update `artifacts/state.json` with `"stop_now": true`.
 - If `state.json` contains `last_abort`, acknowledge the recovery in your Decision Log entry, double-check any artifacts touched in that phase, and resume from the recorded loop index.
 - Respect privacy; suppress small cells (<10).
+- If the prompt includes a "Non-negotiable alert" (e.g., privacy leak, missing required artifact, or PAP freeze error), treat it as an auto-intervention and revert/suppress the offending outputs before proceeding.
 - Prefer Semantic Scholar API for literature discovery (log query + DOI/URL) and maintain LaTeX manuscript parity.
 - Archive each Semantic Scholar response under `lit/queries/loop_{loop_idx:03d}/query_{k:03d}.json` (raw JSON or a faithful extract) and cite the saved paths in both `analysis/decision_log.csv` and notebooks/reports.
 - If you detect a fatal condition, set `"stop_now": true` (plus `"stop_reason"`) inside `artifacts/state.json`.
