@@ -477,5 +477,26 @@
       "C2"
     ],
     "notes": "Book chapter links parents' childhood maltreatment to emotion-regulation deficits that shape warmth/control and justify DERS composites plus warmth interactions in H2."
+  },
+  {
+    "id": "lacey2013inflammation",
+    "title": "Parental separation in childhood and adult inflammation: The importance of material and psychosocial pathways",
+    "authors": [
+      "Rebecca E. Lacey",
+      "Meena Kumari",
+      "Anne McMunn"
+    ],
+    "year": 2013,
+    "venue": "Psychoneuroendocrinology",
+    "volume": "38",
+    "issue": "11",
+    "pages": "2476-2484",
+    "doi": "10.1016/j.psyneuen.2013.05.007",
+    "url": "https://doi.org/10.1016/j.psyneuen.2013.05.007",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C2"
+    ],
+    "notes": "British cohort links childhood parental separation to elevated adult inflammation through material and psychosocial stress pathways."
   }
 ]

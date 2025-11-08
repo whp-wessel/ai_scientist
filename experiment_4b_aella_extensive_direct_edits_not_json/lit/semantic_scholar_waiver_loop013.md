@@ -27,6 +27,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 024 | 2025-11-08T18:17:12Z | "childhood parental support adult cardiovascular resilience" | 403 Forbidden | `lit/queries/loop_024/query_001.json` |
 | 025 | 2025-11-08T18:27:49Z | "childhood parental nurturance adult metabolic health" | 403 Forbidden | `lit/queries/loop_025/query_001.json` |
 | 026 | 2025-11-08T18:49:17Z | "childhood parental warmth adult aggression regulation" | 403 Forbidden | `lit/queries/loop_026/query_001.json` |
+| 027 | 2025-11-08T18:59:26Z | "childhood parental warmth adult psychosocial resilience" | 403 Forbidden | `lit/queries/loop_027/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -52,6 +53,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Tung et al. (2023), DOI `10.1001/jamacardio.2023.2672`** — Captured via CrossRef (loop 024) linking childhood parental incarceration to adult-onset hypertension and cardiovascular risk, ensuring H2 incorporates family disruption covariates while Semantic Scholar access is still blocked.
 - **Liu & Yin (2025 preprint), DOI `10.21203/rs.3.rs-6195416/v1`** — Captured via CrossRef (loop 025) showing that maternal warmth mediates the effect of inter-parent conflict on emerging-adult aggression, reinforcing the H2 guidance mechanism until Semantic Scholar access resumes.
 - **Talmon (2023), DOI `10.1017/9781009304368.007`** — Captured via CrossRef (loop 026) detailing how parents’ own childhood maltreatment undermines emotion regulation and warmth, guiding the PAP’s specification for parental warmth interactions and DERS-based mediator composites despite the ongoing outage.
+- **Lacey et al. (2013), DOI `10.1016/j.psyneuen.2013.05.007`** — Captured via CrossRef (loop 027) showing that childhood parental separation predicts elevated adult C-reactive protein through material/psychosocial pathways, reinforcing H2’s need to model family disruption and stress mechanisms while Semantic Scholar access remains blocked.
 
 ### Ops Coordination Note
 The next support ticket will highlight the Liu & Yin (2025) constructs (maternal/paternal warmth plus short-form DERS items) and the Talmon (2023) parent-emotion-regulation requirements so ops can see which PAP covariates remain blocked by the missing Semantic Scholar sources.

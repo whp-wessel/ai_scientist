@@ -199,3 +199,11 @@ R3 PASS – This loop only updated operational evidence, while the literature/ev
 R4 PASS – Public outputs are limited to logistics tables (presence flags) and country-level LOI counts far above suppression thresholds, so no n<10 disclosures occur (`tables/loop021_h3_weight_delivery_status.csv:2`, `docs/h3_country_expansion_materials/loi_register.csv:2`).  
 R5 PASS – Required artifacts stay synchronized: the notebook narrates Loop 026 work and next steps (`notebooks/research_notebook.md:224`), `artifacts/state.json:9` captures the updated phase/backlog, and the manifest/register updates landed in `docs/h3_country_expansion_materials/loi_register.csv:7` and related docs.
 
+## Loop 027 — 2025-11-08T19:03:36.310877+00:00
+DECISION: CONTINUE  
+R1 PASS – Loop 027 rerun records the exact command/seed and outputs in `analysis/decision_log.csv:62`, with matching narrative in `notebooks/research_notebook.md:234` and the manifest/status notes at `docs/h3_replicate_weights_manifest/manifest_loop021.md:50`, so the blocked DG‑4827 check is fully reproducible.  
+R2 PASS – No new estimands were estimated, but the daily weight-ingestion monitoring is logged (`docs/h3_design_effect_plan.md:76`; `tables/loop021_h3_weight_delivery_status.csv:2`) and earlier confirmatory H1 results retain BH-adjusted q-values plus SRS justification (`analysis/results.csv:20-23`).  
+R3 PASS – Literature assets remain traceable via DOI-tagged rows in `lit/evidence_map.csv:2-6`, and the manuscript’s reference list (`reports/paper.md:42`) keeps main claims tethered to peer-reviewed sources.  
+R4 PASS – Public tables disclose only aggregate counts well above the n<10 threshold (`tables/loop016_h3_power_summary.csv:2-5`) or file-delivery statuses without respondent data (`tables/loop021_h3_weight_delivery_status.csv:2-6`), so privacy constraints hold.  
+R5 PASS – Required artifacts (frozen PAP in `analysis/pre_analysis_plan.md:1`, updated state snapshot `artifacts/state.json:9`, procurement/Q&A records `docs/h3_high_wealth_refresh/qna_loop021.md:29` and `docs/h3_country_expansion_materials/loi_register.csv:5,9`) are current, keeping the project packet complete.
+

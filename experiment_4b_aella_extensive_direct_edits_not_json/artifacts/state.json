@@ -22,12 +22,12 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 26,
+  "loop_counter": 27,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 026 (see lit/queries/loop_026/query_001.json); waiver memo now covers loops 008-026 with CrossRef fallbacks including Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, Kasen et al. 2014, Giri 2025, Grummitt et al. 2024, McLeod 1991, Wheeler 2023, Taskesen et al. 2025, Van Alen et al. 2020, Tung et al. 2023, Liu & Yin 2025, and the new Talmon 2023 chapter (10.1017/9781009304368.007) while we await key approval. Preparing escalation note for ops summarizing the Liu & Yin + Talmon mediator requirements once the API team responds.",
+      "notes": "Semantic Scholar API still 403 as of loop 027 (see lit/queries/loop_027/query_001.json); waiver memo now covers loops 008-027 with CrossRef fallbacks including Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, Kasen et al. 2014, Giri 2025, Grummitt et al. 2024, McLeod 1991, Wheeler 2023, Taskesen et al. 2025, Van Alen et al. 2020, Tung et al. 2023, Liu & Yin 2025, Talmon 2023 (10.1017/9781009304368.007), and the new Lacey et al. 2013 inflammation evidence (10.1016/j.psyneuen.2013.05.007) while we await key approval. Preparing escalation note for ops summarizing the Liu & Yin + Talmon mediator requirements plus the Lacey inflammation controls once the API team responds.",
       "owner": "agent",
       "status": "blocked"
     },
