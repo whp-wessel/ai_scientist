@@ -38,7 +38,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Eliassen (2013), DOI `10.1007/s13644-013-0110-9`** — Captured via CrossRef (loop 019) showing that weekly pre-teen religious attendance coupled with high stress exposure predicts lower young-adult depression through religious coping, strengthening H1's mechanism narrative while the S2 outage persists.
 - **Kasen et al. (2014), DOI `10.1002/da.22131`** — Captured via CrossRef (loop 020) documenting that greater religiosity predicts improved psychosocial functioning among high-risk young adults, bolstering H1’s stress-buffering argument until Semantic Scholar access is restored.
 - **Giri et al. (2025), DOI `10.2139/ssrn.5144651`** — Captured via CrossRef (loop 020) showing how parental ACE exposure propagates adolescent depression/anxiety risk in Australian longitudinal data, reinforcing H3’s intergenerational trauma controls during the outage.
-- **Eliassen (2013), DOI `10.1007/s13644-013-0110-9`** — Captured via CrossRef (loop 019) showing that weekly pre-teen religious attendance coupled with high stress exposure predicts lower young-adult depression through religious coping, strengthening H1's mechanism narrative while the S2 outage persists.
+- **Grummitt et al. (2024), DOI `10.1001/jamapsychiatry.2024.0804`** — Captured via CrossRef (loop 020) quantifying the global burden of mental disorders/suicide attributable to childhood maltreatment, providing effect-size context for H3 power planning while S2 remains unavailable.
 
 ## Request
 1. **Waiver:** Allow continuation through PAP freeze relying on the documented CrossRef DOIs while Semantic Scholar restores API access. The attempt log above, paired with decision-log entries, demonstrates due diligence.

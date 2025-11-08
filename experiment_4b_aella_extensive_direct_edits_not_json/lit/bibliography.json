@@ -310,5 +310,28 @@
       "C3"
     ],
     "notes": "Australian longitudinal evidence showing parental ACE exposure transmits depression/anxiety risk, motivating intergenerational controls for H3 during the S2 outage."
+  },
+  {
+    "id": "grummitt2024burden",
+    "title": "Burden of Mental Disorders and Suicide Attributable to Childhood Maltreatment",
+    "authors": [
+      "Lucinda Grummitt",
+      "Jessie R. Baldwin",
+      "Johanna Lafoa'i",
+      "Katherine M. Keyes",
+      "Emma L. Barrett"
+    ],
+    "year": 2024,
+    "venue": "JAMA Psychiatry",
+    "volume": "81",
+    "issue": "8",
+    "pages": "782",
+    "doi": "10.1001/jamapsychiatry.2024.0804",
+    "url": "https://doi.org/10.1001/jamapsychiatry.2024.0804",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C3"
+    ],
+    "notes": "GBD modeling quantifies maltreatment-attributable mental disorders, supporting H3 effect-size expectations and disclosure planning."
   }
 ]

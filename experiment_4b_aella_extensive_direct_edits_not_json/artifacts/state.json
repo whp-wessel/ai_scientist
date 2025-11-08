@@ -27,7 +27,7 @@
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 020 (see lit/queries/loop_020/query_001.json); waiver memo now covers loops 008-020 with CrossRef fallbacks Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, and Kasen et al. 2014 (10.1002/da.22131) while we await new key approval.",
+      "notes": "Semantic Scholar API still 403 as of loop 020 (see lit/queries/loop_020/query_001.json); waiver memo now covers loops 008-020 with CrossRef fallbacks Pandya 2017, Turrisi 2010, Larkin et al. 2024 (SSRN), Qu 2024, Renu 2023, Hulvershorn et al. 2009, Loecher et al. 2023, Merrill & Salazar 2002, Eliassen 2013, Kasen et al. 2014 (10.1002/da.22131), Giri et al. 2025 (10.2139/ssrn.5144651), and Grummitt et al. 2024 (10.1001/jamapsychiatry.2024.0804) while we await new key approval.",
       "owner": "agent",
       "status": "blocked"
     },
