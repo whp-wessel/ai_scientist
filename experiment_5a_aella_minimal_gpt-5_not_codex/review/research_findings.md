@@ -174,3 +174,18 @@ R5 Completeness: PASS — PAP present and marked draft (`analysis/pre_analysis_p
 
 Notes: Recommend adding a commit message to `artifacts/git_message.txt` to checkpoint this loop for full reproducibility alignment.
 
+## Loop 015 — 2025-11-08T15:18:58.620493+00:00
+DECISION: CONTINUE
+
+R1 Reproducibility: WARN — Seeds and environment recorded (`artifacts/session_info.txt`, seed 20251016); actions and commands logged (`analysis/decision_log.csv`); scripts exist to regenerate (`scripts/analysis/*.py`, `scripts/semantic_scholar_cli.py`). However, no commit request found for this loop (`artifacts/git_message.txt` missing), which weakens checkpointing.
+
+R2 Statistical Rigor: PASS — Results are exploratory with effect sizes, SEs, CIs, and p-values (`analysis/results.csv`). Survey design is honored via explicit SRS justification (“design_used=false” with rationale). No confirmatory families yet, so q-values appropriately blank.
+
+R3 Literature/Evidence: PASS — Literature queries are saved (`lit/queries/loop_015/query_001.json`), DOIs captured in `lit/evidence_map.csv`; manuscript cites a peer‑reviewed DOI (`reports/paper.md`).
+
+R4 Privacy: PASS — Public tables apply small‑cell suppression (n<10 masked) in `tables/key_vars_value_counts.csv`; `tables/religion_by_monogamy.csv` has no cells <10.
+
+R5 Completeness: PASS — PAP present and clearly marked `status: draft` (`analysis/pre_analysis_plan.md`); hypotheses (`analysis/hypotheses.csv`), results, notebook, and draft manuscript exist. No confirmatory results, so freezing/tagging not yet required.
+
+Notes: Recommend adding `artifacts/git_message.txt` to request a commit for this loop to strengthen reproducibility.
+
