@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T22:03Z
+last_updated: 2025-11-08T22:24Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -77,6 +77,8 @@ Loop 041 note: Semantic Scholar query `"childhood family cohesion adult depressi
 Loop 042 note: The mandated Semantic Scholar search `"childhood trusted adult mentorship adult depression buffer"` is still returning 403 (`lit/queries/loop_042/query_001.json`). CrossRef fallback (Kuhar et al., 2024; DOI `10.5708/ejmh.19.2024.0031`) shows that positive childhood experiences and attachment-mediated emotional support dampen ACE effects on adult mental health, so H2 will retain explicit positive-experiences and support covariates. We drafted the ops escalation memo (`lit/semantic_scholar_ops_memo_2025-11-09.md`) and the 2025-11-10 support-ticket template (`lit/semantic_scholar_support_ticket_draft_2025-11-10.md`); PAP status remains draft until ops restores the key or an approved waiver is logged in the decision log.
 
 Loop 043 note: Required Semantic Scholar query `"childhood parental guidance adult resilience mental health"` still 403s (`lit/queries/loop_043/query_001.json`). CrossRef fallback (Nature Mental Health Editorial Board, 2024; DOI `10.1038/s44220-024-00375-2`) underscores that multi-system supports and trusted adult scaffolds can rewrite adversity trajectories, so the PAP keeps guidance-resilience pathways prominent while we remain blocked. Ops memo delivery (2025-11-09 15:00Z) and the 2025-11-10 Semantic Scholar support ticket are confirmed in the work plan; artifact updates will be logged immediately when those communications are sent to satisfy the reviewer directive about executing the escalation on schedule.
+
+Loop 044 note: Mandatory Semantic Scholar query `"childhood mentorship adult resilience depressive symptoms"` logged another 403 (`lit/queries/loop_044/query_001.json`), so the outage continues to block the PAP freeze. CrossRef fallback (Bauldry, 2006; DOI `10.15868/socialsector.557`) documents that structured mentoring programs reduce depressive symptoms among high-risk youth, reinforcing H2’s mentor-support estimands until the API key is restored or the waiver is approved. The 2025-11-09 ops memo (`lit/semantic_scholar_ops_memo_2025-11-09.md`) is queued for dispatch at 15:00Z with this latest payload attached, and the 2025-11-10 Semantic Scholar support ticket draft remains ready if ops has not resolved the credential by that deadline.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

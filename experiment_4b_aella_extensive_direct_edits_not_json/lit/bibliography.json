@@ -629,7 +629,7 @@
     "title": "Associations between Religious Attendance, Social Support, and Depression in Psychiatric Patients",
     "authors": [
       "Jukka Hintikka",
-      "Heimo Viinam\u00e4ki",
+      "Heimo Viinamäki",
       "Heli Koivumaa-Honkanen",
       "Antti Tanskanen",
       "Johannes Lehtonen"
@@ -815,7 +815,7 @@
   },
   {
     "id": "nature2024rewritingadversity",
-    "title": "Risks and resilience \u2014 rewriting childhood adversity",
+    "title": "Risks and resilience — rewriting childhood adversity",
     "authors": [
       "Nature Mental Health Editorial Board"
     ],
@@ -830,6 +830,22 @@
     "claim_ids": [
       "C2"
     ],
-    "notes": "Editorial synthesizes evidence that multi-system supports and trusted adult relationships can rewrite adversity trajectories, reinforcing the PAP\u2019s guidance-linked resilience framing while Semantic Scholar access remains blocked."
+    "notes": "Editorial synthesizes evidence that multi-system supports and trusted adult relationships can rewrite adversity trajectories, reinforcing the PAP’s guidance-linked resilience framing while Semantic Scholar access remains blocked."
+  },
+  {
+    "id": "bauldry2006positivesupport",
+    "title": "Positive Support: Mentoring and Depression Among High-Risk Youth",
+    "authors": [
+      "Shawn Bauldry"
+    ],
+    "year": 2006,
+    "venue": "Social Sector Report",
+    "doi": "10.15868/socialsector.557",
+    "url": "https://doi.org/10.15868/socialsector.557",
+    "access_date": "2025-11-08",
+    "claim_ids": [
+      "C2"
+    ],
+    "notes": "Evaluation of structured mentoring services finds clinically meaningful reductions in depressive symptoms among high-risk youth, reinforcing the PAP's guidance/mentorship pathways while Semantic Scholar remains unreachable."
   }
 ]

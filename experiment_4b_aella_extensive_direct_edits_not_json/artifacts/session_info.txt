@@ -1,18 +1,16 @@
-timestamp_utc: 2025-11-08T22:12:34.932187+00:00
+timestamp_utc: 2025-11-08T22:22:53.761451+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json
 model: gpt-5-codex
 seed: 20251016
-git_head: 0ec3b987ac803c45f5f7441f19104489c69121a5
+git_head: 9b7b1d2a4f7e4386767f4fddd0548f24956d17d7
 git_status: |
-  ## main...origin/main [ahead 162]
+  ## main...origin/main [ahead 164]
    M __pycache__/runner.cpython-312.pyc
-   M artifacts/.s2_rate_limit.json
-   M artifacts/checksums.json
+   M analysis/decision_log.csv
    M artifacts/repro_report.md
    M artifacts/session_info.txt
-  ?? lit/queries/loop_043/
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15
