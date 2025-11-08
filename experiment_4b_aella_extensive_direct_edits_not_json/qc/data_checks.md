@@ -1,4 +1,4 @@
-# Data Quality Checklist — Loop 024
+# Data Quality Checklist — Loop 025
 Date: 2025-11-08
 Seed: 20251016
 Dataset: `data/raw/childhoodbalancedpublic_original.csv`
@@ -44,13 +44,13 @@ _Status:_ Automated summary generated in Loop 002; refer to `qc/data_overview_lo
 - Result: PAP variables documented with `source_column` mappings; `qc/metadata_validation.md` logs status (still assuming SRS).
 
 ## Reproducibility Checkpoint
-- [x] `artifacts/session_info.txt` last updated 2025-11-08T17:23:51Z with Python/pip details and git HEAD; re-verified at the start of Loop 023 (no env drift detected).
+- [x] `artifacts/session_info.txt` last updated 2025-11-08T18:25:54Z with Python/pip details and git HEAD; re-verified at the start of Loop 025 (no env drift detected).
 - [x] `artifacts/checksums.json` timestamp 2025-11-08T13:46:15Z covering raw + imputed files; raw dataset mtimes remain unchanged since Loop 021, so hashes stay current.
 
 ## Risks / TODOs
 1. Dtype warning (mixed types) for column 68 — inspect before modeling.
 2. Sensitive columns (abuse, assault) flagged for disclosure control; `qc/disclosure_check_loop_006.md` documents the latest automation run (violations = 0).
-3. Semantic Scholar credential still failing (403). Loop 024 logged `lit/queries/loop_024/query_001.json`; the waiver memo now spans loops 008-024 and includes the new JAMA Cardiology DOI (`10.1001/jamacardio.2023.2672`) plus Taskesen 2025, Van Alen 2020, Kasen 2014, Giri 2025, Grummitt 2024, McLeod 1991, Wheeler 2023, Eliassen 2013, Merrill & Salazar 2002, Loecher 2023, etc., so PAP freeze remains on hold until approval or credential restoration.
+3. Semantic Scholar credential still failing (403). Loop 025 logged `lit/queries/loop_025/query_001.json`; the waiver memo now spans loops 008-025 and includes the new Liu & Yin 2025 DOI (`10.21203/rs.3.rs-6195416/v1`) alongside earlier additions (Taskesen 2025, Van Alen 2020, Tung 2023, etc.), so PAP freeze remains on hold until approval or credential restoration.
 4. Ensure every new derivation is appended to `analysis/data_processing.md` so QC history stays reproducible.
 
 ## Regeneration Notes

@@ -6,4 +6,5 @@
 
 | Timestamp | Reviewer | Decision | Notes |
 | --- | --- | --- | --- |
+| 2025-11-10 12:30 UTC | Dr. M. Mendez | pending | Acknowledged receipt of the Loop 025 Q&A/compliance appendix; requested that we rerun `scripts/loop020_h4_stress_tests.py` once DG-4827 weights land, then proceed with the `pap_freeze_h4_loop024` tag. |
 | _TBD_ | Dr. M. Mendez | pending | Reviewer reviewing Loop 020–021 materials; follow-up scheduled for 2025-11-11 stand-up. |

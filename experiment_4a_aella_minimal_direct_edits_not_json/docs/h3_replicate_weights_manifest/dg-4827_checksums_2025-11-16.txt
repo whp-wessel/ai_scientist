@@ -1,2 +1,5 @@
 # Placeholder — DG-4827 checksum bundle
-No files delivered yet (Loop 024). Replace this stub with the official checksum list once Data Governance uploads `dg-4827_checksums_2025-11-16.txt` to `sftp://secure-gfs/replicates/loop021/`.
+No files delivered yet (Loop 025). Paste the official checksum list below once Data Governance uploads `dg-4827_checksums_2025-11-16.txt` to `sftp://secure-gfs/replicates/loop021/`.
+
+| File | SHA256 |
+| --- | --- |

@@ -6,8 +6,8 @@
     "phase": "loop",
     "ts": "2025-11-08T15:49:56.592983+00:00"
   },
-  "last_updated": "2025-11-09T10:45:00Z",
-  "loop_counter": 24,
+  "last_updated": "2025-11-10T12:50:00Z",
+  "loop_counter": 25,
   "next_actions": [
     "Ingest the DG-4827 replicate-weight drop as soon as Data Governance posts the AES-256 bundle (target 2025-11-16), then rerun `scripts/loop021_h3_weighted_checks.py` and `scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` reflects the weighted design effect.",
     "Execute the `religiosity_class_gradients` freeze once the reviewer signs off: rerun the Loop 020 stress tests, refresh `tables/loop016_h4_confirmatory.csv`, flip the hypotheses/results rows to `confirmatory=TRUE`, rewrite the PAP header with tag `pap_freeze_h4_loop024`, and log the git tag.",

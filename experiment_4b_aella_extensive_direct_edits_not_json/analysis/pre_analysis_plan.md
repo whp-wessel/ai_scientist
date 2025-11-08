@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T18:19Z
+last_updated: 2025-11-08T18:36Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -37,6 +37,8 @@ Loop 022 note: Semantic Scholar remains blocked (`lit/queries/loop_022/query_001
 Loop 023 note: Mandated Semantic Scholar query (“childhood parental warmth adult emotional health”) still returned 403 (`lit/queries/loop_023/query_001.json`), so we logged a CrossRef fallback for Van Alen et al. (2020; DOI `10.31234/osf.io/gjt94`). The MIDUS cohort evidence ties higher childhood parental warmth to better midlife HF-HRV and lower cardiovascular risk, so the PAP draft now flags vagal-tone mechanisms and records this blocker until the waiver or a restored API key lets us freeze the plan.
 
 Loop 024 note: Semantic Scholar attempt (“childhood parental support adult cardiovascular resilience”) again failed with 403 (`lit/queries/loop_024/query_001.json`). To keep H2 literature current we logged the JAMA Cardiology article on childhood parental incarceration and adult-onset hypertension (`10.1001/jamacardio.2023.2672`), updated `lit/evidence_map.csv` / `lit/bibliography.*`, and extended the waiver memo through Loop 024. PAP status remains draft until the waiver is approved or the API credential is restored, and the plan now highlights family-disruption covariates (parental incarceration, loss) as mandatory controls for the guidance models.
+
+Loop 025 note: Semantic Scholar query (“childhood parental nurturance adult metabolic health”) produced yet another 403 (`lit/queries/loop_025/query_001.json`), so we captured CrossRef metadata for Liu & Yin (2025 preprint; DOI `10.21203/rs.3.rs-6195416/v1`). The study shows maternal warmth mediating the effect of inter-parent conflict on emerging-adult aggression, reinforcing H2’s need to pre-specify emotion-regulation covariates and maternal/paternal warmth interactions before PAP freeze. The waiver memo and literature registries now include this DOI while we wait for a working API credential or formal waiver approval.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.

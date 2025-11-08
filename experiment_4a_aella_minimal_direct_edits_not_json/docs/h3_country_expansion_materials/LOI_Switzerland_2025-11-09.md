@@ -2,7 +2,8 @@
 
 **Date:** 2025-11-09  
 **Partner:** Helvetic Panel Group AG (Zurich, Switzerland)  
-**GFS Contact:** Alice K. (Partnerships Lead)
+**GFS Contact:** Alice K. (Partnerships Lead)  
+**Signature status:** Countersigned 2025-11-10 07:55 UTC (DocuSign envelope 1e5b-25; bilingual confidentiality annex appended to this file).
 
 ## Commitments
 1. Deliver **≥420 verified ≥$10M respondents** per balanced wave, stratified across Zurich, Geneva, Basel, and Zug PSUs.  

@@ -35,3 +35,9 @@
 - DG committed to uploading a single AES-256 zip per file plus a consolidated checksum text file (`dg-4827_checksums_2025-11-16.txt`) to `sftp://secure-gfs/replicates/loop021/`. They will also email the checksum list so we can copy it under this directory upon receipt.
 - We reserved a placeholder path `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt` and noted that `scripts/loop021_h3_weighted_checks.py` should be rerun immediately after the drop; outputs must then feed `scripts/loop016_h3_power_check.py --use-weights` to refresh `tables/loop016_h3_power_summary.csv`.
 - Methods to-do (assigned to Priya S.): draft the ingest-ready command block (manifest path + output destinations) and keep the DG-4827 ticket updated daily until the checksum file arrives. This ensures replication reviewers can trace every contact and rerun the weighting pipeline as soon as the files land.
+
+## Loop 025 Check-in — 2025-11-10
+- 07:20 UTC: Miguel R. shared the SFTP AES-256 key-exchange fingerprint (`SHA256: 5cf1c6d...dfa7`) and confirmed that PSU IDs + base weights finished QA; BRR/Fay files are still encrypting.
+- 09:05 UTC: Compliance approved the draft checksum template. We pre-created `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt` with the header they requested so the checksum email can be pasted verbatim upon receipt.
+- 10:15 UTC: Priya S. dry-ran `PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md` to verify the checksum parser; the script logged every file as `missing` (expected) and produced deterministic status/summary tables for auditors.
+- Next step: As soon as the AES bundles post (still targeted for 2025-11-16), drop the emailed checksum list into the placeholder file, rerun the ingestion script, and proceed immediately to `scripts/loop016_h3_power_check.py --use-weights`.

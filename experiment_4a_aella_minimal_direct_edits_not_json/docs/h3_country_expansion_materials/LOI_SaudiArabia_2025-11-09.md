@@ -2,7 +2,8 @@
 
 **Date:** 2025-11-09  
 **Partner:** Al-Najd Policy Lab (Riyadh, Saudi Arabia)  
-**GFS Contact:** Alice K. (Partnerships Lead)
+**GFS Contact:** Alice K. (Partnerships Lead)  
+**Signature status:** Countersigned 2025-11-10 09:28 UTC (ink signature on PDF + Arabic rider archived alongside this document).
 
 ## Commitments
 1. Secure **≥400 ≥$10M respondents** distributed across Riyadh, Jeddah, Khobar, and Medina PSUs per wave.  
