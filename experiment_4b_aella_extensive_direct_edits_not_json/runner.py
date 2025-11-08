@@ -1146,45 +1146,41 @@ def log_runner_decision(
 
 
 def git_checkpoint(message: str, push: bool = True):
+    repo_path = str(REPO.resolve())
+
+    def _run_git(args: list[str]) -> tuple[int, str, str]:
+        cmd = ["git", "-C", repo_path] + args
+        return run_cmd(cmd)
+
     def _record_head() -> None:
-        rc, out, _ = run_cmd(["git", "rev-parse", "HEAD"])
+        rc, out, _ = _run_git(["rev-parse", "HEAD"])
         head = out.strip() if rc == 0 else ""
         (REPO / "artifacts").mkdir(parents=True, exist_ok=True)
         (REPO / "artifacts" / "last_commit.txt").write_text(head + "\n", encoding="utf-8")
 
     base_cmds = [
-        ["git", "add", "-A", "--", "."],
-        ["git", "commit", "-m", message],
+        ["add", "-A", "--", "."],
+        ["commit", "-m", message],
     ]
-    for cmd in base_cmds:
-        rc, out, err = run_cmd(cmd)
+    for args in base_cmds:
+        rc, out, err = _run_git(args)
         text_lower = f"{out}\n{err}".lower()
         if "nothing to commit" in text_lower:
             continue
         if rc != 0:
-            return False, f"{' '.join(cmd)} -> {err.strip() or out.strip()}"
+            cmd_display = " ".join(["git", "-C", repo_path, *args])
+            return False, f"{cmd_display} -> {err.strip() or out.strip()}"
 
-    pull_failed = False
     push_failed = False
     if push:
-        pull_cmd = ["git", "pull", "--rebase", "origin", MAIN_BRANCH]
-        rc, out, err = run_cmd(pull_cmd)
+        push_cmd = ["push", "origin", MAIN_BRANCH]
+        rc, out, err = _run_git(push_cmd)
         if rc != 0:
-            pull_failed = True
-            reason = err.strip() or out.strip() or "pull failed"
-            print(f"[git] warning: {' '.join(pull_cmd)} -> {reason} (skipping push)")
-        else:
-            push_cmd = ["git", "push", "origin", MAIN_BRANCH]
-            rc, out, err = run_cmd(push_cmd)
-            if rc != 0:
-                push_failed = True
-                reason = err.strip() or out.strip() or "push failed"
-                print(f"[git] warning: {' '.join(push_cmd)} -> {reason}")
+            push_failed = True
+            reason = err.strip() or out.strip() or "push failed"
+            print(f"[git] warning: {' '.join(['git', '-C', repo_path, *push_cmd])} -> {reason}")
 
     _record_head()
-    if pull_failed and not push_failed:
-        # pull failed before push attempted; treat as soft success
-        return True, ""
     if push_failed:
         return True, ""
     return True, ""

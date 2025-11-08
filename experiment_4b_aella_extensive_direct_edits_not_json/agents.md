@@ -333,7 +333,7 @@ Gate: All critical items green or justified **and** last reviewer decision is CO
 ---
 
 Refer to `config/agent_config.yaml` for runtime defaults (seed, FDR, budgets) and keep it as the single source of truth.
-After major artifacts are created or updated (e.g., PAP, results, reports, backlog), make a git commit and push so the reproducibility log stays aligned.
+After major artifacts are created or updated (e.g., PAP, results, reports, backlog), make a git commit and push so the reproducibility log stays aligned. The runner stages/commits only files inside this experiment (`git -C <experiment> …`) and never auto-pulls, so be sure the experiment’s branch is fast-forwardable before requesting a push.
 
 ## Codex Runtime Configuration
 - `CODEX_MODEL` — model identifier (e.g., `gpt-5-high`, `gpt-5-codex-high`). Defaults to `gpt-5-codex`.
@@ -358,7 +358,9 @@ unified diffs or another deterministic editor). Do **not** return JSON payloads 
 contents—the runner detects work via `git status`.
 
 **Commit protocol:** When ready to checkpoint, write a single‑line commit message to
-`artifacts/git_message.txt`. The runner will commit and push.
+`artifacts/git_message.txt`. The runner stages/commits only files inside this experiment
+(`git -C <experiment> …`) and attempts a push without running `git pull`, so keep the experiment
+branch fast-forwardable (no unpublished manual commits) before requesting a push.
 
 **Stop protocol:** If safe progress is impossible, edit `artifacts/state.json` to include
 `"stop_now": true` and `"stop_reason": "<one‑line reason>"`.
@@ -433,7 +435,8 @@ Never reveal chain‑of‑thought; provide artifacts plus a concise Decision Log
 Do **not** emit JSON payloads; the runner inspects `git status`.
 
 **Commit protocol:** Write a one‑line message to `artifacts/git_message.txt` when ready to
-checkpoint. The runner will commit and push.
+checkpoint. The runner constrains git to this experiment (`git -C <experiment> …`) and attempts a
+push without pulling, so keep the experiment branch fast-forwardable.
 
 **Stop protocol:** If a fatal condition arises, set `"stop_now": true` (and a brief
 `"stop_reason"`) in `artifacts/state.json`.
