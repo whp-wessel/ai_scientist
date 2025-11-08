@@ -215,3 +215,18 @@ DECISION: CONTINUE
 
 Notes: Add artifacts/git_message.txt to trigger a checkpoint. Provide S2_API_Key to avoid 429s and continue literature extraction.
 
+## Loop 018 — 2025-11-08T15:49:38.264256+00:00
+DECISION: CONTINUE
+
+R1 Reproducibility: WARN — Seeds recorded (`artifacts/seed.txt`), environment logged (`artifacts/session_info.txt`), and commands captured (`analysis/decision_log.csv`). However, no commit request file is present (`artifacts/git_message.txt` missing) despite the claim in `artifacts/last_model_raw.txt`.
+
+R2 Statistical Rigor: PASS — All tests are exploratory (confirmatory=false). SRS is explicitly justified (`design_used=false`, `srs_justification` in `analysis/results.csv`). Effect sizes, SEs, CIs, and p‑values are provided.
+
+R3 Literature/Evidence: PASS — Saved query JSONs under `lit/queries/`; DOIs curated in `lit/evidence_map.csv`; manuscript cites DOI in `reports/paper.md`. Some searches returned HTTP 429 unauthenticated, but evidence tracking exists.
+
+R4 Privacy: PASS — Public outputs in `tables/` apply n<10 suppression (e.g., `tables/key_vars_value_counts.csv` shows “<10”). `tables/religion_by_monogamy.csv` contains no cells <10.
+
+R5 Completeness: PASS — PAP is `status: draft` (`analysis/pre_analysis_plan.md`); manuscript present (`reports/paper.md`); registries present (`analysis/hypotheses.csv`, `analysis/results.csv`). No confirmatory results, so no freeze/tag required yet.
+
+Notes: Add `artifacts/git_message.txt` for this loop’s checkpoint. Provide `S2_API_Key` to avoid 429s and expand `lit/evidence_map.csv`.
+
