@@ -280,3 +280,13 @@
 2. Freeze `religiosity_class_gradients` as soon as Dr. M. Mendez sends the go: rerun the Loop 020 stress tests, regenerate `tables/loop016_h4_confirmatory.csv`, flip the PAP/hypothesis/results rows to `confirmatory=TRUE`, and tag the commit (`pap_freeze_h4_loop024`).
 3. Keep high-wealth procurement monitoring daily through the 2025-11-15 Q&A deadline—log any new vendor questions, Spain Canary Islands annexes, and Norway Reykjavik ledger uploads in both the Q&A log and verification/LOI registers within 48 hours.
 ---
+
+## 2025-11-14 – Loop 032
+- **DG-4827 ingestion rehearsal:** Ran `PYTHONHASHSEED=20251016 python scripts/loop021_h3_weighted_checks.py --manifest docs/h3_replicate_weights_manifest/manifest_loop021.md`. Output continues to report “Replicate ingestion blocked; missing roles: brr, psu, weights,” so both audit tables (`tables/loop021_h3_weight_delivery_status.csv`, `tables/loop021_h3_weighted_summary.csv`) now carry the 2025-11-14 timestamp while we wait for the promised AES-256 drop.
+- **Manifest + design plan updates:** Added the Loop 032 status block to `docs/h3_replicate_weights_manifest/manifest_loop021.md` and extended `docs/h3_design_effect_plan.md` with Loop 030–032 tracker entries so reviewers can trace every rehearsal since 2025-11-12.
+- **Procurement monitoring:** Conducted the daily Methods + Partnerships sweep; no new vendor questions, annexes, or verification ledgers arrived. Logged the all-clear under “Loop 032” in `docs/h3_high_wealth_refresh/qna_loop021.md` to preserve the compliance trail heading into the 2025-11-15 Q&A deadline.
+
+### Loop 032 Next Actions
+1. Keep running the DG-4827 rehearsal until the AES-256 bundle ships (ETA 2025-11-16); once the checksum email arrives, paste it into `docs/h3_replicate_weights_manifest/dg-4827_checksums_2025-11-16.txt`, rerun `loop021_h3_weighted_checks.py`, and immediately execute `PYTHONHASHSEED=20251016 python scripts/loop016_h3_power_check.py --use-weights` so `tables/loop016_h3_power_summary.csv` picks up the weighted SEs.
+2. Freeze the `religiosity_class_gradients` family the moment Dr. M. Mendez issues the written go by rerunning the Loop 020 stress tests, regenerating `tables/loop016_h4_confirmatory.csv`, flipping the PAP/hypotheses/results rows to `confirmatory=TRUE`, and tagging `pap_freeze_h4_loop024`.
+3. Continue daily procurement sweeps through the 2025-11-15 Q&A deadline—log any new vendor Q&A threads, Spain Canary Islands annex revisions, Norway Reykjavik ledger uploads, and associated verification-register entries within 48 hours.
