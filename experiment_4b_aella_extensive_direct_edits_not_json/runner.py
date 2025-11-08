@@ -91,6 +91,7 @@ STATE_PATH = REPO / "artifacts" / "state.json"
 DECISION_LOG = REPO / "analysis" / "decision_log.csv"
 STOP_FLAG = REPO / "artifacts" / "stop.flag"
 LAST_ABORT_PATH = REPO / "artifacts" / "last_abort.json"
+LOOP_ACTION_RE = re.compile(r"loop[\s_:-]*(\d{3})", re.IGNORECASE)
 
 PHASE_ORDER: list[str] = [
     "literature",
@@ -1058,6 +1059,64 @@ def _small_cell_alert_message(max_files: int = 3) -> Optional[str]:
     )
 
 
+def _latest_logged_loop_index() -> Optional[int]:
+    if not DECISION_LOG.exists():
+        return None
+    try:
+        with DECISION_LOG.open("r", encoding="utf-8", newline="") as fh:
+            reader = csv.DictReader(fh)
+            latest: Optional[int] = None
+            for row in reader:
+                action = (row.get("action") or "").strip()
+                if not action:
+                    continue
+                match = LOOP_ACTION_RE.search(action)
+                if not match:
+                    continue
+                try:
+                    idx = int(match.group(1))
+                except ValueError:
+                    continue
+                latest = idx if latest is None else max(latest, idx)
+            return latest
+    except Exception:
+        return None
+
+
+def _decision_log_alert_message() -> Optional[str]:
+    state = ensure_state_defaults(read_state_json())
+    loop_counter = int(state.get("loop_counter", 0) or 0)
+    if loop_counter <= 0:
+        return None
+    if not DECISION_LOG.exists():
+        return (
+            "You failed Principle 1 (Reproducibility): state loop_counter="
+            f"{loop_counter} but analysis/decision_log.csv is missing. "
+            "Restore or recreate the decision log before continuing."
+        )
+    latest = _latest_logged_loop_index()
+    if latest is None:
+        return (
+            "You failed Principle 1 (Reproducibility): state loop_counter="
+            f"{loop_counter} but analysis/decision_log.csv contains no loop entries. "
+            "Append rows covering loop_001.."
+            f"loop_{loop_counter:03d} (or roll back state)."
+        )
+    if latest >= loop_counter:
+        return None
+    missing_start = latest + 1
+    missing_range = (
+        f"loop_{loop_counter:03d}"
+        if missing_start == loop_counter
+        else f"loop_{missing_start:03d}..loop_{loop_counter:03d}"
+    )
+    return (
+        "You failed Principle 1 (Reproducibility): state loop_counter="
+        f"{loop_counter} but analysis/decision_log.csv only records up to loop_{latest:03d}. "
+        f"Append log rows for {missing_range} (or roll back the state) before continuing."
+    )
+
+
 def _check_claim_coverage() -> tuple[bool, str]:
     manuscript_path = REPO / "papers" / "main" / "manuscript.tex"
     if not manuscript_path.exists():
@@ -1498,6 +1557,10 @@ def do_bootstrap():
     small_cell_alert = _small_cell_alert_message()
     if small_cell_alert:
         bootstrap_user = f"{bootstrap_user}\nNon-negotiable alert: {small_cell_alert}"
+    decision_log_alert = _decision_log_alert_message()
+    if decision_log_alert:
+        print(f"[guardrail] Reproducibility alert (non-blocking): {decision_log_alert}")
+        bootstrap_user = f"{bootstrap_user}\nNon-negotiable alert: {decision_log_alert}"
     try:
         raw = run_codex_cli(bootstrap_user, bootstrap_system)
     except UserAbort:
@@ -1679,6 +1742,10 @@ def do_loop(iter_ix: int, consecutive_git_fails: int):
     small_cell_alert = _small_cell_alert_message()
     if small_cell_alert:
         user_prompt += f"\nNon-negotiable alert: {small_cell_alert}"
+    decision_log_alert = _decision_log_alert_message()
+    if decision_log_alert:
+        print(f"[guardrail] Reproducibility alert (non-blocking): {decision_log_alert}")
+        user_prompt += f"\nNon-negotiable alert: {decision_log_alert}"
 
     try:
         raw = run_codex_cli(user_prompt, loop_system)

@@ -71,10 +71,10 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Added `analysis/code/calc_bh.py` so confirmatory runs can append `q_value` + `bh_in_scope` per family once PAP is frozen; execution deferred until results exist to avoid premature confirmatory outputs.
 
 ## Next Steps
-1. Restore Semantic Scholar access or obtain a documented waiver so the PAP can freeze without violating literature-governance policy.
-2. Freeze the PAP (status + registry URL + commit tag) once literature, measurement, and disclosure gates are satisfied; this remains blocked on N1.
-3. Wire the disclosure-check template into the execution order so every future table/figure logs minimum cell counts prior to release.
-4. Coordinate with the data provider about the empty `mentalillness` column and decide whether MI outputs should be integrated into the H2 control set before confirmatory modeling.
+1. Restore Semantic Scholar access or secure a documented waiver; Loop 007 query (`lit/queries/loop_007/query_001.json`) still returns 403 so the PAP cannot freeze yet.
+2. Freeze the PAP (status + registry URL + commit/tag) once literature and measurement gates are satisfied and disclosure automation (DP8) is tied to every planned table/figure.
+3. Keep `analysis/data_processing.md` synchronized with new derivations so reproducibility (R1) remains auditable alongside `qc/data_checks.md`.
+4. Coordinate with the data provider about the empty `mentalillness` control for H2 before confirmatory modeling or document a justified exclusion in the PAP/results.
 
 ## Loop 6 Remediation Plan (2025-11-08)
 - **Reviewer STOP recap:** Loop 005 received `DECISION: STOP` because `figures/dag_design.*`, `reports/identification.md`, and `data/clean/childhood_imputed_stack_loop005.csv` were referenced but missing. As a result, R1 (reproducibility) failed while L1 (literature) and P1 (privacy) passed; the DAG/imputation backlog statuses were therefore misreported (N1=WARN).
@@ -87,3 +87,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Delivered backlog item N5 by adding `analysis/code/disclosure_check.py`, which now scans tabular/figure artifacts and produced `qc/disclosure_check_loop_006.md` (only the DAG exists, so violations remain zero).
 - Upgraded `scripts/semantic_scholar_cli.py` to persist error payloads; the required loop query (`childhood resilience stigma adult outcomes`) still returns 403, but `lit/queries/loop_006/query_001.json` now includes structured metadata for traceability.
 - Next: keep PAP in draft while the Semantic Scholar key is blocked, but update `artifacts/state.json` and `analysis/pre_analysis_plan.md` to reference the regenerated artifacts and disclosure automation.
+
+## Loop 7 Updates (2025-11-08)
+- Logged the mandated Semantic Scholar query (`childhood resilience spirituality adult wellbeing`); the API still returns 403, so the failure metadata lives at `lit/queries/loop_007/query_001.json` and next action N1 remains blocked.
+- Created `analysis/data_processing.md` to catalogue DP1–DP8 transformations (QC, measurement dossier, imputation, DAG, disclosure automation) with explicit commands and seeds, closing the reviewer’s reproducibility concern.
+- Refreshed `analysis/pre_analysis_plan.md` (status: draft) and `qc/data_checks.md` to reference the new ledger and clarify that PAP freeze is still gated on Semantic Scholar access plus disclosure automation wiring.
+- Documented these steps in `analysis/decision_log.csv` so R1 remains auditable and emphasized that no confirmatory outputs will run until the PAP is frozen and literature policy is satisfied.

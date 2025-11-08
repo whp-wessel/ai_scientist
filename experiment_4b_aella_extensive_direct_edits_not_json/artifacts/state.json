@@ -1,6 +1,6 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 6,
+  "loop_counter": 7,
   "total_loops": 50,
   "phase": "pap",
   "phase_ix": 1,
@@ -32,7 +32,7 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API still 403 as of loop 006 (see lit/queries/loop_006/query_001.json); logging failures + awaiting new key/waiver."
+      "notes": "Semantic Scholar API still 403 as of loop 007 (see lit/queries/loop_007/query_001.json); logging failures + awaiting new key/waiver."
     },
     {
       "id": "N2",

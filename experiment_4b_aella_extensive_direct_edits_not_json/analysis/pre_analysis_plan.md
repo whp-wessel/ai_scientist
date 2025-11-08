@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08
+last_updated: 2025-11-08T14:05Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -59,8 +59,8 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 
 ## Data Management Plan
 - Raw data remain immutable under `data/raw/`.
-- Recode scripts will live under `analysis/code/` and write outputs to `data/clean/` with filenames containing the seed (e.g., `childhood_imputed_stack_loop005.csv`, created in Loop 006).
-- All transformations logged in `analysis/data_processing.md` (to be created) and referenced in `analysis/decision_log.csv`.
+- Recode scripts live under `analysis/code/` and write outputs to `data/clean/` with filenames containing the seed (e.g., `childhood_imputed_stack_loop005.csv`, created in Loop 006).
+- All transformations are now logged in `analysis/data_processing.md` (DP1–DP8) with explicit commands, seeds, and artifact paths; any new derivation must update both this ledger and `analysis/decision_log.csv`.
 - Loop 002 added `analysis/code/describe_dataset.py` and `analysis/code/validate_metadata.py` so QC summaries (`artifacts/describe_dataset_loop002.json`, `qc/metadata_validation.md`) regenerate from a single command.
 - Loop 003 implemented `analysis/code/run_models.py` (H1–H3 estimators), `analysis/code/missingness_profile.py`, and `analysis/code/measure_validity_checks.py`. Regeneration examples:
   ```bash
@@ -87,9 +87,9 @@ This draft documents priority hypotheses for the Childhood Resilience Study. The
 6. **Disclosure review:** Draft `qc/disclosure_check_loop_{loop}` with min cell sizes and suppression summary before any tables/figures leave the repo.
 
 ## Outstanding Tasks Before Freeze
-1. Restore Semantic Scholar access (or obtain formal waiver). Loop 006 query (`lit/queries/loop_006/query_001.json`) still returns 403; PAP freeze deferred until a working credential or written waiver exists.
-2. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist template is in place.
-3. Maintain `qc/disclosure_check_loop_004.md` (template created) and wire it into the execution order so every public table references the min cell count review.
-4. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.
+1. Restore Semantic Scholar access (or obtain formal waiver). Loop 007 query (`lit/queries/loop_007/query_001.json`) still returns 403; PAP freeze deferred until a working credential or waiver is recorded in `analysis/decision_log.csv`.
+2. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once literature + QC gates are satisfied and the disclosure checklist automation (DP8) is linked to every planned table/figure.
+3. Keep `analysis/data_processing.md` synchronized with any new derivations (e.g., sensitivity specifications) and cite the ledger whenever PAP text references transformation history.
+4. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.***
 
 _No confirmatory analysis will begin until the status is set to `frozen` with registry details and a recorded commit/tag._
