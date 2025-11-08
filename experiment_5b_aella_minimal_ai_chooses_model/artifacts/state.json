@@ -1,0 +1,29 @@
+{
+  "bootstrap_complete": false,
+  "loop_counter": 0,
+  "model_state": {
+    "review": {
+      "last_model": null,
+      "last_model_context": "",
+      "last_model_policy": "",
+      "last_model_reason": "",
+      "queued_model": null,
+      "queued_reason": "",
+      "queued_source": "",
+      "rr_index": -1
+    },
+    "science": {
+      "last_model": null,
+      "last_model_context": "",
+      "last_model_policy": "",
+      "last_model_reason": "",
+      "queued_model": null,
+      "queued_reason": "",
+      "queued_source": "",
+      "rr_index": -1
+    }
+  },
+  "phase": "literature",
+  "phase_ix": 0,
+  "total_loops": 50
+}
