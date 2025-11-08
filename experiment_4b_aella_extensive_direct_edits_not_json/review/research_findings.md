@@ -73,3 +73,12 @@ N1: PASS – Phase stays PAP with the literature task explicitly marked blocked 
 
 Notes: Continue escalating for a working S2 key or waiver so the PAP can freeze.
 
+## Loop 011 — 2025-11-08T14:36:02.789291+00:00
+DECISION: CONTINUE
+R1: PASS – Seed 20251016 plus explicit regeneration commands remain in `analysis/pre_analysis_plan.md:1-75`, and the QC log cites current session/checksum artifacts (`qc/data_checks.md:1-58`, `artifacts/session_info.txt:1-20`, `artifacts/checksums.json:1-10`), so reproducibility controls stayed intact this loop.
+L1: PASS – The required Semantic Scholar attempt is logged with parameters in `analysis/decision_log.csv:78-80` and its 403 payload is archived at `lit/queries/loop_011/query_001.json:1-20`, meeting literature-governance requirements despite the credential block.
+P1: PASS – n≥10 disclosure safeguards are reiterated in `analysis/pre_analysis_plan.md:16-33`, no new public tables/figures were issued per `qc/data_checks.md:52-58`, and the latest disclosure memo (`qc/disclosure_check_loop_006.md:1-17`) remains the only cited artifact.
+N1: PASS – `artifacts/state.json:1-67` keeps the phase at PAP with N1 explicitly blocked, and the PAP loop note (`analysis/pre_analysis_plan.md:7-15`) ties advancement to restoring Semantic Scholar access or securing a waiver.
+
+Notes: Priority remains resolving the Semantic Scholar credential so the PAP literature gate can clear.
+
