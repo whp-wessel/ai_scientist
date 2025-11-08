@@ -71,7 +71,7 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Added `analysis/code/calc_bh.py` so confirmatory runs can append `q_value` + `bh_in_scope` per family once PAP is frozen; execution deferred until results exist to avoid premature confirmatory outputs.
 
 ## Next Steps
-1. Restore Semantic Scholar access or secure a waiver — Loop 008 attempt (`lit/queries/loop_008/query_001.json`) still returns 403, so plan to escalate with ops by Loop 010 if a valid key is not issued.
+1. Restore Semantic Scholar access or secure a waiver — Loop 009 attempt (`lit/queries/loop_009/query_001.json`) still returns 403, so plan to escalate with ops by Loop 010 if a valid key is not issued.
 2. Keep the PAP in draft until the literature gate clears, then freeze with registry URL + commit/tag while linking disclosure automation (DP8) to every planned confirmatory artifact.
 3. Continue syncing `analysis/data_processing.md`, `qc/data_checks.md`, and reproducibility files (`artifacts/session_info.txt`, `artifacts/checksums.json`) each loop so R1 remains auditable.
 4. Coordinate with the data provider about the empty `mentalillness` control for H2 before confirmatory modeling or document a justified exclusion in the PAP/results.
@@ -99,3 +99,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Ran the required Semantic Scholar query (`childhood abuse self love adult wellbeing`); the key still returns 403, so the payload lives at `lit/queries/loop_008/query_001.json` and next action N1 stays blocked pending new credentials or a waiver.
 - Refreshed `analysis/pre_analysis_plan.md` with a Loop 008 timestamp plus an explicit contingency to escalate for a waiver by Loop 010 if the API remains forbidden, ensuring the PAP cannot freeze prematurely.
 - Updated `qc/data_checks.md` to Loop 008 with a reproducibility checkpoint confirming `artifacts/session_info.txt` and `artifacts/checksums.json` (both updated 2025-11-08T15:09 UTC) so R1 traceability remains documented alongside the disclosure guard.
+
+## Loop 9 Updates (2025-11-08)
+- Re-read the Loop 008 review (R1/L1/P1/N1) and logged the response plan in `analysis/decision_log.csv`, committing to seed/QC discipline, continued Semantic Scholar attempts, maintained disclosure guard, and holding PAP freeze until literature governance clears.
+- Executed `python scripts/semantic_scholar_cli.py search --query "childhood emotional abuse adult self love wellbeing" --limit 5 --output lit/queries/loop_009/query_001.json`; the API still returned HTTP 403, so the failure payload is archived and next action N1 remains blocked pending a key or waiver.
+- Refreshed `analysis/pre_analysis_plan.md` (status: draft) with a Loop 009 status note referencing `lit/queries/loop_009/query_001.json`, reinforcing that PAP freeze is contingent on Semantic Scholar compliance.
+- Updated `qc/data_checks.md` to Loop 009, documenting the latest session/checksum timestamps (2025-11-08T14:17Z) and reiterating that no confirmatory tables/figures were produced while the PAP remains draft.
