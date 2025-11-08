@@ -13,13 +13,13 @@
       "rr_index": -1
     },
     "science": {
-      "last_model": "gpt-5-codex",
-      "last_model_context": "loop_002",
+      "last_model": "gpt-5",
+      "last_model_context": "loop_003",
       "last_model_policy": "agent",
-      "last_model_reason": "Upcoming recoding and modeling tasks remain code/data-heavy and benefit from Codex\u2019s tooling skills.",
-      "queued_model": "gpt-5",
-      "queued_reason": "Need higher-level reasoning to finish PAP drafting and confirmatory planning before the next analytical sprint.",
-      "queued_source": "loop_002",
+      "last_model_reason": "Need higher-level reasoning to finish PAP drafting and confirmatory planning before the next analytical sprint.",
+      "queued_model": null,
+      "queued_reason": "",
+      "queued_source": "",
       "rr_index": -1
     }
   },
