@@ -61,12 +61,32 @@ def _enforce_rate_limit():
 
 def _http_get(url: str, headers: Dict[str, str]) -> Dict[str, Any]:
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req) as resp:
-        data = resp.read()
+    try:
+        with urllib.request.urlopen(req) as resp:
+            data = resp.read()
+            try:
+                return json.loads(data.decode('utf-8'))
+            except Exception:
+                return {'raw': data.decode('utf-8', errors='ignore')}
+    except Exception as e:  # Capture HTTPError and others; return structured error
+        out: Dict[str, Any] = {
+            'error': True,
+            'reason': str(e),
+            'url': url,
+        }
+        if hasattr(e, 'code'):
+            out['http_status'] = getattr(e, 'code')
         try:
-            return json.loads(data.decode('utf-8'))
+            # Attempt to read response body
+            body = e.read() if hasattr(e, 'read') else None
+            if body:
+                try:
+                    out['body'] = json.loads(body.decode('utf-8'))
+                except Exception:
+                    out['body'] = body.decode('utf-8', errors='ignore')
         except Exception:
-            return {'raw': data.decode('utf-8', errors='ignore')}
+            pass
+        return out
 
 
 def cmd_search(args: argparse.Namespace, api_key: str) -> Dict[str, Any]:
@@ -74,7 +94,7 @@ def cmd_search(args: argparse.Namespace, api_key: str) -> Dict[str, Any]:
     params = {
         'query': args.query,
         'limit': str(args.limit or 5),
-        'fields': args.fields or 'title,authors,year,venue,doi,url,abstract'
+        'fields': args.fields or 'title,authors,year,venue,externalIds,url,abstract'
     }
     url = base + '?' + urllib.parse.urlencode(params)
     headers = {'x-api-key': api_key} if api_key else {}
@@ -86,7 +106,7 @@ def cmd_paper(args: argparse.Namespace, api_key: str) -> Dict[str, Any]:
     pid = args.paper_id
     base = f'https://api.semanticscholar.org/graph/v1/paper/{urllib.parse.quote(pid)}'
     params = {
-        'fields': args.fields or 'title,authors,year,venue,doi,url,abstract'
+        'fields': args.fields or 'title,authors,year,venue,externalIds,url,abstract'
     }
     url = base + '?' + urllib.parse.urlencode(params)
     headers = {'x-api-key': api_key} if api_key else {}
@@ -131,4 +151,3 @@ def main(argv: list[str]) -> int:
 
 if __name__ == '__main__':
     raise SystemExit(main(sys.argv[1:]))
-

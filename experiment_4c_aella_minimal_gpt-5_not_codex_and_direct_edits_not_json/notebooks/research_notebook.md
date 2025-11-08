@@ -39,3 +39,20 @@ Next:
 Next:
 - Add `.env` with `S2_API_Key` and run the saved search; extract DOIs into `lit/evidence_map.csv`.
 - Draft minimal modeling script and begin exploratory estimates for H1–H4 (record in `analysis/results.csv`).
+
+---
+## Loop 003 (literature → exploratory analysis)
+- Implemented `scripts/analysis/run_models.py` and ran:
+  - `python scripts/analysis/run_models.py --input childhoodbalancedpublic_original.csv --hypotheses analysis/hypotheses.csv --results analysis/results.csv --seed 20251016`
+- Appended 6 exploratory OLS results (standardized) to `analysis/results.csv` for H1–H4. All analyses assume SRS (no weights/strata/clusters detected) and include justification.
+- Attempted Semantic Scholar search via helper; received HTTP 429 unauthenticated. Saved structured error to `lit/queries/loop_003/query_002.json`. Helper updated to handle and persist HTTP errors.
+
+Highlights (exploratory; not confirmatory):
+- H3 (Teen SES → depression, stress) shows positive associations (p≈0).
+- H4 (Gender → anxiety item) shows positive association (p≈0).
+- H2 (Religion → monogamy) positive association; relationship satisfaction ~ religion is small and not significant at conventional levels.
+- H1 (Childhood religious strictness → unhappiness) near zero.
+
+Next:
+- Provide `.env` with `S2_API_Key` to run literature queries and extract DOIs into `lit/evidence_map.csv`.
+- Consider robustness (e.g., nonlinearity, ordinal models) and potential confounders; plan sensitivity checks.

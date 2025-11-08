@@ -1,47 +1,22 @@
-timestamp_utc: 2025-11-08T13:51:24.197932+00:00
+timestamp_utc: 2025-11-08T14:06:44.151801+00:00
 python: 3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 15:57:01) [Clang 17.0.6 ]
 platform: macOS-26.1-arm64-arm-64bit
 cwd: /Users/wessel/ai_scientist/experiment_4a_aella_minimal_direct_edits_not_json
 model: gpt-5-codex
 seed: 20251016
-git_head: 316f62e1883b6044fcd780dc3f348f5050695827
+git_head: 682ea7fce3391b7f26cc9ca86937416938925554
 git_status: |
-  ## main...origin/main [ahead 3]
-   M artifacts/.s2_rate_limit.json
-   M lit/bibliography.md
-   M lit/evidence_map.csv
+  ## main...origin/main [ahead 13]
    M runner.py
-   M ../experiment_4b_aella_extensive_direct_edits_not_json/analysis/code/disclosure_check.py
-   M ../experiment_4b_aella_extensive_direct_edits_not_json/analysis/decision_log.csv
-   M ../experiment_4b_aella_extensive_direct_edits_not_json/analysis/pre_analysis_plan.md
-   M ../experiment_4b_aella_extensive_direct_edits_not_json/artifacts/.s2_rate_limit.json
-   M ../experiment_4b_aella_extensive_direct_edits_not_json/artifacts/state.json
-   M ../experiment_4b_aella_extensive_direct_edits_not_json/notebooks/research_notebook.md
-   M ../experiment_4b_aella_extensive_direct_edits_not_json/runner.py
-   M ../experiment_4b_aella_extensive_direct_edits_not_json/scripts/semantic_scholar_cli.py
-   M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/analysis/decision_log.csv
-   M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/state.json
+   M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/analysis/pre_analysis_plan.md
+   M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/analysis/results.csv
+   M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/.s2_rate_limit.json
+   M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/repro_report.md
+   M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/session_info.txt
    M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/runner.py
-  ?? figures/loop013_h4_outcome_effects.png
-  ?? lit/queries/loop_013/query_005.json
-  ?? scripts/loop013_h4_visuals.py
-  ?? tables/loop013_h4_outcome_effects.csv
-  ?? ../experiment_4b_aella_extensive_direct_edits_not_json/lit/queries/loop_006/
-  ?? ../experiment_4b_aella_extensive_direct_edits_not_json/qc/disclosure_check_loop_006.md
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/analysis/hypotheses.csv
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/analysis/pre_analysis_plan.md
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/analysis/results.csv
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/checksums.json
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/git_message.txt
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/repro_report.md
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/seed.txt
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/artifacts/session_info.txt
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/config/
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/data/
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/lit/
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/notebooks/
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/reports/
-  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/scripts/
+   M ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/scripts/semantic_scholar_cli.py
+  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/lit/queries/loop_003/
+  ?? ../experiment_4c_aella_minimal_gpt-5_not_codex_and_direct_edits_not_json/scripts/analysis/run_models.py
 pip_freeze: |
   aiohappyeyeballs==2.6.1
   aiohttp==3.12.15

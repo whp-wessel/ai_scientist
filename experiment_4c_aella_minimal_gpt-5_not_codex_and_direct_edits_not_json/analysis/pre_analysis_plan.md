@@ -26,7 +26,7 @@ analysis plan (deterministic commands; to be expanded):
    - Command: python scripts/analysis/eda.py --input childhoodbalancedpublic_original.csv --summary outputs/eda_summary.json --public-counts tables/key_vars_value_counts.csv
    - Seed: 20251016
 2) Fit minimal models (exploratory)
-   - Command: python scripts/analysis/run_models.py --config configs/models_v0.yaml --results analysis/results.csv
+   - Command: python scripts/analysis/run_models.py --input childhoodbalancedpublic_original.csv --hypotheses analysis/hypotheses.csv --results analysis/results.csv --seed 20251016
    - Seed: 20251016
 
 multiple testing:
