@@ -3,13 +3,13 @@
   "loop_counter": 2,
   "model_state": {
     "review": {
-      "last_model": "gpt-5",
-      "last_model_context": "review_001",
+      "last_model": "gpt-5-codex",
+      "last_model_context": "review_002",
       "last_model_policy": "agent",
-      "last_model_reason": "",
-      "queued_model": "gpt-5-codex",
-      "queued_reason": "Best at pinpointing file-by-file diffs and process gaps.",
-      "queued_source": "review_loop_001",
+      "last_model_reason": "Best at pinpointing file-by-file diffs and process gaps.",
+      "queued_model": null,
+      "queued_reason": "",
+      "queued_source": "",
       "rr_index": -1
     },
     "science": {
