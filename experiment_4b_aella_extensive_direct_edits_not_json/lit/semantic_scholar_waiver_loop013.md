@@ -38,6 +38,7 @@ Since Loop 008 the dedicated Semantic Scholar key stored in `.env` has rejected 
 | 035 | 2025-11-08T20:39:53Z | "childhood parental mentorship adult stress resilience" | 403 Forbidden | `lit/queries/loop_035/query_001.json` |
 | 036 | 2025-11-08T20:52:14Z | "childhood religious service adult depression social support" | 403 Forbidden | `lit/queries/loop_036/query_001.json` |
 | 037 | 2025-11-08T21:05:12Z | "childhood mentoring coping adult depression" | 403 Forbidden | `lit/queries/loop_037/query_001.json` |
+| 038 | 2025-11-08T21:16:25Z | "childhood caregiver emotional support adult depression buffer" | 403 Forbidden | `lit/queries/loop_038/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
@@ -45,6 +46,7 @@ _All JSON payloads include the endpoint, query params, and Semantic Scholar erro
 - **Ross et al. (2019), DOI `10.1016/j.chiabu.2019.03.016`** — CrossRef metadata captured in `lit/queries/loop_012/crossref_query_001.json` and propagated to `lit/evidence_map.csv` / `lit/bibliography.bib`. Supports H3 by documenting self-compassion as a mediator between childhood maltreatment and adult depressive symptoms/self-worth.
 - **Oh & Han (2019), DOI `10.37918/kce.2019.05.116.47`** — CrossRef metadata captured in `lit/queries/loop_030/crossref_query_001.json`; links secure childhood parental attachment to lower adult attachment anxiety and parenting stress, reinforcing H2's warmth/regulation mediators while S2 access is unavailable.
 - **Bellis et al. (2017), DOI `10.1186/s12888-017-1260-z`** — CrossRef metadata captured in `lit/queries/loop_037/crossref_query_001.json`; shows continuous trusted adult support during childhood halves ACE-linked adult mental health harms, directly backing the H2 mentorship pathways until the Semantic Scholar credential returns.
+- **Musliner & Singer (2014), DOI `10.1016/j.chiabu.2014.01.016`** — CrossRef metadata captured in `lit/queries/loop_038/crossref_query_001.json`; demonstrates that strong emotional support buffers adult depression among childhood sexual-abuse survivors, reinforcing H3's moderator controls while the S2 outage persists.
 - Existing DOI-backed sources for H1–H2 (Ezra et al., 2025; Thompson et al., 2015) and H3 (Islam et al., 2022) remain current and are cited with claim IDs `C1–C3`.
 - **Hintikka et al. (1998), DOI `10.1177/009164719802600405`** — CrossRef metadata captured in `lit/queries/loop_036/crossref_query_004.json`; shows regular religious attendance associates with milder depression among community mental health patients even after accounting for social support, reinforcing H1's direct religiosity buffer while Semantic Scholar access is down.
 - **Pandya (2017), DOI `10.1080/15332985.2016.1222982`** — Captured via CrossRef (loop 014) to document spirituality/social-support interventions linked to childhood depression, reinforcing the H1 religiosity mechanism narrative.
