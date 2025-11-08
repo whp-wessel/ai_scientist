@@ -34,6 +34,26 @@ if repo_root_override:
     else:
         override_path = override_path.resolve()
     REPO = override_path
+
+
+def _find_git_root(start: Path) -> Path:
+    """Return the ancestor directory containing .git (or the start path if none found)."""
+
+    path = start.resolve()
+    for candidate in [path, *path.parents]:
+        git_dir = candidate / ".git"
+        if git_dir.exists():
+            return candidate
+    return path
+
+
+GIT_ROOT = _find_git_root(REPO)
+try:
+    _repo_rel = REPO.relative_to(GIT_ROOT)
+    _repo_rel_str = str(_repo_rel).replace("\\", "/").strip("/")
+    REPO_GIT_PREFIX = _repo_rel_str if _repo_rel_str and _repo_rel_str != "." else ""
+except ValueError:
+    REPO_GIT_PREFIX = ""
 MAIN_BRANCH = os.environ.get("GIT_MAIN_BRANCH", "main")
 MODEL = os.environ.get("CODEX_MODEL", "gpt-5-codex")
 REASONING_EFFORT = os.environ.get("CODEX_REASONING_EFFORT", "high")
@@ -508,6 +528,22 @@ def _resolve_and_validate_path(path_str: str) -> Path:
     return resolved
 
 
+def _normalize_status_path(path: str) -> str:
+    """Normalize git status paths to be relative to the experiment root."""
+
+    norm = path.strip()
+    if not norm:
+        return norm
+    norm = norm.replace("\\", "/")
+    while norm.startswith("./"):
+        norm = norm[2:]
+    if REPO_GIT_PREFIX:
+        prefix = f"{REPO_GIT_PREFIX}/"
+        if norm.startswith(prefix):
+            norm = norm[len(prefix):]
+    return norm
+
+
 def _list_changed_files() -> list[ChangeRecord]:
     rc, out, err = run_cmd(["git", "status", "--porcelain=1", "--", "."])
     if rc != 0:
@@ -520,7 +556,7 @@ def _list_changed_files() -> list[ChangeRecord]:
         path_part = line[3:]
         if " -> " in path_part:
             path_part = path_part.split(" -> ", 1)[1]
-        path = path_part.strip()
+        path = _normalize_status_path(path_part)
         if not path:
             continue
         changes.append(ChangeRecord(path=path, staged=status[0], workspace=status[1]))

@@ -1,5 +1,5 @@
 status: draft
-phase: literature
+phase: pap
 last_updated: 2025-11-07
 freeze_commit: TBD
 registry_url: TBD

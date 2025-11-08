@@ -1,9 +1,9 @@
 {
   "bootstrap_complete": true,
-  "loop_counter": 0,
+  "loop_counter": 1,
   "total_loops": 50,
-  "phase": "literature",
-  "phase_ix": 0,
+  "phase": "pap",
+  "phase_ix": 1,
   "backlog": [
     {
       "id": "B1",
@@ -19,9 +19,9 @@
     },
     {
       "id": "B3",
-      "description": "Populate literature evidence (≥3 DOI sources) and bibliography",
+      "description": "Populate literature evidence (\u22653 DOI sources) and bibliography",
       "priority": 2,
-      "status": "open"
+      "status": "done"
     }
   ],
   "next_actions": [
@@ -30,7 +30,7 @@
       "description": "Run Semantic Scholar query + log outputs",
       "owner": "agent",
       "status": "blocked",
-      "notes": "Semantic Scholar API key rejected with 403 Forbidden; awaiting valid credentials"
+      "notes": "Semantic Scholar API still 403 despite new key; using CrossRef fallback this loop and awaiting valid credentials."
     },
     {
       "id": "N2",
