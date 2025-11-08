@@ -1,0 +1,7 @@
+DECISION: CONTINUE
+R1: PASS – Session snapshot and dataset hashes were regenerated before edits, keeping seed 20251016 and deterministic inputs documented (analysis/decision_log.csv:363; artifacts/session_info.txt:1; artifacts/checksums.json:2).
+L1: PASS – Mandatory Semantic Scholar call plus 403 payload are archived, with the Bellis trusted-adult DOI propagated to the evidence map and waiver log to maintain coverage (analysis/decision_log.csv:364; lit/queries/loop_037/query_001.json:2; analysis/decision_log.csv:366; lit/evidence_map.csv:35; lit/semantic_scholar_waiver_loop013.md:1).
+P1: PASS – QC log reiterates disclosure automation with violations=0 and no public tables/figures shipped this loop, so small-cell risk remains controlled (qc/data_checks.md:52).
+N1: PASS – State remains in phase `pap` with the Semantic Scholar action explicitly blocked and the PAP header still marked `status: draft`, preventing premature advancement (artifacts/state.json:25; artifacts/state.json:28; analysis/pre_analysis_plan.md:1; analysis/pre_analysis_plan.md:67).
+
+Notes: Continue pressing for the Semantic Scholar credential or waiver so the PAP freeze gate can finally clear (analysis/pre_analysis_plan.md:67; artifacts/state.json:28).
