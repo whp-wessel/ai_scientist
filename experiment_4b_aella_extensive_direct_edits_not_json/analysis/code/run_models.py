@@ -252,6 +252,19 @@ def prepare_variables(df: pd.DataFrame) -> pd.DataFrame:
     return prepared
 
 
+def extract_weights(
+    data: pd.DataFrame, weight_col: str | None
+) -> pd.Series | None:
+    if not weight_col:
+        return None
+    if weight_col not in data.columns:
+        raise KeyError(f"Weight column '{weight_col}' not present in data subset.")
+    weights = pd.to_numeric(data[weight_col], errors="coerce")
+    if weights.isna().any():
+        raise ValueError(f"Weight column '{weight_col}' contains missing values.")
+    return weights.astype(float)
+
+
 def encode_ordered_outcome(series: pd.Series) -> tuple[pd.Series, list[float]]:
     non_missing = series.dropna()
     if non_missing.empty:
@@ -322,7 +335,9 @@ def summarize_effect(samples: list[float], point_estimate: float) -> dict[str, f
     }
 
 
-def run_h1(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
+def run_h1(
+    df: pd.DataFrame, ctx: RunContext, weight_col: str | None = None
+) -> dict[str, Any]:
     base_cols = ["wz901dj_score", "externalreligion_ord"]
     control_candidates = [
         "selfage",
@@ -333,13 +348,19 @@ def run_h1(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
     ]
     available_controls, dropped_controls = select_controls(df, control_candidates)
     cols = base_cols + available_controls
+    if weight_col and weight_col not in cols:
+        cols.append(weight_col)
     data = df[cols].dropna()
     if data.empty:
         raise ValueError("H1 data frame is empty after dropping missing values.")
     y_codes, levels = encode_ordered_outcome(data["wz901dj_score"])
     design_cols = ["externalreligion_ord"] + available_controls
     exog = data[design_cols].copy()
-    model = OrderedModel(y_codes, exog, distr="logit")
+    weights = extract_weights(data, weight_col)
+    model_kwargs: dict[str, Any] = {"distr": "logit"}
+    if weights is not None:
+        model_kwargs["weights"] = weights
+    model = OrderedModel(y_codes, exog, **model_kwargs)
     result = model.fit(method="bfgs", disp=False, maxiter=1000)
     exog_low = exog.copy()
     exog_high = exog.copy()
@@ -389,7 +410,9 @@ def run_h1(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
     }
 
 
-def run_h2(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
+def run_h2(
+    df: pd.DataFrame, ctx: RunContext, weight_col: str | None = None
+) -> dict[str, Any]:
     base_cols = ["okq5xh8_ord", "pqo6jmj_score"]
     control_candidates = [
         "selfage",
@@ -401,13 +424,19 @@ def run_h2(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
     ]
     available_controls, dropped_controls = select_controls(df, control_candidates)
     cols = base_cols + available_controls
+    if weight_col and weight_col not in cols:
+        cols.append(weight_col)
     data = df[cols].dropna()
     if data.empty:
         raise ValueError("H2 data frame is empty after dropping missing values.")
     y_codes, levels = encode_ordered_outcome(data["okq5xh8_ord"])
     design_cols = ["pqo6jmj_score"] + available_controls
     exog = data[design_cols].copy()
-    model = OrderedModel(y_codes, exog, distr="logit")
+    weights = extract_weights(data, weight_col)
+    model_kwargs: dict[str, Any] = {"distr": "logit"}
+    if weights is not None:
+        model_kwargs["weights"] = weights
+    model = OrderedModel(y_codes, exog, **model_kwargs)
     result = model.fit(method="bfgs", disp=False, maxiter=1000)
     observed_vals = sorted(set(data["pqo6jmj_score"].dropna().unique()))
     q1 = data["pqo6jmj_score"].quantile(0.25)
@@ -468,7 +497,9 @@ def nearest_value(target: float, observed: Sequence[float]) -> float:
     return float(arr[idx])
 
 
-def run_h3(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
+def run_h3(
+    df: pd.DataFrame, ctx: RunContext, weight_col: str | None = None
+) -> dict[str, Any]:
     cols = [
         "self_love_score",
         "mds78zu_binary",
@@ -478,6 +509,8 @@ def run_h3(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
         "siblingnumber",
         "classchild_score",
     ]
+    if weight_col and weight_col not in cols:
+        cols.append(weight_col)
     data = df[cols].dropna()
     y = data["self_love_score"]
     exog = add_constant(
@@ -492,7 +525,11 @@ def run_h3(df: pd.DataFrame, ctx: RunContext) -> dict[str, Any]:
             ]
         ]
     )
-    model = sm.OLS(y, exog)
+    weights = extract_weights(data, weight_col)
+    if weights is not None:
+        model = sm.WLS(y, exog, weights=weights)
+    else:
+        model = sm.OLS(y, exog)
     result = model.fit(cov_type="HC1")
     coef = float(result.params["mds78zu_binary"])
     se = float(result.bse["mds78zu_binary"])

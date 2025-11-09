@@ -22,81 +22,32 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 53,
+  "loop_counter": 54,
   "next_actions": [
-    {
-      "description": "Run Semantic Scholar query + log outputs",
-      "id": "N1",
-      "notes": "Waiver OPS-S2-2025-11-09-01 approved; CrossRef trail is sufficient until the key is reissued. Replay the queued Semantic Scholar queries once support lifts the 403 block and append the responses to lit/semantic_scholar_waiver_loop013.md.",
-      "owner": "agent",
-      "status": "done"
-    },
-    {
-      "description": "Draft measurement validity table for H1-H3 variables",
-      "id": "N2",
-      "notes": "Loop 003 automated DIF checks via measure_validity_checks.py and refreshed qc/measures_validity.md.",
-      "owner": "agent",
-      "status": "done"
-    },
-    {
-      "description": "Draft DAG figure + identification memo outlining descriptive stance",
-      "id": "N3",
-      "notes": "Loop 006 re-rendered figures/dag_design.png/.json and rewrote reports/identification.md after reviewer STOP.",
-      "owner": "agent",
-      "status": "done"
-    },
-    {
-      "description": "Scaffold imputation + BH automation scripts",
-      "id": "N4",
-      "notes": "Loop 006 re-ran analysis/code/impute_and_stack.py so data/clean outputs + summary exist; BH script already implemented.",
-      "owner": "agent",
-      "status": "done"
-    },
-    {
-      "description": "Integrate disclosure-check template into execution pipeline",
-      "id": "N5",
-      "notes": "Loop 006 added analysis/code/disclosure_check.py and produced qc/disclosure_check_loop_006.md with DAG entry.",
-      "owner": "agent",
-      "status": "done"
-    },
-    {
-      "description": "Draft Semantic Scholar waiver request summarizing loops 008-012 attempts + fallback evidence",
-      "id": "N6",
-      "notes": "Loop 013 delivered lit/semantic_scholar_waiver_loop013.md summarizing loops 008-013 403 payloads + CrossRef fallback (Ross et al. 2019).",
-      "owner": "agent",
-      "status": "done"
-    },
-    {
-      "description": "Execute confirmatory H1\u2013H3 models per frozen PAP (tag pap-v1)",
-      "id": "N7",
-      "notes": "Loop051 ran analysis/code/run_models.py + calc_bh.py and seeded NC1 falsification; confirmed outputs stored under analysis/results.csv.",
-      "owner": "agent",
-      "status": "done"
-    },
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Replayed loop_008-013 plus a new loop_053 attempt (query about emotional abuse \u2192 self-compassion); the S2 key still returns 403, so keep logging payloads and await the support response before closing this item.",
+      "notes": "Logged loop_054 query failure (403) while the waiver remains active; keep archiving responses until the S2 credential is fixed before closing this item.",
       "owner": "agent",
       "status": "pending"
     },
     {
-      "description": "Run prescribed robustness/falsification checks after confirmatory estimates",
-      "id": "N9",
-      "notes": "Executed the H1 high/low, H2 continuous, and H3 teen/perpetration variants; outputs live under `outputs/robustness_loop052/` for the sensitivity note.",
+      "description": "Integrate confirmatory + sensitivity outputs into the manuscript/outline",
+      "id": "N11",
+      "notes": "Use `analysis/results.csv`, the pseudo-weight/design-effect/pseudo-replicate outputs, and `qc/disclosure_check_loop_054.md` to refresh `papers/main/imrad_outline.md`, `papers/main/manuscript.*`, and `reports/identification.md` before writing.",
       "owner": "agent",
-      "status": "done"
+      "status": "pending"
     },
     {
-      "description": "Draft sensitivity memo + plan next phase",
-      "id": "N10",
-      "notes": "Sensitivity plan documented in analysis/sensitivity_plan.md; outlines pseudo-weight, design-effect grid, and pseudo-replicate scenarios so the next priority is running those checks before writing.",
+      "description": "Prepare writing-phase QC & review prep",
+      "id": "N12",
+      "notes": "Document remaining STROBE/SAMPL items, update `analysis/decision_log.csv`, and ensure `qc/strobe_sampl_checklist.md` + `qc/measures_validity.md` cite the latest artifacts ahead of the writing/review phase.",
       "owner": "agent",
-      "status": "done"
+      "status": "pending"
     }
   ],
-  "phase": "analysis",
-  "phase_ix": 2,
+  "phase": "sensitivity",
+  "phase_ix": 3,
   "stop_now": false,
   "stop_reason": null,
   "total_loops": 75

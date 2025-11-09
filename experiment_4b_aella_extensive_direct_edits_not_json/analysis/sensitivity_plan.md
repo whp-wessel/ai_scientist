@@ -29,7 +29,12 @@ These robustness outputs share the same seed (20251016) and commands in `analysi
 
 Each scenario will log the `seed` and all commands within a new `MANIFEST.md` entry (for example, in `analysis/sensitivity_manifest.md`), so the sensitivity results remain reproducible.
 
+## Executed scenario summaries (loop 054)
+- **Pseudo-weight scenarios**: lognormal pseudo weights calibrated to DEFF = 1.0 / 1.25 / 1.5 (see `outputs/sensitivity_pseudo_weights/pseudo_weights_deff_{100,125,150}.json`). The outputs record the generated weight CVs, effective sample sizes, and the weighted H1–H3 contrasts so readers can see how moderate weight variability widens the ordered-logit and linear CIs without moving the point estimates. Commands + metadata are in `analysis/sensitivity_manifest.md`.
+- **Design-effect grid**: inflated the BH-adjusted SEs (`analysis/results.csv`) by √DEFF for DEFF ∈ {1.0, 1.25, 1.5, 2.0} and recomputed 95% CIs/p-values plus implied `n_effective`. Refer to `outputs/sensitivity_design_effect_grid.csv/.md` for the adjusted intervals and guidance on uncertainty growth as DEFF climbs.
+- **Pseudo replicates**: `k=6` jackknife replicates leave out pseudo-clusters defined by `classchild_score + classcurrent_score`; the summary file `outputs/sensitivity_replicates/sensitivity_replicates_summary.json` lists each replicate’s estimate, cluster omitted, and variance-based SE relative to the base BH estimate.
+
 ## Next steps for reporting
-- Incorporate the updated confirmatory and sensitivity summaries into `reports/findings_v1.0.md`, explicitly noting the outstanding Semantic Scholar outage and temporary waiver (loop_053 recorded another 403). Add cross-references to `tables/results_summary.*`, `qc/disclosure_check_loop_052.md`, and `analysis/sensitivity_plan.md` for transparency.
-- Leverage the sensitivity scenario outputs when drafting `papers/main/imrad_outline.md`, `papers/main/manuscript.tex`, and `reports/identification.md` so that the methods/limitations sections capture the alternative specifications and design-effect grid.
-- Update `artifacts/state.json` (see N10) to reflect that the sensitivity memo now exists and the next priority is to run the pseudo-weight and design-effect analyses before moving to the writing phase.
+- Integrate the confirmatory + sensitivity outputs (`analysis/results.csv`, `outputs/sensitivity_*`, `analysis/sensitivity_manifest.md`) into `reports/findings_v1.0.md` and the manuscript narrative so the revised effect sizes, CIs, and design-effect grid are auditable.
+- Refresh `papers/main/imrad_outline.md`, `papers/main/manuscript.*`, and `reports/identification.md` to cite the new [CLAIM:<ID>] story, note the pseudo-weight/design-effect/pseudo-replicate robustness, and reference `qc/disclosure_check_loop_054.md`.
+- Keep the Semantic Scholar waiver log, disclosure checklist, and `analysis/decision_log.csv` aligned while the credential outage persists, then turn attention to the writing-phase QC items called out in `artifacts/state.json` (N11/N12).

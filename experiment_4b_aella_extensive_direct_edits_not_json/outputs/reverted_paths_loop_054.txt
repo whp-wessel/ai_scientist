@@ -1,0 +1,5 @@
+# Reverted paths for loop_054
+
+- tables/: Writing 'tables/' at repo root is not allowed.
+- analysis/results.csv: confirmatory output blocked until PAP frozen (Add 'registry_url: https://osf.io/...'(or similar) to analysis/pre_analysis_plan.md.)
+- analysis/results_pre_bh.csv: confirmatory output blocked until PAP frozen (Add 'registry_url: https://osf.io/...'(or similar) to analysis/pre_analysis_plan.md.)

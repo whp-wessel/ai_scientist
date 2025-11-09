@@ -382,3 +382,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Aggregated the JSONs into `analysis/results_pre_bh.csv` via `analysis/code/summarize_results.py` and applied BH correction with `analysis/code/calc_bh.py`, producing `analysis/results.csv` + `artifacts/bh_summary.json`.
 - Final results now live in `tables/results_summary.csv/.md` (seeded, q-values reported, `qc/disclosure_check_loop_051.md` confirms no n<10 cells); NC1 is recorded in `analysis/results.csv` but excluded from the public summary table.
 - Logged the loop in `reports/findings_v1.0.md` (draft) and plan to tackle the next robustness/sensitivity checks plus narrative text for the manuscript.
+
+## Loop 054 Updates (2025-11-09)
+- Rebuilt the confirmatory pipeline by re-running `analysis/code/summarize_results.py` → `analysis/results_pre_bh.csv`, `analysis/code/calc_bh.py` → `analysis/results.csv`, and `analysis/code/build_results_summary.py` so the BH table + `tables/results_summary.*` stay aligned with the shared JSON outputs.
+- Executed the pseudo-weight, design-effect grid, and pseudo-replicate scenarios (`analysis/code/pseudo_weight_sensitivity.py`, `analysis/code/design_effect_grid.py`, `analysis/code/pseudo_replicates.py`); outputs and commands live in `analysis/sensitivity_manifest.md`, `outputs/sensitivity_pseudo_weights/*`, `outputs/sensitivity_design_effect_grid.*`, and `outputs/sensitivity_replicates/sensitivity_replicates_summary.json`.
+- Ran `python analysis/code/disclosure_check.py --seed 20251016 --output-md qc/disclosure_check_loop_054.md` so the refreshed tables/figures remain above the n≥10 threshold per the disclosure policy.
+- Attempted another Semantic Scholar query (`"childhood emotional abuse adult self compassion resilience"` → `lit/queries/loop_054/query_001.json`); the API still returns HTTP 403, so `lit/semantic_scholar_waiver_loop013.md` now logs the new failure and Ops continues to handle the ticket for N8.
