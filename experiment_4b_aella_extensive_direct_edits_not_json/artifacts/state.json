@@ -23,12 +23,12 @@
   ],
   "bootstrap_complete": true,
   "last_abort": null,
-  "loop_counter": 72,
+  "loop_counter": 73,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Waiver OPS-S2-2025-11-09-01 remains active; loop 072 replayed the blocked query (lit/queries/loop_072/query_001.json) while the key still returns 403, logged the CrossRef fallback (lit/queries/loop_072/crossref_query_001.json), and added the Nature Mental Health/ESRI entries so Claim C1 retains DOI coverage until the credential is restored.",
+      "notes": "Waiver OPS-S2-2025-11-09-01 remains active; loop 073 replayed the blocked query (lit/queries/loop_073/query_001.json) while the key still returns 403, recorded the World Psychiatry CrossRef fallback (lit/queries/loop_073/crossref_query_001.json), and kept [CLAIM:C1] DOI-backed until Semantic Scholar access returns.",
       "owner": "agent",
       "status": "pending"
     },
@@ -56,7 +56,7 @@
     {
       "description": "Prepare final release-phase artifacts",
       "id": "N16",
-      "notes": "Consolidate the review checklist, findings log, and disclosure/identification artifacts so the release gate can be cleared immediately after N8 completes.",
+      "notes": "Loop 073 refreshed the review checklist, findings summary/log, and release-ready notes so the final gate can clear the moment N8 (credential replay) finishes.",
       "owner": "agent",
       "status": "pending"
     }

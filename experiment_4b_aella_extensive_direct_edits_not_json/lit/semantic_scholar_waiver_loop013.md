@@ -170,3 +170,13 @@ Loop 072 extends the outage stream; the OPS-S2-2025-11-09-01 waiver remains acti
 ## Fallback Evidence & Bibliography Updates (Loop 072)
 - **Nature Mental Health Editorial Board (2024), DOI `10.1038/s44220-024-00375-2`** — CrossRef metadata saved in `lit/queries/loop_072/crossref_query_001.json`; the editorial frames how multi-system supports and trusted adults rewrite adversity while the S2 key is blocked and will be cited for [CLAIM:C1].
 - **Economic and Social Research Institute (2021), DOI `10.26504/rs120`** — The Growing Up in Ireland risk/protective-factors report is documented in the same CrossRef response and keeps the relational-protection narrative for [CLAIM:C1] alive while the waiver/OPS ticket remains open.
+
+## Continued Outage Log (Loop 073)
+| Loop | Timestamp (UTC) | Query | Status | Artifact |
+| --- | --- | --- | --- | --- |
+| 073 | 2025-11-09T20:55:16Z | "childhood resilience adult mental health protective factors" | 403 Forbidden | `lit/queries/loop_073/query_001.json` |
+
+Loop 073 reinforces the documented outage; we will re-run the blocked query after the key recovers and attach the successful response to this memo.
+
+## Fallback Evidence & Bibliography Updates (Loop 073)
+- **Morris & Hays-Grudo (2023), DOI `10.1002/wps.21042`** — "Protective and compensatory childhood experiences and their impact on adult mental health" (World Psychiatry 2023) is now noted in `lit/evidence_map.csv` and `lit/bibliography.*` with metadata saved in `lit/queries/loop_073/crossref_query_001.json`, ensuring [CLAIM:C1] retains DOI-backed coverage while Semantic Scholar is unavailable.

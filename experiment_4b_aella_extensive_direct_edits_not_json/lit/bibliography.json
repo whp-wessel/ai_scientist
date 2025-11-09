@@ -1122,26 +1122,46 @@
     "notes": "Editorial argues multi-system supports and trusted adults can rewrite adversity; metadata from lit/queries/loop_072/crossref_query_001.json keeps Claim C1 DOI-backed during the S2 outage."
   },
   {
-    "id": "nolan2021risk",
-    "title": "Risk and protective factors for mental health and wellbeing in childhood and adolescence",
+  "id": "nolan2021risk",
+  "title": "Risk and protective factors for mental health and wellbeing in childhood and adolescence",
+  "authors": [
+    "Anne Nolan",
+    "Emer Smyth",
+    "Will Rosenow",
+    "Sana Yousuf",
+    "Economic and Social Research Institute (ESRI)"
+  ],
+  "year": 2021,
+  "venue": "Economic and Social Research Institute (ESRI)",
+  "volume": "",
+  "issue": "",
+  "pages": "",
+  "doi": "10.26504/rs120",
+  "url": "https://doi.org/10.26504/rs120",
+  "access_date": "2025-11-09",
+  "claim_ids": [
+    "C1"
+  ],
+  "notes": "Growing Up in Ireland cohorts show parent/peer/teacher relationships buffer adversity; crossref metadata recorded at lit/queries/loop_072/crossref_query_001.json while the S2 key returns 403."
+  },
+  {
+    "id": "morris2023protective",
+    "title": "Protective and compensatory childhood experiences and their impact on adult mental health",
     "authors": [
-      "Anne Nolan",
-      "Emer Smyth",
-      "Will Rosenow",
-      "Sana Yousuf",
-      "Economic and Social Research Institute (ESRI)"
+      "Amanda Sheffield Morris",
+      "Jennifer Hays-Grudo"
     ],
-    "year": 2021,
-    "venue": "Economic and Social Research Institute (ESRI)",
-    "volume": "",
-    "issue": "",
-    "pages": "",
-    "doi": "10.26504/rs120",
-    "url": "https://doi.org/10.26504/rs120",
+    "year": 2023,
+    "venue": "World Psychiatry",
+    "volume": "22",
+    "issue": "1",
+    "pages": "150-151",
+    "doi": "10.1002/wps.21042",
+    "url": "https://doi.org/10.1002/wps.21042",
     "access_date": "2025-11-09",
     "claim_ids": [
       "C1"
     ],
-    "notes": "Growing Up in Ireland cohorts show parent/peer/teacher relationships buffer adversity; crossref metadata recorded at lit/queries/loop_072/crossref_query_001.json while the S2 key returns 403."
+    "notes": "World Psychiatry 2023 evidence on protective and compensatory childhood experiences; metadata logged at lit/queries/loop_073/crossref_query_001.json while Semantic Scholar remains 403."
   }
 ]

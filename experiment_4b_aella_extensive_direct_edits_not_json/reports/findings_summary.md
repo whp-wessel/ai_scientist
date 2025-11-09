@@ -1,13 +1,13 @@
-# Findings Summary — Loop 070
+# Findings Summary — Loop 073
 **Date:** 2025-11-09  
 **Seed:** 20251016
 
 ## Loop updates
-- Added the Jung (2018) article on childhood adversity, religion, and adult mental health to `lit/evidence_map.csv`, `lit/bibliography.*`, and documented the CrossRef fallback in `lit/queries/loop_071/crossref_query_003.json`, so `[CLAIM:C1]` retains DOI-backed support while Semantic Scholar continues returning 403.
-- Reran the disclosure-control automation (`python analysis/code/disclosure_check.py ... --output-md qc/disclosure_check_loop_070.md --seed 20251016`) to verify `tables/results_summary.*` and `figures/dag_design.png` still exceed $n \geq 10$ before public release.
-- Updated the review checklist to cite the new literature/disclosure evidence, and recorded the release-phase readiness in `reports/findings_v1.8.md` plus `artifacts/state.json` (loop_counter=71, new next action `N16`) so the reviewer gate stays auditable while we await the restored Semantic Scholar key.
+- Replayed the blocked Semantic Scholar query (loop 073) and logged the HTTP 403 response in `lit/queries/loop_073/query_001.json` so the outage track (N8) remains auditable while the S2 credential is down.
+- Logged a CrossRef fallback (Morris & Hays-Grudo 2023, DOI `10.1002/wps.21042`) in `lit/queries/loop_073/crossref_query_001.json` and synced it to `lit/evidence_map.csv` + `lit/bibliography.*`, keeping `[CLAIM:C1]` DOI-backed as we continue to await Semantic Scholar access.
+- Updated the release-phase dossiers (`reports/review_checklist.md`, `artifacts/state.json`, `reports/findings_v1.9.md`) through `N16` so the final gate can clear immediately once the blocked query succeeds.
 
 ## Next actions
-1. Keep the Semantic Scholar waiver (N8) in the loop; rerun the archived queries and cross-check the responses plus ticket ID once the credential is back online.
-2. Maintain the release-phase artifacts (`reports/review_checklist.md`, `reports/findings_v1.8.md`, `qc/disclosure_check_loop_070.md`, `reports/identification.md`, and the DAG) per `N16` so the final release can proceed immediately after N8 is resolved.
-3. Monitor `review/research_findings.md` for any new reviewer directives before the release gate, and capture them in the decision log plus follow-up tasks.
+1. Keep `N8` alive: rerun the archived Semantic Scholar query after the S2 key recovers, log the response, and fold any new DOI-backed evidence into `lit/evidence_map.csv` + `lit/bibliography.*`.
+2. Continue preparing the release-phase packets tracked by `N16` (review checklist, findings summary, identification memo, disclosure scans, DAG figure, build log) so no additional edits are needed when the literature barrier breaks.
+3. Watch `review/research_findings.md` for new reviewer directives; log the updates and adjust the release backlog before claiming the release-phase gate.
