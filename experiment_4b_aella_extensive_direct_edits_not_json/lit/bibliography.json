@@ -1003,8 +1003,7 @@
       "C3"
     ],
     "notes": "Spirituality-based resilience aids emerging adult childhood trauma survivors, reinforcing H3 self-love expectations while the Semantic Scholar key remains blocked."
-  }
-,
+  },
   {
     "id": "niemiec2022spirituality",
     "title": "The Spirituality and Religiosity of Transgender Persons and Mental Health",
@@ -1023,5 +1022,24 @@
       "C1"
     ],
     "notes": "CrossRef fallback for spirituality/resilience while Semantic Scholar remains blocked; keeps Claim C1 DOI-backed."
+  },
+  {
+    "id": "glenn2014spirituality",
+    "title": "A Bridge Over Troubled Waters: Spirituality and Resilience with Emerging Adult Childhood Trauma Survivors",
+    "authors": [
+      "Ca Trice B. Glenn"
+    ],
+    "year": 2014,
+    "venue": "Journal of Spirituality in Mental Health",
+    "volume": "16",
+    "issue": "1",
+    "pages": "37-50",
+    "doi": "10.1080/19349637.2014.864543",
+    "url": "https://doi.org/10.1080/19349637.2014.864543",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "CrossRef fallback for spirituality-resilience while Semantic Scholar stays 403; supports Claim C1."
   }
 ]

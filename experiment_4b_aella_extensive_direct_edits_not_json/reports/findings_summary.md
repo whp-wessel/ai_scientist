@@ -1,16 +1,15 @@
-# Findings Summary — Loop 062
+# Findings Summary — Loop 063
 **Date:** 2025-11-09  
 **Seed:** 20251016
 
 ## Loop updates
-- Rebuilt the PAP reporting chain (`analysis/code/summarize_results.py`, `analysis/code/calc_bh.py`, `analysis/code/build_results_summary.py`) so `analysis/results.csv`, `artifacts/bh_summary.json`, and `tables/results_summary.csv/.md` now capture loop-062 deterministic estimates and q-values that feed the manuscript tables.
-- Re-ran the sensitivity suite (pseudo weights, the DEFF grid, and pseudo replicates) so `outputs/sensitivity_pseudo_weights/*`, `outputs/sensitivity_design_effect_grid.*`, and `outputs/sensitivity_replicates/sensitivity_replicates_summary.json` now host the refreshed uncertainty corridors seeded at 20251016.
-- Ran `analysis/code/measure_validity_checks.py --output-json artifacts/measurement_validity_loop061.json` so `qc/measures_validity.md` plus the JSON dossier reflect the latest reliability/DIF diagnostics for every PAP outcome/predictor.
-- Ran `analysis/code/disclosure_check.py --output-md qc/disclosure_check_loop_061.md`, confirming `tables/results_summary.csv` and `figures/dag_design.png` still meet the n ≥ 10 threshold before release-ready artifacts reference them (violations=0).
-- Integrated the rerun confirmatory/sensitivity outputs into `papers/main/manuscript.*`, `papers/main/imrad_outline.md`, `reports/identification.md`, `qc/strobe_sampl_checklist.md`, and `reports/findings_v1.1.md`, and kept the DOI-backed literature log current via `lit/queries/loop_061/`.
-- Issued the loop-061 Semantic Scholar query (`lit/queries/loop_061/query_001.json`, still HTTP 403) and logged the CrossRef fallback (`lit/queries/loop_061/crossref_query_001.json`, DOI `10.23880/mhrij-16000182`) so `[CLAIM:C1]` retains DOI-backed coverage while the Semantic Scholar key remains blocked; the new evidence propagates through `lit/evidence_map.csv` and `lit/bibliography.*`.
+- Re-aggregated the H1–H3 JSON outputs (`outputs/run_models_loop059_H1.json`–`H3.json`) via `analysis/code/summarize_results.py`, reapplied BH (`analysis/code/calc_bh.py`), and rebuilt `tables/results_summary.csv/.md` (`analysis/code/build_results_summary.py`) so `analysis/results.csv`, `artifacts/bh_summary.json`, and the public table now mirror the deterministic seed and q-values.
+- Re-ran the sensitivity suite (pseudo weights, design-effect grid, pseudo replicates) so `outputs/sensitivity_pseudo_weights/*`, `outputs/sensitivity_design_effect_grid.*`, and `outputs/sensitivity_replicates/sensitivity_replicates_summary.json` now host the refreshed uncertainty bounds that document the SRS + HC1 safety net.
+- Ran `analysis/code/disclosure_check.py --output-md qc/disclosure_check_loop_063.md` and compiled `papers/main/manuscript.tex` with `tectonic --keep-logs`, capturing the new `papers/main/manuscript.pdf` plus logs while `papers/main/build_log.txt` now records `LaTeX build: PASS` despite overfull-box warnings.
+- Issued the loop-063 Semantic Scholar search (`lit/queries/loop_063/query_001.json`), captured the CrossRef fallback (`lit/queries/loop_063/crossref_query_001.json`, DOI `10.1080/19349637.2014.864543`), and refreshed `lit/evidence_map.csv`, `lit/bibliography.bib`, and `lit/bibliography.json` so at least one DOI-backed row covers [CLAIM:C1] while the API remains 403.
+- Updated `reports/findings_v1.1.md` and `notebooks/research_notebook.md` with this loop’s synthesis plus the writing-phase QC progress so the recorded narrative keeps pace with the deterministic commands.
 
 ## Next actions
-1. With N11/N12 complete, shift focus to writing-phase QC: refresh the STROBE/SAMPL checklist for any new tables/figures, run the deterministic LaTeX build (`latexmk -pdf papers/main/manuscript.tex`), log a `LaTeX build: PASS` entry in `papers/main/build_log.txt`, and re-run disclosure checks for any new publishable assets.
-2. Continue logging blocked Semantic Scholar queries plus CrossRef fallbacks (N8) so `lit/evidence_map.csv` and `lit/bibliography.*` remain DOI-backed until the S2 key or waiver clears.
-3. Keep documenting loop-level deltas in `reports/findings_summary.md`, `reports/findings_v*.md`, and `notebooks/research_notebook.md` so the manuscript team can trace every change before the writing phase advances.
+1. Begin the writing-phase QC pass: confirm `papers/main/manuscript.tex` aligns with the Markdown twin, rerun `qc/strobe_sampl_checklist.md` if needed, and lock the next `reports/findings_v1.2.md` entry before entering review once STROBE/SAMPL + DAG/identification tasks are satisfied.
+2. Continue logging blocked Semantic Scholar queries plus CrossRef fallbacks (lit/queries/loop_0XX/) so every `[CLAIM:<ID>]` stays DOI-backed; record each query in `analysis/decision_log.csv` and the evidence map until the S2 key or waiver is restored.
+3. Maintain the notebook/report ledger (notebook, reports/findings_*.md, analysis/decision_log.csv) so reviewers can trace the deterministic path before advancing past the sensitivity phase.

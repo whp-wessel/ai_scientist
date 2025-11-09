@@ -4,12 +4,13 @@
 **PAP:** Frozen at commit `2b3ee167762ad47af1426ab47d392d38323d1b74`, tag `pap-v1`, registry `https://osf.io/5x8hu`
 
 ## Summary
-- Confirmatory H1–H3 models now live in `analysis/results.csv` (with BH-adjusted q-values) and the publication-ready `tables/results_summary.csv/.md`; the deterministic pipeline anchors every estimate and `bh_in_scope` metadata entry for reproducibility.
-- Sensitivity artifacts (`analysis/sensitivity_manifest.md` plus `outputs/sensitivity_pseudo_weights/*`, `outputs/sensitivity_design_effect_grid.*`, and `outputs/sensitivity_replicates/sensitivity_replicates_summary.json`) document pseudo-weight, design-effect, and replicate experiments that bound how design complexity could widen the HC1 CIs, reinforcing the descriptive stance captured in `analysis/sensitivity_plan.md`.
-- The measurement dossier (`qc/measures_validity.md`, `artifacts/measurement_validity_loop061.json`) and disclosure scan (`qc/disclosure_check_loop_061.md`) confirm that the PAP outcomes/predictors have valid codings and that every table/figure (e.g., `tables/results_summary.*`, `figures/dag_design.png`) stays above $n \geq 10$.
-- All DAM (manuscript, outline, identification, QC, notebook, reports) artifacts now cite the rerun results and sensitivity outputs, and the DOI-backed literature log remains current via `lit/queries/loop_061/` and the evidence map/bibliographies.
+- Confirmatory H1–H3 outputs (JSONs → `analysis/results_pre_bh.csv` → `analysis/results.csv`) plus `tables/results_summary.csv/.md` now reflect the deterministic seed, BH q-values, and `bh_in_scope` metadata so every table row matches the PAP-estimated effects.
+- The sensitivity package (pseudo weights, design-effect grid, jackknife pseudo replicates) has been rerun with the loop-063 seed so `analysis/sensitivity_plan.md` and `outputs/sensitivity_*` preserve the uncertainty envelope that keeps HC1 the default descriptor.
+- Disclosure control (`qc/disclosure_check_loop_063.md`), measurement validity (`qc/measures_validity.md`), and a new LaTeX build (`tectonic --keep-logs papers/main/manuscript.tex`) documented in `papers/main/build_log.txt` (PASS with overfull warnings) confirm that the manuscript/table/figure chain remains reproducible.
+- Semantic Scholar queries still return HTTP 403, but `lit/queries/loop_063/crossref_query_001.json` captured DOI `10.1080/19349637.2014.864543` and `lit/evidence_map.csv` plus `lit/bibliography.*` now cite the same DOI so [CLAIM:C1] stays DOI-backed while the outage persists.
+- The loop-063 narrative is now mirrored in `reports/findings_summary.md`, `notebooks/research_notebook.md`, and `analysis/decision_log.csv` to keep the deterministic ledger in sync before advancing to the writing phase.
 
 ## Next steps
-1. Begin the writing-phase QC pass: update `papers/main/build_log.txt` with a deterministic `latexmk -pdf` run (expect `LaTeX build: PASS`), confirm the updated LaTeX version matches the Markdown twin, and consider exporting the compiled PDF once STROBE/SAMPL items are verified.
-2. Keep logging blocked Semantic Scholar queries plus CrossRef fallbacks (N8) so every `[CLAIM:<ID>]` continues to point to a DOI-backed source until the S2 key or waiver clears.
-3. Maintain the loop-level ledger in `reports/findings_summary.md`, `reports/findings_v*.md`, `notebooks/research_notebook.md`, and `analysis/decision_log.csv` so reviewers can trace each iteration before advancing to the review phase.
+1. Begin the writing-phase QC pass: refresh `papers/main/imrad_outline.md` if any new text belongs there, confirm LaTeX/Markdown parity, rerun `qc/strobe_sampl_checklist.md`, and draft `reports/findings_v1.2.md` once the DAG/identification plus disclosure story stays stable.
+2. Continue logging blocked Semantic Scholar queries + CrossRef fallbacks (lit/queries/loop_0XX/) so every `[CLAIM:<ID>]` maintains DOI coverage; each query needs a `analysis/decision_log.csv` entry and an updated `lit/evidence_map.csv` row until S2 is back online.
+3. Keep tracking the loop-level ledger (notebook, reports/findings_*.md, analysis/decision_log.csv) so reviewers see the deterministic path before review-phase checks begin.

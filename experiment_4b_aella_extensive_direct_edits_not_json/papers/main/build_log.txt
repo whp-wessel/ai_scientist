@@ -1,1 +1,2 @@
 2025-11-07T14:25:00Z | Command not yet run | LaTeX build: PENDING | BibTeX warnings: N/A
+2025-11-09T17:50:54Z | tectonic --keep-logs papers/main/manuscript.tex | LaTeX build: PASS (overfull boxes noted; bibliography re-run was required) | BibTeX warnings: 1

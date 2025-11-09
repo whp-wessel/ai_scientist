@@ -1,0 +1,13 @@
+DECISION: STOP – reproducibility snapshots have not been updated since 2025-11-08 even though work continued through Loop 032.
+
+R1 Reproducibility – FAIL: `artifacts/session_info.txt:1` and `artifacts/repro_report.md:3` still report the 2025-11-08 environment, yet the state snapshot and decision log show Loop 032 completed on 2025-11-14 (`artifacts/state.json:9`, `analysis/decision_log.csv:73`), leaving all later loops without the mandated per-loop environment records.
+
+R2 Statistical Rigor – PASS: Confirmatory H1 entries include estimates, SEs, CIs, BH-adjusted q-values, and the documented SRS justification, keeping multiplicity and design assumptions transparent (`analysis/results.csv:20`, `analysis/results.csv:21`).
+
+R3 Literature/Evidence – PASS: Peer-reviewed sources with DOIs remain cataloged in the evidence map and are cited directly in the manuscript narrative (`lit/evidence_map.csv:2`, `reports/paper.md:9`).
+
+R4 Privacy – PASS: Public tables only show aggregate statistics with large cell counts (e.g., n=14,437 in `tables/loop016_h4_confirmatory.csv:2`), satisfying the n<10 suppression rule.
+
+R5 Completeness – PASS: Core artifacts remain in place and updated, including the frozen PAP and notebook coverage through Loop 032 (`analysis/pre_analysis_plan.md:1`, `notebooks/research_notebook.md:284`).
+
+Notes: Refresh `artifacts/session_info.txt` and `artifacts/repro_report.md` for the outstanding loops before resuming confirmatory work.

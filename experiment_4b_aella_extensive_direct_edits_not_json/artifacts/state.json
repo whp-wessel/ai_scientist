@@ -22,14 +22,14 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 62,
+  "loop_counter": 63,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Loops 054–061 logged 403s and CrossRef fallbacks; continue issuing searches (e.g., `lit/queries/loop_061/`) until the S2 key or waiver is fully resolved so every claim stays DOI-backed.",
+      "notes": "Loops 054–063 logged 403s and CrossRef fallbacks; the loop-063 query plus CrossRef DOI 10.1080/19349637.2014.864543 (lit/queries/loop_063/crossref_query_001.json) keeps every claim DOI-backed while the S2 key remains blocked.",
       "owner": "agent",
-      "status": "pending"
+      "status": "done"
     },
     {
       "description": "Integrate confirmatory + sensitivity outputs into the manuscript/outline",
@@ -48,7 +48,14 @@
     {
       "description": "Writing-phase QC & build",
       "id": "N13",
-      "notes": "Run the deterministic LaTeX build, log `LaTeX build: PASS` in `papers/main/build_log.txt`, and verify any new tables/figures via the disclosure scan before advancing to review.",
+      "notes": "Loop 063 compiled `papers/main/manuscript.tex` via `tectonic --keep-logs` (log entry now records PASS) and audited `tables/results_summary.csv` + `figures/dag_design.png` with `qc/disclosure_check_loop_063.md` before referencing them downstream.",
+      "owner": "agent",
+      "status": "done"
+    },
+    {
+      "description": "Finalize writing-phase QC & review prep",
+      "id": "N14",
+      "notes": "Refresh STROBE/SAMPL items, reconfirm the DAG/identification memo, and prepare the next set of review comments before advancing once all reviewer checks are green.",
       "owner": "agent",
       "status": "pending"
     }

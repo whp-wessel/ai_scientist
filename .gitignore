@@ -2,3 +2,5 @@
 **/human_notes.md
 .env
 **/childhoodbalancedpublic_original.csv
+**/data/clean/childhood_imputed_stack_loop005.csv
+*.pyc
