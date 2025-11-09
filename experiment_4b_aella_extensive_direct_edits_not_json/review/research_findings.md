@@ -672,3 +672,11 @@ N1: PASS – `artifacts/state.json:1-36` still reports phase=release with every 
 
 Notes: Please capture the next Semantic Scholar attempt (or approved fallback) so the per-loop literature requirement stays explicit for future loops.
 
+## Loop 078 — 2025-11-09T22:16:35.951860+00:00
+DECISION: CONTINUE
+R1: PASS – Loop-078’s decision log documents the blocked Semantic Scholar search and crossref fallback plus the auto-log that captured the reproducible commands and seed (analysis/decision_log.csv:845; analysis/decision_log.csv:848; artifacts/session_info.txt:1).
+L1: PASS – The new query/crossref payloads and the Bethell et al. entry keep [CLAIM:C1] DOI-backed even while S2 remains offline (lit/queries/loop_078/query_001.json:1; lit/queries/loop_078/crossref_query_002.json:1; lit/evidence_map.csv:65; lit/bibliography.bib:699; lit/bibliography.json:1185).
+P1: PASS – No new tables were released this loop and the last disclosure scan still reports n≥10 with zero violations (qc/disclosure_check_loop_076.md:1).
+N1: PASS – The release gate is still justified: loop_counter=80, phase=release, and every next_action is marked done, so no further unblock is required (artifacts/state.json:27; artifacts/state.json:92).
+Notes: Continue logging the next Semantic Scholar recovery so future loops can resume direct API queries without relying solely on CrossRef.
+
