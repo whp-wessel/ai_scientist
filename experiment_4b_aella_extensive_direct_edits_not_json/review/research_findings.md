@@ -408,3 +408,11 @@ N1: PASS – Phase stays PAP with PAP header marked draft and Loop050 blocker no
 
 Notes: Record proof when the 2025-11-09 ops memo and 2025-11-10 support ticket go out to keep the blocker narrative auditable.
 
+## Loop 051 — 2025-11-09T13:13:38.790166+00:00
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint reran before the confirmatory run (analysis/decision_log.csv:522) and the deterministic seed 20251016 is recorded (artifacts/seed.txt:1).
+L1: WARN – loop_051 still lacks a new Semantic Scholar payload (no `lit/queries/loop_051/` directory); re-running the archived queries remains pending (artifacts/state.json:77) so capture the responses once the credential is restored.
+P1: PASS – Disclosure check documents the n≥10 threshold and `violations: 0` for `tables/results_summary.*` (qc/disclosure_check_loop_051.md:5;13), so no small-cell risks were released.
+N1: PASS – Pending next actions N8 and N9 keep us in the analysis phase until the replayed queries and prescribed robustness checks are logged (artifacts/state.json:76;84), so the current gating is justified.
+Notes: After the Semantic Scholar key is back, rerun the archived queries, save them under `lit/queries/loop_051/`, and update the evidence map accordingly.
+
