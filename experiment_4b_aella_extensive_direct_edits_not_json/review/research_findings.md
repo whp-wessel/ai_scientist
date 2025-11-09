@@ -390,3 +390,12 @@ L1: WARN – The Loop 048 Semantic Scholar call and CrossRef fallback are logged
 P1: PASS – No public tables/figures shipped and the QC log reiterates sensitive-column handling plus cites the last disclosure run with violations=0 (`qc/data_checks.md:50`, `qc/disclosure_check_loop_006.md:17`).
 N1: PASS – State remains in phase PAP with loop_counter=48 and next action N1 explicitly blocked pending the 9 Nov ops memo/10 Nov S2 ticket, while the PAP header stays “status: draft” with a Loop 048 blocker note (`artifacts/state.json:24`, `artifacts/state.json:30`, `analysis/pre_analysis_plan.md:1`, `analysis/pre_analysis_plan.md:89`).
 
+## Loop 049 — 2025-11-09T06:06:00.459186+00:00
+DECISION: CONTINUE
+R1: PASS – Repro checkpoint logged before edits (analysis/decision_log.csv:498-507) and the refreshed session info/seed snapshot (artifacts/session_info.txt:1-11; artifacts/seed.txt:1) plus the QC note on the re-run (qc/data_checks.md:46-53) keep deterministic reruns documented.
+L1: PASS – Loop49 captures the failed Semantic Scholar call and stored payload (lit/queries/loop_049/query_001.json:1-18) and wires the CrossRef fallback through the evidence trail (lit/queries/loop_049/crossref_query_002.json:1; lit/evidence_map.csv:48; lit/bibliography.bib:541-549), satisfying the literature logging rules.
+P1: PASS – Notebook entries confirm no public tables/figures were produced (notebooks/research_notebook.md:364-371) while the QC risk log reiterates disclosure controls and recent checks (qc/data_checks.md:50-53).
+N1: PASS – PAP stays explicitly in draft status until the Semantic Scholar gate clears (analysis/pre_analysis_plan.md:1-18) and the state file keeps phase=pap with N1 blocked and the dated ops escalations recorded (artifacts/state.json:25-74).
+
+Notes: Please update the header of qc/data_checks.md to Loop 049 so the checkpoint label matches the current log.
+
