@@ -680,3 +680,11 @@ P1: PASS – No new tables were released this loop and the last disclosure scan 
 N1: PASS – The release gate is still justified: loop_counter=80, phase=release, and every next_action is marked done, so no further unblock is required (artifacts/state.json:27; artifacts/state.json:92).
 Notes: Continue logging the next Semantic Scholar recovery so future loops can resume direct API queries without relying solely on CrossRef.
 
+## Loop 079 — 2025-11-09T22:22:45.803878+00:00
+DECISION: CONTINUE
+R1: PASS – The loop-079 review ack (analysis/decision_log.csv:849) cites the preserved 20251016 seed (artifacts/seed.txt:1) and the loop-079 auto-log (analysis/decision_log.csv:850) that captured session/repro snapshots, so reproducibility traces remain intact even without new models this cycle.
+L1: WARN – The only Semantic Scholar query since loop_077 is still the blocked loop_078 call (`lit/queries/loop_078/query_001.json:1`, analysis/decision_log.csv:845), and the loop-079 review note (analysis/decision_log.csv:849) merely pledges to log the next attempt, so no `semantic_scholar_query_loop079` entry has been recorded yet.
+P1: PASS – That same review note (analysis/decision_log.csv:849) references `qc/disclosure_check_loop_076.md:15` (n≥10 in tables/results_summary.csv) and `qc/disclosure_check_loop_076.md:18` (`violations: 0`), and no new tables/figures were published this loop, so the disclosure guard still holds.
+N1: PASS – All `next_actions` entries remain marked done (artifacts/state.json:27), the phase stays `release` (artifacts/state.json:92), and `stop_now` is false (artifacts/state.json:94), so the release gate and backlog status remain justified.
+Notes: Please capture the next Semantic Scholar query or CrossRef fallback in loop 080 so the per-loop literature requirement no longer lags.
+
