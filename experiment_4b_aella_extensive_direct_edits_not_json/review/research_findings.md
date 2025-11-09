@@ -491,3 +491,11 @@ L1: PASS – Semantic Scholar query saved at lit/queries/loop_059/query_001.json
 P1: PASS – qc/disclosure_check_loop_059.md documents the n ≥ 10 audit for tables/results_summary.csv and figures/dag_design.png with `violations: 0` using analysis/code/disclosure_check.py, so no small-cell leaks occurred.
 N1: PASS – artifacts/state.json stays in phase “sensitivity” (phase_ix=3) with next actions N8–N12 still pending, so the gating rationale toward writing/review remains intact.
 
+## Loop 060 — 2025-11-09T16:58:31.093259+00:00
+DECISION: CONTINUE
+R1: PASS – Seed 20251016 stays logged (artifacts/seed.txt) and the auto-log for loop_060 (analysis/decision_log.csv:674-679) records the deterministic reruns plus the regenerated session_info/sensitivity_plan/repro_report so outputs remain reproducible.
+L1: PASS – Semantic Scholar search stored at lit/queries/loop_060/query_001.json with CrossRef backup (lit/queries/loop_060/crossref_query_001.json) providing DOI 10.1080/19349637.2014.864543, which now appears in lit/evidence_map.csv:54 and the bibliography to cover [CLAIM:C3].
+P1: PASS – qc/disclosure_check_loop_060.md documents the n ≥ 10 audit for tables/results_summary.csv and figures/dag_design.png with `violations: 0`, keeping the disclosure gate satisfied before release artifacts go public.
+N1: PASS – artifacts/state.json still lists phase=sensitivity (phase_ix=3) with next actions N8–N12 pending and stop_now=false, so the writing/review transition remains blocked until the manuscript/QC/literature steps finish.
+Notes: Continue replaying the blocked Semantic Scholar queries once credentials return to keep the literature log current.
+
