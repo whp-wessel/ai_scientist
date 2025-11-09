@@ -2,11 +2,6 @@
   "alpha": 0.05,
   "families": [
     {
-      "family": "negative_control",
-      "targeted_ids": [],
-      "bh_in_scope": ""
-    },
-    {
       "family": "psychosocial",
       "targeted_ids": [
         "H3"

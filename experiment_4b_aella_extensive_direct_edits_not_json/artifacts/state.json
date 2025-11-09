@@ -22,26 +22,26 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 59,
+  "loop_counter": 60,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Logged loops 054–058 query failures (403) while the waiver remains active and saved the latest CrossRef fallback so DOI coverage stays auditable before closing this item.",
+      "notes": "Logged loops 054–058 query failures (403) and loop_060 returned 403 again; CrossRef metadata (DOI 10.1080/19349637.2014.864543) now lives under `lit/queries/loop_060/` so DOI coverage stays auditable while the waiver remains active.",
       "owner": "agent",
       "status": "pending"
     },
     {
       "description": "Integrate confirmatory + sensitivity outputs into the manuscript/outline",
       "id": "N11",
-      "notes": "Sensitivity assets now documented (analysis/results.csv, tables/results_summary.*, outputs/sensitivity_*); manuscript/outline/identification updates are in progress while the DOI-backed literature entries plug into each `[CLAIM:<ID>]` in `papers/main/*`.",
+      "notes": "Sensitivity assets remain documented (analysis/results.csv, tables/results_summary.*, outputs/sensitivity_*); the manuscript/outline and reports/identification need updates so every `[CLAIM:<ID>]` cites these deterministic references.",
       "owner": "agent",
       "status": "pending"
     },
     {
       "description": "Prepare writing-phase QC & review prep",
       "id": "N12",
-      "notes": "After integrating confirmatory/sensitivity outputs, update `qc/strobe_sampl_checklist.md`, `qc/measures_validity.md`, and the decision log to reflect the new results (per N12).",
+      "notes": "After the confirmatory + sensitivity rerun, refresh `qc/strobe_sampl_checklist.md`, `qc/measures_validity.md`, and the decision log so the QC record matches the updated assets before writing/review work.",
       "owner": "agent",
       "status": "pending"
     }
