@@ -2,5 +2,9 @@
 **/human_notes.md
 .env
 **/childhoodbalancedpublic_original.csv
-**/data/clean/childhood_imputed_stack_loop005.csv
+**/childhood_imputed_stack*.csv
 *.pyc
+
+# Data directories
+**/data/clean/
+**/data/raw/
