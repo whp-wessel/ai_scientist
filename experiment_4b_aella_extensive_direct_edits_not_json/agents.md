@@ -162,7 +162,7 @@ Every action must write a row to `analysis/decision_log.csv` with:
 
 Your setup shows strong intent toward reproducibility (seed discipline, checksums, decision logging) and survey-method standards (design-based estimators, FDR, missingness, small-cell suppression). The **runner** is lean and dependable, and the **prompts** are unusually precise about outputs and governance.
 
-Where the system underperforms is **enforcement** rather than policy: several guarantees are currently “policy by prompt,” not **validated by the runner**. The top risks are (1) inability to accept non-text artifacts (figures/tables as PNG/PDF), (2) lack of schema-level validation of the agent’s JSON payloads, (3) no programmatic enforcement of PAP freezes before confirmatory work, (4) literature governance not measured, and (5) two inconsistent loop budgets (30 vs 50). These gaps make it hard to objectively judge how the agent has been doing beyond manual inspection.
+Where the system underperforms is **enforcement** rather than policy: several guarantees are currently “policy by prompt,” not **validated by the runner**. The top risks are (1) inability to accept non-text artifacts (figures/tables as PNG/PDF), (2) lack of schema-level validation of the agent’s JSON payloads, (3) no programmatic enforcement of PAP freezes before confirmatory work, (4) literature governance not measured, and (5) two inconsistent loop budgets (75 vs 50). These gaps make it hard to objectively judge how the agent has been doing beyond manual inspection.
 
 The core of this review is a **scorecard** you can compute from the repo to judge progress to date, and a concrete set of **changes for a fresh experiment**: lightweight guards in `runner.py` and precise, shorter prompts in `agents.md` that convert best-practice text into verifiable contracts.
 
@@ -392,7 +392,7 @@ PROJECT CONTEXT
 YOUR TASKS (Bootstrap)
 1) Sanity checks: presence/validity of codebook, survey design, config. If missing, create well-formed placeholders with TODO notes.
 2) Initialize persistence:
-   - artifacts/state.json with backlog (prioritized), next_actions, loop_counter=0, total_loops=50.
+   - artifacts/state.json with backlog (prioritized), next_actions, loop_counter=0, total_loops=75.
    - analysis/hypotheses.csv (empty template row only).
    - analysis/pre_analysis_plan.md (skeleton, include `status: draft` header and note how freeze + commit tag will be recorded).
    - qc/data_checks.md (initial checklist).
@@ -463,7 +463,7 @@ STATE_JSON_START
 STATE_JSON_END
 
 Instructions:
-- Execute the top backlog item(s) within the remaining loop budget (default total loops = 50).
+- Execute the top backlog item(s) within the remaining loop budget (default total loops = 75). make sure you make enough progress such that by the end of the loop budget the full scientic process is finished
 - Read the latest entry in `review/research_findings.md`, summarize each critique in `analysis/decision_log.csv`, and explain how this loop addresses (or schedules) them before planning.
 - Only change `artifacts/state.json["phase"]` from literature → pap after ≥3 DOI/URL-backed sources are logged and `lit/bibliography.bib` passes a basic syntax check. If the gate is not met, leave the phase unchanged and, if blocked, set `"stop_now": true` with a remediation note.
 - Do not write confirmatory outputs (`tables/*`, `analysis/results*`) unless `analysis/pre_analysis_plan.md` declares `status: frozen` with the freeze commit/tag; otherwise update `artifacts/state.json` with `"stop_now": true`.

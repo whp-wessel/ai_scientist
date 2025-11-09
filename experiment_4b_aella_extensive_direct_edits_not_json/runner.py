@@ -55,7 +55,7 @@ try:
 except ValueError:
     REPO_GIT_PREFIX = ""
 MAIN_BRANCH = os.environ.get("GIT_MAIN_BRANCH", "main")
-MODEL = os.environ.get("CODEX_MODEL", "gpt-5-codex")
+MODEL = os.environ.get("CODEX_MODEL", "gpt-5-codex-mini")
 REASONING_EFFORT = os.environ.get("CODEX_REASONING_EFFORT", "high")
 SLEEP_SECONDS = int(os.environ.get("LOOP_SLEEP_SECONDS", "0"))  # set 3600 for hourly
 MAX_CONSEC_GIT_FAILS = 2
@@ -219,7 +219,7 @@ class _SafeFormatDict(dict):
 
 # --- Prompt loading from agents.md ----------------------------------------------
 
-DEFAULT_TOTAL_LOOPS = int(os.environ.get("DEFAULT_TOTAL_LOOPS", "50"))
+DEFAULT_TOTAL_LOOPS = int(os.environ.get("DEFAULT_TOTAL_LOOPS", "75"))
 
 PROMPT_FILE = REPO / "agents.md"
 PROMPT_PATTERN = re.compile(r"<!--PROMPT:([A-Z0-9_]+)-->(.*?)<!--END PROMPT:\1-->", re.DOTALL)

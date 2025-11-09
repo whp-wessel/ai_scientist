@@ -27,9 +27,9 @@
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 050 (see lit/queries/loop_050/query_001.json); waiver memo updated through loops 008-050 with Glenn 2014 + Journal of Adolescent Health + Arslan 2015 DOI coverage plus earlier trusted-adult and PCE sources. Ops memo dispatch remains scheduled for 2025-11-09 15:00Z and the 2025-11-10 support-ticket escalation stays queued if the credential is still down.",
+      "notes": "Waiver OPS-S2-2025-11-09-01 approved; CrossRef trail is sufficient until the key is reissued. Replay the queued Semantic Scholar queries once support lifts the 403 block and append the responses to lit/semantic_scholar_waiver_loop013.md.",
       "owner": "agent",
-      "status": "blocked"
+      "status": "done"
     },
     {
       "description": "Draft measurement validity table for H1-H3 variables",
@@ -65,11 +65,25 @@
       "notes": "Loop 013 delivered lit/semantic_scholar_waiver_loop013.md summarizing loops 008-013 403 payloads + CrossRef fallback (Ross et al. 2019).",
       "owner": "agent",
       "status": "done"
+    },
+    {
+      "description": "Execute confirmatory H1–H3 models per frozen PAP (tag pap-v1)",
+      "id": "N7",
+      "notes": "Run analysis/code/run_models.py + calc_bh.py, log disclosure reviews, and cite registry URL https://osf.io/5x8hu before publishing tables.",
+      "owner": "agent",
+      "status": "pending"
+    },
+    {
+      "description": "Replay blocked Semantic Scholar queries after key restoration",
+      "id": "N8",
+      "notes": "Per waiver clause OPS-S2-2025-11-09-01, re-run the archived queries and attach the new payloads + support response once Semantic Scholar re-enables the credential.",
+      "owner": "agent",
+      "status": "pending"
     }
   ],
-  "phase": "pap",
-  "phase_ix": 1,
+  "phase": "analysis",
+  "phase_ix": 2,
   "stop_now": false,
   "stop_reason": null,
-  "total_loops": 50
+  "total_loops": 75
 }

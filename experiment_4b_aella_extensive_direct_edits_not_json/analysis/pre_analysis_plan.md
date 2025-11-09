@@ -1,14 +1,15 @@
-status: draft
-phase: pap
-last_updated: 2025-11-09T11:48Z
-freeze_commit: TBD
-registry_url: TBD
+status: frozen (commit 2b3ee167762ad47af1426ab47d392d38323d1b74, tag pap-v1)
+phase: analysis
+last_updated: 2025-11-09T12:10Z
+freeze_commit: 2b3ee167762ad47af1426ab47d392d38323d1b74
+registry_url: https://osf.io/5x8hu
 
-# Pre-Analysis Plan — Draft
-This draft documents priority hypotheses for the Childhood Resilience Study. The PAP will be frozen (status: frozen) only after:
-1. Evidence map contains ≥3 DOI-backed sources supporting each targeted outcome.
-2. Measurement validity dossier (`qc/measures_validity.md`) is populated for every referenced construct.
-3. Reproducible code lives under `analysis/code/` with command lines captured below.
+# Pre-Analysis Plan — Frozen
+This PAP was frozen on **2025-11-09T12:10Z** at commit `2b3ee167762ad47af1426ab47d392d38323d1b74` (tag `pap-v1`) after satisfying: (1) Evidence map + bibliography each loop with ≥3 DOI-backed sources per outcome, (2) Measurement validity dossier updated via `analysis/code/measure_validity_checks.py`, and (3) executable analysis code with logged regeneration commands.
+
+Loop 050 freeze note: Ops approved Semantic Scholar waiver **OPS-S2-2025-11-09-01**, authorized reliance on the recorded CrossRef evidence trail, and confirmed that registry entry `https://osf.io/5x8hu` locks this PAP. Confirmatory work must cite this registry URL plus tag `pap-v1`.
+
+> Historical loop notes below document the blocker prior to the freeze; statements such as “PAP remains draft” describe the status at that time.
 
 Loop 011 note: Semantic Scholar CLI attempts continue to return 403s (see `lit/queries/loop_011/query_001.json`); PAP remains draft while we prepare a formal waiver request citing the accumulated evidence (Loops 008–011) unless ops can restore access immediately.
 
@@ -168,11 +169,10 @@ Loop 050 note: Mandatory query `"childhood nurturing mentor adult depression buf
 5. **BH correction:** Once confirmatory estimates exist, run `python analysis/code/calc_bh.py --config config/agent_config.yaml --input-csv analysis/results_pre_bh.csv --output-csv analysis/results.csv --summary-json artifacts/bh_summary.json` to append `q_value`, `family`, `targeted`, and `bh_in_scope` columns using Benjamini–Hochberg at q=0.05 per family (wellbeing, psychosocial).
 6. **Disclosure review:** Draft `qc/disclosure_check_loop_{loop}` with min cell sizes and suppression summary before any tables/figures leave the repo.
 
-## Outstanding Tasks Before Freeze
-1. Restore Semantic Scholar access (or record a partner-approved waiver). Loops 008–043 remain 403-only (see `lit/queries/loop_{008-043}/query_001.json`), so PAP freeze is deferred until either the key is fixed or the waiver is approved and logged in `analysis/decision_log.csv`. Action owner (agent) has drafted the ops escalation memo (`lit/semantic_scholar_ops_memo_2025-11-09.md`) for delivery by **2025-11-09 15:00Z** and prepared the Semantic Scholar support ticket template (`lit/semantic_scholar_support_ticket_draft_2025-11-10.md`) for escalation by **2025-11-10 15:00Z** if ops has not restored the key; this loop reaffirmed the schedule and will attach transmission receipts.
-2. Close the waiver action by capturing the approval decision (or credential fix) plus replaying the queued Semantic Scholar searches so the canonical evidence source is satisfied before PAP freeze.
-3. Register and freeze the PAP (`status: frozen`, `registry_url`, `freeze_commit`) once the literature gate clears and disclosure checklist automation (DP8) is linked to every planned table/figure.
-4. Keep `analysis/data_processing.md` synchronized with any new derivations (e.g., sensitivity specifications) and cite the ledger whenever PAP text references transformation history.
-5. Confirm whether `mentalillness` has valid data in future drops; if not, update H2 controls and document the missing control in `analysis/results.csv` once confirmatory runs occur.***
+## Post-Freeze Next Steps
+1. Replay each blocked Semantic Scholar query once the API key is reissued (per waiver clause OPS-S2-2025-11-09-01) and append the successful payloads + ticket responses to `lit/semantic_scholar_waiver_loop013.md` and `analysis/decision_log.csv`.
+2. Execute confirmatory H1–H3 runs via `python analysis/code/run_models.py --hypothesis {H1|H2|H3} --seed 20251016 --config config/agent_config.yaml`, write estimates to `analysis/results_pre_bh.csv`, then apply `analysis/code/calc_bh.py` to produce `analysis/results.csv` and `artifacts/bh_summary.json`.
+3. Regenerate disclosure audits and manifests (`qc/disclosure_check_loop_{loop}`, `papers/main/MANIFEST.md`) for every table/figure, updating `analysis/data_processing.md` (DP entries) whenever code paths change.
+4. Continue monitoring the `mentalillness` field for future data refreshes; document any irreversible omission in `analysis/results.csv` `limitations` when confirmatory estimates are published.
 
-_No confirmatory analysis will begin until the status is set to `frozen` with registry details and a recorded commit/tag._
+_Confirmatory analyses must adhere to this frozen PAP (registry URL + tag `pap-v1`); any deviations require a documented amendment before release._
