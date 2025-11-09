@@ -1,0 +1,62 @@
+{
+  "hypothesis_id": "H1",
+  "family": "wellbeing",
+  "model": "ordered_logit",
+  "outcome": "wz901dj_score",
+  "predictor": "externalreligion_ord",
+  "controls": [
+    "selfage",
+    "biomale",
+    "gendermale",
+    "cis",
+    "classchild_score"
+  ],
+  "dropped_controls": [],
+  "n_analytic": 14438,
+  "effect_metric": "\u0394E[depression score | religion very important vs not important]",
+  "effect": {
+    "estimate": -0.1200770039685658,
+    "se": 0.03540792928303607,
+    "ci_lower": -0.18732101884531197,
+    "ci_upper": -0.05480346819322561
+  },
+  "contrast_values": {
+    "low": 0,
+    "high": 3
+  },
+  "ordered_levels": [
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "parameters": {
+    "externalreligion_ord": -0.03630190440598913,
+    "selfage": 0.017657809024533542,
+    "biomale": 0.45476946280964897,
+    "gendermale": 0.15125627895579194,
+    "cis": 0.9609507358474684,
+    "classchild_score": 0.21052461849833898,
+    "0/1": 0.7407195728951049,
+    "1/2": -0.021462258856849655,
+    "2/3": -0.05241120549934031,
+    "3/4": -1.1134201248245155,
+    "4/5": -0.9840225939265603,
+    "5/6": -0.2403628840583155
+  },
+  "diagnostics": {
+    "nobs": 14438,
+    "llf": -26265.362315539838,
+    "aic": 52554.724631079676,
+    "bic": 52645.656057864064,
+    "converged": true
+  },
+  "seed": 20251016,
+  "draws": 400,
+  "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+  "command": "python analysis/code/run_models.py --hypothesis all --config config/agent_config.yaml --seed 20251016 --draws 400 --output-prefix outputs/run_models_loop057",
+  "phase": "pap_draft_exploratory"
+}
