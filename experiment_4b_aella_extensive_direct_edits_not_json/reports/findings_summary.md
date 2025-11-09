@@ -1,14 +1,15 @@
-# Findings Summary — Loop 065
+# Findings Summary — Loop 066
 **Date:** 2025-11-09  
 **Seed:** 20251016
 
 ## Loop updates
-- Re-ran the full sensitivity suite so `outputs/sensitivity_pseudo_weights/*`, `outputs/sensitivity_design_effect_grid.*`, and `outputs/sensitivity_replicates/sensitivity_replicates_summary.json` now reflect the seeded pseudo-weight (DEFF=1.0, 1.25, 1.5), design-effect grid (up to DEFF=2.0), and pseudo-replicate (k=6 jackknife) scenarios described in `analysis/sensitivity_plan.md` and recorded in `analysis/sensitivity_manifest.md`.
-- The pseudo-weight draws show the effective n shrinking from ~14,443 (DEFF=1.0) to ~9,533 (DEFF=1.5) while H1/H2 stay at −0.1201/+0.0998 and H3’s SE expands from 0.0331 to about 0.0405, so the CI stays below zero even with appreciable inflation.
-- The design-effect grid plot/table documents how the targeted family’s n_effective dwindles to ~6,754 at DEFF=2.0 without flipping the sign of the BH-adjusted estimates, and the pseudo-replicate JSON now reports jackknife SEs of roughly 0.019 (H1), 0.002 (H2), and 0.0177 (H3) that align with the HC1 band.
-- No new public tables or figures were released, so disclosure control remains with the prior audit; the loop refreshed the sensitivity narrative so the writing-phase QC tasks (manuscript parity, outline, DAG, checklist, LaTeX build) can be tackled next.
+- Re-ran the full sensitivity suite (pseudo weights, design-effect grid, pseudo replicates) with the same seeded commands as recorded in `analysis/sensitivity_manifest.md`; loop-specific outputs now live under `outputs/sensitivity_pseudo_weights_loop066/`, `outputs/sensitivity_design_effect_grid_loop066.*`, and `outputs/sensitivity_replicates_loop066/sensitivity_replicates_summary.json`, so each uncertainty artifact is distinct for loop 066.
+- The pseudo-weight scenarios show the effective sample shrinking from 14,443 (DEFF=1.0, CV=0.000) to 11,628.5 (DEFF=1.25, CV≈0.492) to 9,533.2 (DEFF=1.5, CV≈0.718) while H1/H2 remain near −0.1201/+0.0998 (SE=0.0354) and H3’s SE widens from 0.0331 to 0.0405 without flipping the negative estimate.
+- The design-effect grid CSV/MD (`outputs/sensitivity_design_effect_grid_loop066.csv`/`.md`) logs that the targeted family’s n_effective falls toward ~11,550 (DEFF=1.25), ~9,625 (DEFF=1.5), ~7,219 (DEFF=2.0) and only ~6,754 for H3 while each 95% CI stays on the same side of zero and the BH q-values remain tied to the original family.
+- The pseudo-replicate jackknife summary (`outputs/sensitivity_replicates_loop066/sensitivity_replicates_summary.json`) reports jackknife SEs of ≈0.0190 (H1), 0.0020 (H2), and 0.0177 (H3), matching the HC1 uncertainty band documented in `analysis/results.csv`.
+- No new public tables or figures were released this loop, so `qc/disclosure_check_loop_064.md` (violations: 0) remains the latest audit; the sensitivity suite preparation now clears the path for the writing-phase QC milestone (N14).
 
 ## Next actions
-1. Execute the writing-phase QC pass: align `papers/main/manuscript.tex` with the Markdown twin, refresh `papers/main/imrad_outline.md`, rerun `qc/strobe_sampl_checklist.md`, verify `reports/identification.md` against `figures/dag_design.png`, rerun the LaTeX build per `papers/main/build_log.txt`, and capture the resulting reflection in `reports/findings_v1.4.md` once the checklist/DAG remain stable.
-2. Keep documenting every Semantic Scholar attempt (with the CrossRef fallback if the API still 403s) so each `[CLAIM:<ID>]` stays DOI-backed; log the commands/responses in `analysis/decision_log.csv`, `lit/queries/loop_0XX/`, and `lit/evidence_map.csv` until the key is restored.
-3. Maintain the narrative ledger (notebooks + reports + decision log) so reviewers can follow the deterministic path through writing-phase QC and into the pending review-phase gate.
+1. Execute the writing-phase QC pass: sync `papers/main/manuscript.tex` with the Markdown twin, refresh `papers/main/imrad_outline.md`, rerun `qc/strobe_sampl_checklist.md`, verify `reports/identification.md` against `figures/dag_design.png`, rerun the LaTeX build (and append `papers/main/build_log.txt`), and capture the outcome in the next findings log entry.
+2. Keep issuing Semantic Scholar queries (with CrossRef fallbacks while the API still fails) so each `[CLAIM:<ID>]` stays DOI-backed; log every response in `analysis/decision_log.csv`, `lit/queries/loop_<idx>/`, and `lit/evidence_map.csv` before advancing phases.
+3. Maintain the research narrative (notebooks, decision log, reports) so reviewers can trace loop-by-loop reproducible steps as we head toward the pending review gate.

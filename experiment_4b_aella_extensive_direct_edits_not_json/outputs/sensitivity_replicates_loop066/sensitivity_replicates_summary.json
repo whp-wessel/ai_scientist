@@ -1,0 +1,1178 @@
+{
+  "seed": 20251016,
+  "k": 6,
+  "cluster_summary": {
+    "0": 2408,
+    "1": 2407,
+    "2": 2407,
+    "3": 2407,
+    "4": 2407,
+    "5": 2407
+  },
+  "replicate_outputs": [
+    {
+      "cluster_left_out": 0,
+      "n_used": 12035,
+      "results": {
+        "H1": {
+          "hypothesis_id": "H1",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "wz901dj_score",
+          "predictor": "externalreligion_ord",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "cis",
+            "classchild_score"
+          ],
+          "dropped_controls": [],
+          "n_analytic": 12032,
+          "effect_metric": "\u0394E[depression score | religion very important vs not important]",
+          "effect": {
+            "estimate": -0.11344733066977747,
+            "se": 0.041788161630613496,
+            "ci_lower": -0.19370578344335285,
+            "ci_upper": -0.036874213724627576
+          },
+          "contrast_values": {
+            "low": 0,
+            "high": 3
+          },
+          "ordered_levels": [
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "parameters": {
+            "externalreligion_ord": -0.034275022903367904,
+            "selfage": 0.01755304313722992,
+            "biomale": 0.45934874445455404,
+            "gendermale": 0.14464898977749108,
+            "cis": 0.9624166582314316,
+            "classchild_score": 0.21815270023783312,
+            "0/1": 0.7653074184584605,
+            "1/2": -0.02544401968988011,
+            "2/3": -0.05731505199970547,
+            "3/4": -1.1174005265432916,
+            "4/5": -0.977988257960818,
+            "5/6": -0.24541951183689728
+          },
+          "diagnostics": {
+            "nobs": 12032,
+            "llf": -21880.85627799799,
+            "aic": 43785.71255599598,
+            "bic": 43874.45645655026,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 1 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H2": {
+          "hypothesis_id": "H2",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "okq5xh8_ord",
+          "predictor": "pqo6jmj_score",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "classcurrent_score",
+            "classteen_score"
+          ],
+          "dropped_controls": [
+            "mentalillness"
+          ],
+          "n_analytic": 12026,
+          "effect_metric": "\u0394Pr(health \u2208 {very good, excellent}) | guidance Q3 vs Q1",
+          "effect": {
+            "estimate": 0.09910594129338943,
+            "se": 0.006208314356637564,
+            "ci_lower": 0.08771901874771994,
+            "ci_upper": 0.11124141837624253
+          },
+          "contrast_values": {
+            "low": -1.0,
+            "high": 2.0
+          },
+          "ordered_levels": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "parameters": {
+            "pqo6jmj_score": 0.14604113362735627,
+            "selfage": 0.0042549941666212895,
+            "biomale": 0.06964867350143235,
+            "gendermale": 0.28772761090688975,
+            "classcurrent_score": 0.41356026557303865,
+            "classteen_score": 0.06848515620212973,
+            "0/1": -1.2823880654047184,
+            "1/2": 0.5497370490197204,
+            "2/3": 0.48168365718903905,
+            "3/4": 0.6243266723232833
+          },
+          "diagnostics": {
+            "nobs": 12026,
+            "llf": -16494.726034899413,
+            "aic": 33009.45206979883,
+            "bic": 33083.40033231482,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 1 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H3": {
+          "hypothesis_id": "H3",
+          "family": "psychosocial",
+          "model": "linear_regression",
+          "outcome": "self_love_score",
+          "predictor": "mds78zu_binary",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "siblingnumber",
+            "classchild_score"
+          ],
+          "n_analytic": 11256,
+          "effect_metric": "Mean difference in self-love score (abuse vs none)",
+          "effect": {
+            "estimate": -0.6454487612395757,
+            "se": 0.03626724021737313,
+            "ci_lower": -0.7165312458842896,
+            "ci_upper": -0.5743662765948618
+          },
+          "parameters": {
+            "const": -0.1990556019798118,
+            "mds78zu_binary": -0.6454487612395757,
+            "selfage": 0.026851422879627974,
+            "biomale": -0.45213052702264656,
+            "gendermale": 0.3774341622429785,
+            "siblingnumber": 0.02901289611336641,
+            "classchild_score": 0.1295707406899835
+          },
+          "diagnostics": {
+            "nobs": 11256,
+            "r_squared": 0.06841344672442318,
+            "adj_r_squared": 0.067916556394647
+          },
+          "seed": 20251016,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 1 (k=6)",
+          "phase": "pap_draft_exploratory"
+        }
+      },
+      "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 1 (k=6)"
+    },
+    {
+      "cluster_left_out": 1,
+      "n_used": 12036,
+      "results": {
+        "H1": {
+          "hypothesis_id": "H1",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "wz901dj_score",
+          "predictor": "externalreligion_ord",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "cis",
+            "classchild_score"
+          ],
+          "dropped_controls": [],
+          "n_analytic": 12033,
+          "effect_metric": "\u0394E[depression score | religion very important vs not important]",
+          "effect": {
+            "estimate": -0.1451571642974305,
+            "se": 0.042126539133818,
+            "ci_lower": -0.22595273721889295,
+            "ci_upper": -0.06734551816994024
+          },
+          "contrast_values": {
+            "low": 0,
+            "high": 3
+          },
+          "ordered_levels": [
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "parameters": {
+            "externalreligion_ord": -0.04389076068454303,
+            "selfage": 0.017331761819384374,
+            "biomale": 0.48052496247405824,
+            "gendermale": 0.12765709166220632,
+            "cis": 0.9651475926697058,
+            "classchild_score": 0.21196616479841845,
+            "0/1": 0.739240718843359,
+            "1/2": -0.024358981163939017,
+            "2/3": -0.05227739005940572,
+            "3/4": -1.1170157276198613,
+            "4/5": -0.9625652117019292,
+            "5/6": -0.26432673421304104
+          },
+          "diagnostics": {
+            "nobs": 12033,
+            "llf": -21886.026777404433,
+            "aic": 43796.05355480887,
+            "bic": 43884.79845266212,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 2 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H2": {
+          "hypothesis_id": "H2",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "okq5xh8_ord",
+          "predictor": "pqo6jmj_score",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "classcurrent_score",
+            "classteen_score"
+          ],
+          "dropped_controls": [
+            "mentalillness"
+          ],
+          "n_analytic": 12025,
+          "effect_metric": "\u0394Pr(health \u2208 {very good, excellent}) | guidance Q3 vs Q1",
+          "effect": {
+            "estimate": 0.1010992937980203,
+            "se": 0.006213531873528105,
+            "ci_lower": 0.08983556502441073,
+            "ci_upper": 0.11324420420123851
+          },
+          "contrast_values": {
+            "low": -1.0,
+            "high": 2.0
+          },
+          "ordered_levels": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "parameters": {
+            "pqo6jmj_score": 0.14912102031742783,
+            "selfage": 0.004860016486486019,
+            "biomale": 0.008579039237326825,
+            "gendermale": 0.32831868769146066,
+            "classcurrent_score": 0.41834702076499986,
+            "classteen_score": 0.06560201379937901,
+            "0/1": -1.2597513127290465,
+            "1/2": 0.5399122517585309,
+            "2/3": 0.4898999093215575,
+            "3/4": 0.6093435181000546
+          },
+          "diagnostics": {
+            "nobs": 12025,
+            "llf": -16510.339267430663,
+            "aic": 33040.67853486133,
+            "bic": 33114.625965811065,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 2 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H3": {
+          "hypothesis_id": "H3",
+          "family": "psychosocial",
+          "model": "linear_regression",
+          "outcome": "self_love_score",
+          "predictor": "mds78zu_binary",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "siblingnumber",
+            "classchild_score"
+          ],
+          "n_analytic": 11249,
+          "effect_metric": "Mean difference in self-love score (abuse vs none)",
+          "effect": {
+            "estimate": -0.63696777605366,
+            "se": 0.03608645253778862,
+            "ci_lower": -0.7076959233575397,
+            "ci_upper": -0.5662396287497802
+          },
+          "parameters": {
+            "const": -0.2717066231198681,
+            "mds78zu_binary": -0.63696777605366,
+            "selfage": 0.028131728552887328,
+            "biomale": -0.4233735497231756,
+            "gendermale": 0.3399105046758178,
+            "siblingnumber": 0.034040640732838315,
+            "classchild_score": 0.1374105747926451
+          },
+          "diagnostics": {
+            "nobs": 11249,
+            "r_squared": 0.06968917215641901,
+            "adj_r_squared": 0.06919265330149438
+          },
+          "seed": 20251016,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 2 (k=6)",
+          "phase": "pap_draft_exploratory"
+        }
+      },
+      "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 2 (k=6)"
+    },
+    {
+      "cluster_left_out": 2,
+      "n_used": 12036,
+      "results": {
+        "H1": {
+          "hypothesis_id": "H1",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "wz901dj_score",
+          "predictor": "externalreligion_ord",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "cis",
+            "classchild_score"
+          ],
+          "dropped_controls": [],
+          "n_analytic": 12031,
+          "effect_metric": "\u0394E[depression score | religion very important vs not important]",
+          "effect": {
+            "estimate": -0.10928327394209435,
+            "se": 0.041794994709999034,
+            "ci_lower": -0.18899592419602457,
+            "ci_upper": -0.032854531240337305
+          },
+          "contrast_values": {
+            "low": 0,
+            "high": 3
+          },
+          "ordered_levels": [
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "parameters": {
+            "externalreligion_ord": -0.03308229210919808,
+            "selfage": 0.018435816403600095,
+            "biomale": 0.46444582240127574,
+            "gendermale": 0.14808642348711815,
+            "cis": 0.9751760286429685,
+            "classchild_score": 0.2068762694564016,
+            "0/1": 0.7610524506197536,
+            "1/2": -0.015370080323967979,
+            "2/3": -0.047215334505493964,
+            "3/4": -1.106809354332938,
+            "4/5": -0.9905558684347148,
+            "5/6": -0.24216370437180573
+          },
+          "diagnostics": {
+            "nobs": 12031,
+            "llf": -21873.26889873621,
+            "aic": 43770.53779747242,
+            "bic": 43859.28070064482,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 3 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H2": {
+          "hypothesis_id": "H2",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "okq5xh8_ord",
+          "predictor": "pqo6jmj_score",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "classcurrent_score",
+            "classteen_score"
+          ],
+          "dropped_controls": [
+            "mentalillness"
+          ],
+          "n_analytic": 12024,
+          "effect_metric": "\u0394Pr(health \u2208 {very good, excellent}) | guidance Q3 vs Q1",
+          "effect": {
+            "estimate": 0.10237789293750786,
+            "se": 0.006221769110842776,
+            "ci_lower": 0.09093583760061118,
+            "ci_upper": 0.11457430154169813
+          },
+          "contrast_values": {
+            "low": -1.0,
+            "high": 2.0
+          },
+          "ordered_levels": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "parameters": {
+            "pqo6jmj_score": 0.15115757606467625,
+            "selfage": 0.003980298932142268,
+            "biomale": 0.008486191251445604,
+            "gendermale": 0.33635281161870034,
+            "classcurrent_score": 0.41932965734622674,
+            "classteen_score": 0.07001384507867299,
+            "0/1": -1.2870055474764563,
+            "1/2": 0.5548949394998992,
+            "2/3": 0.48907945167382516,
+            "3/4": 0.6217341680602994
+          },
+          "diagnostics": {
+            "nobs": 12024,
+            "llf": -16464.65954244645,
+            "aic": 32949.3190848929,
+            "bic": 33023.26568420723,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 3 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H3": {
+          "hypothesis_id": "H3",
+          "family": "psychosocial",
+          "model": "linear_regression",
+          "outcome": "self_love_score",
+          "predictor": "mds78zu_binary",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "siblingnumber",
+            "classchild_score"
+          ],
+          "n_analytic": 11241,
+          "effect_metric": "Mean difference in self-love score (abuse vs none)",
+          "effect": {
+            "estimate": -0.6850026698139012,
+            "se": 0.03629839489094278,
+            "ci_lower": -0.7561462164967618,
+            "ci_upper": -0.6138591231310406
+          },
+          "parameters": {
+            "const": -0.15870862824455131,
+            "mds78zu_binary": -0.6850026698139012,
+            "selfage": 0.0272857945338449,
+            "biomale": -0.3546781972250821,
+            "gendermale": 0.27751353869093565,
+            "siblingnumber": 0.028521136165254243,
+            "classchild_score": 0.11979612268043276
+          },
+          "diagnostics": {
+            "nobs": 11241,
+            "r_squared": 0.07107115165609257,
+            "adj_r_squared": 0.07057501732370308
+          },
+          "seed": 20251016,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 3 (k=6)",
+          "phase": "pap_draft_exploratory"
+        }
+      },
+      "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 3 (k=6)"
+    },
+    {
+      "cluster_left_out": 3,
+      "n_used": 12036,
+      "results": {
+        "H1": {
+          "hypothesis_id": "H1",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "wz901dj_score",
+          "predictor": "externalreligion_ord",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "cis",
+            "classchild_score"
+          ],
+          "dropped_controls": [],
+          "n_analytic": 12031,
+          "effect_metric": "\u0394E[depression score | religion very important vs not important]",
+          "effect": {
+            "estimate": -0.10346275601818909,
+            "se": 0.038569979675927325,
+            "ci_lower": -0.18288663213194922,
+            "ci_upper": -0.03145292255897011
+          },
+          "contrast_values": {
+            "low": 0,
+            "high": 3
+          },
+          "ordered_levels": [
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "parameters": {
+            "externalreligion_ord": -0.031244642282713234,
+            "selfage": 0.017515145695433224,
+            "biomale": 0.4506503153766157,
+            "gendermale": 0.1590112347051345,
+            "cis": 0.9463454484116034,
+            "classchild_score": 0.20769066799534955,
+            "0/1": 0.7257691157106552,
+            "1/2": -0.03362957988279992,
+            "2/3": -0.053152265396734136,
+            "3/4": -1.0980671989025181,
+            "4/5": -0.9781698438105149,
+            "5/6": -0.22396108833949738
+          },
+          "diagnostics": {
+            "nobs": 12031,
+            "llf": -21933.500183190252,
+            "aic": 43891.000366380504,
+            "bic": 43979.743269552906,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 4 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H2": {
+          "hypothesis_id": "H2",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "okq5xh8_ord",
+          "predictor": "pqo6jmj_score",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "classcurrent_score",
+            "classteen_score"
+          ],
+          "dropped_controls": [
+            "mentalillness"
+          ],
+          "n_analytic": 12026,
+          "effect_metric": "\u0394Pr(health \u2208 {very good, excellent}) | guidance Q3 vs Q1",
+          "effect": {
+            "estimate": 0.09749899671851703,
+            "se": 0.006291672026968366,
+            "ci_lower": 0.08556417421368677,
+            "ci_upper": 0.10972460828353232
+          },
+          "contrast_values": {
+            "low": -1.0,
+            "high": 2.0
+          },
+          "ordered_levels": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "parameters": {
+            "pqo6jmj_score": 0.14362469273394424,
+            "selfage": 0.003997003686545326,
+            "biomale": 0.08210690004347385,
+            "gendermale": 0.2686249992476208,
+            "classcurrent_score": 0.41811846326456564,
+            "classteen_score": 0.06917133042599416,
+            "0/1": -1.281971617219864,
+            "1/2": 0.5465229420587764,
+            "2/3": 0.4790093593641313,
+            "3/4": 0.6341869030095012
+          },
+          "diagnostics": {
+            "nobs": 12026,
+            "llf": -16475.24243031908,
+            "aic": 32970.48486063816,
+            "bic": 33044.43312315415,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 4 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H3": {
+          "hypothesis_id": "H3",
+          "family": "psychosocial",
+          "model": "linear_regression",
+          "outcome": "self_love_score",
+          "predictor": "mds78zu_binary",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "siblingnumber",
+            "classchild_score"
+          ],
+          "n_analytic": 11242,
+          "effect_metric": "Mean difference in self-love score (abuse vs none)",
+          "effect": {
+            "estimate": -0.6426316600260128,
+            "se": 0.03622785532534428,
+            "ci_lower": -0.7136369517008152,
+            "ci_upper": -0.5716263683512104
+          },
+          "parameters": {
+            "const": -0.2017250080245953,
+            "mds78zu_binary": -0.6426316600260128,
+            "selfage": 0.028350182886708136,
+            "biomale": -0.3887405123082365,
+            "gendermale": 0.30450917081487283,
+            "siblingnumber": 0.027226245755022478,
+            "classchild_score": 0.12450914471901516
+          },
+          "diagnostics": {
+            "nobs": 11242,
+            "r_squared": 0.06830530457726558,
+            "adj_r_squared": 0.06780773731669265
+          },
+          "seed": 20251016,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 4 (k=6)",
+          "phase": "pap_draft_exploratory"
+        }
+      },
+      "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 4 (k=6)"
+    },
+    {
+      "cluster_left_out": 4,
+      "n_used": 12036,
+      "results": {
+        "H1": {
+          "hypothesis_id": "H1",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "wz901dj_score",
+          "predictor": "externalreligion_ord",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "cis",
+            "classchild_score"
+          ],
+          "dropped_controls": [],
+          "n_analytic": 12031,
+          "effect_metric": "\u0394E[depression score | religion very important vs not important]",
+          "effect": {
+            "estimate": -0.1433897083827648,
+            "se": 0.03819749743836541,
+            "ci_lower": -0.2196817462444296,
+            "ci_upper": -0.0720337861118594
+          },
+          "contrast_values": {
+            "low": 0,
+            "high": 3
+          },
+          "ordered_levels": [
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "parameters": {
+            "externalreligion_ord": -0.04347417275015249,
+            "selfage": 0.01757564710224775,
+            "biomale": 0.3688756050442264,
+            "gendermale": 0.23426565766550142,
+            "cis": 0.9799707288044891,
+            "classchild_score": 0.213995394179668,
+            "0/1": 0.748204499319849,
+            "1/2": -0.008476566640696279,
+            "2/3": -0.04901371153372453,
+            "3/4": -1.1232930778592174,
+            "4/5": -0.9834888179629583,
+            "5/6": -0.24011017624589232
+          },
+          "diagnostics": {
+            "nobs": 12031,
+            "llf": -21852.265879349787,
+            "aic": 43728.53175869957,
+            "bic": 43817.274661871976,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 5 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H2": {
+          "hypothesis_id": "H2",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "okq5xh8_ord",
+          "predictor": "pqo6jmj_score",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "classcurrent_score",
+            "classteen_score"
+          ],
+          "dropped_controls": [
+            "mentalillness"
+          ],
+          "n_analytic": 12024,
+          "effect_metric": "\u0394Pr(health \u2208 {very good, excellent}) | guidance Q3 vs Q1",
+          "effect": {
+            "estimate": 0.09754952159824783,
+            "se": 0.006272060579186637,
+            "ci_lower": 0.08575330080799955,
+            "ci_upper": 0.10973112360493797
+          },
+          "contrast_values": {
+            "low": -1.0,
+            "high": 2.0
+          },
+          "ordered_levels": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "parameters": {
+            "pqo6jmj_score": 0.14368904473750582,
+            "selfage": 0.003240059723743245,
+            "biomale": -0.00257917702384923,
+            "gendermale": 0.36080184389278624,
+            "classcurrent_score": 0.400331236701945,
+            "classteen_score": 0.08130893827377428,
+            "0/1": -1.3247571238424873,
+            "1/2": 0.5564334670657535,
+            "2/3": 0.48896232528095906,
+            "3/4": 0.6181668270478983
+          },
+          "diagnostics": {
+            "nobs": 12024,
+            "llf": -16494.547012394032,
+            "aic": 33009.094024788064,
+            "bic": 33083.040624102396,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 5 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H3": {
+          "hypothesis_id": "H3",
+          "family": "psychosocial",
+          "model": "linear_regression",
+          "outcome": "self_love_score",
+          "predictor": "mds78zu_binary",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "siblingnumber",
+            "classchild_score"
+          ],
+          "n_analytic": 11273,
+          "effect_metric": "Mean difference in self-love score (abuse vs none)",
+          "effect": {
+            "estimate": -0.6520376016994137,
+            "se": 0.03637925746118024,
+            "ci_lower": -0.7233396361076371,
+            "ci_upper": -0.5807355672911904
+          },
+          "parameters": {
+            "const": -0.20169638761224412,
+            "mds78zu_binary": -0.6520376016994137,
+            "selfage": 0.028131473420263706,
+            "biomale": -0.37285786491377754,
+            "gendermale": 0.30239297101733514,
+            "siblingnumber": 0.028277480953243863,
+            "classchild_score": 0.11697976000642159
+          },
+          "diagnostics": {
+            "nobs": 11273,
+            "r_squared": 0.06852432400160557,
+            "adj_r_squared": 0.06802824251252415
+          },
+          "seed": 20251016,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 5 (k=6)",
+          "phase": "pap_draft_exploratory"
+        }
+      },
+      "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 5 (k=6)"
+    },
+    {
+      "cluster_left_out": 5,
+      "n_used": 12036,
+      "results": {
+        "H1": {
+          "hypothesis_id": "H1",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "wz901dj_score",
+          "predictor": "externalreligion_ord",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "cis",
+            "classchild_score"
+          ],
+          "dropped_controls": [],
+          "n_analytic": 12032,
+          "effect_metric": "\u0394E[depression score | religion very important vs not important]",
+          "effect": {
+            "estimate": -0.10585405180053875,
+            "se": 0.03875322104405829,
+            "ci_lower": -0.18559399765286888,
+            "ci_upper": -0.033562416977814036
+          },
+          "contrast_values": {
+            "low": 0,
+            "high": 3
+          },
+          "ordered_levels": [
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "parameters": {
+            "externalreligion_ord": -0.03192768009830452,
+            "selfage": 0.01753567362970058,
+            "biomale": 0.5021344879198238,
+            "gendermale": 0.09618471280402179,
+            "cis": 0.9381862850722684,
+            "classchild_score": 0.20461391733715129,
+            "0/1": 0.7059563098293399,
+            "1/2": -0.021224060372468732,
+            "2/3": -0.05520139580868689,
+            "3/4": -1.1180038951520705,
+            "4/5": -1.011877381910562,
+            "5/6": -0.2264997094957378
+          },
+          "diagnostics": {
+            "nobs": 12032,
+            "llf": -21896.051456159596,
+            "aic": 43816.10291231919,
+            "bic": 43904.84681287347,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 6 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H2": {
+          "hypothesis_id": "H2",
+          "family": "wellbeing",
+          "model": "ordered_logit",
+          "outcome": "okq5xh8_ord",
+          "predictor": "pqo6jmj_score",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "classcurrent_score",
+            "classteen_score"
+          ],
+          "dropped_controls": [
+            "mentalillness"
+          ],
+          "n_analytic": 12025,
+          "effect_metric": "\u0394Pr(health \u2208 {very good, excellent}) | guidance Q3 vs Q1",
+          "effect": {
+            "estimate": 0.10099358623462874,
+            "se": 0.0061888160959458986,
+            "ci_lower": 0.08970649414523615,
+            "ci_upper": 0.11318475397031609
+          },
+          "contrast_values": {
+            "low": -1.0,
+            "high": 2.0
+          },
+          "ordered_levels": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "parameters": {
+            "pqo6jmj_score": 0.14874949966337445,
+            "selfage": 0.004047315478463136,
+            "biomale": 0.08643714020353228,
+            "gendermale": 0.27467724774890323,
+            "classcurrent_score": 0.4165976301592944,
+            "classteen_score": 0.058942086561926885,
+            "0/1": -1.3080254211548183,
+            "1/2": 0.5487855278649911,
+            "2/3": 0.48672758736084565,
+            "3/4": 0.6248696726990546
+          },
+          "diagnostics": {
+            "nobs": 12025,
+            "llf": -16481.66080218789,
+            "aic": 32983.32160437578,
+            "bic": 33057.26903532552,
+            "converged": true
+          },
+          "seed": 20251016,
+          "draws": 400,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 6 (k=6)",
+          "phase": "pap_draft_exploratory"
+        },
+        "H3": {
+          "hypothesis_id": "H3",
+          "family": "psychosocial",
+          "model": "linear_regression",
+          "outcome": "self_love_score",
+          "predictor": "mds78zu_binary",
+          "controls": [
+            "selfage",
+            "biomale",
+            "gendermale",
+            "siblingnumber",
+            "classchild_score"
+          ],
+          "n_analytic": 11274,
+          "effect_metric": "Mean difference in self-love score (abuse vs none)",
+          "effect": {
+            "estimate": -0.6641463897952324,
+            "se": 0.03618748708075148,
+            "ci_lower": -0.7350725611645138,
+            "ci_upper": -0.5932202184259511
+          },
+          "parameters": {
+            "const": -0.16357338836520202,
+            "mds78zu_binary": -0.6641463897952324,
+            "selfage": 0.026969207313611496,
+            "biomale": -0.35164797857270236,
+            "gendermale": 0.29835061969497173,
+            "siblingnumber": 0.026538473682267243,
+            "classchild_score": 0.11349975668229631
+          },
+          "diagnostics": {
+            "nobs": 11274,
+            "r_squared": 0.06766176708509553,
+            "adj_r_squared": 0.06716527028936559
+          },
+          "seed": 20251016,
+          "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 6 (k=6)",
+          "phase": "pap_draft_exploratory"
+        }
+      },
+      "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 6 (k=6)"
+    }
+  ],
+  "aggregated": {
+    "H1": {
+      "base_estimate": -0.1200770039685658,
+      "replicates": [
+        {
+          "replicate": 1,
+          "cluster_left_out": 0,
+          "estimate": -0.11344733066977747,
+          "n_used": 12035,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 1 (k=6)"
+        },
+        {
+          "replicate": 2,
+          "cluster_left_out": 1,
+          "estimate": -0.1451571642974305,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 2 (k=6)"
+        },
+        {
+          "replicate": 3,
+          "cluster_left_out": 2,
+          "estimate": -0.10928327394209435,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 3 (k=6)"
+        },
+        {
+          "replicate": 4,
+          "cluster_left_out": 3,
+          "estimate": -0.10346275601818909,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 4 (k=6)"
+        },
+        {
+          "replicate": 5,
+          "cluster_left_out": 4,
+          "estimate": -0.1433897083827648,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 5 (k=6)"
+        },
+        {
+          "replicate": 6,
+          "cluster_left_out": 5,
+          "estimate": -0.10585405180053875,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 6 (k=6)"
+        }
+      ],
+      "replicate_variance": 0.0003622558816977945,
+      "replicate_se": 0.019033020824288364
+    },
+    "H2": {
+      "base_estimate": 0.0997698580357721,
+      "replicates": [
+        {
+          "replicate": 1,
+          "cluster_left_out": 0,
+          "estimate": 0.09910594129338943,
+          "n_used": 12035,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 1 (k=6)"
+        },
+        {
+          "replicate": 2,
+          "cluster_left_out": 1,
+          "estimate": 0.1010992937980203,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 2 (k=6)"
+        },
+        {
+          "replicate": 3,
+          "cluster_left_out": 2,
+          "estimate": 0.10237789293750786,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 3 (k=6)"
+        },
+        {
+          "replicate": 4,
+          "cluster_left_out": 3,
+          "estimate": 0.09749899671851703,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 4 (k=6)"
+        },
+        {
+          "replicate": 5,
+          "cluster_left_out": 4,
+          "estimate": 0.09754952159824783,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 5 (k=6)"
+        },
+        {
+          "replicate": 6,
+          "cluster_left_out": 5,
+          "estimate": 0.10099358623462874,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 6 (k=6)"
+        }
+      ],
+      "replicate_variance": 4.118849331622534e-06,
+      "replicate_se": 0.0020294948464143815
+    },
+    "H3": {
+      "base_estimate": -0.654365838651696,
+      "replicates": [
+        {
+          "replicate": 1,
+          "cluster_left_out": 0,
+          "estimate": -0.6454487612395757,
+          "n_used": 12035,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 1 (k=6)"
+        },
+        {
+          "replicate": 2,
+          "cluster_left_out": 1,
+          "estimate": -0.63696777605366,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 2 (k=6)"
+        },
+        {
+          "replicate": 3,
+          "cluster_left_out": 2,
+          "estimate": -0.6850026698139012,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 3 (k=6)"
+        },
+        {
+          "replicate": 4,
+          "cluster_left_out": 3,
+          "estimate": -0.6426316600260128,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 4 (k=6)"
+        },
+        {
+          "replicate": 5,
+          "cluster_left_out": 4,
+          "estimate": -0.6520376016994137,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 5 (k=6)"
+        },
+        {
+          "replicate": 6,
+          "cluster_left_out": 5,
+          "estimate": -0.6641463897952324,
+          "n_used": 12036,
+          "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066 --replicate 6 (k=6)"
+        }
+      ],
+      "replicate_variance": 0.0003119186182794282,
+      "replicate_se": 0.017661217916084614
+    }
+  },
+  "command": "python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop066"
+}

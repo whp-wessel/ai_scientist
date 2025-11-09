@@ -1,0 +1,189 @@
+{
+  "scenario_id": "pseudo_weights_deff_125",
+  "design_effect": 1.25,
+  "seed": 20251016,
+  "rng_seed": 20251017,
+  "n": 14443,
+  "weight_summary": {
+    "mean": 0.995919214085389,
+    "std": 0.4899587298782715,
+    "min": 0.13517996325115647,
+    "max": 4.754124278922494,
+    "cv": 0.49196633918568317
+  },
+  "n_effective": 11628.535365310063,
+  "command": "python analysis/code/pseudo_weight_sensitivity.py --config config/agent_config.yaml --seed 20251016 --draws 400 --output-dir outputs/sensitivity_pseudo_weights_loop066 --scenarios 1.0 1.25 1.5 --design-effect 1.25",
+  "results": [
+    {
+      "hypothesis_id": "H1",
+      "family": "wellbeing",
+      "model": "ordered_logit",
+      "outcome": "wz901dj_score",
+      "predictor": "externalreligion_ord",
+      "controls": [
+        "selfage",
+        "biomale",
+        "gendermale",
+        "cis",
+        "classchild_score"
+      ],
+      "dropped_controls": [],
+      "n_analytic": 14438,
+      "effect_metric": "\u0394E[depression score | religion very important vs not important]",
+      "effect": {
+        "estimate": -0.1200770039685658,
+        "se": 0.03540792928303607,
+        "ci_lower": -0.18732101884531197,
+        "ci_upper": -0.05480346819322561
+      },
+      "contrast_values": {
+        "low": 0,
+        "high": 3
+      },
+      "ordered_levels": [
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "parameters": {
+        "externalreligion_ord": -0.03630190440598913,
+        "selfage": 0.017657809024533542,
+        "biomale": 0.45476946280964897,
+        "gendermale": 0.15125627895579194,
+        "cis": 0.9609507358474684,
+        "classchild_score": 0.21052461849833898,
+        "0/1": 0.7407195728951049,
+        "1/2": -0.021462258856849655,
+        "2/3": -0.05241120549934031,
+        "3/4": -1.1134201248245155,
+        "4/5": -0.9840225939265603,
+        "5/6": -0.2403628840583155
+      },
+      "diagnostics": {
+        "nobs": 14438,
+        "llf": -26265.362315539838,
+        "aic": 52554.724631079676,
+        "bic": 52645.656057864064,
+        "converged": true
+      },
+      "seed": 20251016,
+      "draws": 400,
+      "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+      "command": "python analysis/code/pseudo_weight_sensitivity.py --config config/agent_config.yaml --seed 20251016 --draws 400 --output-dir outputs/sensitivity_pseudo_weights_loop066 --scenarios 1.0 1.25 1.5 --design-effect 1.25",
+      "phase": "pap_draft_exploratory",
+      "design_effect": 1.25,
+      "scenario": "pseudo_weight",
+      "weight_seed": 20251017
+    },
+    {
+      "hypothesis_id": "H2",
+      "family": "wellbeing",
+      "model": "ordered_logit",
+      "outcome": "okq5xh8_ord",
+      "predictor": "pqo6jmj_score",
+      "controls": [
+        "selfage",
+        "biomale",
+        "gendermale",
+        "classcurrent_score",
+        "classteen_score"
+      ],
+      "dropped_controls": [
+        "mentalillness"
+      ],
+      "n_analytic": 14430,
+      "effect_metric": "\u0394Pr(health \u2208 {very good, excellent}) | guidance Q3 vs Q1",
+      "effect": {
+        "estimate": 0.09976985803577215,
+        "se": 0.005733669427078628,
+        "ci_lower": 0.08890834415454725,
+        "ci_upper": 0.11094272607357511
+      },
+      "contrast_values": {
+        "low": -1.0,
+        "high": 2.0
+      },
+      "ordered_levels": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "parameters": {
+        "pqo6jmj_score": 0.14705160275723184,
+        "selfage": 0.004061600277157614,
+        "biomale": 0.04216340399551095,
+        "gendermale": 0.3093286228614537,
+        "classcurrent_score": 0.41431211451526195,
+        "classteen_score": 0.06894287986277378,
+        "0/1": -1.2907427341320303,
+        "1/2": 0.5493632029513474,
+        "2/3": 0.4858565861654718,
+        "3/4": 0.622067324279895
+      },
+      "diagnostics": {
+        "nobs": 14430,
+        "llf": -19784.980065820826,
+        "aic": 39589.96013164165,
+        "bic": 39665.73077815933,
+        "converged": true
+      },
+      "seed": 20251016,
+      "draws": 400,
+      "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+      "command": "python analysis/code/pseudo_weight_sensitivity.py --config config/agent_config.yaml --seed 20251016 --draws 400 --output-dir outputs/sensitivity_pseudo_weights_loop066 --scenarios 1.0 1.25 1.5 --design-effect 1.25",
+      "phase": "pap_draft_exploratory",
+      "design_effect": 1.25,
+      "scenario": "pseudo_weight",
+      "weight_seed": 20251017
+    },
+    {
+      "hypothesis_id": "H3",
+      "family": "psychosocial",
+      "model": "linear_regression",
+      "outcome": "self_love_score",
+      "predictor": "mds78zu_binary",
+      "controls": [
+        "selfage",
+        "biomale",
+        "gendermale",
+        "siblingnumber",
+        "classchild_score"
+      ],
+      "n_analytic": 13507,
+      "effect_metric": "Mean difference in self-love score (abuse vs none)",
+      "effect": {
+        "estimate": -0.6339424736360335,
+        "se": 0.03704432143361046,
+        "ci_lower": -0.7065480094776352,
+        "ci_upper": -0.5613369377944318
+      },
+      "parameters": {
+        "const": -0.2209922786101375,
+        "mds78zu_binary": -0.6339424736360335,
+        "selfage": 0.027974247622972515,
+        "biomale": -0.25842318451809576,
+        "gendermale": 0.2209121899889852,
+        "siblingnumber": 0.021607412904959728,
+        "classchild_score": 0.11857182275662959
+      },
+      "diagnostics": {
+        "nobs": 13507,
+        "r_squared": 0.06691095694042248,
+        "adj_r_squared": 0.06649625069906262
+      },
+      "seed": 20251016,
+      "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+      "command": "python analysis/code/pseudo_weight_sensitivity.py --config config/agent_config.yaml --seed 20251016 --draws 400 --output-dir outputs/sensitivity_pseudo_weights_loop066 --scenarios 1.0 1.25 1.5 --design-effect 1.25",
+      "phase": "pap_draft_exploratory",
+      "design_effect": 1.25,
+      "scenario": "pseudo_weight",
+      "weight_seed": 20251017
+    }
+  ]
+}
