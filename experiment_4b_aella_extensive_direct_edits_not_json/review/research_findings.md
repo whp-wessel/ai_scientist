@@ -605,3 +605,12 @@ P1: PASS – `qc/disclosure_check_loop_070.md:1` documents the n≥10 scan of `t
 N1: WARN – Release-phase artifacts/checklist are updated (`reports/review_checklist.md:4`; `artifacts/state.json:20-35`), but next action N8 (Semantic Scholar replay) remains pending, so the final gate awaits the credential restoration.
 Notes: Re-run the archived Semantic Scholar queries once the S2 key recovers and push the responses into the evidence map/bibliography before declaring the release gate satisfied.
 
+## Loop 072 — 2025-11-09T20:50:56.482470+00:00
+DECISION: CONTINUE
+R1: PASS – Loop 072’s auto-log entry plus `artifacts/session_info.txt` and `artifacts/state.json` reference the recorded seed/environment while `analysis/decision_log.csv:808-813` preserves the commands/outputs that keep reproducibility auditable.
+L1: PASS – The Semantic Scholar replay (`lit/queries/loop_072/query_001.json`), CrossRef fallback (`lit/queries/loop_072/crossref_query_001.json`), and updates to `lit/evidence_map.csv`, `lit/bibliography.{bib,json}`, and `lit/semantic_scholar_waiver_loop013.md` keep [CLAIM:C1] DOI-backed even while the S2 key remains blocked.
+P1: PASS – No new public tables/figures were released this loop, so the latest disclosure audit (`qc/disclosure_check_loop_070.md`) with `violations: 0` continues to safeguard small-cell compliance.
+N1: PASS – `artifacts/state.json` still shows phase=release with next action N8 pending (Semantic Scholar replay) and N16 queued, so holding the release gate until the credential is restored is justified.
+
+Notes: Await OPS-S2-2025-11-09-01 key restoration before completing N8/N16 and closing the release-phase gate.
+
