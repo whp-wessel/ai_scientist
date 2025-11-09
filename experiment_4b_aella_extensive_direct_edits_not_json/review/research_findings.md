@@ -508,3 +508,11 @@ N1: PASS – artifacts/state.json keeps the phase at “sensitivity” while nex
 
 Notes: Finish N11/N12 (manuscript references plus QC refresh) before advancing to the writing phase.
 
+## Loop 062 — 2025-11-09T17:38:06.744082+00:00
+DECISION: CONTINUE
+R1: PASS – artifacts/seed.txt plus artifacts/session_info.txt log seed 20251016, while analysis/sensitivity_plan.md and reports/findings_summary.md describe the deterministic summarize_results→calc_bh→build_results_summary rerun that recreates loop 062 estimates.
+L1: PASS – the blocked Semantic Scholar query is saved at lit/queries/loop_061/query_001.json with CrossRef fallback in lit/queries/loop_061/crossref_query_001.json, and DOI 10.23880/mhrij-16000182 is recorded in lit/evidence_map.csv and both lit/bibliography.bib/.json so [CLAIM:C1] stays DOI-backed.
+P1: PASS – qc/disclosure_check_loop_061.md (per qc/strobe_sampl_checklist.md) reruns the disclosure scan on tables/results_summary.csv and figures/dag_design.png at n ≥ 10, reports violations: 0, and documents the reproducible command, so no small-cell leaks occur.
+N1: PASS – artifacts/state.json keeps phase “sensitivity” with N8 (Semantic Scholar replay) and N13 (writing-phase QC/build) pending while N11/N12 are marked done, matching the next-step bulleted list in reports/findings_summary.md and reports/findings_v1.1.md before advancing.
+Notes: Finish the pending N8/N13 tasks (query replay plus deterministic LaTeX/disclosure checks) before the upcoming writing-phase loop.
+
