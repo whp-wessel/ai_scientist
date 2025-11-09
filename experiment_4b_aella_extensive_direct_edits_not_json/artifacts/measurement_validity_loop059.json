@@ -1,0 +1,50 @@
+[
+  {
+    "measure_id": "wz901dj",
+    "item_wording": "Depression tendency (self-assessed)",
+    "coding": "Likert -3..3 (higher = more depression)",
+    "reliability_alpha": "single_item",
+    "dif_check": "\u0394(biomale=1 minus 0) = 0.916 (p = 0.000, n = 14438)",
+    "notes": "Outcome for H1."
+  },
+  {
+    "measure_id": "externalreligion",
+    "item_wording": "Perceived childhood religious importance",
+    "coding": "Ordinal 0-4 (higher = stricter adherence)",
+    "reliability_alpha": "single_item",
+    "dif_check": "\u0394(biomale=1 minus 0) = -0.142 (p = 0.000, n = 14443)",
+    "notes": "Predictor for H1; coded from numeric/text scale."
+  },
+  {
+    "measure_id": "pqo6jmj",
+    "item_wording": "Parents gave useful guidance (0-12)",
+    "coding": "Likert -3..3 (higher = more guidance)",
+    "reliability_alpha": "single_item",
+    "dif_check": "\u0394(biomale=1 minus 0) = 0.589 (p = 0.000, n = 14431)",
+    "notes": "Predictor for H2."
+  },
+  {
+    "measure_id": "okq5xh8",
+    "item_wording": "Self-rated general health",
+    "coding": "Ordinal 0-4 (poor\u2192excellent)",
+    "reliability_alpha": "single_item",
+    "dif_check": "\u0394(biomale=1 minus 0) = 0.343 (p = 0.000, n = 14437)",
+    "notes": "Outcome for H2."
+  },
+  {
+    "measure_id": "mds78zu",
+    "item_wording": "Childhood emotional abuse (0-12)",
+    "coding": "Binary indicator (1 = any reported abuse > neutral)",
+    "reliability_alpha": "single_item",
+    "dif_check": "\u0394(biomale=1 minus 0) = -0.239 (p = 0.000, n = 13509)",
+    "notes": "Predictor for H3 (derived from Likert)."
+  },
+  {
+    "measure_id": "2l8994l",
+    "item_wording": "Self-love statement",
+    "coding": "Likert -3..3 (higher = more self-love)",
+    "reliability_alpha": "single_item",
+    "dif_check": "\u0394(biomale=1 minus 0) = 0.203 (p = 0.000, n = 14436)",
+    "notes": "Outcome for H3."
+  }
+]

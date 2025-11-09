@@ -22,7 +22,7 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 58,
+  "loop_counter": 59,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -34,7 +34,7 @@
     {
       "description": "Integrate confirmatory + sensitivity outputs into the manuscript/outline",
       "id": "N11",
-      "notes": "Sensitivity assets now exist (analysis/results.csv, pseudo-weight/design-effect/replicate outputs, qc/disclosure_check_loop_058.md); still need to weave them into `papers/main/*` and `reports/identification.md` before writing.",
+      "notes": "Sensitivity assets now documented (analysis/results.csv, tables/results_summary.*, outputs/sensitivity_*); manuscript/outline/identification updates are in progress while the DOI-backed literature entries plug into each `[CLAIM:<ID>]` in `papers/main/*`.",
       "owner": "agent",
       "status": "pending"
     },
