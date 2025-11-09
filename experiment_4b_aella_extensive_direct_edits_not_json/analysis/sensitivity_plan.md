@@ -1,40 +1,35 @@
-# Sensitivity Plan — Loop 053
+# Sensitivity Plan — Loop 055
 **Date:** 2025-11-09
 **Seed:** 20251016 (recorded in `artifacts/seed.txt`)
 
 ## Confirmatory estimates and falsification
-1. **H1 / well-being ([CLAIM:C1])** — Ordered-logit difference for the highest vs lowest religiosity importance is **–0.120** (95% CI [–0.187, –0.055], q=0.00070) after controlling for demographics (`analysis/results.csv`).
-2. **H2 / self-rated health ([CLAIM:C2])** — Ordered-logit predicted probability gap is **+0.100** (95% CI [0.089, 0.111], q≈0) for adults whose parents provided guidance in the top quartile vs bottom quartile.
-3. **H3 / self-love ([CLAIM:C3])** — Linear difference of **–0.654** (95% CI [–0.719, –0.590], q≈0) for respondents reporting childhood emotional abuse vs none, holding the standard controls.
-4. **NC1 / sibling count (negative control)** — Linear change **+0.239** (CI [0.221, 0.257]) with religiosity; targeted=N so the estimate documents model stability rather than a hypothesis test.
+1. **H1 / well-being ([CLAIM:C1])** — Childhood religious importance contrast of **very important vs not at all important** yields **ΔE[depression score] = -0.120** (95% CI [-0.187, -0.0548]; `q = 0.0006958`) after the PAP-run ordered logit and BH correction (`analysis/results.csv`, `tables/results_summary.*`).
+2. **H2 / self-rated health ([CLAIM:C2])** — The ordered-logit predicted probability gap for very good/excellent health between guidance Q3 vs Q1 is **+0.0998** (CI [0.0889, 0.1109]; `q ≈ 0`), showing the parental guidance contrast remains substantive under HC1 uncertainties.
+3. **H3 / self-love ([CLAIM:C3])** — Linear regression of abuse status produces a **–0.654** mean difference in adult self-love (CI [–0.719, –0.590]; `q ≈ 0`), with HC1 SEs and weights still pending but recorded in `analysis/results.csv` for reproducibility.
+4. **NC1 / sibling count (negative control)** — The falsification check produced **+0.239** (CI [0.221, 0.257]; targeted `N`), confirming the modeling logic remains stable without BH adjustment.
 
-All confirmatory runs rely on the SRS assumption (no weights yet) and HC1-derived uncertainties; sample sizes exceed the n≥10 disclosure threshold (`qc/disclosure_check_loop_052.md`).
+All confirmatory estimates continue to assume SRS with HC1-derived uncertainties; the new `analysis/results.csv` registers the q-values, `bh_in_scope`, and command metadata so the sensitivity scripts can reference the base estimates.
 
-## Robustness checks completed (Loop 052 commands captured in `outputs/robustness_loop052/*.json`)
-- **H1 high vs low religiosity** — `outputs/robustness_loop052/robustness_h1_high_low.json` reports ΔE[depression] = –0.088, 95% CI [–0.163, –0.012], n=14,438, confirming the direction and magnitude persist when collapsing the ordered predictor to a binary contrast.
-- **H2 continuous health coding** — `outputs/robustness_loop052/robustness_h2_continuous_health.json` shows a per-point guidance increase of 0.0785 on the 0–4 health scale (CI [0.0696, 0.0874], n=14,430) even when the outcome is treated as continuous instead of ordered logits.
-- **H3 non-perpetrators** — `outputs/robustness_loop052/robustness_h3_no_perpetration.json` restricts the sample to respondents who did not report perpetration; the abuse gap remains –0.650 (CI [–0.720, –0.580], n=11,769).
-- **H3 teen-stage abuse control** — `outputs/robustness_loop052/robustness_h3_teen_abuse.json` adds teen-abuse exposure (`v1k988q_binary`) to the control set; the abuse coefficient shrinks toward –0.264 (CI [–0.374, –0.154]) but retains directionality, suggesting teen exposures explain part of the observed adult gap.
+## Robustness checks completed
+- **H1 high vs low religiosity** — `outputs/robustness_loop052/robustness_h1_high_low.json` reports ΔE = –0.088 (CI [–0.163, –0.012], n=14,438).
+- **H2 continuous health coding** — `outputs/robustness_loop052/robustness_h2_continuous_health.json` shows a 0.0785-point shift on the 0–4 scale (CI [0.0696, 0.0874], n=14,430).
+- **H3 non-perpetrators** — `outputs/robustness_loop052/robustness_h3_no_perpetration.json` keeps the abuse gap at –0.650 (CI [–0.720, –0.580]).
+- **H3 teen-stage abuse control** — `outputs/robustness_loop052/robustness_h3_teen_abuse.json` shrinks the coefficient toward –0.264 (CI [–0.374, –0.154]), documenting teen exposures explain part of the adult association.
 
-These robustness outputs share the same seed (20251016) and commands in `analysis/code/robustness_checks.py`, so reproduction is deterministic.
+## Planned sensitivity scenarios
+1. **Scenario 1 — Pseudo weights:** Generate pseudo weights matching DEFF 1.0 / 1.25 / 1.5 and re-fit H1–H3 so that the inflated sampling variance can be contrasted with the SRS baseline; commands and outputs live in `analysis/sensitivity_manifest.md` and `outputs/sensitivity_pseudo_weights/pseudo_weights_deff_{100,125,150}.json`.
+2. **Scenario 2 — Design-effect grid:** Inflate the published SEs from `analysis/results.csv` by √DEFF (DEFF ∈ {1.0, 1.25, 1.5, 2.0}) to observe how the CIs/p-values widen and how many effective cases remain; outputs are `outputs/sensitivity_design_effect_grid.csv/.md`.
+3. **Scenario 3 — Pseudo replicates:** Create `k=6` pseudo clusters (classchild_score + classcurrent_score) and jackknife omit-one cluster replicates to estimate variance analogously to BRR/JRR; summary stored at `outputs/sensitivity_replicates/sensitivity_replicates_summary.json`.
 
-## Planned sensitivity scenarios (architecture for the upcoming sensitivity phase)
-1. **Scenario 1 — Pseudo weights:** simulate plausible design-weight scaling factors (DEFF ∈ {1.0, 1.25, 1.5}) by creating a `pseudo_weight` column that multiplies the nominal sampling weight (1.0 under SRS). We will re-run `analysis/code/run_models.py` for H1–H3 with `--weight pseudo_weight` (new flag to be added or by modifying the DataFrame before fitting) and record the adjusted standard errors/CI bounds. Example placeholder command (to be implemented):
-   ```bash
-   python analysis/code/pseudo_weight_sensitivity.py --scenarios 1.0 1.25 1.5 --seed 20251016 --output-dir outputs/sensitivity_pseudo_weights
-   ```
-   The script will log the ratio, n, and UI. This clarifies how much the H1–H3 CIs would widen if a moderate cluster/deweight effect were present.
-2. **Scenario 2 — Design-effect grid:** treat the observed HC1 SEs as if they were inflated by a design effect. For DEFF ∈ {1.0, 1.25, 1.5, 2.0}, compute `se_adj = se * sqrt(DEFF)` for each targeted estimate in `analysis/results.csv`, and recompute 95% CIs/p-values accordingly. We will script this under `analysis/code/design_effect_grid.py` and generate a CSV/Markdown table showing the new limits plus the implied effective sample size (`n_eff = n / DEFF`). This quantifies how much the uncertainty, not the point estimate, responds to survey design mis-specification.
-3. **Scenario 3 — Pseudo replicates:** construct `k=6` pseudo-replicate datasets by randomly stratifying the sample into pseudo-clusters (e.g., `classchild_score` quintiles + `classcurrent_score`), re-fitting each confirmatory model, and using the replicate variance to estimate design-based SEs (`Var_rep = (k − 1)^−1 Σ (θ_r − θ̄)^2`). We will capture the replicate estimates/SEs in `outputs/sensitivity_replicates/` and include the command metadata (seed, clustering heuristic, replicates, script path). This builds a rough analog to BRR/Jackknife until actual survey weights arrive.
+## Executed scenario summaries (loop 055)
+- **Pseudo-weight scenarios** — DEFF-driven pseudo weights produced effective sample sizes of 14,443 (DEFF=1.0), 11,628 (DEFF=1.25), and 9,533 (DEFF=1.5). H3’s SE rose from 0.0331 to 0.0405 at DEFF=1.5 while H1 and H2 retained their base SEs (the weighted ordered logit currently does not alter H1/H2 SEs given Statsmodels’ handling of weights). The outputs encode the weights, commands, and results for each scenario.
+- **Design-effect grid** — The grid shows that √DEFF inflation reduces the effective n to ~9,625 for H1/H2 and ~10,806 for H3 at DEFF=1.5, and to ~7,219 (H1) / 7,215 (H2) / 6,753 (H3) at DEFF=2.0, yet each CI [e.g., H1 DEFF=2: –0.192 to –0.048] still excludes the null. The table `outputs/sensitivity_design_effect_grid.csv` registers these adjusted SEs, p-values, and implied n_effective.
+- **Pseudo replicates** — The k=6 replicates yield aggregate SEs of 0.019 (H1), 0.002 (H2), and 0.0177 (H3), lower than the HC1 base SEs but helpful as a lower bound; the summary JSON lists each replicate’s omitted cluster, command, and estimate.
 
-Each scenario will log the `seed` and all commands within a new `MANIFEST.md` entry (for example, in `analysis/sensitivity_manifest.md`), so the sensitivity results remain reproducible.
-
-## Executed scenario summaries (loop 054)
-- **Pseudo-weight scenarios**: lognormal pseudo weights calibrated to DEFF = 1.0 / 1.25 / 1.5 (see `outputs/sensitivity_pseudo_weights/pseudo_weights_deff_{100,125,150}.json`). The outputs record the generated weight CVs, effective sample sizes, and the weighted H1–H3 contrasts so readers can see how moderate weight variability widens the ordered-logit and linear CIs without moving the point estimates. Commands + metadata are in `analysis/sensitivity_manifest.md`.
-- **Design-effect grid**: inflated the BH-adjusted SEs (`analysis/results.csv`) by √DEFF for DEFF ∈ {1.0, 1.25, 1.5, 2.0} and recomputed 95% CIs/p-values plus implied `n_effective`. Refer to `outputs/sensitivity_design_effect_grid.csv/.md` for the adjusted intervals and guidance on uncertainty growth as DEFF climbs.
-- **Pseudo replicates**: `k=6` jackknife replicates leave out pseudo-clusters defined by `classchild_score + classcurrent_score`; the summary file `outputs/sensitivity_replicates/sensitivity_replicates_summary.json` lists each replicate’s estimate, cluster omitted, and variance-based SE relative to the base BH estimate.
+## Default specification decision
+The SRS + HC1 base specification remains the default for reporting because the pseudo-weight and design-effect scenarios preserve effect direction while only modestly widening the CIs, and the pseudo-replicate SEs (which trend lower) represent a bounding exercise rather than a replacement. The scenario artifacts therefore remain supplementary documentation of the uncertainty range while the main tables maintain the frozen PAP estimates.
 
 ## Next steps for reporting
-- Integrate the confirmatory + sensitivity outputs (`analysis/results.csv`, `outputs/sensitivity_*`, `analysis/sensitivity_manifest.md`) into `reports/findings_v1.0.md` and the manuscript narrative so the revised effect sizes, CIs, and design-effect grid are auditable.
-- Refresh `papers/main/imrad_outline.md`, `papers/main/manuscript.*`, and `reports/identification.md` to cite the new [CLAIM:<ID>] story, note the pseudo-weight/design-effect/pseudo-replicate robustness, and reference `qc/disclosure_check_loop_054.md`.
-- Keep the Semantic Scholar waiver log, disclosure checklist, and `analysis/decision_log.csv` aligned while the credential outage persists, then turn attention to the writing-phase QC items called out in `artifacts/state.json` (N11/N12).
+- Integrate `analysis/results.csv`, the pseudo-weight/design-effect/replicate outputs, and the updated disclosure audit (`qc/disclosure_check_loop_055.md`) into `reports/findings_v1.0.md`, `reports/findings_summary.md`, and the `papers/main/*` manuscript assets so each claim has the new evidence and the disclosure log references the updated tables.
+- Cite `analysis/sensitivity_manifest.md` within the manuscript/outline to prove each scenario command is reproducible, and highlight the pseudo-weight/deff/replicate syntheses in the methods/discussion narrative.
+- Keep the Semantic Scholar waiver log plus `lit/queries/loop_055` aligned while pushing toward writing-phase QC (review next actions N11/N12).

@@ -1,7 +1,8 @@
-status: frozen (commit 2b3ee167762ad47af1426ab47d392d38323d1b74, tag pap-v1)
+status: frozen
 phase: analysis
-last_updated: 2025-11-09T12:10Z
+last_updated: 2025-11-09T14:45Z
 freeze_commit: 2b3ee167762ad47af1426ab47d392d38323d1b74
+freeze_tag: pap-v1
 registry_url: https://osf.io/5x8hu
 
 # Pre-Analysis Plan — Frozen
