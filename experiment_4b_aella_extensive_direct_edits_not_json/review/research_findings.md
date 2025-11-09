@@ -581,3 +581,11 @@ P1: PASS – `qc/disclosure_check_loop_056.md` now documents the refreshed table
 N1: PASS – State remains in sensitivity until writing tasks begin, but requirements for the sensitivity→writing gate (proxy/design-effect synthesis + default-spec decision) are fully documented in `analysis/sensitivity_plan.md` and `analysis/sensitivity_manifest.md`.
 
 Notes: With the disclosure gap closed and sensitivity synthesis documented, proceed to the writing phase (manuscript parity, outline, checklist, LaTeX build) while continuing to log Semantic Scholar attempts when the credential returns.
+## Loop 069 — 2025-11-09T20:10:50.154014+00:00
+DECISION: CONTINUE
+R1: PASS – Confirmatory reruns that summarize results, apply BH, and rebuild tables cite the seeded commands (analysis/decision_log.csv:780; analysis/decision_log.csv:781; analysis/decision_log.csv:782) while the latest LaTeX build and `artifacts/seed.txt` keep the environment reproducible (papers/main/build_log.txt:3; artifacts/seed.txt:1).
+L1: PASS – The loop-069 Semantic Scholar search + CrossRef fallback are archived, and the new Poole et al. entry keeps Claim C1 DOI-backed in the evidence map and bibliography (lit/queries/loop_069/query_001.json:1; lit/evidence_map.csv:59; lit/bibliography.bib:628).
+P1: PASS – The disclosure script’s seeded audit confirms `tables/results_summary` and `figures/dag_design` exceed n≥10 with zero violations (qc/disclosure_check_loop_069.md:18).
+N1: PASS – State now sits in the review phase with `N15` (review checklist + artifacts) still pending, so advancement is gated until those deliverables are complete (artifacts/state.json:50; artifacts/state.json:57).
+Notes: Draft `reports/review_checklist.md` and gather the review artefacts before clearing the pending gate noted at `artifacts/state.json:50`/`artifacts/state.json:54`.
+
