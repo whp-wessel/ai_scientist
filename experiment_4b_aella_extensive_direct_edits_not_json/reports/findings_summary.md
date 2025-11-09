@@ -1,14 +1,13 @@
-# Findings Summary — Loop 069
-**Date:** 2025-11-09
+# Findings Summary — Loop 070
+**Date:** 2025-11-09  
 **Seed:** 20251016
 
 ## Loop updates
-- Documented the CrossRef fallback `Poole et al. 2017` (Child Abuse & Neglect, DOI `10.1016/j.chiabu.2016.12.012`) via `lit/queries/loop_069/crossref_query_002.json` and updated `lit/evidence_map.csv`/`lit/bibliography.*` so `[CLAIM:C1]` keeps DOI-backed support while the Semantic Scholar search remains blocked.
-- Re-ran `analysis/code/disclosure_check.py --output-md qc/disclosure_check_loop_069.md --seed 20251016` to reconfirm that `tables/results_summary.csv` and `figures/dag_design.png` stay above the n ≥ 10 threshold before referencing them in the manuscript.
-- Synchronized `papers/main/manuscript.md/.tex`, `papers/main/imrad_outline.md`, `qc/strobe_sampl_checklist.md`, and `reports/identification.md` with the resilience literature and the disclosure audit, documented the narrative in `reports/findings_v1.7.md`, and captured the loop-specific rationale in `notebooks/research_notebook.md`.
-- Rebuilt `papers/main/manuscript.tex` via Tectonic (`tectonic --keep-logs papers/main/manuscript.tex`) so the Poole citation, deterministic commands, and the updated `qc/disclosure_check_loop_069.md` are compiled and recorded in `papers/main/build_log.txt`; the review-phase QC & review-checklist response remain the next milestone.
+- Added the Jung (2018) article on childhood adversity, religion, and adult mental health to `lit/evidence_map.csv`, `lit/bibliography.*`, and documented the CrossRef fallback in `lit/queries/loop_071/crossref_query_003.json`, so `[CLAIM:C1]` retains DOI-backed support while Semantic Scholar continues returning 403.
+- Reran the disclosure-control automation (`python analysis/code/disclosure_check.py ... --output-md qc/disclosure_check_loop_070.md --seed 20251016`) to verify `tables/results_summary.*` and `figures/dag_design.png` still exceed $n \geq 10$ before public release.
+- Updated the review checklist to cite the new literature/disclosure evidence, and recorded the release-phase readiness in `reports/findings_v1.8.md` plus `artifacts/state.json` (loop_counter=71, new next action `N16`) so the reviewer gate stays auditable while we await the restored Semantic Scholar key.
 
 ## Next actions
-1. Advance to the review phase: update `reports/review_checklist.md`, respond to the latest entry in `review/research_findings.md`, and record the reviewer-status reconciliation in `analysis/decision_log.csv` before announcing readiness.
-2. Continue logging Semantic Scholar attempts plus CrossRef fallbacks (loop 070+) so every `[CLAIM:<ID>]` retains ≥1 DOI-backed source; persist the payloads in `lit/queries/loop_<idx>/`, refresh `lit/evidence_map.csv`, and update `lit/bibliography.*`.
-3. Preserve the STROBE/SAMPL + disclosure gating (including the DAG identification note) while prepping dossier materials so the next findings log entry can describe the review-phase handoff and any remaining gating decisions.
+1. Keep the Semantic Scholar waiver (N8) in the loop; rerun the archived queries and cross-check the responses plus ticket ID once the credential is back online.
+2. Maintain the release-phase artifacts (`reports/review_checklist.md`, `reports/findings_v1.8.md`, `qc/disclosure_check_loop_070.md`, `reports/identification.md`, and the DAG) per `N16` so the final release can proceed immediately after N8 is resolved.
+3. Monitor `review/research_findings.md` for any new reviewer directives before the release gate, and capture them in the decision log plus follow-up tasks.

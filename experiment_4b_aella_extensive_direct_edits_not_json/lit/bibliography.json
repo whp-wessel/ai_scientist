@@ -629,7 +629,7 @@
     "title": "Associations between Religious Attendance, Social Support, and Depression in Psychiatric Patients",
     "authors": [
       "Jukka Hintikka",
-      "Heimo Viinam\u00e4ki",
+      "Heimo Viinamäki",
       "Heli Koivumaa-Honkanen",
       "Antti Tanskanen",
       "Johannes Lehtonen"
@@ -815,7 +815,7 @@
   },
   {
     "id": "nature2024rewritingadversity",
-    "title": "Risks and resilience \u2014 rewriting childhood adversity",
+    "title": "Risks and resilience — rewriting childhood adversity",
     "authors": [
       "Nature Mental Health Editorial Board"
     ],
@@ -830,7 +830,7 @@
     "claim_ids": [
       "C2"
     ],
-    "notes": "Editorial synthesizes evidence that multi-system supports and trusted adult relationships can rewrite adversity trajectories, reinforcing the PAP\u2019s guidance-linked resilience framing while Semantic Scholar access remains blocked."
+    "notes": "Editorial synthesizes evidence that multi-system supports and trusted adult relationships can rewrite adversity trajectories, reinforcing the PAP’s guidance-linked resilience framing while Semantic Scholar access remains blocked."
   },
   {
     "id": "bauldry2006positivesupport",
@@ -1081,5 +1081,24 @@
       "C1"
     ],
     "notes": "Longitudinal analysis highlights resilience buffering childhood adversity → adult depression (lit/queries/loop_069/crossref_query_002.json)."
+  },
+  {
+    "id": "jung2018childhood",
+    "title": "Childhood Adversity, Religion, and Change in Adult Mental Health",
+    "authors": [
+      "Jong Hyun Jung"
+    ],
+    "year": 2018,
+    "venue": "Research on Aging",
+    "volume": "40",
+    "issue": "2",
+    "pages": "155-179",
+    "doi": "10.1177/0164027516686662",
+    "url": "https://doi.org/10.1177/0164027516686662",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "Religion buffers childhood abuse effects on positive affect in longitudinal data (lit/queries/loop_071/crossref_query_003.json)."
   }
 ]

@@ -15,7 +15,7 @@
       "status": "done"
     },
     {
-      "description": "Populate literature evidence (≥3 DOI sources) and bibliography",
+      "description": "Populate literature evidence (\u22653 DOI sources) and bibliography",
       "id": "B3",
       "priority": 2,
       "status": "done"
@@ -23,12 +23,12 @@
   ],
   "bootstrap_complete": true,
   "last_abort": null,
-  "loop_counter": 70,
+  "loop_counter": 71,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Waiver OPS-S2-2025-11-09-01 remains active; once Semantic Scholar restores the key, rerun the archived queries and append the responses + ticket ID to lit/semantic_scholar_waiver_loop013.md.",
+      "notes": "Waiver OPS-S2-2025-11-09-01 remains active; once Semantic Scholar restores the key, rerun the archived queries and append the responses + ticket ID to lit/semantic_scholar_waiver_loop013.md; this loop also logged the CrossRef fallback (lit/queries/loop_071/crossref_query_003.json) so Claim C1 stays DOI-backed.",
       "owner": "agent",
       "status": "pending"
     },
@@ -52,6 +52,13 @@
       "notes": "Draft reports/review_checklist.md, respond to review/research_findings.md, and gather the review artifacts (review checklist, manuscript log, disclosure scans) before requesting clearance.",
       "owner": "agent",
       "status": "done"
+    },
+    {
+      "description": "Prepare final release-phase artifacts",
+      "id": "N16",
+      "notes": "Consolidate the review checklist, findings log, and disclosure/identification artifacts so the release gate can be cleared immediately after N8 completes.",
+      "owner": "agent",
+      "status": "pending"
     }
   ],
   "phase": "release",
