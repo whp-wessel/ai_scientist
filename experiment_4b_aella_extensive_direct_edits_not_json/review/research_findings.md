@@ -645,3 +645,10 @@ L1: WARN – `analysis/decision_log.csv:827` lists loop-074 artifacts but no `se
 P1: PASS – `qc/disclosure_check_loop_074.md:1-15` documents the n≥10 audit (violations=0) for `tables/results_summary.csv` and `figures/dag_design.png` plus the reproducible command/seed.
 N1: PASS – `artifacts/state.json:1-36` keeps phase=release with only `N17` pending, and `papers/main/build_log.txt:1-4` records the latest successful LaTeX builds before packaging.
 
+## Loop 075 — 2025-11-09T21:48:24.015498+00:00
+DECISION: CONTINUE
+R1: PASS – Seed 20251016 is recorded in `reports/findings_v2.0.md:3` and the blocked query plus tectonic rerun are logged in `analysis/decision_log.csv:829` and `papers/main/build_log.txt:5`, so the reproducibility trail stays intact.
+L1: PASS – The new Semantic Scholar attempt (`lit/queries/loop_075/query_001.json:1`), CrossRef fallback (`lit/queries/loop_075/crossref_query_001.json:1`), evidence-map line (`lit/evidence_map.csv:64`), bibliography entry (`lit/bibliography.bib:689`), and outage ledger (`lit/semantic_scholar_waiver_loop013.md:184`) collectively keep [CLAIM:C1] DOI‑backed despite the 403s.
+P1: PASS – The disclosure audit records `tables/results_summary.csv` at n=13,507 (`qc/disclosure_check_loop_074.md:15`) and `violations: 0` (`qc/disclosure_check_loop_074.md:18`), so no small-cell breaches were released.
+N1: PASS – Release stays in phase=release with N18 pending (`artifacts/state.json:70`), and next-step instructions still await the reviewer’s `DECISION: CONTINUE` (`reports/findings_v2.0.md:12`) before advancing.
+
