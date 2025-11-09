@@ -555,3 +555,21 @@ P1: PASS – The plan notes no new tables/figures and reuses the latest disclosu
 N1: PASS – artifacts/state.json:26 lists the next actions and artifacts/state.json:56 keeps writing-phase QC (N14) pending, matching the planned gate before advancing.
 Notes: Please run/log the missing Semantic Scholar query (and CrossRef fallback if needed) for loops 065–067 before proceeding so the literature map stays compliant.
 
+## Loop 068 — 2025-11-09T19:45:00+00:00
+DECISION: CONTINUE
+R1: PASS - Loop 068 reran pseudo-weight, DEFF-grid, and pseudo-replicate scripts seeded at 20251016 (analysis/sensitivity_manifest.md; analysis/decision_log.csv:764-766) while artifacts/session_info.txt and artifacts/state.json capture the updated environment, so reproducibility remains auditable.
+L1: PASS - The failed Semantic Scholar search plus CrossRef fallback for "childhood religiosity adulthood depression protective factors" are recorded in lit/queries/loop_068/query_001.json and lit/queries/loop_068/crossref_query_001.json and tied to DOI 10.1093/oso/9780195069853.003.0006 in lit/evidence_map.csv and lit/bibliography.{bib,json}, keeping Claim C1 DOI-backed.
+P1: PASS - No new public tables or figures were released this loop (writing-phase QC still pending per analysis/decision_log.csv:771), so small-cell disclosure remains untouched.
+N1: PASS - Phase stays in "sensitivity" with writing-phase QC/review prep (next_actions N14) flagged as the next milestone in artifacts/state.json, documenting the gate before advance.
+
+Notes: Proceed with the pending writing-phase QC/build/review prep once the planned artifacts and disclosure checks are ready.
+## Loop 068 — 2025-11-09T19:35:05.234982+00:00
+## Loop 068 — 2025-11-09T19:45:00+00:00
+DECISION: CONTINUE
+R1: PASS - Loop 068 reran pseudo-weight, DEFF-grid, and pseudo-replicate scripts seeded at 20251016 (analysis/sensitivity_manifest.md; analysis/decision_log.csv:764-766) while artifacts/session_info.txt and artifacts/state.json capture the updated environment, so reproducibility remains auditable.
+L1: PASS - The failed Semantic Scholar search plus CrossRef fallback for "childhood religiosity adulthood depression protective factors" are recorded in lit/queries/loop_068/query_001.json and lit/queries/loop_068/crossref_query_001.json and tied to DOI 10.1093/oso/9780195069853.003.0006 in lit/evidence_map.csv and lit/bibliography.{bib,json}, keeping Claim C1 DOI-backed.
+P1: PASS - No new public tables or figures were released this loop (writing-phase QC still pending per analysis/decision_log.csv:771), so small-cell disclosure remains untouched.
+N1: PASS - Phase stays in "sensitivity" with writing-phase QC/review prep (next_actions N14) flagged as the next milestone in artifacts/state.json, documenting the gate before advance.
+
+Notes: Proceed with the pending writing-phase QC/build/review prep once the planned artifacts and disclosure checks are ready.
+
