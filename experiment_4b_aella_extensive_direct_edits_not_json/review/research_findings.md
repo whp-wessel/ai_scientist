@@ -439,3 +439,17 @@ P1: PASS – The disclosure script command and n≥10 threshold appear in qc/dis
 N1: PASS – State remains in the analysis phase with the Semantic Scholar replay task still pending at artifacts/state.json:77 while the sensitivity memo is marked done at artifacts/state.json:91, and that memo outlines the pseudo-weight/design-effect/replicate scenarios at analysis/sensitivity_plan.md:21 as the next work before writing.
 Notes: Execute the planned sensitivity scenarios next loop and keep archiving the 403 query artifacts until Semantic Scholar credentials are restored.
 
+## Loop 054 — 2025-11-09T14:35:37.996728+00:00
+DECISION: STOP – missing analysis/results.csv blocks reproducibility
+R1: FAIL – `analysis/results.csv` never persisted (outputs/reverted_paths_loop_054.txt:3-5) even though reports/findings_v1.0.md:7 and the sensitivity manifest cite it, so confirm-stage regeneration is impossible.
+L1: PASS – the loop_054 Semantic Scholar search is saved at `lit/queries/loop_054/query_001.json` and `analysis/decision_log.csv:566` records the 403, keeping the waiver trail live.
+P1: PASS – `qc/disclosure_check_loop_054.md:1-14` documents the n≥10 scan (tables/results_summary.* plus figures/dag) with zero violations for this release candidate.
+N1: WARN – next action N11 wants to integrate confirmatory + sensitivity outputs (artifacts/state.json:N11) but the blocked `analysis/results.csv`/`tables/results_summary.*` removal prevents fulfilling that step and leaves the sensitivity phase without its foundation.
+Notes: Restore or document why `analysis/results.csv` (and the derived tables in `tables/`) must stay blocked before continuing the sensitivity/writing plan.
+## Loop 054 — 2025-11-09T14:41:33.412601+00:00
+- Appended the Loop 054 review entry to `review/research_findings.md:442-448`, logging a STOP decision because the confirmatory outputs are missing and reproducibility cannot be guaranteed.
+- Flagged that `analysis/results.csv` (and the derived `tables/results_summary.*`) never persisted—`outputs/reverted_paths_loop_054.txt:4` shows the writes were blocked even though `reports/findings_v1.0.md:7` and `analysis/sensitivity_manifest.md` rely on them—so the BH-corrected estimates can’t be regenerated or cited.
+- Highlighted that next-action N11 (artifacts/state.json:35-38) depends on those absent files, leaving the sensitivity/writing phase stalled until the confirmatory artifacts are restored or the blocking policy is explicitly justified.
+
+Tests: not run (not requested).
+
