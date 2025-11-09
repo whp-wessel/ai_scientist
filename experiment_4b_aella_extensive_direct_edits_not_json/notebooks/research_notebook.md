@@ -405,3 +405,9 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Executed `analysis/code/disclosure_check.py --output-md qc/disclosure_check_loop_063.md` to confirm `tables/results_summary.csv` and `figures/dag_design.png` stay above the n $\geq$ 10 threshold, then compiled `papers/main/manuscript.tex` via `tectonic --keep-logs` (PASS with recorded overfull warnings and the associated log files).
 - Issued the loop-063 Semantic Scholar query (`lit/queries/loop_063/query_001.json`), captured the CrossRef fallback (`lit/queries/loop_063/crossref_query_001.json`, DOI 10.1080/19349637.2014.864543), and updated `lit/evidence_map.csv` plus the bibliography files so the resilience literature remains DOI-backed while the API remains 403.
 - Logged the loop-063 synthesis in `reports/findings_summary.md`, `reports/findings_v1.1.md`, and `analysis/decision_log.csv` so the narrative keeps pace with the deterministic commands before the writing-phase QC passes begin.
+
+## Loop 064 Updates (2025-11-09)
+- Re-ran the sensitivity suite (pseudo weights, design-effect grid, pseudo replicates) with seed 20251016 so `analysis/sensitivity_plan.md` and every `outputs/sensitivity_*` artifact mirror the new commands while `analysis/sensitivity_manifest.md` still lists the reproducible steps.
+- Rechecked the n ≥ 10 guardrail via `analysis/code/disclosure_check.py --output-md qc/disclosure_check_loop_064.md` so the refreshed tables/figures remain approved before writing-phase citations.
+- Issued the loop-064 Semantic Scholar search (403), captured the CrossRef fallback for DOI 10.1080/19349637.2014.864543, and appended the fallback row to `lit/evidence_map.csv` so [CLAIM:C1] stays DOI-backed while the API remains blocked.
+- Logged the loop-064 narrative in `reports/findings_summary.md`, `reports/findings_v1.2.md`, and `analysis/decision_log.csv` so the notebook mirrors the deterministic ledger ahead of the writing-phase QC pass.

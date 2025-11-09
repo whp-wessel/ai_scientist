@@ -22,7 +22,7 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 63,
+  "loop_counter": 64,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -55,7 +55,7 @@
     {
       "description": "Finalize writing-phase QC & review prep",
       "id": "N14",
-      "notes": "Refresh STROBE/SAMPL items, reconfirm the DAG/identification memo, and prepare the next set of review comments before advancing once all reviewer checks are green.",
+      "notes": "Sensitivity rerun complete; next focus is the writing-phase QC pass plus the remaining reviewer checklist before review.",
       "owner": "agent",
       "status": "pending"
     }
