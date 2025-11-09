@@ -22,7 +22,7 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 52,
+  "loop_counter": 53,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
@@ -67,7 +67,7 @@
       "status": "done"
     },
     {
-      "description": "Execute confirmatory H1–H3 models per frozen PAP (tag pap-v1)",
+      "description": "Execute confirmatory H1\u2013H3 models per frozen PAP (tag pap-v1)",
       "id": "N7",
       "notes": "Loop051 ran analysis/code/run_models.py + calc_bh.py and seeded NC1 falsification; confirmed outputs stored under analysis/results.csv.",
       "owner": "agent",
@@ -76,7 +76,7 @@
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Replayed loop_008-013 plus a new loop_053 attempt (query about emotional abuse → self-compassion); the S2 key still returns 403, so keep logging payloads and await the support response before closing this item.",
+      "notes": "Replayed loop_008-013 plus a new loop_053 attempt (query about emotional abuse \u2192 self-compassion); the S2 key still returns 403, so keep logging payloads and await the support response before closing this item.",
       "owner": "agent",
       "status": "pending"
     },
