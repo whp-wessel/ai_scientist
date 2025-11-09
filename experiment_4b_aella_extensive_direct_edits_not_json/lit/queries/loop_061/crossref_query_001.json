@@ -1,0 +1,126 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2025,
+        7,
+        8
+      ]
+    ],
+    "date-time": "2025-07-08T18:40:10Z",
+    "timestamp": 1752000010258,
+    "version": "3.41.2"
+  },
+  "reference-count": 0,
+  "publisher": "Medwin Publishers",
+  "issue": "2",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "MHRIJ"
+  ],
+  "DOI": "10.23880/mhrij-16000182",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        25
+      ]
+    ],
+    "date-time": "2022-08-25T11:26:14Z",
+    "timestamp": 1661426774000
+  },
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "title": [
+    "The Spirituality and Religiosity of Transgender Persons and Mental Health"
+  ],
+  "prefix": "10.23880",
+  "volume": "6",
+  "author": [
+    {
+      "given": "Niemiec",
+      "family": "S",
+      "sequence": "first",
+      "affiliation": []
+    }
+  ],
+  "member": "9969",
+  "published-online": {
+    "date-parts": [
+      [
+        2022
+      ]
+    ]
+  },
+  "container-title": [
+    "Mental Health &amp; Human Resilience International Journal"
+  ],
+  "original-title": [
+    "The Spirituality and Religiosity of Transgender Persons and Mental Health"
+  ],
+  "link": [
+    {
+      "URL": "https://medwinpublishers.com/MHRIJ/the-spirituality-and-religiosity-of-transgender-persons-and-mental-health.pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        7,
+        8
+      ]
+    ],
+    "date-time": "2025-07-08T18:20:42Z",
+    "timestamp": 1751998842000
+  },
+  "score": 32.884457,
+  "resource": {
+    "primary": {
+      "URL": "https://medwinpublishers.com/MHRIJ/the-spirituality-and-religiosity-of-transgender-persons-and-mental-health.pdf"
+    }
+  },
+  "issued": {
+    "date-parts": [
+      [
+        2022
+      ]
+    ]
+  },
+  "references-count": 0,
+  "journal-issue": {
+    "issue": "2",
+    "published-online": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.23880/mhrij-16000182",
+  "ISSN": [
+    "2578-5095"
+  ],
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "2578-5095"
+    }
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2022
+      ]
+    ]
+  }
+}
