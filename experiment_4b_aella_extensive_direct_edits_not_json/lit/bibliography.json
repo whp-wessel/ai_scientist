@@ -1201,5 +1201,27 @@
       "C1"
     ],
     "notes": "CrossRef fallback at lit/queries/loop_078/crossref_query_002.json keeps [CLAIM:C1] DOI-backed while the Semantic Scholar search still returns 403."
+  },
+  {
+    "id": "smokowski1999resilience",
+    "title": "Resilience and Protective Factors in Adolescence",
+    "authors": [
+      "Paul R. Smokowski",
+      "Arthur J. Reynolds",
+      "Nikolaus Bezruczko"
+    ],
+    "year": 1999,
+    "venue": "Journal of School Psychology",
+    "volume": "37",
+    "issue": "4",
+    "pages": "425-448",
+    "publisher": "Elsevier BV",
+    "doi": "10.1016/S0022-4405(99)00028-X",
+    "url": "https://doi.org/10.1016/S0022-4405(99)00028-X",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "CrossRef fallback at lit/queries/loop_080/crossref_query_004.json keeps [CLAIM:C1] DOI-backed after the Semantic Scholar CLI search for 'survey design adolescent resilience' returned HTTP 403 (lit/queries/loop_080/query_001.json)."
   }
 ]
