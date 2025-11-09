@@ -22,7 +22,7 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 64,
+  "loop_counter": 65,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -55,7 +55,7 @@
     {
       "description": "Finalize writing-phase QC & review prep",
       "id": "N14",
-      "notes": "Sensitivity rerun complete; next focus is the writing-phase QC pass plus the remaining reviewer checklist before review.",
+      "notes": "Loop 065 refreshed the pseudo-weight, design-effect, and pseudo-replicate suite; the remaining writing-phase QC (manuscript parity, outline, checklist, LaTeX build) + reviewer checklist remain the next milestone before the review gate.",
       "owner": "agent",
       "status": "pending"
     }
