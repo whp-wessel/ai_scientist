@@ -16,7 +16,8 @@
 
 ## Seeds and Versions
 - Global seed: 20251016 (`config/agent_config.yaml`).
-- PAP freeze tag: TBD (record here once created).
+- PAP freeze tag: pap-v1 (commit 2b3ee167762ad47af1426ab47d392d38323d1b74).
+- Phase: release (phase_ix 7; all deliverables tied to this frozen PAP).
 
 ## Notes
 - Add each confirmatory figure/table with: relative path, generating script + command, git commit hash.

@@ -22,13 +22,8 @@
     }
   ],
   "bootstrap_complete": true,
-  "last_abort": {
-    "loop": 74,
-    "note": "Interrupted during loop execution",
-    "phase": "loop",
-    "ts": "2025-11-09T21:07:37.394513+00:00"
-  },
-  "loop_counter": 73,
+  "last_abort": null,
+  "loop_counter": 74,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -61,13 +56,20 @@
     {
       "description": "Prepare final release-phase artifacts",
       "id": "N16",
-      "notes": "Loop 073 refreshed the review checklist, findings summary/log, and release-ready notes so the final gate can clear the moment N8 (credential replay) finishes.",
+      "notes": "Loop 074 refreshed the review checklist, findings summary/log, STROBE checklist, and disclosure scan so the frozen PAP now aligns with the release candidate while the waiver-backed crossref evidence holds [CLAIM:C1].",
+      "owner": "agent",
+      "status": "done"
+    },
+    {
+      "description": "Package final release deliverables",
+      "id": "N17",
+      "notes": "Run the LaTeX build (tectonic), finalize `reports/findings_v2.0`, confirm manuscript parity, and ensure the release package cites `qc/disclosure_check_loop_074.md` plus the CrossRef fallback before stamping the release-phase gate.",
       "owner": "agent",
       "status": "pending"
     }
   ],
   "phase": "release",
-  "phase_ix": 6,
+  "phase_ix": 7,
   "stop_now": false,
   "stop_reason": null,
   "total_loops": 80

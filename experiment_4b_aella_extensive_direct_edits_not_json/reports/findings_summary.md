@@ -1,13 +1,13 @@
-# Findings Summary — Loop 073
+# Findings Summary — Loop 074
 **Date:** 2025-11-09  
 **Seed:** 20251016
 
 ## Loop updates
-- Replayed the blocked Semantic Scholar query (loop 073) and logged the HTTP 403 response in `lit/queries/loop_073/query_001.json` so the outage track (N8) remains auditable while the S2 credential is down.
-- Logged a CrossRef fallback (Morris & Hays-Grudo 2023, DOI `10.1002/wps.21042`) in `lit/queries/loop_073/crossref_query_001.json` and synced it to `lit/evidence_map.csv` + `lit/bibliography.*`, keeping `[CLAIM:C1]` DOI-backed as we continue to await Semantic Scholar access.
-- Updated the release-phase dossiers (`reports/review_checklist.md`, `artifacts/state.json`, `reports/findings_v1.9.md`) through `N16` so the final gate can clear immediately once the blocked query succeeds.
+- Logged the CrossRef fallback for Morris & Hays-Grudo 2023 (World Psychiatry 2023) in `lit/queries/loop_073/crossref_query_001.json`, `lit/evidence_map.csv`, and `lit/bibliography.*` so `[CLAIM:C1]` stays DOI-backed while Semantic Scholar remains offline.
+- Updated the release-phase dossiers (review checklist, findings log, manuscript, identification memo, imprint manifest, and STROBE/SAMPL checklist) as part of `N16`, keeping the frozen PAP and final tables in sync before public release.
+- Reran the disclosure audit for the release candidate (`qc/disclosure_check_loop_074.md` references `tables/results_summary.*` and `figures/dag_design.png`) so every published artifact still satisfies the $n \geq 10$ guardrail.
 
 ## Next actions
-1. Keep `N8` alive: rerun the archived Semantic Scholar query after the S2 key recovers, log the response, and fold any new DOI-backed evidence into `lit/evidence_map.csv` + `lit/bibliography.*`.
-2. Continue preparing the release-phase packets tracked by `N16` (review checklist, findings summary, identification memo, disclosure scans, DAG figure, build log) so no additional edits are needed when the literature barrier breaks.
-3. Watch `review/research_findings.md` for new reviewer directives; log the updates and adjust the release backlog before claiming the release-phase gate.
+1. Finalize the release package by completing the LaTeX build (log `papers/main/build_log.txt`), sealing the manuscript/manuscript.md parity, and preparing the final `reports/findings_v2.0` version.
+2. Keep the CrossRef/waiver ledger ready for `N8` (resume Semantic Scholar once OPS restores the S2 credential) so every claim continues to cite DOI-backed sources without throttling the release gate.
+3. Watch `review/research_findings.md` for new reviewer instructions, log any follow-ups that arrive, and tie them to future next actions before declaring the release-phase gate satisfied.

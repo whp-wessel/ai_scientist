@@ -311,8 +311,20 @@ Overfull \hbox (44.14938pt too wide) in paragraph at lines 30--31
 /disclosure_check_loop_069.md\TU/lmr/m/n/12 )
  []
 
-(manuscript.bbl) [3] (manuscript.aux)
+
+Overfull \hbox (75.53604pt too wide) in paragraph at lines 32--33
+[]\TU/lmr/m/n/12 All \TU/lmtt/m/n/12 [CLAIM:C*] \TU/lmr/m/n/12 statements cite 
+DOI-backed references recorded in \TU/lmtt/m/n/12 lit/bibliography.*
+ []
+
+
+Overfull \hbox (117.67606pt too wide) in paragraph at lines 32--33
+\TU/lmr/m/n/12 and the waiver ledger plus CrossRef fallbacks (\TU/lmtt/m/n/12 l
+it/queries/loop_073/crossref_query_001.json\TU/lmr/m/n/12 ,
+ []
+
+(manuscript.bbl [3]) [4] (manuscript.aux)
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: A8AE686D7EAC89D6CD0A4E4B40AC4F47;543.
  )
-Output written on manuscript.xdv (3 pages, 54780 bytes).
+Output written on manuscript.xdv (4 pages, 58664 bytes).

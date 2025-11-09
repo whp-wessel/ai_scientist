@@ -23,5 +23,7 @@ Pseudo-weight scenarios (DEFF = 1.0, 1.25, 1.5) from `outputs/sensitivity_pseudo
 ## Discussion
 The consistent wellbeing signals align with the DOI-backed literature entries in `lit/evidence_map.csv`/`lit/bibliography.*` and the descriptive framing in `reports/identification.md`. Limitations include the SRS assumption (weights pending), single-item measures (documented in `qc/measures_validity.md`), and retrospective recall of abuse/guidance; these issues motivated the sensitivity suite recorded above. The disclosure audit (`qc/disclosure_check_loop_069.md`) confirms no table/figure exhibits cells below $n \geq 10$, and the negative control NC1 demonstrates the modeling pipeline resists obvious artifacts.
 
+All `[CLAIM:C*]` statements cite DOI-backed references recorded in `lit/bibliography.*` (e.g., Morris & Hays-Grudo 2023 in World Psychiatry 2023 anchors `[CLAIM:C1]`), and the waiver ledger plus CrossRef fallbacks (`lit/queries/loop_073/crossref_query_001.json`, `lit/semantic_scholar_waiver_loop013.md`) keep the literature trail auditable while Semantic Scholar remains offline.
+
 ## References
 See `lit/bibliography.bib` / `lit/bibliography.json` for the citations referenced above.

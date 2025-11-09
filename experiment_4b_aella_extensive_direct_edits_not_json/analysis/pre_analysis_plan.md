@@ -1,6 +1,6 @@
-status: frozen
-phase: analysis
-last_updated: 2025-11-09T14:45Z
+status: frozen (commit 2b3ee167762ad47af1426ab47d392d38323d1b74, tag pap-v1)
+phase: release
+last_updated: 2025-11-09T21:30Z
 freeze_commit: 2b3ee167762ad47af1426ab47d392d38323d1b74
 freeze_tag: pap-v1
 registry_url: https://osf.io/5x8hu
@@ -9,6 +9,8 @@ registry_url: https://osf.io/5x8hu
 This PAP was frozen on **2025-11-09T12:10Z** at commit `2b3ee167762ad47af1426ab47d392d38323d1b74` (tag `pap-v1`) after satisfying: (1) Evidence map + bibliography each loop with ≥3 DOI-backed sources per outcome, (2) Measurement validity dossier updated via `analysis/code/measure_validity_checks.py`, and (3) executable analysis code with logged regeneration commands.
 
 Loop 050 freeze note: Ops approved Semantic Scholar waiver **OPS-S2-2025-11-09-01**, authorized reliance on the recorded CrossRef evidence trail, and confirmed that registry entry `https://osf.io/5x8hu` locks this PAP. Confirmatory work must cite this registry URL plus tag `pap-v1`.
+
+Loop 073 release update: Final release-phase dossiers (review checklist, findings log, disclosure audit, manuscript, and DAG/figure inventory) now reference the frozen PAP and remain ready for publication once the literature gate closes.
 
 > Historical loop notes below document the blocker prior to the freeze; statements such as “PAP remains draft” describe the status at that time.
 
