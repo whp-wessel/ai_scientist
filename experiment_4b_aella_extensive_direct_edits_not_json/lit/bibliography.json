@@ -1041,5 +1041,24 @@
       "C1"
     ],
     "notes": "CrossRef fallback for spirituality-resilience while Semantic Scholar stays 403; supports Claim C1."
+  },
+  {
+    "id": "stack1992religiosity",
+    "title": "Religiosity, Depression, and Suicide",
+    "authors": [
+      "Steven Stack"
+    ],
+    "year": 1992,
+    "venue": "Religion and Mental Health",
+    "volume": "",
+    "issue": "",
+    "pages": "87-97",
+    "doi": "10.1093/oso/9780195069853.003.0006",
+    "url": "https://doi.org/10.1093/oso/9780195069853.003.0006",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "CrossRef fallback recorded via loop_068 while Semantic Scholar continues returning 403 for this query."
   }
 ]

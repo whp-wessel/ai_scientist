@@ -22,7 +22,7 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 67,
+  "loop_counter": 68,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -55,7 +55,7 @@
     {
       "description": "Finalize writing-phase QC & review prep",
       "id": "N14",
-      "notes": "Loop 067 reran the sensitivity suite with new loop-specific outputs, so the writing-phase QC (manuscript parity, outline, checklist, LaTeX build, reviewer checklist) still lies ahead before review.",
+      "notes": "Loop 068 reran the sensitivity suite with new loop-specific outputs and logged the loop-068 Semantic Scholar query/CrossRef fallback so the literature gate stays compliant while the writing-phase QC (manuscript parity, outline, checklist, LaTeX build, reviewer checklist) still lies ahead before review.",
       "owner": "agent",
       "status": "pending"
     }
