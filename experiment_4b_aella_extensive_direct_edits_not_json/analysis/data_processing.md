@@ -116,6 +116,63 @@ This ledger enumerates every dataset transformation executed so far, the exact c
 - **Outputs:** `qc/disclosure_check_loop_006.md`
 - **Notes:** Currently only structural DAG tracked; violations = 0.
 
+## DP9 — Confirmatory H1–H3 JSON summaries (Loop 051)
+- **Purpose:** Execute the frozen PAP estimators deterministically (draws=400) so each hypothesis has a stable JSON record.
+- **Inputs:** `data/raw/childhoodbalancedpublic_original.csv`, `docs/codebook.json`, `config/agent_config.yaml`
+- **Command:**
+  ```bash
+  python analysis/code/run_models.py \
+    --hypothesis all \
+    --config config/agent_config.yaml \
+    --seed 20251016 \
+    --draws 400 \
+    --output-prefix outputs/run_models_loop051
+  ```
+- **Outputs:** `outputs/run_models_loop051_H1.json`, `outputs/run_models_loop051_H2.json`, `outputs/run_models_loop051_H3.json`
+- **Notes:** Each JSON includes diagnostics, effect summaries, and the exact command used; these files feed into the pre-BH table.
+
+## DP10 — Negative Control Falsification (Loop 051)
+- **Purpose:** Document a falsification check (NC1) that should produce no meaningful association to reassure against spurious links.
+- **Inputs:** same as DP9 plus the helper script `analysis/code/negative_control.py`.
+- **Command:**
+  ```bash
+  python analysis/code/negative_control.py \
+    --config config/agent_config.yaml \
+    --seed 20251016 \
+    --output outputs/negative_control_loop051.json
+  ```
+- **Outputs:** `outputs/negative_control_loop051.json`
+- **Notes:** The script now labels the row as `targeted=N` so the BH step ignores it while still recording effect size/CI.
+
+## DP11 — Results aggregation (Loop 051)
+- **Purpose:** Consolidate the JSON summaries (confirmatory + falsification) into `analysis/results_pre_bh.csv` with SEs, CI, p-values, and metadata.
+- **Inputs:** `outputs/run_models_loop051_H1.json`, `outputs/run_models_loop051_H2.json`, `outputs/run_models_loop051_H3.json`, `outputs/negative_control_loop051.json`
+- **Command:**
+  ```bash
+  python analysis/code/summarize_results.py \
+    --json-paths outputs/run_models_loop051_H1.json \
+      outputs/run_models_loop051_H2.json \
+      outputs/run_models_loop051_H3.json \
+      outputs/negative_control_loop051.json \
+    --output-csv analysis/results_pre_bh.csv
+  ```
+- **Outputs:** `analysis/results_pre_bh.csv`
+- **Notes:** Defaults `targeted=Y` unless JSON overrides it; also injects `limitations` + `confidence_rating` tags per hypothesis.
+
+## DP12 — Benjamini–Hochberg correction (Loop 051)
+- **Purpose:** Apply family-level FDR control at q=0.05 for targeted hypotheses and produce machine-readable summaries.
+- **Inputs:** `analysis/results_pre_bh.csv`, `config/agent_config.yaml`
+- **Command:**
+  ```bash
+  python analysis/code/calc_bh.py \
+    --config config/agent_config.yaml \
+    --input-csv analysis/results_pre_bh.csv \
+    --output-csv analysis/results.csv \
+    --summary-json artifacts/bh_summary.json
+  ```
+- **Outputs:** `analysis/results.csv`, `artifacts/bh_summary.json`
+- **Notes:** Script now casts `bh_in_scope` to string to avoid dtype warnings and writes the adjusted `q_value` column.
+
 ## Pending Entries
 - Add Scenario-specific sensitivity analyses once PAP freezes and confirmatory runs begin.
 - Update this ledger when additional derived datasets, tables, or figures are produced.

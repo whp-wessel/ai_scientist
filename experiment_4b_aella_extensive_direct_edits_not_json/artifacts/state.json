@@ -22,7 +22,7 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 50,
+  "loop_counter": 51,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
@@ -69,14 +69,21 @@
     {
       "description": "Execute confirmatory H1–H3 models per frozen PAP (tag pap-v1)",
       "id": "N7",
-      "notes": "Run analysis/code/run_models.py + calc_bh.py, log disclosure reviews, and cite registry URL https://osf.io/5x8hu before publishing tables.",
+      "notes": "Loop051 ran analysis/code/run_models.py + calc_bh.py and seeded NC1 falsification; confirmed outputs stored under analysis/results.csv.",
       "owner": "agent",
-      "status": "pending"
+      "status": "done"
     },
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
       "notes": "Per waiver clause OPS-S2-2025-11-09-01, re-run the archived queries and attach the new payloads + support response once Semantic Scholar re-enables the credential.",
+      "owner": "agent",
+      "status": "pending"
+    },
+    {
+      "description": "Run prescribed robustness/falsification checks after confirmatory estimates",
+      "id": "N9",
+      "notes": "Execute the pre-specified alternative codings (H1 high/low, H2 continuous health, H3 teen abuse/perpetration) and log outputs before drafting sensitivity notes.",
       "owner": "agent",
       "status": "pending"
     }

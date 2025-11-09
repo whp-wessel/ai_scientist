@@ -374,3 +374,11 @@ Details captured in `analysis/hypotheses.csv` with family assignments for later 
 - Propagated the Arslan DOI through `lit/evidence_map.csv`, `lit/bibliography.bib/.json`, and `lit/semantic_scholar_waiver_loop013.md` (now Loop 050, ≥43 failures) to keep H3 backed by DOI sources while the API outage continues.
 - Updated `analysis/pre_analysis_plan.md` (status=draft, last_updated 11:48Z) with the Loop 050 blocker note, rolled `qc/data_checks.md` to Loop 050 (header fix requested by reviewer), and documented the narrative here; no public tables/figures were released, so disclosure controls still reference `qc/disclosure_check_loop_006.md`.
 - Refreshed `artifacts/state.json` (loop_counter=50, phase PAP, stop_now=false) keeping backlog item N1 blocked until the 2025-11-09 ops memo + 2025-11-10 support ticket resolve the Semantic Scholar credential.
+
+## Loop 51 Updates (2025-11-09)
+- Repro checkpoint refreshed via `runner.update_reproducibility()` before confirmatory edits (see `artifacts/session_info.txt`, `artifacts/checksums.json`, `artifacts/repro_report.md`, `artifacts/seed.txt`).
+- Ran `analysis/code/run_models.py --hypothesis all --seed 20251016 --draws 400 --output-prefix outputs/run_models_loop051` so the PAP outcomes and predictors now have final JSON summaries.
+- Executed `analysis/code/negative_control.py --seed 20251016 --output outputs/negative_control_loop051.json` to log falsification NC1 (religiosity → sibling count) explicitly tagged as `targeted=N`.
+- Aggregated the JSONs into `analysis/results_pre_bh.csv` via `analysis/code/summarize_results.py` and applied BH correction with `analysis/code/calc_bh.py`, producing `analysis/results.csv` + `artifacts/bh_summary.json`.
+- Final results now live in `tables/results_summary.csv/.md` (seeded, q-values reported, `qc/disclosure_check_loop_051.md` confirms no n<10 cells); NC1 is recorded in `analysis/results.csv` but excluded from the public summary table.
+- Logged the loop in `reports/findings_v1.0.md` (draft) and plan to tackle the next robustness/sensitivity checks plus narrative text for the manuscript.

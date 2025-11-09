@@ -1,8 +1,8 @@
 # Reproducibility Report
 
-- Generated: 2025-11-09T11:46:11.015759+00:00
-- Git HEAD: d244a76be01981ff6bb8a0bfea24f1252f2953ae
-- Model: gpt-5-codex
+- Generated: 2025-11-09T12:54:43.951799+00:00
+- Git HEAD: 201d46883e242ff2109a10f48b25d5803fb0ec6e
+- Model: gpt-5-codex-mini
 - Network access: not specified
 
 Artifacts:

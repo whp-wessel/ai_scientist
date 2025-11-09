@@ -48,6 +48,7 @@ def apply_bh(df: pd.DataFrame) -> pd.DataFrame:
         df["q_value"] = ""
     if "bh_in_scope" not in df.columns:
         df["bh_in_scope"] = ""
+    df["bh_in_scope"] = df["bh_in_scope"].astype(str)
 
     for family, fam_df in df.groupby("family"):
         q_values = compute_bh_for_family(fam_df)
