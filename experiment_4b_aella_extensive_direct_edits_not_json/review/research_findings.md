@@ -539,3 +539,19 @@ L1: WARN – No Semantic Scholar query files were added for loop_066 (the last r
 P1: PASS – No new public tables/figures were produced, and `qc/disclosure_check_loop_064.md` (n ≥ 10 audit, `violations: 0`) still covers `tables/results_summary.csv` and `figures/dag_design.png`, keeping disclosure safeguards intact.
 N1: PASS – `artifacts/state.json` still shows `phase: "sensitivity"`/`phase_ix: 3` with N14 (writing-phase QC/build prep) pending, and `reports/findings_v1.4.md` reiterates that the manuscript/checklist/build steps are the next gating actions.
 
+## Loop 067 — 2025-11-09T19:20:00.000000+00:00
+DECISION: STOP – Loop 067 lacks documented Semantic Scholar query
+R1: PASS – The plan records seed 20251016 (analysis/sensitivity_plan.md:3) and decision log entry 753 ties the pseudo-weight rerun to deterministic outputs, keeping the scenario reruns reproducible.
+L1: FAIL – The literature log stops at loop 064 (analysis/decision_log.csv:723); loop-067 entries (analysis/decision_log.csv:753) cover only sensitivity reruns and no `lit/queries/loop_067` directory exists, so the required query was never archived.
+P1: PASS – The plan notes no new tables/figures and reuses the latest disclosure audit (qc/disclosure_check_loop_064.md:1, violations=0) to keep n≥10 protections in place.
+N1: PASS – artifacts/state.json:26 lists the next actions and artifacts/state.json:56 keeps writing-phase QC (N14) pending, matching the planned gate before advancing.
+Notes: Please run/log the missing Semantic Scholar query (and CrossRef fallback if needed) for loops 065–067 before proceeding so the literature map stays compliant.
+## Loop 067 — 2025-11-09T19:13:24.829557+00:00
+## Loop 067 — 2025-11-09T19:20:00.000000+00:00
+DECISION: STOP – Loop 067 lacks documented Semantic Scholar query
+R1: PASS – The plan records seed 20251016 (analysis/sensitivity_plan.md:3) and decision log entry 753 ties the pseudo-weight rerun to deterministic outputs, keeping the scenario reruns reproducible.
+L1: FAIL – The literature log stops at loop 064 (analysis/decision_log.csv:723); loop-067 entries (analysis/decision_log.csv:753) cover only sensitivity reruns and no `lit/queries/loop_067` directory exists, so the required query was never archived.
+P1: PASS – The plan notes no new tables/figures and reuses the latest disclosure audit (qc/disclosure_check_loop_064.md:1, violations=0) to keep n≥10 protections in place.
+N1: PASS – artifacts/state.json:26 lists the next actions and artifacts/state.json:56 keeps writing-phase QC (N14) pending, matching the planned gate before advancing.
+Notes: Please run/log the missing Semantic Scholar query (and CrossRef fallback if needed) for loops 065–067 before proceeding so the literature map stays compliant.
+
