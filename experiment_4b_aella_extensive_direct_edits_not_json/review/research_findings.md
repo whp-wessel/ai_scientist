@@ -484,3 +484,10 @@ L1: PASS – loop_058’s Semantic Scholar search (lit/queries/loop_058/query_00
 P1: PASS – qc/disclosure_check_loop_058.md:15 reports tables/results_summary.csv’s n≥13,507 and qc/disclosure_check_loop_058.md:18 records `violations: 0`, so the small-cell threshold is enforced before any publication-ready artifact is released.
 N1: PASS – artifacts/state.json:26 keeps next actions N8–N12 pending and artifacts/state.json:49 shows the phase remains “sensitivity”, so gating and the plan to integrate confirmatory/sensitivity outputs before writing stay justified.
 
+## Loop 059 — 2025-11-09T16:35:04.888755+00:00
+DECISION: CONTINUE
+R1: PASS – Seed 20251016 stays logged in artifacts/seed.txt and the reruns documented in analysis/decision_log.csv (run_models_loop059, pseudo_weight_sensitivity_loop059, etc.) plus the MANIFEST update cover the deterministic commands for loop 059 outputs.
+L1: PASS – Semantic Scholar query saved at lit/queries/loop_059/query_001.json with the CrossRef fallback in lit/queries/loop_059/crossref_query_001.json, and DOI 10.1332/17579597y2024d000000035 appears in lit/evidence_map.csv plus lit/bibliography.bib/json for [CLAIM:C2].
+P1: PASS – qc/disclosure_check_loop_059.md documents the n ≥ 10 audit for tables/results_summary.csv and figures/dag_design.png with `violations: 0` using analysis/code/disclosure_check.py, so no small-cell leaks occurred.
+N1: PASS – artifacts/state.json stays in phase “sensitivity” (phase_ix=3) with next actions N8–N12 still pending, so the gating rationale toward writing/review remains intact.
+
