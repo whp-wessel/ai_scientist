@@ -1,6 +1,6 @@
-# Measurement Validity Dossier (Loop 003)
+# Measurement Validity Dossier (Loop 062)
 
-_Command_: `python analysis/code/measure_validity_checks.py --config config/agent_config.yaml --output-md qc/measures_validity.md --output-json artifacts/measurement_validity_loop059.json`
+_Command_: `python analysis/code/measure_validity_checks.py --config config/agent_config.yaml --output-md qc/measures_validity.md --output-json artifacts/measurement_validity_loop061.json`
 
 measure_id | item_wording | coding | reliability_alpha | dif_check | notes
 --- | --- | --- | --- | --- | ---

@@ -15,33 +15,40 @@
       "status": "done"
     },
     {
-      "description": "Populate literature evidence (\u22653 DOI sources) and bibliography",
+      "description": "Populate literature evidence (≥3 DOI sources) and bibliography",
       "id": "B3",
       "priority": 2,
       "status": "done"
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 61,
+  "loop_counter": 62,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Logged loops 054–060 query failures (403) and loop_061 now adds CrossRef metadata (DOI 10.23880/mhrij-16000182) under `lit/queries/loop_061/` so DOI coverage stays auditable while the waiver remains active.",
+      "notes": "Loops 054–061 logged 403s and CrossRef fallbacks; continue issuing searches (e.g., `lit/queries/loop_061/`) until the S2 key or waiver is fully resolved so every claim stays DOI-backed.",
       "owner": "agent",
       "status": "pending"
     },
     {
       "description": "Integrate confirmatory + sensitivity outputs into the manuscript/outline",
       "id": "N11",
-      "notes": "Sensitivity assets have been refreshed (analysis/results.csv, tables/results_summary.*, outputs/sensitivity_*); the manuscript, outline, and identification memo still need to reference them so every `[CLAIM:<ID>]` cites deterministic outputs.",
+      "notes": "Completed with `papers/main/manuscript.*`, `papers/main/imrad_outline.md`, `reports/identification.md`, `qc/strobe_sampl_checklist.md`, and `reports/findings_v1.1.md` referencing the rerun artifacts.",
       "owner": "agent",
-      "status": "pending"
+      "status": "done"
     },
     {
       "description": "Prepare writing-phase QC & review prep",
       "id": "N12",
-      "notes": "After the confirmatory + sensitivity rerun, refresh `qc/strobe_sampl_checklist.md`, `qc/measures_validity.md`, and the decision log so the QC record matches the updated assets before moving into writing/review QC work.",
+      "notes": "Checklist (STROBE/SAMPL) and measurement dossier refreshed; note that the disclosure audit now uses `qc/disclosure_check_loop_061.md` and measurement JSON `artifacts/measurement_validity_loop061.json`.",
+      "owner": "agent",
+      "status": "done"
+    },
+    {
+      "description": "Writing-phase QC & build",
+      "id": "N13",
+      "notes": "Run the deterministic LaTeX build, log `LaTeX build: PASS` in `papers/main/build_log.txt`, and verify any new tables/figures via the disclosure scan before advancing to review.",
       "owner": "agent",
       "status": "pending"
     }
