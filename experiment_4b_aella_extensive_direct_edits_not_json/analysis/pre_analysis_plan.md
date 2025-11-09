@@ -1,6 +1,6 @@
 status: draft
 phase: pap
-last_updated: 2025-11-08T23:04Z
+last_updated: 2025-11-08T23:15Z
 freeze_commit: TBD
 registry_url: TBD
 
@@ -87,6 +87,8 @@ Loop 046 note: Semantic Scholar again returned HTTP 403 for the mandated `"child
 Loop 047 note: The `"childhood trusted adult resilience adult mental health"` query (`lit/queries/loop_047/query_001.json`) also produced HTTP 403, so we archived the payload, logged it in the waiver memo, and captured CrossRef metadata for Berson & Baggerly (2009; DOI `10.1080/00094056.2009.10521404`). Their practice article shows how safe, predictable early-childhood classrooms led by trusted adults build resilience for trauma-exposed children, reinforcing H2’s guided-support estimands and the need to document which survey items proxy those supports (e.g., `pqo6jmj`, mentorship indicators) before PAP freeze. PAP status therefore remains `draft` until ops executes the scheduled 2025-11-09 memo / 2025-11-10 support escalation or Semantic Scholar access is restored.
 
 Loop 048 note: The `"childhood mentor buffering adult mental health resilience"` query (`lit/queries/loop_048/query_001.json`) returned HTTP 403 again, so we logged the failure for the waiver trail and pulled CrossRef metadata for Glenn (2014; DOI `10.1080/19349637.2014.864543`) via `lit/queries/loop_048/crossref_query_001.json`. Glenn’s spirituality-grounded mentorship casework underlines how faith-based trusted adults buffer trauma-exposed emerging adults, strengthening H2’s mentorship estimands while we keep identifying survey proxies for those protective adult anchors. PAP status stays `draft` pending the 2025-11-09 ops memo dispatch and the 2025-11-10 Semantic Scholar support ticket if credentials remain blocked.
+
+Loop 049 note: Loop-mandated query `"childhood mentoring supportive adult depression coping"` (`lit/queries/loop_049/query_001.json`) returned another HTTP 403, so we captured the payload plus CrossRef metadata for the Journal of Adolescent Health mentor report (DOI `10.1016/S1054-139X(97)87629-X`; see `lit/queries/loop_049/crossref_query_002.json`) and added it to the evidence map/bibliographies/waiver log. The new source documents reduced adolescent risk behaviors when a trusted adult mentor is present, bolstering H2’s estimand design while the API outage continues. PAP status therefore remains `draft`; we will execute the 2025-11-09 ops memo and 2025-11-10 Semantic Scholar support ticket if the credential is still failing.
 
 ## Design Summary
 - **Population:** Respondents in `data/raw/childhoodbalancedpublic_original.csv`, aged ≥18.
