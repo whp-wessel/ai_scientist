@@ -23,7 +23,7 @@
   ],
   "bootstrap_complete": true,
   "last_abort": null,
-  "loop_counter": 69,
+  "loop_counter": 70,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -51,11 +51,11 @@
       "id": "N15",
       "notes": "Draft reports/review_checklist.md, respond to review/research_findings.md, and gather the review artifacts (review checklist, manuscript log, disclosure scans) before requesting clearance.",
       "owner": "agent",
-      "status": "pending"
+      "status": "done"
     }
   ],
-  "phase": "review",
-  "phase_ix": 5,
+  "phase": "release",
+  "phase_ix": 6,
   "stop_now": false,
   "stop_reason": null,
   "total_loops": 80
