@@ -597,3 +597,11 @@ P1: PASS – the disclosure audit reports n≥10 thresholds with zero violations
 N1: PASS – release-phase gating is recorded (loop_counter=70, phase=release) with the Semantic Scholar replay still queued as next action, so the experiment can continue (`artifacts/state.json:26`, `artifacts/state.json:29`, `artifacts/state.json:57`).
 Notes: Semantic Scholar replay (N8) remains pending; rerun the archived query once access is restored before the final release.
 
+## Loop 071 — 2025-11-09T20:38:15.021728+00:00
+DECISION: CONTINUE
+R1: PASS – Seed 20251016/environment captured in `artifacts/session_info.txt:1` plus `reports/findings_v1.8.md:1` while `qc/disclosure_check_loop_070.md:1` records the seeded disclosure command, preserving reproducibility.
+L1: PASS – Loop 071 logged the blocked Semantic Scholar call (`lit/queries/loop_071/query_001.json`; `analysis/decision_log.csv:799`) and the CrossRef backup (`lit/queries/loop_071/crossref_query_003.json`; `lit/evidence_map.csv:60`; `lit/bibliography.bib:639`) so [CLAIM:C1] keeps DOI-based coverage.
+P1: PASS – `qc/disclosure_check_loop_070.md:1` documents the n≥10 scan of `tables/results_summary.*` and `figures/dag_design.png` with zero violations, echoed in `reports/review_checklist.md:4` before any public release.
+N1: WARN – Release-phase artifacts/checklist are updated (`reports/review_checklist.md:4`; `artifacts/state.json:20-35`), but next action N8 (Semantic Scholar replay) remains pending, so the final gate awaits the credential restoration.
+Notes: Re-run the archived Semantic Scholar queries once the S2 key recovers and push the responses into the evidence map/bibliography before declaring the release gate satisfied.
+
