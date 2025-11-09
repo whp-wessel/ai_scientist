@@ -1,0 +1,7 @@
+DECISION: CONTINUE
+R1: PASS – seed/command provenance is logged in artifacts/session_info.txt (seed 20251016) and qc/disclosure_check_loop_061.md, while decision_log entries capture the rerun/bh commands so regeneration is deterministic.
+L1: PASS – the loop_061 Semantic Scholar CLI query and CrossRef fallback are stored in lit/queries/loop_061/ and cited in analysis/decision_log.csv/evidence_map/bibliography so [CLAIM:C1] remains DOI-backed during the outage.
+P1: PASS – qc/disclosure_check_loop_061.md shows the seeded disclosure_check.py scan, n≥10 enforcement, and zero violations for tables/results_summary.csv and figures/dag_design.png.
+N1: PASS – artifacts/state.json keeps the phase at “sensitivity” while next actions N8–N12 remain pending, so gating holds until the manuscript/outline/QC integration is complete.
+
+Notes: Finish N11/N12 (manuscript references plus QC refresh) before advancing to the writing phase.

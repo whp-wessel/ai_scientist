@@ -499,3 +499,12 @@ P1: PASS – qc/disclosure_check_loop_060.md documents the n ≥ 10 audit fo
 N1: PASS – artifacts/state.json still lists phase=sensitivity (phase_ix=3) with next actions N8–N12 pending and stop_now=false, so the writing/review transition remains blocked until the manuscript/QC/literature steps finish.
 Notes: Continue replaying the blocked Semantic Scholar queries once credentials return to keep the literature log current.
 
+## Loop 061 — 2025-11-09T17:16:46.026785+00:00
+DECISION: CONTINUE
+R1: PASS – seed/command provenance is logged in artifacts/session_info.txt (seed 20251016) and qc/disclosure_check_loop_061.md, while decision_log entries capture the rerun/bh commands so regeneration is deterministic.
+L1: PASS – the loop_061 Semantic Scholar CLI query and CrossRef fallback are stored in lit/queries/loop_061/ and cited in analysis/decision_log.csv/evidence_map/bibliography so [CLAIM:C1] remains DOI-backed during the outage.
+P1: PASS – qc/disclosure_check_loop_061.md shows the seeded disclosure_check.py scan, n≥10 enforcement, and zero violations for tables/results_summary.csv and figures/dag_design.png.
+N1: PASS – artifacts/state.json keeps the phase at “sensitivity” while next actions N8–N12 remain pending, so gating holds until the manuscript/outline/QC integration is complete.
+
+Notes: Finish N11/N12 (manuscript references plus QC refresh) before advancing to the writing phase.
+
