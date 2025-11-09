@@ -1060,5 +1060,26 @@
       "C1"
     ],
     "notes": "CrossRef fallback recorded via loop_068 while Semantic Scholar continues returning 403 for this query."
+  },
+  {
+    "id": "poole2017protective",
+    "title": "Childhood adversity and adult depression: The protective role of psychological resilience",
+    "authors": [
+      "Julia C. Poole",
+      "Keith S. Dobson",
+      "Dennis Pusch"
+    ],
+    "year": 2017,
+    "venue": "Child Abuse & Neglect",
+    "volume": "64",
+    "issue": "",
+    "pages": "89-100",
+    "doi": "10.1016/j.chiabu.2016.12.012",
+    "url": "https://doi.org/10.1016/j.chiabu.2016.12.012",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "Longitudinal analysis highlights resilience buffering childhood adversity → adult depression (lit/queries/loop_069/crossref_query_002.json)."
   }
 ]

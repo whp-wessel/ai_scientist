@@ -3,9 +3,9 @@ Updated: 2025-11-09
 Seed: 20251016
 
 ## Study Stance
-- The current PAP phase remains **descriptive**: the regressions for childhood religiosity, parental guidance, and emotional abuse are associations under the SRS + HC1 assumption, and the sensitivity plan (`analysis/sensitivity_plan.md`) documents alternative specifications (pseudo weights, design-effect grid, pseudo replicates) before any causal claims are attempted. `analysis/results.csv`, `analysis/sensitivity_plan.md`, and `analysis/pre_analysis_plan.md` anchor the descriptive reporting.
+    - The current PAP phase remains **descriptive**: the regressions for childhood religiosity, parental guidance, and emotional abuse are associations under the SRS + HC1 assumption, and the sensitivity plan (`analysis/sensitivity_plan.md`) documents alternative specifications (pseudo weights, design-effect grid, pseudo replicates) before any causal claims are attempted. `analysis/results.csv`, `analysis/sensitivity_plan.md`, and `analysis/pre_analysis_plan.md` anchor the descriptive reporting, and we keep Claim C1 DOI-backed through Poole et al. (2017, Child Abuse & Neglect) recorded in `lit/evidence_map.csv` plus the fallback log `lit/queries/loop_069/crossref_query_002.json` while Semantic Scholar refuses the same query.
 - We continue to rely on the SRS assumption articulated in `docs/survey_design.yaml`; any future introduction of design weights or instruments must be re-registered. Measurement validity for each outcome/predictor is documented in `qc/measures_validity.md` plus the JSON summary (`artifacts/measurement_validity_loop061.json`), ensuring DIF/reliability diagnostics precede effect interpretation.
-- The disclosure scan (`qc/disclosure_check_loop_061.md`) shows that `tables/results_summary.csv`, `tables/results_summary.md`, and `figures/dag_design.png` remain above $n \geq 10$ before referencing them in public reports, so the data release plan meets the STROBE/SAMPL small-cell thresholds.
+    - The disclosure scan (`qc/disclosure_check_loop_069.md`) shows that `tables/results_summary.csv`, `tables/results_summary.md`, and `figures/dag_design.png` remain above $n \geq 10$ before referencing them in public reports, so the data release plan meets the STROBE/SAMPL small-cell thresholds.
 - The pseudo-weight/design-effect/pseudo-replicate experiments expand the uncertainty envelope while confirming the HC1-based estimates, supporting the descriptive interpretation in the absence of valid weights.
 
 ## DAG Reference
@@ -23,5 +23,5 @@ Seed: 20251016
 
 ## Next Actions
 - Keep `reports/identification.md` synchronized with DAG or PAP adjustments and document any new causal assumptions (e.g., instruments, natural experiments) before expanding the causal language.
-- Continue logging blocked Semantic Scholar queries plus CrossRef fallbacks until the S2 key returns or the waiver is formalized.
+    - Continue logging blocked Semantic Scholar queries plus CrossRef fallbacks (e.g., `lit/queries/loop_069/crossref_query_002.json`) until the S2 key returns or the waiver is formalized.
 - After the writing-phase QC pass (STROBE/SAMPL checklist update, LaTeX build log, new disclosure scans), revisit this memo to confirm the assumptions still hold and to reference the updated figures/tables.

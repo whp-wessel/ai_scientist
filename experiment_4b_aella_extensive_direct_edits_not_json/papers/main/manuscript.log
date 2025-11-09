@@ -267,9 +267,9 @@ analysis/code/calc_bh.py\TU/lmr/m/n/12 ,
  []
 
 
-Overfull \hbox (63.90938pt too wide) in paragraph at lines 17--18
-\TU/lmr/m/n/12 pectation behind H2. Measurement checks are summarized in \TU/lm
-tt/m/n/12 qc/measures_validity.md
+Overfull \hbox (24.88937pt too wide) in paragraph at lines 17--18
+\TU/lmr/m/n/12 [CLAIM:C1]. Measurement checks are summarized in \TU/lmtt/m/n/12
+ qc/measures_validity.md
  []
 
 
@@ -306,17 +306,13 @@ U/lmtt/m/n/12 qc/measures_validity.md\TU/lmr/m/n/12 ),
  []
 
 
-Overfull \hbox (44.16138pt too wide) in paragraph at lines 30--31
+Overfull \hbox (44.14938pt too wide) in paragraph at lines 30--31
 \TU/lmr/m/n/12 suite documented above. The disclosure audit (\TU/lmtt/m/n/12 qc
-/disclosure_check_loop_061.md\TU/lmr/m/n/12 )
+/disclosure_check_loop_069.md\TU/lmr/m/n/12 )
  []
 
-(manuscript.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [3] (manuscript.aux)
+(manuscript.bbl) [3] (manuscript.aux)
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: A8AE686D7EAC89D6CD0A4E4B40AC4F47;543.
  )
-Output written on manuscript.xdv (3 pages, 50012 bytes).
+Output written on manuscript.xdv (3 pages, 54780 bytes).

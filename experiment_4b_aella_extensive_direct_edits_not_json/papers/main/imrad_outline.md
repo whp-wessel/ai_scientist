@@ -1,7 +1,7 @@
-# IMRaD Outline — Loop 062
+# IMRaD Outline — Loop 069
 
 ## Introduction
-- I1: Describe the Childhood Resilience dataset, codebook, and SRS assumption (`data/raw/childhoodbalancedpublic_original.csv`, `docs/codebook.json`, `docs/survey_design.yaml`), linking to the measurement dossier (`qc/measures_validity.md`, `artifacts/measurement_validity_loop061.json`) and the descriptive framing in `reports/identification.md`. [CLAIM:C1]
+- I1: Describe the Childhood Resilience dataset, codebook, and SRS assumption (`data/raw/childhoodbalancedpublic_original.csv`, `docs/codebook.json`, `docs/survey_design.yaml`), linking to the measurement dossier (`qc/measures_validity.md`, `artifacts/measurement_validity_loop061.json`), the descriptive framing in `reports/identification.md`, and the new resilience evidence (Poole et al. 2017, Child Abuse & Neglect) recorded in `lit/evidence_map.csv` (`lit/queries/loop_069/crossref_query_002.json`). [CLAIM:C1]
 - I2: Summarize theoretical mechanisms linking childhood religiosity, parental guidance, and emotional abuse to adult wellbeing, referencing DOI-backed literature in `lit/evidence_map.csv` that motivates H1–H3. [CLAIM:C2]
 - I3: Emphasize deterministic reproducibility via `analysis/pre_analysis_plan.md`, the frozen PAP tag `pap-v1`, and the sensitivity plan (`analysis/sensitivity_plan.md`). [CLAIM:C3]
 
@@ -19,4 +19,4 @@
 ## Discussion
 - D1: Situate the consistent wellbeing family signals relative to the DOI-backed literature in `lit/evidence_map.csv` and maintain the descriptive tone from `reports/identification.md`.
 - D2: Highlight limitations (unweighted SRS assumption, single-item measures, recall bias) and reference the measurement dossier (`qc/measures_validity.md`) before attributing any directional claims.
-- D3: Emphasize robustness: pseudo-weight/design-effect/pseudo-replicate scenarios preserve effect direction while the disclosure audit (`qc/disclosure_check_loop_061.md`) keeps `tables/results_summary.*` and `figures/dag_design.png` above the n ≥ 10 threshold.
+- D3: Emphasize robustness: pseudo-weight/design-effect/pseudo-replicate scenarios preserve effect direction while the disclosure audit (`qc/disclosure_check_loop_069.md`) keeps `tables/results_summary.*` and `figures/dag_design.png` above the n ≥ 10 threshold.

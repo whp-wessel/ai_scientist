@@ -1,4 +1,4 @@
-# STROBE + SAMPL Checklist — Loop 062
+# STROBE + SAMPL Checklist — Loop 069
 
 | item | status | description | artifact |
 | --- | --- | --- | --- |
@@ -7,5 +7,5 @@
 | Measures / measurement validity | PASS | Each PAP outcome/predictor is listed with wording, coding, reliability, and DIF checks (`qc/measures_validity.md` / `artifacts/measurement_validity_loop061.json`). | `qc/measures_validity.md` / `analysis/code/measure_validity_checks.py` |
 | Results / effect estimates | PASS | H1–H3 effect sizes, CIs, q-values, and the NC1 falsification appear in `analysis/results.csv` and `tables/results_summary.csv/.md`, covering effect reporting requirements. | `tables/results_summary.csv` / `analysis/results.csv` |
 | Uncertainty / sensitivity | PASS | Pseudo-weight, design-effect, and pseudo-replicate scripts document how DEFF and jackknife draws shift SEs while keeping effects on the same side of zero (`analysis/sensitivity_plan.md`). | `analysis/sensitivity_plan.md` / `outputs/sensitivity_*` |
-| Disclosure / privacy | PASS | `qc/disclosure_check_loop_061.md` audits every release-ready table/figure (e.g., `tables/results_summary.*`, `figures/dag_design.png`) to confirm n ≥ 10 before publication. | `qc/disclosure_check_loop_061.md` |
-| Literature mapping | PASS | Literature queries (Semantic Scholar 403 + CrossRef fallback) and DOI-backed references feed `lit/evidence_map.csv` and `lit/bibliography.*` for each `[CLAIM:<ID>]`. | `lit/evidence_map.csv` / `lit/bibliography.*` / `lit/queries/loop_061/` |
+| Disclosure / privacy | PASS | `qc/disclosure_check_loop_069.md` audits every release-ready table/figure (e.g., `tables/results_summary.*`, `figures/dag_design.png`) to confirm n ≥ 10 before publication. | `qc/disclosure_check_loop_069.md` |
+| Literature mapping | PASS | Literature queries (Semantic Scholar 403 + CrossRef fallback) and DOI-backed references feed `lit/evidence_map.csv` and `lit/bibliography.*` for each `[CLAIM:<ID>]`; loop 069 captures Poole et al. 2017 via `lit/queries/loop_069/crossref_query_002.json`. | `lit/evidence_map.csv` / `lit/bibliography.*` / `lit/queries/loop_069/` |

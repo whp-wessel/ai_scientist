@@ -22,13 +22,8 @@
     }
   ],
   "bootstrap_complete": true,
-  "last_abort": {
-    "loop": 69,
-    "note": "Interrupted during loop execution",
-    "phase": "loop",
-    "ts": "2025-11-09T19:36:02.440934+00:00"
-  },
-  "loop_counter": 68,
+  "last_abort": null,
+  "loop_counter": 69,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -40,20 +35,27 @@
     {
       "description": "Sync manuscripts/outline with confirmatory + sensitivity outputs",
       "id": "N13",
-      "notes": "Use analysis/results.csv, tables/results_summary.*, the pseudo-weight/design-effect/replicate artifacts, and qc/disclosure_check_loop_056.md to refresh papers/main/manuscript.*, papers/main/imrad_outline.md, and reports/identification.md per the writing-phase gate.",
+      "notes": "Use analysis/results.csv, tables/results_summary.*, the pseudo-weight/design-effect/replicate artifacts, and qc/disclosure_check_loop_069.md to refresh papers/main/manuscript.*, papers/main/imrad_outline.md, and reports/identification.md per the writing-phase gate.",
       "owner": "agent",
-      "status": "pending"
+      "status": "done"
     },
     {
       "description": "Writing-phase QC & build prep",
       "id": "N14",
       "notes": "Update qc/strobe_sampl_checklist.md and reports/findings_v*.md, then run LaTeX (log in papers/main/build_log.txt) before handing off to the review phase.",
       "owner": "agent",
+      "status": "done"
+    },
+    {
+      "description": "Advance the review-phase gate",
+      "id": "N15",
+      "notes": "Draft reports/review_checklist.md, respond to review/research_findings.md, and gather the review artifacts (review checklist, manuscript log, disclosure scans) before requesting clearance.",
+      "owner": "agent",
       "status": "pending"
     }
   ],
-  "phase": "writing",
-  "phase_ix": 4,
+  "phase": "review",
+  "phase_ix": 5,
   "stop_now": false,
   "stop_reason": null,
   "total_loops": 80
