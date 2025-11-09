@@ -23,7 +23,7 @@
   ],
   "bootstrap_complete": true,
   "last_abort": null,
-  "loop_counter": 76,
+  "loop_counter": 80,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -78,6 +78,13 @@
       "description": "Document release completion",
       "id": "N19",
       "notes": "Loop 076 matches the release checklist, findings summary, and notebook to the reviewer clearance so the experiment is ready for final publishing/citation.",
+      "owner": "agent",
+      "status": "done"
+    },
+    {
+      "description": "Archive the final release package",
+      "id": "N20",
+      "notes": "Flagged `reports/findings_v2.2.md`, `qc/disclosure_check_loop_076.md`, and the reviewer checklist as the canonical release bundle for downstream archiving.",
       "owner": "agent",
       "status": "done"
     }
