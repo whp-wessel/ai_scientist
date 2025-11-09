@@ -524,3 +524,11 @@ P1: PASS – `qc/disclosure_check_loop_064.md` reran `analysis/code/disclosure_c
 N1: PASS – `artifacts/state.json` keeps `phase: "sensitivity"` with N14 (writing-phase QC) pending and `reports/findings_v1.2.md` enumerates the next writing/QC tasks, so gating and the plan for the upcoming QC pass remain justified.
 Notes: Continue with the pending writing-phase QC/checklist/LaTeX build and then return for the next review loop.
 
+## Loop 065 — 2025-11-09T18:39:59.773363+00:00
+DECISION: CONTINUE
+R1: PASS – Entries pseudo_weight_sensitivity_loop065 (18:30:01Z), design_effect_grid_loop065 (18:30:14Z), and pseudo_replicates_loop065 (18:31:31Z) in `analysis/decision_log.csv` cite seed 20251016, and `artifacts/session_info.txt` restates that seed/env, so the loop-065 sensitivity reruns remain deterministic.
+L1: PASS – No new claims appeared this loop; `lit/evidence_map.csv:57` still ties [CLAIM:C1] to CrossRef DOI 10.1080/19349637.2014.864543 via `lit/queries/loop_064/crossref_query_001.json`, keeping the literature log compliant while Semantic Scholar stays blocked.
+P1: PASS – Loop 065 emitted only internal sensitivity outputs, so the latest public audit (`qc/disclosure_check_loop_064.md`, `violations: 0`) still covers `tables/results_summary.csv` and `figures/dag_design.png` under the n ≥ 10 rule.
+N1: PASS – `artifacts/state.json` holds `phase="sensitivity"` with N14 (writing-phase QC) pending, and `reports/findings_v1.3.md` next steps rehearse the manuscript/checklist/build refresh before review, so the gating decision remains justified.
+Notes: Continue the writing-phase QC/build tasks and log any new Semantic Scholar/CrossRef queries before the next review loop.
+
