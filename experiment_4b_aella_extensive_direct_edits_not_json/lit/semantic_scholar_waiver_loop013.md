@@ -159,3 +159,14 @@ Loop 054 maintains the 403 streak while the waiver remains active; we will keep 
 | 057 | 2025-11-09T15:46:28Z | "childhood survey weighting pseudo replicates" | 403 Forbidden | `lit/queries/loop_057/query_001.json` |
 
 Loops 055–057 continue the outage log; we will keep recording the 403 responses until the key is repaired or the support ticket closes.
+
+## Continued Outage Log (Loop 072)
+| Loop | Timestamp (UTC) | Query | Status | Artifact |
+| --- | --- | --- | --- | --- |
+| 072 | 2025-11-09T20:39:05Z | "childhood resilience adult mental health protective factors" | 403 Forbidden | `lit/queries/loop_072/query_001.json` |
+
+Loop 072 extends the outage stream; the OPS-S2-2025-11-09-01 waiver remains active while we await Semantic Scholar support.
+
+## Fallback Evidence & Bibliography Updates (Loop 072)
+- **Nature Mental Health Editorial Board (2024), DOI `10.1038/s44220-024-00375-2`** — CrossRef metadata saved in `lit/queries/loop_072/crossref_query_001.json`; the editorial frames how multi-system supports and trusted adults rewrite adversity while the S2 key is blocked and will be cited for [CLAIM:C1].
+- **Economic and Social Research Institute (2021), DOI `10.26504/rs120`** — The Growing Up in Ireland risk/protective-factors report is documented in the same CrossRef response and keeps the relational-protection narrative for [CLAIM:C1] alive while the waiver/OPS ticket remains open.

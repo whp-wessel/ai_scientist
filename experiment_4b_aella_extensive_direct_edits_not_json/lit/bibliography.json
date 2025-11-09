@@ -1101,4 +1101,47 @@
     ],
     "notes": "Religion buffers childhood abuse effects on positive affect in longitudinal data (lit/queries/loop_071/crossref_query_003.json)."
   }
+  ,
+  {
+    "id": "nature2024risks",
+    "title": "Risks and resilience — rewriting childhood adversity",
+    "authors": [
+      "Nature Mental Health Editorial Board"
+    ],
+    "year": 2024,
+    "venue": "Nature Mental Health",
+    "volume": "2",
+    "issue": "12",
+    "pages": "1429-1430",
+    "doi": "10.1038/s44220-024-00375-2",
+    "url": "https://doi.org/10.1038/s44220-024-00375-2",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "Editorial argues multi-system supports and trusted adults can rewrite adversity; metadata from lit/queries/loop_072/crossref_query_001.json keeps Claim C1 DOI-backed during the S2 outage."
+  },
+  {
+    "id": "nolan2021risk",
+    "title": "Risk and protective factors for mental health and wellbeing in childhood and adolescence",
+    "authors": [
+      "Anne Nolan",
+      "Emer Smyth",
+      "Will Rosenow",
+      "Sana Yousuf",
+      "Economic and Social Research Institute (ESRI)"
+    ],
+    "year": 2021,
+    "venue": "Economic and Social Research Institute (ESRI)",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.26504/rs120",
+    "url": "https://doi.org/10.26504/rs120",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "Growing Up in Ireland cohorts show parent/peer/teacher relationships buffer adversity; crossref metadata recorded at lit/queries/loop_072/crossref_query_001.json while the S2 key returns 403."
+  }
 ]

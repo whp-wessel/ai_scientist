@@ -23,12 +23,12 @@
   ],
   "bootstrap_complete": true,
   "last_abort": null,
-  "loop_counter": 71,
+  "loop_counter": 72,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Waiver OPS-S2-2025-11-09-01 remains active; once Semantic Scholar restores the key, rerun the archived queries and append the responses + ticket ID to lit/semantic_scholar_waiver_loop013.md; this loop also logged the CrossRef fallback (lit/queries/loop_071/crossref_query_003.json) so Claim C1 stays DOI-backed.",
+      "notes": "Waiver OPS-S2-2025-11-09-01 remains active; loop 072 replayed the blocked query (lit/queries/loop_072/query_001.json) while the key still returns 403, logged the CrossRef fallback (lit/queries/loop_072/crossref_query_001.json), and added the Nature Mental Health/ESRI entries so Claim C1 retains DOI coverage until the credential is restored.",
       "owner": "agent",
       "status": "pending"
     },
