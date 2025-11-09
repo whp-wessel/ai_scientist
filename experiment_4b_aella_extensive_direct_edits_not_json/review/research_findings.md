@@ -614,3 +614,11 @@ N1: PASS – `artifacts/state.json` still shows phase=release with next action N
 
 Notes: Await OPS-S2-2025-11-09-01 key restoration before completing N8/N16 and closing the release-phase gate.
 
+## Loop 073 — 2025-11-09T21:06:27.517127+00:00
+DECISION: CONTINUE
+R1: PASS – Seed 20251016 appears in `reports/findings_v1.9.md:3` and `artifacts/session_info.txt:6`, and `analysis/decision_log.csv:815` archives the replayed Semantic Scholar call so the command trail is deterministic.
+L1: WARN – Semantic Scholar still returns 403 (`lit/queries/loop_073/query_001.json:1`), so we rely on the CrossRef fallback archived at `lit/queries/loop_073/crossref_query_001.json:1`, `lit/evidence_map.csv:63`, and `lit/bibliography.bib:684`; keep `N8` active as described in `reports/findings_v1.9.md:7`.
+P1: PASS – `qc/disclosure_check_loop_070.md:18` reports `violations: 0` for the release table/figure, and the checklist reiterates that no further suppression was required (`reports/review_checklist.md:12`).
+N1: WARN – Release-phase gate still waits on pending `N8` (Semantic Scholar credential) documented in `artifacts/state.json:29` and `reports/review_checklist.md:12`; do not clear the gate until we capture the successful query response.
+Notes: Resume the blocked query when OPS-S2-2025-11-09-01 restores access so the canonical metadata can feed `lit/evidence_map.csv`/`lit/bibliography.*` before final release.
+
