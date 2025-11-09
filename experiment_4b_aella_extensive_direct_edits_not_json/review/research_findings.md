@@ -630,3 +630,18 @@ P1: PASS – No additional release artifacts were produced; disclosure coverage 
 N1: PASS – With N8 cleared under the waiver, the remaining release tasks (N16) are the only blockers before final sign-off.
 
 Notes: Proceed with the remaining release checklist items; resume Semantic Scholar logging only after OPS issues a working key.
+
+## Loop 074 — 2025-11-09T21:34:17+0000
+DECISION: CONTINUE
+R1: PASS – The frozen PAP header and `artifacts/seed.txt:1` fix the seed, and `analysis/decision_log.csv:823,827` records the loop-074 commands that regenerate the release tables/figures.
+L1: WARN – `analysis/decision_log.csv:827` lists loop-074 artifacts but no `semantic_scholar_query_loop074` or `lit/queries/loop_074/`, so the latest literature log remains `lit/queries/loop_073/crossref_query_001.json` and this loop never archived the mandated search.
+P1: PASS – `qc/disclosure_check_loop_074.md:1-15` documents the n≥10 audit (violations=0) for `tables/results_summary.csv` and `figures/dag_design.png` plus the reproducible command/seed.
+N1: PASS – `artifacts/state.json:1-36` keeps phase=release with only `N17` pending, and `papers/main/build_log.txt:1-4` records the latest successful LaTeX builds before packaging.
+## Loop 074 — 2025-11-09T21:35:57.861613+00:00
+## Loop 074 — 2025-11-09T21:34:17+0000
+DECISION: CONTINUE
+R1: PASS – The frozen PAP header and `artifacts/seed.txt:1` fix the seed, and `analysis/decision_log.csv:823,827` records the loop-074 commands that regenerate the release tables/figures.
+L1: WARN – `analysis/decision_log.csv:827` lists loop-074 artifacts but no `semantic_scholar_query_loop074` or `lit/queries/loop_074/`, so the latest literature log remains `lit/queries/loop_073/crossref_query_001.json` and this loop never archived the mandated search.
+P1: PASS – `qc/disclosure_check_loop_074.md:1-15` documents the n≥10 audit (violations=0) for `tables/results_summary.csv` and `figures/dag_design.png` plus the reproducible command/seed.
+N1: PASS – `artifacts/state.json:1-36` keeps phase=release with only `N17` pending, and `papers/main/build_log.txt:1-4` records the latest successful LaTeX builds before packaging.
+
