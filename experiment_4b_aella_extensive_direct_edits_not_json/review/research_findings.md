@@ -652,3 +652,10 @@ L1: PASS – The new Semantic Scholar attempt (`lit/queries/loop_075/query_001.j
 P1: PASS – The disclosure audit records `tables/results_summary.csv` at n=13,507 (`qc/disclosure_check_loop_074.md:15`) and `violations: 0` (`qc/disclosure_check_loop_074.md:18`), so no small-cell breaches were released.
 N1: PASS – Release stays in phase=release with N18 pending (`artifacts/state.json:70`), and next-step instructions still await the reviewer’s `DECISION: CONTINUE` (`reports/findings_v2.0.md:12`) before advancing.
 
+## Loop 076 — 2025-11-09T22:01:03.965695+00:00
+DECISION: CONTINUE
+R1: PASS – The loop-076 auto-log (analysis/decision_log.csv:838) plus session_info (artifacts/session_info.txt:1-7) capture the seed, git head, and release-bundle regeneration trace so reproducibility stays intact.
+L1: PASS – Review checklist and findings note the Conkbayir (2023) CrossRef fallback (lit/queries/loop_075/crossref_query_001.json; lit/evidence_map.csv:64; lit/bibliography.bib:694-695) that keeps [CLAIM:C1] DOI-backed while Semantic Scholar is offline.
+P1: PASS – No new tables/figures were released; qc/disclosure_check_loop_074.md:1 plus findings_summary.md:1 still document n≥10 and `violations: 0`.
+N1: PASS – artifacts/state.json records phase=release with all next actions done, and reports/findings_v2.1.md:1-3 outlines archiving/monitoring steps, so the release gate reasoning is explicit.
+
