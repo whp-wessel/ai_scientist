@@ -55,6 +55,7 @@ The waiver, ticket ID, and acknowledgement summary are cited in `analysis/decisi
 | 045 | 2025-11-08T22:32:05Z | "childhood trusted adult scaffold adult depression resilience" | 403 Forbidden | `lit/queries/loop_045/query_001.json` |
 | 046 | 2025-11-08T22:43:35Z | "childhood mentorship adult depression resilience" | 403 Forbidden | `lit/queries/loop_046/query_001.json` |
 | 047 | 2025-11-08T22:53:58Z | "childhood trusted adult resilience adult mental health" | 403 Forbidden | `lit/queries/loop_047/query_001.json` |
+| 053 | 2025-11-09T13:56:22Z | "childhood emotional abuse adult self compassion resilience" | 403 Forbidden | `lit/queries/loop_053/query_001.json` |
 
 _All JSON payloads include the endpoint, query params, and Semantic Scholar error body for reproducibility._
 
