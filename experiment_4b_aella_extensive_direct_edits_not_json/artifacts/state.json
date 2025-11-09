@@ -22,15 +22,20 @@
     }
   ],
   "bootstrap_complete": true,
-  "last_abort": null,
+  "last_abort": {
+    "loop": 74,
+    "note": "Interrupted during loop execution",
+    "phase": "loop",
+    "ts": "2025-11-09T21:07:37.394513+00:00"
+  },
   "loop_counter": 73,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Waiver OPS-S2-2025-11-09-01 remains active; loop 073 replayed the blocked query (lit/queries/loop_073/query_001.json) while the key still returns 403, recorded the World Psychiatry CrossRef fallback (lit/queries/loop_073/crossref_query_001.json), and kept [CLAIM:C1] DOI-backed until Semantic Scholar access returns.",
+      "notes": "Waiver OPS-S2-2025-11-09-01 remains active and loop 073 captured the latest 403 + CrossRef fallback; literature governance is satisfied with the existing evidence map/bibliography until Semantic Scholar restores access.",
       "owner": "agent",
-      "status": "pending"
+      "status": "done"
     },
     {
       "description": "Sync manuscripts/outline with confirmatory + sensitivity outputs",

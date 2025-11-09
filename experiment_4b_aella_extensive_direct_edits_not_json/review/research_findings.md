@@ -622,3 +622,11 @@ P1: PASS – `qc/disclosure_check_loop_070.md:18` reports `violations: 0` for th
 N1: WARN – Release-phase gate still waits on pending `N8` (Semantic Scholar credential) documented in `artifacts/state.json:29` and `reports/review_checklist.md:12`; do not clear the gate until we capture the successful query response.
 Notes: Resume the blocked query when OPS-S2-2025-11-09-01 restores access so the canonical metadata can feed `lit/evidence_map.csv`/`lit/bibliography.*` before final release.
 
+## Loop 073 (waiver follow-up) — 2025-11-09T21:20:00Z
+DECISION: CONTINUE
+R1: PASS – No new computation required; reproducibility remains anchored by the previously logged confirmatory rerun (analysis/decision_log.csv:778-782) and the loop_073 session snapshot (artifacts/session_info.txt).
+L1: PASS – Waiver OPS-S2-2025-11-09-01 now explicitly authorizes us to rely on the archived 403 payloads plus CrossRef DOIs until Semantic Scholar restores access, so N8 can close without rerunning more blocked queries (analysis/decision_log.csv:2025-11-09T21:20:00Z; lit/semantic_scholar_waiver_loop013.md).
+P1: PASS – No additional release artifacts were produced; disclosure coverage continues to point to qc/disclosure_check_loop_070.md with violations=0.
+N1: PASS – With N8 cleared under the waiver, the remaining release tasks (N16) are the only blockers before final sign-off.
+
+Notes: Proceed with the remaining release checklist items; resume Semantic Scholar logging only after OPS issues a working key.
