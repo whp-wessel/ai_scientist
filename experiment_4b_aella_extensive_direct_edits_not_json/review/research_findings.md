@@ -659,3 +659,16 @@ L1: PASS – Review checklist and findings note the Conkbayir (2023) CrossRef fa
 P1: PASS – No new tables/figures were released; qc/disclosure_check_loop_074.md:1 plus findings_summary.md:1 still document n≥10 and `violations: 0`.
 N1: PASS – artifacts/state.json records phase=release with all next actions done, and reports/findings_v2.1.md:1-3 outlines archiving/monitoring steps, so the release gate reasoning is explicit.
 
+## Loop 077 — 2025-11-09T22:07:57.378177+00:00
+DECISION: CONTINUE – release-phase reproducibility/state artifacts remain tracked.
+
+R1: PASS – Loop-077 auto-log (`analysis/decision_log.csv:843`) plus `artifacts/session_info.txt:1-7` anchor the seed/git head and link to the commands that refreshed the release package documented in `reports/findings_v2.2.md:1-6`.
+
+L1: WARN – There is no `semantic_scholar_query_loop_077` entry nor a `lit/queries/loop_077/` directory, while the last captured literature record is loop_075’s CrossRef fallback (`lit/queries/loop_075/crossref_query_001.json`), so this loop lacks a new query log.
+
+P1: PASS – `qc/disclosure_check_loop_076.md:1-18` (n≥10, `violations: 0`) together with `reports/findings_summary.md:2` prove the disclosure audit command/sample has been rerun and no small-cell leaks were released.
+
+N1: PASS – `artifacts/state.json:1-36` still reports phase=release with every next action marked done, and `reports/findings_v2.2.md:7-12` spells out the archiving/hand-off steps, so the gate’s rationale remains justified.
+
+Notes: Please capture the next Semantic Scholar attempt (or approved fallback) so the per-loop literature requirement stays explicit for future loops.
+
