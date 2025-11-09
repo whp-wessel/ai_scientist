@@ -63,6 +63,8 @@ REQUIRED_ALIASES = [
     "classteen",
     "siblingnumber",
     "mentalillness",
+    "v1k988q",
+    "rapist",
 ]
 
 
@@ -244,6 +246,9 @@ def prepare_variables(df: pd.DataFrame) -> pd.DataFrame:
     prepared["classteen_score"] = numeric_series(prepared["classteen"])
     prepared["siblingnumber"] = numeric_series(prepared["siblingnumber"])
     prepared["mentalillness"] = numeric_series(prepared["mentalillness"])
+    prepared["v1k988q_score"] = numeric_series(prepared["v1k988q"])
+    prepared["v1k988q_binary"] = likert_binary(prepared["v1k988q_score"])
+    prepared["rapist"] = numeric_series(prepared["rapist"])
     return prepared
 
 

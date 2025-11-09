@@ -1,0 +1,63 @@
+{
+  "hypothesis_id": "H1_high_low",
+  "family": "wellbeing_robustness",
+  "model": "ordered_logit",
+  "outcome": "wz901dj_score",
+  "predictor": "external_high",
+  "controls": [
+    "selfage",
+    "biomale",
+    "gendermale",
+    "cis",
+    "classchild_score"
+  ],
+  "dropped_controls": [],
+  "n_analytic": 14438,
+  "effect_metric": "\u0394E[depression score | high vs low religiosity importance]",
+  "effect": {
+    "estimate": -0.08757069479126282,
+    "se": 0.03798812397494051,
+    "ci_lower": -0.16282988184384478,
+    "ci_upper": -0.012327434304504696
+  },
+  "contrast_values": {
+    "low": 0,
+    "high": 1
+  },
+  "ordered_levels": [
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "parameters": {
+    "external_high": -0.07955371433922896,
+    "selfage": 0.01758960232772703,
+    "biomale": 0.4574034973420514,
+    "gendermale": 0.15020031597628491,
+    "cis": 0.9606353519488008,
+    "classchild_score": 0.21038131341829802,
+    "0/1": 0.770135895867474,
+    "1/2": -0.021623385532532152,
+    "2/3": -0.052596451408988346,
+    "3/4": -1.113875596247734,
+    "4/5": -0.984183499472842,
+    "5/6": -0.24050178746451578
+  },
+  "diagnostics": {
+    "nobs": 14438,
+    "llf": -26268.20785323366,
+    "aic": 52560.41570646732,
+    "bic": 52651.34713325171,
+    "converged": true
+  },
+  "seed": 20251016,
+  "draws": 400,
+  "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+  "command": "python analysis/code/robustness_checks.py --config config/agent_config.yaml --seed 20251016 --draws 400 --output-dir outputs/robustness_loop052",
+  "notes": "Binary high/low religiosity predictor instead of the ordinal scale.",
+  "phase": "robustness"
+}

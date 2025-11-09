@@ -1,3 +1,4 @@
+MUST SEE: https://github.com/danielnsilva/semanticscholar/tree/master/semanticscholar FOR DOCS/BEST PRACTICES FOR USING SEMANTIC SCHOLAR API
 
 Academic Graph API Recommendations API Datasets API
 

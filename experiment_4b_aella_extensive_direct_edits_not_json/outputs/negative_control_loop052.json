@@ -1,0 +1,34 @@
+{
+  "hypothesis_id": "NC1",
+  "family": "negative_control",
+  "targeted": "N",
+  "model": "linear_regression",
+  "outcome": "siblingnumber",
+  "predictor": "externalreligion_ord",
+  "controls": [
+    "selfage",
+    "biomale",
+    "gendermale",
+    "cis",
+    "classchild_score"
+  ],
+  "n_analytic": 14443,
+  "effect_metric": "Sibling count change per one-point rise in religious importance",
+  "effect": {
+    "estimate": 0.23884338395778984,
+    "se": 0.009150198467877194,
+    "ci_lower": 0.22090932450935696,
+    "ci_upper": 0.2567774434062227,
+    "p_value": 0.0
+  },
+  "diagnostics": {
+    "nobs": 14443,
+    "r_squared": 0.07123338126057832,
+    "adj_r_squared": 0.0708473602220332
+  },
+  "seed": 20251016,
+  "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+  "command": "python analysis/code/negative_control.py --config config/agent_config.yaml --seed 20251016 --output outputs/negative_control_loop052.json",
+  "notes": "Falsification check without a theoretical link; expected null effect.",
+  "phase": "analysis"
+}

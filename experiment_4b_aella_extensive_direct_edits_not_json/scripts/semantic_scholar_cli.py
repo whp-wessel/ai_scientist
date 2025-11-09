@@ -4,7 +4,7 @@
 Usage examples:
   python scripts/semantic_scholar_cli.py search --query "childhood religiosity wellbeing" --limit 5 --output lit/queries/loop_000/query_001.json
   python scripts/semantic_scholar_cli.py paper --paper-id 10.1001/jama.2024.12345 --output lit/queries/loop_000/query_002.json
-
+MUST SEE: https://github.com/danielnsilva/semanticscholar/tree/master/semanticscholar FOR DOCS/BEST PRACTICES FOR USING SEMANTIC SCHOLAR API
 The script enforces a 1 request/second rate limit via `artifacts/.s2_rate_limit.json`.
 """
 from __future__ import annotations

@@ -1,0 +1,34 @@
+{
+  "hypothesis_id": "H3_no_perpetration",
+  "family": "psychosocial_robustness",
+  "model": "linear_regression",
+  "outcome": "self_love_score",
+  "predictor": "mds78zu_binary",
+  "controls": [
+    "selfage",
+    "biomale",
+    "gendermale",
+    "siblingnumber",
+    "classchild_score"
+  ],
+  "dropped_controls": [],
+  "n_analytic": 11769,
+  "effect_metric": "Mean self-love difference (abuse vs none) restricted to non-perpetrators",
+  "effect": {
+    "estimate": -0.6503504871899941,
+    "se": 0.035757524408656885,
+    "ci_lower": -0.7204339472072735,
+    "ci_upper": -0.5802670271727147,
+    "p_value": 0.0
+  },
+  "diagnostics": {
+    "nobs": 11769,
+    "r_squared": 0.07416631742768287,
+    "adj_r_squared": 0.07369403362429616
+  },
+  "seed": 20251016,
+  "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+  "command": "python analysis/code/robustness_checks.py --config config/agent_config.yaml --seed 20251016 --draws 400 --output-dir outputs/robustness_loop052",
+  "notes": "Sample excludes respondents who reported perpetrating any unwanted experience.",
+  "phase": "robustness"
+}

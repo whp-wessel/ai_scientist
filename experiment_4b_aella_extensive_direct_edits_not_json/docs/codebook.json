@@ -2,7 +2,7 @@
   "dataset_name": "childhoodbalancedpublic_original",
   "description": "Balanced public childhood survey capturing demographics, upbringing experiences, and adult wellbeing self-assessments.",
   "source_path": "childhoodbalancedpublic_original.csv",
-  "updated": "2025-11-07",
+  "updated": "2025-11-09",
   "notes": "Placeholder codebook derived from header review only; replace with programmatically generated metadata before confirmatory analysis.",
   "variables": [
     {
@@ -86,6 +86,23 @@
       "original_question": "During ages 0-12, your parents verbally or emotionally abused you?"
     },
     {
+      "name": "v1k988q",
+      "label": "Parental verbal/emotional abuse (ages 13-18)",
+      "type": "Likert",
+      "scale": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "comments": "Analogous severe abuse indicator for the teen years; planned for robustness checks in H3.",
+      "source_column": "during ages *13-18*: your parents verbally or emotionally abused you (v1k988q)",
+      "original_question": "During ages 13-18, your parents verbally or emotionally abused you?"
+    },
+    {
       "name": "okq5xh8",
       "label": "Self-rated general health",
       "type": "ordinal",
@@ -141,6 +158,20 @@
       "reverse_coded": false,
       "comments": "Primary psychosocial wellbeing indicator for H3.",
       "source_column": "I love myself (2l8994l)"
+    },
+    {
+      "name": "rapist",
+      "label": "Perpetration of unwanted sexual experience",
+      "type": "ordinal",
+      "scale": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "comments": "Used to flag respondents who reported perpetrating an unwanted encounter; supports robustness restriction.",
+      "source_column": "rapist",
+      "original_question": "Have you ever had a sexual experience with someone else who did not want the experience?"
     }
   ],
   "regeneration": {

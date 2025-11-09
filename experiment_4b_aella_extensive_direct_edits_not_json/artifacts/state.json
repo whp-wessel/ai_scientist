@@ -22,7 +22,7 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 51,
+  "loop_counter": 52,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
@@ -76,14 +76,21 @@
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Per waiver clause OPS-S2-2025-11-09-01, re-run the archived queries and attach the new payloads + support response once Semantic Scholar re-enables the credential.",
+      "notes": "Replayed the archived loop_008-013 queries (loop_051) but the API still returns 403; keep capturing payloads and wait for the support response before closing this item.",
       "owner": "agent",
       "status": "pending"
     },
     {
       "description": "Run prescribed robustness/falsification checks after confirmatory estimates",
       "id": "N9",
-      "notes": "Execute the pre-specified alternative codings (H1 high/low, H2 continuous health, H3 teen abuse/perpetration) and log outputs before drafting sensitivity notes.",
+      "notes": "Executed the H1 high/low, H2 continuous, and H3 teen/perpetration variants; outputs live under `outputs/robustness_loop052/` for the sensitivity note.",
+      "owner": "agent",
+      "status": "done"
+    },
+    {
+      "description": "Draft sensitivity memo + plan next phase",
+      "id": "N10",
+      "notes": "Synthesize the new robustness results, updated tables, and disclosure audit while outlining the remaining writing/sensitivity tasks.",
       "owner": "agent",
       "status": "pending"
     }

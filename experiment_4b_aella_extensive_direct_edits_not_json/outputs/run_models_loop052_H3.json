@@ -1,0 +1,40 @@
+{
+  "hypothesis_id": "H3",
+  "family": "psychosocial",
+  "model": "linear_regression",
+  "outcome": "self_love_score",
+  "predictor": "mds78zu_binary",
+  "controls": [
+    "selfage",
+    "biomale",
+    "gendermale",
+    "siblingnumber",
+    "classchild_score"
+  ],
+  "n_analytic": 13507,
+  "effect_metric": "Mean difference in self-love score (abuse vs none)",
+  "effect": {
+    "estimate": -0.654365838651696,
+    "se": 0.0330814590777166,
+    "ci_lower": -0.7192043070000561,
+    "ci_upper": -0.5895273703033358
+  },
+  "parameters": {
+    "const": -0.19945703664837083,
+    "mds78zu_binary": -0.654365838651696,
+    "selfage": 0.02762113639411635,
+    "biomale": -0.39051120401163497,
+    "gendermale": 0.3167442375098473,
+    "siblingnumber": 0.02892397545406123,
+    "classchild_score": 0.1235862115221373
+  },
+  "diagnostics": {
+    "nobs": 13507,
+    "r_squared": 0.06887582302932305,
+    "adj_r_squared": 0.06846199006178055
+  },
+  "seed": 20251016,
+  "dataset_path": "/Users/wessel/ai_scientist/experiment_4b_aella_extensive_direct_edits_not_json/childhoodbalancedpublic_original.csv",
+  "command": "python analysis/code/run_models.py --hypothesis all --config config/agent_config.yaml --seed 20251016 --draws 400 --output-prefix outputs/run_models_loop052",
+  "phase": "pap_draft_exploratory"
+}

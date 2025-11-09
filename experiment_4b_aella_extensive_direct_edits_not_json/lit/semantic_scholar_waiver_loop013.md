@@ -126,6 +126,18 @@ The next support ticket will highlight the Liu & Yin (2025) constructs (maternal
    - Once access is restored, replay the queued queries (loop 008 onward) to confirm parity and add any newly returned papers to the evidence map/bibliography.
    - Update `analysis/decision_log.csv` and this memo with the resolution timestamp, then close backlog item N1 (query execution) and mark this waiver as satisfied.
 
+## Replay Log (Loop 051)
+| Loop | Timestamp (UTC) | Query | Status | Artifact |
+| --- | --- | --- | --- | --- |
+| 008 (replay) | 2025-11-09T13:22:36Z | "childhood abuse self love adult wellbeing" | 403 Forbidden | `lit/queries/loop_051/query_001.json` |
+| 009 (replay) | 2025-11-09T13:22:43Z | "childhood emotional abuse adult self love wellbeing" | 403 Forbidden | `lit/queries/loop_051/query_002.json` |
+| 010 (replay) | 2025-11-09T13:22:50Z | "childhood abuse adult self love resilience wellbeing" | 403 Forbidden | `lit/queries/loop_051/query_003.json` |
+| 011 (replay) | 2025-11-09T13:22:55Z | "childhood abuse self love adult wellbeing" | 403 Forbidden | `lit/queries/loop_051/query_004.json` |
+| 012 (replay) | 2025-11-09T13:23:01Z | "childhood resilience religious adherence depression" | 403 Forbidden | `lit/queries/loop_051/query_005.json` |
+| 013 (replay) | 2025-11-09T13:23:08Z | "childhood resilience spiritual support adult depression" | 403 Forbidden | `lit/queries/loop_051/query_006.json` |
+
+The credential is still returning 403, so these replayed attempts extend the outage log and keep the waiver-approved CrossRef trail intact. We will append the support team's response to this file once it arrives.
+
 ## Contacts & Next Steps
 - Owner: Research agent (this experiment)
 - Dependencies: Ops team for API credential refresh

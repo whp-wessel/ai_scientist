@@ -173,6 +173,48 @@ This ledger enumerates every dataset transformation executed so far, the exact c
 - **Outputs:** `analysis/results.csv`, `artifacts/bh_summary.json`
 - **Notes:** Script now casts `bh_in_scope` to string to avoid dtype warnings and writes the adjusted `q_value` column.
 
+## DP13 — Table summary (Loop 052)
+- **Purpose:** Produce publication-ready CSV/Markdown summaries of the BH-adjusted estimates for H1–H3.
+- **Inputs:** `analysis/results.csv`
+- **Command:**
+  ```bash
+  python analysis/code/build_results_summary.py \
+    --input analysis/results.csv \
+    --output-csv tables/results_summary.csv \
+    --output-md tables/results_summary.md
+  ```
+- **Outputs:** `tables/results_summary.csv`, `tables/results_summary.md`
+- **Notes:** Targets `hypothesis_id`, `estimate`, `ci`, `q_value`, and confidence labels for the narrative tables referenced in `reports/findings_v1.0.md`.
+
+## DP14 — Robustness checks (Loop 052)
+- **Purpose:** Execute the PAP-specified alternative codings for robustness (H1 high/low, H2 continuous health, H3 teen abuse/perpetration).
+- **Inputs:** `childhoodbalancedpublic_original.csv`, `docs/codebook.json`, `config/agent_config.yaml`
+- **Command:**
+  ```bash
+  python analysis/code/robustness_checks.py \
+    --config config/agent_config.yaml \
+    --seed 20251016 \
+    --draws 400 \
+    --output-dir outputs/robustness_loop052
+  ```
+- **Outputs:** Four JSON summaries in `outputs/robustness_loop052/` documenting each check; include context notes for teenager exposures and perpetration restrictions.
+- **Notes:** Each robustness JSON informs `analysis/decision_log.csv` and provides material for the upcoming sensitivity discussion.
+
+## DP15 — Disclosure automation (Loop 052)
+- **Purpose:** Re-run the n≥10 disclosure check after new tables/figures are created.
+- **Inputs:** `tables/`, `figures/`
+- **Command:**
+  ```bash
+  python analysis/code/disclosure_check.py \
+    --tables-dir tables \
+    --figures-dir figures \
+    --min-n 10 \
+    --output-md qc/disclosure_check_loop_052.md \
+    --seed 20251016
+  ```
+- **Outputs:** `qc/disclosure_check_loop_052.md`
+- **Notes:** Logs minimum cell counts and flags any suppression actions for the new summary tables.
+
 ## Pending Entries
 - Add Scenario-specific sensitivity analyses once PAP freezes and confirmatory runs begin.
 - Update this ledger when additional derived datasets, tables, or figures are produced.

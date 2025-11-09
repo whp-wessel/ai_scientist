@@ -31,6 +31,11 @@ def list_figure_files(directory: Path) -> List[Path]:
 
 def min_numeric_cell(path: Path) -> Optional[float]:
     df = pd.read_csv(path)
+    count_cols = [col for col in df.columns if col.lower().startswith("n_")]
+    if count_cols:
+        numeric = df[count_cols].select_dtypes(include=["number"])
+        if not numeric.empty:
+            return float(numeric.min().min())
     numeric = df.select_dtypes(include=["number"])
     if numeric.empty:
         return None
