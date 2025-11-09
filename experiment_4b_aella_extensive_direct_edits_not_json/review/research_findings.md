@@ -589,3 +589,11 @@ P1: PASS – The disclosure script’s seeded audit confirms `tables/results_sum
 N1: PASS – State now sits in the review phase with `N15` (review checklist + artifacts) still pending, so advancement is gated until those deliverables are complete (artifacts/state.json:50; artifacts/state.json:57).
 Notes: Draft `reports/review_checklist.md` and gather the review artefacts before clearing the pending gate noted at `artifacts/state.json:50`/`artifacts/state.json:54`.
 
+## Loop 070 — 2025-11-09T20:19:47.278587+00:00
+DECISION: CONTINUE
+R1: PASS – the new review checklist ties the deterministic builds/seeds to the log (`reports/review_checklist.md:5`) and the decision log plus `artifacts/seed.txt:1` document the recorded commands (`analysis/decision_log.csv:794`).
+L1: PASS – literature coverage stays DOI-backed with the checklist pointing to the mapped evidence and the stored Semantic Scholar responses (`reports/review_checklist.md:6`, `analysis/decision_log.csv:788`, `lit/evidence_map.csv:59`, `lit/bibliography.bib:628`).
+P1: PASS – the disclosure audit reports n≥10 thresholds with zero violations and is cited directly in the checklist (`reports/review_checklist.md:7`, `qc/disclosure_check_loop_069.md:1`).
+N1: PASS – release-phase gating is recorded (loop_counter=70, phase=release) with the Semantic Scholar replay still queued as next action, so the experiment can continue (`artifacts/state.json:26`, `artifacts/state.json:29`, `artifacts/state.json:57`).
+Notes: Semantic Scholar replay (N8) remains pending; rerun the archived query once access is restored before the final release.
+
