@@ -516,3 +516,11 @@ P1: PASS – qc/disclosure_check_loop_061.md (per qc/strobe_sampl_checklist.md) 
 N1: PASS – artifacts/state.json keeps phase “sensitivity” with N8 (Semantic Scholar replay) and N13 (writing-phase QC/build) pending while N11/N12 are marked done, matching the next-step bulleted list in reports/findings_summary.md and reports/findings_v1.1.md before advancing.
 Notes: Finish the pending N8/N13 tasks (query replay plus deterministic LaTeX/disclosure checks) before the upcoming writing-phase loop.
 
+## Loop 064 — 2025-11-09T18:25:36.778869+00:00
+DECISION: CONTINUE
+R1: PASS – Loop-064 entries in `analysis/decision_log.csv` (pseudo_weight_sensitivity_loop064, design_effect_grid_loop064, pseudo_replicates_loop064, disclosure_check_loop064) plus `artifacts/session_info.txt` keep seed 20251016 and command provenance logged for deterministic reruns.
+L1: PASS – `lit/queries/loop_064/query_001.json` (Semantic Scholar 403) and `lit/queries/loop_064/crossref_query_001.json` plus the new entry in `lit/evidence_map.csv` ensure [CLAIM:C1] retains DOI 10.1080/19349637.2014.864543 while the API remains blocked.
+P1: PASS – `qc/disclosure_check_loop_064.md` reran `analysis/code/disclosure_check.py` with the same seed, confirmed n ≥ 10 for `tables/results_summary.csv`, and recorded `violations: 0`, so no small-cell exposure occurred.
+N1: PASS – `artifacts/state.json` keeps `phase: "sensitivity"` with N14 (writing-phase QC) pending and `reports/findings_v1.2.md` enumerates the next writing/QC tasks, so gating and the plan for the upcoming QC pass remain justified.
+Notes: Continue with the pending writing-phase QC/checklist/LaTeX build and then return for the next review loop.
+
