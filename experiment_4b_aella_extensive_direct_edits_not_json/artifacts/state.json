@@ -22,26 +22,26 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 55,
+  "loop_counter": 56,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Logged loop_054 query failure (403) while the waiver remains active; keep archiving responses until the S2 credential is fixed before closing this item.",
+      "notes": "Logged loop_054 and loop_055 query failures (403) while the waiver remains active; keep archiving responses until the S2 credential is fixed before closing this item.",
       "owner": "agent",
       "status": "pending"
     },
     {
       "description": "Integrate confirmatory + sensitivity outputs into the manuscript/outline",
       "id": "N11",
-      "notes": "Use `analysis/results.csv`, the pseudo-weight/design-effect/pseudo-replicate outputs, and `qc/disclosure_check_loop_054.md` to refresh `papers/main/imrad_outline.md`, `papers/main/manuscript.*`, and `reports/identification.md` before writing.",
+      "notes": "Use `analysis/results.csv`, the pseudo-weight/design-effect/pseudo-replicate outputs, and `qc/disclosure_check_loop_055.md` to refresh `papers/main/imrad_outline.md`, `papers/main/manuscript.*`, and `reports/identification.md` before writing.",
       "owner": "agent",
       "status": "pending"
     },
     {
       "description": "Prepare writing-phase QC & review prep",
       "id": "N12",
-      "notes": "Document remaining STROBE/SAMPL items, update `analysis/decision_log.csv`, and ensure `qc/strobe_sampl_checklist.md` + `qc/measures_validity.md` cite the latest artifacts ahead of the writing/review phase.",
+      "notes": "Document remaining STROBE/SAMPL items, update `analysis/decision_log.csv`, and ensure `qc/strobe_sampl_checklist.md` + `qc/measures_validity.md` cite the latest artifacts (including `analysis/results.csv` and the new sensitivity outputs) ahead of the writing/review phase.",
       "owner": "agent",
       "status": "pending"
     }
