@@ -416,3 +416,18 @@ P1: PASS – Disclosure check documents the n≥10 threshold and `violations: 0`
 N1: PASS – Pending next actions N8 and N9 keep us in the analysis phase until the replayed queries and prescribed robustness checks are logged (artifacts/state.json:76;84), so the current gating is justified.
 Notes: After the Semantic Scholar key is back, rerun the archived queries, save them under `lit/queries/loop_051/`, and update the evidence map accordingly.
 
+## Loop 052 — 2025-11-09T13:45:21.076593+00:00
+DECISION: CONTINUE
+R1: PASS – `analysis/data_processing.md:176-215` documents deterministic DP13–DP15 commands (seed `20251016` per `artifacts/seed.txt:1`), and the loop log captures the seeded table/robustness/disclosure runs so every artifact can be regenerated (`analysis/decision_log.csv:543-556`).
+L1: PASS – The replayed Semantic Scholar queries (archives under `lit/queries/loop_051/` and noted in `analysis/decision_log.csv:532-538`) are logged in the waiver memo (`lit/semantic_scholar_waiver_loop013.md:129-139`), keeping the mandated audit trail even though the API still returns 403.
+P1: PASS – The refreshed disclosure memo lists `tables/results_summary.csv`/`figures/dag_design.png` (threshold n≥10) with `violations: 0` after rerunning the scanner (`qc/disclosure_check_loop_052.md:1-19`, `analysis/decision_log.csv:544-554`), so small-cell controls remain satisfied.
+N1: PASS – State still marks N8 pending while the 403 log is being extended and N10 pending for the planned sensitivity memo, with the latest state update documenting those next actions (`artifacts/state.json:23-103`; `analysis/decision_log.csv:552`), so the analysis-phase gate is transparent.
+Notes: Await Semantic Scholar credential restoration before closing N8 and then draft the sensitivity memo (N10) once the robustness outputs feed into the narrative.
+## Loop 052 — 2025-11-09T13:49:00.458966+00:00
+- Logged the Loop 052 review entry in `review/research_findings.md` with PASS ratings for R1/L1/P1/N1 and notes on the pending API/key and sensitivity memo tasks.
+- Work remains in the analysis phase while the Semantic Scholar credential outage (N8) and the planned sensitivity memo (N10) stay open per `artifacts/state.json`.
+
+Next steps:
+1. Resume the queued Semantic Scholar queries once the key is restored and update the evidence map/bibliography with any new DOIs.
+2. Draft the sensitivity memo that synthesizes the robustness outputs before advancing to the next phase.
+
