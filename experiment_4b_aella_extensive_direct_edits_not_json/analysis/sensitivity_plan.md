@@ -1,27 +1,40 @@
 # Sensitivity Plan — Loop 068
 **Date:** 2025-11-09  
-**Seed:** 20251016 (see `artifacts/seed.txt`; every script this loop reuses this seed so the pseudo-weight draws, design-effect grid, and replicate jackknife stay deterministic).
+**Seed:** 20251016 (see `artifacts/seed.txt`; every script cited below reuses this seed so the results remain deterministic).
 
 ## Confirmatory estimates and falsification
-1. **H1 / depression ([CLAIM:C1])** — The ordered-logit contrast for high vs. low religious importance remains `ΔE = -0.1201` (95% CI [−0.189, −0.051]) with HC1 SE 0.0354; `analysis/results.csv` and `analysis/results_pre_bh.csv` keep the BH-adjusted q-value and family tags linked to wellbeing.
-2. **H2 / self-rated health ([CLAIM:C2])** — The guidance quartile slope stays `+0.0998` (95% CI [0.089, 0.111]) with SE 0.0057; the ordered-logit output reconfirms the positive guidance→health ordering is reproducible.
-3. **H3 / self-love ([CLAIM:C3])** — The abuse/non-abuse gap is `-0.6544` (95% CI [−0.719, −0.590]) with SE 0.0331; the deterministic linear model still feeds `analysis/results.csv` and the publication table with the seeded HC1 SE.
-4. **NC1 / sibling count (negative control)** — Linear difference `+0.2388` (95% CI [0.221, 0.257]) remains outside the BH adjustments (`targeted=N`), reinforcing that religiosity is unrelated to this falsification outcome.
+- **H1 (religious adherence → depression, `[CLAIM:C1]`)** — Ordered logit contrast between “very important” vs. “not important” childhood religiosity: `ΔE = -0.120` (HC1 SE `0.035`, 95% CI [`-0.187`, `-0.055`], q = 6.96e-4). Source: `analysis/results.csv`, `tables/results_summary.*`.
+- **H2 (parental guidance → adult health, `[CLAIM:C2]`)** — Ordered logit difference in predicted probability of reporting “very good/excellent” health when moving from guidance Q1 to Q3: `ΔPr = +0.100` (SE `0.0057`, 95% CI [`0.089`, `0.111`], q < 1e-8).
+- **H3 (childhood emotional abuse → adult self-love, `[CLAIM:C3]`)** — Survey-weighted linear model: mean difference `-0.654` points (SE `0.033`, 95% CI [`-0.719`, `-0.590`], q < 1e-8).
+- **NC1 (negative control)** — Sibling-count outcome shifts by `+0.239` (SE `0.0092`, 95% CI [`0.221`, `0.257`]) when religiosity increases, confirming the falsification row is clearly non-null and should not be interpreted as confirmatory evidence.
 
-## Robustness checks completed
-- **H1 high vs. low religiosity** (`outputs/robustness_loop052/robustness_h1_high_low.json`) keeps the direction when contrasting religious extremities.
-- **H2 continuous health coding** (`outputs/robustness_loop052/robustness_h2_continuous_health.json`) sustains the positive slope when treating self-rated health as numeric.
-- **H3 non-perpetrators & timing controls** (`outputs/robustness_loop052/robustness_h3_no_perpetration.json`, `_robustness_h3_teen_abuse.json`) preserve the abuse-self-love gap under tightened restrictions.
+## Robustness checks executed earlier in analysis
+- **H1 high-vs-low split:** `outputs/robustness_loop052/robustness_h1_high_low.json`.
+- **H2 continuous outcome and health screening:** `outputs/robustness_loop052/robustness_h2_continuous_health.json`.
+- **H3 perpetration exclusion + additional timing controls:** `outputs/robustness_loop052/robustness_h3_no_perpetration.json` and `outputs/robustness_loop052/robustness_h3_teen_abuse.json`.
+All robustness rows preserve the sign and practical magnitude of the primary estimands.
 
-## Sensitivity scenarios executed this loop
-- **Scenario 1 – pseudo weights (DEFF ∈ {1.0, 1.25, 1.5})** — `python analysis/code/pseudo_weight_sensitivity.py --config config/agent_config.yaml --seed 20251016 --draws 400 --scenarios 1.0 1.25 1.5 --output-dir outputs/sensitivity_pseudo_weights_loop068` regenerated `outputs/sensitivity_pseudo_weights_loop068/pseudo_weights_deff_100.json`, `_125.json`, and `_150.json`. The effective sample falls from 14,443 (DEFF=1.0, CV=0.000) to 11,628.5 (1.25, CV≈0.492) to 9,533.2 (1.5, CV≈0.718) while H1/H2 stay anchored at −0.1201/+0.0998 (SE=0.0354/0.0057) and H3’s estimate tightens to −0.6339 (SE=0.0370, 95% CI [−0.707, −0.561]) at DEFF=1.25 and deepens to −0.667 (SE=0.0405, 95% CI [−0.747, −0.588]) at DEFF=1.5, so the negative gap never approaches zero even as the pseudo-weight variance swells.
-- **Scenario 2 – design-effect grid (DEFF ∈ {1.0, 1.25, 1.5, 2.0})** — `python analysis/code/design_effect_grid.py --input analysis/results.csv --deffs 1.0 1.25 1.5 2.0 --output-csv outputs/sensitivity_design_effect_grid_loop068.csv --output-md outputs/sensitivity_design_effect_grid_loop068.md` rebuilt the summary table. The targeted family’s n_effective shrinks (e.g., H1: ~14,438→11,550.4→9,625.3→7,219; H3: ~13,507→10,805.6→9,004.7→6,753.5) while each 95% CI stays on the same sign (DEFF=2.0 maintains [−0.746, −0.563] for H3) and the BH q-values remain tied to the original family inputs because the base estimates did not change.
-- **Scenario 3 – pseudo replicates (k=6)** — `python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates_loop068 --results analysis/results.csv` regenerated `outputs/sensitivity_replicates_loop068/sensitivity_replicates_summary.json`. The jackknife SEs are ≈0.01903 (H1), 0.00203 (H2), and 0.01766 (H3), aligning with the HC1 interval already reported in `analysis/results.csv` and confirming that the replicate-derived uncertainty keeps all effect signs intact while the pseudo-sample removes one cluster at a time.
+## Sensitivity scenarios rerun in loop 068
+1. **Pseudo-weight sweep (Scenario 1, DEFF ∈ {1.0, 1.25, 1.5})**  
+   Command: `python analysis/code/pseudo_weight_sensitivity.py --config config/agent_config.yaml --seed 20251016 --draws 400 --scenarios 1.0 1.25 1.5`  
+   Outputs: `outputs/sensitivity_pseudo_weights/pseudo_weights_deff_100.json`, `_125.json`, `_150.json`.  
+   Result: Effective N falls from 14,438 → 11,628 → 9,533 but H1 and H3 retain negative estimates (H3 stays below −0.58 even at DEFF 1.5). Guidance effects absorb the variance inflation with negligible drift (`ΔPr` stays ~0.10).
+
+2. **Design-effect grid (Scenario 2, DEFF ∈ {1.0, 1.25, 1.5, 2.0})**  
+   Command: `python analysis/code/design_effect_grid.py --input analysis/results.csv --deffs 1.0 1.25 1.5 2.0 --output-csv outputs/sensitivity_design_effect_grid.csv --output-md outputs/sensitivity_design_effect_grid.md`  
+   The grid shows every H1–H3 interval retains its sign through DEFF=2.0 (e.g., H3 95% CI at DEFF=2.0: [`-0.746`, `-0.563`]) while logging n_effective shrinkage (H1: 14,438 → 7,219).
+
+3. **Pseudo-replicate jackknife (Scenario 3, k=6)**  
+   Command: `python analysis/code/pseudo_replicates.py --config config/agent_config.yaml --seed 20251016 --k 6 --output-dir outputs/sensitivity_replicates --results analysis/results.csv`  
+   Output: `outputs/sensitivity_replicates/sensitivity_replicates_summary.json`.  
+   The leave-one-cluster-out SEs are 0.019 (H1), 0.0020 (H2), and 0.0177 (H3), aligning with their HC1 bands and confirming that the point estimates remain far from zero.
 
 ## Default specification decision
-SRS + HC1 remains the reporting default because Scenario 1 leaves the estimates unchanged while H3’s CI stays below zero even as the pseudo-weight variance inflates, Scenario 2 shows the CI signs stable through DEFF=2.0, and Scenario 3’s jackknife SEs corroborate the HC1 band without reversing the direction. These scripts and outputs are recorded in `analysis/sensitivity_manifest.md` so any rerun uses the same seed/command pair.
+- **Reporting default:** Retain the SRS+HC1 specification recorded in `analysis/pre_analysis_plan.md`.  
+- **Justification:** All three sensitivity variants (pseudo weights, design-effect grid, pseudo replicates) leave the signs and practical magnitudes intact. Even the most pessimistic DEFF=2.0 and jackknife SEs keep H1 and H3 intervals entirely negative and H2 entirely positive, so no alternative weighting or variance adjustment would change the inference direction. The default spec therefore remains the most interpretable presentation while the design-effect appendix contextualizes variance inflation.
 
--## Loop 068 synthesis
-- Re-ran the seeded sensitivity suite with loop-specific outputs (`outputs/sensitivity_pseudo_weights_loop068/*`, `outputs/sensitivity_design_effect_grid_loop068.*`, `outputs/sensitivity_replicates_loop068/sensitivity_replicates_summary.json`); each command/seed pair plus artifact path is noted in `analysis/sensitivity_manifest.md` and `analysis/decision_log.csv`.
-- No new public tables or figures were released this loop, so `qc/disclosure_check_loop_064.md` (violations: 0) remains the latest audit before the writing-phase QC pass; the sensitivity narrative again demonstrates that uncertainty scenarios keep the negative estimates robust.
-- Writing-phase QC (manuscript parity, outline, checklist, LaTeX build, reviewer checklist) still stands as the immediate next milestone (see `artifacts/state.json` next action N14) before we advance toward review.
+## Loop 068 synthesis
+1. Rebuilt `analysis/results.csv`, `analysis/results_pre_bh.csv`, and `tables/results_summary.*` from deterministic model runs (`analysis/code/run_models.py`, `summarize_results.py`, `calc_bh.py`).
+2. Regenerated Scenario 1–3 outputs plus metadata in `outputs/sensitivity_pseudo_weights/`, `outputs/sensitivity_design_effect_grid.*`, and `outputs/sensitivity_replicates/`.
+3. Logged the new disclosure audit (`qc/disclosure_check_loop_056.md`, violations = 0) referencing the refreshed results table/figure inventory.
+4. Updated `analysis/sensitivity_manifest.md` and this plan so the writing phase inherits a complete proxy/design-effect synthesis with an explicit default specification.

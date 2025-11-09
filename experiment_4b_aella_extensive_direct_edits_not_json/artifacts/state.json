@@ -22,47 +22,39 @@
     }
   ],
   "bootstrap_complete": true,
+  "last_abort": {
+    "loop": 69,
+    "note": "Interrupted during loop execution",
+    "phase": "loop",
+    "ts": "2025-11-09T19:36:02.440934+00:00"
+  },
   "loop_counter": 68,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
       "id": "N8",
-      "notes": "Loops 054–063 logged 403s and CrossRef fallbacks; the loop-063 query plus CrossRef DOI 10.1080/19349637.2014.864543 (lit/queries/loop_063/crossref_query_001.json) keeps every claim DOI-backed while the S2 key remains blocked.",
+      "notes": "Waiver OPS-S2-2025-11-09-01 remains active; once Semantic Scholar restores the key, rerun the archived queries and append the responses + ticket ID to lit/semantic_scholar_waiver_loop013.md.",
       "owner": "agent",
-      "status": "done"
+      "status": "pending"
     },
     {
-      "description": "Integrate confirmatory + sensitivity outputs into the manuscript/outline",
-      "id": "N11",
-      "notes": "Completed with `papers/main/manuscript.*`, `papers/main/imrad_outline.md`, `reports/identification.md`, `qc/strobe_sampl_checklist.md`, and `reports/findings_v1.1.md` referencing the rerun artifacts.",
-      "owner": "agent",
-      "status": "done"
-    },
-    {
-      "description": "Prepare writing-phase QC & review prep",
-      "id": "N12",
-      "notes": "Checklist (STROBE/SAMPL) and measurement dossier refreshed; note that the disclosure audit now uses `qc/disclosure_check_loop_061.md` and measurement JSON `artifacts/measurement_validity_loop061.json`.",
-      "owner": "agent",
-      "status": "done"
-    },
-    {
-      "description": "Writing-phase QC & build",
+      "description": "Sync manuscripts/outline with confirmatory + sensitivity outputs",
       "id": "N13",
-      "notes": "Loop 063 compiled `papers/main/manuscript.tex` via `tectonic --keep-logs` (log entry now records PASS) and audited `tables/results_summary.csv` + `figures/dag_design.png` with `qc/disclosure_check_loop_063.md` before referencing them downstream.",
+      "notes": "Use analysis/results.csv, tables/results_summary.*, the pseudo-weight/design-effect/replicate artifacts, and qc/disclosure_check_loop_056.md to refresh papers/main/manuscript.*, papers/main/imrad_outline.md, and reports/identification.md per the writing-phase gate.",
       "owner": "agent",
-      "status": "done"
+      "status": "pending"
     },
     {
-      "description": "Finalize writing-phase QC & review prep",
+      "description": "Writing-phase QC & build prep",
       "id": "N14",
-      "notes": "Loop 068 reran the sensitivity suite with new loop-specific outputs and logged the loop-068 Semantic Scholar query/CrossRef fallback so the literature gate stays compliant while the writing-phase QC (manuscript parity, outline, checklist, LaTeX build, reviewer checklist) still lies ahead before review.",
+      "notes": "Update qc/strobe_sampl_checklist.md and reports/findings_v*.md, then run LaTeX (log in papers/main/build_log.txt) before handing off to the review phase.",
       "owner": "agent",
       "status": "pending"
     }
   ],
-  "phase": "sensitivity",
-  "phase_ix": 3,
+  "phase": "writing",
+  "phase_ix": 4,
   "stop_now": false,
   "stop_reason": null,
-  "total_loops": 75
+  "total_loops": 80
 }

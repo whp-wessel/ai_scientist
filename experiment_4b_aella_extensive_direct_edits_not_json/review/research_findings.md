@@ -573,3 +573,11 @@ N1: PASS - Phase stays in "sensitivity" with writing-phase QC/review prep (next_
 
 Notes: Proceed with the pending writing-phase QC/build/review prep once the planned artifacts and disclosure checks are ready.
 
+## Loop 056 (follow-up) — 2025-11-09T19:41:00Z
+DECISION: CONTINUE
+R1: PASS – Confirmatory rerun + BH summary regenerated (`analysis/results.csv`, `tables/results_summary.csv`) with deterministic commands recorded in `analysis/sensitivity_manifest.md`, so reproducibility is restored.
+L1: WARN – Semantic Scholar still blocked (loop_055 payload is latest), but waiver OPS-S2-2025-11-09-01 remains active and N8 tracks the replay requirement once ops restores the key.
+P1: PASS – `qc/disclosure_check_loop_056.md` now documents the refreshed tables/results with violations=0, clearing the prior privacy failure.
+N1: PASS – State remains in sensitivity until writing tasks begin, but requirements for the sensitivity→writing gate (proxy/design-effect synthesis + default-spec decision) are fully documented in `analysis/sensitivity_plan.md` and `analysis/sensitivity_manifest.md`.
+
+Notes: With the disclosure gap closed and sensitivity synthesis documented, proceed to the writing phase (manuscript parity, outline, checklist, LaTeX build) while continuing to log Semantic Scholar attempts when the credential returns.
