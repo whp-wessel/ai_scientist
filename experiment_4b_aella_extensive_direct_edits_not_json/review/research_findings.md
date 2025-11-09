@@ -532,3 +532,10 @@ P1: PASS – Loop 065 emitted only internal sensitivity outputs, so the latest p
 N1: PASS – `artifacts/state.json` holds `phase="sensitivity"` with N14 (writing-phase QC) pending, and `reports/findings_v1.3.md` next steps rehearse the manuscript/checklist/build refresh before review, so the gating decision remains justified.
 Notes: Continue the writing-phase QC/build tasks and log any new Semantic Scholar/CrossRef queries before the next review loop.
 
+## Loop 066 — 2025-11-09T18:53:52.422282+00:00
+DECISION: CONTINUE
+R1: PASS – Loop 066 signal entries (pseudo_weight_sensitivity_loop066, design_effect_grid_loop066, pseudo_replicates_loop066) in `analysis/decision_log.csv` cite seed 20251016, and `artifacts/session_info.txt`/`artifacts/seed.txt` keep the deterministic environment, so reruns and manifests remain reproducible.
+L1: WARN – No Semantic Scholar query files were added for loop_066 (the last recorded query is `lit/queries/loop_064/query_001.json` with DOI 10.1080/19349637.2014.864543), so literature logging hasn’t progressed while the API outage persists; log the next query as soon as access is restored.
+P1: PASS – No new public tables/figures were produced, and `qc/disclosure_check_loop_064.md` (n ≥ 10 audit, `violations: 0`) still covers `tables/results_summary.csv` and `figures/dag_design.png`, keeping disclosure safeguards intact.
+N1: PASS – `artifacts/state.json` still shows `phase: "sensitivity"`/`phase_ix: 3` with N14 (writing-phase QC/build prep) pending, and `reports/findings_v1.4.md` reiterates that the manuscript/checklist/build steps are the next gating actions.
+
