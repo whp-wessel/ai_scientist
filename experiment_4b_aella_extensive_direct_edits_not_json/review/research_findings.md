@@ -470,3 +470,10 @@ P1: FAIL – qc/disclosure_check_loop_056.md is absent from qc/, leaving the new
 N1: WARN – artifacts/state.json still points N11 toward qc/disclosure_check_loop_055.md instead of the loop_056 disclosure, so gating info for advancing past the sensitivity phase is stale.  
 Notes: Please author qc/disclosure_check_loop_056.md (violations: 0) and rerun the literature query logging when a new Semantic Scholar search occurs before resuming.
 
+## Loop 057 — 2025-11-09T15:57:29.403821+00:00
+DECISION: CONTINUE
+R1: PASS – seed 20251016 remains recorded (`artifacts/seed.txt:1`) and the loop reruns for H1–H3, the negative control, BH adjustment, and disclosure audit are traced in `analysis/decision_log.csv` (see `run_models_all`, `negative_control`, `calc_bh`, `table_results_summary`, `disclosure_check` entries), keeping regeneration deterministic.
+L1: PASS – Semantic Scholar outages for loops 056/057 are archived under `lit/queries/loop_056/query_001.json` and `lit/queries/loop_057/query_001.json` and the “403 attempt” context is noted in `lit/evidence_map.csv`, so literature logging stays compliant despite the credential block.
+P1: PASS – `qc/disclosure_check_loop_056.md` certifies that `tables/results_summary.csv` (n≥13,507) and `figures/dag_design.png` were audited with `violations: 0` at the 10-cell threshold, ensuring no small-cell disclosures.
+N1: PASS – The experiment remains in the sensitivity phase with pending next actions (N8/N11/N12 in `artifacts/state.json`) explicitly calling for Semantic Scholar replay, manuscript integration, and QC checklist updates before writing, so gating is consistent.
+
