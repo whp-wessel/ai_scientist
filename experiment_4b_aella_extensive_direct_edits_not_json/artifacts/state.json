@@ -22,7 +22,7 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 66,
+  "loop_counter": 67,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -53,12 +53,12 @@
       "status": "done"
     },
     {
-    "description": "Finalize writing-phase QC & review prep",
-    "id": "N14",
-    "notes": "Loop 066 reran the full sensitivity suite with loop-specific outputs, so the writing-phase QC (manuscript parity, outline, checklist, LaTeX build, reviewer checklist) remains the next milestone before review.",
-    "owner": "agent",
-    "status": "pending"
-  }
+      "description": "Finalize writing-phase QC & review prep",
+      "id": "N14",
+      "notes": "Loop 067 reran the sensitivity suite with new loop-specific outputs, so the writing-phase QC (manuscript parity, outline, checklist, LaTeX build, reviewer checklist) still lies ahead before review.",
+      "owner": "agent",
+      "status": "pending"
+    }
   ],
   "phase": "sensitivity",
   "phase_ix": 3,
