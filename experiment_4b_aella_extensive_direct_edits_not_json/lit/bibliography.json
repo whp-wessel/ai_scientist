@@ -1180,5 +1180,26 @@
       "C1"
     ],
     "notes": "CrossRef fallback at lit/queries/loop_075/crossref_query_001.json keeps DOI coverage for [CLAIM:C1] while Semantic Scholar remains 403."
+  },
+  {
+    "id": "bethell2019positive",
+    "title": "Positive Childhood Experiences and Adult Mental and Relational Health in a Statewide Sample",
+    "authors": [
+      "Christina Bethell",
+      "Jennifer Jones",
+      "Narangerel Gombojav",
+      "Jeff Linkenbach",
+      "Robert Sege"
+    ],
+    "year": 2019,
+    "venue": "JAMA Pediatrics",
+    "publisher": "American Medical Association (AMA)",
+    "doi": "10.1001/jamapediatrics.2019.3007",
+    "url": "https://doi.org/10.1001/jamapediatrics.2019.3007",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "CrossRef fallback at lit/queries/loop_078/crossref_query_002.json keeps [CLAIM:C1] DOI-backed while the Semantic Scholar search still returns 403."
   }
 ]
