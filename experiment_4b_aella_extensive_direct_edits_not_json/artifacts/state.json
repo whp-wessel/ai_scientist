@@ -23,7 +23,7 @@
   ],
   "bootstrap_complete": true,
   "last_abort": null,
-  "loop_counter": 74,
+  "loop_counter": 75,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -64,6 +64,13 @@
       "description": "Package final release deliverables",
       "id": "N17",
       "notes": "Run the LaTeX build (tectonic), finalize `reports/findings_v2.0`, confirm manuscript parity, and ensure the release package cites `qc/disclosure_check_loop_074.md` plus the CrossRef fallback before stamping the release-phase gate.",
+      "owner": "agent",
+      "status": "done"
+    },
+    {
+      "description": "Await reviewer confirmation before releasing",
+      "id": "N18",
+      "notes": "Monitor `review/research_findings.md` for a `DECISION: CONTINUE`, log responses in `analysis/decision_log.csv`, and only advance to release once the reviewer gate opens.",
       "owner": "agent",
       "status": "pending"
     }

@@ -2,3 +2,4 @@
 2025-11-09T17:50:54Z | tectonic --keep-logs papers/main/manuscript.tex | LaTeX build: PASS (overfull boxes noted; bibliography re-run was required) | BibTeX warnings: 1
 2025-11-09T20:00:37Z | tectonic --keep-logs papers/main/manuscript.tex | LaTeX build: PASS (overfull boxes persisted but bbl + reruns converged) | BibTeX warnings: 0
 2025-11-09T21:25:42Z | tectonic --keep-logs papers/main/manuscript.tex | LaTeX build: PASS (overfull hbox warnings from the introduction and discussion persisted after reruns; no new BibTeX warnings) | BibTeX warnings: 0
+2025-11-09T22:10:00Z | tectonic --keep-logs papers/main/manuscript.tex | LaTeX build: PASS (latest bibliography/edit sync rerun; overfull hbox warnings remain identical and referenced in the log) | BibTeX warnings: 0

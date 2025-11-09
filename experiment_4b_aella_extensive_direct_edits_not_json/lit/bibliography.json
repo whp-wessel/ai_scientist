@@ -1163,5 +1163,22 @@
       "C1"
     ],
     "notes": "World Psychiatry 2023 evidence on protective and compensatory childhood experiences; metadata logged at lit/queries/loop_073/crossref_query_001.json while Semantic Scholar remains 403."
+  },
+  {
+    "id": "conkbayir2023nurturing",
+    "title": "Nurturing Children's Resilience Following Adverse Childhood Experiences: An Adult Guide",
+    "authors": [
+      "Mine Conkbayir"
+    ],
+    "year": 2023,
+    "venue": "Nurturing Children's Resilience Following Adverse Childhood Experiences: An Adult Guide",
+    "publisher": "Routledge",
+    "doi": "10.4324/b23180",
+    "url": "https://doi.org/10.4324/b23180",
+    "access_date": "2025-11-09",
+    "claim_ids": [
+      "C1"
+    ],
+    "notes": "CrossRef fallback at lit/queries/loop_075/crossref_query_001.json keeps DOI coverage for [CLAIM:C1] while Semantic Scholar remains 403."
   }
 ]

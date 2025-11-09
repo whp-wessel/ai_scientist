@@ -180,3 +180,13 @@ Loop 073 reinforces the documented outage; we will re-run the blocked query afte
 
 ## Fallback Evidence & Bibliography Updates (Loop 073)
 - **Morris & Hays-Grudo (2023), DOI `10.1002/wps.21042`** — "Protective and compensatory childhood experiences and their impact on adult mental health" (World Psychiatry 2023) is now noted in `lit/evidence_map.csv` and `lit/bibliography.*` with metadata saved in `lit/queries/loop_073/crossref_query_001.json`, ensuring [CLAIM:C1] retains DOI-backed coverage while Semantic Scholar is unavailable.
+
+## Continued Outage Log (Loop 075)
+| Loop | Timestamp (UTC) | Query | Status | Artifact |
+| --- | --- | --- | --- | --- |
+| 075 | 2025-11-09T21:37:15Z | "childhood religiosity adult depression resilience" | 403 Forbidden | `lit/queries/loop_075/query_001.json` |
+
+Loop 075 keeps the 403 streak alive; the OPS-S2-2025-11-09-01 waiver remains active while we log CrossRef fallbacks for [CLAIM:C1].
+
+## Fallback Evidence & Bibliography Updates (Loop 075)
+- **Conkbayir (2023), DOI `10.4324/b23180`** — *Nurturing Children's Resilience Following Adverse Childhood Experiences: An Adult Guide* (Routledge 2023) provides practitioner-facing resilience guidance after ACEs; metadata stored in `lit/queries/loop_075/crossref_query_001.json`, preserving DOI coverage for [CLAIM:C1] while Semantic Scholar stays forbidden.
