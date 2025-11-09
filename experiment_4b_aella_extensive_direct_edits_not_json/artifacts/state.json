@@ -23,7 +23,7 @@
   ],
   "bootstrap_complete": true,
   "last_abort": null,
-  "loop_counter": 75,
+  "loop_counter": 76,
   "next_actions": [
     {
       "description": "Replay blocked Semantic Scholar queries after key restoration",
@@ -70,9 +70,16 @@
     {
       "description": "Await reviewer confirmation before releasing",
       "id": "N18",
-      "notes": "Monitor `review/research_findings.md` for a `DECISION: CONTINUE`, log responses in `analysis/decision_log.csv`, and only advance to release once the reviewer gate opens.",
+      "notes": "Reviewer DECISION: CONTINUE received; release docs now cite the waiver-backed CrossRef evidence and are ready for handoff (`reports/findings_v2.1`).",
       "owner": "agent",
-      "status": "pending"
+      "status": "done"
+    },
+    {
+      "description": "Document release completion",
+      "id": "N19",
+      "notes": "Loop 076 matches the release checklist, findings summary, and notebook to the reviewer clearance so the experiment is ready for final publishing/citation.",
+      "owner": "agent",
+      "status": "done"
     }
   ],
   "phase": "release",

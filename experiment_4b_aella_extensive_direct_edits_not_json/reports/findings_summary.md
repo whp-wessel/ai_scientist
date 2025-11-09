@@ -1,13 +1,13 @@
-# Findings Summary — Loop 074
+# Findings Summary — Loop 076
 **Date:** 2025-11-09  
 **Seed:** 20251016
 
 ## Loop updates
-- Added the Conkbayir (2023) CrossRef fallback (DOI `10.4324/b23180`) via `lit/queries/loop_075/crossref_query_001.json`, the evidence map, and bibliography so `[CLAIM:C1]` retains DOI coverage while Semantic Scholar still returns 403; the waiver log also notes loop 075.
-- Completed the N17 release packaging steps (review checklist, findings log, manuscript/manuscript.md parity, and the final build) so the release candidate now cites `qc/disclosure_check_loop_074.md` and the imported CrossRef evidence.
-- Confirmed the disclosure scan (`qc/disclosure_check_loop_074.md`) still covers `tables/results_summary.*` and `figures/dag_design.png`, so the $n \geq 10$ guardrail holds for the public artifacts.
+- Reviewer `DECISION: CONTINUE` (loop 075) closes the release gate; the release dossier now cites the Conkbayir (2023) CrossRef fallback plus the waiver ledger entry so `[CLAIM:C1]` retains DOI coverage while Semantic Scholar remains offline.
+- Release artifacts (review checklist, findings summary, `reports/findings_v2.1`, manuscript PDF, LaTeX build log, and `qc/disclosure_check_loop_074.md`) are aligned with the frozen PAP, so the package is ready for handoff with its recorded regeneration commands.
+- No new public tables or figures were released; the authoritative disclosure audit remains `qc/disclosure_check_loop_074.md` with `violations: 0`.
 
 ## Next actions
-1. Monitor `review/research_findings.md` for any new reviewer directives, document responses in `analysis/decision_log.csv`, and only move toward actual public release once the reviewer records `DECISION: CONTINUE`.
-2. Keep the CrossRef/waiver ledger (lit/semantic_scholar_waiver_loop013.md and lit/evidence_map.csv) current so `[CLAIM:C1]` stays DOI-backed until the Semantic Scholar credential is restored.
-3. Maintain the release artifact bundle (manuscript PDF, build log, disclosure report, review checklist, and findings log) in sync while waiting for reviewer clearance so the release-phase gate can close immediately once allowed.
+1. Archive this release candidate (manuscript PDF, LaTeX build log, disclosure scan, review checklist, and `reports/findings_v2.1`) for downstream publication while the reviewer clearance is fresh.
+2. Keep `lit/semantic_scholar_waiver_loop013.md` and `lit/evidence_map.csv` current with any future CrossRef fallback for `[CLAIM:C1]`, and log new queries if the Semantic Scholar key returns.
+3. Wait for a release schedule or further instructions; no additional internal artifacts are required unless new guidance surfaces.
