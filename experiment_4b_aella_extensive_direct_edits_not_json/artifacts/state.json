@@ -22,12 +22,12 @@
     }
   ],
   "bootstrap_complete": true,
-  "loop_counter": 49,
+  "loop_counter": 50,
   "next_actions": [
     {
       "description": "Run Semantic Scholar query + log outputs",
       "id": "N1",
-      "notes": "Semantic Scholar API still 403 as of loop 049 (see lit/queries/loop_049/query_001.json); waiver memo updated through loops 008-049 with Glenn 2014 + J Adolesc Health mentor DOI plus earlier trusted-adult and PCE sources. Ops memo dispatch remains scheduled for 2025-11-09 15:00Z and the 2025-11-10 support-ticket escalation stays queued if the credential is still down.",
+      "notes": "Semantic Scholar API still 403 as of loop 050 (see lit/queries/loop_050/query_001.json); waiver memo updated through loops 008-050 with Glenn 2014 + Journal of Adolescent Health + Arslan 2015 DOI coverage plus earlier trusted-adult and PCE sources. Ops memo dispatch remains scheduled for 2025-11-09 15:00Z and the 2025-11-10 support-ticket escalation stays queued if the credential is still down.",
       "owner": "agent",
       "status": "blocked"
     },
