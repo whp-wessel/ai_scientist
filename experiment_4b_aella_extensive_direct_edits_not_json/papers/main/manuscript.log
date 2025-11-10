@@ -257,8 +257,13 @@ Overfull \hbox (289.34497pt too wide) in paragraph at lines 14--15
 y.json\TU/lmr/m/n/10.95 )
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 17.
+
+LaTeX Warning: Citation `dore2025effect' on page 1 undefined on input line 17.
+
+
+LaTeX Warning: Citation `poole2017protective' on page 1 undefined on input line
+ 17.
+
 
 Overfull \hbox (149.22165pt too wide) in paragraph at lines 17--18
 \TU/lmr/m/n/12 (\TU/lmtt/m/n/12 analysis/code/run_models.py\TU/lmr/m/n/12 , \TU
@@ -267,9 +272,9 @@ analysis/code/calc_bh.py\TU/lmr/m/n/12 ,
  []
 
 
-Overfull \hbox (24.88937pt too wide) in paragraph at lines 17--18
-\TU/lmr/m/n/12 [CLAIM:C1]. Measurement checks are summarized in \TU/lmtt/m/n/12
- qc/measures_validity.md
+Overfull \hbox (143.81473pt too wide) in paragraph at lines 17--18
+\TU/lmtt/m/n/12 qc/measures_validity.md \TU/lmr/m/n/12 and the JSON dossier (\T
+U/lmtt/m/n/12 artifacts/measurement_validity_loop061.json\TU/lmr/m/n/12 ),
  []
 
 
@@ -281,6 +286,9 @@ n.md\TU/lmr/m/n/12 . [CLAIM:C1] [CLAIM:C2]
 [1
 
 ]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 22.
+
 Overfull \hbox (195.32004pt too wide) in paragraph at lines 28--29
 \TU/lmr/m/n/12 Pseudo-weight scenarios (\TU/lmtt/m/n/12 outputs/sensitivity_pse
 udo_weights/pseudo_weights_deff_{100,125,150}.json\TU/lmr/m/n/12 )
@@ -312,19 +320,26 @@ Overfull \hbox (44.14938pt too wide) in paragraph at lines 30--31
  []
 
 
-Overfull \hbox (75.53604pt too wide) in paragraph at lines 32--33
+LaTeX Warning: Citation `morris2023protective' on page 3 undefined on input lin
+e 32.
+
+
+Overfull \hbox (78.80005pt too wide) in paragraph at lines 32--33
 []\TU/lmr/m/n/12 All \TU/lmtt/m/n/12 [CLAIM:C*] \TU/lmr/m/n/12 statements cite 
-DOI-backed references recorded in \TU/lmtt/m/n/12 lit/bibliography.*
+DOI-backed references recorded in \TU/lmtt/m/n/12 lit/bibliography.*\TU/lmr/m/n
+/12 ;
  []
 
 
-Overfull \hbox (117.67606pt too wide) in paragraph at lines 32--33
-\TU/lmr/m/n/12 and the waiver ledger plus CrossRef fallbacks (\TU/lmtt/m/n/12 l
-it/queries/loop_073/crossref_query_001.json\TU/lmr/m/n/12 ,
+Overfull \hbox (41.62004pt too wide) in paragraph at lines 32--33
+\TU/lmr/m/n/12 ledger plus CrossRef fallbacks (\TU/lmtt/m/n/12 lit/queries/loop
+_073/crossref_query_001.json\TU/lmr/m/n/12 ,
  []
 
-(manuscript.bbl [3]) [4] (manuscript.aux)
-Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: A8AE686D7EAC89D6CD0A4E4B40AC4F47;543.
- )
-Output written on manuscript.xdv (4 pages, 58664 bytes).
+(manuscript.bbl [3]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 ...block Claim C1; Accessed 2025-11-09 (loop_
+                                                  073 CrossRef fallback).
+Output written on manuscript.xdv (3 pages, 55640 bytes).

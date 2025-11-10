@@ -1,0 +1,155 @@
+✅ MANUSCRIPT ANNOTATIONS — VERIFICATION COMPLETE
+
+File: manuscript_annotated.tex
+Status: READY TO COMPILE
+Total Annotations: 8 Critical Issues Flagged
+
+═══════════════════════════════════════════════════════════════════════
+
+ANNOTATION INVENTORY:
+
+PDF COMMENTS (4 total — visible as clickable annotations in PDF):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. CRITICAL: NC1 Contradiction
+     Location: Line 17 (Abstract)
+     Author: Wes
+     Content: NC1 abstract claim "stays near zero" contradicts Results table 
+              (+0.2388 [0.2209, 0.2568], p≈0). This is a large effect.
+
+  2. AMBIGUOUS ESTIMAND
+     Location: Line 25 (Results H1)
+     Author: Wes
+     Content: Is −0.120 a latent log-odds parameter? Marginal effect? 
+              Probability difference? Missing: Brant test or PO assumption check.
+
+  3. EFFECT SCALE NOT CONTEXTUALIZED
+     Location: Line 27 (Results H3)
+     Author: Wes
+     Content: −0.6544 reduction magnitude is meaningless without scale 
+              (range, SD). Report standardized effect or absolute range.
+
+  4. ZERO P/Q VALUES
+     Location: Line 27 (Results H3)
+     Author: Wes
+     Content: q=0 is underflow, not a true zero. Report as q<0.0001 or similar.
+              Same for p≈0 in H2 and NC1. These affect downstream BH calculations.
+
+INLINE TODO NOTES (4 total — visible as yellow/pink boxes in PDF):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  5. SURVEY DESIGN
+     Location: Line 22 (Methods)
+     Content: If survey_design.yaml defines strata/PSUs/weights, 
+              confirmatory estimands must be design-based by default.
+              Current SRS baseline + ad-hoc sensitivity risks bias.
+              Clarify scope: sample-level descriptive or population-level?
+
+  6. JACKKNIFE k=6
+     Location: Line 31 (Sensitivity)
+     Content: Six pseudo-replicates is non-standard. Accepted schemes use 
+              #replicates≈#PSUs or official replicate-weight scheme. k=6 appears 
+              arbitrary and will draw criticism. Justify or revert to standard 
+              bootstrap/BRR.
+
+  7. NC1 VALIDITY & INTERPRETATION
+     Location: Line 33 (Discussion)
+     Content: NC1 (sibling count) shows large effect (+0.2388). NOT a "clean null"
+              because parental religiosity likely predicts both sibling count AND 
+              the exposure. Sibling count is confounded by design. True null 
+              control must be unrelated by causal structure.
+
+  8. LITERATURE & ROBUSTNESS
+     Location: Line 35 (Discussion)
+     Content: (1) [CLAIM:*] tags asserted but lack mechanism integration 
+              (resilience as moderator vs mediator?).
+              (2) CrossRef fallbacks should be demoted from primary evidence.
+              (3) In results.csv, robustness_passed = N for H1–H3, yet text 
+              claims stability. Inconsistent. Block celebratory language until 
+              prespecified checks pass or transparently labeled exploratory.
+
+═══════════════════════════════════════════════════════════════════════
+
+ISSUE SEVERITY BREAKDOWN:
+
+  🔴 CRITICAL (1):
+     - NC1 Contradiction (Abstract vs Results)
+
+  🟠 HIGH PRIORITY (4):
+     - Survey Design (SRS vs design-based estimands)
+     - Ambiguous Estimand (H1 ordered logit scale)
+     - NC1 Validity (Confounded negative control)
+     - Literature & Robustness (Consistency and integration)
+
+  🟡 MEDIUM PRIORITY (3):
+     - Effect Scale (H3 magnitude without context)
+     - Zero P/Q Values (Statistical reporting)
+     - Jackknife k=6 (Non-standard methodology)
+
+═══════════════════════════════════════════════════════════════════════
+
+LaTeX PACKAGES USED:
+
+  • todonotes (v1.14+)      — For \todo[inline] boxes
+  • pdfcomment (v2.0+)       — For \pdfcomment metadata
+
+Both are standard in all major TeX distributions:
+  ✓ TeX Live 2024+
+  ✓ MacTeX 2024+
+  ✓ MikTeX 2024+
+  ✓ Overleaf (built-in)
+
+═══════════════════════════════════════════════════════════════════════
+
+TO COMPILE AND VIEW:
+
+METHOD 1: VSCode + LaTeX Workshop Extension
+  → Open manuscript_annotated.tex in VSCode
+  → Press Cmd+Alt+B (macOS) or Ctrl+Alt+B (Linux/Windows)
+  → PDF compiles with annotations visible
+
+METHOD 2: Terminal (requires TeX Live installed)
+  $ cd /Users/wessel/ai_scientist
+  $ pdflatex manuscript_annotated.tex
+  $ open manuscript_annotated.pdf
+
+METHOD 3: Overleaf (online, no installation required)
+  → Upload manuscript_annotated.tex to Overleaf.com
+  → Click "Compile"
+  → Annotations render automatically
+
+═══════════════════════════════════════════════════════════════════════
+
+FILE STATUS:
+
+  ✅ manuscript_annotated.tex    (40 lines) — READY
+  ✅ README_ANNOTATIONS.md        — Visual guide
+  ✅ ANNOTATIONS_SUMMARY.md       — Detailed reference
+  ✅ COMPILATION_GUIDE.md         — Compilation instructions
+  ✅ ANNOTATIONS_VERIFIED.txt     — This file
+
+═══════════════════════════════════════════════════════════════════════
+
+NEXT STEPS FOR USER:
+
+1. Install TeX distribution (if not already done):
+   brew install mactex-no-gui
+
+2. Open in VSCode and compile:
+   - File → Open → manuscript_annotated.tex
+   - Cmd+Alt+B to build
+
+3. View PDF with annotations:
+   - Yellow/pink inline boxes = todo notes
+   - Clickable comment icons = PDF comments
+
+4. Address each annotation in source manuscript:
+   - Use checklist above as guide
+   - Recompile to verify changes
+
+═══════════════════════════════════════════════════════════════════════
+
+Generated: 2025-11-10
+Annotations by: AI Assistant
+Reviewed for: Manuscript Scientific Rigor & Reproducibility
+
