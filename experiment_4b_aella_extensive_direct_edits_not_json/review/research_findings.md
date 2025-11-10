@@ -688,3 +688,11 @@ P1: PASS – That same review note (analysis/decision_log.csv:849) references `q
 N1: PASS – All `next_actions` entries remain marked done (artifacts/state.json:27), the phase stays `release` (artifacts/state.json:92), and `stop_now` is false (artifacts/state.json:94), so the release gate and backlog status remain justified.
 Notes: Please capture the next Semantic Scholar query or CrossRef fallback in loop 080 so the per-loop literature requirement no longer lags.
 
+## Loop 080 — 2025-11-09T22:32:02.811109+00:00
+DECISION: CONTINUE
+R1: PASS – analysis/decision_log.csv (2025-11-09T23:55:00Z entry) and artifacts/session_info.txt capture loop 080’s commands, seed, and git head so the literature update stays reproducible.
+L1: PASS – lit/queries/loop_080/query_001.json plus crossref_query_004.json and the new row in lit/evidence_map.csv keep [CLAIM:C1] DOI-backed despite the blocked Semantic Scholar key.
+P1: PASS – No tables or figures were published this loop, and qc/disclosure_check_loop_076.md still reports n≥10 with `violations: 0`, so the disclosure guard remains intact.
+N1: PASS – artifacts/state.json continues to show phase=release with all next_actions done, so the release-phase gate is still justified while awaiting final reviewer clearance.
+Notes: Hold for the final reviewer signal before declaring the release complete; no further artifacts changed in loop 080.
+
