@@ -5,7 +5,7 @@
 Often people talk about a future where AI (autonomously) contributes to scientific research. Keeping this ideal in the back of my mind, I was curious to see how far I can go today with AI autonomously doing science when the following situation emerged: listening to the Aella interview by Lex Friedman where she was saying she has so much unanalyzed survey data and around that same time I was starting to use and see great benefit in using Codex CLI in my other works.
 
 ## High-level
-The system is a python script that enforces some guardrails with the agents.md containing the guidance/plan.
+The system is a python script runs in a loop enforcing some guardrails with the agents.md containing the guidance/plan.
 
 Dataset: [childhoodbalancedpublic](https://knowingless.com/raw-data/#:~:text=Childhood%20Experiences%20Raw%20Data%20(cleaned%20and%20somewhat%20population%2Dweighted%20data)) 15k respondents from Aella's survey
 
