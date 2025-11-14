@@ -1,0 +1,11 @@
+# 2025-11-14T13:25:26.450868+00:00
+**Pre-Analysis Plan**
+- Documented the exposures, outcomes, covariates, and estimation logic for Hypotheses 1–3 while citing Felitti et al. (1998), Koenig (2012), and Cohen & Wills (1985) so each pathway is grounded in peer-reviewed work (analysis/pre_analysis_plan.md:14,22,29).
+- Laid out coding/missing-data rules, survey-weighted HC3 estimation, sensitivity flavors, and reproducibility/reporting expectations so the forthcoming analysis can be rerun verbatim (analysis/pre_analysis_plan.md:37,42,48,54).
+- Froze the plan with `status: frozen`, recorded the registry URL, and left a placeholder reminder to insert the freeze commit hash after the forthcoming commit (analysis/pre_analysis_plan.md:2,3,4).
+
+Tests: not run (not requested).
+
+Next steps:
+1. Begin the analysis phase by scripting the weighted WLS models, interactions, and auxiliary diagnostics described in the PAP.
+2. Capture output tables/figures, compare weighted vs. unweighted estimates, and document any deviations from the preregistered plan before moving toward sensitivity writing.
