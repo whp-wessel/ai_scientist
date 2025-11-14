@@ -1,0 +1,8 @@
+# 2025-11-14T11:59:02.554089+00:00
+- Summarized the dataset’s scope (14,443 rows / 718 columns, extensive retrospective childhood context and adult well-being items) and noted the reproducing script so future runs can revisit these descriptives (see `analysis/literature_notes.md:3-7`). I confirmed key distributions (e.g., classchild/current, mental-health Likert items, parental guidance) via a reusable Python snippet for transparency.
+
+- Added two new hypotheses that will guide the next phases: (a) cumulative childhood adversity (verbal/emotional abuse plus “at war” self-struggles) predicts higher adult anxiety/depression and lower self-love, citing Sheinbaum et al. (2024) and mapping directly to the relevant survey items; (b) higher childhood socioeconomic rankings predict stronger adult economic standing and satisfaction, citing Cheng & Furnham (2014) and tying to `classchild`, `classteen`, `classcurrent`, `networth`, and satisfaction/self-worth scales (`analysis/hypotheses.md:15-25`). These make the planned tests explicit and grounded in peer-reviewed evidence.
+
+- Logged the newest literature references (Sheinbaum et al. 2024 and Cheng & Furnham 2014) in the phase notes so future documentation includes the updated theoretical grounding for adversity and SES hypotheses (`analysis/literature_notes.md:14-22`).
+
+Next step: transition to the Pre-Analysis Plan (PAP) phase, where I’ll formalize the estimands, variable coding, and model strategy to operationalize these hypotheses.
