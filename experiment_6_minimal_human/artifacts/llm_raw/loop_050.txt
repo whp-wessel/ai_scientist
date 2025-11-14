@@ -1,0 +1,8 @@
+# 2025-11-14T14:07:05.520802+00:00
+**Analysis Update**
+- `analysis/run_analysis.py` now reads the preserved loop counter (or an explicit `--loop-index` override) and logs `pip freeze` output before running the models so every artifact, plot, and summary file is tagged with the current loop (`analysis/run_analysis.py:20-68`). The `write_summary`/`main` workflow also uses that index to save the sample comparison, regression records, plots, and Markdown summary under loop-specific names while still computing the same H1–H3 regressions (`analysis/run_analysis.py:394-610`).
+- Loop 50’s deliverables live under `artifacts/analysis_loop50_summary.md:1-35`, which now records sample information, the H1–H3 βs (including BH-FDR-adjusted p-values), simple-slope/prediction file references, and the new regression/environment snapshots; the environment snapshot itself is captured in `artifacts/pip_freeze_loop50.txt:1` so the exact Python stack is archived.
+- The state tracker now records `loop_counter: 50` to show this iteration finished in the analysis phase (`artifacts/state.json:1-6`).
+- **Testing:** `python3 analysis/run_analysis.py`
+
+Next: review the new Loop 50 summaries/plots and regression records, then proceed into the sensitivity phase with the refreshed reproducible workflow.

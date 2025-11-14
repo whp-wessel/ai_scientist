@@ -3,6 +3,9 @@
 
 from __future__ import annotations
 
+import argparse
+import json
+import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Sequence
@@ -18,7 +21,51 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = REPO_ROOT / "childhoodbalancedpublic_original.csv"
 ARTIFACTS = REPO_ROOT / "artifacts"
 ARTIFACTS.mkdir(exist_ok=True)
-SUMMARY_PATH = ARTIFACTS / "analysis_loop49_summary.md"
+FROZEN_STATE_PATH = ARTIFACTS / "state.json"
+
+
+def artifact_path(pattern: str, loop_index: int) -> Path:
+    return ARTIFACTS / pattern.format(loop=loop_index)
+
+
+def read_loop_counter() -> int:
+    if not FROZEN_STATE_PATH.exists():
+        return 0
+    try:
+        payload = json.loads(FROZEN_STATE_PATH.read_text())
+        counter = payload.get("loop_counter", 0)
+        return int(counter)
+    except Exception:
+        return 0
+
+
+def determine_loop_index(override: int | None) -> int:
+    if override and override > 0:
+        return override
+    return read_loop_counter() + 1
+
+
+def log_environment(loop_index: int) -> None:
+    result = subprocess.run(
+        ["python3", "-m", "pip", "freeze"],
+        capture_output=True,
+        text=True,
+    )
+    snapshot = result.stdout
+    if result.stderr:
+        snapshot += "\n" + result.stderr
+    artifact_path("pip_freeze_loop{loop}.txt", loop_index).write_text(snapshot)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run the frozen pre-analysis models")
+    parser.add_argument(
+        "--loop-index",
+        type=int,
+        default=None,
+        help="Force a specific loop index for naming outputs",
+    )
+    return parser.parse_args()
 
 GUIDANCE_COLUMNS = (
     "during ages *0-12*: Your parents gave useful guidance (pqo6jmj)",
@@ -264,7 +311,7 @@ def predicted_supports(results: Iterable[ModelResult]) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def plot_h1_coefficients(results: list[ModelResult]) -> None:
+def plot_h1_coefficients(results: list[ModelResult], loop_index: int) -> None:
     labels = [r.outcome_label for r in results]
     coefs = [float(r.weighted_res.params[r.exposure_name]) for r in results]
     errs = [1.96 * float(r.weighted_res.bse[r.exposure_name]) for r in results]
@@ -275,11 +322,11 @@ def plot_h1_coefficients(results: list[ModelResult]) -> None:
     plt.title("H1: Guidance index coefficients")
     plt.xticks(rotation=20)
     plt.tight_layout()
-    plt.savefig(ARTIFACTS / "h1_coefficients_loop49.png")
+    plt.savefig(artifact_path("h1_coefficients_loop{loop}.png", loop_index))
     plt.close()
 
 
-def plot_h2_coefficients(results: list[ModelResult]) -> None:
+def plot_h2_coefficients(results: list[ModelResult], loop_index: int) -> None:
     outcomes = [r.outcome_label for r in results if r.exposure_name == "religiosity_current_z"]
     x = np.arange(len(outcomes))
     width = 0.35
@@ -296,11 +343,11 @@ def plot_h2_coefficients(results: list[ModelResult]) -> None:
     plt.title("H2: Religiosity associations with wellbeing")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(ARTIFACTS / "h2_coefficients_loop49.png")
+    plt.savefig(artifact_path("h2_coefficients_loop{loop}.png", loop_index))
     plt.close()
 
 
-def plot_h3_interaction(results: list[ModelResult]) -> None:
+def plot_h3_interaction(results: list[ModelResult], loop_index: int) -> None:
     coefs = [float(r.weighted_res.params["adversity_support_interaction"]) for r in results]
     errs = [1.96 * float(r.weighted_res.bse["adversity_support_interaction"]) for r in results]
     labels = [r.outcome_label for r in results]
@@ -311,11 +358,11 @@ def plot_h3_interaction(results: list[ModelResult]) -> None:
     plt.ylabel("Interaction β per SD")
     plt.title("H3: Support × adversity interaction")
     plt.tight_layout()
-    plt.savefig(ARTIFACTS / "h3_coefficients_loop49.png")
+    plt.savefig(artifact_path("h3_coefficients_loop{loop}.png", loop_index))
     plt.close()
 
 
-def plot_h3_simple_slopes(results: list[ModelResult]) -> None:
+def plot_h3_simple_slopes(results: list[ModelResult], loop_index: int) -> None:
     fig, axes = plt.subplots(2, 2, figsize=(10, 6), sharey=True)
     supports = [-1.0, 1.0]
     adversities = np.linspace(-2, 2, 100)
@@ -340,7 +387,7 @@ def plot_h3_simple_slopes(results: list[ModelResult]) -> None:
         ax.legend()
     fig.suptitle("H3 interaction simple slopes")
     plt.tight_layout()
-    plt.savefig(ARTIFACTS / "h3_interaction_loop49.png")
+    plt.savefig(artifact_path("h3_interaction_loop{loop}.png", loop_index))
     plt.close()
 
 
@@ -356,6 +403,7 @@ def write_summary(
     h3_slopes: pd.DataFrame,
     h3_preds: pd.DataFrame,
     df: pd.DataFrame,
+    loop_index: int,
 ) -> None:
     def format_record(record: ModelResult, adj_p: float) -> str:
         coef = float(record.weighted_res.params[record.exposure_name])
@@ -366,11 +414,21 @@ def write_summary(
             f"p={p:.3f} (BH-FDR={adj_p:.3f}) with N={int(record.weighted_res.nobs)}."
         )
 
-    lines = ["# Loop 49 Analysis Results", "", "## Sample information", ""]
+    h1_sample_file = artifact_path("h1_sample_comparison_loop{loop}.csv", loop_index)
+    h1_vif_file = artifact_path("h1_vif_loop{loop}.csv", loop_index)
+    h3_slopes_file = artifact_path("h3_simple_slopes_loop{loop}.csv", loop_index)
+    h3_preds_file = artifact_path("h3_predicted_supports_loop{loop}.csv", loop_index)
+    regression_file = artifact_path("regression_records_loop{loop}.csv", loop_index)
+    env_file = artifact_path("pip_freeze_loop{loop}.txt", loop_index)
+    summary_path = artifact_path("analysis_loop{loop}_summary.md", loop_index)
+
+    lines = [f"# Loop {loop_index} Analysis Results", "", "## Sample information", ""]
     lines.append(f"- Rows with positive weight: {total_rows:,}")
     lines.append(f"- Religionchildhood nonmissing (not used): {df['Religionchildhood'].notna().sum()}")
-    lines.append("- H1 analytic sample comparison saved in artifacts/h1_sample_comparison_loop49.csv")
-    lines.append("- VIF results saved in artifacts/h1_vif_loop49.csv")
+    lines.append(f"- H1 analytic sample comparison saved in artifacts/{h1_sample_file.name}")
+    lines.append(f"- VIF results saved in artifacts/{h1_vif_file.name}")
+    lines.append(f"- Regression record snapshot saved in artifacts/{regression_file.name}")
+    lines.append(f"- Environment snapshot saved in artifacts/{env_file.name}")
     lines.extend(["", "## H1 results", "", "Weighted guidance index effects:"])
     for record in h1_results:
         adj = h1_adj[("Guidance index", record.outcome_label)]
@@ -383,16 +441,22 @@ def write_summary(
     for record in h3_results:
         adj = h3_adj[(record.exposure_label, record.outcome_label)]
         lines.append(format_record(record, adj))
-    lines.extend(["", "Simple slopes at support = -1/0/1 saved to artifacts/h3_simple_slopes_loop49.csv", ""])
-    lines.append("Predicted outcomes at low/average/high support (mean adversity) saved to artifacts/h3_predicted_supports_loop49.csv")
+    lines.extend(["", f"Simple slopes at support = -1/0/1 saved to artifacts/{h3_slopes_file.name}", ""])
+    lines.append(
+        f"Predicted outcomes at low/average/high support (mean adversity) saved to artifacts/{h3_preds_file.name}"
+    )
     lines.extend(["", "## Limitations", ""])
     lines.append("- The column Religionchildhood is entirely missing, so that planned control could not be included.")
     lines.append("- Simple slopes and predictions assume covariates remain at their analytic means.")
     lines.append("- The `religion` control was dropped from H2 regressions because it mirrors the active religiosity measures and inflated coefficients.")
-    SUMMARY_PATH.write_text("\n".join(lines))
+    summary_path.write_text("\n".join(lines))
 
 
 def main() -> None:
+    args = parse_args()
+    loop_index = determine_loop_index(args.loop_index)
+    log_environment(loop_index)
+
     df = prepare_dataframe()
     total_rows = len(df)
     print(f"Loaded {total_rows} respondents with positive weights.")
@@ -422,14 +486,24 @@ def main() -> None:
         df,
         h1_results[0].subset,
         label="H1 age/gender/class",
-        vars_to_compare=["selfage", "biomale", "gendered", "cis", "classchild", "classteen", "classcurrent"],
+        vars_to_compare=[
+            "selfage",
+            "biomale",
+            "gendered",
+            "cis",
+            "classchild",
+            "classteen",
+            "classcurrent",
+        ],
     )
-    h1_sample_table.to_csv(ARTIFACTS / "h1_sample_comparison_loop49.csv")
+    h1_sample_path = artifact_path("h1_sample_comparison_loop{loop}.csv", loop_index)
+    h1_sample_table.to_csv(h1_sample_path)
     vif = compute_vif(
         h1_results[0].subset,
         ["guidance_index_z"] + BASE_COVARIATES,
     )
-    vif.to_csv(ARTIFACTS / "h1_vif_loop49.csv", header=["VIF"])
+    h1_vif_path = artifact_path("h1_vif_loop{loop}.csv", loop_index)
+    vif.to_csv(h1_vif_path, header=["VIF"])
 
     h2_results: list[ModelResult] = []
     base_h2_covariates = ["guidance_index_z"] + BASE_COVARIATES
@@ -486,10 +560,12 @@ def main() -> None:
     h3_adj = adjust_pvalues(h3_results, "exposure_label")
 
     slopes = simple_slopes_table(h3_results)
-    slopes.to_csv(ARTIFACTS / "h3_simple_slopes_loop49.csv", index=False)
+    slopes_path = artifact_path("h3_simple_slopes_loop{loop}.csv", loop_index)
+    slopes.to_csv(slopes_path, index=False)
 
     preds = predicted_supports(h3_results)
-    preds.to_csv(ARTIFACTS / "h3_predicted_supports_loop49.csv", index=False)
+    preds_path = artifact_path("h3_predicted_supports_loop{loop}.csv", loop_index)
+    preds.to_csv(preds_path, index=False)
 
     all_records = pd.DataFrame(
         [
@@ -510,12 +586,13 @@ def main() -> None:
             for res in h1_results + h2_results + h3_results
         ]
     )
-    all_records.to_csv(ARTIFACTS / "regression_records_loop49.csv", index=False)
+    regression_path = artifact_path("regression_records_loop{loop}.csv", loop_index)
+    all_records.to_csv(regression_path, index=False)
 
-    plot_h1_coefficients(h1_results)
-    plot_h2_coefficients(h2_results)
-    plot_h3_interaction(h3_results)
-    plot_h3_simple_slopes(h3_results)
+    plot_h1_coefficients(h1_results, loop_index)
+    plot_h2_coefficients(h2_results, loop_index)
+    plot_h3_interaction(h3_results, loop_index)
+    plot_h3_simple_slopes(h3_results, loop_index)
 
     write_summary(
         total_rows=total_rows,
@@ -529,6 +606,7 @@ def main() -> None:
         h3_slopes=slopes,
         h3_preds=preds,
         df=df,
+        loop_index=loop_index,
     )
 
 
