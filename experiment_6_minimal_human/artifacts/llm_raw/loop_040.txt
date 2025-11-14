@@ -1,0 +1,8 @@
+# 2025-11-14T13:17:14.225473+00:00
+**Literature Phase**
+- Documented the reproducible dataset scoping (14,443 respondents, descriptive-script summary, parental guidance/purity metrics, and loop progress for this anchor) in `analysis/literature_background.md:4` and `analysis/literature_background.md:32`.
+- Added the Abbott & Slack (2021) and Bethell et al. (2019) entries so the adversity ↔ adult depression link and the protective role of positive childhood experiences now directly support our planned exposures (`analysis/literature_notes.md:21`, `analysis/literature_notes.md:22`).
+- Finalized two hypotheses (family cohesion as a shield for adult distress and religiosity as a correlate of wellbeing) with concrete data plans and the updated citations, ready to feed the PAP in `analysis/hypotheses.md:4` and `analysis/hypotheses.md:6`.
+
+Testing: not run (not requested).
+Next steps: draft and freeze the Pre-Analysis Plan (PAP) for these hypotheses before moving into the analysis phase.
