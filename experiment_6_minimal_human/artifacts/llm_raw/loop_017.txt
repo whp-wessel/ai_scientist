@@ -1,0 +1,10 @@
+# 2025-11-14T11:56:01.585919+00:00
+Documented the literature-phase groundwork so the next loop can shift toward the Pre-Analysis Plan with a clear, reproducible foundation.
+
+- Summarized the dataset scope (14,443 respondents, 718 columns, top countries + religion counts, and the divergent parental guidance vs. purity-culture means) in `analysis/literature_background.md:3`–`analysis/literature_background.md:5` and reran `analysis/literature_descriptives.py:18` so anyone can reproduce those descriptive anchors before hypothesis building.
+- Emphasized that the survey captures expansive childhood and adult wellbeing constructs (e.g., abuse, parental guidance, wellbeing scales) with references in `analysis/literature_background.md:6` plus the key studies listed in `analysis/literature_background.md:9-19`; the new explicit “cycles of shame” citation (`analysis/literature_background.md:18` and `analysis/literature_notes.md:20`) now justifies linking purity-culture messaging to adult sexual shame and psychological distress.
+- Logged the literature notes so the next phase can cite at least one peer-reviewed source per hypothesis, covering ACEs, parental warmth, religiosity, and sexual shame pegs (`analysis/literature_notes.md:10-20`).
+
+Next steps:
+1. Draft candidate hypotheses grounded in the documented variables and literature (e.g., childhood ACEs → adult depression, parental guidance → self-esteem/relationship satisfaction, purity culture → sexual shame/mental-health costs) with clear sources for each link.
+2. Begin the Pre-Analysis Plan by specifying measurement strategies, controls (e.g., country, demographics), and survey-aware estimation choices that will test those hypotheses rigorously.
