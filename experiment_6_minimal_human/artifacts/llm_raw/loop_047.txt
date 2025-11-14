@@ -1,0 +1,9 @@
+# 2025-11-14T13:42:06.796688+00:00
+- Expanded `analysis/pre_analysis_plan.md` with a reproducibility-first description of the dataset, survey structure, weighting rules, covariate encoding, and documentation expectations so the plan ties directly to the logged snapshot before analyses begin (`analysis/pre_analysis_plan.md:6`).
+- Fully specified exposures, outcomes, modeling, and inference for H1, H2, and H3—including the literature anchors, standardization, covariate sets, HC3 robust WLS strategy, and BH-FDR corrections—so preregistration covers the full analytic workflow (`analysis/pre_analysis_plan.md:21`, `analysis/pre_analysis_plan.md:29`, `analysis/pre_analysis_plan.md:36`).
+- Added a robustness/sensitivity checklist plus reporting commitments (figures, tables, effect-size language, and deviation tracking) to keep all downstream work aligned with the plan (`analysis/pre_analysis_plan.md:44`, `analysis/pre_analysis_plan.md:52`).
+- The plan remains “frozen” (metadata updated accordingly) until we transition to the analysis phase, per the protocol (`analysis/pre_analysis_plan.md:1`).
+
+Next steps:
+1. Re-run `analysis/literature_descriptives.py` to snapshot the weighted sample and distributions, then log the environment/system metadata before modeling.
+2. Begin the analysis phase by executing H1’s weighted regressions (and the planned unweighted counterparts), verifying the guidance index and outcomes match the preregistered codings, and documenting sample sizes/missingness to ensure reproducibility.
