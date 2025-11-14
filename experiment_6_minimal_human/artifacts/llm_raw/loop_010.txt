@@ -1,0 +1,6 @@
+# 2025-11-14T11:35:09.527247+00:00
+**Literature Update**
+- Survey scoping done via pandas: 14,443 respondents across 717 columns capturing demographics (age, gender/ethnicity), detailed childhood contexts (family class, abuse, parenting style), current religion practices, SES/net-worth, and adult well-being (depression, anxiety, life satisfaction).
+- Literature anchors for future hypotheses: Society and Mental Health (2023) shows configurations of childhood adversity predict adult mental-health disorders, Journal of Child and Adolescent Trauma (2015) highlights how religious involvement shapes health after early trauma, and BMC Geriatrics (2024) documents childhood SES effects on later depression/well-being—each tying directly to the childhood, religion, and SES slices in our data.
+- Semantic Scholar rate-limited the abstract requests, so the above relies on metadata but keeps us within the 1 request/sec limit while still grounding hypotheses in peer-reviewed work.
+- Next loop (PAP phase) I’ll pre-register specific hypotheses and analysis steps derived from these constructs, freeze that plan, and then proceed to testing.
