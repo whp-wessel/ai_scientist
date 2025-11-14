@@ -268,7 +268,7 @@ def run_git(args: Sequence[str]) -> tuple[int, str, str]:
 
 
 def git_status_lines() -> List[str]:
-    rc, out, err = run_git(["status", "--porcelain"])
+    rc, out, err = run_git(["status", "--porcelain", "."])
     if rc != 0:
         raise RuntimeError(f"git status failed: {err.strip()}")
     return [line.rstrip() for line in out.splitlines() if line.strip()]
@@ -282,25 +282,44 @@ def ensure_clean_worktree() -> None:
         )
 
 
-def auto_commit(loop_idx: int, status_lines: Sequence[str]) -> bool:
+def auto_commit(status_lines: Sequence[str], message: str) -> tuple[bool, bool]:
     if not status_lines:
-        print(f"[git] loop {loop_idx:03d} produced no tracked file changes; skipping commit.")
-        return True
-    rc, _, err = run_git(["add", "-A"])
+        print(f"[git] {message} produced no tracked file changes; skipping commit.")
+        return True, False
+    rc, _, err = run_git(["add", "-A", "."])
     if rc != 0:
         print(f"[git] add failed: {err.strip()}")
-        return False
-    message = f"loop {loop_idx:03d}"
+        return False, False
     rc, out, err = run_git(["commit", "-m", message])
     if rc != 0:
         combined = (err or out).strip()
         if "nothing to commit" in combined.lower():
-            print(f"[git] loop {loop_idx:03d} had nothing to commit after staging; continuing.")
-            return True
+            print(f"[git] {message} had nothing to commit after staging; continuing.")
+            return True, False
         print(f"[git] commit failed: {combined}")
-        return False
+        return False, False
     print(out.strip() or f"[git] committed {message}")
+    return True, True
+
+
+def git_push(tag: str) -> bool:
+    rc, out, err = run_git(["push"])
+    if rc != 0:
+        combined = (err or out).strip()
+        print(f"[git] push failed during {tag}: {combined}")
+        return False
+    summary = out.strip() or "remote updated"
+    print(f"[git] push complete for {tag}: {summary}")
     return True
+
+
+def commit_and_push_pending(tag: str) -> None:
+    status_lines = git_status_lines()
+    ok, committed = auto_commit(status_lines, tag)
+    if not ok:
+        raise RuntimeError(f"git commit failed during {tag}")
+    if committed and not git_push(tag):
+        raise RuntimeError(f"git push failed during {tag}")
 
 
 def record_raw_output(tag: str, text: str) -> None:
@@ -379,8 +398,11 @@ def run_science_loop(loop_idx: int, args: argparse.Namespace) -> Dict[str, Any]:
     after_state = ensure_state_defaults(read_state())
     enforce_phase_transition(before_state, after_state)
     status_lines = git_status_lines()
-    if not auto_commit(loop_idx, status_lines):
+    commit_ok, committed = auto_commit(status_lines, f"loop {loop_idx:03d}")
+    if not commit_ok:
         raise RuntimeError("Unable to auto-commit loop changes")
+    if committed and not git_push(f"loop {loop_idx:03d}"):
+        raise RuntimeError("Unable to push loop changes")
     updated_state = ensure_state_defaults(after_state)
     updated_state["loop_counter"] = loop_idx
     write_state(updated_state)
@@ -449,6 +471,7 @@ def main(argv: Sequence[str]) -> int:
         state = ensure_state_defaults(read_state())
         loop_idx = state["loop_counter"] + 1
         print(f"== Loop {loop_idx:03d} ==")
+        commit_and_push_pending(f"pre-loop {loop_idx:03d}")
         try:
             state = run_science_loop(loop_idx, args)
         except KeyboardInterrupt:
