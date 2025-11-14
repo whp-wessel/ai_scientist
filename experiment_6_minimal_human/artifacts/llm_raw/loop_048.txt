@@ -1,0 +1,8 @@
+# 2025-11-14T13:46:10.373119+00:00
+**PAP Freeze**
+- Locked the PAP version (covering the dataset scope, reproducible data-prep steps, literaturereferenced H1-H3 hypotheses, weighted HC3/WLS plans, BH-FDR adjustments, robustness checks, and reporting commitments) by setting `analysis/pre_analysis_plan.md:4` to `freeze_commit: 808054d3455621759d730efc215ef02802924ff0`, so the current spec is reproducibly anchored; testing not run (not requested in this phase).
+- Raised the loop state to the analysis phase via `artifacts/state.json:3`, signaling that the plan is frozen and the runner can proceed with hypothesis testing.
+
+Next steps:
+1. Implement the survey-aware modeling pipeline (e.g., `analysis/h1_h2_h3_model.py`) that executes the PAP’s WLS+HC3 regressions, interactions, and BH-FDR adjustments on the documented exposures/outcomes while standardizing scores and reporting β per 1-SD with CIs.
+2. Rerun `analysis/literature_descriptives.py` (capturing the output in `artifacts/`) before each modeling pass so every analytical snapshot (sample size, geography, scale stats, missingness) is logged alongside the frozen plan.

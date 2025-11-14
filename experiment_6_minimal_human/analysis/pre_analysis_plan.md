@@ -1,7 +1,7 @@
 # Pre-Analysis Plan
 status: frozen
 registry_url: https://github.com/whp-wessel/ai_scientist/blob/main/analysis/pre_analysis_plan.md
-freeze_commit: pending
+freeze_commit: 808054d3455621759d730efc215ef02802924ff0
 
 ## 1. Research context and dataset
 - **Dataset**: `childhoodbalancedpublic_original.csv` (14,443 respondents, 718 columns). `analysis/literature_descriptives.py` will be rerun at the start of every analytical pass; its logging output (sample size, geography, scale means, response distributions) will be archived beside the code to document the snapshot tied to this plan.
