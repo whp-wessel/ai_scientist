@@ -1,0 +1,8 @@
+# 2025-11-14T12:32:10.105242+00:00
+**Background**
+- **Dataset:** `childhoodbalancedpublic_original.csv:1` describes 14,443 respondents and 718 variables spanning demographics, childhood socioeconomic status and family climate, religiosity (both historical and current), trauma exposures, and adult psychological/relationship well-being, offering pairs of potential exposures and outcomes to ground hypotheses.
+- **Literature:** Semantic Scholar searches on “childhood religiosity adult mental health” and “parental emotional abuse adult anxiety” (obeying the 1 query-per-second request limit) surfaced peer-reviewed anchors, e.g., Feinson & Meir 2015 (Journal of Interpersonal Violence) on religiosity moderating child abuse effects, Upenieks 2020 (Innovation in Aging) on childhood abuse, religious change, and midlife mental health, Morton et al. 2019 (Innovation in Aging) on gendered patterns linking child abuse to adult mental health, and Caldwell et al. 2011 (Journal of Family Psychology) connecting childhood maltreatment to adult attachment/depression—each providing theoretical grounding for candidate hypotheses.
+
+**Next Steps**
+- 1. Identify a manageable set of survey-derived exposures/outcomes (e.g., childhood religious strictness, verbal/emotional abuse, parental guidance) informed by the above literature and the available traits to craft hypotheses with clear causal stories.
+- 2. Draft the corresponding pre-analysis plan detailing definitions, estimands, covariates, and planned models so we can “freeze” that plan before moving into analysis.
