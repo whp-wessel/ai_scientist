@@ -1,0 +1,8 @@
+# 2025-11-14T12:34:27.128035+00:00
+**Literature Update**
+- Re-ran `python analysis/literature_descriptives.py` to capture the latest national-origin counts, religion response spread, social-support coverage, and net-worth category frequencies so the same scoping can be reproduced; the refreshed summary is recorded in `analysis/literature_notes.md:3-14`.
+- Added dataset-context bullets to `analysis/literature_background.md:3-10` that log the religion/net-worth distributions and clarify which social-support item has sufficient coverage versus which serves as a robustness check.
+- Appended a literature–hypothesis alignment note (`analysis/literature_notes.md:31-32`) to confirm each candidate hypothesis already links to at least one peer-reviewed source and to signal we are ready to move toward specifying the PAP’s measurements, covariates, and analytical procedures.
+
+Next steps:
+1. Draft and “freeze” the Pre-Analysis Plan by specifying exact exposures/outcomes, sample restrictions, covariates (e.g., age, gender identity, current class, country), and statistical models so we can begin the analysis phase.
