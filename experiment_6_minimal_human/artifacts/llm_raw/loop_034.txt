@@ -1,0 +1,8 @@
+# 2025-11-14T12:56:45.433644+00:00
+**Literature Phase**
+- Confirmed the core sample (14,443 rows) plus the distributions of top countries, religion endorsements, class, guidance, and wellbeing items by rerunning `analysis/literature_descriptives.py` so the descriptive summary can be regenerated verbatim for any future reader (`analysis/literature_descriptives.py:27`).
+- Expanded the “Relevant literature” section with Felitti et al. (1998), Repetti et al. (2002), and Wolke & Lereya (2015), tying the survey’s abuse/bullying and parental guidance measures to established adult-depression/anxiety pathways (`analysis/literature_notes.md:11`).
+- Captured hypothesis guidance and next-phase considerations for exposures (adversity vs. support), outcomes (adult wellbeing/self-esteem), covariates, and cleaning practices so the upcoming PAP can reuse these targets (`analysis/literature_notes.md:18` and `analysis/literature_notes.md:21`).
+
+Next steps
+- Draft the Pre-Analysis Plan that operationalizes the adversity and parental-guidance hypotheses (adult anxiety/depression and self-esteem/relationship satisfaction outcomes), explicitly noting covariates, measurement recoding, and survey-aware modeling choices before freezing that plan for the analysis phase (`analysis/literature_notes.md:18`).
