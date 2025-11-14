@@ -1,0 +1,10 @@
+# 2025-11-14T11:33:48.401898+00:00
+Finished the literature-phase tasks: summarized the survey’s scope, gathered peer-reviewed anchors, and sketched two hypotheses to feed into the PAP.
+
+- The dataset is a 14,443-person online sample with 718 items covering religious/“purity culture” socialization, childhood family climate, and adult psychosocial outcomes, giving us a clean scope for operationalization (artifacts/literature_loop9.md:4, artifacts/literature_loop9.md:5).  
+- Candidate literature now captured for future reference: Feinson & Meir (2015) on religiosity and trauma, Heiden-Rootes et al. (2019) on fundamentalism and depression, Carroll et al. (2013) on parental warmth buffering adult risk, and Nica (2019) on well-being after leaving fundamentalism (artifacts/literature_loop9.md:8; artifacts/literature_loop9.md:9; artifacts/literature_loop9.md:10; artifacts/literature_loop9.md:11).  
+- Two hypothesis sketches are recorded: (1) childhood religious rigidity/purity teachings and abuse predict adult distress (details at artifacts/hypotheses_loop9.md:3–6), and (2) parental warmth/guidance predicts adult resilience/satisfaction even after adversity (details at artifacts/hypotheses_loop9.md:8–11); the file also lists concrete next steps for the PAP (artifacts/hypotheses_loop9.md:13–16).
+
+Next steps for the PAP:  
+1. Define how the purity-culture exposure and parental-warmth composites are constructed, including item coding, aggregation rules, and any planned trim of missing data.  
+2. Pre-register the modeling strategy (regressions or latent scores, covariate set, sample restrictions) plus the robustness checks noted in the hypothesis notes.
