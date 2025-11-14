@@ -1,0 +1,9 @@
+# 2025-11-14T11:37:55.218944+00:00
+**Literature Update**
+- Captured the latest background scoping (sample size, class distributions, top geographies, religiosity, well-being proxies, purity/parent guidance scales) in `artifacts/literature_loop11.md:3` and scripted the enumerations in `analysis/literature_descriptives.py:1`, which I ran to verify those summaries.
+- Logged the peer-reviewed anchors for our constructs—Reiss (socioeconomic gradient), Norman et al. (emotional abuse), Nica (purity culture exit distress), and Masten (resilience through guidance)—at `artifacts/literature_loop11.md:9`.
+- Articulated four literature-grounded hypotheses for the PAP (class, abuse, purity teaching, and parental guidance effects) at `artifacts/literature_loop11.md:15`.
+
+Next steps
+1. Translate these hypotheses into precise estimands and variable codings so we can draft and freeze the PAP before moving into the analysis phase.
+2. Identify necessary survey-aware methods (weights, missingness rules, control sets) and potential robustness checks as part of the upcoming PAP discussion.
