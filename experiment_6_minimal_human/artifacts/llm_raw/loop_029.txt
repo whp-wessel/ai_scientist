@@ -1,0 +1,12 @@
+# 2025-11-14T12:31:11.311583+00:00
+**Literature**
+- `childhoodbalancedpublic_original.csv` (14,443×718) offers childhood guidance/affection indicators (e.g., `during ages *0-12*: parents gave useful guidance (pqo6jmj)`, `family was physically affectionate (sgfjz8v)`) and adversity reports (e.g., childhood verbal/emotional abuse `mds78zu`, sexual abuse `rwp3xhm`) that map cleanly onto adult well-being items like romantic satisfaction (`hp9qz6f`), comparative happiness (`h33e6gg`), and depressive signals (`wz901dj`, `ix5iyv3`).
+- Wood et al. (2020, *Journal of Epidemiology and Community Health*) finds that high-quality parent–child relationships and parental mental health consistently predict midlife positive mental well-being, even after accounting for socioeconomic conditions, which supports prioritizing childhood relational quality as a key exposure.
+- Yama et al. (1993, *American Journal of Orthopsychiatry*) and a BMJ (1998) paper show childhood sexual/emotional abuse strongly forecast adult anxiety and depression, underpinning the adversity-to-adult-mental-health pathway we can observe in the current survey.
+
+**Hypotheses**
+- H1: Respondents reporting stronger parental guidance/affection during ages 0–18 (`pqo6jmj`, `dcrx5ab`, `sgfjz8v`, `siags64`, etc.) will report higher adult well-being (romantic satisfaction `hp9qz6f`, comparative happiness `h33e6gg`), in line with Wood et al.’s (2020) life-course findings.
+- H2: Those who endorse childhood abuse/neglect indicators (`mds78zu`, `v1k988q`, `rwp3xhm`, `touu2yy`) will score higher on adult depressive indicators (`wz901dj`, `ix5iyv3`), mirroring Yama et al. (1993) and BMJ (1998) evidence on abuse and later depression/anxiety.
+
+**Next Steps**
+- Draft the Pre-Analysis Plan by freezing the measurement decisions (coding of exposure/adversity scales, outcomes, and control set such as current SES, age, education, gender identity, and pre-existing mental illness), specify survey-aware inference (e.g., robust standard errors, handling missing data), and lock it before moving to hypothesis testing.
