@@ -23,3 +23,25 @@
 ## Reproducibility notes
 - All summaries above derive from `childhoodbalancedpublic_original.csv` (14,443 × 718) using Pandas scripts that read the file with default parsing and compute `value_counts()` for key columns; the relevant Python commands are recorded in the working log.
 - Future analysts should re-run the same scripts (or equivalent R/tidyverse pipelines) to regenerate the descriptive counts described above.
+
+# Loop 4 Literature Phase Notes
+
+## Dataset refresh
+- The same `childhoodbalancedpublic_original.csv` includes 14,443 records and 718 columns; most respondents (7,498) report living in the United States, with sizable samples from the United Kingdom (1,191), Canada (963), Australia (545), and western Europe (443).
+- Subjective social class scales retain a roughly normal spread: `classchild` mean 2.62 (SD 1.28), `classteen` mean 2.76 (SD 1.25), and `classcurrent` mean 3.02 (SD 1.26) on a 0-6 scale, so both low- and high-class experiences are well represented.
+- Mental-health proxies remain close to neutral: `I tend to suffer from depression (wz901dj)` mean -0.41 (SD 2.09), `I tend to suffer from anxiety (npvfh98)-neg` mean -0.83 (SD 2.03), `I love myself (2l8994l)` mean 0.61 (SD 1.86), and `I am not happy (ix5iyv3)-neg` mean 0.15 (SD 1.98). This spread should allow modeling both positive and negative well-being outcomes.
+- Religion practice is concentrated among non-practitioners (9,953 say "No" to current practice), with a smaller group reporting varying levels of religiosity; this suggests we can control for religious engagement when modeling subjective outcomes.
+
+## Literature reinforcement
+- Reiss (2013) systematically reviews longitudinal and cross-sectional studies in *Social Science & Medicine* and concludes that lower childhood socioeconomic status predicts persistent adolescent and adult mental-health problems (doi:10.1016/j.socscimed.2013.04.026).
+- Norman et al. (2012) conduct a meta-analysis in *PLoS Medicine* showing that emotional abuse—a component of verbal or psychological mistreatment—has a large, persistent effect on adult depression, anxiety, and suicidality even after adjusting for socioeconomic covariates (doi:10.1371/journal.pmed.1001349).
+- Masten (2001) in *American Psychologist* describes "ordinary magic" resilience, highlighting responsive parenting and guidance as protective processes that foster positive self-regard and life satisfaction among youth exposed to adversity (doi:10.1037/0003-066X.56.3.227).
+
+## Refined hypotheses
+1. **Childhood class gradients**: Lower `classchild` remains a strong candidate predictor of higher adult depression and lower self-love (`I tend to suffer from depression (wz901dj)` and `I love myself (2l8994l)`), aligning with Reiss (2013).
+2. **Emotional/verbal abuse pathways**: More negative scores on `during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)` (and the teen version) should correlate with worse adult well-being (higher `I tend to suffer from anxiety (npvfh98)-neg` and `I am not happy (ix5iyv3)-neg`), consistent with Norman et al. (2012).
+3. **Parental guidance as resilience**: Higher parental guidance scores across both childhood and teen windows should predict elevated self-esteem and work satisfaction (`I love myself (2l8994l)` and `I am satisfied with my work/career life (z0mhd63)`), as described by Masten (2001).
+
+## Reproducibility notes
+- Descriptive statistics in this loop came from the Python commands above; re-running the same `pandas` script reproduces the reported means, SDs, and value counts.
+- Maintain version control of this artifact and rerun data-intake scripts before the Pap phase so that any sample updates are captured.

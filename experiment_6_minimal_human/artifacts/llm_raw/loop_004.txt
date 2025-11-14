@@ -1,0 +1,5 @@
+# 2025-11-14T11:17:21.919196+00:00
+- Added Loop 4 literature-phase notes that refresh the dataset overview (sample, class/mental-health means, religiosity) and explicitly tie each refined hypothesis to a peer-reviewed source in `artifacts/literature_phase.md:27-47`, so the plan now couples descriptive evidence with Reiss (2013), Norman et al. (2012), and Masten (2001) citations.
+- Bumped `artifacts/state.json:1` to `loop_counter` 4 while keeping the phase at “literature” so future steps know we’ve completed this loop’s scoping work.
+
+Next steps: 1) freeze these hypotheses and begin drafting the Pre-Analysis Plan (phase `pap`) with explicit outcomes, predictors, covariates, and estimation methods; 2) detail how the survey structure (weights, clustering, missingness) will be handled to honor reproducible, survey-aware inference.
