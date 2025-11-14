@@ -1,0 +1,6 @@
+# 2025-11-14T11:43:47.942700+00:00
+**Literature Phase**
+- Completed a dataset overview capturing the childhood exposures, current well-being markers, and sociodemographics for future modeling (`analysis/literature_notes.md:3`).
+- Documented authoritative sources (Felitti 1998; Jung 2017; Bellis et al. 2017; Cohen & Wills 1985) via Crossref after hitting the Semantic Scholar rate limit so the adversity, religiosity, and support claims are grounded in peer-reviewed work (`analysis/literature_notes.md:8`).
+- Outlined three candidate hypotheses (abuse → distress, support buffering, religiosity-enhanced positive affect) tied to those literatures for the upcoming PAP (`analysis/hypotheses_candidates.md:3`).
+- **Next steps**: 1) Freeze these hypotheses and draft the pre-analysis plan by specifying precise exposures, outcomes, and covariates; 2) Define survey-aware estimation choices (e.g., handling Likert coding, weighting, heteroskedasticity-robust SEs); 3) Prepare reproducible scripts/documentation so the pre-registration can be rerun.
