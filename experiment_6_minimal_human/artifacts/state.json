@@ -1,7 +1,7 @@
 {
   "loop_counter": 40,
-  "phase": "literature",
+  "phase": "pap",
   "stop_now": false,
   "stop_reason": "",
-  "total_loops": 75
+  "total_loops": 90
 }
