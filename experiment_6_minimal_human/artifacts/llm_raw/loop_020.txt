@@ -1,0 +1,6 @@
+# 2025-11-14T12:04:47.845747+00:00
+- Documented the dataset scoping plus reproducibility anchors (countries, class means, wellbeing, parental guidance, purity scores) with the latest `analysis/literature_descriptives.py` run so every loop can rerun the same summary statistics before modeling (analysis/literature_background.md:3,8; analysis/literature_notes.md:3,8).  
+- Expanded the literature-grounded candidate directions, covering abuse → distress, social-support buffering, religiosity/purity tension, and a new SES life-course hypothesis, along with exposures/outcomes to seed the PAP (analysis/literature_background.md:25; analysis/hypotheses_candidates.md:5,9,13,17).  
+- Tests: `python analysis/literature_descriptives.py` (printed the reproducible counts and variable summaries described above).
+
+Next step is to begin the Pre-Analysis Plan phase by freezing the hypotheses, detailing operationalizations, covariates, and survey-aware estimation strategies for each direction.
