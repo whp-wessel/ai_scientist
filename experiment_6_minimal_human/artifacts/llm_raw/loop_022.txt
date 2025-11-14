@@ -1,0 +1,10 @@
+# 2025-11-14T12:10:33.913576+00:00
+**Literature Phase**
+- Scoped the survey’s scale and constructs (14,443 respondents, 718 variables, national/religion distributions, SES and wellbeing ranges) in reproducible prose so the next phase starts with agreed data realities (`analysis/literature_background.md:3`).
+- Logged 11 peer-reviewed anchors for childhood adversity, social support, religiosity, purity culture, and class pathways that will ground every hypothesis going forward (`analysis/literature_background.md:10`).
+- Added dataset overview notes plus additional looping sources (Kim 2025, Kuhar 2024, Košárková 2020, Moran 2018, Piper 2022, Schooler et al. 2005, Sheinbaum 2024, Cheng & Furnham 2014) so the literature trail is explicit for future reference (`analysis/literature_notes.md:3` and `analysis/literature_notes.md:15`).
+- Formalized four measurement-ready hypotheses—covering abuse→distress, guidance/religion buffering, cumulative adversity, and SES trajectories—with exposures, outcomes, expected directions, and at least one citation each (`analysis/hypotheses.md:3`).
+- Executed `analysis/literature_descriptives.py` to reproduce dataset characteristics (Rows: 14,443; top countries US/UK/Canada/Australia/Other Europe; key scales for class, self-love, happiness, work satisfaction, guidance, purity) so anyone can rerun the same baseline (`analysis/literature_descriptives.py:1`).
+
+**Next Steps**
+- Begin the Pre-Analysis Plan by translating the four hypotheses into registered specifications: define composite indices, control sets, survey-aware estimators (e.g., OLS with robust SEs or ordered logistic where appropriate), and planned interaction/mediation tests, then “freeze” that PAP text before moving into hypothesis testing.
