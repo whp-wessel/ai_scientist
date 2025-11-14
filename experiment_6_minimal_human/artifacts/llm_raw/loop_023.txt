@@ -1,0 +1,10 @@
+# 2025-11-14T12:12:17.026352+00:00
+**Literature Phase Update**
+- **Dataset scoping:** Confirmed the 14,443-respondent, 718-variable file pairs rich childhood-context measures (abuse, guidance, purity, class) with adult well-being outcomes, providing a clear foundation for survey-aware hypotheses (`analysis/literature_background.md:4`).
+- **Reproducible descriptives:** The script that reads the CSV, prints country/religion counts, and summarizes class and well-being items (`analysis/literature_descriptives.py` at the `main` entry point) was executed so the foundational numbers can be rerun by the human later (`analysis/literature_descriptives.py:18`).
+- **Literature grounding:** Key peer-reviewed sources spanning ACEs, social support, religion-health, and SES-life-course pathways have been catalogued for reference when interpreting results (`analysis/literature_background.md:10`).
+- **Hypotheses inventory:** Four theory-driven hypotheses (adversity→distress, support/religion buffers, cumulative conflict, and childhood SES → adult economic/subjective standing) are now spelled out with exposures, outcomes, expected directions, and citations for each (`analysis/hypotheses.md:3`, `analysis/hypotheses.md:9`, `analysis/hypotheses.md:15`, `analysis/hypotheses.md:21`).
+
+Next steps:
+1. Freeze these hypotheses and begin drafting the Pre-Analysis Plan, detailing the exact variable codings, covariates, and modeling choices for each relationship.  
+2. Specify survey-aware testing strategies (weights, missing-data handling, interaction terms, diagnostics) so the upcoming analysis phase can follow a reproducible blueprint.
