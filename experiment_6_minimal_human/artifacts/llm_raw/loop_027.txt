@@ -1,0 +1,12 @@
+# 2025-11-14T12:24:20.125522+00:00
+Reproducible scoping now documents every hypothesis-relevant exposure/outcome and the associated measurement decisions so we can move straight into drafting the Pre-Analysis Plan.
+
+- Expanded `analysis/literature_descriptives.py` so `describe_columns` prints numeric summaries when available, falls back to top categories for string-coded items, and now enumerates all abuse, support, religiosity, wellbeing, and class/net-worth variables so any future rerun re-creates the same descriptive foundations (`analysis/literature_descriptives.py:9`, `analysis/literature_descriptives.py:42`).
+- Captured the Loop 27 descriptive takeaways (means/ranges for class, wellbeing, purity/abuse, multiple social-support versions, and depression/anxiety) and the key measurement notes (social-support duplication, ordinalization plans for religion/net worth, full coverage of the outcomes) so the PAP can cite a stable data sketch before freezing specs (`analysis/literature_background.md:41`, `analysis/literature_notes.md:9`).
+
+Tests:
+- `python analysis/literature_descriptives.py`
+
+Next steps:
+1. Draft the Pre-Analysis Plan, explicitly naming the exposure/outcome codings, the ordinal mappings for religion and net worth, and the sample inclusion criteria before freezing it.
+2. Outline the first hypothesis tests (main effects, the social-support buffer, and socio-economic pathways) along with the survey-aware modeling choices (weights, clustering/robust SEs, interaction strategy) that will be locked in once the PAP is set.
