@@ -1,0 +1,12 @@
+# 2025-11-14T14:01:38.899680+00:00
+**Analysis Update**
+- The aggregated outcomes and BH-FDR-adjusted estimates are documented in `artifacts/analysis_loop49_summary.md:12-36`; guidance index lowers anxiety/depression/functional impairment, the two religiosity exposures show the mixed well-being signs noted there, and the support×adversity interactions plus the limitation notes (missing `Religionchildhood`, dropping the duplicate `religion` control) live at `artifacts/analysis_loop49_summary.md:40-42`.
+- `analysis/run_analysis.py` automates the PAP pipeline: data prep and standardization of exposures/outcomes plus sampling tweaks are in the blocks around `analysis/run_analysis.py:121`, the H1–H3 loops and BH-FDR/simple-slope exports sit near `analysis/run_analysis.py:420–514`, and figure/table outputs are handled starting at `analysis/run_analysis.py:267` (coefficient plots) and `analysis/run_analysis.py:221–264` (simple slopes/predictions).
+- Analytic diagnostics are saved under artifacts: the H1 vs excluded table is at `artifacts/h1_sample_comparison_loop49.csv:1`, the VIF check (max <4) at `artifacts/h1_vif_loop49.csv:2`, the full regression output at `artifacts/regression_records_loop49.csv:1`, and the H3 simple slopes/predicted values at `artifacts/h3_simple_slopes_loop49.csv:1` and `artifacts/h3_predicted_supports_loop49.csv:1`.
+- Reproducibility artifacts include the latest descriptive snapshot (`artifacts/literature_descriptives_loop49.txt:1`), the environment log (`artifacts/pip_freeze_loop49.txt:1`), and the coefficient/interaction PNGs (`artifacts/h1_coefficients_loop49.png`, `artifacts/h2_coefficients_loop49.png`, `artifacts/h3_coefficients_loop49.png`, `artifacts/h3_interaction_loop49.png`).
+
+- Tests: `python analysis/run_analysis.py` (creates all tables, plots, and summary).
+
+Next steps:
+1. Fold these results and figures into the writing phase (refine the narrative around H1–H3 effects, BH-FDR corrections, and the noted limitations before final drafts).
+2. Prepare the sensitivity phase by testing alternative adversity composites/thresholds and by checking whether the religiosity effects survive additional robustness checks (e.g., with different covariate sets or interaction specifications).
