@@ -1,0 +1,9 @@
+# 2025-11-14T12:39:09.884640+00:00
+**Literature Update**
+- Documented the survey scope (N=14,443, 718 items, Likert-coded psychosocial and childhood exposure measures) along with candidate exposures/outcomes and coding notes for future preprocessing in `analysis/literature_notes.md:3`.
+- Summarized the peer-reviewed literature that grounds the focus on childhood cohesion and religiosity (Cobb et al. 2024; Koenig 2012), satisfying the “at least one authoritative source per hypothesis” requirement in `analysis/literature_notes.md:11`.
+- Formalized two hypotheses—childhood family cohesion protecting adult emotional health, and religiosity enhancing psychological well-being—complete with candidate variables and control sets in `analysis/hypotheses.md:3`.
+
+Next steps:
+1. Translate these hypotheses into a detailed Pre-Analysis Plan (operational definitions, planned estimators, covariates, handling of missing data, and how to “freeze” the PAP for subsequent phases).
+2. Implement reproducible preprocessing scripts (scale recoding, missingness checks, analytic variable construction) so the PAP can cite concrete data preparations when we move to the analysis phase.
