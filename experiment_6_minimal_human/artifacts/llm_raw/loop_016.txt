@@ -1,0 +1,6 @@
+# 2025-11-14T11:51:30.779000+00:00
+**Literature Update**
+- Documented the reproducible scoping stats (Rows: 14,443; top countries; religion mode; class, wellbeing, and parenting summaries from `analysis/literature_descriptives.py`) so the next phase can rely on fixed baselines for context (`analysis/literature_notes.md:7`).
+- Captured Loop 16’s dataset overview, curated authoritative literature, candidate hypotheses (abuse → distress, parental guidance/religion buffering, current support moderation), and the reproducibility/next-step checklist for the coming PAP effort (`artifacts/literature_loop16.md:1`).
+
+Next step: translate these hypotheses into precise estimands, operationalize exposures/outcomes/controls, and begin drafting the Pre-Analysis Plan so we can freeze it before moving into analysis.
