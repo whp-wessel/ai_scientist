@@ -1,0 +1,8 @@
+# 2025-11-14T11:49:30.608577+00:00
+**Literature Update**
+- Documented the descriptive overview (14,443 respondents; US/UK/Canada/Australia dominance; positive parental guidance vs negative purity teachings) that `analysis/literature_descriptives.py` generates so the background narrative is reproducible (`analysis/literature_background.md:3`).
+- Expanded the key-literature list to include recent cross-national and attachment-informed studies (Moran 2018, Kim et al. 2025, Kuhar et al. 2024, Košárková et al. 2020, Piper et al. 2022) that directly motivate hypotheses tying childhood guidance/trauma, religiosity, and adult wellbeing/sexuality (`analysis/literature_background.md:10`).
+- Logged the same loop-specific additions in the notes file so the new sources are readily retrievable when drafting hypotheses and the pre-analysis plan (`analysis/literature_notes.md:13`).
+
+**Next Step**
+- Begin translating these scoping insights into well-justified hypotheses and then pre-register a focused Pre-Analysis Plan before moving into the analysis phase.
