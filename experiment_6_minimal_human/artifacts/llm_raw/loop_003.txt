@@ -1,0 +1,9 @@
+# 2025-11-14T11:14:36.753887+00:00
+**Literature phase**
+- Captured the dataset overview (14,443 responses, 718 columns, US/UK skew, class/marital measures) and key constructs in `artifacts/literature_phase.md:3` and `artifacts/literature_phase.md:8`, grounding each in facts pulled from the CSV and linking to Reiss (2013), Norman et al. (2012), and Masten (2001).
+- Recorded three candidate hypotheses that map `classchild`, parental abuse, and parental guidance to adult well-being proxies along with the supporting literature and reproducibility notes in `artifacts/literature_phase.md:13`, `artifacts/literature_phase.md:18`, and `artifacts/literature_phase.md:23`.
+- Tests: exploratory `python` scripts computed value counts for the key demographics, class, and parenting columns; no automated regression or inference runs yet.
+
+Next steps:
+1. Turn the candidate hypotheses into a formal Pre-Analysis Plan (PAP) that specifies outcomes, predictors, and control variables so we can “freeze” it before analysis.
+2. Identify survey-aware statistical models (e.g., ordinal/logistic + robust SEs) for each hypothesis and document them in the PAP ahead of the analysis phase.
