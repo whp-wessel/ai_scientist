@@ -1,0 +1,10 @@
+# 2025-11-14T12:01:46.516375+00:00
+Scoped the survey and literature so the PAP can build directly on a reproducible dataset description and well-grounded hypotheses.
+
+- Documented the dataset scope (14,443 respondents, 718 columns, top-five countries, and the parental guidance/purity-cultural skew) at `analysis/literature_background.md:4` and keep it reproducible via `analysis/literature_descriptives.py:24`, which prints the row count, country breakdown, religion mix, and the highlighted class/wellbeing columns.
+- Anchored the upcoming hypotheses in canonical work including the ACE gradient from `analysis/literature_background.md:10`, the stress-buffering thesis from `analysis/literature_background.md:19`, and the religiosity buffer from `analysis/literature_background.md:20`.
+- Summarized the candidate strategies for adversity → distress, support moderation, and religiosity/purity dynamics in `analysis/literature_background.md:24`, `analysis/literature_background.md:25`, and `analysis/literature_background.md:26`, with the corresponding hypotheses spelled out at `analysis/hypotheses_candidates.md:5`, `analysis/hypotheses_candidates.md:9`, and `analysis/hypotheses_candidates.md:13`.
+
+Next steps:
+1. Draft the Pre-Analysis Plan by specifying each hypothesis’s dependent and independent variables, controls, and planned estimators (focusing on the abuse, support, and religiosity constructs already scoped).
+2. Define analytic decisions—sample restrictions, handling of missingness, and survey weights/clustering—before freezing the PAP so the forthcoming analysis phase can rely on a locked plan.
