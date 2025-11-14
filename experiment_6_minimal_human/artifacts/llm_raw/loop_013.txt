@@ -1,0 +1,9 @@
+# 2025-11-14T11:41:41.956685+00:00
+**Literature Phase**
+- Confirmed the survey has 14,443 records, 718 columns, and a focused descriptor script that reproduces national-coverage tiers, religion tallies, and wellbeing/class distributions; see `analysis/literature_background.md:3` through `analysis/literature_background.md:6` for the current scoping notes.
+- Grounded the work in key studies (Felitti et al. 1998; Umberson & Montez 2010; Koenig et al. 2012) that justify treating childhood adversity, parental guidance, and religiosity as predictors of adult mental and relational wellbeing—see `analysis/literature_background.md:8`, `analysis/literature_background.md:10`, and `analysis/literature_background.md:11`.
+- Recorded two hypotheses tying childhood abuse to adult depression/anxiety and parental guidance/religion to adult relational self-regard with the required peer-reviewed citations; see `analysis/hypotheses.md:3-13`.
+
+Next steps:
+1. Draft a detailed Pre-Analysis Plan with operational definitions, measurement strategy, and estimators tailored to the selected exposures/outcomes.
+2. “Freeze” that PAP (e.g., through versioning or a designated file) so the loop can advance into the analysis phase.
