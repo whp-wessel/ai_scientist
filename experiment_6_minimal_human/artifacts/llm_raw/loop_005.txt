@@ -1,0 +1,13 @@
+# 2025-11-14T11:21:59.444785+00:00
+Literature scoping for loop 5 is complete: I documented the refreshed dataset summary, peer-reviewed references, and newly-articulated hypotheses in `artifacts/literature_phase.md:49` (the dataset update, literature review, and hypothesis bullets), with the reproducibility steps captured at `artifacts/literature_phase.md:68`.
+
+- The 14,443×718 survey captures parallel childhood/adolescent modules (including guidance, purity norms, abuse, and sexual-abuse distress ratings) alongside adult self-reports of anxiety, depression, self-love, satisfaction, religiosity, and monogamy preference, so we can assess both positive and negative well-being signals in a life-course frame (`artifacts/literature_phase.md:49`).
+- Relevant literature now includes Wood et al. (2020), Pollmann et al. (2022), Richter et al. (2018), and Kim et al. (2025), which justify modeling networks of adversity, sexual-abuse severity, and religiosity-guidance as predictors of adult well-being; those hypotheses are noted in the same section (`artifacts/literature_phase.md:57` and `artifacts/literature_phase.md:63`).
+- Reproducibility notes explain how the Python/pandas scripts and Semantic Scholar queries that produced these numbers can be rerun (`artifacts/literature_phase.md:68`).
+
+State now reflects loop 5 while remaining in the literature phase, so the system knows the latest counter (`artifacts/state.json:1`).
+
+Suggested next steps:
+1. Draft the Pre-Analysis Plan using the documented hypotheses and decide which measures/outcomes, sample restrictions, and controls will be frozen.
+2. Build a variable dictionary (and any derived indices) for the targeted exposures/outcomes to ensure transparency before analysis.
+3. Outline the survey-aware statistical strategy (e.g., OLS with controls, robustness checks) so the forthcoming PAP can preregister estimands and tests.

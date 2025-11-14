@@ -45,3 +45,26 @@
 ## Reproducibility notes
 - Descriptive statistics in this loop came from the Python commands above; re-running the same `pandas` script reproduces the reported means, SDs, and value counts.
 - Maintain version control of this artifact and rerun data-intake scripts before the Pap phase so that any sample updates are captured.
+
+# Loop 5 Literature Phase Notes
+
+## Dataset update
+- `childhoodbalancedpublic_original.csv` still comprises 14,443 responses and 718 columns, with repeated modules capturing the same respondent at different life stages (0-12, 13-18, current) so we can directly compare how adversity, guidance, and attitudes shift over time.
+- Adult well-being is recorded with Likert items such as `I tend to suffer from anxiety (npvfh98)-neg` (mean = -0.83, SD = 2.03), `I tend to suffer from depression (wz901dj)` (mean = -0.41, SD = 2.09), `I love myself (2l8994l)` (mean = 0.61, SD = 1.86), and `I am not happy (ix5iyv3)-neg` (mean = 0.15, SD = 1.98), providing both positive and negative affect lenses that span the -3 to +3 scale.
+- Religiosity data include 9,953 respondents reporting "No" to `Do you *currently* actively practice a religion? (902tbll)` and smaller groups reporting slight/moderate/serious practice, while `monogamy` choices cluster at 2.0 (8,329 cases) and 1.0 (3,429 cases) on the -2 to +2 preference scale.
+- The childhood/adolescent modules include dozens of items about parental behaviors, purity teaching, media monitoring, relational warmth, verbal/emotional abuse, and childhood sexual abuse (both general yes/no follow-ups and detailed distress ratings during and after the events). These fine-grained exposures mirror the "networks of adversity" approach and create enough variation for latent exposure indices or additive scores.
+
+## Literature update
+- **Wood et al. (2020, *Journal of Epidemiology and Community Health*)** use three British longitudinal cohorts to link childhood warmth, economic stability, and educational opportunities to adult positive mental well-being, underscoring the dataset's potential for parsing protective versus harmful early-life influences in a large international online sample.
+- **Pollmann et al. (2022, *Research on Child and Adolescent Psychopathology*)** map networks of adversity across childhood/adolescence and show that cumulative exposures better predict adult anxiety/depression than isolated incidents, which justifies modeling the multiple abuse/guidance/purity items as a system rather than single predictors.
+- **Richter et al. (2018, *International Journal of Child Abuse & Neglect*)** follow boys in South Africa and demonstrate that childhood sexual abuse carries long-term penalties for adult mental health, paralleling our columns documenting incidence plus acute and later distress.
+- **Kim et al. (2025, *npj Mental Health Research*, Global Flourishing Study)** find childhood relational and spiritual resources (including religious upbringing) are strong predictors of adult purpose and meaning, which resonates with our religion/practice modules and the broad well-being statements.
+
+## Fresh candidate hypotheses
+1. **Networks of childhood adversity**: Summed or latent scores from parental abuse, oversight/purity, and sexual abuse indicators (especially the 0-12 versus 13-18 windows) will explain more variance in adult anxiety/depression items than any single exposure, following Pollmann et al. (2022).
+2. **Childhood sexual abuse severity**: Respondents with affirmative answers to the sexual-abuse modules—especially those reporting acute fear/pain during the events—will show worse adult well-being (higher depression/anxiety and `I am not happy`), extending Richter et al. (2018) to a broader, mixed-gender sample.
+3. **Religiosity and guidance as resilience**: Early-life religious adherence and parental guidance scores should predict higher adult self-regard (`I love myself`) and life/work satisfaction, echoing the protective purpose findings of Kim et al. (2025) and the well-being correlates identified by Wood et al. (2020).
+
+## Reproducibility notes
+- All descriptive numbers in this loop derive from `python3 - <<'PY'` scripts that load `childhoodbalancedpublic_original.csv` with `pandas.read_csv`, compute `.describe()`, and call `.value_counts()` on the columns listed above; re-running those commands reproduces every statistic reported in this file.
+- Literature context comes from the Semantic Scholar API searches `childhood family environment adult well-being`, `religious upbringing adult mental health`, and `childhood sexual abuse adult mental health longitudinal`; those `curl` commands remain in the shell history and can be re-executed to fetch updated metadata if needed.
