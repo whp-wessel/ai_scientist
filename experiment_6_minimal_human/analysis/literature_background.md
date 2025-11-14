@@ -32,3 +32,8 @@ These references supply the grounding that will shape our hypotheses in the next
 - Re-ran `analysis/literature_descriptives.py` to refresh the reproducible anchor; the latest run still reports 14,443 rows and the same top countries (United States 7,498; United Kingdom 1,191; Canada 963; Australia 545; Other Europe (west) 443).
 - The script also corroborates the leading religion codes (0.0: 9,958; 1.0: 2,577; 2.0: 1,134; 3.0: 774), and it reaffirmed the earlier means for key constructs (`classchild` ≈2.62, `classteen` ≈2.76, `classcurrent` ≈3.02, `I love myself` ≈0.61, `I am not happy` ≈0.15, `I am satisfied with my work/career life` ≈0.12, parental guidance ≈0.63, purity-culture teaching ≈–0.22).
 - These reproducible benchmarks provide a stable backdrop for downstream hypothesis testing and ensure that future researchers can rerun the script to recreate the same descriptive picture before modeling starts.
+
+## Loop 25 progress
+- Re-confirmed dataset shape, national origins, religious distributions, and key class/wellbeing scaling by rerunning `analysis/literature_descriptives.py` so the descriptive anchor is up to date for this loop (`analysis/literature_descriptives.py:1`).
+- Collated targeted literature notes and candidate hypotheses to ground the hypotheses-to-test inventory (`analysis/literature_notes.md:1`, `analysis/hypotheses.md:1`).
+- With the literature phase documented, I am ready to draft the Pre-Analysis Plan, at which point we will freeze those specifications and advance to analysis.

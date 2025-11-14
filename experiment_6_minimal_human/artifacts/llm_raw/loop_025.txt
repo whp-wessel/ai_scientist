@@ -1,0 +1,9 @@
+# 2025-11-14T12:16:09.633739+00:00
+**Literature Recap**
+- Loop 25/75 progress: reran `analysis/literature_descriptives.py:1` and logged the refreshed descriptive anchor plus next-phase readiness in `analysis/literature_background.md:36`, so the dataset scoping is reproducible for this loop before advancing.
+- Documented the dataset overview and supporting literature in `analysis/literature_notes.md:1`, enumerated candidate research directions at `analysis/literature_background.md:25`, and maintained the hypothesis inventory at `analysis/hypotheses.md:1`, meaning exposures/outcomes and peer-reviewed citations are ready for the PAP.
+- Confirmed each hypothesis pairs a peer-reviewed source (Felitti et al. 1998, Umberson & Montez 2010, etc.) with its intended variables in `analysis/hypotheses.md:1`, satisfying the requirement that every hypothesis has authoritative grounding.
+
+**Next Steps**
+- Draft the Pre-Analysis Plan with precise exposures, outcomes, covariates, modeling strategy, and missing-data treatment, then freeze that plan before starting the analysis phase.
+- After the PAP is locked in, run the planned survey-aware tests, report effect sizes and uncertainty, and document limitations/open questions as required.
