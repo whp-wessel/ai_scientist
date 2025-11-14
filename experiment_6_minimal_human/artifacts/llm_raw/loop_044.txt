@@ -1,0 +1,10 @@
+# 2025-11-14T13:33:55.290255+00:00
+**Pre-Analysis Plan**
+- The plan is now marked `frozen` (analysis/pre_analysis_plan.md:2) and anchors the dataset context plus key constructs for the 14,443-row survey (analysis/pre_analysis_plan.md:6, analysis/pre_analysis_plan.md:9).
+- Each hypothesis has its exposures, outcomes, and inferential strategy spelled out—H1 at analysis/pre_analysis_plan.md:14, H2 at analysis/pre_analysis_plan.md:22, H3 at analysis/pre_analysis_plan.md:29—with predefined coding, missingness, and sample restrictions documented at analysis/pre_analysis_plan.md:37 so the data pipeline is reproducible.
+- The survey-aware analysis plan covers weights/HC3, effect sizes, and FDR correction (analysis/pre_analysis_plan.md:42), sensitivity checks (analysis/pre_analysis_plan.md:48), and reporting/reproducibility commitments (analysis/pre_analysis_plan.md:54), ensuring the modeling, robustness, and disclosure pieces are locked in.
+- Re-ran `analysis/literature_descriptives.py` to capture today’s dataset snapshot (Rows 14,443; top countries: United States 7,498, United Kingdom 1,191, Canada 963, Australia 545, Other Europe 443; religion modes 0.0=9,958, 1.0=2,577, 2.0=1,134, 3.0=774; class means ~2.6-3.0; wellbeing means ~0.6 for self-love, ~0.15 for unhappiness; parental guidance mean ~0.63, social support mean ~1.68) so the plan links to a reproducible descriptive baseline (analysis/literature_descriptives.py:1).
+
+**Next Steps**
+- 1) Build out `analysis/hypothesis_models.py` to implement the WLS regressions and covariate/alignment logic described in the plan (analysis/pre_analysis_plan.md:55).
+- 2) Execute the survey-weighted analyses with HC3 SEs, FDR adjustments, and sensitivity checks, then synthesize effect sizes, confidence intervals, and limitations exactly as outlined in analysis/pre_analysis_plan.md:42, analysis/pre_analysis_plan.md:48, and analysis/pre_analysis_plan.md:54.
