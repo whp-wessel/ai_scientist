@@ -1,0 +1,9 @@
+# 2025-11-14T13:30:13.209758+00:00
+Pre-analysis plan now names the actual survey questions for each exposure/outcome and records the reproducible descriptive output, so the PAP is ready to drive the weighted models.
+
+- Reran `analysis/literature_descriptives.py` to capture the sample snapshot (Rows = 14,443; United States, United Kingdom, Canada, Australia, and Other Western Europe dominate; religion codes 0–3 are 9,958/2,577/1,134/774, etc.), and logged that reproducible summary in the dataset overview (`analysis/literature_notes.md:5`).
+- Each hypothesis in `analysis/pre_analysis_plan.md` now explicitly links to the question wording and codes for its exposures and outcomes (see `analysis/pre_analysis_plan.md:14`, `analysis/pre_analysis_plan.md:22`, `analysis/pre_analysis_plan.md:29`), while the header still marks the plan as `status: frozen` with `<pending commit…>` in `freeze_commit` (`analysis/pre_analysis_plan.md:1` and `analysis/pre_analysis_plan.md:4`), so you can replace the placeholder once this version is committed.
+
+Next steps:
+1. Translate the exposures/outcomes from the frozen plan into the analysis script (e.g., `analysis/hypothesis_models.py`), fit the HC3 WLS regressions with survey weights, and check predicted values per ordinal religiosity steps.
+2. Calculate the planned indices (guidance, adversity) with Cronbach’s alpha, apply the Benjamini-Hochberg correction across each hypothesis’s outcomes, and record any additional sensitivity checks (alternative moderators, trimmed weights) before moving to the sensitivity/writing phases.

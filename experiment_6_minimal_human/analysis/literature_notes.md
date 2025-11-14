@@ -2,6 +2,7 @@
 
 ## Dataset overview
 - **Sample**: 14,443 respondents across 718 question columns derived from the balanced-childhood public survey.
+- **Reproducible descriptives**: Running `analysis/literature_descriptives.py` shows 14,443 rows, top countries (United States 7,498; United Kingdom 1,191; Canada 963; Australia 545; Other Western Europe 443), religion codes (0: 9,958; 1: 2,577; 2: 1,134; 3: 774), and confirms the key class, wellbeing, and parental guidance items that anchor the hypotheses.
 - **Demographics**: Ages range from 18 to 75 (mean 30.4, SD 10.2); detailed variables capture gender identity, ethnicity, education, class, net worth, and religious background.
 - **Geography**: Respondents originate primarily from the United States (7,498), United Kingdom (1,191), Canada (963), Australia (545), and Other Western European countries (443), so subsequent models can account for these dominant clusters while still acknowledging smaller non-Western contingents.
 - **Psychosocial measurements**: Many Likert-type items coded from −3 to 3 describe adulthood well-being (e.g., anxiety, depression, relationship satisfaction, life satisfaction) and childhood experiences (e.g., parental guidance, family humor, media restrictions, teachings about purity).
