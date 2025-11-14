@@ -24,6 +24,7 @@ DEFAULT_SLEEP_SECONDS = float(os.environ.get("LOOP_SLEEP_SECONDS", "0"))
 MODEL = os.environ.get("CODEX_MODEL", "gpt-5.1-codex-mini") #keep using gpt-5.1-codex-mini
 REASONING_EFFORT = os.environ.get("CODEX_REASONING_EFFORT", "high")
 PROMPT_HINT = "see agents.md for your prompt/guidance. please fully implement it."
+DEFAULT_GIT_REMOTE = os.environ.get("RUNNER_GIT_REMOTE", "origin")
 BOOTSTRAP_DIRS = [
     "analysis",
     "artifacts",
@@ -282,6 +283,16 @@ def ensure_clean_worktree() -> None:
         )
 
 
+def current_branch() -> str:
+    rc, out, err = run_git(["rev-parse", "--abbrev-ref", "HEAD"])
+    if rc != 0:
+        raise RuntimeError(f"git rev-parse failed: {err.strip()}")
+    branch = out.strip()
+    if not branch or branch == "HEAD":
+        raise RuntimeError("Unable to determine current branch name")
+    return branch
+
+
 def auto_commit(status_lines: Sequence[str], message: str) -> tuple[bool, bool]:
     if not status_lines:
         print(f"[git] {message} produced no tracked file changes; skipping commit.")
@@ -304,13 +315,31 @@ def auto_commit(status_lines: Sequence[str], message: str) -> tuple[bool, bool]:
 
 def git_push(tag: str) -> bool:
     rc, out, err = run_git(["push"])
-    if rc != 0:
-        combined = (err or out).strip()
-        print(f"[git] push failed during {tag}: {combined}")
+    if rc == 0:
+        summary = out.strip() or "remote updated"
+        print(f"[git] push complete for {tag}: {summary}")
+        return True
+    combined = (err or out).strip()
+    lower = combined.lower()
+    needs_upstream = "no upstream" in lower or "set the upstream" in lower or "has no upstream" in lower
+    if needs_upstream:
+        try:
+            branch = current_branch()
+        except RuntimeError as exc:
+            print(f"[git] unable to detect branch during {tag}: {exc}")
+            return False
+        remote = DEFAULT_GIT_REMOTE
+        print(f"[git] configuring upstream for {branch} via {remote} during {tag}")
+        rc2, out2, err2 = run_git(["push", "--set-upstream", remote, branch])
+        if rc2 == 0:
+            summary = out2.strip() or "remote updated"
+            print(f"[git] push complete for {tag}: {summary}")
+            return True
+        combined = (err2 or out2).strip()
+        print(f"[git] push --set-upstream failed during {tag}: {combined}")
         return False
-    summary = out.strip() or "remote updated"
-    print(f"[git] push complete for {tag}: {summary}")
-    return True
+    print(f"[git] push failed during {tag}: {combined}")
+    return False
 
 
 def commit_and_push_pending(tag: str) -> None:
