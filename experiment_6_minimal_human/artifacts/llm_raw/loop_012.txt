@@ -1,0 +1,9 @@
+# 2025-11-14T11:40:33.218552+00:00
+**Literature Phase**
+- Captured dataset scope (14,443 respondents, 718 columns, US/UK/Canada/Australia majority) and codified a reproducible descriptive script for future reference (`analysis/literature_background.md:3`; `analysis/literature_descriptives.py:25`, `analysis/literature_descriptives.py:33`).
+- Summarized the survey’s childhood context and adult wellbeing batteries (abuse, parental guidance, religion, depression/anxiety, relationship satisfaction) so we can directly map variables to theory (`analysis/literature_background.md:5`).
+- Anchored the hypotheses in peer-reviewed findings on ACEs (Felitti et al. 1998), social relationships (Umberson & Montez 2010), and religion and health (Koenig et al. 2012) to satisfy the rigor requirement (`analysis/literature_background.md:8`).
+- Formalized two hypotheses that tie dataset proxies to these literatures—one linking childhood abuse to adult depression/anxiety, the other linking parental guidance and religiosity to self-love/romantic satisfaction (`analysis/hypotheses.md:3` & `analysis/hypotheses.md:9`).
+
+Next steps:
+1. Draft the Pre-Analysis Plan by operationalizing these hypotheses, specifying variable transformations/modeling choices, and “freezing” the PAP before moving into the analysis phase.
