@@ -1,7 +1,7 @@
 # Pre-Analysis Plan
 status: frozen
 registry_url: https://github.com/whp-wessel/ai_scientist/blob/main/analysis/pre_analysis_plan.md
-freeze_commit: <pending commit containing this frozen PAP>
+freeze_commit: f4b7cfd5090d6c514005a833ab8b31bf793acc59
 
 ## 1. Research context and dataset
 - **Dataset**: `childhoodbalancedpublic_original.csv`, a cross-sectional, balanced-childhood sample with 14,443 respondents and 718 variables. Descriptive scripts (`analysis/literature_descriptives.py`) will be rerun to log sample size, geography, gender, and scale distributions before every analytic push so that this plan always links to a reproducible snapshot.

@@ -1,0 +1,8 @@
+# 2025-11-14T13:39:33.937924+00:00
+**Plan Freeze**
+- Updated `analysis/pre_analysis_plan.md:4` to record `freeze_commit: f4b7cfd5090d6c514005a833ab8b31bf793acc59`, linking the PAP to the commit that already captures the full preregistered specification so the document satisfies the “frozen” gate.
+- No other files were changed, meaning the plan text that underpins the next analyses is unchanged and ready for the modeling phase.
+
+Next steps:
+1. Commit `analysis/pre_analysis_plan.md` so the frozen PAP (with its recorded hash) is captured in version control and the runner can advance to analysis.
+2. Begin coding the survey-aware regressions, HC3 standard errors, interaction tests, and BH-FDR reporting described in the PAP inside the `analysis/` folder.
