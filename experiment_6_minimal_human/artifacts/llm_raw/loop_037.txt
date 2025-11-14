@@ -1,0 +1,12 @@
+# 2025-11-14T13:08:03.644212+00:00
+Documented the dataset context and relevant literature so the literature phase is complete and we can move on to the Pre-Analysis Plan.
+
+- **Data** `childhoodbalancedpublic_original.csv` has 14,443 respondents (≈7.5k U.S., 1.2k U.K., 963 Canada) with a median age in the mid-20s and a roughly 8k/6k split on the male-coded variables; the survey spans 718 variables, including Likert-length retrospectives on childhood/teen family climate (e.g., guidance `pqo6jmj`/`dcrx5ab`, verbal-emotional abuse `mds78zu`/`v1k988q`, physical affection `sgfjz8v`/`siags64`) plus adult outcomes such as happiness relative to childhood `h33e6gg`, romantic relationship satisfaction `hp9qz6f`, anxiety tendency `npvfh98`, and binary mental-health diagnoses like `Anxiety_mentalillness`/`Depression_mentalillness`.
+
+- **Literature** Recent cohort and synthesis work shows how early family processes shape adult well-being: Wood et al. 2020 (J Epidemiol Community Health) and the Han et al. 2023 systematic review in *Int. J. Child Abuse & Neglect* both report that positive parenting and nurturing experiences promote positive mental states and resilience decades later, while Daníelsdóttir et al. 2024 (JAMA Psychiatry) reinforces that adverse childhood experiences predict poorer adult mental-health outcomes.
+
+- **Hypothesis 1** Within the dataset, higher scores on childhood/teen guidance and affection items (e.g., `pqo6jmj`, `dcrx5ab`, `sgfjz8v`, `siags64`) will correlate with greater adult self-reported happiness and relationship satisfaction (`h33e6gg`, `hp9qz6f`) and less negative affect (`npvfh98`). This mirrors the promotive/protective mechanisms discussed in Wood et al. 2020 and Han et al. 2023.
+
+- **Hypothesis 2** Greater endorsement of parental verbal/emotional abuse (`mds78zu`, `v1k988q`) will predict higher prevalence of adult mental-health diagnoses (e.g., `Anxiety_mentalillness`, `Depression_mentalillness`) and lower subjective life satisfaction, consistent with the ACE-to-adult-outcome gradient in Daníelsdóttir et al. 2024.
+
+- **Next steps** Draft the Pre-Analysis Plan that freezes these hypotheses, specifies operationalizations (e.g., coding schemes/controls), and lays out planned survey-aware models (e.g., ordered/logistic regression with demographic controls) before moving into analysis.
