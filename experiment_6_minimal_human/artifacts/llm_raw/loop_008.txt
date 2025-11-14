@@ -1,0 +1,9 @@
+# 2025-11-14T11:31:31.370054+00:00
+**Literature Phase Update**
+- The survey file `childhoodbalancedpublic_original.csv:1` spans 14,444 respondents and 718 columns covering demographics, childhood context (parental guidance, abuse, purity messaging, media monitoring), and adult well-being/mental-health/self-esteem items, giving plenty of within-person detail for modeling childhood exposures and adult outcomes.
+- Peer-reviewed work shows childhood adversity has downstream effects on adult health (Felitti et al., *American Journal of Preventive Medicine*, 1998) and that religiosity-related messaging shapes adult sexual satisfaction and associated well-being (Lazar, *Mental Health, Religion & Culture*, 2023), so both themes have empirical grounding.
+- Hypotheses for the analysis:
+  1. Higher reported parental guidance/useful advice plus positive family culture (e.g., `pqo6jmj`/`dcrx5ab`, `qnzuq5n`/`i1g8u4j`) predicts greater adult self-love, romantic/work satisfaction, and fewer self-reported anxiety/depression items (`npvfh98`, `wz901dj`, `ih5iyv3`), consistent with the ACE-to-adult-health literature.
+  2. Stronger exposure to purity-culture teachings during adolescence (`wxgm38d` and related abstinence prompts) is associated with lower adult romantic satisfaction or elevated negative affect about relationships (`hp9qz6f`, `ix5iyv3`, `b0cqh8o`), in line with studies linking religious sexual norms to sexual dissatisfaction (Lazar, 2023).
+
+Next step: draft and “freeze” the Pre-Analysis Plan (PAP) detailing variable operationalizations, scales, and survey-aware modeling decisions so we can formally move into hypothesis testing.
