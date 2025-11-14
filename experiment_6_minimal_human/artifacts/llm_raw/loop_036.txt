@@ -1,0 +1,7 @@
+# 2025-11-14T13:05:21.116744+00:00
+**Literature Loop**
+- Documented the dataset footprint (14,443 respondents, 718 columns) along with the psychosocial exposures and adult outcomes we can reliably model so future loops can reproduce the scoping; see `analysis/literature_notes.md:4`, `analysis/literature_notes.md:10`, and `analysis/literature_notes.md:11`.
+- Expanded the literature log with the Nature Mental Health editorial on risks/resilience plus the Martin et al. (2003) religiosity antecedents study and the Jung (2017) buffering paper so both the adversity and religiosity pathways stay grounded in peer-reviewed work; see `analysis/literature_background.md:25`, `analysis/literature_background.md:26`, `analysis/literature_notes.md:20`, `analysis/literature_notes.md:21`, and `analysis/literature_notes.md:22`.
+- Refreshed the hypothesis inventory so Hypothesis 1 now cites Cobb et al. (2024) and the Nature editorial, and Hypothesis 2 cites Koenig (2012), Martin et al. (2003), and Jung (2017) while keeping the same exposure/outcome plans; see `analysis/hypotheses.md:6` and `analysis/hypotheses.md:11`.
+- Next step is to freeze these specifications by drafting the Pre-Analysis Plan (PAP), outlining the exact operationalizations, covariates, and estimation strategies before moving into testing.
+- Tests were not run (not applicable during the literature-scoping phase).
