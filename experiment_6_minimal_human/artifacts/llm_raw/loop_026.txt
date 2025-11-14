@@ -1,0 +1,19 @@
+# 2025-11-14T12:20:02.880084+00:00
+Finished the literature phase: got a feel for the survey and its possible theory-backed angles so the PAP can be next.
+
+- `childhoodbalancedpublic_original.csv` (≈14,443 rows, 718 columns) captures mostly young adults (age modal 18–27) living in the US/Anglosphere, with detailed retrospectives on childhood socioeconomic position (`classchild`, `classteen`), religion/purity instruction (`during ages *0-12*: taught a purity culture that encouraged abstinence/waiting until marriage (wgbq7hv)`), and current well-being (`I tend to suffer from anxiety (npvfh98)-neg`, `I love myself (2l8994l)`, `I am satisfied with my romantic relationships (hp9qz6f)`). Reproducible summary commands used the embedded Python snippet (see below) so future loops can rebuild these diagnostics.
+  ```python
+  import pandas as pd
+  df = pd.read_csv("childhoodbalancedpublic_original.csv", low_memory=False)
+  print(len(df), df.columns[:20])
+  print(df["classchild"].value_counts())
+  print(df["I love myself (2l8994l)"].value_counts())
+  ```
+
+- Literature anchors (each peer-reviewed): Hempel et al. (2020, *Research on Aging*, DOI 10.1177/0164027520961560) show that childhood socioeconomic circumstances predict adult physical/mental health even after accounting for adult status, so retrospective class scores provide a plausible driver for current mental health variation. Lazar (2023, *Mental Health, Religion & Culture*, DOI 10.1080/13674676.2023.2276105) documents how religious beliefs interact with sexual satisfaction and dysfunction, supporting an investigation into the lasting effects of sexuality-focused religious socialization on adult self-regard and relationship quality.
+
+- Hypotheses grounded in the data and literature:
+  1. Lower self-reported `classchild` (and `classteen`) predicts worse adult mental-health/relationship outcomes (higher scores on anxiety/depression items and lower self-love/relationship satisfaction), controlling for current SES, echoing Hempel et al.’s life-course pathways finding.
+  2. Reporting childhood purity-culture instruction (`wgbq7hv`, plus other religion items) is associated with lower adult self-esteem and romantic satisfaction, consistent with Lazar’s demonstration that strict religious sexual doctrines amplify distress around sexuality.
+
+- Next step: freeze this literature/hypothesis framing and build a detailed pre-analysis plan (PAP) that defines sample filters, measures, controls, and statistical tests for those hypotheses before proceeding to analysis.
