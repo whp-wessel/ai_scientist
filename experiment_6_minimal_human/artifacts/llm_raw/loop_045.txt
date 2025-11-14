@@ -1,0 +1,9 @@
+# 2025-11-14T13:36:42.624209+00:00
+**PAP Status**
+- `analysis/pre_analysis_plan.md` now records the frozen PAP that operationalizes H1 (parental guidance → anxiety/depression/impairment), H2 (current/childhood religiosity → relationship satisfaction/self-love/unhappiness), and H3 (current social support moderating childhood abuse → distress), with the peer-reviewed anchors, exposures, outcomes, HC3 SEs, weighted WLS models, FDR corrections, and reproducible coding/missingness rules already spelled out.
+- I reran `analysis/literature_descriptives.py` to log the data snapshot for reproducibility: 14,443 rows, the five dominant countries (USA, UK, Canada, Australia, Other West Europe), religion categories (0/1/2/3 with the majority in “No”), and descriptive stats for class, guidance, wellbeing, abuse, support, religiosity, and net-worth columns, showing the available sample size and missingness per key variable.
+- No files were modified during this loop; the plan remains the path forward, but updating `freeze_commit` to the hash of the commit that contains this version of the PAP will fully “freeze” it before analysis begins.
+
+**Next Steps**
+- Commit the finalized PAP (after which you can set `analysis/pre_analysis_plan.md`’s `freeze_commit` to that hash) so we can move past the preregistration stage, then start building the modeling script(s) in `analysis/` that implement the weighted HC3 regressions, interaction tests, and BH-FDR reporting described above.
+- Once the code is in place, proceed with the survey-aware hypothesis tests, capturing effect sizes, uncertainty, and any deviations from the plan for the eventual report.
