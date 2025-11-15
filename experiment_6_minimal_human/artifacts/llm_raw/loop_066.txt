@@ -1,0 +1,12 @@
+# 2025-11-15T15:26:00.480676+00:00
+**Release Update**
+- Ran `python analysis/run_analysis.py --sensitivity` to generate loop 66 outputs: the summary in `artifacts/analysis_loop66_summary.md` records the H1 guidance coefficients (anxiety β=-0.135, depression β=0.193, impairment β=-0.163), the two sets of religiosity coefficients, and the H3 support×adversity interactions, while new regression tables, figures (`h1/h2/h3..._loop66.png`), predictions, and sensitivity CSVs live in `artifacts/`.
+- Authored `papers/manuscript_loop66.md`, `papers/figure_captions_loop66.md`, and `papers/robustness_narrative_loop66.md` so the write-up cites the latest effect sizes, BH-FDR adjustments, robustness checks, and artifact locations, and the manuscript explicitly references the frozen `analysis/pre_analysis_plan.md`.
+- Updated `artifacts/state.json` to loop 66 and preserved the pip-freeze snapshot (`artifacts/pip_freeze_loop66.txt`) so the release phase remains reproducible.
+
+**Testing**
+- `python analysis/run_analysis.py --sensitivity`
+
+Next steps
+1. Probe heterogeneity (e.g., by country or gender identity) to see whether the guidance–depression divergence holds or reflects subgroup-specific patterns.
+2. Prepare the next release‑phase narrative (conference submission, briefing, etc.) by weaving the new manuscript/figures into the broader dissemination plan.
