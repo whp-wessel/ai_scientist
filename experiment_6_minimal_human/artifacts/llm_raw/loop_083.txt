@@ -1,0 +1,7 @@
+# 2025-11-15T16:11:22.545905+00:00
+- Recorded the loop 83 analysis snapshot—sample size (14,443), regression/environment artifacts, and the H1/H2/H3 coefficient tables plus sensitivity notes—inside `artifacts/analysis_loop83_summary.md` (`:5`, `:8`, `:15`, `:22`, `:31`, `:48`), so every effect and robustness table is traceable.
+- Added the loop 83 release bundle: the manuscript spells out the abstract/methods/results/reproducibility narrative (`papers/manuscript_loop83.md:3`, `:12`, `:22`, `:29`, `:42`), and the new figure captions and robustness narrative reference the updated coefficient plots and sensitivity files (`papers/figure_captions_loop83.md:2`, `papers/robustness_narrative_loop83.md:2`).
+- Updated the run tracker to reflect the new iteration (loop counter = 83) so future logic sees that release work is complete (`artifacts/state.json:2`).
+
+Tests:
+- `python analysis/run_analysis.py --sensitivity --loop-index 83`
