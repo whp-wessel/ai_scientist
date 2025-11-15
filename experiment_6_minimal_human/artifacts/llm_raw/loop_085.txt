@@ -1,0 +1,11 @@
+# 2025-11-15T16:16:04.149787+00:00
+**Release 85**
+- Documented the H1–H3 narrative, effect sizes, and reproducibility story in `papers/manuscript_loop85.md:3` (mirrored in the numeric summary at `artifacts/analysis_loop85_summary.md:12`), so the new loop’s guidance/regional/religiosity findings and sensitivity pointers are fully articulated. 
+- Paired the release draft with fresh figure captions and robustness notes that cite the loop-85 plots and sensitivity tables (`papers/figure_captions_loop85.md:1`, `papers/robustness_narrative_loop85.md:1`), preserving the visual and diagnostic context for anxiety, depression, and support × adversity stories. 
+- Logged the new iteration via `artifacts/llm_raw/loop_085.txt:1` and bumped `artifacts/state.json:1` to loop counter 85, locking the release phase so future loops know where to pick up.
+
+**Testing**
+- `python analysis/run_analysis.py --sensitivity --loop-index 85` (pass)
+
+**Next Steps**
+- Review the loop-85 manuscript, captions, and robustness note and let me know whether the release is ready for sharing or needs another tweak before proceeding (`artifacts/llm_raw/loop_085.txt:10`).
