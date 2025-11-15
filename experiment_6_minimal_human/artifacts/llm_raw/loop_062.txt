@@ -1,0 +1,10 @@
+# 2025-11-15T15:11:47.364778+00:00
+**Analysis Update**
+- Loop 62’s frozen analysis script ran successfully, producing the standard diagnostics: sample summary (14,443 positive-weight rows), analytic sample comparison, VIF table, regression record, and `pip freeze` snapshot for reproducibility (see `artifacts/analysis_loop62_summary.md:5-10`).
+- H1 confirms that higher childhood guidance is linked to lower anxiety (β=-0.135), lower functional impairment (β=-0.163), and—consistent with the reversed outcome coding—less depression (β=0.193) in weighted models, all with tight 95% CIs and BH-FDR-adjusted `p=0.000` (see `artifacts/analysis_loop62_summary.md:14-17`).
+- H2 shows small-to-null associations for current religiosity: weighted effects are weak for relationship satisfaction (β=0.008, `p=0.379`), modest but significant for self-love (β=0.037, `p=0.000`), and protective for unhappiness (β=-0.034, `p=0.000`); the unweighted pairs attenuate toward zero, with only self-love still tentatively significant (β=0.017, `p=0.044`) and unhappiness null (see `artifacts/analysis_loop62_summary.md:21-26`).
+- H3’s weighted interaction terms reveal support buffering: the support×adversity interaction predicts higher anxiety/unhappiness (positive βs) but lower depression/self-love (negative βs), all highly significant, with the simple slopes grid and predicted outcomes saved for plotting and interpretation (`artifacts/analysis_loop62_summary.md:30-38`).
+- Limitations noted this loop: the planned `Religionchildhood` control is entirely missing, simple slopes rely on mean covariate assumptions, and the `religion` control was dropped from H2 due to collinearity with the active religiosity measures (`artifacts/analysis_loop62_summary.md:40-44`).
+
+**Next step**
+- Translate these outcomes and caveats into the writing phase so the registered paper can describe the effects, uncertainty, and planned sensitivity checks for Loop 62.
