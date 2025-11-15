@@ -1,6 +1,6 @@
 {
-  "loop_counter": 64,
-  "phase": "writing",
+  "loop_counter": 65,
+  "phase": "release",
   "stop_now": false,
   "stop_reason": "",
   "total_loops": 90
