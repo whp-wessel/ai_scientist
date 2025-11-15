@@ -1,0 +1,14 @@
+# 2025-11-15T15:10:50.418750+00:00
+Ran the frozen analysis pipeline for loop 61 so the pre-registered models now have fresh diagnostics and we can move toward the sensitivity phase.
+
+- **Sample/logistics** The analytic dataset still includes 14,443 respondents with positive weights, and the new sample comparison, VIF, regression table, and `pip freeze` snapshots are logged next to the summary for reproducibility (`artifacts/analysis_loop61_summary.md:5-10`).
+- **H1 results** The standardized guidance index is linked to lower anxiety (β=-0.135) and functional impairment (β=-0.163) but a higher depression score (β=0.193) because of its negative coding, with all three effects significant even after BH-FDR correction (`artifacts/analysis_loop61_summary.md:15-17`).
+- **H2 results** Current religiosity predicts higher self-love and lower unhappiness, while external religiosity yields only marginal/insignificant associations (relationship satisfaction, self-love, unhappiness) in this loop’s weighted models (`artifacts/analysis_loop61_summary.md:21-26`).
+- **H3 results** The support × adversity interaction is significant across anxiety, depression, unhappiness, and self-love, and both the simple slopes and low/medium/high support predictions were archived (`artifacts/analysis_loop61_summary.md:30-38`).
+- **Limitations** `Religionchildhood` is missing, the predictions assume covariates at their means, and the `religion` control was dropped due to collinearity with the active religiosity measures (`artifacts/analysis_loop61_summary.md:42-44`).
+- **State** Recorded loop 61 in `artifacts/state.json` so the runner knows we remain in the analysis phase and have completed this iteration (`artifacts/state.json:2-6`).
+- **Tests** `python analysis/run_analysis.py` (pass).
+
+Potential next steps:
+1. Begin the sensitivity-phase analyses, re-estimating without weights and swapping guidance/adversity components as planned.
+2. Use the current regression tables and plots to sketch the eventual results tables/figures for the writing phase.
