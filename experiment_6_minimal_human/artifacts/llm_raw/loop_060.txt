@@ -1,0 +1,12 @@
+# 2025-11-15T15:09:08.158682+00:00
+**Loop 60 Analysis**
+
+- Re-ran the frozen pre-analysis models with `python3 analysis/run_analysis.py`, capturing the updated sample (14,443 positive-weight respondents), sample/VIF/regression snapshots, and `pip freeze` in `artifacts/` for loop 60; the loop counter now sits at 60 so future runs will increment correctly (`artifacts/analysis_loop60_summary.md:5-10`, `artifacts/state.json:1`).
+- H1 shows the guidance index significantly lowers anxiety and functional impairment but, unexpectedly, associates with higher depression in these weighted models—flagging a coding/orientation check before writing up the effect sizes (`artifacts/analysis_loop60_summary.md:14-17`).
+- H2 yields null-to-small associations: current religiosity links to higher self-love and lower unhappiness while relationship satisfaction remains flat, and the external religiosity estimates attenuate or vanish, consistent with the planned robustness checks (`artifacts/analysis_loop60_summary.md:21-26`).
+- H3’s support×adversity interaction is significant across all outcomes, and the corresponding simple slopes/predicted values are saved for inclusion in the paper, but remember that `Religionchildhood` is missing and `religion` was dropped per the limitations (`artifacts/analysis_loop60_summary.md:30-44`).
+- Tests: `python3 analysis/run_analysis.py` (passes, artifacts generated as above).
+
+Next steps:
+1. Confirm the direction of the depression outcome (e.g., verify reverse-coding/standardization) and double-check whether the positive coefficient persists in unweighted or alternate specifications.
+2. Incorporate the new coefficient plots, tables, and interaction visuals (e.g., `artifacts/h1_coefficients_loop60.png`, `artifacts/h3_interaction_loop60.png`, `artifacts/h3_simple_slopes_loop60.csv`) into the draft paper writing phase so the findings stay reproducible.
