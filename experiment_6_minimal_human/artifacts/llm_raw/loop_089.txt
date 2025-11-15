@@ -1,0 +1,12 @@
+# 2025-11-15T16:31:48.824203+00:00
+**Release Summary**
+- Final manuscript now explains the preregistered focus, effect sizes, and uncertainties (abstract and results at `papers/manuscript_loop89.md:3`, H1–H3 reporting at `papers/manuscript_loop89.md:22`, limitations/open questions at `papers/manuscript_loop89.md:37`), and the complementary figure captions/robustness narrative map the visuals plus sensitivity tables to the new artifacts (`papers/figure_captions_loop89.md:1`, `papers/robustness_narrative_loop89.md:1`).
+- The loop-89 analytic snapshot, regression file, and reproducibility artifacts are archived with the updated release-state tracker so downstream steps see the latest realization of the frozen plan (`artifacts/analysis_loop89_summary.md:1`, `artifacts/state.json:2`).
+- Reproducibility logging records the rerun plus release-writing work and the applied test command for traceability (`artifacts/llm_raw/loop_089.txt:1`).
+
+**Testing**
+- `python3 analysis/run_analysis.py --loop-index 89 --sensitivity`
+
+**Next Steps**
+1. Circulate the loop-89 manuscript/captions/narrative to collaborators for any last editorial or conceptual feedback before the closing release pass (noted in `artifacts/llm_raw/loop_089.txt:9–11`).
+2. Triage the open questions documented in the manuscript (guidance → depression paradox, country/support heterogeneity, granular religiosity metrics) with targeted sensitivity checks or new data/analyses to sharpen the theoretical contribution before flagging the project as complete (`papers/manuscript_loop89.md:42`).

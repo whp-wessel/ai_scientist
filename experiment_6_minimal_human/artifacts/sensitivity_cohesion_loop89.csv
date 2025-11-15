@@ -1,0 +1,4 @@
+Scenario,Hypothesis,Exposure,Outcome,Coefficient,SE,CI_lower,CI_upper,p,N
+Guidance + playful cohesion index,H1,Guidance + playful cohesion index,Anxiety (npvfh98),-0.12586841585115655,0.008426196914714636,-0.14238345833063976,-0.10935337337167333,1.8719196105288263e-50,14418
+Guidance + playful cohesion index,H1,Guidance + playful cohesion index,Depression (wz901dj),0.182855602133894,0.008223749641661464,0.16673734901836337,0.19897385524942465,1.5734306242563648e-109,14419
+Guidance + playful cohesion index,H1,Guidance + playful cohesion index,Functional impairment (kd4qc3z),-0.16025077917781316,0.008288672764378212,-0.1764962792756325,-0.14400527907999383,2.795834297415654e-83,14418
