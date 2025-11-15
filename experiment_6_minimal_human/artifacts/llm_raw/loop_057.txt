@@ -1,0 +1,14 @@
+# 2025-11-15T15:03:10.647191+00:00
+Reran the reproducible descriptive snapshot (captured in `artifacts/literature_descriptives_loop57.txt:1`) and executed `analysis/run_analysis.py` so loop 57 saves the new regressions/p-value adjustments, plots, and reproducibility artifacts referenced below.
+
+- H1: Guidance index is linked to less anxiety (`β=-0.135`) and less functional impairment (`β=-0.163`), yet the depression coefficient runs positive (`β=0.193`), so all three effects are highly significant but one contradicts the protective hypothesis (`artifacts/analysis_loop57_summary.md:15`, `artifacts/analysis_loop57_summary.md:16`, `artifacts/analysis_loop57_summary.md:17`).
+- H2: Current religiosity boosts self-love and lowers unhappiness, while the same exposures still fail to reach significance for relationship satisfaction; external religiosity shows much smaller/negligible betas once “religion” is dropped (`artifacts/analysis_loop57_summary.md:21`, `artifacts/analysis_loop57_summary.md:22`, `artifacts/analysis_loop57_summary.md:23`, `artifacts/analysis_loop57_summary.md:24`, `artifacts/analysis_loop57_summary.md:25`, `artifacts/analysis_loop57_summary.md:26`).
+- H3: The current support × childhood adversity interaction is significant across all outcomes, meaning support attenuates the adverse effect on anxiety, unhappiness, and boosts self-love (predictions/simple slopes saved for plotting) (`artifacts/analysis_loop57_summary.md:30`, `artifacts/analysis_loop57_summary.md:31`, `artifacts/analysis_loop57_summary.md:32`, `artifacts/analysis_loop57_summary.md:33`, `artifacts/analysis_loop57_summary.md:34`).
+
+Detailed artifacts (analytic sample comparison, VIF table, regression record, and pip freeze) are listed in `artifacts/analysis_loop57_summary.md:7`, `artifacts/analysis_loop57_summary.md:8`, `artifacts/analysis_loop57_summary.md:9`, and `artifacts/analysis_loop57_summary.md:10`. Limitations (missing `Religionchildhood`, mean-matching assumptions, dropped `religion` control) remain noted in `artifacts/analysis_loop57_summary.md:40-44`. The state file now reflects loop 57 at `artifacts/state.json:1`.
+
+Tests: `python analysis/literature_descriptives.py`, `python analysis/run_analysis.py`.
+
+Next steps for your call:
+1. Re-examine the depression item orientation/coding to ensure the positive guidance coefficient isn’t an artifact of reverse scoring.
+2. Inspect `artifacts/h3_simple_slopes_loop57.csv` and `artifacts/h3_predicted_supports_loop57.csv` (and corresponding plots) to interpret where support buffers adversity best.

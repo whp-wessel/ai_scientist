@@ -1,0 +1,216 @@
+Rows: 14443
+
+Top countries:
+What country do you live in? (4bxk14u)
+United States          7498
+United Kingdom         1191
+Canada                  963
+Australia               545
+Other Europe (west)     443
+
+Religion (top categories):
+religion
+0.0    9958
+1.0    2577
+2.0    1134
+3.0     774
+
+classchild summary:
+count    14443.000000
+mean         2.620854
+std          1.275503
+min          0.000000
+25%          2.000000
+50%          3.000000
+75%          4.000000
+max          6.000000
+Name: classchild, dtype: float64
+
+classteen summary:
+count    14443.000000
+mean         2.760368
+std          1.248836
+min          0.000000
+25%          2.000000
+50%          3.000000
+75%          4.000000
+max          6.000000
+Name: classteen, dtype: float64
+
+classcurrent summary:
+count    14443.000000
+mean         3.022295
+std          1.258975
+min          0.000000
+25%          2.000000
+50%          3.000000
+75%          4.000000
+max          6.000000
+Name: classcurrent, dtype: float64
+
+I love myself (2l8994l) summary:
+count    14436.000000
+mean         0.613120
+std          1.862139
+min         -3.000000
+25%         -1.000000
+50%          1.000000
+75%          2.000000
+max          3.000000
+Name: I love myself (2l8994l), dtype: float64
+Non-numeric/missing responses: 7
+
+I am not happy (ix5iyv3)-neg summary:
+count    14438.000000
+mean         0.149120
+std          1.982886
+min         -3.000000
+25%         -2.000000
+50%          0.000000
+75%          2.000000
+max          3.000000
+Name: I am not happy (ix5iyv3)-neg, dtype: float64
+Non-numeric/missing responses: 5
+
+I am satisfied with my work/career life (or lack thereof) (z0mhd63) summary:
+count    14436.000000
+mean         0.116306
+std          2.037979
+min         -3.000000
+25%         -2.000000
+50%          1.000000
+75%          2.000000
+max          3.000000
+Name: I am satisfied with my work/career life (or lack thereof) (z0mhd63), dtype: float64
+Non-numeric/missing responses: 7
+
+I am satisfied with my romantic relationships (hp9qz6f) summary:
+count    14437.000000
+mean         0.068366
+std          2.230726
+min         -3.000000
+25%         -2.000000
+50%          0.000000
+75%          2.000000
+max          3.000000
+Name: I am satisfied with my romantic relationships (hp9qz6f), dtype: float64
+Non-numeric/missing responses: 6
+
+during ages *0-12*: Your parents gave useful guidance (pqo6jmj) summary:
+count    14431.000000
+mean         0.625320
+std          2.000539
+min         -3.000000
+25%         -1.000000
+50%          1.000000
+75%          2.000000
+max          3.000000
+Name: during ages *0-12*: Your parents gave useful guidance (pqo6jmj), dtype: float64
+Non-numeric/missing responses: 12
+
+during ages *0-12*:  taught a purity culture that encouraged abstinance/waiting until marriage (wgbq7hv) summary:
+count    14430.000000
+mean        -0.222384
+std          2.458293
+min         -3.000000
+25%         -3.000000
+50%          0.000000
+75%          2.000000
+max          3.000000
+Name: during ages *0-12*:  taught a purity culture that encouraged abstinance/waiting until marriage (wgbq7hv), dtype: float64
+Non-numeric/missing responses: 13
+
+during ages *0-12*: your parents verbally or emotionally abused you (mds78zu) summary:
+count    14426.000000
+mean        -0.224733
+std          2.407951
+min         -3.000000
+25%         -3.000000
+50%          0.000000
+75%          2.000000
+max          3.000000
+Name: during ages *0-12*: your parents verbally or emotionally abused you (mds78zu), dtype: float64
+Non-numeric/missing responses: 17
+
+during ages *13-18*: your parents verbally or emotionally abused you (v1k988q) summary:
+count    14426.000000
+mean        -0.045196
+std          2.412396
+min         -3.000000
+25%         -3.000000
+50%          0.000000
+75%          2.000000
+max          3.000000
+Name: during ages *13-18*: your parents verbally or emotionally abused you (v1k988q), dtype: float64
+Non-numeric/missing responses: 17
+
+In general, people in my *current* social circles tend treat me really well (tmt46e6) summary:
+count    383.000000
+mean       1.524804
+std        1.417462
+min       -3.000000
+25%        1.000000
+50%        2.000000
+75%        3.000000
+max        3.000000
+Name: In general, people in my *current* social circles tend treat me really well (tmt46e6), dtype: float64
+Non-numeric/missing responses: 14060
+
+In general, people in my *current* social circles tend to treat me really well (71mn55g) summary:
+count    14054.000000
+mean         1.675893
+std          1.383352
+min         -3.000000
+25%          1.000000
+50%          2.000000
+75%          3.000000
+max          3.000000
+Name: In general, people in my *current* social circles tend to treat me really well (71mn55g), dtype: float64
+Non-numeric/missing responses: 389
+
+Do you *currently* actively practice a religion? (902tbll) summary:
+Top categories (non-numeric):
+Do you *currently* actively practice a religion? (902tbll)
+No                     9953
+Yes, slightly          2576
+Yes, moderately        1134
+Yes, very seriously     774
+NaN                       6
+
+I tend to suffer from depression (wz901dj) summary:
+count    14438.000000
+mean        -0.407397
+std          2.089394
+min         -3.000000
+25%         -2.000000
+50%         -1.000000
+75%          2.000000
+max          3.000000
+Name: I tend to suffer from depression (wz901dj), dtype: float64
+Non-numeric/missing responses: 5
+
+I tend to suffer from anxiety (npvfh98)-neg summary:
+count    14437.000000
+mean        -0.827457
+std          2.030987
+min         -3.000000
+25%         -3.000000
+50%         -1.000000
+75%          1.000000
+max          3.000000
+Name: I tend to suffer from anxiety (npvfh98)-neg, dtype: float64
+Non-numeric/missing responses: 6
+
+Your CURRENT net worth is closest to (nhoz8ia) summary:
+Top categories (non-numeric):
+Your CURRENT net worth is closest to (nhoz8ia)
+$100,000                3763
+$10,000                 3524
+$1,000,000              2004
+$1,000                  1642
+$0                      1304
+$-10,000 (in debt)       795
+$10,000,000              460
+$100,000,000 or more     360
+$-100,000 (in debt)      348
+$-1000 (in debt)         236
