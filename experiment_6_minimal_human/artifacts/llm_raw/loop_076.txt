@@ -1,0 +1,12 @@
+# 2025-11-15T15:51:31.354984+00:00
+**Release 76**
+- `papers/manuscript_loop76.md:1` now tells the preregistered story (data, modeling, H1–H3 results with effect sizes, sensitivity checks, limitations, and replication pointers) anchored in `artifacts/analysis_loop76_summary.md:1` and `artifacts/regression_records_loop76.csv`.
+- `papers/figure_captions_loop76.md:1` and `papers/robustness_narrative_loop76.md:1` link the new coefficient plots (`artifacts/h*_loop76.png`) and the trimmed-weight/cohesion/adversity diagnostics (`artifacts/sensitivity_*.csv`, `artifacts/guidance_depression_sensitivity_loop76.csv`) to the narrative so readers grasp the coefficient story and robustness checks.
+- Workflow metadata now records loop 76 (`artifacts/state.json:1`) with a matching release log (`artifacts/llm_raw/loop_076.txt:1`), and rerunning `python analysis/run_analysis.py --sensitivity --loop-index 76` reproduces every artifact.
+
+**Testing**
+- `python analysis/run_analysis.py --sensitivity --loop-index 76`
+
+Next steps:
+1. Review the manuscript/figures to ensure the narrative matches the visualized patterns before external distribution.
+2. Determine whether the next loop should revisit hypotheses, sensitivity reporting, or broader dissemination (slides, briefing, etc.).
