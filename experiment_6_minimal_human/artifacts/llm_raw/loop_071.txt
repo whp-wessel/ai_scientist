@@ -1,0 +1,12 @@
+# 2025-11-15T15:38:36.427161+00:00
+**Release Update**
+- Loop 71 summary now reports the weighted guidance coefficients (anxiety β = -0.135, depression β = 0.193, functional impairment β = -0.163), the religiosity coefficients, the adversity × support interactions, and the sensitivity tables; see `artifacts/analysis_loop71_summary.md:14`, `artifacts/analysis_loop71_summary.md:19`, `artifacts/analysis_loop71_summary.md:28`, and `artifacts/analysis_loop71_summary.md:46`.
+- Release deliverables for loop 71—manuscript, figure captions, and robustness narrative—now cite the fresh artifacts and reproducibility notes so collaborators can cite the same numbers; see `papers/manuscript_loop71.md:1`, `papers/figure_captions_loop71.md:1`, and `papers/robustness_narrative_loop71.md:1`.
+- The workflow state now reflects loop counter 71 in the release phase (`artifacts/state.json:2`), and the loop log is captured in `artifacts/llm_raw/loop_071.txt:1`.
+
+**Testing**
+- `python analysis/run_analysis.py --sensitivity --loop-index 71`
+
+**Next Steps**
+1. Explore heterogeneity by country, gender, or other subgroups to ensure the guidance–depression divergence isn’t isolated to a particular slice of the sample.
+2. Pair these release materials with any presentation/briefing assets (e.g., slide deck or executive memo) so collaborators can immediately share the preregistered narrative.
