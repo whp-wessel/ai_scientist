@@ -1,0 +1,6 @@
+# 2025-11-15T15:53:50.700491+00:00
+**Loop 77 Release**
+- Drafted the loop-77 manuscript, figure captions, and robustness narrative so the study write-up, visuals, and diagnostics all cite the new artifacts (`papers/manuscript_loop77.md:1`, `papers/figure_captions_loop77.md:1`, `papers/robustness_narrative_loop77.md:1`).
+- Archived the analytical summary and all coefficients/sensitivity tables after running the frozen pipeline; `artifacts/analysis_loop77_summary.md:1` contains the latest βs, BH-FDRs, and limitations for H1–H3 plus the sensitivity surgery that matches those estimates.
+- Testing: `python analysis/run_analysis.py --sensitivity --loop-index 77` (passes, generates the new artifacts and pip freeze snapshot).
+- Next steps: let me know if you’d like further narrative polish or to advance to loop 78’s literature/scoping phase.
