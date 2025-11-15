@@ -1,0 +1,14 @@
+# 2025-11-15T15:13:07.011229+00:00
+**Loop 63 Analysis**
+- `analysis_loop63_summary.md:5-10` documents that all 14,443 positive-weight respondents enter the analysis, that the Religionchildhood control was missing, and that the new regression/environment snapshots were saved for reproducibility (pip freeze + regression/diagnostics).
+- `analysis_loop63_summary.md:14-17` shows the guidance index continues to predict lower anxiety (β=−0.135) and lower functional impairment (β=−0.163) with highly significant, BH-adjusted p-values, yet the depression item flips direction (β=+0.193), so it warrants double-checking the item orientation or potential suppression.
+- `analysis_loop63_summary.md:21-26` highlights H2 results: current religiosity is linked to higher self-love (β=+0.037) and lower unhappiness (β=−0.034) but no reliable change in relationship satisfaction, while the childhood external religiosity proxy has only marginal/subthreshold ties and no consistent effect on unhappiness.
+- `analysis_loop63_summary.md:30-38` reports H3’s support×adversity interactions remain significant across anxiety, depression, unhappiness, and self-love (|β|≈0.04−0.07) with an analytic N of ~14,030–14,032, and that the simple slopes and predicted outcome tables were archived for downstream interpretation.
+- `analysis_loop63_summary.md:40-44` reiterates current limitations (missing Religionchildhood, covariates held at means for slopes/preds, dropping the broad `religion` control due to collinearity).
+
+**State**
+- `artifacts/state.json:2-6` now records loop_counter=63 and phase=`sensitivity`, so the system knows the next loop should run the sensitivity-phase work.
+
+**Next Steps**
+1. Follow the sensitivity-phase plan: vary weighting (e.g., unweighted counterparts, trimmed weights), swap in alternative cohesion/adversity composites, and rerun the frozen models to gauge robustness before final writing.
+2. Dive into the saved H3 simple slopes/predicted-support tables and the regression snapshots to characterize heterogeneity for the write-up and to verify that the unexpected depression coefficient for H1 isn’t driven by a coding or sample artifact.
