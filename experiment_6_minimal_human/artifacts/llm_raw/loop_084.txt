@@ -1,0 +1,11 @@
+# 2025-11-15T16:13:46.214531+00:00
+**Summary**
+- Logged the loop‑84 weighted regressions, simple slopes, and robustness diagnostics (trimmed weights, alternate composites, guidance–depression pattern) in `artifacts/analysis_loop84_summary.md:1` so the latest numerical story and file pointers are preserved alongside the new artifacts.
+- Captured the finalized release materials that pair with loop 84: the full draft paper (`papers/manuscript_loop84.md:1`), figure captions (`papers/figure_captions_loop84.md:1`), and robustness narrative (`papers/robustness_narrative_loop84.md:1`) now cite the newest plots, tables, and checks.
+- Advanced the science loop tracker to loop 84 in `artifacts/state.json:1` so the workflow knows we remain in the release phase with the latest iteration completed.
+
+**Testing**
+- `python analysis/run_analysis.py --sensitivity --loop-index 84` (pass)
+
+**Next steps**
+1. Review the loop‑84 manuscript/figures/robustness files and let me know if this release is ready for sharing or if you’d like a further tweak before the next loop.
