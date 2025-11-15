@@ -1,0 +1,12 @@
+# 2025-11-15T15:56:49.587499+00:00
+Release 78 now anchors the preregistered narrative, sensitivity diagnostics, and archive metadata on the newest loop-run so the manuscript/captions/robustness story all cite the fresh artifacts.
+
+- **H1–H3 recap**: Weighted guidance lowers anxiety (β = -0.135, BH-FDR < 0.001 at `analysis_loop78_summary.md:15`), raises depression (β = 0.193 at `analysis_loop78_summary.md:16`), and reduces functional impairment (β = -0.163 at `analysis_loop78_summary.md:17`), while current religiosity boosts self-love (β = 0.037 at `analysis_loop78_summary.md:22`) and cuts unhappiness (β = -0.034 at `analysis_loop78_summary.md:23`); the adversity × support interaction flips across outcomes (anxiety, depression, unhappiness, and self-love at `analysis_loop78_summary.md:31`, `analysis_loop78_summary.md:32`, `analysis_loop78_summary.md:33`, `analysis_loop78_summary.md:34`).
+- **Documentation & sensitivity**: The release manuscript, figure captions, and robustness narrative now point readers to loop-78 tables/figures and rationale (`papers/manuscript_loop78.md:1`, `papers/figure_captions_loop78.md:1`, `papers/robustness_narrative_loop78.md:1`), while the sensitivity story (trimmed weights, cohesion/adversity composites, guidance–depression checks) is catalogued at `analysis_loop78_summary.md:48`, `analysis_loop78_summary.md:64`, and `analysis_loop78_summary.md:81`.
+- **State & log**: `artifacts/state.json:1` now records loop 78 in the release phase, and the new release log `artifacts/llm_raw/loop_078.txt:1` summarizes the run/test/doc updates.
+
+Testing: `python analysis/run_analysis.py --sensitivity --loop-index 78`.
+
+Next steps:
+1. Review the manuscript, captions, and robustness narrative for any last narrative polish before sharing externally.
+2. If you’d like extra dissemination assets (slide deck, memo, etc.) or to start a new loop beyond release, let me know which direction to take.
