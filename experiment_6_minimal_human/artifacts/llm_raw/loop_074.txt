@@ -1,0 +1,11 @@
+# 2025-11-15T15:47:25.619760+00:00
+**Loop 74 Release**
+- Updated the loop 74 manuscript with the new abstract, literature framing, methods, results, sensitivity narrative, limitations, and reproducibility steps that cite the frozen plan and the latest artifacts (papers/manuscript_loop74.md:1).
+- Added figure captions and a robustness narrative that point readers to the loop 74 coefficient plots, interaction figure, and sensitivity tables (papers/figure_captions_loop74.md:1; papers/robustness_narrative_loop74.md:1).
+- Logged the analytic snapshot with the latest sample/regression notes and bumped the loop counter to 74 so future runs start from the current release point (artifacts/analysis_loop74_summary.md:1; artifacts/state.json:2).
+
+Testing: `python3 analysis/run_analysis.py --sensitivity --loop-index 74`
+
+Suggestions:
+1. Review the new manuscript, captions, and robustness narrative for final polishing before any external release.
+2. Consider whether additional sensitivity checks or figures (e.g., alternate interaction visualizations) should accompany the next loop before closing this study.
