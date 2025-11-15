@@ -1,0 +1,5 @@
+# Figure Captions
+1. **H1 guidance coefficients**: Weighted least-squares βs (±95% CI) for anxiety (`npvfh98`), depression (`wz901dj`), and functional impairment (`kd4qc3z`) regressed on the registered guidance index with the full covariate set; see `artifacts/h1_coefficients_loop68.png`.
+2. **H2 religiosity coefficients**: Parallel regression coefficients (±95% CI) for current and external religiosity predicting relationship satisfaction (`hp9qz6f`), self-love (`2l8994l`), and unhappiness (`ix5iyv3`), showing that devotion links more reliably with self-regard than with relationships; plotted in `artifacts/h2_coefficients_loop68.png`.
+3. **H3 interaction coefficients**: Standardized adversity × support interaction estimates (±95% CI) for anxiety, depression, unhappiness, and self-love that illustrate the outcome-specific moderating role of current social support; see `artifacts/h3_coefficients_loop68.png`.
+4. **H3 simple slopes**: Predicted outcomes across adjacency of adversity at support = -1, 0, and +1, holding covariates at their analytic means, to visualize how support steepens or flattens the gradients; displayed in `artifacts/h3_interaction_loop68.png`.

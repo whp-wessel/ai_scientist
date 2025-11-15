@@ -1,0 +1,7 @@
+# 2025-11-15T15:30:19.717459+00:00
+- Re-ran the frozen pipeline with `python analysis/run_analysis.py --sensitivity --loop-index 68`, so the loop-68 summary now records the refreshed effect sizes, sample info, and sensitivity tables for H1 (`artifacts/analysis_loop68_summary.md:12`), H2 (`artifacts/analysis_loop68_summary.md:19`), H3 (`artifacts/analysis_loop68_summary.md:30`), and the robustness checks (`artifacts/analysis_loop68_summary.md:48`).
+- Penned the new release materials so the manuscript, figure captions, and robustness narrative explicitly cite the loop-68 findings, figures, and sensitivity artifacts (`papers/manuscript_loop68.md:3`, `papers/figure_captions_loop68.md:1`, `papers/robustness_narrative_loop68.md:1`).
+
+Next steps:
+1. Review the narrative in `papers/manuscript_loop68.md:19` to ensure the H1–H3 storytelling and citations match your target journal’s tone.
+2. Double-check the captions/robustness notes (`papers/figure_captions_loop68.md:1` and `papers/robustness_narrative_loop68.md:1`) against the generated plots/artifacts before final release.
