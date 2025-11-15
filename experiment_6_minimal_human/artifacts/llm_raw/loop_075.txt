@@ -1,0 +1,10 @@
+# 2025-11-15T15:49:08.055332+00:00
+**Release 75**
+- Documented the loop‑75 story with the new manuscript that captures the preregistered goals, analytic sample, modeling details, results, sensitivity checks, limitations, and reproducibility instructions alongside the latest summary snapshot (`papers/manuscript_loop75.md:1`, `artifacts/analysis_loop75_summary.md:1`).
+- Added the loop‑75 figure captions and robustness narrative so readers know what each coefficient plot shows and how trimmed weights, alternative composites, and diagnostics support the main claims (`papers/figure_captions_loop75.md:1`, `papers/robustness_narrative_loop75.md:1`).
+- Advanced the workflow state to loop 75 in the release phase so the runner knows these outputs are current (`artifacts/state.json:1`).
+
+**Tests**
+- `python analysis/run_analysis.py --loop-index 75 --sensitivity` (passes; regenerates regressions, sensitivity files, and figures for this release).
+
+Next steps: review the new release draft for any narrative adjustments, confirm the figures capture the described patterns, and then proceed with whatever the next loop or publication step requires.
