@@ -1,0 +1,15 @@
+# 2025-11-15T15:07:20.377947+00:00
+Re-ran the frozen analysis pipeline for loop 59 so the weighted H1–H3 regressions, summary artifact, and loop counter are all updated under the registered workflow.
+
+- Sample & reproducibility: 14,443 positive-weight cases remain for the analytic file, and the H1 sample comparison, VIF table, regression snapshot, and pip-freeze log are saved alongside the new summary for reproducibility (`artifacts/analysis_loop59_summary.md:5`, `artifacts/analysis_loop59_summary.md:7`, `artifacts/analysis_loop59_summary.md:8`, `artifacts/analysis_loop59_summary.md:9`, `artifacts/analysis_loop59_summary.md:10`).
+- H1: The guidance index continues to show protective associations with anxiety (β=−0.135) and functional impairment (β=−0.163) but is still positively linked to self-reported depression (β=0.193) in the weighted models (`artifacts/analysis_loop59_summary.md:15`, `artifacts/analysis_loop59_summary.md:17`, `artifacts/analysis_loop59_summary.md:16`).
+- H2: Current religiosity has no reliable link to relationship satisfaction (p=0.379) yet predicts higher self-love and lower unhappiness (`artifacts/analysis_loop59_summary.md:21`, `artifacts/analysis_loop59_summary.md:22`, `artifacts/analysis_loop59_summary.md:23`), whereas external religiosity is largely null except for a modest self-love boost (`artifacts/analysis_loop59_summary.md:24`, `artifacts/analysis_loop59_summary.md:25`, `artifacts/analysis_loop59_summary.md:26`).
+- H3: The support × adversity interaction remains robust, with support moderating anxiety, depression, unhappiness, and self-love in the expected directions (`artifacts/analysis_loop59_summary.md:30`, `artifacts/analysis_loop59_summary.md:31`, `artifacts/analysis_loop59_summary.md:32`, `artifacts/analysis_loop59_summary.md:33`, `artifacts/analysis_loop59_summary.md:34`).
+- Limitations: The planned `Religionchildhood` control is missing, predicted/simple-slope summaries assume covariates at their means, and the `religion` control was dropped from H2 to avoid multicollinearity (`artifacts/analysis_loop59_summary.md:42`, `artifacts/analysis_loop59_summary.md:43`, `artifacts/analysis_loop59_summary.md:44`).
+- State update: The frozen-state counter now reads 59 so the next loop will increment cleanly (`artifacts/state.json:2`).
+
+Tests: `python analysis/run_analysis.py --loop-index 59`
+
+Next steps:
+1. Use the simple slopes table to describe how support shifts adversity slopes for each outcome and identify the most compelling contrasts for the manuscript (`artifacts/h3_simple_slopes_loop59.csv:2`).
+2. Translate the predicted outcomes at low/medium/high support into narrative bullet points or figures to anchor the interaction story (`artifacts/h3_predicted_supports_loop59.csv:2`).
