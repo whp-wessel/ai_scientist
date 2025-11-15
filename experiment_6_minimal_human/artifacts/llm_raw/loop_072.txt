@@ -1,0 +1,11 @@
+# 2025-11-15T15:41:03.152720+00:00
+**Release Loop 72**
+- Re-ran `python analysis/run_analysis.py` (plus the `--sensitivity` flag) to refresh the loop-72 artifacts—`artifacts/analysis_loop72_summary.md`, `artifacts/regression_records_loop72.csv`, the coefficient and interaction figures, simple slopes/predicted outcomes tables, pip freeze snapshot, and the trimmed/cohesion/adversity sensitivity tables—all of which report the same HC3-weighted βs and BH-FDRs noted in the frozen PAP.
+- Authored the new release deliverables (`papers/manuscript_loop72.md`, `papers/figure_captions_loop72.md`, and `papers/robustness_narrative_loop72.md`) so the narrative, captions, and robustness notes now point to the loop-72 artifacts and explicitly flag the guidance→depression nuance, religiosity results, and support×adversity moderation.
+- Bumped `artifacts/state.json` to `loop_counter: 72` so the tracker reflects the latest release pass without altering the “release” phase or other metadata.
+
+- Tests: `python analysis/run_analysis.py`, `python analysis/run_analysis.py --sensitivity`
+
+Next steps:
+1. Give `papers/manuscript_loop72.md` (and the matching captions/robustness note) a read-through alongside the new figures to confirm alignment with your editorial voice before sending the package forward.
+2. If you plan another loop, rerun `python analysis/run_analysis.py --loop-index N` (with `--sensitivity` as needed) so future artifacts and documents stay synchronized with each pass.

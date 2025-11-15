@@ -1,0 +1,9 @@
+Scenario,Hypothesis,Exposure,Outcome,Coefficient,SE,CI_lower,CI_upper,p,N
+Parental verbal/emotional abuse,H3,Parental verbal/emotional abuse × support,Anxiety (npvfh98),0.05829831365485919,0.00817877337690875,0.042268212398403004,0.07432841491131538,1.018362375373282e-12,14040
+Parental verbal/emotional abuse,H3,Parental verbal/emotional abuse × support,Depression (wz901dj),-0.03668899927632746,0.00797949258741655,-0.05232851736256823,-0.02104948119008669,4.267475571864544e-06,14041
+Parental verbal/emotional abuse,H3,Parental verbal/emotional abuse × support,Unhappiness (ix5iyv3),0.04947497682682225,0.007944247630048832,0.033904537587658864,0.06504541606598564,4.731096229963406e-10,14041
+Parental verbal/emotional abuse,H3,Parental verbal/emotional abuse × support,Self-love (2l8994l),-0.03936521794168016,0.008890208700310473,-0.05678970680933333,-0.02194072907402699,9.514195809282887e-06,14039
+Feelings of being at war with yourself,H3,Feelings of being at war with yourself × support,Anxiety (npvfh98),0.07787579257297614,0.007538938520170936,0.06309974459177942,0.09265184055417286,5.166352477314675e-25,14048
+Feelings of being at war with yourself,H3,Feelings of being at war with yourself × support,Depression (wz901dj),-0.06178305675788871,0.00733052524371965,-0.07615062222334093,-0.047415491292436496,3.510538834719307e-17,14049
+Feelings of being at war with yourself,H3,Feelings of being at war with yourself × support,Unhappiness (ix5iyv3),0.0482142688876977,0.007611613794293989,0.033295779986653215,0.06313275778874218,2.3841641311123574e-10,14049
+Feelings of being at war with yourself,H3,Feelings of being at war with yourself × support,Self-love (2l8994l),-0.04520198686215827,0.008539959471198899,-0.061939999855139836,-0.0284639738691767,1.203273554751663e-07,14047
