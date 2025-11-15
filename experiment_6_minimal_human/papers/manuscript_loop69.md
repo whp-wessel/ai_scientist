@@ -1,0 +1,41 @@
+# Guidance, the Sacred, and Support: How Childhood Experiences Shape Adult Emotional Health in a Global Sample
+
+## Abstract
+The Balanced Childhood Survey captures 14,443 respondents whose childhood family climate, religiosity, and adult emotional wellbeing were harmonized into Likert-type constructs. We test three preregistered hypotheses informed by resilience, religion-health, and buffering literatures: that parental guidance protects adult distress, that religiosity correlates with psychological wellbeing, and that current social support moderates childhood adversity’s legacy. Weighted least-squares regressions with HC3 robust errors standardize every exposure/outcome, and Benjamini–Hochberg corrections are applied within each hypothesis. Guidance lowers anxiety (β = -0.135, 95% CI [-0.152, -0.118]) and functional impairment (β = -0.163, 95% CI [-0.180, -0.146]) yet unexpectedly predicts higher depression (β = 0.193, 95% CI [0.176, 0.210]). Current religiosity modestly predicts greater self-love (β = 0.037, 95% CI [0.019, 0.054]) and lower unhappiness (β = -0.034, 95% CI [-0.051, -0.017]), while external religiosity only retains a weak self-love signal. Support × adversity interactions strengthen anxiety/unhappiness gradients (β = 0.070 and β = 0.046, respectively) and flatten depression/self-love slopes (β = -0.049 and β = -0.041). Sensitivity checks (trimmed weights, alternative composites) and diagnostics are archived so the narrative and figures are fully reproducible.
+
+## Introduction
+Felitti et al. (1998) and the broader ACE literature show that childhood household conditions forecast adult distress, and follow-up work highlights responsive caregiving (Repetti, Taylor, & Seeman, 2002) and religion as a psychological resource (Koenig et al., 2012; Martin et al., 2003). Cohen and Wills’s (1985) buffering model further suggests that current social support modifies these lifecourse gradients. The Balanced Childhood Survey asks about parental guidance, emotional/verbal abuse, religiosity, and current support in a single wave, enabling a preregistered test of whether guidance shields adult distress (H1), whether religiosity relates to wellbeing (H2), and whether support moderates adversity’s aftermath (H3).
+
+## Methods
+### Data and preprocessing
+We analyze `childhoodbalancedpublic_original.csv`, restricting to the 14,443 respondents with positive sampling weights and documenting the analytic snapshot in `artifacts/analysis_loop69_summary.md`. Rows with zero or missing weights were excluded, and all exposures/outcomes were z-scored after ensuring higher scores uniformly indicate more of the target construct (negative-coded items flipped where necessary). The guidance index averages the two guidance recall items (`during ages *0-12*: Your parents gave useful guidance (pqo6jmj)` and `during ages *13-18*: Your parents gave useful guidance (dcrx5ab)`), the adversity index averages eight conflict/adversity indicators spanning ages 0–12 and 13–18, religiosity measures rely on the ordinal current-practice question (`902tbll`) and `externalreligion`, and social support uses `71mn55g`. Outcomes include anxiety (`npvfh98`), depression (`wz901dj`), functional impairment (`kd4qc3z`), relationship satisfaction (`hp9qz6f`), self-love (`2l8994l`), and unhappiness (`ix5iyv3`).
+
+### Modeling
+H1 estimates three weighted least-squares models (HC3 robust SEs) with the guidance index predicting each distress outcome, controlling for age, gender indicators (`biomale`, `gendered`, `cis`), education, class indicators (`classchild`, `classteen`, `classcurrent`), net worth, religion, external religiosity, and country dummies (United States reference). H2 regresses each wellbeing outcome on either current or external religiosity with the same covariates plus the guidance index (dropping `religion` when it duplicates the exposure). H3 fits product-term regressions with adversity, support, and their interaction alongside the H1 covariates plus current religiosity, yielding interaction coefficients, simple slopes saved in `artifacts/h3_simple_slopes_loop69.csv`, and predicted values shown in `artifacts/h3_predicted_supports_loop69.csv`. All models are mirrored in unweighted OLS counterparts for transparency.
+
+### Multiple testing and reproducibility
+Benjamini–Hochberg adjustments occur within each hypothesis (three H1 outcomes, two H2 exposures × three outcomes, four H3 outcomes). The pipeline is rerunnable via `python analysis/run_analysis.py --sensitivity --loop-index 69`, the frozen Pre-Analysis Plan is documented in `analysis/pre_analysis_plan.md`, and environment/package snapshots live in `artifacts/pip_freeze_loop69.txt`.
+
+## Results
+### H1 – Childhood guidance and adult distress
+Weighted guidance coefficients confirm lower anxiety (β = -0.135, 95% CI [-0.152, -0.118], p < 0.001, BH-FDR = 0.000, N = 14,430) and lower functional impairment (β = -0.163, 95% CI [-0.180, -0.146], p < 0.001, BH-FDR = 0.000, N = 14,430) but maintain the positive depression coefficient (β = 0.193, 95% CI [0.176, 0.210], p < 0.001, BH-FDR = 0.000, N = 14,431). These patterns hold under trimmed weights and alternative cohesion indices, and the analytic sample description (age/gender/class) is saved at `artifacts/h1_sample_comparison_loop69.csv`.
+
+### H2 – Religiosity and wellbeing
+Current religiosity modestly predicts higher self-love (β = 0.037, 95% CI [0.019, 0.054], BH-FDR = 0.000, N = 14,428) and lower unhappiness (β = -0.034, 95% CI [-0.051, -0.017], BH-FDR = 0.000, N = 14,430) but shows no credible association with relationship satisfaction (β = 0.008, 95% CI [-0.010, 0.025], BH-FDR = 0.379, N = 14,429). External religiosity retains only the weak self-love link (β = 0.017, 95% CI [0.000, 0.034], BH-FDR = 0.132, N = 14,429) while its unhappiness and relationship satisfaction coefficients are null, aligning with the view that devotion-linked meaning supports self-regard more reliably than interpersonal satisfaction.
+
+### H3 – Support moderates adversity
+Support × adversity interactions are outcome-specific: higher support steepens the anxiety (β = 0.070, 95% CI [0.055, 0.085]) and unhappiness (β = 0.046, 95% CI [0.031, 0.061]) gradients but flattens depression (β = -0.049, 95% CI [-0.064, -0.034]) and self-love (β = -0.041, 95% CI [-0.058, -0.025]) slopes (all BH-FDR = 0.000; N ≈ 14,030–14,032). The interaction coefficients (Figure 3) and simple slopes/predictions (Figures 4 and artifacts) document that support amplifies distress where adversity is high yet softens depression and self-regard outcomes in the same range.
+
+## Sensitivity and robustness
+- Trimmed weights (weights capped at the 99th percentile) reproduce the H1 coefficients and keep H2/H3 estimates within ±0.02, as catalogued in `artifacts/sensitivity_trimmed_weights_loop69.csv`.
+- The playful cohesion-enhanced guidance composite conserves H1’s pattern (`artifacts/sensitivity_cohesion_loop69.csv`), while the “parental verbal/emotional abuse” and “at war with yourself” adversity configurations retain the H3 moderation signs across all outcomes (`artifacts/sensitivity_adversity_loop69.csv`).
+- The positive guidance–depression coefficient matches the raw correlation (r = 0.270) and the binned averages stored in `artifacts/guidance_depression_sensitivity_loop69.csv`, suggesting measurement nuance rather than a statistical artifact.
+- Sample stability is documented via `artifacts/h1_sample_comparison_loop69.csv`, and VIF checks remain available in `artifacts/h1_vif_loop69.csv`.
+
+## Limitations
+- The planned childhood religiosity control (`Religionchildhood`) is fully missing in this wave, so we could not adjust for it.
+- Simple slopes and predicted outcomes assume covariates remain at their analytic means, restricting their external generalizability.
+- The `religion` covariate was dropped from H2 models because it duplicates the active religiosity exposures and inflates coefficients.
+
+## Reproducibility
+All regression records and plots are archived under `artifacts/` (e.g., `artifacts/regression_records_loop69.csv`, `artifacts/h1_coefficients_loop69.png`, `artifacts/h3_interaction_loop69.png`). The summary lives at `artifacts/analysis_loop69_summary.md`, and rerunning `python analysis/run_analysis.py --sensitivity --loop-index 69` re-produces the entire workflow.

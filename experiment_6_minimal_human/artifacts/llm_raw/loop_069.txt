@@ -1,0 +1,7 @@
+# 2025-11-15T15:32:41.362686+00:00
+**Release Summary**
+- Finalized the High-standards paper in `papers/manuscript_loop69.md`, narrating the preregistered hypotheses on the Balanced Childhood Survey (14,443 respondents) and tying every section to `artifacts/analysis_loop69_summary.md` plus the captured environment snapshot (`artifacts/pip_freeze_loop69.txt`) so the workflow is fully reproducible.
+- Key findings: the guidance index lowers anxiety (β = -0.135) and functional impairment (β = -0.163) but predicts higher depression (β = 0.193); current religiosity links to more self-love (β = 0.037) and less unhappiness (β = -0.034) while external religiosity only keeps a small self-love signal; support × adversity interactions are outcome-specific (βs between 0.070 and -0.041) and documented with new figure captions (`papers/figure_captions_loop69.md`) and a robustness narrative (`papers/robustness_narrative_loop69.md`) that reference the trimmed-weight, composite, and diagnostic artifacts now in `artifacts/`.
+- **Testing**: `python analysis/run_analysis.py --loop-index 69 --sensitivity` (produced `artifacts/analysis_loop69_summary.md` plus the fresh sensitivity and plot artefacts listed in the repo).
+
+Next steps: share `papers/manuscript_loop69.md` (and its companion files) with collaborators or reviewers, and consider pairing the new artifacts with any final layout/visualization work for submission.
