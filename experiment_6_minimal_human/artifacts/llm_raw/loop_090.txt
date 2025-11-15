@@ -1,0 +1,13 @@
+# 2025-11-15T16:35:25.610596+00:00
+Final release complete: I reran the frozen analysis, documented every finding, and logged the final state so the science loop knows this iteration is done.
+
+- The new manuscript now narrates the preregistered plan (abstract at `papers/manuscript_loop90.md:3`), sample/methods (lines 11‑19), H1–H3 effect sizes (lines 22, 25, 28), limitations (line 37), open questions (line 42), and reproducibility guidance (line 47).
+- Companion documentation maps the visuals and tests to the artifacts via fresh captions/robustness notes (`papers/figure_captions_loop90.md:1`, `papers/robustness_narrative_loop90.md:1`).
+- Analytic metadata, diagnostics, and the release log capture loop-90 outputs and the state update (`artifacts/analysis_loop90_summary.md:1`, `artifacts/state.json:1`, `artifacts/llm_raw/loop_090.txt:1`).
+
+Testing:
+- `python3 analysis/run_analysis.py --sensitivity --loop-index 90`
+
+Next steps:
+1. Circulate the loop-90 manuscript and captions for any final edits, keeping the stated limitations and open questions (`papers/manuscript_loop90.md:37`, `papers/manuscript_loop90.md:42`) in view.
+2. Use the documented open questions on guidance–depression, country heterogeneity, and religiosity nuance (`papers/manuscript_loop90.md:42`, `papers/manuscript_loop90.md:44`, `papers/manuscript_loop90.md:45`) to guide any future follow-up work.
