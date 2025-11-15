@@ -1,0 +1,12 @@
+# 2025-11-15T16:20:27.794120+00:00
+**Release Delivery**
+- Documented the full narrative—context, preregistration, methods, results, sensitivity, limitations, and reproducibility procedures—in `papers/manuscript_loop86.md:1`.
+- Added the loop 86 figure captions and a robustness digest that link the key coefficient plots, simple slopes, and trimmed/adversity checks to their artifacts (`papers/figure_captions_loop86.md:1`, `papers/robustness_narrative_loop86.md:1`).
+- Archived the latest analytic snapshot (sample info, coefficients, sensitivity summaries) at `artifacts/analysis_loop86_summary.md:1` for easy reference and disclosure.
+
+**Testing**
+- `python3 analysis/run_analysis.py --loop-index 86 --sensitivity` (regenerated the summary plus all loop 86 artifacts, figures, and diagnostics).
+
+**Next Steps**
+- 1. Review the new manuscript + captions for editorial polish (flow, citations, formatting) before submitting or sharing beyond this cycle.
+- 2. Decide whether remaining loops should revisit other hypotheses or expand sensitivity analyses, and outline those activities so the next iteration can proceed efficiently.
