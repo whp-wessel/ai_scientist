@@ -1,0 +1,11 @@
+# 2025-11-15T15:35:25.819366+00:00
+- Re-ran the frozen pre-analysis workflow with `python analysis/run_analysis.py --sensitivity --loop-index 70`, producing `artifacts/analysis_loop70_summary.md:1` plus the new regression records, figures, sensitivity CSVs, and environment snapshot that document the H1–H3 coefficients and robustness story for this loop.
+- Added release-ready write-ups that narrate the findings, captions, and robustness checks tied to the new artifacts: `papers/manuscript_loop70.md:1`, `papers/figure_captions_loop70.md:1`, and `papers/robustness_narrative_loop70.md:1` now capture the preregistered hypotheses, effect sizes, and reproducibility pointers (summary, pip freeze, simple slopes, etc.).
+- Updated the state tracker to loop 70 in the release phase (`artifacts/state.json:1`) so future loops know this analysis set is complete.
+
+Testing:
+- `python analysis/run_analysis.py --sensitivity --loop-index 70`
+
+Next steps you might consider:
+1. Explore heterogeneity (country, gender, or other subgroups) to ensure the guidance–depression divergence isn’t concentrated in a specific slice of the sample.
+2. Pair these artifacts with any layout, visualization, or submission materials (e.g., conference briefings) so the release-ready narrative can be shared with collaborators or reviewers.
