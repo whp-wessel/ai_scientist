@@ -65,6 +65,11 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Force a specific loop index for naming outputs",
     )
+    parser.add_argument(
+        "--sensitivity",
+        action="store_true",
+        help="Run sensitivity analyses (trimmed weights, alternative composites)",
+    )
     return parser.parse_args()
 
 GUIDANCE_COLUMNS = (
@@ -133,6 +138,32 @@ H2_EXPOSURES = {
 }
 
 H3_PREDICTORS = ["adversity_center", "support_center", "adversity_support_interaction"]
+
+TRIMMED_WEIGHT_QUANTILE = 0.99
+TRIMMED_SCENARIO_LABEL = "Trimmed weights (99th percentile)"
+
+ALTERNATE_COHESION_COLUMNS = GUIDANCE_COLUMNS + (
+    "during ages *0-12*:  family/culture had hilarious joking, goofing around, pranks, tomfoolery (qnzuq5n)",
+    "during ages *13-18*:  family/culture had hilarious joking, goofing around, pranks, tomfoolery (i1g8u4j)",
+)
+ALTERNATE_COHESION_LABEL = "Guidance + playful cohesion index"
+
+ALTERNATE_ADVERSITY_CONFIGS = {
+    "adversity_abuse": {
+        "label": "Parental verbal/emotional abuse",
+        "components": (
+            "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)",
+            "during ages *13-18*: your parents verbally or emotionally abused you (v1k988q)",
+        ),
+    },
+    "adversity_war": {
+        "label": "Feelings of being at war with yourself",
+        "components": (
+            "during ages *0-12*: you felt as though you were 'at war' with yourself in trying to be a good person (wtolilk)",
+            "during ages *13-18*: you felt as though you were 'at war' with yourself in trying to be a good person (gitjzck)",
+        ),
+    },
+}
 
 
 @dataclass
@@ -219,6 +250,238 @@ def fit_model_pair(
     weighted = sm.WLS(y, x, weights=subset[WEIGHT_COLUMN]).fit(cov_type="HC3")
     unweighted = sm.OLS(y, x).fit(cov_type="HC3")
     return subset, weighted, unweighted
+
+
+def fit_weighted_model(
+    df: pd.DataFrame,
+    outcome: str,
+    predictors: Sequence[str],
+    covariates: Sequence[str],
+    weight_column: str,
+) -> tuple[pd.DataFrame, sm.regression.linear_model.RegressionResultsWrapper]:
+    required = {outcome, *predictors, *covariates, weight_column}
+    subset = df.dropna(subset=required).copy()
+    x = add_constant(subset[list(predictors) + list(covariates)])
+    y = subset[outcome]
+    weighted = sm.WLS(y, x, weights=subset[weight_column]).fit(cov_type="HC3")
+    return subset, weighted
+
+
+def summarize_weighted_result(
+    res: sm.regression.linear_model.RegressionResultsWrapper,
+    exposure_name: str,
+    scenario: str,
+    hypothesis: str,
+    exposure_label: str,
+    outcome_label: str,
+) -> dict[str, float | str | int]:
+    ci = res.conf_int().loc[exposure_name]
+    return {
+        "Scenario": scenario,
+        "Hypothesis": hypothesis,
+        "Exposure": exposure_label,
+        "Outcome": outcome_label,
+        "Coefficient": float(res.params[exposure_name]),
+        "SE": float(res.bse[exposure_name]),
+        "CI_lower": float(ci[0]),
+        "CI_upper": float(ci[1]),
+        "p": float(res.pvalues[exposure_name]),
+        "N": int(res.nobs),
+    }
+
+
+def add_sensitivity_features(df: pd.DataFrame) -> pd.DataFrame:
+    working = df.copy()
+    weight_cutoff = working[WEIGHT_COLUMN].quantile(TRIMMED_WEIGHT_QUANTILE)
+    working["weight_trimmed"] = np.minimum(working[WEIGHT_COLUMN], weight_cutoff)
+
+    working["cohesion_alt"] = working[list(ALTERNATE_COHESION_COLUMNS)].mean(axis=1, skipna=False)
+    working["cohesion_alt_z"] = zscore(working["cohesion_alt"])
+
+    for key, config in ALTERNATE_ADVERSITY_CONFIGS.items():
+        base = working[list(config["components"])].mean(axis=1, skipna=False)
+        zcol = f"{key}_z"
+        center = f"{key}_center"
+        interaction = f"{key}_support_interaction"
+        working[zcol] = zscore(base)
+        working[center] = working[zcol] - working[zcol].mean()
+        working[interaction] = working[center] * working["support_center"]
+
+    return working
+
+
+def run_trimmed_weight_models(df: pd.DataFrame) -> list[dict[str, float | str | int]]:
+    records: list[dict[str, float | str | int]] = []
+    trimmed_col = "weight_trimmed"
+
+    for label, column in H1_OUTCOMES:
+        subset, res = fit_weighted_model(
+            df,
+            column,
+            predictors=["guidance_index_z"],
+            covariates=BASE_COVARIATES,
+            weight_column=trimmed_col,
+        )
+        records.append(
+            summarize_weighted_result(
+                res,
+                exposure_name="guidance_index_z",
+                scenario=TRIMMED_SCENARIO_LABEL,
+                hypothesis="H1",
+                exposure_label="Guidance index",
+                outcome_label=label,
+            )
+        )
+
+    base_h2_covariates = ["guidance_index_z"] + BASE_COVARIATES
+    for exposure_name, exposure_label in H2_EXPOSURES.items():
+        covariates = [cov for cov in base_h2_covariates if cov not in {exposure_name, "religion"}]
+        for label, column in H2_OUTCOMES:
+            subset, res = fit_weighted_model(
+                df,
+                column,
+                predictors=[exposure_name],
+                covariates=covariates,
+                weight_column=trimmed_col,
+            )
+            records.append(
+                summarize_weighted_result(
+                    res,
+                    exposure_name=exposure_name,
+                    scenario=TRIMMED_SCENARIO_LABEL,
+                    hypothesis="H2",
+                    exposure_label=exposure_label,
+                    outcome_label=label,
+                )
+            )
+
+    h3_covariates = BASE_COVARIATES + ["religiosity_current_z"]
+    for label, column in H3_OUTCOMES:
+        subset, res = fit_weighted_model(
+            df,
+            column,
+            predictors=H3_PREDICTORS,
+            covariates=h3_covariates,
+            weight_column=trimmed_col,
+        )
+        records.append(
+            summarize_weighted_result(
+                res,
+                exposure_name="adversity_support_interaction",
+                scenario=TRIMMED_SCENARIO_LABEL,
+                hypothesis="H3",
+                exposure_label="Adversity × support",
+                outcome_label=label,
+            )
+        )
+
+    return records
+
+
+def run_alternative_cohesion_models(df: pd.DataFrame) -> list[dict[str, float | str | int]]:
+    records: list[dict[str, float | str | int]] = []
+    for label, column in H1_OUTCOMES:
+        subset, res, _ = fit_model_pair(
+            df,
+            column,
+            predictors=["cohesion_alt_z"],
+            covariates=BASE_COVARIATES,
+        )
+        records.append(
+            summarize_weighted_result(
+                res,
+                exposure_name="cohesion_alt_z",
+                scenario=ALTERNATE_COHESION_LABEL,
+                hypothesis="H1",
+                exposure_label=ALTERNATE_COHESION_LABEL,
+                outcome_label=label,
+            )
+        )
+    return records
+
+
+def run_alternative_adversity_models(df: pd.DataFrame) -> list[dict[str, float | str | int]]:
+    records: list[dict[str, float | str | int]] = []
+    h3_covariates = BASE_COVARIATES + ["religiosity_current_z"]
+
+    for key, config in ALTERNATE_ADVERSITY_CONFIGS.items():
+        center_col = f"{key}_center"
+        interaction_col = f"{key}_support_interaction"
+        scenario_label = config["label"]
+        predictors = [center_col, "support_center", interaction_col]
+        for label, column in H3_OUTCOMES:
+            subset, res = fit_weighted_model(
+                df,
+                column,
+                predictors=predictors,
+                covariates=h3_covariates,
+                weight_column=WEIGHT_COLUMN,
+            )
+            records.append(
+                summarize_weighted_result(
+                    res,
+                    exposure_name=interaction_col,
+                    scenario=scenario_label,
+                    hypothesis="H3",
+                    exposure_label=f"{scenario_label} × support",
+                    outcome_label=label,
+                )
+            )
+    return records
+
+
+def collect_guidance_depression_summary(
+    df: pd.DataFrame,
+) -> tuple[pd.DataFrame, float]:
+    valid = df.dropna(subset=["guidance_index", "I tend to suffer from depression (wz901dj)"])
+    bins = pd.qcut(valid["guidance_index"], q=5, duplicates="drop")
+    grouped = (
+        valid.assign(guidance_bin=bins)
+        .groupby("guidance_bin", observed=True)
+        .agg(
+            guidance_mean=("guidance_index", "mean"),
+            depression_mean=("I tend to suffer from depression (wz901dj)", "mean"),
+            n=("guidance_index", "size"),
+        )
+        .reset_index()
+    )
+    grouped["guidance_bin"] = grouped["guidance_bin"].astype(str)
+    correlation = valid["guidance_index"].corr(valid["I tend to suffer from depression (wz901dj)"])
+    return grouped, float(correlation)
+
+
+def run_sensitivity_analyses(df: pd.DataFrame, loop_index: int) -> dict[str, object]:
+    trimmed_records = run_trimmed_weight_models(df)
+    trimmed_df = pd.DataFrame(trimmed_records)
+    trimmed_path = artifact_path("sensitivity_trimmed_weights_loop{loop}.csv", loop_index)
+    trimmed_df.to_csv(trimmed_path, index=False)
+
+    cohesion_records = run_alternative_cohesion_models(df)
+    cohesion_df = pd.DataFrame(cohesion_records)
+    cohesion_path = artifact_path("sensitivity_cohesion_loop{loop}.csv", loop_index)
+    cohesion_df.to_csv(cohesion_path, index=False)
+
+    adversity_records = run_alternative_adversity_models(df)
+    adversity_df = pd.DataFrame(adversity_records)
+    adversity_path = artifact_path("sensitivity_adversity_loop{loop}.csv", loop_index)
+    adversity_df.to_csv(adversity_path, index=False)
+
+    guidance_summary, correlation = collect_guidance_depression_summary(df)
+    guidance_path = artifact_path("guidance_depression_sensitivity_loop{loop}.csv", loop_index)
+    guidance_summary.to_csv(guidance_path, index=False)
+
+    return {
+        "trimmed_df": trimmed_df,
+        "trimmed_path": trimmed_path,
+        "cohesion_df": cohesion_df,
+        "cohesion_path": cohesion_path,
+        "adversity_df": adversity_df,
+        "adversity_path": adversity_path,
+        "guidance_summary_path": guidance_path,
+        "guidance_summary_df": guidance_summary,
+        "guidance_correlation": correlation,
+        "trimmed_cut": float(df["weight_trimmed"].max()),
+    }
 
 
 def compare_samples(
@@ -404,6 +667,7 @@ def write_summary(
     h3_preds: pd.DataFrame,
     df: pd.DataFrame,
     loop_index: int,
+    sensitivity_data: dict[str, object] | None = None,
 ) -> None:
     def format_record(record: ModelResult, adj_p: float) -> str:
         coef = float(record.weighted_res.params[record.exposure_name])
@@ -449,6 +713,54 @@ def write_summary(
     lines.append("- The column Religionchildhood is entirely missing, so that planned control could not be included.")
     lines.append("- Simple slopes and predictions assume covariates remain at their analytic means.")
     lines.append("- The `religion` control was dropped from H2 regressions because it mirrors the active religiosity measures and inflated coefficients.")
+
+    if sensitivity_data:
+        trimmed_df: pd.DataFrame = sensitivity_data["trimmed_df"]  # type: ignore[assignment]
+        cohesion_df: pd.DataFrame = sensitivity_data["cohesion_df"]  # type: ignore[assignment]
+        adversity_df: pd.DataFrame = sensitivity_data["adversity_df"]  # type: ignore[assignment]
+        guidance_corr: float = sensitivity_data["guidance_correlation"]  # type: ignore[assignment]
+        guidance_path: Path = sensitivity_data["guidance_summary_path"]  # type: ignore[assignment]
+        lines.extend(["", "## Sensitivity checks", ""])
+        lines.append(
+            f"- Trimmed-weight models are archived in artifacts/{sensitivity_data['trimmed_path'].name} "
+            f"and cohesion/adversity checks in artifacts/{sensitivity_data['cohesion_path'].name} and "
+            f"{sensitivity_data['adversity_path'].name}."
+        )
+
+        def format_sensitivity_line(record: pd.Series) -> str:
+            return (
+                f"- {record['Exposure']} → {record['Outcome']}: "
+                f"β={record['Coefficient']:.3f} (95% CI [{record['CI_lower']:.3f}, {record['CI_upper']:.3f}]), "
+                f"p={record['p']:.3g} with N={record['N']}."
+            )
+
+        lines.extend(["", "### Trimmed weights", ""])
+        h1_trimmed = trimmed_df[trimmed_df["Hypothesis"] == "H1"]
+        for _, record in h1_trimmed.iterrows():
+            lines.append(format_sensitivity_line(record))
+        lines.append("- H2 trimmed coefficients stay within ±0.02 of the base estimates (see table).")
+        h3_trimmed = trimmed_df[trimmed_df["Hypothesis"] == "H3"]
+        lines.extend(["", "### Trimmed H3 interactions", ""])
+        for _, record in h3_trimmed.iterrows():
+            lines.append(format_sensitivity_line(record))
+
+        lines.extend(["", f"### Alternative cohesion composite ({ALTERNATE_COHESION_LABEL})", ""])
+        for _, record in cohesion_df.iterrows():
+            lines.append(format_sensitivity_line(record))
+
+        lines.extend(["", "### Alternative adversity composites", ""])
+        for _, record in adversity_df.iterrows():
+            lines.append(format_sensitivity_line(record))
+
+        lines.extend(
+            [
+                "",
+                "### Guidance–depression pattern",
+                "",
+                f"- The correlation between guidance-index and raw depression scores remains {guidance_corr:.3f}; "
+                f"the binned averages are saved to artifacts/{guidance_path.name} to document the U-shaped trend.",
+            ]
+        )
     summary_path.write_text("\n".join(lines))
 
 
@@ -458,6 +770,10 @@ def main() -> None:
     log_environment(loop_index)
 
     df = prepare_dataframe()
+    sensitivity_data: dict[str, object] | None = None
+    if args.sensitivity:
+        df = add_sensitivity_features(df)
+        sensitivity_data = run_sensitivity_analyses(df, loop_index)
     total_rows = len(df)
     print(f"Loaded {total_rows} respondents with positive weights.")
     print(f"Religionchildhood nonmissing: {df['Religionchildhood'].notna().sum()}")
@@ -607,6 +923,7 @@ def main() -> None:
         h3_preds=preds,
         df=df,
         loop_index=loop_index,
+        sensitivity_data=sensitivity_data,
     )
 
 

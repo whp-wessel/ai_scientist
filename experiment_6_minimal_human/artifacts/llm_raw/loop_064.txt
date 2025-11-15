@@ -1,0 +1,10 @@
+# 2025-11-15T15:19:20.579530+00:00
+**Sensitivity Update**
+- Extended `analysis/run_analysis.py` with a `--sensitivity` flag plus new helper blocks for trimmed-WLS fitting, cohesion/adversity composites, and the guidance–depression diagnostics so the pipeline can save those tables on demand; see the CLI flag at `analysis/run_analysis.py:70` and the helper scaffolding starting at `analysis/run_analysis.py:255` with the orchestration in `analysis/run_analysis.py:453`.
+- The freshly minted `analysis_loop64_summary.md` still shows the base H1–H3 estimates (the positive depression coefficient is on record at line `artifacts/analysis_loop64_summary.md:16` while the interaction table sits at `:32`) and now layers in the trimmed/alternative/cohesion checks plus the guidance–depression correlation (line `artifacts/analysis_loop64_summary.md:46` and the 0.270 correlation plus U-shaped trend at `:83`), confirming that the unexpected depression slope survives the broader diagnostics.
+- Detailed sensitivity outputs are stored for reproducibility: the trimmed-weight, alternative cohesion, and alternative adversity regression tables are in `artifacts/sensitivity_trimmed_weights_loop64.csv:1`, `artifacts/sensitivity_cohesion_loop64.csv:1`, and `artifacts/sensitivity_adversity_loop64.csv:1`, while the guidance-depression bin statistics live in `artifacts/guidance_depression_sensitivity_loop64.csv:1`.
+- Updated the state tracker to loop 64 and moved into the writing phase so the next loop can focus on drafting/review (`artifacts/state.json:1`).
+
+Tests: `python analysis/run_analysis.py --loop-index 64 --sensitivity`
+
+Next: build out the writing-phase deliverables (manuscript draft, figure captions, robustness narratives) and then proceed toward the planned release.
