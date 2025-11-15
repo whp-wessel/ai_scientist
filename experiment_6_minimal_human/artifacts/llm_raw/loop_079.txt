@@ -1,0 +1,12 @@
+# 2025-11-15T16:00:08.889805+00:00
+**Loop 79 Release**
+- Authored the loop-79 manuscript so the abstract, methods, and results now describe the preregistered design, dataset handling, and the guidance/religiosity/support effects (papers/manuscript_loop79.md:3,11,22,25,28) while still pointing readers to the frozen Pre-Analysis Plan and archived artifacts.
+- Added loop-79 figure captions and robustness narrative that cite the new coefficient plots, interaction figures, trimmed-weight/alternative-composite diagnostics, and the guidance–depression correlation tables (papers/figure_captions_loop79.md:1; papers/robustness_narrative_loop79.md:1).
+- Logged the complete analysis summary with the reported coefficients, sensitivity checks, and limitations plus updated the loop tracker to 79 in artifacts/state.json (artifacts/analysis_loop79_summary.md:5,12,48; artifacts/state.json:2,3) so future loops continue from this release.
+
+Tests
+- `python analysis/run_analysis.py --sensitivity --loop-index 79`
+
+Next steps
+1. Review the new manuscript/robustness files with collaborators or editors to confirm the narrative and cite-ready figures match the journal tone.
+2. Continue the science loop via `runner.py` when ready, so the next iteration can start at the refreshed release phase.
