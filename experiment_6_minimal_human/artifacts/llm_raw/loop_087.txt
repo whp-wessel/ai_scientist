@@ -1,0 +1,11 @@
+# 2025-11-15T16:23:06.014695+00:00
+**Release Update**
+- Executed the frozen pre-analysis plan with sensitivity to capture loop-87 outputs (summary plus diagnostics and figures in `artifacts/analysis_loop87_summary.md:1`) and advanced the loop counter in `artifacts/state.json:1`.
+- Drafted the release manuscript with explicit open questions, figure captions, and a robustness narrative that link back to the new artifacts (`papers/manuscript_loop87.md:1`, `papers/figure_captions_loop87.md:1`, `papers/robustness_narrative_loop87.md:1`).
+
+Tests:
+- `python3 analysis/run_analysis.py --loop-index 87 --sensitivity`
+
+Next steps:
+1. Share the loop-87 deliverables with collaborators for topical review and to gather any additional commentary before final release.
+2. Follow up on the open questions (e.g., the guidance–depression paradox, country/support heterogeneity, finer religiosity measures) with targeted analyses or data collection to strengthen causal narratives.
