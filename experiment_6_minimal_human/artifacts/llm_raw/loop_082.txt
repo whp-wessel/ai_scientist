@@ -1,0 +1,11 @@
+# 2025-11-15T16:07:36.637639+00:00
+**Release Update**
+- Loop 82 reran the frozen pre-analysis pipeline on `childhoodbalancedpublic_original.csv`, producing the usual `analysis_loop82_summary.md` snapshot plus coef tables for H1–H3; positive-weight sample N=14,443 and the key βs are unchanged (guidance lowers anxiety/impairment but raises depression, current religiosity boosts self-love and lowers unhappiness, and support × adversity steepens anxiety/unhappiness while flattening depression/self-love, all with BH-FDR < 0.001) (`artifacts/analysis_loop82_summary.md:5-38`).
+- Final release documents now live in `papers/`—the manuscript contains the Abstract/Methods/Results narrative tied to these estimates and archived artifacts, and new figure captions plus the robustness narrative highlight the visual drafts and sensitivity checks for loop 82 (`papers/manuscript_loop82.md:1`, `papers/figure_captions_loop82.md:1`, `papers/robustness_narrative_loop82.md:1`).
+- The frozen loop tracker now records `loop_counter = 82` so the release phase reflects this progress and every reproducible artifact (summary, regressions, figures, pip freeze, sensitivity tables) sits under `artifacts/` for future reruns (`artifacts/state.json:1-7`).
+
+Tests:
+- `python analysis/run_analysis.py --sensitivity --loop-index 82`
+
+Next steps:
+1. Review the manuscript/figures for tone and formatting before sharing externally.
