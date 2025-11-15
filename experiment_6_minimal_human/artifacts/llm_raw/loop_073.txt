@@ -1,0 +1,13 @@
+# 2025-11-15T15:43:55.281180+00:00
+Released loop 73 by rerunning the frozen analysis with sensitivity pulls and turning the new results into the release manuscript plus figure/robustness writeups.
+
+- The release manuscript now documents the study story (abstract at `papers/manuscript_loop73.md:3` and the H1–H3 findings at `papers/manuscript_loop73.md:22`).  
+- Figure captions for the H1, H2, H3, and interaction visuals are collected in `papers/figure_captions_loop73.md:2`.  
+- The robustness narrative (trimmed weights, alternative composites, guidance–depression diagnostics, sample stability) sits in `papers/robustness_narrative_loop73.md:1`.  
+- All numeric output and sensitivity evidence (coefficients, trimmed/adversity tables, guidance–depression correlation) are summarized in `artifacts/analysis_loop73_summary.md:12`, `artifacts/analysis_loop73_summary.md:19`, `artifacts/analysis_loop73_summary.md:30`, and `artifacts/analysis_loop73_summary.md:46`.
+
+Tests:
+- `python analysis/run_analysis.py --sensitivity --loop-index 73`
+
+Next steps:
+1. Continue to loop 74 (literature phase) to keep advancing the science pipeline.
