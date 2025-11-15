@@ -1,0 +1,17 @@
+# 2025-11-15T16:04:40.780734+00:00
+Ran the frozen PAP pipeline via `python analysis/run_analysis.py --sensitivity`, which produced the release summary and artifacts documented in `artifacts/analysis_loop81_summary.md:1`.
+
+**Paper Summary**
+- The registered plan (`analysis/pre_analysis_plan.md:1`) and analysis script (`analysis/run_analysis.py:200`, with guidance computed at `analysis/run_analysis.py:204` and outcomes at `analysis/run_analysis.py:213`) standardize exposures/outcomes, drop nonpositive weights, encode countries/covariates, and log the environment so every step is reproducible.
+- H1 finds the guidance index strongly predicts lower anxiety (β=−0.135, 95% CI [−0.152, −0.118]) and lower functional impairment (β=−0.163, 95% CI [−0.180, −0.146]), while the positive depression coefficient (β=0.193, 95% CI [0.176, 0.210]) reflects the current coding of `wz901dj` without sign inversion (`artifacts/analysis_loop81_summary.md:14`, `artifacts/analysis_loop81_summary.md:16`, `artifacts/analysis_loop81_summary.md:17`; `analysis/run_analysis.py:213`).
+- H2 still shows a small boost in self-love (β=0.037, 95% CI [0.019, 0.054]) and lower unhappiness (β=−0.034, 95% CI [−0.051, −0.017]) but null relationship-satisfaction effects after BH-FDR, while H3’s adversity × support interaction remains robust across anxiety, depression, unhappiness, and self-love (βs between +0.070 and −0.041) (`artifacts/analysis_loop81_summary.md:21`, `artifacts/analysis_loop81_summary.md:22`, `artifacts/analysis_loop81_summary.md:23`, `artifacts/analysis_loop81_summary.md:31`, `artifacts/analysis_loop81_summary.md:34`).
+- Sensitivity checks (trimmed weights, cohesion/adversity composites, guidance–depression bins) keep coefficients within reported uncertainty and confirm the interaction patterns with alternative adversity components (`artifacts/analysis_loop81_summary.md:52`, `artifacts/analysis_loop81_summary.md:64`, `artifacts/analysis_loop81_summary.md:72`).
+- Limitations include the entirely missing `Religionchildhood` control, the assumption of covariate means for simple slopes, and dropping the broader `religion` control from H2 due to multicollinearity with active religiosity (`artifacts/analysis_loop81_summary.md:42`, `artifacts/analysis_loop81_summary.md:43`, `artifacts/analysis_loop81_summary.md:44`).
+
+**Open Questions**
+- Does the positive guidance→depression slope reflect an artefact of `wz901dj`’s coding or a suppression effect, and would flipping or passing depression through a composite change the protector narrative (`artifacts/analysis_loop81_summary.md:16`; `analysis/run_analysis.py:213`)?
+- How stable are the religiosity and adversity×support patterns across countries or demographic strata once the covariates from `analysis/run_analysis.py:117`–`analysis/run_analysis.py:133` and the country dummies from `analysis/run_analysis.py:200` are stratified?
+
+**Next Steps**
+1. Recode or reframe the depression metric (see `analysis/run_analysis.py:213`) and rerun H1 to verify that the guidance index’s protective signal is not reversed by measurement decisions.
+2. Stratify the WLS models by country or key demographic segments (leveraging the dummy coding in `analysis/run_analysis.py:200`–`analysis/run_analysis.py:232`) and compare the dropped `religion` control to the active religiosity measures to uncover heterogeneity or suppressed effects.
