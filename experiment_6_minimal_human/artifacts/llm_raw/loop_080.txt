@@ -1,0 +1,10 @@
+# 2025-11-15T16:02:46.435899+00:00
+- Documented the loop‑80 release manuscript so the abstract, methods, and H1–H3 results now narrate the preregistered design, dataset handling, and the guidance/religiosity/support effects (see `papers/manuscript_loop80.md:3`, `papers/manuscript_loop80.md:11`, `papers/manuscript_loop80.md:22`, `papers/manuscript_loop80.md:25`, and `papers/manuscript_loop80.md:28` for the updated text and coefficients).  
+- Added the caption and robustness briefings tied to the new coefficient/interaction figures while logging the analytic snapshot and updated loop counter so future passes stay in sync (`papers/figure_captions_loop80.md:1`, `papers/robustness_narrative_loop80.md:1`, `artifacts/analysis_loop80_summary.md:5`, `artifacts/analysis_loop80_summary.md:48`, `artifacts/state.json:2`).
+
+Tests
+- `python analysis/run_analysis.py --sensitivity --loop-index 80`
+
+Next steps
+1. Review the new manuscript/robustness files alongside the plotted figures to confirm the story and stats are submission-ready.  
+2. Continue the science loop via `runner.py` when you’re ready so the next iteration can build atop this release phase.
