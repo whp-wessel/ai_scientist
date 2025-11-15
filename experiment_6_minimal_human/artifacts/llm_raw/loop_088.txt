@@ -1,0 +1,9 @@
+# 2025-11-15T16:26:53.900621+00:00
+**Release Update**
+- Documented the loop-88 narrative, effect sizes, open questions, and reproducibility instructions so the preregistered story, results, and uncertainties point to the frozen plan, diagnostics, and data (`papers/manuscript_loop88.md:3`, `papers/manuscript_loop88.md:22`, `papers/manuscript_loop88.md:42`, `papers/manuscript_loop88.md:47`).
+- Added fresh figure captions and a robustness narrative that tie the H1–H3 coefficients plus trimmed/alternative-composite checks to their artifacts for easy dissemination (`papers/figure_captions_loop88.md:2`, `papers/robustness_narrative_loop88.md:1`).
+- Archived the loop-88 analytic summary, bumped the loop counter, and logged the release update for traceability (`artifacts/analysis_loop88_summary.md:1`, `artifacts/state.json:2`, `artifacts/llm_raw/loop_088.txt:1`).
+- Tests: `python3 analysis/run_analysis.py --loop-index 88 --sensitivity`
+
+1. Share the loop-88 manuscript/captions/robustness narrative with collaborators or reviewers to capture any final editorial or conceptual feedback before the project closes.
+2. Follow up on the outstanding open questions (guidance→depression, country/support heterogeneity, granular religiosity) with targeted sensitivity checks or new samples to solidify the theoretical contributions before the final release.
