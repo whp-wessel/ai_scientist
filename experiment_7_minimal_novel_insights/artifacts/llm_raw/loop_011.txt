@@ -1,0 +1,18 @@
+# 2025-11-18T20:00:10.956545+00:00
+**Literature & Data**
+- The survey has 14,443 respondents and 718 items capturing demographics plus detailed childhood socialization (e.g., “during ages 0-12/13-18: taught purity culture...”) alongside adult monogamy preferences, romantic satisfaction, and mental‑health markers, so there’s ample variation to test novel pathways.
+- Both purity‑culture indicators show wide spreads (e.g., ~4,900 respondents strongly disagreeing and ~3,500 strongly agreeing for the age‑0‑12 item) and the adult monogamy scale has four distinct poles (full/leaning mono vs. nonmono), so statistical power should be sufficient.
+- Sawatsky et al. (2024, *Sociology of Religion*, DOI 10.1093/socrel/srae031) documents that evangelical purity tropes heighten sexual pain and reduce marital/sexual satisfaction, highlighting how purity messaging enforces heteronormative monogamy.
+- Evans et al. (2020, *American Journal of Sexuality Education*, DOI 10.1080/15546128.2020.1763883) shows that abstinence‑only versus comprehensive sex ed predicts later sexual contentment and communication satisfaction, implying early messaging leaves lasting marks on adult relationship well‑being.
+
+**Hypotheses & Modeling**
+- Hypothesis 1: Stronger childhood purity‑culture exposure (0‑12 and 13‑18 windows) predicts a stronger current preference for monogamy even after adjusting for current religiosity, socioeconomic controls, and personality proxies; this extends Sawatsky et al. by moving from psychosexual pain to normative relationship preference at scale.
+- Hypothesis 2: Those same childhood purity cues will correlate with lower romantic satisfaction/self‑love and more mental‑health strain in adulthood, mirroring Evans et al.’s link between abstinence messaging and diminished sexual satisfaction but generalizing it beyond young adults to broader psychological well‑being.
+- I’ll treat the purity measures as ordered exposures (separate models for each developmental window) and model monogamy preference with ordinal regression while probing satisfaction via OLS/logistic models, always accounting for current religion, class, and demographics so the effect isn’t just residual conservative identity.
+- A follow‑up analysis will explore whether mental‑health indicators (e.g., depression/anxiety items) mediate the purity culture → satisfaction pathway, which keeps the study from being a mere replication of prior findings.
+
+**Next Steps**
+- Draft a Pre‑Analysis Plan that specifies the exposure variables, outcome metrics, covariate list, modeling strategy (e.g., ordinal regression, mediation checks), and robustness checks so the research remains reproducible and preregistered.
+- Document cleaning decisions (value recodes, missingness rules) and analytic code snippets so future loops can reproduce every step.
+- Freeze the PAP once it’s finalized, then proceed to the analysis phase with the locked specification.
+- After testing, we’ll prepare the later phases (sensitivity, writing, release) with a LaTeX/Tectonic paper that embeds the figures and thoroughly reports effect sizes, uncertainty, and limitations.
