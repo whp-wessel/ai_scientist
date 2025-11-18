@@ -1,0 +1,11 @@
+# 2025-11-18T20:22:35.986264+00:00
+**Context**
+- The publicly available `childhoodbalancedpublic_original.csv` covers 14,443 adult respondents (mean age ~30.4, roughly 57% male) with 718 survey items; it pairs detailed childhood exposures (e.g., parental abuse, media restrictions, purity teaching, whether the household/adult culture took sexual assault seriously) with adult outcomes (self-reported depression/anxiety tendencies, romantic/work satisfaction, self-love, etc.), so I can examine how specific socialization slices map to long-term well-being.
+- Early items such as `pqo6jmj/dcrx5ab` (“parents gave useful guidance”), `wgbq7hv/wxgm38d` (“taught a purity culture/abstinence until marriage”), plus the adult satisfaction scales (e.g., `hp9qz6f` “satisfied with romantic relationships,” `2l8994l` “I love myself”) are already in the frame for protective vs. risk factors; the sexual-assault seriousness items (`*Ages 0-18* household culture…` vs `*Ages 19+* adult culture…`) allow a natural comparison between proximal household responses and later adult cultural responses.
+
+**Hypotheses**
+- Adult culture (age 19+) that takes sexual assault seriously should show independent buffering of long-term mental-health outcomes even after adjusting for how seriously the childhood household treated the assault—building on the literature about how social reactions influence recovery trajectories (Ullman, S. E. 1996. *Do Social Reactions to Sexual Assault Victims Vary by Support Provider?* *Violence and Victims* 11(2):143–157; DOI 10.1891/0886-6708.11.2.143).
+- Positive, protective experiences such as “parents gave useful guidance” may moderate or attenuate the negative association between purity-culture socialization (abstinence/virginity teaching) and adult relationship/self-esteem outcomes, in line with the protective-and-compensatory experiences framework (Bethell CD, Jones J, Gombojav N, Linkenbach J, Sege R. 2019. *Positive Childhood Experiences and Adult Mental and Relational Health in a Statewide Sample*. *JAMA Pediatrics* 173(11):e193007; DOI 10.1001/jamapediatrics.2019.3007).
+
+**Next**
+- I’ll transition into drafting the Pre-Analysis Plan, locking in the operationalization of those hypotheses (which exposures, outcomes, covariates, stratifications, and statistical models to use) so the later analysis phase can proceed reproducibly.
