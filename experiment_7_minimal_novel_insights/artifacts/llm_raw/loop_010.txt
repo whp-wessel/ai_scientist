@@ -1,0 +1,12 @@
+# 2025-11-18T19:54:37.611171+00:00
+**Literature Phase**
+
+- Finished scoping the survey: `childhoodbalancedpublic_original.csv` holds ~14.4k rows and 718 variables capturing demographics (age, gender identity markers like `biomale`/`gendermale`, socio‑economic indicators such as `education`/`networth`), childhood experiences (e.g., parental class and conflict), plus adult wellbeing indicators (“`I love myself`”, “`I am satisfied with my romantic relationships`”, “`I tend to suffer from anxiety`”, etc.). Key exposures of interest are the purity‑culture items both for childhood (0‑12) and adolescence (13‑18) and current `monogamy` preference.
+
+- Literature review surfaced two peer‑reviewed anchors: Coates et al. (2025, *Journal of Sexual Medicine*, DOI `10.1093/jsxmed/qdaf068.049`) show that purity culture exposure predicts sexual shame and lower sexual satisfaction even controlling for past abuse, and Burkett (2024, *Journalism & Mass Communication Quarterly*, DOI `10.1177/10776990241296462`) documents how contemporary purity culture messaging normalizes heteronormative patriarchy and monogamy norms.
+
+- Grounded in those findings and the dataset’s unique exposure timing, two novel hypotheses emerged:
+  1. **Romantic satisfaction**: Stronger purity culture messaging during adolescence (13‑18) is associated with lower adult romantic relationship satisfaction after accounting for early childhood exposure, extending Coates et al.’s work beyond sexual function to broader relational wellbeing.
+  2. **Relationship norms**: Adolescents exposed to purity culture are more likely to prefer monogamy today, reflecting the heteronormative, patriarchal scripts Burkett documents; the dataset’s `monogamy` scale lets us test this while controlling for socioeconomic background and gender.
+
+- Next step is the Pre‑Analysis Plan: I’ll freeze a preregistered description of variables, coding, covariates, and statistical models (likely ordered probit/OLS for satisfaction and ordinal logistic for `monogamy`, with age/gender/class controls and robustness checks) before moving into estimation so the loop can proceed to the `analysis` phase.
