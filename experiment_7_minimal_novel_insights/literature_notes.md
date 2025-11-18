@@ -1,0 +1,10 @@
+## Dataset Background
+- `childhoodbalancedpublic_original.csv` (14,443 respondents × 718 columns) pairs rich demographic controls (age, gender identity markers, education, current class status) with adult well-being indicators (self-love, romantic satisfaction, depression/anxiety proxies) and a broad battery of retrospective childhood/adolescent experiences (e.g., purity- or abstinence-messaging at ages 0–12 and 13–18, verbal/emotional abuse, sexual abuse in/outside the household, media monitoring, perceived family humor, and self-conflict during moral socialization).
+- Key scales operate on −3…+3 Likert-style scoring (e.g., purity culture exposure, “felt at war with myself,” “family/culture had hilarious joking”), so they are treatable as continuous exposures; overall distributions are broad (means near zero but with frequent extreme endorsements).
+- Outcome anchors such as `I love myself (2l8994l)`, `I am satisfied with my romantic relationships (hp9qz6f)`, and `I tend to suffer from anxiety (npvfh98)-neg` are also continuous and have full coverage from −3 to +3.
+- The dataset also captures adult sexual/relationship preferences (e.g., `monogamy`), current religious practice, and detailed history of childhood sexual abuse, which allows for controls or moderators as needed.
+
+## Literature Notes
+- **Religiosity and sexual satisfaction**: Lazar (2023) finds that religious belief moderates ties between sexual dysfunction and satisfaction among observant Jewish adults, suggesting that religious frameworks shape how sexual narratives translate into subjective satisfaction (J. Relig. Health, DOI: `10.1080/13674676.2023.2276105`).
+- **Parental warmth & long-term depression**: Fang, Fosco, and Feinberg (2024) compare enduring vs. revisionist models and show that parental warmth during adolescence predicts lower depression in young adulthood, supporting protective role of warm family relations even as their direct effect attenuates over time (Dev. Psychopathol., DOI: `10.1017/S0954579423001207`).
+
