@@ -1,0 +1,10 @@
+# 2025-11-18T19:22:25.948716+00:00
+Completed the literature phase: scoped the survey file, mapped the childhood/adult variables that support a novel question, and gathered peer-reviewed grounding for the hypothesis I’ll formalize in the upcoming PAP.
+
+- `childhoodbalancedpublic_original.csv` holds 14,443 responses across ~718 columns; it captures early/teen exposures (e.g., “purity culture” teachings and parental guidance) alongside adult self-worth and romantic satisfaction items such as “I love myself” and “I am satisfied with my romantic relationships,” so the data support testing how developmental messaging connects to present well-being.
+
+- Recent peer-reviewed work shows the psychological toll of purity culture. Coates et al. (2025, *Journal of Sexual Medicine*) report that purity messaging predicts higher sexual shame and lower sexual satisfaction even after accounting for trauma, and Muskrat et al. (2025, *Counseling Psychologist*) document how evangelical purity culture fosters internalized sexual oppression for gender/sexual minorities. In parallel, Martín Quintana et al. (2023, *Healthcare*) demonstrate that perceived childhood security boosts adult self-concept through resilience and self-esteem, pointing to parental guidance as a potential buffer.
+
+- Novel hypothesis for PAP: greater exposure to purity-culture messaging in childhood/adolescence is associated with lower adult romantic satisfaction and self-esteem, but the negative association is attenuated among respondents who report stronger parental guidance (the “parents gave useful guidance” items). This moderating effect has scant coverage in the literature, so testing it adds a meaningful nuance to purity-culture research while staying grounded in the available survey data.
+
+- Next steps: draft the Pre-Analysis Plan by operationalizing those variables, specifying control covariates/demographics, deciding on survey-aware regression (e.g., moderated OLS with clustering/robust SEs), and recording the planned checks so the PAP can be frozen before analysis.
