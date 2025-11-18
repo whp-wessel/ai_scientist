@@ -1,0 +1,10 @@
+# 2025-11-18T20:33:20.885990+00:00
+**Progress**
+- Recorded the dataset basics—14,443 respondents, 718 variables linking demographic controls, religiosity, purity/socialization exposures, and adult wellbeing items—so the team has a ready reference for the available instruments (`literature_notes.md:2-5`).
+- Added four recent peer-reviewed anchors (purity-culture measurement, purity-trope effects on sexual/marital satisfaction, sexual guilt/shame under religious practice, and minority-stress health outcomes) to contextualize the novel combinations we can test, each with DOI-backed citations (`literature_notes.md:8-13`).
+- Synthesized emerging questions about timing (0–12 vs. 13–18 exposure windows), demographic/generalizability moderators, and resilience/conflict moderators that should drive our hypotheses (`literature_notes.md:15-18`).
+
+**Next Steps**
+- Begin drafting the Pre-Analysis Plan for the loop (select exposures/outcomes, specify controls, register planned models) so we can freeze it and move into analysis.
+
+Tests: not run (not yet applicable).
