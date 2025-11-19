@@ -1,10 +1,7 @@
-# 2025-11-18T20:33:20.885990+00:00
-**Progress**
-- Recorded the dataset basics—14,443 respondents, 718 variables linking demographic controls, religiosity, purity/socialization exposures, and adult wellbeing items—so the team has a ready reference for the available instruments (`literature_notes.md:2-5`).
-- Added four recent peer-reviewed anchors (purity-culture measurement, purity-trope effects on sexual/marital satisfaction, sexual guilt/shame under religious practice, and minority-stress health outcomes) to contextualize the novel combinations we can test, each with DOI-backed citations (`literature_notes.md:8-13`).
-- Synthesized emerging questions about timing (0–12 vs. 13–18 exposure windows), demographic/generalizability moderators, and resilience/conflict moderators that should drive our hypotheses (`literature_notes.md:15-18`).
+# 2025-11-19T06:55:52.488754+00:00
+**Literature Phase**  
+- Catalogued `childhoodbalancedpublic_original.csv` (14,443 respondents × 718 columns) and confirmed the key items we need: retrospective purity-culture exposure during ages 0–12 and 13–18, outcome anchors such as `I love myself (2l8994l)` and `I am satisfied with my romantic relationships (hp9qz6f)`, plus moderators (current religious practice, monogamy preference, parental guidance/humor scales). The captures span −3…+3 Likert distributions with plenty of variation, so we can treat them as continuous indices.  
+- Surveyed the literature and surfaced the authoritative anchors we’ll cite: Ortiz et al. (2023, *J. Psychol. Theol.*, DOI `10.1177/00916471231182734`) validates a purity-culture scale; Sawatsky et al. (2024, *Sociology of Religion*, DOI `10.1093/socrel/srae031`) and Wacks, Lazar, & Sommerfeld (2022, *Archives of Sexual Behavior*, DOI `10.1007/s10508-022-02494-2`) document how purity tropes and adult religiosity shape sexual/relational well-being; Fang, Fosco, & Feinberg (2024, *Dev. Psychopathol.*, DOI `10.1017/S0954579423001207`) shows longstanding protective effects of parental warmth. These together highlight the gap we can fill by leveraging this broad cross-religious sample and its rich developmental timing battery.  
+- Hypotheses ready for PAP: (1) Greater purity-culture exposure (especially during 13–18) predicts lower adult romantic satisfaction and self-love, with the slope differing by current religious practice/monogamy preference (adults still embedded in a faith community may process the shame differently than those who have disaffiliated; Wacks et al. provides the theoretical anchor). (2) Positive parental guidance/humor buffers the negative purity-message → anxiety/self-love link, extending Fang et al.’s findings by showing how supportive parenting can inoculate against shame-based messaging even when the ideology was present. These hypotheses go beyond past work by exploiting the multi-faith, gender-inclusive, retrospective timing data this survey uniquely provides.  
 
-**Next Steps**
-- Begin drafting the Pre-Analysis Plan for the loop (select exposures/outcomes, specify controls, register planned models) so we can freeze it and move into analysis.
-
-Tests: not run (not yet applicable).
+Next step: 1) Draft and “freeze” a Pre-Analysis Plan that spells out the dependent/independent/moderator variables, controls, modeling strategy, and planned checks before moving on to hypothesis testing.
