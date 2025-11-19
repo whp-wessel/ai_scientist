@@ -1,0 +1,10 @@
+# 2025-11-19T12:54:29.419823+00:00
+**Scoping Findings**
+- Loaded `childhoodbalancedpublic_original.csv#L1`: 14,443 respondents × 718 fields (639 float, 22 int, 57 object), but pandas warned about mixed types on column 68 and 251 columns are entirely empty while 334 more exceed 50% missingness, so most “placeholder” fields will need to be dropped before modeling.
+- Median missingness per column is ~8.6%, with 20+ variables (e.g., `Religionchildhood`, `motive1`, `culture1`) at 100% missing; I’ll treat those as unusable scaffolding from the raw export and focus downstream on better-populated constructs.
+- Seven negative-affect/FOMO items (anxiety, depression, unhappiness, stress sensitivity, worry, “losing at life,” and feeling unlucky) take values between –3 and 3, with means near neutral but slight negative slants (e.g., mean(“anxiety”) ≈ –0.83, mean(“worry”) ≈ –1.36, mean(“losing at life”) ≈ 0.58), so respondents span the full Likert range without ceiling/floor effects.
+- Cronbach’s alpha for that seven-item cluster is 0.868, indicating acceptable internal consistency for a composite distress measure that we can rehabilitate once directionality is clarified.
+
+Next steps:
+1. Review the literature and theoretical framing that justify focusing on distress-related outcomes from these self-report items, so we can draft falsifiable hypotheses.
+2. Draft the pre-analysis plan outlining which scales survive cleaning (dropping empty columns, handling mixed types) and how we will operationalize key constructs before running any final models.
