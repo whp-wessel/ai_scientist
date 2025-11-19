@@ -1,0 +1,12 @@
+# 2025-11-19T09:12:01.499474+00:00
+Reran `analysis/sensitivity_analysis.py` so the no-current-religion, trauma-control, and gender-minority subgroup slices were rebuilt and their CSVs/overview JSON now reflect the latest loop.
+
+- **No-current-religion slice (n=9,931)** still shows a strong parent-support main effect on self-love (coef=0.233, Cohen’s d≈0.125, p<10⁻²⁸) while the self-love purity×support interaction collapses (coef≈-0.012, p=0.52), although the romantic-satisfaction interaction stays negative (coef≈-0.058, p=0.009) and gender-minority respondents remain substantially lower in self-love (coef≈-0.421, d≈-0.226). This raises the question of whether current religious practice is shaping the purity×support moderation, since removing active practice preserves these other patterns. (`outputs/sensitivity_overview.json:2`, `tables/regression_results_no_current_religion.csv:3`, `:4`, `:8`, `:16`)
+
+- **Trauma/depression controls (n=14,400)** do not erase the core pattern: parental support still predicts higher self-love and romantic satisfaction, and the purity13×support interaction stays negative for self-love (coef≈-0.040, p=0.005, d≈-0.0217) and romantic satisfaction (coef≈-0.038, p=0.037). This means the moderation is not merely confounded by reported childhood abuse/depression composites. (`outputs/sensitivity_overview.json:3`, `tables/regression_results_with_trauma_controls.csv:3`, `:4`, `:8`)
+
+- **Gender-minority subgroups (trans n=295, nonbinary n=901)** now have dedicated results, but precision is low: the trans slice still shows a positive parent-support association with self-love (coef≈0.265, p=0.036) with a wide, non-significant moderating slope (coef≈0.121, p=0.34), and the nonbinary slice also keeps a positive support main effect but never reaches significance on the interaction. These cells should stay in the draft as proof of the effort, but we still cannot resolve whether the moderation differs by gender-minority subgroup because of the small Ns. (`outputs/sensitivity_overview.json:4`, `:5`, `tables/gender_minority_subgroups.csv:3`, `:4`, `:15`, `:16`)
+
+Next steps:
+1. Incorporate the refreshed tables/overview into the writing phase, citing the no-religion and trauma-control slices when describing the robustness of the parent-support findings.
+2. Explicitly flag the limited power for the trans/nonbinary subgroup slices so readers know these estimates are underpowered and keep them as “exploratory” rather than confirmatory.
