@@ -1,0 +1,13 @@
+# 2025-11-19T10:13:53.423831+00:00
+**Final Paper**
+
+- `papers/purity_support_paper.tex:44-46` crystallizes the final abstract: the 14,400-case survey shows that higher parental support sharpens (rather than buffers) the negative association between adolescent purity messaging and adult self-love/romantic satisfaction, with gender-minority slopes remaining statistically indistinguishable and anxiety showing only a small protective signal from early purity exposure; it also notes the frozen pre-analysis plan and HC3-robust modeling.
+- `papers/purity_support_paper.tex:48-49` states the preregistered hypotheses about the purity × support interaction and the purity × gender-minority contrast, anchoring the narrative in literature citations.
+- `papers/purity_support_paper.tex:15-38` embeds the PGFPlots source for the parental-support margins figure, so the PDF (already available as `papers/purity_support_paper.pdf`) contains the visual without external references.
+- `papers/purity_support_paper.tex:135-136` lists the reproducibility assets (analysis scripts, marginal data, sample summary, frozen PAP) that allow rerunning the delivered workflow from the raw survey.
+
+- Testing: Not run (not requested).
+
+Next steps:
+1. Recompile via `tectonic papers/purity_support_paper.tex` if you need an updated PDF or want to confirm the embedded figure reproduces cleanly.
+2. If you want to extend the story, consider parsing `analysis/analysis_pipeline.py` and `analysis/sensitivity_analysis.py` to explore robustness scenarios (e.g., splitting by religious practice) and integrate any new findings into the LaTeX narrative.
