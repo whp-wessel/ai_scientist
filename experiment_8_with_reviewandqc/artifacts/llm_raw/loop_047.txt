@@ -1,0 +1,8 @@
+# 2025-11-19T13:34:54.099468+00:00
+**Scoping Report**
+- `childhoodbalancedpublic_original.csv` currently holds 14,443 respondents × 718 variables, nearly all numeric (661) with 57 objects; age, height, weight, and gender proxies span expected ranges (18–75 years, 60–78 inches, 90–370 lbs, ~57–59% male) and are summarized in `analysis/scoping_qc.py:60-81`.
+- Missingness is concentrated in sensitive modules (e.g., sexual-abuse follow-ups, current religion, attachment style) at ≥60%, while baseline covariates such as sibling count, homeschooling history, and parental divorce stay below 1% missing, so they can anchor covariate sets (`analysis/scoping_qc.py:63-69`).
+- The adult positivity battery (8 items tapping self-love, satisfaction, energy, calm, etc.) yields α=0.729 (n=14,051) and ω=0.739, and the feeling-loved construct (3 unconditional-love recollections) scores α=ω=0.961 (n=14,431); these reliability checks are in `analysis/scoping_qc.py:83-110`, so both scales meet the internal-consistency threshold for now.
+- Given the manageable baseline coverage and the acceptable psychometrics of those two constructs, the data clear the scoping/QC gate and we can proceed toward literature grounding and hypothesis development before locking the PAP.
+
+- Next steps: 1. Survey relevant theory and prior findings to justify why adult positivity and feeling-loved are meaningful outcomes of interest; 2. Draft a pre-analysis plan that specifies targeted predictors, covariates, reliability thresholds, and sensitivity checks before executing the models.
