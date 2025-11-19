@@ -29,6 +29,8 @@ REQUIRED_COLUMNS = [
     "during ages *13-18*:  taught a purity culture that encouraged abstinance/waiting until marriage (wxgm38d)",
     "during ages *13-18*: Your parents gave useful guidance (dcrx5ab)",
     "during ages *13-18*:  family/culture had hilarious joking, goofing around, pranks, tomfoolery (i1g8u4j)",
+    "during ages *0-12*: you felt unconditionally loved (xtrwcp7)",
+    "during ages *13-18*: you felt unconditionally loved (wa9yb85)",
     "I love myself (2l8994l)",
     "I am satisfied with my romantic relationships (hp9qz6f)",
     "I tend to suffer from anxiety (npvfh98)-neg",
@@ -135,6 +137,8 @@ def relabel_columns(df: pd.DataFrame) -> pd.DataFrame:
         "during ages *13-18*:  taught a purity culture that encouraged abstinance/waiting until marriage (wxgm38d)": "purity_13_18",
         "during ages *13-18*: Your parents gave useful guidance (dcrx5ab)": "guidance_13_18",
         "during ages *13-18*:  family/culture had hilarious joking, goofing around, pranks, tomfoolery (i1g8u4j)": "family_humor_13_18",
+        "during ages *0-12*: you felt unconditionally loved (xtrwcp7)": "unconditional_love_0_12",
+        "during ages *13-18*: you felt unconditionally loved (wa9yb85)": "unconditional_love_13_18",
         "I love myself (2l8994l)": "self_love",
         "I am satisfied with my romantic relationships (hp9qz6f)": "romantic_satisfaction",
         "I tend to suffer from anxiety (npvfh98)-neg": "anxiety",
@@ -199,6 +203,8 @@ def prepare_analytic_sample() -> pd.DataFrame:
     df["parent_support_z"] = standardize(df["parent_support"])
     df["guidance_z"] = standardize(df["guidance_13_18"])
     df["family_humor_z"] = standardize(df["family_humor_13_18"])
+    df["unconditional_love_0_z"] = standardize(df["unconditional_love_0_12"])
+    df["unconditional_love_13_z"] = standardize(df["unconditional_love_13_18"])
     df["purity13_support"] = df["purity13_z"] * df["parent_support_z"]
     df["purity13_guidance"] = df["purity13_z"] * df["guidance_z"]
     df["purity13_humor"] = df["purity13_z"] * df["family_humor_z"]
@@ -219,7 +225,16 @@ def describe_sample(df: pd.DataFrame) -> dict:
         "gender_minority_n": int(df["gender_minority"].sum()),
         "gender_minority_pct": float(df["gender_minority"].mean()) * 100,
     }
-    for col in ["self_love", "romantic_satisfaction", "anxiety", "purity0_z", "purity13_z", "parent_support_z"]:
+    for col in [
+        "self_love",
+        "romantic_satisfaction",
+        "anxiety",
+        "purity0_z",
+        "purity13_z",
+        "parent_support_z",
+        "unconditional_love_13_z",
+        "unconditional_love_0_z",
+    ]:
         summary[f"{col}_mean"] = float(df[col].mean())
         summary[f"{col}_sd"] = float(df[col].std(ddof=1))
     guidance = df["guidance_13_18"]

@@ -1,4 +1,17 @@
-# Analysis Notes (Loop 36)
+# Analysis Notes
+
+## Loop 37 — unconditional love moderation
+
+### Sample & measurement
+- After requiring the unconditional-love 13–18 recall, the analytic n=14,400 matches the main pipeline sample so comparisons stay aligned; the standardized 13–18 love rating remains strongly skewed toward the high-support end and now lives alongside the parental-support measures in the sample file.
+
+### Hypothesis 3 (purity × unconditional love)
+- Self-love regressions keep the full covariate set and show a very large main effect of unconditional love (β≈0.344, Cohen’s d≈0.185, p<10⁻⁶⁵) while the purity×love interaction is negative (β≈-0.059, d≈-0.032, p<0.0001). The simple slopes in `tables/simple_slopes_unconditional_love.json` reproduce the counterintuitive crossover: the purity slope is essentially null at low unconditional love (≈-0.002±0.037) yet becomes significantly negative at high love (≈-0.121±0.036), which drives the divergence in `figures/marginal_unconditional_love_self_love.png`.
+- Romantic satisfaction mirrors the pattern with a smaller but still significant interaction (β≈-0.043, p≈0.017) and slopes that drop from about -0.086 to -0.173 as unconditional love increases, even though unconditional love itself predicts higher romantic satisfaction (d≈0.11). Anxiety estimates remain noisy (interaction β≈0.033, p≈0.021; all slopes stay near zero).
+
+### Next steps
+- Frame this robustness check alongside the earlier parental-support moderation in the upcoming draft: unconditional love is a strong positive predictor of adult well-being but—like parental support—sharpens the purity-culture penalty when it co-occurs with high purity messaging. Keep the new figure/table pair for the write-up and document the slopes for transparency.
+
 
 ## Loop 36 — pipeline rerun & sensitivity digest
 
