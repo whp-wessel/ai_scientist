@@ -1,5 +1,19 @@
 # Analysis Notes
 
+## Loop 42 — sensitivity rerun & documentation
+
+### Sample & measurement
+- The scripted sensitivity pipeline now documents the sample sizes we discussed at the start of the loop: 9,931 respondents who do not currently practice a religion, the full 14,400 case analytic sample with additional trauma/depression controls, 295 trans respondents, and 901 nonbinary respondents (`outputs/sensitivity_overview.json:2`, `outputs/sensitivity_overview.json:3`, `outputs/sensitivity_overview.json:4`, `outputs/sensitivity_overview.json:5`).
+
+### Findings
+- The no-current-religion slice keeps the purity×support slope effectively null for self-love (β≈-0.012, p≈0.517) while the romantic satisfaction interaction stays significantly negative (β≈-0.058, p≈0.0097), so the counterintuitive moderation appears to persist outside ongoing religiosity (`tables/regression_results_no_current_religion.csv:4`, `tables/regression_results_no_current_religion.csv:8`).
+- Adding the trauma/depression controls leaves the key interactions intact: the self-love purity×support term stays at β≈-0.040 (p≈0.005), and romantic satisfaction keeps β≈-0.038 (p≈0.037), so the moderation is not an artifact of missing childhood-adversity covariates (`tables/regression_results_with_trauma_controls.csv:4`, `tables/regression_results_with_trauma_controls.csv:8`).
+- Breaking the gender-minority sample into trans (n=295) and nonbinary (n=901) subsamples again yields wide intervals that drown out the purity×support term (`tables/gender_minority_subgroups.csv:4`, `tables/gender_minority_subgroups.csv:16`), confirming that the broader gender-minority interaction is driven by the larger cisgender pool rather than a precise estimate in these smaller cells.
+
+### Outputs & next steps
+- The `analysis/sensitivity_analysis.py` script orchestrates these runs and writes the per-slice tables plus the JSON summary, so the tables under `tables/` are now reproducibly linked to `outputs/sensitivity_overview.json` and ready to reference in the paper’s sensitivity section (`analysis/sensitivity_analysis.py:1`).
+- With the diagnostic slice refreshed, we can move into the writing phase, citing these new tables when discussing robustness and preparing the LaTeX narrative that embeds the sensitivity story before releasing the final draft.
+
 ## Loop 38 — gender-group heterogeneity of the unconditional-love moderation
 
 ### Sample & measurement
