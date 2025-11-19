@@ -12,6 +12,14 @@ ROOT = Path(__file__).resolve().parents[1]
 TABLES_DIR = ROOT / "tables"
 OUTPUT_SUMMARY = ROOT / "outputs" / "sensitivity_overview.json"
 
+RELIGION_INTERACTION_TERMS = [
+    "purity13_z",
+    "purity0_z",
+    "religion_practice_num_z",
+    "purity13_religion_practice",
+    "purity0_religion_practice",
+]
+
 
 def load_pipeline_module() -> Any:
     import importlib.util
@@ -93,9 +101,49 @@ def run_gender_subgroup_moderation(
     return summary
 
 
+def run_hyp1_component_checks(module: Any, df: pd.DataFrame, scenario: str) -> List[Dict[str, Any]]:
+    """Evaluate the guidance- and humor-based parent-support interactions."""
+    configs = module.hyp1_model_configs(df)
+    records: List[Dict[str, Any]] = []
+    for label, features, terms in configs:
+        if label == "Hyp1_parent_support":
+            continue
+        for outcome in ["self_love", "romantic_satisfaction", "anxiety"]:
+            result = module.run_ols(outcome, features, df)
+            summary = module.summarize_model(result, outcome, label, terms, df)
+            for record in summary:
+                record["scenario"] = scenario
+            records.extend(summary)
+    return records
+
+
+def run_religion_interactions(module: Any, df: pd.DataFrame, scenario: str) -> List[Dict[str, Any]]:
+    """Test whether current religiosity moderates purity effects."""
+    label, base_features, _ = module.hyp1_model_configs(df)[0]
+    features = [*base_features, "religion_practice_num_z", "purity13_religion_practice", "purity0_religion_practice"]
+    records: List[Dict[str, Any]] = []
+    for outcome in ["self_love", "romantic_satisfaction", "anxiety"]:
+        result = module.run_ols(outcome, features, df)
+        summary = module.summarize_model(
+            result,
+            outcome,
+            "Hyp1_religion_interaction",
+            RELIGION_INTERACTION_TERMS,
+            df,
+        )
+        for record in summary:
+            record["scenario"] = scenario
+        records.extend(summary)
+    return records
+
+
 def main() -> None:
     module = load_pipeline_module()
     df = module.prepare_analytic_sample()
+
+    df["religion_practice_num_z"] = module.standardize(df["religion_practice_num"])
+    df["purity13_religion_practice"] = df["purity13_z"] * df["religion_practice_num_z"]
+    df["purity0_religion_practice"] = df["purity0_z"] * df["religion_practice_num_z"]
 
     records: List[Dict[str, Any]] = []
     overview: Dict[str, Any] = {}
@@ -106,6 +154,14 @@ def main() -> None:
     records.extend(run_hyp1_parent_support(module, no_religion, "no_current_religion"))
     records.extend(run_hyp2_gender_interactions(module, no_religion, "no_current_religion"))
     save_csv(records, TABLES_DIR / "regression_results_no_current_religion.csv")
+    records.clear()
+
+    # 1a. Focus on respondents who currently practice a religion.
+    current_religion = df[df["religion_practice"] != "No"].copy()
+    overview["current_religion_n"] = int(current_religion.shape[0])
+    records.extend(run_hyp1_parent_support(module, current_religion, "current_religion"))
+    records.extend(run_hyp2_gender_interactions(module, current_religion, "current_religion"))
+    save_csv(records, TABLES_DIR / "regression_results_current_religion.csv")
     records.clear()
 
     # 2. Add aggregated childhood trauma/depression controls.
@@ -125,6 +181,14 @@ def main() -> None:
     save_csv(records, TABLES_DIR / "regression_results_with_trauma_controls.csv")
     records.clear()
 
+    # 2a. Evaluate parental-support components alone.
+    component_records = run_hyp1_component_checks(module, df, "support_components")
+    save_csv(component_records, TABLES_DIR / "regression_results_parent_support_components.csv")
+
+    # 2b. Model purity × current religiosity interactions.
+    religion_records = run_religion_interactions(module, df, "religion_practice_interaction")
+    save_csv(religion_records, TABLES_DIR / "regression_results_religion_interactions.csv")
+
     # 3. Compare trans vs nonbinary gender-minority respondents.
     trans_categories = {"Woman (trans)", "Man (trans)"}
     nonbinary_categories = {
@@ -141,7 +205,10 @@ def main() -> None:
     save_csv(subgroup_records, TABLES_DIR / "gender_minority_subgroups.csv")
 
     OUTPUT_SUMMARY.parent.mkdir(parents=True, exist_ok=True)
-    overview["notes"] = "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for each sensitivity slice."
+    overview["notes"] = (
+        "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for the registered "
+        "slices, plus component-based models and religiosity-interaction tests."
+    )
     OUTPUT_SUMMARY.write_text(json.dumps(overview, indent=2), encoding="utf-8")
     print("Sensitivity analysis complete. Tables saved under tables/ and outputs/.")
 

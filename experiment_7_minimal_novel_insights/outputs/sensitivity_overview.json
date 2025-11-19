@@ -1,7 +1,8 @@
 {
   "no_religion_n": 9931,
+  "current_religion_n": 4469,
   "trauma_controls_n": 14400,
   "trans_n": 295,
   "nonbinary_n": 901,
-  "notes": "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for each sensitivity slice."
+  "notes": "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for the registered slices, plus component-based models and religiosity-interaction tests."
 }

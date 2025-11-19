@@ -1,0 +1,14 @@
+# 2025-11-19T09:34:48.992037+00:00
+Strengthened the sensitivity work by adding new diagnostic slices, documenting them, and referencing them in the manuscript before moving toward the writing/release stages.
+
+- `analysis/sensitivity_analysis.py:15-213` now standardizes religion practice, runs the originally registered slices plus the currently practicing subset, component-based supports, and purity×religiosity interactions, and exports summaries to three new tables and the shared JSON overview.
+- `analysis/analysis_notes.md:141-154` records Loop 45’s extended diagnostics, reporting the current-religion sample, component-level checks, and the new religion-interaction evidence for self-love and anxiety.
+- `papers/purity_support_paper.tex:112-118` adds sensitivity bullets that cite the new tables so the manuscript transparently notes how the counterintuitive interaction behaves for religious respondents, when guidance/humor are separated, and when current religiosity moderates early purity memories.
+- Outputs now include the refreshed overview (`outputs/sensitivity_overview.json:1-6`) and the new tables `tables/regression_results_current_religion.csv:2-25`, `tables/regression_results_parent_support_components.csv:2-24`, and `tables/regression_results_religion_interactions.csv:2-16`, all of which feed the paper’s robustness discussion.
+
+Tests:
+- `python analysis/sensitivity_analysis.py` (regenerated all sensitivity tables and JSON).
+
+Next steps:
+1. Use the new tables when finalizing the Results/Sensitivity section and recompile `papers/purity_support_paper.tex` with Tectonic to ensure the PDF still renders.
+2. Once the manuscript incorporates these diagnostics, proceed with the release loop (e.g., verify citation consistency, export the final PDF, and run any remaining checks).
