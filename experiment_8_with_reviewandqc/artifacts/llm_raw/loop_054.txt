@@ -1,0 +1,8 @@
+# 2025-11-19T13:44:17.459014+00:00
+Executed `analysis/scoping_qc.py` so loop 54 records the dataset shape, missingness tiers, and the first set of reliability diagnostics in a reproducible, scriptable form.
+
+- The dataset spans 14,443 rows by 718 columns with 661 numeric and 57 object features, establishing the scope of variables available for modeling (`analysis/scoping_qc.py#L58`).
+- Missingness QC flags 20 columns that are completely empty and dozens more with 60–80% missingness (e.g., later-life abuse follow-ups) while a handful of baseline items stay above 99% coverage, which will guide how we treat those domains moving forward (`analysis/scoping_qc.py#L63`).
+- The adult positivity scale yields Cronbach’s α=0.729 and ω=0.739 (n≈14,051), and the feeling-loved construct is very strong with both α and ω ≈0.961 (n≈14,431), confirming those measures pass the initial reliability check before theory work (`analysis/scoping_qc.py#L100`, `analysis/scoping_qc.py#L106`).
+
+Next steps: 1) Extend the reliability QC script to the remaining scales planned for hypothesis testing so we can drop or adjust weak constructs before modeling; 2) Move into the literature phase to align the remaining variables with falsifiable hypotheses and draft the pre-analysis plan.
