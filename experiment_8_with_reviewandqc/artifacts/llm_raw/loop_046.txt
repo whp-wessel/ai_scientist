@@ -1,0 +1,8 @@
+# 2025-11-19T13:33:42.269798+00:00
+**Scoping Findings**
+- Dataset holds 14,443 respondents across 718 columns; the numeric core (661 vars) is mostly populated while a sizable tail of open/text fields (~25% of columns) is entirely empty, so the median missingness is ~8.6% but the mean is 44.5%.
+- Example Likert-style items (e.g., self-love, relationship/work satisfaction, appearance, energy, unhappiness) span –3 to +3 with roughly balanced counts, so there’s no extreme floor or ceiling but variance differs by item (SDs ≈1.8–2.3).
+- Using the same six items (reverse-coding “I am not happy”) for a provisional well-being composite yields Cronbach’s α = 0.27 and McDonald’s ω = 0.55 (N = 14,435 after listwise deletion, loadings ranged about –0.76 to 0.80), which signals a weakly coherent scale that warrants either a different construct or a more homogeneous item set before we rely on it.
+
+**Next Steps**
+- Move into the literature/hypothesis loop (#47): survey theory to define sharper constructs, seek better-measured scales within the data (or additional items) and draft a pre-analysis plan that respects the current limitations in reliability and coverage.
