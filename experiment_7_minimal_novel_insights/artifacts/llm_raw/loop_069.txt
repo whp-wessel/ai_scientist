@@ -1,0 +1,9 @@
+# 2025-11-19T11:51:53.838290+00:00
+**Release Summary**
+- `papers/purity_support_paper.tex:96` contains the LaTeX paper built from `childhoodbalancedpublic_original.csv`, showing that adolescent purity messaging undercuts adult self-love and romantic satisfaction more sharply when parental support is high; the key margins and PGFPlots visualization appear at `papers/purity_support_paper.tex:130`, and the interpretive discussion with limitations sits at `papers/purity_support_paper.tex:207`.
+- Pre-registration is frozen (`analysis/pre_analysis_plan.md:1`), and the plan cites the peer-reviewed literature just after the header (`analysis/pre_analysis_plan.md:12`) before spelling out the registered hypotheses at `analysis/pre_analysis_plan.md:19`.
+- Reproducibility is documented at `papers/purity_support_paper.tex:220` while the modeling and sensitivity scripts (`analysis/analysis_pipeline.py:1` and `analysis/sensitivity_analysis.py:1`) generate the tables, marginal summaries (`analysis/marginal_self_love_data.csv:1`), and other outputs referenced in the text.
+- Tests: not run (not provided).
+
+Next steps:
+1. Recompile `papers/purity_support_paper.tex:12` with Tectonic if you change any upstream data/models so the PDF stays in sync.
