@@ -1,0 +1,9 @@
+# 2025-11-19T13:26:04.718616+00:00
+**Scoping Loop 40**
+- Ran `analysis/scoping_qc.py#L1` to inspect `childhoodbalancedpublic_original.csv`; the table is 14,443 × 718 with 661 numeric and 57 object columns, and it yields a dtype warning because some columns mix strings and numbers.
+- Missingness is extreme in many of the trauma-related write-in columns (20 columns fully empty plus dozens 60–80% missing) but baseline covariates like siblings, age, and family transitions have ≤1% missing, so focus should stay on well-populated constructs for now.
+- Adult positivity (8 items) shows α=0.729/ω=0.739 with 14,051 complete rows, while the feeling-loved construct (3 items) is extremely tight at α=0.961/ω=0.961 with 14,431 rows; those scales look psychometrically defensible for the next phase.
+
+Next steps:
+1. Move into the literature/theory phase to anchor hypotheses around adult wellbeing and early attachment, noting the measurement choices supported by these reliabilities.
+2. Draft the pre-analysis plan outlining which covariates and outcomes stay in scope, justifying the focus on the well-measured scales and the decision to avoid highly sparse trauma items.
