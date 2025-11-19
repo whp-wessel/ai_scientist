@@ -1,0 +1,9 @@
+# 2025-11-19T13:59:14.601537+00:00
+**Scoping QC**
+- Loop 66 scoping employed the existing runner in `analysis/scoping_qc.py:54` to census `childhoodbalancedpublic_original.csv`, confirming 14,443 respondents with 718 columns (661 numeric, 57 object) and sensible age (mean ≈ 30.4, range 18–75), height/weight, and gender-prevalence summaries before digging deeper.
+- Missingness is heavy for several columns: the top ~20 (e.g., `sexscore`, `eol_*`, `proveedores_*`) are entirely empty, and a cluster of trauma-related questions sits at 60–80% missingness even though baseline covariates mostly have ≤1% missing (see `analysis/scoping_qc.py:63`), so downstream models will likely need selective filtering or imputation.
+- Psychometric checks on the adult-positivity items (alpha = 0.729, omega = 0.739, n=14,051) and the “feeling loved” triplet (alpha/omega = 0.961, n=14,431) show acceptable-to-strong internal consistency for those constructs, supporting their use as aggregate scales while documenting the exact items in `analysis/scoping_qc.py:83`.
+
+Next steps:
+1. Begin the literature/hypotheses phase by grounding the constructs above in prior work and articulating falsifiable propositions tied to the observable measures.
+2. Draft a pre-analysis plan that specifies which scales, covariates, and models will be run so we can stick to the transparency requirement before moving into execution.
