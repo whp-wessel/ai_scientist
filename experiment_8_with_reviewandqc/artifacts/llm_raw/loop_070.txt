@@ -1,0 +1,9 @@
+# 2025-11-19T14:05:29.757904+00:00
+**Scoping Update**
+- `childhoodbalancedpublic_original.csv` spans 14,443 respondents and 718 columns (661 numeric, 57 object), with adult ages 18‑75 (mean 30.4, SD 10.2), height ≈68.4″, and weight ≈173 lbs—which match the distributions reported by `analysis/scoping_qc.py`.
+- Missingness is extreme in many sexual-abuse/trauma follow-ups (≈73–78% missing) plus a handful of high-level metadata fields (e.g., `sexscore`, `prov_themes` at 100%), while core demographics such as siblings, homeschooled indicators, and childhood parental divorce stay below 1% missing, so the baseline covariates are well populated.
+- The scripted reliability checks show the adult positivity battery (8 items) yields Cronbach’s alpha ≈0.729 and omega ≈0.739 (n≈14,051), and the feeling-loved triad scores α≈0.961 and ω≈0.961 (n≈14,431), which both clear conventional reliability thresholds.
+
+**Next steps**
+1. Survey the relevant literature to theorize how adult positivity and perceived unconditional love relate to the trauma/demographic covariates present in the file.
+2. Draft the Pre-Analysis Plan (PAP), specifying hypotheses, operational definitions, and the exact models/tests we will run before touching the final analysis loop.
