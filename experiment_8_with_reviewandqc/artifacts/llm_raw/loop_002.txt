@@ -1,0 +1,10 @@
+# 2025-11-19T12:28:30.819761+00:00
+**Scoping Summary**
+- `childhoodbalancedpublic_original.csv` holds 14,443 respondents × 718 columns; reading it triggered a dtype warning (col. 68/mixed types), so type coercion will need attention before automated processing.
+- Age is centered around early 30s (mean/median ≈30), with 14436 non-missing age records; gender splits favor cis men (≈8,101) and cis women (≈5,130), and education categories cluster around levels 5, 2, and 6.
+- Missingness is nontrivial: median column is ~8.6% missing, but 25% of columns are entirely empty (e.g., `sexscore`, `prov_themes`, `total`, `eol_*` items), while some ethnicity/source indicators (e.g., `CSA_score`) have zero missing, so variable selection must account for this sparsity.
+- A first psychometric check on six “I tend to…” items yielded Cronbach’s α=0.78 and McDonald’s ω=0.79 (N=14,436 complete cases), suggesting acceptable internal consistency for that emergent negative-affect/energy factor before more formal scale validation.
+
+Next steps:
+1. Review relevant literature and the available item pool to define precise hypotheses that map onto reliable constructs.
+2. Draft and freeze a pre-analysis plan (PAP) detailing measures, operationalizations, and planned tests before running confirmatory models.
