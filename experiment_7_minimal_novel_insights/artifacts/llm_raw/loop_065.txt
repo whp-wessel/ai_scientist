@@ -1,0 +1,12 @@
+# 2025-11-19T11:41:25.043732+00:00
+Finalized the release-phase deliverable by confirming the frozen pre-analysis plan, ensuring the full PGFPlots-laden LaTeX manuscript is aligned with the analytic outputs, and leaving the paper plus reproducibility assets ready for sharing.
+
+The manuscript now documents the 14,400-case analytic sample from `childhoodbalancedpublic_original.csv`, the HC3-robust estimation strategy, the counterintuitive purity × parental support interaction for self-love/romantic satisfaction, and the sensitivity/supplementary checks (e.g., gender-minority subgroups, trauma controls, religion stratifications) while also highlighting the consensual nonmonogamy moderation, all culminating in a discussion that reports the modest-but-robust interaction effect size ($d \approx -0.02$) alongside clear limitations and open questions.
+
+- **Findings:** The paper shows that higher parental support actually sharpens the negative association between adolescent purity messaging and adult self-love/romantic satisfaction, while gender-minority identity does not meaningfully change the slope and anxiety results remain largely null; the detailed narrative of these results lives in `papers/purity_support_paper.tex:96` and the figure/interaction exposition appears at `papers/purity_support_paper.tex:130` and `papers/purity_support_paper.tex:207`.
+- **Orientation moderation:** Consensual nonmonogamy predicts about +0.23 points on self-love and romantic satisfaction and essentially erases the purity penalty for self-love, as visualized in `papers/purity_support_paper.tex:166` and described in the surrounding text.
+- **Reproducibility:** Modeling scripts, sensitivity procedures, and the frozen pre-analysis plan are cited for transparency (`papers/purity_support_paper.tex:220` and `analysis/pre_analysis_plan.md:1`), ensuring anyone can retrace the workflow from code to tables/figures.
+
+Next steps:
+1. Run `tectonic papers/purity_support_paper.tex` to regenerate the PDF and confirm the embedded figures/legends compile cleanly before circulation.
+2. If desired, revisit the gender-minority subsection to explore whether richer stratifications (e.g., separating transgender vs. nonbinary respondents) uncover more nuanced moderation once more data or metadata become available.
