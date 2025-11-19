@@ -1,0 +1,9 @@
+# 2025-11-19T13:13:15.649189+00:00
+**Scoping Update**
+- Confirmed `childhoodbalancedpublic_original.csv` has 14,443 respondents across 718 columns; a dtype warning appears for column 68 because it mixes types, and the first 20 columns include demographic items such as age, gender identity, political leaning, and religion.
+- Missingness is heavy: 334 columns are >50% empty and 263 are >90% empty, and the “Your ethnicity”/“survey source” fields alone miss thousands of responses; key numeric demographics (age, education, liberalism, height, weight) show plausible ranges (age mean ~30.4 years, height mean ~68 in, weight mean ~173 lb) and gender categories are well populated for cis men and women but sparse for trans/nonbinary groups.
+- Built a positive well-being composite from eight items (happiness, calmness, social support, self-love, relationship/work satisfaction, appearance, and energy). Complete-case N=383; Cronbach’s α=0.752 and McDonald’s ω=0.761, with one-factor loadings between ~0.26 and 0.73 (all negative because the factor flipped sign).
+
+Next steps:
+1. Draft the theoretical framing and falsifiable hypotheses that will guide the PAP, ensuring we anchor the positive well-being construct in existing literature.
+2. Use the scoping diagnostics to shape inclusion criteria (e.g., which missingness thresholds or demographic filters are acceptable) before freezing the Pre-Analysis Plan.
