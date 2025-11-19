@@ -1,0 +1,8 @@
+# 2025-11-19T14:02:40.889753+00:00
+**Loop 68 Scoping**
+- Running `analysis/scoping_qc.py:1` confirmed the dataset shape (14,443 × 718) with 661 numeric columns, a tight age distribution (M ≈ 30.4, range 18–75), and a handful of mostly numeric baseline covariates that can serve as anchors.
+- Missingness is manageable overall (median ~8.7%), but dozens of survey items—especially those in the “eol/pts/sexual abuse” blocks—are 60–100% empty, so those fields will need to be excluded or treated as structurally missing when formulating hypotheses.
+- Two substantive scales already scripted in the QC (adult positivity and feeling-loved) show solid psychometrics: adult positivity α=0.729/ω=0.739 (N=14,051) and feeling-loved α=ω=0.961 (N=14,431), so they can be used with confidence for downstream modeling.
+
+Next steps
+1. Shift into the literature/hypothesis phase by mapping these well-measured constructs (adult positivity, feeling-loved, stable baseline demographics) onto existing theories and identifying a compact set of falsifiable hypotheses to pre-register.
