@@ -1,0 +1,6 @@
+# 2025-11-19T12:42:24.417606+00:00
+**Scoping Findings**
+- `childhoodbalancedpublic_original.csv` holds 14,443 responses across 718 variables; the working sample is adults (age 18‑75, median 28, mean 30.4 years) with most identifying as cis men (8,101) or cis women (5,130) and a roughly 58/42 split on the `biomale` flag, so the cohort is skewed toward a younger, cis-gendered majority.
+- Data quality: 81.8% of columns exhibit some missingness and ~49.7% exceed 10% missing; several columns (e.g., `sexscore`, `prov_themes`, `total`, `eol_*`) are entirely empty, indicating either unused items or export artifacts that should be pruned before modeling.
+- Reliability check: the ten-item adult well-being battery (`I love myself … If life is a game, I'm losing`) yields Cronbach’s α ≈ 0.85 on 14,435 complete cases, supporting its use as a coherent construct moving forward.
+- Next step: enter the literature/hypothesis phase to anchor the well-being composite (and other potential scales uncovered here) within theory, then craft the pre-analysis plan for the forthcoming loops.
