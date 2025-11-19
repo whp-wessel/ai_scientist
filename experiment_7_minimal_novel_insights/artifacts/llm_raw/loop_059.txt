@@ -1,0 +1,11 @@
+# 2025-11-19T10:45:00.040154+00:00
+**Release Summary**
+- The final manuscript (`papers/purity_support_paper.tex:95-205`) now anchors the abstract to `childhoodbalancedpublic_original.csv`, presents Table 1’s coefficients and Cohen’s‑d conversions for Hypothesis 1, adds the self-love margin figure, and narrates the gender-minority, monogamy, and sensitivity findings (e.g., monogamy boosts self-love/romantic satisfaction by ~0.226 with the purity penalty disappearing for nonmonogamous respondents while remaining for the monogamous group; see lines 111‑205). 
+- The reproducibility section (`papers/purity_support_paper.tex:220-222`) cites the `analysis/analysis_pipeline.py`, `analysis/sensitivity_analysis.py`, `analysis/monogamy_moderation.py`, and the saved tables/JSON outputs so every reported effect can be regenerated, and the updated PDF now lives at `papers/purity_support_paper.pdf`.
+
+**Testing**
+- `tectonic papers/purity_support_paper.tex` (generated `papers/purity_support_paper.pdf`; the run emits the usual overfull-hbox warnings around the dense narrative and sensitivity bullet list at lines 105‑206 and 221‑222, but compilation succeeded).
+
+**Next Steps**
+1. Tidy the paragraphs that trigger overfull boxes (especially the long sensitivity bullet list) if you want a cleaner typeset before submitting.
+2. Run a final proofread of the PDF and, if desired, push the paper to your preferred preprint server or journal submission system once you’re satisfied with the layout.
