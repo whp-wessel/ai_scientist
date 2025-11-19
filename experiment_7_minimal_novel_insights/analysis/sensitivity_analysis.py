@@ -229,6 +229,21 @@ def main() -> None:
     save_csv(records, TABLES_DIR / "regression_results_with_trauma_controls.csv")
     records.clear()
 
+    # 3. Control for unconditional love memory in both windows.
+    overview["unconditional_love_controls_n"] = int(df.shape[0])
+    love_extra = ["unconditional_love_0_z", "unconditional_love_13_z"]
+    records.extend(
+        run_hyp1_parent_support(module, df, "with_unconditional_love_controls", love_extra)
+    )
+    records.extend(
+        run_hyp2_gender_interactions(module, df, "with_unconditional_love_controls", love_extra)
+    )
+    save_csv(
+        records,
+        TABLES_DIR / "regression_results_with_unconditional_love_controls.csv",
+    )
+    records.clear()
+
     # 2a. Evaluate parental-support components alone.
     component_records = run_hyp1_component_checks(module, df, "support_components")
     save_csv(component_records, TABLES_DIR / "regression_results_parent_support_components.csv")
@@ -265,8 +280,9 @@ def main() -> None:
     OUTPUT_SUMMARY.parent.mkdir(parents=True, exist_ok=True)
     overview["notes"] = (
         "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for the registered "
-        "slices, plus component-based models, religiosity-interaction tests, and a parent-support × purity × "
-        "gender-minority robustness check."
+        "slices, plus component-based models, religiosity-interaction tests, a parent-support × purity × "
+        "gender-minority robustness check, and a version that controls for unconditional-love memories in both "
+        "childhood windows."
     )
     OUTPUT_SUMMARY.write_text(json.dumps(overview, indent=2), encoding="utf-8")
     print("Sensitivity analysis complete. Tables saved under tables/ and outputs/.")

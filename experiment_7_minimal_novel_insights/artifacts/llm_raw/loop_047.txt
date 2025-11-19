@@ -1,0 +1,13 @@
+# 2025-11-19T09:45:59.830877+00:00
+**Sensitivity Update**
+- Extended `analysis/sensitivity_analysis.py` to run the parent-support/gender-minority models with both unconditional-love memories (`analysis/sensitivity_analysis.py:233`) and logged the new slice as `unconditional_love_controls_n` in `outputs/sensitivity_overview.json:5` so every registered table is reproducible.
+- The newly generated `tables/regression_results_with_unconditional_love_controls.csv` keeps the self-love interaction at β≈-0.039 (p=0.0069, row `:4`) and romantic-satisfaction at β≈-0.037 (p=0.041, row `:7`), confirming the counterintuitive steepening survives even after adjusting for unconditional affection.
+- Documented the unconditional-love-controlled slice in `analysis/analysis_notes.md:170` so future loops can reference this robustness narrative before entering the writing stage.
+- The manuscript’s sensitivity checklist now cites the new table (added at `papers/purity_support_paper.tex:115`), making the updated robustness story visible to readers alongside the other slices.
+
+Testing:
+- `python analysis/sensitivity_analysis.py`
+
+Next steps:
+1. Move into the writing phase by weaving the unconditional-love control narrative (and the new bullet) into the Results/Sensitivity sections and updating any downstream figures or tables if needed.
+2. Rebuild the LaTeX manuscript with `tectonic papers/purity_support_paper.tex` to refresh the PDF before release/QC.

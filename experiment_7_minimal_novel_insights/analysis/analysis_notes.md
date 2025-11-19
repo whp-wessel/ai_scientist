@@ -166,3 +166,16 @@
 ### Outputs & next steps
 - The new table `tables/regression_results_parent_support_gender_minority.csv` is ready for manuscript citations around the sensitivity/generalizability discussion.
 - Next loop: consolidate these diagnostics in the writing phase and then proceed to release preparations (PDF build, final QC).
+
+## Loop 47 — unconditional-love-controlled sensitivity slice
+
+### Sample & measurement
+- The full analytic sample (n=14,400) reuses the base covariates while adding the standardized unconditional-love memories from both windows (`unconditional_love_0_z`, `unconditional_love_13_z`), letting us test whether the counterintuitive parent-support × purity interaction is confounded by recalled unconditional affection.
+
+### Findings
+- Even with unconditional love in the model, the self-love purity×support term stays significantly negative (β≈-0.039, p≈0.0069; `tables/regression_results_with_unconditional_love_controls.csv:4`) and the romantic-satisfaction interaction still declines (β≈-0.037, p≈0.041; `tables/regression_results_with_unconditional_love_controls.csv:7`), while parental support's main slope remains positive (β≈0.113, p<0.0001). This confirms that the steepening is not a proxy for unconditional affection.
+- The gender-minority interactions also remain null (the purity13×gender_minority term for self-love is β≈0.091, p≈0.118; `tables/regression_results_with_unconditional_love_controls.csv:16` and corresponding rows), so the added covariates do not unveil a hidden minority-stress moderation.
+
+### Outputs & next steps
+- `analysis/sensitivity_analysis.py` now records the unconditional-love-controlled tables and updates `outputs/sensitivity_overview.json`, so the new table is reproducible and ready to cite in the robustness narrative.
+- With every registered sensitivity slice archived we can proceed into the writing phase for narrative polish and then move toward release preparations (tectonic build, final QC).
