@@ -1,0 +1,13 @@
+# 2025-11-19T10:13:24.448755+00:00
+**Release Summary**
+- `papers/purity_support_paper.tex:45` frames the final abstract around the 14,400-case sample (8.3 % gender-minority) and reports the counterintuitive adolescence-only purity × parental-support moderation (Cohen’s d ≈ –0.02), with the analytic counts and parent-support reliability archived in `outputs/sample_summary.json:1`.
+- `papers/purity_support_paper.tex:58`–`papers/purity_support_paper.tex:77` lay out the self-love and romantic-satisfaction models with the negative interaction, and `papers/purity_support_paper.tex:83` embeds the PGFPlots margins that visualize how high parental support steepens the purity penalty.
+- `papers/purity_support_paper.tex:109` confirms that gender-minority slopes stay statistically indistinguishable from cisgender slopes, the registered sensitivity bullets (`papers/purity_support_paper.tex:112`) document the no-current-religion, trauma-control, and subgroup checks, and `papers/purity_support_paper.tex:127` spells out the remaining design and measurement limitations.
+
+**Reproducibility**
+- `analysis/pre_analysis_plan.md:1` remains frozen, listing the two preregistered RQs/hypotheses plus the literature anchors that guided the purification and moderation tests.
+- `analysis/analysis_pipeline.py:1` drives the estimation, diagnostics, and figure export for the registered models, and `analysis/sensitivity_analysis.py:1` reruns the robustness slices that feed the tables under `tables/` and the `outputs/sensitivity_overview.json` summary referenced in the manuscript.
+
+Suggestions:
+1. Rerun `tectonic papers/purity_support_paper.tex` anytime the narrative or data change so the embedded PGFPlots figure and PDF stay in sync.
+2. To follow up on the “support deepens purity penalties” puzzle, target new data (qualitative interviews or longitudinal panels) that can distinguish supportive parenting from purity-socialization intensity.
