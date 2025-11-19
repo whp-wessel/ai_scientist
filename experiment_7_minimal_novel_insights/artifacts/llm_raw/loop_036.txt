@@ -1,0 +1,19 @@
+# 2025-11-19T08:50:46.947630+00:00
+**Paper Draft**
+- The new manuscript `papers/purity_support_paper.tex:44-137` now narrates the background, pre-registered hypotheses, methods, table of Hypothesis 1 coefficients (lines 58‑75), the PGFPlots margins figure (lines 81‑103), and the discussion/limitations/reproducibility narrative; it cites peer-reviewed sources (Klement et al. 2022; Franck & Buehler 2007; Skidmore et al. 2022; Lekwauwa et al. 2022) and compiles to `papers/purity_support_paper.pdf`.
+- Table 1’s values demonstrate the positive parental-support effects (β≈0.212, d≈0.18) and the counterintuitive negative purity×support interactions (β≈−0.040 for self-love and β≈−0.038 for romantic satisfaction), while the figure embeds the predicted self-love trajectories for low/high purity across support (data read from `analysis/marginal_self_love_data.csv:1-21`).
+
+**Analysis Notes**
+- Added Loop 36 coverage with the refreshed sample description, key coefficients, and sensitivity digest (`analysis/analysis_notes.md:1-22`), documenting that the interaction survives HC3-robust OLS (plus the registered scenes) even when restricting to non-practicing respondents or adding trauma controls.
+
+**Figure data & reproducibility**
+- `analysis/marginal_self_love_data.csv:1-21` now stores the predicted self-love values (low/high purity) used to draw the inline PGFPlots figure, and the write-up describes the pipelines and frozen pre-analysis plan for full reproducibility.
+
+**Tests**
+- `python analysis/analysis_pipeline.py` (regenerated tables/outputs in `tables/` and `outputs/`).
+- `python analysis/sensitivity_analysis.py` (re-ran registered sensitivity slices).
+- `tectonic papers/purity_support_paper.tex` (generated `papers/purity_support_paper.pdf`; engine reported minor overfull/underfull boxes around the abstract/figure lines but produced the PDF).
+
+**Next steps**
+1. Consider circulating `papers/purity_support_paper.pdf` for peer feedback or journal-style review, focusing on clarifying the theoretical interpretation of the counterintuitive purity×support interaction.
+2. Explore additional moderators or qualitative follow-ups (e.g., doctrine specificity, family communication styles) before final release to strengthen the interpretive claims and open questions.

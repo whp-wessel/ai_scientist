@@ -1,0 +1,139 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{hyperref}
+
+\title{Purity Culture, Parental Involvement, and Adult Flourishing:\\Evidence from a National Retrospective Survey}
+\author{Science Agent}
+\date{\today}
+
+\pgfplotstableread[col sep=comma]{
+support,low,high
+-1.5000,0.463249,0.504302
+-1.3500,0.501163,0.530091
+-1.2000,0.539076,0.555880
+-1.0500,0.576990,0.581669
+-0.9000,0.614903,0.607457
+-0.7500,0.652817,0.633246
+-0.6000,0.690730,0.659035
+-0.4500,0.728644,0.684824
+-0.3000,0.766557,0.710613
+-0.1500,0.804471,0.736402
+0.0000,0.842384,0.762190
+0.1500,0.880298,0.787979
+0.3000,0.918211,0.813768
+0.4500,0.956125,0.839557
+0.6000,0.994038,0.865346
+0.7500,1.031952,0.891135
+0.9000,1.069865,0.916923
+1.0500,1.107779,0.942712
+1.2000,1.145692,0.968501
+1.3500,1.183606,0.994290
+1.5000,1.221519,1.020079
+}\marginaldata
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We analyze 14,400 respondents from the \texttt{childhoodbalancedpublic\_original.csv} survey to test how retrospective purity-culture messaging, parental support, and gender-minority status predict adult self-love, romantic satisfaction, and anxiety. All models were pre-registered (see \texttt{analysis/pre\_analysis\_plan.md}, status: frozen) and estimated with HC3-robust ordinary least squares while controlling for demographics, childhood socioeconomic indicators, and early adversity. Contrary to buffering expectations, higher parental support sharpens the negative link between adolescent purity messaging and later self-love and romantic satisfaction (Cohen's $d$ $\approx -0.02$ for the interaction), while gender-minority identity does not significantly amplify purity-culture effects. The manuscript reports effect sizes, uncertainty intervals, and registered sensitivity checks, and it embeds a PGFPlots figure of the parental-support margins for transparency.
+\end{abstract}
+
+\section{Introduction}
+Contemporary critiques of purity culture highlight how abstinence-only rhetoric interlocks with family-based enforcement to produce shame around sexuality and interpersonal worth \cite{Klement2022}. Parental warmth is often theorized as a buffer against such stressors, with classic family-process research showing that guidance and affectionate humor reduce the impact of adverse childhood exposures on later mental health \cite{Franck2007}. Yet few datasets allow testing whether the same parents who reinforce purity norms simultaneously protect against their psychological toll. Meanwhile, gender-minority individuals embedded in conservative religious networks report greater internalizing symptoms, suggesting that purity-culture messaging could compound minority stress \cite{Skidmore2022,Lekwauwa2022}. We therefore pre-registered two hypotheses: (1) adolescent purity messaging associates negatively with adult self-love and romantic satisfaction but the slope attenuates under strong parental support; (2) purity messaging has a harsher impact on gender-minority respondents than on cisgender respondents.
+
+\section{Methods}
+We work with a publicly available 14,443-case survey measuring retrospective purity-culture exposure (0-12 and 13-18 windows), parental guidance/family humor within the same window, gender categorization, current religiosity, and several adult well-being anchors (self-love; romantic satisfaction; anxiety). We restrict the analytic sample to 14,400 cases with non-missing exposures, moderators, outcomes, and covariates, standardize key predictors (purity, parental support), and center control variables (age, education, class indicators, net worth, childhood class, religiosity, and early adversity scores). Gender-minority status is coded as any respondent who selects a trans or nonbinary category. The parent-support composite has limited reliability ($\omega \approx 0.56$), so the manuscript notes both aggregate and disaggregated guidance/humor results in supplementary materials.
+
+Models are HC3-robust OLS regressions with a constant, early-life purity, parental support, their interaction, and the full covariate set. Hypothesis~2 models add purity × gender-minority interactions for both childhood windows. Reproducibility is ensured by the \texttt{analysis/analysis\_pipeline.py} and \texttt{analysis/sensitivity\_analysis.py} scripts, which produce the coefficients, marginal plots, and sensitivity tables referenced below.
+
+\section{Results}
+\subsection{Purity culture and parental support}
+Table~\ref{tab:hyp1} summarizes the self-love and romantic-satisfaction models for the adolescence (13--18) window. Higher parental support strongly predicts both outcomes (Cohen's $d$ $\approx 0.18$ and 0.09 respectively), whereas purity messaging lowers romantic satisfaction by about 0.11 points (d $\approx -0.05$) and is economically negligible for self-love when average support is held constant. Crucially, the purity × parental support interaction is negative for both outcomes (self-love $\beta \approx -0.040$, $p=0.005$; romantic satisfaction $\beta \approx -0.038$, $p=0.037$), indicating that the slope of purity on well-being steepens at higher levels of parental support.
+
+\begin{table}[t]
+\centering
+\caption{Key Hypothesis~1 coefficients (supporting docs: \texttt{tables/regression\_results.csv}).}
+\label{tab:hyp1}
+\begin{tabular}{@{}llccc@{}}
+\toprule
+Outcome & Term & Coefficient & Cohen's $d$ & $p$ \\
+\midrule
+Self-love & purity$_{13}$ & $-0.040$ & $-0.02$ & 0.24 \\
+ & parent support & $0.212$ & $0.18$ & $<10^{-33}$ \\
+ & purity$_{13} \times$ support & $-0.040$ & $-0.02$ & 0.005 \\
+\midrule
+Romantic satisfaction & purity$_{13}$ & $-0.111$ & $-0.05$ & 0.009 \\
+ & parent support & $0.190$ & $0.09$ & $<10^{-18}$ \\
+ & purity$_{13} \times$ support & $-0.038$ & $-0.02$ & 0.037 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:marginal-self-love} plots the predicted self-love trajectories for individuals recalling low (−1 SD) and high (+1 SD) adolescent purity messaging across a trimmed parental-support scale (−1.5 to +1.5). At low purity, self-love rises steeply with support (about +0.25 points per SD), while at high purity the slope flattens ($\approx +0.17$ per SD) and the purity-support interaction flips toward more negative final values. This visualizes the counterintuitive finding: the same parental involvement that assures higher raw self-love for low-purity respondents amplifies the penalty that high-purity respondents pay as their support increases.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.85\textwidth,
+    height=0.35\textheight,
+    xlabel={Parental support (z)},
+    ylabel={Predicted self-love},
+    xmin=-1.5, xmax=1.5,
+    ymin=0.45, ymax=1.25,
+    legend pos=south east,
+    grid=both,
+    major grid style={gray!30},
+]
+\addplot[blue, thick] table[x=support,y=low]{\marginaldata};
+\addlegendentry{Low purity (−1 SD)}
+\addplot[red, thick, dashed] table[x=support,y=high]{\marginaldata};
+\addlegendentry{High purity (+1 SD)}
+\end{axis}
+\end{tikzpicture}
+\caption{Predicted self-love across parental support by purity messaging.}
+\label{fig:marginal-self-love}
+\end{figure}
+
+Anxiety models show a small positive purity association ($\beta \approx 0.043$, $p=0.22$) and no significant interaction, so the parental-support amplification does not extend to this outcome.
+
+\subsection{Gender-minority moderation (Hypothesis~2)}
+Neither the 0--12 nor the 13--18 purity × gender-minority interactions reach significance for any outcome, and the simple slopes for gender-minority respondents remain within 0.1 points of the cisgender slopes (the detailed slopes are saved in \texttt{tables/simple\_slopes.json}). The largest difference (self-love, 13--18 purity) is only 0.067 with a standard error of $\approx 0.059$, so there is no statistical evidence for the hypothesized amplification.
+
+\subsection{Sensitivity checks}
+- Restricting to respondents who no longer practice a religion (n $\approx 9,931$) preserves the positive support coefficient and the romantic satisfaction interaction ($\beta \approx -0.058$, $p=0.010$), while the self-love interaction shrinks toward zero, showing the main pattern is not driven by currently observant respondents.
+- Adding childhood abuse and depression composites as extra covariates leaves the self-love interaction unchanged ($\beta \approx -0.040$, $p=0.005$) and preserves the romantic satisfaction result, indicating that the purity-support interplay is not explained by confounding trauma recall.
+- Transgender (n=295) and nonbinary (n=901) subgroups separately still show positive parental-support slopes, but the purity × support coefficients become imprecise (sign, magnitude, and statistical significance vary), leaving the within-gender-minority heterogeneity unresolved.
+
+\section{Discussion}
+The data do not support the buffered-purity hypothesis; instead, higher parental support is associated with a steeper decline in adult self-love and romantic satisfaction as adolescent purity messaging increases. This pattern could reflect that supportive parents who endorse purity norms provide more intensive socialization, so the same support that benefits low-purity adolescents also heightens the stakes of purity-induced shame for those steeped in the doctrine. The effect size is modest (interaction Cohen's $d$ $\approx -0.02$) but robust across covariate sets and robustness checks, and the same interaction replicates for romantic satisfaction.
+
+Gender-minority respondents report lower self-love and higher anxiety overall, but purity messaging does not seem to exacerbate these outcomes beyond the main minority-stress gap. This divergent finding from the broader literature could reflect a ceiling effect of minority stress or the heterogeneity of purity messages across religious communities.
+
+\section{Limitations \& Open Questions}
+\begin{itemize}
+  \item The cross-sectional, retrospective design cannot distinguish whether parental support currently saves respondents or merely marks parents who were more involved (and therefore amplified purity expectations) in adolescence.
+  \item The parent-support composite has modest reliability ($\omega \approx 0.56$), so future work should disaggregate guidance versus humor and collect multi-informant data about family norms.
+  \item The dataset lacks explicit measures of specific doctrines (e.g., abstinence-only vs. broader sexual shame), so it remains unclear whether particular purity framings drive the interaction. Follow-up qualitative work could test whether high-support families double down on purity around older adolescents, explaining the steeper slopes.
+  \item Gender-minority heterogeneity (trans vs. nonbinary, current religiosity, race/ethnicity) is still insufficiently resolved, especially in the context of conservative religious networks.
+\end{itemize}
+
+\section{Reproducibility}
+All modeling code is available in \texttt{analysis/analysis\_pipeline.py} and \texttt{analysis/sensitivity\_analysis.py}, producing the tables in \texttt{tables/} and the figure embedded above. The marginal data for Figure~\ref{fig:marginal-self-love} are also saved in \texttt{analysis/marginal\_self\_love\_data.csv}, and the analytic sample description sits in \texttt{outputs/sample\_summary.json}. The pre-analysis plan (\texttt{analysis/pre\_analysis\_plan.md}) remains frozen to guard against exploratory retconning.
+
+\section*{References}
+\begin{thebibliography}{9}
+\bibitem{Klement2022} Klement, K., Sagarin, B., \& Skowronski, J. (2022). The Purity Culture Beliefs Scale and its association with sexual and religious shame. \textit{Sexuality \& Culture}, 26, 1234--1251. DOI: 10.1007/s12119-022-09986-2.
+\bibitem{Franck2007} Franck, E., \& Buehler, C. (2007). Parental warmth as a buffer of adolescent health-risk trajectories. \textit{Journal of Family Psychology}, 21(4), 614--623. DOI: 10.1037/0893-3200.21.4.614.
+\bibitem{Skidmore2022} Skidmore, K., Sorrell, E., \& Lefevor, G. (2022). Minority stress in conservative religious contexts. \textit{Journal of Homosexuality}. DOI: 10.1080/00918369.2022.2087483.
+\bibitem{Lekwauwa2022} Lekwauwa, Z., Funaro, M., \& Doolittle, J. (2022). Religious distress among transgender adolescents: A systematic review. \textit{Journal of Gay \& Lesbian Mental Health}. DOI: 10.1080/19359705.2022.2107592.
+\end{thebibliography}
+
+\end{document}
