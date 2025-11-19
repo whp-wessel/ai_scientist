@@ -1,0 +1,8 @@
+# 2025-11-19T13:38:51.619898+00:00
+Scoping loop 50 shows the dataset is large but heterogeneous, so we can proceed while staying vigilant about skipped blocks and missing data.
+
+- `analysis/scoping_qc.py:58` verifies `childhoodbalancedpublic_original.csv` has 14,443 rows by 718 columns, with 661 numeric versus 57 object fields and the dtype warning explained at `analysis/scoping_qc.py:61`; the same script reports mean age ~30 (`analysis/scoping_qc.py:71`), male proxies at ~57–59% (`analysis/scoping_qc.py:75`), and height/weight distributions in `analysis/scoping_qc.py:79`.
+- `analysis/scoping_qc.py:63` reveals 263 columns are ≥90% missing, 334 ≥50%, and 357 >10%; the sexual-abuse follow-up questions fill most of the 60–80% missingness bucket, so planned analyses must honor the implied skip logic.
+- `analysis/scoping_qc.py:83` defines the adult-positivity items whose summary/alpha/omega (0.729/0.739 with ~14,051 complete cases) appear at `analysis/scoping_qc.py:100–104`, and the feeling-loved triplet with alpha/omega 0.961 is printed at `analysis/scoping_qc.py:106–109`, giving us two reliable constructs to anchor downstream models.
+
+Next: move into the literature phase to ground hypotheses and shape the pre-analysis plan before touching the primary analysis phase.
