@@ -1,0 +1,8 @@
+# 2025-11-19T13:16:42.870842+00:00
+- **Scoping** Ran `analysis/scoping_qc.py` to profile the 14,443×718 dataset, confirming there are 661 numeric versus 57 object columns and capturing age (mean ≈30.4), height (≈68.4 inches), weight (≈173 lbs), and gender proxies from the summaries around `analysis/scoping_qc.py:58` and `analysis/scoping_qc.py:71`.
+- **Missingness** The same script ranks columns by missingness (`analysis/scoping_qc.py:63`), revealing about 20 fields that are entirely empty (e.g., `sexscore`, `eol_*`, `prov_*`) and a small set of baseline covariates (siblings, sexual history, homeschooling, parents divorcing) with ≤1% missing data.
+- **Reliability** Adult positivity items and the three “feeling loved” questions are scored via `cronbach_alpha`/`omega` (`analysis/scoping_qc.py:12` and `analysis/scoping_qc.py:26`), with the scale definitions at `analysis/scoping_qc.py:83` and `analysis/scoping_qc.py:94`; adult positivity has α = 0.729 and ω = 0.739 (n=14,051) at `analysis/scoping_qc.py:100`, while the feeling-loved scale shows α = ω = 0.961 (n=14,431) at `analysis/scoping_qc.py:106`.
+
+Next steps:
+1. Read the relevant literature to refine theory-backed hypotheses that fit the reliable constructs we now understand.
+2. Draft and preregister a focused pre-analysis plan (PAP) that specifies the models, covariates, and robustness checks we’ll run once we move to the analysis phase.
