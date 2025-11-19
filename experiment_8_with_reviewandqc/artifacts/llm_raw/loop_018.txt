@@ -1,0 +1,8 @@
+# 2025-11-19T12:58:52.208951+00:00
+**Scoping Observations**
+- `analysis/scoping_qc.py:58-82` shows `childhoodbalancedpublic_original.csv` contains 14,443 respondents by 718 variables, with core demographic (age mean ≈30.4, height mean 68.4 in, weight mean 173 lb) and gender proxies well populated, but many ancillary items—especially abuse-related questions—are entirely empty or >60% missing, so downstream modeling must explicitly handle those gaps.
+- The warning noted in `analysis/scoping_qc.py:58-61` arises from mixed-type columns (string/number), so any automated conversions should be validated rather than assumed.
+- Reliability checks in `analysis/scoping_qc.py:83-110` yield Cronbach’s α/ω ≈0.729/0.739 for the adult-positivity scale (n≈14,051) and α/ω ≈0.961/0.961 for the feeling-loved scale (n=14,431), so both can be treated as psychometrically sound constructs for analyses that use complete cases.
+
+**Next Steps**
+- Move into the literature/hypothesis phase: review relevant prior work on childhood experiences and adult well-being, identify a falsifiable hypothesis consistent with these constructs, and flag any data limitations (e.g., high missingness in abuse histories) before drafting the PAP.
