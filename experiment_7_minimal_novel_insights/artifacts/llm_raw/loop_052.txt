@@ -1,0 +1,15 @@
+# 2025-11-19T10:03:32.155903+00:00
+**Release Summary**
+- The manuscript’s abstract now flags the 14,400-case analytic sample (8.3% gender-minority; parent-support ω≈0.56), emphasizes that higher parental support steepens the adolescent-purity slope for self-love/romantic satisfaction while gender-minority identity does not magnify the effect, and reiterates the registered sensitivity checks and anxiety nuance at `papers/purity_support_paper.tex:44`.
+- The Hypothesis‑1 self-love model records a purity × support coefficient of β≈−0.040 (p=0.005), confirming that higher support sharpens the negative purity slope; see `tables/regression_results.csv:4`.
+- The romantic-satisfaction counterpart reports β≈−0.037 (p=0.0369) on the same interaction, showing the effect generalizes beyond self-love; see `tables/regression_results.csv:16`.
+- Reproducibility is preserved via the frozen pre-analysis plan (`analysis/pre_analysis_plan.md:3`), the modeling/sensitivity scripts (`analysis/analysis_pipeline.py:1` and `analysis/sensitivity_analysis.py:1`), and the analytic snapshot (`outputs/sample_summary.json:1` reports n=14,400 with the gender-minority share).
+- The PGFPlots figure is driven by the saved marginal data (`analysis/marginal_self_love_data.csv:1`) and is written up in the Results discussion near `papers/purity_support_paper.tex:79`, so the visual story is regenerable from the same values.
+
+**Testing**
+- `python analysis/analysis_pipeline.py` (reran the pre-registered regressions, refreshed all tables, and regenerated the marginal-data CSV used in the figure).
+- `tectonic papers/purity_support_paper.tex --outdir papers` (PDF rebuilt as `papers/purity_support_paper.pdf`; TeX emitted overfull \hbox warnings at `papers/purity_support_paper.tex:54` and `papers/purity_support_paper.tex:121`, but the build succeeded).
+
+**Next Steps**
+1. Trim or rephrase the long paragraph at `papers/purity_support_paper.tex:54` so the TeX warning’s overfull \hbox is resolved without sacrificing the narrative.
+2. Disaggregate guidance vs. humor as moderators, as foreshadowed in the pre-analysis plan (`analysis/pre_analysis_plan.md:18`), to see whether improved reliability changes the direction or magnitude of the purity × support interaction.
