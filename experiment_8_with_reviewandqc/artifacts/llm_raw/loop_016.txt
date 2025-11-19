@@ -1,0 +1,9 @@
+# 2025-11-19T12:56:32.523927+00:00
+**Scoping Update**
+- **Data profile** The survey spans 14,443 rows and 718 columns, with 661 numeric and 57 categorical fields; age is centered around 30 years (mean 30.4, median 28, 61% between 18–30) and the modal self-identified gender is cisgender man (27% of cases), with cisgender women the next-largest group. Current religious engagement is mostly “No” (≈69%), with the remaining responses spread across three increases in seriousness, and wellbeing items such as “I love myself” show good variability (scores from –1 to 3).
+- **Missingness** Overall, about 44.6% of cells are empty, but the extreme sparsity (>95%) is confined to a handful of columns (e.g., `sexscore`, `prov_themes`, `eol_*` notes) that appear to be unused metadata. Only 68 variables sit in the 20–80% missing range (e.g., detailed abuse follow-ups, attachment style, current religion), while the candidate psychological items we care about have virtually no missingness (<0.05%), so the key scales have nearly full coverage.
+- **Reliability** Two multi-item scales show acceptable psychometric quality: the self-acceptance/satisfaction cluster (six positively framed items such as “I love myself” and “I tend to have a lot of energy”) yields Cronbach’s α = 0.705 and omega = 0.721 with 14,435 complete cases, while the distress cluster (five negatively framed items like anxiety, depression, feeling “not happy,” suicidal ideation, and stress sensitivity) yields α = 0.821 and ω = 0.824 across 14,436 cases, so both meet basic reliability thresholds.
+
+Next steps:
+1. Map relevant theories and prior findings onto these candidate scales and the available demographics to frame falsifiable hypotheses for the next loop (literature phase).
+2. Outline a focused Pre‑Analysis Plan that fixes key variables, transformations, and robustness checks before moving into formal analysis.
