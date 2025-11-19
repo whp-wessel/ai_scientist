@@ -1,0 +1,9 @@
+# 2025-11-19T13:04:24.303090+00:00
+**Scoping QC**
+- `childhoodbalancedpublic_original.csv:1` contains 14,443 respondents × 718 columns; many items are paired question text + short code, so I’ll focus on the concise short-code fields for modeling. Age (mean 30.4, SD 10.2), height (mean 68.4 in, SD 4.1), and weight (mean 173 lbs, SD 48) all look reasonable, but note the `factor_analyzer` import triggered a future-warning about `force_all_finite` being renamed (seen in `analysis/scoping_qc.py:1`), so I’ll capture the warning for updating dependencies later.
+- Missingness is concentrated in a few columns: twenty fields (e.g., `sexscore`, `prov_themes`, `certif_ask_YN`) are entirely empty, and several trauma-related items retain 60–80% gaps, while baseline demographics such as sibling count and age at first sex have ≲1% missing (`analysis/scoping_qc.py:1`). That pattern suggests the sexual‑abuse follow-up questions are sparse for most respondents and should be treated cautiously or potentially excluded from inferential models.
+- Reliability checks via `analysis/scoping_qc.py:1` show the adult positivity composite (8 items) has Cronbach’s α ≈ 0.729 and McDonald’s ω ≈ 0.739 (n≈14,051), while the feeling-loved scale (3 items) is extremely coherent (α/ω ≈ 0.961, n=14,431); both scales can be treated as psychometrically sound for upcoming analysis.
+
+**Next Steps**
+- 1. Move into the literature/hypotheses phase by cataloging prior work on the adult positivity and feeling-loved constructs to ground falsifiable predictions.  
+- 2. Draft a Pre-Analysis Plan that enumerates which scales survive the scoping QC (and how I’ll handle the sparse abuse items) before running any models.
