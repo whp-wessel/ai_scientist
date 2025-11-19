@@ -1,0 +1,11 @@
+# 2025-11-19T09:54:36.434281+00:00
+**Release Ready**
+- The manuscript now foregrounds the 14,400-case sample, effect sizes, and the counterintuitive adolescent purity × parental support interaction (Table 1 and the PGFPlots margin plot) while also describing the 0–12 purity/anxiety nuance and the null gender-minority moderation promised in the pre-registered plan (`papers/purity_support_paper.tex:44-129`).
+- The sensitivity subsection lists every diagnostic slice (no-current-religion, trauma/depression controls, unconditional love, gender-minority subsamples, current religiosity, parent-support components, and the three-way interaction) and points readers to the corresponding tables so the robustness story mirrors the scripted outputs (`papers/purity_support_paper.tex:109-145`).
+- Reproducibility is documented by linking back to the `analysis/analysis_pipeline.py`, `analysis/sensitivity_analysis.py`, the figure’s marginal-data CSV, and the sample summary JSON in the dedicated section (`papers/purity_support_paper.tex:135-145`).
+- Ran `tectonic papers/purity_support_paper.tex` to regenerate `papers/purity_support_paper.pdf` (70.65 KiB); the engine reported only expected overfull/underfull warnings in a few paragraphs but no errors, so the compiled PDF reflects the latest text and figure.
+- Advanced the loop state to release with the new marker in `artifacts/state.json:1-5`, ensuring the next cycle can focus on dissemination.
+
+Next steps
+1. Review the refreshed PDF for layout and clarity (the overfull-hbox warnings are nonfictional but may warrant minor wording tweaks if they bother you), then rerun Tectonic if any adjustments are made.
+2. Proceed with the release-phase work (e.g., finalize distribution, archive the PDF alongside tables/outputs, and run the release loop if you’re continuing the automated cycle) now that the state is set to release.
