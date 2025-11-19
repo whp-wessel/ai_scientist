@@ -1,0 +1,9 @@
+# 2025-11-19T13:27:27.960573+00:00
+**Scoping Update**
+- Diagnostics from `analysis/scoping_qc.py:58` show a well-populated dataset (14,443 rows × 718 columns; 661 numeric fields, 57 object fields) with stable age (mean ≈ 30.4 years), height (~68 in), and weight (~173 lb) distributions.
+- Missingness profiling at `analysis/scoping_qc.py:63` highlights ~20 columns that are empty (mainly unused metadata) and ~15 trauma follow-ups with 60–80% blanks, while baseline covariates such as sibling count, sexual history, and homeschooling status stay under 1% missingness.
+- Reliability is computed through `scale_stats` (`analysis/scoping_qc.py:40`) using `cronbach_alpha` (`analysis/scoping_qc.py:12`) and factor-model `omega` (`analysis/scoping_qc.py:26`); the eight-item adult positivity scale delivers α=0.729/ω=0.739 (n=14,051) and the three-item feeling-loved scale gives α=ω=0.961 (n=14,431), so both constructs currently meet internal-consistency expectations.
+
+Next steps (phase “literature”):
+1. Review theory relevant to adult positivity/love feeling constructs and articulate falsifiable hypotheses grounded in those mechanisms.
+2. Draft and pre-register a concise Pre-Analysis Plan that fixes the constructs, covariates, and analytic strategy before running the final models.
