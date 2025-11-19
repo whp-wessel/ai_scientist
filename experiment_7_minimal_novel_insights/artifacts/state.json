@@ -1,6 +1,6 @@
 {
-  "loop_counter": 24,
-  "phase": "pap",
+  "loop_counter": 25,
+  "phase": "analysis",
   "stop_now": false,
   "stop_reason": "",
   "total_loops": 75

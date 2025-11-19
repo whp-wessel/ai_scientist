@@ -1,0 +1,11 @@
+# 2025-11-19T07:58:34.974806+00:00
+**Analysis Update**
+- Analytic sample now holds 14,400 cases (8.3% gender-minority) with means of 0.62 on self-love, 0.07 on romantic satisfaction, and −0.83 on anxiety, providing the descriptive baseline for all registered models (`outputs/sample_summary.json:2`, `:4`, `:5`, `:7`, `:9`).
+- Hypothesis 1 models show parental support’s main effect is positive but the purity×support interaction is negative for both self-love (coef −0.040, CI [−0.069, −0.012], p=0.005, d≈−0.022) and romantic satisfaction (coef −0.038, CI [−0.073, −0.002], p=0.037, d≈−0.017), while early-childhood purity is associated with lower anxiety (coef −0.107, CI [−0.175, −0.038], p=0.002, d≈−0.053); see the relevant rows in `tables/regression_results.csv:4`, `:8`, and `:13`. The marginal effects plot for self-love is saved as `figures/marginal_self_love.png`.
+- Hypothesis 2 interactions are null—the purity×gender-minority slopes stay statistically indistinguishable from zero (p>0.3) even though gender-minority status has the expected main effects—so there is no evidence of stronger purity penalties for those respondents (`tables/regression_results.csv:17`, `:33` for the interaction rows and `:16`, `:32` for the main effects).
+- The parent-support composite’s reliability is 0.56, well below the 0.70 benchmark, so the buffering interpretation should be cautious or, failing that, presented alongside the individual guidance/humor items (`outputs/sample_summary.json:17`).
+- State tracking now records loop 25 and phase “analysis,” positioning the workflow to enter the upcoming sensitivity phase once those checks are complete (`artifacts/state.json:2`, `:3`).
+
+**Next Steps**
+1. Run the registered sensitivity checks by first omitting respondents reporting current religious practice and then adding the planned childhood abuse/depression controls to the same regressions so we can evaluate robustness (`analysis/pre_analysis_plan.md:71`, `:72`).
+2. Begin drafting the Tectonic manuscript using the scripted tables and figure from the pipeline, keeping the reproducibility commitments in mind so the paper can be rebuilt automatically whenever we rerun the pipeline (`analysis/pre_analysis_plan.md:75`, `:76`).
