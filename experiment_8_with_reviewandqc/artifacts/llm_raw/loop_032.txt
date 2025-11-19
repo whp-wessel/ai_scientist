@@ -1,0 +1,11 @@
+# 2025-11-19T13:15:10.966780+00:00
+**Scoping QC**
+- Ran `analysis/scoping_qc.py` on `childhoodbalancedpublic_original.csv` to satisfy the scoping directive; the dataset contains 14,443 rows and 718 columns (661 numeric, 57 object), so the existing dtype warning stems from a few mixed-type columns.
+- Demographics/distributions are reasonable: age centers at ~30.4 (range 18–75), biomale/gendermale both around 57–59% prevalence, and height/weight are ~68.4 inches/173 lbs with natural spreads, which gives us stable baseline covariates.
+- Missingness is manageable for the core covariates (siblings, number of sexual partners, homeschooling, parental divorce all <1% missing) but spike to 60–100% for items about sexual abuse/religion history, reflecting skip logic—we’ll flag those high-missing scales for careful handling later.
+- Reliability checks on the two pre-defined scales show the adult positivity battery (8 items) has Cronbach’s α=0.729 and ω=0.739 (n=14,051), while the feeling-loved scale (3 items) yields α=ω=0.961 (n=14,431), so both achieve acceptable-to-excellent internal consistency.
+
+Next steps:
+1. Ground hypotheses in the literature around adult positivity and childhood love, documenting how the available items map onto theory and specifying any moderators or covariates.
+2. Freeze a Pre-Analysis Plan that details the scale computations, model targets, and transparency checks (e.g., handling of high-missing items and robustness diagnostics).
+3. Extend the scoping QC by profiling any additional candidate constructs before moving to execution, ensuring each meets the reliability and distribution standards established here.
