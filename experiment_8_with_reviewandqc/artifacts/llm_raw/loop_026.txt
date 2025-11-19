@@ -1,0 +1,10 @@
+# 2025-11-19T13:08:05.635603+00:00
+**Scoping**
+- `childhoodbalancedpublic_original.csv` is 14,443 respondents by 718 variables (661 numeric, 57 text), and the import triggers mixed-type dtype warnings—keep an eye on columns that blend strings and numbers when downstream scripts read the file.
+- Missingness profiling (analysis/scoping_qc.py:63) shows several completely empty columns (e.g., `sexscore`, `prov_themes`, `total`, `pts_fdv`) plus abuse-detail items with 60–80% gaps, while basic covariates like siblings, lifetime sexual partners, and homeschooling indicators sit under 1%, so those can anchor initial models.
+- Age and gender proxies are well populated: mean age ≈ 30.4 (SD ≈ 10.2) with the `biomale`/`gendermale` indicators around 0.57–0.59 prevalence (analysis/scoping_qc.py:71/75), and height/weight are complete enough for summary purposes (analysis/scoping_qc.py:79).
+- Reliability checks using the adult-positivity items listed at analysis/scoping_qc.py:83 and the feeling-loved items at analysis/scoping_qc.py:94 give Cronbach’s alpha/omega ≈ 0.73/0.74 and 0.96/0.96, respectively (analysis/scoping_qc.py:100–110), so both scales are psychometrically coherent for now.
+
+**Next Steps**
+- 1. Move into the literature/phase to ground the adult positivity and feeling-loved constructs in existing theory and ensure the planned hypotheses respect the measures’ content and the available data quality.
+- 2. Draft the PAP (prep for the next phase) around these scales plus the low-missingness covariates, noting the high missingness on abuse-detail items and the dtype issues so any deviations are justified.
