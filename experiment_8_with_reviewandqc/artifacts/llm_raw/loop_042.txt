@@ -1,0 +1,10 @@
+# 2025-11-19T13:28:25.179420+00:00
+**Scoping Update**
+- Ran `analysis/scoping_qc.py` to capture dataset shape, missingness patterns, baseline demographics, and reliability for two candidate scales, so the scoping loop has concrete numbers for the PAP (analysis/scoping_qc.py:54-110).
+- The file contains 14,443 respondents × 718 variables with ~661 numeric columns; age centers on ~30.4 years, height ≈ 68.4 in, weight ≈ 172.97 lbs, and binary gender proxies show ~59% male responses—good anchors for covariates (analysis/scoping_qc.py:58-81,71-80).
+- Missing data is uneven: 20 columns are entirely empty, ~15 columns span 60–80% gaps (many trauma indicators), while only a handful of baseline covariates have <1% NA; these patterns will need explicit handling in the PAP (analysis/scoping_qc.py:63-69).
+- Reliability looks acceptable for the sampled constructs: the adult positivity composite yields α=0.729 and ω=0.739 (n=14,051), and the feeling-loved measure is very tight with α=ω=0.961 (n=14,431) (analysis/scoping_qc.py:83-110). Additional scales should be vetted once the theory narrows.
+
+Next steps:
+1. Extend the reliability/security checks to any additional scales we might target for the PAP, especially if they share high missingness or mixed response formats.
+2. Draft the PAP outlining the focal hypotheses, variable handling (including imputation vs. listwise decisions), and modeling approach so we can freeze the analysis plan before moving to the next loop.
