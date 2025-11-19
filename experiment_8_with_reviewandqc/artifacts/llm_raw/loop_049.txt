@@ -1,0 +1,9 @@
+# 2025-11-19T13:37:29.070962+00:00
+**Scoping Findings**
+- Ran the reusable QC script in `analysis/scoping_qc.py:54` to capture structure, missingness, and scale reliability; it confirms 14,443 rows × 718 columns with 661 numeric and 57 object features and warns about a mixed-type column that already shows up in the pandas dtype warning.
+- Missingness is concentrated in sensitive modules (many sexual-abuse and related follow-up items exceed 60–80% missing, with ~20 columns at or near 100%), whereas baseline covariates such as sibling count, prior sexual partners, homeschooled indicators, and parental divorce have <1% missing, so they remain viable for covariate adjustment.
+- Reliability checks for the adult-positivity scale (8 items) yield Cronbach’s α = 0.729 and McDonald’s ω = 0.739 (n ≈ 14,051), while the three-item feeling-loved scale is exceptionally strong with α = ω = 0.961 (n = 14,431); these values support proceeding with those composites after any necessary recoding.
+
+**Next Steps**
+1. Review relevant literature to ground hypotheses about how the adult positivity and feeling-loved constructs relate to key outcomes in this cohort, explicitly noting any existing psychometric caveats.
+2. Draft the Pre-Analysis Plan outlining proposed models, primary/composite measures, and diagnostics so we stay transparent before running confirmatory analyses.
