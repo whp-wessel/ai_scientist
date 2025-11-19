@@ -1,0 +1,10 @@
+# 2025-11-19T13:51:18.832054+00:00
+**Scoping Summary**
+- `childhoodbalancedpublic_original.csv` now confirmed to have 14,443 rows and 718 columns, with the bundled `analysis/scoping_qc.py` script computing data type counts plus the distributions you need for this phase (see `analysis/scoping_qc.py:54-82`).
+- The script found ≈20 columns that are entirely empty (e.g., `sexscore`, `prov_themes`, related `_YN`/`_other` fields) and another block of 60–80% missingness in the sexual-abuse follow-up items, while baseline covariates such as siblings, sexual partners, and parental divorce have <1% missingness (`analysis/scoping_qc.py:63-69`).
+- Age peaks around 30 ±10 years old, gender proxies (biomale/gendermale) hover around 57–59%, and height/weight look reasonable (height mean ≈68 in, weight ≈173 lbs) so the core demographics are well populated for modeling (`analysis/scoping_qc.py:71-82`).
+- Reliability checks on the adult positivity scale (8 items) yielded α≈0.729/ω≈0.739 (n≈14,051), while the feeling-loved scale (3 retrospective items) delivered α=ω≈0.961 with complete data for 14,431 participants—both acceptable for continuing measurement work (`analysis/scoping_qc.py:83-110`).
+
+**Next Steps**
+- Start the literature phase by mapping the available constructs to prior work and identifying the most promising hypotheses tied to those reliable scales.
+- Draft the pre-analysis plan (PAP) that fixes the primary outcomes, covariates, and modeling strategy before running any confirmatory models, per the PI protocol.
