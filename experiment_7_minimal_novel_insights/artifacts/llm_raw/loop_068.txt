@@ -1,0 +1,10 @@
+# 2025-11-19T11:50:07.715716+00:00
+**Release Summary**
+- Delivered the compiled Tectonic manuscript (`papers/purity_support_paper.pdf`) whose LaTeX source (see `papers/purity_support_paper.tex:95`) narrates the 14,400-case analytic sample, the counterintuitive parental support × purity penalty, and the preregistered sensitivity/monogamy story.
+- The Results section (`papers/purity_support_paper.tex:107` for Hypothesis 1, `papers/purity_support_paper.tex:163` for the monogamy moderation, and `papers/purity_support_paper.tex:197` for the sensitivity checks) records the negative purity×support interactions (β≈−0.04, d≈−0.02), margins, and alternative slices with confidence intervals so readers can gauge effect sizes and uncertainty.
+- Discussion and limitations re-emphasize the modest effect size while challenging the buffering narrative and flagging the cross-sectional design plus measurement/heterogeneity gaps for future work (`papers/purity_support_paper.tex:207`, `papers/purity_support_paper.tex:212`).
+- Reproducibility is documented through the analysis pipeline that prepares and centers the sample (`analysis/analysis_pipeline.py:171`), the sensitivity script that produces the registered tables (`analysis/sensitivity_analysis.py:1`), the frozen pre-analysis plan (`analysis/pre_analysis_plan.md:1`), and the Reproducibility section that catalogs these assets (`papers/purity_support_paper.tex:220`).
+
+Next steps:
+1. Submit the compiled `papers/purity_support_paper.pdf` plus the reproducibility folder to interested collaborators or a top-tier social-science venue.
+2. Build on the limitations (e.g., evaluation of doctrinal specificity and gender-minority heterogeneity at `papers/purity_support_paper.tex:214`) by collecting follow-up data that teases apart supportive versus enforcing parental behaviors and religious-identity variation.
