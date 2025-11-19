@@ -1,0 +1,8 @@
+# 2025-11-19T13:29:25.710115+00:00
+**Scoping Update**
+- `analysis/scoping_qc.py:54` confirms the dataset is 14,443 rows × 718 columns with 661 numeric and 57 object fields; the repeated dtype warning hints that some question responses mix strings and numbers, so future scripts should coerce or clean those columns before modeling.
+- `analysis/scoping_qc.py:63` shows 307 columns have >70% missingness (263 >90%), while a handful of demographics (age, gender proxies, height, weight, schooling, and family-history items) have <1% missing, so downstream analyses should focus on well-populated measures and treat the heavily missing abuse-specific columns as unusable without strong imputation justification.
+- `analysis/scoping_qc.py:83`–110 documents that the eight-item adult positivity composite (α≈0.729, ω≈0.739, N≈14,051) and the three-item feeling-loved set (α≈ω≈0.961, N≈14,431) are psychometrically sound for further modeling.
+
+Next steps:
+1. Begin assembling the literature review and theory-based hypotheses that can be tested with the reliable composites identified here, noting any limitations imposed by the missingness profile.
