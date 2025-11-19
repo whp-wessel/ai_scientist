@@ -1,0 +1,12 @@
+# 2025-11-19T07:53:56.568705+00:00
+Pre-analysis documentation now explicitly ties each hypothesis to peer-reviewed literature so the PAP stays rigorous and frozen while we transition into the analysis phase.
+
+**Documentation**
+- Added a `Literature & Theory` section that cites the purity-culture scale work (Klement et al. 2022) plus the parental warmth buffering (Franck & Buehler 2007; Zheng & McMahon 2019), gender-minority stress in faith contexts (Skidmore et al. 2022; Lekwauwa et al. 2022), and Ryan et al. 2009, making the theoretical grounding transparent before modeling (analysis/pre_analysis_plan.md:11).
+- Updated Hypotheses 1 and 2 so they directly reference those sources while keeping the document marked as frozen, ensuring each hypothesis now carries explicit scholarly grounding (analysis/pre_analysis_plan.md:17).
+
+**Next Steps**
+1. Run `analysis/analysis_pipeline.py` to regenerate `outputs/sample_summary.json`, `tables/regression_results.csv`, and the marginal self-love figure so the analytic artifacts match the updated PAP.
+2. Begin the analysis phase by reviewing the new outputs, examining interaction coefficients/uncertainty, and preparing the tables/figures needed for writing.
+
+Testing: not run (not requested).
