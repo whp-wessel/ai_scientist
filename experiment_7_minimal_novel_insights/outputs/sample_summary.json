@@ -1,0 +1,18 @@
+{
+  "analytic_n": 14400,
+  "gender_minority_n": 1196,
+  "gender_minority_pct": 8.305555555555555,
+  "self_love_mean": 0.61625,
+  "self_love_sd": 1.8607954552744068,
+  "romantic_satisfaction_mean": 0.07138888888888889,
+  "romantic_satisfaction_sd": 2.2297792637667344,
+  "anxiety_mean": -0.8285416666666666,
+  "anxiety_sd": 2.029979990900353,
+  "purity0_z_mean": 3.454027187722709e-17,
+  "purity0_z_sd": 1.000034724030776,
+  "purity13_z_mean": -1.973729821555834e-17,
+  "purity13_z_sd": 1.000034724030776,
+  "parent_support_z_mean": -1.4802973661668754e-17,
+  "parent_support_z_sd": 1.000034724030776,
+  "parent_support_reliability": 0.5625440842895345
+}

@@ -1,0 +1,11 @@
+# 2025-11-19T07:36:31.784200+00:00
+Engineered a reproducible analysis pipeline that reads the curated survey columns, encodes the purity/support variables, builds the analytic sample, and runs the registered Hypothesis 1/2 OLS models while saving figure, table, and sample summaries (`analysis/analysis_pipeline.py:23`, `analysis/analysis_pipeline.py:157`, `analysis/analysis_pipeline.py:271`).  
+
+- `analysis/analysis_pipeline.py:23` defines the precise subset of survey fields and the mappings (religion practice/importance, parental support, gender identities) so every run starts from the same raw CSV; `analysis/analysis_pipeline.py:157`–`analysis/analysis_pipeline.py:200` show how those fields are cleaned, standardized, and interacted to power the regressions.  
+- The pipeline logs the trimmed analytic cohort (14,400 respondents with 1,196 gender-minority cases and a parental-support “reliability” of ~0.56) in `outputs/sample_summary.json:2`/`outputs/sample_summary.json:3`/`outputs/sample_summary.json:17`.  
+- Regression estimates are consolidated at `tables/regression_results.csv:3`–`tables/regression_results.csv:37` (see, e.g., parental support boosting self-love and romantic satisfaction with small positive Cohen’s d, and the purity×support interaction weakening those benefits when adolescent purity messaging was high). Gender-minority status remains a strong negative predictor of self-love/anxiety but does not systematically amplify purity penalties (`tables/regression_results.csv:16`, `tables/regression_results.csv:32`, `tables/regression_results.csv:36`).  
+- The parental-support × purity interaction margins plotted in `figures/marginal_self_love.png` visualize how high purity exposure flattens the support→self-love slope.  
+
+Next steps:  
+1. Re-run the pipeline on the non-religious subsample and with the extra trauma controls listed in the plan to complete the sensitivity phase before writing.  
+2. Once those checks are in place, begin drafting the LaTeX paper and incorporate the tables/figures produced here.
