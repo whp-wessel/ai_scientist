@@ -1,0 +1,9 @@
+# 2025-11-19T12:51:18.677686+00:00
+**Scoping Update**
+- The `childhoodbalancedpublic_original.csv` data cover 14,443 respondents and 718 columns; there is a dtype warning because a handful of columns mix numeric/string entries, but the main demographics (age mean 30.4, SD 10.2; height ≈68", weight ≈173 lb; biomale ≈0.59, gendermale ≈0.57) show plausible distributions when inspected via `analysis/scoping_qc.py`.
+- Missingness is widespread: 357 columns exceed 10% missing, trauma follow-ups (e.g., several sexual-abuse fear/pain items across ages 0–18) are 60–78% empty, and birth-order/sibling-sex items hover around 17–20% missing, while core covariates like sibling count and number of sex partners stay below 1% missing; this pattern will shape which variables are viable as predictors or controls.
+- Measurement reliability from `analysis/scoping_qc.py`: the eight-item adult positivity scale yields Cronbach’s α=0.729 (n=14,051) and ω=0.739—adequate but indicative of some heterogeneity—while the three-item feeling-loved scale is highly consistent (α=ω=0.961, n=14,431).
+
+**Next Steps**
+- Begin the literature/hypotheses phase by mapping these constructs to theory, flagging the most reliable scales, and noting where high missingness constrains inference.
+- Draft the pre-analysis plan, explicitly stating missing-data strategies, scale scoring, and how the identified constructs will be tested in the upcoming analysis phase.
