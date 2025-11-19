@@ -1,0 +1,9 @@
+# 2025-11-19T13:05:10.393951+00:00
+**Loop 23 Scoping**
+- Ran the existing scoping script to capture the dataset profile: 14,443 respondents × 718 variables, 661 numeric/57 object types, ages 18–75 (M≈30.4, SD≈10.2), and a gender mix around 59% biomale / 57% gendermale. Height (M≈68.4 in, SD≈4.1) and weight (M≈173 lb, SD≈48) sit in believable ranges, so basic demographics look sensible for further modeling.
+- Missingness is concentrated in a handful of items: ~20 columns are entirely empty and abuse-related items (e.g., later-life fear/pain questions) hover near 73–78% missing, whereas foundational covariates like number of siblings, sexual partners, homeschooling, and parental divorce have <1% missing. This suggests careful case-wise handling when those high-missing abuse items are in scope.
+- Psychometric checks on the “adult positivity” set of eight items produced α=0.729/ω=0.739 (n≈14,051 complete), while the three “feeling loved” items delivered very high reliability (α=ω=0.961 with all 14,431 cases). These scales appear suitable for composite scoring under single-factor assumptions, but any future selection should continue to re-evaluate their structure.
+
+Suggestions for next steps:
+1. Move into the “literature & hypothesis” phase by identifying theoretical anchors for the reliable scales and confirming whether the high-missing abuse items align with any planned contrasts (or should be excluded or redefined).
+2. Draft a preliminary PAP that lists the key constructs, decision rules for handling the sparse abuse-related responses, and the planned analytic models so that execution stays transparent and reproducible.
