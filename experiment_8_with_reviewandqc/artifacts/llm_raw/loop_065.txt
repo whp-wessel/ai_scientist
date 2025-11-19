@@ -1,0 +1,11 @@
+# 2025-11-19T13:57:54.779637+00:00
+**Scoping Update**
+- `childhoodbalancedpublic_original.csv` holds 14,443 observations across 718 columns; 57 come in as object-typed (mostly categorical demographics/religiosity) and at least one column triggered a mixed-type import warning, so we should revisit dtype enforcement when refining the analytic dataset. Key demographics look reasonable (age M=30.4, height ~68 in, weight ~173 lbs, net worth centered on “2” with a −3..6 range, siblings median=1), so the core sample seems broad enough for further modeling.
+- Missingness is concentrated in a handful of entirely empty fields (e.g., `sexscore`, `prov_themes`, `eol_*`, `pts_fdv`, etc.), and more generally 334 columns exceed 50% missingness; the remaining temporal/demographic/psychometric variables are almost fully observed, so we can drop or carefully document the sparse fields while keeping the dense measures for hypothesis testing.
+
+**Reliability Evidence**
+- Eleven adult well-being items (anxiety, calm/peacefulness, self-love, relationship/work satisfaction, stress sensitivity, appearance, energy, depression, worry) yield Cronbach’s alpha = 0.855 on the 14,435 complete cases, giving us a reliable composite to anchor outcome modeling in the next phase.
+
+Next steps:
+1. Review relevant literature to ground the composite well-being outcome and related childhood exposures in falsifiable hypotheses (theory/hypothesis phase).
+2. Draft a pre-analysis plan that specifies the predictors, controls, and modeling strategy tied to that composite before running the final models (PAP phase).
