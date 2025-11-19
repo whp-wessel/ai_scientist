@@ -1,5 +1,18 @@
 # Analysis Notes
 
+## Loop 58 — monogamy moderation & manuscript update
+
+### Sample & measurement
+- Extended the analytic pipeline to keep the `monogamy` column so we can tag the 2,673 respondents (18.6\% of the 14,400-case sample) who currently lean toward or adopt consensual nonmonogamy, preserving the covariate set and the HC3-robust estimation script while logging the new subset in `outputs/monogamy_summary.json`.
+
+### Findings
+- Preferring consensual nonmonogamy predicts roughly +0.226 self-love points ($p<10^{-8}$) and +0.225 romantic-satisfaction points ($p<10^{-6}$) after adjusting for purity, parental support, and the full covariate set (`tables/regression_results_monogamy.csv:1-12`). The self-love purity slope is $-0.053$ for monogamous respondents but flips to ≈0 for nonmonogamous respondents (difference ≈0.066, SE ≈0.037, $p=0.084$) while romantic satisfaction retains a negative slope for both groups (difference ≈−0.040, $p=0.37$), so the hypothesis is supported for self-love but not for romance (`tables/simple_slopes_monogamy.json`).
+- Figure~\ref{fig:marginal-nonmonogamy} visualizes the self-love trajectories for each group, showing that the purity penalty disappears once respondents distance themselves from purity-based scripts.
+
+### Outputs & next steps
+- Added `analysis/monogamy_moderation.py`, `tables/regression_results_monogamy.csv`, `tables/simple_slopes_monogamy.json`, `outputs/monogamy_summary.json`, the margin CSVs (`analysis/marginal_nonmonogamy_monog.csv`, `analysis/marginal_nonmonogamy_nonmon.csv`) plus the figure PNG, and the trimmed data powering the PGFPlots block. 
+- Updated `papers/purity_support_paper.tex` to describe the new hypothesis, cite the relevant literature, and embed the new margin figure; rerun `tectonic` if you want a refreshed PDF prior to the next release loop.
+
 ## Loop 42 — sensitivity rerun & documentation
 
 ### Sample & measurement

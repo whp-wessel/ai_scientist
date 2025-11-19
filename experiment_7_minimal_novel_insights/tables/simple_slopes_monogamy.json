@@ -1,0 +1,56 @@
+{
+  "self_love": {
+    "purity_at_monogamy": {
+      "slope": -0.05306354043073666,
+      "se": 0.0345619722417334
+    },
+    "purity_at_nonmonogamy": {
+      "slope": 0.01251411525512805,
+      "se": 0.045649758916277594
+    },
+    "nonmon_pref_at_low_purity": {
+      "slope": 0.16074564240209044,
+      "se": 0.05395793827661088
+    },
+    "nonmon_pref_at_high_purity": {
+      "slope": 0.29190095377381986,
+      "se": 0.0540156286071079
+    }
+  },
+  "romantic_satisfaction": {
+    "purity_at_monogamy": {
+      "slope": -0.10302488146196889,
+      "se": 0.04347685685991433
+    },
+    "purity_at_nonmonogamy": {
+      "slope": -0.14312832099393424,
+      "se": 0.0547114442869604
+    },
+    "nonmon_pref_at_low_purity": {
+      "slope": 0.26537355291404235,
+      "se": 0.062643238921057
+    },
+    "nonmon_pref_at_high_purity": {
+      "slope": 0.18516667385011168,
+      "se": 0.06321978342779415
+    }
+  },
+  "anxiety": {
+    "purity_at_monogamy": {
+      "slope": 0.040972834706319225,
+      "se": 0.03547245585505181
+    },
+    "purity_at_nonmonogamy": {
+      "slope": 0.05063763981560793,
+      "se": 0.0471657086797537
+    },
+    "nonmon_pref_at_low_purity": {
+      "slope": 0.13975407176807778,
+      "se": 0.05558009471944527
+    },
+    "nonmon_pref_at_high_purity": {
+      "slope": 0.1590836819866552,
+      "se": 0.053806020785229725
+    }
+  }
+}

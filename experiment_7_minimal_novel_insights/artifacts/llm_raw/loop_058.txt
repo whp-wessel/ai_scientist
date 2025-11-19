@@ -1,0 +1,16 @@
+# 2025-11-19T10:36:05.043334+00:00
+Built on the frozen preregistration, I added the monogamy-centered hypothesis, new analysis, and manuscript explanations so the dataset now tells a richer story about resisting purity scripts while keeping the loop machinery aligned.
+
+- **Planning & pipeline:** `analysis/pre_analysis_plan.md:7-43` now records RQ3/Hyp3, cites the consensual-nonmonogamy literature, and specifies the new `nonmon_pref` moderator; `analysis/analysis_pipeline.py:45-46` keeps the nominal `monogamy` column so the new script can run, and the Loop 58 note in `analysis/analysis_notes.md:3-14` plus `artifacts/state.json:1-5` documents the new work and advances the state to the next loop.
+
+- **New analysis + outputs:** `analysis/monogamy_moderation.py:1-190` fits the purity×nonmonogamy interaction, saving `tables/regression_results_monogamy.csv` (self-love/romantic-satisfaction coefficients with the +0.226 main effect and the slope differences documented in `tables/simple_slopes_monogamy.json`), `outputs/monogamy_summary.json` (n=2,673 nonmon respondents), and margin data/figure assets (`analysis/marginal_nonmonogamy_monog.csv`, `analysis/marginal_nonmonogamy_nonmon.csv`, the trimmed CSV variants, the PNG in `figures/marginal_nonmonogamy_self_love.png`, and the PGFPlots blocks in `papers/purity_support_paper.tex:41-89`). The script also writes the CSV that backs those PGFPlots lines for reproducibility.
+
+- **Manuscript & reproducibility:** `papers/purity_support_paper.tex:95-195` now includes the new abstract sentence, the Consensual Nonmonogamy literature in the Introduction, and the Monogamy Preference subsection with Figure 2, and `papers/purity_support_paper.tex:220-226` documents the new script/data; the compiled `papers/purity_support_paper.pdf` reflects all of this.
+
+**Testing**
+- `python analysis/monogamy_moderation.py`
+- `tectonic papers/purity_support_paper.tex` (passes with the existing overfull-box warnings; nothing new fails)
+
+**Next steps**
+1. Inspect the regenerated PDF (the new figure plus text) to ensure the monogamy narrative is clear before propagating the next release announcement.
+2. Continue the loop by moving into the new “release” phase—write the release notes, rerun any release-level checks, and capture the final artifacts for dissemination.

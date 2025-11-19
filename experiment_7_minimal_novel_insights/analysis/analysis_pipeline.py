@@ -42,6 +42,8 @@ REQUIRED_COLUMNS = [
     "Do you *currently* actively practice a religion? (902tbll)",
     "In your childhood, how important was adherence to the religion? For example: tithing, praying, attending church, having a righteous heart, etc. (xvlgpp5)",
     "externalreligion",
+    "Your current monogamy/nonmonogamy preference? (27iua3o)",
+    "monogamy",
     "during ages *0-12*:  Parents divorcing/separating (jib24si)",
     "during ages *13-18*:  Parents divorcing/separating (o47i7yr)",
     "during ages *0-12*: your parents verbally or emotionally abused you (mds78zu)",
