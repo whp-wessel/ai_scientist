@@ -1,0 +1,10 @@
+# 2025-11-19T13:50:25.477763+00:00
+Scoping iteration 60: ran `analysis/scoping_qc.py` to audit `childhoodbalancedpublic_original.csv`, so we now have baseline structure, distributions, and reliability for the phase guidance requirements.
+
+- Dataset: 14,443 respondents × 718 columns (661 numeric, 57 object); mean age ~30 (18–75) and binary gender proxies show ~57–59% coded as male.
+- Missingness: ~20 columns (e.g., `sexscore`, `total`, `eol_*`) are entirely empty, and another ~15 Columns (e.g., detailed abuse follow-ups, current religion, attachment style) hover around 60–80% missing, while basics like “siblings,” “sexual partners,” homeschooling, and parents’ divorce have ≤1% missingness.
+- Reliability: Adult positivity items give Cronbach’s α = .729 (n=14,051) and McDonald’s ω = .739; the feeling-loved items hold α = .961 and ω = .961 (n=14,431), indicating acceptable-to-excellent internal consistency for these constructs.
+
+Next logical steps:
+1. Review relevant literature and finalize specific hypotheses that leverage reliable constructs (e.g., adult positivity, feeling-loved) while accounting for the noted missingness patterns.
+2. Draft a Pre-Analysis Plan detailing the models, covariates, and handling of missing or sparse indicators before proceeding with execution.
