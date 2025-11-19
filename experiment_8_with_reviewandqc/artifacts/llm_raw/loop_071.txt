@@ -1,0 +1,6 @@
+# 2025-11-19T14:06:43.330408+00:00
+**Scoping Update**
+- Completed dataset inspection; childhoodbalancedpublic has 14,443 rows by 718 columns, 44.6% of cells missing, 334 columns with >50% missingness, and 251 entirely empty, while key baseline covariates such as siblings and homeschools have <1% missingness—some of the trauma follow-up items are almost entirely empty, so we’ll need to be selective about which constructs we model (analysis/scoping_qc.py:58-69).
+- Age centers around 30.4 years (range 18–75), height ≈68.4 inches, weight ≈173 lbs, and binary gender proxies hover near 0.57, so those distributions are plausible and mostly complete (analysis/scoping_qc.py:71-81).
+- The two scripted scales show acceptable consistency: the 8-item adult positivity scale has α=0.729/ω=0.739 with 14,051 complete cases, and the 3-item feeling-loved scale has α=ω=0.961 with 14,431 cases, which supports using them as primary constructs while noting the cross-sectional limitations (analysis/scoping_qc.py:83-110).
+- Next steps: 1) flesh out the theoretical framing and literature to pre-register falsifiable hypotheses; 2) extend the PAP to cover any other scales whose reliability or missingness still needs clarification before modeling.
