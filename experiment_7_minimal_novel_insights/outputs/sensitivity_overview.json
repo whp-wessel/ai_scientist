@@ -3,7 +3,8 @@
   "current_religion_n": 4469,
   "trauma_controls_n": 14400,
   "unconditional_love_controls_n": 14400,
+  "trimmed_purity_support_n": 13735,
   "trans_n": 295,
   "nonbinary_n": 901,
-  "notes": "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for the registered slices, plus component-based models, religiosity-interaction tests, a parent-support \u00d7 purity \u00d7 gender-minority robustness check, and a version that controls for unconditional-love memories in both childhood windows."
+  "notes": "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for the registered slices, plus component-based models, religiosity-interaction tests, a parent-support \u00d7 purity \u00d7 gender-minority robustness check, a trimmed-purity-support sample (5th\u201395th percentiles) to guard against leverage, and a version that controls for unconditional-love memories in both childhood windows."
 }

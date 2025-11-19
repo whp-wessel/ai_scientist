@@ -1,0 +1,11 @@
+# 2025-11-19T09:51:06.529112+00:00
+- Added a trimmed 5th–95th percentile purity/support slice to `analysis/sensitivity_analysis.py:247` so the negative `purity13×support` interaction holds even when the tails are removed, and exported the coefficients for citation in `tables/regression_results_trimmed_purity_support.csv:1` (self-love interaction β≈-0.043, p≈0.0065; romantic-satisfaction interaction β≈-0.041, p≈0.035 while support stays positive).
+- Logged the trimmed scenario in `analysis/analysis_notes.md:183` and stored its sample count (n=13,735) in `outputs/sensitivity_overview.json:6`, noting that gender-minority interactions remain null and that the robustness trio now includes the trimmed extremes check.
+- Advanced the experiment state to loop 48/writing in `artifacts/state.json:1` so the next iteration can focus on manuscript polish and release prep.
+
+Testing
+- `python analysis/sensitivity_analysis.py`
+
+Next steps
+1. Describe the trimmed-sample robustness check (and cite `tables/regression_results_trimmed_purity_support.csv:1`) in the draft’s sensitivity discussion, ensuring the narrative explains why dropping the tails keeps the counterintuitive interaction intact.
+2. Recompile `papers/purity_support_paper.tex` with Tectonic so the updated sensitivity story and figures render cleanly before the release phase.

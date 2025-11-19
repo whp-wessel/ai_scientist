@@ -179,3 +179,17 @@
 ### Outputs & next steps
 - `analysis/sensitivity_analysis.py` now records the unconditional-love-controlled tables and updates `outputs/sensitivity_overview.json`, so the new table is reproducible and ready to cite in the robustness narrative.
 - With every registered sensitivity slice archived we can proceed into the writing phase for narrative polish and then move toward release preparations (tectonic build, final QC).
+
+## Loop 48 — trimmed purity-support sample
+
+### Sample & measurement
+- Trimming both `parent_support_z` and `purity13_z` to their 5th–95th percentiles yields n=13,735 cases (`outputs/sensitivity_overview.json:5`), ensuring no single respondent drives the interaction through extreme recall while still covering the vast majority of the analytic distribution.
+
+### Findings
+- Self-love keeps the positive parental-support main effect (β≈0.192, p<10⁻²⁴) while the purity13×support interaction remains negative (β≈-0.043, p≈0.0065), so the steepening does not hinge on tails (`tables/regression_results_trimmed_purity_support.csv:1-6`).
+- Romantic satisfaction mirrors the counterintuitive pattern (support β≈0.172, p<10⁻¹³; interaction β≈-0.041, p≈0.035) and anxiety stays null for both the interaction and the support slope, matching the unrestricted sample.
+- Gender-minority interactions in this sample stay statistically indistinguishable from zero (all purity×gender_minority terms p>0.23), so the trimmed slice retains the null moderation story.
+
+### Outputs & next steps
+- `tables/regression_results_trimmed_purity_support.csv` archives the trimmed coefficients, and the overview JSON now records every slice.
+- With the newly added stability check complete we have the full sensitivity trio (religion slices, trauma controls, unconditional love, trimmed extremes) ready to cite and can move into the writing phase and eventual release.

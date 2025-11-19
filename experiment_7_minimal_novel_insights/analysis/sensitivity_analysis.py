@@ -244,6 +244,21 @@ def main() -> None:
     )
     records.clear()
 
+    # 4. Trim extreme purity-support pairs to reduce leverage from the tails.
+    support_lower = df["parent_support_z"].quantile(0.05)
+    support_upper = df["parent_support_z"].quantile(0.95)
+    purity_lower = df["purity13_z"].quantile(0.05)
+    purity_upper = df["purity13_z"].quantile(0.95)
+    trimmed_df = df[
+        df["parent_support_z"].between(support_lower, support_upper)
+        & df["purity13_z"].between(purity_lower, purity_upper)
+    ].copy()
+    overview["trimmed_purity_support_n"] = int(trimmed_df.shape[0])
+    trimmed_records: List[Dict[str, Any]] = []
+    trimmed_records.extend(run_hyp1_parent_support(module, trimmed_df, "trimmed_purity_support"))
+    trimmed_records.extend(run_hyp2_gender_interactions(module, trimmed_df, "trimmed_purity_support"))
+    save_csv(trimmed_records, TABLES_DIR / "regression_results_trimmed_purity_support.csv")
+
     # 2a. Evaluate parental-support components alone.
     component_records = run_hyp1_component_checks(module, df, "support_components")
     save_csv(component_records, TABLES_DIR / "regression_results_parent_support_components.csv")
@@ -281,8 +296,8 @@ def main() -> None:
     overview["notes"] = (
         "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for the registered "
         "slices, plus component-based models, religiosity-interaction tests, a parent-support × purity × "
-        "gender-minority robustness check, and a version that controls for unconditional-love memories in both "
-        "childhood windows."
+        "gender-minority robustness check, a trimmed-purity-support sample (5th–95th percentiles) to guard "
+        "against leverage, and a version that controls for unconditional-love memories in both childhood windows."
     )
     OUTPUT_SUMMARY.write_text(json.dumps(overview, indent=2), encoding="utf-8")
     print("Sensitivity analysis complete. Tables saved under tables/ and outputs/.")
