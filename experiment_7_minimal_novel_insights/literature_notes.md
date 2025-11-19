@@ -4,6 +4,11 @@
 - Outcome anchors such as `I love myself (2l8994l)`, `I am satisfied with my romantic relationships (hp9qz6f)`, and `I tend to suffer from anxiety (npvfh98)-neg` are also continuous and have full coverage from −3 to +3.
 - The dataset also captures adult sexual/relationship preferences (e.g., `monogamy`), current religious practice, and detailed history of childhood sexual abuse, which allows for controls or moderators as needed.
 
+### Descriptive anchor points
+- Purity-culture scores (ages 0–12 and 13–18) and parental warmth/family humor items center near zero with SDs around 2.0–2.4, enabling interpretable one-standard-deviation shifts in messaging or guidance within models.
+- Well-being outcomes like `I love myself`, `I am satisfied with my romantic relationships`, `I tend to suffer from anxiety`, and `I am not happy` sit on comparable −3…+3 scales, keeping effect magnitudes comparable across dependent variables.
+- Gender identity counts show 8,101 cis men and 5,130 cis women alongside about 1,197 transgender or nonbinary respondents, so we can explore whether purity messaging erodes well-being differently for gender minorities.
+
 ## Literature Notes
 - **Religiosity and sexual satisfaction**: Lazar (2023) finds that religious belief moderates ties between sexual dysfunction and satisfaction among observant Jewish adults, suggesting that religious frameworks shape how sexual narratives translate into subjective satisfaction (J. Relig. Health, DOI: `10.1080/13674676.2023.2276105`).
 - **Parental warmth & long-term depression**: Fang, Fosco, and Feinberg (2024) compare enduring vs. revisionist models and show that parental warmth during adolescence predicts lower depression in young adulthood, supporting protective role of warm family relations even as their direct effect attenuates over time (Dev. Psychopathol., DOI: `10.1017/S0954579423001207`).
