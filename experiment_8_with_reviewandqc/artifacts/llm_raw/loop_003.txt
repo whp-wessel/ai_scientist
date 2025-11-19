@@ -1,0 +1,14 @@
+# 2025-11-19T12:30:44.156863+00:00
+Scoping loop 3 wrapped: inspected the survey structure, quantified missingness/distributions, and confirmed a psychometrically reliable distress scale.
+
+**Scoping Findings**
+- Dataset spans 14,443 responses × 718 variables; 131 fields are fully populated but the average variable is 44% missing (median 8.6%), and several metadata columns (e.g., `sexscore`, `prov_themes`, `no_sabe_cnt`, `total`, the `eol_*` fields, `pts_fdv`) are entirely blank, so they cannot be used.
+- Demographics look plausible (age 30.4 ± 10.2 years, range 18–75; political leaning centered near 0 on the −3-to-3 liberal scale; height ~68.4 in, weight ~173 lb), but the provided `mentalillness` field contains only missing values and must be dropped from any planned models.
+- Attitudinal items such as the anxiety, depression, stress, worry, and unhappiness questions vary across the full −3-to-3 Likert span and have almost no missing data (5–6 cases each), so they can serve as reliable endogenous constructs.
+- The distress cluster (anxiety, depression, unhappiness, worry, and stress items) passes the measurement check: Cronbach’s α = 0.852 and McDonald’s ω = 0.855 on n = 14,437 (computed via `factor_analyzer`), so it can be treated as a coherent scale.
+
+**Next Steps**
+- Move into the literature/hypotheses phase by surveying frameworks linking early life context, religiosity, or socioeconomic status to adult emotional distress.
+- Select candidate exposures from the survey (e.g., childhood family environment, current religiosity engagement, net worth, education) and define how they map onto the distress outcome and control set.
+- Draft the Pre-Analysis Plan, detailing variable derivations, modeling strategy (e.g., linear regression with covariates), and how missingness will be handled.
+- Document current constraints (the empty `mentalillness` variable and high-missing metadata fields) so the PAP and subsequent interpretation transparently reflect data limitations.
