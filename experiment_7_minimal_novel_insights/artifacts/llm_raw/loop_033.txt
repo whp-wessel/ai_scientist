@@ -1,0 +1,9 @@
+# 2025-11-19T08:34:14.209717+00:00
+**Loop 33 Analysis**
+- Re-ran `analysis/analysis_pipeline.py` and `analysis/simple_slope_summary.py` to refresh `tables/regression_results.csv`, `tables/simple_slopes.json`, and `figures/marginal_self_love.png`, keeping the analytic sample stable and ensuring the published margins reflect the negative purity×parent-support crossover the models identify.
+- Documented the updated results in `analysis/analysis_notes.md`, covering the sample/reliability context (`analysis/analysis_notes.md:3`), the Hypothesis 1 main/moderation pattern with figure support and simple-slope detail (`analysis/analysis_notes.md:8`), and the lack of a reliable purity×gender-minority interaction (`analysis/analysis_notes.md:14`), so later writing can cite these takeaways directly.
+- Recorded the next-phase reminders about probing the modest parent-support reliability and running the planned sensitivity checks before narrative finalization (`analysis/analysis_notes.md:21`).
+
+Natural next steps:
+1. Execute the planned sensitivity analyses (e.g., separate guidance/humor moderators, check interactions with current religiosity, try alternate covariate sets) to confirm the robustness of the Hypothesis 1 interaction.
+2. Once those robustness checks are stable, begin drafting the sensitivity section of the paper and iteratively build the LateX write-up that will incorporate the updated tables/figures.
