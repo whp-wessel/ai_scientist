@@ -1,0 +1,9 @@
+# 2025-11-19T12:49:51.624630+00:00
+**Scoping Summary**
+- Dataset covers 14,443 responses and 718 variables, with 661 numeric and 57 object columns; `analysis/scoping_qc.py:1` ran the automated QC to capture this structure plus the key distributions (age mean ≈ 30.4, height avg 68 in, weight avg 173 lb).
+- Missingness is substantial for some trauma/religion follow-ups (≈73–78% missing) while key demographic items (siblings, sexual partners, past homeschooling, parental divorce) have ≤1% missingness, so downstream models can anchor on those low-missing covariates.
+- Adult-positivity items show acceptable coherence (Cronbach’s α ≈ 0.729, McDonald’s ω ≈ 0.739) and the “feeling loved” scale is very reliable (α/ω ≈ 0.961); both metrics emerged from the same QC script.
+
+Next steps:
+1. Conduct the literature review phase to ground hypotheses that align with the reliable constructs identified above.
+2. Draft the pre-analysis plan specifying which variables and models will test those hypotheses before returning to the analysis phase.
