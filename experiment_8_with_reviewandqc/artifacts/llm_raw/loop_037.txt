@@ -1,0 +1,9 @@
+# 2025-11-19T13:22:29.653734+00:00
+**Scoping Findings**
+- `childhoodbalancedpublic_original.csv` holds 14,443 respondents across 718 columns (661 numeric, 57 object) and features numerous virtually empty columns (at least 20 with 100% missingness, mostly follow-up/probe text fields), plus another ~15 columns with 60–80% missing values—suggesting those items either were skipped by many or are survey-specific follow-ups (e.g., abuse-related questions).  
+- Age is centered at ~30.4 years (SD ≈ 10.2) with a realistic 18–75 range; height (~68.4″) and weight (~173 lb) distributions look plausible, and the gender proxies (`biomale`, `gendermale`) show ~59%/57% in the male-coded category, indicating some (but not dramatic) disagreement between the two binaries.  
+- The “adult positivity” composite (8 items) yields Cronbach’s α = 0.729 and McDonald’s ω = 0.739 (n ≈ 14,051), while the “feeling loved” composite (3 retrospective items) is very tight (α = ω = 0.961, n = 14,431); both reliability estimates come from the scripted check in `analysis/scoping_qc.py:1` which also reports the composition of each scale.  
+
+Next steps for this loop:
+1. Move into the literature phase to ground these constructs in prior work and identify testable hypotheses.  
+2. Draft and preregister the PAP that specifies which scales/follow-up items will be modeled, given the observed missingness patterns.
