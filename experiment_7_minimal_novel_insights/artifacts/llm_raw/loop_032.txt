@@ -1,0 +1,9 @@
+# 2025-11-19T08:31:33.645313+00:00
+**Analysis Phase**
+- Ran the frozen analyses, captured the narrative in `analysis/analysis_notes.md:1`, saved the analytic summary in `outputs/sample_summary.json:2` (14,400 observations, 8.3 % gender-minority), stored the Hypothesis 1 self-love coefficients in `tables/regression_results.csv:2` (purity main effect) and `tables/regression_results.csv:4` (purity×parent-support interaction), and generated the marginal-plot illustration in `figures/marginal_self_love.png`.
+- Simple slopes show the purity slope is ≈0 at −1 SD of support and ≈−0.08 at +1 SD (`tables/simple_slopes.json:7`/`:11`), while the support slope drops from ≈0.25 to ≈0.17 as purity rises (`tables/simple_slopes.json:17`/`:21`), confirming that parental involvement amplifies the purity penalty for adult self-love.
+- Gender-minority groups have large baseline disadvantages, but the purity×gender-minority interactions remain non-significant (`tables/regression_results.csv:38` for the self-love interaction and `tables/regression_results.csv:56` for the anxiety interaction), and the cis vs. gender-minority slopes/differences in `tables/simple_slopes.json:31`, `tables/simple_slopes.json:40`, `tables/simple_slopes.json:67`, and `tables/simple_slopes.json:112` reinforce that no reliable moderation emerged.
+
+- Tests: `python analysis/analysis_pipeline.py`, `python analysis/simple_slope_summary.py`.
+
+- Next steps: 1) Conduct the planned sensitivity checks for the registered models before advancing; 2) Once sensitivity is complete, move into the writing phase with these updated findings.
