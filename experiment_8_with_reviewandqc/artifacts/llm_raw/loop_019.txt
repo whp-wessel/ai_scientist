@@ -1,0 +1,9 @@
+# 2025-11-19T13:00:07.901547+00:00
+Scoping review confirms the CSV has 14,443 respondents and 718 columns, so the dataset is wide but the key demographics (age mean ≈ 30.4, 59% biomale, mostly U.S./U.K./Canada, very low missingness on age/gender/education) give us a solid backbone for modeling in the next phases (analysis/scoping_qc.py#L54-L81).
+
+- Missingness is extreme in many auxiliary columns (top ~20 are completely empty, and numerous trauma-related prompts sit between 60–80% missing), whereas more general covariates—e.g., sibling count, sexual history, homeschooling, parental divorce—have ≤1% missingness, so baseline controls look reliable while abuse-detail items will need careful gating or imputation strategies (analysis/scoping_qc.py#L63-L70).
+- Reliability: the eight-item “adult positivity” battery yields Cronbach’s α=0.729 and McDonald’s ω=0.739 (n=14,051), while the three-item “feeling-loved” construct is exceptionally coherent, α=ω=0.961 (n=14,431), demonstrating that at least these scales pass the measurement threshold for moving forward (analysis/scoping_qc.py#L83-L110).
+
+Next steps:
+1. Refine the theoretical focus/literature so we can justify targeting these well-measured positivity/love constructs plus whichever trauma exposures survive the missingness review.
+2. Draft the pre-analysis plan with the chosen hypotheses, covariates, and handling rules for sparsely populated abuse items before running final models.
