@@ -1,0 +1,8 @@
+# 2025-11-19T13:40:13.435947+00:00
+**Scoping Update**
+- `childhoodbalancedpublic_original.csv` (14,443 rows × 718 columns) is mostly numeric, with some metadata columns entirely empty (e.g., `sexscore`, `prov_themes`, `total`); the 8 well-being items I inspected have essentially full coverage, and their distributions span the full −3 to +3 Likert range with means near zero, so there aren’t glaring skew/missingness issues for those responses.
+- Reverse-coding the negative-worded items (`I am not happy …`, `I tend to suffer from depression …`, `I’m quite sensitive to stress …`, `I tend to worry about things …`) enabled a positive self-evaluation composite; Cronbach’s α is only ~0.57, while McDonald’s ω is ~0.71, so the latent scale shows moderate uni-dimensionality but weak internal consistency, flagging a measurement-quality concern before committing to any inferential models.
+
+Next steps:
+1. Review the literature (phase “literature”) to anchor which constructs this heterogeneous scale should represent and to determine whether to refine or replace it based on theory/previous factor structures.
+2. Freeze a pre-analysis plan (phase “pap”) that either narrows focus to the reliable subset of items or specifies how to treat the lower-reliability composite in hypotheses/models.
