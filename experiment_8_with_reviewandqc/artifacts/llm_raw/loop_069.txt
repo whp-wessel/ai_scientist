@@ -1,0 +1,11 @@
+# 2025-11-19T14:04:46.659338+00:00
+Scoping loop 69 completes dataset QC by running `analysis/scoping_qc.py`, capturing the structure, distribution, missingness, and reliability metrics per protocol.
+
+- Dataset QC shows 14,443 rows × 718 columns (661 numeric, 57 object) with ~44.6% average missingness; the dtype warning comes from mixed-type columns. (analysis/scoping_qc.py:58-69)
+- Twenty columns (e.g., `sexscore`, `prov_themes`, `eol_answer_*`, `pts_fdv`) are entirely empty and 15+ others have 60–80% missingness, while baseline covariates like siblings, lifetime sex partners, homeschooling, and parental divorce are ≥99% complete, so those can safely anchor analyses. (analysis/scoping_qc.py:63-69)
+- Distributions look sensible: both age fields average ~30.4 (sd≈10.17), height ~68.4 in, weight ~173 lb, and the gender proxies report ≈57% male prevalence. (analysis/scoping_qc.py:71-81)
+- Reliability checks on the adult positivity scale (8 items) yield α=0.729 and ω=0.739 with n≈14,051, and the feeling-loved scale (3 items) yields α=ω=0.961, meaning both constructs show acceptable internal consistency for use in later models. (analysis/scoping_qc.py:83-110)
+
+- **Next steps:** 1. Conduct the literature review to ground falsifiable hypotheses around the reliable constructs identified here and to contextualize the high-missingness items before deciding whether to include them; 2. Draft and freeze the pre-analysis plan (phase 3) so that variable selection, handling of missing data, and model specifications are registered before moving to execution.
+
+Loop 69 of 75 ends with scoping complete and readiness to transition to the “literature” phase.
