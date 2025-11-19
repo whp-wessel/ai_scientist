@@ -1,0 +1,10 @@
+# 2025-11-19T08:09:13.474165+00:00
+Extended the analysis pipeline so the prep step now standardizes the guidance/humor items and builds their interactions alongside the composite support term before rerunning the models (analysis/analysis_pipeline.py:188) and the new `hyp1_model_configs` helper plus updated Hyp2 base now execute the composite, guidance, and humor specifications while controlling for the gender-category dummies (analysis/analysis_pipeline.py:263), yielding refreshed regression tables and the marginal-self-love figure.
+
+- Analytic coverage remains robust: 14,400 respondents with 1,196 gender-minority cases (8.3%) and a parent-support composite reliability of 0.56, as captured in `outputs/sample_summary.json:1`.
+- The parent-support × adolescent purity interaction stays negative for self-love (coef −0.040, Cohen’s d ≈ −0.022 at `tables/regression_results.csv:4`) and romantic satisfaction (−0.0376 at `tables/regression_results.csv:16`), guidance drives the same pattern (−0.0548 at `tables/regression_results.csv:8` and −0.0347 at `tables/regression_results.csv:20`), while the humor item yields weaker moderation (see `tables/regression_results.csv:12` and `tables/regression_results.csv:24`); the corresponding predicted-self-love margins are plotted in `figures/marginal_self_love.png`.
+- Hypothesis 2 remains unsupported: the gender-minority main effect on self-love deepens once gender dummies are included (−0.3376 at `tables/regression_results.csv:40`) but the purity×gender interactions stay non-significant (`tables/regression_results.csv:41` for the 13–18 window and `tables/regression_results.csv:57` for anxiety), even though gender minorities show slightly higher anxiety (0.129 at `tables/regression_results.csv:56`).
+
+Next steps the user may want to take:
+1. Run the sensitivity checks from the PAP (e.g., exclude current religious practitioners and add the childhood emotional-abuse controls) to see if the parenting interactions hold up.
+2. Begin drafting the writing phase by integrating these regression numbers and the `marginal_self_love` figure into the narrative, then move toward the planned sensitivity figures/tables.

@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Iterable, List
+from typing import Iterable, List, Tuple
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -100,7 +100,6 @@ CENTER_COLUMNS = [
     "learning_13_18",
 ]
 
-HYP1_TERMS = ["purity13_z", "parent_support_z", "purity13_support", "purity0_z"]
 HYP2_TERMS = ["purity13_z", "purity0_z", "gender_minority", "purity13_x_gender_minority", "purity0_x_gender_minority"]
 
 
@@ -189,7 +188,11 @@ def prepare_analytic_sample() -> pd.DataFrame:
     df["purity0_z"] = standardize(df["purity_0_12"])
     df["purity13_z"] = standardize(df["purity_13_18"])
     df["parent_support_z"] = standardize(df["parent_support"])
+    df["guidance_z"] = standardize(df["guidance_13_18"])
+    df["family_humor_z"] = standardize(df["family_humor_13_18"])
     df["purity13_support"] = df["purity13_z"] * df["parent_support_z"]
+    df["purity13_guidance"] = df["purity13_z"] * df["guidance_z"]
+    df["purity13_humor"] = df["purity13_z"] * df["family_humor_z"]
     df["purity13_x_gender_minority"] = df["purity13_z"] * df["gender_minority"]
     df["purity0_x_gender_minority"] = df["purity0_z"] * df["gender_minority"]
 
@@ -257,25 +260,44 @@ def summarize_model(
     return states
 
 
-def hyp1_features(df: pd.DataFrame) -> List[str]:
+def hyp1_model_configs(df: pd.DataFrame) -> List[Tuple[str, List[str], List[str]]]:
     covariates = [f"{col}_c" for col in CENTER_COLUMNS]
     gender_dummies = [col for col in df.columns if col.startswith("gender_cat_")]
-    return ["purity13_z", "parent_support_z", "purity13_support", "purity0_z", *covariates, *gender_dummies]
+    base_features = ["purity0_z", *covariates, *gender_dummies]
+    return [
+        (
+            "Hyp1_parent_support",
+            ["purity13_z", "parent_support_z", "purity13_support", *base_features],
+            ["purity13_z", "parent_support_z", "purity13_support", "purity0_z"],
+        ),
+        (
+            "Hyp1_guidance",
+            ["purity13_z", "guidance_z", "purity13_guidance", *base_features],
+            ["purity13_z", "guidance_z", "purity13_guidance", "purity0_z"],
+        ),
+        (
+            "Hyp1_humor",
+            ["purity13_z", "family_humor_z", "purity13_humor", *base_features],
+            ["purity13_z", "family_humor_z", "purity13_humor", "purity0_z"],
+        ),
+    ]
 
 
 def hyp2_base_features(df: pd.DataFrame) -> List[str]:
     covariates = [f"{col}_c" for col in CENTER_COLUMNS]
-    return ["purity13_z", "purity0_z", "gender_minority", *covariates]
+    gender_dummies = [col for col in df.columns if col.startswith("gender_cat_")]
+    return ["purity13_z", "purity0_z", "gender_minority", *covariates, *gender_dummies]
 
 
 def run_hypothesis_models(df: pd.DataFrame) -> List[dict]:
     results_summary: List[dict] = []
-    features_h1 = hyp1_features(df)
+    h1_configs = hyp1_model_configs(df)
     for outcome in ["self_love", "romantic_satisfaction", "anxiety"]:
-        result = run_ols(outcome, features_h1, df)
-        results_summary.extend(summarize_model(result, outcome, "Hyp1_parent_support", HYP1_TERMS, df))
-        if outcome == "self_love":
-            plot_parent_support_margins(df, result, features_h1)
+        for label, features, terms in h1_configs:
+            result = run_ols(outcome, features, df)
+            results_summary.extend(summarize_model(result, outcome, label, terms, df))
+            if label == "Hyp1_parent_support" and outcome == "self_love":
+                plot_parent_support_margins(df, result, features)
 
     features_h2_base = hyp2_base_features(df)
     for outcome in ["self_love", "romantic_satisfaction", "anxiety"]:
