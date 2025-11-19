@@ -1,0 +1,14 @@
+# 2025-11-19T11:48:26.910030+00:00
+- The final manuscript now tells the registered story with a concise abstract, rationale, and methods that highlight the 14,400-case sample, the stability of the parental-support composite, and the HC3-robust modeling strategy (`papers/purity_support_paper.tex:96`, `papers/purity_support_paper.tex:102`, `papers/purity_support_paper.tex:105`). The results table backs the counterintuitive purity × support interaction for self-love and romantic satisfaction and the corresponding marginal plot shows why high support deepens the purity penalty (`papers/purity_support_paper.tex:107`, `papers/purity_support_paper.tex:111`, `papers/purity_support_paper.tex:130`).
+- Gender-minority effects remain null in the registered interactions and the nonmonogamy moderation reveals that preferring consensual nonmonogamy neutralizes the purity cost on self-love, with the corresponding figure showing nearly overlapping slopes for the two preference groups (`papers/purity_support_paper.tex:160`, `papers/purity_support_paper.tex:166`). The sensitivity checks and discussion emphasize the data-driven limitations and open questions, while the reproducibility section names the scripts that produce all tables, figures, and marginal data (`papers/purity_support_paper.tex:197`, `papers/purity_support_paper.tex:207`, `papers/purity_support_paper.tex:220`).
+- Reproduction is turnkey: the analysis pipeline runs the registered Hypothesis 1–2 models and saves the tables/figures (`analysis/analysis_pipeline.py:320`, `analysis/analysis_pipeline.py:402`), the monogamy moderation script powers Hypothesis 3 and the margin data that feed Figure 2 (`analysis/monogamy_moderation.py:51`, `analysis/monogamy_moderation.py:143`), and the sensitivity script archives every robustness slice plus the overview metadata (`analysis/sensitivity_analysis.py:1`). The built PDF now matches the updated TeX and data (`papers/purity_support_paper.pdf`).
+
+Tests
+- `python analysis/analysis_pipeline.py`
+- `python analysis/monogamy_moderation.py`
+- `python analysis/sensitivity_analysis.py` (initial 10 s attempt timed out, reran with extra time and it completed)
+- `tectonic papers/purity_support_paper.tex` (succeeds with only overfull-\hbox warnings at `papers/purity_support_paper.tex:105`, `papers/purity_support_paper.tex:165`, `papers/purity_support_paper.tex:206`, `papers/purity_support_paper.tex:222`)
+
+Next steps
+1. Review the LaTeX paragraphs that triggered the overfull-\hbox warnings and tighten phrasing or allow line breaks so the final typeset output is clean.
+2. Consider a brief qualitative follow-up or targeted survey to unpack why supportive, purity-endorsing parents intensify the purity penalty—this would deepen the novel insight uncovered here.
