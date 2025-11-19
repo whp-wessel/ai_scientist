@@ -24,6 +24,21 @@
 ### Next steps
 - Compile the updated LaTeX draft with Tectonic to ensure the PDF and embedded PGFPlots figure render cleanly before proceeding to the release loop.
 
+## Loop 44 — reproducibility & release prep
+
+### Sample & measurement
+- Rerunning `analysis/analysis_pipeline.py` reconfirmed the analytic cohort (n=14,400; 1,196 gender-minority respondents, 8.3\%; parent-support reliability $\omega \approx 0.563$) documented in `outputs/sample_summary.json:1-18`.
+
+### Findings
+- The parent-support interaction for adolescent purity remains negative for self-love and romantic satisfaction (Hyp1 entries, `tables/regression_results.csv:2-17`), the effect sizes are modest (Cohen's $d \approx -0.02$ per interaction), but the main support slope stays strongly positive, so the counterintuitive moderation persists across both outcomes.
+- Sensitivity slices (no-current-religion, trauma/depression controls, trans and nonbinary gender-minority subsamples) still show null or imprecise purity×support effects, confirming the registered robustness story (`tables/regression_results_no_current_religion.csv:2-13`, `tables/regression_results_with_trauma_controls.csv:2-13`, `tables/gender_minority_subgroups.csv:2-25`).
+- The simple slope data for Figure~\ref{fig:marginal-self-love} remains archived in `analysis/marginal_self_love_data.csv`, ensuring the PGFPlots figure is reproducible from the pipeline outputs.
+
+### Outputs & next steps
+- `analysis/sensitivity_analysis.py` refreshed every diagnostic table and rewrote `outputs/sensitivity_overview.json`, so the narrative bullet list can cite these latest slices.
+- Compiling `papers/purity_support_paper.tex` with Tectonic produced the current PDF (`papers/purity_support_paper.pdf`) and the embedded figure, so the writing phase is locked and the manuscript is ready for release.
+- Next loop: release phase (final dissemination and submission materials).
+
 ## Loop 38 — gender-group heterogeneity of the unconditional-love moderation
 
 ### Sample & measurement

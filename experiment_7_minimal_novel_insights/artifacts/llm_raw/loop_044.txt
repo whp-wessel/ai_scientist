@@ -1,0 +1,14 @@
+# 2025-11-19T09:28:06.351942+00:00
+**Release Summary**
+- Reran `analysis/analysis_pipeline.py` and `analysis/sensitivity_analysis.py`, documented the reproducibility pass in `analysis/analysis_notes.md:27-40`, and saved the refreshed analytic summary (`outputs/sample_summary.json:1-18`) plus the sensitivity overview (`outputs/sensitivity_overview.json:1-6`).
+- Compiled `papers/purity_support_paper.tex:1-150` with Tectonic (the run reported the usual over-/underfull box warnings at lines 62, 108, 116, and 132) so `papers/purity_support_paper.pdf` now captures the written narrative, embedded figure, and citations without external assets.
+
+**Key Findings**
+- Hypothesis 1 still shows a negative purity×support interaction for self-love and romantic satisfaction (self-love `β=-0.040`, romantic `β=-0.0376`, both p<0.04, Cohen’s d ≈ -0.02) alongside a strong positive main slope for support, so higher parental involvement steepens the purity penalty (`tables/regression_results.csv:2-17`).
+- Adolescent anxiety is modestly lower when childhood purity (0–12) is high (`β=-0.1067`, p=0.002) and displays no registered support interaction, indicating the counterintuitive moderation is specific to adolescent outcomes (`tables/regression_results.csv:26-29`).
+- Gender-minority interaction terms remain null while minority status retains large main disadvantages (self-love `β≈-0.34`, anxiety `β≈0.13`), so purity messaging does not systematically worsen well-being for gender minorities in this sample (`tables/regression_results.csv:40-61`).
+- Registered sensitivity slices (no current religion, added trauma/depression controls, trans/nonbinary subsamples) preserve the pattern or widen intervals without overturning it, confirming the robustness story (`tables/regression_results_no_current_religion.csv:2-13`, `tables/regression_results_with_trauma_controls.csv:2-13`, `tables/gender_minority_subgroups.csv:2-25`).
+- The PGFPlots figure uses the embedded margin data in `analysis/marginal_self_love_data.csv:1-22`, so the visual reproduction is fully scripted from the pipeline outputs.
+
+**Next Steps**
+- With the tables, sensitivity diagnostics, and PDF locked, the release phase is complete; please review `papers/purity_support_paper.pdf` and let me know if you’d like further revisions, extra diagnostics, or help packaging the manuscript for submission.
