@@ -1,0 +1,12 @@
+# 2025-11-19T11:39:41.307450+00:00
+Finished the release phase by finalizing the LaTeX manuscript and documenting the reproducible tooling.
+
+**Release Summary**
+- **Paper** The LaTeX manuscript (papers/purity_support_paper.tex:95) lays out the 14,400-case abstract and embeds the PGFPlots margin data (papers/purity_support_paper.tex:134) so the parental-support moderation and visualizations live entirely within the document.
+- **Findings** Discussion (papers/purity_support_paper.tex:207) plus the gender-minority and monogamy subsections (papers/purity_support_paper.tex:160 and papers/purity_support_paper.tex:163) register that higher parental support steepens the adolescent purity penalty for self-love/romantic satisfaction while nonmonogamy erases the self-love cost and gender-minority slopes remain null.
+- **Reproducibility** The pre-analysis plan stays frozen (analysis/pre_analysis_plan.md:1), and the data plus modeling scripts (analysis/analysis_pipeline.py:18 and analysis/sensitivity_analysis.py:1) produce every table/figure cited in the reproducibility note (papers/purity_support_paper.tex:220).
+- **Testing** Not run (release-stage deliverable only).
+
+Next steps:
+1. Run `tectonic papers/purity_support_paper.tex` (papers/purity_support_paper.tex:1) if you want an updated PDF compile.
+2. Re-execute `python analysis/analysis_pipeline.py` (analysis/analysis_pipeline.py:1) and, if desired, `analysis/sensitivity_analysis.py` (analysis/sensitivity_analysis.py:1) to refresh tables or explore new robustness checks.
