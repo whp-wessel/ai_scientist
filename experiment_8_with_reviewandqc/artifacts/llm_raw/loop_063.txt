@@ -1,0 +1,10 @@
+# 2025-11-19T13:54:56.086052+00:00
+**Scoping update**
+- `analysis/scoping_qc.py#L54-L82` shows `childhoodbalancedpublic_original.csv` is large (14,443 rows × 718 columns), predominantly numeric (661 columns) with a handful of mixed-type columns that fire the usual dtype warning; age centers ~30.4 yrs (SD ±10.2), height ~68.4 inches, weight ~173 lbs, and binary gender proxies (`biomale`, `gendermale`) hover near 0.57–0.59 prevalence of “1.”
+- Missingness is extreme for a small cluster of variables (e.g., `sexscore`, `prov_themes`, `eol_*`, all at 100%) and substantial (60–80%) for several retrospective abuse and religion items; in contrast, important covariates such as `How many siblings…`, sexual-history counts, and homeschooling/parental-divorce indicators show ≤1% missing (all reported via `analysis/scoping_qc.py#L63-L110`).
+
+**Reliability**
+- The adult-positivity battery (eight items about satisfaction, energy, calmness, and social support) achieves α = 0.729 and ω = 0.739 after listwise deletion (n = 14,051), so internal consistency is acceptable for cross-sectional work (`analysis/scoping_qc.py#L83-L104`).
+- The “feeling loved” triad (0–12, 13–18, and overall recollection) is highly reliable (α = ω = 0.961 with n = 14,431), supporting its use as a composite indicator (`analysis/scoping_qc.py#L94-L110`).
+
+Next logical actions: move into the literature/hypothesis loop to ground specific predictions in theory, then freeze a PAP per protocol before running any confirmatory models.
