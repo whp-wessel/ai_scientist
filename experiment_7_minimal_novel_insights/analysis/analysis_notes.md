@@ -1,5 +1,17 @@
 # Analysis Notes
 
+## Loop 38 — gender-group heterogeneity of the unconditional-love moderation
+
+### Sample & measurement
+- Cisgender respondents keep the analytic backbone (n≈13,204) while the gender-minority subgroup is small but still respectable (n=1,196); both groups share the same pre-registered covariate set and the unconditional-love 13–18 prerequisite, so the comparisons mirror the global model (`outputs/unconditional_love_gender_groups_summary.json:1`).
+
+### Findings
+- Among cisgender respondents, the registered purity×unconditional-love interaction matches the full-sample pattern: the interaction term is negative for self-love (`β≈-0.052`, p≈0.0006) and for romantic satisfaction (`β≈-0.041`, p≈0.033), and the simple slopes show the purity penalty jumps from near zero at low love (≈+0.025, SE≈0.039) to -0.079 (SE≈0.037) at high love, while the love slope itself softens from ≈0.39 to ≈0.28 as purity rises (`tables/regression_results_unconditional_love_gender_groups.csv:1-7`, `tables/simple_slopes_unconditional_love_gender_groups.json:1-20`).
+- For gender-minority respondents the interaction is directionally similar but imprecise (`β≈-0.065`, p≈0.30 for self-love; `β≈0.038`, p≈0.62 for romantic satisfaction) and the slopes have large SEs, so the apparent crossover cannot be distinguished from noise in that subgroup; anxiety slopes also flip sign between groups but remain noisy (`tables/regression_results_unconditional_love_gender_groups.csv:13-35`, `tables/simple_slopes_unconditional_love_gender_groups.json:21-60`).
+
+### Next steps
+- The subgroup evidence confirms that the overall moderation is driven by cisgender respondents, so we can proceed to the planned sensitivity section knowing gender-minority estimates remain underpowered; the upcoming writing phase can highlight how the counterintuitive interaction replicates in the dominant subgroup yet lacks precision for minority respondents, and we should note that the paper’s generalizability to gender-minority experiences will rest on future, larger samples rather than this test alone.
+
 ## Loop 37 — unconditional love moderation
 
 ### Sample & measurement
