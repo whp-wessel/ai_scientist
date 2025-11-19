@@ -1,0 +1,10 @@
+# 2025-11-19T13:14:15.760882+00:00
+Ran `analysis/scoping_qc.py` to scope the public childhood-balanced sample: 14,443 rows × 718 columns, mostly numeric (661) but with 57 text fields, and the expected dtype warnings because some columns mix strings and numbers; age (mean ≈ 30.4, SD ≈ 10.2) and gender proxies (`biomale`, `gendermale`) are well populated, while height/weight distributions look plausible (height mean ~68.4 inches, weight ~173 lbs). (`analysis/scoping_qc.py:58-81`)
+
+- Missingness: ~20 columns are entirely empty (mostly redundant metadata/proof fields), numerous sexual-abuse follow-ups are 60–80% missing, and basic covariates such as sibling count, sexual history, and homeschooling status have <1% missingness, giving a clean trio of anchor variables for baseline adjustment. (`analysis/scoping_qc.py:63-110`)
+
+- Reliability: the “adult positivity” battery (8 items) reaches α=0.729/ω=0.739 with ~14,051 complete responses, while the “feeling loved” triad is extremely consistent (α=0.961/ω=0.961, n=14,431), so these constructs appear psychometrically sound for further modeling. (`analysis/scoping_qc.py:83-110`)
+
+Next logical steps: 
+1. Begin the literature review to ground hypotheses on these well-measured affective scales. 
+2. Draft a focused pre-analysis plan (PAP) that specifies which constructs (e.g., adult positivity, feeling-loved) and covariates to analyze, including how to handle the high-missingness abuse items.
