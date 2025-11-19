@@ -1,0 +1,8 @@
+# 2025-11-19T13:31:38.245676+00:00
+**Scoping Update**
+- Recorded that `childhoodbalancedpublic_original.csv` has 14,443 rows and 718 columns, of which 661 are numeric and 57 object; the loader issues a dtype warning because some columns mix strings and numbers (`analysis/scoping_qc.py:58`, `analysis/scoping_qc.py:59`, `analysis/scoping_qc.py:60`, `analysis/scoping_qc.py:61`).
+- Missingness checks revealed 20 columns with 100 % empty values, another 15 with 60–80 % missingness (many CSA probes), and a handful of baseline covariates with ≤1 % missingness; age (∼30.4 ± 10.2) and height/weight distributions are documented for future reference (`analysis/scoping_qc.py:63`, `analysis/scoping_qc.py:71`, `analysis/scoping_qc.py:79`).
+- Reliability scripts report an adult-positivity scale (α = 0.729, ω = 0.739, n=14,051) and a feeling-loved scale (α=ω=0.961, n=14,431), so the multi-item composites have acceptable internal consistency for downstream modeling (`analysis/scoping_qc.py:100`, `analysis/scoping_qc.py:106`).
+- Factor analysis emits a `FutureWarning` from scikit-learn about `force_all_finite`, but the single-factor omega computation completed successfully; this warning may need attention when upgrading dependencies.
+
+Next: move from scoping to the literature/hypotheses phase so we can formalize falsifiable propositions grounded in these constructs and the available measures.
