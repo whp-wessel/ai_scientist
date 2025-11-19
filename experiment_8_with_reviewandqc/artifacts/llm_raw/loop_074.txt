@@ -1,0 +1,8 @@
+# 2025-11-19T14:11:22.437594+00:00
+Scoping turned up the following data-quality profile for loop 74:
+
+- `childhoodbalancedpublic_original.csv` spans 14,443 rows × 718 columns with a mix of demographics, personality/mood items, and randomized follow-ups; pandas warns (column 68) about mixed types, and there are numerous “Randomize (…)” columns with thousands of unique values, so we’ll need to treat those as metadata rather than substantive variables.
+- Missingness: roughly 10 columns (e.g., `sexscore`, `prov_themes`, `eol_*`) are entirely empty, while key demographics like age, gender, and the 14-week emotional/physical difficulty items are almost complete; numeric columns such as `How many people have you had sex with?` have more missingness (≈106 rows) and outliers up to 320. The cleanest columns include the mental-illness dummy variables (0% missing) and the large set of early-life “during ages *0-12*” items, though the latter include four text responses (assault follow-up questions) and, because every respondent only answered a subset, there are zero complete cases when imputing only numeric responses across the full 70-item block.
+- Reliability: the six “I tend to …” mood items form a coherent affect scale (n=14,436 complete cases) with Cronbach’s α = 0.780 and McDonald’s ω = 0.783 (standardized single-factor loadings from `FactorAnalysis`); the broader “during ages *0-12*” battery cannot be scored via listwise deletion because of the randomization / text columns, so we’ll need either pairwise treatment or smaller coherent subsets before using it in hypotheses.
+
+Next step: move into the literature/hypothesis phase for loop 75 (derive testable links, choose reliable constructs, and draft a pre-analysis plan).
