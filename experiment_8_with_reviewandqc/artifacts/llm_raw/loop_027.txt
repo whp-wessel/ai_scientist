@@ -1,0 +1,10 @@
+# 2025-11-19T13:09:06.800836+00:00
+**Scoping QC**
+- `childhoodbalancedpublic_original.csv` contains 14,443 rows and 718 columns (661 numeric, 57 object), with the script alerting to mixed-type columns (e.g., column 68); plan to enforce consistent dtypes before modeling (`analysis/scoping_qc.py:58`).
+- Missingness spans fully empty fields (e.g., `sexscore`, thematic/textual responses) down to ≲1% losses for baseline covariates such as siblings, homeschool indicators, and parental divorce; distributions are already summarized in the QC script for reference (`analysis/scoping_qc.py:63`).
+- Core distributions show mean age ≈30.4 (SD ≈10, range 18–75), gender proxies around 57–59% male, and typical height/weight spreads, so the sample aligns with a general adult population (`analysis/scoping_qc.py:71`, `analysis/scoping_qc.py:75`, `analysis/scoping_qc.py:79`).
+- The adult positivity scale (α=0.729, ω=0.739, n=14,051) and the feeling-loved scale (α=ω=0.961, n=14,431) both meet conventional reliability thresholds, so they are safe anchors for upcoming constructs (`analysis/scoping_qc.py:100`, `analysis/scoping_qc.py:106`).
+
+Next steps:
+1. Articulate the constructs of interest and any additional scales that need reliability checks before formal hypotheses (e.g., other childhood experience clusters).
+2. Begin the literature/hypotheses phase by mapping these reliable measures onto theory-driven questions about adult well-being and childhood environments.
