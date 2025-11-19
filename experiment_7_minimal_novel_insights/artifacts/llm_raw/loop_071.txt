@@ -1,0 +1,10 @@
+# 2025-11-19T11:56:57.420534+00:00
+**Release Summary**
+- Locked the preregistered PAP (`analysis/pre_analysis_plan.md:3`) and compiled the final Tectonic manuscript (`papers/purity_support_paper.tex:91`) so the PGFPlots margins, monogamy moderation figure, and sensitivity narrative are embedded in the release-ready draft that the release notes cite as ready for dissemination (`analysis/analysis_notes.md:52`).
+- Key findings now reside in the manuscript: the adolescent purity × parental support interaction remains negative for self-love and romantic satisfaction (`analysis/analysis_notes.md:45`), the purity penalty for self-love vanishes for respondents currently preferring consensual nonmonogamy while romantic satisfaction keeps its negative slope (`analysis/analysis_notes.md:8`; `papers/purity_support_paper.tex:163`), and justice to gender-minority moderation is reflected by the near-flat slopes reported in the Hypothesis 2 section (`papers/purity_support_paper.tex:160`).
+- All analytic metadata and reproducibility hooks are archived—sample descriptors (n=14,400; 8.3% gender-minority; parent-support ω≈0.56) live in `outputs/sample_summary.json:2` and `outputs/sample_summary.json:21`, the new moderation/sensitivity scripts plus PGFPlots tables are noted in the notes (`analysis/analysis_notes.md:12`), and the Methods section documents the pipeline that regenerates every table/figure (`papers/purity_support_paper.tex:103`).
+- Testing: not run (release-phase deliverable only).
+
+**Next Steps**
+1. Review `papers/purity_support_paper.pdf` to ensure the embedded figures, tables, and narrative match expectations before sharing with collaborators or a journal.
+2. If further narrative tweaks are needed, rerun `tectonic papers/purity_support_paper.tex` so the PDF stays current and then archive the refreshed reproducibility artifacts.
