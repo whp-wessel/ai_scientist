@@ -1,0 +1,8 @@
+# 2025-11-19T13:36:25.622310+00:00
+**Scoping QC**
+- Dataset audit reports 14,443 respondents over 718 variables with 661 numeric and 57 object columns, a dtype warning from mixed strings/numbers, and 334 columns with >50 % missingness while 131 columns are complete—many of the sexual-abuse follow-ups are >73 % empty, so those modules may need targeted cleaning or exclusion (`analysis/scoping_qc.py:58`, `analysis/scoping_qc.py:61`, `analysis/scoping_qc.py:63`).
+- Demographic/distributional anchors look sensible for an adult sample: age averages ~30.4 (range 18–75), biomale prevalence ~59 %, gendermale ~57 %, height ≈68 in, weight ≈173 lb (`analysis/scoping_qc.py:71`, `analysis/scoping_qc.py:75`, `analysis/scoping_qc.py:79`).
+- Psychometric checks show the adult positivity composite has Cronbach’s α=0.729 (ω=0.739, n=14,051) and the feeling-loved composite α=ω=0.961 (n=14,431), so those scales are reliable starting points for hypotheses (`analysis/scoping_qc.py:83`, `analysis/scoping_qc.py:100`, `analysis/scoping_qc.py:106`).
+
+**Next Steps**
+- Move into the literature/hypotheses phase: identify theory-driven questions that leverage the reliable scales, then craft and freeze the PAP before running confirmatory models.
