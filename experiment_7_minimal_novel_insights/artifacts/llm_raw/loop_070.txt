@@ -1,0 +1,20 @@
+# 2025-11-19T11:55:00.652909+00:00
+**Release Summary**
+- The manuscript’s abstract and Methods (`papers/purity_support_paper.tex:95-105`) log the 14,400-case analytic sample from `childhoodbalancedpublic_original.csv`, 8.3% gender-minority share, HC3-robust modeling, the frozen pre-analysis plan (`analysis/pre_analysis_plan.md:1-20`), and the analytic cohort stats in `outputs/sample_summary.json:1-22`, so the preregistered provenance is transparent.
+- Hypothesis 1 results (table and narrative at `papers/purity_support_paper.tex:107-135`) show parental support remains strongly positive while the adolescent purity × support interaction tilts negative (β≈−0.040; Cohen’s d≈−0.02) for both self-love and romantic satisfaction, a pattern illustrated by Figure 1’s PGFPlots margins (`papers/purity_support_paper.tex:130-155`).
+- Gender-minority interactions stay null while the current nonmonogamy preference predicts ~+0.23 points on self-love/romantic satisfaction and nearly erases the self-love purity penalty, as described in the monogamy subsection and Figure 2 (`papers/purity_support_paper.tex:160-194`).
+- Sensitivity checks plus Discussion/Limitations (`papers/purity_support_paper.tex:197-218`) cover religious-practice slices, trauma/depression controls, the guidance-vs-humor split, and the observational/measurement constraints, and the compiled Tectonic PDF (`papers/purity_support_paper.pdf`) now embeds the figures mentioned above.
+- The Reproducibility section (`papers/purity_support_paper.tex:220-222`) points to `analysis/analysis_pipeline.py:1`, `analysis/sensitivity_analysis.py:1`, and `analysis/monogamy_moderation.py:1`, which regenerate the referenced tables/slopes/marginal data together with the frozen plan and outputs.
+
+**Tests**
+- `python analysis/analysis_pipeline.py` (refreshes the main Hypotheses 1–2 models and the `tables/` and `figures/` assets cited in the paper).
+- `python analysis/monogamy_moderation.py` (reproduces Hypothesis 3 tables, simple slopes, and the nonmonogamy margins that feed Figure 2).
+- `python analysis/sensitivity_analysis.py` (rebuilt every registered robustness slice recorded under `tables/` and `outputs/sensitivity_overview.json`).
+- `tectonic papers/purity_support_paper.tex` (produced `papers/purity_support_paper.pdf` but still emitted the overfull/underfull \hbox warnings reported around `papers/purity_support_paper.tex:105-206` and `:222`).
+
+**Outstanding Warnings**
+- TeX still triggers multiple overfull/underfull \hbox warnings (especially near `papers/purity_support_paper.tex:105-113`, `:159-165`, `:198-206`, and `:221-222`); typesetting succeeds, but these stretches remain tightening candidates before submission.
+
+Next Steps
+1. Reflow or hyphenate the paragraphs flagged between `papers/purity_support_paper.tex:105-206` so the overfull \hbox warnings go away and the PDF looks polished.
+2. Collect richer doctrinal and gender-minority metadata as noted in the Limitations (`papers/purity_support_paper.tex:214-218`) to test whether supportive parents amplify purity penalties only in specific subgroups.
