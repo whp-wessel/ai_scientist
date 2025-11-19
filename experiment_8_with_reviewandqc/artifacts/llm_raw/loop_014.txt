@@ -1,0 +1,8 @@
+# 2025-11-19T12:52:57.801545+00:00
+Scoping checks confirm the dataset is analysable and that the provisional wellbeing items form a reliable construct for later modeling.
+
+- Data structure: `childhoodbalancedpublic_original.csv:1` holds 14,443 respondents and 718 columns; age is 18–75 (median 28, mean 30.4) and most Likert items span –3 to 3. Missingness is heavy—342 columns exceed 30% missingness, 334 exceed 50%, and 263 exceed 90%—and pandas raised a `DtypeWarning` because column 68 mixes types, so we’ll either coerce or drop problematic fields when they surface.
+- Reliability: the eight-item adult wellbeing/negative affect bundle (`I tend to suffer …`, `I am satisfied …`, etc.) has α=0.829 and ω=0.839 (n=14,436 complete cases), indicating acceptable internal consistency for scale-building.
+- Tests: `python - <<'PY' ...` (dataset summary and age/distribution stats), `python - <<'PY' ...` (missingness quantiles/reliability calculation).
+
+Next steps: 1) map the remaining variables onto theory-informed hypotheses in the literature phase; 2) draft the pre-analysis plan (PAP) to lock in constructs and analytic decisions before modeling.
