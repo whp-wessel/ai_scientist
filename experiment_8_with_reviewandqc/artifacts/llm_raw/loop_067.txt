@@ -1,0 +1,12 @@
+# 2025-11-19T14:01:24.095254+00:00
+**Scoping snapshot**
+- Loaded `childhoodbalancedpublic_original.csv` (14,443 × 718); 285 columns are >80% missing, 358 columns have <5% missing, and the most complete fields include the ethnicity flags and the CSA_score aggregator, so we should focus on those dense regions for modeling.
+- Age, self-reported education, net worth, and the core affect items (`I tend to suffer from anxiety`, `I tend to suffer from depression`, `I am not happy`, `I tend to worry about things`, `I tend to be calm/peaceful`) all have near-complete coverage and respond on the expected −3/+3 or scaled numeric values; age is centered around 30 years with an interquartile range of 12, education clusters around 4–5 (on a 0–7 scale), and the affect items span the full Likert range with roughly symmetric medians.
+
+**Reliability check**
+- Constructed a provisional “negative emotionality” scale from the nine matched items (`I tend to suffer from anxiety -neg`, `I tend to suffer from depression`, `I am not happy -neg`, `I'm quite sensitive to stress -neg`, `I tend to worry about things -neg`, `If life is a game, I'm losing -neg`, `I tend to be unlucky -neg`, `The people I'm attracted to tend to be bad for me -neg`, `If I could take all of the possibility of pain out of suicide I would commit suicide immediately -neg`); 14,436 cases have complete data on all nine.
+- Cronbach’s alpha = 0.871 and Omega total = 0.897, with the first factor explaining ~50% of the variance; loadings range from ~0.50 (interpersonal/self-image worry) to ~0.79 (depression, anxiety), so the scale is psychometrically coherent for further modeling.
+
+**Next steps**
+1. Move into the literature phase by summarizing theoretical anchors for positive/negative childhood experiences paired with adult distress, so hypotheses can be grounded in prior work before drafting the PAP.
+2. Begin sketching the Pre-Analysis Plan (phase three) around the reliable distress scale and a parsimonious set of childhood environment items that also have good coverage, then revisit the scoping outputs if new missingness or measurement concerns emerge during design.
