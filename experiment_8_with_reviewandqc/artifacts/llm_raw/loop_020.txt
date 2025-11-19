@@ -1,0 +1,8 @@
+# 2025-11-19T13:01:00.043819+00:00
+Scoping pass complete for loop 20. The survey file `childhoodbalancedpublic_original.csv` (14,443 × 718) loads with a dtype warning for column 68 (mixed types), so we should keep an eye on any text/num mix-ins in that region. Demographics like `selfage` (mean ≈ 30.4), `height` (mean ≈ 68.4 in), `weight`, `networth`, and `CSA_score` (median 0, 75th percentile 0, max 22) look sensible but skewed – CSA exposures are sparse, so models will need to account for that zero inflation. The `mentalillness` column is entirely missing, so it cannot be used as-is (likely a placeholder).
+
+I profiled a candidate negative-affect cluster (`anxiety`, `depression`, `not happy`, `sensitive to stress`, `worrying`, `life is a game I’m losing`, `unlucky`, and the suicide-related item), and missingness is minimal (5–7 rows per item). Pairwise correlations among these items are moderate (0.29–0.70), and Cronbach’s α ≈ 0.87 (n = 14,436), indicating high internal consistency for this construct, so it seems appropriate to treat them as a cohesive psychological scale in later analyses.
+
+Next steps to keep the loop moving:
+1. Survey the literature to shape precise hypotheses that align with these available constructs (negative affect cluster + CSA exposures).
+2. Draft a focused pre-analysis plan (PAP) outlining the planned models, controls, and outcome/scoring approach before running any inferential work.
