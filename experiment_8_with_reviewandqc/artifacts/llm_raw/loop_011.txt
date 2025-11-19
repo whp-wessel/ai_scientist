@@ -1,0 +1,10 @@
+# 2025-11-19T12:49:04.729118+00:00
+Scoping shows the rostered script `analysis/scoping_qc.py:54` already reads the full `childhoodbalancedpublic_original.csv` (14,443 × 718) and reports 661 numeric vs. 57 object columns, so we have a large, mostly quantitative matrix to work from.
+
+- **Missingness pattern:** The same script (`analysis/scoping_qc.py:63–70`) flags ~20 columns that are entirely empty and another set with 60–80% missingness, while most life-history covariates have <1% missing data, so we can treat the high-missing blocks as unusable without imputation and rely on the low-missingness covariates for baseline controls.
+- **Distributions:** Age averages 30.4 years old (σ≈10.2); height and weight are also broadly sensible (≈68 inches/173 lbs) per `analysis/scoping_qc.py:71–81`, suggesting no glaring entry errors in those core demographic variables.
+- **Reliability:** The `scale_stats` helper (`analysis/scoping_qc.py:40`) ran two multi-item composites. The adult positivity scale hit α≈0.729, ω≈0.739 with ~14k complete cases, while the feeling-loved composite is extremely reliable (α=ω=0.961, n=14,431) per `analysis/scoping_qc.py:100–110`, so both constructs are psychometrically defensible for theory-building.
+
+Next steps: 
+1. Draft the theory/hypothesis framework for loop 12 by grounding the reliable scales in the literature that motivates their linkages.
+2. Freeze a pre-analysis plan that specifies which predictors/outcomes will use these composites and how missing data will be handled before running any inferential models.
