@@ -1,0 +1,9 @@
+# 2025-11-19T13:20:27.536737+00:00
+**Scoping update**
+- `childhoodbalancedpublic_original.csv:1` holds 14,443 respondents × 718 variables; age is nearly complete (median 28, mean 30.4, <0.05% missing), so the adult sample is well populated for demographic summaries.
+- Ten derived fields (`sexscore`, `prov_themes`, `no_sabe_cnt`, `total`, `eol_themes_other`, `eol_themes`, `eol_proof_answer`, `pts_fdv`, `eol_answer_short`, `eol_answer_long`) are 100% empty and should be removed or otherwise addressed before modeling.
+- Two provisional multi-item scales were tested: positive satisfaction (I love myself; satisfaction with relationships, work, appearance) has Cronbach’s α = 0.672 and McDonald’s ω = 0.693 (N = 14,435), while the distress bundle (anxiety, depression, unhappiness, worry, sensitivity to stress) shows α = 0.852 and ω = 0.854 (N = 14,437); the latter is psychometrically strong, the former only modestly cohesive.
+
+**Next steps**
+- Clarify and document the constructs/scale scoring (direction, inverse coding, trimming of fully missing placeholders) so the PAP and downstream models know exactly which items stay.
+- Move into the literature/hypotheses loop with these measurement notes in mind, then freeze a PAP before executing any final inferential models.
