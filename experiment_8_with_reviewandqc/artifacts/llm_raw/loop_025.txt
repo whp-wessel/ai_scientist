@@ -1,0 +1,10 @@
+# 2025-11-19T13:06:54.916113+00:00
+**Scoping Update**
+- Completed the scoping QC pass: the dataset has 14,443 respondents by 718 variables (661 numeric, 57 object), with the usual dtype warning stemming from a handful of mixed-type columns; key demographics show an average age of ~30.4 years, height ≈68.4 inches, weight ≈173 lbs, and binary gender proxies at ~59% biomale / 57% gendermale prevalence.
+- Missingness is extreme for many of the newer thematic/proof fields (e.g., `sexscore`, `prov_themes`, `certif_ask_*`, `total` at 100% missing) and around 73–78% missing for several abuse-history follow-ups; however, some baseline covariates (e.g., siblings, sexual history, homeschooling, parental separation) are nearly complete and suitable for modeling.
+- Reliability checks from `analysis/scoping_qc.py:1` show the adult-positivity items form a reasonably cohesive scale (Cronbach’s α=0.729, ω=0.739, n=14,051), while the childhood “feeling loved” trio is exceptionally consistent (α=ω=0.961, n=14,431), satisfying the current directive on psychometric quality.
+
+Next steps (loop 25/75, phase “literature” next):
+1. Expand construct scans by identifying additional item clusters worth modeling (e.g., trauma or resilience composites) and re-running reliability diagnostics where data coverage permits.
+2. Ground the next theory/hypothesis loop in this scoping insight—focus on constructs with strong measurement and sufficient coverage, and articulate falsifiable links informed by relevant literature.
+3. Draft the Pre-Analysis Plan that codifies selected measures, planned covariates, missing-data handling, and analysis strategy before moving to execution.
