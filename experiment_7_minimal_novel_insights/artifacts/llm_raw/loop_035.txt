@@ -1,0 +1,8 @@
+# 2025-11-19T08:42:34.060077+00:00
+- Added `analysis/sensitivity_analysis.py:1`, which reruns the registered hypotheses on the no-current-religion slice and with aggregated childhood abuse/depression controls, writes the coefficient tables to `tables/regression_results_no_current_religion.csv:1` and `tables/regression_results_with_trauma_controls.csv:1`, and records the sample counts in `outputs/sensitivity_overview.json:1` so these robustness checks are reproducible.
+- Logged the new findings in `analysis/analysis_notes.md:1` (see the Loop 35 section describing the restricted, trauma-controlled, and subgroup comparisons) and produced `tables/gender_minority_subgroups.csv:1` to summarize how parental support behaves within the trans (n=295) and nonbinary (n=901) gender-minority cells.
+- Tests: `python3 analysis/sensitivity_analysis.py`
+
+Next steps:
+1. Fold these sensitivity tables/notes into the planned sensitivity section of the write-up so the story highlights that the purity-support interaction survives the registered robustness checks.
+2. Once the sensitivity narrative is stable, shift to the writing phase (Tectonic paper + figure embedding) with these updated diagnostics in hand.
