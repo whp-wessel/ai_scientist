@@ -1,0 +1,8 @@
+# 2025-11-19T13:03:01.716191+00:00
+Scoping loop 21 shows the dataset is usable for theory-building and modeling.
+
+- The survey matrix spans roughly 14,443 submissions by 718 variables, with age centered near 30.4 years (IQR 23–35) and ordinal demographic markers concentrated in a few categories (e.g., `gendered` ≈13,537 vs. 906, ethnicity dominated by “Caucasian/white,” and country code dominated by the U.S./U.K./Canada).
+- Missingness is not pervasive: the main demographic and psychometric items have only 5–7 missing values, but about 20 metadata columns (e.g., `sexscore`, `prov_themes`, `eol_*`) are 100% empty and can be dropped from any modeling. Distributions of respondents’ net worth, height, weight, and siblings are reasonable for downstream analyses.
+- The nine-item current well-being/resilience battery (`I love myself …` through `I tend to worry about things -neg`) yields Cronbach’s α ≈ 0.845 and McDonald’s ω ≈ 0.852 over 14,435 complete cases, with the first factor loadings ranging 0.33–0.78, so the construct shows acceptable internal consistency for a unidimensional scale.
+
+Next steps: 1) move into the literature/hypothesis phase armed with the demographic and psychometric snapshot, and 2) draft a PAP that justifies focusing on the validated well-being scale (and any other candidate constructs) before running confirmatory models.
