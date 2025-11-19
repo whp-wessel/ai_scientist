@@ -1,0 +1,10 @@
+# 2025-11-19T13:49:24.140388+00:00
+**Scoping Update**
+- Dataset summary from `analysis/scoping_qc.py:54-82` shows the `childhoodbalancedpublic_original.csv:1` file holds 14,443 responses and 718 variables (661 numeric, 57 object); respondents average 30.4 years old (SD 10.2, range 18–75) and gender proxies (biomale, gendermale) suggest ~57–59% identify with the male-coded options.
+- Missing-data diagnostics in `analysis/scoping_qc.py:63-70` flag many administrative columns (e.g., `sexscore`, `prov_themes`, `total`) as entirely empty and a batch of abuse-related follow-up items running 60–80% missing, so these questions should be treated as sparse/optional if they enter later models.
+- Reliability checks in `analysis/scoping_qc.py:83-110` confirm the adult positivity scale has α=0.729 (n=14,051) and ω=0.739, while the feeling-loved scale shows α=0.961 and ω=0.961 (n=14,431), so both constructs appear psychometrically strong for the available data.
+- Scoping complete: no data-quality showstoppers emerged, and we’ve documented distributions, missingness, and reliability as required.
+
+Natural next steps:
+1. Begin the literature review to ground the hypotheses that align with these constructs and their expected relations.
+2. Draft a Pre-Analysis Plan (PAP) that specifies the target outcomes, covariates, and robustness checks before running the main models.
