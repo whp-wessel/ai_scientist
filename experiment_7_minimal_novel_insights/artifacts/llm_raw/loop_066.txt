@@ -1,0 +1,16 @@
+# 2025-11-19T11:44:24.862288+00:00
+**Release Summary**
+- The paper’s abstract and Methods section document the 14,400-case sample, pre-registered aims, and covariates so the `childhoodbalancedpublic_original.csv` survey frame is transparent before any results are reported (papers/purity_support_paper.tex:95; papers/purity_support_paper.tex:102).
+- Hypothesis 1 shows parental support boosts self-love and romantic satisfaction while the adolescent purity × support interaction is negative (self-love β≈-0.040, romantic satisfaction β≈-0.038, both Cohen’s d≈-0.02 with p<0.04) and Figure 1 makes the steeper high-support purity slope visible (papers/purity_support_paper.tex:107; papers/purity_support_paper.tex:134).
+- The anxiety models keep the adolescent purity interaction non-significant and only the 0–12 purity window yields a small protective effect, confirming that the counterintuitive moderation is confined to the self-love/romantic-satisfaction outcomes (papers/purity_support_paper.tex:158).
+- Gender-minority interactions remain null while the nonmonogamy preference predicts roughly +0.23 self-love and romantic-satisfaction points and nearly erases the purity penalty for self-love, suggesting script resistance rather than exaggerated minority stress (papers/purity_support_paper.tex:160; papers/purity_support_paper.tex:163).
+
+**Details**
+- Registered sensitivity slices (non-religion, trauma/depression controls, parent-support components, current religiosity, and parent-support × gender-minority three-way tests) keep the main interaction intact except among currently practicing religious respondents, and the effect is driven more by guidance than humor (papers/purity_support_paper.tex:197; papers/purity_support_paper.tex:200).
+- Limitations include the retrospective design, the modest parent-support reliability (ω≈0.56), missing doctrinal specificity, and unresolved gender-minority heterogeneity, which are flagged as open questions for future work (papers/purity_support_paper.tex:212).
+- The pre-analysis plan remains frozen with the registered hypotheses listed at the top of `analysis/pre_analysis_plan.md`, and the paper’s reproducibility section points to `analysis/analysis_pipeline.py`, `analysis/sensitivity_analysis.py`, and the generated tables/figures for verification (analysis/pre_analysis_plan.md:1; papers/purity_support_paper.tex:220).
+- Testing was not run because this loop focused on synthesizing and releasing the final manuscript.
+
+**Next Steps**
+1. Rerun `tectonic papers/purity_support_paper.tex` to regenerate the PDF once you’ve confirmed the LaTeX source is final.  
+2. Collect more granular doctrinal messaging or multi-informant family data so future work can test whether specific purity framings explain why supportive parents steepen the purity penalty (papers/purity_support_paper.tex:216).
