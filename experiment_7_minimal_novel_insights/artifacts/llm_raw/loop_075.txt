@@ -1,0 +1,12 @@
+# 2025-11-19T12:07:29.668671+00:00
+Final release bundles the frozen preregistration, reproducible analysis pipeline, and LaTeX manuscript that narrate the purity-culture moderation story for the `childhoodbalancedpublic_original.csv` survey.
+
+**Release Summary**
+- The frozen pre-analysis plan spells out the three hypotheses, covariates, and sensitivity checks that guide this loop (`analysis/pre_analysis_plan.md:1`), ensuring the reported findings remain faithful to their registered commitments.
+- `analysis/analysis_pipeline.py:171` standardizes the purity/support pairs, imputes gender-minority flags, and writes the 14,400-case summary in `outputs/sample_summary.json:1` (8.3% gender-minority, $\omega\approx0.56$ reliability), while `analysis/analysis_pipeline.py:318` runs the HC3 regressions and saves the Hypothesis 1/2 coefficients to `tables/regression_results.csv:2` (self-love) and `tables/regression_results.csv:14` (romantic satisfaction).
+- The manuscript in `papers/purity_support_paper.tex:95` embeds those results (counterintuitive purity×support steepening, gender-minority null interactions, anxiety pattern) and `papers/purity_support_paper.tex:163` reports the nonmonogamy moderation, with discussion/limitations stated at `papers/purity_support_paper.tex:207` and the key figure data anchored in `analysis/marginal_self_love_data.csv:1`.
+- `analysis/monogamy_moderation.py:1` reuses the pipeline module to estimate Hypothesis 3, outputting `tables/regression_results_monogamy.csv:2` (self-love nonmonogamy slope) plus the margins that feed the PGFPlots figure and the narrative in the paper.
+
+Next steps:
+1. Run `python analysis/analysis_pipeline.py` to regenerate tables/figures and confirm HC3 estimates match the archived JSON/CSV artifacts.
+2. Compile `papers/purity_support_paper.tex` with Tectonic so the embedded figures and math settle into the final PDF before sharing or submission.
