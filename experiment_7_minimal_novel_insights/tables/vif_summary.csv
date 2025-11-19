@@ -1,0 +1,16 @@
+model,term,vif
+Hyp1_parent_support,purity13_z,1.000045166713576
+Hyp1_parent_support,parent_support_z,1.0000182934248263
+Hyp1_parent_support,purity13_support,1.0000289436803023
+Hyp1_guidance,purity13_z,1.0002003712836598
+Hyp1_guidance,guidance_z,1.0003446544661365
+Hyp1_guidance,purity13_guidance,1.0001443115310924
+Hyp1_humor,purity13_z,1.0005218187139218
+Hyp1_humor,family_humor_z,1.0006922007645445
+Hyp1_humor,purity13_humor,1.0003123500214945
+Hyp2_purity13,purity13_z,1.081706004532326
+Hyp2_purity13,gender_minority,1.0012719882742613
+Hyp2_purity13,purity13_x_gender_minority,1.082957504643077
+Hyp2_purity0,purity0_z,1.0900692441979258
+Hyp2_purity0,gender_minority,1.011184498266253
+Hyp2_purity0,purity0_x_gender_minority,1.1010574723692104

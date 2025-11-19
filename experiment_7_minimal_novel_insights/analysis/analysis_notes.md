@@ -14,6 +14,9 @@
 ## Hypothesis 2 (purity × gender-minority stress)
 - Gender-minority status shows large main disadvantages (self-love `β≈−0.34`, anxiety `β≈0.13`), but the registered interactions remain null. The simple-slope table highlights that the slope difference between cis and gender-minority respondents for purity13 on self-love is only ≈0.067 (SE≈0.059) and directionally inconsistent across outcomes, so there is no robust evidence that purity-culture exposure disproportionately erodes their well-being in this sample.
 
+## Diagnostics
+- Variance inflation factors for the exposures and their moderators stay very low (≈1.00–1.10 across `tables/vif_summary.csv`), so the interaction coefficients are not inflated by collinearity even though the terms interact with their base scales.
+
 ## Limitations & open questions
 - Parent-support composite has modest internal consistency; future work should test the two items separately (guidance/humor) or gather richer family climate measures.
 - Interactions reverse the pre-registered buffering story: the significant negative moderation suggests adolescents who remembered high purity messages plus involved parents now report poorer adult self-love and romantic satisfaction, which might reflect complicated family investments rather than simple support. This counter-intuitive pattern deserves qualitative follow-up.

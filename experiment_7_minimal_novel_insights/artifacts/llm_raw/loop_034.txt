@@ -1,0 +1,8 @@
+# 2025-11-19T08:38:10.542134+00:00
+- Added VIF diagnostics for the key exposure/moderator terms by importing `variance_inflation_factor`, enumerating `VIF_FEATURE_SETS`, and wiring up new compute/save helpers that the main routine now calls before exporting the usual tables/figure (`analysis/analysis_pipeline.py:10`, `analysis/analysis_pipeline.py:104`, `analysis/analysis_pipeline.py:368`).
+- Reran the pipeline and the simple-slope summary so the outputs stay synchronized; the fresh `tables/vif_summary.csv` records VIFs between ~1.000 and ~1.101 for the Hyp1/Hyp2 moderator terms, confirming the interaction coefficients are not inflated by collinearity (`tables/vif_summary.csv:2`, `tables/vif_summary.csv:16`).
+- Logged the new diagnostic result (low VIFs) plus its substantive implication in the loop notes so the upcoming phases can cite it without re-running the checks (`analysis/analysis_notes.md:17`).
+
+Next steps:
+1. Carry out the pre-registered sensitivity checks (e.g., drop respondents who still practice a religion, add additional childhood-trauma controls, compare trans vs. nonbinary cells) to quantify how stable the interactions are.
+2. Once those robustness tests are in hand, begin drafting the sensitivity section and updating the eventual paper narrative so the writing phase can follow on a solid analytic foundation.

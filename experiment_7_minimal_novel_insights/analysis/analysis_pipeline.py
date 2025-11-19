@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 np.random.seed(12345)
 
@@ -101,6 +102,14 @@ CENTER_COLUMNS = [
 ]
 
 HYP2_TERMS = ["purity13_z", "purity0_z", "gender_minority", "purity13_x_gender_minority", "purity0_x_gender_minority"]
+
+VIF_FEATURE_SETS = {
+    "Hyp1_parent_support": ["purity13_z", "parent_support_z", "purity13_support"],
+    "Hyp1_guidance": ["purity13_z", "guidance_z", "purity13_guidance"],
+    "Hyp1_humor": ["purity13_z", "family_humor_z", "purity13_humor"],
+    "Hyp2_purity13": ["purity13_z", "gender_minority", "purity13_x_gender_minority"],
+    "Hyp2_purity0": ["purity0_z", "gender_minority", "purity0_x_gender_minority"],
+}
 
 
 def ensure_dirs() -> None:
@@ -356,13 +365,32 @@ def save_results_table(results: List[dict]) -> None:
     df.to_csv(TABLES_DIR / "regression_results.csv", index=False)
 
 
+def save_vif_summary(vif_records: List[dict]) -> None:
+    df = pd.DataFrame(vif_records)
+    df.to_csv(TABLES_DIR / "vif_summary.csv", index=False)
+
+
+def compute_vif_summary(df: pd.DataFrame) -> List[dict]:
+    vif_records: List[dict] = []
+    for label, features in VIF_FEATURE_SETS.items():
+        X = sm.add_constant(df[features], has_constant="add")
+        for idx, term in enumerate(X.columns):
+            if term == "const":
+                continue
+            vif_value = float(variance_inflation_factor(X.values, idx))
+            vif_records.append({"model": label, "term": term, "vif": vif_value})
+    return vif_records
+
+
 def main() -> None:
     ensure_dirs()
     df = prepare_analytic_sample()
     sample_desc = describe_sample(df)
     save_summary(sample_desc)
     results = run_hypothesis_models(df)
+    vif_records = compute_vif_summary(df)
     save_results_table(results)
+    save_vif_summary(vif_records)
     print("Analysis pipeline complete. Results saved to tables and figures.")
 
 
