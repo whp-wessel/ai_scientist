@@ -1,0 +1,8 @@
+# 2025-11-19T14:08:18.536081+00:00
+Scoped the dataset with the existing diagnostics (`analysis/scoping_qc.py:1`), confirming 14,443 rows × 718 columns, 661 numeric features, and clear signals from the age, gender, height, and weight distributions while flagging mostly-empty columns tied to sexual abuse follow-up and provider meta tags (>80% missing).
+
+Age-centered covariates look clean (median age ≈ 30, no minors), binary gender proxies show about 59% coded as male, and baseline distributions for height/weight fall within plausible adult ranges; around a dozen demographic covariates have ≤1% missingness, while many trauma-related items exceed 70%, so be cautious when modeling those.
+
+Reliability checks on the adult positivity (8 items) and feeling-loved (3 items) composites produced Cronbach’s α of 0.729 and 0.961, and McDonald’s ω of 0.739 and 0.961, respectively, indicating acceptable to excellent internal consistency for those constructs.
+
+Next steps: 1. Survey relevant literature to generate falsifiable hypotheses centered on the supported constructs. 2. Draft and freeze the pre-analysis plan, making sure to document which high-missingness variables can be reliably used or must be excluded.
