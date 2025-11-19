@@ -1,0 +1,10 @@
+# 2025-11-19T12:36:49.225512+00:00
+**Scoping Update**
+- `childhoodbalancedpublic_original.csv:1` contains 14,443 rows of responses with demographics centered on a 30.4‑year mean (18–75). `liberal` is skewed toward 0 (neutral) with the most common rating being 0 (4,873) and the next four being -1, -2, +2, +3, while `monogamy` clusters at 2 (8,329); `networth` spans -3 to 6 with median 2. These summaries confirm a broad, cross‑sectional sample for the planned analyses.
+- Missingness is uneven: the 25th percentile of column-wise missingness is ~0.05% but the median is ~8.6% and the 75th percentile is 100%, reflecting many metadata or replica columns with no data (e.g., `sexscore`, `total`, `prov_themes` are entirely blank). Most substantive items have low missing rates, but we should drop the empty metadata columns before modeling to avoid bloating the frame.
+
+- I tested a candidate well‑being composite (`I love myself`, relationship/work satisfaction, calm/energy, and a suite of negative‑worded items such as `I tend to suffer from anxiety -neg`, `I am not happy -neg`, `If life is a game, I’m losing -neg`; negatives were reverse‑coded). With 14,434 complete cases, Cronbach’s α = 0.28 and McDonald’s ω ≈ 0.41, so the items currently lack internal consistency; this scale should not be treated as a single reliable construct without further refinement (e.g., splitting positive/negative valence, checking item phrasing, or finding alternative clusters).
+
+**Next steps**
+1. Survey the literature to anchor the research question on validated constructs that the dataset can actually support (which will also inform whether to keep the current self‑evaluation items or pivot to another domain).
+2. Once candidate constructs are chosen, map them onto the survey items, re‑evaluate their distributions/missingness, and re‑run the reliability diagnostics before drafting the pre‑analysis plan.
