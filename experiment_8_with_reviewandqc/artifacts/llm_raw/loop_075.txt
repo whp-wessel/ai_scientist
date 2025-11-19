@@ -1,0 +1,9 @@
+# 2025-11-19T14:12:58.134063+00:00
+**Scoping QC**
+- The survey file holds 14,443 records across 718 columns (`childhoodbalancedpublic_original.csv:1`), with the header showing demographic, attitudinal, and life-history items; loading the file with `low_memory=False` cleared the mixed-type warning tied to column 68, but it’s worth keeping an eye on any other mixed-type columns that may crop up later.
+- Distributions: gender (binary `gendermale`) splits ~8,257/6,186, the ideological scale ranges from −2 to 3 with a modal zero, education spans 2–7 with most respondents clustered at 5, and monogamy preference is dominated by the “single/monogamous” code (2); height/weight follow expected spread. Missingness is low for these items (~0.03–0.0003), but there are whole-variable gaps (e.g., `mentalillness` and a batch of legacy scoring columns like `sexscore`, `prov_themes`, etc., are entirely NA), underscoring the need to drop or replace them in future models.
+- Reliability: the 14 well-being items on the −3 to +3 Likert scale have excellent internal consistency (Cronbach’s α = 0.83, McDonald’s ω = 0.85, N = 14,435 complete cases), so they can serve as a coherent construct once we settle on wording/score direction.
+
+Next steps:
+1. Draft falsifiable hypotheses grounded in existing theory using the reliable well-being scale (and any other promising constructs) and inventory the relevant literature for the upcoming theory phase.
+2. Lock down a Pre-Analysis Plan that specifies the dependent variables, covariates, and intended robustness checks before touching the final models (analysis phase).
