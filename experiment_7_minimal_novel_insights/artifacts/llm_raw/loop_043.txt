@@ -1,0 +1,9 @@
+# 2025-11-19T09:24:24.268799+00:00
+- Expanded the manuscript text so the abstract, methods, and Hypothesis~1/2 results now highlight the 14,400-case sample’s demographics/reliability, the self-love/romantic-satisfaction interaction, the 13–18 vs. 0–12 anxiety story, and the simple-slope context with direct pointers to the supporting tables (`papers/purity_support_paper.tex:44-115`).
+- Reworked the sensitivity, discussion, limitations, and reproducibility sections to cite the JSON/table outputs, spell out the robustness narrative, and surface the remaining open questions about gender-minority heterogeneity (`papers/purity_support_paper.tex:112-132`).
+- Logged the writing-phase changes so the loop history now notes the new textual content and the intent to compile with Tectonic before release (`analysis/analysis_notes.md:17-25`).
+- Regenerated `papers/purity_support_paper.pdf` via `tectonic papers/purity_support_paper.tex`; the build succeeded but the log reports underfull/overfull boxes near lines 62, 108, 116, and 132 of the source (`papers/purity_support_paper.tex:62`, `:108`, `:116`, `:132`), so you may want to eyeball those paragraphs in the PDF for any layout adjustments.
+
+Next steps:
+1. Review the freshly compiled PDF for readability and to ensure the warning regions do not disrupt the presentation; tweak wording or formatting if needed.
+2. Advance the release loop by finalizing the narrative, checking citations/figures, and packaging the paper for submission.

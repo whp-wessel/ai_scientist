@@ -14,6 +14,16 @@
 - The `analysis/sensitivity_analysis.py` script orchestrates these runs and writes the per-slice tables plus the JSON summary, so the tables under `tables/` are now reproducibly linked to `outputs/sensitivity_overview.json` and ready to reference in the paper’s sensitivity section (`analysis/sensitivity_analysis.py:1`).
 - With the diagnostic slice refreshed, we can move into the writing phase, citing these new tables when discussing robustness and preparing the LaTeX narrative that embeds the sensitivity story before releasing the final draft.
 
+## Loop 43 — writing updates
+
+### Manuscript
+- Updated the abstract to note the analytic sample (n=14,400; 8.3\% gender-minority; parent-support $\omega \approx 0.56$), highlight the early-life purity/anxiety nuance, and briefly preview the registered sensitivity slices that keep the core pattern intact.
+- Expanded the Results section so that the marginal plot descriptions cite the simple-slope table (`tables/simple\_slopes.json`), the anxiety paragraph traces both 13--18 and 0--12 exposures (`tables/regression\_results.csv:26-29`), and the gender-minority moderation text explicitly reports the small differences (e.g., 13--18 self-love difference 0.067, SE 0.059; 0--12 difference 0.090, SE 0.057; see `tables/regression\_results.csv:41` and `:45`).
+- Reworked the sensitivity bullet list to reference the no-religion, trauma-control, and trans/nonbinary tables plus the sample-overview JSON so the robustness story in the paper mirrors the latest scripted diagnostics.
+
+### Next steps
+- Compile the updated LaTeX draft with Tectonic to ensure the PDF and embedded PGFPlots figure render cleanly before proceeding to the release loop.
+
 ## Loop 38 — gender-group heterogeneity of the unconditional-love moderation
 
 ### Sample & measurement
