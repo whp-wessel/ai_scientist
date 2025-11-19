@@ -1,0 +1,11 @@
+# 2025-11-19T13:47:23.492882+00:00
+**Scoping Update**
+- **QC run:** Executed `analysis/scoping_qc.py:54-110` to log dataset shape (14,443 × 718), numeric/object counts, and to compute missingness percentiles so we can judge which items survive a rigorous look; the script already handles the dtype issues noted at import.
+- **Missingness:** Many context-rich columns (e.g., the detailed abuse/fear items) are >60% missing, with a handful hitting 100% (see `analysis/scoping_qc.py:63-69`); these items will need either targeted imputation or a narrower focus to avoid biased subsamples.
+- **Distributions:** Basic covariates show adults aged ~30 (SD ≈ 10), ~59% identifying via the `biomale` flag, and plausible height/weight spreads (see `analysis/scoping_qc.py:71-81`), so demographic coverage looks reasonable for modeling once we define the cohorts.
+- **Reliability:** The adult-positivity composite (eight items) yields α = 0.729, ω = 0.739 (n ≈ 14,051), while the three-item feeling-loved scale is extremely tight at α = ω = 0.961 (n ≈ 14,431) — both results anchor their psychometric adequacy for future hypotheses (`analysis/scoping_qc.py:83-109`).
+
+**Next Steps**
+- 1. Review the substantive literature and (given these reliabilities) nominate focal constructs and plausible exposures/outcomes before committing to hypotheses.
+- 2. Expand QC by checking distributions/missingness in any additional candidate scales and flagging items that fail to meet measurement standards.
+- 3. Draft the Pre-Analysis Plan in the upcoming literature phase so that the analytical steps remain transparent and reproducible.
