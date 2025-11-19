@@ -63,6 +63,17 @@
 - The full coefficient tables for these slices live in `tables/regression_results_no_current_religion.csv`, `tables/regression_results_with_trauma_controls.csv`, and `tables/gender_minority_subgroups.csv`, with the sample counts summarized in `outputs/sensitivity_overview.json`.
 - With the registered sensitivity runs now scripted and documented, the next task is to fold them into the planned sensitivity section of the paper and move toward the writing phase while keeping this set of diagnostics reproducible.
 
+## Loop 39 — finalizing registered analysis
+
+### Summary
+- **Hypothesis 1 (purity × parental support).** The parental-support story replicates across self-love and romantic satisfaction: parental support has a large positive association (self-love `β≈0.212`, d≈0.11; romantic satisfaction `β≈0.190`, d≈0.09), while the purity×support interaction is negative (self-love `β≈-0.040`, p=0.005, d≈-0.022; romantic satisfaction `β≈-0.038`, p=0.037, d≈-0.017). Simple slopes from `tables/simple_slopes.json` confirm that the purity penalty is near zero at -1 SD support but drops to ≈-0.081 at +1 SD, and `figures/marginal_self_love.png` visualizes the predicted margins for self-love.
+- **Hypothesis 2 (purity × gender-minority stress).** The interaction terms for both developmental windows stay close to zero; the slope difference for the purity13 × gender-minority term is ≈0.067 (SE≈0.059), and the sharper negative slopes for cisgender respondents do not replicate among the smaller gender-minority respondents. Gender-minority status itself carries a large main disadvantage in self-love (`β≈-0.34`, p<10⁻⁸) and a modest anxiety penalty (`β≈0.13`, p≈0.004), but there is no consistent amplification of purity effects.
+- **Hypothesis 3 (purity × unconditional love).** When unconditional-love recollections are included, the counterintuitive moderation remains: unconditional love strongly raises self-love (`β≈0.344`, d≈0.185), but the purity × love interaction is negative (`β≈-0.059`, p<0.0001, d≈-0.032), so high-love respondents show a steeper decline as purity increases. The dedicated outputs (`tables/regression_results_unconditional_love.csv`, `tables/simple_slopes_unconditional_love.json`, `figures/marginal_unconditional_love_self_love.png`) document these slopes and margins.
+- **Sensitivity & measurement.** The registered sensitivity slices (non-practicing sample, additional trauma controls, trans/nonbinary subgroup analyses) show the same pattern of coefficients (`tables/regression_results_no_current_religion.csv`, `tables/regression_results_with_trauma_controls.csv`, `tables/gender_minority_subgroups.csv`) and their sample sizes are summarized in `outputs/sensitivity_overview.json`. Measurement notes for the parental-support and unconditional-love composites now live in `qc/measures_validity.md`, which records Cronbach’s α (0.56 and 0.88, respectively).
+
+### Next steps
+- With the registered models, diagnostics, sensitivities, and measurement checks generated, the analysis phase is complete and we are ready to move into the subsequent writing cycle. The next loop should shape the LaTeX draft (Tectonic-ready), integrate the marginal plots, and highlight the counterintuitive interactions while noting the gender-minority precision limits.
+
 ## Loop 33 — baseline summary
 
 ### Sample characteristics

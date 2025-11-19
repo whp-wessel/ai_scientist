@@ -1,2 +1,4 @@
 | measure_id | item_wording | coding | reliability_alpha | dif_check |
 | --- | --- | --- | --- | --- |
+| parent_support | Mean of “during ages 13–18 your parents gave useful guidance (dcrx5ab)” and “during ages 13–18 family/culture had hilarious joking/pranks (i1g8u4j)”. | Each item runs from −3 (strongly disagree) to +3 (strongly agree); composite standardized before modeling. | 0.5625 (Cronbach’s α from two support items). | Not assessed (single sample). |
+| unconditional_love | Average of “during ages 0–12 you felt unconditionally loved (xtrwcp7)” and “during ages 13–18 you felt unconditionally loved (wa9yb85)”. | Both items use −3…+3 agreement anchors; composite standardized for interpretability. | 0.8835 (Cronbach’s α from two unconditional-love recollections). | Not assessed (single sample). |
