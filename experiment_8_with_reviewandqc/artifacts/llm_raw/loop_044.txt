@@ -1,0 +1,9 @@
+# 2025-11-19T13:30:28.609535+00:00
+**Scoping Update**
+- **Dataset snapshot:** `childhoodbalancedpublic_original.csv` contains 14,443 respondents × 718 fields, with 661 numeric and 57 object columns, so the file has the breadth to support multiple constructs (`analysis/scoping_qc.py:58`). Age is centered around 30 (range 18–75) and height/weight distributions look plausible for a general adult sample, so demographics seem sane for now (`analysis/scoping_qc.py:71`, `analysis/scoping_qc.py:79`).
+- **Missingness:** Several auxiliary/text columns are entirely empty, a handful of trauma-related items sit at ~60–80% missingness, and baseline covariates such as sibling count, sexual history, and custody variables are almost fully observed; this suggests we can trust the core demographics while treating high-missingness items cautiously (`analysis/scoping_qc.py:63`).
+- **Reliability:** The scripted scales show acceptable internal consistency: the adult-positivity set (8 items) yields α=0.729/ω=0.739 (n≈14,051), while the feeling-loved triplet is very tight with α=ω=0.961 (n=14,431), so these constructs pass initial psychometric scrutiny (`analysis/scoping_qc.py:100`).
+
+Next steps:
+1. Draft tentative hypotheses that align with the well-measured scales (positivity, feeling loved) and the relatively complete demographics, so we can pre-register the analysis plan with clear exposures/outcomes.
+2. Identify any other multi-item constructs in the catalogue that merit reliability checks before we move to the PAP/analysis phases.
