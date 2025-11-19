@@ -1,0 +1,9 @@
+# 2025-11-19T13:43:09.013391+00:00
+**Scoping QC**
+- `childhoodbalancedpublic_original.csv` (14,443×718) loads with a `DtypeWarning` for column 68 because it mixes strings and numbers; 334 columns are >50% missing and a subset (e.g., `sexscore`, `prov_themes`, `total`) are entirely empty, so they won’t be usable without reinvestigation.
+- Demographics look sensible: mean age ~30, majority identify as male/biomale, net worth coded from –3 to 6, and ethnicity/country distributions are dominated by white U.S./Anglo respondents; however `In general, people in my *current* social circles tend treat me really well (tmt46e6)` only has 383 non-missing cases, so it should be avoided or re-sampled before use.
+- A 10-item well-being composite (items such as “I love myself,” “I am satisfied with my romantic relationships,” “I tend to suffer from depression,” etc.) has 14,435 complete cases; Cronbach’s α=0.82 and McDonald’s ω≈0.83 from a one-factor model, with factor loadings between ~−0.31 and −0.81 (negative because higher scores index better adjustment while some items are phrased negatively).
+
+Suggestions
+1. Outline the substantive hypotheses/literature for next phase, anchoring the well-being composite and any other constructs you plan to study so that the PAP can specify outcomes, covariates, and moderators transparently.
+2. Draft the Pre-Analysis Plan (pap) detailing variables (avoiding the high-missing “social circles” item), handling of duplicates, missing data strategy, and the planned modeling/robustness checks for the upcoming analysis phase.
