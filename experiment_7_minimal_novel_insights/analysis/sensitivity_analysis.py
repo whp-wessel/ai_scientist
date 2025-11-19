@@ -20,6 +20,17 @@ RELIGION_INTERACTION_TERMS = [
     "purity0_religion_practice",
 ]
 
+THREE_WAY_TERMS = [
+    "purity13_z",
+    "parent_support_z",
+    "gender_minority",
+    "purity13_support",
+    "purity13_x_gender_minority",
+    "parent_support_x_gender_minority",
+    "purity13_parent_support_gender_minority",
+    "purity0_z",
+]
+
 
 def load_pipeline_module() -> Any:
     import importlib.util
@@ -99,6 +110,43 @@ def run_gender_subgroup_moderation(
     for record in summary:
         record["subgroup_n"] = int(subset.shape[0])
     return summary
+
+
+def run_parent_support_gender_minority_three_way(
+    module: Any,
+    df: pd.DataFrame,
+    scenario: str,
+) -> List[Dict[str, Any]]:
+    """Estimate the purity × parent-support × gender-minority interaction."""
+    subset = df.copy()
+    subset["parent_support_x_gender_minority"] = (
+        subset["parent_support_z"] * subset["gender_minority"]
+    )
+    subset["purity13_parent_support_gender_minority"] = (
+        subset["purity13_z"] * subset["parent_support_z"] * subset["gender_minority"]
+    )
+    _, base_features, _ = module.hyp1_model_configs(subset)[0]
+    features = [
+        *base_features,
+        "gender_minority",
+        "purity13_x_gender_minority",
+        "parent_support_x_gender_minority",
+        "purity13_parent_support_gender_minority",
+    ]
+    records: List[Dict[str, Any]] = []
+    for outcome in ["self_love", "romantic_satisfaction", "anxiety"]:
+        result = module.run_ols(outcome, features, subset)
+        summary = module.summarize_model(
+            result,
+            outcome,
+            "Hyp1_parent_support_gender_minority",
+            THREE_WAY_TERMS,
+            subset,
+        )
+        for record in summary:
+            record["scenario"] = scenario
+        records.extend(summary)
+    return records
 
 
 def run_hyp1_component_checks(module: Any, df: pd.DataFrame, scenario: str) -> List[Dict[str, Any]]:
@@ -204,10 +252,21 @@ def main() -> None:
         record["scenario"] = record.get("scenario", "subgroup")
     save_csv(subgroup_records, TABLES_DIR / "gender_minority_subgroups.csv")
 
+    parent_support_gender_minority_records = run_parent_support_gender_minority_three_way(
+        module,
+        df,
+        "parent_support_gender_minority",
+    )
+    save_csv(
+        parent_support_gender_minority_records,
+        TABLES_DIR / "regression_results_parent_support_gender_minority.csv",
+    )
+
     OUTPUT_SUMMARY.parent.mkdir(parents=True, exist_ok=True)
     overview["notes"] = (
         "Tables contain Hyp1 parent-support and Hyp2 gender-minority interaction results for the registered "
-        "slices, plus component-based models and religiosity-interaction tests."
+        "slices, plus component-based models, religiosity-interaction tests, and a parent-support × purity × "
+        "gender-minority robustness check."
     )
     OUTPUT_SUMMARY.write_text(json.dumps(overview, indent=2), encoding="utf-8")
     print("Sensitivity analysis complete. Tables saved under tables/ and outputs/.")

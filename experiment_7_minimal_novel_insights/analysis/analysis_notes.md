@@ -152,3 +152,17 @@
 ### Outputs & next steps
 - `analysis/sensitivity_analysis.py` now scores the current-religion slice, component-level checks, and the purity × religion interaction plus the original tables, keeping all results reproducible and documented.
 - The new tables (`tables/regression_results_current_religion.csv`, `tables/regression_results_parent_support_components.csv`, `tables/regression_results_religion_interactions.csv`) will be cited in the writing phase to flesh out the robustness discussion before we move on to the release loop.
+
+## Loop 46 — parent-support heterogeneity by gender-minority identity
+
+### Sample & measurement
+- The analytic sample stays at n=14,400, and the triple-interaction test augments the registered covariate set with parent-support×gender-minority and purity×parent-support×gender-minority products so that the new estimates are fully comparable to the base models.
+
+### Findings
+- The parent-support × purity × gender-minority coefficient is effectively null across self-love, romantic satisfaction, and anxiety, confirming that the registered moderation is not uniquely driven by gender-minority respondents (`tables/regression_results_parent_support_gender_minority.csv:1-24`).
+- Gender-minority respondents still report lower self-love (β≈-0.31, p<10⁻⁶) and that parental support delivers a smaller romantic-satisfaction boost for them (parent_support×gender_minority β≈-0.22, p=0.002), aligning with minority-stress accounts of conditional family support (`tables/regression_results_parent_support_gender_minority.csv:2-24`).
+- These diagnostics strengthen the robustness section while flagging that any gender-minority generalizations should acknowledge the uneven payoffs of parental support for romantic satisfaction despite the shared purity×support pattern.
+
+### Outputs & next steps
+- The new table `tables/regression_results_parent_support_gender_minority.csv` is ready for manuscript citations around the sensitivity/generalizability discussion.
+- Next loop: consolidate these diagnostics in the writing phase and then proceed to release preparations (PDF build, final QC).

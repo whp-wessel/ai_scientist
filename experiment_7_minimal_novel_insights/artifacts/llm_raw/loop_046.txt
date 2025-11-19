@@ -1,0 +1,9 @@
+# 2025-11-19T09:41:39.813347+00:00
+**Summary**
+- Extended the sensitivity pipeline with the parent-support × purity × gender-minority slice: `analysis/sensitivity_analysis.py:23` defines the new terms, `analysis/sensitivity_analysis.py:115` introduces the runner, and the save call at `analysis/sensitivity_analysis.py:255` records the CSV, so the resulting coefficients live in `tables/regression_results_parent_support_gender_minority.csv:1` while `outputs/sensitivity_overview.json:7` now advertises the new robustness check; the triple interaction is null for all outcomes even though parental support boosts romantic satisfaction less for gender-minority respondents (parent-support × gender-minority β≈-0.22, $p=0.002$).
+- Logged Loop 46 in `analysis/analysis_notes.md:156`, noting that the triple interaction confirms the counterintuitive moderation across gender identities yet flags the attenuated romantic-satisfaction benefit for gender-minority respondents so the robustness narrative is up to date.
+- Updated the manuscript to cite the family-acceptance literature and haul the new test into the narrative: `papers/purity_support_paper.tex:49` adds the Ryan (2009) motivation, `papers/purity_support_paper.tex:54` describes the triple-interaction models, `papers/purity_support_paper.tex:119` and `papers/purity_support_paper.tex:124` weave the findings into the sensitivity and discussion sections, and the bibliography now includes the new entry at `papers/purity_support_paper.tex:143`.
+
+**Testing**
+- `python analysis/sensitivity_analysis.py`
+- `tectonic papers/purity_support_paper.tex` (warnings about overfull hboxes but compilation completed, producing `papers/purity_support_paper.pdf`)
