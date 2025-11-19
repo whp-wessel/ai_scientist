@@ -1,0 +1,13 @@
+# 2025-11-19T12:04:18.196815+00:00
+**Release Recap**
+- `papers/purity_support_paper.tex:95` opens the manuscript with the 14,400-case sample (8.3% gender-minority share), HC3-robust OLS strategy, and headline effect claims, and the frozen pre-analysis plan is confirmed at `analysis/pre_analysis_plan.md:3`.
+- `papers/purity_support_paper.tex:121` and `papers/purity_support_paper.tex:125` record the negative purity×support interactions (β≈−0.040 and β≈−0.038, p<0.04, Cohen’s d≈−0.02) for self-love and romantic satisfaction, showing support steepens the purity penalty.
+- `papers/purity_support_paper.tex:132` and `papers/purity_support_paper.tex:154` supply the simple slopes and embedded PGFPlots figure that visualize how the support slope collapses from ~0.253 to ~0.172 and the final trajectories diverge by purity level.
+- `papers/purity_support_paper.tex:164` plus `outputs/monogamy_summary.json:3` show that the 18.6% of respondents preferring consensual nonmonogamy report ~+0.226 self-love and ~+0.225 romantic satisfaction, with the purity penalty disappearing for self-love even though romantic satisfaction stays negative.
+- `papers/purity_support_paper.tex:197` and `outputs/sensitivity_overview.json:2` summarize robustness checks (religiosity splits, trauma/unconditional-love controls, trimmed support, gender-minority subgroups) that keep the core interaction alive while noting it weakens among current religious practitioners.
+- `papers/purity_support_paper.tex:212`/`papers/purity_support_paper.tex:220` outline the limitations/open questions (e.g., doctrine detail gaps and reliability bounds) and the reproducibility commitments; the pipeline is defined at `analysis/analysis_pipeline.py:18`, and testing was not run (not requested).
+
+Natural next steps:
+1. Add or link a future wave of survey data to see whether the purity×support interaction replicates across time before drawing causal claims.
+2. Use the religiosity and gender-minority slices flagged in `papers/purity_support_paper.tex:197` to map which communities drive the heterogeneity (e.g., current practitioners vs. nonpractitioners).
+3. Collect complementary doctrine-level and multi-informant data (per `papers/purity_support_paper.tex:216`) to parse whether intensive support reflects deeper purity enforcement or genuine buffering.
