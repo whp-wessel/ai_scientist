@@ -8,11 +8,11 @@
   "romantic_satisfaction_sd": 2.2297792637667344,
   "anxiety_mean": -0.8285416666666666,
   "anxiety_sd": 2.029979990900353,
-  "purity0_z_mean": 3.7500866609560844e-17,
+  "purity0_z_mean": 3.454027187722709e-17,
   "purity0_z_sd": 1.000034724030776,
-  "purity13_z_mean": -2.269789294789209e-17,
+  "purity13_z_mean": -1.973729821555834e-17,
   "purity13_z_sd": 1.000034724030776,
-  "parent_support_z_mean": -2.911251486794855e-17,
-  "parent_support_z_sd": 1.0000347240307759,
-  "parent_support_reliability": 0.5625440842895342
+  "parent_support_z_mean": -1.4802973661668754e-17,
+  "parent_support_z_sd": 1.000034724030776,
+  "parent_support_reliability": 0.5625440842895345
 }
