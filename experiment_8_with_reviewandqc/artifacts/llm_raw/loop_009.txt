@@ -1,0 +1,10 @@
+# 2025-11-19T12:44:50.145834+00:00
+**Scoping Update**
+- `childhoodbalancedpublic_original.csv` hosts 14,443 responses × 718 columns (~119 MB); age ranges 18–75 (mean 30.4, SD 10.2), `gendered` records 13,537 vs. 906 cases at 1.0/0.0, and the `liberal` slider spans –3…3 with the modal value at 0 and more positive than negative leanings.
+- Missingness concentrates in placeholder/branch columns (e.g., `sexscore`, `prov_themes`, the suite of `eol_*` and `certif_*` fields, plus `proveedores_criterios_link` are 100% empty), while a handful of ethnicity/source flags (e.g., `Asian (other)_ethnicityf`, `twitter_source`, `CSA_score`) are fully observed; branching also leaves `In general, people in my *current* social circles tend treat me really well (tmt46e6)` mostly blank (14,060/14,443 rows).
+- A seven-item positive well-being scale (adult happiness, calmness, energy, self-love, romantic/work satisfaction, appearance satisfaction) yields 14,435 complete rows; Cronbach’s α=0.714 and McDonald’s Ω_total=0.726, indicating acceptable internal consistency for a future composite.
+- Those scale items’ means sit between –0.11 (energy) and 0.82 (calmness) on the –3…3 frame with SDs ≈1.7–2.2, so responses avoid floor/ceiling clustering and keep variance for modeling.
+
+Next steps:
+1. Map existing literature on adult well-being versus childhood experience proxies in this survey so we can formulate falsifiable hypotheses tied to the available constructs.
+2. Draft a Pre-Analysis Plan that defines the composite well-being measure, covariates (demographics/political leanings), and inclusion/exclusion rules before moving to the modeling phase.
