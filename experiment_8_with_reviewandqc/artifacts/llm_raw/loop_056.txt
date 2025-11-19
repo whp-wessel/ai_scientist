@@ -1,0 +1,6 @@
+# 2025-11-19T13:46:29.842340+00:00
+**Scoping Update**
+- `analysis/scoping_qc.py:54-82` runs confirmed the dataset is 14,443 cases × 718 variables (661 numeric, 57 object); the script also highlights a handful of columns with ≥80% missingness, a slice with 60–80% missingness (mostly sensitive abuse questions), and useful covariates holding ≤1% missingness, while summarizing age, height, and weight distributions.
+- `analysis/scoping_qc.py:83-110` reports that the adult positivity battery (8 items) yields α ≈ 0.73, ω ≈ 0.74 (n=14,051 complete), and the feeling-loved battery (3 items) yields α = ω ≈ 0.96 (n=14,431), so both composites have adequate internal consistency for further modeling.
+
+Next steps: 1) Draft the literature-grounded hypotheses and align them with the clean constructs noted above, 2) Freeze a PAP capturing which scales will serve as predictors/outcomes plus planned covariates before running final models.
