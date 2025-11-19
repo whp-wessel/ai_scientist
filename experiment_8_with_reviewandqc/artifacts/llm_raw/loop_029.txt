@@ -1,0 +1,10 @@
+# 2025-11-19T13:11:39.802840+00:00
+**Scoping Update**
+- Scoping confirms `childhoodbalancedpublic_original.csv` contains 14,443 rows × 718 columns (661 numeric, 57 object) with only the expected dtype warning from mixed-format fields, so the overall structure is ready for the next phase (analysis/scoping_qc.py:54-81).
+- Missingness is concentrated: ~20 columns are entirely empty (e.g., `sexscore`, `prov_themes`, several sexual-abuse follow-ups) and another ~15 hover in the 60–80% range, yet key baselines such as siblings, sexual partners, and homeschooling have <1% missingness—highlighting both which variables are reliable and which require careful treatment or omission (analysis/scoping_qc.py:63-110).
+- Reliability assessment shows an adult positivity scale with α=0.729/ω=0.739 and a feeling-loved scale with α=0.961/ω=0.961, so these perceived-wellbeing constructs exhibit acceptable to excellent internal consistency for further modeling (analysis/scoping_qc.py:83-110).
+
+Next steps:
+1. Conduct a focused literature scan to ground the adult positivity/feeling-loved constructs and their expected covariates before drafting the PAP.
+2. Draft and pre-register a PAP that explicitly describes the planned exposures, outcomes, and handling of the high-missing sexual-abuse items.
+3. Catalog which missing-heavy columns we will drop or impute so the subsequent analysis stage starts from transparent variable-selection rules.
