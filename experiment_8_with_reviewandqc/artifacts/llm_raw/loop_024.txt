@@ -1,0 +1,10 @@
+# 2025-11-19T13:05:47.467118+00:00
+Executed the scoping QC script to profile the available dataset and its psychometric properties before moving on to hypothesis generation.
+
+- Dataset metadata: 14,443 observations × 718 variables, with 661 numeric and 57 object columns; numerous columns are entirely empty and a cluster of abuse-related items hover around 60–80% missingness, while a handful of baseline covariates (e.g., sibling count, sexual partners, homeschooling history) have <1% missingness (analysis/scoping_qc.py:54-110).
+- Demographics/distributions: “Your age?”/“selfage” average ~30.4 years (range 18–75), binary gender proxies show ~57–59% reporting male, and height/weight follow plausible adult ranges (analysis/scoping_qc.py:71-83).
+- Scale reliabilities: adult positivity scale (8 items) yields Cronbach’s α≈0.729, ω≈0.739 (n≈14,051), and the feeling-loved scale (3 items) has α=ω≈0.961 (n=14,431), indicating acceptable to excellent internal consistency (analysis/scoping_qc.py:83-110).
+
+Next steps:
+1. Begin the literature review to anchor the selected constructs (adult positivity and feeling-loved) in prior theory and ensure our planned hypotheses align with existing work.
+2. Draft and pre-register the PAP, explicitly documenting measurement verification, handling of missingness, and the planned modeling/diagnostic workflow before executing final analyses.
