@@ -1,0 +1,9 @@
+# 2025-11-19T13:48:23.998874+00:00
+Finished loop 58 scoping QC; the dataset structure, missingness patterns, and scale reliabilities are now logged to guide the next phase.
+
+**Scoping Update**
+- `analysis/scoping_qc.py:54-82` reports `childhoodbalancedpublic_original.csv` has 14,443 respondents × 718 columns (661 numeric, 57 object), the lone dtype warning arises from columns mixing strings/numbers, and basic descriptors (age ≈30.4, height ≈68.4 in, weight ≈173 lb) look plausible.
+- `analysis/scoping_qc.py:63-69` shows many fields with ≥80% missing (e.g., `sexscore`, several “prov_themes” and abuse narrative fields) and roughly a dozen with 60–78% missing (mostly follow-ups on fear/pain and abuse type), while only a handful of baseline covariates (siblings, consensual sex count, homeschooling indicators) fall under 1% missing and are safe anchors.
+- Psychometric checks in `analysis/scoping_qc.py:83-110` yield Cronbach’s alpha ≈0.73 and McDonald’s omega ≈0.74 for the eight-item adult positivity composite (n≈14,051 complete) and both alpha/omega ≈0.96 for the three-item feeling-loved composite (n=14,431), so those scales appear reliable for now.
+
+Next steps: 1) Begin the literature/hypothesis phase by mapping these reliable constructs to theory, documenting the pre-analysis plan (PAP), and flagging how the high-missingness abuse variables will be handled.
