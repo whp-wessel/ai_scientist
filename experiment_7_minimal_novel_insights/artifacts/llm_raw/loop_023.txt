@@ -1,0 +1,16 @@
+# 2025-11-19T07:47:27.634569+00:00
+Pre-analysis plan now includes richer detail so the PAP phase is truly frozen and ready for analysis.
+
+- Hypotheses now spell out standardized effect-size expectations, reliability checks for the parental support composite, and how each window’s purity × gender-minority interaction will be interpreted via Cohen’s *d* (analysis/pre_analysis_plan.md:11).
+- The data/sample section now commits to documenting the analytic N, attrition reasons, and the pre-standardization exposure distributions so we can justify every denominator and SD used for interpretation (analysis/pre_analysis_plan.md:15).
+- Estimation strategy now notes gender-category dummies, VIF checks, and the HC3 + centering regime that keeps the interactions interpretable (analysis/pre_analysis_plan.md:43).
+- A new interpretation section describes how we translate coefficients into ±1 SD differences, marginal predictions, and 95% confidence ribbons so the story remains substantive (analysis/pre_analysis_plan.md:55).
+- The missing-data plan now logs which variables drive exclusions and, should imputation be needed, uses 10 chained-equation draws that mirror the complete-case covariates (analysis/pre_analysis_plan.md:59).
+- Reproducibility notes now point to the exact script, output artifacts, and the Tectonic-embedded figures so rerunning `analysis/analysis_pipeline.py` regenerates every table and figure (analysis/pre_analysis_plan.md:69).
+
+Tests: not run (PAP documentation only).
+
+Next steps:
+1. Let the state advance to the analysis phase and then execute `python analysis/analysis_pipeline.py` to refresh `outputs/sample_summary.json`, `tables/regression_results.csv`, and the marginal-plot figure.
+2. Review the newly generated tables/figures to see how Hypotheses 1 and 2 play out across self-love, romantic satisfaction, and anxiety, and confirm the planned sensitivity checks (religion exclusion, abuse controls, trans vs. nonbinary slices) still make sense.
+3. Once the analysis + sensitivity loop is aligned, start drafting the Tectonic LaTeX paper that embeds the figures/tables produced by the pipeline.
