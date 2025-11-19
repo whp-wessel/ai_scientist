@@ -1,0 +1,10 @@
+# 2025-11-19T14:07:36.684235+00:00
+Scoping diagnostics executed via `analysis/scoping_qc.py` to characterize `childhoodbalancedpublic_original.csv` so we have a grounded starting point for theory building and quality control.
+
+- **Dataset structure & distributions:** The survey has 14,443 respondents across 718 columns, with 661 numeric and 57 object fields; the script notes mixed-type columns that trigger dtype warnings even when reading with `low_memory=False` (see `analysis/scoping_qc.py#L54-L82`). Age, gender proxies, and height/weight have clean distributions anchored around expected ranges (age mean ≈30, height ≈68 in, weight ≈173 lb).
+
+- **Missingness landscape:** Roughly 20 columns are entirely empty, and another block (mostly sensitive abuse-response items) has 60–80% missingness, so those domains will need careful missing-data handling or exclusion; baseline covariates like number of siblings/sexual partners and homeschooling status have ≤1% missingness, giving reliable anchors for covariate adjustment (`analysis/scoping_qc.py#L63-L69`).
+
+- **Reliability checks:** The adult positivity composite (8 items about self-love, relationships, and energy) yields α=0.729, ω=0.739 with 14,051 complete cases, while the feeling-loved construct (3 items spanning childhood and present warmth) is extremely reliable at α=0.961, ω=0.961 with 14,431 cases (`analysis/scoping_qc.py#L83-L110`), giving confidence in those scales for future models.
+
+Next steps: 1) survey relevant literature so the hypotheses align with established constructs before moving into the PAP phase, 2) draft/pre-register the Pre-Analysis Plan that details the modeling strategy, including how to treat the sparse abuse variables and which scales will serve as primary outcomes.
