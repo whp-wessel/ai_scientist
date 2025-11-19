@@ -1,0 +1,11 @@
+# 2025-11-19T10:46:11.130723+00:00
+**Release Summary**
+- The Tectonic-ready paper and compiled PDF live in `papers/purity_support_paper.tex:1`/`papers/purity_support_paper.pdf`; it narrates the preregistered models, visualizations, and the full discussion of results, limitations, and citations.
+- The core finding is that higher parental support intensifies the negative association between adolescent purity messaging and adult self-love/romantic satisfaction—the interaction is about Cohen’s \(d\approx -0.02\) and holds across robustness checks (`papers/purity_support_paper.tex:207-210`).
+- Gender-minority respondents still report lower self-love and higher anxiety, but the purity × support slope does not differ by identity; the three-way term is null even though parent support contributes slightly less to romantic satisfaction for these groups (`papers/purity_support_paper.tex:208-210`, `tables/regression_results_parent_support_gender_minority.csv`).
+- Sensitivity analyses (unconditional-love controls, religiosity slices, parent-support decompositions, trimmed samples, and the three-way check) confirm the counterintuitive moderation except among currently religious respondents and smaller subsamples; details shown in `papers/purity_support_paper.tex:200-205` and `outputs/sensitivity_overview.json:1-10`.
+- Everything is reproducible: the analysis pipeline and sensitivity scripts live in `analysis/analysis_pipeline.py:1-160` and `analysis/sensitivity_analysis.py:1-150`, the frozen pre-analysis plan is at `analysis/pre_analysis_plan.md:1-21`, and the analytic sample description sits in `outputs/sample_summary.json:1-22`.
+
+Next steps:
+1. Share the paper + outputs with peers for domain verification/submission feedback.
+2. Consider collecting richer doctrinal or qualitative data on high-support, high-purity families to unpack the mechanism behind the steepened slopes.
