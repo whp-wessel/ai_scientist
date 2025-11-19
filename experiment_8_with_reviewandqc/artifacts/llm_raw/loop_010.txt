@@ -1,0 +1,10 @@
+# 2025-11-19T12:48:12.457247+00:00
+**Scoping Update**
+- `childhoodbalancedpublic_original.csv` spans 14,443 rows × 718 columns (661 numeric, 57 object); reading it still triggers a `DtypeWarning` because column 68 mixes strings and numbers, and about 20 columns (e.g., `sexscore`, `prov_themes`, `certif_ask_*`) are entirely empty while several of the sexual-abuse follow-ups sit at ~73% missingness, so those fields should be treated as missing-by-design when modeling (see `analysis/scoping_qc.py:1` for the full diagnostic printout).
+- Key baselines are well populated: age averages 30.4 years (range 18–75), ~59% coded male, height ≈ 68.4 in, weight ≈ 173 lbs, and only a handful of items (siblings, sexual history, homeschooling, parental divorce) exceed 0.1% missingness; notable exceptions are the sexual-abuse screeners and the social-circle item with code `71mn55g`, which trims the adult-positivity sample to ~14,051 complete cases.
+- Psychometric checks on candidate constructs show that the 8-item adult-positivity bundle (self-love, relationship/work satisfaction, appearance, calmness, energy, adulthood happiness, social circles) yields Cronbach’s α = 0.729 and McDonald’s ω = 0.739 (n = 14,051), while the 3-item “feeling unconditionally loved” scale (ages 0–12, 13–18, overall) gives α = ω = 0.961 at n = 14,431, confirming good internal consistency for both measures (details in `analysis/scoping_qc.py:1`).
+- The new script at `analysis/scoping_qc.py:1` encapsulates the dataset scan, missingness summary, and reliability calculations so every future loop can rerun the same QC pipeline for reproducibility.
+
+Next steps
+1. Identify which theoretical literature best motivates linking childhood feeling-loved experiences to the adult positivity bundle and articulate falsifiable hypotheses that respect the cross-sectional limits of the survey.
+2. Draft the Pre-Analysis Plan by freezing these constructs, specifying how to handle the high-missing sexual-abuse variables, and outlining the analytic/robustness checks we’ll run once we move into the “analysis” phase.
