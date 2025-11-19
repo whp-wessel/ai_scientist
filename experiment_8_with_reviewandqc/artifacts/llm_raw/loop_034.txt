@@ -1,0 +1,8 @@
+# 2025-11-19T13:17:51.973755+00:00
+Ran `analysis/scoping_qc.py` to profile `childhoodbalancedpublic_original.csv` so loop 34 captures the requested distributions, missingness checks, and reliability estimates.
+
+- `analysis/scoping_qc.py:54-81` shows the dataset spans 14,443 respondents × 718 variables with 661 numeric columns, demographic summaries (mean age ≈ 30.4 years, height ≈ 68.4 in, weight ≈ 173 lb), and no structural anomalies beyond the expected dtype warnings.
+- `analysis/scoping_qc.py:63-70` surfaces extreme missingness (columns such as `sexscore`, `prov_themes`, and the detailed abuse follow-up items are ~70–100% empty) while key covariates like number of siblings/sexual partners, homeschooling indicators, and parental divorce questions each have ≤1% missingness—important for selecting reliable baselines.
+- `analysis/scoping_qc.py:83-109` reports Cronbach’s alpha/omega for the adult positivity scale (α=0.729, ω=0.739, n=14,051) and the feeling-loved scale (α=ω=0.961, n=14,431), so these constructs meet basic internal-consistency standards before we proceed.
+
+Next steps: 1) Ground the next literature/hypothesis loop around the adult positivity and feeling-loved scales (and potential covariates with low missingness) so the pre-analysis plan can lock in prediction/mediation targets; 2) Draft the PAP outlining primary models, diagnostics, and any handling of the high-missingness abuse items (e.g., treating them as auxiliary or reporting the missingness as a limitation).
