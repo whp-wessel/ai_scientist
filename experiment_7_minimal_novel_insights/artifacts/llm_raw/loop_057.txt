@@ -1,0 +1,27 @@
+# 2025-11-19T10:17:22.478306+00:00
+Packaged the frozen purity-culture findings into the Tectonic manuscript so the PDF, PGFPlots figure, and reproducibility assets are ready for release.
+
+**Key Results**
+- The adolescent (13–18) purity × parental-support interaction for self-love is β = −0.040 (p = 0.005, Cohen’s d ≈ −0.022), and the simple-slopes block in `tables/simple_slopes.json:6` shows the purity slope jumps from ≈0 at low support to ≈−0.081 at high support, meaning higher parental support sharpens rather than buffers the purity penalty (`tables/regression_results.csv:4`).
+- Romantic satisfaction mirrors that sharpening (β = −0.0376, p = 0.037, d ≈ −0.017) even though parental support keeps a large positive main effect, so the counterintuitive moderation holds across both well-being anchors (`tables/regression_results.csv:16`).
+- Early-childhood purity (ages 0–12) is modestly protective for anxiety (β = −0.1067, p = 0.002) and shows no support interaction, suggesting the earliest window behaves differently than adolescence (`tables/regression_results.csv:29`).
+- Gender-minority slope differences remain small and imprecise (difference ≈0.067, SE ≈0.059 for self-love and ≈0.068, SE ≈0.072 for romantic satisfaction), so purity effects do not appear systematically harsher for gender-minority respondents even though their main disadvantage is sizable (`tables/simple_slopes.json:39`, `tables/simple_slopes.json:76`).
+
+**Reproducibility & Assets**
+- The final manuscript and PDF are in `papers/purity_support_paper.tex:1` / `papers/purity_support_paper.pdf`, with the PGFPlots figure embedded via the data block at `papers/purity_support_paper.tex:15-38`, so the deliverable is self-contained.
+- The figure’s margins are preserved in `analysis/marginal_self_love_data.csv:1`, enabling anyone to regenerate the PGFPlots trace from that CSV.
+- All estimation and sensitivity tables rebuild when you run `analysis/analysis_pipeline.py:1` and `analysis/sensitivity_analysis.py:1`, so every `tables/` artifact is tied to an executable script.
+- The analytic cohort description (n = 14,400, gender-minority n = 1,196, ω ≈ 0.56) is documented at `outputs/sample_summary.json:1`, `outputs/sample_summary.json:2`, and `outputs/sample_summary.json:18`, while the registered subsets live in `outputs/sensitivity_overview.json:1` and `outputs/sensitivity_overview.json:2`.
+- The pre-analysis plan remains frozen for reference (`analysis/pre_analysis_plan.md:1`), anchoring each hypothesis and analytic decision.
+
+Testing: not run (not requested).
+
+**Limitations & Open Questions**
+- Parent-support reliability is still modest (ω ≈ 0.56), so disaggregating guidance versus humor or collecting richer family-climate data is needed before claiming anything beyond the composite-level interaction (`analysis/analysis_notes.md:120`).
+- The negative moderation contradicts the preregistered buffering story; qualitative follow-up could reveal whether highly involved parents doubled down on purity norms, producing the steeper adult self-love/romantic-satisfaction slopes (`analysis/analysis_notes.md:125`, `analysis/analysis_notes.md:137`).
+- Gender-minority moderation remains null even as minority status has a large main effect, so doctrinal nuance or intersectional axes (race, class, religiosity) may be required to detect any compounded stress (`analysis/analysis_notes.md:130`, `analysis/analysis_notes.md:138`).
+- The work is cross-sectional and retrospective, which leaves open recall bias and whether parental support simply marks families that enforced purity more tightly, so causal claims should stay cautious (`analysis/analysis_notes.md:138`).
+
+**Next Steps**
+1. Recompile via `tectonic papers/purity_support_paper.tex` if you need an updated PDF or want to recheck the embedded PGFPlots rendering.
+2. Dive back into `analysis/analysis_pipeline.py` / `analysis/sensitivity_analysis.py` to explore further slices (e.g., religiosity or doctrinal nuance) before extending the narrative beyond the archived release tables.
