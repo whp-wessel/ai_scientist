@@ -1,0 +1,8 @@
+# 2025-11-19T12:01:23.115519+00:00
+**Release Summary**
+- **Paper** `papers/purity_support_paper.tex:120` now presents the fully pre-registered self-love and romantic-satisfaction models (β≈−0.04 purity×support in both cases) and `papers/purity_support_paper.tex:130` explains Figure 1’s visualization of how high-purity respondents face a flatter support slope, documenting the counterintuitive amplification of purity costs.
+- **Monogamy** `papers/purity_support_paper.tex:163` reports that the 2,673 respondents who lean toward consensual nonmonogamy score ≈+0.226 higher on self-love (p<10⁻⁸) with a nearly flat purity slope, whereas monogamous respondents retain a −0.053 purity penalty, so distancing from purity scripts erases the self-love cost while the romantic-satisfaction penalty remains.
+- **Discussion** `papers/purity_support_paper.tex:207` interprets the interaction as a possible “support-as-intensifier” effect (interaction Cohen’s d ≈ −0.02) and notes that gender-minority differences in the purity slope vanish even though support yields smaller romantic gains for those groups.
+- **Reproducibility** `papers/purity_support_paper.tex:220` documents the scripts powering all tables/figures; modeling is implemented in `analysis/analysis_pipeline.py:1` and `analysis/sensitivity_analysis.py:1`, and the pre-analysis plan remains frozen at `analysis/pre_analysis_plan.md:1`.
+- **Testing** Not run (no automated test suite was requested for this release).
+- **Next Steps** 1) If you make further tweaks, rerun `tectonic papers/purity_support_paper.tex` so the PDF matches the source; 2) Consider qualitative follow-ups (e.g., interviews about how supportive parents communicated purity norms) to unpack why support sharpens the purity penalty.
